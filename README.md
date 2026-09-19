@@ -16,4 +16,12 @@ Use the **Sync progress** panel (same private sync code on phone and PC).
 One-time backend setup: [SETUP-SYNC.md](SETUP-SYNC.md) (free Supabase project + paste URL/anon key into `config.js`).
 
 ## Rebuild
-`python build_study_pages.py`
+```bash
+python build_study_pages.py
+```
+
+## Docs
+| Doc | What it covers |
+| --- | --- |
+| [SETUP-SYNC.md](SETUP-SYNC.md) | Supabase sync (5–10 min) |
+| [REPLICATE.md](REPLICATE.md) | How to clone this pack for **another subject** |
