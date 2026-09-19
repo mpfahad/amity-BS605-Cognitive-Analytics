@@ -554,16 +554,10 @@ function renderFilters() {{
 
 function persistFlash() {{
   if (!window.BS605Progress || !window.__BS605_SYNC_READY) return;
-  const prev = BS605Progress.readLocalCache()?.payload || {{}};
-  BS605Progress.saveProgress({{
-    version: 1,
-    flashcards: {{
-      activeModule: String(activeModule),
-      index: index,
-      flipped: flipped
-    }},
-    quiz: prev.quiz,
-    savedAt: new Date().toISOString()
+  BS605Progress.saveSection("flashcards", {{
+    activeModule: String(activeModule),
+    index: index,
+    flipped: flipped
   }});
 }}
 
@@ -778,18 +772,12 @@ function currentList() {{
 
 function persistQuiz() {{
   if (!window.BS605Progress || !window.__BS605_SYNC_READY) return;
-  const prev = BS605Progress.readLocalCache()?.payload || {{}};
-  BS605Progress.saveProgress({{
-    version: 1,
-    flashcards: prev.flashcards,
-    quiz: {{
-      activeModule: String(activeModule),
-      index: index,
-      answers: {{ ...state }},
-      filteredIds: filteredIds.slice(),
-      order: order.slice()
-    }},
-    savedAt: new Date().toISOString()
+  BS605Progress.saveSection("quiz", {{
+    activeModule: String(activeModule),
+    index: index,
+    answers: {{ ...state }},
+    filteredIds: filteredIds.slice(),
+    order: order.slice()
   }});
 }}
 
@@ -1226,11 +1214,28 @@ def build_module_map() -> str:
 const MAPS = {data_json};
 let activeModuleId = String(MAPS.modules[0].id);
 let current = MAPS.modules[0];
+/** mapAnswers: {{ [moduleId]: {{ [questionIndex]: selectedOption }} }} */
+let mapAnswers = {{}};
 
 const el = id => document.getElementById(id);
 
 function currentModule() {{
   return MAPS.modules.find(m => String(m.id) === String(activeModuleId)) || MAPS.modules[0];
+}}
+
+function persistMap() {{
+  if (!window.BS605Progress || !window.__BS605_SYNC_READY) return;
+  BS605Progress.saveProgress({{
+    mapAnswers: mapAnswers,
+    mapMeta: {{ activeModuleId: String(activeModuleId) }}
+  }});
+}}
+
+function restoreMap(payload) {{
+  if (!payload) return;
+  if (payload.mapAnswers && typeof payload.mapAnswers === "object") mapAnswers = payload.mapAnswers;
+  if (payload.mapMeta && payload.mapMeta.activeModuleId) activeModuleId = String(payload.mapMeta.activeModuleId);
+  renderAll();
 }}
 
 function renderFilters() {{
@@ -1241,6 +1246,7 @@ function renderFilters() {{
   box.querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {{
     activeModuleId = btn.dataset.m;
     renderAll();
+    persistMap();
   }}));
 }}
 
@@ -1282,6 +1288,24 @@ function showNode(id) {{
   }}
 }}
 
+function applySavedAnswer(qi) {{
+  const mid = String(current.id);
+  const saved = mapAnswers[mid] && mapAnswers[mid][qi];
+  if (saved === undefined || saved === null) return;
+  const item = current.questions[qi];
+  const card = document.getElementById("q" + qi);
+  if (!item || !card) return;
+  const i = Number(saved);
+  card.querySelectorAll(".opt").forEach((o, idx) => {{
+    o.disabled = true;
+    if (idx === item.answer) o.classList.add("correct");
+    if (idx === i && i !== item.answer) o.classList.add("wrong");
+  }});
+  const ex = document.getElementById("ex" + qi);
+  ex.textContent = (i === item.answer ? "Correct. " : "Not quite. ") + (item.explain || "");
+  ex.classList.add("show");
+}}
+
 function renderQuestions() {{
   el("questionsTitle").textContent = `Important questions — Module ${{current.id}}`;
   const letters = ["A","B","C","D"];
@@ -1292,6 +1316,7 @@ function renderQuestions() {{
     ).join("");
     return `<article class="qcard" id="q${{qi}}"><p class="qmeta">${{item.topicId}} · ${{item.topicTitle}}</p><h3>${{qi+1}}. ${{item.q}}</h3><div class="opts">${{opts}}</div><div class="explain" id="ex${{qi}}"></div></article>`;
   }}).join("") || `<p class="detail-empty">No MCQs for this module.</p>`;
+  list.forEach((_, qi) => applySavedAnswer(qi));
 }}
 
 el("qlist").addEventListener("click", e => {{
@@ -1309,6 +1334,10 @@ el("qlist").addEventListener("click", e => {{
   const ex = document.getElementById("ex" + qi);
   ex.textContent = (i === item.answer ? "Correct. " : "Not quite. ") + (item.explain || "");
   ex.classList.add("show");
+  const mid = String(current.id);
+  if (!mapAnswers[mid]) mapAnswers[mid] = {{}};
+  mapAnswers[mid][qi] = i;
+  persistMap();
 }});
 
 function renderAll() {{
@@ -1320,9 +1349,14 @@ function renderAll() {{
 renderAll();
 if (window.BS605SyncUI) {{
   BS605SyncUI.mount(document.getElementById("bs605-sync-root"), {{
-    onReady: () => {{ window.__BS605_SYNC_READY = true; }},
-    onLoaded: () => {{ window.__BS605_SYNC_READY = true; }}
+    onLoaded: (payload) => {{
+      restoreMap(payload);
+      window.__BS605_SYNC_READY = true;
+    }},
+    onReady: () => {{ window.__BS605_SYNC_READY = true; }}
   }});
+}} else {{
+  window.__BS605_SYNC_READY = true;
 }}
 </script>
 </body>
@@ -1367,17 +1401,20 @@ def main() -> None:
   <header class="hero">
     <div class="kicker">Amity University Online · BS605</div>
     <h1>Cognitive Analytics &amp; Social Skills study pack</h1>
-    <p class="lede">Built from your SLM PDF and Live Class 2–3 transcripts — flashcards for quick revision and module-wise objective questions for practice. Use one sync code on every device to keep progress.</p>
+    <p class="lede">Home for BS605 study tools. Connect a sync code once — progress auto-saves across phone and PC.</p>
   </header>
-  <div class="cards">
-    <a href="flashcards.html"><h2>Flashcards</h2><p>63 topic cards across 5 modules with LMR priority list.</p></a>
-    <a href="module-map.html"><h2>Module Map</h2><p>Interactive structure maps + important questions for every module.</p></a>
-    <a href="quiz.html"><h2>Objective quiz</h2><p>60 MCQs with explanations, filterable by module.</p></a>
-    <a href="{PDF_NAME}" target="_blank"><h2>Study PDF</h2><p>Original BS605 SLM.</p></a>
-  </div>
-  <section class="panel" style="margin-top:1.2rem">
-    <strong>Materials &amp; transcripts</strong>
-    {links_html()}
+
+  <section class="panel">
+    <strong>All pages</strong>
+    <div class="cards" style="margin-top:0.9rem">
+      <a href="index.html"><h2>Home</h2><p>This page — hub for every study tool.</p></a>
+      <a href="module-map.html"><h2>Module Map</h2><p>Structure maps + important questions for Modules 1–5.</p></a>
+      <a href="flashcards.html"><h2>Flashcards</h2><p>63 revision cards with LMR priority list.</p></a>
+      <a href="quiz.html"><h2>Objective quiz</h2><p>60 MCQs with explanations, filter by module.</p></a>
+      <a href="{PDF_NAME}" target="_blank"><h2>Study PDF</h2><p>Full SLM (opens in a new tab).</p></a>
+      <a href="Live Class 2 Transcript.txt" target="_blank"><h2>Live Class 2</h2><p>Transcript — Attitudes, Emotions &amp; Inner Power.</p></a>
+      <a href="Live Class 3 Transcript.txt" target="_blank"><h2>Live Class 3</h2><p>Transcript — faculty session notes.</p></a>
+    </div>
     {SYNC_PANEL}
   </section>
 </div>
@@ -1391,7 +1428,8 @@ if (window.BS605SyncUI) {{
 </script>
 </body>
 </html>
-""",
+"""
+,
         encoding="utf-8",
     )
     print(f"Wrote {flash.name}, {mmap.name}, {quiz.name}, {index.name}")

@@ -408,16 +408,10 @@ function renderFilters() {
 
 function persistFlash() {
   if (!window.BS605Progress || !window.__BS605_SYNC_READY) return;
-  const prev = BS605Progress.readLocalCache()?.payload || {};
-  BS605Progress.saveProgress({
-    version: 1,
-    flashcards: {
-      activeModule: String(activeModule),
-      index: index,
-      flipped: flipped
-    },
-    quiz: prev.quiz,
-    savedAt: new Date().toISOString()
+  BS605Progress.saveSection("flashcards", {
+    activeModule: String(activeModule),
+    index: index,
+    flipped: flipped
   });
 }
 

@@ -348,18 +348,12 @@ function currentList() {
 
 function persistQuiz() {
   if (!window.BS605Progress || !window.__BS605_SYNC_READY) return;
-  const prev = BS605Progress.readLocalCache()?.payload || {};
-  BS605Progress.saveProgress({
-    version: 1,
-    flashcards: prev.flashcards,
-    quiz: {
-      activeModule: String(activeModule),
-      index: index,
-      answers: { ...state },
-      filteredIds: filteredIds.slice(),
-      order: order.slice()
-    },
-    savedAt: new Date().toISOString()
+  BS605Progress.saveSection("quiz", {
+    activeModule: String(activeModule),
+    index: index,
+    answers: { ...state },
+    filteredIds: filteredIds.slice(),
+    order: order.slice()
   });
 }
 

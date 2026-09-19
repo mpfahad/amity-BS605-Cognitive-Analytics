@@ -1,6 +1,9 @@
 /**
  * BS605 cross-device progress via sync code + Supabase.
  * Config: window.BS605_SYNC = { url, anonKey } from config.js
+ *
+ * Once a sync code is saved on a device, it stays connected automatically.
+ * Saves merge quiz / flashcards / mapAnswers so pages do not wipe each other.
  */
 (function (global) {
   const STORAGE_CODE = "bs605_sync_code";
@@ -61,12 +64,41 @@
     return String(cfg().url).replace(/\/$/, "") + "/rest/v1/" + pathQuery;
   }
 
+  function isNewer(a, b) {
+    if (!a) return false;
+    if (!b) return true;
+    return new Date(a).getTime() > new Date(b).getTime();
+  }
+
+  /** Shallow-merge top-level sections; nested objects merge one level deep. */
+  function mergePayload(base, patch) {
+    const out = Object.assign({}, base || {});
+    if (!patch) return out;
+    Object.keys(patch).forEach((k) => {
+      const pv = patch[k];
+      const bv = out[k];
+      if (
+        pv &&
+        typeof pv === "object" &&
+        !Array.isArray(pv) &&
+        bv &&
+        typeof bv === "object" &&
+        !Array.isArray(bv)
+      ) {
+        out[k] = Object.assign({}, bv, pv);
+      } else if (pv !== undefined) {
+        out[k] = pv;
+      }
+    });
+    return out;
+  }
+
   let saveTimer = null;
   let lastStatus = { state: "idle", message: "Not connected", at: null };
   const listeners = new Set();
 
   function setStatus(state, message, at) {
-    lastStatus = { state, message, at: at || lastStatus.at };
+    lastStatus = { state, message, at: at || null };
     listeners.forEach((fn) => {
       try {
         fn(lastStatus);
@@ -80,10 +112,17 @@
     return () => listeners.delete(fn);
   }
 
+  function maskedCode() {
+    const c = getCode();
+    if (!c) return "";
+    if (c.length <= 4) return "••••";
+    return c.slice(0, 2) + "•••" + c.slice(-2);
+  }
+
   async function loadProgress() {
     const code = getCode();
     if (!code) {
-      setStatus("idle", "Enter a sync code to connect");
+      setStatus("idle", "Enter a sync code once — it stays on this device");
       return readLocalCache()?.payload || null;
     }
     if (!configured()) {
@@ -92,7 +131,7 @@
     }
 
     const hash = await sha256Hex(code);
-    setStatus("syncing", "Loading…");
+    setStatus("syncing", "Loading cloud…");
     try {
       const res = await fetch(
         restUrl(TABLE + "?code_hash=eq." + encodeURIComponent(hash) + "&select=payload,updated_at"),
@@ -100,31 +139,48 @@
       );
       if (!res.ok) throw new Error("HTTP " + res.status);
       const rows = await res.json();
-      if (rows && rows[0]) {
-        writeLocalCache(rows[0].payload, rows[0].updated_at);
-        setStatus("connected", "Synced", rows[0].updated_at);
-        return rows[0].payload;
-      }
       const local = readLocalCache();
-      setStatus("connected", "Connected (empty cloud)", local?.updated_at || null);
-      return local?.payload || null;
+
+      if (rows && rows[0]) {
+        const cloud = rows[0];
+        // Prefer newer side, then merge so quiz/map/flashcards are not lost
+        let payload;
+        let at;
+        if (isNewer(local?.updated_at, cloud.updated_at)) {
+          payload = mergePayload(cloud.payload, local.payload);
+          at = local.updated_at;
+          writeLocalCache(payload, at);
+          // Push merged newer local up so phone gets it
+          saveProgressNow(payload);
+        } else {
+          payload = mergePayload(local?.payload, cloud.payload);
+          at = cloud.updated_at;
+          writeLocalCache(payload, at);
+        }
+        setStatus("connected", "Connected · auto-saves (" + maskedCode() + ")", at);
+        return payload;
+      }
+
+      const payload = local?.payload || null;
+      setStatus("connected", "Connected · auto-saves (" + maskedCode() + ")", local?.updated_at || null);
+      if (payload) saveProgressNow(payload);
+      return payload;
     } catch (err) {
       const local = readLocalCache();
-      setStatus("offline", "Offline — using local cache", local?.updated_at || null);
+      setStatus("offline", "Offline — will sync when online (" + maskedCode() + ")", local?.updated_at || null);
       return local?.payload || null;
     }
   }
 
   async function saveProgressNow(payload) {
     const code = getCode();
-    if (!code) {
-      writeLocalCache(payload);
-      setStatus("idle", "Saved locally only (no sync code)");
-      return false;
-    }
     const updatedAt = new Date().toISOString();
     writeLocalCache(payload, updatedAt);
 
+    if (!code) {
+      setStatus("idle", "Saved on this device only (no sync code yet)");
+      return false;
+    }
     if (!configured()) {
       setStatus("error", "Local save only — configure Supabase");
       return false;
@@ -146,7 +202,7 @@
         }),
       });
       if (!res.ok) throw new Error("HTTP " + res.status);
-      setStatus("connected", "Synced", updatedAt);
+      setStatus("connected", "Connected · auto-saves (" + maskedCode() + ")", updatedAt);
       return true;
     } catch (err) {
       setStatus("offline", "Saved locally — will retry when online", updatedAt);
@@ -155,11 +211,21 @@
   }
 
   function saveProgress(payload) {
-    writeLocalCache(payload);
+    const prev = readLocalCache()?.payload || {};
+    const merged = mergePayload(prev, payload);
+    merged.savedAt = new Date().toISOString();
+    writeLocalCache(merged);
     if (saveTimer) clearTimeout(saveTimer);
     saveTimer = setTimeout(() => {
-      saveProgressNow(payload);
-    }, 500);
+      saveProgressNow(merged);
+    }, 400);
+  }
+
+  /** Update one section (quiz / flashcards / mapAnswers) without wiping others. */
+  function saveSection(sectionKey, sectionValue) {
+    const patch = {};
+    patch[sectionKey] = sectionValue;
+    saveProgress(patch);
   }
 
   async function connect(code) {
@@ -169,18 +235,21 @@
 
   function disconnect() {
     setCode("");
-    setStatus("idle", "Disconnected");
+    setStatus("idle", "Disconnected — enter a sync code to reconnect");
   }
 
   global.BS605Progress = {
     configured,
     getCode,
     setCode,
+    maskedCode,
     connect,
     disconnect,
     loadProgress,
     saveProgress,
+    saveSection,
     saveProgressNow,
+    mergePayload,
     onStatus,
     getStatus: () => lastStatus,
     readLocalCache,
