@@ -131,6 +131,34 @@ h1 {
   color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem;
 }
 .meta strong { color: var(--ink); }
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.6rem;
+  margin: 0.8rem 0;
+}
+.stat {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.8rem;
+}
+.stat b { display: block; font-size: 1.35rem; font-family: var(--font-display); color: var(--ink); }
+.stat span { color: var(--muted); font-size: 0.88rem; }
+.prog-line {
+  margin-top: 0.55rem;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(21,35,28,0.08);
+  overflow: hidden;
+}
+.prog-line > i {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), #2f9e74);
+  border-radius: inherit;
+}
 .links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -164,6 +192,14 @@ h1 {
   .wrap { width: min(100% - 1.2rem, 1120px); }
 }
 
+.progress {
+  height: 8px; border-radius: 999px; background: rgba(21,35,28,0.08); overflow: hidden;
+}
+.progress > span {
+  display: block; height: 100%; width: 0%;
+  background: linear-gradient(90deg, var(--accent), #2f9e74);
+  transition: width 0.25s ease;
+}
 .quiz-layout { display: grid; gap: 1rem; }
 .qcard {
   border: 1px solid var(--line);
@@ -238,19 +274,6 @@ h1 {
 .footer-nav {
   display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: space-between; margin-top: 0.8rem;
 }
-.summary-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 0.6rem;
-  margin-top: 0.8rem;
-}
-.stat {
-  background: rgba(255,255,255,0.75);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 0.8rem;
-}
-.stat b { display: block; font-size: 1.4rem; font-family: var(--font-display); }
 </style>
 
 <script src="config.js"></script>
@@ -265,6 +288,7 @@ h1 {
     <h1>Objective questions by module</h1>
     <p class="lede">MCQs drawn from the BS605 SLM and live-class emphasis. Filter by module, answer one by one, and use explanations to lock concepts — especially LMR priorities.</p>
     <div class="navrow">
+      <a class="btn" href="index.html">Home</a>
       <a class="btn primary" href="flashcards.html">Open flashcards</a>
       <a class="btn" href="module-map.html">Module Map</a>
       <a class="btn" href="flashcards.html#lmr">LMR priorities</a>
@@ -275,13 +299,16 @@ h1 {
     <div class="scorebar">
       <div class="meta" style="margin:0">
         <span><strong id="totalQ">0</strong> questions</span>
-        <span>Score <strong id="scoreNow">0</strong> / <strong id="attempted">0</strong></span>
+        <span>Answered <strong id="attempted">0</strong></span>
+        <span>Correct <strong id="scoreNow">0</strong></span>
+        <span>Accuracy <strong id="accuracy">—</strong></span>
       </div>
       <div class="navrow" style="margin:0">
         <button class="btn" id="resetBtn" type="button">Reset answers</button>
         <button class="btn primary" id="shuffleBtn" type="button">Shuffle</button>
       </div>
     </div>
+    <div class="progress" style="margin-top:0.75rem"><span id="quizProgressBar"></span></div>
     <div class="filters" id="moduleFilters" style="margin-top:0.9rem"></div>
     <div class="summary-grid" id="moduleStats"></div>
     <div class="links"><a class="" href="Live Class 2 Transcript.txt" target="_blank" rel="noopener">Live Class 2 transcript</a><a class="" href="Live Class 3 Transcript.txt" target="_blank" rel="noopener">Live Class 3 transcript</a><a class="lmr-link" href="Congnitive Analytics and Social skill for Profession W F 1.pdf" target="_blank" rel="noopener">Study PDF (SLM)</a></div>
@@ -330,8 +357,10 @@ let order = bank.map((_, i) => i);
 let filteredIds = order.slice();
 let index = 0;
 const state = {}; // id -> selected option index
+let restoring = false;
 
 const el = id => document.getElementById(id);
+const quizProgressBar = el("quizProgressBar");
 
 function shuffle(arr) {
   const a = arr.slice();
@@ -347,7 +376,7 @@ function currentList() {
 }
 
 function persistQuiz() {
-  if (!window.BS605Progress || !window.__BS605_SYNC_READY) return;
+  if (restoring || !window.BS605Progress || !window.__BS605_SYNC_READY) return;
   BS605Progress.saveSection("quiz", {
     activeModule: String(activeModule),
     index: index,
@@ -359,6 +388,7 @@ function persistQuiz() {
 
 function restoreQuiz(payload) {
   if (!payload || !payload.quiz) return;
+  restoring = true;
   const q = payload.quiz;
   if (q.activeModule !== undefined) activeModule = String(q.activeModule);
   Object.keys(state).forEach(k => delete state[k]);
@@ -380,6 +410,7 @@ function restoreQuiz(payload) {
   renderStats();
   renderQuestion();
   updateScore();
+  restoring = false;
 }
 
 function applyFilter(preserveShuffle=false) {
@@ -411,7 +442,8 @@ function renderStats() {
     const qs = bank.filter(q => q.moduleId === m.id);
     const attempted = qs.filter(q => state[q.id] !== undefined).length;
     const correct = qs.filter(q => state[q.id] === q.answer).length;
-    return `<div class="stat"><b>${correct}/${qs.length}</b>Module ${m.id} · attempted ${attempted}</div>`;
+    const pct = qs.length ? Math.round((attempted / qs.length) * 100) : 0;
+    return `<div class="stat"><b>${correct}/${qs.length}</b><span>Module ${m.id} · ${attempted} answered</span><div class="prog-line"><i style="width:${pct}%"></i></div></div>`;
   }).join("");
 }
 
@@ -421,6 +453,8 @@ function updateScore() {
   const correct = list.filter(q => state[q.id] === q.answer).length;
   el("attempted").textContent = attempted;
   el("scoreNow").textContent = correct;
+  el("accuracy").textContent = attempted ? Math.round((correct / attempted) * 100) + "%" : "—";
+  quizProgressBar.style.width = list.length ? ((attempted / list.length) * 100) + "%" : "0%";
   renderStats();
 }
 
@@ -504,17 +538,26 @@ document.addEventListener("keydown", e => {
 });
 
 applyFilter(false);
-if (window.BS605SyncUI) {
-  BS605SyncUI.mount(document.getElementById("bs605-sync-root"), {
-    onLoaded: (payload) => {
-      restoreQuiz(payload);
-      window.__BS605_SYNC_READY = true;
-    },
-    onReady: () => { window.__BS605_SYNC_READY = true; }
-  });
-} else {
-  window.__BS605_SYNC_READY = true;
+
+function bootSync(restoreFn) {
+  function apply(payload) {
+    if (payload && restoreFn) restoreFn(payload);
+    window.__BS605_SYNC_READY = true;
+  }
+  if (window.BS605SyncUI) {
+    BS605SyncUI.mount(document.getElementById("bs605-sync-root"), {
+      onLoaded: (payload) => apply(payload),
+      onReady: (payload) => {
+        if (window.__BS605_SYNC_READY) return;
+        apply(payload || (window.BS605Progress && BS605Progress.readLocalCache() || {}).payload || null);
+      }
+    });
+  } else {
+    apply((window.BS605Progress && BS605Progress.readLocalCache() || {}).payload || null);
+  }
 }
+
+bootSync(restoreQuiz);
 </script>
 </body>
 </html>

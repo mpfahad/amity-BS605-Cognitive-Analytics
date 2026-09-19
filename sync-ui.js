@@ -130,7 +130,7 @@
       const payload = await P.connect(code);
       setConnectedMode(true);
       if (opts && typeof opts.onLoaded === "function") opts.onLoaded(payload);
-      if (opts && typeof opts.onReady === "function") opts.onReady();
+      if (opts && typeof opts.onReady === "function") opts.onReady(payload);
     }
 
     root.querySelector("#bs605SyncConnect").addEventListener("click", doConnect);
@@ -155,10 +155,11 @@
       input.value = P.getCode();
       P.loadProgress().then((payload) => {
         if (opts && typeof opts.onLoaded === "function") opts.onLoaded(payload);
-        if (opts && typeof opts.onReady === "function") opts.onReady();
+        if (opts && typeof opts.onReady === "function") opts.onReady(payload);
       });
     } else if (opts && typeof opts.onReady === "function") {
-      opts.onReady();
+      // Still restore any local cache so progress shows without a sync code
+      opts.onReady(P.readLocalCache()?.payload || null);
     }
   }
 

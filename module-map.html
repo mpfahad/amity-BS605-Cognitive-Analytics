@@ -131,6 +131,34 @@ h1 {
   color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem;
 }
 .meta strong { color: var(--ink); }
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.6rem;
+  margin: 0.8rem 0;
+}
+.stat {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.8rem;
+}
+.stat b { display: block; font-size: 1.35rem; font-family: var(--font-display); color: var(--ink); }
+.stat span { color: var(--muted); font-size: 0.88rem; }
+.prog-line {
+  margin-top: 0.55rem;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(21,35,28,0.08);
+  overflow: hidden;
+}
+.prog-line > i {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), #2f9e74);
+  border-radius: inherit;
+}
 .links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -164,6 +192,14 @@ h1 {
   .wrap { width: min(100% - 1.2rem, 1120px); }
 }
 
+.progress {
+  height: 8px; border-radius: 999px; background: rgba(21,35,28,0.08); overflow: hidden;
+}
+.progress > span {
+  display: block; height: 100%; width: 0%;
+  background: linear-gradient(90deg, var(--accent), #2f9e74);
+  transition: width 0.25s ease;
+}
 .layout {
   display: grid;
   grid-template-columns: 1.35fr .9fr;
@@ -296,14 +332,21 @@ h1 {
     <h1>Structure maps &amp; important questions</h1>
     <p class="lede">Switch modules below. Click any card in the flow for definitions and exam tips — then practise that module’s important MCQs (same bank as the quiz).</p>
     <div class="navrow">
+      <a class="btn" href="index.html">Home</a>
       <a class="btn primary" href="flashcards.html">Flashcards</a>
       <a class="btn" href="quiz.html">Full quiz</a>
       <a class="btn" href="#questions">Important questions</a>
-      <a class="btn" href="index.html">Study pack home</a>
     </div>
   </header>
 
   <section class="panel">
+    <div class="meta" style="margin-bottom:0.6rem">
+      <span>This module: <strong id="mapModAttempted">0</strong> / <strong id="mapModTotal">0</strong> answered</span>
+      <span>Correct <strong id="mapModCorrect">0</strong></span>
+      <span>All modules: <strong id="mapAllAttempted">0</strong> / <strong id="mapAllTotal">0</strong></span>
+    </div>
+    <div class="progress" style="margin-bottom:0.85rem"><span id="mapProgressBar"></span></div>
+    <div class="summary-grid" id="mapStats"></div>
     <div class="filters" id="moduleFilters"></div>
     <div id="bs605-sync-root"></div>
   </section>
@@ -340,15 +383,60 @@ let activeModuleId = String(MAPS.modules[0].id);
 let current = MAPS.modules[0];
 /** mapAnswers: { [moduleId]: { [questionIndex]: selectedOption } } */
 let mapAnswers = {};
+let restoring = false;
 
 const el = id => document.getElementById(id);
+const mapProgressBar = el("mapProgressBar");
+const mapAllTotal = MAPS.modules.reduce((n, m) => n + (m.questions || []).length, 0);
+el("mapAllTotal").textContent = mapAllTotal;
 
 function currentModule() {
   return MAPS.modules.find(m => String(m.id) === String(activeModuleId)) || MAPS.modules[0];
 }
 
+function updateMapStats() {
+  current = currentModule();
+  const list = current.questions || [];
+  const mid = String(current.id);
+  const answers = mapAnswers[mid] || {};
+  let attempted = 0, correct = 0;
+  list.forEach((item, qi) => {
+    if (answers[qi] === undefined || answers[qi] === null) return;
+    attempted += 1;
+    if (Number(answers[qi]) === item.answer) correct += 1;
+  });
+  el("mapModAttempted").textContent = attempted;
+  el("mapModTotal").textContent = list.length;
+  el("mapModCorrect").textContent = correct;
+  mapProgressBar.style.width = list.length ? ((attempted / list.length) * 100) + "%" : "0%";
+
+  let allA = 0, allC = 0;
+  MAPS.modules.forEach(m => {
+    const ans = mapAnswers[String(m.id)] || {};
+    (m.questions || []).forEach((item, qi) => {
+      if (ans[qi] === undefined || ans[qi] === null) return;
+      allA += 1;
+      if (Number(ans[qi]) === item.answer) allC += 1;
+    });
+  });
+  el("mapAllAttempted").textContent = allA;
+
+  el("mapStats").innerHTML = MAPS.modules.map(m => {
+    const qs = m.questions || [];
+    const ans = mapAnswers[String(m.id)] || {};
+    let a = 0, c = 0;
+    qs.forEach((item, qi) => {
+      if (ans[qi] === undefined || ans[qi] === null) return;
+      a += 1;
+      if (Number(ans[qi]) === item.answer) c += 1;
+    });
+    const pct = qs.length ? Math.round((a / qs.length) * 100) : 0;
+    return `<div class="stat"><b>${c}/${qs.length}</b><span>Module ${m.id} · ${a} answered</span><div class="prog-line"><i style="width:${pct}%"></i></div></div>`;
+  }).join("");
+}
+
 function persistMap() {
-  if (!window.BS605Progress || !window.__BS605_SYNC_READY) return;
+  if (restoring || !window.BS605Progress || !window.__BS605_SYNC_READY) return;
   BS605Progress.saveProgress({
     mapAnswers: mapAnswers,
     mapMeta: { activeModuleId: String(activeModuleId) }
@@ -357,9 +445,11 @@ function persistMap() {
 
 function restoreMap(payload) {
   if (!payload) return;
+  restoring = true;
   if (payload.mapAnswers && typeof payload.mapAnswers === "object") mapAnswers = payload.mapAnswers;
   if (payload.mapMeta && payload.mapMeta.activeModuleId) activeModuleId = String(payload.mapMeta.activeModuleId);
   renderAll();
+  restoring = false;
 }
 
 function renderFilters() {
@@ -441,6 +531,7 @@ function renderQuestions() {
     return `<article class="qcard" id="q${qi}"><p class="qmeta">${item.topicId} · ${item.topicTitle}</p><h3>${qi+1}. ${item.q}</h3><div class="opts">${opts}</div><div class="explain" id="ex${qi}"></div></article>`;
   }).join("") || `<p class="detail-empty">No MCQs for this module.</p>`;
   list.forEach((_, qi) => applySavedAnswer(qi));
+  updateMapStats();
 }
 
 el("qlist").addEventListener("click", e => {
@@ -461,6 +552,7 @@ el("qlist").addEventListener("click", e => {
   const mid = String(current.id);
   if (!mapAnswers[mid]) mapAnswers[mid] = {};
   mapAnswers[mid][qi] = i;
+  updateMapStats();
   persistMap();
 });
 
@@ -471,17 +563,26 @@ function renderAll() {
 }
 
 renderAll();
-if (window.BS605SyncUI) {
-  BS605SyncUI.mount(document.getElementById("bs605-sync-root"), {
-    onLoaded: (payload) => {
-      restoreMap(payload);
-      window.__BS605_SYNC_READY = true;
-    },
-    onReady: () => { window.__BS605_SYNC_READY = true; }
-  });
-} else {
-  window.__BS605_SYNC_READY = true;
+
+function bootSync(restoreFn) {
+  function apply(payload) {
+    if (payload && restoreFn) restoreFn(payload);
+    window.__BS605_SYNC_READY = true;
+  }
+  if (window.BS605SyncUI) {
+    BS605SyncUI.mount(document.getElementById("bs605-sync-root"), {
+      onLoaded: (payload) => apply(payload),
+      onReady: (payload) => {
+        if (window.__BS605_SYNC_READY) return;
+        apply(payload || (window.BS605Progress && BS605Progress.readLocalCache() || {}).payload || null);
+      }
+    });
+  } else {
+    apply((window.BS605Progress && BS605Progress.readLocalCache() || {}).payload || null);
+  }
 }
+
+bootSync(restoreMap);
 </script>
 </body>
 </html>

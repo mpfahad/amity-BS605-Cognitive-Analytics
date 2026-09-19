@@ -131,6 +131,34 @@ h1 {
   color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem;
 }
 .meta strong { color: var(--ink); }
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.6rem;
+  margin: 0.8rem 0;
+}
+.stat {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.8rem;
+}
+.stat b { display: block; font-size: 1.35rem; font-family: var(--font-display); color: var(--ink); }
+.stat span { color: var(--muted); font-size: 0.88rem; }
+.prog-line {
+  margin-top: 0.55rem;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(21,35,28,0.08);
+  overflow: hidden;
+}
+.prog-line > i {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), #2f9e74);
+  border-radius: inherit;
+}
 .links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -302,6 +330,7 @@ h1 {
     <h1>Cognitive Analytics &amp; Social Skills flashcards</h1>
     <p class="lede">Quick-reference cards drilled from the SLM and live-class transcripts across all five modules. Flip a card, then move topic by topic — LMR priorities are marked for exam focus.</p>
     <div class="navrow">
+      <a class="btn" href="index.html">Home</a>
       <a class="btn primary" href="quiz.html">Open objective quiz</a>
       <a class="btn" href="module-map.html">Module Map</a>
       <a class="btn" href="#lmr">LMR priorities</a>
@@ -311,10 +340,12 @@ h1 {
 
   <section class="panel">
     <div class="meta">
-      <span><strong id="countCards">0</strong> cards</span>
-      <span><strong>5</strong> modules</span>
-      <span>Source: SLM + live class links</span>
+      <span><strong id="countCards">0</strong> cards in view</span>
+      <span>Seen <strong id="seenCount">0</strong> / <strong id="deckTotal">0</strong></span>
+      <span>Known <strong id="knownCount">0</strong></span>
+      <span>Still learning <strong id="learningCount">0</strong></span>
     </div>
+    <div class="summary-grid" id="flashStats"></div>
     <div class="filters" id="moduleFilters"></div>
     <div class="links"><a class="" href="Live Class 2 Transcript.txt" target="_blank" rel="noopener">Live Class 2 transcript</a><a class="" href="Live Class 3 Transcript.txt" target="_blank" rel="noopener">Live Class 3 transcript</a><a class="lmr-link" href="Congnitive Analytics and Social skill for Profession W F 1.pdf" target="_blank" rel="noopener">Study PDF (SLM)</a></div>
     <div id="bs605-sync-root"></div>
@@ -349,9 +380,14 @@ h1 {
             <div class="answer" id="backText"></div>
             <div class="detail" id="backDetail"></div>
           </div>
-          <div class="hint">Click again to hide the answer</div>
+          <div class="hint">Mark how well you know it, then continue</div>
         </div>
       </button>
+    </div>
+    <div class="navrow" style="margin-top:0.8rem">
+      <button class="btn primary" id="knownBtn" type="button">Got it</button>
+      <button class="btn" id="learningBtn" type="button">Still learning</button>
+      <button class="btn ghost" id="resetFlashBtn" type="button">Reset card progress</button>
     </div>
     <div class="topic-list" id="topicList"></div>
   </section>
@@ -386,10 +422,14 @@ let activeModule = "all";
 let filtered = deck.slice();
 let index = 0;
 let flipped = false;
+let seen = {};   // key -> true
+let known = {};  // key -> true
+let restoring = false;
 
 const el = id => document.getElementById(id);
 const card = el("card");
 const progressBar = el("progressBar");
+el("deckTotal").textContent = deck.length;
 
 function renderFilters() {
   const box = el("moduleFilters");
@@ -406,19 +446,41 @@ function renderFilters() {
   }));
 }
 
+function updateFlashStats() {
+  const seenN = Object.keys(seen).filter(k => seen[k]).length;
+  const knownN = Object.keys(known).filter(k => known[k]).length;
+  const learningN = Math.max(0, seenN - knownN);
+  el("seenCount").textContent = seenN;
+  el("knownCount").textContent = knownN;
+  el("learningCount").textContent = learningN;
+  const box = el("flashStats");
+  box.innerHTML = DATA.modules.map(m => {
+    const keys = deck.filter(c => c.moduleId === m.id).map(c => c.key);
+    const s = keys.filter(k => seen[k]).length;
+    const kn = keys.filter(k => known[k]).length;
+    const pct = keys.length ? Math.round((s / keys.length) * 100) : 0;
+    return `<div class="stat"><b>${s}/${keys.length}</b><span>Module ${m.id} · ${kn} known</span><div class="prog-line"><i style="width:${pct}%"></i></div></div>`;
+  }).join("");
+}
+
 function persistFlash() {
-  if (!window.BS605Progress || !window.__BS605_SYNC_READY) return;
+  if (restoring || !window.BS605Progress || !window.__BS605_SYNC_READY) return;
   BS605Progress.saveSection("flashcards", {
     activeModule: String(activeModule),
     index: index,
-    flipped: flipped
+    flipped: flipped,
+    seen: { ...seen },
+    known: { ...known }
   });
 }
 
 function restoreFlash(payload) {
   if (!payload || !payload.flashcards) return;
+  restoring = true;
   const f = payload.flashcards;
   if (f.activeModule !== undefined) activeModule = String(f.activeModule);
+  seen = (f.seen && typeof f.seen === "object") ? { ...f.seen } : {};
+  known = (f.known && typeof f.known === "object") ? { ...f.known } : {};
   applyFilter();
   if (typeof f.index === "number" && filtered.length) {
     index = Math.max(0, Math.min(filtered.length - 1, f.index));
@@ -427,6 +489,8 @@ function restoreFlash(payload) {
   renderFilters();
   renderTopics();
   renderCard();
+  updateFlashStats();
+  restoring = false;
 }
 
 function applyFilter() {
@@ -436,19 +500,22 @@ function applyFilter() {
   el("countCards").textContent = filtered.length;
   renderTopics();
   renderCard();
+  updateFlashStats();
   persistFlash();
 }
 
 function renderTopics() {
   const topics = [];
-  const seen = new Set();
+  const seenT = new Set();
   filtered.forEach(c => {
     const k = c.topicId;
-    if (!seen.has(k)) { seen.add(k); topics.push(c); }
+    if (!seenT.has(k)) { seenT.add(k); topics.push(c); }
   });
   el("topicList").innerHTML = topics.map(t => {
     const active = filtered[index] && filtered[index].topicId === t.topicId ? "active" : "";
-    return `<button type="button" class="${active}" data-topic="${t.topicId}"><strong>${t.topicId} · ${t.topicTitle}</strong><span>Module ${t.moduleId}</span></button>`;
+    const topicKeys = filtered.filter(c => c.topicId === t.topicId).map(c => c.key);
+    const done = topicKeys.filter(k => known[k]).length;
+    return `<button type="button" class="${active}" data-topic="${t.topicId}"><strong>${t.topicId} · ${t.topicTitle}</strong><span>Module ${t.moduleId} · ${done}/${topicKeys.length} known</span></button>`;
   }).join("");
   el("topicList").querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {
     const i = filtered.findIndex(c => c.topicId === btn.dataset.topic);
@@ -467,21 +534,31 @@ function renderCard() {
   }
   const c = filtered[index];
   el("frontTag").textContent = `Module ${c.moduleId} · ${c.topicId}`;
-  el("backTag").textContent = c.topicTitle;
+  el("backTag").textContent = c.topicTitle + (known[c.key] ? " · known" : seen[c.key] ? " · learning" : "");
   el("frontText").textContent = c.front;
   el("backText").textContent = c.back;
   el("backDetail").textContent = c.detail || "";
   el("backDetail").style.display = c.detail ? "block" : "none";
   el("topicLabel").textContent = c.topicTitle;
   el("position").textContent = `${index+1} / ${filtered.length}`;
-  progressBar.style.width = `${((index+1)/filtered.length)*100}%`;
+  const seenInFilter = filtered.filter(x => seen[x.key]).length;
+  progressBar.style.width = `${(seenInFilter/filtered.length)*100}%`;
   card.classList.toggle("flipped", flipped);
   card.setAttribute("aria-label", flipped ? "Hide answer" : "Reveal answer");
   el("flipBtn").textContent = flipped ? "Hide answer" : "Reveal answer";
 }
 
+function markSeen() {
+  if (!filtered.length) return;
+  const key = filtered[index].key;
+  seen[key] = true;
+  updateFlashStats();
+  persistFlash();
+}
+
 function flip() {
   flipped = !flipped;
+  if (flipped) markSeen();
   card.classList.toggle("flipped", flipped);
   card.setAttribute("aria-label", flipped ? "Hide answer" : "Reveal answer");
   el("flipBtn").textContent = flipped ? "Hide answer" : "Reveal answer";
@@ -490,10 +567,34 @@ function flip() {
 function next() { if (!filtered.length) return; index = (index + 1) % filtered.length; flipped = false; renderCard(); renderTopics(); persistFlash(); }
 function prev() { if (!filtered.length) return; index = (index - 1 + filtered.length) % filtered.length; flipped = false; renderCard(); renderTopics(); persistFlash(); }
 
+function markKnown(isKnown) {
+  if (!filtered.length) return;
+  const key = filtered[index].key;
+  seen[key] = true;
+  if (isKnown) known[key] = true;
+  else delete known[key];
+  updateFlashStats();
+  renderTopics();
+  renderCard();
+  persistFlash();
+  next();
+}
+
 card.addEventListener("click", (e) => { e.preventDefault(); flip(); });
 el("flipBtn").addEventListener("click", (e) => { e.preventDefault(); flip(); });
 el("nextBtn").addEventListener("click", next);
 el("prevBtn").addEventListener("click", prev);
+el("knownBtn").addEventListener("click", () => markKnown(true));
+el("learningBtn").addEventListener("click", () => markKnown(false));
+el("resetFlashBtn").addEventListener("click", () => {
+  if (!confirm("Clear seen/known progress for all flashcards?")) return;
+  seen = {};
+  known = {};
+  updateFlashStats();
+  renderTopics();
+  renderCard();
+  persistFlash();
+});
 document.addEventListener("keydown", e => {
   if (e.code === "Space" && !["INPUT","TEXTAREA","SELECT"].includes((e.target||{}).tagName)) {
     e.preventDefault();
@@ -505,17 +606,26 @@ document.addEventListener("keydown", e => {
 
 renderFilters();
 applyFilter();
-if (window.BS605SyncUI) {
-  BS605SyncUI.mount(document.getElementById("bs605-sync-root"), {
-    onLoaded: (payload) => {
-      restoreFlash(payload);
-      window.__BS605_SYNC_READY = true;
-    },
-    onReady: () => { window.__BS605_SYNC_READY = true; }
-  });
-} else {
-  window.__BS605_SYNC_READY = true;
+
+function bootSync(restoreFn) {
+  function apply(payload) {
+    if (payload && restoreFn) restoreFn(payload);
+    window.__BS605_SYNC_READY = true;
+  }
+  if (window.BS605SyncUI) {
+    BS605SyncUI.mount(document.getElementById("bs605-sync-root"), {
+      onLoaded: (payload) => apply(payload),
+      onReady: (payload) => {
+        if (window.__BS605_SYNC_READY) return;
+        apply(payload || (window.BS605Progress && BS605Progress.readLocalCache() || {}).payload || null);
+      }
+    });
+  } else {
+    apply((window.BS605Progress && BS605Progress.readLocalCache() || {}).payload || null);
+  }
 }
+
+bootSync(restoreFlash);
 </script>
 </body>
 </html>

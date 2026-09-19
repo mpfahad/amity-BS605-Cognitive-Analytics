@@ -238,6 +238,55 @@
     setStatus("idle", "Disconnected — enter a sync code to reconnect");
   }
 
+  /** Build plain progress numbers for home / tool headers. */
+  function summarize(payload, totals) {
+    const p = payload || {};
+    const t = totals || {};
+    const quizAnswers = (p.quiz && p.quiz.answers) || {};
+    const quizAttempted = Object.keys(quizAnswers).length;
+    const quizTotal = t.quizTotal || 0;
+    let quizCorrect = 0;
+    if (t.quizAnswerKey) {
+      Object.entries(quizAnswers).forEach(([id, chosen]) => {
+        if (t.quizAnswerKey[id] === chosen) quizCorrect += 1;
+      });
+    }
+
+    const seen = (p.flashcards && p.flashcards.seen) || {};
+    const known = (p.flashcards && p.flashcards.known) || {};
+    const flashSeen = Object.keys(seen).filter((k) => seen[k]).length;
+    const flashKnown = Object.keys(known).filter((k) => known[k]).length;
+    const flashTotal = t.flashTotal || 0;
+
+    const mapAnswers = p.mapAnswers || {};
+    let mapAttempted = 0;
+    let mapCorrect = 0;
+    let mapTotal = t.mapTotal || 0;
+    if (t.mapAnswerKey) {
+      Object.keys(t.mapAnswerKey).forEach((mid) => {
+        const answers = mapAnswers[mid] || {};
+        const key = t.mapAnswerKey[mid] || {};
+        Object.keys(key).forEach((qi) => {
+          if (answers[qi] !== undefined && answers[qi] !== null) {
+            mapAttempted += 1;
+            if (Number(answers[qi]) === Number(key[qi])) mapCorrect += 1;
+          }
+        });
+      });
+    } else {
+      Object.values(mapAnswers).forEach((byQ) => {
+        if (byQ && typeof byQ === "object") mapAttempted += Object.keys(byQ).length;
+      });
+    }
+
+    return {
+      quiz: { attempted: quizAttempted, correct: quizCorrect, total: quizTotal },
+      flashcards: { seen: flashSeen, known: flashKnown, total: flashTotal },
+      map: { attempted: mapAttempted, correct: mapCorrect, total: mapTotal },
+      savedAt: p.savedAt || null,
+    };
+  }
+
   global.BS605Progress = {
     configured,
     getCode,
@@ -250,6 +299,7 @@
     saveSection,
     saveProgressNow,
     mergePayload,
+    summarize,
     onStatus,
     getStatus: () => lastStatus,
     readLocalCache,
