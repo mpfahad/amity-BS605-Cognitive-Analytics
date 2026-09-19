@@ -25,3 +25,4 @@ python build_study_pages.py
 | --- | --- |
 | [SETUP-SYNC.md](SETUP-SYNC.md) | Supabase sync (5–10 min) |
 | [REPLICATE.md](REPLICATE.md) | How to clone this pack for **another subject** |
+| [MODULE-MAP.md](MODULE-MAP.md) | How the Module Map is built, criteria, gaps |

@@ -1184,15 +1184,26 @@ def enrich_maps_payload() -> dict:
                             points.append(f"{extra.get('front', '')}: {extra.get('back', '')}")
                     path = f"Module {mid} · {topic.get('id')} · {topic.get('title')}"
                     title = n.get("title") or topic.get("title")
+                    q_count = len(topic.get("mcqs") or [])
+                    fc_count = len(cards)
                 else:
                     path = n.get("path") or f"Module {mid}"
                     title = n["title"]
+                    q_count = 0
+                    fc_count = 0
+                if n.get("note"):
+                    points.insert(0, "Map note: " + n["note"])
                 nodes[nid] = {
                     "kind": n.get("kind", "a"),
                     "title": title,
                     "path": path,
                     "body": body or n.get("body") or "Open flashcards for this topic for full notes.",
                     "points": points,
+                    "topicId": str(n.get("topicId") or nid),
+                    "lmr": bool(n.get("lmr")),
+                    "note": n.get("note") or "",
+                    "qCount": q_count,
+                    "fcCount": fc_count,
                 }
                 level_nodes.append(
                     {
@@ -1200,6 +1211,8 @@ def enrich_maps_payload() -> dict:
                         "title": n["title"],
                         "sub": n.get("sub") or "",
                         "kind": n.get("kind", "a"),
+                        "topicId": str(n.get("topicId") or nid),
+                        "lmr": bool(n.get("lmr")),
                     }
                 )
             levels_out.append({"heading": level["heading"], "nodes": level_nodes})
@@ -1207,6 +1220,7 @@ def enrich_maps_payload() -> dict:
             {
                 "id": mid,
                 "title": mod["title"],
+                "weight": mod.get("weight") or "standard",
                 "rootId": root["id"],
                 "levels": levels_out,
                 "nodes": nodes,
@@ -1279,14 +1293,36 @@ MAP_CSS = SHARED_CSS + r"""
   font-size: .98rem; line-height: 1.2; margin-bottom: .15rem;
 }
 .node .n-sub { display: block; color: var(--muted); font-size: .78rem; line-height: 1.3; }
+.node .n-badge {
+  display: inline-block; margin-top: .35rem; font-size: .68rem; font-weight: 800;
+  letter-spacing: .04em; text-transform: uppercase; padding: .15rem .4rem;
+  border-radius: 999px; background: #f3dfd0; color: var(--warn);
+}
 .node.root {
   background: linear-gradient(145deg, #116b54, #0d4f3e);
   color: #fff; min-width: 220px; max-width: 300px; text-align: center;
 }
 .node.root .n-sub { color: rgba(255,255,255,.82); }
+.node.root .n-badge { background: rgba(255,255,255,.2); color: #fff; }
 .node.a { background: #d8efe4; border-color: rgba(15,107,76,.2); }
 .node.b { background: #f7e4d5; border-color: rgba(154,74,28,.22); }
 .node.c { background: #dceaf7; border-color: rgba(31,79,120,.2); }
+.node.lmr-node { box-shadow: 0 0 0 2px rgba(196,92,38,.35); }
+.chip.weight-high { border-color: rgba(196,92,38,.55); }
+.chip.weight-high.active { background: var(--accent-2); }
+.criteria-box {
+  margin: 0.7rem 0 0;
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.7);
+  border: 1px dashed var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+.criteria-box strong { color: var(--ink); }
+.filter-row { display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center; margin-top:0.65rem; }
+.qcard.dimmed { opacity: 0.38; }
 .branch-block {
   width: 100%; border: 1px dashed rgba(21,35,28,.16);
   border-radius: 16px; padding: .75rem; background: rgba(255,255,255,.45);
@@ -1367,7 +1403,7 @@ def build_module_map() -> str:
   <header class="hero">
     <div class="kicker">Amity · BS605 · Module Map</div>
     <h1>Structure maps &amp; important questions</h1>
-    <p class="lede">Switch modules below. Click any card in the flow for definitions and exam tips — then practise that module’s important MCQs (same bank as the quiz).</p>
+    <p class="lede">Switch modules below. Click any card in the flow for definitions and exam tips — questions below filter to that topic. Orange <strong>LMR</strong> badges mark last-minute revision priorities.</p>
     <div class="navrow">
       <a class="btn" href="#questions">Important questions</a>
     </div>
@@ -1382,6 +1418,12 @@ def build_module_map() -> str:
     <div class="progress" style="margin-bottom:0.85rem"><span id="mapProgressBar"></span></div>
     <div class="summary-grid" id="mapStats"></div>
     <div class="filters" id="moduleFilters"></div>
+    <div class="criteria-box">
+      <strong>How this map is built:</strong>
+      One card ≈ one study topic from the SLM outline (some SLM sections are merged when they share one exam idea).
+      Grouped left→right / top→bottom by theme. Colours = topic groups.
+      <strong>Exam weight:</strong> Module 2 is marked high (faculty). Orange outline = LMR priority.
+    </div>
     {SYNC_PANEL}
   </section>
 
@@ -1394,6 +1436,7 @@ def build_module_map() -> str:
         <span><i class="swatch" style="background:#d8efe4"></i> Group A</span>
         <span><i class="swatch" style="background:#f7e4d5"></i> Group B</span>
         <span><i class="swatch" style="background:#dceaf7"></i> Group C</span>
+        <span><i class="swatch" style="background:#f3dfd0;outline:2px solid rgba(196,92,38,.45)"></i> LMR priority</span>
       </div>
       <div class="tree" id="tree"></div>
     </section>
@@ -1407,7 +1450,11 @@ def build_module_map() -> str:
 
   <section class="quiz-panel" id="questions">
     <h2 id="questionsTitle">Important questions</h2>
-    <p class="lede" style="margin:0">Practice these after you walk the map. Tap an option to check.</p>
+    <p class="lede" style="margin:0">Practice after you walk the map. Tap a map card to focus questions on that topic.</p>
+    <div class="filter-row">
+      <button type="button" class="btn primary" id="showAllQs">Show all module questions</button>
+      <span class="meta" style="margin:0" id="qFilterLabel">Showing all</span>
+    </div>
     <div class="qlist" id="qlist"></div>
   </section>
 </div>
@@ -1418,6 +1465,8 @@ let current = MAPS.modules[0];
 /** mapAnswers: {{ [moduleId]: {{ [questionIndex]: selectedOption }} }} */
 let mapAnswers = {{}};
 let restoring = false;
+let topicFilter = null; // topicId string or null
+let selectedNodeId = null;
 
 const el = id => document.getElementById(id);
 const mapProgressBar = el("mapProgressBar");
@@ -1426,6 +1475,12 @@ el("mapAllTotal").textContent = mapAllTotal;
 
 function currentModule() {{
   return MAPS.modules.find(m => String(m.id) === String(activeModuleId)) || MAPS.modules[0];
+}}
+
+function weightLabel(w) {{
+  if (w === "high") return " · exam focus";
+  if (w === "foundation") return " · foundation";
+  return "";
 }}
 
 function updateMapStats() {{
@@ -1444,13 +1499,12 @@ function updateMapStats() {{
   el("mapModCorrect").textContent = correct;
   mapProgressBar.style.width = list.length ? ((attempted / list.length) * 100) + "%" : "0%";
 
-  let allA = 0, allC = 0;
+  let allA = 0;
   MAPS.modules.forEach(m => {{
     const ans = mapAnswers[String(m.id)] || {{}};
     (m.questions || []).forEach((item, qi) => {{
       if (ans[qi] === undefined || ans[qi] === null) return;
       allA += 1;
-      if (Number(ans[qi]) === item.answer) allC += 1;
     }});
   }});
   el("mapAllAttempted").textContent = allA;
@@ -1465,7 +1519,8 @@ function updateMapStats() {{
       if (Number(ans[qi]) === item.answer) c += 1;
     }});
     const pct = qs.length ? Math.round((a / qs.length) * 100) : 0;
-    return `<div class="stat"><b>${{c}}/${{qs.length}}</b><span>Module ${{m.id}} · ${{a}} answered</span><div class="prog-line"><i style="width:${{pct}}%"></i></div></div>`;
+    const w = m.weight === "high" ? " · high weight" : "";
+    return `<div class="stat"><b>${{c}}/${{qs.length}}</b><span>Module ${{m.id}}${{w}} · ${{a}} answered</span><div class="prog-line"><i style="width:${{pct}}%"></i></div></div>`;
   }}).join("");
 }}
 
@@ -1473,7 +1528,7 @@ function persistMap() {{
   if (restoring || !window.BS605Progress || !window.__BS605_SYNC_READY) return;
   BS605Progress.saveProgress({{
     mapAnswers: mapAnswers,
-    mapMeta: {{ activeModuleId: String(activeModuleId) }}
+    mapMeta: {{ activeModuleId: String(activeModuleId), topicFilter: topicFilter, selectedNodeId: selectedNodeId }}
   }});
 }}
 
@@ -1482,58 +1537,90 @@ function restoreMap(payload) {{
   restoring = true;
   if (payload.mapAnswers && typeof payload.mapAnswers === "object") mapAnswers = payload.mapAnswers;
   if (payload.mapMeta && payload.mapMeta.activeModuleId) activeModuleId = String(payload.mapMeta.activeModuleId);
+  if (payload.mapMeta) {{
+    topicFilter = payload.mapMeta.topicFilter || null;
+    selectedNodeId = payload.mapMeta.selectedNodeId || null;
+  }}
   renderAll();
   restoring = false;
 }}
 
 function renderFilters() {{
   const box = el("moduleFilters");
-  box.innerHTML = MAPS.modules.map(m =>
-    `<button type="button" class="chip ${{String(activeModuleId)===String(m.id)?"active":""}}" data-m="${{m.id}}">M${{m.id}}: ${{m.title}}</button>`
-  ).join("");
+  box.innerHTML = MAPS.modules.map(m => {{
+    const wClass = m.weight === "high" ? " weight-high" : "";
+    return `<button type="button" class="chip${{wClass}} ${{String(activeModuleId)===String(m.id)?"active":""}}" data-m="${{m.id}}">M${{m.id}}: ${{m.title}}${{weightLabel(m.weight)}}</button>`;
+  }}).join("");
   box.querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {{
     activeModuleId = btn.dataset.m;
+    topicFilter = null;
+    selectedNodeId = null;
     renderAll();
     persistMap();
   }}));
 }}
 
-function makeNode(id, title, sub, cls) {{
-  return `<button type="button" class="node ${{cls}}" data-id="${{id}}"><span class="n-title">${{title}}</span><span class="n-sub">${{sub || ""}}</span></button>`;
+function makeNode(id, title, sub, cls, lmr) {{
+  const badge = lmr ? `<span class="n-badge">LMR</span>` : "";
+  const lmrCls = lmr ? " lmr-node" : "";
+  return `<button type="button" class="node ${{cls}}${{lmrCls}}" data-id="${{id}}"><span class="n-title">${{title}}</span><span class="n-sub">${{sub || ""}}</span>${{badge}}</button>`;
 }}
 
 function renderTree() {{
   current = currentModule();
   el("flowLabel").textContent = `Module ${{current.id}} · Interactive flow`;
   const parts = [];
-  parts.push(`<div class="level">${{makeNode(current.rootId, current.nodes[current.rootId].title, current.nodes[current.rootId].path, "root")}}</div>`);
+  parts.push(`<div class="level">${{makeNode(current.rootId, current.nodes[current.rootId].title, current.nodes[current.rootId].path, "root", false)}}</div>`);
   current.levels.forEach(level => {{
     parts.push(`<div class="connectors"></div>`);
-    const row = level.nodes.map(n => makeNode(n.id, n.title, n.sub, n.kind || "a")).join("");
+    const row = level.nodes.map(n => makeNode(n.id, n.title, n.sub, n.kind || "a", n.lmr)).join("");
     parts.push(`<div class="branch-block"><h3>${{level.heading}}</h3><div class="row">${{row}}</div></div>`);
   }});
   el("tree").innerHTML = parts.join("");
   el("tree").querySelectorAll(".node").forEach(btn => {{
     btn.addEventListener("click", () => showNode(btn.dataset.id));
   }});
-  showNode(current.rootId);
+  showNode(selectedNodeId && current.nodes[selectedNodeId] ? selectedNodeId : current.rootId);
 }}
 
 function showNode(id) {{
   const n = current.nodes[id];
   if (!n) return;
+  selectedNodeId = id;
   document.querySelectorAll(".node").forEach(node => node.classList.toggle("active", node.dataset.id === id));
   const points = (n.points || []).map(p => `<li>${{p}}</li>`).join("");
+  const lmrLine = n.lmr ? `<span class="detail-kicker" style="background:#f8e5d8;color:var(--warn)">LMR priority</span>` : "";
+  const counts = n.kind === "root" ? "" : `<p class="parent-path">${{n.fcCount || 0}} flashcards · ${{n.qCount || 0}} MCQs in bank</p>`;
   el("detailContent").innerHTML = `
+    ${{lmrLine}}
     <div class="detail-kicker">${{n.kind === "root" ? "Module" : "Topic"}}</div>
     <h2 class="detail-title">${{n.title}}</h2>
     <p class="parent-path">${{n.path || ""}}</p>
+    ${{counts}}
     <p class="detail-body">${{n.body || ""}}</p>
     ${{points ? `<ul class="detail-points">${{points}}</ul>` : ""}}
+    ${{n.kind !== "root" ? `<div class="navrow" style="margin-top:0.8rem"><button type="button" class="btn primary" id="focusQsBtn">Practice this topic</button></div>` : ""}}
   `;
+  const focusBtn = el("focusQsBtn");
+  if (focusBtn) {{
+    focusBtn.addEventListener("click", () => {{
+      topicFilter = n.topicId || id;
+      renderQuestions();
+      persistMap();
+      el("questions").scrollIntoView({{ behavior: "smooth", block: "start" }});
+    }});
+  }}
+  if (n.kind !== "root") {{
+    topicFilter = n.topicId || id;
+    renderQuestions();
+  }} else {{
+    topicFilter = null;
+    renderQuestions();
+  }}
   if (window.matchMedia("(max-width: 920px)").matches) {{
     el("detailPanel").scrollIntoView({{ behavior: "smooth", block: "nearest" }});
   }}
+  if (!restoring) persistMap();
 }}
 
 function applySavedAnswer(qi) {{
@@ -1558,15 +1645,28 @@ function renderQuestions() {{
   el("questionsTitle").textContent = `Important questions — Module ${{current.id}}`;
   const letters = ["A","B","C","D"];
   const list = current.questions || [];
-  el("qlist").innerHTML = list.map((item, qi) => {{
+  const filtered = topicFilter
+    ? list.map((item, qi) => ({{item, qi}})).filter(x => String(x.item.topicId) === String(topicFilter))
+    : list.map((item, qi) => ({{item, qi}}));
+  el("qFilterLabel").textContent = topicFilter
+    ? `Focused on topic ${{topicFilter}} (${{filtered.length}} of ${{list.length}})`
+    : `Showing all ${{list.length}} questions`;
+  el("qlist").innerHTML = filtered.map(({{item, qi}}) => {{
     const opts = item.options.map((o, i) =>
       `<button type="button" class="opt" data-q="${{qi}}" data-i="${{i}}"><strong>${{letters[i]}}.</strong> ${{o}}</button>`
     ).join("");
     return `<article class="qcard" id="q${{qi}}"><p class="qmeta">${{item.topicId}} · ${{item.topicTitle}}</p><h3>${{qi+1}}. ${{item.q}}</h3><div class="opts">${{opts}}</div><div class="explain" id="ex${{qi}}"></div></article>`;
-  }}).join("") || `<p class="detail-empty">No MCQs for this module.</p>`;
-  list.forEach((_, qi) => applySavedAnswer(qi));
+  }}).join("") || `<p class="detail-empty">No MCQs for this filter.</p>`;
+  filtered.forEach(({{qi}}) => applySavedAnswer(qi));
   updateMapStats();
 }}
+
+el("showAllQs").addEventListener("click", () => {{
+  topicFilter = null;
+  selectedNodeId = current.rootId;
+  renderTree();
+  persistMap();
+}});
 
 el("qlist").addEventListener("click", e => {{
   const btn = e.target.closest(".opt");
@@ -1593,7 +1693,6 @@ el("qlist").addEventListener("click", e => {{
 function renderAll() {{
   renderFilters();
   renderTree();
-  renderQuestions();
 }}
 
 renderAll();
