@@ -1,6 +1,5 @@
-// Public anon config for BS605 sync (safe to commit).
-// Fill after creating a free Supabase project and running supabase/setup.sql
+// Public anon config for BS605 sync (safe to commit — this is the publishable/anon key).
 window.BS605_SYNC = {
-  url: "YOUR_SUPABASE_URL",
-  anonKey: "YOUR_SUPABASE_ANON_KEY"
+  url: "https://qftkaanjsoxhapuhjjzh.supabase.co",
+  anonKey: "sb_publishable_a-B25c5pXPtOnMVivMnELQ_RkbLxpCc"
 };
