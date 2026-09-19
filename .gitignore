@@ -1,0 +1,7 @@
+﻿__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+_extracted_*.txt
+_content_brief.md
+_chunk_*.txt
