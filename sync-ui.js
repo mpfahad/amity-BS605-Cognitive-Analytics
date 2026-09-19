@@ -95,6 +95,9 @@
           <button type="button" class="btn" id="bs605SyncChange">Change code</button>
           <button type="button" class="btn" id="bs605SyncClear">Disconnect</button>
         </div>
+        <div class="bs605-sync-row" style="margin-top:0.55rem">
+          <button type="button" class="btn" id="bs605ClearProgress">Clear progress</button>
+        </div>
         <div class="status" id="bs605SyncStatus">…</div>
       </div>
     `;
@@ -147,6 +150,11 @@
       input.value = "";
       setConnectedMode(false);
       if (opts && typeof opts.onCleared === "function") opts.onCleared();
+    });
+    root.querySelector("#bs605ClearProgress").addEventListener("click", async () => {
+      if (!confirm("Clear all progress (quiz, flashcards, module map)? This cannot be undone.")) return;
+      await P.clearProgress();
+      window.location.reload();
     });
 
     // Auto-connect if this device already has a code — no need to click Connect again

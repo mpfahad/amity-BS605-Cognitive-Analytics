@@ -238,6 +238,18 @@
     setStatus("idle", "Disconnected — enter a sync code to reconnect");
   }
 
+  /** Wipe quiz / flashcards / map progress (keeps sync code if connected). */
+  async function clearProgress() {
+    const empty = { savedAt: new Date().toISOString() };
+    writeLocalCache(empty, empty.savedAt);
+    if (getCode() && configured()) {
+      await saveProgressNow(empty);
+    } else {
+      setStatus("idle", getCode() ? "Progress cleared" : "Progress cleared on this device");
+    }
+    return empty;
+  }
+
   /** Build plain progress numbers for home / tool headers. */
   function summarize(payload, totals) {
     const p = payload || {};
@@ -300,6 +312,7 @@
     saveProgressNow,
     mergePayload,
     summarize,
+    clearProgress,
     onStatus,
     getStatus: () => lastStatus,
     readLocalCache,
