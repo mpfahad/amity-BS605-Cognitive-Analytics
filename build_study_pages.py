@@ -408,6 +408,15 @@ def links_html() -> str:
     return '<div class="links">' + "".join(items) + "</div>"
 
 
+SYNC_HEAD = """
+<script src="config.js"></script>
+<script src="progress.js"></script>
+<script src="sync-ui.js"></script>
+"""
+
+SYNC_PANEL = '<div id="bs605-sync-root"></div>'
+
+
 def build_flashcards() -> str:
     data_json = json.dumps(DATA, ensure_ascii=False)
     lmr_items = []
@@ -429,6 +438,7 @@ def build_flashcards() -> str:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
 <style>{FLASH_CSS}</style>
+{SYNC_HEAD}
 </head>
 <body>
 <div class="wrap">
@@ -451,6 +461,7 @@ def build_flashcards() -> str:
     </div>
     <div class="filters" id="moduleFilters"></div>
     {links_html()}
+    {SYNC_PANEL}
   </section>
 
   <section class="stage">
@@ -539,6 +550,35 @@ function renderFilters() {{
   }}));
 }}
 
+function persistFlash() {{
+  if (!window.BS605Progress || !window.__BS605_SYNC_READY) return;
+  const prev = BS605Progress.readLocalCache()?.payload || {{}};
+  BS605Progress.saveProgress({{
+    version: 1,
+    flashcards: {{
+      activeModule: String(activeModule),
+      index: index,
+      flipped: flipped
+    }},
+    quiz: prev.quiz,
+    savedAt: new Date().toISOString()
+  }});
+}}
+
+function restoreFlash(payload) {{
+  if (!payload || !payload.flashcards) return;
+  const f = payload.flashcards;
+  if (f.activeModule !== undefined) activeModule = String(f.activeModule);
+  applyFilter();
+  if (typeof f.index === "number" && filtered.length) {{
+    index = Math.max(0, Math.min(filtered.length - 1, f.index));
+  }}
+  flipped = Boolean(f.flipped);
+  renderFilters();
+  renderTopics();
+  renderCard();
+}}
+
 function applyFilter() {{
   filtered = activeModule === "all" ? deck.slice() : deck.filter(c => String(c.moduleId) === String(activeModule));
   index = 0;
@@ -546,6 +586,7 @@ function applyFilter() {{
   el("countCards").textContent = filtered.length;
   renderTopics();
   renderCard();
+  persistFlash();
 }}
 
 function renderTopics() {{
@@ -561,7 +602,7 @@ function renderTopics() {{
   }}).join("");
   el("topicList").querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {{
     const i = filtered.findIndex(c => c.topicId === btn.dataset.topic);
-    if (i >= 0) {{ index = i; flipped = false; renderCard(); renderTopics(); }}
+    if (i >= 0) {{ index = i; flipped = false; renderCard(); renderTopics(); persistFlash(); }}
   }}));
 }}
 
@@ -594,9 +635,10 @@ function flip() {{
   card.classList.toggle("flipped", flipped);
   card.setAttribute("aria-label", flipped ? "Hide answer" : "Reveal answer");
   el("flipBtn").textContent = flipped ? "Hide answer" : "Reveal answer";
+  persistFlash();
 }}
-function next() {{ if (!filtered.length) return; index = (index + 1) % filtered.length; flipped = false; renderCard(); renderTopics(); }}
-function prev() {{ if (!filtered.length) return; index = (index - 1 + filtered.length) % filtered.length; flipped = false; renderCard(); renderTopics(); }}
+function next() {{ if (!filtered.length) return; index = (index + 1) % filtered.length; flipped = false; renderCard(); renderTopics(); persistFlash(); }}
+function prev() {{ if (!filtered.length) return; index = (index - 1 + filtered.length) % filtered.length; flipped = false; renderCard(); renderTopics(); persistFlash(); }}
 
 card.addEventListener("click", (e) => {{ e.preventDefault(); flip(); }});
 el("flipBtn").addEventListener("click", (e) => {{ e.preventDefault(); flip(); }});
@@ -613,6 +655,17 @@ document.addEventListener("keydown", e => {{
 
 renderFilters();
 applyFilter();
+if (window.BS605SyncUI) {{
+  BS605SyncUI.mount(document.getElementById("bs605-sync-root"), {{
+    onLoaded: (payload) => {{
+      restoreFlash(payload);
+      window.__BS605_SYNC_READY = true;
+    }},
+    onReady: () => {{ window.__BS605_SYNC_READY = true; }}
+  }});
+}} else {{
+  window.__BS605_SYNC_READY = true;
+}}
 </script>
 </body>
 </html>
@@ -631,6 +684,7 @@ def build_quiz() -> str:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
 <style>{QUIZ_CSS}</style>
+{SYNC_HEAD}
 </head>
 <body>
 <div class="wrap">
@@ -658,6 +712,7 @@ def build_quiz() -> str:
     <div class="filters" id="moduleFilters" style="margin-top:0.9rem"></div>
     <div class="summary-grid" id="moduleStats"></div>
     {links_html()}
+    {SYNC_PANEL}
   </section>
 
   <section class="quiz-layout" style="margin-top:1rem">
@@ -718,6 +773,48 @@ function currentList() {{
   return filteredIds.map(i => bank[i]);
 }}
 
+function persistQuiz() {{
+  if (!window.BS605Progress || !window.__BS605_SYNC_READY) return;
+  const prev = BS605Progress.readLocalCache()?.payload || {{}};
+  BS605Progress.saveProgress({{
+    version: 1,
+    flashcards: prev.flashcards,
+    quiz: {{
+      activeModule: String(activeModule),
+      index: index,
+      answers: {{ ...state }},
+      filteredIds: filteredIds.slice(),
+      order: order.slice()
+    }},
+    savedAt: new Date().toISOString()
+  }});
+}}
+
+function restoreQuiz(payload) {{
+  if (!payload || !payload.quiz) return;
+  const q = payload.quiz;
+  if (q.activeModule !== undefined) activeModule = String(q.activeModule);
+  Object.keys(state).forEach(k => delete state[k]);
+  if (q.answers && typeof q.answers === "object") {{
+    Object.entries(q.answers).forEach(([k, v]) => {{ state[k] = v; }});
+  }}
+  if (Array.isArray(q.order) && q.order.length === bank.length) order = q.order.slice();
+  applyFilter(true);
+  if (Array.isArray(q.filteredIds) && q.filteredIds.length) {{
+    const allowed = new Set(bank.map((_, i) => i).filter(i => activeModule === "all" || String(bank[i].moduleId) === String(activeModule)));
+    filteredIds = q.filteredIds.filter(i => allowed.has(i));
+    if (!filteredIds.length) applyFilter(false);
+  }}
+  if (typeof q.index === "number" && filteredIds.length) {{
+    index = Math.max(0, Math.min(filteredIds.length - 1, q.index));
+  }}
+  el("totalQ").textContent = filteredIds.length;
+  renderFilters();
+  renderStats();
+  renderQuestion();
+  updateScore();
+}}
+
 function applyFilter(preserveShuffle=false) {{
   const base = bank.map((q, i) => ({{q, i}})).filter(x => activeModule === "all" || String(x.q.moduleId) === String(activeModule)).map(x => x.i);
   filteredIds = preserveShuffle ? order.filter(i => base.includes(i)) : base;
@@ -728,6 +825,7 @@ function applyFilter(preserveShuffle=false) {{
   renderStats();
   renderQuestion();
   updateScore();
+  persistQuiz();
 }}
 
 function renderFilters() {{
@@ -786,6 +884,7 @@ function renderQuestion() {{
     state[q.id] = Number(btn.dataset.i);
     renderQuestion();
     updateScore();
+    persistQuiz();
   }}));
   const explain = el("explain");
   if (chosen !== undefined) {{
@@ -803,17 +902,20 @@ el("nextBtn").addEventListener("click", () => {{
   if (!list.length) return;
   index = (index + 1) % list.length;
   renderQuestion();
+  persistQuiz();
 }});
 el("prevBtn").addEventListener("click", () => {{
   const list = currentList();
   if (!list.length) return;
   index = (index - 1 + list.length) % list.length;
   renderQuestion();
+  persistQuiz();
 }});
 el("resetBtn").addEventListener("click", () => {{
   Object.keys(state).forEach(k => delete state[k]);
   updateScore();
   renderQuestion();
+  persistQuiz();
 }});
 el("shuffleBtn").addEventListener("click", () => {{
   const base = bank.map((q, i) => i).filter(i => activeModule === "all" || String(bank[i].moduleId) === String(activeModule));
@@ -821,6 +923,7 @@ el("shuffleBtn").addEventListener("click", () => {{
   order = shuffle(bank.map((_, i) => i));
   index = 0;
   renderQuestion();
+  persistQuiz();
 }});
 
 document.addEventListener("keydown", e => {{
@@ -834,6 +937,17 @@ document.addEventListener("keydown", e => {{
 }});
 
 applyFilter(false);
+if (window.BS605SyncUI) {{
+  BS605SyncUI.mount(document.getElementById("bs605-sync-root"), {{
+    onLoaded: (payload) => {{
+      restoreQuiz(payload);
+      window.__BS605_SYNC_READY = true;
+    }},
+    onReady: () => {{ window.__BS605_SYNC_READY = true; }}
+  }});
+}} else {{
+  window.__BS605_SYNC_READY = true;
+}}
 </script>
 </body>
 </html>
@@ -868,13 +982,14 @@ def main() -> None:
 .cards h2 {{ font-family:var(--font-display); margin:0 0 .4rem; font-size:1.45rem; }}
 .cards p {{ margin:0; color:var(--muted); }}
 </style>
+{SYNC_HEAD}
 </head>
 <body>
 <div class="wrap">
   <header class="hero">
     <div class="kicker">Amity University Online · BS605</div>
     <h1>Cognitive Analytics &amp; Social Skills study pack</h1>
-    <p class="lede">Built from your SLM PDF and Live Class 2–3 transcripts — flashcards for quick revision and module-wise objective questions for practice.</p>
+    <p class="lede">Built from your SLM PDF and Live Class 2–3 transcripts — flashcards for quick revision and module-wise objective questions for practice. Use one sync code on every device to keep progress.</p>
   </header>
   <div class="cards">
     <a href="flashcards.html"><h2>Flashcards</h2><p>63 topic cards across 5 modules with LMR priority list.</p></a>
@@ -884,8 +999,17 @@ def main() -> None:
   <section class="panel" style="margin-top:1.2rem">
     <strong>Materials &amp; transcripts</strong>
     {links_html()}
+    {SYNC_PANEL}
   </section>
 </div>
+<script>
+if (window.BS605SyncUI) {{
+  BS605SyncUI.mount(document.getElementById("bs605-sync-root"), {{
+    onReady: () => {{ window.__BS605_SYNC_READY = true; }},
+    onLoaded: () => {{ window.__BS605_SYNC_READY = true; }}
+  }});
+}}
+</script>
 </body>
 </html>
 """,

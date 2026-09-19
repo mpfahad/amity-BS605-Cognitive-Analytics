@@ -8,8 +8,12 @@ This repo is **only** for BS605. It does not replace or overwrite the PFE701 / m
 Open `index.html` in a browser.
 
 ## Online (GitHub Pages)
-After Pages is enabled on `main` / root:
-`https://mpfahad.github.io/amity-BS605-Cognitive-Analytics/`
+https://mpfahad.github.io/amity-BS605-Cognitive-Analytics/
+
+## Cross-device progress
+Use the **Sync progress** panel (same private sync code on phone and PC).
+
+One-time backend setup: [SETUP-SYNC.md](SETUP-SYNC.md) (free Supabase project + paste URL/anon key into `config.js`).
 
 ## Rebuild
 `python build_study_pages.py`

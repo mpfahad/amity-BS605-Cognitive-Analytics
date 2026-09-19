@@ -252,6 +252,11 @@ h1 {
 }
 .stat b { display: block; font-size: 1.4rem; font-family: var(--font-display); }
 </style>
+
+<script src="config.js"></script>
+<script src="progress.js"></script>
+<script src="sync-ui.js"></script>
+
 </head>
 <body>
 <div class="wrap">
@@ -279,6 +284,7 @@ h1 {
     <div class="filters" id="moduleFilters" style="margin-top:0.9rem"></div>
     <div class="summary-grid" id="moduleStats"></div>
     <div class="links"><a class="" href="Live Class 2 Transcript.txt" target="_blank" rel="noopener">Live Class 2 transcript</a><a class="" href="Live Class 3 Transcript.txt" target="_blank" rel="noopener">Live Class 3 transcript</a><a class="lmr-link" href="Congnitive Analytics and Social skill for Profession W F 1.pdf" target="_blank" rel="noopener">Study PDF (SLM)</a></div>
+    <div id="bs605-sync-root"></div>
   </section>
 
   <section class="quiz-layout" style="margin-top:1rem">
@@ -339,6 +345,48 @@ function currentList() {
   return filteredIds.map(i => bank[i]);
 }
 
+function persistQuiz() {
+  if (!window.BS605Progress || !window.__BS605_SYNC_READY) return;
+  const prev = BS605Progress.readLocalCache()?.payload || {};
+  BS605Progress.saveProgress({
+    version: 1,
+    flashcards: prev.flashcards,
+    quiz: {
+      activeModule: String(activeModule),
+      index: index,
+      answers: { ...state },
+      filteredIds: filteredIds.slice(),
+      order: order.slice()
+    },
+    savedAt: new Date().toISOString()
+  });
+}
+
+function restoreQuiz(payload) {
+  if (!payload || !payload.quiz) return;
+  const q = payload.quiz;
+  if (q.activeModule !== undefined) activeModule = String(q.activeModule);
+  Object.keys(state).forEach(k => delete state[k]);
+  if (q.answers && typeof q.answers === "object") {
+    Object.entries(q.answers).forEach(([k, v]) => { state[k] = v; });
+  }
+  if (Array.isArray(q.order) && q.order.length === bank.length) order = q.order.slice();
+  applyFilter(true);
+  if (Array.isArray(q.filteredIds) && q.filteredIds.length) {
+    const allowed = new Set(bank.map((_, i) => i).filter(i => activeModule === "all" || String(bank[i].moduleId) === String(activeModule)));
+    filteredIds = q.filteredIds.filter(i => allowed.has(i));
+    if (!filteredIds.length) applyFilter(false);
+  }
+  if (typeof q.index === "number" && filteredIds.length) {
+    index = Math.max(0, Math.min(filteredIds.length - 1, q.index));
+  }
+  el("totalQ").textContent = filteredIds.length;
+  renderFilters();
+  renderStats();
+  renderQuestion();
+  updateScore();
+}
+
 function applyFilter(preserveShuffle=false) {
   const base = bank.map((q, i) => ({q, i})).filter(x => activeModule === "all" || String(x.q.moduleId) === String(activeModule)).map(x => x.i);
   filteredIds = preserveShuffle ? order.filter(i => base.includes(i)) : base;
@@ -349,6 +397,7 @@ function applyFilter(preserveShuffle=false) {
   renderStats();
   renderQuestion();
   updateScore();
+  persistQuiz();
 }
 
 function renderFilters() {
@@ -407,6 +456,7 @@ function renderQuestion() {
     state[q.id] = Number(btn.dataset.i);
     renderQuestion();
     updateScore();
+    persistQuiz();
   }));
   const explain = el("explain");
   if (chosen !== undefined) {
@@ -424,17 +474,20 @@ el("nextBtn").addEventListener("click", () => {
   if (!list.length) return;
   index = (index + 1) % list.length;
   renderQuestion();
+  persistQuiz();
 });
 el("prevBtn").addEventListener("click", () => {
   const list = currentList();
   if (!list.length) return;
   index = (index - 1 + list.length) % list.length;
   renderQuestion();
+  persistQuiz();
 });
 el("resetBtn").addEventListener("click", () => {
   Object.keys(state).forEach(k => delete state[k]);
   updateScore();
   renderQuestion();
+  persistQuiz();
 });
 el("shuffleBtn").addEventListener("click", () => {
   const base = bank.map((q, i) => i).filter(i => activeModule === "all" || String(bank[i].moduleId) === String(activeModule));
@@ -442,6 +495,7 @@ el("shuffleBtn").addEventListener("click", () => {
   order = shuffle(bank.map((_, i) => i));
   index = 0;
   renderQuestion();
+  persistQuiz();
 });
 
 document.addEventListener("keydown", e => {
@@ -455,6 +509,17 @@ document.addEventListener("keydown", e => {
 });
 
 applyFilter(false);
+if (window.BS605SyncUI) {
+  BS605SyncUI.mount(document.getElementById("bs605-sync-root"), {
+    onLoaded: (payload) => {
+      restoreQuiz(payload);
+      window.__BS605_SYNC_READY = true;
+    },
+    onReady: () => { window.__BS605_SYNC_READY = true; }
+  });
+} else {
+  window.__BS605_SYNC_READY = true;
+}
 </script>
 </body>
 </html>

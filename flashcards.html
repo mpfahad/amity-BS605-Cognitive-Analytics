@@ -289,6 +289,11 @@ h1 {
 .lmr-box ol { margin: 0.4rem 0 0; padding-left: 1.2rem; color: var(--muted); }
 .lmr-box li { margin: 0.35rem 0; }
 </style>
+
+<script src="config.js"></script>
+<script src="progress.js"></script>
+<script src="sync-ui.js"></script>
+
 </head>
 <body>
 <div class="wrap">
@@ -311,6 +316,7 @@ h1 {
     </div>
     <div class="filters" id="moduleFilters"></div>
     <div class="links"><a class="" href="Live Class 2 Transcript.txt" target="_blank" rel="noopener">Live Class 2 transcript</a><a class="" href="Live Class 3 Transcript.txt" target="_blank" rel="noopener">Live Class 3 transcript</a><a class="lmr-link" href="Congnitive Analytics and Social skill for Profession W F 1.pdf" target="_blank" rel="noopener">Study PDF (SLM)</a></div>
+    <div id="bs605-sync-root"></div>
   </section>
 
   <section class="stage">
@@ -399,6 +405,35 @@ function renderFilters() {
   }));
 }
 
+function persistFlash() {
+  if (!window.BS605Progress || !window.__BS605_SYNC_READY) return;
+  const prev = BS605Progress.readLocalCache()?.payload || {};
+  BS605Progress.saveProgress({
+    version: 1,
+    flashcards: {
+      activeModule: String(activeModule),
+      index: index,
+      flipped: flipped
+    },
+    quiz: prev.quiz,
+    savedAt: new Date().toISOString()
+  });
+}
+
+function restoreFlash(payload) {
+  if (!payload || !payload.flashcards) return;
+  const f = payload.flashcards;
+  if (f.activeModule !== undefined) activeModule = String(f.activeModule);
+  applyFilter();
+  if (typeof f.index === "number" && filtered.length) {
+    index = Math.max(0, Math.min(filtered.length - 1, f.index));
+  }
+  flipped = Boolean(f.flipped);
+  renderFilters();
+  renderTopics();
+  renderCard();
+}
+
 function applyFilter() {
   filtered = activeModule === "all" ? deck.slice() : deck.filter(c => String(c.moduleId) === String(activeModule));
   index = 0;
@@ -406,6 +441,7 @@ function applyFilter() {
   el("countCards").textContent = filtered.length;
   renderTopics();
   renderCard();
+  persistFlash();
 }
 
 function renderTopics() {
@@ -421,7 +457,7 @@ function renderTopics() {
   }).join("");
   el("topicList").querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {
     const i = filtered.findIndex(c => c.topicId === btn.dataset.topic);
-    if (i >= 0) { index = i; flipped = false; renderCard(); renderTopics(); }
+    if (i >= 0) { index = i; flipped = false; renderCard(); renderTopics(); persistFlash(); }
   }));
 }
 
@@ -454,9 +490,10 @@ function flip() {
   card.classList.toggle("flipped", flipped);
   card.setAttribute("aria-label", flipped ? "Hide answer" : "Reveal answer");
   el("flipBtn").textContent = flipped ? "Hide answer" : "Reveal answer";
+  persistFlash();
 }
-function next() { if (!filtered.length) return; index = (index + 1) % filtered.length; flipped = false; renderCard(); renderTopics(); }
-function prev() { if (!filtered.length) return; index = (index - 1 + filtered.length) % filtered.length; flipped = false; renderCard(); renderTopics(); }
+function next() { if (!filtered.length) return; index = (index + 1) % filtered.length; flipped = false; renderCard(); renderTopics(); persistFlash(); }
+function prev() { if (!filtered.length) return; index = (index - 1 + filtered.length) % filtered.length; flipped = false; renderCard(); renderTopics(); persistFlash(); }
 
 card.addEventListener("click", (e) => { e.preventDefault(); flip(); });
 el("flipBtn").addEventListener("click", (e) => { e.preventDefault(); flip(); });
@@ -473,6 +510,17 @@ document.addEventListener("keydown", e => {
 
 renderFilters();
 applyFilter();
+if (window.BS605SyncUI) {
+  BS605SyncUI.mount(document.getElementById("bs605-sync-root"), {
+    onLoaded: (payload) => {
+      restoreFlash(payload);
+      window.__BS605_SYNC_READY = true;
+    },
+    onReady: () => { window.__BS605_SYNC_READY = true; }
+  });
+} else {
+  window.__BS605_SYNC_READY = true;
+}
 </script>
 </body>
 </html>

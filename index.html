@@ -174,13 +174,18 @@ h1 {
 .cards h2 { font-family:var(--font-display); margin:0 0 .4rem; font-size:1.45rem; }
 .cards p { margin:0; color:var(--muted); }
 </style>
+
+<script src="config.js"></script>
+<script src="progress.js"></script>
+<script src="sync-ui.js"></script>
+
 </head>
 <body>
 <div class="wrap">
   <header class="hero">
     <div class="kicker">Amity University Online · BS605</div>
     <h1>Cognitive Analytics &amp; Social Skills study pack</h1>
-    <p class="lede">Built from your SLM PDF and Live Class 2–3 transcripts — flashcards for quick revision and module-wise objective questions for practice.</p>
+    <p class="lede">Built from your SLM PDF and Live Class 2–3 transcripts — flashcards for quick revision and module-wise objective questions for practice. Use one sync code on every device to keep progress.</p>
   </header>
   <div class="cards">
     <a href="flashcards.html"><h2>Flashcards</h2><p>63 topic cards across 5 modules with LMR priority list.</p></a>
@@ -190,7 +195,16 @@ h1 {
   <section class="panel" style="margin-top:1.2rem">
     <strong>Materials &amp; transcripts</strong>
     <div class="links"><a class="" href="Live Class 2 Transcript.txt" target="_blank" rel="noopener">Live Class 2 transcript</a><a class="" href="Live Class 3 Transcript.txt" target="_blank" rel="noopener">Live Class 3 transcript</a><a class="lmr-link" href="Congnitive Analytics and Social skill for Profession W F 1.pdf" target="_blank" rel="noopener">Study PDF (SLM)</a></div>
+    <div id="bs605-sync-root"></div>
   </section>
 </div>
+<script>
+if (window.BS605SyncUI) {
+  BS605SyncUI.mount(document.getElementById("bs605-sync-root"), {
+    onReady: () => { window.__BS605_SYNC_READY = true; },
+    onLoaded: () => { window.__BS605_SYNC_READY = true; }
+  });
+}
+</script>
 </body>
 </html>
