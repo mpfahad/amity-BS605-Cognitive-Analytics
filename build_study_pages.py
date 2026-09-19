@@ -135,6 +135,39 @@ h1 {
   color: var(--warn);
 }
 .chip.lmr.active { background: var(--accent-2); color: #fff; }
+.site-nav {
+  display: flex; flex-wrap: wrap; gap: 0.45rem;
+  align-items: center;
+  margin: 0 0 0.4rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.82);
+  backdrop-filter: blur(8px);
+  width: fit-content;
+  max-width: 100%;
+}
+.site-nav a {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+.site-nav a:hover { background: var(--accent-soft); color: var(--accent); }
+.site-nav a.home {
+  background: var(--accent);
+  color: #fff;
+}
+.site-nav a.here {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
 .meta {
   display: flex; flex-wrap: wrap; gap: 0.75rem 1.2rem;
   color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem;
@@ -440,6 +473,27 @@ SYNC_HEAD = """
 
 SYNC_PANEL = '<div id="bs605-sync-root"></div>'
 
+
+def site_nav(active: str) -> str:
+    """Top nav with Home always first and highlighted."""
+    items = [
+        ("home", "index.html", "Home"),
+        ("map", "module-map.html", "Module Map"),
+        ("flash", "flashcards.html", "Flashcards"),
+        ("quiz", "quiz.html", "Quiz"),
+    ]
+    parts = []
+    for key, href, label in items:
+        cls = []
+        if key == "home":
+            cls.append("home")
+        if key == active:
+            cls.append("here")
+        class_attr = f' class="{" ".join(cls)}"' if cls else ""
+        parts.append(f'<a href="{href}"{class_attr}>{label}</a>')
+    return '<nav class="site-nav" aria-label="Site">' + "".join(parts) + "</nav>"
+
+
 SYNC_BOOT = """
 function bootSync(restoreFn) {
   function apply(payload) {
@@ -515,14 +569,12 @@ def build_flashcards() -> str:
 </head>
 <body>
 <div class="wrap">
+  {site_nav("flash")}
   <header class="hero">
     <div class="kicker">Amity · BS605</div>
     <h1>Cognitive Analytics &amp; Social Skills flashcards</h1>
     <p class="lede">Quick-reference cards drilled from the SLM and live-class transcripts across all five modules. Flip a card, then move topic by topic — LMR priorities are marked for exam focus.</p>
     <div class="navrow">
-      <a class="btn" href="index.html">Home</a>
-      <a class="btn primary" href="quiz.html">Open objective quiz</a>
-      <a class="btn" href="module-map.html">Module Map</a>
       <a class="btn" href="#lmr">LMR priorities</a>
       <a class="btn ghost" href="{PDF_NAME}" target="_blank">Open PDF</a>
     </div>
@@ -820,14 +872,12 @@ def build_quiz() -> str:
 </head>
 <body>
 <div class="wrap">
+  {site_nav("quiz")}
   <header class="hero">
     <div class="kicker">Amity · BS605</div>
     <h1>Objective questions by module</h1>
     <p class="lede">MCQs drawn from the BS605 SLM and live-class emphasis. Filter by module, answer one by one, and use explanations to lock concepts — especially LMR priorities.</p>
     <div class="navrow">
-      <a class="btn" href="index.html">Home</a>
-      <a class="btn primary" href="flashcards.html">Open flashcards</a>
-      <a class="btn" href="module-map.html">Module Map</a>
       <a class="btn" href="flashcards.html#lmr">LMR priorities</a>
     </div>
   </header>
@@ -1313,14 +1363,12 @@ def build_module_map() -> str:
 </head>
 <body>
 <div class="wrap">
+  {site_nav("map")}
   <header class="hero">
     <div class="kicker">Amity · BS605 · Module Map</div>
     <h1>Structure maps &amp; important questions</h1>
     <p class="lede">Switch modules below. Click any card in the flow for definitions and exam tips — then practise that module’s important MCQs (same bank as the quiz).</p>
     <div class="navrow">
-      <a class="btn" href="index.html">Home</a>
-      <a class="btn primary" href="flashcards.html">Flashcards</a>
-      <a class="btn" href="quiz.html">Full quiz</a>
       <a class="btn" href="#questions">Important questions</a>
     </div>
   </header>
@@ -1602,6 +1650,7 @@ def main() -> None:
 </head>
 <body>
 <div class="wrap">
+  {site_nav("home")}
   <header class="hero">
     <div class="kicker">Amity University Online · BS605</div>
     <h1>Cognitive Analytics &amp; Social Skills study pack</h1>
