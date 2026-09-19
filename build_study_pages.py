@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build flashcards.html and quiz.html from _study_facts.json"""
+"""Build flashcards.html, quiz.html, module-map.html, and index.html from study JSON."""
 from __future__ import annotations
 
 import json
@@ -7,6 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 DATA = json.loads((ROOT / "_study_facts.json").read_text(encoding="utf-8"))
+MAPS = json.loads((ROOT / "_module_maps.json").read_text(encoding="utf-8"))
 LMR = (ROOT / "_lmr_notes.txt").read_text(encoding="utf-8")
 PDF_NAME = "Congnitive Analytics and Social skill for Profession W F 1.pdf"
 LINKS = [
@@ -448,6 +449,7 @@ def build_flashcards() -> str:
     <p class="lede">Quick-reference cards drilled from the SLM and live-class transcripts across all five modules. Flip a card, then move topic by topic — LMR priorities are marked for exam focus.</p>
     <div class="navrow">
       <a class="btn primary" href="quiz.html">Open objective quiz</a>
+      <a class="btn" href="module-map.html">Module Map</a>
       <a class="btn" href="#lmr">LMR priorities</a>
       <a class="btn ghost" href="{PDF_NAME}" target="_blank">Open PDF</a>
     </div>
@@ -694,6 +696,7 @@ def build_quiz() -> str:
     <p class="lede">MCQs drawn from the BS605 SLM and live-class emphasis. Filter by module, answer one by one, and use explanations to lock concepts — especially LMR priorities.</p>
     <div class="navrow">
       <a class="btn primary" href="flashcards.html">Open flashcards</a>
+      <a class="btn" href="module-map.html">Module Map</a>
       <a class="btn" href="flashcards.html#lmr">LMR priorities</a>
     </div>
   </header>
@@ -954,11 +957,386 @@ if (window.BS605SyncUI) {{
 """
 
 
+def enrich_maps_payload() -> dict:
+    """Merge map layout with flashcard text + MCQs from study facts."""
+    topics_by_id: dict[str, dict] = {}
+    mcqs_by_module: dict[int, list] = {}
+    for m in DATA["modules"]:
+        mid = int(m["id"])
+        mcqs_by_module[mid] = []
+        for t in m["topics"]:
+            topics_by_id[str(t["id"])] = t
+            for q in t.get("mcqs") or []:
+                mcqs_by_module[mid].append(
+                    {
+                        "q": q["q"],
+                        "options": q["options"],
+                        "answer": q["answer"],
+                        "explain": q.get("explain") or "",
+                        "topicId": t["id"],
+                        "topicTitle": t["title"],
+                    }
+                )
+
+    modules_out = []
+    for mod in MAPS["modules"]:
+        mid = int(mod["id"])
+        nodes: dict[str, dict] = {}
+        root = dict(mod["root"])
+        nodes[root["id"]] = {
+            "kind": root.get("kind", "root"),
+            "title": root["title"],
+            "path": root.get("path", ""),
+            "body": root.get("body", ""),
+            "points": root.get("points") or [],
+        }
+        levels_out = []
+        for level in mod["levels"]:
+            level_nodes = []
+            for n in level["nodes"]:
+                nid = n["id"]
+                topic = topics_by_id.get(str(n.get("topicId") or nid))
+                body = ""
+                points: list[str] = []
+                if topic:
+                    cards = topic.get("flashcards") or []
+                    if cards:
+                        body = cards[0].get("back") or ""
+                        if cards[0].get("detail"):
+                            points.append(cards[0]["detail"])
+                        for extra in cards[1:]:
+                            points.append(f"{extra.get('front', '')}: {extra.get('back', '')}")
+                    path = f"Module {mid} · {topic.get('id')} · {topic.get('title')}"
+                    title = n.get("title") or topic.get("title")
+                else:
+                    path = n.get("path") or f"Module {mid}"
+                    title = n["title"]
+                nodes[nid] = {
+                    "kind": n.get("kind", "a"),
+                    "title": title,
+                    "path": path,
+                    "body": body or n.get("body") or "Open flashcards for this topic for full notes.",
+                    "points": points,
+                }
+                level_nodes.append(
+                    {
+                        "id": nid,
+                        "title": n["title"],
+                        "sub": n.get("sub") or "",
+                        "kind": n.get("kind", "a"),
+                    }
+                )
+            levels_out.append({"heading": level["heading"], "nodes": level_nodes})
+        modules_out.append(
+            {
+                "id": mid,
+                "title": mod["title"],
+                "rootId": root["id"],
+                "levels": levels_out,
+                "nodes": nodes,
+                "questions": mcqs_by_module.get(mid, []),
+            }
+        )
+    return {"modules": modules_out}
+
+
+MAP_CSS = SHARED_CSS + r"""
+.layout {
+  display: grid;
+  grid-template-columns: 1.35fr .9fr;
+  gap: 1rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+@media (max-width: 920px) {
+  .layout { grid-template-columns: 1fr; }
+  .detail-panel { position: static !important; }
+}
+.flow-panel, .detail-panel, .quiz-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.detail-panel { position: sticky; top: 1rem; min-height: 280px; }
+.section-label {
+  font-size: .78rem; font-weight: 700; letter-spacing: .05em;
+  text-transform: uppercase; color: var(--muted); margin: 0 0 .7rem;
+}
+.tree { display: grid; gap: .85rem; }
+.level { display: grid; gap: .55rem; justify-items: center; }
+.connectors {
+  display: flex; justify-content: center; height: 18px; position: relative;
+}
+.connectors::before {
+  content: "";
+  position: absolute; top: 0; bottom: 50%;
+  width: 2px; background: rgba(15,107,76,.35);
+}
+.row {
+  display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; width: 100%;
+}
+.node {
+  appearance: none; border: 1px solid var(--line); background: #fff;
+  border-radius: 14px; padding: .7rem .85rem; min-width: 118px; max-width: 190px;
+  text-align: left; cursor: pointer; font: inherit; color: inherit;
+  box-shadow: 0 6px 16px rgba(21,35,28,.06);
+  transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+.node:hover { transform: translateY(-2px); border-color: rgba(15,107,76,.35); }
+.node.active {
+  border-color: transparent;
+  box-shadow: 0 10px 24px rgba(15,107,76,.22);
+  outline: 2px solid rgba(15,107,76,.55);
+}
+.node .n-title {
+  display: block; font-family: var(--font-display);
+  font-size: .98rem; line-height: 1.2; margin-bottom: .15rem;
+}
+.node .n-sub { display: block; color: var(--muted); font-size: .78rem; line-height: 1.3; }
+.node.root {
+  background: linear-gradient(145deg, #116b54, #0d4f3e);
+  color: #fff; min-width: 220px; max-width: 300px; text-align: center;
+}
+.node.root .n-sub { color: rgba(255,255,255,.82); }
+.node.a { background: #d8efe4; border-color: rgba(15,107,76,.2); }
+.node.b { background: #f7e4d5; border-color: rgba(154,74,28,.22); }
+.node.c { background: #dceaf7; border-color: rgba(31,79,120,.2); }
+.branch-block {
+  width: 100%; border: 1px dashed rgba(21,35,28,.16);
+  border-radius: 16px; padding: .75rem; background: rgba(255,255,255,.45);
+}
+.branch-block h3 {
+  margin: 0 0 .55rem; font-family: var(--font-display);
+  font-size: 1.05rem; text-align: center;
+}
+.legend {
+  display: flex; flex-wrap: wrap; gap: .55rem; margin: .2rem 0 .8rem; justify-content: center;
+}
+.legend span {
+  display: inline-flex; align-items: center; gap: .35rem;
+  font-size: .82rem; color: var(--muted); font-weight: 600;
+}
+.swatch { width: .75rem; height: .75rem; border-radius: 3px; display: inline-block; }
+.detail-empty { color: var(--muted); margin: 1.2rem 0 0; }
+.detail-kicker {
+  display: inline-flex; font-size: .75rem; font-weight: 700; letter-spacing: .04em;
+  text-transform: uppercase; padding: .25rem .55rem; border-radius: 999px;
+  margin-bottom: .55rem; background: var(--accent-soft); color: var(--accent);
+}
+.detail-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+  margin: 0 0 .55rem; line-height: 1.2;
+}
+.detail-body { color: var(--ink); line-height: 1.55; margin: 0 0 .7rem; }
+.detail-points { margin: 0; padding-left: 1.1rem; color: var(--muted); }
+.detail-points li { margin: .35rem 0; }
+.parent-path { font-size: .88rem; color: var(--muted); margin: 0 0 .7rem; }
+.quiz-panel { margin-top: 1rem; }
+.quiz-panel h2 { font-family: var(--font-display); margin: 0 0 .35rem; font-size: 1.45rem; }
+.qlist { display: grid; gap: .7rem; margin-top: .8rem; }
+.qcard {
+  border: 1px solid var(--line); border-radius: 14px; padding: .85rem .9rem; background: #fff;
+}
+.qcard h3 {
+  font-family: var(--font-display); font-size: 1.05rem; margin: 0 0 .55rem; line-height: 1.3;
+}
+.qmeta { color: var(--muted); font-size: .82rem; font-weight: 600; margin: 0 0 .45rem; }
+.opts { display: grid; gap: .4rem; }
+.opt {
+  appearance: none; width: 100%; text-align: left; font: inherit;
+  border: 1px solid var(--line); background: #fbfcfb; border-radius: 10px;
+  padding: .55rem .7rem; cursor: pointer;
+}
+.opt:hover:not(:disabled) { border-color: rgba(15,107,76,.35); }
+.opt.correct { background: #e7f6ee; border-color: rgba(15,107,76,.45); }
+.opt.wrong { background: #fdeeee; border-color: rgba(163,59,59,.4); }
+.explain {
+  display: none; margin-top: .55rem; color: var(--muted);
+  font-size: .92rem; background: #f3f7f4; border-radius: 10px; padding: .55rem .7rem;
+}
+.explain.show { display: block; }
+.hint-bar { text-align: center; color: var(--muted); font-size: .9rem; margin: 0 0 .7rem; }
+"""
+
+
+def build_module_map() -> str:
+    payload = enrich_maps_payload()
+    data_json = json.dumps(payload, ensure_ascii=False)
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BS605 Module Map — Structure &amp; Important Questions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>{MAP_CSS}</style>
+{SYNC_HEAD}
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="kicker">Amity · BS605 · Module Map</div>
+    <h1>Structure maps &amp; important questions</h1>
+    <p class="lede">Switch modules below. Click any card in the flow for definitions and exam tips — then practise that module’s important MCQs (same bank as the quiz).</p>
+    <div class="navrow">
+      <a class="btn primary" href="flashcards.html">Flashcards</a>
+      <a class="btn" href="quiz.html">Full quiz</a>
+      <a class="btn" href="#questions">Important questions</a>
+      <a class="btn" href="index.html">Study pack home</a>
+    </div>
+  </header>
+
+  <section class="panel">
+    <div class="filters" id="moduleFilters"></div>
+    {SYNC_PANEL}
+  </section>
+
+  <div class="layout">
+    <section class="flow-panel" aria-label="Structure flow diagram">
+      <p class="section-label" id="flowLabel">Interactive flow</p>
+      <p class="hint-bar">Tap a card → details open on the right (below on mobile)</p>
+      <div class="legend">
+        <span><i class="swatch" style="background:#116b54"></i> Module root</span>
+        <span><i class="swatch" style="background:#d8efe4"></i> Group A</span>
+        <span><i class="swatch" style="background:#f7e4d5"></i> Group B</span>
+        <span><i class="swatch" style="background:#dceaf7"></i> Group C</span>
+      </div>
+      <div class="tree" id="tree"></div>
+    </section>
+    <aside class="detail-panel" id="detailPanel">
+      <p class="section-label">Selected term</p>
+      <div id="detailContent">
+        <p class="detail-empty">Click any card in the flow to see definition, place in the structure, and exam tips.</p>
+      </div>
+    </aside>
+  </div>
+
+  <section class="quiz-panel" id="questions">
+    <h2 id="questionsTitle">Important questions</h2>
+    <p class="lede" style="margin:0">Practice these after you walk the map. Tap an option to check.</p>
+    <div class="qlist" id="qlist"></div>
+  </section>
+</div>
+<script>
+const MAPS = {data_json};
+let activeModuleId = String(MAPS.modules[0].id);
+let current = MAPS.modules[0];
+
+const el = id => document.getElementById(id);
+
+function currentModule() {{
+  return MAPS.modules.find(m => String(m.id) === String(activeModuleId)) || MAPS.modules[0];
+}}
+
+function renderFilters() {{
+  const box = el("moduleFilters");
+  box.innerHTML = MAPS.modules.map(m =>
+    `<button type="button" class="chip ${{String(activeModuleId)===String(m.id)?"active":""}}" data-m="${{m.id}}">M${{m.id}}: ${{m.title}}</button>`
+  ).join("");
+  box.querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {{
+    activeModuleId = btn.dataset.m;
+    renderAll();
+  }}));
+}}
+
+function makeNode(id, title, sub, cls) {{
+  return `<button type="button" class="node ${{cls}}" data-id="${{id}}"><span class="n-title">${{title}}</span><span class="n-sub">${{sub || ""}}</span></button>`;
+}}
+
+function renderTree() {{
+  current = currentModule();
+  el("flowLabel").textContent = `Module ${{current.id}} · Interactive flow`;
+  const parts = [];
+  parts.push(`<div class="level">${{makeNode(current.rootId, current.nodes[current.rootId].title, current.nodes[current.rootId].path, "root")}}</div>`);
+  current.levels.forEach(level => {{
+    parts.push(`<div class="connectors"></div>`);
+    const row = level.nodes.map(n => makeNode(n.id, n.title, n.sub, n.kind || "a")).join("");
+    parts.push(`<div class="branch-block"><h3>${{level.heading}}</h3><div class="row">${{row}}</div></div>`);
+  }});
+  el("tree").innerHTML = parts.join("");
+  el("tree").querySelectorAll(".node").forEach(btn => {{
+    btn.addEventListener("click", () => showNode(btn.dataset.id));
+  }});
+  showNode(current.rootId);
+}}
+
+function showNode(id) {{
+  const n = current.nodes[id];
+  if (!n) return;
+  document.querySelectorAll(".node").forEach(node => node.classList.toggle("active", node.dataset.id === id));
+  const points = (n.points || []).map(p => `<li>${{p}}</li>`).join("");
+  el("detailContent").innerHTML = `
+    <div class="detail-kicker">${{n.kind === "root" ? "Module" : "Topic"}}</div>
+    <h2 class="detail-title">${{n.title}}</h2>
+    <p class="parent-path">${{n.path || ""}}</p>
+    <p class="detail-body">${{n.body || ""}}</p>
+    ${{points ? `<ul class="detail-points">${{points}}</ul>` : ""}}
+  `;
+  if (window.matchMedia("(max-width: 920px)").matches) {{
+    el("detailPanel").scrollIntoView({{ behavior: "smooth", block: "nearest" }});
+  }}
+}}
+
+function renderQuestions() {{
+  el("questionsTitle").textContent = `Important questions — Module ${{current.id}}`;
+  const letters = ["A","B","C","D"];
+  const list = current.questions || [];
+  el("qlist").innerHTML = list.map((item, qi) => {{
+    const opts = item.options.map((o, i) =>
+      `<button type="button" class="opt" data-q="${{qi}}" data-i="${{i}}"><strong>${{letters[i]}}.</strong> ${{o}}</button>`
+    ).join("");
+    return `<article class="qcard" id="q${{qi}}"><p class="qmeta">${{item.topicId}} · ${{item.topicTitle}}</p><h3>${{qi+1}}. ${{item.q}}</h3><div class="opts">${{opts}}</div><div class="explain" id="ex${{qi}}"></div></article>`;
+  }}).join("") || `<p class="detail-empty">No MCQs for this module.</p>`;
+}}
+
+el("qlist").addEventListener("click", e => {{
+  const btn = e.target.closest(".opt");
+  if (!btn || btn.disabled) return;
+  const qi = Number(btn.dataset.q);
+  const i = Number(btn.dataset.i);
+  const item = current.questions[qi];
+  const card = document.getElementById("q" + qi);
+  card.querySelectorAll(".opt").forEach((o, idx) => {{
+    o.disabled = true;
+    if (idx === item.answer) o.classList.add("correct");
+    if (idx === i && i !== item.answer) o.classList.add("wrong");
+  }});
+  const ex = document.getElementById("ex" + qi);
+  ex.textContent = (i === item.answer ? "Correct. " : "Not quite. ") + (item.explain || "");
+  ex.classList.add("show");
+}});
+
+function renderAll() {{
+  renderFilters();
+  renderTree();
+  renderQuestions();
+}}
+
+renderAll();
+if (window.BS605SyncUI) {{
+  BS605SyncUI.mount(document.getElementById("bs605-sync-root"), {{
+    onReady: () => {{ window.__BS605_SYNC_READY = true; }},
+    onLoaded: () => {{ window.__BS605_SYNC_READY = true; }}
+  }});
+}}
+</script>
+</body>
+</html>
+"""
+
+
 def main() -> None:
     flash = ROOT / "flashcards.html"
     quiz = ROOT / "quiz.html"
+    mmap = ROOT / "module-map.html"
     flash.write_text(build_flashcards(), encoding="utf-8")
     quiz.write_text(build_quiz(), encoding="utf-8")
+    mmap.write_text(build_module_map(), encoding="utf-8")
     # also a tiny index
     index = ROOT / "index.html"
     index.write_text(
@@ -993,6 +1371,7 @@ def main() -> None:
   </header>
   <div class="cards">
     <a href="flashcards.html"><h2>Flashcards</h2><p>63 topic cards across 5 modules with LMR priority list.</p></a>
+    <a href="module-map.html"><h2>Module Map</h2><p>Interactive structure maps + important questions for every module.</p></a>
     <a href="quiz.html"><h2>Objective quiz</h2><p>60 MCQs with explanations, filterable by module.</p></a>
     <a href="{PDF_NAME}" target="_blank"><h2>Study PDF</h2><p>Original BS605 SLM.</p></a>
   </div>
@@ -1015,7 +1394,7 @@ if (window.BS605SyncUI) {{
 """,
         encoding="utf-8",
     )
-    print(f"Wrote {flash.name}, {quiz.name}, {index.name}")
+    print(f"Wrote {flash.name}, {mmap.name}, {quiz.name}, {index.name}")
 
 
 if __name__ == "__main__":
