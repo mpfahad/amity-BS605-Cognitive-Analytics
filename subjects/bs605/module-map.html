@@ -372,7 +372,36 @@ h1 {
 .explain.show { display: block; }
 .hint-bar { text-align: center; color: var(--muted); font-size: .9rem; margin: 0 0 .7rem; }
 
-.node.visited { background: #cfeee0 !important; }
+/* Visit depth: deepen each group's own colour (not a flat green override). */
+.node.a.depth-1 { background: #cfeee0; border-color: rgba(15,107,76,.28); }
+.node.a.depth-2 { background: #a8dfc8; border-color: rgba(15,107,76,.36); }
+.node.a.depth-3 { background: #7ecfad; border-color: rgba(15,107,76,.45); }
+.node.a.depth-4 { background: #55b890; border-color: rgba(15,107,76,.55); color: #0d3d2e; }
+.node.a.depth-5 { background: #2f9a72; border-color: rgba(15,107,76,.7); color: #fff; }
+.node.a.depth-5 .n-sub { color: rgba(255,255,255,.85); }
+
+.node.b.depth-1 { background: #f3dfd0; border-color: rgba(154,74,28,.28); }
+.node.b.depth-2 { background: #ecc8b0; border-color: rgba(154,74,28,.36); }
+.node.b.depth-3 { background: #e0a888; border-color: rgba(154,74,28,.45); }
+.node.b.depth-4 { background: #d08860; border-color: rgba(154,74,28,.55); color: #4a2410; }
+.node.b.depth-5 { background: #b8622e; border-color: rgba(154,74,28,.7); color: #fff; }
+.node.b.depth-5 .n-sub { color: rgba(255,255,255,.85); }
+
+.node.c.depth-1 { background: #d0e4f5; border-color: rgba(31,79,120,.28); }
+.node.c.depth-2 { background: #b4d2ec; border-color: rgba(31,79,120,.36); }
+.node.c.depth-3 { background: #8fb8dc; border-color: rgba(31,79,120,.45); }
+.node.c.depth-4 { background: #6a9cc8; border-color: rgba(31,79,120,.55); color: #16324a; }
+.node.c.depth-5 { background: #3f7aad; border-color: rgba(31,79,120,.7); color: #fff; }
+.node.c.depth-5 .n-sub { color: rgba(255,255,255,.85); }
+
+/* LMR cards deepen in the coral/red family (keep outline). */
+.node.lmr-node.depth-1 { background: #f3dfd0; border-color: rgba(196,92,38,.4); }
+.node.lmr-node.depth-2 { background: #ecc8b0; border-color: rgba(196,92,38,.48); }
+.node.lmr-node.depth-3 { background: #e0a888; border-color: rgba(196,92,38,.56); }
+.node.lmr-node.depth-4 { background: #d08860; border-color: rgba(196,92,38,.64); color: #4a2410; }
+.node.lmr-node.depth-5 { background: #c45c26; border-color: rgba(196,92,38,.78); color: #fff; }
+.node.lmr-node.depth-5 .n-sub { color: rgba(255,255,255,.85); }
+.node.lmr-node.depth-5 .n-badge { background: rgba(255,255,255,.22); color: #fff; }
 </style>
 <script>window.AMITY_SUBJECT = "bs605";</script>
 <script src="../../shared/config.js"></script>
@@ -404,8 +433,8 @@ h1 {
     <div class="criteria-box">
       <strong>How this map is built:</strong>
       One card ≈ one study topic from the SLM outline.
-      Click a card to mark it visited (light green) and see details.
-      Orange outline = LMR priority.
+      Click a card to deepen its own colour (green stays green, peach stays peach, LMR deepens coral).
+      Each revisit darkens one step. Orange outline = LMR priority.
     </div>
     <div id="amity-sync-root"></div>
   </section>
@@ -413,14 +442,14 @@ h1 {
   <div class="layout">
     <section class="flow-panel" aria-label="Structure flow diagram">
       <p class="section-label" id="flowLabel">Interactive flow</p>
-      <p class="hint-bar">Tap a card → details open on the right (below on mobile). Visited cards stay light green.</p>
+      <p class="hint-bar">Tap a card → details open on the right (below on mobile). More taps = darker shade of the same colour.</p>
       <div class="legend">
         <span><i class="swatch" style="background:#116b54"></i> Module root</span>
         <span><i class="swatch" style="background:#d8efe4"></i> Group A</span>
         <span><i class="swatch" style="background:#f7e4d5"></i> Group B</span>
         <span><i class="swatch" style="background:#dceaf7"></i> Group C</span>
-        <span><i class="swatch" style="background:#cfeee0;outline:2px solid rgba(15,107,76,.35)"></i> Visited</span>
-        <span><i class="swatch" style="background:#f3dfd0;outline:2px solid rgba(196,92,38,.45)"></i> LMR priority</span>
+        <span><i class="swatch" style="background:#7ecfad;outline:2px solid rgba(15,107,76,.35)"></i> Deeper = more visits</span>
+        <span><i class="swatch" style="background:#f3dfd0;outline:2px solid rgba(196,92,38,.45)"></i> LMR (deepens coral)</span>
       </div>
       <div class="tree" id="tree"></div>
     </section>
@@ -471,8 +500,26 @@ function weightLabel(w) {
   return "";
 }
 
+function visitCount(nodeId) {
+  const v = mapVisited[visitedKey(nodeId)];
+  if (v === true) return 1;
+  const n = Number(v);
+  return Number.isFinite(n) && n > 0 ? Math.min(5, Math.floor(n)) : 0;
+}
+
 function countVisited() {
-  return Object.keys(mapVisited).filter(k => mapVisited[k]).length;
+  return Object.keys(mapVisited).filter(k => {
+    const v = mapVisited[k];
+    if (v === true) return true;
+    const n = Number(v);
+    return Number.isFinite(n) && n > 0;
+  }).length;
+}
+
+function applyVisitDepth(node) {
+  for (let i = 1; i <= 5; i++) node.classList.remove("depth-" + i);
+  const c = visitCount(node.dataset.id);
+  if (c > 0) node.classList.add("depth-" + c);
 }
 
 function updateMapStats() {
@@ -532,7 +579,17 @@ function restoreMap(payload) {
   if (!payload) return;
   restoring = true;
   if (payload.mapAnswers && typeof payload.mapAnswers === "object") mapAnswers = payload.mapAnswers;
-  if (payload.mapVisited && typeof payload.mapVisited === "object") mapVisited = payload.mapVisited;
+  if (payload.mapVisited && typeof payload.mapVisited === "object") {
+    mapVisited = {};
+    Object.keys(payload.mapVisited).forEach(k => {
+      const v = payload.mapVisited[k];
+      if (v === true) mapVisited[k] = 1;
+      else {
+        const n = Number(v);
+        if (Number.isFinite(n) && n > 0) mapVisited[k] = Math.min(5, Math.floor(n));
+      }
+    });
+  }
   if (payload.mapMeta && payload.mapMeta.activeModuleId) activeModuleId = String(payload.mapMeta.activeModuleId);
   if (payload.mapMeta) {
     topicFilter = payload.mapMeta.topicFilter || null;
@@ -560,8 +617,9 @@ function renderFilters() {
 function makeNode(id, title, sub, cls, lmr) {
   const badge = lmr ? `<span class="n-badge">LMR</span>` : "";
   const lmrCls = lmr ? " lmr-node" : "";
-  const visCls = mapVisited[visitedKey(id)] ? " visited" : "";
-  return `<button type="button" class="node ${cls}${lmrCls}${visCls}" data-id="${id}"><span class="n-title">${title}</span><span class="n-sub">${sub || ""}</span>${badge}</button>`;
+  const depth = visitCount(id);
+  const depthCls = depth > 0 ? " depth-" + depth : "";
+  return `<button type="button" class="node ${cls}${lmrCls}${depthCls}" data-id="${id}"><span class="n-title">${title}</span><span class="n-sub">${sub || ""}</span>${badge}</button>`;
 }
 
 function renderTree() {
@@ -576,19 +634,23 @@ function renderTree() {
   });
   el("tree").innerHTML = parts.join("");
   el("tree").querySelectorAll(".node").forEach(btn => {
-    btn.addEventListener("click", () => showNode(btn.dataset.id));
+    btn.addEventListener("click", () => showNode(btn.dataset.id, { mark: true }));
   });
-  showNode(selectedNodeId && current.nodes[selectedNodeId] ? selectedNodeId : current.rootId);
+  showNode(selectedNodeId && current.nodes[selectedNodeId] ? selectedNodeId : current.rootId, { mark: false });
 }
 
-function showNode(id) {
+function showNode(id, opts) {
   const n = current.nodes[id];
   if (!n) return;
   selectedNodeId = id;
-  mapVisited[visitedKey(id)] = true;
+  const mark = !!(opts && opts.mark);
+  if (mark && n.kind !== "root") {
+    const key = visitedKey(id);
+    mapVisited[key] = Math.min(5, visitCount(id) + 1);
+  }
   document.querySelectorAll(".node").forEach(node => {
     node.classList.toggle("active", node.dataset.id === id);
-    node.classList.toggle("visited", Boolean(mapVisited[visitedKey(node.dataset.id)]));
+    applyVisitDepth(node);
   });
   const points = (n.points || []).map(p => `<li>${p}</li>`).join("");
   const lmrLine = n.lmr ? `<span class="detail-kicker" style="background:#f8e5d8;color:var(--warn)">LMR priority</span>` : "";
