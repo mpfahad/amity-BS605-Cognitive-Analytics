@@ -773,6 +773,22 @@ def author_topic_deep(topic: dict, lmr: bool) -> dict:
 
 
 def write_other_subject(subject_id: str) -> None:
+    """Prefer handcrafted packs when present; otherwise author from facts."""
+    handcrafted = {
+        "cse601": "CSE601",
+        "csit654": "CSIT654",
+        "csit745": "CSIT745",
+    }
+    if subject_id in handcrafted:
+        import importlib
+
+        mod = importlib.import_module(f"_handcraft_{subject_id}_deep")
+        data = getattr(mod, handcrafted[subject_id])
+        path = SUBJECTS / subject_id / "_deep_notes.json"
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"{subject_id}: HANDCRAFTED {len(data)} entries -> {path}")
+        return
+
     base = SUBJECTS / subject_id
     facts = json.loads((base / "_study_facts.json").read_text(encoding="utf-8"))
     maps = json.loads((base / "_module_maps.json").read_text(encoding="utf-8"))

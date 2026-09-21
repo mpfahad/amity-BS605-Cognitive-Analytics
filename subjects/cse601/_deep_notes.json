@@ -2,1104 +2,1391 @@
   "m1_root": {
     "terms": [
       {
-        "t": "Module 1",
-        "d": "Study map for Module 1 of Data Structures and Algorithm Design (CSE601). Click a topic for Overview and Deep notes, then practise MCQs."
+        "t": "Linear structures",
+        "d": "Stack, queue, linked lists — order and access rules matter."
+      },
+      {
+        "t": "Algorithm analysis",
+        "d": "Asymptotics, recurrence, Master theorem — how cost grows with n."
+      },
+      {
+        "t": "Sorting",
+        "d": "Compare algorithms by time, space, and stability."
       }
     ],
     "concepts": [
-      "Built from the SLM outline + PDF definitions where available",
-      "Orange LMR badges mark first-pass priorities"
+      "Module 1 flow: structures → analysis → divide-and-conquer → sorts.",
+      "Exam style: define + complexity + one contrast (e.g. stack vs queue)."
     ],
     "notes": [
-      "Open topic cards for Terms · Concepts · Short notes.",
-      "LMR cards (orange) are denser where marked."
+      "LMR first: Stack, postfix, Tower of Hanoi.",
+      "Never give only a name — always add LIFO/FIFO or Big-O when asked."
     ]
   },
   "m2_root": {
     "terms": [
       {
-        "t": "Module 2",
-        "d": "Study map for Module 2 of Data Structures and Algorithm Design (CSE601). Click a topic for Overview and Deep notes, then practise MCQs."
+        "t": "Trees",
+        "d": "Hierarchical linked structures; BST/AVL/B-tree variants balance search cost."
+      },
+      {
+        "t": "Graphs",
+        "d": "Vertices + edges; DFS/BFS and shortest paths are core traversals."
       }
     ],
     "concepts": [
-      "Built from the SLM outline + PDF definitions where available",
-      "Orange LMR badges mark first-pass priorities"
+      "Trees first, then graph traversals and path algorithms.",
+      "Prim vs Kruskal both build MSTs — different selection rules."
     ],
     "notes": [
-      "Open topic cards for Terms · Concepts · Short notes.",
-      "LMR cards (orange) are denser where marked."
+      "LMR: binary tree / BST basics before AVL/B-tree detail."
     ]
   },
   "m3_root": {
     "terms": [
       {
-        "t": "Module 3",
-        "d": "Study map for Module 3 of Data Structures and Algorithm Design (CSE601). Click a topic for Overview and Deep notes, then practise MCQs."
+        "t": "Dynamic programming",
+        "d": "Optimal substructure + overlapping subproblems; store results."
+      },
+      {
+        "t": "Greedy",
+        "d": "Locally optimal choice hoping for global optimum — not always correct."
+      },
+      {
+        "t": "Classic problems",
+        "d": "Knapsack variants, activity selection, Huffman, TSP."
       }
     ],
     "concepts": [
-      "Built from the SLM outline + PDF definitions where available",
-      "Orange LMR badges mark first-pass priorities"
+      "0/1 knapsack → DP; fractional knapsack → greedy — classic exam trap.",
+      "TSP is typically hard; don’t treat it as a simple greedy always."
     ],
     "notes": [
-      "Open topic cards for Terms · Concepts · Short notes.",
-      "LMR cards (orange) are denser where marked."
+      "LMR: DP approach, optimality principle, Strassen."
     ]
   },
   "m4_root": {
     "terms": [
       {
-        "t": "Module 4",
-        "d": "Study map for Module 4 of Data Structures and Algorithm Design (CSE601). Click a topic for Overview and Deep notes, then practise MCQs."
+        "t": "String matching",
+        "d": "Find pattern P in text T — naïve vs Rabin–Karp hashing."
+      },
+      {
+        "t": "Approximation / LP themes",
+        "d": "Vertex cover, set cover, subset-sum — often near-optimal algorithms."
       }
     ],
     "concepts": [
-      "Built from the SLM outline + PDF definitions where available",
-      "Orange LMR badges mark first-pass priorities"
+      "Rabin–Karp uses rolling hash; naïve compares character by character.",
+      "Vertex cover / set cover are classic approximation settings."
     ],
     "notes": [
-      "Open topic cards for Terms · Concepts · Short notes.",
-      "LMR cards (orange) are denser where marked."
+      "LMR: naïve matching, Rabin–Karp, vertex cover."
     ]
   },
   "m5_root": {
     "terms": [
       {
-        "t": "Module 5",
-        "d": "Study map for Module 5 of Data Structures and Algorithm Design (CSE601). Click a topic for Overview and Deep notes, then practise MCQs."
+        "t": "NP-completeness",
+        "d": "Hard decision problems; reductions show hardness."
+      },
+      {
+        "t": "Hamiltonian cycle",
+        "d": "Visit each vertex once and return — classic NP-complete flavour."
+      },
+      {
+        "t": "Green technology (syllabus)",
+        "d": "Efficiency/resource angle linked in this module’s framing."
       }
     ],
     "concepts": [
-      "Built from the SLM outline + PDF definitions where available",
-      "Orange LMR badges mark first-pass priorities"
+      "NP-complete vs NP-hard: completeness is in NP + hard for NP.",
+      "Reducibility is the proof tool — map known hard problem to yours."
     ],
     "notes": [
-      "Open topic cards for Terms · Concepts · Short notes.",
-      "LMR cards (orange) are denser where marked."
+      "LMR: NP proofs / reducibility vocabulary."
     ]
   },
   "1.1.1": {
     "terms": [
       {
         "t": "Stack",
-        "d": "A Last-In-First-Out (LIFO) structure where elements are added and removed from the top."
+        "d": "LIFO structure: push/pop at the same end (the top)."
+      },
+      {
+        "t": "Push",
+        "d": "Insert an element on top."
+      },
+      {
+        "t": "Pop",
+        "d": "Remove the top element."
+      },
+      {
+        "t": "Peek / top",
+        "d": "Read the top without removing it."
+      },
+      {
+        "t": "Underflow / overflow",
+        "d": "Pop on empty / push on full (array stack)."
       }
     ],
     "concepts": [
-      "Stack sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "LMR: say the definition aloud, then one use-case, then one contrast with a related topic."
+      "Stack ≠ queue: LIFO vs FIFO.",
+      "Call stack / undo / postfix evaluation are classic uses.",
+      "Array stack needs capacity; linked stack grows with nodes."
     ],
     "notes": [
-      "Define Stack in one line, name when/why it is used, and contrast it with one related idea under Big Data Structures.",
-      "Exam cue: Stack is a syllabus topic under Big Data Structures in Module 1.",
-      "Trap: Stack is LIFO (top) — do not confuse with Queue (FIFO)."
+      "Trap: do not say FIFO for stack.",
+      "Stem “last in first out / top only” → stack.",
+      "LMR: define + one use + contrast with queue."
     ]
   },
   "1.1.2": {
     "terms": [
       {
-        "t": "Evaluation of Postfix Expression",
-        "d": "The virtue of postfix notation is that it enables easy evaluation of expressions."
+        "t": "Postfix (RPN)",
+        "d": "Operators follow their operands (e.g. 3 4 +)."
+      },
+      {
+        "t": "Evaluation with stack",
+        "d": "Scan left→right: push operands; on operator, pop args, push result."
+      },
+      {
+        "t": "Why stack",
+        "d": "Defers operators until operands are known — natural LIFO."
       }
     ],
     "concepts": [
-      "Evaluation of Postfix Expression sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "LMR: say the definition aloud, then one use-case, then one contrast with a related topic."
+      "Infix needs precedence/parentheses; postfix does not.",
+      "Each operator pops the right number of operands (usually 2 for binary)."
     ],
     "notes": [
-      "Define Evaluation of Postfix Expression in one line, name when/why it is used, and contrast it with one related idea under Big Data Structures.",
-      "Exam cue: Evaluation of Postfix Expression is a syllabus topic under Big Data Structures in Module 1.",
-      "Be ready to define Evaluation of Postfix Expression and give one use / one contrast — vague labels lose marks."
+      "Trap: processing order is left to right, not ‘operator first’.",
+      "If expression is infix, convert first — don’t evaluate infix with raw postfix rules.",
+      "LMR: walk one tiny example on paper."
     ]
   },
   "1.1.3": {
     "terms": [
       {
-        "t": "Tower of Hanoi Problem",
-        "d": "In the Tower of Hanoi problem, how many steps are required to solve a puzzle with"
+        "t": "Tower of Hanoi",
+        "d": "Move n disks from source to target using auxiliary peg."
+      },
+      {
+        "t": "Rule",
+        "d": "Only one disk at a time; never place larger on smaller."
+      },
+      {
+        "t": "Recurrence",
+        "d": "T(n)=2T(n−1)+1, T(1)=1 → T(n)=2^n−1 moves."
       }
     ],
     "concepts": [
-      "Tower of Hanoi Problem sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "LMR: say the definition aloud, then one use-case, then one contrast with a related topic."
+      "Recursive idea: move n−1 aside, move largest, move n−1 on top.",
+      "Shows divide-and-conquer / recursion cost explosion."
     ],
     "notes": [
-      "Define Tower of Hanoi Problem in one line, name when/why it is used, and contrast it with one related idea under Big Data Structures.",
-      "Exam cue: Tower of Hanoi Problem is a syllabus topic under Big Data Structures in Module 1.",
-      "Be ready to define Tower of Hanoi Problem and give one use / one contrast — vague labels lose marks."
+      "Trap: minimum moves are 2^n−1, not n^2.",
+      "LMR: state recurrence + closed form."
     ]
   },
   "1.1.4": {
     "terms": [
       {
         "t": "Queue",
-        "d": "A First-In-First-Out (FIFO) structure where elements are added at the end and removed from the beginning."
+        "d": "FIFO: enqueue at rear, dequeue at front."
+      },
+      {
+        "t": "Enqueue / Dequeue",
+        "d": "Insert rear / remove front."
+      },
+      {
+        "t": "Circular queue",
+        "d": "Wrap indices to reuse array space."
       }
     ],
     "concepts": [
-      "Queue sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Queue ≠ stack (FIFO vs LIFO).",
+      "BFS uses a queue; DFS uses a stack/recursion."
     ],
     "notes": [
-      "Define Queue in one line, name when/why it is used, and contrast it with one related idea under Big Data Structures.",
-      "Exam cue: Queue is a syllabus topic under Big Data Structures in Module 1.",
-      "Trap: Queue is FIFO — enqueue rear, dequeue front; not LIFO."
+      "Trap: don’t pop from rear for a normal queue.",
+      "Stem “first come first served” → queue."
     ]
   },
   "1.1.5": {
     "terms": [
       {
-        "t": "Linked List",
-        "d": "A collection of elements linked together by pointers, allowing dynamic insertion and deletion."
+        "t": "Linked list",
+        "d": "Nodes with data + pointer(s); dynamic size."
+      },
+      {
+        "t": "Singly linked",
+        "d": "Each node points to next only."
+      },
+      {
+        "t": "Head",
+        "d": "Entry pointer to the first node."
       }
     ],
     "concepts": [
-      "Linked List sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Insert/delete can be O(1) given a node reference; search is O(n).",
+      "Vs array: no random access O(1), but flexible growth."
     ],
     "notes": [
-      "Define Linked List in one line, name when/why it is used, and contrast it with one related idea under Big Data Structures.",
-      "Exam cue: Linked List is a syllabus topic under Big Data Structures in Module 1.",
-      "Trap: Linked list uses pointers/nodes — not the same as a contiguous array."
+      "Trap: linked list ≠ array contiguous memory.",
+      "Always track head (and sometimes tail) carefully."
     ]
   },
   "1.1.6": {
     "terms": [
       {
-        "t": "Double Linked List",
-        "d": "The Doubly Linked List is a form of linked list in which there are two links to each"
+        "t": "Doubly linked list",
+        "d": "Each node has next and prev pointers."
+      },
+      {
+        "t": "Bidirectional traversal",
+        "d": "Walk forward or backward."
+      },
+      {
+        "t": "Delete convenience",
+        "d": "Easier deletion when you have the node (prev is known)."
       }
     ],
     "concepts": [
-      "Double Linked List sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Extra pointer cost vs singly linked.",
+      "Still no O(1) index access like arrays."
     ],
     "notes": [
-      "Define Double Linked List in one line, name when/why it is used, and contrast it with one related idea under Big Data Structures.",
-      "Exam cue: Double Linked List is a syllabus topic under Big Data Structures in Module 1.",
-      "Trap: Linked list uses pointers/nodes — not the same as a contiguous array."
+      "Trap: update both next and prev on insert/delete — half-updates break the list."
     ]
   },
   "1.2.1": {
     "terms": [
       {
-        "t": "Algorithm and Characteristics",
-        "d": "To accomplish a certain predefined task, an algorithm is a finite set of instructions"
+        "t": "Algorithm",
+        "d": "Finite, unambiguous sequence of steps producing output from input."
+      },
+      {
+        "t": "Characteristics",
+        "d": "Input, output, finiteness, definiteness, effectiveness (and often generality)."
       }
     ],
     "concepts": [
-      "Algorithm and Characteristics sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Program implements an algorithm in a language.",
+      "Finiteness: must terminate; definiteness: each step clear."
     ],
     "notes": [
-      "Define Algorithm and Characteristics in one line, name when/why it is used, and contrast it with one related idea under Algorithm.",
-      "Exam cue: Algorithm and Characteristics is a syllabus topic under Algorithm in Module 1.",
-      "Be ready to define Algorithm and Characteristics and give one use / one contrast — vague labels lose marks."
+      "Trap: infinite loop is not a valid algorithm characteristic."
     ]
   },
   "1.2.2": {
     "terms": [
       {
-        "t": "Asymtotic Notations",
-        "d": "Asymptotic notations (Big-O, Ω, Θ) describe growth rates of time/space as input size grows."
+        "t": "Big-O",
+        "d": "Upper bound on growth rate (worst-case flavour in teaching)."
+      },
+      {
+        "t": "Ω (Omega)",
+        "d": "Lower bound on growth."
+      },
+      {
+        "t": "Θ (Theta)",
+        "d": "Tight bound — both O and Ω."
+      },
+      {
+        "t": "Little-o / ~",
+        "d": "Stricter / asymptotic equivalence ideas (if taught)."
       }
     ],
     "concepts": [
-      "Asymtotic Notations sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Asymptotics ignore constants and lower-order terms.",
+      "O(n^2) does not mean ‘exactly n^2 steps’."
     ],
     "notes": [
-      "Define Asymtotic Notations in one line, name when/why it is used, and contrast it with one related idea under Algorithm.",
-      "Exam cue: Asymtotic Notations is a syllabus topic under Algorithm in Module 1.",
-      "Be ready to define Asymtotic Notations and give one use / one contrast — vague labels lose marks."
+      "Trap: O is not the same as Θ unless also Ω.",
+      "Spelling in syllabus: ‘Asymtotic’ = asymptotic notations."
     ]
   },
   "1.2.3": {
     "terms": [
       {
-        "t": "Algorithm Time Complexity",
-        "d": "An algorithm’s time complexity reflects the amount of time needed for the algorithm"
+        "t": "Time complexity",
+        "d": "How running time grows with input size n."
+      },
+      {
+        "t": "Best / average / worst",
+        "d": "Different cases; exams often want worst-case Big-O."
+      },
+      {
+        "t": "Space complexity",
+        "d": "Extra memory growth with n."
       }
     ],
     "concepts": [
-      "Algorithm Time Complexity sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Count dominant operations, not wall-clock alone.",
+      "Nested loops often multiply costs."
     ],
     "notes": [
-      "Define Algorithm Time Complexity in one line, name when/why it is used, and contrast it with one related idea under Algorithm.",
-      "Exam cue: Algorithm Time Complexity is a syllabus topic under Algorithm in Module 1.",
-      "Be ready to define Algorithm Time Complexity and give one use / one contrast — vague labels lose marks."
+      "Trap: ‘faster machine’ does not change asymptotic class."
     ]
   },
   "1.2.4": {
     "terms": [
       {
-        "t": "Recursive Program Analysis Strategies",
-        "d": "Many algorithms are necessarily recursive. We get a recurrence relation for time"
+        "t": "Recurrence",
+        "d": "T(n) defined in terms of T(smaller)."
       },
       {
-        "t": "Point 2",
-        "d": "We get a recurrence relation for time"
+        "t": "Recursion tree / substitution / Master",
+        "d": "Strategies to solve recurrences."
+      },
+      {
+        "t": "Base case",
+        "d": "Stops recursion; needed for well-founded analysis."
       }
     ],
     "concepts": [
-      "Recursive Program Analysis Strategies sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Wrong base case ⇒ wrong closed form.",
+      "Unfold a few levels before guessing the pattern."
     ],
     "notes": [
-      "Define Recursive Program Analysis Strategies in one line, name when/why it is used, and contrast it with one related idea under Algorithm.",
-      "Exam cue: Recursive Program Analysis Strategies is a syllabus topic under Algorithm in Module 1.",
-      "Be ready to define Recursive Program Analysis Strategies and give one use / one contrast — vague labels lose marks."
+      "Trap: forgetting the +f(n) combine cost in divide-and-conquer."
     ]
   },
   "1.2.5": {
     "terms": [
       {
-        "t": "Master Theorem",
-        "d": "A straightforward way to get the solution is the Master Method. The master method"
+        "t": "Master theorem",
+        "d": "Solves T(n)=aT(n/b)+f(n) for many standard f."
+      },
+      {
+        "t": "Cases",
+        "d": "Compare f(n) with n^{log_b a} (three main cases)."
+      },
+      {
+        "t": "Limitations",
+        "d": "Not all recurrences fit; need regularity conditions."
       }
     ],
     "concepts": [
-      "Master Theorem sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Identify a, b, f(n) first — then case.",
+      "Merge sort: a=2,b=2,f=Θ(n) → Θ(n log n)."
     ],
     "notes": [
-      "Define Master Theorem in one line, name when/why it is used, and contrast it with one related idea under Algorithm.",
-      "Exam cue: Master Theorem is a syllabus topic under Algorithm in Module 1.",
-      "Be ready to define Master Theorem and give one use / one contrast — vague labels lose marks."
+      "Trap: applying Master when split is uneven or f doesn’t fit cases."
     ]
   },
   "1.3.1": {
     "terms": [
       {
-        "t": "Divide-Conquer Recurrence Equations Solutions",
-        "d": "The issue at hand is divided into smaller subproblems in the divide and conquer"
+        "t": "Divide and conquer",
+        "d": "Divide → conquer recursively → combine."
+      },
+      {
+        "t": "Recurrence form",
+        "d": "Often T(n)=aT(n/b)+f(n)."
+      },
+      {
+        "t": "Examples",
+        "d": "Merge sort, binary search, some matrix methods."
       }
     ],
     "concepts": [
-      "Divide-Conquer Recurrence Equations Solutions sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Combine cost f(n) matters as much as subproblem count.",
+      "Not every recursive algorithm is efficient D&C."
     ],
     "notes": [
-      "Define Divide-Conquer Recurrence Equations Solutions in one line, name when/why it is used, and contrast it with one related idea under Divide and Conquer Paradigm.",
-      "Exam cue: Divide-Conquer Recurrence Equations Solutions is a syllabus topic under Divide and Conquer Paradigm in Module 1.",
-      "Be ready to define Divide-Conquer Recurrence Equations Solutions and give one use / one contrast — vague labels lose marks."
+      "Trap: confusing D&C with DP (DP stores overlapping results)."
     ]
   },
   "1.4.1": {
     "terms": [
       {
-        "t": "Bubble Sort",
-        "d": "Bubble sorting is a basic algorithm for sorting. This sorting algorithm is a"
+        "t": "Bubble sort",
+        "d": "Repeatedly swap adjacent out-of-order pairs."
       },
       {
-        "t": "Point 2",
-        "d": "This sorting algorithm is a"
+        "t": "Time",
+        "d": "O(n^2) typical/worst; can be O(n) if already sorted with early exit."
+      },
+      {
+        "t": "Stable?",
+        "d": "Can be implemented stable."
       }
     ],
     "concepts": [
-      "Bubble Sort sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Simple but slow for large n.",
+      "After pass i, largest elements ‘bubble’ to the end."
     ],
     "notes": [
-      "Define Bubble Sort in one line, name when/why it is used, and contrast it with one related idea under Sorting Techniques.",
-      "Exam cue: Bubble Sort is a syllabus topic under Sorting Techniques in Module 1.",
-      "Trap: Compare time, space, and stability — not only ‘faster’."
+      "Trap: don’t claim O(n log n) for bubble sort."
     ]
   },
   "1.4.2": {
     "terms": [
       {
-        "t": "Insertion Sort",
-        "d": "This is a sorting algorithm that uses in-place comparisons. Here, a sub-list that is"
+        "t": "Insertion sort",
+        "d": "Build sorted prefix; insert next element into place."
+      },
+      {
+        "t": "Time",
+        "d": "O(n^2) worst; O(n) best on nearly sorted data."
+      },
+      {
+        "t": "Stable",
+        "d": "Yes (typical implementation)."
       }
     ],
     "concepts": [
-      "Insertion Sort sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Good for small or nearly sorted arrays.",
+      "Online: can sort as data arrives."
     ],
     "notes": [
-      "Define Insertion Sort in one line, name when/why it is used, and contrast it with one related idea under Sorting Techniques.",
-      "Exam cue: Insertion Sort is a syllabus topic under Sorting Techniques in Module 1.",
-      "Trap: Compare time, space, and stability — not only ‘faster’."
+      "Trap: best-case O(n) ≠ average O(n)."
     ]
   },
   "1.4.3": {
     "terms": [
       {
-        "t": "Selection Sort",
-        "d": "Selection sort is a basic algorithm for sorting. This sorting algorithm is a"
+        "t": "Selection sort",
+        "d": "Repeatedly select min (or max) from unsorted part and swap into place."
       },
       {
-        "t": "Point 2",
-        "d": "This sorting algorithm is a"
+        "t": "Time",
+        "d": "Θ(n^2) comparisons roughly always."
+      },
+      {
+        "t": "Not stable",
+        "d": "Typical swap-based version is unstable."
       }
     ],
     "concepts": [
-      "Selection Sort sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Fewer writes than some sorts, but still quadratic comparisons.",
+      "Unlike insertion, does not benefit much from nearly sorted input."
     ],
     "notes": [
-      "Define Selection Sort in one line, name when/why it is used, and contrast it with one related idea under Sorting Techniques.",
-      "Exam cue: Selection Sort is a syllabus topic under Sorting Techniques in Module 1.",
-      "Trap: Compare time, space, and stability — not only ‘faster’."
+      "Trap: selection ≠ insertion — selection always scans remaining min."
     ]
   },
   "1.4.4": {
     "terms": [
       {
-        "t": "Merge Sort",
-        "d": "necessitates extra space for its operations."
+        "t": "Merge sort",
+        "d": "Divide array, sort halves, merge sorted runs."
+      },
+      {
+        "t": "Time",
+        "d": "Θ(n log n) guaranteed."
+      },
+      {
+        "t": "Space",
+        "d": "Needs Θ(n) auxiliary for classic merge."
+      },
+      {
+        "t": "Stable",
+        "d": "Yes."
       }
     ],
     "concepts": [
-      "Merge Sort sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Predictable performance — good exam ‘guaranteed n log n’ answer.",
+      "Merge is the combine step."
     ],
     "notes": [
-      "Define Merge Sort in one line, name when/why it is used, and contrast it with one related idea under Sorting Techniques.",
-      "Exam cue: Merge Sort is a syllabus topic under Sorting Techniques in Module 1.",
-      "Trap: Compare time, space, and stability — not only ‘faster’."
+      "Trap: merge sort is not in-place in the standard form."
     ]
   },
   "1.4.5": {
     "terms": [
       {
-        "t": "Heap Sort",
-        "d": "Heap sort can be understood as the improved version of the binary search tree."
+        "t": "Heap sort",
+        "d": "Build heap, repeatedly extract max/min."
+      },
+      {
+        "t": "Time",
+        "d": "O(n log n)."
+      },
+      {
+        "t": "In-place",
+        "d": "Yes (array heap); not typically stable."
       }
     ],
     "concepts": [
-      "Heap Sort sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Uses heap property: parent ordered vs children.",
+      "Build-heap is O(n); extracts cost O(n log n)."
     ],
     "notes": [
-      "Define Heap Sort in one line, name when/why it is used, and contrast it with one related idea under Sorting Techniques.",
-      "Exam cue: Heap Sort is a syllabus topic under Sorting Techniques in Module 1.",
-      "Trap: Compare time, space, and stability — not only ‘faster’."
+      "Trap: heap sort ≠ priority-queue ADT lecture alone — it’s a sorting algorithm."
     ]
   },
   "1.4.6": {
     "terms": [
       {
-        "t": "Quick Sort",
-        "d": "Quick sort is a very popular sorting method. The name comes from the fact that,"
+        "t": "Quick sort",
+        "d": "Partition around pivot; recurse on parts."
       },
       {
-        "t": "Point 2",
-        "d": "The name comes from the fact that,"
+        "t": "Average time",
+        "d": "O(n log n); worst O(n^2) on bad pivots."
+      },
+      {
+        "t": "In-place",
+        "d": "Mostly yes (small stack); not stable typically."
       }
     ],
     "concepts": [
-      "Quick Sort sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Pivot choice affects balance.",
+      "Often fastest in practice despite worst case."
     ],
     "notes": [
-      "Define Quick Sort in one line, name when/why it is used, and contrast it with one related idea under Sorting Techniques.",
-      "Exam cue: Quick Sort is a syllabus topic under Sorting Techniques in Module 1.",
-      "Trap: Compare time, space, and stability — not only ‘faster’."
+      "Trap: worst case is quadratic — mention randomised/median-of-three if asked."
     ]
   },
   "2.1.1": {
     "terms": [
       {
-        "t": "Basic Terminology and Applications",
-        "d": "Basic Terminology and Applications: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Tree",
+        "d": "Connected acyclic graph; hierarchical parent–child."
+      },
+      {
+        "t": "Root / leaf / internal",
+        "d": "Top node / no children / has children."
+      },
+      {
+        "t": "Applications",
+        "d": "File systems, expression trees, search structures, heaps."
       }
     ],
     "concepts": [
-      "Basic Terminology and Applications sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "LMR: say the definition aloud, then one use-case, then one contrast with a related topic."
+      "Tree ≠ general graph with cycles.",
+      "Height/depth definitions vary slightly — use syllabus convention."
     ],
     "notes": [
-      "Define Basic Terminology and Applications in one line, name when/why it is used, and contrast it with one related idea under Tree.",
-      "Exam cue: Basic Terminology and Applications is a syllabus topic under Tree in Module 2.",
-      "Be ready to define Basic Terminology and Applications and give one use / one contrast — vague labels lose marks."
+      "LMR: terminology first before BST/AVL detail.",
+      "Trap: ‘tree’ in CS usually means rooted tree in DSA units."
     ]
   },
   "2.1.2": {
     "terms": [
       {
-        "t": "Binary Trees",
-        "d": "There are different sorts of binary trees, and every one of these binary tree types"
+        "t": "Binary tree",
+        "d": "Each node has at most two children (left/right)."
+      },
+      {
+        "t": "Full / complete / perfect",
+        "d": "Variants about occupancy of levels (syllabus defs)."
+      },
+      {
+        "t": "Traversals",
+        "d": "Inorder, preorder, postorder, level-order."
       }
     ],
     "concepts": [
-      "Binary Trees sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "LMR: say the definition aloud, then one use-case, then one contrast with a related topic."
+      "Binary tree ≠ BST (BST adds ordering invariant).",
+      "Array representation possible for complete trees (heaps)."
     ],
     "notes": [
-      "Define Binary Trees in one line, name when/why it is used, and contrast it with one related idea under Tree.",
-      "Exam cue: Binary Trees is a syllabus topic under Tree in Module 2.",
-      "Be ready to define Binary Trees and give one use / one contrast — vague labels lose marks."
+      "LMR: define binary tree + name three DFS-style traversals.",
+      "Trap: don’t assume sorted order without BST property."
     ]
   },
   "2.1.3": {
     "terms": [
       {
-        "t": "Binary Search Trees",
-        "d": "Heap sort can be understood as the improved version of the binary search tree."
+        "t": "BST",
+        "d": "Left keys < node < right keys (standard ordering)."
+      },
+      {
+        "t": "Search / insert",
+        "d": "Follow comparisons down a path."
+      },
+      {
+        "t": "Inorder traversal",
+        "d": "Yields keys in sorted order."
       }
     ],
     "concepts": [
-      "Binary Search Trees sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "LMR: say the definition aloud, then one use-case, then one contrast with a related topic."
+      "Balanced BST ⇒ O(log n); skewed ⇒ O(n).",
+      "Deletion has cases: leaf / one child / two children (successor/predecessor)."
     ],
     "notes": [
-      "Define Binary Search Trees in one line, name when/why it is used, and contrast it with one related idea under Tree.",
-      "Exam cue: Binary Search Trees is a syllabus topic under Tree in Module 2.",
-      "Be ready to define Binary Search Trees and give one use / one contrast — vague labels lose marks."
+      "LMR: state ordering invariant clearly.",
+      "Trap: binary tree without order is not a BST."
     ]
   },
   "2.1.4": {
     "terms": [
       {
-        "t": "Optimal Binary Search Tree",
-        "d": "As we realise that in the binary search tree, the hubs in the left subtree have lesser"
+        "t": "Optimal BST",
+        "d": "BST arranged to minimise expected search cost given key probabilities."
+      },
+      {
+        "t": "DP construction",
+        "d": "Classic dynamic-programming optimisation on key ranges."
       }
     ],
     "concepts": [
-      "Optimal Binary Search Tree sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Not the same as ‘any balanced BST’ — optimality uses frequencies.",
+      "Related to matrix-chain style interval DP."
     ],
     "notes": [
-      "Define Optimal Binary Search Tree in one line, name when/why it is used, and contrast it with one related idea under Tree.",
-      "Exam cue: Optimal Binary Search Tree is a syllabus topic under Tree in Module 2.",
-      "Be ready to define Optimal Binary Search Tree and give one use / one contrast — vague labels lose marks."
+      "Trap: AVL/Red-Black balance ≠ probability-optimal BST."
     ]
   },
   "2.1.5": {
     "terms": [
       {
-        "t": "Red-Black Trees",
-        "d": "The majority of the BST activities (e.g., search, max, min, embed, erase.. and so"
+        "t": "Red-Black tree",
+        "d": "Self-balancing BST with coloured nodes and rotation/recolour rules."
+      },
+      {
+        "t": "Balance guarantee",
+        "d": "Height O(log n); operations O(log n)."
       }
     ],
     "concepts": [
-      "Red-Black Trees sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Alternative to AVL with slightly different balance strictness.",
+      "Used widely in libraries (e.g. some map implementations)."
     ],
     "notes": [
-      "Define Red-Black Trees in one line, name when/why it is used, and contrast it with one related idea under Tree.",
-      "Exam cue: Red-Black Trees is a syllabus topic under Tree in Module 2.",
-      "Be ready to define Red-Black Trees and give one use / one contrast — vague labels lose marks."
+      "Trap: colour rules are invariants — don’t invent ‘just paint randomly’."
     ]
   },
   "2.1.6": {
     "terms": [
       {
-        "t": "AVL Trees",
-        "d": "AVL Trees: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "AVL tree",
+        "d": "BST where |height(left)−height(right)| ≤ 1 at every node."
+      },
+      {
+        "t": "Rotations",
+        "d": "LL, RR, LR, RL fix imbalance after insert/delete."
+      },
+      {
+        "t": "Complexity",
+        "d": "Search/insert/delete O(log n)."
       }
     ],
     "concepts": [
-      "AVL Trees sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Stricter balance than Red-Black often ⇒ more rotations.",
+      "Balance factor is the height difference."
     ],
     "notes": [
-      "Define AVL Trees in one line, name when/why it is used, and contrast it with one related idea under Tree.",
-      "Exam cue: AVL Trees is a syllabus topic under Tree in Module 2.",
-      "Be ready to define AVL Trees and give one use / one contrast — vague labels lose marks."
+      "Trap: AVL is a BST plus height invariant — not a heap."
     ]
   },
   "2.1.7": {
     "terms": [
       {
-        "t": "B Trees",
-        "d": "B Trees: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "B-tree",
+        "d": "Multiway balanced search tree for disk/block storage."
+      },
+      {
+        "t": "High fanout",
+        "d": "Many keys per node ⇒ shallow tree ⇒ fewer disk reads."
+      },
+      {
+        "t": "Properties",
+        "d": "All leaves at same level; node occupancy bounds (order)."
       }
     ],
     "concepts": [
-      "B Trees sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Designed for secondary storage, not only RAM.",
+      "B+ trees (if taught) keep data in leaves — don’t conflate blindly."
     ],
     "notes": [
-      "Define B Trees in one line, name when/why it is used, and contrast it with one related idea under Tree.",
-      "Exam cue: B Trees is a syllabus topic under Tree in Module 2.",
-      "Be ready to define B Trees and give one use / one contrast — vague labels lose marks."
+      "Trap: B-tree ≠ binary tree; ‘B’ is not ‘binary’."
     ]
   },
   "2.1.8": {
     "terms": [
       {
-        "t": "Spanning Trees",
-        "d": "Spanning Trees: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Spanning tree",
+        "d": "Subgraph that is a tree connecting all vertices."
+      },
+      {
+        "t": "MST",
+        "d": "Spanning tree of minimum total edge weight."
       }
     ],
     "concepts": [
-      "Spanning Trees sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Exists for connected undirected graphs.",
+      "Prim/Kruskal compute MSTs."
     ],
     "notes": [
-      "Define Spanning Trees in one line, name when/why it is used, and contrast it with one related idea under Tree.",
-      "Exam cue: Spanning Trees is a syllabus topic under Tree in Module 2.",
-      "Be ready to define Spanning Trees and give one use / one contrast — vague labels lose marks."
+      "Trap: spanning tree has V−1 edges — no cycles."
     ]
   },
   "2.1.9": {
     "terms": [
       {
-        "t": "Prim’s Algorithm",
-        "d": "Prim’s Algorithm: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Prim’s algorithm",
+        "d": "Grow MST from a start vertex by always adding lightest safe edge out."
+      },
+      {
+        "t": "Data structure",
+        "d": "Often priority queue for cut edges."
       }
     ],
     "concepts": [
-      "Prim’s Algorithm sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Cut property: lightest edge crossing the cut is safe for MST.",
+      "Prim is vertex-centric growth."
     ],
     "notes": [
-      "Define Prim’s Algorithm in one line, name when/why it is used, and contrast it with one related idea under Tree.",
-      "Exam cue: Prim’s Algorithm is a syllabus topic under Tree in Module 2.",
-      "Be ready to define Prim’s Algorithm and give one use / one contrast — vague labels lose marks."
+      "Trap: Prim ≠ Kruskal (Kruskal sorts edges globally)."
     ]
   },
   "2.1.10": {
     "terms": [
       {
-        "t": "Kruskal’s Algorithm",
-        "d": "Kruskal’s Algorithm: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Kruskal’s algorithm",
+        "d": "Sort edges by weight; add if it doesn’t form a cycle (Union–Find)."
+      },
+      {
+        "t": "Union–Find",
+        "d": "Tracks components to detect cycles efficiently."
       }
     ],
     "concepts": [
-      "Kruskal’s Algorithm sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Edge-centric; works well on sparse graphs.",
+      "Same MST cut/cycle properties as Prim’s goal."
     ],
     "notes": [
-      "Define Kruskal’s Algorithm in one line, name when/why it is used, and contrast it with one related idea under Tree.",
-      "Exam cue: Kruskal’s Algorithm is a syllabus topic under Tree in Module 2.",
-      "Be ready to define Kruskal’s Algorithm and give one use / one contrast — vague labels lose marks."
+      "Trap: adding lightest edge blindly without cycle check is wrong."
     ]
   },
   "2.2.1": {
     "terms": [
       {
-        "t": "Terminology, Representations, Traversals",
-        "d": "Terminology, Representations, Traversals: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Graph",
+        "d": "G=(V,E); directed/undirected; weighted/unweighted."
+      },
+      {
+        "t": "Representations",
+        "d": "Adjacency matrix vs adjacency list."
+      },
+      {
+        "t": "Traversal",
+        "d": "Systematic visit: DFS/BFS."
       }
     ],
     "concepts": [
-      "Terminology, Representations, Traversals sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Matrix: O(1) edge query, O(V^2) space; list: better for sparse.",
+      "Degree, path, cycle are core terms."
     ],
     "notes": [
-      "Define Terminology, Representations, Traversals in one line, name when/why it is used, and contrast it with one related idea under Graphs.",
-      "Exam cue: Terminology, Representations, Traversals is a syllabus topic under Graphs in Module 2.",
-      "Be ready to define Terminology, Representations, Traversals and give one use / one contrast — vague labels lose marks."
+      "Trap: pick representation based on density — not always matrix."
     ]
   },
   "2.2.2": {
     "terms": [
       {
-        "t": "Depth-First Search (DFS)",
-        "d": "Depth-First Search (DFS): a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "DFS",
+        "d": "Explore deep along a path; backtrack; stack/recursion."
+      },
+      {
+        "t": "Uses",
+        "d": "Cycle detect, topological sort, components, path finding."
       }
     ],
     "concepts": [
-      "Depth-First Search (DFS) sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "DFS forest / timestamps appear in CLRS-style analysis.",
+      "Not optimal shortest path in weighted graphs by itself."
     ],
     "notes": [
-      "Define Depth-First Search (DFS) in one line, name when/why it is used, and contrast it with one related idea under Graphs.",
-      "Exam cue: Depth-First Search (DFS) is a syllabus topic under Graphs in Module 2.",
-      "Be ready to define Depth-First Search (DFS) and give one use / one contrast — vague labels lose marks."
+      "Trap: DFS ≠ BFS order; DFS not for unweighted shortest path."
     ]
   },
   "2.2.3": {
     "terms": [
       {
-        "t": "Breadth-First Search (BFS)",
-        "d": "Breadth-First Search (BFS): a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "BFS",
+        "d": "Explore level by level using a queue."
+      },
+      {
+        "t": "Unweighted shortest path",
+        "d": "BFS layers give fewest edges from source."
       }
     ],
     "concepts": [
-      "Breadth-First Search (BFS) sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Queue is essential; mark visited to avoid reprocessing.",
+      "Contrast with Dijkstra for weighted graphs."
     ],
     "notes": [
-      "Define Breadth-First Search (BFS) in one line, name when/why it is used, and contrast it with one related idea under Graphs.",
-      "Exam cue: Breadth-First Search (BFS) is a syllabus topic under Graphs in Module 2.",
-      "Be ready to define Breadth-First Search (BFS) and give one use / one contrast — vague labels lose marks."
+      "Trap: BFS on weighted edges with different weights ≠ Dijkstra."
     ]
   },
   "2.2.4": {
     "terms": [
       {
-        "t": "Single-Source Shortest Path",
-        "d": "Single-Source Shortest Path: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Single-source shortest path",
+        "d": "Shortest paths from one source to all vertices."
+      },
+      {
+        "t": "Dijkstra",
+        "d": "Non-negative weights; greedy with priority queue."
+      },
+      {
+        "t": "Bellman–Ford",
+        "d": "Handles negative edges; detects negative cycles."
       }
     ],
     "concepts": [
-      "Single-Source Shortest Path sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Dijkstra fails with negative edges.",
+      "Relaxation is the common primitive."
     ],
     "notes": [
-      "Define Single-Source Shortest Path in one line, name when/why it is used, and contrast it with one related idea under Graphs.",
-      "Exam cue: Single-Source Shortest Path is a syllabus topic under Graphs in Module 2.",
-      "Be ready to define Single-Source Shortest Path and give one use / one contrast — vague labels lose marks."
+      "Trap: using Dijkstra with negatives — wrong."
     ]
   },
   "2.2.5": {
     "terms": [
       {
-        "t": "All-Pair Shortest Path",
-        "d": "Module - III: Dynamic and Greedy Approach"
+        "t": "All-pairs shortest path",
+        "d": "Shortest paths between every pair."
+      },
+      {
+        "t": "Floyd–Warshall",
+        "d": "DP over intermediate vertices; O(V^3)."
+      },
+      {
+        "t": "Johnson’s (if taught)",
+        "d": "Reweighting + Dijkstra from each source."
       }
     ],
     "concepts": [
-      "All-Pair Shortest Path sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Floyd works with negatives but not negative cycles.",
+      "Matrix DP update: d[i][j] = min(d[i][j], d[i][k]+d[k][j])."
     ],
     "notes": [
-      "Define All-Pair Shortest Path in one line, name when/why it is used, and contrast it with one related idea under Graphs.",
-      "Exam cue: All-Pair Shortest Path is a syllabus topic under Graphs in Module 2.",
-      "Be ready to define All-Pair Shortest Path and give one use / one contrast — vague labels lose marks."
+      "Trap: Floyd ≠ single BFS from each node on weighted graphs."
     ]
   },
   "3.1.1": {
     "terms": [
       {
-        "t": "Dynamic Programming Approach",
-        "d": "In breaking down the problem into smaller and smaller potential sub-problems,"
+        "t": "Dynamic programming",
+        "d": "Solve overlapping subproblems once; store answers."
+      },
+      {
+        "t": "Memoisation vs tabulation",
+        "d": "Top-down cache vs bottom-up table."
+      },
+      {
+        "t": "When",
+        "d": "Optimal substructure + overlapping subproblems."
       }
     ],
     "concepts": [
-      "Dynamic Programming Approach sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "LMR: say the definition aloud, then one use-case, then one contrast with a related topic."
+      "DP ≠ divide-and-conquer alone (D&C may not overlap).",
+      "DP ≠ greedy (greedy never revisits choices systematically)."
     ],
     "notes": [
-      "Define Dynamic Programming Approach in one line, name when/why it is used, and contrast it with one related idea under Dynamic Programming.",
-      "Exam cue: Dynamic Programming Approach is a syllabus topic under Dynamic Programming in Module 3.",
-      "Be ready to define Dynamic Programming Approach and give one use / one contrast — vague labels lose marks."
+      "LMR: say both conditions for DP.",
+      "Trap: calling every recursion ‘DP’ without storage of overlaps."
     ]
   },
   "3.1.2": {
     "terms": [
       {
-        "t": "Principle of Optimality",
-        "d": "Principle of Optimality: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Principle of optimality",
+        "d": "Optimal solution contains optimal solutions to subproblems."
+      },
+      {
+        "t": "Role in DP",
+        "d": "Justifies composing sub-results into global optimum."
       }
     ],
     "concepts": [
-      "Principle of Optimality sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "LMR: say the definition aloud, then one use-case, then one contrast with a related topic."
+      "If principle fails, DP formulation is invalid.",
+      "Check on a small example before coding a table."
     ],
     "notes": [
-      "Define Principle of Optimality in one line, name when/why it is used, and contrast it with one related idea under Dynamic Programming.",
-      "Exam cue: Principle of Optimality is a syllabus topic under Dynamic Programming in Module 3.",
-      "Be ready to define Principle of Optimality and give one use / one contrast — vague labels lose marks."
+      "LMR: one-line definition of optimality principle.",
+      "Trap: optimality principle ≠ ‘greedy choice property’ (that’s greedy)."
     ]
   },
   "3.1.3": {
     "terms": [
       {
-        "t": "Strassens Matrix Multiplication",
-        "d": "Strassens Matrix Multiplication: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Strassen multiplication",
+        "d": "Faster matrix multiply than naïve O(n^3) using 7 recursive multiplies."
+      },
+      {
+        "t": "Idea",
+        "d": "Algebraic recombination reduces multiplications; adds more additions."
       }
     ],
     "concepts": [
-      "Strassens Matrix Multiplication sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "LMR: say the definition aloud, then one use-case, then one contrast with a related topic."
+      "Asymptotically better; constants/practicality may vary.",
+      "Still divide-and-conquer on quadrants."
     ],
     "notes": [
-      "Define Strassens Matrix Multiplication in one line, name when/why it is used, and contrast it with one related idea under Dynamic Programming.",
-      "Exam cue: Strassens Matrix Multiplication is a syllabus topic under Dynamic Programming in Module 3.",
-      "Be ready to define Strassens Matrix Multiplication and give one use / one contrast — vague labels lose marks."
+      "LMR: ‘7 products instead of 8’ is the memorable fact.",
+      "Trap: Strassen is not related to shortest paths."
     ]
   },
   "3.1.4": {
     "terms": [
       {
-        "t": "Matrix Chain Multiplication",
-        "d": "Matrix Chain Multiplication: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Matrix chain multiplication",
+        "d": "Parenthesise matrix product to minimise scalar multiplies."
+      },
+      {
+        "t": "DP",
+        "d": "Interval DP over chain length."
       }
     ],
     "concepts": [
-      "Matrix Chain Multiplication sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Order of multiplication changes cost, not the mathematical product.",
+      "Classic DP table m[i][j]."
     ],
     "notes": [
-      "Define Matrix Chain Multiplication in one line, name when/why it is used, and contrast it with one related idea under Dynamic Programming.",
-      "Exam cue: Matrix Chain Multiplication is a syllabus topic under Dynamic Programming in Module 3.",
-      "Be ready to define Matrix Chain Multiplication and give one use / one contrast — vague labels lose marks."
+      "Trap: this is about cost of parenthesisation — not Strassen’s algorithm itself."
     ]
   },
   "3.1.5": {
     "terms": [
       {
-        "t": "Longest Common subsequence",
-        "d": "Longest Common subsequence: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "LCS",
+        "d": "Longest common subsequence of two strings (not necessarily contiguous)."
+      },
+      {
+        "t": "DP table",
+        "d": "If chars equal, diagonal+1; else max of skip either."
       }
     ],
     "concepts": [
-      "Longest Common subsequence sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Subsequence ≠ substring (substring is contiguous).",
+      "Used in diff tools / bioinformatics examples."
     ],
     "notes": [
-      "Define Longest Common subsequence in one line, name when/why it is used, and contrast it with one related idea under Dynamic Programming.",
-      "Exam cue: Longest Common subsequence is a syllabus topic under Dynamic Programming in Module 3.",
-      "Be ready to define Longest Common subsequence and give one use / one contrast — vague labels lose marks."
+      "Trap: LCS vs longest common substring — contiguousness."
     ]
   },
   "3.1.6": {
     "terms": [
       {
-        "t": "0/1 Knapsack Problem",
-        "d": "0/1 Knapsack Problem: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "0/1 knapsack",
+        "d": "Each item take or not; maximise value under weight limit."
+      },
+      {
+        "t": "DP",
+        "d": "dp[i][w] style; pseudo-polynomial in capacity."
+      },
+      {
+        "t": "Not fractional",
+        "d": "Cannot break items."
       }
     ],
     "concepts": [
-      "0/1 Knapsack Problem sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Contrast fractional knapsack (greedy by value/weight).",
+      "NP-hard as optimisation in general; DP works for integer capacity."
     ],
     "notes": [
-      "Define 0/1 Knapsack Problem in one line, name when/why it is used, and contrast it with one related idea under Dynamic Programming.",
-      "Exam cue: 0/1 Knapsack Problem is a syllabus topic under Dynamic Programming in Module 3.",
-      "Be ready to define 0/1 Knapsack Problem and give one use / one contrast — vague labels lose marks."
+      "Trap: using greedy value/weight for 0/1 — incorrect in general."
     ]
   },
   "3.2.1": {
     "terms": [
       {
-        "t": "Introduction of Greedy Approach",
-        "d": "Introduction of Greedy Approach: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Greedy approach",
+        "d": "Build solution by locally best choice at each step."
+      },
+      {
+        "t": "Greedy choice property",
+        "d": "Local optimum can lead to global (when algorithm is correct)."
+      },
+      {
+        "t": "Exchange argument",
+        "d": "Proof style that swaps to show optimality."
       }
     ],
     "concepts": [
-      "Introduction of Greedy Approach sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Greedy is fast but not always optimal — need a proof or known pattern.",
+      "Examples: activity selection, Huffman, fractional knapsack."
     ],
     "notes": [
-      "Define Introduction of Greedy Approach in one line, name when/why it is used, and contrast it with one related idea under Greedy Approach.",
-      "Exam cue: Introduction of Greedy Approach is a syllabus topic under Greedy Approach in Module 3.",
-      "Be ready to define Introduction of Greedy Approach and give one use / one contrast — vague labels lose marks."
+      "Trap: ‘greedy always works’ — false."
     ]
   },
   "3.2.2": {
     "terms": [
       {
-        "t": "Activity Selection Problem",
-        "d": "Activity Selection Problem: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Activity selection",
+        "d": "Select max non-overlapping activities."
+      },
+      {
+        "t": "Greedy rule",
+        "d": "Usually earliest finishing time first."
       }
     ],
     "concepts": [
-      "Activity Selection Problem sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Sort by finish time, then pick compatible next.",
+      "Classic proof via greedy choice + optimal substructure."
     ],
     "notes": [
-      "Define Activity Selection Problem in one line, name when/why it is used, and contrast it with one related idea under Greedy Approach.",
-      "Exam cue: Activity Selection Problem is a syllabus topic under Greedy Approach in Module 3.",
-      "Be ready to define Activity Selection Problem and give one use / one contrast — vague labels lose marks."
+      "Trap: sorting by start time alone is not the standard optimal greedy."
     ]
   },
   "3.2.3": {
     "terms": [
       {
-        "t": "Huffman Codes",
-        "d": "Huffman Codes: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Huffman codes",
+        "d": "Optimal prefix codes using frequency-greedy tree."
+      },
+      {
+        "t": "Prefix-free",
+        "d": "No codeword is prefix of another — unique decode."
+      },
+      {
+        "t": "Build",
+        "d": "Repeatedly merge two least frequent nodes."
       }
     ],
     "concepts": [
-      "Huffman Codes sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "More frequent symbols → shorter codes.",
+      "Related to binary trees and priority queues."
     ],
     "notes": [
-      "Define Huffman Codes in one line, name when/why it is used, and contrast it with one related idea under Greedy Approach.",
-      "Exam cue: Huffman Codes is a syllabus topic under Greedy Approach in Module 3.",
-      "Be ready to define Huffman Codes and give one use / one contrast — vague labels lose marks."
+      "Trap: Huffman is for encoding efficiency — not encryption security."
     ]
   },
   "3.2.4": {
     "terms": [
       {
-        "t": "Fractional Knapsack Problem",
-        "d": "Fractional Knapsack Problem: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Fractional knapsack",
+        "d": "May take fraction of an item."
+      },
+      {
+        "t": "Greedy",
+        "d": "Sort by value/weight ratio; take until capacity fills."
       }
     ],
     "concepts": [
-      "Fractional Knapsack Problem sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Optimal for fractional case; not for 0/1.",
+      "Last item may be taken partially."
     ],
     "notes": [
-      "Define Fractional Knapsack Problem in one line, name when/why it is used, and contrast it with one related idea under Greedy Approach.",
-      "Exam cue: Fractional Knapsack Problem is a syllabus topic under Greedy Approach in Module 3.",
-      "Be ready to define Fractional Knapsack Problem and give one use / one contrast — vague labels lose marks."
+      "Trap: applying fractional greedy to 0/1 knapsack."
     ]
   },
   "3.3.1": {
     "terms": [
       {
-        "t": "Traveling Salesman Problem",
-        "d": "Traveling Salesman Problem: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "TSP",
+        "d": "Visit each city once and return; minimise tour length."
+      },
+      {
+        "t": "Hardness",
+        "d": "Classic NP-hard optimisation problem."
+      },
+      {
+        "t": "Approaches",
+        "d": "Brute force, DP (Held–Karp), heuristics/approx."
       }
     ],
     "concepts": [
-      "Traveling Salesman Problem sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Brute force is factorial — not scalable.",
+      "Don’t claim a simple greedy always optimal for general TSP."
     ],
     "notes": [
-      "Define Traveling Salesman Problem in one line, name when/why it is used, and contrast it with one related idea under Branch and Bound Approach.",
-      "Exam cue: Traveling Salesman Problem is a syllabus topic under Branch and Bound Approach in Module 3.",
-      "Be ready to define Traveling Salesman Problem and give one use / one contrast — vague labels lose marks."
+      "Trap: confusing TSP with MST (MST is not a tour)."
     ]
   },
   "3.3.2": {
     "terms": [
       {
-        "t": "Knapsack Problem",
-        "d": "Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible."
+        "t": "Knapsack problem (general)",
+        "d": "Select items under capacity to maximise value."
+      },
+      {
+        "t": "Variants",
+        "d": "0/1, fractional, unbounded — different algorithms."
       }
     ],
     "concepts": [
-      "Knapsack Problem sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Name the variant before choosing DP vs greedy.",
+      "Syllabus may revisit knapsack under ‘problems’ cluster."
     ],
     "notes": [
-      "Define Knapsack Problem in one line, name when/why it is used, and contrast it with one related idea under Branch and Bound Approach.",
-      "Exam cue: Knapsack Problem is a syllabus topic under Branch and Bound Approach in Module 3.",
-      "Be ready to define Knapsack Problem and give one use / one contrast — vague labels lose marks."
+      "Trap: one word ‘knapsack’ — always specify 0/1 vs fractional."
     ]
   },
   "3.3.3": {
     "terms": [
       {
-        "t": "Job Sequencing",
-        "d": "Module - IV: E String Matching Algorithms and Approximation Algorithms"
+        "t": "Job sequencing",
+        "d": "Schedule jobs to maximise profit under constraints (often deadlines/slots)."
+      },
+      {
+        "t": "Greedy pattern",
+        "d": "Often sort by profit; place in latest free slot before deadline."
       }
     ],
     "concepts": [
-      "Job Sequencing sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Related to deadline scheduling themes.",
+      "Check whether multiple slots / unit time jobs assumed."
     ],
     "notes": [
-      "Define Job Sequencing in one line, name when/why it is used, and contrast it with one related idea under Branch and Bound Approach.",
-      "Exam cue: Job Sequencing is a syllabus topic under Branch and Bound Approach in Module 3.",
-      "Be ready to define Job Sequencing and give one use / one contrast — vague labels lose marks."
+      "Trap: sequencing ≠ OS process scheduling vocabulary unless syllabus links them."
     ]
   },
   "3.3.4": {
     "terms": [
       {
-        "t": "Job Sequencing with Deadline",
-        "d": "Module - IV: E String Matching Algorithms and Approximation Algorithms"
+        "t": "Job sequencing with deadline",
+        "d": "Unit-time jobs with deadlines and profits; maximise profit."
+      },
+      {
+        "t": "Method",
+        "d": "Sort profits descending; assign to feasible time slot."
       }
     ],
     "concepts": [
-      "Job Sequencing with Deadline sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Feasibility: finish by deadline.",
+      "Greedy placement into latest possible slot is common."
     ],
     "notes": [
-      "Define Job Sequencing with Deadline in one line, name when/why it is used, and contrast it with one related idea under Branch and Bound Approach.",
-      "Exam cue: Job Sequencing with Deadline is a syllabus topic under Branch and Bound Approach in Module 3.",
-      "Be ready to define Job Sequencing with Deadline and give one use / one contrast — vague labels lose marks."
+      "Trap: ignoring deadline when taking highest profit first blindly."
     ]
   },
   "4.1.1": {
     "terms": [
       {
-        "t": "Naïve String Matching Algorithm",
-        "d": "Naïve String Matching Algorithm: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Naïve string matching",
+        "d": "Try P at every shift of T; compare chars."
+      },
+      {
+        "t": "Time",
+        "d": "O((n−m+1)m) worst case."
       }
     ],
     "concepts": [
-      "Naïve String Matching Algorithm sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "LMR: say the definition aloud, then one use-case, then one contrast with a related topic."
+      "Simple baseline for Rabin–Karp / KMP comparisons.",
+      "Many mismatches still cost comparisons."
     ],
     "notes": [
-      "Define Naïve String Matching Algorithm in one line, name when/why it is used, and contrast it with one related idea under String Matching Algorithm.",
-      "Exam cue: Naïve String Matching Algorithm is a syllabus topic under String Matching Algorithm in Module 4.",
-      "Be ready to define Naïve String Matching Algorithm and give one use / one contrast — vague labels lose marks."
+      "LMR: state complexity clearly.",
+      "Trap: naïve is not hashing-based."
     ]
   },
   "4.1.3": {
     "terms": [
       {
-        "t": "String Matching Algorithm: Rabin Karp",
-        "d": "Module - IV: E String Matching Algorithms and Approximation Algorithms"
+        "t": "Rabin–Karp",
+        "d": "Rolling hash of windows; verify on hash hit."
+      },
+      {
+        "t": "Spurious hit",
+        "d": "Hash match but strings differ — must verify."
+      },
+      {
+        "t": "Average",
+        "d": "Good with strong hash; worst can degrade."
       }
     ],
     "concepts": [
-      "String Matching Algorithm: Rabin Karp sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "LMR: say the definition aloud, then one use-case, then one contrast with a related topic."
+      "Rolling hash updates in O(1) per shift.",
+      "Multiple patterns can share hashing ideas."
     ],
     "notes": [
-      "Define String Matching Algorithm: Rabin Karp in one line, name when/why it is used, and contrast it with one related idea under String Matching Algorithm.",
-      "Exam cue: String Matching Algorithm: Rabin Karp is a syllabus topic under String Matching Algorithm in Module 4.",
-      "Be ready to define String Matching Algorithm: Rabin Karp and give one use / one contrast — vague labels lose marks."
+      "LMR: hash then verify — never skip verify.",
+      "Trap: hash equality ≠ string equality."
     ]
   },
   "4.2.1": {
     "terms": [
       {
-        "t": "Vertex-Cover Algorithm",
-        "d": "Vertex-Cover Algorithm: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Vertex cover",
+        "d": "Set of vertices incident to every edge."
+      },
+      {
+        "t": "Approx algorithm",
+        "d": "Classic 2-approx: pick both ends of an uncovered edge, repeat."
       }
     ],
     "concepts": [
-      "Vertex-Cover Algorithm sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "LMR: say the definition aloud, then one use-case, then one contrast with a related topic."
+      "Decision version is NP-complete; approx is taught for algorithms design.",
+      "Minimal vs minimum — wording matters."
     ],
     "notes": [
-      "Define Vertex-Cover Algorithm in one line, name when/why it is used, and contrast it with one related idea under Approximation Algorithm.",
-      "Exam cue: Vertex-Cover Algorithm is a syllabus topic under Approximation Algorithm in Module 4.",
-      "Be ready to define Vertex-Cover Algorithm and give one use / one contrast — vague labels lose marks."
+      "LMR: definition + idea of 2-approximation.",
+      "Trap: vertex cover ≠ vertex colouring."
     ]
   },
   "4.2.2": {
     "terms": [
       {
-        "t": "Set Covering Problem",
-        "d": "Set Covering Problem: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Set cover",
+        "d": "Cover universe with minimum number of subsets."
+      },
+      {
+        "t": "Greedy approx",
+        "d": "Repeatedly pick set covering most remaining elements."
       }
     ],
     "concepts": [
-      "Set Covering Problem sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "NP-hard; greedy gives logarithmic approximation classically.",
+      "Related to hitting-set formulations."
     ],
     "notes": [
-      "Define Set Covering Problem in one line, name when/why it is used, and contrast it with one related idea under Approximation Algorithm.",
-      "Exam cue: Set Covering Problem is a syllabus topic under Approximation Algorithm in Module 4.",
-      "Be ready to define Set Covering Problem and give one use / one contrast — vague labels lose marks."
+      "Trap: set cover ≠ vertex cover (different universe structure)."
     ]
   },
   "4.2.3": {
     "terms": [
       {
-        "t": "Randomisation and Linear Programming",
-        "d": "Randomisation and Linear Programming: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Randomisation",
+        "d": "Algorithms that use randomness for speed/simplicity (expected performance)."
+      },
+      {
+        "t": "Linear programming",
+        "d": "Optimise linear objective under linear constraints — algorithmic tool."
       }
     ],
     "concepts": [
-      "Randomisation and Linear Programming sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Syllabus pairs ideas for advanced design techniques.",
+      "Randomised algorithms need expected/high-probability analysis."
     ],
     "notes": [
-      "Define Randomisation and Linear Programming in one line, name when/why it is used, and contrast it with one related idea under Approximation Algorithm.",
-      "Exam cue: Randomisation and Linear Programming is a syllabus topic under Approximation Algorithm in Module 4.",
-      "Be ready to define Randomisation and Linear Programming and give one use / one contrast — vague labels lose marks."
+      "Trap: randomised ≠ incorrect; analyse failure probability."
     ]
   },
   "4.2.4": {
     "terms": [
       {
-        "t": "The Subset-sum Problem",
-        "d": "The Subset-sum Problem: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Subset-sum",
+        "d": "Is there a subset summing to target t?"
+      },
+      {
+        "t": "Hardness / DP",
+        "d": "NP-complete decision; pseudo-poly DP possible."
       }
     ],
     "concepts": [
-      "The Subset-sum Problem sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Related to knapsack decision version.",
+      "Meet-in-the-middle sometimes taught for moderate n."
     ],
     "notes": [
-      "Define The Subset-sum Problem in one line, name when/why it is used, and contrast it with one related idea under Approximation Algorithm.",
-      "Exam cue: The Subset-sum Problem is a syllabus topic under Approximation Algorithm in Module 4.",
-      "Be ready to define The Subset-sum Problem and give one use / one contrast — vague labels lose marks."
+      "Trap: subset-sum ≠ always polynomial — depends on numeric magnitude."
     ]
   },
   "5.1.1": {
     "terms": [
       {
-        "t": "Green Technology",
-        "d": "Green Technology: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Green technology (in this module)",
+        "d": "Efficiency/resource-conscious computing themes tied to algorithmic cost."
+      },
+      {
+        "t": "Link to complexity",
+        "d": "Fewer operations / less energy as a motivation for better algorithms."
       }
     ],
     "concepts": [
-      "Green Technology sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "LMR: say the definition aloud, then one use-case, then one contrast with a related topic."
+      "Treat as syllabus framing unless SLM gives a narrower definition.",
+      "Connect to choosing efficient algorithms over naïve ones."
     ],
     "notes": [
-      "Define Green Technology in one line, name when/why it is used, and contrast it with one related idea under Polynomial Time.",
-      "Exam cue: Green Technology is a syllabus topic under Polynomial Time in Module 5.",
-      "Be ready to define Green Technology and give one use / one contrast — vague labels lose marks."
+      "LMR: one line linking green goals to algorithmic efficiency.",
+      "Trap: don’t invent unrelated ecology essays — stay CS-framed."
     ]
   },
   "5.1.2": {
     "terms": [
       {
-        "t": "Hamiltonian Cycles",
-        "d": "Hamiltonian Cycles: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "Hamiltonian cycle",
+        "d": "Cycle visiting each vertex exactly once and returning."
+      },
+      {
+        "t": "Hardness",
+        "d": "Deciding existence is NP-complete (classic)."
       }
     ],
     "concepts": [
-      "Hamiltonian Cycles sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "LMR: say the definition aloud, then one use-case, then one contrast with a related topic."
+      "Vs Euler tour: Euler uses every edge; Hamiltonian every vertex.",
+      "TSP optimisation builds on Hamiltonian ideas."
     ],
     "notes": [
-      "Define Hamiltonian Cycles in one line, name when/why it is used, and contrast it with one related idea under Polynomial Time.",
-      "Exam cue: Hamiltonian Cycles is a syllabus topic under Polynomial Time in Module 5.",
-      "Be ready to define Hamiltonian Cycles and give one use / one contrast — vague labels lose marks."
+      "LMR: vertex-once cycle definition + NP-complete mention.",
+      "Trap: Hamiltonian ≠ Eulerian."
     ]
   },
   "5.2.1": {
     "terms": [
       {
-        "t": "NP-completeness Proofs",
-        "d": "NP-completeness Proofs: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "NP-completeness proof",
+        "d": "Show problem in NP + polynomial reduction from known NP-complete problem."
+      },
+      {
+        "t": "Certificate",
+        "d": "Short verifiable witness for yes instances (for NP)."
       }
     ],
     "concepts": [
-      "NP-completeness Proofs sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "LMR: say the definition aloud, then one use-case, then one contrast with a related topic."
+      "Reduction direction: known hard ≤p your problem.",
+      "Polynomial-time verification ≠ polynomial-time solving."
     ],
     "notes": [
-      "Define NP-completeness Proofs in one line, name when/why it is used, and contrast it with one related idea under NP-Completeness.",
-      "Exam cue: NP-completeness Proofs is a syllabus topic under NP-Completeness in Module 5.",
-      "Be ready to define NP-completeness Proofs and give one use / one contrast — vague labels lose marks."
+      "LMR: two parts of a completeness proof.",
+      "Trap: reducing your problem to SAT shows yours is ‘no harder’ — wrong direction for hardness."
     ]
   },
   "5.2.2": {
     "terms": [
       {
-        "t": "NP-completeness Problems",
-        "d": "NP-completeness Problems: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "NP-complete problems",
+        "d": "Hardest problems in NP (under poly reductions)."
+      },
+      {
+        "t": "Examples",
+        "d": "SAT, vertex cover decision, Hamiltonian cycle, subset-sum, …"
       }
     ],
     "concepts": [
-      "NP-completeness Problems sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "If any NP-complete problem has poly algorithm, P=NP.",
+      "Practice recognising ‘decision version’ wording."
     ],
     "notes": [
-      "Define NP-completeness Problems in one line, name when/why it is used, and contrast it with one related idea under NP-Completeness.",
-      "Exam cue: NP-completeness Problems is a syllabus topic under NP-Completeness in Module 5.",
-      "Be ready to define NP-completeness Problems and give one use / one contrast — vague labels lose marks."
+      "Trap: optimisation TSP vs decision Hamiltonian — related but not identical statements."
     ]
   },
   "5.2.3": {
     "terms": [
       {
-        "t": "NP-Hard and SAT Problems",
-        "d": "NP-Hard and SAT Problems: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept."
+        "t": "NP-hard",
+        "d": "At least as hard as NP-complete; may not be in NP."
+      },
+      {
+        "t": "SAT",
+        "d": "Satisfiability of Boolean formulas — central NP-complete problem."
       }
     ],
     "concepts": [
-      "NP-Hard and SAT Problems sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "NP-hard includes problems outside NP (e.g. some optimisation/undecidable-adjacent teaching examples).",
+      "SAT is the usual reduction source."
     ],
     "notes": [
-      "Define NP-Hard and SAT Problems in one line, name when/why it is used, and contrast it with one related idea under NP-Completeness.",
-      "Exam cue: NP-Hard and SAT Problems is a syllabus topic under NP-Completeness in Module 5.",
-      "Be ready to define NP-Hard and SAT Problems and give one use / one contrast — vague labels lose marks."
+      "Trap: NP-hard ≠ NP-complete unless also in NP."
     ]
   },
   "5.2.4": {
     "terms": [
       {
-        "t": "NP-completeness and Reducibility",
-        "d": "Let L1 and L2 alone be two choice issues. Assume calculation A2 settles L2. That"
+        "t": "Reducibility",
+        "d": "Problem A ≤p B if A transforms to B in poly time."
       },
       {
-        "t": "Point 2",
-        "d": "Assume calculation A2 settles L2."
+        "t": "Meaning",
+        "d": "B is at least as hard as A (for hardness proofs)."
       }
     ],
     "concepts": [
-      "NP-completeness and Reducibility sits in this module’s map — Overview is the short blurb; these terms are the exam definition.",
-      "Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems."
+      "Cook–Levin historically links SAT to NP-completeness theory.",
+      "Always state what reduces to what."
     ],
     "notes": [
-      "Define NP-completeness and Reducibility in one line, name when/why it is used, and contrast it with one related idea under NP-Completeness.",
-      "Exam cue: NP-completeness and Reducibility is a syllabus topic under NP-Completeness in Module 5.",
-      "Be ready to define NP-completeness and Reducibility and give one use / one contrast — vague labels lose marks."
+      "Trap: arrow direction mistakes fail proofs."
     ]
   }
 }
