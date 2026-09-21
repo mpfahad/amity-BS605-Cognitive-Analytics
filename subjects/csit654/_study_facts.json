@@ -10,13 +10,13 @@
           "title": "Introduction to Security Attacks",
           "flashcards": [
             {
-              "front": "What is the core idea of Introduction to Security Attacks?",
-              "back": "1.1.2 Services and Mechanism 1.1.3 Classical Encryption Techniques 1.1.4 Substitution Ciphers",
-              "detail": "From Network Security and Cryptography (CSIT654) · 1.1.1 · Network security"
+              "front": "What is Introduction to Security Attacks?",
+              "back": "Introduction to Security Attacks: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "1.1.1 · Network security"
             },
             {
-              "front": "Name one exam point for Introduction to Security Attacks.",
-              "back": "Be able to define Introduction to Security Attacks, state when it is used, and contrast it with a related concept in Network security."
+              "front": "Exam focus: Introduction to Security Attacks",
+              "back": "Define Introduction to Security Attacks in one line, name when/why it is used, and contrast it with one related idea under Network security."
             }
           ],
           "mcqs": [
@@ -25,8 +25,8 @@
               "options": [
                 "Unrelated to Module 1",
                 "A core idea in Network Security & Cryptography: Introduction to Security Attacks",
-                "Only a programming language keyword",
-                "A definition-only topic with no applications"
+                "Only a programming-language keyword with no syllabus meaning",
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 1,
               "explain": "Introduction to Security Attacks is a syllabus topic under Network security in Module 1."
@@ -38,17 +38,21 @@
           "title": "Services and Mechanism",
           "flashcards": [
             {
-              "front": "What is the core idea of Services and Mechanism?",
-              "back": "1.1.3 Classical Encryption Techniques 1.1.4 Substitution Ciphers 1.1.5 Transposition Ciphers",
-              "detail": "From Network Security and Cryptography (CSIT654) · 1.1.2 · Network security"
+              "front": "What is Services and Mechanism?",
+              "back": "Learn various Services and Mechanism to ensure Network Security",
+              "detail": "1.1.2 · Network security"
+            },
+            {
+              "front": "Exam focus: Services and Mechanism",
+              "back": "Define Services and Mechanism in one line, name when/why it is used, and contrast it with one related idea under Network security."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Services and Mechanism?",
               "options": [
-                "A definition-only topic with no applications",
-                "Only a programming language keyword",
+                "A definition-only label with no role in Network Security & Cryptography",
+                "Only a programming-language keyword with no syllabus meaning",
                 "A core idea in Network Security & Cryptography: Services and Mechanism",
                 "Unrelated to Module 1"
               ],
@@ -62,13 +66,13 @@
           "title": "Classical Encryption Techniques",
           "flashcards": [
             {
-              "front": "What is the core idea of Classical Encryption Techniques?",
-              "back": "1.1.4 Substitution Ciphers 1.1.5 Transposition Ciphers 1.1.6 Cryptanalysis",
-              "detail": "From Network Security and Cryptography (CSIT654) · 1.1.3 · Network security"
+              "front": "What is Classical Encryption Techniques?",
+              "back": "Classical Encryption Techniques: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "1.1.3 · Network security"
             },
             {
-              "front": "Name one exam point for Classical Encryption Techniques.",
-              "back": "Be able to define Classical Encryption Techniques, state when it is used, and contrast it with a related concept in Network security."
+              "front": "Exam focus: Classical Encryption Techniques",
+              "back": "Define Classical Encryption Techniques in one line, name when/why it is used, and contrast it with one related idea under Network security."
             }
           ],
           "mcqs": [
@@ -76,9 +80,9 @@
               "q": "Which statement best matches Classical Encryption Techniques?",
               "options": [
                 "Unrelated to Module 1",
-                "A definition-only topic with no applications",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "A core idea in Network Security & Cryptography: Classical Encryption Techniques",
-                "Only a programming language keyword"
+                "Only a programming-language keyword with no syllabus meaning"
               ],
               "answer": 2,
               "explain": "Classical Encryption Techniques is a syllabus topic under Network security in Module 1."
@@ -90,9 +94,13 @@
           "title": "Substitution Ciphers",
           "flashcards": [
             {
-              "front": "What is the core idea of Substitution Ciphers?",
-              "back": "1.1.5 Transposition Ciphers 1.1.6 Cryptanalysis 1.1.7 Steganography",
-              "detail": "From Network Security and Cryptography (CSIT654) · 1.1.4 · Network security"
+              "front": "What is Substitution Ciphers?",
+              "back": "Information encryption conspire in which units of the plaintext (for the most part",
+              "detail": "1.1.4 · Network security"
+            },
+            {
+              "front": "Exam focus: Substitution Ciphers",
+              "back": "Define Substitution Ciphers in one line, name when/why it is used, and contrast it with one related idea under Network security."
             }
           ],
           "mcqs": [
@@ -100,8 +108,8 @@
               "q": "Which statement best matches Substitution Ciphers?",
               "options": [
                 "Unrelated to Module 1",
-                "Only a programming language keyword",
-                "A definition-only topic with no applications",
+                "Only a programming-language keyword with no syllabus meaning",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "A core idea in Network Security & Cryptography: Substitution Ciphers"
               ],
               "answer": 3,
@@ -114,13 +122,13 @@
           "title": "Transposition Ciphers",
           "flashcards": [
             {
-              "front": "What is the core idea of Transposition Ciphers?",
-              "back": "1.1.6 Cryptanalysis 1.1.7 Steganography 1.1.8 Stream and Block Ciphers",
-              "detail": "From Network Security and Cryptography (CSIT654) · 1.1.5 · Network security"
+              "front": "What is Transposition Ciphers?",
+              "back": "A more intricate plan would be to write the message in a square, row by row, and",
+              "detail": "1.1.5 · Network security"
             },
             {
-              "front": "Name one exam point for Transposition Ciphers.",
-              "back": "Be able to define Transposition Ciphers, state when it is used, and contrast it with a related concept in Network security."
+              "front": "Exam focus: Transposition Ciphers",
+              "back": "Define Transposition Ciphers in one line, name when/why it is used, and contrast it with one related idea under Network security."
             }
           ],
           "mcqs": [
@@ -128,9 +136,9 @@
               "q": "Which statement best matches Transposition Ciphers?",
               "options": [
                 "A core idea in Network Security & Cryptography: Transposition Ciphers",
-                "Only a programming language keyword",
+                "Only a programming-language keyword with no syllabus meaning",
                 "Unrelated to Module 1",
-                "A definition-only topic with no applications"
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 0,
               "explain": "Transposition Ciphers is a syllabus topic under Network security in Module 1."
@@ -142,9 +150,13 @@
           "title": "Cryptanalysis",
           "flashcards": [
             {
-              "front": "What is the core idea of Cryptanalysis?",
-              "back": "1.1.7 Steganography 1.1.8 Stream and Block Ciphers 1.1.9 Overview of Hardware Security",
-              "detail": "From Network Security and Cryptography (CSIT654) · 1.1.6 · Network security"
+              "front": "What is Cryptanalysis?",
+              "back": "It is to identify and exploit flaws in cryptographic systems, while cryptographers use these findings to enhance security. Cryptology encompasses both cryptanalysis and cryptography, with cryptographers creating encryption algorithms and cryptanalysts deciphering them.",
+              "detail": "1.1.6 · Network security"
+            },
+            {
+              "front": "Exam focus: Cryptanalysis",
+              "back": "Define Cryptanalysis in one line, name when/why it is used, and contrast it with one related idea under Network security."
             }
           ],
           "mcqs": [
@@ -153,8 +165,8 @@
               "options": [
                 "A core idea in Network Security & Cryptography: Cryptanalysis",
                 "Unrelated to Module 1",
-                "Only a programming language keyword",
-                "A definition-only topic with no applications"
+                "Only a programming-language keyword with no syllabus meaning",
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 0,
               "explain": "Cryptanalysis is a syllabus topic under Network security in Module 1."
@@ -166,13 +178,13 @@
           "title": "Steganography",
           "flashcards": [
             {
-              "front": "What is the core idea of Steganography?",
-              "back": "1.1.8 Stream and Block Ciphers 1.1.9 Overview of Hardware Security Module - II: Secret and Public Key Cryptography",
-              "detail": "From Network Security and Cryptography (CSIT654) · 1.1.7 · Network security"
+              "front": "What is Steganography?",
+              "back": "It is used to conceal confidential information within seemingly innocuous files or messages, making it a valuable technique for secure communication and data protection.",
+              "detail": "1.1.7 · Network security"
             },
             {
-              "front": "Name one exam point for Steganography.",
-              "back": "Be able to define Steganography, state when it is used, and contrast it with a related concept in Network security."
+              "front": "Exam focus: Steganography",
+              "back": "Define Steganography in one line, name when/why it is used, and contrast it with one related idea under Network security."
             }
           ],
           "mcqs": [
@@ -180,9 +192,9 @@
               "q": "Which statement best matches Steganography?",
               "options": [
                 "Unrelated to Module 1",
-                "A definition-only topic with no applications",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "A core idea in Network Security & Cryptography: Steganography",
-                "Only a programming language keyword"
+                "Only a programming-language keyword with no syllabus meaning"
               ],
               "answer": 2,
               "explain": "Steganography is a syllabus topic under Network security in Module 1."
@@ -194,9 +206,13 @@
           "title": "Stream and Block Ciphers",
           "flashcards": [
             {
-              "front": "What is the core idea of Stream and Block Ciphers?",
-              "back": "1.1.9 Overview of Hardware Security Module - II: Secret and Public Key Cryptography 39",
-              "detail": "From Network Security and Cryptography (CSIT654) · 1.1.8 · Network security"
+              "front": "What is Stream and Block Ciphers?",
+              "back": "The difference between stream and block cyphers in cryptographic symmetric",
+              "detail": "1.1.8 · Network security"
+            },
+            {
+              "front": "Exam focus: Stream and Block Ciphers",
+              "back": "Define Stream and Block Ciphers in one line, name when/why it is used, and contrast it with one related idea under Network security."
             }
           ],
           "mcqs": [
@@ -205,8 +221,8 @@
               "options": [
                 "Unrelated to Module 1",
                 "A core idea in Network Security & Cryptography: Stream and Block Ciphers",
-                "A definition-only topic with no applications",
-                "Only a programming language keyword"
+                "A definition-only label with no role in Network Security & Cryptography",
+                "Only a programming-language keyword with no syllabus meaning"
               ],
               "answer": 1,
               "explain": "Stream and Block Ciphers is a syllabus topic under Network security in Module 1."
@@ -218,22 +234,22 @@
           "title": "Overview of Hardware Security",
           "flashcards": [
             {
-              "front": "What is the core idea of Overview of Hardware Security?",
-              "back": "Module - II: Secret and Public Key Cryptography 39 2.1 Secret Key Cryptography",
-              "detail": "From Network Security and Cryptography (CSIT654) · 1.1.9 · Network security"
+              "front": "What is Overview of Hardware Security?",
+              "back": "Module - II: Secret and Public Key Cryptography",
+              "detail": "1.1.9 · Network security"
             },
             {
-              "front": "Name one exam point for Overview of Hardware Security.",
-              "back": "Be able to define Overview of Hardware Security, state when it is used, and contrast it with a related concept in Network security."
+              "front": "Exam focus: Overview of Hardware Security",
+              "back": "Define Overview of Hardware Security in one line, name when/why it is used, and contrast it with one related idea under Network security."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Overview of Hardware Security?",
               "options": [
-                "A definition-only topic with no applications",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "A core idea in Network Security & Cryptography: Overview of Hardware Security",
-                "Only a programming language keyword",
+                "Only a programming-language keyword with no syllabus meaning",
                 "Unrelated to Module 1"
               ],
               "answer": 1,
@@ -252,21 +268,21 @@
           "title": "Modern Block Ciphers: Block Ciphers Principles",
           "flashcards": [
             {
-              "front": "What is the core idea of Modern Block Ciphers: Block Ciphers Principles?",
-              "back": "2.1.2 Shannon’s Theory of Confusion and Diffusion 2.1.3 Fiestal Structure 2.1.4 Data Encryption Standard (DES)",
-              "detail": "From Network Security and Cryptography (CSIT654) · 2.1.1 · Secret Key Cryptography"
+              "front": "What is Modern Block Ciphers: Block Ciphers Principles?",
+              "back": "2.1.1 Modern Block Ciphers: Block Ciphers Principles",
+              "detail": "2.1.1 · Secret Key Cryptography"
             },
             {
-              "front": "Name one exam point for Modern Block Ciphers: Block Ciphers Principles.",
-              "back": "Be able to define Modern Block Ciphers: Block Ciphers Principles, state when it is used, and contrast it with a related concept in Secret Key Cryptography."
+              "front": "Exam focus: Modern Block Ciphers: Block Ciphers Principles",
+              "back": "Define Modern Block Ciphers: Block Ciphers Principles in one line, name when/why it is used, and contrast it with one related idea under Secret Key Cryptography."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Modern Block Ciphers: Block Ciphers Principles?",
               "options": [
-                "Only a programming language keyword",
-                "A definition-only topic with no applications",
+                "Only a programming-language keyword with no syllabus meaning",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "A core idea in Network Security & Cryptography: Modern Block Ciphers: Block Ciphers Principles",
                 "Unrelated to Module 2"
               ],
@@ -280,17 +296,21 @@
           "title": "Shannon’s Theory of Confusion and Diffusion",
           "flashcards": [
             {
-              "front": "What is the core idea of Shannon’s Theory of Confusion and Diffusion?",
-              "back": "2.1.3 Fiestal Structure 2.1.4 Data Encryption Standard (DES) 2.1.5 Strength of DES",
-              "detail": "From Network Security and Cryptography (CSIT654) · 2.1.2 · Secret Key Cryptography"
+              "front": "What is Shannon’s Theory of Confusion and Diffusion?",
+              "back": "CONFUSION and DIFFUSION region unit the properties for making a protected",
+              "detail": "2.1.2 · Secret Key Cryptography"
+            },
+            {
+              "front": "Exam focus: Shannon’s Theory of Confusion and Diffusion",
+              "back": "Define Shannon’s Theory of Confusion and Diffusion in one line, name when/why it is used, and contrast it with one related idea under Secret Key Cryptography."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Shannon’s Theory of Confusion and Diffusion?",
               "options": [
-                "A definition-only topic with no applications",
-                "Only a programming language keyword",
+                "A definition-only label with no role in Network Security & Cryptography",
+                "Only a programming-language keyword with no syllabus meaning",
                 "Unrelated to Module 2",
                 "A core idea in Network Security & Cryptography: Shannon’s Theory of Confusion and Diffusion"
               ],
@@ -304,13 +324,13 @@
           "title": "Fiestal Structure",
           "flashcards": [
             {
-              "front": "What is the core idea of Fiestal Structure?",
-              "back": "2.1.4 Data Encryption Standard (DES) 2.1.5 Strength of DES 2.1.6 Idea of Differential Cryptanalysis",
-              "detail": "From Network Security and Cryptography (CSIT654) · 2.1.3 · Secret Key Cryptography"
+              "front": "What is Fiestal Structure?",
+              "back": "The Feistel Structure serves as the foundation for both the encryption and",
+              "detail": "2.1.3 · Secret Key Cryptography"
             },
             {
-              "front": "Name one exam point for Fiestal Structure.",
-              "back": "Be able to define Fiestal Structure, state when it is used, and contrast it with a related concept in Secret Key Cryptography."
+              "front": "Exam focus: Fiestal Structure",
+              "back": "Define Fiestal Structure in one line, name when/why it is used, and contrast it with one related idea under Secret Key Cryptography."
             }
           ],
           "mcqs": [
@@ -318,9 +338,9 @@
               "q": "Which statement best matches Fiestal Structure?",
               "options": [
                 "A core idea in Network Security & Cryptography: Fiestal Structure",
-                "Only a programming language keyword",
+                "Only a programming-language keyword with no syllabus meaning",
                 "Unrelated to Module 2",
-                "A definition-only topic with no applications"
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 0,
               "explain": "Fiestal Structure is a syllabus topic under Secret Key Cryptography in Module 2."
@@ -332,9 +352,13 @@
           "title": "Data Encryption Standard (DES)",
           "flashcards": [
             {
-              "front": "What is the core idea of Data Encryption Standard (DES)?",
-              "back": "2.1.5 Strength of DES 2.1.6 Idea of Differential Cryptanalysis 2.1.7 Block Cipher Modes of Operations",
-              "detail": "From Network Security and Cryptography (CSIT654) · 2.1.4 · Secret Key Cryptography"
+              "front": "What is Data Encryption Standard (DES)?",
+              "back": "A symmetric-key block cipher algorithm adopted by NIST in the 1970s, using 48-bit keys to transform plaintext into ciphertext.",
+              "detail": "2.1.4 · Secret Key Cryptography"
+            },
+            {
+              "front": "Exam focus: Data Encryption Standard (DES)",
+              "back": "Define Data Encryption Standard (DES) in one line, name when/why it is used, and contrast it with one related idea under Secret Key Cryptography."
             }
           ],
           "mcqs": [
@@ -342,9 +366,9 @@
               "q": "Which statement best matches Data Encryption Standard (DES)?",
               "options": [
                 "Unrelated to Module 2",
-                "A definition-only topic with no applications",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "A core idea in Network Security & Cryptography: Data Encryption Standard (DES)",
-                "Only a programming language keyword"
+                "Only a programming-language keyword with no syllabus meaning"
               ],
               "answer": 2,
               "explain": "Data Encryption Standard (DES) is a syllabus topic under Secret Key Cryptography in Module 2."
@@ -356,23 +380,23 @@
           "title": "Strength of DES",
           "flashcards": [
             {
-              "front": "What is the core idea of Strength of DES?",
-              "back": "2.1.6 Idea of Differential Cryptanalysis 2.1.7 Block Cipher Modes of Operations 2.1.8 Triple DES",
-              "detail": "From Network Security and Cryptography (CSIT654) · 2.1.5 · Secret Key Cryptography"
+              "front": "What is Strength of DES?",
+              "back": "The block cypher algorithm known as the Data Encryption Standard (DES) uses",
+              "detail": "2.1.5 · Secret Key Cryptography"
             },
             {
-              "front": "Name one exam point for Strength of DES.",
-              "back": "Be able to define Strength of DES, state when it is used, and contrast it with a related concept in Secret Key Cryptography."
+              "front": "Exam focus: Strength of DES",
+              "back": "Define Strength of DES in one line, name when/why it is used, and contrast it with one related idea under Secret Key Cryptography."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Strength of DES?",
               "options": [
-                "A definition-only topic with no applications",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "A core idea in Network Security & Cryptography: Strength of DES",
                 "Unrelated to Module 2",
-                "Only a programming language keyword"
+                "Only a programming-language keyword with no syllabus meaning"
               ],
               "answer": 1,
               "explain": "Strength of DES is a syllabus topic under Secret Key Cryptography in Module 2."
@@ -384,19 +408,23 @@
           "title": "Idea of Differential Cryptanalysis",
           "flashcards": [
             {
-              "front": "What is the core idea of Idea of Differential Cryptanalysis?",
-              "back": "2.1.7 Block Cipher Modes of Operations 2.1.8 Triple DES 2.2 Public Key Cryptography",
-              "detail": "From Network Security and Cryptography (CSIT654) · 2.1.6 · Secret Key Cryptography"
+              "front": "What is Idea of Differential Cryptanalysis?",
+              "back": "Differential cryptanalysis tries to discover the contrast between related plaintexts",
+              "detail": "2.1.6 · Secret Key Cryptography"
+            },
+            {
+              "front": "Exam focus: Idea of Differential Cryptanalysis",
+              "back": "Define Idea of Differential Cryptanalysis in one line, name when/why it is used, and contrast it with one related idea under Secret Key Cryptography."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Idea of Differential Cryptanalysis?",
               "options": [
-                "A definition-only topic with no applications",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "Unrelated to Module 2",
                 "A core idea in Network Security & Cryptography: Idea of Differential Cryptanalysis",
-                "Only a programming language keyword"
+                "Only a programming-language keyword with no syllabus meaning"
               ],
               "answer": 2,
               "explain": "Idea of Differential Cryptanalysis is a syllabus topic under Secret Key Cryptography in Module 2."
@@ -408,23 +436,23 @@
           "title": "Block Cipher Modes of Operations",
           "flashcards": [
             {
-              "front": "What is the core idea of Block Cipher Modes of Operations?",
-              "back": "2.1.8 Triple DES 2.2 Public Key Cryptography 2.2.1 Advanced Encryption Standard (AES)",
-              "detail": "From Network Security and Cryptography (CSIT654) · 2.1.7 · Secret Key Cryptography"
+              "front": "What is Block Cipher Modes of Operations?",
+              "back": "The fact that block figures only allow you to encrypt messages of a size equal to",
+              "detail": "2.1.7 · Secret Key Cryptography"
             },
             {
-              "front": "Name one exam point for Block Cipher Modes of Operations.",
-              "back": "Be able to define Block Cipher Modes of Operations, state when it is used, and contrast it with a related concept in Secret Key Cryptography."
+              "front": "Exam focus: Block Cipher Modes of Operations",
+              "back": "Define Block Cipher Modes of Operations in one line, name when/why it is used, and contrast it with one related idea under Secret Key Cryptography."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Block Cipher Modes of Operations?",
               "options": [
-                "A definition-only topic with no applications",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "Unrelated to Module 2",
                 "A core idea in Network Security & Cryptography: Block Cipher Modes of Operations",
-                "Only a programming language keyword"
+                "Only a programming-language keyword with no syllabus meaning"
               ],
               "answer": 2,
               "explain": "Block Cipher Modes of Operations is a syllabus topic under Secret Key Cryptography in Module 2."
@@ -436,19 +464,23 @@
           "title": "Triple DES",
           "flashcards": [
             {
-              "front": "What is the core idea of Triple DES?",
-              "back": "2.2 Public Key Cryptography 2.2.1 Advanced Encryption Standard (AES) 2.2.2 Fermat’s and Euler’s Theorem",
-              "detail": "From Network Security and Cryptography (CSIT654) · 2.1.8 · Secret Key Cryptography"
+              "front": "What is Triple DES?",
+              "back": "algorithm three times for increased security. The Advanced Encryption Standard (AES)",
+              "detail": "2.1.8 · Secret Key Cryptography"
+            },
+            {
+              "front": "Exam focus: Triple DES",
+              "back": "Define Triple DES in one line, name when/why it is used, and contrast it with one related idea under Secret Key Cryptography."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Triple DES?",
               "options": [
-                "Only a programming language keyword",
+                "Only a programming-language keyword with no syllabus meaning",
                 "A core idea in Network Security & Cryptography: Triple DES",
                 "Unrelated to Module 2",
-                "A definition-only topic with no applications"
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 1,
               "explain": "Triple DES is a syllabus topic under Secret Key Cryptography in Module 2."
@@ -460,13 +492,13 @@
           "title": "Advanced Encryption Standard (AES)",
           "flashcards": [
             {
-              "front": "What is the core idea of Advanced Encryption Standard (AES)?",
-              "back": "2.2.2 Fermat’s and Euler’s Theorem 2.2.3 Chinese Remainder Theorem 2.2.4 Principals of Public Key Crypto Systems",
-              "detail": "From Network Security and Cryptography (CSIT654) · 2.2.1 · Public Key Cryptography"
+              "front": "What is Advanced Encryption Standard (AES)?",
+              "back": "Identify Advanced Encryption Standard (AES) of Public key Cryptography",
+              "detail": "2.2.1 · Public Key Cryptography"
             },
             {
-              "front": "Name one exam point for Advanced Encryption Standard (AES).",
-              "back": "Be able to define Advanced Encryption Standard (AES), state when it is used, and contrast it with a related concept in Public Key Cryptography."
+              "front": "Exam focus: Advanced Encryption Standard (AES)",
+              "back": "Define Advanced Encryption Standard (AES) in one line, name when/why it is used, and contrast it with one related idea under Public Key Cryptography."
             }
           ],
           "mcqs": [
@@ -475,8 +507,8 @@
               "options": [
                 "A core idea in Network Security & Cryptography: Advanced Encryption Standard (AES)",
                 "Unrelated to Module 2",
-                "Only a programming language keyword",
-                "A definition-only topic with no applications"
+                "Only a programming-language keyword with no syllabus meaning",
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 0,
               "explain": "Advanced Encryption Standard (AES) is a syllabus topic under Public Key Cryptography in Module 2."
@@ -488,9 +520,13 @@
           "title": "Fermat’s and Euler’s Theorem",
           "flashcards": [
             {
-              "front": "What is the core idea of Fermat’s and Euler’s Theorem?",
-              "back": "2.2.3 Chinese Remainder Theorem 2.2.4 Principals of Public Key Crypto Systems 2.2.5 RSA Algorithm",
-              "detail": "From Network Security and Cryptography (CSIT654) · 2.2.2 · Public Key Cryptography"
+              "front": "What is Fermat’s and Euler’s Theorem?",
+              "back": "Fermat's theorem and Euler's theorem are two ideas that are crucial to public-key",
+              "detail": "2.2.2 · Public Key Cryptography"
+            },
+            {
+              "front": "Exam focus: Fermat’s and Euler’s Theorem",
+              "back": "Define Fermat’s and Euler’s Theorem in one line, name when/why it is used, and contrast it with one related idea under Public Key Cryptography."
             }
           ],
           "mcqs": [
@@ -499,8 +535,8 @@
               "options": [
                 "Unrelated to Module 2",
                 "A core idea in Network Security & Cryptography: Fermat’s and Euler’s Theorem",
-                "Only a programming language keyword",
-                "A definition-only topic with no applications"
+                "Only a programming-language keyword with no syllabus meaning",
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 1,
               "explain": "Fermat’s and Euler’s Theorem is a syllabus topic under Public Key Cryptography in Module 2."
@@ -512,22 +548,22 @@
           "title": "Chinese Remainder Theorem",
           "flashcards": [
             {
-              "front": "What is the core idea of Chinese Remainder Theorem?",
-              "back": "2.2.4 Principals of Public Key Crypto Systems 2.2.5 RSA Algorithm 2.2.6 Security of RSA Algorithm",
-              "detail": "From Network Security and Cryptography (CSIT654) · 2.2.3 · Public Key Cryptography"
+              "front": "What is Chinese Remainder Theorem?",
+              "back": "The Chinese mathematician Sun Zi, who originally articulated this idea in the third",
+              "detail": "2.2.3 · Public Key Cryptography"
             },
             {
-              "front": "Name one exam point for Chinese Remainder Theorem.",
-              "back": "Be able to define Chinese Remainder Theorem, state when it is used, and contrast it with a related concept in Public Key Cryptography."
+              "front": "Exam focus: Chinese Remainder Theorem",
+              "back": "Define Chinese Remainder Theorem in one line, name when/why it is used, and contrast it with one related idea under Public Key Cryptography."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Chinese Remainder Theorem?",
               "options": [
-                "Only a programming language keyword",
+                "Only a programming-language keyword with no syllabus meaning",
                 "A core idea in Network Security & Cryptography: Chinese Remainder Theorem",
-                "A definition-only topic with no applications",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "Unrelated to Module 2"
               ],
               "answer": 1,
@@ -540,17 +576,21 @@
           "title": "Principals of Public Key Crypto Systems",
           "flashcards": [
             {
-              "front": "What is the core idea of Principals of Public Key Crypto Systems?",
-              "back": "2.2.5 RSA Algorithm 2.2.6 Security of RSA Algorithm Module - III: Authentication Standards and Key Management",
-              "detail": "From Network Security and Cryptography (CSIT654) · 2.2.4 · Public Key Cryptography"
+              "front": "What is Principals of Public Key Crypto Systems?",
+              "back": "Asymmetric cryptography, or public-key cryptography, is an essential part of",
+              "detail": "2.2.4 · Public Key Cryptography"
+            },
+            {
+              "front": "Exam focus: Principals of Public Key Crypto Systems",
+              "back": "Define Principals of Public Key Crypto Systems in one line, name when/why it is used, and contrast it with one related idea under Public Key Cryptography."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Principals of Public Key Crypto Systems?",
               "options": [
-                "Only a programming language keyword",
-                "A definition-only topic with no applications",
+                "Only a programming-language keyword with no syllabus meaning",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "A core idea in Network Security & Cryptography: Principals of Public Key Crypto Systems",
                 "Unrelated to Module 2"
               ],
@@ -564,21 +604,21 @@
           "title": "RSA Algorithm",
           "flashcards": [
             {
-              "front": "What is the core idea of RSA Algorithm?",
-              "back": "2.2.6 Security of RSA Algorithm Module - III: Authentication Standards and Key Management 72",
-              "detail": "From Network Security and Cryptography (CSIT654) · 2.2.5 · Public Key Cryptography"
+              "front": "What is RSA Algorithm?",
+              "back": "Module - III: Authentication Standards and Key Management",
+              "detail": "2.2.5 · Public Key Cryptography"
             },
             {
-              "front": "Name one exam point for RSA Algorithm.",
-              "back": "Be able to define RSA Algorithm, state when it is used, and contrast it with a related concept in Public Key Cryptography."
+              "front": "Exam focus: RSA Algorithm",
+              "back": "Define RSA Algorithm in one line, name when/why it is used, and contrast it with one related idea under Public Key Cryptography."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches RSA Algorithm?",
               "options": [
-                "A definition-only topic with no applications",
-                "Only a programming language keyword",
+                "A definition-only label with no role in Network Security & Cryptography",
+                "Only a programming-language keyword with no syllabus meaning",
                 "A core idea in Network Security & Cryptography: RSA Algorithm",
                 "Unrelated to Module 2"
               ],
@@ -592,9 +632,13 @@
           "title": "Security of RSA Algorithm",
           "flashcards": [
             {
-              "front": "What is the core idea of Security of RSA Algorithm?",
-              "back": "Module - III: Authentication Standards and Key Management 72 3.1 Message Authentication Codes",
-              "detail": "From Network Security and Cryptography (CSIT654) · 2.2.6 · Public Key Cryptography"
+              "front": "What is Security of RSA Algorithm?",
+              "back": "Module - III: Authentication Standards and Key Management",
+              "detail": "2.2.6 · Public Key Cryptography"
+            },
+            {
+              "front": "Exam focus: Security of RSA Algorithm",
+              "back": "Define Security of RSA Algorithm in one line, name when/why it is used, and contrast it with one related idea under Public Key Cryptography."
             }
           ],
           "mcqs": [
@@ -602,9 +646,9 @@
               "q": "Which statement best matches Security of RSA Algorithm?",
               "options": [
                 "A core idea in Network Security & Cryptography: Security of RSA Algorithm",
-                "Only a programming language keyword",
+                "Only a programming-language keyword with no syllabus meaning",
                 "Unrelated to Module 2",
-                "A definition-only topic with no applications"
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 0,
               "explain": "Security of RSA Algorithm is a syllabus topic under Public Key Cryptography in Module 2."
@@ -622,22 +666,22 @@
           "title": "Introduction of Message Authentication Codes",
           "flashcards": [
             {
-              "front": "What is the core idea of Introduction of Message Authentication Codes?",
-              "back": "3.1.2 Authentication Functions 3.1.3 Authentication Requirements 3.1.4 Message Authentication Code (MAC)",
-              "detail": "From Network Security and Cryptography (CSIT654) · 3.1.1 · Message Authentication Codes"
+              "front": "What is Introduction of Message Authentication Codes?",
+              "back": "A message authentication code (MAC) may be a cryptographic checksum on data",
+              "detail": "3.1.1 · Message Authentication Codes"
             },
             {
-              "front": "Name one exam point for Introduction of Message Authentication Codes.",
-              "back": "Be able to define Introduction of Message Authentication Codes, state when it is used, and contrast it with a related concept in Message Authentication Codes."
+              "front": "Exam focus: Introduction of Message Authentication Codes",
+              "back": "Define Introduction of Message Authentication Codes in one line, name when/why it is used, and contrast it with one related idea under Message Authentication Codes."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Introduction of Message Authentication Codes?",
               "options": [
-                "Only a programming language keyword",
+                "Only a programming-language keyword with no syllabus meaning",
                 "A core idea in Network Security & Cryptography: Introduction of Message Authentication Codes",
-                "A definition-only topic with no applications",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "Unrelated to Module 3"
               ],
               "answer": 1,
@@ -650,9 +694,13 @@
           "title": "Authentication Functions",
           "flashcards": [
             {
-              "front": "What is the core idea of Authentication Functions?",
-              "back": "3.1.3 Authentication Requirements 3.1.4 Message Authentication Code (MAC) 3.1.5 Secure Hash Algorithm (SHA)",
-              "detail": "From Network Security and Cryptography (CSIT654) · 3.1.2 · Message Authentication Codes"
+              "front": "What is Authentication Functions?",
+              "back": "Digital signatures and message authentication are commonly perceived as having",
+              "detail": "3.1.2 · Message Authentication Codes"
+            },
+            {
+              "front": "Exam focus: Authentication Functions",
+              "back": "Define Authentication Functions in one line, name when/why it is used, and contrast it with one related idea under Message Authentication Codes."
             }
           ],
           "mcqs": [
@@ -660,8 +708,8 @@
               "q": "Which statement best matches Authentication Functions?",
               "options": [
                 "A core idea in Network Security & Cryptography: Authentication Functions",
-                "Only a programming language keyword",
-                "A definition-only topic with no applications",
+                "Only a programming-language keyword with no syllabus meaning",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "Unrelated to Module 3"
               ],
               "answer": 0,
@@ -674,13 +722,13 @@
           "title": "Authentication Requirements",
           "flashcards": [
             {
-              "front": "What is the core idea of Authentication Requirements?",
-              "back": "3.1.4 Message Authentication Code (MAC) 3.1.5 Secure Hash Algorithm (SHA) (c) Amity University Online",
-              "detail": "From Network Security and Cryptography (CSIT654) · 3.1.3 · Message Authentication Codes"
+              "front": "What is Authentication Requirements?",
+              "back": "Define Authentication Requirements and Secure Hash Algorithm (SHA)",
+              "detail": "3.1.3 · Message Authentication Codes"
             },
             {
-              "front": "Name one exam point for Authentication Requirements.",
-              "back": "Be able to define Authentication Requirements, state when it is used, and contrast it with a related concept in Message Authentication Codes."
+              "front": "Exam focus: Authentication Requirements",
+              "back": "Define Authentication Requirements in one line, name when/why it is used, and contrast it with one related idea under Message Authentication Codes."
             }
           ],
           "mcqs": [
@@ -688,9 +736,9 @@
               "q": "Which statement best matches Authentication Requirements?",
               "options": [
                 "Unrelated to Module 3",
-                "A definition-only topic with no applications",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "A core idea in Network Security & Cryptography: Authentication Requirements",
-                "Only a programming language keyword"
+                "Only a programming-language keyword with no syllabus meaning"
               ],
               "answer": 2,
               "explain": "Authentication Requirements is a syllabus topic under Message Authentication Codes in Module 3."
@@ -702,17 +750,21 @@
           "title": "Message Authentication Code (MAC)",
           "flashcards": [
             {
-              "front": "What is the core idea of Message Authentication Code (MAC)?",
-              "back": "3.1.1 Introduction of Message Authentication Codes 3.1.2 Authentication Functions 3.1.3 Authentication Requirements",
-              "detail": "From Network Security and Cryptography (CSIT654) · 3.1.4 · Message Authentication Codes"
+              "front": "What is Message Authentication Code (MAC)?",
+              "back": "the authenticator is a public function of the message that generates a fixed-length value using a secret key. Hash function: A public function called the hash function converts any length of message into a fixed-length hash result, which serves as the authenticator. Message Encryption: Message encryption can act as a kind of authentication on its own. Compared to symmetric and public-key encryption methods, the analy",
+              "detail": "3.1.4 · Message Authentication Codes"
+            },
+            {
+              "front": "Exam focus: Message Authentication Code (MAC)",
+              "back": "Define Message Authentication Code (MAC) in one line, name when/why it is used, and contrast it with one related idea under Message Authentication Codes."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Message Authentication Code (MAC)?",
               "options": [
-                "Only a programming language keyword",
-                "A definition-only topic with no applications",
+                "Only a programming-language keyword with no syllabus meaning",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "Unrelated to Module 3",
                 "A core idea in Network Security & Cryptography: Message Authentication Code (MAC)"
               ],
@@ -726,13 +778,13 @@
           "title": "Secure Hash Algorithm (SHA)",
           "flashcards": [
             {
-              "front": "What is the core idea of Secure Hash Algorithm (SHA)?",
-              "back": "● Discuss about Digital Signatures and its standards ●",
-              "detail": "From Network Security and Cryptography (CSIT654) · 3.1.5 · Message Authentication Codes"
+              "front": "What is Secure Hash Algorithm (SHA)?",
+              "back": "Define Authentication Requirements and Secure Hash Algorithm (SHA)",
+              "detail": "3.1.5 · Message Authentication Codes"
             },
             {
-              "front": "Name one exam point for Secure Hash Algorithm (SHA).",
-              "back": "Be able to define Secure Hash Algorithm (SHA), state when it is used, and contrast it with a related concept in Message Authentication Codes."
+              "front": "Exam focus: Secure Hash Algorithm (SHA)",
+              "back": "Define Secure Hash Algorithm (SHA) in one line, name when/why it is used, and contrast it with one related idea under Message Authentication Codes."
             }
           ],
           "mcqs": [
@@ -741,8 +793,8 @@
               "options": [
                 "A core idea in Network Security & Cryptography: Secure Hash Algorithm (SHA)",
                 "Unrelated to Module 3",
-                "Only a programming language keyword",
-                "A definition-only topic with no applications"
+                "Only a programming-language keyword with no syllabus meaning",
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 0,
               "explain": "Secure Hash Algorithm (SHA) is a syllabus topic under Message Authentication Codes in Module 3."
@@ -754,18 +806,22 @@
           "title": "Message Digest",
           "flashcards": [
             {
-              "front": "What is the core idea of Message Digest?",
-              "back": "3.2 Digital Signatures 3.2.1 Overview of Digital Signatures 3.2.2 Digital Signature Standards (DSS)",
-              "detail": "From Network Security and Cryptography (CSIT654) · 3.1.6 · Message Authentication Codes"
+              "front": "What is Message Digest?",
+              "back": "Message Digest: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "3.1.6 · Message Authentication Codes"
+            },
+            {
+              "front": "Exam focus: Message Digest",
+              "back": "Define Message Digest in one line, name when/why it is used, and contrast it with one related idea under Message Authentication Codes."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Message Digest?",
               "options": [
-                "A definition-only topic with no applications",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "A core idea in Network Security & Cryptography: Message Digest",
-                "Only a programming language keyword",
+                "Only a programming-language keyword with no syllabus meaning",
                 "Unrelated to Module 3"
               ],
               "answer": 1,
@@ -778,21 +834,21 @@
           "title": "Overview of Digital Signatures",
           "flashcards": [
             {
-              "front": "What is the core idea of Overview of Digital Signatures?",
-              "back": "3.2.2 Digital Signature Standards (DSS) 3.2.3 Proof of Digital Signature Algorithm Module - IV: Web Security",
-              "detail": "From Network Security and Cryptography (CSIT654) · 3.2.1 · Digital Signatures"
+              "front": "What is Overview of Digital Signatures?",
+              "back": "Overview of Digital Signatures: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "3.2.1 · Digital Signatures"
             },
             {
-              "front": "Name one exam point for Overview of Digital Signatures.",
-              "back": "Be able to define Overview of Digital Signatures, state when it is used, and contrast it with a related concept in Digital Signatures."
+              "front": "Exam focus: Overview of Digital Signatures",
+              "back": "Define Overview of Digital Signatures in one line, name when/why it is used, and contrast it with one related idea under Digital Signatures."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Overview of Digital Signatures?",
               "options": [
-                "A definition-only topic with no applications",
-                "Only a programming language keyword",
+                "A definition-only label with no role in Network Security & Cryptography",
+                "Only a programming-language keyword with no syllabus meaning",
                 "A core idea in Network Security & Cryptography: Overview of Digital Signatures",
                 "Unrelated to Module 3"
               ],
@@ -806,9 +862,13 @@
           "title": "Digital Signature Standards (DSS)",
           "flashcards": [
             {
-              "front": "What is the core idea of Digital Signature Standards (DSS)?",
-              "back": "3.2.3 Proof of Digital Signature Algorithm Module - IV: Web Security 91",
-              "detail": "From Network Security and Cryptography (CSIT654) · 3.2.2 · Digital Signatures"
+              "front": "What is Digital Signature Standards (DSS)?",
+              "back": "applied to digital signature verification and data encryption. The system's security is",
+              "detail": "3.2.2 · Digital Signatures"
+            },
+            {
+              "front": "Exam focus: Digital Signature Standards (DSS)",
+              "back": "Define Digital Signature Standards (DSS) in one line, name when/why it is used, and contrast it with one related idea under Digital Signatures."
             }
           ],
           "mcqs": [
@@ -817,8 +877,8 @@
               "options": [
                 "Unrelated to Module 3",
                 "A core idea in Network Security & Cryptography: Digital Signature Standards (DSS)",
-                "A definition-only topic with no applications",
-                "Only a programming language keyword"
+                "A definition-only label with no role in Network Security & Cryptography",
+                "Only a programming-language keyword with no syllabus meaning"
               ],
               "answer": 1,
               "explain": "Digital Signature Standards (DSS) is a syllabus topic under Digital Signatures in Module 3."
@@ -830,13 +890,13 @@
           "title": "Proof of Digital Signature Algorithm",
           "flashcards": [
             {
-              "front": "What is the core idea of Proof of Digital Signature Algorithm?",
-              "back": "Module - IV: Web Security 91 4.1 Introduction to Web Security",
-              "detail": "From Network Security and Cryptography (CSIT654) · 3.2.3 · Digital Signatures"
+              "front": "What is Proof of Digital Signature Algorithm?",
+              "back": "Proof of Digital Signature Algorithm: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "3.2.3 · Digital Signatures"
             },
             {
-              "front": "Name one exam point for Proof of Digital Signature Algorithm.",
-              "back": "Be able to define Proof of Digital Signature Algorithm, state when it is used, and contrast it with a related concept in Digital Signatures."
+              "front": "Exam focus: Proof of Digital Signature Algorithm",
+              "back": "Define Proof of Digital Signature Algorithm in one line, name when/why it is used, and contrast it with one related idea under Digital Signatures."
             }
           ],
           "mcqs": [
@@ -844,8 +904,8 @@
               "q": "Which statement best matches Proof of Digital Signature Algorithm?",
               "options": [
                 "A core idea in Network Security & Cryptography: Proof of Digital Signature Algorithm",
-                "Only a programming language keyword",
-                "A definition-only topic with no applications",
+                "Only a programming-language keyword with no syllabus meaning",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "Unrelated to Module 3"
               ],
               "answer": 0,
@@ -864,23 +924,23 @@
           "title": "Authentication Applications: Kerberos",
           "flashcards": [
             {
-              "front": "What is the core idea of Authentication Applications: Kerberos?",
-              "back": "4.1.2 Overview of Access Control List (ACL) 4.1.3 Electronic Mail Security: Pretty Good Privacy (PGP) 4.1.4 S/MIME",
-              "detail": "From Network Security and Cryptography (CSIT654) · 4.1.1 · Introduction to Web Security"
+              "front": "What is Authentication Applications: Kerberos?",
+              "back": "Authentication Applications: Kerberos: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "4.1.1 · Introduction to Web Security"
             },
             {
-              "front": "Name one exam point for Authentication Applications: Kerberos.",
-              "back": "Be able to define Authentication Applications: Kerberos, state when it is used, and contrast it with a related concept in Introduction to Web Security."
+              "front": "Exam focus: Authentication Applications: Kerberos",
+              "back": "Define Authentication Applications: Kerberos in one line, name when/why it is used, and contrast it with one related idea under Introduction to Web Security."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Authentication Applications: Kerberos?",
               "options": [
-                "Only a programming language keyword",
+                "Only a programming-language keyword with no syllabus meaning",
                 "A core idea in Network Security & Cryptography: Authentication Applications: Kerberos",
                 "Unrelated to Module 4",
-                "A definition-only topic with no applications"
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 1,
               "explain": "Authentication Applications: Kerberos is a syllabus topic under Introduction to Web Security in Module 4."
@@ -892,9 +952,13 @@
           "title": "Overview of Access Control List (ACL)",
           "flashcards": [
             {
-              "front": "What is the core idea of Overview of Access Control List (ACL)?",
-              "back": "4.1.3 Electronic Mail Security: Pretty Good Privacy (PGP) 4.1.4 S/MIME 4.2 IP Security",
-              "detail": "From Network Security and Cryptography (CSIT654) · 4.1.2 · Introduction to Web Security"
+              "front": "What is Overview of Access Control List (ACL)?",
+              "back": "Overview of Access Control List (ACL): a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "4.1.2 · Introduction to Web Security"
+            },
+            {
+              "front": "Exam focus: Overview of Access Control List (ACL)",
+              "back": "Define Overview of Access Control List (ACL) in one line, name when/why it is used, and contrast it with one related idea under Introduction to Web Security."
             }
           ],
           "mcqs": [
@@ -902,8 +966,8 @@
               "q": "Which statement best matches Overview of Access Control List (ACL)?",
               "options": [
                 "Unrelated to Module 4",
-                "A definition-only topic with no applications",
-                "Only a programming language keyword",
+                "A definition-only label with no role in Network Security & Cryptography",
+                "Only a programming-language keyword with no syllabus meaning",
                 "A core idea in Network Security & Cryptography: Overview of Access Control List (ACL)"
               ],
               "answer": 3,
@@ -916,13 +980,13 @@
           "title": "Electronic Mail Security: Pretty Good Privacy (PGP)",
           "flashcards": [
             {
-              "front": "What is the core idea of Electronic Mail Security: Pretty Good Privacy (PGP)?",
-              "back": "4.1.4 S/MIME 4.2 IP Security 4.2.1 IP Security Architecture Components",
-              "detail": "From Network Security and Cryptography (CSIT654) · 4.1.3 · Introduction to Web Security"
+              "front": "What is Electronic Mail Security: Pretty Good Privacy (PGP)?",
+              "back": "4.1.3 Electronic Mail Security: Pretty Good Privacy (PGP)",
+              "detail": "4.1.3 · Introduction to Web Security"
             },
             {
-              "front": "Name one exam point for Electronic Mail Security: Pretty Good Privacy (PGP).",
-              "back": "Be able to define Electronic Mail Security: Pretty Good Privacy (PGP), state when it is used, and contrast it with a related concept in Introduction to Web Security."
+              "front": "Exam focus: Electronic Mail Security: Pretty Good Privacy (PGP)",
+              "back": "Define Electronic Mail Security: Pretty Good Privacy (PGP) in one line, name when/why it is used, and contrast it with one related idea under Introduction to Web Security."
             }
           ],
           "mcqs": [
@@ -930,8 +994,8 @@
               "q": "Which statement best matches Electronic Mail Security: Pretty Good Privacy (PGP)?",
               "options": [
                 "Unrelated to Module 4",
-                "A definition-only topic with no applications",
-                "Only a programming language keyword",
+                "A definition-only label with no role in Network Security & Cryptography",
+                "Only a programming-language keyword with no syllabus meaning",
                 "A core idea in Network Security & Cryptography: Electronic Mail Security: Pretty Good Privacy (PGP)"
               ],
               "answer": 3,
@@ -944,9 +1008,13 @@
           "title": "S/MIME",
           "flashcards": [
             {
-              "front": "What is the core idea of S/MIME?",
-              "back": "4.2 IP Security 4.2.1 IP Security Architecture Components 4.2.2 Secure Socket Layer",
-              "detail": "From Network Security and Cryptography (CSIT654) · 4.1.4 · Introduction to Web Security"
+              "front": "What is S/MIME?",
+              "back": "for sophisticated mark capabilities and encryption. It is also used in programming",
+              "detail": "4.1.4 · Introduction to Web Security"
+            },
+            {
+              "front": "Exam focus: S/MIME",
+              "back": "Define S/MIME in one line, name when/why it is used, and contrast it with one related idea under Introduction to Web Security."
             }
           ],
           "mcqs": [
@@ -954,9 +1022,9 @@
               "q": "Which statement best matches S/MIME?",
               "options": [
                 "Unrelated to Module 4",
-                "A definition-only topic with no applications",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "A core idea in Network Security & Cryptography: S/MIME",
-                "Only a programming language keyword"
+                "Only a programming-language keyword with no syllabus meaning"
               ],
               "answer": 2,
               "explain": "S/MIME is a syllabus topic under Introduction to Web Security in Module 4."
@@ -968,23 +1036,23 @@
           "title": "IP Security Architecture Components",
           "flashcards": [
             {
-              "front": "What is the core idea of IP Security Architecture Components?",
-              "back": "4.2.2 Secure Socket Layer 4.2.3 Secure electronic transaction (SET) Module - V: Computational Learning Theor",
-              "detail": "From Network Security and Cryptography (CSIT654) · 4.2.1 · IP Security"
+              "front": "What is IP Security Architecture Components?",
+              "back": "IP Security Architecture Components: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "4.2.1 · IP Security"
             },
             {
-              "front": "Name one exam point for IP Security Architecture Components.",
-              "back": "Be able to define IP Security Architecture Components, state when it is used, and contrast it with a related concept in IP Security."
+              "front": "Exam focus: IP Security Architecture Components",
+              "back": "Define IP Security Architecture Components in one line, name when/why it is used, and contrast it with one related idea under IP Security."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches IP Security Architecture Components?",
               "options": [
-                "A definition-only topic with no applications",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "A core idea in Network Security & Cryptography: IP Security Architecture Components",
                 "Unrelated to Module 4",
-                "Only a programming language keyword"
+                "Only a programming-language keyword with no syllabus meaning"
               ],
               "answer": 1,
               "explain": "IP Security Architecture Components is a syllabus topic under IP Security in Module 4."
@@ -996,19 +1064,23 @@
           "title": "Secure Socket Layer",
           "flashcards": [
             {
-              "front": "What is the core idea of Secure Socket Layer?",
-              "back": "4.2.3 Secure electronic transaction (SET) Module - V: Computational Learning Theor 151",
-              "detail": "From Network Security and Cryptography (CSIT654) · 4.2.2 · IP Security"
+              "front": "What is Secure Socket Layer?",
+              "back": "Secure Socket Layer: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "4.2.2 · IP Security"
+            },
+            {
+              "front": "Exam focus: Secure Socket Layer",
+              "back": "Define Secure Socket Layer in one line, name when/why it is used, and contrast it with one related idea under IP Security."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Secure Socket Layer?",
               "options": [
-                "Only a programming language keyword",
+                "Only a programming-language keyword with no syllabus meaning",
                 "A core idea in Network Security & Cryptography: Secure Socket Layer",
                 "Unrelated to Module 4",
-                "A definition-only topic with no applications"
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 1,
               "explain": "Secure Socket Layer is a syllabus topic under IP Security in Module 4."
@@ -1020,22 +1092,22 @@
           "title": "Secure electronic transaction (SET)",
           "flashcards": [
             {
-              "front": "What is the core idea of Secure electronic transaction (SET)?",
-              "back": "Module - V: Computational Learning Theor 151 5.1 System Security",
-              "detail": "From Network Security and Cryptography (CSIT654) · 4.2.3 · IP Security"
+              "front": "What is Secure electronic transaction (SET)?",
+              "back": "Secure electronic transaction (SET): a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "4.2.3 · IP Security"
             },
             {
-              "front": "Name one exam point for Secure electronic transaction (SET).",
-              "back": "Be able to define Secure electronic transaction (SET), state when it is used, and contrast it with a related concept in IP Security."
+              "front": "Exam focus: Secure electronic transaction (SET)",
+              "back": "Define Secure electronic transaction (SET) in one line, name when/why it is used, and contrast it with one related idea under IP Security."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Secure electronic transaction (SET)?",
               "options": [
-                "A definition-only topic with no applications",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "Unrelated to Module 4",
-                "Only a programming language keyword",
+                "Only a programming-language keyword with no syllabus meaning",
                 "A core idea in Network Security & Cryptography: Secure electronic transaction (SET)"
               ],
               "answer": 3,
@@ -1054,23 +1126,23 @@
           "title": "Introductory Idea of Intrusion",
           "flashcards": [
             {
-              "front": "What is the core idea of Introductory Idea of Intrusion?",
-              "back": "5.1.2 Intrusion Detection Techniques 5.1.3 Viruses and Worms 5.1.4 Firewall Overview and Design Principles",
-              "detail": "From Network Security and Cryptography (CSIT654) · 5.1.1 · System Security"
+              "front": "What is Introductory Idea of Intrusion?",
+              "back": "Introductory Idea of Intrusion: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "5.1.1 · System Security"
             },
             {
-              "front": "Name one exam point for Introductory Idea of Intrusion.",
-              "back": "Be able to define Introductory Idea of Intrusion, state when it is used, and contrast it with a related concept in System Security."
+              "front": "Exam focus: Introductory Idea of Intrusion",
+              "back": "Define Introductory Idea of Intrusion in one line, name when/why it is used, and contrast it with one related idea under System Security."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Introductory Idea of Intrusion?",
               "options": [
-                "A definition-only topic with no applications",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "Unrelated to Module 5",
                 "A core idea in Network Security & Cryptography: Introductory Idea of Intrusion",
-                "Only a programming language keyword"
+                "Only a programming-language keyword with no syllabus meaning"
               ],
               "answer": 2,
               "explain": "Introductory Idea of Intrusion is a syllabus topic under System Security in Module 5."
@@ -1082,9 +1154,13 @@
           "title": "Intrusion Detection Techniques",
           "flashcards": [
             {
-              "front": "What is the core idea of Intrusion Detection Techniques?",
-              "back": "5.1.3 Viruses and Worms 5.1.4 Firewall Overview and Design Principles 5.1.5 Global Standards IT Acts and Cyber Laws",
-              "detail": "From Network Security and Cryptography (CSIT654) · 5.1.2 · System Security"
+              "front": "What is Intrusion Detection Techniques?",
+              "back": "such as firewalls, antivirus software, intrusion detection systems (IDS), encryption,",
+              "detail": "5.1.2 · System Security"
+            },
+            {
+              "front": "Exam focus: Intrusion Detection Techniques",
+              "back": "Define Intrusion Detection Techniques in one line, name when/why it is used, and contrast it with one related idea under System Security."
             }
           ],
           "mcqs": [
@@ -1092,9 +1168,9 @@
               "q": "Which statement best matches Intrusion Detection Techniques?",
               "options": [
                 "Unrelated to Module 5",
-                "Only a programming language keyword",
+                "Only a programming-language keyword with no syllabus meaning",
                 "A core idea in Network Security & Cryptography: Intrusion Detection Techniques",
-                "A definition-only topic with no applications"
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 2,
               "explain": "Intrusion Detection Techniques is a syllabus topic under System Security in Module 5."
@@ -1106,13 +1182,13 @@
           "title": "Viruses and Worms",
           "flashcards": [
             {
-              "front": "What is the core idea of Viruses and Worms?",
-              "back": "5.1.4 Firewall Overview and Design Principles 5.1.5 Global Standards IT Acts and Cyber Laws 5.1.6 Virtual Private Network",
-              "detail": "From Network Security and Cryptography (CSIT654) · 5.1.3 · System Security"
+              "front": "What is Viruses and Worms?",
+              "back": "Viruses and Worms: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "5.1.3 · System Security"
             },
             {
-              "front": "Name one exam point for Viruses and Worms.",
-              "back": "Be able to define Viruses and Worms, state when it is used, and contrast it with a related concept in System Security."
+              "front": "Exam focus: Viruses and Worms",
+              "back": "Define Viruses and Worms in one line, name when/why it is used, and contrast it with one related idea under System Security."
             }
           ],
           "mcqs": [
@@ -1120,8 +1196,8 @@
               "q": "Which statement best matches Viruses and Worms?",
               "options": [
                 "A core idea in Network Security & Cryptography: Viruses and Worms",
-                "Only a programming language keyword",
-                "A definition-only topic with no applications",
+                "Only a programming-language keyword with no syllabus meaning",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "Unrelated to Module 5"
               ],
               "answer": 0,
@@ -1134,17 +1210,21 @@
           "title": "Firewall Overview and Design Principles",
           "flashcards": [
             {
-              "front": "What is the core idea of Firewall Overview and Design Principles?",
-              "back": "5.1.5 Global Standards IT Acts and Cyber Laws 5.1.6 Virtual Private Network 5.1.7 Recent Network Attacks and Security Measures",
-              "detail": "From Network Security and Cryptography (CSIT654) · 5.1.4 · System Security"
+              "front": "What is Firewall Overview and Design Principles?",
+              "back": "A network security control that filters traffic between trust zones according to rules.",
+              "detail": "5.1.4 · System Security"
+            },
+            {
+              "front": "Exam focus: Firewall Overview and Design Principles",
+              "back": "Define Firewall Overview and Design Principles in one line, name when/why it is used, and contrast it with one related idea under System Security."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Firewall Overview and Design Principles?",
               "options": [
-                "Only a programming language keyword",
-                "A definition-only topic with no applications",
+                "Only a programming-language keyword with no syllabus meaning",
+                "A definition-only label with no role in Network Security & Cryptography",
                 "A core idea in Network Security & Cryptography: Firewall Overview and Design Principles",
                 "Unrelated to Module 5"
               ],
@@ -1158,13 +1238,13 @@
           "title": "Global Standards IT Acts and Cyber Laws",
           "flashcards": [
             {
-              "front": "What is the core idea of Global Standards IT Acts and Cyber Laws?",
-              "back": "5.1.6 Virtual Private Network 5.1.7 Recent Network Attacks and Security Measures 5.1.8 Blockchain Technology",
-              "detail": "From Network Security and Cryptography (CSIT654) · 5.1.5 · System Security"
+              "front": "What is Global Standards IT Acts and Cyber Laws?",
+              "back": "Global Standards IT Acts and Cyber Laws: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "5.1.5 · System Security"
             },
             {
-              "front": "Name one exam point for Global Standards IT Acts and Cyber Laws.",
-              "back": "Be able to define Global Standards IT Acts and Cyber Laws, state when it is used, and contrast it with a related concept in System Security."
+              "front": "Exam focus: Global Standards IT Acts and Cyber Laws",
+              "back": "Define Global Standards IT Acts and Cyber Laws in one line, name when/why it is used, and contrast it with one related idea under System Security."
             }
           ],
           "mcqs": [
@@ -1172,9 +1252,9 @@
               "q": "Which statement best matches Global Standards IT Acts and Cyber Laws?",
               "options": [
                 "A core idea in Network Security & Cryptography: Global Standards IT Acts and Cyber Laws",
-                "Only a programming language keyword",
+                "Only a programming-language keyword with no syllabus meaning",
                 "Unrelated to Module 5",
-                "A definition-only topic with no applications"
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 0,
               "explain": "Global Standards IT Acts and Cyber Laws is a syllabus topic under System Security in Module 5."
@@ -1186,17 +1266,21 @@
           "title": "Virtual Private Network",
           "flashcards": [
             {
-              "front": "What is the core idea of Virtual Private Network?",
-              "back": "5.1.7 Recent Network Attacks and Security Measures 5.1.8 Blockchain Technology 5.1.9 Internet Privacy and Piracy Prevention",
-              "detail": "From Network Security and Cryptography (CSIT654) · 5.1.6 · System Security"
+              "front": "What is Virtual Private Network?",
+              "back": "Virtual Private Network (VPN): A technology that provides a secure and encrypted",
+              "detail": "5.1.6 · System Security"
+            },
+            {
+              "front": "Exam focus: Virtual Private Network",
+              "back": "Define Virtual Private Network in one line, name when/why it is used, and contrast it with one related idea under System Security."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Virtual Private Network?",
               "options": [
-                "A definition-only topic with no applications",
-                "Only a programming language keyword",
+                "A definition-only label with no role in Network Security & Cryptography",
+                "Only a programming-language keyword with no syllabus meaning",
                 "Unrelated to Module 5",
                 "A core idea in Network Security & Cryptography: Virtual Private Network"
               ],
@@ -1210,13 +1294,13 @@
           "title": "Recent Network Attacks and Security Measures",
           "flashcards": [
             {
-              "front": "What is the core idea of Recent Network Attacks and Security Measures?",
-              "back": "5.1.8 Blockchain Technology 5.1.9 Internet Privacy and Piracy Prevention 5.2 Cyber Forensic and Its Applications",
-              "detail": "From Network Security and Cryptography (CSIT654) · 5.1.7 · System Security"
+              "front": "What is Recent Network Attacks and Security Measures?",
+              "back": "Recent Network Attacks and Security Measures: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "5.1.7 · System Security"
             },
             {
-              "front": "Name one exam point for Recent Network Attacks and Security Measures.",
-              "back": "Be able to define Recent Network Attacks and Security Measures, state when it is used, and contrast it with a related concept in System Security."
+              "front": "Exam focus: Recent Network Attacks and Security Measures",
+              "back": "Define Recent Network Attacks and Security Measures in one line, name when/why it is used, and contrast it with one related idea under System Security."
             }
           ],
           "mcqs": [
@@ -1225,8 +1309,8 @@
               "options": [
                 "Unrelated to Module 5",
                 "A core idea in Network Security & Cryptography: Recent Network Attacks and Security Measures",
-                "A definition-only topic with no applications",
-                "Only a programming language keyword"
+                "A definition-only label with no role in Network Security & Cryptography",
+                "Only a programming-language keyword with no syllabus meaning"
               ],
               "answer": 1,
               "explain": "Recent Network Attacks and Security Measures is a syllabus topic under System Security in Module 5."
@@ -1238,9 +1322,13 @@
           "title": "Blockchain Technology",
           "flashcards": [
             {
-              "front": "What is the core idea of Blockchain Technology?",
-              "back": "5.1.9 Internet Privacy and Piracy Prevention 5.2 Cyber Forensic and Its Applications 5.2.1 Overview of Cyber Forensic",
-              "detail": "From Network Security and Cryptography (CSIT654) · 5.1.8 · System Security"
+              "front": "What is Blockchain Technology?",
+              "back": "Blockchain Technology: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "5.1.8 · System Security"
+            },
+            {
+              "front": "Exam focus: Blockchain Technology",
+              "back": "Define Blockchain Technology in one line, name when/why it is used, and contrast it with one related idea under System Security."
             }
           ],
           "mcqs": [
@@ -1249,8 +1337,8 @@
               "options": [
                 "A core idea in Network Security & Cryptography: Blockchain Technology",
                 "Unrelated to Module 5",
-                "A definition-only topic with no applications",
-                "Only a programming language keyword"
+                "A definition-only label with no role in Network Security & Cryptography",
+                "Only a programming-language keyword with no syllabus meaning"
               ],
               "answer": 0,
               "explain": "Blockchain Technology is a syllabus topic under System Security in Module 5."
@@ -1262,13 +1350,13 @@
           "title": "Internet Privacy and Piracy Prevention",
           "flashcards": [
             {
-              "front": "What is the core idea of Internet Privacy and Piracy Prevention?",
-              "back": "5.2 Cyber Forensic and Its Applications 5.2.1 Overview of Cyber Forensic 5.2.2 Cyber Forensic Processes",
-              "detail": "From Network Security and Cryptography (CSIT654) · 5.1.9 · System Security"
+              "front": "What is Internet Privacy and Piracy Prevention?",
+              "back": "Internet Privacy and Piracy Prevention: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "5.1.9 · System Security"
             },
             {
-              "front": "Name one exam point for Internet Privacy and Piracy Prevention.",
-              "back": "Be able to define Internet Privacy and Piracy Prevention, state when it is used, and contrast it with a related concept in System Security."
+              "front": "Exam focus: Internet Privacy and Piracy Prevention",
+              "back": "Define Internet Privacy and Piracy Prevention in one line, name when/why it is used, and contrast it with one related idea under System Security."
             }
           ],
           "mcqs": [
@@ -1276,8 +1364,8 @@
               "q": "Which statement best matches Internet Privacy and Piracy Prevention?",
               "options": [
                 "A core idea in Network Security & Cryptography: Internet Privacy and Piracy Prevention",
-                "A definition-only topic with no applications",
-                "Only a programming language keyword",
+                "A definition-only label with no role in Network Security & Cryptography",
+                "Only a programming-language keyword with no syllabus meaning",
                 "Unrelated to Module 5"
               ],
               "answer": 0,
@@ -1290,9 +1378,13 @@
           "title": "Overview of Cyber Forensic",
           "flashcards": [
             {
-              "front": "What is the core idea of Overview of Cyber Forensic?",
-              "back": "5.2.2 Cyber Forensic Processes 5.2.3 Cyber Forensic Applications 5.2.4 Cyber Forensic Tools",
-              "detail": "From Network Security and Cryptography (CSIT654) · 5.2.1 · Cyber Forensic and Its Applications"
+              "front": "What is Overview of Cyber Forensic?",
+              "back": "Overview of Cyber Forensic: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "5.2.1 · Cyber Forensic and Its Applications"
+            },
+            {
+              "front": "Exam focus: Overview of Cyber Forensic",
+              "back": "Define Overview of Cyber Forensic in one line, name when/why it is used, and contrast it with one related idea under Cyber Forensic and Its Applications."
             }
           ],
           "mcqs": [
@@ -1301,8 +1393,8 @@
               "options": [
                 "A core idea in Network Security & Cryptography: Overview of Cyber Forensic",
                 "Unrelated to Module 5",
-                "Only a programming language keyword",
-                "A definition-only topic with no applications"
+                "Only a programming-language keyword with no syllabus meaning",
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 0,
               "explain": "Overview of Cyber Forensic is a syllabus topic under Cyber Forensic and Its Applications in Module 5."
@@ -1314,13 +1406,13 @@
           "title": "Cyber Forensic Processes",
           "flashcards": [
             {
-              "front": "What is the core idea of Cyber Forensic Processes?",
-              "back": "5.2.3 Cyber Forensic Applications 5.2.4 Cyber Forensic Tools 5.2.5 Digital Evidence",
-              "detail": "From Network Security and Cryptography (CSIT654) · 5.2.2 · Cyber Forensic and Its Applications"
+              "front": "What is Cyber Forensic Processes?",
+              "back": "Cyber Forensic Processes: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "5.2.2 · Cyber Forensic and Its Applications"
             },
             {
-              "front": "Name one exam point for Cyber Forensic Processes.",
-              "back": "Be able to define Cyber Forensic Processes, state when it is used, and contrast it with a related concept in Cyber Forensic and Its Applications."
+              "front": "Exam focus: Cyber Forensic Processes",
+              "back": "Define Cyber Forensic Processes in one line, name when/why it is used, and contrast it with one related idea under Cyber Forensic and Its Applications."
             }
           ],
           "mcqs": [
@@ -1329,8 +1421,8 @@
               "options": [
                 "Unrelated to Module 5",
                 "A core idea in Network Security & Cryptography: Cyber Forensic Processes",
-                "Only a programming language keyword",
-                "A definition-only topic with no applications"
+                "Only a programming-language keyword with no syllabus meaning",
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 1,
               "explain": "Cyber Forensic Processes is a syllabus topic under Cyber Forensic and Its Applications in Module 5."
@@ -1342,17 +1434,21 @@
           "title": "Cyber Forensic Applications",
           "flashcards": [
             {
-              "front": "What is the core idea of Cyber Forensic Applications?",
-              "back": "5.2.4 Cyber Forensic Tools 5.2.5 Digital Evidence 5.2.6 Investigating Windows and Unix Systems",
-              "detail": "From Network Security and Cryptography (CSIT654) · 5.2.3 · Cyber Forensic and Its Applications"
+              "front": "What is Cyber Forensic Applications?",
+              "back": "Cyber Forensic Applications: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "5.2.3 · Cyber Forensic and Its Applications"
+            },
+            {
+              "front": "Exam focus: Cyber Forensic Applications",
+              "back": "Define Cyber Forensic Applications in one line, name when/why it is used, and contrast it with one related idea under Cyber Forensic and Its Applications."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches Cyber Forensic Applications?",
               "options": [
-                "A definition-only topic with no applications",
-                "Only a programming language keyword",
+                "A definition-only label with no role in Network Security & Cryptography",
+                "Only a programming-language keyword with no syllabus meaning",
                 "A core idea in Network Security & Cryptography: Cyber Forensic Applications",
                 "Unrelated to Module 5"
               ],
@@ -1366,13 +1462,13 @@
           "title": "Cyber Forensic Tools",
           "flashcards": [
             {
-              "front": "What is the core idea of Cyber Forensic Tools?",
-              "back": "5.2.5 Digital Evidence 5.2.6 Investigating Windows and Unix Systems 5.2.7 E-mail Tracing",
-              "detail": "From Network Security and Cryptography (CSIT654) · 5.2.4 · Cyber Forensic and Its Applications"
+              "front": "What is Cyber Forensic Tools?",
+              "back": "Cyber Forensic Tools: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "5.2.4 · Cyber Forensic and Its Applications"
             },
             {
-              "front": "Name one exam point for Cyber Forensic Tools.",
-              "back": "Be able to define Cyber Forensic Tools, state when it is used, and contrast it with a related concept in Cyber Forensic and Its Applications."
+              "front": "Exam focus: Cyber Forensic Tools",
+              "back": "Define Cyber Forensic Tools in one line, name when/why it is used, and contrast it with one related idea under Cyber Forensic and Its Applications."
             }
           ],
           "mcqs": [
@@ -1381,8 +1477,8 @@
               "options": [
                 "A core idea in Network Security & Cryptography: Cyber Forensic Tools",
                 "Unrelated to Module 5",
-                "A definition-only topic with no applications",
-                "Only a programming language keyword"
+                "A definition-only label with no role in Network Security & Cryptography",
+                "Only a programming-language keyword with no syllabus meaning"
               ],
               "answer": 0,
               "explain": "Cyber Forensic Tools is a syllabus topic under Cyber Forensic and Its Applications in Module 5."
@@ -1394,9 +1490,13 @@
           "title": "Digital Evidence",
           "flashcards": [
             {
-              "front": "What is the core idea of Digital Evidence?",
-              "back": "5.2.6 Investigating Windows and Unix Systems 5.2.7 E-mail Tracing (c) Amity University Online",
-              "detail": "From Network Security and Cryptography (CSIT654) · 5.2.5 · Cyber Forensic and Its Applications"
+              "front": "What is Digital Evidence?",
+              "back": "Digital Evidence: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "5.2.5 · Cyber Forensic and Its Applications"
+            },
+            {
+              "front": "Exam focus: Digital Evidence",
+              "back": "Define Digital Evidence in one line, name when/why it is used, and contrast it with one related idea under Cyber Forensic and Its Applications."
             }
           ],
           "mcqs": [
@@ -1405,8 +1505,8 @@
               "options": [
                 "A core idea in Network Security & Cryptography: Digital Evidence",
                 "Unrelated to Module 5",
-                "A definition-only topic with no applications",
-                "Only a programming language keyword"
+                "A definition-only label with no role in Network Security & Cryptography",
+                "Only a programming-language keyword with no syllabus meaning"
               ],
               "answer": 0,
               "explain": "Digital Evidence is a syllabus topic under Cyber Forensic and Its Applications in Module 5."
@@ -1418,13 +1518,13 @@
           "title": "Investigating Windows and Unix Systems",
           "flashcards": [
             {
-              "front": "What is the core idea of Investigating Windows and Unix Systems?",
-              "back": "5.2.7 E-mail Tracing (c) Amity University Online",
-              "detail": "From Network Security and Cryptography (CSIT654) · 5.2.6 · Cyber Forensic and Its Applications"
+              "front": "What is Investigating Windows and Unix Systems?",
+              "back": "Investigating Windows and Unix Systems: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "5.2.6 · Cyber Forensic and Its Applications"
             },
             {
-              "front": "Name one exam point for Investigating Windows and Unix Systems.",
-              "back": "Be able to define Investigating Windows and Unix Systems, state when it is used, and contrast it with a related concept in Cyber Forensic and Its Applications."
+              "front": "Exam focus: Investigating Windows and Unix Systems",
+              "back": "Define Investigating Windows and Unix Systems in one line, name when/why it is used, and contrast it with one related idea under Cyber Forensic and Its Applications."
             }
           ],
           "mcqs": [
@@ -1433,8 +1533,8 @@
               "options": [
                 "A core idea in Network Security & Cryptography: Investigating Windows and Unix Systems",
                 "Unrelated to Module 5",
-                "Only a programming language keyword",
-                "A definition-only topic with no applications"
+                "Only a programming-language keyword with no syllabus meaning",
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 0,
               "explain": "Investigating Windows and Unix Systems is a syllabus topic under Cyber Forensic and Its Applications in Module 5."
@@ -1446,19 +1546,23 @@
           "title": "E-mail Tracing",
           "flashcards": [
             {
-              "front": "What is the core idea of E-mail Tracing?",
-              "back": "Key SLM topic: E-mail Tracing. Review definitions, steps, and one worked example from the study PDF.",
-              "detail": "From Network Security and Cryptography (CSIT654) · 5.2.7 · Cyber Forensic and Its Applications"
+              "front": "What is E-mail Tracing?",
+              "back": "E-mail Tracing: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
+              "detail": "5.2.7 · Cyber Forensic and Its Applications"
+            },
+            {
+              "front": "Exam focus: E-mail Tracing",
+              "back": "Define E-mail Tracing in one line, name when/why it is used, and contrast it with one related idea under Cyber Forensic and Its Applications."
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best matches E-mail Tracing?",
               "options": [
-                "Only a programming language keyword",
+                "Only a programming-language keyword with no syllabus meaning",
                 "Unrelated to Module 5",
                 "A core idea in Network Security & Cryptography: E-mail Tracing",
-                "A definition-only topic with no applications"
+                "A definition-only label with no role in Network Security & Cryptography"
               ],
               "answer": 2,
               "explain": "E-mail Tracing is a syllabus topic under Cyber Forensic and Its Applications in Module 5."

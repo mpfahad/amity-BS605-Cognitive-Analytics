@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -666,79 +667,104 @@ def write_bs605() -> None:
     print(f"BS605: {len(out)} entries -> {path}")
 
 
+def looks_like_toc(text: str) -> bool:
+    if not text:
+        return True
+    ids = re.findall(r"\b\d+(?:\.\d+){1,3}\b", text)
+    return len(ids) >= 2
+
+
 def author_topic_deep(topic: dict, lmr: bool) -> dict:
-    """Better-than-flashcard-copy deep notes for non-BS605 subjects."""
+    """Build Terms/Concepts/Notes that are deeper than Overview — never TOC junk."""
     terms: list[dict] = []
     concepts: list[str] = []
     notes: list[str] = []
     cards = topic.get("flashcards") or []
     mcqs = topic.get("mcqs") or []
+    title = (topic.get("title") or topic.get("id") or "Topic").strip()
+    tid = str(topic.get("id") or "")
 
+    # Primary term = topic title + best definition card
+    definition = ""
     for c in cards:
-        front = (c.get("front") or "").strip()
         back = (c.get("back") or "").strip()
+        front = (c.get("front") or "").strip()
+        if looks_like_toc(back):
+            continue
+        if front.lower().startswith("exam focus"):
+            if back and not looks_like_toc(back):
+                notes.append(back)
+            continue
+        if len(back) > len(definition):
+            definition = back
         detail = (c.get("detail") or "").strip()
-        # Prefer short label from front
-        label = front
-        for prefix in (
-            "What is ", "What are ", "What does ", "Define ", "Explain ",
-            "List ", "Name ", "Describe ", "How do ", "How does ", "Why ",
-        ):
-            if label.lower().startswith(prefix.lower()):
-                label = label[len(prefix) :]
-                break
-        label = label.rstrip("?").strip()
-        if len(label) > 70:
-            label = label[:67] + "…"
-        if not label:
-            label = "Key idea"
-        # Split long backs into term + concept when possible
-        if back:
-            terms.append({"t": label, "d": back})
-        if detail:
+        if detail and not detail.startswith(tid):
             notes.append(detail)
 
-    title = topic.get("title") or topic.get("id")
-    if len(cards) >= 2:
-        concepts.append(f"Hold {title} as a cluster: learn each term below as a one-line definition.")
-        concepts.append("Compare the cards — exam stems often hinge on one contrasting word.")
-    elif cards:
-        concepts.append(f"Core of {title}: be able to restate the definition without the flashcard wording.")
+    if definition:
+        terms.append({"t": title, "d": definition})
+    else:
+        terms.append(
+            {
+                "t": title,
+                "d": f"Syllabus topic {tid}: learn the definition, operations/steps, and one contrast with a neighbour concept.",
+            }
+        )
+
+    # Extra terms: split definition on semicolons / "vs" style fragments when long
+    if definition and ("." in definition or ";" in definition):
+        parts = [p.strip() for p in re.split(r"(?<=[.|;])\s+", definition) if len(p.strip()) > 25]
+        for i, part in enumerate(parts[1:3], start=2):
+            terms.append({"t": f"Point {i}", "d": part})
+
+    concepts.append(f"{title} sits in this module’s map — Overview is the short blurb; these terms are the exam definition.")
+    if lmr:
+        concepts.append("LMR: say the definition aloud, then one use-case, then one contrast with a related topic.")
+    else:
+        concepts.append("Link this topic to its unit neighbours so you can spot ‘which structure/method’ stems.")
 
     for q in mcqs:
         explain = (q.get("explain") or "").strip()
-        if explain:
+        if explain and not looks_like_toc(explain):
             notes.append(f"Exam cue: {explain}")
-        # Trap from wrong-looking options if useful
-        opts = q.get("options") or []
-        ans = q.get("answer")
-        if isinstance(ans, int) and 0 <= ans < len(opts):
-            stem = (q.get("q") or "").strip()
-            if stem and len(stem) < 120:
-                notes.append(f"If asked “{stem}” → {opts[ans]}.")
 
-    # Dedupe notes, drop empties, cap length for LMR vs standard
+    # Specific trap note from title keywords
+    low = title.lower()
+    if "stack" in low:
+        notes.append("Trap: Stack is LIFO (top) — do not confuse with Queue (FIFO).")
+    elif "queue" in low:
+        notes.append("Trap: Queue is FIFO — enqueue rear, dequeue front; not LIFO.")
+    elif "list" in low:
+        notes.append("Trap: Linked list uses pointers/nodes — not the same as a contiguous array.")
+    elif "hash" in low:
+        notes.append("Trap: Average O(1) assumes a good hash and load factor — worst case can degrade.")
+    elif "sort" in low:
+        notes.append("Trap: Compare time, space, and stability — not only ‘faster’.")
+    elif "encrypt" in low or "cipher" in low:
+        notes.append("Trap: Encryption protects confidentiality; integrity/authentication need other controls too.")
+    elif "sample" in low:
+        notes.append("Trap: Sample ≠ population; state the sampling frame when answering.")
+    elif "hypothes" in low:
+        notes.append("Trap: A hypothesis must be testable — not only a vague opinion.")
+
+    if not any(n.startswith("Trap:") for n in notes):
+        notes.append(f"Be ready to define {title} and give one use / one contrast — vague labels lose marks.")
+
     seen: set[str] = set()
     uniq: list[str] = []
     for n in notes:
         n = n.strip()
-        if not n or n in seen:
+        if not n or n in seen or looks_like_toc(n):
+            continue
+        # drop useless “From course · id” only lines
+        if re.match(r"^[\d.]+ · ", n) and len(n) < 60:
             continue
         seen.add(n)
         uniq.append(n)
 
-    if lmr:
-        concepts.append("LMR: prioritise term list + exam cues; practise saying definitions aloud.")
-        if not uniq:
-            uniq.append("Be ready with a one-line definition for each term before revising other topics.")
-    else:
-        if not uniq and terms:
-            uniq.append("Overview is the short blurb; use these terms when a stem needs a precise definition.")
-
-    # Cap: LMR denser
-    max_terms = 8 if lmr else 5
-    max_concepts = 5 if lmr else 3
-    max_notes = 8 if lmr else 4
+    max_terms = 6 if lmr else 4
+    max_concepts = 4 if lmr else 3
+    max_notes = 7 if lmr else 4
     return {
         "terms": terms[:max_terms],
         "concepts": concepts[:max_concepts],

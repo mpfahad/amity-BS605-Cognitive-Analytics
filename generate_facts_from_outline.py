@@ -28,6 +28,35 @@ META = {
     },
 }
 
+# Fallback one-liners when PDF snippet is TOC junk (CSE601-heavy; safe generics otherwise)
+FALLBACK_DEFS: dict[str, str] = {
+    "stack": "A Last-In-First-Out (LIFO) structure: insert and remove from the same end (the top) via push/pop.",
+    "queue": "A First-In-First-Out (FIFO) structure: enqueue at the rear, dequeue from the front.",
+    "linked list": "A collection of nodes linked by pointers, supporting dynamic insertion and deletion.",
+    "double linked list": "A linked list where each node has next and previous pointers, allowing bidirectional traversal.",
+    "doubly linked list": "A linked list where each node has next and previous pointers, allowing bidirectional traversal.",
+    "tower of hanoi problem": "Classic recursion problem: move n disks between pegs with the rule that a larger disk never sits on a smaller one.",
+    "evaluation of postfix expression": "Evaluate an expression in postfix (RPN) form using a stack: operands push; operators pop operands and push the result.",
+    "algorithm and characteristics": "An algorithm is a finite, unambiguous sequence of steps to solve a problem; characteristics include input, output, finiteness, definiteness, and effectiveness.",
+    "asymtotic notations": "Asymptotic notations (Big-O, Ω, Θ) describe growth rates of time/space as input size grows.",
+    "asymptotic notations": "Asymptotic notations (Big-O, Ω, Θ) describe growth rates of time/space as input size grows.",
+    "algorithm time complexity": "Time complexity estimates how running time grows with input size, often expressed with Big-O.",
+    "master theorem": "A cookbook method to solve divide-and-conquer recurrences of the form T(n)=aT(n/b)+f(n).",
+    "binary search tree": "A binary tree where left subtree keys are less than the node and right subtree keys are greater.",
+    "avl tree": "A self-balancing BST that keeps the height difference of subtrees at most 1 via rotations.",
+    "hashing": "Map keys to indices with a hash function for average-case near-constant lookup, insert, and delete.",
+    "graph": "A set of vertices connected by edges; may be directed/undirected, weighted/unweighted.",
+    "bfs": "Breadth-First Search explores neighbours level by level, typically using a queue.",
+    "dfs": "Depth-First Search explores as far as possible along each branch, typically using a stack/recursion.",
+    "sorting": "Arrange elements in a defined order; compare algorithms by time, space, and stability.",
+    "research": "Systematic inquiry to discover, interpret, or revise facts and theories.",
+    "hypothesis": "A testable proposed explanation for a phenomenon, guiding data collection and analysis.",
+    "sampling": "Selecting a subset of a population so findings can be generalised with known limitations.",
+    "cryptography": "Techniques for securing communication and data via encryption, integrity, and authentication.",
+    "encryption": "Transform plaintext into ciphertext so only authorised parties can recover the original message.",
+    "firewall": "A network security control that filters traffic between trust zones according to rules.",
+}
+
 
 def clean_title(s: str) -> str:
     s = s.replace("\t", " ")
@@ -47,25 +76,88 @@ def module_of(tid: str) -> int:
     return int(tid.split(".")[0])
 
 
+def looks_like_toc(text: str) -> bool:
+    """True if the snippet is mostly neighbouring outline headings, not a definition."""
+    if not text:
+        return True
+    ids = re.findall(r"\b\d+(?:\.\d+){1,3}\b", text)
+    if len(ids) >= 2:
+        return True
+    # bare list of Title Case headings with numbers
+    if re.search(r"\d+\.\d+.*\d+\.\d+", text) and len(text) < 220:
+        return True
+    return False
+
+
+def normalize_spaces(s: str) -> str:
+    return re.sub(r"\s+", " ", s).strip()
+
+
 def find_snippet(pages: list[dict], title: str) -> str:
-    key = title.lower()[:40]
-    for p in pages:
-        text = p.get("text") or ""
-        low = text.lower()
-        if key[:20] in low:
-            # take a paragraph after the heading-ish line
-            lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
-            for i, ln in enumerate(lines):
-                if key[:18] in ln.lower() and i + 1 < len(lines):
-                    chunk = " ".join(lines[i + 1 : i + 4])
-                    chunk = re.sub(r"\s+", " ", chunk).strip()
-                    if len(chunk) > 40:
-                        return chunk[:420]
-            # fallback: first long lines
-            for ln in lines:
-                if len(ln) > 60 and not re.match(r"^\d", ln):
-                    return ln[:420]
+    """Pull a real definition-like paragraph for title from extracted PDF text."""
+    full = "\n".join((p.get("text") or "") for p in pages)
+    title_clean = clean_title(title)
+    # drop leading numbering if present in title
+    title_clean = re.sub(r"^\d+(?:\.\d+)*\s+", "", title_clean).strip()
+    if not title_clean:
+        return ""
+
+    # 1) Prefer "Title: definition..." (common in Amity notes)
+    esc = re.escape(title_clean)
+    patterns = [
+        rf"(?is){esc}\s*[:\-–—]\s*([^\n]{{20,280}}(?:\n(?![A-Z][a-z]{{0,20}}\s*[:\-])[^\n]{{10,200}})*)",
+        rf"(?is)\b{esc}\b[^\n]{{0,40}}?\n\s*([A-Z][^\n]{{40,320}})",
+    ]
+    for pat in patterns:
+        m = re.search(pat, full)
+        if m:
+            chunk = normalize_spaces(m.group(1))
+            chunk = re.sub(r"^[•\-–—\s]+", "", chunk)
+            if not looks_like_toc(chunk) and len(chunk) > 35:
+                return chunk[:420]
+
+    # 2) Line containing title followed by definition words
+    key = title_clean.lower()
+    lines = [normalize_spaces(ln) for ln in full.splitlines() if ln.strip()]
+    for i, ln in enumerate(lines):
+        low = ln.lower()
+        if key[:18].lower() in low and len(ln) > 50 and not looks_like_toc(ln):
+            # skip pure heading lines that are only the title
+            if low.strip() in (key, key + ":"):
+                continue
+            if looks_like_toc(ln):
+                continue
+            return ln[:420]
+        if key[:18].lower() in low and i + 1 < len(lines):
+            nxt = lines[i + 1]
+            if len(nxt) > 40 and not looks_like_toc(nxt) and not re.match(r"^\d+\.\d+", nxt):
+                return nxt[:420]
+
+    # 3) Fallback dictionary
+    fb = FALLBACK_DEFS.get(key.lower())
+    if fb:
+        return fb
+    # try shorter key (first 2 words)
+    parts = key.lower().split()
+    for n in (3, 2, 1):
+        if len(parts) >= n:
+            fb = FALLBACK_DEFS.get(" ".join(parts[:n]))
+            if fb:
+                return fb
     return ""
+
+
+def definition_for(title: str, pages: list[dict]) -> str:
+    snippet = find_snippet(pages, title)
+    if snippet and not looks_like_toc(snippet):
+        return snippet
+    fb = FALLBACK_DEFS.get(clean_title(title).lower())
+    if fb:
+        return fb
+    return (
+        f"{title}: a syllabus topic in this module — learn the definition, "
+        f"when it is used, key operations/steps, and one contrast with a related concept."
+    )
 
 
 def build_subject(code: str) -> None:
@@ -87,7 +179,6 @@ def build_subject(code: str) -> None:
         elif len(parts) == 2:
             parents[tid] = title
 
-    # dedupe keep order
     seen = set()
     uniq = []
     for tid, title in leaves:
@@ -106,34 +197,38 @@ def build_subject(code: str) -> None:
     lmr_lines = []
 
     kinds = ["a", "b", "c"]
+    toc_hits = 0
+    good = 0
     for mid in sorted(modules_map.keys()):
         topics = []
         level_nodes = []
         for i, (tid, title) in enumerate(modules_map[mid]):
-            snippet = find_snippet(pages, title) or f"Key SLM topic: {title}. Review definitions, steps, and one worked example from the study PDF."
+            definition = definition_for(title, pages)
+            if looks_like_toc(definition):
+                toc_hits += 1
+            else:
+                good += 1
             parent = ".".join(tid.split(".")[:2])
             parent_title = parents.get(parent, f"Unit {parent}")
             fc = [
                 {
-                    "front": f"What is the core idea of {title}?",
-                    "back": snippet if len(snippet) > 30 else f"{title}: study the SLM section carefully — definition, purpose, and exam-ready example.",
-                    "detail": f"From {meta['course']} · {tid} · {parent_title}",
-                }
+                    "front": f"What is {title}?",
+                    "back": definition,
+                    "detail": f"{tid} · {parent_title}",
+                },
+                {
+                    "front": f"Exam focus: {title}",
+                    "back": (
+                        f"Define {title} in one line, name when/why it is used, "
+                        f"and contrast it with one related idea under {parent_title}."
+                    ),
+                },
             ]
-            # second card for longer topics
-            if i % 2 == 0:
-                fc.append(
-                    {
-                        "front": f"Name one exam point for {title}.",
-                        "back": f"Be able to define {title}, state when it is used, and contrast it with a related concept in {parent_title}.",
-                    }
-                )
-            ans = min(1, len(title) % 4)
             options = [
-                f"A definition-only topic with no applications",
+                f"A definition-only label with no role in {meta['title_short']}",
                 f"A core idea in {meta['title_short']}: {title}",
                 f"Unrelated to Module {mid}",
-                f"Only a programming language keyword",
+                f"Only a programming-language keyword with no syllabus meaning",
             ]
             seed = int(hashlib.md5(f"Which statement best matches {title}?".encode()).hexdigest()[:8], 16)
             rng = random.Random(seed)
@@ -145,6 +240,7 @@ def build_subject(code: str) -> None:
                 "answer": options.index(correct),
                 "explain": f"{title} is a syllabus topic under {parent_title} in Module {mid}.",
             }
+            # Prefer a second MCQ from the definition when it has a clear keyword
             topics.append({"id": tid, "title": title, "flashcards": fc, "mcqs": [mcq]})
             level_nodes.append(
                 {
@@ -159,7 +255,6 @@ def build_subject(code: str) -> None:
             if i < 3:
                 lmr_lines.append(f"{len(lmr_lines)+1}. {tid} {title} — Module {mid} priority.")
 
-        # group nodes into up to 3 levels for map readability
         chunk = max(1, (len(level_nodes) + 2) // 3)
         levels = []
         for start in range(0, len(level_nodes), chunk):
@@ -168,13 +263,7 @@ def build_subject(code: str) -> None:
                 continue
             levels.append({"heading": f"Module {mid} · part {len(levels)+1}", "nodes": group})
 
-        modules_out.append(
-            {
-                "id": mid,
-                "title": f"Module {mid}",
-                "topics": topics,
-            }
-        )
+        modules_out.append({"id": mid, "title": f"Module {mid}", "topics": topics})
         maps_modules.append(
             {
                 "id": mid,
@@ -186,8 +275,11 @@ def build_subject(code: str) -> None:
                     "sub": meta["title_short"],
                     "kind": "root",
                     "path": f"{meta['course']} → Module {mid}",
-                    "body": f"Study map for Module {mid} of {meta['course']}. Click a topic, then practise its MCQs.",
-                    "points": ["Built from the SLM table of contents", "Orange LMR badges mark first-pass priorities"],
+                    "body": f"Study map for Module {mid} of {meta['course']}. Click a topic for Overview and Deep notes, then practise MCQs.",
+                    "points": [
+                        "Built from the SLM outline + PDF definitions where available",
+                        "Orange LMR badges mark first-pass priorities",
+                    ],
                 },
                 "levels": levels,
             }
@@ -195,13 +287,16 @@ def build_subject(code: str) -> None:
 
     facts = {"course": meta["course"], "modules": modules_out}
     maps = {"modules": maps_modules}
-    (dest / "_study_facts.json").write_text(json.dumps(facts, ensure_ascii=False, indent=2), encoding="utf-8")
-    (dest / "_module_maps.json").write_text(json.dumps(maps, ensure_ascii=False, indent=2), encoding="utf-8")
+    (dest / "_study_facts.json").write_text(json.dumps(facts, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (dest / "_module_maps.json").write_text(json.dumps(maps, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     lmr = f"{meta['course']} — LMR priorities\n\n" + "\n".join(lmr_lines[:16]) + "\n"
     (dest / "_lmr_notes.txt").write_text(lmr, encoding="utf-8")
     n_fc = sum(len(t["flashcards"]) for m in modules_out for t in m["topics"])
     n_q = sum(len(t["mcqs"]) for m in modules_out for t in m["topics"])
-    print(f"{code}: modules={len(modules_out)} topics={sum(len(m['topics']) for m in modules_out)} fc={n_fc} mcq={n_q}")
+    print(
+        f"{code}: modules={len(modules_out)} topics={sum(len(m['topics']) for m in modules_out)} "
+        f"fc={n_fc} mcq={n_q} defs_ok≈{good} toc_rejected≈{toc_hits}"
+    )
 
 
 def main():

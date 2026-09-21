@@ -187,44 +187,46 @@ def load_subject(subject_id: str) -> tuple[dict, dict, str, dict, dict]:
 
 
 def _synth_deep_from_topic(topic: dict | None, lmr: bool = False) -> dict:
-    """Fallback when _deep_notes.json lacks an entry — never emit generic filler."""
+    """Fallback when _deep_notes.json lacks an entry — never emit TOC junk as 'terms'."""
+    import re
+
+    def toc(text: str) -> bool:
+        return len(re.findall(r"\b\d+(?:\.\d+){1,3}\b", text or "")) >= 2
+
     terms: list[dict] = []
     concepts: list[str] = []
     notes: list[str] = []
     if not topic:
         return {"terms": [], "concepts": [], "notes": []}
-    title = topic.get("title") or topic.get("id")
+    title = topic.get("title") or topic.get("id") or "Topic"
+    definition = ""
     for c in topic.get("flashcards") or []:
-        front = (c.get("front") or "").strip().rstrip("?")
-        for prefix in ("What is ", "What are ", "Define ", "Explain ", "List ", "Name ", "Describe "):
-            if front.lower().startswith(prefix.lower()):
-                front = front[len(prefix) :]
-                break
-        if len(front) > 70:
-            front = front[:67] + "…"
-        back = c.get("back") or ""
-        if back:
-            terms.append({"t": front or "Key idea", "d": back})
-        if c.get("detail"):
+        back = (c.get("back") or "").strip()
+        if back and not toc(back) and len(back) > len(definition):
+            definition = back
+        if c.get("detail") and not toc(c["detail"]):
             notes.append(c["detail"])
+    if definition:
+        terms.append({"t": str(title), "d": definition})
+    else:
+        terms.append({"t": str(title), "d": f"Learn the definition, use-case, and one contrast for {title}."})
     for q in topic.get("mcqs") or []:
         explain = (q.get("explain") or "").strip()
-        if explain:
+        if explain and not toc(explain):
             notes.append(f"Exam cue: {explain}")
-    if terms:
-        concepts.append(f"Hold {title} as definitions you can say in one line each.")
+    concepts.append(f"{title}: Overview is short; use the term definition for exam recall.")
     if lmr:
-        concepts.append("LMR: prioritise the term list and exam cues below.")
+        concepts.append("LMR: definition + use-case + contrast.")
     seen: set[str] = set()
     uniq = []
     for n in notes:
-        if n and n not in seen:
+        if n and n not in seen and not toc(n):
             seen.add(n)
             uniq.append(n)
     return {
-        "terms": terms[: 8 if lmr else 5],
+        "terms": terms[: 6 if lmr else 4],
         "concepts": concepts[: 4 if lmr else 3],
-        "notes": uniq[: 8 if lmr else 4],
+        "notes": uniq[: 7 if lmr else 4],
     }
 
 
