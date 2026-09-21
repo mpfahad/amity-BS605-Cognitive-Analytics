@@ -1,0 +1,359 @@
+{
+  "pdf": "Data Structure and Algorithm F.pdf",
+  "page_count": 197,
+  "outline": [],
+  "heading_guesses": [
+    {
+      "page": 4,
+      "title": "1.1 \t Big Data Structures"
+    },
+    {
+      "page": 4,
+      "title": "1.1.1\t Stack"
+    },
+    {
+      "page": 4,
+      "title": "1.1.2 Evaluation of Postfix Expression"
+    },
+    {
+      "page": 4,
+      "title": "1.1.3\t Tower of Hanoi Problem"
+    },
+    {
+      "page": 4,
+      "title": "1.1.4\t Queue"
+    },
+    {
+      "page": 4,
+      "title": "1.1.5\t Linked List"
+    },
+    {
+      "page": 4,
+      "title": "1.1.6\t Double Linked List"
+    },
+    {
+      "page": 4,
+      "title": "1.2\t Algorithm"
+    },
+    {
+      "page": 4,
+      "title": "1.2.1\t Algorithm and Characteristics"
+    },
+    {
+      "page": 4,
+      "title": "1.2.2\t Asymtotic Notations"
+    },
+    {
+      "page": 4,
+      "title": "1.2.3 Algorithm Time Complexity"
+    },
+    {
+      "page": 4,
+      "title": "1.2.4\t Recursive Program Analysis Strategies"
+    },
+    {
+      "page": 4,
+      "title": "1.2.5\t Master Theorem"
+    },
+    {
+      "page": 4,
+      "title": "1.3\t Divide and Conquer Paradigm"
+    },
+    {
+      "page": 4,
+      "title": "1.3.1\t Divide-Conquer Recurrence Equations Solutions"
+    },
+    {
+      "page": 4,
+      "title": "1.4\t Sorting Techniques"
+    },
+    {
+      "page": 4,
+      "title": "1.4.1\t Bubble Sort"
+    },
+    {
+      "page": 4,
+      "title": "1.4.2\t Insertion Sort"
+    },
+    {
+      "page": 4,
+      "title": "1.4.3\t Selection Sort"
+    },
+    {
+      "page": 4,
+      "title": "1.4.4\t Merge Sort"
+    },
+    {
+      "page": 4,
+      "title": "1.4.5\t Heap Sort"
+    },
+    {
+      "page": 4,
+      "title": "1.4.6\t Quick Sort"
+    },
+    {
+      "page": 4,
+      "title": "2.1\t Tree"
+    },
+    {
+      "page": 4,
+      "title": "2.1.1\t Basic Terminology and Applications"
+    },
+    {
+      "page": 4,
+      "title": "2.1.2\t Binary Trees"
+    },
+    {
+      "page": 4,
+      "title": "2.1.3\t Binary Search Trees"
+    },
+    {
+      "page": 4,
+      "title": "2.1.4\t Optimal Binary Search Tree"
+    },
+    {
+      "page": 4,
+      "title": "2.1.5\t Red-Black Trees"
+    },
+    {
+      "page": 4,
+      "title": "2.1.6\t AVL Trees"
+    },
+    {
+      "page": 4,
+      "title": "2.1.7\t B Trees"
+    },
+    {
+      "page": 4,
+      "title": "2.1.8\t Spanning Trees"
+    },
+    {
+      "page": 4,
+      "title": "2.1.9\t Prim’s Algorithm"
+    },
+    {
+      "page": 4,
+      "title": "2.1.10\tKruskal’s Algorithm"
+    },
+    {
+      "page": 4,
+      "title": "2.2\t Graphs"
+    },
+    {
+      "page": 4,
+      "title": "2.2.1\t Terminology, Representations, Traversals"
+    },
+    {
+      "page": 4,
+      "title": "2.2.2\t Depth-First Search (DFS)"
+    },
+    {
+      "page": 5,
+      "title": "2.2.3\t Breadth-First Search (BFS)"
+    },
+    {
+      "page": 5,
+      "title": "2.2.4\t Single-Source Shortest Path"
+    },
+    {
+      "page": 5,
+      "title": "2.2.5\t All-Pair Shortest Path"
+    },
+    {
+      "page": 5,
+      "title": "3.1\t Dynamic Programming"
+    },
+    {
+      "page": 5,
+      "title": "3.1.1\t Dynamic Programming Approach"
+    },
+    {
+      "page": 5,
+      "title": "3.1.2\t Principle of Optimality"
+    },
+    {
+      "page": 5,
+      "title": "3.1.3 Strassens Matrix Multiplication"
+    },
+    {
+      "page": 5,
+      "title": "3.1.4 Matrix Chain Multiplication"
+    },
+    {
+      "page": 5,
+      "title": "3.1.5\t Longest Common subsequence"
+    },
+    {
+      "page": 5,
+      "title": "3.1.6\t 0/1 Knapsack Problem"
+    },
+    {
+      "page": 5,
+      "title": "3.2 \t Greedy Approach"
+    },
+    {
+      "page": 5,
+      "title": "3.2.1\t Introduction of Greedy Approach"
+    },
+    {
+      "page": 5,
+      "title": "3.2.2\t Activity Selection Problem"
+    },
+    {
+      "page": 5,
+      "title": "3.2.3 Huffman Codes"
+    },
+    {
+      "page": 5,
+      "title": "3.2.4\t Fractional Knapsack Problem"
+    },
+    {
+      "page": 5,
+      "title": "3.3 \t Branch and Bound Approach"
+    },
+    {
+      "page": 5,
+      "title": "3.3.1\t Traveling Salesman Problem"
+    },
+    {
+      "page": 5,
+      "title": "3.3.2\t Knapsack Problem"
+    },
+    {
+      "page": 5,
+      "title": "3.3.3\t Job Sequencing"
+    },
+    {
+      "page": 5,
+      "title": "3.3.4\t Job Sequencing with Deadline"
+    },
+    {
+      "page": 5,
+      "title": "4.1 \t String Matching Algorithm"
+    },
+    {
+      "page": 5,
+      "title": "4.1.1\t Naïve String Matching Algorithm"
+    },
+    {
+      "page": 5,
+      "title": "4.1.3\t String Matching Algorithm: Rabin Karp"
+    },
+    {
+      "page": 5,
+      "title": "4.2  Approximation Algorithm"
+    },
+    {
+      "page": 5,
+      "title": "4.2.1 Vertex-Cover Algorithm"
+    },
+    {
+      "page": 5,
+      "title": "4.2.2\t Set Covering Problem"
+    },
+    {
+      "page": 5,
+      "title": "4.2.3\t Randomisation and Linear Programming"
+    },
+    {
+      "page": 5,
+      "title": "4.2.4\t The Subset-sum Problem"
+    },
+    {
+      "page": 5,
+      "title": "5.1 \t Polynomial Time"
+    },
+    {
+      "page": 5,
+      "title": "5.1.1\t Green Technology"
+    },
+    {
+      "page": 5,
+      "title": "5.1.2\t Hamiltonian Cycles"
+    },
+    {
+      "page": 5,
+      "title": "5.2 \t NP-Completeness"
+    },
+    {
+      "page": 5,
+      "title": "5.2.1\t NP-completeness Proofs"
+    },
+    {
+      "page": 5,
+      "title": "5.2.2\t NP-completeness Problems"
+    },
+    {
+      "page": 5,
+      "title": "5.2.3\t NP-Hard and SAT Problems"
+    },
+    {
+      "page": 5,
+      "title": "5.2.4\t NP-completeness and Reducibility"
+    },
+    {
+      "page": 6,
+      "title": "1.1 Big Data Structures"
+    },
+    {
+      "page": 7,
+      "title": "1.1.1 Stack"
+    },
+    {
+      "page": 9,
+      "title": "1.1.2 Evaluation of Postfix Expression"
+    },
+    {
+      "page": 13,
+      "title": "1.1.3 Towers of Hanoi Problem"
+    },
+    {
+      "page": 15,
+      "title": "1.1.4 Queue"
+    },
+    {
+      "page": 16,
+      "title": "1. The queue is often an ordered list of elements of related data types, like a"
+    },
+    {
+      "page": 16,
+      "title": "2. A FIFO(First In First Out) system is a queue."
+    },
+    {
+      "page": 16,
+      "title": "3. Once a new element is inserted in the queue, it is important to remove all the"
+    },
+    {
+      "page": 16,
+      "title": "4. The peek() function is often used to return, without dequeuing, the value of the"
+    },
+    {
+      "page": 17,
+      "title": "1. Serving demands, such as a printer, CPU task scheduling, etc., on a single"
+    },
+    {
+      "page": 17,
+      "title": "2. Call Center telephone networks use lines in real-life situations to keep people"
+    },
+    {
+      "page": 17,
+      "title": "3. Interrupt management of real-time applications. The interrupts are treated in"
+    },
+    {
+      "page": 20,
+      "title": "1.1.5 Linked List"
+    },
+    {
+      "page": 24,
+      "title": "1.1.6 Double Linked List"
+    },
+    {
+      "page": 27,
+      "title": "1.2 Algorithm"
+    },
+    {
+      "page": 27,
+      "title": "1.2.1 Algorithm and Characteristics"
+    }
+  ]
+}

@@ -1,0 +1,487 @@
+{
+  "pdf": "Research Methodology  Final.pdf",
+  "page_count": 165,
+  "outline": [],
+  "heading_guesses": [
+    {
+      "page": 4,
+      "title": "1.1 \t Research"
+    },
+    {
+      "page": 4,
+      "title": "1.1.1 Definition and Objectives of Research"
+    },
+    {
+      "page": 4,
+      "title": "1.1.2\t Characteristics of Research"
+    },
+    {
+      "page": 4,
+      "title": "1.1.3\t Difference b/w Research Methods and Research Methodology"
+    },
+    {
+      "page": 4,
+      "title": "1.2\t Research Process"
+    },
+    {
+      "page": 4,
+      "title": "1.2.1\t Research Criteria and Research Process"
+    },
+    {
+      "page": 4,
+      "title": "1.2.2\t Approaches of Research: Deductive, Inductive, Quantitative and Qualitative"
+    },
+    {
+      "page": 4,
+      "title": "1.2.3\t Research Proposal and Aspects"
+    },
+    {
+      "page": 4,
+      "title": "1.2.4\t Literature Survey and Review"
+    },
+    {
+      "page": 4,
+      "title": "1.2.5\t Errors in Research"
+    },
+    {
+      "page": 4,
+      "title": "1.3\t Types of Research Design"
+    },
+    {
+      "page": 4,
+      "title": "1.3.1\t Pure and Applied"
+    },
+    {
+      "page": 4,
+      "title": "1.3.2\t Causal and Correlational"
+    },
+    {
+      "page": 4,
+      "title": "1.3.3\t Crossectional and Longitudinal"
+    },
+    {
+      "page": 4,
+      "title": "1.3.4\t Experimental, Semi-experimental and Non-Experimental"
+    },
+    {
+      "page": 4,
+      "title": "1.3.5\t Descriptive and Exploratory"
+    },
+    {
+      "page": 4,
+      "title": "1.4\t Research Modeling"
+    },
+    {
+      "page": 4,
+      "title": "1.4.1\t Types of Models"
+    },
+    {
+      "page": 4,
+      "title": "1.4.2\t Model Building and Stages"
+    },
+    {
+      "page": 4,
+      "title": "1.4.3\t Data Consideration and Testing"
+    },
+    {
+      "page": 4,
+      "title": "1.4.4\t Heuristic and Simulation Modeling"
+    },
+    {
+      "page": 4,
+      "title": "2.1 \t Data Collection"
+    },
+    {
+      "page": 4,
+      "title": "2.1.1\t Introduction to Data Collection"
+    },
+    {
+      "page": 4,
+      "title": "2.1.2\t Data Collection Methods"
+    },
+    {
+      "page": 4,
+      "title": "2.1.3\t Tabulating and Validating Data"
+    },
+    {
+      "page": 4,
+      "title": "2.2\t Questionnaire Designing"
+    },
+    {
+      "page": 4,
+      "title": "2.2.1\t Steps in Constructing a Questionnaire"
+    },
+    {
+      "page": 4,
+      "title": "2.2.2\t Types of Questions"
+    },
+    {
+      "page": 4,
+      "title": "2.2.3\t Format of Questionnaire"
+    },
+    {
+      "page": 4,
+      "title": "2.3\t Sampling"
+    },
+    {
+      "page": 4,
+      "title": "2.3.1\t Sampling Plan"
+    },
+    {
+      "page": 4,
+      "title": "2.3.2\t Sampling Frame"
+    },
+    {
+      "page": 5,
+      "title": "2.3.3\t Sample Selection Methods"
+    },
+    {
+      "page": 5,
+      "title": "2.3.4\t Probability Sampling Techniques"
+    },
+    {
+      "page": 5,
+      "title": "2.3.5\t Non-Probability Sampling Techniques"
+    },
+    {
+      "page": 5,
+      "title": "2.3.6\t Sampling and Non-sampling Errors"
+    },
+    {
+      "page": 5,
+      "title": "3.1\t Design of Experiments"
+    },
+    {
+      "page": 5,
+      "title": "3.1.1 Design of Experiment: Objectives and Strategies"
+    },
+    {
+      "page": 5,
+      "title": "3.1.2\t Pre-Experimental Research Design"
+    },
+    {
+      "page": 5,
+      "title": "3.1.3\t Quasi Experimental Research Design"
+    },
+    {
+      "page": 5,
+      "title": "3.1.4\t True Experimental Research Design"
+    },
+    {
+      "page": 5,
+      "title": "3.1.5\t Factorial Experimental Design"
+    },
+    {
+      "page": 5,
+      "title": "3.1.6\t Designing Engineering Experiments"
+    },
+    {
+      "page": 5,
+      "title": "3.1.7\t Causal Attributions"
+    },
+    {
+      "page": 5,
+      "title": "3.1.8\t Statistical Control"
+    },
+    {
+      "page": 5,
+      "title": "3.2\t Data Collection"
+    },
+    {
+      "page": 5,
+      "title": "3.2.1 Collection of Data via Observation and Interview"
+    },
+    {
+      "page": 5,
+      "title": "3.2.2\t Collection of Data through Cases"
+    },
+    {
+      "page": 5,
+      "title": "3.2.3\t Collection of Data through Questionnaires"
+    },
+    {
+      "page": 5,
+      "title": "3.2.4\t Guidelines for Preparing Questionnaire"
+    },
+    {
+      "page": 5,
+      "title": "3.2.5\t Data Editing"
+    },
+    {
+      "page": 5,
+      "title": "3.2.6\t Data Coding Rules"
+    },
+    {
+      "page": 5,
+      "title": "3.2.7\t Don’t Know” Responses"
+    },
+    {
+      "page": 5,
+      "title": "3.2.8\t Missing Data"
+    },
+    {
+      "page": 5,
+      "title": "3.3\t Basic Principles"
+    },
+    {
+      "page": 5,
+      "title": "3.3.1\t Validity and Reliability"
+    },
+    {
+      "page": 5,
+      "title": "3.3.2\t Replication, Randomisation and Blocking"
+    },
+    {
+      "page": 5,
+      "title": "3.3.3 Orthogonality and False Positives"
+    },
+    {
+      "page": 5,
+      "title": "4.1\t Hypothesis Testing"
+    },
+    {
+      "page": 5,
+      "title": "4.1.1\t Introduction to Hypothesis"
+    },
+    {
+      "page": 5,
+      "title": "4.1.2\t Developing Hypothesis : Null and Alternate"
+    },
+    {
+      "page": 5,
+      "title": "4.1.3\t Type I and Type II Error"
+    },
+    {
+      "page": 5,
+      "title": "4.1.4 One-Tailed and Two-tailed Test"
+    },
+    {
+      "page": 5,
+      "title": "4.1.5\t Degree of Freedom"
+    },
+    {
+      "page": 5,
+      "title": "4.1.6 Confidence Intervals"
+    },
+    {
+      "page": 5,
+      "title": "4.1.7 Level of Significance: The Confidence Coefficient"
+    },
+    {
+      "page": 6,
+      "title": "4.1.8 Rejection and Non-rejection Regions"
+    },
+    {
+      "page": 6,
+      "title": "4.1.9\t Hypothesis Testing Procedure"
+    },
+    {
+      "page": 6,
+      "title": "4.1.10\tTypes of Tests"
+    },
+    {
+      "page": 6,
+      "title": "4.1.11\t How to Select a Test"
+    },
+    {
+      "page": 6,
+      "title": "4.2\t Parametric Test"
+    },
+    {
+      "page": 6,
+      "title": "4.2.1\t Important Parametric Tests"
+    },
+    {
+      "page": 6,
+      "title": "4.2.2\t Hypothesis Testing of Means: Single Population Mean Using Z-statistic"
+    },
+    {
+      "page": 6,
+      "title": "4.2.3\t Hypothesis Testing of Means: Single Population Mean Using T-statistic"
+    },
+    {
+      "page": 6,
+      "title": "4.2.4\t Hypothesis Testing for Population Proportions"
+    },
+    {
+      "page": 6,
+      "title": "4.2.5\t Hypothesis Testing for Comparing a Variance to Hypothesized Population Variance"
+    },
+    {
+      "page": 6,
+      "title": "4.2.6\t Testing the Equality of Variances of Two Normal Populations"
+    },
+    {
+      "page": 6,
+      "title": "4.2.7 ANOVA for Fixed Effect Model"
+    },
+    {
+      "page": 6,
+      "title": "4.2.8\t Total, Treatment & error of Squares"
+    },
+    {
+      "page": 6,
+      "title": "4.2.9 ANOVA for Random Effect Model"
+    },
+    {
+      "page": 6,
+      "title": "4.2.10\tSingle Factor Experiment"
+    },
+    {
+      "page": 6,
+      "title": "4.2.11\t Model Adequacy Checking"
+    },
+    {
+      "page": 6,
+      "title": "5.1\t Research Report Writing"
+    },
+    {
+      "page": 6,
+      "title": "5.1.1\t Meaning of Research Report"
+    },
+    {
+      "page": 6,
+      "title": "5.1.2 Structure of Scientific Report"
+    },
+    {
+      "page": 6,
+      "title": "5.1.3 Components of Scientific Report"
+    },
+    {
+      "page": 6,
+      "title": "5.1.4\t Types of Reports"
+    },
+    {
+      "page": 6,
+      "title": "5.1.5\t Steps in Report Writing"
+    },
+    {
+      "page": 6,
+      "title": "5.1.6\t Format and Writing Style"
+    },
+    {
+      "page": 6,
+      "title": "5.1.7\t Illustrations and Tables"
+    },
+    {
+      "page": 6,
+      "title": "5.1.8\t Citing and Referencing Sources"
+    },
+    {
+      "page": 6,
+      "title": "5.1.9\t Footnotes"
+    },
+    {
+      "page": 6,
+      "title": "5.2\t Presentation"
+    },
+    {
+      "page": 6,
+      "title": "5.2.1 Oral Presentation"
+    },
+    {
+      "page": 6,
+      "title": "5.2.2\t Making Presentation"
+    },
+    {
+      "page": 6,
+      "title": "5.2.3\t Use of Visual Aids"
+    },
+    {
+      "page": 6,
+      "title": "5.2.4\t Importance of Effective Communication"
+    },
+    {
+      "page": 6,
+      "title": "5.2.5\t Convention and Strategies of Authentication"
+    },
+    {
+      "page": 6,
+      "title": "5.3\t Writing a Research Paper"
+    },
+    {
+      "page": 6,
+      "title": "5.3.1\t Preparing Research Papers for Journals"
+    },
+    {
+      "page": 6,
+      "title": "5.3.2\t Design of Paper Using Template"
+    },
+    {
+      "page": 6,
+      "title": "5.3.3\t Calculation of Impact Factor of a Journal"
+    },
+    {
+      "page": 7,
+      "title": "5.3.4\t Citation Index"
+    },
+    {
+      "page": 7,
+      "title": "5.3.5\t ISBN and ISSN"
+    },
+    {
+      "page": 7,
+      "title": "5.4 Planning a Project Proposal"
+    },
+    {
+      "page": 7,
+      "title": "5.4.1 Identifying and Defining Problem"
+    },
+    {
+      "page": 7,
+      "title": "5.4.2\t Research Problem Aspects and Considerations"
+    },
+    {
+      "page": 7,
+      "title": "5.4.3\t Research Plan"
+    },
+    {
+      "page": 8,
+      "title": "1.1 Research"
+    },
+    {
+      "page": 8,
+      "title": "1.1.1 Definition and Objectives of Research"
+    },
+    {
+      "page": 10,
+      "title": "1.1.3 Differences b/w Research Methods and Research Methodology"
+    },
+    {
+      "page": 10,
+      "title": "1.2 Research Process"
+    },
+    {
+      "page": 10,
+      "title": "1.2.1 Research Criteria and Research Process"
+    },
+    {
+      "page": 13,
+      "title": "1. One-to-one interview"
+    },
+    {
+      "page": 13,
+      "title": "2.\t Focus groups"
+    },
+    {
+      "page": 13,
+      "title": "3.\t Ethnographic research"
+    },
+    {
+      "page": 13,
+      "title": "4.\t Content/Text analysis"
+    },
+    {
+      "page": 13,
+      "title": "5.\t Case study research"
+    },
+    {
+      "page": 14,
+      "title": "1.2.3 Research Proposal and Aspects"
+    },
+    {
+      "page": 19,
+      "title": "1. \t Population Specification"
+    }
+  ]
+}

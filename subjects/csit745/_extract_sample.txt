@@ -1,0 +1,813 @@
+--- page 1 ---
+Post Graduate Programmes (PG)
+• 
+Master of Business Administration
+• 
+Master of Computer Applications
+• 
+Master of Commerce (Financial Management / Financial 
+Technology) 
+• 
+Master of Arts (Journalism and Mass Communication) 
+• 
+Master of Arts (Economics)
+• 
+Master of Arts (Public Policy and Governance)
+• 
+Master of Social Work
+• 
+Master of Arts (English) 
+• 
+Master of Science (Information Technology) (ODL)
+• 
+Master of Science (Environmental Science) (ODL)
+Diploma Programmes
+• 
+Post Graduate Diploma (Management) 
+• 
+Post Graduate Diploma (Logistics) 
+• 
+Post Graduate Diploma (Machine Learning and Artificial 
+Intelligence) 
+• 
+Post Graduate Diploma (Data Science)
+Undergraduate Programmes (UG)
+• 
+Bachelor of Business Administration
+• 
+Bachelor of Computer Applications
+• 
+Bachelor of Commerce
+• 
+Bachelor of Arts (Journalism and Mass Communication) 
+• 
+Bachelor of Arts (General / Political Science / Economics / 
+English / Sociology)
+• 
+Bachelor of Social Work 
+• 
+Bachelor of Science (Information Technology) (ODL)
+Programs Offered
+Research Methodology
+AMITY
+Research Methodology
+Product code
+Amity Helpline: (Toll free) 18001023434 
+For Student Support: +91 - 8826334455
+Support Email id: studentsupport@amityonline.com | https://amityonline.com
+(c) Amity University Online
+
+
+--- page 2 ---
+Research Methodology
+(c) Amity University Online
+
+
+--- page 3 ---
+© Amity University Press
+All Rights Reserved
+No parts of this publication may be reproduced, stored in a retrieval system or transmitted 
+in any form or by any means, electronic, mechanical, photocopying, recording or otherwise 
+without the prior permission of the publisher.
+SLM & Learning Resources Committee
+	
+	
+	
+Chairman	
+:	
+Prof. Abhinash Kumar	
+	
+	
+	
+Members	
+:	
+Dr. Ranjit Varma
+	
+	
+	
+	
+	
+Dr. Maitree
+	
+	
+	
+	
+	
+Dr. Divya Bansal
+	
+	
+	
+	
+	
+Dr. Arun Som
+	
+	
+	
+	
+	
+Dr. Sunil Kumar
+	
+	
+	
+	
+	
+Dr. Reema Sharma
+	
+	
+	
+	
+	
+Dr. Winnie Sharma
+	
+	
+	
+Member Secretary	
+:	
+Ms. Rita Naskar
+Published by Amity University Press for exclusive use of Amity Directorate of Distance and Online Education, 
+Amity University, Noida-201313
+(c) Amity University Online
+
+
+--- page 4 ---
+Contents
+Page No.
+Module - I: Introduction	
+01
+1.1 	 Research	
+ 
+1.1.1 Definition and Objectives of Research
+	
+1.1.2	 Characteristics of Research
+	
+1.1.3	 Difference b/w Research Methods and Research Methodology
+1.2	 Research Process	
+	
+1.2.1	 Research Criteria and Research Process
+	
+1.2.2	 Approaches of Research: Deductive, Inductive, Quantitative and Qualitative
+	
+1.2.3	 Research Proposal and Aspects
+	
+1.2.4	 Literature Survey and Review
+	
+1.2.5	 Errors in Research
+1.3	 Types of Research Design	
+	
+1.3.1	 Pure and Applied
+	
+1.3.2	 Causal and Correlational 
+	
+1.3.3	 Crossectional and Longitudinal 
+	
+1.3.4	 Experimental, Semi-experimental and Non-Experimental
+	
+1.3.5	 Descriptive and Exploratory
+1.4	 Research Modeling	
+	
+1.4.1	 Types of Models
+	
+1.4.2	 Model Building and Stages
+	
+1.4.3	 Data Consideration and Testing
+	
+1.4.4	 Heuristic and Simulation Modeling
+Module - II: Sampling	
+25
+2.1 	 Data Collection	
+	
+2.1.1	 Introduction to Data Collection
+	
+2.1.2	 Data Collection Methods
+	
+2.1.3	 Tabulating and Validating Data
+2.2	 Questionnaire Designing	
+	
+2.2.1	 Steps in Constructing a Questionnaire
+	
+2.2.2	 Types of Questions
+	
+2.2.3	 Format of Questionnaire
+2.3	 Sampling	
+	
+2.3.1	 Sampling Plan
+	
+2.3.2	 Sampling Frame
+(c) Amity University Online
+
+
+--- page 5 ---
+	
+2.3.3	 Sample Selection Methods
+	
+2.3.4	 Probability Sampling Techniques
+	
+2.3.5	 Non-Probability Sampling Techniques
+	
+2.3.6	 Sampling and Non-sampling Errors
+Module - III: Data Collection and Experiments	
+50
+3.1	 Design of Experiments	
+ 
+3.1.1 Design of Experiment: Objectives and Strategies
+	
+3.1.2	 Pre-Experimental Research Design
+	
+3.1.3	 Quasi Experimental Research Design
+	
+3.1.4	 True Experimental Research Design
+	
+3.1.5	 Factorial Experimental Design
+	
+3.1.6	 Designing Engineering Experiments
+	
+3.1.7	 Causal Attributions
+	
+3.1.8	 Statistical Control
+3.2	 Data Collection	
+ 
+3.2.1 Collection of Data via Observation and Interview
+	
+3.2.2	 Collection of Data through Cases
+	
+3.2.3	 Collection of Data through Questionnaires
+	
+3.2.4	 Guidelines for Preparing Questionnaire
+	
+3.2.5	 Data Editing
+	
+3.2.6	 Data Coding Rules
+	
+3.2.7	 Don’t Know” Responses
+	
+3.2.8	 Missing Data
+3.3	 Basic Principles	
+	
+3.3.1	 Validity and Reliability
+	
+3.3.2	 Replication, Randomisation and Blocking
+ 
+3.3.3 Orthogonality and False Positives
+Module - IV: Models and Hypothesis	
+80
+4.1	 Hypothesis Testing	
+	
+4.1.1	 Introduction to Hypothesis
+	
+4.1.2	 Developing Hypothesis : Null and Alternate
+	
+4.1.3	 Type I and Type II Error
+ 
+4.1.4 One-Tailed and Two-tailed Test
+	
+4.1.5	 Degree of Freedom
+ 
+4.1.6 Confidence Intervals
+ 
+4.1.7 Level of Significance: The Confidence Coefficient
+(c) Amity University Online
+
+
+--- page 6 ---
+ 
+4.1.8 Rejection and Non-rejection Regions
+	
+4.1.9	 Hypothesis Testing Procedure
+	
+4.1.10	Types of Tests
+	
+4.1.11	 How to Select a Test
+4.2	 Parametric Test 	
+	
+4.2.1	 Important Parametric Tests
+	
+4.2.2	 Hypothesis Testing of Means: Single Population Mean Using Z-statistic
+	
+4.2.3	 Hypothesis Testing of Means: Single Population Mean Using T-statistic
+	
+4.2.4	 Hypothesis Testing for Population Proportions
+	
+4.2.5	 Hypothesis Testing for Comparing a Variance to Hypothesized Population Variance
+	
+4.2.6	 Testing the Equality of Variances of Two Normal Populations
+ 
+4.2.7 ANOVA for Fixed Effect Model
+	
+4.2.8	 Total, Treatment & error of Squares
+ 
+4.2.9 ANOVA for Random Effect Model
+	
+4.2.10	Single Factor Experiment
+	
+4.2.11	 Model Adequacy Checking
+Module - V: Report Writing	
+124
+5.1	 Research Report Writing	
+	
+5.1.1	 Meaning of Research Report
+ 
+5.1.2 Structure of Scientific Report
+ 
+5.1.3 Components of Scientific Report
+	
+5.1.4	 Types of Reports
+	
+5.1.5	 Steps in Report Writing
+	
+5.1.6	 Format and Writing Style
+	
+5.1.7	 Illustrations and Tables
+	
+5.1.8	 Citing and Referencing Sources
+	
+5.1.9	 Footnotes
+5.2	 Presentation	
+ 
+5.2.1 Oral Presentation
+	
+5.2.2	 Making Presentation
+	
+5.2.3	 Use of Visual Aids
+	
+5.2.4	 Importance of Effective Communication
+	
+5.2.5	 Convention and Strategies of Authentication
+5.3	 Writing a Research Paper	
+	
+5.3.1	 Preparing Research Papers for Journals
+	
+5.3.2	 Design of Paper Using Template
+	
+5.3.3	 Calculation of Impact Factor of a Journal
+(c) Amity University Online
+
+
+--- page 7 ---
+	
+5.3.4	 Citation Index
+	
+5.3.5	 ISBN and ISSN
+5.4 Planning a Project Proposal 
+ 
+5.4.1 Identifying and Defining Problem
+	
+5.4.2	 Research Problem Aspects and Considerations
+	
+5.4.3	 Research Plan
+(c) Amity University Online
+
+
+--- page 8 ---
+Research Methodology
+1
+Notes
+Amity University Online
+Module - I: Introduction
+Learning Objectives
+At the end of this module, you will be able to:
+●
+●
+Assess Research
+●
+●
+Infer Research Process
+●
+●
+Mention Types of Research Design
+●
+●
+Explain Research Modelling
+Introduction
+Authors and management experts have defined research in various ways. 
+Typically, research is said to commence with a question or a problem. It is described 
+as the creation of new concepts, methodologies, and understandings through the 
+development of new knowledge or the innovative application of existing knowledge. 
+This process often involves synthesizing and analysing previous studies to produce 
+new and groundbreaking results.
+1.1 Research
+Through research, we can identify solutions to problems by employing systematic 
+and scientific methods. This may involve experimentation or innovation, with “risk” 
+highlighting the inherent dangers of discovery. 
+1.1.1 Definition and Objectives of Research
+What is research?
+Investigation might lead to analysis, and tests could be conducted to verify 
+hypotheses. This work is distinct and unprecedented, offering new insights as a 
+result. It could introduce a novel method or new data source, leading to significant 
+breakthroughs or incremental improvements in current practices. Research is essential 
+for progress, as it is fundamentally tied to “research and development.”
+Slesinger & Stephenson, Encyclopaedia of Social Sciences:
+“the manipulation of things, concepts or symbols for the purpose of generalizing to 
+extend, correct or verify knowledge, whether that knowledge aids in the construction of 
+theory or in the practice of an art”.
+●
+●
+Redman & Mory: “Systematized effort to gain new knowledge”. It is an academic 
+activity and should be used in a technical sense.
+●
+●
+Clifford Woody: Research comprises “defining and redefining problems, 
+formulating hypotheses or suggested solutions; collecting, organizing and 
+evaluating data; making deductions and reaching conclusions; and finally, carefully 
+testing the conclusions to determine whether they fit the formulated hypotheses”.
+Research Objectives
+General Objectives
+General objectives, also known as secondary objectives, provide a detailed view 
+(c) Amity University Online
+
+
+--- page 9 ---
+2
+Research Methodology
+Notes
+Amity University Online
+of a study’s goal. In other words, by the end of your studies, you will have a general 
+idea of what you want to accomplish. For instance, your overarching objective can 
+be to look at the organisation’s usage of renewable energy sources and sustainable 
+practices in order to determine how much the organisation contributes to environmental 
+sustainability.
+Specific Objectives
+Specific objectives outline the primary aim of a study. Typically, general objectives 
+provide the basis for establishing specific goals. Essentially, specific objectives are 
+general objectives that have been divided into smaller, logically interconnected goals. 
+They assist you in defining the who, what, why, when, and how of your project. It’s 
+much easier to develop and carry out a research plan once you’ve identified the main 
+goal.
+Take, for example, a study of an organisation’s contribution to environmental 
+sustainability. The specific goals will be as follows:
+●
+●
+Determine how the organisation has changed its practises and adopted new 
+solutions throughout its history.
+●
+●
+To determine the impact of new practices, technology, and strategies on overall 
+effectiveness.
+1.1.2: Characteristics of Research
+● 
+The research should concentrate on the most pressing issues.
+● 
+The investigation should be methodical. It emphasises the importance of following a 
+structured procedure when conducting research.
+● 
+The research should follow a logical pattern. The scientific researcher cannot make 
+much progress in any investigation without manipulating ideas logically.
+● 
+The study should be condensed. This means that a researcher’s findings should 
+be made available to other researchers so that they don’t have to repeat the same 
+research.
+● 
+The findings should be repeatable. This states that results from earlier studies have 
+to be verifiable in new locations, environments, with fresh people, or at a different 
+time.
+● 
+The research ought to be successful. The fact that a single research topic may spark 
+the creation of several others is one of its most significant features.
+● 
+Action-oriented research is required. In other words, it should aim to find a solution 
+that will allow its findings to be implemented.
+● 
+The research should take an integrated multidisciplinary approach, which means it 
+will require research approaches from multiple disciplines.
+● 
+At all stages of the study, all parties involved (from policymakers to community 
+members) should be invited to participate.
+● 
+The research has to have an easy-to-understand design and be conducted within a 
+specific timeframe.
+● 
+As little money as feasible should be spent on the research.
+● 
+Formats that are most helpful to administrators, decision-makers, company managers, 
+or community members should be used to deliver the study findings. 
+(c) Amity University Online
+
+
+--- page 10 ---
+Research Methodology
+3
+Notes
+Amity University Online
+1.1.3 Differences b/w Research Methods and Research Methodology
+Although the names sound similar, both Research methods and Research 
+methodology are different, as explained below:
+Research Methods
+The various procedures, schemes, steps, and algorithms used in research are 
+known as research methods. The term “research methods” refers to all of the methods 
+used by a researcher during a research study. They’re primarily planned, scientific, and 
+value-agnostic. Observations, theoretical procedures, experimental studies, numerical 
+schemes, statistical approaches, and so on are all examples of these. We can use 
+research methods to collect samples, data, and come up with a solution to a problem. 
+Business and scientific research methods, in particular, demand explanations based on 
+collected facts, measurements, and observations, rather than solely on reasoning. They 
+only accept explanations that can be verified through experiments.
+Research Methodology
+A systematic approach to solving a problem is known as research methodology. It 
+is a science that studies how research should be conducted. Research methodology 
+is essentially the procedures by which researchers go about their work of describing, 
+explaining, and predicting phenomena. It can also be defined as the study of methods 
+for gaining knowledge. Its goal is to provide a research work plan.
+1.2 Research Process
+In the early decades human inquiry was primarily based on the examination of 
+one’s own conscious thoughts and feelings that means the observation of any one and 
+understanding through logical discussion to seek the truth. This process served as a 
+well-established conceptual framework for comprehending the world and was accepted 
+for a century. An essential component of the investigation process was the knowledge 
+seeker. With time, this part was changed. The Scientific method introduced several 
+major components in research procedures like Objectivity. 
+1.2.1 Research Criteria and Research Process
+Research Criteria:
+● 
+The goal of the study should be made very clear, and common principles should be 
+applied.
+● 
+There should be enough description of the research process. in such a way as 
+to preserve the integrity of the work previously completed while enabling another 
+researcher to carry out the research for future development.
+● 
+To get unbiased outcomes, the procedural design of the research should be carefully 
+prepared.
+● 
+Any shortcomings in the technique design should be fully disclosed by the researcher, 
+along with an assessment of how they could affect the results.
+● 
+The analytic techniques employed should be suitable, and the data should be 
+sufficiently analysed to demonstrate its relevance. Verification of the data’s legitimacy 
+and dependability is necessary.
+(c) Amity University Online
+
+
+--- page 11 ---
+4
+Research Methodology
+Notes
+Amity University Online
+● 
+Only conclusions that are bolstered by the study findings and for which the facts 
+offer a sufficient basis should be drawn.
+● 
+If the researcher is experienced, has a good research reputation, and is a person of 
+integrity, greater trust in the research is warranted.
+Research Process:
+Planning must be done methodically at every step of the marketing research 
+process. The methods at each step are systematic, meticulously recorded, and, to the 
+greatest degree possible, time-scheduled. In order to examine theories or preconceived 
+beliefs, marketing research employs the scientific method, which involves gathering and 
+analysing data.
+For reliable information that accurately reflects the scenario, marketing research 
+should be carried out impartially. The study should be impartial and devoid of 
+the personal or political prejudices of the researcher or management, even if the 
+researcher’s research philosophy will always have an impact on the findings.
+For instance, we could discover that the project’s scope is insufficient, that our 
+topic is too wide and has to be limited, that there aren’t enough information resources 
+accessible, or that the material we gather contradicts our thesis.
+There are nine main steps of the research process that are followed at the time of 
+designing a research project. They are as follows.
+Step 1: Problem Definition
+Step 2: Development of an Approach to the Problem
+Step 3: Research Design Formulation
+Step 4: Field Work or Data Collection
+Step 5: Data Preparation and Analysis
+Step 6: Report Preparation and Presentation
+1.2.2: Approaches of Research: Deductive, Inductive, Quantitative 
+and Qualitative
+Deductive: Deductive approach starts with developing a hypothesis based on 
+existing theory, and then prepares a research strategy for testing the hypothesis. To 
+reason deductively is to go from the specific to the general. In many circumstances, 
+a theory or case study that suggests a causal relationship or correlation may be 
+accurate. The term “deductive approach” refers to a method of formulating hypotheses 
+or drawing conclusions from theoretical ideas. The deductive method is concerned with 
+drawing conclusions from statements or premises. By “testing against observations,” 
+deductive reasoning begins with a pattern, whereas induction methodology “begins with 
+observations and seeks to find a pattern within them.”
+Benefits of Deductive:
+● 
+Probability to clarify the relationships between variables and concepts.
+● 
+Probability to measure concepts in a quantitative manner.
+● 
+Probability to generalize research findings to a certain extent.
+(c) Amity University Online
+
+
+--- page 12 ---
+Research Methodology
+5
+Notes
+Amity University Online
+This approach mainly follows the given stages, like
+1.	
+Deducing hypothesis from theory
+2.	
+Formulating hypothesis in operational terms and proposing relationships between 
+two specific variables
+3.	
+Testing hypothesis with the help of relevant methods like some quantitative methods 
+such as regression and correlation analysis, mean, mode and median etc.
+4. 
+Examining the result and decide whether it is confirming or rejecting and it is 
+important to compare research findings with the literature review findings
+5. 
+Modifying theory in instances when hypothesis is not confirmed.
+Inductive: Inductive approach or inductive reasoning, starts with observations and 
+theories are proposed which are related to the conclusion of the investigation due to 
+the findings. It entails looking for patterns in observations and creating theories—or 
+explanations—for those patterns by formulating a number of conjectures. In inductive 
+studies, at the beginning of the research neither theories nor hypotheses would apply 
+and the researcher is free to alter the direction for the study after the research process 
+had commenced.
+Using an inductive method to formulate research questions and objectives 
+does not entail ignoring theories. By finding patterns and linkages in the data set, 
+this method aids in the generation of interpretations from which a theory may be 
+developed. This approach is mainly based on learning from experience. Previous 
+patterns, resemblances and regularities are observed in order to reach conclusions or 
+to generate theory.
+ 
+Abductive Reasoning or Abductive Approach
+Abductive reasoning is set to address weaknesses associated with deductive and 
+inductive approaches. Specifically for deductive reasoning ‘ how to select theory to be 
+tested via formulating hypotheses’ and for Inductive reasoning “no amount of empirical 
+data will necessarily enable theory-building”. It acts as a third alternative, overcoming 
+these weaknesses via adopting a pragmatist perspective.
+The figure below illustrates the main differences between abductive, deductive and 
+inductive reasoning:
+(c) Amity University Online
+
+
+--- page 13 ---
+6
+Research Methodology
+Notes
+Amity University Online
+It is clear that abductive reasoning is similar to deductive and inductive approaches 
+in a way that it is applied to make logical inferences and construct theories.
+Abductive approaches begin with “surprising facts’’ or “puzzles,” and the goal of 
+the research process is to figure out how to explain them. A researcher may come into 
+“surprising facts’ ‘ or “puzzles’ ‘ when they come across an empirical phenomenon that 
+the current theories are unable to explain. In that approach, researchers search for the 
+‘best explanation among many alternatives to choose. Researchers can combine both, 
+numerical and cognitive reasoning for explaining ‘surprising facts’ or ‘puzzles’.
+Qualitative research: It is a non-statistical process of inquiry. It helps with in-depth 
+understanding of problems or issues in their natural settings. It is highly based on the 
+researchers’ background and the sample-probing questions they employed. Usually, 
+there are restrictions on the sample size in between a minimum of 6 and a maximum of 
+10 people. Open-ended questions are asked( to gather as much information as possible 
+from the sample )in a manner that encourages answers that lead to another question or 
+a group of questions. The below methods are used for qualitative research:
+1. One-to-one interview
+2.	 Focus groups
+3.	 Ethnographic research
+4.	 Content/Text analysis
+5.	 Case study research
+Quantitative research: A systematic approach to gathering data and interpreting 
+it to make inferences is known as quantitative research. This approach gathers 
+and analyses data using a statistical and computational procedure. The main focus 
+of quantitative data is numbers. A greater population is involved because more 
+individuals will contribute more data which helps to obtain more accurate results. This 
+research uses close-ended questions because the researchers are typically looking 
+to gather statistical data. It involves use of data collection tools likes online surveys, 
+questionnaires, and polls. There are several ways to distribute questionnaires or 
+surveys. Surveyors can reach a larger number of respondents or smaller focus groups 
+with the use of online surveys for a variety of research purposes. 
+Advocacy/participatory Approach to Research
+Researchers occasionally use an advocacy or participation strategy that ignores 
+the needs or circumstances of members of vulnerable or marginalised groups. It is 
+(c) Amity University Online
+
+
+--- page 14 ---
+Research Methodology
+7
+Notes
+Amity University Online
+frequently referred to as emancipatory when a researcher seeks to improve the lives of 
+the research subjects. It’s hardly an impartial position. Researchers want their work to 
+either directly or indirectly lead to reform, and in order to prevent further marginalisation 
+of the group they are studying, they engage them in the research process from the 
+beginning to the end.
+The researchers might not take the impartial stance that is often necessary 
+in scientific study. This might entail living with the research participants (the co-
+researchers) or engaging in casual interactions. The results of the research can be 
+communicated in a more intimate manner, frequently in the exact words of the study 
+subjects.
+1.2.3 Research Proposal and Aspects
+A research proposal is designed to persuade others that we have an important 
+research project and that we are capable of finishing it given our work schedule and 
+level of expertise. Essentially, a research proposal needs to in compass all the essential 
+elements of the research procedure and provide adequate details for the readers to 
+evaluate the suggested investigation. 
+We need to answer the following questions about our study field and methodology: 
+what we want to do, why we want to do it, and how we are going to do it. 
+Why is good preparation needed? 
+Good preparation of a research proposal is necessary such as: 
+This is important for grant of application in a competitive environment. Funding is 
+very competitive. 
+It assists the researcher to formulate the project, to plan, to perform and to monitor 
+the same. 
+A research proposal is comprised of:
+
+
+Title 
+
+
+Introduction 
+
+
+Literature review 
+
+
+Methodology 
+
+
+Plan - time frame and schedule of activities (Gantt chart) 
+
+
+Budget 
+
+
+Details of research team (signed CV)
+Title 
+A study proposal’s name has to be clear and descriptive. Make it as entertaining as 
+it is educational. A strong title not only draws the reader in, but also makes the proposal 
+seem appealing to them.
+Introduction 
+Through the introduction researchers have to produce the required skeletal 
+structure for the issues in research. One of the major challenges in drafting proposals is 
+figuring out how to structure the research topic.
+(c) Amity University Online
+
+
+--- page 15 ---
+8
+Research Methodology
+Notes
+Amity University Online
+A broad overview of the issue area, with an emphasis on a particular research 
+question, usually opens an introduction. The rationale or reason for the suggested study 
+comes next. The following topics are often covered in the introduction:
+● 
+Describe the research challenge, sometimes known as the study’s goal. 
+● 
+Describe the study’s aims. Both broad and particular objectives should be specified. 
+● 
+Give a detailed explanation of the proposed study’s justification and why it is 
+worthwhile. 
+● 
+Give a brief explanation of the main concerns and minor difficulties that the project 
+will identify. 
+● 
+Determine the study’s main independent and dependent variables. 
+● 
+Describe the study’s hypothesis. 
+● 
+To ensure that the research has a clear focus, take attention while defining the 
+boundaries or restrictions of the planned study.
+Goals of the study 
+
+
+It ought to be made explicit 
+
+
+Be succinct and straightforward. 
+
+
+It ought to be quantifiable and doable.
+Literature Review 
+The literature review’s goal is to give readers enough background knowledge.
+The review should be succinct, highlight pertinent related research that has been 
+done or is being done (citations should be given), and demonstrate that the review 
+committee is aware of the numerous ongoing studies. 
+The literature review fulfils a number of crucial purposes:
+
+
+Acknowledges the contributions of those who have prepared the way for the 
+planned research. 
+
+
+Give evidence that you understand the research problem. 
+
+
+Exhibits familiarity with the research question’s theoretical and methodological 
+underpinnings. 
+
+
+Proves that you can analyse and assess pertinent literary works. 
+
+
+Shows that you can pull information from several sources and put it all 
+together. 
+
+
+Offers novel theoretical understanding or creates a brand-new model to serve 
+as the basis for our research. 
+
+
+Ensures that our reader understands how our planned research would cover a 
+big gap in the literature or solve a key theoretical difficulty. 
+Methodology 
+Our strategy for solving the research question. It will outline the steps we need to 
+take to finish the project and serve as our work plan. 
+The sections describing the methods are provided below.
+● 
+How was the study conducted? Was it a survey or an experiment in a controlled 
+environment? Do we go with a descriptive, cross-sectional, or case-control design? 
+(c) Amity University Online

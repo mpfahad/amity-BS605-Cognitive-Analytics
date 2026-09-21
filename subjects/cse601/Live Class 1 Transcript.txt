@@ -1,0 +1,965 @@
+﻿CSE601 — Live Class 1 Transcript
+Subject: Data Structures and Algorithm Design (CSE601) — Semester II
+Topic: Overview of Data Structure
+Date & Time: 13-Sep-26 & 11:00-12:00
+AMIGO: https://amigo.amityonline.com/mod/page/view.php?id=377963
+Vimeo: https://player.vimeo.com/video/1226396683?h=c7481ece6d
+Duration: ~62 min (3718s)
+Source: Vimeo auto-generated English captions
+All right.
+Yeah. So today will be our first session, and we will start the introduction to
+data structure and algorithmic design. Okay.
+So I hope you all are aware of the guidelines.
+Okay, this will be an interactive session.
+So I want everyone to equally participate in the session.
+And if you have any doubts, any queries, feel free to ask during the class, okay,
+and I will try to answer that. Okay?
+So before we start, I just wanted to have a quick pulse check on the group.
+So do you have any basic understanding of what the algorithm is
+and how to write the algorithm?
+Anyone?
+We just got-
+Any idea?
+No. Yes. Maybe.
+All right.
+So I will consider silence as yes. Okay.
+So we will start with the basic introduction of the data structure and algorithmic
+design. Okay. So before we start, do you know what is data structure?
+How many of you already aware of what a data structure is?
+Any idea?
+Data are the collection of raw facts and figures, or you can say the values are the
+set of values. Okay, and structure means that how you are organizing the data.
+So if I combine these two terms, the data structure means that the way of
+organizing the data in such a way that it will become more
+efficient for the assessing. Okay, that is called the data structure.
+Similarly, so at the end of the session, we will be able to cover these concepts.
+We will discuss the data structure, we will discuss the types of data structures,
+the applications,
+the different algorithms, and then ADT. ADT is not in your syllabus.
+That is the abstract data type. Okay, so we going to skip that part.
+Okay, but we will try to cover today these four important topics. Okay?
+So let's start with the terminology. What is algorithm?
+Algorithm means, any idea what is algorithm?
+This is all about topic. Algorithm. Anyone?
+Set of instruction.
+Set of instructions. Okay.
+Can you please elaborate?
+Set of instruction.
+Because a program is also considered a set of instruction.
+Then what is the difference between program and algorithm?
+Anyone?
+No, sir.
+No?
+Yeah. So you are partially correct.
+The algorithm is the step-by-step instruction, or you can say the
+step-by-step procedure to solve any given problem,
+while the program is the set of instruction.
+So if you are including the instruction, the software instruction, without any
+order, it can be considered as a program. Okay?
+It is different that it will not generate the desired output, but you can call it
+as a program. But if you are following a step-by-step
+procedure, or if you're following the step-by-step solution to any given problem,
+then it will be called as
+the algorithm.
+Okay, so both programming and the algorithm, they are actually interrelated.
+Okay, so if you have a good algorithm, you will be able to write good program, but
+the vice versa is not true.
+Okay, so you have to focus more on the understanding of the logic.
+If you are good with the logic, you can easily write program, you can easily write
+the algorithm.
+Have you heard about the term pseudocode?
+Any one of you, pseudocode.
+Any idea what is pseudocode? Pseudo means false, coding means a
+normal code. So if you are writing a code in a normal English
+language, it will be called as the pseudocode.
+Okay, so I hope that now the concept is clear. What is algorithm?
+Algorithm is a step-by-step instruction, or you can say the step-by-step
+procedure to solve any given problem. Is that clear to everyone?
+What is algorithm?
+So whenever we write any program-
+Sir, can you repeat that again? I just joined.
+Right, Amrita. So Amrita, we have just started, we were discussing on what a data
+structure is. So I told others that data structure is a way of organizing the
+data. Okay, so data is simply a raw facts or figure, so you can say the
+values or the set of values. Okay, and there's a difference between the data and
+the information. Okay, so data become information when it get processed.
+For example, if I give an example of a mark sheet.
+So in the mark sheet, suppose if I say that, Amrita, you got 90
+marks in mathematics. Do you think you are pass or fail?
+Will you be able to tell the overall result?
+No, because the individual marks will not be able to justify that overall
+context. If I'm not giving you the overall context, how can someone determine it
+whether that person is pass or fail?
+Okay, so that is called as the data. The data is simply a raw fact.
+Okay, it is just giving you that, okay, that someone is securing 90 marks in
+English or 90 marks in math. But if you don't know the denominator, how can you
+identify that whether that person is pass or fail?
+So anything which is not giving you the information, anything which is just a
+normal fact, is called a data.
+Okay. Well, Ashish is busy in solving the Rubik cube.
+So Ashish, is that clear to you?
+So
+when the data get processed, it will become an information.
+Right, for example, in a mark sheet. So you have the multiple datas.
+Okay, when these datas get consolidated in a single page where we have all the
+denominator, we have all the maximum marks, then it will become a information.
+So by looking at the mark sheet, you can easily tell that whether that person's,
+what is the division, what is the overall percentage, what is the CGPA, what is the
+SGPA. So everything you can easily get.
+Okay, so data in a processed form is called as information.
+But data itself is a raw fact, and the organizing of the data in the form
+of meaningful way, or so that you can easily access the data whenever you want,
+this is called the data structure.
+Okay? Then we discuss the concept of algorithm.
+Algorithm is a step-by-step procedure to solve any given problem.
+Okay, someone said that algorithm is nothing.
+Algorithm is a set of instruction, which is partially correct.
+Algorithm is a set of instruction.
+Even the programming program also is a set of instruction.
+But the only difference between program and algorithm is that in program, the
+instruction sequence can be anything, but in the algorithm, you have to follow a
+specific sequence. So whenever you write any program, you have to focus on two
+things. The first is the algorithm and its corresponding data structure.
+Is that clear to you now, Amrita, what did we discuss?
+Yes, sir.
+Okay. Yeah.
+So moving on. So we have already gone through the data set that we have gone to the
+algorithm. So what are the different characteristics you can think about the
+algorithm? What do you think that whenever you write any algorithm, what are the
+basic things that you have to consider?
+Any idea?
+Sir, time complexity and space complexity.
+Time complexity and space complexity. Very good.
+These are the two major things.
+But these are the time complexity and the space complexity is the
+measurement. I'm asking about the characteristics of an algorithm.
+Data type, sir.
+Data type. Okay.
+Anyone else?
+Sir, it should be readable, less complicated.
+Mm-hmm.
+Readable, less complicated. Correct. Okay. What else?
+Sir, the algorithm should be universal, right?
+For all the,
+means we can use different data, and the output will be correct for
+that.
+Mm-hmm. Yeah. You guys are absolutely correct.
+I mean, the readability, the usability,
+everything is right.
+Even you guys are forgetting the basic thing.
+The first thing is that the input. Input
+means that whatever the algorithm that you have, it should have at least one input.
+You can't design any algorithm which is not having any input.
+Are you getting my point? So whatever the algorithm that you are designing, it
+should have at least one input.
+Input, process, and then output.
+Correct. So that is the, I mean, this is the exact sequence of how the information
+gets processed. You will give some information, your computer will process some
+instruction, and then it will give you an output.
+That's the other way.
+Okay. So similarly, what you have to do is... Just a second.
+Right.
+So,
+whenever you design any algorithm, so it must have at least one input.
+For example, suppose if I ask you that I hope everyone knows how to make a tea.
+Everyone knows how to make a tea?
+Is there anyone who is not aware? How can you create a tea? Or not create.
+How can you process a tea? How can you make a tea? Everyone?
+What is the first step in making a tea?
+Boiling water.
+You have to take water, you have to boil it. Okay. Then?
+You have to add?
+Adding ingredients.
+Adding ingredients. Ingredients may include the sugar, the tea leaves, milk.
+You have to boil it for a certain temperature and for a certain interval of time,
+and then you have to refrain it. This is the overall step of making a tea.
+Yes, sir.
+Right. Now, if I change the sequence, so what I did, I just followed the sequence
+of the step. Okay, first you have to boil the water, then you have to add tea
+leaves, then you have to add sugar, then you have to add milk, et cetera, and then
+you will be able to get your final output.
+If I change the sequence, will I be able to make a tea?
+Not correctly, no.
+Not correctly. Absolutely.
+We'll be able to make, but the taste will not be like that.
+Correct. Right. So I will be, I mean, the final output will be a tea, but the taste
+will be airy. Okay? The taste will not sound like, just like an actual tea.
+Okay, so similarly, in algorithm also, you have different steps, but if you change
+the sequence of the step, okay, your program will behave differently.
+And just like an example, okay, in the tea making, the ingredients were
+considered as an input. Similarly, in algorithm, you need certain input.
+If you're not putting the sugar, if you're not putting the water, if you're not
+putting the milk or tea leaf, you will not be able to get your final output as a
+tea.
+Right? So the first thing, which is important from an algorithm perspective, is
+that every algorithm must have an input. Is that clear to everyone?
+Yes, sir.
+Right. The second thing is, what do you mean by second characteristic?
+It should have at least one output.
+At least one. I mean, it may have more than one output, but at least one output
+should be there. If your algorithm is not generating any output, that means your
+algorithm is useless.
+Clear?
+Yes, sir.
+The third step. Can anyone help me with the third step?
+What is the third characteristic you can expect from an algorithm?
+It should solve a given problem.
+Final result.
+Final result we have already discussed, right, in the form of output.
+What else?
+Finite step.
+Finite step. Yeah. Absolutely correct. Finite step.
+That means that whatever the number of steps that you are writing in your
+algorithm, it should be finite. Finite means?
+Finite means it should end after some steps, okay?
+There should not be any infinite number of steps.
+Obviously, you can't write an algorithm that can run infinitely.
+It should be executed. It should be terminated after a few steps.
+Are you guys agreeing with this?
+Yes, sir.
+Whatever the steps that we are writing-
+Yes, sir
+... it should have finiteness. Okay.
+What will be the next characteristic of an algorithm?
+Definiteness.
+Definiteness. Definiteness or definiteness.
+That means that whatever the steps that you are writing in your algorithm, it
+should be unambiguous. Now, again, a new English word, unambiguous.
+Unambiguous means?
+Something which is clear.
+Clear. There should not be any confusion.
+Okay, you can't write a very complicated statement in your algorithm.
+Just like I gave an example of tea. In the tea, everything is very clear and crisp.
+Okay? Everything is defined.
+Okay. Now, if I come up with a very hypothetical step that, hey, I need a water
+which is coming from XYZ company, and then, a lot of other things which I...
+If I add the complexity, obviously, it is not satisfying the requirement.
+Okay? The requirement of the algorithm.
+So what are the four things which we have discussed?
+The input, the output, the definiteness, the finiteness.
+I need one more.
+Correctness.
+Correctness we have already discussed.
+Feasibility.
+Feasibility. Yes.
+Feasibility, or you can say the effectiveness of an algorithm, that whatever the
+algorithm that you are writing, it should be executed with the number of available
+resources. Suppose if my computer is of 2 GB RAM, and if I'm writing an algorithm
+which is actually consuming 8 GB and 16 GB of memory, then do you think that that
+memory is feasible, that algorithm is feasible?
+No, sir.
+Right. So these are the certain things you have to remember whenever you design
+your algorithm. Your input, your output, your definiteness, your finiteness, and
+the last is the effectiveness, or you can say the feasibility.
+Okay, so we have discussed algorithm steps.
+Okay, these are the things which I told you. Right.
+So you don't need to remember each and every step, okay?
+In the exam paper, they will simply ask you what is the algorithm, what are the
+characteristics of an algorithm.
+So you just have to mention algorithm, a basic example of algorithm, and then these
+five steps: input, output, definiteness, finiteness, and effectiveness.
+Clear?
+Yes, sir.
+Okay, so now, whenever you start develop any algorithm, so there are two
+ways by which you can measure the effectiveness of an algorithm.
+Right, the last step was effectiveness, how you can measure the effectiveness of an
+algorithm.
+I remember someone was saying the time complexity and the space complexity.
+Yes, sir.
+Right. So time complexity. The complexity measurement is the way of measurement
+of any algorithm effectiveness.
+Have you heard about the time complexity, space complexity?
+In algorithm contest, any one of you?
+Yes. Just know the symbol only.
+You know the symbol only? Okay.
+Yeah.
+That's good. That's enough. Okay. From the exam standpoint, that is enough. Okay.
+Obviously, I have never seen any questions on algorithmic complexity
+in the last five to six years,
+whatever the question paper I have seen.
+Sir, can you just little elaborate this term that complexity, time complexity,
+because it is everywhere in the book, but nothing is specifically about that.
+Yeah.
+It's just written the symbol everywhere.
+Sure.
+Yeah. So,
+why do we need this? First of all, why do we need these notations?
+You mentioned that these notations are mentioned everywhere in the book.
+Mm-hmm.
+Okay. You might have seen big O, little o, omega notation, theta notation,
+something like that in your book. Right? Why do we need these notations?
+Sir, just like you said, for feasibility.
+Yeah.
+Like how much space it will take, use case complexity.
+If you have to measure the weight, you need a unit that is kilogram or gram.
+If you need to measure a liquid, you need a liter or milliliter.
+If you have to measure a distance, you need a kilometer, meter or centimeter. Okay?
+So every measurement is associated with certain unit.
+Similarly, for algorithmic measure, if you have to measure the time taken by
+an algorithm to execute or to give the exact input,
+that is called the time complexity.
+Okay, I will go one by one.
+Yeah, but sir, the different unit, how it tell that this-
+I'll tell you.
+Okay.
+I'll tell you.
+Okay.
+Okay. So first understand the meaning of time complexity.
+Is that clear to everyone? Time complexity means the time taken by an algorithm
+to produce a desired output.
+But sir, on different computers, it would take different amount of time.
+So how will we measure that?
+So that is why, your algorithm is depending on the number of resources.
+Okay?
+No, but you are saying the time complexity needs basically the amount of time an
+algorithm takes, but different computers, on the basis of its performance, will
+take different amount of time for the same algorithm, right?
+Mm-hmm.
+So it's not-
+Whenever you design your algorithm, okay, you have to consider the available
+resources also.
+Okay? Okay, let me simplify. Suppose whenever we're writing a program,
+okay, suppose you are creating a program of addition of two number.
+I hope everyone knows how to add two numbers in any of the language.
+Yes.
+Okay. Now, if you are creating on a
+machine which is having a very high-end configuration.
+Suppose it is having an SSD, it is having a 16 GB RAM, DDR3, DDR4 RAM, okay, with
+GPU and everything is enabled. What do you think?
+What is the time it will take to execute?
+Some milliseconds, sir.
+Some milliseconds?
+Yeah.
+Okay.
+Sir, depends on the system that we are using to calculate.
+Uh-huh. Okay. Understood. Suppose the same program is executed on a normal
+machine. Okay? It is
+having a very normal configuration, like 1 GB RAM, okay, and a very basic resource.
+Now tell me, how much time it will take?
+But how can you tell, sir, unless we know the specs of the system, right?
+On a basic respect, okay, I'm giving you a very basic example.
+Suppose you have a normal computer lab system, normal computer lab, which is very
+basic, 1 GB RAM, okay, 250 GB hard disk, 100 GB hard disk.
+Sir, it might take some second, like one second or two second.
+Okay.
+It depends upon the number of steps the algorithm has.
+Correct.
+So now the concept should be clear to everyone.
+It is not dependent on the hardware configuration.
+It is dependent on the number of steps.
+It is dependent on the instruction, how you have written, how many variables you
+have taken,
+what logic you have followed.
+Okay, so your algorithm execution will depend on how you have written this
+statement.
+Okay, the same algorithm will take the same time.
+Sir, basically just like AI, sometimes this command is going on, that command is
+going on. Is that maybe also related to this?
+That-
+Yeah. I
+hope that everyone is using ChatGPT.
+Yeah.
+Right.
+Yeah.
+So whenever you use the ChatGPT, we have two ways to get the answer.
+The first is the fastest model, which will give you the result based on the
+available repository.
+Yeah.
+Okay? So if you ask a very simple question, what is data structure?
+The ChatGPT will give you the definition of data structure, the type of data
+structure, and everything along with the example.
+Yeah.
+Okay? Because it is stored in their repository.
+The second way of searching in the ChatGPT is the thinking mode.
+I hope that you all have seen the thinking mode.
+Yeah.
+It is just at bottom left corner.
+Yes, sir.
+Right. So if you enable the thinking mode, now it will give you the result based
+on the current state, and it will start thinking from your perspective, and then it
+will give you the result.
+Okay, so the same query will generate different output
+based on the mode selection.
+Okay, so what is happening, now it is not using its pre-stored repository.
+It is now making a request to the public repositories, which are actually available
+on the Google or any other social media platform or any other searching platform,
+and there it will gather the request response.
+Okay, so now the thinking mode will always take time,
+while if you are sending the request directly without enabling the thinking mode,
+it will be executed in a less time.
+So the time complexity will tell us that how the running time will grow when the
+amount of data increase. So if I gave an example that suppose you have to add two
+numbers,
+okay, and then you have to give the output, the number of input is same, the number
+of output is same. The time complexity will remain always same, irrespective of
+whatever the machine that you are executing.
+Is that clear to everyone?
+We are not making changes in the input and output.
+And that is not the case every time, because in the real world programming, the
+input and output keeps on changing. It keeps on increasing.
+Suppose your banking application.
+Your banking applications are designed in such a way that it handles a multiple
+input at the same time.
+Right? Your gaming application. Your gaming application deals with the multiple
+input at the same time. How can you clearly estimate that a person will click only
+on these three buttons? There might be a possibility that if he want to click
+multiple button at the same time,
+then how you will determine that, how your algorithm will behave?
+So that is the beauty of the time complexity and the space complexity.
+You have to determine that how this algorithm will behave if I'm increasing the
+number of input, if I'm increasing the number of amount of the data.
+Okay, suppose as of now, my algorithm is only accepting two inputs.
+It is working fine. It is giving me an output in millisecond.
+Now, what will happen if I increase the out number of input, if I increase the
+amount of data? Obviously, it will take more time. Are you guys agreeing with this?
+Yes, sir.
+Yes. The algorithm which is taking input, okay, because in my case, I have given
+you the constraint that I need a program which will only accept two number.
+So irrespective of any machine, it will only take two number.
+The amount of data is not going to increase.
+So we will have the constant time complexity
+But if my amount of data is increasing, then what will happen?
+My time complexity will also grow.
+Suppose it is taking one millisecond at this moment.
+If the amount of data grows, then what will happen?
+It will take more time to execute.
+Yes, sir.
+Right. Again, a very simple example because the complexity is very important topic.
+Suppose you have four people. Suppose you have,
+let's say, Utkarsh, Rahul, Amit, and Ravi. These are the four people you have.
+Okay, and now you want to find the Ravi.
+So your computer may check the first person name. It is matching? No.
+Go to the second person name. No. Third person name. No. Fourth person. Yes.
+So what it will do is, what it is doing, it is taking the item one by one.
+Agree? Yes or no?
+Yes, sir.
+Okay. So what will be the time complexity of this is?
+Linear, depending on the number of input?
+Yes. O .
+Okay, so O will be the time complexity.
+Now-
+Yes
+... if I ask you that now we have 1,000 people, and then you have to find
+out the particular person, XYZ. So obviously
+the more the number of the student, more will be the time.
+Yes, sir.
+Yes.
+But the time complexity will always remain constant, O ?
+O , yes, sir.
+Okay. So this is how the time complexity is measured because the way
+through which we have written our program, the way our computer program is checking
+the instruction, this is how they determine
+the time complexity.
+Now, if I have included the binary search or, what I say, the
+different searching technique. Okay.
+There are two types of searching technique, linear searching, binary search.
+I hope you know these things.
+Yes. Yes, sir.
+Right. So what we are doing right now is linear searching.
+We are doing one-by-one check.
+Now, if I do the binary search, then what will happen?
+The time complexity will change.
+Yes.
+Okay. It will become a login.
+Login.
+I hope, Ashima, you're-
+Yes, sir
+... understand the concept of login and login.
+Yes.
+Right. So login means anything, any value which is less than N. Okay?
+Then we will consider that slot.
+Sir, how do we decide means, what is difference between big O and omega and-
+Yeah, I'm coming to that topic. But are you guys clear with the time complexity?
+Yes, sir.
+Okay. Now, moving on to the space complexity.
+Okay, I will tell you big O, little o, everything. Okay.
+Now, coming to the space complexity. Space complexity means?
+How much space, uh, algorithm is taking.
+Right. So again, it is all dependent on the number of inputs.
+The space complexity will tell you that how much additional memory a program will
+require if the input size will get grow.
+Okay. For example, suppose you are creating a program where you are taking an
+age or salary as an input. Okay, so suppose if my age is 35,
+okay, so if I will write int age is equal to 35, int salary, let's say
+15,000. 15,000 is my salary. Okay, so what I'm doing is I'm using a fixed number of
+variables. I have defined the age as constant.
+I have defined my salary as a fixed constant.
+So even if the input will become huge, for example, if I say that, okay, salary is
+not 15,000, salary is 50 lakh, what do you think? What will be my space complexity?
+The space complexity will be constant. Why?
+Because we are using the constant values.
+Yes, sir.
+But if I'm using some variables value, suppose my salary is 50,000
+rupees plus XYZ of 10% of XYZ, and then 70%
+of DA and 80% of HR, something like that.
+Then now what my data is, my data is continuously growing. It is not fixed.
+So now the space complexity will get changed because now my amount of
+data is increasing.
+Is that clear to everyone?
+Yes, sir.
+Sir, I just-
+Yes
+... want to clear this up.
+If in the time complexity, we are growing the value, or we are
+growing the data-
+Mm-hmm
+... I mean, the data is increasing, then it will be-
+Mm-hmm
+... constant, and in space complexity, it will not be constant.
+That's what you mean, sir?
+Yes.
+Okay.
+Sir?
+Yeah.
+Sir, will the space complexity will depend on the data types we use in an
+algorithm?
+Yep.
+Like in Java-
+Mm-hmm
+... number data type have different byte size-
+Mm-hmm
+... character have different byte size.
+Mm-hmm.
+In space complexity will change whether we use number or character,
+right?
+This is right. No, it's depending on the data type. Okay.
+In C, the space complexity might be different if you are using any other language
+like Java or .NET or Python or, I mean, the newly born language
+like Rust, Scala, and Perl, Ruby, et cetera.
+So you will get a different set of data types.
+So it depends-
+Yes
+... what data type you are using. Okay. Now, coming to the measurement.
+So as I mentioned in the beginning, that you need a certain unit to measure.
+So for measuring the time complexity and the space complexity, okay, you need
+a measurement, and those measurement are called as, those units are called as
+asymptotic notations. Have you heard this term, asymptotic notation?
+No, sir.
+Anyone? Yes, no?
+No, sir.
+No? Okay.
+Heard about that, but don't know about that.
+Okay. This is written in your module number one only.
+Yeah.
+Okay, the asymptotic notation. So asymptotic, I can write into the chat so that you
+can
+search on Google as well.
+It is asymptotic
+notations.
+I hope my chat is visible to everyone.
+Yes, sir.
+Okay. Yeah, so asymptotic notation.
+So asymptotic notation will tell you that how you can measure the time and the
+space complexity. So we have big O, little o, big Theta, I mean Theta notations, et
+cetera. So let's start with the first one, that is big O.
+What do you mean by big O? Any idea?
+Sir, it measures the worst case.
+It measures the worst case.
+Yeah.
+No, sir, big O.
+Big O, yeah. I mean, pick up. So big O will always tell you the upper bound of an
+algorithm.
+So you are absolutely right, the worst case.
+I mean, it will tell you that how much time can this algorithm will take
+at worst-case scenario.
+Okay. So for example, suppose, everyone is familiar with the loop?
+Yes, sir.
+Right. Suppose if I create a loop, okay, I am using a for loop.
+For i is equal to zero, I'm initializing with zero, i is less than n,
+i++.
+And then what I'm doing is I'm printing the value of i.
+Can you tell me how many times this loop will execute?
+n times.
+n time?
+Yes.
+Yes, sir.
+Okay, so what will be the time complexity? The time complexity of this is O .
+O .
+Okay, why? Because the algorithm which we have written, this algorithm will not
+grow faster than the approximately,
+the value which we have defined, n.
+If I say that, okay, that this value is going beyond the value of n, no, it will
+never happen. It will only take one by one, because this is a loop.
+So the maximum value is defined earlier. The upper bound is already defined as n.
+So-
+So whenever you have
+upper value which is already defined of an algorithm, you will always measure in
+terms of big O.
+Any doubts before we move into the little o?
+Clear to everyone? Yes, no?
+Yes, sir.
+Okay.
+Moving on to the omega. Can you tell me what does this omega notation signifies?
+Sir, it signifies the best case, the lower bound.
+The lower bound.
+Lower bound. Yes. So O notation, the big O will always tell you the upper bound.
+The omega will always give you the lower bound.
+That means that what is the minimum amount of work this algorithm must do in order
+to get the result.
+Okay. For example, I hope everyone is familiar with the linear search.
+Suppose we have four element
+and I want to search the first element only.
+Then how much time it will take?
+The first element, obviously the constant time.
+Okay.
+That is omega one.
+Yes.
+Right. So omega notation will always give you the lower bound of an algorithm.
+Okay. That means that what is the minimum amount of time, what is the minimum
+amount of work this algorithm will do.
+Now, moving on to the last one. That is the theta notation. Theta is a which bound?
+Upper bound or lower bound?
+Tight bound.
+Theta is a tight bound.
+Tight bound.
+Tight bound means that both upper and lower.
+So if an algorithm is growing at a constant rate, at the same rate in both the
+upper side and both the lower side, then it will be called as the theta notation.
+Can you give me an example of theta notation?
+Anyone. Consider the same loop which I told
+you. For loop, int I is equal 0, I is less than N,
+I++.
+And then what we are doing is system.out.print ln I.
+Now, can anyone of you tell me what is the maximum number of step it can take?
+N.
+N. So N is the upper bound?
+Yes.
+Okay. What is the minimum number of steps?
+One.
+Minimum.
+Minimum is also N.
+I
+mean, this loop which I told you, I is equal to 0, I is less than N, I++,
+it cannot run significantly less than N time.
+Right.
+It will have to follow the complete loop, right?
+Yes, sir.
+Okay. And it also cannot run significantly more than N time.
+Yes.
+Okay. So therefore, the time complexity of this case will be theta N.
+Is that clear?
+Yes.
+Omega, O and theta notation. Any doubts?
+Sir, theta I didn't get it, sir, actually.
+Yeah.
+Sir, theta means is it like
+when we require an output and when we use the best config laptop and the
+worst config laptop, and both the time is same-
+Mm-hmm.
+For that algorithm.
+Yeah.
+So,
+sorry, I forgot. Amrita, were you asking the theta notation?
+Yes, sir.
+Okay, Amrita, so theta notation means tight bound.
+That means whatever the algorithm you have designed, it will take the constant time
+everywhere.
+Either in the worst case scenario or the best case scenario.
+Every time it will take the same time. Both worst case and best case are same.
+Okay. Even if we increase the data also that will-
+That also. Yeah. In that case also, it will take the same time.
+So that will be your tight bound, theta.
+Okay.
+Okay? Now, moving on to the next one. That is little o.
+Okay, what type of bound little o is?
+Omega, lower bound.
+No. What is o? O is the upper bound.
+Oh, got you.
+So little o is strict upper bound.
+Okay.
+Okay? So whenever you write little o, you have to mention strict upper bound.
+Now, what do you mean by strict upper bound?
+In that it will check only the upper bound.
+It means that whatever the algorithm we have, it will grow strictly slower than the
+another function.
+That means, for example, suppose we have
+big O N square
+and little o n square. So if I compare between big O N square and little o n
+square. Okay, this is the time complexity.
+So it is all dependent on the value of N.
+Big O N square is also dependent on N, and little o n square is also dependent on
+N.
+As soon as the N becomes very large, okay, suppose initially the
+value of N is one or two or three, which is fine.
+In that case, both the algorithms, the big O and little o, will give the same
+result. But now assume that the value of N is keep on increasing.
+Now the value of N is thousand or millions.
+Okay, in that case, what will happen?
+Even the N is becoming a very large, the complexity of the little o
+will become much slower.
+Very slower rate.
+Okay. So big O will always give you the upper limit.
+The omega will give you the lower limit.
+And then even in the upper limit, if you have to strictly match,
+strictly bound to the upper limit, then it will be called as little o.
+Little o, I mean, this is very rare.
+I mean, I haven't seen any algorithm which is having a little o complexity.
+In most of the algorithm which I have seen, their complexity usually lies between
+big O and omega.
+I hope that now I'm able to solve a little bit doubt
+of time complexity.
+Yes, sir.
+Okay. Yeah, I mean, it is defined in a very detailed manner in your SLN.
+So you can refer to that.
+Okay, so this is what we have discussed so far, the time and the space complexity.
+Okay. Going ahead,
+algorithm analysis we have discussed, length of the program, ease of programming we
+have done. Okay, the need for data structure.
+I hope everyone understand what is the need of data structure.
+Yes.
+Okay. Data structure, the need is to how you can organize the data so that you can
+more efficiently access the data whenever you want.
+And it should take less time complexity and less space complexity.
+This is the ultimate goal of having a data structure.
+Whatever the program that we are designing, it should have less time, less space,
+because resources are very costly.
+Okay, time is precious. Resources are costly.
+You can't waste your time in a single program.
+Okay?
+Now, how you select the data structure?
+Do you think that you can work with the same data structure every time?
+Depending on the use case, sir, what we want to do with the data.
+Correct. So depending on the use cases.
+What's your requirement? If your priority is searching, then you can
+go with a different data type. Okay, if your priority is only sorting, then you can
+go with a different data structure.
+So it's all depending on how you want to tackle.
+Any idea? Do you know what are the different type of data structure we have?
+Sir, like stack-
+List or a-
+Linked list, and then tree, stack.
+Mm-hmm.
+And map.
+Tree graph.
+Right. So as a programmer, your job is to choose the right data structure based on
+the nature of the data and whatever the process that needs to be performed.
+So if you choose the wrong structure, obviously your program might run very slowly.
+Okay, so from the data structure point of view,
+your algorithm will fall into several categories.
+Okay, so you might have the searching algorithm, you might have the sorting
+algorithm, insertion algorithm, update algorithm, or deletion algorithm.
+Okay. So now,
+let's take a few different example. So yeah.
+So there are two types of data structure.
+The primitive data structure and non-primitive data structure.
+Any idea what is primitive and non-primitive?
+Primitives, sir, they are inbuilt in the language.
+Mm-hmm.
+For example, arrays, list.
+Mm-hmm.
+And non-primitive is
+manmade, made by a programmer.
+Mm-hmm.
+Yeah.
+Yeah. So non-primitive data structure are those data structures which are created
+by human by using the primitive data structures.
+Yes.
+Okay. For example, arrays, stacks, linked list, queue.
+These are all dependent on the primitive one.
+Similarly, we also have another classification that is linear and non-linear data
+structures. Linear means if your data is stored in the linear manner or in the
+sequential manner, then you will call it as a linear data structure.
+If your data is getting stored in the form of hierarchy, then it will be called as
+the non-linear data structure.
+Clear?
+Yes, sir.
+Now, moving on to the first. ADT is not in your syllabus, so we are not going to
+cover that. Okay, so we will start with the first one, that is the stack.
+Okay, let's start with the list.
+Do you know what is list?
+It's like an array, sir, but we can store different data types in a same array.
+Okay. Anyone else?
+No one?
+So, see,
+list is, as you mentioned, list is a linear collection of the data element.
+It is a linear data structure. But there's a difference between array and list.
+Can you tell me the difference between array and list?
+Sir, we can only store a single type of elements in an array, but we can store
+multiple types in list.
+Correct.
+Sir, we can store different types in JavaScript also.
+Like an array, I can store a string in
+same array.
+Sir, static and dynamic. Array is static and list is dynamic.
+It can grow at any time.
+Yes. Just like your normal shopping cart.
+Okay, in the shopping cart, whenever you want to add anything, just simply click on
+add to cart, and then that item will be added. So what is this?
+Sir, same thing can happen with arrays in JavaScript.
+Like, in JavaSc-
+JavaScript. I mean, where from, where this JavaScript is coming?
+No, sir, the thing is,
+if there is a data type, you're saying that array is different
+from list, then it has to be different for every programming language, no?
+Mm-hmm.
+So it's not like it is different in Java or it is, but it is similar
+in JavaScript.
+Okay. So someone mentioned it, the lists are the static one and the...
+Sorry, arrays are the static one and lists are the dynamic one.
+That is the actual difference. Arrays are always rigid.
+You just have to specify the size.
+Okay, and you can't insert any element which is beyond the size of an array.
+But the lists are dynamic.
+Okay, just like in, you all have seen the bucket cart in Amazon or any other
+e-commerce platform. Okay, so whenever you do the shopping, you simply add element
+one by one.
+Okay. And then,
+as soon as you add any element, it will add it to the bottom.
+So the list will always grow or shrink based on your need.
+Okay. So, as I mentioned, the list is a linear data structure where each
+element is this separate object, and you can say that it is an ordered set of
+data.
+Okay. So, it can be different, as you can see on my slide, it can be described as
+the difference between the physical order and logical order.
+So list will always follow the sequential implementations.
+Okay. And it can be implemented in the form of linked list.
+I hope everyone has worked on linked list.
+Yes.
+Okay. Right. So this is how the linked-- So you just have to connect a node.
+Whenever you insert any new node, you just have to put a connection with the
+previous node, and then you are good to go. In the array, it is not possible.
+You have to shift the element.
+Remember? In the array, you have to shift the element, then only you have to create
+the space, then only you can insert.
+In linked list, it is not a shifting of the element.
+You can simply connect a node, and a single node can be connected to a multiple
+node as well, which is not possible in arrayed.
+Yes, sir.
+Clear?
+Yes, sir.
+I know-
+Yes, sir
+... algorithm is a very complex subject, but you should have to understand the
+basic things.
+Okay, so linked list implementation we will see. Okay.
+We are just covering the basic thing.
+Okay, then there will be an individual topic on each and every data structure.
+Let's start with the stack. Stack you all know?
+Yes.
+Okay. Whenever you go to the party or any other functions.
+Yes.
+Okay. You will see a stack of plates piled up on a table.
+So what pattern you follow? FIFO or LIFO?
+LIFO.
+LIFO. That means the last plate will always be picked the first.
+Yes, sir.
+Clear? So in the stack, both the insertion and deletion always be performed at
+only one end, which is called the top of the stack.
+Okay, in the queue, we have different end.
+Okay, we have the front end and the rear end.
+So insertion will always take from the rear end, while the deletion will always
+happen from the front end in the queue.
+In the stack, it is totally different.
+In the stack, both insertion and deletion will always be performed only at the one
+end.
+So what are the different operations which are performed on the stack?
+The first is-
+The Tower of Hanoi.
+Yeah, Tower of Hanoi can be done. Tower of Hanoi can be done.
+There are other examples also. Okay.
+Stack-based applications are very common
+Okay, so these are the operations that can be performed on the stack.
+We can store, retrieve, and display. Okay.
+We have this push and pop operation. Push and pop, you know?
+Yeah.
+Push means you are adding item to the stack.
+Pop means you are deleting item from the stack.
+Okay.
+So for example, suppose this is on a stack.
+Okay, and now you want... Okay, so the top is located at the value 40.
+10, 20, 30, 40. Now, as soon as you delete the element, what will happen?
+The value of top will be deleted, will be decreased by one.
+So now the value of top gets changed.
+So after each deletion, there will be the change in the value of top.
+Sir?
+Yeah.
+Sir, suppose if we want to delete
+20 only, so our only option is to delete both the top
+element and one, right?
+Yes.
+Okay.
+As I mentioned, the deletion and insertion both happens only at the one end, that
+is the top.
+So you have to bring your pointer to that particular element,
+or your pointer element will be called as top.
+So first you have to bring your top to that particular element, then only you can
+perform the insertion or deletion.
+Okay? You can't simply delete the element from the middle.
+Obviously, I mean, consider the same example. You are going to the party. Okay.
+You saw a pile of plates, and suppose you said that, "Okay, no, I will pick the
+plate from the middle." So what will happen?
+Rest all the plates above it will be removed or will be broken?
+Obviously.
+Right. So you can't do that. You just have to follow the one by one, from the top
+only.
+So there will be a condition when all the elements will be deleted from the stack,
+okay? And that condition will be called as the underflow condition.
+Okay? That means there is no element left to be deleted. Everything is deleted.
+Now the stack is empty.
+Okay. Similarly, we also have this overflow condition also.
+Can anyone of you tell me what is the overflow condition?
+Sir, when it reaches its maximum capacity.
+Correct. So that means then when the stack is already full, okay, because
+everything has its size now. Okay, so suppose the stack size is 50, and you have
+already 50 element in the stack, and now you want to insert the 51 element.
+Again, what will happen? There is no space left in the stack.
+So in that case, it will be called as the stack overflow condition.
+That means that if you further add any element, what will happen?
+The element will start deleting. Okay?
+You will not be able to add any element.
+So both underflow and overflow conditions are very important in the stack
+programming.
+Okay?
+Sir.
+Yeah.
+Sir, in exam, do we have to write the pseudocode for it?
+Yes.
+They may ask you to write the pseudocode.
+Okay, sir.
+Okay, yeah. I saw a few questions in the last semester.
+Okay. So there were a few questions where they asked to write a pseudocode or write
+an algorithm. So whenever you will get a question in your exam to write an
+algorithm, you just have to write the pseudocode.
+No need to write the entire algorithms because there will be very high chances that
+you will get it wrong,
+okay, or there will be a syntax mistake and you will not be able to complete your
+algorithm. So always write the pseudocode.
+See, this is one example of the pseudocode.
+Okay, so this is the way how you should write in your exam.
+Okay, so now what we are doing is, I think we are over time, but let me quickly
+cover this. Okay, suppose we are inserting an element or we are pushing any element
+into the stack. So what is the first thing we have to check is?
+The underflow condition.
+Sorry, the overflow condition. If we are inserting any element, first we have to
+check whether there is any empty space or not.
+So how we will determine? We will have to address the pointer of the
+top. So where is the location of the top pointer?
+If it is equal to the stack size minus one.
+Because why we are keeping a stack size minus one?
+The last index is included in the one.
+Correct. So what we are doing is we will check the location of the top pointer.
+If the value of the top pointer is equal to the stack size minus one, that means
+the stack is already full. Okay, there is no space left.
+So what we will do is, we will simply write print F, stack overflow, and then
+return. I hope everyone knows what is the purpose of return statement.
+It will automatically come out of the loop.
+Sorry, out of the if condition.
+Yes, sir.
+Okay? Now, suppose the top is not equal to stack size minus one, that means there
+is a space left in the stack. So what will happen?
+You have to increase the value of top pointer, and then you will insert your
+element.
+So you have to increment the top and then insert an item, and now your insertion is
+done. This is how you have to write the code in your exam paper.
+Is that clear to everyone, insert operation?
+Yes, sir.
+Okay. Yeah, I think let's hold the class for now, okay, because we are already
+over time.
+But we can cover the remaining stack operations because there are a lot of other
+things, stack and then trees, then infix to postfix, postfix to prefix.
+Again, these are the very important questions from the exam standpoint.
+So we will cover all these things in the next class.
+Okay, sir.
+Okay, cool. Thank you so much for joining. See you all in the next class.
+Thanks.
+Thank you.

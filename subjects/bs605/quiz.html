@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BS605 Objective Questions — Cognitive Analytics &amp; Social Skills</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --ink: #15231c;
+  --muted: #4a5c52;
+  --paper: #f3f6f1;
+  --panel: rgba(255,255,255,0.78);
+  --line: rgba(21,35,28,0.12);
+  --accent: #0f6b4c;
+  --accent-2: #c45c26;
+  --accent-soft: #d8efe4;
+  --warn: #8a3b12;
+  --ok: #1f7a4d;
+  --bad: #a33b3b;
+  --shadow: 0 18px 50px rgba(21,35,28,0.12);
+  --radius: 18px;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-body);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #d7ebe0 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, #f3dfd0 0%, transparent 45%),
+    linear-gradient(180deg, #eef4ef 0%, var(--paper) 40%, #e7eee8 100%);
+  min-height: 100vh;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image:
+    linear-gradient(rgba(21,35,28,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(21,35,28,0.03) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(180deg, #000, transparent 85%);
+}
+a { color: var(--accent); }
+.wrap { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; padding: 1.5rem 0 3rem; position: relative; }
+.hero {
+  display: grid;
+  gap: 1rem;
+  padding: 1.6rem 0 1.2rem;
+  animation: rise 0.6s ease both;
+}
+.kicker {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+h1 {
+  font-family: var(--font-display);
+  font-weight: 650;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  margin: 0.2rem 0;
+  letter-spacing: -0.02em;
+}
+.lede { margin: 0; max-width: 46rem; color: var(--muted); font-size: 1.05rem; }
+.navrow {
+  display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.6rem;
+}
+.btn, button.btn {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+.btn:hover, button.btn:hover { transform: translateY(-1px); border-color: rgba(15,107,76,0.35); }
+.btn.primary { background: var(--accent); color: #fff; border-color: transparent; }
+.btn.ghost { background: transparent; }
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+}
+.filters {
+  display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0;
+}
+.chip {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.65);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  font: inherit;
+}
+.chip.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+}
+.chip.lmr {
+  border-color: rgba(196,92,38,0.45);
+  color: var(--warn);
+}
+.chip.lmr.active { background: var(--accent-2); color: #fff; }
+.site-nav {
+  display: flex; flex-wrap: wrap; gap: 0.45rem;
+  align-items: center;
+  margin: 0 0 0.4rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.82);
+  backdrop-filter: blur(8px);
+  width: fit-content;
+  max-width: 100%;
+}
+.site-nav a {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+.site-nav a:hover { background: var(--accent-soft); color: var(--accent); }
+.site-nav a.home {
+  background: var(--accent);
+  color: #fff;
+}
+.site-nav a.here {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.meta {
+  display: flex; flex-wrap: wrap; gap: 0.75rem 1.2rem;
+  color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem;
+}
+.meta strong { color: var(--ink); }
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.6rem;
+  margin: 0.8rem 0;
+}
+.stat {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.8rem;
+}
+.stat b { display: block; font-size: 1.35rem; font-family: var(--font-display); color: var(--ink); }
+.stat span { color: var(--muted); font-size: 0.88rem; }
+.prog-line {
+  margin-top: 0.55rem;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(21,35,28,0.08);
+  overflow: hidden;
+}
+.prog-line > i {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), #2f9e74);
+  border-radius: inherit;
+}
+.links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+.links a {
+  display: block;
+  text-decoration: none;
+  padding: 0.7rem 0.85rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.links a.lmr-link {
+  background: linear-gradient(135deg, #fff4ec, #ffe8d8);
+  border-color: rgba(196,92,38,0.25);
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes flipIn {
+  from { opacity: 0; transform: rotateX(-8deg) translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+@media (max-width: 720px) {
+  .wrap { width: min(100% - 1.2rem, 1120px); }
+}
+
+.progress {
+  height: 8px; border-radius: 999px; background: rgba(21,35,28,0.08); overflow: hidden;
+}
+.progress > span {
+  display: block; height: 100%; width: 0%;
+  background: linear-gradient(90deg, var(--accent), #2f9e74);
+  transition: width 0.25s ease;
+}
+.quiz-layout { display: grid; gap: 1rem; }
+.qcard {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.82);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.15rem;
+  box-shadow: var(--shadow);
+  animation: flipIn 0.35s ease both;
+}
+.qhead {
+  display: flex; justify-content: space-between; gap: 0.8rem; flex-wrap: wrap;
+  margin-bottom: 0.7rem;
+}
+.qnum {
+  font-weight: 700; color: var(--accent); font-size: 0.85rem; letter-spacing: 0.03em;
+}
+.qtext {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  line-height: 1.3;
+  margin: 0 0 0.9rem;
+}
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.7rem; align-items: flex-start;
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 14px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  font: inherit;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+.opt:hover:not(:disabled) { transform: translateY(-1px); border-color: rgba(15,107,76,0.35); }
+.opt .letter {
+  flex: 0 0 auto;
+  width: 1.55rem; height: 1.55rem;
+  border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+.opt.correct {
+  border-color: rgba(31,122,77,0.55);
+  background: #e8f7ef;
+}
+.opt.wrong {
+  border-color: rgba(163,59,59,0.45);
+  background: #fdeeee;
+}
+.opt:disabled { cursor: default; }
+.explain {
+  margin-top: 0.85rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 12px;
+  background: #f2f7f4;
+  color: var(--muted);
+  display: none;
+}
+.explain.show { display: block; }
+.scorebar {
+  display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; justify-content: space-between;
+}
+.score {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+}
+.footer-nav {
+  display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: space-between; margin-top: 0.8rem;
+}
+</style>
+<script>window.AMITY_SUBJECT = "bs605";</script>
+<script src="../../shared/config.js"></script>
+<script src="../../shared/progress.js"></script>
+<script src="../../shared/sync-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <nav class="site-nav" aria-label="Site"><a href="index.html" class="home">Home</a><a href="module-map.html">Module Map</a><a href="flashcards.html">Flashcards</a><a href="quiz.html" class="here">Quiz</a></nav>
+  <header class="hero">
+    <div class="kicker">Amity · BS605</div>
+    <h1>Objective questions by module</h1>
+    <p class="lede">MCQs drawn from the BS605 SLM and live-class emphasis. Filter by module, answer one by one, and use explanations to lock concepts — especially LMR priorities.</p>
+    <div class="navrow">
+      <a class="btn" href="flashcards.html#lmr">LMR priorities</a>
+    </div>
+  </header>
+
+  <section class="panel">
+    <div class="scorebar">
+      <div class="meta" style="margin:0">
+        <span><strong id="totalQ">0</strong> questions</span>
+        <span>Answered <strong id="attempted">0</strong></span>
+        <span>Correct <strong id="scoreNow">0</strong></span>
+        <span>Accuracy <strong id="accuracy">—</strong></span>
+      </div>
+      <div class="navrow" style="margin:0">
+        <button class="btn" id="resetBtn" type="button">Reset answers</button>
+        <button class="btn primary" id="shuffleBtn" type="button">Shuffle</button>
+      </div>
+    </div>
+    <div class="progress" style="margin-top:0.75rem"><span id="quizProgressBar"></span></div>
+    <div class="filters" id="moduleFilters" style="margin-top:0.9rem"></div>
+    <div class="summary-grid" id="moduleStats"></div>
+    <div class="links"><a class="" href="Live Class 2 Transcript.txt" target="_blank" rel="noopener">Live Class 2 transcript</a><a class="" href="Live Class 3 Transcript.txt" target="_blank" rel="noopener">Live Class 3 transcript</a><a class="lmr-link" href="Congnitive Analytics and Social skill for Profession W F 1.pdf" target="_blank" rel="noopener">Study PDF (SLM)</a></div>
+    <div id="amity-sync-root"></div>
+  </section>
+
+  <section class="quiz-layout" style="margin-top:1rem">
+    <div class="qcard" id="qcard">
+      <div class="qhead">
+        <span class="qnum" id="qnum"></span>
+        <span class="qnum" id="qtopic"></span>
+      </div>
+      <h2 class="qtext" id="qtext"></h2>
+      <div class="options" id="options"></div>
+      <div class="explain" id="explain"></div>
+      <div class="footer-nav">
+        <button class="btn" id="prevBtn" type="button">Previous</button>
+        <button class="btn primary" id="nextBtn" type="button">Next</button>
+      </div>
+    </div>
+  </section>
+</div>
+<script>
+const DATA = {"course": "Cognitive Analytics and Social Skills for Professional (BS605)", "modules": [{"id": 1, "title": "Cognitive Analytics and Social Cognition", "topics": [{"id": "1.1", "title": "Understanding the Self", "flashcards": [{"front": "What is the self, and what are the ABCs of the self?", "back": "The self is a sense of personal identity. Social psychologists study person–situation interaction using the ABCs of the self: Affective, Behavioural, and Cognitive."}, {"front": "What is self-concept, and how do self-schemas organise it?", "back": "Self-concept is the knowledge representation about oneself—traits, attributes, skills, values, and roles—organised into self-schemas that guide how we process self-relevant information.", "detail": "Faculty distinguish self-concept (your beliefs about yourself) from self-esteem (global worth)."}], "mcqs": [{"q": "The ABCs of the self refer to which three domains?", "options": ["Attitude, Belief, Culture", "Affective, Behavioural, Cognitive", "Assertive, Blind, Covert", "Ability, Behaviour, Character"], "answer": 1, "explain": "Social psychologists frame the self in affective, behavioural, and cognitive terms."}, {"q": "Self-concept is best described as:", "options": ["Task-specific confidence", "Global sense of personal worth", "Knowledge representation about oneself organised into self-schemas", "Pride in how you allow yourself to be treated"], "answer": 2, "explain": "Self-concept is cognitive self-knowledge; esteem, efficacy, and respect are distinct."}]}, {"id": "1.2", "title": "T-E-A Model", "flashcards": [{"front": "What is the T-E-A model?", "back": "Thoughts (internal processing/beliefs), Emotions (internal states/values), and Actions (external behaviours/words) constantly influence each other; changing one tends to shift the others."}], "mcqs": [{"q": "In the T-E-A model, which statement is most accurate?", "options": ["Only actions influence thoughts", "Thoughts, emotions, and actions mutually influence each other", "Emotions are independent of thoughts", "Actions never affect emotions"], "answer": 1, "explain": "T-E-A emphasises reciprocal influence among thoughts, emotions, and actions."}]}, {"id": "1.3", "title": "Johari Window", "flashcards": [{"front": "Name the four panes of the Johari Window (Luft & Ingham, 1955).", "back": "Open/Arena (known to self and others); Blind spot (known to others, unknown to self); Hidden/Façade (known to self, unknown to others); Unknown (unknown to both)."}, {"front": "How do you enlarge the Open/Arena pane?", "back": "Reduce the Blind spot through feedback; reduce the Hidden/Façade through disclosure. Trust grows from disclosure plus learning from feedback."}], "mcqs": [{"q": "Information known to others but unknown to you belongs in which Johari pane?", "options": ["Open / Arena", "Hidden / Façade", "Blind spot", "Unknown"], "answer": 2, "explain": "Blind = others know / you do not; Hidden = you know / others do not."}, {"q": "Which pair of actions best enlarges the Open area?", "options": ["Avoidance and denial", "Feedback and disclosure", "Mind reading and fortune telling", "Stereotyping and priming"], "answer": 1, "explain": "Feedback shrinks the blind area; disclosure shrinks the hidden area."}]}, {"id": "1.4", "title": "PE Scale (Personal Effectiveness)", "flashcards": [{"front": "What are the three PE Scale dimensions, and how do they relate to Johari?", "back": "Self-disclosure (SD), Openness to feedback (OTF), and Perceptiveness. Effective people use these to shrink secret/blind areas and enlarge the arena—they operate on Johari panes; they are not the four panes themselves."}], "mcqs": [{"q": "Which trio makes up the PE Scale dimensions?", "options": ["Open, Blind, Hidden", "Self-disclosure, Openness to feedback, Perceptiveness", "Forming, Storming, Norming", "Valence, Multiplicity, Centrality"], "answer": 1, "explain": "PE Scale = SD, OTF, and perceptiveness; do not confuse with Johari panes."}]}, {"id": "1.5", "title": "Self-esteem, Self-efficacy, and Self-respect", "flashcards": [{"front": "Distinguish self-esteem, self-efficacy, and self-respect.", "back": "Self-esteem = overall subjective sense of personal worth. Self-efficacy (Bandura) = belief you can succeed at a specific task/goal—not a global trait. Self-respect = pride in who you are, moral courage, and deciding how you allow yourself to be treated."}, {"front": "Why is self-efficacy not the same as self-esteem?", "back": "Efficacy is task-specific confidence about what you can achieve with your abilities. Esteem is global worth/liking of self. You can have high esteem but low efficacy on a particular task (or vice versa)."}], "mcqs": [{"q": "Belief in ability to succeed at a specific task is called:", "options": ["Self-esteem", "Self-efficacy", "Self-concept", "Self-respect"], "answer": 1, "explain": "Bandura’s self-efficacy is task-specific, not global worth."}, {"q": "Which construct is closest to “how much you value and like yourself overall”?", "options": ["Self-efficacy", "Priming", "Self-esteem", "Salience"], "answer": 2, "explain": "Self-esteem is the global subjective sense of personal worth."}]}, {"id": "1.6", "title": "Assertive Skills", "flashcards": [{"front": "What is assertiveness, and which skills support it?", "back": "Assertiveness sits between passivity and aggression: express thoughts/feelings truthfully and accurately while respecting others. Skills include Respect, Openness, Honesty, Accountability, Self-control, and Delegation."}], "mcqs": [{"q": "Assertive communication is best placed:", "options": ["As pure aggression", "Between passivity and aggression, with respect for others", "As silence to avoid conflict", "As winning at all costs"], "answer": 1, "explain": "Assertive ≠ aggressive; it balances honesty with respect."}]}, {"id": "1.7", "title": "Technology Adoption and Social Media Etiquette", "flashcards": [{"front": "Why do technology adoption and social media etiquette matter professionally?", "back": "Professional presence online and thoughtful technology use affect reputation, relationships, and workplace norms; etiquette covers respectful communication, privacy, and appropriate sharing."}], "mcqs": [{"q": "Professional social media etiquette primarily emphasises:", "options": ["Maximum oversharing for authenticity", "Respectful communication, privacy awareness, and appropriate sharing", "Ignoring organisational norms online", "Using company time freely for personal posts"], "answer": 1, "explain": "Etiquette protects reputation and relationships through respectful, appropriate use."}]}, {"id": "1.8", "title": "Creativity (ICEDIP) and Visualization", "flashcards": [{"front": "Expand ICEDIP (Geoff Petty) and note its order rule.", "back": "Inspiration, Clarification, Distillation, Perspiration, Evaluation, Incubation. Phases can occur in any order and are repeatable; each has its own mind-set. Incubation ≠ evaluation."}, {"front": "How should visualization be used for performance?", "back": "Combine outcome simulation (final result) with process simulation (steps). A participant perspective is generally more effective than an observer perspective."}], "mcqs": [{"q": "Which ICEDIP phase means stepping away for subconscious processing?", "options": ["Perspiration", "Evaluation", "Incubation", "Clarification"], "answer": 2, "explain": "Incubation is stepping away; evaluation judges strengths/flaws."}]}, {"id": "1.9", "title": "Problem Sensitivity", "flashcards": [{"front": "What is problem sensitivity?", "back": "The capacity to tell when something is wrong or likely to go wrong. It does not include solving the problem—only recognising it."}], "mcqs": [{"q": "Problem sensitivity differs from problem solving because it:", "options": ["Always includes fixing the issue", "Only recognises that a problem exists or is likely", "Requires Six Hats by definition", "Is identical to cognitive flexibility"], "answer": 1, "explain": "Sensitivity = notice only; solving is a separate capacity."}]}, {"id": "1.10", "title": "Six Thinking Hats", "flashcards": [{"front": "Match the Six Thinking Hats colours to their roles (de Bono).", "back": "Blue = process control; White = facts/data only; Red = feelings/intuition; Black = risks/caution; Yellow = benefits/optimism; Green = creativity/alternatives."}, {"front": "What is the Blue hat’s special role?", "back": "Like a movie director: manages the thinking process, agenda, and use of the other hats—meta-control rather than content alone."}], "mcqs": [{"q": "Which hat focuses on facts and data without assumptions?", "options": ["Red", "White", "Green", "Yellow"], "answer": 1, "explain": "White = detective/facts; Red = feelings; Green = creativity."}, {"q": "The Black hat is best used to:", "options": ["Generate wild alternatives only", "Express unjustified feelings", "Analyse risks, flaws, and caution in a detached way", "Control the meeting agenda exclusively"], "answer": 2, "explain": "Black is critical risk analysis—not “being a bad person.”"}]}, {"id": "1.11", "title": "Cognitive Flexibility and Cognitive Errors", "flashcards": [{"front": "What is cognitive flexibility?", "back": "Ability to disengage from one task, hold several concepts, and adapt cognitive strategies to new/unexpected conditions. It is learnable and linked to executive function."}, {"front": "Name common cognitive errors (Beck/Burns) examined in the SLM.", "back": "Examples: polarized/all-or-nothing thinking; overgeneralization; mental filter; disqualifying the positive; mind reading; fortune telling; magnification/minimization; emotional reasoning (“I feel it, so it must be true”)."}], "mcqs": [{"q": "“I feel anxious, so the project must be failing” exemplifies:", "options": ["Emotional reasoning", "White-hat thinking", "Self-efficacy", "Johari disclosure"], "answer": 0, "explain": "Emotional reasoning treats feelings as proof of fact."}]}, {"id": "1.12", "title": "Social Cognition and Social Inference", "flashcards": [{"front": "Define social cognition, schemas, salience, and priming.", "back": "Social cognition is how people perceive, recall, attend to, and use social information. Schemas are mental structures of general knowledge about social objects. Salience and priming make schemas more accessible."}, {"front": "What is social inference?", "back": "Inferring mental states—intentions, desires, emotions, traits—from observed behaviour; it is needed for social success."}], "mcqs": [{"q": "Making schemas more accessible through recent exposure is called:", "options": ["Adjourning", "Priming", "Delegation", "Valence"], "answer": 1, "explain": "Priming (and salience) increase schema accessibility."}]}, {"id": "1.13", "title": "Attribution Processes", "flashcards": [{"front": "What is attribution, and what are internal vs external causes?", "back": "Attribution is inferring causes of behaviour. Internal/personal causes include personality, ability, effort; external/situational causes include environment, luck, and others’ actions."}, {"front": "Distinguish FAE, actor–observer difference, and self-serving bias.", "back": "FAE: for others, overestimate personal and underestimate situational causes. Actor–observer: for self, emphasise external causes. Self-serving: credit success internally; blame failure externally."}], "mcqs": [{"q": "Overestimating personality and underestimating situation when explaining another person’s behaviour is the:", "options": ["Self-serving bias", "Fundamental attribution error", "Actor–observer difference applied to self", "Outgroup homogeneity"], "answer": 1, "explain": "FAE targets explanations of others’ behaviour."}, {"q": "Taking credit for success but blaming circumstances for failure is:", "options": ["Self-serving bias", "Problem sensitivity", "Idealized influence", "Attitudinal ambivalence"], "answer": 0, "explain": "Self-serving bias protects self-image via asymmetric attributions."}]}, {"id": "1.14", "title": "Stereotyping, Prejudice, and Accepting Criticism", "flashcards": [{"front": "How do stereotype, prejudice, and discrimination differ?", "back": "Stereotype = cognitive generalization about a group (“pictures in our heads”). Prejudice = derogatory/evaluative attitude toward group members (belief/attitude). Discrimination = behaviour. Prejudice is not the same as discriminatory acts."}, {"front": "What immediate steps help when accepting criticism?", "back": "Remain calm; reiterate the point (“So what you’re saying is…”); open both perspectives; make a polite exit if needed—and protect self-esteem after unfair criticism."}], "mcqs": [{"q": "A generalized idea about people in the same social group is a:", "options": ["Prejudice only", "Stereotype", "Discrimination", "Sociogram"], "answer": 1, "explain": "Stereotypes are cognitive generalizations; prejudice is evaluative."}, {"q": "Intergroup contact tends to reduce prejudice by increasing knowledge and:", "options": ["Anxiety and distance", "Empathy/perspective-taking and lower anxiety", "Outgroup homogeneity only", "Self-serving bias"], "answer": 1, "explain": "Contact can build knowledge, reduce anxiety, and foster empathy."}]}]}, {"id": 2, "title": "Attitudes and Emotional Intelligence", "topics": [{"id": "2.1", "title": "Understanding Attitudes", "flashcards": [{"front": "What is an attitude?", "back": "An evaluation of a person, idea, or object as favourable or unfavourable. Overall evaluations influence perception and behaviour (Allport treated attitude as central in social psychology)."}], "mcqs": [{"q": "An attitude is best defined as:", "options": ["A physiological arousal pattern only", "An evaluation of a person, idea, or object", "A Tuckman stage", "A sociometric star"], "answer": 1, "explain": "Attitudes are evaluative orientations toward attitude objects."}]}, {"id": "2.2", "title": "Attitude Characteristics", "flashcards": [{"front": "Explain valence, multiplicity, and centrality of attitudes.", "back": "Valence = magnitude of favourability/unfavourability. Multiplicity = number of components making up the attitude system (simple vs complex). Centrality = importance of the object to the person; central attitudes resist change."}, {"front": "Explain relation to needs, pervasiveness, invisible, and acquired.", "back": "Attitudes differ by needs they serve; pervasiveness means they appear across domains via socialization; they are invisible (inferred from effects) and acquired/learned over life (often transmitted in families)."}], "mcqs": [{"q": "Strength of favourability or unfavourability of an attitude is its:", "options": ["Multiplicity", "Valence", "Pervasiveness", "Blind spot"], "answer": 1, "explain": "Valence = magnitude of +/− evaluation."}, {"q": "Attitudes that are highly important to the person and hard to change are high in:", "options": ["Centrality", "Incubation", "Salience only", "Laissez-faire"], "answer": 0, "explain": "Centrality = importance/resistance to change."}]}, {"id": "2.3", "title": "ABC Components of Attitudes", "flashcards": [{"front": "What are the ABC components of attitudes?", "back": "Cognitive = beliefs/knowledge; Affective = feelings toward the object; Behavioural = action tendency / how one acts. Do not confuse with Ellis ABC (Adversity–Beliefs–Consequences) in Module 5."}], "mcqs": [{"q": "In attitude ABC, the affective component refers to:", "options": ["Beliefs and knowledge only", "Feelings toward the attitude object", "Only observable discrimination", "Process control like the Blue hat"], "answer": 1, "explain": "Affective = feelings; cognitive = beliefs; behavioural = action tendency."}, {"q": "“Discrimination is wrong” as a belief mainly illustrates the attitude’s:", "options": ["Affective component", "Cognitive component", "Unknown Johari pane", "Green hat"], "answer": 1, "explain": "Beliefs/knowledge are the cognitive component."}]}, {"id": "2.4", "title": "Emotions and Their Expression", "flashcards": [{"front": "How do emotion and mood differ?", "back": "Emotion = powerful, subjective affective state often in response to something, frequently conscious/intentional. Mood = prolonged, less intense, not necessarily triggered, may lack intentionality."}, {"front": "Healthy vs unhealthy expressions of emotion (SLM framing)", "back": "Unhealthy: high intensity, long duration, hard to control, disrupt daily life. Healthy: less intense/lasting and allow life to continue. Self-awareness of emotions is a foundation of EI. Not simply “positive = good / negative = useless.”"}], "mcqs": [{"q": "Compared with mood, emotion is typically:", "options": ["Less intense and longer lasting", "More intense, often triggered, and more intentional", "Identical to attitude valence", "Only physiological with no cognition"], "answer": 1, "explain": "Emotion is stronger/shorter and often intentional; mood is prolonged and milder."}]}, {"id": "2.5", "title": "Emotional Intelligence at Work (Goleman)", "flashcards": [{"front": "What is emotional intelligence, and why does it matter at work?", "back": "Ability to interpret, reason about, understand, and manage own and others’ emotions; communicate, regulate, and preserve emotional stability. Critical for high-performing teams and leadership. Faculty: EI carries heavier exam weight than interpersonal intelligence alone."}, {"front": "List Goleman’s five EI competencies.", "back": "Self-awareness; Self-regulation (think before acting); Motivation; Empathy; Social skills. Personal competence covers self-awareness/regulation/motivation; social competence covers empathy and social skills."}], "mcqs": [{"q": "Which is NOT one of Goleman’s five EI competencies?", "options": ["Self-awareness", "Self-regulation", "Sociometric starring", "Empathy"], "answer": 2, "explain": "Goleman: self-awareness, self-regulation, motivation, empathy, social skills."}, {"q": "Faculty exam priority among related constructs is typically:", "options": ["Interpersonal intelligence alone over EI", "EI over interpersonal intelligence alone", "Only intrapersonal Gardner skills", "Only Lewin styles"], "answer": 1, "explain": "Live-class emphasis: Emotional intelligence > interpersonal intelligence alone."}]}, {"id": "2.6", "title": "Interpersonal and Intrapersonal Intelligence", "flashcards": [{"front": "What is interpersonal intelligence?", "back": "Ability to communicate efficiently, understand others’ minds, and form/sustain relationships. Components include social sensitivity, influence for the greater good, verbal/nonverbal skill, empathy, confidence, rapport, and social comfort."}, {"front": "What is intrapersonal intelligence (Gardner), vs EI?", "back": "Capacity to understand oneself—interests, fears, abilities—and use that knowledge to manage one’s life. Focused on self; EI spans self and others (including empathy). Self-awareness underpins both."}], "mcqs": [{"q": "Gardner’s intrapersonal intelligence primarily concerns:", "options": ["Understanding and managing oneself", "Only persuading large crowds", "Only measuring sociograms", "Only transactional rewards"], "answer": 0, "explain": "Intrapersonal = self-understanding; interpersonal = understanding others."}, {"q": "EI differs from intrapersonal intelligence mainly because EI also emphasises:", "options": ["Ignoring others’ feelings", "Empathy and managing emotions in social contexts", "Only terminal values", "Only White-hat facts"], "answer": 1, "explain": "EI covers self and others; intrapersonal focuses on the self."}]}]}, {"id": 3, "title": "Leadership and Managing Excellence", "topics": [{"id": "3.1", "title": "Team Design Features", "flashcards": [{"front": "What distinguishes a team, and what design features matter?", "back": "A team works together for common goals/purpose with commitment to a vision. Design includes composition (KSAOs; surface- vs deep-level diversity), roles (often clarified in storming), and task characteristics (higher interdependence increases need for teams)."}], "mcqs": [{"q": "Deep-level diversity in teams usually refers to differences in:", "options": ["Only visible demographics", "Values, personality, and attitudes that often matter longer term", "Only seating charts", "Only hat colours"], "answer": 1, "explain": "Deep-level diversity (values/personality) typically has longer-lasting effects than surface-level alone."}]}, {"id": "3.2", "title": "Tuckman Team Life Cycle", "flashcards": [{"front": "List Tuckman’s stages (with Adjourning).", "back": "Forming (orientation/politeness); Storming (conflict, assertiveness, challenge leadership—roles often sorted here); Norming (cohesion, trust, norms); Performing (task focus, less leader dependence); Adjourning/Mourning (disband; celebrate)."}], "mcqs": [{"q": "Conflict and challenges to leadership are most characteristic of:", "options": ["Forming", "Storming", "Performing", "Adjourning only"], "answer": 1, "explain": "Storming is a normal stage, not automatic team failure."}, {"q": "Cohesion, trust, and group norms strengthen most clearly in:", "options": ["Storming", "Norming", "Latent conflict", "Black-hat only sessions"], "answer": 1, "explain": "Norming builds cohesion and maintenance norms."}]}, {"id": "3.3", "title": "Team Building Types and Performance Issues", "flashcards": [{"front": "What types of team building does the SLM highlight?", "back": "Personality-based (e.g., MBTI), activity-based, skill-based, and problem-solving-based approaches; development work addresses roles, trust, and process issues that can impair performance."}], "mcqs": [{"q": "Using MBTI profiles in a workshop is closest to which team-building type?", "options": ["Only coercive leadership", "Personality-based", "Only distributive negotiation", "Only White-hat auditing"], "answer": 1, "explain": "Personality-based team building uses preference/type frameworks such as MBTI."}]}, {"id": "3.4", "title": "Types of Leaders and Lewin Styles", "flashcards": [{"front": "What hierarchy of leader types does the SLM describe?", "back": "From least to most powerful impact: Managerial → Relational → Motivational → Inspirational → Transformational (develops other leaders)."}, {"front": "Describe Lewin’s three leadership styles (1939).", "back": "Autocratic/Authoritarian: full control, little subordinate initiative. Laissez-faire/Free-rein: maximum independence; leader helps when asked. Democratic/Participative: consultation and mutual consensus (may slow decisions)."}], "mcqs": [{"q": "In Lewin’s model, maximum subordinate independence with help only when asked is:", "options": ["Autocratic", "Democratic", "Laissez-faire", "Coercive only"], "answer": 2, "explain": "Laissez-faire / free-rein maximises independence."}]}, {"id": "3.5", "title": "Transformational and Transactional Leadership", "flashcards": [{"front": "What are the transformational 4 Is (Bass/Avolio)?", "back": "Inspirational Motivation; Intellectual Stimulation; Idealized Influence; Individualized Consideration."}, {"front": "How does transactional leadership differ?", "back": "Focuses on monitoring, organisation, short-term planning, and exchanges/rewards; useful in emergencies or when clear gains/exchanges matter (Weber/Bass framing)."}], "mcqs": [{"q": "Individualized Consideration is one of the:", "options": ["Tuckman stages", "Transformational 4 Is", "PE Scale dimensions", "Attitude valence types"], "answer": 1, "explain": "4 Is: IM, IS, Idealized Influence, Individualized Consideration."}]}, {"id": "3.6", "title": "Situational Leadership", "flashcards": [{"front": "What is the core idea of situational leadership?", "back": "There is no one best style; adapt to situation and follower readiness. Positional power alone is outdated (Blanchard). Match style to development level."}, {"front": "Blanchard–Hersey S1–S4 and Goleman’s six situational styles", "back": "S1 Telling → S2 Selling → S3 Participating → S4 Delegating (low competence/high commitment → S1; high competence/high commitment → S4). Goleman styles: Coaching, Pacesetting, Democratic, Affiliative, Authoritative, Coercive."}], "mcqs": [{"q": "A follower with low competence but high commitment is best matched to:", "options": ["S4 Delegating", "S1 Telling", "Only laissez-faire", "Only Green hat"], "answer": 1, "explain": "Low competence/high commitment → S1 Telling."}, {"q": "Situational leadership claims that:", "options": ["One style always wins", "Leaders should adapt style to follower readiness/situation", "Only coercion works", "Teams skip storming"], "answer": 1, "explain": "No single best style; adapt to readiness and context."}]}, {"id": "3.7", "title": "Strategic Leadership, Change, and Sociometry", "flashcards": [{"front": "What themes link strategic leadership and change in the SLM?", "back": "Mentoring, building trust, and guiding people through change stages (ADKAR-like awareness → desire → knowledge → ability → reinforcement) so change sticks."}, {"front": "What is sociometry (Moreno), and what does a sociogram show?", "back": "Sociometry measures interpersonal relatedness/choice patterns (socius + metrum). A sociogram maps networks; a sociomatrix tables choices. Patterns include isolates, pairs, triangles, chains, star (hub), and net (democratic multi-links). The sociometric star is most chosen for a criterion."}], "mcqs": [{"q": "The person most often chosen on a sociometric criterion is the:", "options": ["Isolate", "Sociometric star", "Hidden Johari pane", "Black hat"], "answer": 1, "explain": "Sociometric star = most chosen for a given criterion."}, {"q": "A democratic multi-link choice pattern on a sociogram is often called a:", "options": ["Star only", "Net", "FAE", "Terminal value"], "answer": 1, "explain": "Net = multi-link democratic pattern; star = authoritarian hub pattern."}]}, {"id": "3.8", "title": "Personal Branding, Time, Work–Life, and Relationships", "flashcards": [{"front": "What is personal branding?", "back": "Strategic development and positioning of a positive, differentiated self-image/narrative for a target audience—especially important for careers in a virtual/social-media age; requires introspection."}, {"front": "Time management, work–life integration, and relationship management", "back": "Time management: plan, goals, deadlines, delegation, prioritize important vs urgent. Work–life integration blends identities (vs rigid “balance” separation). Relationship management: healthy workplace relationships can raise productivity/lower turnover if guided by policy and discreet managerial skill."}], "mcqs": [{"q": "Compared with traditional work–life balance, work–life integration emphasises:", "options": ["Hard separation of all domains always", "Prioritizing and blending work and personal aspects of identity", "Ignoring SMART goals", "Only competing conflict styles"], "answer": 1, "explain": "SLM frames integration as more realistic than strict separation."}, {"q": "Prioritizing “important vs urgent” is a core element of:", "options": ["Time management", "Only prejudice reduction", "Only ICEDIP incubation", "Only FAE"], "answer": 0, "explain": "Effective time use allocates right time to right tasks via prioritization."}]}]}, {"id": 4, "title": "Conflict Resolution and Negotiation", "topics": [{"id": "4.1", "title": "Meaning, Nature, Sources, Stages, and Types of Conflict", "flashcards": [{"front": "How does the SLM define conflict, and what basic types exist?", "back": "Conflict = incompatible goals, cognitions, or emotions within/between people or groups leading to opposition. Types: goal conflict, cognitive conflict, affective conflict. Conflict is common and not always negative—resolution can yield constructive problem solving."}, {"front": "Name key stages of conflict.", "back": "Latent (conditions with potential for conflict); Perceived; Felt; Manifest (open antagonistic behaviour). Sources include unclear responsibilities, poor processes, and communication problems."}], "mcqs": [{"q": "Incompatible feelings that make people angry with one another illustrate:", "options": ["Only goal conflict", "Affective conflict", "Only White-hat data", "Adjourning"], "answer": 1, "explain": "Affective conflict = incompatible emotions."}, {"q": "Conditions with potential for conflict, before open clash, are the:", "options": ["Manifest stage", "Latent stage", "Performing stage", "Unknown Johari pane"], "answer": 1, "explain": "Latent stage = underlying conditions that can spark conflict."}]}, {"id": "4.2", "title": "Impact of Conflict and Ethical Dilemmas", "flashcards": [{"front": "What impacts and ethical dilemmas arise in conflict?", "back": "Conflict can harm trust, performance, and climate—or spur creativity if managed. Ethical dilemmas include toxic culture pressures, unrealistic goals that tempt cutting corners, and misuse of company technology/time."}], "mcqs": [{"q": "Unrealistic targets that pressure people to cut ethical corners are framed as:", "options": ["A healthy Red-hat exercise", "An ethical dilemma risk in conflict/goal settings", "Proof that conflict is always good", "A sociometric isolate"], "answer": 1, "explain": "Unrealistic/conflicting goals can create ethical red flags under pressure."}]}, {"id": "4.3", "title": "Conflict Resolution Strategies and Styles", "flashcards": [{"front": "Name major conflict management styles and when to match them.", "back": "Avoiding, Accommodating, Compromising, Collaborating, Competing. Match to stakes: outcome-critical → competing; relationship + outcome → collaborate/compromise; little time → avoiding/competing/accommodating; lots of time → collaborate/compromise."}], "mcqs": [{"q": "A highly assertive, uncooperative “win at all costs” style is:", "options": ["Accommodating", "Competing", "Avoiding", "Norming"], "answer": 1, "explain": "Competing = high assertiveness, low cooperativeness."}, {"q": "When both relationship and outcome matter and time allows, prefer:", "options": ["Only competing", "Collaborating or compromising", "Only ignoring ethics", "Only FAE"], "answer": 1, "explain": "SLM matching: relationship + outcome → collaborate/compromise."}]}, {"id": "4.4", "title": "Mediation and Intercultural Conflict", "flashcards": [{"front": "What is the mediator’s role in third-party intervention?", "back": "Act as a neutral facilitator (not a judge): recognise disagreement, keep process fair, focus on interests under positions, avoid blame, and help parties generate options. Preconditions include willingness to participate and a workable setting."}, {"front": "Why does intercultural communication matter in conflict resolution?", "back": "Culture shapes norms for expressing disagreement, face-saving, and decision styles; misreading these cues can escalate conflict, so culturally aware communication supports resolution."}], "mcqs": [{"q": "A mediator should primarily:", "options": ["Take sides immediately", "Facilitate neutrally and focus on interests under positions", "Punish both parties publicly", "Replace negotiation with coercion always"], "answer": 1, "explain": "Mediator = unbiased facilitator, not partisan judge."}]}, {"id": "4.5", "title": "Negotiation: Types, Purpose, and Stages", "flashcards": [{"front": "What are major negotiation types and typical stages?", "back": "Common contrast: distributive (claim value) vs integrative (create value). Purpose includes agreements, contracts, and solving joint problems. Stages often include preparation, exchange/bargaining, closing, and implementing the agreed course of action."}], "mcqs": [{"q": "Negotiation that focuses on expanding joint gains is typically called:", "options": ["Only distributive", "Integrative", "Only latent conflict", "Only pacesetting"], "answer": 1, "explain": "Integrative negotiation seeks mutual value creation."}]}, {"id": "4.6", "title": "Four Pillars, Persuasion, Conduct, and Closing", "flashcards": [{"front": "What are the four pillars of negotiation (SLM)?", "back": "1) Build productive relationships (Comprehend–Anticipate–Connect). 2) Pursue outcomes, not points. 3) Solve problems together (shift from “your way/my way” to joint needs). 4) Focus on fairness so agreements are carried out voluntarily."}, {"front": "What matters in persuasion, conduct, and closing?", "back": "Persuade toward workable outcomes; behave respectfully and professionally; close with clear terms and a plan to implement—fairness and relationship quality affect follow-through."}], "mcqs": [{"q": "“Pursue outcomes, not points” means negotiators should:", "options": ["Win every minor argument regardless of goals", "Check whether terms actually advance desired results", "Avoid all preparation", "Ignore fairness"], "answer": 1, "explain": "Pillar 2 prioritises results over scoring debating points."}, {"q": "Comprehend–Anticipate–Connect mainly supports which pillar theme?", "options": ["Building productive relationships", "Only Black-hat criticism", "Only self-serving bias", "Only ICEDIP perspiration"], "answer": 0, "explain": "Those three steps prepare relationship-based negotiation."}]}]}, {"id": 5, "title": "Values, Ethics, Resilience and Agility", "topics": [{"id": "5.1", "title": "Values, Ethics, and Rokeach Types", "flashcards": [{"front": "What are values, and how do terminal and instrumental values differ (Rokeach)?", "back": "Values are fundamental beliefs directing desirable behaviour/end states. Terminal values = desired end outcomes (e.g., freedom, true friendship). Instrumental values = preferred modes of behaviour/means (e.g., responsibility, independence) that help reach terminal ends."}, {"front": "How do ethics and values relate?", "back": "Ethics (from Greek ethos, “character”) concerns moral right/wrong and codes of conduct. Values are guiding beliefs; ethics applies standards to behaviour. Related but distinct: values shape what is desirable; ethics judges right conduct. Organisations encode both in mission, vision, and policies."}], "mcqs": [{"q": "Rokeach terminal values represent:", "options": ["Only negotiation tactics", "Desired end outcomes", "Only sociograms", "Only cognitive errors"], "answer": 1, "explain": "Terminal = ends; instrumental = means/modes of behaviour."}, {"q": "Being responsible as a means to achieve true friendship illustrates:", "options": ["An instrumental value serving a terminal value", "Only FAE", "Only storming", "Only White-hat data"], "answer": 0, "explain": "Instrumental means help attain terminal ends."}]}, {"id": "5.2", "title": "Moral Values, Personal Values, and Core Values", "flashcards": [{"front": "Which personal and core values does Unit 5.1 emphasise?", "back": "Personal values: empathy, honesty, courage, commitment. Core values: respect, responsibility, integrity, care, and harmony. Moral values and moral icons support personality development and character building (“new self-awareness”)."}], "mcqs": [{"q": "Which set matches SLM core values?", "options": ["Respect, responsibility, integrity, care, harmony", "Only forming and storming", "Only Black and Red hats", "Only distributive and integrative"], "answer": 0, "explain": "Core values listed: respect, responsibility, integrity, care, harmony."}]}, {"id": "5.3", "title": "Resilience Overview", "flashcards": [{"front": "How is resilience defined (Luthar et al.), and how is it viewed?", "back": "Dynamic positive adaptation in the face of serious adversity—requires both adversity and positive adaptation. Viewed as trait, developable capability, and/or process. Workplace adversity may be acute crises or chronic low-intensity stress."}], "mcqs": [{"q": "Resilience requires which pair of features?", "options": ["Only high valence attitudes", "Adversity experience and positive adaptation", "Only sociometric starring", "Only autocratic control"], "answer": 1, "explain": "Both adversity and positive adaptation define resilience."}]}, {"id": "5.4", "title": "Paradox of Choice and Ellis ABC", "flashcards": [{"front": "What is the paradox of choice in the resilience unit?", "back": "Having many options can overwhelm decision-making and reduce satisfaction; managing choice is part of coping under uncertainty."}, {"front": "Explain Ellis’s ABC technique for negative feelings.", "back": "Adversity/Activating event → Beliefs about the event → Consequences (emotions and behaviours). Beliefs mediate reactions—events alone do not fully determine feelings. Distinct from attitude ABC (Affective–Behavioural–Cognitive)."}], "mcqs": [{"q": "In Ellis ABC, the “B” stands for:", "options": ["Behavioural conflict only", "Beliefs", "Blue hat", "Branding"], "answer": 1, "explain": "Adversity → Beliefs → Consequences."}, {"q": "Attitude ABC and Ellis ABC differ because Ellis ABC centres on:", "options": ["Hat colours", "How beliefs about adversity shape emotional/behavioural consequences", "Only Tuckman stages", "Only sociomatrices"], "answer": 1, "explain": "Do not confuse Rosenberg/Hovland attitude components with Ellis’s model."}]}, {"id": "5.5", "title": "Stress, Networks, and Stress Management", "flashcards": [{"front": "What factors and strategies relate to stress and resilience?", "back": "Personality/cognitive variables, family and social networks, and work demands/resources shape resilience. Stress shows models, symptoms, and consequences; management strategies include coping skills, support, and resource building."}], "mcqs": [{"q": "Family and social networks in Unit 5.2 are mainly framed as:", "options": ["Irrelevant to resilience", "Supports that can promote resilience under adversity", "Only sources of FAE", "Only negotiation pillars"], "answer": 1, "explain": "Social/family networks are resilience-promoting resources."}]}, {"id": "5.6", "title": "Agility in VUCA and Higher Performance", "flashcards": [{"front": "What does VUCA mean, and how does agility respond?", "back": "Volatility, Uncertainty, Complexity, Ambiguity. Agility is adapting methods and behaviours under these conditions. Johansen’s VUCA Prime pairs responses such as Vision to meet Volatility; resilience plus agility support higher performance in uncertainty."}], "mcqs": [{"q": "In VUCA, the “U” stands for:", "options": ["Utility", "Uncertainty", "Unanimity", "Urgency only"], "answer": 1, "explain": "VUCA = Volatility, Uncertainty, Complexity, Ambiguity."}, {"q": "Agility in a VUCA environment primarily means:", "options": ["Refusing all change", "Adapting skills and behaviours to turbulent, unpredictable conditions", "Only using competing conflict style", "Only enlarging the Hidden Johari pane"], "answer": 1, "explain": "Agility = adaptive capacity under VUCA pressures."}]}]}]};
+const bank = [];
+DATA.modules.forEach(m => {
+  m.topics.forEach(t => {
+    (t.mcqs || []).forEach((q, i) => {
+      bank.push({
+        moduleId: m.id,
+        moduleTitle: m.title,
+        topicId: t.id,
+        topicTitle: t.title,
+        q: q.q,
+        options: q.options,
+        answer: q.answer,
+        explain: q.explain || "",
+        id: m.id + "-" + t.id + "-q" + i
+      });
+    });
+  });
+});
+
+let activeModule = "all";
+let order = bank.map((_, i) => i);
+let filteredIds = order.slice();
+let index = 0;
+const state = {};
+let restoring = false;
+
+const el = id => document.getElementById(id);
+const quizProgressBar = el("quizProgressBar");
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function currentList() { return filteredIds.map(i => bank[i]); }
+
+function persistQuiz() {
+  if (restoring) return;
+  const P = window.AmityProgress || window.BS605Progress;
+  if (!P || !window.__AMITY_SYNC_READY) return;
+  P.saveSection("quiz", {
+    activeModule: String(activeModule),
+    index: index,
+    answers: { ...state },
+    filteredIds: filteredIds.slice(),
+    order: order.slice()
+  });
+}
+
+function restoreQuiz(payload) {
+  if (!payload || !payload.quiz) return;
+  restoring = true;
+  const q = payload.quiz;
+  if (q.activeModule !== undefined) activeModule = String(q.activeModule);
+  Object.keys(state).forEach(k => delete state[k]);
+  if (q.answers && typeof q.answers === "object") {
+    Object.entries(q.answers).forEach(([k, v]) => { state[k] = v; });
+  }
+  if (Array.isArray(q.order) && q.order.length === bank.length) order = q.order.slice();
+  applyFilter(true);
+  if (Array.isArray(q.filteredIds) && q.filteredIds.length) {
+    const allowed = new Set(bank.map((_, i) => i).filter(i => activeModule === "all" || String(bank[i].moduleId) === String(activeModule)));
+    filteredIds = q.filteredIds.filter(i => allowed.has(i));
+    if (!filteredIds.length) applyFilter(false);
+  }
+  if (typeof q.index === "number" && filteredIds.length) {
+    index = Math.max(0, Math.min(filteredIds.length - 1, q.index));
+  }
+  el("totalQ").textContent = filteredIds.length;
+  renderFilters();
+  renderStats();
+  renderQuestion();
+  updateScore();
+  restoring = false;
+}
+
+function applyFilter(preserveShuffle=false) {
+  const base = bank.map((q, i) => ({q, i})).filter(x => activeModule === "all" || String(x.q.moduleId) === String(activeModule)).map(x => x.i);
+  filteredIds = preserveShuffle ? order.filter(i => base.includes(i)) : base;
+  if (!preserveShuffle) order = bank.map((_, i) => i);
+  index = 0;
+  el("totalQ").textContent = filteredIds.length;
+  renderFilters();
+  renderStats();
+  renderQuestion();
+  updateScore();
+  persistQuiz();
+}
+
+function renderFilters() {
+  const box = el("moduleFilters");
+  const mods = [{id:"all", title:"All modules"}, ...DATA.modules.map(m => ({id:String(m.id), title:"Module "+m.id}))];
+  box.innerHTML = mods.map(m => `<button type="button" class="chip ${String(activeModule)===String(m.id)?"active":""}" data-m="${m.id}">${m.title}</button>`).join("");
+  box.querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {
+    activeModule = btn.dataset.m;
+    applyFilter(false);
+  }));
+}
+
+function renderStats() {
+  const box = el("moduleStats");
+  box.innerHTML = DATA.modules.map(m => {
+    const qs = bank.filter(q => q.moduleId === m.id);
+    const attempted = qs.filter(q => state[q.id] !== undefined).length;
+    const correct = qs.filter(q => state[q.id] === q.answer).length;
+    const pct = qs.length ? Math.round((attempted / qs.length) * 100) : 0;
+    return `<div class="stat"><b>${correct}/${qs.length}</b><span>Module ${m.id} · ${attempted} answered</span><div class="prog-line"><i style="width:${pct}%"></i></div></div>`;
+  }).join("");
+}
+
+function updateScore() {
+  const list = currentList();
+  const attempted = list.filter(q => state[q.id] !== undefined).length;
+  const correct = list.filter(q => state[q.id] === q.answer).length;
+  el("attempted").textContent = attempted;
+  el("scoreNow").textContent = correct;
+  el("accuracy").textContent = attempted ? Math.round((correct / attempted) * 100) + "%" : "—";
+  quizProgressBar.style.width = list.length ? ((attempted / list.length) * 100) + "%" : "0%";
+  renderStats();
+}
+
+function renderQuestion() {
+  const list = currentList();
+  if (!list.length) {
+    el("qtext").textContent = "No questions in this filter.";
+    el("options").innerHTML = "";
+    el("explain").classList.remove("show");
+    el("qnum").textContent = "";
+    return;
+  }
+  const q = list[index];
+  el("qnum").textContent = `Question ${index+1} of ${list.length}`;
+  el("qtopic").textContent = `M${q.moduleId} · ${q.topicId} · ${q.topicTitle}`;
+  el("qtext").textContent = q.q;
+  const chosen = state[q.id];
+  const letters = ["A","B","C","D"];
+  el("options").innerHTML = q.options.map((opt, i) => {
+    let cls = "opt";
+    if (chosen !== undefined) {
+      if (i === q.answer) cls += " correct";
+      else if (i === chosen) cls += " wrong";
+    }
+    return `<button type="button" class="${cls}" data-i="${i}" ${chosen!==undefined?"disabled":""}><span class="letter">${letters[i]}</span><span>${opt.replace(/^[A-D]\.\s*/, "")}</span></button>`;
+  }).join("");
+  el("options").querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {
+    state[q.id] = Number(btn.dataset.i);
+    renderQuestion();
+    updateScore();
+    persistQuiz();
+  }));
+  const explain = el("explain");
+  if (chosen !== undefined) {
+    const ok = chosen === q.answer;
+    explain.textContent = (ok ? "Correct. " : "Not quite. ") + (q.explain || "");
+    explain.classList.add("show");
+  } else {
+    explain.classList.remove("show");
+    explain.textContent = "";
+  }
+}
+
+el("nextBtn").addEventListener("click", () => {
+  const list = currentList();
+  if (!list.length) return;
+  index = (index + 1) % list.length;
+  renderQuestion();
+  persistQuiz();
+});
+el("prevBtn").addEventListener("click", () => {
+  const list = currentList();
+  if (!list.length) return;
+  index = (index - 1 + list.length) % list.length;
+  renderQuestion();
+  persistQuiz();
+});
+el("resetBtn").addEventListener("click", () => {
+  Object.keys(state).forEach(k => delete state[k]);
+  updateScore();
+  renderQuestion();
+  persistQuiz();
+});
+el("shuffleBtn").addEventListener("click", () => {
+  const base = bank.map((q, i) => i).filter(i => activeModule === "all" || String(bank[i].moduleId) === String(activeModule));
+  filteredIds = shuffle(base);
+  order = shuffle(bank.map((_, i) => i));
+  index = 0;
+  renderQuestion();
+  persistQuiz();
+});
+
+document.addEventListener("keydown", e => {
+  if (e.key === "ArrowRight") el("nextBtn").click();
+  if (e.key === "ArrowLeft") el("prevBtn").click();
+  const map = {"1":0,"2":1,"3":2,"4":3,"a":0,"b":1,"c":2,"d":3};
+  if (map[e.key.toLowerCase()] !== undefined) {
+    const btn = el("options").querySelector(`[data-i="${map[e.key.toLowerCase()]}"]`);
+    if (btn && !btn.disabled) btn.click();
+  }
+});
+
+applyFilter(false);
+
+function bootSync(restoreFn) {
+  const SUBJECT = "bs605";
+  function apply(subPayload) {
+    if (subPayload && restoreFn) restoreFn(subPayload);
+    window.__AMITY_SYNC_READY = true;
+    window.__BS605_SYNC_READY = true;
+  }
+  const P = window.AmityProgress || window.BS605Progress;
+  const UI = window.AmitySyncUI || window.BS605SyncUI;
+  if (UI) {
+    UI.mount(document.getElementById("amity-sync-root"), {
+      subjectLabel: "BS605",
+      onLoaded: (sub) => apply(sub),
+      onReady: (sub) => {
+        if (window.__AMITY_SYNC_READY) return;
+        const local = P && P.readLocalCache && P.readLocalCache();
+        const fallback = sub || (P && P.getSubjectPayload && P.getSubjectPayload(local?.payload, SUBJECT)) || null;
+        apply(fallback);
+      }
+    });
+  } else {
+    const local = P && P.readLocalCache && P.readLocalCache();
+    apply(P && P.getSubjectPayload ? P.getSubjectPayload(local?.payload, SUBJECT) : null);
+  }
+}
+
+bootSync(restoreQuiz);
+</script>
+</body>
+</html>

@@ -1,0 +1,910 @@
+{
+  "modules": [
+    {
+      "id": 1,
+      "title": "Module 1",
+      "weight": "high",
+      "root": {
+        "id": "m1_root",
+        "title": "Module 1",
+        "sub": "Research Methodology",
+        "kind": "root",
+        "path": "Research Methodology (CSIT745) → Module 1",
+        "body": "Study map for Module 1 of Research Methodology (CSIT745). Click a topic, then practise its MCQs.",
+        "points": [
+          "Built from the SLM table of contents",
+          "Orange LMR badges mark first-pass priorities"
+        ]
+      },
+      "levels": [
+        {
+          "heading": "Module 1 · part 1",
+          "nodes": [
+            {
+              "id": "1.1.1",
+              "title": "Definition and Objectives of Research",
+              "sub": "Research",
+              "kind": "a",
+              "topicId": "1.1.1",
+              "lmr": true
+            },
+            {
+              "id": "1.1.2",
+              "title": "Characteristics of Research",
+              "sub": "Research",
+              "kind": "b",
+              "topicId": "1.1.2",
+              "lmr": true
+            },
+            {
+              "id": "1.1.3",
+              "title": "Difference b/w Research Methods and Resear",
+              "sub": "Research",
+              "kind": "c",
+              "topicId": "1.1.3",
+              "lmr": true
+            },
+            {
+              "id": "1.2.1",
+              "title": "Research Criteria and Research Process",
+              "sub": "Research Process",
+              "kind": "a",
+              "topicId": "1.2.1",
+              "lmr": false
+            },
+            {
+              "id": "1.2.2",
+              "title": "Approaches of Research: Deductive, Inducti",
+              "sub": "Research Process",
+              "kind": "b",
+              "topicId": "1.2.2",
+              "lmr": false
+            },
+            {
+              "id": "1.2.3",
+              "title": "Research Proposal and Aspects",
+              "sub": "Research Process",
+              "kind": "c",
+              "topicId": "1.2.3",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 1 · part 2",
+          "nodes": [
+            {
+              "id": "1.2.4",
+              "title": "Literature Survey and Review",
+              "sub": "Research Process",
+              "kind": "a",
+              "topicId": "1.2.4",
+              "lmr": false
+            },
+            {
+              "id": "1.2.5",
+              "title": "Errors in Research",
+              "sub": "Research Process",
+              "kind": "b",
+              "topicId": "1.2.5",
+              "lmr": false
+            },
+            {
+              "id": "1.3.1",
+              "title": "Pure and Applied",
+              "sub": "Types of Research Design",
+              "kind": "c",
+              "topicId": "1.3.1",
+              "lmr": false
+            },
+            {
+              "id": "1.3.2",
+              "title": "Causal and Correlational",
+              "sub": "Types of Research Design",
+              "kind": "a",
+              "topicId": "1.3.2",
+              "lmr": false
+            },
+            {
+              "id": "1.3.3",
+              "title": "Crossectional and Longitudinal",
+              "sub": "Types of Research Design",
+              "kind": "b",
+              "topicId": "1.3.3",
+              "lmr": false
+            },
+            {
+              "id": "1.3.4",
+              "title": "Experimental, Semi-experimental and Non-Ex",
+              "sub": "Types of Research Design",
+              "kind": "c",
+              "topicId": "1.3.4",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 1 · part 3",
+          "nodes": [
+            {
+              "id": "1.3.5",
+              "title": "Descriptive and Exploratory",
+              "sub": "Types of Research Design",
+              "kind": "a",
+              "topicId": "1.3.5",
+              "lmr": false
+            },
+            {
+              "id": "1.4.1",
+              "title": "Types of Models",
+              "sub": "Research Modeling",
+              "kind": "b",
+              "topicId": "1.4.1",
+              "lmr": false
+            },
+            {
+              "id": "1.4.2",
+              "title": "Model Building and Stages",
+              "sub": "Research Modeling",
+              "kind": "c",
+              "topicId": "1.4.2",
+              "lmr": false
+            },
+            {
+              "id": "1.4.3",
+              "title": "Data Consideration and Testing",
+              "sub": "Research Modeling",
+              "kind": "a",
+              "topicId": "1.4.3",
+              "lmr": false
+            },
+            {
+              "id": "1.4.4",
+              "title": "Heuristic and Simulation Modeling",
+              "sub": "Research Modeling",
+              "kind": "b",
+              "topicId": "1.4.4",
+              "lmr": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Module 2",
+      "weight": "standard",
+      "root": {
+        "id": "m2_root",
+        "title": "Module 2",
+        "sub": "Research Methodology",
+        "kind": "root",
+        "path": "Research Methodology (CSIT745) → Module 2",
+        "body": "Study map for Module 2 of Research Methodology (CSIT745). Click a topic, then practise its MCQs.",
+        "points": [
+          "Built from the SLM table of contents",
+          "Orange LMR badges mark first-pass priorities"
+        ]
+      },
+      "levels": [
+        {
+          "heading": "Module 2 · part 1",
+          "nodes": [
+            {
+              "id": "2.1.1",
+              "title": "Introduction to Data Collection",
+              "sub": "Data Collection",
+              "kind": "a",
+              "topicId": "2.1.1",
+              "lmr": true
+            },
+            {
+              "id": "2.1.2",
+              "title": "Data Collection Methods",
+              "sub": "Data Collection",
+              "kind": "b",
+              "topicId": "2.1.2",
+              "lmr": true
+            },
+            {
+              "id": "2.1.3",
+              "title": "Tabulating and Validating Data",
+              "sub": "Data Collection",
+              "kind": "c",
+              "topicId": "2.1.3",
+              "lmr": true
+            },
+            {
+              "id": "2.2.1",
+              "title": "Steps in Constructing a Questionnaire",
+              "sub": "Questionnaire Designing",
+              "kind": "a",
+              "topicId": "2.2.1",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 2 · part 2",
+          "nodes": [
+            {
+              "id": "2.2.2",
+              "title": "Types of Questions",
+              "sub": "Questionnaire Designing",
+              "kind": "b",
+              "topicId": "2.2.2",
+              "lmr": false
+            },
+            {
+              "id": "2.2.3",
+              "title": "Format of Questionnaire",
+              "sub": "Questionnaire Designing",
+              "kind": "c",
+              "topicId": "2.2.3",
+              "lmr": false
+            },
+            {
+              "id": "2.3.1",
+              "title": "Sampling Plan",
+              "sub": "Sampling",
+              "kind": "a",
+              "topicId": "2.3.1",
+              "lmr": false
+            },
+            {
+              "id": "2.3.2",
+              "title": "Sampling Frame",
+              "sub": "Sampling",
+              "kind": "b",
+              "topicId": "2.3.2",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 2 · part 3",
+          "nodes": [
+            {
+              "id": "2.3.3",
+              "title": "Sample Selection Methods",
+              "sub": "Sampling",
+              "kind": "c",
+              "topicId": "2.3.3",
+              "lmr": false
+            },
+            {
+              "id": "2.3.4",
+              "title": "Probability Sampling Techniques",
+              "sub": "Sampling",
+              "kind": "a",
+              "topicId": "2.3.4",
+              "lmr": false
+            },
+            {
+              "id": "2.3.5",
+              "title": "Non-Probability Sampling Techniques",
+              "sub": "Sampling",
+              "kind": "b",
+              "topicId": "2.3.5",
+              "lmr": false
+            },
+            {
+              "id": "2.3.6",
+              "title": "Sampling and Non-sampling Errors",
+              "sub": "Sampling",
+              "kind": "c",
+              "topicId": "2.3.6",
+              "lmr": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Module 3",
+      "weight": "standard",
+      "root": {
+        "id": "m3_root",
+        "title": "Module 3",
+        "sub": "Research Methodology",
+        "kind": "root",
+        "path": "Research Methodology (CSIT745) → Module 3",
+        "body": "Study map for Module 3 of Research Methodology (CSIT745). Click a topic, then practise its MCQs.",
+        "points": [
+          "Built from the SLM table of contents",
+          "Orange LMR badges mark first-pass priorities"
+        ]
+      },
+      "levels": [
+        {
+          "heading": "Module 3 · part 1",
+          "nodes": [
+            {
+              "id": "3.1.1",
+              "title": "Design of Experiment: Objectives and Strat",
+              "sub": "Design of Experiments",
+              "kind": "a",
+              "topicId": "3.1.1",
+              "lmr": true
+            },
+            {
+              "id": "3.1.2",
+              "title": "Pre-Experimental Research Design",
+              "sub": "Design of Experiments",
+              "kind": "b",
+              "topicId": "3.1.2",
+              "lmr": true
+            },
+            {
+              "id": "3.1.3",
+              "title": "Quasi Experimental Research Design",
+              "sub": "Design of Experiments",
+              "kind": "c",
+              "topicId": "3.1.3",
+              "lmr": true
+            },
+            {
+              "id": "3.1.4",
+              "title": "True Experimental Research Design",
+              "sub": "Design of Experiments",
+              "kind": "a",
+              "topicId": "3.1.4",
+              "lmr": false
+            },
+            {
+              "id": "3.1.5",
+              "title": "Factorial Experimental Design",
+              "sub": "Design of Experiments",
+              "kind": "b",
+              "topicId": "3.1.5",
+              "lmr": false
+            },
+            {
+              "id": "3.1.6",
+              "title": "Designing Engineering Experiments",
+              "sub": "Design of Experiments",
+              "kind": "c",
+              "topicId": "3.1.6",
+              "lmr": false
+            },
+            {
+              "id": "3.1.7",
+              "title": "Causal Attributions",
+              "sub": "Design of Experiments",
+              "kind": "a",
+              "topicId": "3.1.7",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 3 · part 2",
+          "nodes": [
+            {
+              "id": "3.1.8",
+              "title": "Statistical Control",
+              "sub": "Design of Experiments",
+              "kind": "b",
+              "topicId": "3.1.8",
+              "lmr": false
+            },
+            {
+              "id": "3.2.1",
+              "title": "Collection of Data via Observation and Int",
+              "sub": "Data Collection",
+              "kind": "c",
+              "topicId": "3.2.1",
+              "lmr": false
+            },
+            {
+              "id": "3.2.2",
+              "title": "Collection of Data through Cases",
+              "sub": "Data Collection",
+              "kind": "a",
+              "topicId": "3.2.2",
+              "lmr": false
+            },
+            {
+              "id": "3.2.3",
+              "title": "Collection of Data through Questionnaires",
+              "sub": "Data Collection",
+              "kind": "b",
+              "topicId": "3.2.3",
+              "lmr": false
+            },
+            {
+              "id": "3.2.4",
+              "title": "Guidelines for Preparing Questionnaire",
+              "sub": "Data Collection",
+              "kind": "c",
+              "topicId": "3.2.4",
+              "lmr": false
+            },
+            {
+              "id": "3.2.5",
+              "title": "Data Editing",
+              "sub": "Data Collection",
+              "kind": "a",
+              "topicId": "3.2.5",
+              "lmr": false
+            },
+            {
+              "id": "3.2.6",
+              "title": "Data Coding Rules",
+              "sub": "Data Collection",
+              "kind": "b",
+              "topicId": "3.2.6",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 3 · part 3",
+          "nodes": [
+            {
+              "id": "3.2.7",
+              "title": "Don’t Know” Responses",
+              "sub": "Data Collection",
+              "kind": "c",
+              "topicId": "3.2.7",
+              "lmr": false
+            },
+            {
+              "id": "3.2.8",
+              "title": "Missing Data",
+              "sub": "Data Collection",
+              "kind": "a",
+              "topicId": "3.2.8",
+              "lmr": false
+            },
+            {
+              "id": "3.3.1",
+              "title": "Validity and Reliability",
+              "sub": "Basic Principles",
+              "kind": "b",
+              "topicId": "3.3.1",
+              "lmr": false
+            },
+            {
+              "id": "3.3.2",
+              "title": "Replication, Randomisation and Blocking",
+              "sub": "Basic Principles",
+              "kind": "c",
+              "topicId": "3.3.2",
+              "lmr": false
+            },
+            {
+              "id": "3.3.3",
+              "title": "Orthogonality and False Positives",
+              "sub": "Basic Principles",
+              "kind": "a",
+              "topicId": "3.3.3",
+              "lmr": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Module 4",
+      "weight": "standard",
+      "root": {
+        "id": "m4_root",
+        "title": "Module 4",
+        "sub": "Research Methodology",
+        "kind": "root",
+        "path": "Research Methodology (CSIT745) → Module 4",
+        "body": "Study map for Module 4 of Research Methodology (CSIT745). Click a topic, then practise its MCQs.",
+        "points": [
+          "Built from the SLM table of contents",
+          "Orange LMR badges mark first-pass priorities"
+        ]
+      },
+      "levels": [
+        {
+          "heading": "Module 4 · part 1",
+          "nodes": [
+            {
+              "id": "4.1.1",
+              "title": "Introduction to Hypothesis",
+              "sub": "Hypothesis Testing",
+              "kind": "a",
+              "topicId": "4.1.1",
+              "lmr": true
+            },
+            {
+              "id": "4.1.2",
+              "title": "Developing Hypothesis : Null and Alternate",
+              "sub": "Hypothesis Testing",
+              "kind": "b",
+              "topicId": "4.1.2",
+              "lmr": true
+            },
+            {
+              "id": "4.1.3",
+              "title": "Type I and Type II Error",
+              "sub": "Hypothesis Testing",
+              "kind": "c",
+              "topicId": "4.1.3",
+              "lmr": true
+            },
+            {
+              "id": "4.1.4",
+              "title": "One-Tailed and Two-tailed Test",
+              "sub": "Hypothesis Testing",
+              "kind": "a",
+              "topicId": "4.1.4",
+              "lmr": false
+            },
+            {
+              "id": "4.1.5",
+              "title": "Degree of Freedom",
+              "sub": "Hypothesis Testing",
+              "kind": "b",
+              "topicId": "4.1.5",
+              "lmr": false
+            },
+            {
+              "id": "4.1.6",
+              "title": "Confidence Intervals",
+              "sub": "Hypothesis Testing",
+              "kind": "c",
+              "topicId": "4.1.6",
+              "lmr": false
+            },
+            {
+              "id": "4.1.7",
+              "title": "Level of Significance: The Confidence Coef",
+              "sub": "Hypothesis Testing",
+              "kind": "a",
+              "topicId": "4.1.7",
+              "lmr": false
+            },
+            {
+              "id": "4.1.8",
+              "title": "Rejection and Non-rejection Regions",
+              "sub": "Hypothesis Testing",
+              "kind": "b",
+              "topicId": "4.1.8",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 4 · part 2",
+          "nodes": [
+            {
+              "id": "4.1.9",
+              "title": "Hypothesis Testing Procedure",
+              "sub": "Hypothesis Testing",
+              "kind": "c",
+              "topicId": "4.1.9",
+              "lmr": false
+            },
+            {
+              "id": "4.1.10",
+              "title": "Types of Tests",
+              "sub": "Hypothesis Testing",
+              "kind": "a",
+              "topicId": "4.1.10",
+              "lmr": false
+            },
+            {
+              "id": "4.1.11",
+              "title": "How to Select a Test",
+              "sub": "Hypothesis Testing",
+              "kind": "b",
+              "topicId": "4.1.11",
+              "lmr": false
+            },
+            {
+              "id": "4.2.1",
+              "title": "Important Parametric Tests",
+              "sub": "Parametric Test",
+              "kind": "c",
+              "topicId": "4.2.1",
+              "lmr": false
+            },
+            {
+              "id": "4.2.2",
+              "title": "Hypothesis Testing of Means: Single Popula",
+              "sub": "Parametric Test",
+              "kind": "a",
+              "topicId": "4.2.2",
+              "lmr": false
+            },
+            {
+              "id": "4.2.3",
+              "title": "Hypothesis Testing of Means: Single Popula",
+              "sub": "Parametric Test",
+              "kind": "b",
+              "topicId": "4.2.3",
+              "lmr": false
+            },
+            {
+              "id": "4.2.4",
+              "title": "Hypothesis Testing for Population Proporti",
+              "sub": "Parametric Test",
+              "kind": "c",
+              "topicId": "4.2.4",
+              "lmr": false
+            },
+            {
+              "id": "4.2.5",
+              "title": "Hypothesis Testing for Comparing a Varianc",
+              "sub": "Parametric Test",
+              "kind": "a",
+              "topicId": "4.2.5",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 4 · part 3",
+          "nodes": [
+            {
+              "id": "4.2.6",
+              "title": "Testing the Equality of Variances of Two N",
+              "sub": "Parametric Test",
+              "kind": "b",
+              "topicId": "4.2.6",
+              "lmr": false
+            },
+            {
+              "id": "4.2.7",
+              "title": "ANOVA for Fixed Effect Model",
+              "sub": "Parametric Test",
+              "kind": "c",
+              "topicId": "4.2.7",
+              "lmr": false
+            },
+            {
+              "id": "4.2.8",
+              "title": "Total, Treatment & error of Squares",
+              "sub": "Parametric Test",
+              "kind": "a",
+              "topicId": "4.2.8",
+              "lmr": false
+            },
+            {
+              "id": "4.2.9",
+              "title": "ANOVA for Random Effect Model",
+              "sub": "Parametric Test",
+              "kind": "b",
+              "topicId": "4.2.9",
+              "lmr": false
+            },
+            {
+              "id": "4.2.10",
+              "title": "Single Factor Experiment",
+              "sub": "Parametric Test",
+              "kind": "c",
+              "topicId": "4.2.10",
+              "lmr": false
+            },
+            {
+              "id": "4.2.11",
+              "title": "Model Adequacy Checking",
+              "sub": "Parametric Test",
+              "kind": "a",
+              "topicId": "4.2.11",
+              "lmr": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Module 5",
+      "weight": "standard",
+      "root": {
+        "id": "m5_root",
+        "title": "Module 5",
+        "sub": "Research Methodology",
+        "kind": "root",
+        "path": "Research Methodology (CSIT745) → Module 5",
+        "body": "Study map for Module 5 of Research Methodology (CSIT745). Click a topic, then practise its MCQs.",
+        "points": [
+          "Built from the SLM table of contents",
+          "Orange LMR badges mark first-pass priorities"
+        ]
+      },
+      "levels": [
+        {
+          "heading": "Module 5 · part 1",
+          "nodes": [
+            {
+              "id": "5.1.1",
+              "title": "Meaning of Research Report",
+              "sub": "Research Report Writing",
+              "kind": "a",
+              "topicId": "5.1.1",
+              "lmr": true
+            },
+            {
+              "id": "5.1.2",
+              "title": "Structure of Scientific Report",
+              "sub": "Research Report Writing",
+              "kind": "b",
+              "topicId": "5.1.2",
+              "lmr": true
+            },
+            {
+              "id": "5.1.3",
+              "title": "Components of Scientific Report",
+              "sub": "Research Report Writing",
+              "kind": "c",
+              "topicId": "5.1.3",
+              "lmr": true
+            },
+            {
+              "id": "5.1.4",
+              "title": "Types of Reports",
+              "sub": "Research Report Writing",
+              "kind": "a",
+              "topicId": "5.1.4",
+              "lmr": false
+            },
+            {
+              "id": "5.1.5",
+              "title": "Steps in Report Writing",
+              "sub": "Research Report Writing",
+              "kind": "b",
+              "topicId": "5.1.5",
+              "lmr": false
+            },
+            {
+              "id": "5.1.6",
+              "title": "Format and Writing Style",
+              "sub": "Research Report Writing",
+              "kind": "c",
+              "topicId": "5.1.6",
+              "lmr": false
+            },
+            {
+              "id": "5.1.7",
+              "title": "Illustrations and Tables",
+              "sub": "Research Report Writing",
+              "kind": "a",
+              "topicId": "5.1.7",
+              "lmr": false
+            },
+            {
+              "id": "5.1.8",
+              "title": "Citing and Referencing Sources",
+              "sub": "Research Report Writing",
+              "kind": "b",
+              "topicId": "5.1.8",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 5 · part 2",
+          "nodes": [
+            {
+              "id": "5.1.9",
+              "title": "Footnotes",
+              "sub": "Research Report Writing",
+              "kind": "c",
+              "topicId": "5.1.9",
+              "lmr": false
+            },
+            {
+              "id": "5.2.1",
+              "title": "Oral Presentation",
+              "sub": "Presentation",
+              "kind": "a",
+              "topicId": "5.2.1",
+              "lmr": false
+            },
+            {
+              "id": "5.2.2",
+              "title": "Making Presentation",
+              "sub": "Presentation",
+              "kind": "b",
+              "topicId": "5.2.2",
+              "lmr": false
+            },
+            {
+              "id": "5.2.3",
+              "title": "Use of Visual Aids",
+              "sub": "Presentation",
+              "kind": "c",
+              "topicId": "5.2.3",
+              "lmr": false
+            },
+            {
+              "id": "5.2.4",
+              "title": "Importance of Effective Communication",
+              "sub": "Presentation",
+              "kind": "a",
+              "topicId": "5.2.4",
+              "lmr": false
+            },
+            {
+              "id": "5.2.5",
+              "title": "Convention and Strategies of Authenticatio",
+              "sub": "Presentation",
+              "kind": "b",
+              "topicId": "5.2.5",
+              "lmr": false
+            },
+            {
+              "id": "5.3.1",
+              "title": "Preparing Research Papers for Journals",
+              "sub": "Writing a Research Paper",
+              "kind": "c",
+              "topicId": "5.3.1",
+              "lmr": false
+            },
+            {
+              "id": "5.3.2",
+              "title": "Design of Paper Using Template",
+              "sub": "Writing a Research Paper",
+              "kind": "a",
+              "topicId": "5.3.2",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 5 · part 3",
+          "nodes": [
+            {
+              "id": "5.3.3",
+              "title": "Calculation of Impact Factor of a Journal",
+              "sub": "Writing a Research Paper",
+              "kind": "b",
+              "topicId": "5.3.3",
+              "lmr": false
+            },
+            {
+              "id": "5.3.4",
+              "title": "Citation Index",
+              "sub": "Writing a Research Paper",
+              "kind": "c",
+              "topicId": "5.3.4",
+              "lmr": false
+            },
+            {
+              "id": "5.3.5",
+              "title": "ISBN and ISSN",
+              "sub": "Writing a Research Paper",
+              "kind": "a",
+              "topicId": "5.3.5",
+              "lmr": false
+            },
+            {
+              "id": "5.4.1",
+              "title": "Identifying and Defining Problem",
+              "sub": "Planning a Project Proposal",
+              "kind": "b",
+              "topicId": "5.4.1",
+              "lmr": false
+            },
+            {
+              "id": "5.4.2",
+              "title": "Research Problem Aspects and Consideration",
+              "sub": "Planning a Project Proposal",
+              "kind": "c",
+              "topicId": "5.4.2",
+              "lmr": false
+            },
+            {
+              "id": "5.4.3",
+              "title": "Research Plan",
+              "sub": "Planning a Project Proposal",
+              "kind": "a",
+              "topicId": "5.4.3",
+              "lmr": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

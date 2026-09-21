@@ -1,0 +1,2585 @@
+WEBVTT
+
+1
+00:00:01.440 --> 00:00:05.551
+So I can see the folks are joining. A very good morning, class.
+
+2
+00:00:08.400 --> 00:00:12.270
+And give me a twin check if you guys can hear me loud and clear.
+
+3
+00:00:17.370 --> 00:00:21.180
+All right. Yes, sir, you are clear. Okay, great.
+
+4
+00:00:22.320 --> 00:00:24.329
+Let me just bring up my screen.
+
+5
+00:00:32.911 --> 00:00:36.990
+So in today's session, we're going to cover a very interesting concept, that is
+
+6
+00:00:37.050 --> 00:00:42.510
+trees and graphs. So I hope that most of you must be familiar with these
+
+7
+00:00:42.570 --> 00:00:45.720
+terminology, like trees, what are trees, what are graphs.
+
+8
+00:00:45.930 --> 00:00:48.389
+Okay, you might have studied all these things in
+
+9
+00:00:50.100 --> 00:00:54.151
+your class 11 to 12 as well, okay, in some sort of mathematics.
+
+10
+00:00:54.660 --> 00:00:57.720
+Okay, but we will cover it, how the trees data structure.
+
+11
+00:00:57.810 --> 00:00:59.700
+So remember in the first class we discussed
+
+12
+00:01:01.080 --> 00:01:02.700
+what do you mean by data structure,
+
+13
+00:01:04.231 --> 00:01:06.180
+and what are the different type of data structure.
+
+14
+00:01:06.240 --> 00:01:09.390
+So we discussed that there are two types, primitive and non-primitive.
+
+15
+00:01:09.990 --> 00:01:13.560
+And then we also discussed that there are further classifications of the data
+
+16
+00:01:13.620 --> 00:01:17.640
+structures like the linear data structures and non-linear data structure.
+
+17
+00:01:17.940 --> 00:01:22.711
+So linear data structure are those data structure where they are organizing the
+
+18
+00:01:22.740 --> 00:01:26.340
+data in a linear way, or you can say in a sequential manner.
+
+19
+00:01:27.000 --> 00:01:30.900
+But the non-linear data structure are those data structure which are organizing the
+
+20
+00:01:30.961 --> 00:01:34.470
+data in the form of a hierarchy, or you can say in the form of a tree.
+
+21
+00:01:35.610 --> 00:01:41.280
+So both trees and graphs will come under the non-linear data structure. Okay?
+
+22
+00:01:41.641 --> 00:01:45.750
+And the major advantage of the non-linear data structure, can any one of you tell
+
+23
+00:01:45.780 --> 00:01:48.990
+me what is the major advantage of using the non-linear data structure?
+
+24
+00:01:50.910 --> 00:01:51.391
+Any idea?
+
+25
+00:01:54.030 --> 00:01:54.750
+Amit, Ajima,
+
+26
+00:01:56.490 --> 00:02:01.891
+Shefta, any idea why we use the non-linear data structure? Any major advantage?
+
+27
+00:02:04.920 --> 00:02:10.440
+The only advantage we have is it helps in searching the data faster.
+
+28
+00:02:10.680 --> 00:02:13.351
+The faster searching is always there in
+
+29
+00:02:14.940 --> 00:02:20.310
+the non-linear. And same if you go with the linear part, it will take some time.
+
+30
+00:02:20.700 --> 00:02:26.460
+So from the searching perspective, always prefer the non-linear data structures.
+
+31
+00:02:28.351 --> 00:02:31.230
+With that, let me start our today's lecture.
+
+32
+00:02:31.290 --> 00:02:35.700
+So we will start the basic definition of tree. What do you mean by tree?
+
+33
+00:02:38.040 --> 00:02:40.320
+Any idea? What is tree?
+
+34
+00:02:42.780 --> 00:02:46.950
+We have already discussed tree are the non-linear data structure.
+
+35
+00:02:48.060 --> 00:02:53.400
+Okay, and then each tree consists of nodes and edges.
+
+36
+00:02:54.210 --> 00:02:57.510
+I hope everyone knows. Okay, everyone has seen the tree.
+
+37
+00:02:58.260 --> 00:02:59.101
+So trees are the
+
+38
+00:03:00.660 --> 00:03:05.340
+basic data structure, which are used to represent the hierarchical relationship.
+
+39
+00:03:05.910 --> 00:03:07.380
+Okay, so every tree represent,
+
+40
+00:03:08.760 --> 00:03:11.580
+if you look at every tree, you will find out the nodes.
+
+41
+00:03:13.139 --> 00:03:16.740
+Okay? The nodes and everything. So here you can see the nodes and edges.
+
+42
+00:03:17.550 --> 00:03:23.430
+So each individual. This is called, can someone tell me, what is the name of this
+
+43
+00:03:23.490 --> 00:03:23.760
+node?
+
+44
+00:03:28.890 --> 00:03:32.701
+This is called root node. Why? Because this is the starting.
+
+45
+00:03:36.150 --> 00:03:39.390
+Okay, Ashima, you can write down into the chat. Okay.
+
+46
+00:03:39.480 --> 00:03:43.050
+I have the chat window open, so you can write down into the chat.
+
+47
+00:03:44.220 --> 00:03:47.460
+Okay, so the first node will be called as the root node.
+
+48
+00:03:48.630 --> 00:03:50.520
+Okay, now the bottom node,
+
+49
+00:03:52.440 --> 00:03:54.630
+any idea what are these nodes called?
+
+50
+00:03:57.060 --> 00:03:58.951
+These nodes are called leaf node. Correct, Amit.
+
+51
+00:03:59.340 --> 00:04:04.531
+These nodes will be called as leaf node, and the rest, everything will be called as
+
+52
+00:04:04.921 --> 00:04:08.340
+nodes. The intermediate nodes. Okay, similarly,
+
+53
+00:04:10.320 --> 00:04:14.310
+this is called the parent. Okay, this is called the children node.
+
+54
+00:04:15.180 --> 00:04:20.490
+So I hope this is clear. Okay. Again, this is a parent, these are the children.
+
+55
+00:04:21.210 --> 00:04:21.930
+This is a parent,
+
+56
+00:04:23.160 --> 00:04:28.980
+these are the childrens we have. So this is how the trees are represented
+
+57
+00:04:30.210 --> 00:04:31.770
+with nodes and edges.
+
+58
+00:04:38.490 --> 00:04:39.451
+Moving on to the next.
+
+59
+00:04:42.150 --> 00:04:45.000
+So there are some applications of tree we have.
+
+60
+00:04:45.060 --> 00:04:49.201
+Okay, so, you might have seen if you're working in an organizations.
+
+61
+00:04:49.440 --> 00:04:55.320
+Okay, so usually we use trees to represent the organization chart, just
+
+62
+00:04:55.380 --> 00:04:58.110
+like the CSO will be on the top, and then,
+
+63
+00:04:59.460 --> 00:05:03.420
+the director, assistant director, VP, and everything will be at the bottom.
+
+64
+00:05:04.020 --> 00:05:08.880
+And then under the VP and everything, there will be a certain different hierarchy.
+
+65
+00:05:09.330 --> 00:05:13.680
+So again, if you have to represent the organization chart where you have to set up
+
+66
+00:05:13.740 --> 00:05:18.750
+the relationship, you will use trees. Similarly, the expression trees.
+
+67
+00:05:19.140 --> 00:05:24.180
+Okay, when we were solving the stacks and queues, we always use the expression
+
+68
+00:05:24.210 --> 00:05:24.540
+trees.
+
+69
+00:05:25.890 --> 00:05:31.620
+Okay, so these are some basic applications where the tree data section is used.
+
+70
+00:05:34.980 --> 00:05:37.860
+Now, coming to the terminology of the tree.
+
+71
+00:05:38.430 --> 00:05:38.640
+Okay,
+
+72
+00:05:42.960 --> 00:05:47.730
+so here you can see, as I mentioned, the first node will be called as the root of
+
+73
+00:05:47.760 --> 00:05:48.210
+the tree.
+
+74
+00:05:49.591 --> 00:05:52.201
+The last node will be called as the leave of the tree.
+
+75
+00:05:53.130 --> 00:05:58.050
+This will be called the parent of V, and V will be called as the child of the U.
+
+76
+00:05:59.970 --> 00:06:00.210
+Okay?
+
+77
+00:06:02.940 --> 00:06:07.531
+In every tree, there will be exactly one node, which will be called as the root.
+
+78
+00:06:08.730 --> 00:06:13.110
+Okay, so you can't have more than one root in a tree. Okay, always remember.
+
+79
+00:06:15.180 --> 00:06:19.980
+And then any node which is not having any children will be called as leaves.
+
+80
+00:06:20.430 --> 00:06:25.110
+Okay, so again, this can't be a leaf. Why? Because this node have children.
+
+81
+00:06:25.831 --> 00:06:28.230
+But again, if you look at this node,
+
+82
+00:06:29.520 --> 00:06:31.951
+these nodes will be called as leaves. Why?
+
+83
+00:06:32.009 --> 00:06:34.230
+Because they don't have any children as such.
+
+84
+00:06:37.081 --> 00:06:39.660
+Okay, now moving on to the next.
+
+85
+00:06:46.710 --> 00:06:50.670
+I hope you guys are clear with the concept of internal nodes and leaves.
+
+86
+00:06:52.050 --> 00:06:57.180
+Okay, any node between root node and leaf node will be called as the internal
+
+87
+00:06:57.240 --> 00:06:59.100
+nodes. Okay, and then,
+
+88
+00:07:02.220 --> 00:07:04.470
+we have already discussed, these are called as leaves.
+
+89
+00:07:10.290 --> 00:07:10.500
+Okay,
+
+90
+00:07:12.151 --> 00:07:13.920
+are you clear with the concept of siblings?
+
+91
+00:07:15.630 --> 00:07:20.070
+Sibling you all know, right? If both nodes have the same children.
+
+92
+00:07:21.540 --> 00:07:25.591
+Sorry, same parent. So here you can see the V and W.
+
+93
+00:07:25.740 --> 00:07:31.380
+V and W are having the same parent, U. So in that case, V and W will be sibling.
+
+94
+00:07:34.500 --> 00:07:38.401
+Okay, so we also have the concept of ancestor and descendant.
+
+95
+00:07:40.201 --> 00:07:43.410
+Amrita, is a root node is an internal node? No.
+
+96
+00:07:43.770 --> 00:07:45.390
+A root node can't be an internal node.
+
+97
+00:07:46.740 --> 00:07:52.530
+Okay, root will be the first node. Internal means anything between root and
+
+98
+00:07:52.591 --> 00:07:54.690
+leaves will be called as internal node.
+
+99
+00:07:57.210 --> 00:08:00.780
+Okay, now coming to the ancestor and descendant.
+
+100
+00:08:00.841 --> 00:08:04.020
+So ancestor means, for example, the parent node.
+
+101
+00:08:04.230 --> 00:08:07.740
+So whatever node that comes first will be called as ancestor.
+
+102
+00:08:09.331 --> 00:08:11.880
+So U and V are the ancestor of X.
+
+103
+00:08:15.870 --> 00:08:18.510
+U and V. Why? Because they come before X.
+
+104
+00:08:19.561 --> 00:08:23.040
+So that is why we are saying U and V are the ancestor of X.
+
+105
+00:08:23.850 --> 00:08:28.350
+Similarly, V and X are the descendant of U. Why?
+
+106
+00:08:28.410 --> 00:08:32.100
+Because both V and X came after U.
+
+107
+00:08:34.170 --> 00:08:37.201
+So is it clear, the concept of ancestor and descendant?
+
+108
+00:08:39.120 --> 00:08:44.190
+Ancestor means whoever comes first, descendant means whoever comes after that.
+
+109
+00:08:50.190 --> 00:08:50.550
+Clear?
+
+110
+00:08:52.980 --> 00:08:53.250
+All right.
+
+111
+00:08:58.950 --> 00:09:00.510
+Moving on to the fourth terminology.
+
+112
+00:09:01.590 --> 00:09:06.690
+So tree and subtree, I hope you guys are clear with the concept of subtree.
+
+113
+00:09:07.260 --> 00:09:11.010
+Any tree which is derived from the main tree will be called as subtree
+
+114
+00:09:12.972 --> 00:09:16.092
+Okay. So if you look here, we have this complete tree.
+
+115
+00:09:16.602 --> 00:09:18.852
+Okay, this is the entire tree we have.
+
+116
+00:09:19.152 --> 00:09:23.622
+Now, what we did, we just took out the specific tree.
+
+117
+00:09:24.942 --> 00:09:27.972
+Okay, so this will be called as the subtree.
+
+118
+00:09:28.842 --> 00:09:34.122
+Again, a subtree will also consist of the root node, the children node,
+
+119
+00:09:34.962 --> 00:09:36.133
+or you can say the leaf node.
+
+120
+00:09:40.092 --> 00:09:42.972
+Is that clear to everyone, the concept of?
+
+121
+00:09:46.633 --> 00:09:46.902
+Alright.
+
+122
+00:09:53.502 --> 00:09:57.702
+Now, there's always a question in the exam that how you can find out the height of
+
+123
+00:09:57.732 --> 00:10:02.082
+the tree. Okay, so can any one of you tell me how to calculate the height?
+
+124
+00:10:07.002 --> 00:10:08.472
+How to calculate the height of the tree?
+
+125
+00:10:09.613 --> 00:10:12.972
+Okay, so let me give you a very basic example.
+
+126
+00:10:13.422 --> 00:10:18.133
+So what you have to do is whenever you have to find out the level and the height,
+
+127
+00:10:19.122 --> 00:10:21.042
+okay, so what you can do is
+
+128
+00:10:22.902 --> 00:10:27.942
+just count the number of edges from root to
+
+129
+00:10:28.962 --> 00:10:29.292
+leaf.
+
+130
+00:10:31.212 --> 00:10:37.152
+Okay, so we already know this is the root node and these are the leaf
+
+131
+00:10:37.212 --> 00:10:43.152
+node. Now, if I have to traverse from root to leaf, how many edges I have
+
+132
+00:10:43.212 --> 00:10:43.782
+to traverse?
+
+133
+00:10:45.012 --> 00:10:49.961
+Just count. Again, this will be a leaf node. This can also be a leaf node.
+
+134
+00:10:50.142 --> 00:10:52.752
+But what is the maximum number of edges I have to traverse?
+
+135
+00:10:54.522 --> 00:10:54.732
+One,
+
+136
+00:10:56.232 --> 00:10:58.332
+two, and three.
+
+137
+00:11:00.282 --> 00:11:02.172
+So always the height will be three.
+
+138
+00:11:09.942 --> 00:11:10.212
+Clear?
+
+139
+00:11:13.902 --> 00:11:14.952
+And same with the level.
+
+140
+00:11:16.752 --> 00:11:18.162
+We always start with the level zero.
+
+141
+00:11:18.912 --> 00:11:19.482
+Level zero,
+
+142
+00:11:20.682 --> 00:11:24.162
+level one, level two, and level three.
+
+143
+00:11:35.232 --> 00:11:39.642
+Okay, so now if I have to traverse till N, then one, two, and three.
+
+144
+00:11:41.172 --> 00:11:42.642
+Okay? This will be the height.
+
+145
+00:11:45.492 --> 00:11:48.162
+Okay, let me give you an example so that you can understand it better.
+
+146
+00:11:56.292 --> 00:11:58.332
+Binary tree. Binary tree, you are clear?
+
+147
+00:11:59.232 --> 00:12:02.802
+Any tree where every node has at most two children.
+
+148
+00:12:04.182 --> 00:12:09.282
+Okay, binary means two. So if every node has at most two children, it will be
+
+149
+00:12:09.342 --> 00:12:13.782
+called as the binary tree. So there will be a left child, there will be a right
+
+150
+00:12:13.842 --> 00:12:14.142
+child.
+
+151
+00:12:17.052 --> 00:12:20.682
+So can we say that WZ is a binary tree?
+
+152
+00:12:25.722 --> 00:12:25.932
+No.
+
+153
+00:12:27.701 --> 00:12:32.022
+Why? Because a W only has one children,
+
+154
+00:12:33.552 --> 00:12:38.682
+so it can't be a binary tree. Can we say U is a binary tree,
+
+155
+00:12:39.192 --> 00:12:43.422
+UXY? Yes. Why? Because it is having
+
+156
+00:12:44.742 --> 00:12:48.762
+two childrens. That is why it is called as the binary tree.
+
+157
+00:12:58.062 --> 00:13:03.852
+Now, what is full binary tree? A full binary tree is that tree where every node
+
+158
+00:13:03.882 --> 00:13:06.553
+has two children, except the leaf node.
+
+159
+00:13:09.282 --> 00:13:11.772
+Okay, so here you can see every node has two.
+
+160
+00:13:12.972 --> 00:13:13.602
+Only the leaf
+
+161
+00:13:14.983 --> 00:13:17.803
+nodes are those node where we don't have any children.
+
+162
+00:13:19.062 --> 00:13:22.062
+So that will be called as the full binary tree.
+
+163
+00:13:29.502 --> 00:13:29.833
+All right.
+
+164
+00:13:31.782 --> 00:13:35.292
+Now, property of-- Again, from the exam standpoint, this is good.
+
+165
+00:13:35.532 --> 00:13:35.922
+This is
+
+166
+00:13:37.242 --> 00:13:43.032
+a very good question. So, in the exam, what I expected that you will be given a
+
+167
+00:13:43.212 --> 00:13:47.022
+tree and then they will ask you, okay, that how to calculate the total number of
+
+168
+00:13:47.113 --> 00:13:51.553
+nodes, how many leaf nodes, and how many internal nodes.
+
+169
+00:13:52.333 --> 00:13:53.502
+Okay, so this is the formula.
+
+170
+00:13:55.242 --> 00:13:58.152
+Okay, so you guys can take a screenshot, or you can note it somewhere.
+
+171
+00:13:58.662 --> 00:14:02.952
+Okay, this is the formula through which how you can calculate the total number of
+
+172
+00:14:03.042 --> 00:14:04.632
+nodes, where H is the...
+
+173
+00:14:05.952 --> 00:14:07.932
+What is H? H is the height of the tree.
+
+174
+00:14:10.182 --> 00:14:11.892
+Now, let's take an example of this tree.
+
+175
+00:14:13.272 --> 00:14:16.842
+Suppose we have this tree. Can any one of you tell me what is the height here?
+
+176
+00:14:20.833 --> 00:14:22.182
+What is the value of H here?
+
+177
+00:14:27.702 --> 00:14:30.432
+Okay, Ashima's saying three. Amitabh's saying two.
+
+178
+00:14:34.512 --> 00:14:35.053
+What else?
+
+179
+00:14:37.812 --> 00:14:38.502
+Any other number?
+
+180
+00:14:41.382 --> 00:14:45.162
+Understand the concept which I told you
+
+181
+00:14:46.363 --> 00:14:47.382
+two slides before.
+
+182
+00:14:49.092 --> 00:14:50.833
+You have to traverse the edges,
+
+183
+00:14:52.512 --> 00:14:54.462
+edges from root to leaf.
+
+184
+00:14:55.812 --> 00:14:58.662
+Okay, so this is the root. This is the leaf.
+
+185
+00:14:59.233 --> 00:15:03.312
+If I have to go from root to leaf, how many edges I have to traverse?
+
+186
+00:15:04.363 --> 00:15:04.542
+One,
+
+187
+00:15:05.922 --> 00:15:06.342
+two.
+
+188
+00:15:08.833 --> 00:15:09.462
+Is that clear
+
+189
+00:15:11.113 --> 00:15:12.192
+why the height is two?
+
+190
+00:15:16.363 --> 00:15:17.382
+Yes, no, maybe?
+
+191
+00:15:22.422 --> 00:15:28.123
+Okay. So in that case, the height of this tree will be two.
+
+192
+00:15:28.692 --> 00:15:33.312
+Now, apply the formula here. If I have to find out what are the total number of
+
+193
+00:15:33.342 --> 00:15:38.712
+nodes we have. So if I put H is equal to two here, so
+
+194
+00:15:38.863 --> 00:15:41.623
+two to the power of two plus one, that is three.
+
+195
+00:15:41.863 --> 00:15:45.822
+Two to the power of three is eight. Eight minus one, seven.
+
+196
+00:15:46.632 --> 00:15:50.562
+Just calculate how many. So there will be seven number of nodes, one, two, three,
+
+197
+00:15:50.682 --> 00:15:52.392
+four, five, six, seven. Yes.
+
+198
+00:15:54.012 --> 00:15:57.402
+Same, leaf node. We know the value of H is two.
+
+199
+00:15:57.642 --> 00:16:00.402
+Two to the power of two, that is four. One, two, three, four.
+
+200
+00:16:00.462 --> 00:16:06.192
+There will be four nodes. Now, coming to the internal nodes, we know the value of H
+
+201
+00:16:06.252 --> 00:16:10.002
+is two. Two to the power of two, that is four minus one, three.
+
+202
+00:16:10.333 --> 00:16:11.742
+There will be three internal nodes.
+
+203
+00:16:14.592 --> 00:16:18.282
+Now, can anyone of you tell me, what are the internal nodes we have?
+
+204
+00:16:23.803 --> 00:16:24.373
+This one,
+
+205
+00:16:25.962 --> 00:16:26.412
+this one,
+
+206
+00:16:28.782 --> 00:16:29.022
+and
+
+207
+00:16:31.363 --> 00:16:35.142
+I think there is something wrong here. There's only two nodes.
+
+208
+00:16:37.032 --> 00:16:39.912
+Yeah. Only two internal nodes we have.
+
+209
+00:16:50.412 --> 00:16:56.352
+So we have two internal nodes, four leaf node, and seven number of total nodes.
+
+210
+00:17:04.722 --> 00:17:04.962
+Okay?
+
+211
+00:17:10.752 --> 00:17:12.462
+Internal nodes are those nodes
+
+212
+00:17:14.502 --> 00:17:17.232
+where they have at least one children.
+
+213
+00:17:20.863 --> 00:17:23.892
+Okay, so that is why we are not considering these are the internal nodes.
+
+214
+00:17:25.842 --> 00:17:29.352
+So this node has one children, this node has at least one children.
+
+215
+00:17:29.832 --> 00:17:31.152
+And again, this is the root node.
+
+216
+00:17:54.912 --> 00:18:00.432
+Again, a specific algorithm that whenever you have the binary tree of height H,
+
+217
+00:18:01.092 --> 00:18:05.742
+the number of nodes will always be less than two to the power H minus one.
+
+218
+00:18:07.992 --> 00:18:09.852
+Okay, so you just have to remember the formula.
+
+219
+00:18:10.392 --> 00:18:13.812
+You cannot have more nodes than a full binary tree of height H.
+
+220
+00:18:18.960 --> 00:18:19.230
+Okay.
+
+221
+00:18:20.940 --> 00:18:25.560
+Again, the minimum height of the binary tree, again, you can write down the
+
+222
+00:18:25.621 --> 00:18:31.410
+formula. The minimum height of the binary tree, which is having N nodes, is log N
+
+223
+00:18:31.440 --> 00:18:32.010
+plus one.
+
+224
+00:18:33.390 --> 00:18:36.480
+Okay, nobody's asking you that, okay, derive this formula.
+
+225
+00:18:37.080 --> 00:18:41.430
+Nobody will ask you, but it can be an MCQ question.
+
+226
+00:18:44.040 --> 00:18:48.510
+That's how you can calculate the minimum height of any binary tree.
+
+227
+00:18:56.400 --> 00:19:00.630
+Okay, binary tree ADT is not in your syllabus, so we are skipping that.
+
+228
+00:19:02.730 --> 00:19:07.500
+Okay. Again, this is how the binary tree gets represented in the form of an array.
+
+229
+00:19:09.390 --> 00:19:14.190
+So, let me show you how it is done. Suppose you have this binary tree.
+
+230
+00:19:15.330 --> 00:19:20.670
+Okay, you will create a table. You will start with a root node, and then you will
+
+231
+00:19:20.730 --> 00:19:26.250
+keep on moving. So first, left child will be one, right child will be two,
+
+232
+00:19:26.730 --> 00:19:28.440
+and then you have to keep on the sequence.
+
+233
+00:19:29.010 --> 00:19:32.551
+Now, again, you came back to the left child.
+
+234
+00:19:32.850 --> 00:19:34.980
+Again, for the left child, we have the
+
+235
+00:19:36.450 --> 00:19:39.871
+A is the left child of B, so you will mark it as three.
+
+236
+00:19:40.590 --> 00:19:44.460
+Again, right child is C, we will mark it as four.
+
+237
+00:19:44.790 --> 00:19:50.130
+Now, we will move to the F, because B is already done. Now we will move to the F.
+
+238
+00:19:50.580 --> 00:19:55.680
+In the F, we have the left child, that is five, but we don't have any right child.
+
+239
+00:19:55.740 --> 00:19:59.220
+So whenever you would not have any right child, you will mark it as minus one.
+
+240
+00:20:01.650 --> 00:20:06.960
+Okay. Now, coming to the node A. Again, we don't have any left children or right
+
+241
+00:20:07.020 --> 00:20:09.600
+children, so we will mark it as minus one, minus one.
+
+242
+00:20:09.840 --> 00:20:14.700
+So this is how the binary tree gets represented in the form of array.
+
+243
+00:20:18.301 --> 00:20:20.280
+Okay, this is our ADT representation.
+
+244
+00:20:30.960 --> 00:20:34.290
+Amitha, you want me to repeat that, this array-based representation?
+
+245
+00:20:35.670 --> 00:20:35.910
+Okay.
+
+246
+00:20:37.140 --> 00:20:42.780
+So, yeah. Just look at this tree here. So we have this binary tree.
+
+247
+00:20:45.210 --> 00:20:50.280
+Okay, just create a table here. Okay, starting with node, whatever nodes we have.
+
+248
+00:20:51.000 --> 00:20:52.740
+Okay, start with a root node.
+
+249
+00:20:54.600 --> 00:20:59.910
+Okay, so root will always be zero. Okay, we will always assign the value of root as
+
+250
+00:20:59.940 --> 00:21:05.460
+zero. Now take the first node. Okay, there will be two column, left child and right
+
+251
+00:21:05.520 --> 00:21:10.080
+child. Do we have the left child of D? Yes, no?
+
+252
+00:21:13.830 --> 00:21:17.190
+Then mark it as one. Okay, always follow the sequence.
+
+253
+00:21:17.580 --> 00:21:20.280
+Then, do we have the right child of D? Yes.
+
+254
+00:21:20.670 --> 00:21:20.850
+Then
+
+255
+00:21:22.111 --> 00:21:26.880
+increment the value. Yes. Now, again, take the left subtree.
+
+256
+00:21:27.240 --> 00:21:31.289
+Start coming to the node B. In the B, we also have the left child.
+
+257
+00:21:32.160 --> 00:21:37.290
+Increment the sequence. Three. Then, do we have the right child of B? Yes.
+
+258
+00:21:37.680 --> 00:21:42.960
+Increment the value. Four. Now, left subtree is done. Move on to the right subtree.
+
+259
+00:21:43.590 --> 00:21:48.810
+Coming to the node F, do we have the left child? Yes.
+
+260
+00:21:49.290 --> 00:21:55.230
+Then increment the value, five. Now, in the F, do we have the right child of
+
+261
+00:21:55.440 --> 00:21:55.500
+F?
+
+262
+00:21:57.180 --> 00:22:01.710
+No. So whenever you don't have any child, you will mark it as minus one.
+
+263
+00:22:05.520 --> 00:22:07.260
+Okay. Now, coming to the A.
+
+264
+00:22:08.820 --> 00:22:12.930
+In A, we neither have the left nor we have the right child.
+
+265
+00:22:12.990 --> 00:22:16.111
+So in that case, both will be minus one, minus one.
+
+266
+00:22:18.480 --> 00:22:20.580
+Yeah, Amit, so root will always start from zero,
+
+267
+00:22:22.260 --> 00:22:23.640
+and then you have to increment the value.
+
+268
+00:22:32.460 --> 00:22:36.030
+Okay, so this is how the array-based representation of tree works.
+
+269
+00:22:36.301 --> 00:22:39.930
+When someone asked that, can you represent a tree in the form of array?
+
+270
+00:22:40.230 --> 00:22:42.690
+Yes, this is how that tree get represented.
+
+271
+00:22:51.810 --> 00:22:55.350
+Okay. Again, this is also a reference-based representation, but
+
+272
+00:22:57.240 --> 00:22:59.940
+nothing important from the exam standpoint.
+
+273
+00:23:02.551 --> 00:23:06.871
+Now, moving on to another thing, that's another important topic, that is the tree
+
+274
+00:23:06.930 --> 00:23:11.611
+traversal. I hope you already know the meaning of traversal.
+
+275
+00:23:14.460 --> 00:23:16.740
+You already know the meaning of traversal?
+
+276
+00:23:27.480 --> 00:23:31.290
+Tree traversal means that you are moving from one node to another node.
+
+277
+00:23:34.080 --> 00:23:37.830
+Okay. So for example, we will start with the root node, and then we will cover each
+
+278
+00:23:37.890 --> 00:23:43.410
+and every node. So similarly, in the binary tree also, we have this
+
+279
+00:23:43.500 --> 00:23:49.260
+traversal technique. Okay, so we have this, the preorder, inorder,
+
+280
+00:23:49.530 --> 00:23:54.121
+and postorder. I hope you all have heard about these terminology, preorder
+
+281
+00:23:54.180 --> 00:23:57.090
+traversal, inorder traversal, postorder traversal.
+
+282
+00:23:58.440 --> 00:24:03.871
+Okay? So again, these are the traversal technique we have. Now, let me show you.
+
+283
+00:24:05.670 --> 00:24:07.230
+So, preorder means
+
+284
+00:24:08.730 --> 00:24:09.480
+you will visit
+
+285
+00:24:10.770 --> 00:24:11.700
+the left child.
+
+286
+00:24:13.680 --> 00:24:14.371
+Okay, then
+
+287
+00:24:16.980 --> 00:24:19.890
+can any one of you tell me what we do in the
+
+288
+00:24:21.480 --> 00:24:22.080
+preorder?
+
+289
+00:24:26.790 --> 00:24:27.750
+Pre means before.
+
+290
+00:24:30.690 --> 00:24:31.170
+So first
+
+291
+00:24:33.750 --> 00:24:36.210
+node, then left, and then right.
+
+292
+00:24:37.560 --> 00:24:41.730
+Okay. N, L, and R. Okay, let me write it down somewhere.
+
+293
+00:24:42.510 --> 00:24:47.579
+Okay, so if I have to find out the preorder, so first we will traverse the node,
+
+294
+00:24:48.630 --> 00:24:52.500
+then we will do the left child, then we will do the right child.
+
+295
+00:24:53.640 --> 00:24:59.160
+Now, if I have to do the inorder traversal, then first we will do the left child,
+
+296
+00:25:00.480 --> 00:25:01.051
+then node,
+
+297
+00:25:03.840 --> 00:25:05.400
+and then the right child.
+
+298
+00:25:08.070 --> 00:25:13.590
+Similarly, if I have to do the postorder traversal, then first left,
+
+299
+00:25:14.820 --> 00:25:16.290
+then right,
+
+300
+00:25:18.000 --> 00:25:20.580
+and then N, the root node.
+
+301
+00:25:24.150 --> 00:25:27.990
+Is that clear to everyone? The preorder, inorder, and postorder.
+
+302
+00:25:30.180 --> 00:25:32.100
+The level order is not in your syllabus.
+
+303
+00:25:36.420 --> 00:25:40.080
+Okay, so NLR, LNR, or LRN.
+
+304
+00:25:43.140 --> 00:25:45.030
+Okay, and now we will see some example.
+
+305
+00:25:58.051 --> 00:25:58.260
+Okay.
+
+306
+00:26:00.090 --> 00:26:02.491
+Let's take an example of this tree.
+
+307
+00:26:08.580 --> 00:26:13.111
+So if I go with the preorder, so in the preorder, what will we do?
+
+308
+00:26:15.480 --> 00:26:19.680
+Okay, Amitha, you are asking why we are doing the preorder, inorder, and postorder.
+
+309
+00:26:19.830 --> 00:26:21.960
+The reason is, these are the traversal technique.
+
+310
+00:26:23.611 --> 00:26:25.650
+Okay, why we are doing the traversal?
+
+311
+00:26:26.160 --> 00:26:28.410
+The question is why we are doing the traversal.
+
+312
+00:26:28.440 --> 00:26:34.140
+The reason is, if you have to solve any mathematical expression like this.
+
+313
+00:26:35.370 --> 00:26:41.340
+Okay. Now, if you don't know how to find out the formula, how will you be able
+
+314
+00:26:41.370 --> 00:26:43.051
+to find out the solution of this problem
+
+315
+00:26:44.790 --> 00:26:46.080
+if you don't do the traversal?
+
+316
+00:26:50.970 --> 00:26:56.730
+Okay. So obviously, if you have the mathematical formula, always go with the
+
+317
+00:26:56.821 --> 00:27:01.710
+inorder, because the solution can only be obtained by using the inorder.
+
+318
+00:27:02.700 --> 00:27:08.611
+But if someone asks you that, okay, can you give me the solution of this tree based
+
+319
+00:27:08.730 --> 00:27:12.330
+on the preorder traversal, then you have to follow the sequence.
+
+320
+00:27:22.051 --> 00:27:25.650
+Okay. So let's take an example of the preorder.
+
+321
+00:27:28.590 --> 00:27:33.840
+Can any one of you tell me what will be the preorder traversal here of this tree?
+
+322
+00:27:35.821 --> 00:27:40.890
+Let's give a try. What will be the first order? What will be the first node?
+
+323
+00:27:44.611 --> 00:27:46.051
+A, B, D, C? Mm-hmm.
+
+324
+00:27:52.140 --> 00:27:56.220
+The first, again, as I mentioned, we will start with the root node,
+
+325
+00:27:58.950 --> 00:28:03.030
+and then the left part, and then the right part.
+
+326
+00:28:03.120 --> 00:28:08.280
+So first we will go with the A, then we will go to the B because B is coming to the
+
+327
+00:28:08.340 --> 00:28:10.801
+left, then D,
+
+328
+00:28:12.690 --> 00:28:17.520
+and then in the last, we have the C. So this is how the preorder traversal works.
+
+329
+00:28:19.861 --> 00:28:20.040
+Now,
+
+330
+00:28:22.290 --> 00:28:23.551
+suppose we have this tree.
+
+331
+00:28:25.380 --> 00:28:27.720
+Okay. We have this tree. You guys can take a screenshot.
+
+332
+00:28:27.780 --> 00:28:33.510
+We have this tree, and now we have to traverse in preorder, postorder, and
+
+333
+00:28:33.601 --> 00:28:34.020
+inorder.
+
+334
+00:28:36.090 --> 00:28:40.590
+Now, let's start with the preorder. So first will be A. What will be the next node?
+
+335
+00:28:48.991 --> 00:28:49.290
+Okay.
+
+336
+00:28:51.450 --> 00:28:54.090
+Correct. That will be B. Now, what next?
+
+337
+00:29:00.930 --> 00:29:01.710
+B. Then?
+
+338
+00:29:05.101 --> 00:29:07.920
+E. Correct. Then it will move to the right subtree.
+
+339
+00:29:09.270 --> 00:29:11.730
+Then the right subtree, it will go to the C, F, G.
+
+340
+00:29:13.200 --> 00:29:15.330
+So it will start with C or F?
+
+341
+00:29:20.700 --> 00:29:26.491
+Go with the C, then F, then G. So this is a preorder
+
+342
+00:29:26.551 --> 00:29:32.130
+traversal of this example. Now, let's do the postorder of the same tree.
+
+343
+00:29:36.361 --> 00:29:37.321
+What will be the first node?
+
+344
+00:29:40.380 --> 00:29:45.660
+Postorder. Okay, so that means first we will do the left subpart, then the right
+
+345
+00:29:45.720 --> 00:29:49.530
+subpart, and then at the end, we will do the node.
+
+346
+00:29:50.430 --> 00:29:53.520
+So we will start with the extreme left, that is D.
+
+347
+00:29:56.250 --> 00:29:57.960
+So D will be your first node. Then?
+
+348
+00:30:04.650 --> 00:30:08.520
+So again, Amrita, understand the concept. We are doing the postorder.
+
+349
+00:30:08.611 --> 00:30:13.410
+So first left, then right, then node. The left part is D.
+
+350
+00:30:13.920 --> 00:30:15.000
+What will be the right part?
+
+351
+00:30:19.620 --> 00:30:21.960
+It will be E. Then the node.
+
+352
+00:30:23.520 --> 00:30:24.120
+The node is
+
+353
+00:30:25.410 --> 00:30:30.301
+B. Correct. So B will be the option. Then move to the right subpart.
+
+354
+00:30:31.020 --> 00:30:32.851
+Then the right subpart, what will be the node?
+
+355
+00:30:39.390 --> 00:30:40.051
+C or G?
+
+356
+00:30:45.630 --> 00:30:47.970
+No. Amit, we can't directly go to the C.
+
+357
+00:30:49.680 --> 00:30:52.801
+Okay, because if you're going to the C, then you have to traverse A also.
+
+358
+00:30:54.241 --> 00:31:00.120
+Okay, so first we have to cover the entire right part. So it will be G.
+
+359
+00:31:01.321 --> 00:31:01.560
+Then?
+
+360
+00:31:06.030 --> 00:31:06.090
+F.
+
+361
+00:31:09.060 --> 00:31:14.790
+Correct, F. And then C, and then A. So this is how the
+
+362
+00:31:14.851 --> 00:31:20.370
+postorder traversal work. Is it clear to everyone how the preorder and postorder
+
+363
+00:31:20.400 --> 00:31:21.301
+traversal is working?
+
+364
+00:31:25.741 --> 00:31:28.470
+Okay. Now, coming to the inorder.
+
+365
+00:31:31.111 --> 00:31:33.210
+Now tell me, what will be the first node?
+
+366
+00:31:43.830 --> 00:31:47.700
+So in the inorder, first we will go with the left part,
+
+367
+00:31:49.170 --> 00:31:51.960
+then node, and then the right part.
+
+368
+00:31:52.560 --> 00:31:55.260
+So we will start with the extreme left, that is D,
+
+369
+00:31:57.390 --> 00:32:00.930
+then B. Correct. Then?
+
+370
+00:32:03.540 --> 00:32:04.620
+E. Correct.
+
+371
+00:32:06.840 --> 00:32:08.071
+Then what will be the next node?
+
+372
+00:32:11.340 --> 00:32:13.020
+A. Correct. Then?
+
+373
+00:32:25.620 --> 00:32:25.980
+So C.
+
+374
+00:32:27.390 --> 00:32:30.450
+So we have covered the left part. We have moved to the root node.
+
+375
+00:32:30.690 --> 00:32:32.880
+Then we have to cover the right part.
+
+376
+00:32:34.290 --> 00:32:36.840
+So in the right part, if you scroll down,
+
+377
+00:32:38.190 --> 00:32:42.150
+we have to cover the C, F, and G. So we can't
+
+378
+00:32:43.470 --> 00:32:48.060
+directly go with the C part first. We have to move to the F, and then we have to
+
+379
+00:32:48.150 --> 00:32:52.440
+check whether you have any left child of F or not. We don't have any left child.
+
+380
+00:32:52.530 --> 00:32:54.030
+So we will directly go to the F,
+
+381
+00:32:55.741 --> 00:32:56.611
+then G.
+
+382
+00:32:58.111 --> 00:33:00.900
+And then once it is done, we will again traverse again.
+
+383
+00:33:00.991 --> 00:33:02.790
+So this is called the inorder traversal.
+
+384
+00:33:09.780 --> 00:33:11.190
+Is that coming clear to everyone?
+
+385
+00:33:14.101 --> 00:33:18.900
+Pre and post. Yeah. I mean, which is confusing, Amrita?
+
+386
+00:33:19.230 --> 00:33:20.220
+The inorder traversal?
+
+387
+00:33:25.801 --> 00:33:28.620
+I mean, this is very easy. I mean, understand the concept here.
+
+388
+00:33:29.101 --> 00:33:32.160
+Okay, you have this node. First, you have to traverse
+
+389
+00:33:33.450 --> 00:33:39.361
+the left. Okay, this will be your first, this will be your second, and then this
+
+390
+00:33:39.390 --> 00:33:40.200
+will be your third.
+
+391
+00:33:43.440 --> 00:33:46.590
+Okay. Again, we know the formula is left
+
+392
+00:33:48.301 --> 00:33:50.250
+node and then right.
+
+393
+00:33:51.960 --> 00:33:55.020
+So first traverse the left part. So we will start with the left.
+
+394
+00:33:55.890 --> 00:33:59.340
+Left, node, right. Clear?
+
+395
+00:34:00.840 --> 00:34:02.730
+Why this DB is coming?
+
+396
+00:34:05.700 --> 00:34:07.890
+Okay. Then node.
+
+397
+00:34:09.180 --> 00:34:11.221
+This is the node, so we will include A.
+
+398
+00:34:13.351 --> 00:34:13.560
+Now,
+
+399
+00:34:14.940 --> 00:34:18.330
+this is done. This is done. Now moving on to the right part.
+
+400
+00:34:18.510 --> 00:34:21.601
+Okay, forget everything. This is the right node. Okay.
+
+401
+00:34:21.900 --> 00:34:24.721
+As we know the formula is left and LNR.
+
+402
+00:34:26.101 --> 00:34:29.971
+So come to the L. Come to the left of C. So we have F.
+
+403
+00:34:30.301 --> 00:34:33.810
+Do we have anything of left of F? No.
+
+404
+00:34:34.500 --> 00:34:36.900
+So then what we will do is we will simply print F.
+
+405
+00:34:38.670 --> 00:34:40.290
+Then right of F. G.
+
+406
+00:34:41.760 --> 00:34:44.460
+And once everything is done, we move to C.
+
+407
+00:34:48.180 --> 00:34:49.920
+Okay, so again, you have to remember the formula.
+
+408
+00:35:00.480 --> 00:35:00.690
+Okay.
+
+409
+00:35:02.550 --> 00:35:04.050
+Now, let's take an example of this tree.
+
+410
+00:35:04.140 --> 00:35:08.040
+Suppose these are the tree, and we have to traverse the preorder.
+
+411
+00:35:16.710 --> 00:35:20.130
+Okay, A. Okay, so understand, we have to do the preorder.
+
+412
+00:35:20.400 --> 00:35:20.910
+Pre means
+
+413
+00:35:22.830 --> 00:35:23.190
+first,
+
+414
+00:35:27.810 --> 00:35:29.460
+what is the formula of preorder?
+
+415
+00:35:31.560 --> 00:35:32.940
+The first we will traverse the node.
+
+416
+00:35:34.530 --> 00:35:34.770
+Then?
+
+417
+00:35:41.640 --> 00:35:44.940
+Yes, NLR. Node, left, and right.
+
+418
+00:35:48.480 --> 00:35:52.080
+Correct. So first we will start with the root node, that is A.
+
+419
+00:35:54.241 --> 00:35:55.710
+Then the next one will be
+
+420
+00:35:58.230 --> 00:35:58.890
+left part.
+
+421
+00:36:03.150 --> 00:36:04.140
+Go to the left side.
+
+422
+00:36:08.130 --> 00:36:10.080
+B. Mm-hmm. Then?
+
+423
+00:36:12.960 --> 00:36:15.241
+D. Correct. Then?
+
+424
+00:36:19.380 --> 00:36:20.101
+F. Then?
+
+425
+00:36:21.810 --> 00:36:26.340
+H. Then I. And then E. C and G.
+
+426
+00:36:33.654 --> 00:36:39.234
+Correct, Amrita. Yeah. This is how you have to do the preorder. Same.
+
+427
+00:36:39.324 --> 00:36:40.974
+If you have to do the postorder, then?
+
+428
+00:36:49.464 --> 00:36:53.844
+Postorder. That means LRM. The first to the left part.
+
+429
+00:36:58.944 --> 00:36:59.994
+So we will start with
+
+430
+00:37:01.284 --> 00:37:01.734
+which node?
+
+431
+00:37:03.355 --> 00:37:04.224
+The extreme left.
+
+432
+00:37:07.944 --> 00:37:08.004
+H,
+
+433
+00:37:09.954 --> 00:37:15.744
+then I, then F, then D, then E, then
+
+434
+00:37:15.834 --> 00:37:16.105
+B.
+
+435
+00:37:20.364 --> 00:37:24.684
+So Amrita, understand the concept here, okay? Your answer is incorrect.
+
+436
+00:37:26.275 --> 00:37:27.204
+LRM.
+
+437
+00:37:32.275 --> 00:37:36.474
+Okay, then move to the right part, G, D, and A.
+
+438
+00:37:40.794 --> 00:37:43.404
+Any doubts in the postorder traversal?
+
+439
+00:37:53.514 --> 00:37:55.254
+Is that clear? The postorder.
+
+440
+00:38:06.414 --> 00:38:08.724
+No. Complete silent into the chat.
+
+441
+00:38:10.464 --> 00:38:11.544
+Amrita, Amit.
+
+442
+00:38:20.514 --> 00:38:23.034
+Yeah, you need some practice. Okay.
+
+443
+00:38:23.424 --> 00:38:27.954
+This is the portion which you can expect in your end-term exam.
+
+444
+00:38:28.824 --> 00:38:31.164
+Okay, coming to the inorder. Inorder means
+
+445
+00:38:32.784 --> 00:38:33.504
+LNR.
+
+446
+00:38:47.934 --> 00:38:50.874
+Okay. So go with the left-hand side.
+
+447
+00:38:54.624 --> 00:38:57.775
+We will start with D because this is the extreme left,
+
+448
+00:39:01.794 --> 00:39:02.454
+then R.
+
+449
+00:39:06.114 --> 00:39:08.844
+Okay. Now, your left-hand side is done.
+
+450
+00:39:10.164 --> 00:39:15.384
+DSFIBE. Left-hand side is done. Moving on to the right-hand side, we will go to the
+
+451
+00:39:15.564 --> 00:39:19.704
+A, C, and G. So this will be your inorder traversal.
+
+452
+00:39:26.304 --> 00:39:29.394
+So Ashu, you have to decide. For example, which left node means?
+
+453
+00:39:29.784 --> 00:39:34.074
+For example, you are going to the left-hand side, and then you are finding if there
+
+454
+00:39:34.134 --> 00:39:35.275
+is extreme left.
+
+455
+00:39:38.994 --> 00:39:42.144
+Why it is extreme left? Okay, let's take an example. Okay.
+
+456
+00:39:42.504 --> 00:39:45.714
+Suppose you're going to the left-hand side. Okay. This is your left sub-tree.
+
+457
+00:39:49.103 --> 00:39:54.084
+Okay, forget everything. This is your left sub-tree. Now, you are here. Okay.
+
+458
+00:39:54.624 --> 00:39:59.094
+Now, you have come to the node number D. Do we have anything to the left of D?
+
+459
+00:40:01.944 --> 00:40:06.984
+No. So that means D is extreme left because whatever the things we have, for
+
+460
+00:40:07.044 --> 00:40:13.014
+example, F and I, this is the right side of the D, but not the left-hand side.
+
+461
+00:40:15.504 --> 00:40:17.304
+Okay. That is why D is extreme left.
+
+462
+00:40:22.794 --> 00:40:28.254
+Okay? Similarly, if you go to the right-hand side, so now here H is extreme left.
+
+463
+00:40:30.084 --> 00:40:33.204
+That is why first B came, then H came
+
+464
+00:40:34.644 --> 00:40:35.364
+in this sequence.
+
+465
+00:40:44.275 --> 00:40:46.014
+Okay, so just do some practice.
+
+466
+00:41:00.474 --> 00:41:02.964
+Again, from... Yeah, Alfred Tricky.
+
+467
+00:41:03.594 --> 00:41:07.194
+Time complexity if the preorder traversal
+
+468
+00:41:08.454 --> 00:41:12.684
+is almost constant, okay, because we are
+
+469
+00:41:12.744 --> 00:41:18.624
+traversing each node only once and with the constant time, and
+
+470
+00:41:18.684 --> 00:41:20.724
+constant, I mean, the same operation is performed.
+
+471
+00:41:21.264 --> 00:41:26.064
+So overall time will always be ON, okay, where N is a number of nodes.
+
+472
+00:41:27.624 --> 00:41:30.084
+Okay? The time complexity of the preorder traversal.
+
+473
+00:41:32.364 --> 00:41:36.984
+Okay, algorithm no one is going to ask, okay, so we are skipping that.
+
+474
+00:41:40.554 --> 00:41:43.314
+That is done. Okay. So that was all
+
+475
+00:41:44.634 --> 00:41:48.984
+about the trees. Now moving on to the graphs. Graphs you all know.
+
+476
+00:41:49.464 --> 00:41:51.234
+You all have studied in your graph theory.
+
+477
+00:41:52.824 --> 00:41:55.494
+Okay, it is a combination of vertices and edges.
+
+478
+00:41:57.744 --> 00:42:00.534
+Okay, just like tree. In the tree, we have the nodes and edges.
+
+479
+00:42:00.684 --> 00:42:05.844
+Similarly, the same nodes will be called as vertex in graph,
+
+480
+00:42:07.614 --> 00:42:11.994
+and whenever there's an edge, it will represent the relationship between the two
+
+481
+00:42:12.054 --> 00:42:12.474
+items.
+
+482
+00:42:15.594 --> 00:42:19.824
+Yes, Amit, the time complexity of the tree traversal is ON because you are doing
+
+483
+00:42:19.855 --> 00:42:22.644
+the constant operation on every node.
+
+484
+00:42:31.794 --> 00:42:35.784
+These are certain examples of the graphs, okay, like we have the molecular
+
+485
+00:42:35.904 --> 00:42:40.584
+structures, okay, or if you have to show the connectivity between how the server or
+
+486
+00:42:40.884 --> 00:42:44.814
+the devices are connected. Okay, so these are the examples we have.
+
+487
+00:42:46.884 --> 00:42:48.234
+Formal definition you already know.
+
+488
+00:42:48.804 --> 00:42:54.324
+A graph is a set of, or you can say a pair of, vertices and edges, okay,
+
+489
+00:42:54.804 --> 00:42:59.605
+where the vertices are denoted by V and edges are denoted by E.
+
+490
+00:43:02.124 --> 00:43:05.904
+Just like we have in the tree, okay, we also have the adjacent vertices.
+
+491
+00:43:06.894 --> 00:43:11.994
+So if you look at this graph, so here you can see the U and V are adjacent because
+
+492
+00:43:12.414 --> 00:43:14.724
+they have a direct relationship between them.
+
+493
+00:43:17.275 --> 00:43:19.164
+Suppose if I say,
+
+494
+00:43:20.934 --> 00:43:26.605
+let's keep this node as Z. Can we say U and Z or W and Z are
+
+495
+00:43:26.664 --> 00:43:27.174
+adjacent?
+
+496
+00:43:32.214 --> 00:43:33.894
+No. Oh, yes.
+
+497
+00:43:36.355 --> 00:43:38.275
+Can we say W and Z are adjacent?
+
+498
+00:43:41.484 --> 00:43:46.704
+Why? Because there is no edge
+
+499
+00:43:47.754 --> 00:43:48.384
+between them.
+
+500
+00:43:49.794 --> 00:43:55.404
+So that is why we can't say W and Z are adjacent. The rest all are adjacent.
+
+501
+00:43:56.844 --> 00:43:58.764
+Can we say V and W are adjacent?
+
+502
+00:44:01.344 --> 00:44:04.824
+You can go from V to Z indirectly via U.
+
+503
+00:44:05.184 --> 00:44:07.704
+But again, there is no direct edge as such.
+
+504
+00:44:08.094 --> 00:44:11.424
+So whenever there is no direct edge between any two vertices,
+
+505
+00:44:12.654 --> 00:44:16.494
+okay, we can't say them as adjacent.
+
+506
+00:44:28.404 --> 00:44:33.775
+Okay, coming to the path and simple path. Do you know what is path and simple path?
+
+507
+00:44:39.864 --> 00:44:43.014
+If you are traversing, if you are moving from one node to another node,
+
+508
+00:44:44.275 --> 00:44:50.034
+okay, and then... Correct. If you're traveling from one node to another node, okay,
+
+509
+00:44:50.184 --> 00:44:55.794
+and then every node is appearing at most once, then it will be called as the
+
+510
+00:44:55.855 --> 00:44:58.584
+path, or you can say a simple path.
+
+511
+00:44:59.904 --> 00:45:04.044
+Okay, the path is in the path, the redundancy is allowed.
+
+512
+00:45:04.974 --> 00:45:09.414
+In simple path, every node will appear at most once.
+
+513
+00:45:10.734 --> 00:45:13.284
+So redundancy is usually not possible in simple path.
+
+514
+00:45:13.344 --> 00:45:15.294
+You can easily go from V1 to V5.
+
+515
+00:45:16.794 --> 00:45:22.105
+Okay, so if I have to go from V1 to V5, I can actually go from V1 to V2, V2 to V4,
+
+516
+00:45:22.764 --> 00:45:23.934
+or V4 to V5.
+
+517
+00:45:25.284 --> 00:45:27.355
+But here, this is not a path.
+
+518
+00:45:29.275 --> 00:45:31.525
+Sorry, this is a path, but this is not a simple path.
+
+519
+00:45:31.584 --> 00:45:34.224
+In a simple path, you have to cover every node.
+
+520
+00:45:36.144 --> 00:45:41.544
+So the simple path will be V1 to V2, V2 to V3, V3 to V4, V4 to V5.
+
+521
+00:45:43.584 --> 00:45:44.094
+Is that clear?
+
+522
+00:45:45.355 --> 00:45:46.224
+Path and simple path
+
+523
+00:45:48.969 --> 00:45:49.209
+Okay.
+
+524
+00:45:53.469 --> 00:45:55.419
+Now, same with cycle and simple cycle.
+
+525
+00:45:56.019 --> 00:46:01.959
+Cycle, if you are starting, if the cycle is a path that begins and adds at the same
+
+526
+00:46:02.019 --> 00:46:02.289
+node.
+
+527
+00:46:04.779 --> 00:46:10.419
+Okay. Similarly, if I talk about the simple cycle, that means every node
+
+528
+00:46:10.629 --> 00:46:14.439
+will appear at most once, except the first and the last one.
+
+529
+00:46:18.189 --> 00:46:21.849
+Amrita, you are saying path we can skip and simple path we can skip. Sorry.
+
+530
+00:46:22.989 --> 00:46:24.069
+You are saying the same thing.
+
+531
+00:46:30.549 --> 00:46:32.049
+In simple path, we can't skip.
+
+532
+00:46:34.480 --> 00:46:34.809
+Correct.
+
+533
+00:46:42.939 --> 00:46:43.480
+Similarly,
+
+534
+00:46:45.939 --> 00:46:51.400
+the connected graph. A graph is said to be connected if there exists a path between
+
+535
+00:46:51.459 --> 00:46:51.609
+them,
+
+536
+00:46:53.589 --> 00:46:58.299
+any pair of distinct nodes. Otherwise, it will be called as disconnected.
+
+537
+00:47:00.429 --> 00:47:03.639
+Now, look at the graph. Can we say this graph is connected?
+
+538
+00:47:09.909 --> 00:47:15.369
+This graph is connected. Why? Because every node is connected to every other node.
+
+539
+00:47:18.969 --> 00:47:20.859
+Okay, there is no isolation as such.
+
+540
+00:47:22.209 --> 00:47:25.478
+So if I have to move from V1 to V5, I can directly go.
+
+541
+00:47:27.159 --> 00:47:30.159
+Although there is no direct path, but indirect path is there.
+
+542
+00:47:30.549 --> 00:47:32.169
+So this is called a connected graph.
+
+543
+00:47:41.049 --> 00:47:43.719
+Okay, these are the, put an example of disconnected graph.
+
+544
+00:47:51.699 --> 00:47:53.919
+So V1 to V7, there is no path.
+
+545
+00:47:56.919 --> 00:48:00.009
+Okay, so we will call it as the disconnected graph.
+
+546
+00:48:04.059 --> 00:48:06.069
+We can't go directly from V1 to V7.
+
+547
+00:48:07.959 --> 00:48:12.849
+Okay, so this is another graph, and then there is no path between these two things.
+
+548
+00:48:15.219 --> 00:48:16.809
+So disconnected.
+
+549
+00:48:21.279 --> 00:48:23.559
+Atinderdeep, you are saying second is disconnected.
+
+550
+00:48:23.949 --> 00:48:26.980
+If you're looking at individually second graph, this is connected.
+
+551
+00:48:28.329 --> 00:48:34.299
+We can go. V8 to V9 is possible. V8 to V6 possible, V8 to V7 possible.
+
+552
+00:48:35.949 --> 00:48:38.139
+Okay. So individual graph is not...
+
+553
+00:48:38.799 --> 00:48:41.439
+They both are, individually, they are connected graph.
+
+554
+00:48:41.829 --> 00:48:43.299
+But if you look at the whole picture,
+
+555
+00:48:44.739 --> 00:48:47.769
+this will be called as a disconnected graph because
+
+556
+00:48:49.239 --> 00:48:51.669
+you don't have a path between V1 and V7.
+
+557
+00:48:54.939 --> 00:48:55.150
+Okay?
+
+558
+00:49:04.809 --> 00:49:07.329
+Yeah. Okay, again, the same thing is there, connected component.
+
+559
+00:49:07.389 --> 00:49:11.769
+If the graph is disconnected, it can be partitioned into the number of two
+
+560
+00:49:11.859 --> 00:49:12.789
+different graphs.
+
+561
+00:49:14.139 --> 00:49:17.859
+Now, moving on to the third one, that is complete graph. What is complete graph?
+
+562
+00:49:19.419 --> 00:49:20.409
+Complete graph means
+
+563
+00:49:21.999 --> 00:49:23.619
+there is a node between every pair.
+
+564
+00:49:26.650 --> 00:49:32.259
+Okay, so if you look at the graph here, every node is having a pair, or every pair
+
+565
+00:49:32.319 --> 00:49:33.969
+is having an edge between them.
+
+566
+00:49:36.489 --> 00:49:39.489
+Okay, so this is called a complete graph.
+
+567
+00:49:42.879 --> 00:49:43.989
+Connectivity, yes.
+
+568
+00:49:46.419 --> 00:49:48.249
+Weighted graph. Weighted graph you all know?
+
+569
+00:49:49.869 --> 00:49:52.719
+Where the edges have any weight assigned.
+
+570
+00:49:53.469 --> 00:49:55.359
+That will be called as the weighted graph.
+
+571
+00:50:01.179 --> 00:50:05.169
+Directed graph, where you have directions defined.
+
+572
+00:50:05.349 --> 00:50:07.299
+So here you can see a directed arrow.
+
+573
+00:50:09.789 --> 00:50:10.119
+Okay.
+
+574
+00:50:12.429 --> 00:50:17.349
+So whenever you have the direction defined in a graph, it will be called as the
+
+575
+00:50:17.499 --> 00:50:21.459
+directed graph, or sometimes it is also called as digraph.
+
+576
+00:50:29.589 --> 00:50:31.359
+Okay, then we have the multigraph.
+
+577
+00:50:31.569 --> 00:50:32.289
+Multigraph means
+
+578
+00:50:39.069 --> 00:50:41.859
+where we have the multiple edges between two nodes.
+
+579
+00:50:45.099 --> 00:50:50.529
+Okay, so wherever there is a multiple edges between two nodes, or you can say the
+
+580
+00:50:50.619 --> 00:50:51.639
+self-edge is there.
+
+581
+00:50:53.169 --> 00:50:55.900
+Okay, suppose we have these two nodes.
+
+582
+00:51:00.309 --> 00:51:05.529
+Okay, these two nodes we have. So you can see, this is also one edge, this is also
+
+583
+00:51:05.589 --> 00:51:07.749
+one edge. So we have the multiple edges.
+
+584
+00:51:08.650 --> 00:51:11.919
+So whenever we have the multiple edges, it will form a loop.
+
+585
+00:51:12.639 --> 00:51:17.049
+Similarly, there's a self-edge. Again, this will be a loop.
+
+586
+00:51:17.469 --> 00:51:22.389
+So any graph which contains a loop or multiple edges will be called as
+
+587
+00:51:25.209 --> 00:51:25.869
+multigraph.
+
+588
+00:51:32.589 --> 00:51:35.289
+Okay, moving on to the property of the graph.
+
+589
+00:51:35.349 --> 00:51:41.109
+So yeah, we know an undirected graph that is connected and has no
+
+590
+00:51:41.169 --> 00:51:46.479
+cycle is a tree. Okay. A tree with N node have exactly N-1
+
+591
+00:51:46.539 --> 00:51:52.359
+edges, and a connected undirected graph with N edges must
+
+592
+00:51:52.389 --> 00:51:57.250
+have at least N-1 edges. Okay. So again, these are basic properties of the graph.
+
+593
+00:51:59.139 --> 00:52:01.809
+Coming to the implementation of the graph, so this is quite easy.
+
+594
+00:52:02.440 --> 00:52:06.309
+Okay, you have the graph. Okay, now what you have to do is,
+
+595
+00:52:08.979 --> 00:52:13.179
+you just have to represent the nodes here, and then whenever there's a edge between
+
+596
+00:52:13.239 --> 00:52:16.028
+them, you mark it as 1, otherwise mark it as 0.
+
+597
+00:52:17.979 --> 00:52:19.869
+Is it clear? The edge is symmetric
+
+598
+00:52:21.489 --> 00:52:25.059
+of a directed graph whenever there's a directed graph between nodes.
+
+599
+00:52:25.900 --> 00:52:28.150
+Okay, so this is how you get two.
+
+600
+00:52:32.139 --> 00:52:37.509
+Similarly, if you have the undirected graph, so the process is similar, but what
+
+601
+00:52:37.539 --> 00:52:41.319
+you have to do is, if these are undirected, that means there is no direction as
+
+602
+00:52:41.349 --> 00:52:45.309
+such, so you will mention the weight, and whenever there is no edge, you will mark
+
+603
+00:52:45.369 --> 00:52:46.539
+it as infinite sign.
+
+604
+00:52:49.150 --> 00:52:49.989
+The process is same.
+
+605
+00:52:53.829 --> 00:52:54.069
+Clear?
+
+606
+00:52:59.949 --> 00:53:00.699
+Yes, no, maybe.
+
+607
+00:53:04.119 --> 00:53:05.799
+Okay. Yeah, Amit.
+
+608
+00:53:11.859 --> 00:53:14.739
+In the directed graph, you don't need to put the width.
+
+609
+00:53:16.209 --> 00:53:20.259
+Okay, you just have to mention the one, okay, if there is a edge.
+
+610
+00:53:21.069 --> 00:53:23.379
+But in the undirected graph, you have to mention the width.
+
+611
+00:53:34.150 --> 00:53:38.440
+Okay. Again, the same graph can be represented in the form of list as well.
+
+612
+00:53:38.979 --> 00:53:42.789
+So whenever you have the graph and then someone is saying that, okay, can you
+
+613
+00:53:42.849 --> 00:53:47.440
+represent in the form of list? Just mention down all the vertices we have, and then
+
+614
+00:53:47.500 --> 00:53:51.429
+whenever there is a edge, just create a list.
+
+615
+00:53:57.369 --> 00:54:00.609
+If there is no direct edge between V2 and V5, we cannot assume the width.
+
+616
+00:54:00.669 --> 00:54:01.780
+No, no, we can't.
+
+617
+00:54:09.579 --> 00:54:13.869
+We can't. We are not doing any Prim's or Kruskal's algorithm. Okay?
+
+618
+00:54:16.929 --> 00:54:21.549
+So I think, the Prim's, Kruskal will take time, and
+
+619
+00:54:23.919 --> 00:54:26.739
+we don't have that much level of
+
+620
+00:54:28.389 --> 00:54:31.750
+time as such. So yeah, so what we're going to do is, we're going to cover the
+
+621
+00:54:31.809 --> 00:54:33.489
+shortest path and
+
+622
+00:54:34.959 --> 00:54:36.459
+the spanning tree concept,
+
+623
+00:54:37.690 --> 00:54:42.639
+maybe in the next class. And then, yeah, because these are the important things
+
+624
+00:54:42.669 --> 00:54:44.829
+from the exam perspective, so we can cover.
+
+625
+00:54:45.609 --> 00:54:50.709
+And then, we'll also do the searching and sorting, and then, there's another
+
+626
+00:54:50.769 --> 00:54:52.419
+complex topic that is coming, that is
+
+627
+00:54:53.619 --> 00:54:54.160
+the LP.
+
+628
+00:55:04.750 --> 00:55:06.549
+Okay. So yeah, so that we will cover.
+
+629
+00:55:06.849 --> 00:55:09.879
+Okay, whatever you have in your syllabus, the important part.
+
+630
+00:55:10.269 --> 00:55:14.679
+I'm not going to cover the entire syllabus, okay, because for that you need
+
+631
+00:55:16.269 --> 00:55:18.819
+the whole classes, five to six-hour classes.
+
+632
+00:55:19.000 --> 00:55:24.280
+But in one hour, whatever that is important from the exam perspective, we will
+
+633
+00:55:24.339 --> 00:55:24.879
+cover those.
+
+634
+00:55:28.299 --> 00:55:28.539
+Okay.
+
+635
+00:55:30.190 --> 00:55:30.879
+Anything else
+
+636
+00:55:33.609 --> 00:55:34.869
+before we wind up the class?
+
+637
+00:55:40.389 --> 00:55:45.579
+In matrix, Atinder, you have to implement an infinite sign only whenever there's
+
+638
+00:55:47.889 --> 00:55:49.629
+an undirected graph, plus
+
+639
+00:55:51.639 --> 00:55:55.959
+edge between the vertices. Then you will mark that at infinity sign.
+
+640
+00:55:57.160 --> 00:56:00.250
+Will be undirected graph, not in the directed one.
+
+641
+00:56:01.329 --> 00:56:03.129
+In the directed one, you have to mark it as zero.
+
+642
+00:56:09.069 --> 00:56:12.849
+Cool. Okay, thank you so much for your time today, and see you all in the next
+
+643
+00:56:12.879 --> 00:56:13.479
+class then.
+
+644
+00:56:19.539 --> 00:56:24.729
+The recording will be available in the Amico portal, so you can easily get access
+
+645
+00:56:24.759 --> 00:56:29.349
+to that. And yeah, NP-hard is one of the topic which will take time, so that we
+
+646
+00:56:29.379 --> 00:56:31.809
+will cover. NP-hard, NP-complete.

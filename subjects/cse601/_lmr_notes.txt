@@ -1,0 +1,17 @@
+Data Structures and Algorithm Design (CSE601) — LMR priorities
+
+1. 1.1.1 Stack — Module 1 priority.
+2. 1.1.2 Evaluation of Postfix Expression — Module 1 priority.
+3. 1.1.3 Tower of Hanoi Problem — Module 1 priority.
+4. 2.1.1 Basic Terminology and Applications — Module 2 priority.
+5. 2.1.2 Binary Trees — Module 2 priority.
+6. 2.1.3 Binary Search Trees — Module 2 priority.
+7. 3.1.1 Dynamic Programming Approach — Module 3 priority.
+8. 3.1.2 Principle of Optimality — Module 3 priority.
+9. 3.1.3 Strassens Matrix Multiplication — Module 3 priority.
+10. 4.1.1 Naïve String Matching Algorithm — Module 4 priority.
+11. 4.1.3 String Matching Algorithm: Rabin Karp — Module 4 priority.
+12. 4.2.1 Vertex-Cover Algorithm — Module 4 priority.
+13. 5.1.1 Green Technology — Module 5 priority.
+14. 5.1.2 Hamiltonian Cycles — Module 5 priority.
+15. 5.2.1 NP-completeness Proofs — Module 5 priority.

@@ -1,0 +1,627 @@
+--- page 1 ---
+Post Graduate Programmes (PG)
+• 
+Master of Business Administration
+• 
+Master of Computer Applications
+• 
+Master of Commerce (Financial Management / Financial 
+Technology) 
+• 
+Master of Arts (Journalism and Mass Communication) 
+• 
+Master of Arts (Economics)
+• 
+Master of Arts (Public Policy and Governance)
+• 
+Master of Social Work
+• 
+Master of Arts (English) 
+• 
+Master of Science (Information Technology) (ODL)
+• 
+Master of Science (Environmental Science) (ODL)
+Diploma Programmes
+• 
+Post Graduate Diploma (Management) 
+• 
+Post Graduate Diploma (Logistics) 
+• 
+Post Graduate Diploma (Machine Learning and Artificial 
+Intelligence) 
+• 
+Post Graduate Diploma (Data Science)
+Undergraduate Programmes (UG)
+• 
+Bachelor of Business Administration
+• 
+Bachelor of Computer Applications
+• 
+Bachelor of Commerce
+• 
+Bachelor of Arts (Journalism and Mass Communication) 
+• 
+Bachelor of Arts (General / Political Science / Economics / 
+English / Sociology)
+• 
+Bachelor of Social Work 
+• 
+Bachelor of Science (Information Technology) (ODL)
+Programs Offered
+Network Security 
+and Cryptography
+Network Security and Cryptography
+AMITY
+Product code
+Amity Helpline: (Toll free) 18001023434 
+For Student Support: +91 - 8826334455
+Support Email id: studentsupport@amityonline.com | https://amityonline.com
+(c) Amity University Online
+
+
+--- page 2 ---
+Network Security and Cryptography
+(c) Amity University Online
+
+
+--- page 3 ---
+© Amity University Press
+All Rights Reserved
+No parts of this publication may be reproduced, stored in a retrieval system or transmitted 
+in any form or by any means, electronic, mechanical, photocopying, recording or otherwise 
+without the prior permission of the publisher.
+SLM & Learning Resources Committee
+	
+	
+	
+Chairman	
+:	
+Prof. Abhinash Kumar	
+	
+	
+	
+Members	
+:	
+Dr. Ranjit Varma
+	
+	
+	
+	
+	
+Dr. Maitree
+	
+	
+	
+	
+	
+Dr. Divya Bansal
+	
+	
+	
+	
+	
+Dr. Arun Som
+	
+	
+	
+	
+	
+Dr. Sunil Kumar
+	
+	
+	
+	
+	
+Dr. Reema Sharma
+	
+	
+	
+	
+	
+Dr. Winnie Sharma
+	
+	
+	
+Member Secretary	
+:	
+Ms. Rita Naskar
+Published by Amity University Press for exclusive use of Amity Directorate of Distance and Online Education, 
+Amity University, Noida-201313
+(c) Amity University Online
+
+
+--- page 4 ---
+Contents
+Page No.
+Module - I: Introduction to Network Security	
+01
+1.1 	 Network Security	
+	
+	
+	
+1.1.1	 Introduction to Security Attacks
+	
+1.1.2	 Services and Mechanism
+	
+1.1.3	 Classical Encryption Techniques
+	
+1.1.4	 Substitution Ciphers
+	
+1.1.5	 Transposition Ciphers
+	
+1.1.6	 Cryptanalysis
+	
+1.1.7	 Steganography
+	
+1.1.8	 Stream and Block Ciphers
+	
+1.1.9	 Overview of Hardware Security
+Module - II: Secret and Public Key Cryptography	
+39
+2.1 	 Secret Key Cryptography	
+	
+2.1.1	 Modern Block Ciphers: Block Ciphers Principles
+	
+2.1.2	 Shannon’s Theory of Confusion and Diffusion
+	
+2.1.3	 Fiestal Structure
+	
+2.1.4	 Data Encryption Standard (DES)
+	
+2.1.5	 Strength of DES
+	
+2.1.6	 Idea of Differential Cryptanalysis
+	
+2.1.7	 Block Cipher Modes of Operations
+	
+2.1.8	 Triple DES
+2.2 	 Public Key Cryptography	
+	
+2.2.1	 Advanced Encryption Standard (AES)
+	
+2.2.2	 Fermat’s and Euler’s Theorem
+	
+2.2.3	 Chinese Remainder Theorem
+	
+2.2.4	 Principals of Public Key Crypto Systems
+	
+2.2.5	 RSA Algorithm
+	
+2.2.6	 Security of RSA Algorithm
+Module - III: Authentication Standards and Key Management	
+72
+3.1 	 Message Authentication Codes	
+	
+3.1.1	 Introduction of Message Authentication Codes
+	
+3.1.2	 Authentication Functions
+	
+3.1.3	 Authentication Requirements
+	
+3.1.4	 Message Authentication Code (MAC)
+	
+3.1.5	 Secure Hash Algorithm (SHA)
+(c) Amity University Online
+
+
+--- page 5 ---
+	
+3.1.6	 Message Digest
+3.2 	 Digital Signatures
+	
+3.2.1	 Overview of Digital Signatures
+	
+3.2.2	 Digital Signature Standards (DSS)
+	
+3.2.3	 Proof of Digital Signature Algorithm
+Module - IV: Web Security	
+91
+4.1 	 Introduction to Web Security
+	
+4.1.1	 Authentication Applications: Kerberos 
+	
+4.1.2	 Overview of Access Control List (ACL)
+	
+4.1.3	 Electronic Mail Security: Pretty Good Privacy (PGP)
+	
+4.1.4	 S/MIME
+4.2 	 IP Security	
+	
+4.2.1	 IP Security Architecture Components
+	
+4.2.2	 Secure Socket Layer
+	
+4.2.3	 Secure electronic transaction (SET)
+Module - V: Computational Learning Theor	
+151
+5.1 	 System Security
+	
+5.1.1	 Introductory Idea of Intrusion
+	
+5.1.2	 Intrusion Detection Techniques
+	
+5.1.3	 Viruses and Worms
+	
+5.1.4	 Firewall Overview and Design Principles
+	
+5.1.5	 Global Standards IT Acts and Cyber Laws
+	
+5.1.6	 Virtual Private Network
+	
+5.1.7	 Recent Network Attacks and Security Measures
+	
+5.1.8	 Blockchain Technology
+	
+5.1.9	 Internet Privacy and Piracy Prevention
+5.2  Cyber Forensic and Its Applications
+	
+5.2.1	 Overview of Cyber Forensic
+	
+5.2.2	 Cyber Forensic Processes
+	
+5.2.3	 Cyber Forensic Applications
+	
+5.2.4	 Cyber Forensic Tools
+	
+5.2.5	 Digital Evidence
+	
+5.2.6	 Investigating Windows and Unix Systems
+	
+5.2.7	 E-mail Tracing
+(c) Amity University Online
+
+
+--- page 6 ---
+Network Security and Cryptography
+1
+Notes
+Amity University Online
+Module -1: Introduction to Network Security
+Learning Objectives 
+At the end of this module, you will be able to:
+●
+●
+Learn various Services and Mechanism to ensure Network Security
+●
+●
+Identify different Classical Encryption Techniques 
+●
+●
+Discuss about Substitution and Transportation Ciphers
+●
+●
+Understand Cryptanalysis and Steganography
+●
+●
+Overview of Hardware Security
+Introduction
+ Network security is a critical aspect of protecting computer systems and data 
+from threats on the internet. It involves implementing various measures to secure the 
+network infrastructure and data transmission against unauthorized access, misuse, 
+modification, or denial of service attacks. 
+Security Attacks are intentional actions that aim to compromise the confidentiality, 
+integrity, or availability of information. Common types of security attacks are Malware, 
+Phishing, Denial of Services, etc.
+ 
+Source: https://www.extnoc.com/learn/wp-content/uploads/2022/02/Network-Security.jpg
+A technique of substitution is one in which plaintext letters are replaced by other 
+letters or by numbers or symbols. Substitution means replacing plaintext bit patterns 
+with cipher text bit patterns if the plaintext is treated as a series of bits.
+The study of techniques for deciphering cryptographic codes and messages 
+without knowing the key is called Cryptanalysis. It involves breaking codes or ciphers 
+to reveal the original message. The practice of concealing a message, file, image, or 
+video within another file to avoid detection is called Steganography. It aims to hide the 
+existence of the secret message.
+(c) Amity University Online
+
+
+--- page 7 ---
+2
+Network Security and Cryptography
+Notes
+Amity University Online
+The substitution of a cipher text symbol for a plaintext symbol is used in all the 
+strategies studied so far. By doing some kind of permutation on the plaintext letters, a 
+very different type of mapping is accomplished. This approach is referred to as a cipher 
+for transposition.
+Hardware security has become a fascinating issue really with a consistently 
+growing number of analysts from related examination spaces joining this district. 
+Regardless, the enthusiasm for hardware security is reliably blended in with online 
+confirmation and cryptography, particularly cryptographic gear.
+To protect against these threats, organisations use various security measures 
+such as firewalls, antivirus software, intrusion detection systems (IDS), encryption, 
+and secure authentication mechanisms. Ongoing monitoring and updates to security 
+policies are also crucial to mitigate risks effectively.
+1.1 Network security 
+What is Network Security?
+A wide-ranging topic with a multi-layered approach. The data link layer, network 
+layer and device layer can be discussed. The concerns involved are: interference 
+and encryption of packets, IP packets and routing tables with their version upgrade, 
+and host-level vulnerabilities that have arisen in the data link layer, network layer and 
+framework, respectively.
+ 
+Figure - 1: Network Security
+1.1.1 Introduction to Security Attacks
+Basic Requirements of Network Security
+The primary goal of the organisation is to divide data between its clients arranged 
+locally or distantly. Accordingly, it is conceivable that undesired client can hack the 
+arrange and can end up being unsafe for the strength of the organisation or client. 
+There are not many essential focuses which should be trailed by network director to 
+give the organisation a sufficient security other than network-explicit security as in the 
+event of online business, and so on These are given beneath: 
+(c) Amity University Online
+
+
+--- page 8 ---
+Network Security and Cryptography
+3
+Notes
+Amity University Online
+Figure 2: Network security
+1.	
+Data sharing is the purpose of networks. The organisation should be clearly set up 
+to differentiate between shareable and non-shareable data in this way. 
+2.	
+The company should also specify who may receive access to the shareable data. 
+3.	
+As framework security increases, so will the costs associated with maintaining it; 
+therefore, a compromise between security and expenses should be established in 
+accordance with the requirements of the organisation security framework strategy. 
+This will typically depend on the fair and square level of security that the organisation 
+is expected to apply, the majority of security requirements, and the convincing 
+implementation of the chosen level of protection.
+4.	
+Division of the duties concerning the organisation security should be obviously. 
+characterized among clients and framework director. 
+5.	
+The prerequisites for security should be nitty gritty inside an organisation security 
+strategy of the association that shows the important information and their related 
+expense to the business. Subsequent to characterizing the point-by-point network 
+security strategy and recognizing the obvious duties in the association, the framework 
+director ought to be made then liable for guaranteeing that the security strategy 
+is successfully applied to the organisation climate, including the current systems 
+administration foundation,
+Types of Attack
+ 
+Figure - 2: Network security attacks
+(c) Amity University Online
+
+
+--- page 9 ---
+4
+Network Security and Cryptography
+Notes
+Amity University Online
+Attacks are known as passive and active in two respects. A passive attack is an 
+attempt to learn or use system data without altering any system resources, while an 
+active attack is an attempt to change system resources or influence their entire process.
+ 
+Figure - 3: Types of attacks
+Passive Attacks:
+Snooping on or monitoring transmissions is the concept of a passive attack. The 
+adversary's goal is to obtain the data that is being transmitted. The two types of inactive 
+attacks are:
+Arrival of message substance are: A phone discussion and email message and a 
+moved record may contain touchy or secret data. We might want to keep the rival from 
+learning the substance of these sort of transmissions. 
+ 
+Figure - 4: Passive Attack
+Traffic analysis: On the off chance that we had encryption assurance set up; a rival 
+may in any case have the option to notice the example of the message. The rival could 
+decide the area and character of correspondence has and could notice the recurrence 
+and length of messages being traded. This data may be helpful in speculating the idea 
+of correspondence that was occurring. 
+Latent attacks are hard to identify on the grounds that they don't include any 
+modification of information. Notwithstanding, it is doable to forestall the accomplishment 
+of these attacks. 
+Passive attacks grouped into two categories:
+ 
+Figure -5: types of Passive attacks
+(c) Amity University Online
+
+
+--- page 10 ---
+Network Security and Cryptography
+5
+Notes
+Amity University Online
+Active Attacks:
+Any manipulation of the data source or the formation of a false stream is involved 
+in these attacks. Such attacks can be grouped into four categories:
+ 
+Figure - 6: Active attack
+Masquerade
+An entity is claiming to be another entity. Replay-includes passive capturing and 
+subsequent transfer of a data device to create an unauthorized result.
+ 
+Figure - 7: Masquerade
+Modification of messages – Any parts of the message are altered or the messages 
+are postponed or registered to create an unauthorized result.
+ 
+Figure - 8: Modification of Messages
+(c) Amity University Online
+
+
+--- page 11 ---
+6
+Network Security and Cryptography
+Notes
+Amity University Online
+Denial of service – Prevents or prevents the regular usage of contact services 
+or their administration. The interruption of an entire network, either by disabling the 
+network or overloading it with messages so as to impair efficiency, is another form of 
+service denial.
+It is very impossible to fully stop active attacks, and to do so will often entail 
+physical security of all contact services and roads. Instead, the aim is to locate them 
+and rebound from any interference or disruptions induced by them.
+ 
+Figure - 9: Distributed Denial of Service Attack
+Active attacks are classified into three categories:
+Figure - 10: Type of Active attacks
+There are also another three types of security attacks. they are
+Interruption 
+An asset is lost or becomes inaccessible or unusable by the system. This is an 
+assault on usability, such as removing a piece of hardware, breaking a contact cable, or 
+disabling a file management system.
+(c) Amity University Online
+
+
+--- page 12 ---
+Network Security and Cryptography
+7
+Notes
+Amity University Online
+ 
+Figure -11: Interruption
+Interception 
+An illegitimate group receives an asset's entry. This is a secrecy assault. A 
+individual, a program or a device may be an unwanted entity. For example, wiretapping 
+to collect network data, unlawful copying of files.
+Eavesdropper or forger
+Modification 
+Not only does an unwanted party obtain access to an asset, but tampers with it. It's 
+an assault on honesty. e.g. altering the values of the data file, modifying the program, 
+modifying the contents of messages sent over the network.
+Eavesdropper or forger
+Fabrication
+An unwanted entity introduces forged items into the scheme. It's an assault on 
+honesty. For e.g., injecting a bogus message into a network or attaching a record to a 
+file. Sender Receiver Eavesdropper or Forger Cryptographic Attack
+Eavesdropper or forger
+(c) Amity University Online
+
+
+--- page 13 ---
+8
+Network Security and Cryptography
+Notes
+Amity University Online
+1.1.2 Services and Mechanism
+What is network security services?
+The following services relevant to a message and entity can be obtained through 
+network security.
+ 
+Security
+Services
+Message
+Entity
+Security services
+Confidentiality
+Integrity
+Authentication
+Non-repudiation
+Authentication
+ 
+Figure - 12: Type of Security services
+1. 	 Message confidentiality
+	
+It implies that the substance of a message when sent across an organisation should 
+stay secret, for example just the planned recipient and nobody else ought to have 
+the option to peruse the message. 
+
+
+The clients; accordingly, need to scramble the message they send with the 
+goal that a snoop on the organisation won't have the option to peruse the 
+substance of the message.
+ 
+Figure - 13: Message confidentiality
+2.	
+Message Integrity
+
+
+It implies the information should arrive at the objective with no defilement for 
+example precisely when it was transmitted. 
+(c) Amity University Online
+
+
+--- page 14 ---
+Network Security and Cryptography
+9
+Notes
+Amity University Online
+
+
+No progressions should occur during transmission, either accidentally or 
+intentionally. 
+
+
+Trustworthiness of a message is guaranteed by connecting a checksum to the 
+message. 
+
+
+The calculation for producing the checksum guarantees that an interloper 
+can't modify the checksum or the message.
+Figure - 14: Message Integrity
+3.	
+Message Authentication
+
+
+In message validation the collector should be certain about the sender's 
+personality for example the collector needs to ensure that the genuine sender 
+is equivalent to professed to be. 
+
+
+There are various strategies to check the validity of the sender:
+1.	
+The two gatherings share a typical mystery code word. A gathering is 
+needed to show the mystery code word to the next for validation. 
+2.	
+Validation should be possible by sending advanced mark. 
+3.	
+A believed outsider checks the realness. One such path is to utilize 
+advanced authentications given by a perceived affirmation authority.
+4. 	 Message non-reproduction
+
+
+Non-repudiation suggests that it is not necessary for a sender to refuse to 
+deliver a letter that he has already received. 
+
+
+The burden of evidence rests on the recipient. 
+
+
+Being non-reproduction requires more than just having the letter in one's 
+possession; the recipient must also demonstrate that the message's quality is 
+the same as what the sender got. 
+
+
+Non-repudiation is accomplished by processes of verification and honesty.
+5. 	 Entity Authentication
+
+
+When authenticating an object (or defining a user), the entity or user is 
+checked before accessing device services.
+(c) Amity University Online
+
+
+--- page 15 ---
+10
+Network Security and Cryptography
+Notes
+Amity University Online
+Security Mechanisms 
+ 
+Figure -15: security mechanisms
+Network security is the area of PC innovation that oversees ensuring the 
+foundational security of the PC network. Because of this, the organisation is very 
+essential for data sharing, regardless of the level of the equipment—such as a printer 
+or scanner—or the programming. This means that a security tool can also be referred 
+to as a collection of cycles that control recovery from security breaches. To recover 
+from these specific attacks at various convention layers, specialised instruments are 
+designed. 
+Quite possibly the most explicit security components being used is cryptographic 
+procedures. Encryption or encryption-like changes of data are the most widely 
+recognized methods for giving security. A portion of the instruments are
+ 
+Figure - 16: Types of security mechanism
+Types of Security Mechanism are:
+1.  	 Encipherment:
+	
+This security system manages stowing away and covering of information which 
+encourages information to get secret. It is accomplished by applying numerical counts 
+or calculations which recreate data into not coherent structure. It is accomplished 
+by two renowned strategies named Cryptography and Encipherment. Level of 
+information encryption is subject to the calculation utilized for encipherment.
+ 
+Figure - 17: Encipherment
+(c) Amity University Online

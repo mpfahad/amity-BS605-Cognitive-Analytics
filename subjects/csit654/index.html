@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Amity Study Hub</title>
+<title>CSIT654 Study Pack — Network Security &amp; Cryptography</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
 <style>
 :root {
@@ -223,59 +223,108 @@ h1 {
   .wrap { width: min(100% - 1.2rem, 1120px); }
 }
 
-.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin-top:1.2rem; }
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; margin-top:1.2rem; }
 .cards a {
   display:block; text-decoration:none; color:inherit; padding:1.3rem; border-radius:var(--radius);
   border:1px solid var(--line); background:var(--panel); box-shadow:var(--shadow);
   transition: transform .15s ease;
 }
-.cards a:hover { transform: translateY(-3px); border-color: rgba(15,107,76,0.35); }
-.cards h2 { font-family:var(--font-display); margin:0 0 .4rem; font-size:1.55rem; color:var(--accent); }
+.cards a:hover { transform: translateY(-3px); }
+.cards h2 { font-family:var(--font-display); margin:0 0 .4rem; font-size:1.45rem; }
 .cards p { margin:0; color:var(--muted); }
-.cards .tool-prog { margin-top:0.75rem; font-size:0.88rem; color:var(--ink); font-weight:600; }
-.hub-note { font-size:0.92rem; color:var(--muted); margin-top:0.5rem; }
+.cards .tool-prog { margin-top:0.75rem; font-size:0.92rem; color:var(--ink); font-weight:600; }
 </style>
-<script>window.AMITY_SUBJECT = "hub";</script>
-<script src="shared/config.js"></script>
-<script src="shared/progress.js"></script>
-<script src="shared/sync-ui.js"></script>
+<script>window.AMITY_SUBJECT = "csit654";</script>
+<script src="../../shared/config.js"></script>
+<script src="../../shared/progress.js"></script>
+<script src="../../shared/sync-ui.js"></script>
 </head>
 <body>
 <div class="wrap">
+  <nav class="site-nav" aria-label="Site"><a href="index.html" class="home here">Home</a><a href="module-map.html">Module Map</a><a href="flashcards.html">Flashcards</a><a href="quiz.html">Quiz</a></nav><p style="margin:0.5rem 0 0;font-size:0.88rem"><a href="../../index.html">← All subjects</a></p>
   <header class="hero">
-    <div class="kicker">Amity University Online</div>
-    <h1>Study hub — all subjects</h1>
-    <p class="lede">Pick a subject to open flashcards, module maps, and quizzes. One sync code works everywhere — each subject keeps its own progress.</p>
+    <div class="kicker">Amity University Online · CSIT654</div>
+    <h1>Network Security &amp; Cryptography study pack</h1>
+    <p class="lede">Home for every CSIT654 study tool. Connect a sync code once — progress auto-saves across phone and PC.</p>
   </header>
 
   <section class="panel" style="margin-bottom:1rem">
-    <strong>Cloud sync</strong>
-    <p class="hub-note">Connect once below. Existing BS605 progress is preserved automatically.</p>
+    <strong>Your progress</strong>
+    <p class="lede" style="margin:0.35rem 0 0.7rem;font-size:0.95rem">Live totals from this device (and cloud when connected).</p>
+    <div class="summary-grid" id="homeStats">
+      <div class="stat"><b id="homeFlash">0/84</b><span>Flashcards seen</span><div class="prog-line"><i id="homeFlashBar"></i></div></div>
+      <div class="stat"><b id="homeKnown">0</b><span>Flashcards marked known</span></div>
+      <div class="stat"><b id="homeQuiz">0/55</b><span>Quiz answered · <span id="homeQuizCorrect">0</span> correct</span><div class="prog-line"><i id="homeQuizBar"></i></div></div>
+      <div class="stat"><b id="homeMap">0/55</b><span>Module-map answered · <span id="homeMapCorrect">0</span> correct</span><div class="prog-line"><i id="homeMapBar"></i></div></div>
+    </div>
     <div id="amity-sync-root"></div>
   </section>
 
   <section class="panel">
-    <strong>Subjects</strong>
+    <strong>All pages</strong>
     <div class="cards" style="margin-top:0.9rem">
-      <a href="subjects/bs605/index.html"><h2>BS605</h2><p>Cognitive Analytics &amp; Social Skills</p><div class="tool-prog" id="prog-bs605">63 cards · 60 MCQs · 60 map Qs</div></a>
-      <a href="subjects/cse601/index.html"><h2>CSE601</h2><p>Data Structures &amp; Algorithms</p><div class="tool-prog" id="prog-cse601">89 cards · 59 MCQs · 59 map Qs</div></a>
-      <a href="subjects/csit654/index.html"><h2>CSIT654</h2><p>Network Security &amp; Cryptography</p><div class="tool-prog" id="prog-csit654">84 cards · 55 MCQs · 55 map Qs</div></a>
-      <a href="subjects/csit745/index.html"><h2>CSIT745</h2><p>Research Methodology</p><div class="tool-prog" id="prog-csit745">139 cards · 92 MCQs · 92 map Qs</div></a>
+      <a href="module-map.html"><h2>Module Map</h2><p>Structure maps + important questions.</p><div class="tool-prog" id="cardMapProg">Not started</div></a>
+      <a href="flashcards.html"><h2>Flashcards</h2><p>84 revision cards with LMR priority list.</p><div class="tool-prog" id="cardFlashProg">Not started</div></a>
+      <a href="quiz.html"><h2>Objective quiz</h2><p>55 MCQs with explanations, filter by module.</p><div class="tool-prog" id="cardQuizProg">Not started</div></a>
+      <a href="Network Security and Cryptography  FINAL.pdf" target="_blank"><h2>Study PDF</h2><p>Full SLM (opens in a new tab).</p></a>
+      
     </div>
   </section>
 </div>
 <script>
-function bootHubSync() {
+const TOTALS = {"flashTotal": 84, "quizTotal": 55, "mapTotal": 55, "quizAnswerKey": {"1-1.1.1-q0": 1, "1-1.1.2-q0": 1, "1-1.1.3-q0": 1, "1-1.1.4-q0": 1, "1-1.1.5-q0": 1, "1-1.1.6-q0": 1, "1-1.1.7-q0": 1, "1-1.1.8-q0": 1, "1-1.1.9-q0": 1, "2-2.1.1-q0": 1, "2-2.1.2-q0": 1, "2-2.1.3-q0": 1, "2-2.1.4-q0": 1, "2-2.1.5-q0": 1, "2-2.1.6-q0": 1, "2-2.1.7-q0": 1, "2-2.1.8-q0": 1, "2-2.2.1-q0": 1, "2-2.2.2-q0": 1, "2-2.2.3-q0": 1, "2-2.2.4-q0": 1, "2-2.2.5-q0": 1, "2-2.2.6-q0": 1, "3-3.1.1-q0": 1, "3-3.1.2-q0": 1, "3-3.1.3-q0": 1, "3-3.1.4-q0": 1, "3-3.1.5-q0": 1, "3-3.1.6-q0": 1, "3-3.2.1-q0": 1, "3-3.2.2-q0": 1, "3-3.2.3-q0": 1, "4-4.1.1-q0": 1, "4-4.1.2-q0": 1, "4-4.1.3-q0": 1, "4-4.1.4-q0": 1, "4-4.2.1-q0": 1, "4-4.2.2-q0": 1, "4-4.2.3-q0": 1, "5-5.1.1-q0": 1, "5-5.1.2-q0": 1, "5-5.1.3-q0": 1, "5-5.1.4-q0": 1, "5-5.1.5-q0": 1, "5-5.1.6-q0": 1, "5-5.1.7-q0": 1, "5-5.1.8-q0": 1, "5-5.1.9-q0": 1, "5-5.2.1-q0": 1, "5-5.2.2-q0": 1, "5-5.2.3-q0": 1, "5-5.2.4-q0": 1, "5-5.2.5-q0": 1, "5-5.2.6-q0": 1, "5-5.2.7-q0": 1}, "mapAnswerKey": {"1": {"0": 1, "1": 1, "2": 1, "3": 1, "4": 1, "5": 1, "6": 1, "7": 1, "8": 1}, "2": {"0": 1, "1": 1, "2": 1, "3": 1, "4": 1, "5": 1, "6": 1, "7": 1, "8": 1, "9": 1, "10": 1, "11": 1, "12": 1, "13": 1}, "3": {"0": 1, "1": 1, "2": 1, "3": 1, "4": 1, "5": 1, "6": 1, "7": 1, "8": 1}, "4": {"0": 1, "1": 1, "2": 1, "3": 1, "4": 1, "5": 1, "6": 1}, "5": {"0": 1, "1": 1, "2": 1, "3": 1, "4": 1, "5": 1, "6": 1, "7": 1, "8": 1, "9": 1, "10": 1, "11": 1, "12": 1, "13": 1, "14": 1, "15": 1}}};
+function paintHome(payload) {
+  const P = window.AmityProgress || window.BS605Progress;
+  if (!P) return;
+  const s = P.summarize(payload || {}, TOTALS);
+  const f = s.flashcards, q = s.quiz, m = s.map;
+  document.getElementById("homeFlash").textContent = f.seen + "/" + f.total;
+  document.getElementById("homeKnown").textContent = String(f.known);
+  document.getElementById("homeQuiz").textContent = q.attempted + "/" + q.total;
+  document.getElementById("homeQuizCorrect").textContent = String(q.correct);
+  document.getElementById("homeMap").textContent = m.attempted + "/" + m.total;
+  document.getElementById("homeMapCorrect").textContent = String(m.correct);
+  document.getElementById("homeFlashBar").style.width = (f.total ? (f.seen/f.total)*100 : 0) + "%";
+  document.getElementById("homeQuizBar").style.width = (q.total ? (q.attempted/q.total)*100 : 0) + "%";
+  document.getElementById("homeMapBar").style.width = (m.total ? (m.attempted/m.total)*100 : 0) + "%";
+  document.getElementById("cardFlashProg").textContent = f.seen
+    ? (f.seen + " seen · " + f.known + " known")
+    : "Not started";
+  document.getElementById("cardQuizProg").textContent = q.attempted
+    ? (q.attempted + " answered · " + q.correct + " correct")
+    : "Not started";
+  document.getElementById("cardMapProg").textContent = m.attempted
+    ? (m.attempted + " answered · " + m.correct + " correct" + (m.visited ? " · " + m.visited + " visited" : ""))
+    : "Not started";
+}
+
+function bootSync(restoreFn) {
+  const SUBJECT = "csit654";
+  function apply(subPayload) {
+    if (subPayload && restoreFn) restoreFn(subPayload);
+    window.__AMITY_SYNC_READY = true;
+    window.__BS605_SYNC_READY = true;
+  }
+  const P = window.AmityProgress || window.BS605Progress;
   const UI = window.AmitySyncUI || window.BS605SyncUI;
   if (UI) {
     UI.mount(document.getElementById("amity-sync-root"), {
-      subjectLabel: "all subjects",
-      onLoaded: () => {},
-      onReady: () => {}
+      subjectLabel: "CSIT654",
+      onLoaded: (sub) => apply(sub),
+      onReady: (sub) => {
+        if (window.__AMITY_SYNC_READY) return;
+        const local = P && P.readLocalCache && P.readLocalCache();
+        const fallback = sub || (P && P.getSubjectPayload && P.getSubjectPayload(local?.payload, SUBJECT)) || null;
+        apply(fallback);
+      }
     });
+  } else {
+    const local = P && P.readLocalCache && P.readLocalCache();
+    apply(P && P.getSubjectPayload ? P.getSubjectPayload(local?.payload, SUBJECT) : null);
   }
 }
-bootHubSync();
+
+bootSync(paintHome);
 </script>
 </body>
 </html>

@@ -1,0 +1,821 @@
+--- page 1 ---
+Post Graduate Programmes (PG)
+• 
+Master of Business Administration
+• 
+Master of Computer Applications
+• 
+Master of Commerce (Financial Management / Financial 
+Technology) 
+• 
+Master of Arts (Journalism and Mass Communication) 
+• 
+Master of Arts (Economics)
+• 
+Master of Arts (Public Policy and Governance)
+• 
+Master of Social Work
+• 
+Master of Arts (English) 
+• 
+Master of Science (Information Technology) (ODL)
+• 
+Master of Science (Environmental Science) (ODL)
+Diploma Programmes
+• 
+Post Graduate Diploma (Management) 
+• 
+Post Graduate Diploma (Logistics) 
+• 
+Post Graduate Diploma (Machine Learning and Artificial 
+Intelligence) 
+• 
+Post Graduate Diploma (Data Science)
+Undergraduate Programmes (UG)
+• 
+Bachelor of Business Administration
+• 
+Bachelor of Computer Applications
+• 
+Bachelor of Commerce
+• 
+Bachelor of Arts (Journalism and Mass Communication) 
+• 
+Bachelor of Arts (General / Political Science / Economics / 
+English / Sociology)
+• 
+Bachelor of Social Work 
+• 
+Bachelor of Science (Information Technology) (ODL)
+Programs Offered
+Data Structures 
+and Algorithm Design
+Data Structures and Algorithm Design
+AMITY
+Product code
+Amity Helpline: (Toll free) 18001023434 
+For Student Support: +91 - 8826334455
+Support Email id: studentsupport@amityonline.com | https://amityonline.com
+(C) Amity University Online
+
+
+--- page 2 ---
+Data Structures and Algorithm Design
+(C) Amity University Online
+
+
+--- page 3 ---
+© Amity University Press
+All Rights Reserved
+No parts of this publication may be reproduced, stored in a retrieval system or transmitted 
+in any form or by any means, electronic, mechanical, photocopying, recording or otherwise 
+without the prior permission of the publisher.
+SLM & Learning Resources Committee
+	
+	
+	
+Chairman	
+:	
+Prof. Abhinash Kumar	
+	
+	
+	
+Members	
+:	
+Dr. Ranjit Varma
+	
+	
+	
+	
+	
+Dr. Maitree
+	
+	
+	
+	
+	
+Dr. Divya Bansal
+	
+	
+	
+	
+	
+Dr. Arun Som
+	
+	
+	
+	
+	
+Dr. Sunil Kumar
+	
+	
+	
+	
+	
+Dr. Reema Sharma
+	
+	
+	
+	
+	
+Dr. Winnie Sharma
+	
+	
+	
+Member Secretary	
+:	
+Ms. Rita Naskar
+Published by Amity University Press for exclusive use of Amity Directorate of Distance and Online Education, 
+Amity University, Noida-201313
+(C) Amity University Online
+
+
+--- page 4 ---
+Contents
+Page No.
+Module -I: Overview of Data Structures	
+01
+1.1 	 Big Data Structures	
+	
+	
+	
+1.1.1	 Stack
+ 
+1.1.2 Evaluation of Postfix Expression
+	
+1.1.3	 Tower of Hanoi Problem
+	
+1.1.4	 Queue
+	
+1.1.5	 Linked List
+	
+1.1.6	 Double Linked List
+1.2	 Algorithm	
+	
+	
+1.2.1	 Algorithm and Characteristics
+	
+1.2.2	 Asymtotic Notations
+ 
+1.2.3 Algorithm Time Complexity
+	
+1.2.4	 Recursive Program Analysis Strategies
+	
+1.2.5	 Master Theorem
+1.3	 Divide and Conquer Paradigm	
+	
+	
+1.3.1	 Divide-Conquer Recurrence Equations Solutions
+1.4	 Sorting Techniques	
+	
+	
+	
+1.4.1	 Bubble Sort
+	
+1.4.2	 Insertion Sort
+	
+1.4.3	 Selection Sort
+	
+1.4.4	 Merge Sort
+	
+1.4.5	 Heap Sort
+	
+1.4.6	 Quick Sort
+Module - II: Tree and Graphs	
+55
+2.1	 Tree	
+	
+2.1.1	 Basic Terminology and Applications
+	
+2.1.2	 Binary Trees
+	
+2.1.3	 Binary Search Trees
+	
+2.1.4	 Optimal Binary Search Tree
+	
+2.1.5	 Red-Black Trees
+	
+2.1.6	 AVL Trees
+	
+2.1.7	 B Trees
+	
+2.1.8	 Spanning Trees
+	
+2.1.9	 Prim’s Algorithm
+	
+2.1.10	Kruskal’s Algorithm
+2.2	 Graphs
+	
+2.2.1	 Terminology, Representations, Traversals
+	
+2.2.2	 Depth-First Search (DFS)
+(C) Amity University Online
+
+
+--- page 5 ---
+	
+2.2.3	 Breadth-First Search (BFS)
+	
+2.2.4	 Single-Source Shortest Path
+	
+2.2.5	 All-Pair Shortest Path
+Module - III: Dynamic and Greedy Approach	
+107
+3.1	 Dynamic Programming	
+	
+3.1.1	 Dynamic Programming Approach
+	
+3.1.2	 Principle of Optimality
+ 
+3.1.3 Strassens Matrix Multiplication
+ 
+3.1.4 Matrix Chain Multiplication
+	
+3.1.5	 Longest Common subsequence
+	
+3.1.6	 0/1 Knapsack Problem
+3.2 	 Greedy Approach	
+	
+3.2.1	 Introduction of Greedy Approach
+	
+3.2.2	 Activity Selection Problem
+ 
+3.2.3 Huffman Codes
+	
+3.2.4	 Fractional Knapsack Problem
+3.3 	 Branch and Bound Approach	
+	
+3.3.1	 Traveling Salesman Problem
+	
+3.3.2	 Knapsack Problem
+	
+3.3.3	 Job Sequencing
+	
+3.3.4	 Job Sequencing with Deadline
+Module - IV: E String Matching Algorithms  and Approximation Algorithms	
+141
+4.1 	 String Matching Algorithm	
+	
+4.1.1	 Naïve String Matching Algorithm
+	
+4.1,2	 String Searching Algorithm: Knuth Morris and Pratt 
+	
+4.1.3	 String Matching Algorithm: Rabin Karp 
+4.2  Approximation Algorithm 
+ 
+4.2.1 Vertex-Cover Algorithm
+	
+4.2.2	 Set Covering Problem
+	
+4.2.3	 Randomisation and Linear Programming
+	
+4.2.4	 The Subset-sum Problem
+Module -V: NP-Completeness	
+172
+5.1 	 Polynomial Time	
+	
+5.1.1	 Green Technology
+	
+5.1.2	 Hamiltonian Cycles
+5.2 	 NP-Completeness	
+	
+5.2.1	 NP-completeness Proofs
+	
+5.2.2	 NP-completeness Problems
+	
+5.2.3	 NP-Hard and SAT Problems
+	
+5.2.4	 NP-completeness and Reducibility
+(C) Amity University Online
+
+
+--- page 6 ---
+Data Structures and Algorithm Design
+1
+Notes
+Amity University Online 
+Module - I: Overview of Data Structures
+Learning Objectives:
+At the end of this module, you will be able to:
+●
+●
+Understand the characteristics and applications of big data structures.
+●
+●
+Identify different types of big data structures and their use cases.
+●
+●
+Differentiate between various algorithm design techniques.
+●
+●
+Implement divide and conquer algorithms for common computational problems.
+●
+●
+Compare the efficiency of different sorting algorithms.
+●
+●
+Implement and apply sorting algorithms to organise data effectively.
+Introduction
+A data structure is a method of organising and storing datain on a computer, 
+enabling efficient access and usage. It defines the relationship between data elements 
+and the operations that can be performed on them.
+1.1 Big Data Structures
+Importance of Data Structures
+Data structures are crucial for several reasons:
+● 
+Efficient Data Management: They allow for efficient storage and retrieval of data, 
+reducing processing time and enhancing performance.
+● 
+Data Organization: They logically organise data, making it easier to comprehend 
+and access.
+● 
+Data Abstraction: They conceal the implementation details of data storage, letting 
+programmers focus on logical data manipulation.
+● 
+Reusability: Common data structures can be reused across multiple applications, 
+saving development time and effort.
+● 
+Algorithm Optimization: Choosing the right data structure can greatly improve the 
+efficiency of algorithms operating on the data.
+Classification of Data Structures
+Data structures are broadly classified into two categories:
+● 
+Linear Data Structures: These store data in a sequential order, allowing easy 
+insertion and deletion operations. Examples include arrays, linked lists, and queues.
+● 
+Non-Linear Data Structures: These store data in a hierarchical or interconnected 
+manner, facilitating more complex relationships between data elements. Examples 
+include trees, graphs, and hash tables.
+Types of Data Structures
+Data structures are divided into two primary categories:
+● 
+Linear Data Structures:
+
+
+Array: A collection of elements of the same type stored in contiguous memory 
+locations.
+(C) Amity University Online
+
+
+--- page 7 ---
+2
+Data Structures and Algorithm Design
+Notes
+Amity University Online
+
+
+Linked List: A collection of elements linked together by pointers, allowing 
+dynamic insertion and deletion.
+
+
+Queue: A First-In-First-Out (FIFO) structure where elements are added at the 
+end and removed from the beginning.
+
+
+Stack: A Last-In-First-Out (LIFO) structure where elements are added and 
+removed from the top.
+● 
+Non-Linear Data Structures:
+
+
+Tree: A hierarchical structure where each node can have multiple child nodes.
+
+
+Graph: A collection of nodes connected by edges, representing relationships 
+between data elements.
+
+
+Hash Table: A data structure that uses a hash function to map keys to values, 
+allowing for fast lookup and insertion.
+Applications of Data Structures
+Data structures are widely used in various fields, including:
+●
+●
+Database Management Systems: To store and manage large amounts of 
+structured data.
+●
+●
+Operating Systems: To manage memory, processes, and files.
+●
+●
+Compiler Design: To represent source code and intermediate code.
+●
+●
+Artificial Intelligence: To represent knowledge and perform reasoning.
+●
+●
+Graphics and Multimedia: To store and process images, videos, and audio data.
+1.1.1 Stack 
+A stack is an abstract data type with limited, predefined capabilities. It is a 
+fundamental data structure that allows elements to be added and removed in a specific 
+order. Whenever an element is added, it goes to the top of the stack, and only the 
+element at the top can be removed, similar to a stack of objects.
+ 
+1. 
+Stack’s Basic Characteristics
+
+
+A stack is an ordered list of similar types of data.
+
+
+It follows the LIFO (Last In First Out) or FILO (First In Last Out) principle.
+
+
+The function push() is used to insert new elements into the stack.
+
+
+The function pop() is used to delete elements from the stack.
+(C) Amity University Online
+
+
+--- page 8 ---
+Data Structures and Algorithm Design
+3
+Notes
+Amity University Online 
+
+
+Both insertion and deletion operations are allowed only at one end of the 
+stack, called the top.
+
+
+When the stack is full, it is said to be in an overflow state.
+
+
+When the stack is empty, it is said to be in an underflow state.
+Stack’s Applications
+Reversing a term is a simple application of a stack. You push a word into a stack, 
+letter by letter. Then, you pop the letters out of the stack to reverse the word.
+1. 
+Other uses of stacks include:
+
+
+Parsing expressions.
+
+
+Converting expressions between different notations (e.g., Infix to Postfix, 
+Postfix to Prefix).
+2. 
+Implementation of Stack Data Structure
+
+
+Stacks can be implemented using either an Array or a Linked List.
+
+
+Arrays are fast but have a limited size.
+
+
+Linked Lists have overhead but are not limited in size.
+
+
+Here, we’ll implement a Stack using an array.
+3.	
+ 
+4.	
+Fundamental Activities
+
+
+Fundamental stack operations include initialization, usage, and de-
+initialization.
+
+
+The two primary operations are:
+
+
+Push(): Adding an element to the stack.
+
+
+Pop(): Removing (accessing) an element from the stack.
+
+
+Additional functionality for verifying the stack’s state includes:
+
+
+Peek(): Retrieving the top element of the stack without removing it.
+
+
+IsFull(): Checking if the stack is full.
+
+
+IsEmpty(): Checking if the stack is empty.
+(C) Amity University Online
+
+
+--- page 9 ---
+4
+Data Structures and Algorithm Design
+Notes
+Amity University Online
+
+
+A pointer is maintained to the last pushed data on the stack, which represents 
+the top of the stack. This pointer is referred to as the “top” pointer, providing 
+access to the top value without removing it.
+1.1.2 Evaluation of Postfix Expression
+The virtue of postfix notation is that it enables easy evaluation of expressions. 
+To begin with, the need for parentheses is eliminated. Secondly, the priority of the 
+operators is no longer relevant. The expression can be evaluated by making a left to 
+right scan, stacking operands, and evaluating operators using as operands the correct 
+elements from the stack and finally placing the result onto the stack. This evaluation 
+is much simpler than attempting a direct evaluation of infix notation. Let us now see a 
+program to evaluate a postfix expression.
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <math.h> 
+#include <ctype.h>
+#define MAX 50
+struct postfix
+{
+int stack[MAX]
+int top, nn;
+char *s;
+};
+void initpostfix (struct postfix *);
+void setexpr (struct postfix *, char *); 
+void push (struct postfix *, int); 
+int pop (struct postfix *);
+void calculate (struct postfix *); 
+void show (struct postfix );
+void main()
+{
+struct postfix q;
+char expr[MAX];
+clrscr():
+initpostfix (&q);
+printf (“\n Enter postfix expression to be evaluated: “);
+gets (expr);
+(C) Amity University Online
+
+
+--- page 10 ---
+Data Structures and Algorithm Design
+5
+Notes
+Amity University Online 
+setexpr (&q, expr);
+calculate (&q);
+show (q);
+getch();
+}
+/* initializes structure elements */ 
+void initpostfix (struct postfix *p)
+{
+p->top = -1;
+}
+/* sets s to point to the given expr. */ 
+void setexpr (struct postfix *p, char *str)
+{
+p->s = str;
+}
+/* adds digit to the stack */ 
+void push (struct postfix *p, int item)
+{
+if(p-> top == MAX-1) 
+printf (“\nStack is full.”);
+else
+{
+ p> top++;
+ p-> stack[p-> top] = item;
+}
+/* pops digit from the stack */ 
+int pop (struct postfix *p)
+{
+int data;
+if(p-> top ==-1)
+{
+printf (“\n Stack is empty.”); 
+return NULL;
+}
+data = p-> stack[p-> top]; 
+p-> top--;
+  return data;
+(C) Amity University Online
+
+
+--- page 11 ---
+6
+Data Structures and Algorithm Design
+Notes
+Amity University Online
+}
+/* evaluates the postfix expression */ 
+void calculate( struct postfix *p)
+{
+int n1, n2, n3; 
+while (*(p->s))
+{
+/* skip whitespace, if any */ 
+if(*(p->s) == ‘ ’ || *(p->s) == ‘\t’)
+{
+p->s++;
+continue;
+}
+/*if digit is encountered */ 
+if (isdigit (*(p->s )))
+{
+p->nn = *(p->s)-’0’; 
+push (p, p-> nn);
+}
+else
+{
+/*if operator is encountered */ 
+n1 = pop(p); 
+n2 = pop(p); 
+switch (*(p->s))
+{
+case ‘+’:
+n3 = n2+n1;
+break;
+case ‘-’:
+n3 = n2-n1:
+break;
+case ‘/’:
+n3 = n2/n1:
+break;
+case ‘*’:
+n3 = n2 * n1;
+break;
+case ‘%:
+(C) Amity University Online
+
+
+--- page 12 ---
+Data Structures and Algorithm Design
+7
+Notes
+Amity University Online 
+n3 = n2 % n1;
+break;
+case ‘$’:
+n3 = pow(n2 , n1);
+break;
+default:
+printf (“Unknown operator”);
+exit(1);
+}
+push(p, n3);
+}
+P -> s++;
+}
+}
+/* displays the result*/ 
+void show (struct postfix p)
+{
+p.nn = pop (&p); 
+printf (“Result is: %d”, p.nn);
+}
+Output:
+Enter postfix expression to be evaluated 4  2  $  3  *  3  -   8   4   /  1  1   +   /  + 
+Result is: 46
+In this program the structure postfix contains an integer array stack, to store the 
+intermediate results of the operations and top to store the position of the topmost 
+element in the stack. The evaluation of the expression gets performed in the calculate() 
+function.
+During the course of execution, the user enters an arithmetic expression in the 
+postfix form. In the calculate() function, this expression would get scanned character 
+by character. If the character scanned is an operand, then first it is converted to a digit 
+form (from string form), and then it is pushed onto the stack. If the character scanned is 
+a blank space, then it is skipped. If the character scanned is an operator, then the top 
+two elements from the stack are retrieved. 
+An arithmetic operation is performed between the two operands. The type of 
+arithmetic operation i.e., addition, subtraction or multiplication etc. depends on the 
+operator scanned from the sting s. The result is then pushed back onto the stack. These 
+steps are repeated as long as the strings is   are not exhausted. The show() function 
+displays the final result. These steps can be better understood if you go through the 
+evaluation of a sample postfix expression shown in the below Table.
+Postfix Expression: 4  2  $  3  *  3  -  8   4  /  1  1  +  /  +
+(C) Amity University Online
+
+
+--- page 13 ---
+8
+Data Structures and Algorithm Design
+Notes
+Amity University Online
+Char. Scanned
+Stack Contents
+4
+4
+2
+4 , 2
+$
+16
+3
+16 , 3
+*
+48
+3
+48 , 3
+-
+45
+8
+45 , 8
+4
+45 , 8 , 4
+/
+45, 2
+1
+45, 2, 1
+1
+45, 2, 1, 1
++
+45, 2, 2
+/
+45 , 1
++
+46 (Results)
+Evaluation of Postfix expression
+1.1.3 Towers of Hanoi Problem
+The Tower of Hanoi is a mathematical puzzle which consists of three towers (pegs) 
+and more than one ring. At first, every one of the circles are set on one rod or tower, one 
+over the other in a rising request of size like a cone-shaped tower. It is depicted as –
+ These rings are of various sizes and stacked upon in a climbing request, for 
+example the more modest one sits over the bigger one. There are different varieties of 
+the riddle where the quantity of disks increment, yet the tower count remains as before.
+Rules
+The mission is to move every one of the disks to some other tower without 
+disregarding the succession plan. A couple of rules to be followed for Tower of Hanoi 
+are − 
+●
+●
+Only one disk can be moved among the towers at any given time.
+●
+●
+Just the “top” disk can be taken out. 
+(C) Amity University Online
+
+
+--- page 14 ---
+Data Structures and Algorithm Design
+9
+Notes
+Amity University Online 
+●
+●
+No large disk can sit over a little disk.
+Following is an animated representation of solving a Tower of Hanoi puzzle with 
+three disks.
+The Tower of Hanoi puzzle with n disks can be solved in a minimum of 2n−1 steps. 
+This presentation shows that a puzzle with 3 disks has taken 23 - 1 = 7 steps.
+Algorithm
+To write an algorithm for Tower of Hanoi, first we need to learn how to solve this 
+problem with lesser number of disks, say → 1 or 2. We mark three towers with name, 
+source, destination and aux (only to help moving the disks). If we have only one disk, 
+then it can easily be moved from source to destination peg.
+If we have 2 disks −
+
+
+First, we move the smaller (top) disk to aux peg.
+
+
+Then, we move the larger (bottom) disk to the destination peg.
+
+
+And finally, we move the smaller disk from aux to destination peg.
+  
+(C) Amity University Online
+
+
+--- page 15 ---
+10
+Data Structures and Algorithm Design
+Notes
+Amity University Online
+So now, we are in a position to design an algorithm for Tower of Hanoi with more 
+than two disks. We divide the stack of disks into two parts. The largest disk (nth disk) is 
+in one part and all other (n-1) disks are in the second part.
+Our ultimate aim is to move disk n from source to destination and then put all other 
+(n1) disks onto it. We can imagine applying the same in a recursive way for all given 
+sets of disks.
+The steps to follow are –
+
+
+Step 1 − Move n-1 disks from source to aux
+
+
+Step 2 − Move nth disk from source to dest
+
+
+Step 3 − Move n-1 disks from aux to dest
+A recursive calculation for Tower of Hanoi can be driven 
+as follows –
+START
+Procedure Hanoi(disk, source, dest, aux)
+IF disk == 1, THEN
+move disk from source to dest             
+ELSE
+Hanoi(disk - 1, source, aux, dest)     // Step 1
+move disk from source to dest          // Step 2
+Hanoi(disk - 1, aux, dest, source)     // Step 3
+END IF
+END Procedure
+STOP.
+1.1.4 Queue
+Like stack data structure, Queue is either an abstract data form or a linear data 
+structure in which the first element is added from one end called REAR (also called the 
+tail) and the existing element is removed from the other end called FRONT (also called 
+the head).
+This generates a queue as the data structure of FIFO(First in First Out), which 
+ensures that the variable inserted first will be removed first.
+(C) Amity University Online

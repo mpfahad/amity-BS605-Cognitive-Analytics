@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CSE601 Objective Questions — Data Structures &amp; Algorithms</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --ink: #15231c;
+  --muted: #4a5c52;
+  --paper: #f3f6f1;
+  --panel: rgba(255,255,255,0.78);
+  --line: rgba(21,35,28,0.12);
+  --accent: #0f6b4c;
+  --accent-2: #c45c26;
+  --accent-soft: #d8efe4;
+  --warn: #8a3b12;
+  --ok: #1f7a4d;
+  --bad: #a33b3b;
+  --shadow: 0 18px 50px rgba(21,35,28,0.12);
+  --radius: 18px;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-body);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #d7ebe0 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, #f3dfd0 0%, transparent 45%),
+    linear-gradient(180deg, #eef4ef 0%, var(--paper) 40%, #e7eee8 100%);
+  min-height: 100vh;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image:
+    linear-gradient(rgba(21,35,28,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(21,35,28,0.03) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(180deg, #000, transparent 85%);
+}
+a { color: var(--accent); }
+.wrap { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; padding: 1.5rem 0 3rem; position: relative; }
+.hero {
+  display: grid;
+  gap: 1rem;
+  padding: 1.6rem 0 1.2rem;
+  animation: rise 0.6s ease both;
+}
+.kicker {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+h1 {
+  font-family: var(--font-display);
+  font-weight: 650;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  margin: 0.2rem 0;
+  letter-spacing: -0.02em;
+}
+.lede { margin: 0; max-width: 46rem; color: var(--muted); font-size: 1.05rem; }
+.navrow {
+  display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.6rem;
+}
+.btn, button.btn {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+.btn:hover, button.btn:hover { transform: translateY(-1px); border-color: rgba(15,107,76,0.35); }
+.btn.primary { background: var(--accent); color: #fff; border-color: transparent; }
+.btn.ghost { background: transparent; }
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+}
+.filters {
+  display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0;
+}
+.chip {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.65);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  font: inherit;
+}
+.chip.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+}
+.chip.lmr {
+  border-color: rgba(196,92,38,0.45);
+  color: var(--warn);
+}
+.chip.lmr.active { background: var(--accent-2); color: #fff; }
+.site-nav {
+  display: flex; flex-wrap: wrap; gap: 0.45rem;
+  align-items: center;
+  margin: 0 0 0.4rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.82);
+  backdrop-filter: blur(8px);
+  width: fit-content;
+  max-width: 100%;
+}
+.site-nav a {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+.site-nav a:hover { background: var(--accent-soft); color: var(--accent); }
+.site-nav a.home {
+  background: var(--accent);
+  color: #fff;
+}
+.site-nav a.here {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.meta {
+  display: flex; flex-wrap: wrap; gap: 0.75rem 1.2rem;
+  color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem;
+}
+.meta strong { color: var(--ink); }
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.6rem;
+  margin: 0.8rem 0;
+}
+.stat {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.8rem;
+}
+.stat b { display: block; font-size: 1.35rem; font-family: var(--font-display); color: var(--ink); }
+.stat span { color: var(--muted); font-size: 0.88rem; }
+.prog-line {
+  margin-top: 0.55rem;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(21,35,28,0.08);
+  overflow: hidden;
+}
+.prog-line > i {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), #2f9e74);
+  border-radius: inherit;
+}
+.links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+.links a {
+  display: block;
+  text-decoration: none;
+  padding: 0.7rem 0.85rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.links a.lmr-link {
+  background: linear-gradient(135deg, #fff4ec, #ffe8d8);
+  border-color: rgba(196,92,38,0.25);
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes flipIn {
+  from { opacity: 0; transform: rotateX(-8deg) translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+@media (max-width: 720px) {
+  .wrap { width: min(100% - 1.2rem, 1120px); }
+}
+
+.progress {
+  height: 8px; border-radius: 999px; background: rgba(21,35,28,0.08); overflow: hidden;
+}
+.progress > span {
+  display: block; height: 100%; width: 0%;
+  background: linear-gradient(90deg, var(--accent), #2f9e74);
+  transition: width 0.25s ease;
+}
+.quiz-layout { display: grid; gap: 1rem; }
+.qcard {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.82);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.15rem;
+  box-shadow: var(--shadow);
+  animation: flipIn 0.35s ease both;
+}
+.qhead {
+  display: flex; justify-content: space-between; gap: 0.8rem; flex-wrap: wrap;
+  margin-bottom: 0.7rem;
+}
+.qnum {
+  font-weight: 700; color: var(--accent); font-size: 0.85rem; letter-spacing: 0.03em;
+}
+.qtext {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  line-height: 1.3;
+  margin: 0 0 0.9rem;
+}
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.7rem; align-items: flex-start;
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 14px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  font: inherit;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+.opt:hover:not(:disabled) { transform: translateY(-1px); border-color: rgba(15,107,76,0.35); }
+.opt .letter {
+  flex: 0 0 auto;
+  width: 1.55rem; height: 1.55rem;
+  border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+.opt.correct {
+  border-color: rgba(31,122,77,0.55);
+  background: #e8f7ef;
+}
+.opt.wrong {
+  border-color: rgba(163,59,59,0.45);
+  background: #fdeeee;
+}
+.opt:disabled { cursor: default; }
+.explain {
+  margin-top: 0.85rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 12px;
+  background: #f2f7f4;
+  color: var(--muted);
+  display: none;
+}
+.explain.show { display: block; }
+.scorebar {
+  display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; justify-content: space-between;
+}
+.score {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+}
+.footer-nav {
+  display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: space-between; margin-top: 0.8rem;
+}
+</style>
+<script>window.AMITY_SUBJECT = "cse601";</script>
+<script src="../../shared/config.js"></script>
+<script src="../../shared/progress.js"></script>
+<script src="../../shared/sync-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <nav class="site-nav" aria-label="Site"><a href="index.html" class="home">Home</a><a href="module-map.html">Module Map</a><a href="flashcards.html">Flashcards</a><a href="quiz.html" class="here">Quiz</a></nav>
+  <header class="hero">
+    <div class="kicker">Amity · CSE601</div>
+    <h1>Objective questions by module</h1>
+    <p class="lede">Objective questions by module with explanations. Filter, shuffle, and review weak topics.</p>
+    <div class="navrow">
+      <a class="btn" href="flashcards.html#lmr">LMR priorities</a>
+    </div>
+  </header>
+
+  <section class="panel">
+    <div class="scorebar">
+      <div class="meta" style="margin:0">
+        <span><strong id="totalQ">0</strong> questions</span>
+        <span>Answered <strong id="attempted">0</strong></span>
+        <span>Correct <strong id="scoreNow">0</strong></span>
+        <span>Accuracy <strong id="accuracy">—</strong></span>
+      </div>
+      <div class="navrow" style="margin:0">
+        <button class="btn" id="resetBtn" type="button">Reset answers</button>
+        <button class="btn primary" id="shuffleBtn" type="button">Shuffle</button>
+      </div>
+    </div>
+    <div class="progress" style="margin-top:0.75rem"><span id="quizProgressBar"></span></div>
+    <div class="filters" id="moduleFilters" style="margin-top:0.9rem"></div>
+    <div class="summary-grid" id="moduleStats"></div>
+    <div class="links"><a class="" href="Live Class 1 Transcript.txt" target="_blank" rel="noopener">Live Class 1 transcript</a><a class="" href="Live Class 2 Transcript.txt" target="_blank" rel="noopener">Live Class 2 transcript</a><a class="lmr-link" href="Data Structure and Algorithm F.pdf" target="_blank" rel="noopener">Study PDF (SLM)</a></div>
+    <div id="amity-sync-root"></div>
+  </section>
+
+  <section class="quiz-layout" style="margin-top:1rem">
+    <div class="qcard" id="qcard">
+      <div class="qhead">
+        <span class="qnum" id="qnum"></span>
+        <span class="qnum" id="qtopic"></span>
+      </div>
+      <h2 class="qtext" id="qtext"></h2>
+      <div class="options" id="options"></div>
+      <div class="explain" id="explain"></div>
+      <div class="footer-nav">
+        <button class="btn" id="prevBtn" type="button">Previous</button>
+        <button class="btn primary" id="nextBtn" type="button">Next</button>
+      </div>
+    </div>
+  </section>
+</div>
+<script>
+const DATA = {"course": "Data Structures and Algorithm Design (CSE601)", "modules": [{"id": 1, "title": "Module 1", "topics": [{"id": "1.1.1", "title": "Stack", "flashcards": [{"front": "What is the core idea of Stack?", "back": "1.1.2 Evaluation of Postfix Expression 1.1.3 Tower of Hanoi Problem 1.1.4 Queue", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.1.1 · Big Data Structures"}, {"front": "Name one exam point for Stack.", "back": "Be able to define Stack, state when it is used, and contrast it with a related concept in Big Data Structures."}], "mcqs": [{"q": "Which statement best matches Stack?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Stack", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Stack is a syllabus topic under Big Data Structures in Module 1."}]}, {"id": "1.1.2", "title": "Evaluation of Postfix Expression", "flashcards": [{"front": "What is the core idea of Evaluation of Postfix Expression?", "back": "1.1.3 Tower of Hanoi Problem 1.1.4 Queue 1.1.5 Linked List", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.1.2 · Big Data Structures"}], "mcqs": [{"q": "Which statement best matches Evaluation of Postfix Expression?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Evaluation of Postfix Expression", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Evaluation of Postfix Expression is a syllabus topic under Big Data Structures in Module 1."}]}, {"id": "1.1.3", "title": "Tower of Hanoi Problem", "flashcards": [{"front": "What is the core idea of Tower of Hanoi Problem?", "back": "1.1.4 Queue 1.1.5 Linked List 1.1.6 Double Linked List", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.1.3 · Big Data Structures"}, {"front": "Name one exam point for Tower of Hanoi Problem.", "back": "Be able to define Tower of Hanoi Problem, state when it is used, and contrast it with a related concept in Big Data Structures."}], "mcqs": [{"q": "Which statement best matches Tower of Hanoi Problem?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Tower of Hanoi Problem", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Tower of Hanoi Problem is a syllabus topic under Big Data Structures in Module 1."}]}, {"id": "1.1.4", "title": "Queue", "flashcards": [{"front": "What is the core idea of Queue?", "back": "1.1.5 Linked List 1.1.6 Double Linked List 1.2 Algorithm", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.1.4 · Big Data Structures"}], "mcqs": [{"q": "Which statement best matches Queue?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Queue", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Queue is a syllabus topic under Big Data Structures in Module 1."}]}, {"id": "1.1.5", "title": "Linked List", "flashcards": [{"front": "What is the core idea of Linked List?", "back": "1.1.6 Double Linked List 1.2 Algorithm 1.2.1 Algorithm and Characteristics", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.1.5 · Big Data Structures"}, {"front": "Name one exam point for Linked List.", "back": "Be able to define Linked List, state when it is used, and contrast it with a related concept in Big Data Structures."}], "mcqs": [{"q": "Which statement best matches Linked List?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Linked List", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Linked List is a syllabus topic under Big Data Structures in Module 1."}]}, {"id": "1.1.6", "title": "Double Linked List", "flashcards": [{"front": "What is the core idea of Double Linked List?", "back": "1.2 Algorithm 1.2.1 Algorithm and Characteristics 1.2.2 Asymtotic Notations", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.1.6 · Big Data Structures"}], "mcqs": [{"q": "Which statement best matches Double Linked List?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Double Linked List", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Double Linked List is a syllabus topic under Big Data Structures in Module 1."}]}, {"id": "1.2.1", "title": "Algorithm and Characteristics", "flashcards": [{"front": "What is the core idea of Algorithm and Characteristics?", "back": "1.2.2 Asymtotic Notations 1.2.3 Algorithm Time Complexity 1.2.4 Recursive Program Analysis Strategies", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.2.1 · Algorithm"}, {"front": "Name one exam point for Algorithm and Characteristics.", "back": "Be able to define Algorithm and Characteristics, state when it is used, and contrast it with a related concept in Algorithm."}], "mcqs": [{"q": "Which statement best matches Algorithm and Characteristics?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Algorithm and Characteristics", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Algorithm and Characteristics is a syllabus topic under Algorithm in Module 1."}]}, {"id": "1.2.2", "title": "Asymtotic Notations", "flashcards": [{"front": "What is the core idea of Asymtotic Notations?", "back": "1.2.3 Algorithm Time Complexity 1.2.4 Recursive Program Analysis Strategies 1.2.5 Master Theorem", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.2.2 · Algorithm"}], "mcqs": [{"q": "Which statement best matches Asymtotic Notations?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Asymtotic Notations", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Asymtotic Notations is a syllabus topic under Algorithm in Module 1."}]}, {"id": "1.2.3", "title": "Algorithm Time Complexity", "flashcards": [{"front": "What is the core idea of Algorithm Time Complexity?", "back": "1.2.4 Recursive Program Analysis Strategies 1.2.5 Master Theorem 1.3 Divide and Conquer Paradigm", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.2.3 · Algorithm"}, {"front": "Name one exam point for Algorithm Time Complexity.", "back": "Be able to define Algorithm Time Complexity, state when it is used, and contrast it with a related concept in Algorithm."}], "mcqs": [{"q": "Which statement best matches Algorithm Time Complexity?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Algorithm Time Complexity", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Algorithm Time Complexity is a syllabus topic under Algorithm in Module 1."}]}, {"id": "1.2.4", "title": "Recursive Program Analysis Strategies", "flashcards": [{"front": "What is the core idea of Recursive Program Analysis Strategies?", "back": "1.2.5 Master Theorem 1.3 Divide and Conquer Paradigm 1.3.1 Divide-Conquer Recurrence Equations Solutions", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.2.4 · Algorithm"}], "mcqs": [{"q": "Which statement best matches Recursive Program Analysis Strategies?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Recursive Program Analysis Strategies", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Recursive Program Analysis Strategies is a syllabus topic under Algorithm in Module 1."}]}, {"id": "1.2.5", "title": "Master Theorem", "flashcards": [{"front": "What is the core idea of Master Theorem?", "back": "1.3 Divide and Conquer Paradigm 1.3.1 Divide-Conquer Recurrence Equations Solutions 1.4 Sorting Techniques", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.2.5 · Algorithm"}, {"front": "Name one exam point for Master Theorem.", "back": "Be able to define Master Theorem, state when it is used, and contrast it with a related concept in Algorithm."}], "mcqs": [{"q": "Which statement best matches Master Theorem?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Master Theorem", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Master Theorem is a syllabus topic under Algorithm in Module 1."}]}, {"id": "1.3.1", "title": "Divide-Conquer Recurrence Equations Solutions", "flashcards": [{"front": "What is the core idea of Divide-Conquer Recurrence Equations Solutions?", "back": "1.4 Sorting Techniques 1.4.1 Bubble Sort 1.4.2 Insertion Sort", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.3.1 · Divide and Conquer Paradigm"}], "mcqs": [{"q": "Which statement best matches Divide-Conquer Recurrence Equations Solutions?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Divide-Conquer Recurrence Equations Solutions", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Divide-Conquer Recurrence Equations Solutions is a syllabus topic under Divide and Conquer Paradigm in Module 1."}]}, {"id": "1.4.1", "title": "Bubble Sort", "flashcards": [{"front": "What is the core idea of Bubble Sort?", "back": "1.4.2 Insertion Sort 1.4.3 Selection Sort 1.4.4 Merge Sort", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.4.1 · Sorting Techniques"}, {"front": "Name one exam point for Bubble Sort.", "back": "Be able to define Bubble Sort, state when it is used, and contrast it with a related concept in Sorting Techniques."}], "mcqs": [{"q": "Which statement best matches Bubble Sort?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Bubble Sort", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Bubble Sort is a syllabus topic under Sorting Techniques in Module 1."}]}, {"id": "1.4.2", "title": "Insertion Sort", "flashcards": [{"front": "What is the core idea of Insertion Sort?", "back": "1.4.3 Selection Sort 1.4.4 Merge Sort 1.4.5 Heap Sort", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.4.2 · Sorting Techniques"}], "mcqs": [{"q": "Which statement best matches Insertion Sort?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Insertion Sort", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Insertion Sort is a syllabus topic under Sorting Techniques in Module 1."}]}, {"id": "1.4.3", "title": "Selection Sort", "flashcards": [{"front": "What is the core idea of Selection Sort?", "back": "1.4.4 Merge Sort 1.4.5 Heap Sort 1.4.6 Quick Sort", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.4.3 · Sorting Techniques"}, {"front": "Name one exam point for Selection Sort.", "back": "Be able to define Selection Sort, state when it is used, and contrast it with a related concept in Sorting Techniques."}], "mcqs": [{"q": "Which statement best matches Selection Sort?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Selection Sort", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Selection Sort is a syllabus topic under Sorting Techniques in Module 1."}]}, {"id": "1.4.4", "title": "Merge Sort", "flashcards": [{"front": "What is the core idea of Merge Sort?", "back": "1.4.5 Heap Sort 1.4.6 Quick Sort Module - II: Tree and Graphs", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.4.4 · Sorting Techniques"}], "mcqs": [{"q": "Which statement best matches Merge Sort?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Merge Sort", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Merge Sort is a syllabus topic under Sorting Techniques in Module 1."}]}, {"id": "1.4.5", "title": "Heap Sort", "flashcards": [{"front": "What is the core idea of Heap Sort?", "back": "1.4.6 Quick Sort Module - II: Tree and Graphs 55", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.4.5 · Sorting Techniques"}, {"front": "Name one exam point for Heap Sort.", "back": "Be able to define Heap Sort, state when it is used, and contrast it with a related concept in Sorting Techniques."}], "mcqs": [{"q": "Which statement best matches Heap Sort?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Heap Sort", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Heap Sort is a syllabus topic under Sorting Techniques in Module 1."}]}, {"id": "1.4.6", "title": "Quick Sort", "flashcards": [{"front": "What is the core idea of Quick Sort?", "back": "● Searching Algorithms: Techniques like Binary Search employ Divide and Conquer to efficiently search through a sorted array or list.", "detail": "From Data Structures and Algorithm Design (CSE601) · 1.4.6 · Sorting Techniques"}], "mcqs": [{"q": "Which statement best matches Quick Sort?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Quick Sort", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Quick Sort is a syllabus topic under Sorting Techniques in Module 1."}]}]}, {"id": 2, "title": "Module 2", "topics": [{"id": "2.1.1", "title": "Basic Terminology and Applications", "flashcards": [{"front": "What is the core idea of Basic Terminology and Applications?", "back": "2.1.2 Binary Trees 2.1.3 Binary Search Trees 2.1.4 Optimal Binary Search Tree", "detail": "From Data Structures and Algorithm Design (CSE601) · 2.1.1 · Tree"}, {"front": "Name one exam point for Basic Terminology and Applications.", "back": "Be able to define Basic Terminology and Applications, state when it is used, and contrast it with a related concept in Tree."}], "mcqs": [{"q": "Which statement best matches Basic Terminology and Applications?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Basic Terminology and Applications", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Basic Terminology and Applications is a syllabus topic under Tree in Module 2."}]}, {"id": "2.1.2", "title": "Binary Trees", "flashcards": [{"front": "What is the core idea of Binary Trees?", "back": "2.1.3 Binary Search Trees 2.1.4 Optimal Binary Search Tree 2.1.5 Red-Black Trees", "detail": "From Data Structures and Algorithm Design (CSE601) · 2.1.2 · Tree"}], "mcqs": [{"q": "Which statement best matches Binary Trees?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Binary Trees", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Binary Trees is a syllabus topic under Tree in Module 2."}]}, {"id": "2.1.3", "title": "Binary Search Trees", "flashcards": [{"front": "What is the core idea of Binary Search Trees?", "back": "2.1.4 Optimal Binary Search Tree 2.1.5 Red-Black Trees 2.1.6 AVL Trees", "detail": "From Data Structures and Algorithm Design (CSE601) · 2.1.3 · Tree"}, {"front": "Name one exam point for Binary Search Trees.", "back": "Be able to define Binary Search Trees, state when it is used, and contrast it with a related concept in Tree."}], "mcqs": [{"q": "Which statement best matches Binary Search Trees?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Binary Search Trees", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Binary Search Trees is a syllabus topic under Tree in Module 2."}]}, {"id": "2.1.4", "title": "Optimal Binary Search Tree", "flashcards": [{"front": "What is the core idea of Optimal Binary Search Tree?", "back": "2.1.5 Red-Black Trees 2.1.6 AVL Trees 2.1.7 B Trees", "detail": "From Data Structures and Algorithm Design (CSE601) · 2.1.4 · Tree"}], "mcqs": [{"q": "Which statement best matches Optimal Binary Search Tree?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Optimal Binary Search Tree", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Optimal Binary Search Tree is a syllabus topic under Tree in Module 2."}]}, {"id": "2.1.5", "title": "Red-Black Trees", "flashcards": [{"front": "What is the core idea of Red-Black Trees?", "back": "2.1.6 AVL Trees 2.1.7 B Trees 2.1.8 Spanning Trees", "detail": "From Data Structures and Algorithm Design (CSE601) · 2.1.5 · Tree"}, {"front": "Name one exam point for Red-Black Trees.", "back": "Be able to define Red-Black Trees, state when it is used, and contrast it with a related concept in Tree."}], "mcqs": [{"q": "Which statement best matches Red-Black Trees?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Red-Black Trees", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Red-Black Trees is a syllabus topic under Tree in Module 2."}]}, {"id": "2.1.6", "title": "AVL Trees", "flashcards": [{"front": "What is the core idea of AVL Trees?", "back": "2.1.7 B Trees 2.1.8 Spanning Trees 2.1.9 Prim’s Algorithm", "detail": "From Data Structures and Algorithm Design (CSE601) · 2.1.6 · Tree"}], "mcqs": [{"q": "Which statement best matches AVL Trees?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: AVL Trees", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "AVL Trees is a syllabus topic under Tree in Module 2."}]}, {"id": "2.1.7", "title": "B Trees", "flashcards": [{"front": "What is the core idea of B Trees?", "back": "2.1.8 Spanning Trees 2.1.9 Prim’s Algorithm 2.1.10 Kruskal’s Algorithm", "detail": "From Data Structures and Algorithm Design (CSE601) · 2.1.7 · Tree"}, {"front": "Name one exam point for B Trees.", "back": "Be able to define B Trees, state when it is used, and contrast it with a related concept in Tree."}], "mcqs": [{"q": "Which statement best matches B Trees?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: B Trees", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "B Trees is a syllabus topic under Tree in Module 2."}]}, {"id": "2.1.8", "title": "Spanning Trees", "flashcards": [{"front": "What is the core idea of Spanning Trees?", "back": "2.1.9 Prim’s Algorithm 2.1.10 Kruskal’s Algorithm 2.2 Graphs", "detail": "From Data Structures and Algorithm Design (CSE601) · 2.1.8 · Tree"}], "mcqs": [{"q": "Which statement best matches Spanning Trees?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Spanning Trees", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Spanning Trees is a syllabus topic under Tree in Module 2."}]}, {"id": "2.1.9", "title": "Prim’s Algorithm", "flashcards": [{"front": "What is the core idea of Prim’s Algorithm?", "back": "2.1.10 Kruskal’s Algorithm 2.2 Graphs 2.2.1 Terminology, Representations, Traversals", "detail": "From Data Structures and Algorithm Design (CSE601) · 2.1.9 · Tree"}, {"front": "Name one exam point for Prim’s Algorithm.", "back": "Be able to define Prim’s Algorithm, state when it is used, and contrast it with a related concept in Tree."}], "mcqs": [{"q": "Which statement best matches Prim’s Algorithm?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Prim’s Algorithm", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Prim’s Algorithm is a syllabus topic under Tree in Module 2."}]}, {"id": "2.1.10", "title": "Kruskal’s Algorithm", "flashcards": [{"front": "What is the core idea of Kruskal’s Algorithm?", "back": "2.2 Graphs 2.2.1 Terminology, Representations, Traversals 2.2.2 Depth-First Search (DFS)", "detail": "From Data Structures and Algorithm Design (CSE601) · 2.1.10 · Tree"}], "mcqs": [{"q": "Which statement best matches Kruskal’s Algorithm?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Kruskal’s Algorithm", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Kruskal’s Algorithm is a syllabus topic under Tree in Module 2."}]}, {"id": "2.2.1", "title": "Terminology, Representations, Traversals", "flashcards": [{"front": "What is the core idea of Terminology, Representations, Traversals?", "back": "2.2.2 Depth-First Search (DFS) (C) Amity University Online", "detail": "From Data Structures and Algorithm Design (CSE601) · 2.2.1 · Graphs"}, {"front": "Name one exam point for Terminology, Representations, Traversals.", "back": "Be able to define Terminology, Representations, Traversals, state when it is used, and contrast it with a related concept in Graphs."}], "mcqs": [{"q": "Which statement best matches Terminology, Representations, Traversals?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Terminology, Representations, Traversals", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Terminology, Representations, Traversals is a syllabus topic under Graphs in Module 2."}]}, {"id": "2.2.2", "title": "Depth-First Search (DFS)", "flashcards": [{"front": "What is the core idea of Depth-First Search (DFS)?", "back": "Key SLM topic: Depth-First Search (DFS). Review definitions, steps, and one worked example from the study PDF.", "detail": "From Data Structures and Algorithm Design (CSE601) · 2.2.2 · Graphs"}], "mcqs": [{"q": "Which statement best matches Depth-First Search (DFS)?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Depth-First Search (DFS)", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Depth-First Search (DFS) is a syllabus topic under Graphs in Module 2."}]}, {"id": "2.2.3", "title": "Breadth-First Search (BFS)", "flashcards": [{"front": "What is the core idea of Breadth-First Search (BFS)?", "back": "2.2.4 Single-Source Shortest Path 2.2.5 All-Pair Shortest Path Module - III: Dynamic and Greedy Approach", "detail": "From Data Structures and Algorithm Design (CSE601) · 2.2.3 · Graphs"}, {"front": "Name one exam point for Breadth-First Search (BFS).", "back": "Be able to define Breadth-First Search (BFS), state when it is used, and contrast it with a related concept in Graphs."}], "mcqs": [{"q": "Which statement best matches Breadth-First Search (BFS)?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Breadth-First Search (BFS)", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Breadth-First Search (BFS) is a syllabus topic under Graphs in Module 2."}]}, {"id": "2.2.4", "title": "Single-Source Shortest Path", "flashcards": [{"front": "What is the core idea of Single-Source Shortest Path?", "back": "2.2.5 All-Pair Shortest Path Module - III: Dynamic and Greedy Approach 107", "detail": "From Data Structures and Algorithm Design (CSE601) · 2.2.4 · Graphs"}], "mcqs": [{"q": "Which statement best matches Single-Source Shortest Path?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Single-Source Shortest Path", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Single-Source Shortest Path is a syllabus topic under Graphs in Module 2."}]}, {"id": "2.2.5", "title": "All-Pair Shortest Path", "flashcards": [{"front": "What is the core idea of All-Pair Shortest Path?", "back": "Module - III: Dynamic and Greedy Approach 107 3.1 Dynamic Programming", "detail": "From Data Structures and Algorithm Design (CSE601) · 2.2.5 · Graphs"}, {"front": "Name one exam point for All-Pair Shortest Path.", "back": "Be able to define All-Pair Shortest Path, state when it is used, and contrast it with a related concept in Graphs."}], "mcqs": [{"q": "Which statement best matches All-Pair Shortest Path?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: All-Pair Shortest Path", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "All-Pair Shortest Path is a syllabus topic under Graphs in Module 2."}]}]}, {"id": 3, "title": "Module 3", "topics": [{"id": "3.1.1", "title": "Dynamic Programming Approach", "flashcards": [{"front": "What is the core idea of Dynamic Programming Approach?", "back": "3.1.1 Dynamic Programming Approach 3.1.2 Principle of Optimality 3.1.3 Strassens Matrix Multiplication", "detail": "From Data Structures and Algorithm Design (CSE601) · 3.1.1 · Dynamic Programming"}, {"front": "Name one exam point for Dynamic Programming Approach.", "back": "Be able to define Dynamic Programming Approach, state when it is used, and contrast it with a related concept in Dynamic Programming."}], "mcqs": [{"q": "Which statement best matches Dynamic Programming Approach?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Dynamic Programming Approach", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Dynamic Programming Approach is a syllabus topic under Dynamic Programming in Module 3."}]}, {"id": "3.1.2", "title": "Principle of Optimality", "flashcards": [{"front": "What is the core idea of Principle of Optimality?", "back": "3.1.3 Strassens Matrix Multiplication 3.1.4 Matrix Chain Multiplication 3.1.5 Longest Common subsequence", "detail": "From Data Structures and Algorithm Design (CSE601) · 3.1.2 · Dynamic Programming"}], "mcqs": [{"q": "Which statement best matches Principle of Optimality?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Principle of Optimality", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Principle of Optimality is a syllabus topic under Dynamic Programming in Module 3."}]}, {"id": "3.1.3", "title": "Strassens Matrix Multiplication", "flashcards": [{"front": "What is the core idea of Strassens Matrix Multiplication?", "back": "3.1.4 Matrix Chain Multiplication 3.1.5 Longest Common subsequence 3.1.6 0/1 Knapsack Problem", "detail": "From Data Structures and Algorithm Design (CSE601) · 3.1.3 · Dynamic Programming"}, {"front": "Name one exam point for Strassens Matrix Multiplication.", "back": "Be able to define Strassens Matrix Multiplication, state when it is used, and contrast it with a related concept in Dynamic Programming."}], "mcqs": [{"q": "Which statement best matches Strassens Matrix Multiplication?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Strassens Matrix Multiplication", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Strassens Matrix Multiplication is a syllabus topic under Dynamic Programming in Module 3."}]}, {"id": "3.1.4", "title": "Matrix Chain Multiplication", "flashcards": [{"front": "What is the core idea of Matrix Chain Multiplication?", "back": "3.1.5 Longest Common subsequence 3.1.6 0/1 Knapsack Problem 3.2 Greedy Approach", "detail": "From Data Structures and Algorithm Design (CSE601) · 3.1.4 · Dynamic Programming"}], "mcqs": [{"q": "Which statement best matches Matrix Chain Multiplication?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Matrix Chain Multiplication", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Matrix Chain Multiplication is a syllabus topic under Dynamic Programming in Module 3."}]}, {"id": "3.1.5", "title": "Longest Common subsequence", "flashcards": [{"front": "What is the core idea of Longest Common subsequence?", "back": "3.1.6 0/1 Knapsack Problem 3.2 Greedy Approach 3.2.1 Introduction of Greedy Approach", "detail": "From Data Structures and Algorithm Design (CSE601) · 3.1.5 · Dynamic Programming"}, {"front": "Name one exam point for Longest Common subsequence.", "back": "Be able to define Longest Common subsequence, state when it is used, and contrast it with a related concept in Dynamic Programming."}], "mcqs": [{"q": "Which statement best matches Longest Common subsequence?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Longest Common subsequence", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Longest Common subsequence is a syllabus topic under Dynamic Programming in Module 3."}]}, {"id": "3.1.6", "title": "0/1 Knapsack Problem", "flashcards": [{"front": "What is the core idea of 0/1 Knapsack Problem?", "back": "3.2 Greedy Approach 3.2.1 Introduction of Greedy Approach 3.2.2 Activity Selection Problem", "detail": "From Data Structures and Algorithm Design (CSE601) · 3.1.6 · Dynamic Programming"}], "mcqs": [{"q": "Which statement best matches 0/1 Knapsack Problem?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: 0/1 Knapsack Problem", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "0/1 Knapsack Problem is a syllabus topic under Dynamic Programming in Module 3."}]}, {"id": "3.2.1", "title": "Introduction of Greedy Approach", "flashcards": [{"front": "What is the core idea of Introduction of Greedy Approach?", "back": "3.2.2 Activity Selection Problem 3.2.3 Huffman Codes 3.2.4 Fractional Knapsack Problem", "detail": "From Data Structures and Algorithm Design (CSE601) · 3.2.1 · Greedy Approach"}, {"front": "Name one exam point for Introduction of Greedy Approach.", "back": "Be able to define Introduction of Greedy Approach, state when it is used, and contrast it with a related concept in Greedy Approach."}], "mcqs": [{"q": "Which statement best matches Introduction of Greedy Approach?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Introduction of Greedy Approach", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Introduction of Greedy Approach is a syllabus topic under Greedy Approach in Module 3."}]}, {"id": "3.2.2", "title": "Activity Selection Problem", "flashcards": [{"front": "What is the core idea of Activity Selection Problem?", "back": "3.2.3 Huffman Codes 3.2.4 Fractional Knapsack Problem 3.3 Branch and Bound Approach", "detail": "From Data Structures and Algorithm Design (CSE601) · 3.2.2 · Greedy Approach"}], "mcqs": [{"q": "Which statement best matches Activity Selection Problem?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Activity Selection Problem", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Activity Selection Problem is a syllabus topic under Greedy Approach in Module 3."}]}, {"id": "3.2.3", "title": "Huffman Codes", "flashcards": [{"front": "What is the core idea of Huffman Codes?", "back": "3.2.4 Fractional Knapsack Problem 3.3 Branch and Bound Approach 3.3.1 Traveling Salesman Problem", "detail": "From Data Structures and Algorithm Design (CSE601) · 3.2.3 · Greedy Approach"}, {"front": "Name one exam point for Huffman Codes.", "back": "Be able to define Huffman Codes, state when it is used, and contrast it with a related concept in Greedy Approach."}], "mcqs": [{"q": "Which statement best matches Huffman Codes?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Huffman Codes", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Huffman Codes is a syllabus topic under Greedy Approach in Module 3."}]}, {"id": "3.2.4", "title": "Fractional Knapsack Problem", "flashcards": [{"front": "What is the core idea of Fractional Knapsack Problem?", "back": "3.3 Branch and Bound Approach 3.3.1 Traveling Salesman Problem 3.3.2 Knapsack Problem", "detail": "From Data Structures and Algorithm Design (CSE601) · 3.2.4 · Greedy Approach"}], "mcqs": [{"q": "Which statement best matches Fractional Knapsack Problem?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Fractional Knapsack Problem", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Fractional Knapsack Problem is a syllabus topic under Greedy Approach in Module 3."}]}, {"id": "3.3.1", "title": "Traveling Salesman Problem", "flashcards": [{"front": "What is the core idea of Traveling Salesman Problem?", "back": "3.3.2 Knapsack Problem 3.3.3 Job Sequencing 3.3.4 Job Sequencing with Deadline", "detail": "From Data Structures and Algorithm Design (CSE601) · 3.3.1 · Branch and Bound Approach"}, {"front": "Name one exam point for Traveling Salesman Problem.", "back": "Be able to define Traveling Salesman Problem, state when it is used, and contrast it with a related concept in Branch and Bound Approach."}], "mcqs": [{"q": "Which statement best matches Traveling Salesman Problem?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Traveling Salesman Problem", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Traveling Salesman Problem is a syllabus topic under Branch and Bound Approach in Module 3."}]}, {"id": "3.3.2", "title": "Knapsack Problem", "flashcards": [{"front": "What is the core idea of Knapsack Problem?", "back": "3.2 Greedy Approach 3.2.1 Introduction of Greedy Approach 3.2.2 Activity Selection Problem", "detail": "From Data Structures and Algorithm Design (CSE601) · 3.3.2 · Branch and Bound Approach"}], "mcqs": [{"q": "Which statement best matches Knapsack Problem?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Knapsack Problem", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Knapsack Problem is a syllabus topic under Branch and Bound Approach in Module 3."}]}, {"id": "3.3.3", "title": "Job Sequencing", "flashcards": [{"front": "What is the core idea of Job Sequencing?", "back": "3.3.4 Job Sequencing with Deadline Module - IV: E String Matching Algorithms and Approximation Algorithms 141", "detail": "From Data Structures and Algorithm Design (CSE601) · 3.3.3 · Branch and Bound Approach"}, {"front": "Name one exam point for Job Sequencing.", "back": "Be able to define Job Sequencing, state when it is used, and contrast it with a related concept in Branch and Bound Approach."}], "mcqs": [{"q": "Which statement best matches Job Sequencing?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Job Sequencing", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Job Sequencing is a syllabus topic under Branch and Bound Approach in Module 3."}]}, {"id": "3.3.4", "title": "Job Sequencing with Deadline", "flashcards": [{"front": "What is the core idea of Job Sequencing with Deadline?", "back": "Module - IV: E String Matching Algorithms and Approximation Algorithms 141 4.1 String Matching Algorithm", "detail": "From Data Structures and Algorithm Design (CSE601) · 3.3.4 · Branch and Bound Approach"}], "mcqs": [{"q": "Which statement best matches Job Sequencing with Deadline?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Job Sequencing with Deadline", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Job Sequencing with Deadline is a syllabus topic under Branch and Bound Approach in Module 3."}]}]}, {"id": 4, "title": "Module 4", "topics": [{"id": "4.1.1", "title": "Naïve String Matching Algorithm", "flashcards": [{"front": "What is the core idea of Naïve String Matching Algorithm?", "back": "4.1,2 String Searching Algorithm: Knuth Morris and Pratt 4.1.3 String Matching Algorithm: Rabin Karp 4.2 Approximation Algorithm", "detail": "From Data Structures and Algorithm Design (CSE601) · 4.1.1 · String Matching Algorithm"}, {"front": "Name one exam point for Naïve String Matching Algorithm.", "back": "Be able to define Naïve String Matching Algorithm, state when it is used, and contrast it with a related concept in String Matching Algorithm."}], "mcqs": [{"q": "Which statement best matches Naïve String Matching Algorithm?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Naïve String Matching Algorithm", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Naïve String Matching Algorithm is a syllabus topic under String Matching Algorithm in Module 4."}]}, {"id": "4.1.3", "title": "String Matching Algorithm: Rabin Karp", "flashcards": [{"front": "What is the core idea of String Matching Algorithm: Rabin Karp?", "back": "141 4.1 String Matching Algorithm 4.1.1 Naïve String Matching Algorithm", "detail": "From Data Structures and Algorithm Design (CSE601) · 4.1.3 · String Matching Algorithm"}], "mcqs": [{"q": "Which statement best matches String Matching Algorithm: Rabin Karp?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: String Matching Algorithm: Rabin Karp", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "String Matching Algorithm: Rabin Karp is a syllabus topic under String Matching Algorithm in Module 4."}]}, {"id": "4.2.1", "title": "Vertex-Cover Algorithm", "flashcards": [{"front": "What is the core idea of Vertex-Cover Algorithm?", "back": "4.2.2 Set Covering Problem 4.2.3 Randomisation and Linear Programming 4.2.4 The Subset-sum Problem", "detail": "From Data Structures and Algorithm Design (CSE601) · 4.2.1 · Approximation Algorithm"}, {"front": "Name one exam point for Vertex-Cover Algorithm.", "back": "Be able to define Vertex-Cover Algorithm, state when it is used, and contrast it with a related concept in Approximation Algorithm."}], "mcqs": [{"q": "Which statement best matches Vertex-Cover Algorithm?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Vertex-Cover Algorithm", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Vertex-Cover Algorithm is a syllabus topic under Approximation Algorithm in Module 4."}]}, {"id": "4.2.2", "title": "Set Covering Problem", "flashcards": [{"front": "What is the core idea of Set Covering Problem?", "back": "4.2.3 Randomisation and Linear Programming 4.2.4 The Subset-sum Problem Module -V: NP-Completeness", "detail": "From Data Structures and Algorithm Design (CSE601) · 4.2.2 · Approximation Algorithm"}], "mcqs": [{"q": "Which statement best matches Set Covering Problem?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Set Covering Problem", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Set Covering Problem is a syllabus topic under Approximation Algorithm in Module 4."}]}, {"id": "4.2.3", "title": "Randomisation and Linear Programming", "flashcards": [{"front": "What is the core idea of Randomisation and Linear Programming?", "back": "4.2.4 The Subset-sum Problem Module -V: NP-Completeness 172", "detail": "From Data Structures and Algorithm Design (CSE601) · 4.2.3 · Approximation Algorithm"}, {"front": "Name one exam point for Randomisation and Linear Programming.", "back": "Be able to define Randomisation and Linear Programming, state when it is used, and contrast it with a related concept in Approximation Algorithm."}], "mcqs": [{"q": "Which statement best matches Randomisation and Linear Programming?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Randomisation and Linear Programming", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Randomisation and Linear Programming is a syllabus topic under Approximation Algorithm in Module 4."}]}, {"id": "4.2.4", "title": "The Subset-sum Problem", "flashcards": [{"front": "What is the core idea of The Subset-sum Problem?", "back": "Module -V: NP-Completeness 172 5.1 Polynomial Time", "detail": "From Data Structures and Algorithm Design (CSE601) · 4.2.4 · Approximation Algorithm"}], "mcqs": [{"q": "Which statement best matches The Subset-sum Problem?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: The Subset-sum Problem", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "The Subset-sum Problem is a syllabus topic under Approximation Algorithm in Module 4."}]}]}, {"id": 5, "title": "Module 5", "topics": [{"id": "5.1.1", "title": "Green Technology", "flashcards": [{"front": "What is the core idea of Green Technology?", "back": "5.1.2 Hamiltonian Cycles 5.2 NP-Completeness 5.2.1 NP-completeness Proofs", "detail": "From Data Structures and Algorithm Design (CSE601) · 5.1.1 · Polynomial Time"}, {"front": "Name one exam point for Green Technology.", "back": "Be able to define Green Technology, state when it is used, and contrast it with a related concept in Polynomial Time."}], "mcqs": [{"q": "Which statement best matches Green Technology?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Green Technology", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Green Technology is a syllabus topic under Polynomial Time in Module 5."}]}, {"id": "5.1.2", "title": "Hamiltonian Cycles", "flashcards": [{"front": "What is the core idea of Hamiltonian Cycles?", "back": "5.2 NP-Completeness 5.2.1 NP-completeness Proofs 5.2.2 NP-completeness Problems", "detail": "From Data Structures and Algorithm Design (CSE601) · 5.1.2 · Polynomial Time"}], "mcqs": [{"q": "Which statement best matches Hamiltonian Cycles?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: Hamiltonian Cycles", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Hamiltonian Cycles is a syllabus topic under Polynomial Time in Module 5."}]}, {"id": "5.2.1", "title": "NP-completeness Proofs", "flashcards": [{"front": "What is the core idea of NP-completeness Proofs?", "back": "5.2.2 NP-completeness Problems 5.2.3 NP-Hard and SAT Problems 5.2.4 NP-completeness and Reducibility", "detail": "From Data Structures and Algorithm Design (CSE601) · 5.2.1 · NP-Completeness"}, {"front": "Name one exam point for NP-completeness Proofs.", "back": "Be able to define NP-completeness Proofs, state when it is used, and contrast it with a related concept in NP-Completeness."}], "mcqs": [{"q": "Which statement best matches NP-completeness Proofs?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: NP-completeness Proofs", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "NP-completeness Proofs is a syllabus topic under NP-Completeness in Module 5."}]}, {"id": "5.2.2", "title": "NP-completeness Problems", "flashcards": [{"front": "What is the core idea of NP-completeness Problems?", "back": "5.2.2 NP-completeness Problems 5.2.3 NP-Hard and SAT Problems 5.2.4 NP-completeness and Reducibility", "detail": "From Data Structures and Algorithm Design (CSE601) · 5.2.2 · NP-Completeness"}], "mcqs": [{"q": "Which statement best matches NP-completeness Problems?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: NP-completeness Problems", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "NP-completeness Problems is a syllabus topic under NP-Completeness in Module 5."}]}, {"id": "5.2.3", "title": "NP-Hard and SAT Problems", "flashcards": [{"front": "What is the core idea of NP-Hard and SAT Problems?", "back": "5.2.4 NP-completeness and Reducibility (C) Amity University Online", "detail": "From Data Structures and Algorithm Design (CSE601) · 5.2.3 · NP-Completeness"}, {"front": "Name one exam point for NP-Hard and SAT Problems.", "back": "Be able to define NP-Hard and SAT Problems, state when it is used, and contrast it with a related concept in NP-Completeness."}], "mcqs": [{"q": "Which statement best matches NP-Hard and SAT Problems?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: NP-Hard and SAT Problems", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "NP-Hard and SAT Problems is a syllabus topic under NP-Completeness in Module 5."}]}, {"id": "5.2.4", "title": "NP-completeness and Reducibility", "flashcards": [{"front": "What is the core idea of NP-completeness and Reducibility?", "back": "Module - IV: E String Matching Algorithms  and Approximation Algorithms", "detail": "From Data Structures and Algorithm Design (CSE601) · 5.2.4 · NP-Completeness"}], "mcqs": [{"q": "Which statement best matches NP-completeness and Reducibility?", "options": ["A definition-only topic with no applications", "A core idea in Data Structures & Algorithms: NP-completeness and Reducibility", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "NP-completeness and Reducibility is a syllabus topic under NP-Completeness in Module 5."}]}]}]};
+const bank = [];
+DATA.modules.forEach(m => {
+  m.topics.forEach(t => {
+    (t.mcqs || []).forEach((q, i) => {
+      bank.push({
+        moduleId: m.id,
+        moduleTitle: m.title,
+        topicId: t.id,
+        topicTitle: t.title,
+        q: q.q,
+        options: q.options,
+        answer: q.answer,
+        explain: q.explain || "",
+        id: m.id + "-" + t.id + "-q" + i
+      });
+    });
+  });
+});
+
+let activeModule = "all";
+let order = bank.map((_, i) => i);
+let filteredIds = order.slice();
+let index = 0;
+const state = {};
+let restoring = false;
+
+const el = id => document.getElementById(id);
+const quizProgressBar = el("quizProgressBar");
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function currentList() { return filteredIds.map(i => bank[i]); }
+
+function persistQuiz() {
+  if (restoring) return;
+  const P = window.AmityProgress || window.BS605Progress;
+  if (!P || !window.__AMITY_SYNC_READY) return;
+  P.saveSection("quiz", {
+    activeModule: String(activeModule),
+    index: index,
+    answers: { ...state },
+    filteredIds: filteredIds.slice(),
+    order: order.slice()
+  });
+}
+
+function restoreQuiz(payload) {
+  if (!payload || !payload.quiz) return;
+  restoring = true;
+  const q = payload.quiz;
+  if (q.activeModule !== undefined) activeModule = String(q.activeModule);
+  Object.keys(state).forEach(k => delete state[k]);
+  if (q.answers && typeof q.answers === "object") {
+    Object.entries(q.answers).forEach(([k, v]) => { state[k] = v; });
+  }
+  if (Array.isArray(q.order) && q.order.length === bank.length) order = q.order.slice();
+  applyFilter(true);
+  if (Array.isArray(q.filteredIds) && q.filteredIds.length) {
+    const allowed = new Set(bank.map((_, i) => i).filter(i => activeModule === "all" || String(bank[i].moduleId) === String(activeModule)));
+    filteredIds = q.filteredIds.filter(i => allowed.has(i));
+    if (!filteredIds.length) applyFilter(false);
+  }
+  if (typeof q.index === "number" && filteredIds.length) {
+    index = Math.max(0, Math.min(filteredIds.length - 1, q.index));
+  }
+  el("totalQ").textContent = filteredIds.length;
+  renderFilters();
+  renderStats();
+  renderQuestion();
+  updateScore();
+  restoring = false;
+}
+
+function applyFilter(preserveShuffle=false) {
+  const base = bank.map((q, i) => ({q, i})).filter(x => activeModule === "all" || String(x.q.moduleId) === String(activeModule)).map(x => x.i);
+  filteredIds = preserveShuffle ? order.filter(i => base.includes(i)) : base;
+  if (!preserveShuffle) order = bank.map((_, i) => i);
+  index = 0;
+  el("totalQ").textContent = filteredIds.length;
+  renderFilters();
+  renderStats();
+  renderQuestion();
+  updateScore();
+  persistQuiz();
+}
+
+function renderFilters() {
+  const box = el("moduleFilters");
+  const mods = [{id:"all", title:"All modules"}, ...DATA.modules.map(m => ({id:String(m.id), title:"Module "+m.id}))];
+  box.innerHTML = mods.map(m => `<button type="button" class="chip ${String(activeModule)===String(m.id)?"active":""}" data-m="${m.id}">${m.title}</button>`).join("");
+  box.querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {
+    activeModule = btn.dataset.m;
+    applyFilter(false);
+  }));
+}
+
+function renderStats() {
+  const box = el("moduleStats");
+  box.innerHTML = DATA.modules.map(m => {
+    const qs = bank.filter(q => q.moduleId === m.id);
+    const attempted = qs.filter(q => state[q.id] !== undefined).length;
+    const correct = qs.filter(q => state[q.id] === q.answer).length;
+    const pct = qs.length ? Math.round((attempted / qs.length) * 100) : 0;
+    return `<div class="stat"><b>${correct}/${qs.length}</b><span>Module ${m.id} · ${attempted} answered</span><div class="prog-line"><i style="width:${pct}%"></i></div></div>`;
+  }).join("");
+}
+
+function updateScore() {
+  const list = currentList();
+  const attempted = list.filter(q => state[q.id] !== undefined).length;
+  const correct = list.filter(q => state[q.id] === q.answer).length;
+  el("attempted").textContent = attempted;
+  el("scoreNow").textContent = correct;
+  el("accuracy").textContent = attempted ? Math.round((correct / attempted) * 100) + "%" : "—";
+  quizProgressBar.style.width = list.length ? ((attempted / list.length) * 100) + "%" : "0%";
+  renderStats();
+}
+
+function renderQuestion() {
+  const list = currentList();
+  if (!list.length) {
+    el("qtext").textContent = "No questions in this filter.";
+    el("options").innerHTML = "";
+    el("explain").classList.remove("show");
+    el("qnum").textContent = "";
+    return;
+  }
+  const q = list[index];
+  el("qnum").textContent = `Question ${index+1} of ${list.length}`;
+  el("qtopic").textContent = `M${q.moduleId} · ${q.topicId} · ${q.topicTitle}`;
+  el("qtext").textContent = q.q;
+  const chosen = state[q.id];
+  const letters = ["A","B","C","D"];
+  el("options").innerHTML = q.options.map((opt, i) => {
+    let cls = "opt";
+    if (chosen !== undefined) {
+      if (i === q.answer) cls += " correct";
+      else if (i === chosen) cls += " wrong";
+    }
+    return `<button type="button" class="${cls}" data-i="${i}" ${chosen!==undefined?"disabled":""}><span class="letter">${letters[i]}</span><span>${opt.replace(/^[A-D]\.\s*/, "")}</span></button>`;
+  }).join("");
+  el("options").querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {
+    state[q.id] = Number(btn.dataset.i);
+    renderQuestion();
+    updateScore();
+    persistQuiz();
+  }));
+  const explain = el("explain");
+  if (chosen !== undefined) {
+    const ok = chosen === q.answer;
+    explain.textContent = (ok ? "Correct. " : "Not quite. ") + (q.explain || "");
+    explain.classList.add("show");
+  } else {
+    explain.classList.remove("show");
+    explain.textContent = "";
+  }
+}
+
+el("nextBtn").addEventListener("click", () => {
+  const list = currentList();
+  if (!list.length) return;
+  index = (index + 1) % list.length;
+  renderQuestion();
+  persistQuiz();
+});
+el("prevBtn").addEventListener("click", () => {
+  const list = currentList();
+  if (!list.length) return;
+  index = (index - 1 + list.length) % list.length;
+  renderQuestion();
+  persistQuiz();
+});
+el("resetBtn").addEventListener("click", () => {
+  Object.keys(state).forEach(k => delete state[k]);
+  updateScore();
+  renderQuestion();
+  persistQuiz();
+});
+el("shuffleBtn").addEventListener("click", () => {
+  const base = bank.map((q, i) => i).filter(i => activeModule === "all" || String(bank[i].moduleId) === String(activeModule));
+  filteredIds = shuffle(base);
+  order = shuffle(bank.map((_, i) => i));
+  index = 0;
+  renderQuestion();
+  persistQuiz();
+});
+
+document.addEventListener("keydown", e => {
+  if (e.key === "ArrowRight") el("nextBtn").click();
+  if (e.key === "ArrowLeft") el("prevBtn").click();
+  const map = {"1":0,"2":1,"3":2,"4":3,"a":0,"b":1,"c":2,"d":3};
+  if (map[e.key.toLowerCase()] !== undefined) {
+    const btn = el("options").querySelector(`[data-i="${map[e.key.toLowerCase()]}"]`);
+    if (btn && !btn.disabled) btn.click();
+  }
+});
+
+applyFilter(false);
+
+function bootSync(restoreFn) {
+  const SUBJECT = "cse601";
+  function apply(subPayload) {
+    if (subPayload && restoreFn) restoreFn(subPayload);
+    window.__AMITY_SYNC_READY = true;
+    window.__BS605_SYNC_READY = true;
+  }
+  const P = window.AmityProgress || window.BS605Progress;
+  const UI = window.AmitySyncUI || window.BS605SyncUI;
+  if (UI) {
+    UI.mount(document.getElementById("amity-sync-root"), {
+      subjectLabel: "CSE601",
+      onLoaded: (sub) => apply(sub),
+      onReady: (sub) => {
+        if (window.__AMITY_SYNC_READY) return;
+        const local = P && P.readLocalCache && P.readLocalCache();
+        const fallback = sub || (P && P.getSubjectPayload && P.getSubjectPayload(local?.payload, SUBJECT)) || null;
+        apply(fallback);
+      }
+    });
+  } else {
+    const local = P && P.readLocalCache && P.readLocalCache();
+    apply(P && P.getSubjectPayload ? P.getSubjectPayload(local?.payload, SUBJECT) : null);
+  }
+}
+
+bootSync(restoreQuiz);
+</script>
+</body>
+</html>

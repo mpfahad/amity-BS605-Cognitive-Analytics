@@ -1,0 +1,614 @@
+{
+  "modules": [
+    {
+      "id": 1,
+      "title": "Module 1",
+      "weight": "high",
+      "root": {
+        "id": "m1_root",
+        "title": "Module 1",
+        "sub": "Network Security & Cryptography",
+        "kind": "root",
+        "path": "Network Security and Cryptography (CSIT654) → Module 1",
+        "body": "Study map for Module 1 of Network Security and Cryptography (CSIT654). Click a topic, then practise its MCQs.",
+        "points": [
+          "Built from the SLM table of contents",
+          "Orange LMR badges mark first-pass priorities"
+        ]
+      },
+      "levels": [
+        {
+          "heading": "Module 1 · part 1",
+          "nodes": [
+            {
+              "id": "1.1.1",
+              "title": "Introduction to Security Attacks",
+              "sub": "Network security",
+              "kind": "a",
+              "topicId": "1.1.1",
+              "lmr": true
+            },
+            {
+              "id": "1.1.2",
+              "title": "Services and Mechanism",
+              "sub": "Network security",
+              "kind": "b",
+              "topicId": "1.1.2",
+              "lmr": true
+            },
+            {
+              "id": "1.1.3",
+              "title": "Classical Encryption Techniques",
+              "sub": "Network security",
+              "kind": "c",
+              "topicId": "1.1.3",
+              "lmr": true
+            }
+          ]
+        },
+        {
+          "heading": "Module 1 · part 2",
+          "nodes": [
+            {
+              "id": "1.1.4",
+              "title": "Substitution Ciphers",
+              "sub": "Network security",
+              "kind": "a",
+              "topicId": "1.1.4",
+              "lmr": false
+            },
+            {
+              "id": "1.1.5",
+              "title": "Transposition Ciphers",
+              "sub": "Network security",
+              "kind": "b",
+              "topicId": "1.1.5",
+              "lmr": false
+            },
+            {
+              "id": "1.1.6",
+              "title": "Cryptanalysis",
+              "sub": "Network security",
+              "kind": "c",
+              "topicId": "1.1.6",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 1 · part 3",
+          "nodes": [
+            {
+              "id": "1.1.7",
+              "title": "Steganography",
+              "sub": "Network security",
+              "kind": "a",
+              "topicId": "1.1.7",
+              "lmr": false
+            },
+            {
+              "id": "1.1.8",
+              "title": "Stream and Block Ciphers",
+              "sub": "Network security",
+              "kind": "b",
+              "topicId": "1.1.8",
+              "lmr": false
+            },
+            {
+              "id": "1.1.9",
+              "title": "Overview of Hardware Security",
+              "sub": "Network security",
+              "kind": "c",
+              "topicId": "1.1.9",
+              "lmr": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Module 2",
+      "weight": "standard",
+      "root": {
+        "id": "m2_root",
+        "title": "Module 2",
+        "sub": "Network Security & Cryptography",
+        "kind": "root",
+        "path": "Network Security and Cryptography (CSIT654) → Module 2",
+        "body": "Study map for Module 2 of Network Security and Cryptography (CSIT654). Click a topic, then practise its MCQs.",
+        "points": [
+          "Built from the SLM table of contents",
+          "Orange LMR badges mark first-pass priorities"
+        ]
+      },
+      "levels": [
+        {
+          "heading": "Module 2 · part 1",
+          "nodes": [
+            {
+              "id": "2.1.1",
+              "title": "Modern Block Ciphers: Block Ciphers Princi",
+              "sub": "Secret Key Cryptography",
+              "kind": "a",
+              "topicId": "2.1.1",
+              "lmr": true
+            },
+            {
+              "id": "2.1.2",
+              "title": "Shannon’s Theory of Confusion and Diffusio",
+              "sub": "Secret Key Cryptography",
+              "kind": "b",
+              "topicId": "2.1.2",
+              "lmr": true
+            },
+            {
+              "id": "2.1.3",
+              "title": "Fiestal Structure",
+              "sub": "Secret Key Cryptography",
+              "kind": "c",
+              "topicId": "2.1.3",
+              "lmr": true
+            },
+            {
+              "id": "2.1.4",
+              "title": "Data Encryption Standard (DES)",
+              "sub": "Secret Key Cryptography",
+              "kind": "a",
+              "topicId": "2.1.4",
+              "lmr": false
+            },
+            {
+              "id": "2.1.5",
+              "title": "Strength of DES",
+              "sub": "Secret Key Cryptography",
+              "kind": "b",
+              "topicId": "2.1.5",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 2 · part 2",
+          "nodes": [
+            {
+              "id": "2.1.6",
+              "title": "Idea of Differential Cryptanalysis",
+              "sub": "Secret Key Cryptography",
+              "kind": "c",
+              "topicId": "2.1.6",
+              "lmr": false
+            },
+            {
+              "id": "2.1.7",
+              "title": "Block Cipher Modes of Operations",
+              "sub": "Secret Key Cryptography",
+              "kind": "a",
+              "topicId": "2.1.7",
+              "lmr": false
+            },
+            {
+              "id": "2.1.8",
+              "title": "Triple DES",
+              "sub": "Secret Key Cryptography",
+              "kind": "b",
+              "topicId": "2.1.8",
+              "lmr": false
+            },
+            {
+              "id": "2.2.1",
+              "title": "Advanced Encryption Standard (AES)",
+              "sub": "Public Key Cryptography",
+              "kind": "c",
+              "topicId": "2.2.1",
+              "lmr": false
+            },
+            {
+              "id": "2.2.2",
+              "title": "Fermat’s and Euler’s Theorem",
+              "sub": "Public Key Cryptography",
+              "kind": "a",
+              "topicId": "2.2.2",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 2 · part 3",
+          "nodes": [
+            {
+              "id": "2.2.3",
+              "title": "Chinese Remainder Theorem",
+              "sub": "Public Key Cryptography",
+              "kind": "b",
+              "topicId": "2.2.3",
+              "lmr": false
+            },
+            {
+              "id": "2.2.4",
+              "title": "Principals of Public Key Crypto Systems",
+              "sub": "Public Key Cryptography",
+              "kind": "c",
+              "topicId": "2.2.4",
+              "lmr": false
+            },
+            {
+              "id": "2.2.5",
+              "title": "RSA Algorithm",
+              "sub": "Public Key Cryptography",
+              "kind": "a",
+              "topicId": "2.2.5",
+              "lmr": false
+            },
+            {
+              "id": "2.2.6",
+              "title": "Security of RSA Algorithm",
+              "sub": "Public Key Cryptography",
+              "kind": "b",
+              "topicId": "2.2.6",
+              "lmr": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Module 3",
+      "weight": "standard",
+      "root": {
+        "id": "m3_root",
+        "title": "Module 3",
+        "sub": "Network Security & Cryptography",
+        "kind": "root",
+        "path": "Network Security and Cryptography (CSIT654) → Module 3",
+        "body": "Study map for Module 3 of Network Security and Cryptography (CSIT654). Click a topic, then practise its MCQs.",
+        "points": [
+          "Built from the SLM table of contents",
+          "Orange LMR badges mark first-pass priorities"
+        ]
+      },
+      "levels": [
+        {
+          "heading": "Module 3 · part 1",
+          "nodes": [
+            {
+              "id": "3.1.1",
+              "title": "Introduction of Message Authentication Cod",
+              "sub": "Message Authentication Codes",
+              "kind": "a",
+              "topicId": "3.1.1",
+              "lmr": true
+            },
+            {
+              "id": "3.1.2",
+              "title": "Authentication Functions",
+              "sub": "Message Authentication Codes",
+              "kind": "b",
+              "topicId": "3.1.2",
+              "lmr": true
+            },
+            {
+              "id": "3.1.3",
+              "title": "Authentication Requirements",
+              "sub": "Message Authentication Codes",
+              "kind": "c",
+              "topicId": "3.1.3",
+              "lmr": true
+            }
+          ]
+        },
+        {
+          "heading": "Module 3 · part 2",
+          "nodes": [
+            {
+              "id": "3.1.4",
+              "title": "Message Authentication Code (MAC)",
+              "sub": "Message Authentication Codes",
+              "kind": "a",
+              "topicId": "3.1.4",
+              "lmr": false
+            },
+            {
+              "id": "3.1.5",
+              "title": "Secure Hash Algorithm (SHA)",
+              "sub": "Message Authentication Codes",
+              "kind": "b",
+              "topicId": "3.1.5",
+              "lmr": false
+            },
+            {
+              "id": "3.1.6",
+              "title": "Message Digest",
+              "sub": "Message Authentication Codes",
+              "kind": "c",
+              "topicId": "3.1.6",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 3 · part 3",
+          "nodes": [
+            {
+              "id": "3.2.1",
+              "title": "Overview of Digital Signatures",
+              "sub": "Digital Signatures",
+              "kind": "a",
+              "topicId": "3.2.1",
+              "lmr": false
+            },
+            {
+              "id": "3.2.2",
+              "title": "Digital Signature Standards (DSS)",
+              "sub": "Digital Signatures",
+              "kind": "b",
+              "topicId": "3.2.2",
+              "lmr": false
+            },
+            {
+              "id": "3.2.3",
+              "title": "Proof of Digital Signature Algorithm",
+              "sub": "Digital Signatures",
+              "kind": "c",
+              "topicId": "3.2.3",
+              "lmr": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Module 4",
+      "weight": "standard",
+      "root": {
+        "id": "m4_root",
+        "title": "Module 4",
+        "sub": "Network Security & Cryptography",
+        "kind": "root",
+        "path": "Network Security and Cryptography (CSIT654) → Module 4",
+        "body": "Study map for Module 4 of Network Security and Cryptography (CSIT654). Click a topic, then practise its MCQs.",
+        "points": [
+          "Built from the SLM table of contents",
+          "Orange LMR badges mark first-pass priorities"
+        ]
+      },
+      "levels": [
+        {
+          "heading": "Module 4 · part 1",
+          "nodes": [
+            {
+              "id": "4.1.1",
+              "title": "Authentication Applications: Kerberos",
+              "sub": "Introduction to Web Security",
+              "kind": "a",
+              "topicId": "4.1.1",
+              "lmr": true
+            },
+            {
+              "id": "4.1.2",
+              "title": "Overview of Access Control List (ACL)",
+              "sub": "Introduction to Web Security",
+              "kind": "b",
+              "topicId": "4.1.2",
+              "lmr": true
+            },
+            {
+              "id": "4.1.3",
+              "title": "Electronic Mail Security: Pretty Good Priv",
+              "sub": "Introduction to Web Security",
+              "kind": "c",
+              "topicId": "4.1.3",
+              "lmr": true
+            }
+          ]
+        },
+        {
+          "heading": "Module 4 · part 2",
+          "nodes": [
+            {
+              "id": "4.1.4",
+              "title": "S/MIME",
+              "sub": "Introduction to Web Security",
+              "kind": "a",
+              "topicId": "4.1.4",
+              "lmr": false
+            },
+            {
+              "id": "4.2.1",
+              "title": "IP Security Architecture Components",
+              "sub": "IP Security",
+              "kind": "b",
+              "topicId": "4.2.1",
+              "lmr": false
+            },
+            {
+              "id": "4.2.2",
+              "title": "Secure Socket Layer",
+              "sub": "IP Security",
+              "kind": "c",
+              "topicId": "4.2.2",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 4 · part 3",
+          "nodes": [
+            {
+              "id": "4.2.3",
+              "title": "Secure electronic transaction (SET)",
+              "sub": "IP Security",
+              "kind": "a",
+              "topicId": "4.2.3",
+              "lmr": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Module 5",
+      "weight": "standard",
+      "root": {
+        "id": "m5_root",
+        "title": "Module 5",
+        "sub": "Network Security & Cryptography",
+        "kind": "root",
+        "path": "Network Security and Cryptography (CSIT654) → Module 5",
+        "body": "Study map for Module 5 of Network Security and Cryptography (CSIT654). Click a topic, then practise its MCQs.",
+        "points": [
+          "Built from the SLM table of contents",
+          "Orange LMR badges mark first-pass priorities"
+        ]
+      },
+      "levels": [
+        {
+          "heading": "Module 5 · part 1",
+          "nodes": [
+            {
+              "id": "5.1.1",
+              "title": "Introductory Idea of Intrusion",
+              "sub": "System Security",
+              "kind": "a",
+              "topicId": "5.1.1",
+              "lmr": true
+            },
+            {
+              "id": "5.1.2",
+              "title": "Intrusion Detection Techniques",
+              "sub": "System Security",
+              "kind": "b",
+              "topicId": "5.1.2",
+              "lmr": true
+            },
+            {
+              "id": "5.1.3",
+              "title": "Viruses and Worms",
+              "sub": "System Security",
+              "kind": "c",
+              "topicId": "5.1.3",
+              "lmr": true
+            },
+            {
+              "id": "5.1.4",
+              "title": "Firewall Overview and Design Principles",
+              "sub": "System Security",
+              "kind": "a",
+              "topicId": "5.1.4",
+              "lmr": false
+            },
+            {
+              "id": "5.1.5",
+              "title": "Global Standards IT Acts and Cyber Laws",
+              "sub": "System Security",
+              "kind": "b",
+              "topicId": "5.1.5",
+              "lmr": false
+            },
+            {
+              "id": "5.1.6",
+              "title": "Virtual Private Network",
+              "sub": "System Security",
+              "kind": "c",
+              "topicId": "5.1.6",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 5 · part 2",
+          "nodes": [
+            {
+              "id": "5.1.7",
+              "title": "Recent Network Attacks and Security Measur",
+              "sub": "System Security",
+              "kind": "a",
+              "topicId": "5.1.7",
+              "lmr": false
+            },
+            {
+              "id": "5.1.8",
+              "title": "Blockchain Technology",
+              "sub": "System Security",
+              "kind": "b",
+              "topicId": "5.1.8",
+              "lmr": false
+            },
+            {
+              "id": "5.1.9",
+              "title": "Internet Privacy and Piracy Prevention",
+              "sub": "System Security",
+              "kind": "c",
+              "topicId": "5.1.9",
+              "lmr": false
+            },
+            {
+              "id": "5.2.1",
+              "title": "Overview of Cyber Forensic",
+              "sub": "Cyber Forensic and Its Applications",
+              "kind": "a",
+              "topicId": "5.2.1",
+              "lmr": false
+            },
+            {
+              "id": "5.2.2",
+              "title": "Cyber Forensic Processes",
+              "sub": "Cyber Forensic and Its Applications",
+              "kind": "b",
+              "topicId": "5.2.2",
+              "lmr": false
+            },
+            {
+              "id": "5.2.3",
+              "title": "Cyber Forensic Applications",
+              "sub": "Cyber Forensic and Its Applications",
+              "kind": "c",
+              "topicId": "5.2.3",
+              "lmr": false
+            }
+          ]
+        },
+        {
+          "heading": "Module 5 · part 3",
+          "nodes": [
+            {
+              "id": "5.2.4",
+              "title": "Cyber Forensic Tools",
+              "sub": "Cyber Forensic and Its Applications",
+              "kind": "a",
+              "topicId": "5.2.4",
+              "lmr": false
+            },
+            {
+              "id": "5.2.5",
+              "title": "Digital Evidence",
+              "sub": "Cyber Forensic and Its Applications",
+              "kind": "b",
+              "topicId": "5.2.5",
+              "lmr": false
+            },
+            {
+              "id": "5.2.6",
+              "title": "Investigating Windows and Unix Systems",
+              "sub": "Cyber Forensic and Its Applications",
+              "kind": "c",
+              "topicId": "5.2.6",
+              "lmr": false
+            },
+            {
+              "id": "5.2.7",
+              "title": "E-mail Tracing",
+              "sub": "Cyber Forensic and Its Applications",
+              "kind": "a",
+              "topicId": "5.2.7",
+              "lmr": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

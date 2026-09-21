@@ -1,0 +1,205 @@
+{
+  "modules": [
+    {
+      "id": 1,
+      "title": "Cognitive Analytics and Social Cognition",
+      "weight": "foundation",
+      "root": {
+        "id": "m1_root",
+        "title": "Module 1",
+        "sub": "Self · cognition · social world",
+        "kind": "root",
+        "path": "BS605 → Module 1",
+        "body": "How we understand the self, think flexibly, solve problems, and interpret other people — from TEA and Johari through attribution, stereotypes, and criticism.",
+        "points": [
+          "Faculty: foundations here; Module 2 (EI/attitudes) usually carries more exam weight",
+          "Walk Self tools → thinking tools → social cognition",
+          "Map criterion: one node ≈ one study topic (several SLM § merged where they share one exam idea)"
+        ]
+      },
+      "levels": [
+        {
+          "heading": "Understanding the Self",
+          "nodes": [
+            {"id": "1.1", "title": "Self preliminaries", "sub": "self-concept · ABCs", "kind": "a", "topicId": "1.1"},
+            {"id": "1.2", "title": "T-E-A Model", "sub": "thoughts · emotions · actions", "kind": "a", "topicId": "1.2", "lmr": true},
+            {"id": "1.3", "title": "Johari Window", "sub": "open · blind · hidden · unknown", "kind": "a", "topicId": "1.3", "lmr": true},
+            {"id": "1.4", "title": "PE Scale", "sub": "SD · OTF · perceptiveness", "kind": "a", "topicId": "1.4"},
+            {"id": "1.5", "title": "Esteem · Efficacy · Respect", "sub": "don't mix these up", "kind": "a", "topicId": "1.5", "lmr": true},
+            {"id": "1.6", "title": "Assertive skills", "sub": "between passive & aggressive", "kind": "a", "topicId": "1.6", "lmr": true}
+          ]
+        },
+        {
+          "heading": "Thinking, creativity & problem tools",
+          "nodes": [
+            {"id": "1.7", "title": "Tech & social media", "sub": "etiquette", "kind": "b", "topicId": "1.7"},
+            {"id": "1.8", "title": "ICEDIP + Visualization", "sub": "creative phases", "kind": "b", "topicId": "1.8", "lmr": true},
+            {"id": "1.9", "title": "Problem sensitivity", "sub": "notice ≠ solve", "kind": "b", "topicId": "1.9"},
+            {"id": "1.10", "title": "Six Thinking Hats", "sub": "de Bono colours", "kind": "b", "topicId": "1.10", "lmr": true},
+            {"id": "1.11", "title": "Flexibility & errors", "sub": "Beck / Burns traps", "kind": "b", "topicId": "1.11", "lmr": true, "note": "SLM splits flexibility (1.1.11) and cognitive errors (1.1.12); packed together for one exam cluster"}
+          ]
+        },
+        {
+          "heading": "Social cognition",
+          "nodes": [
+            {"id": "1.12", "title": "Social cognition", "sub": "schemas · priming · inference", "kind": "c", "topicId": "1.12", "note": "Includes SLM social inference"},
+            {"id": "1.13", "title": "Attribution", "sub": "FAE · actor–observer · self-serving", "kind": "c", "topicId": "1.13", "lmr": true},
+            {"id": "1.14", "title": "Stereotype · Prejudice · Criticism", "sub": "cognitive vs evaluative", "kind": "c", "topicId": "1.14", "lmr": true, "note": "Merges SLM stereotyping, prejudice, and accepting criticism"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Attitudes and Emotional Intelligence",
+      "weight": "high",
+      "root": {
+        "id": "m2_root",
+        "title": "Module 2",
+        "sub": "Attitudes · emotions · EI",
+        "kind": "root",
+        "path": "BS605 → Module 2",
+        "body": "Exam-heavy module: attitude structure (ABC + characteristics) and emotional intelligence (Goleman), plus interpersonal vs intrapersonal intelligence.",
+        "points": [
+          "Faculty: Module 2 / EI usually outweighs Module 1",
+          "Do not confuse Attitude ABC with Ellis ABC (Module 5)",
+          "Live-class extras not given their own node: locus of control; cognition→emotion→behaviour pathway (see tips below)",
+          "Locus of control (internal/external) links EI + resilience — use in case answers even though SLM nests it lightly"
+        ]
+      },
+      "levels": [
+        {
+          "heading": "Attitudes",
+          "nodes": [
+            {"id": "2.1", "title": "What is an attitude?", "sub": "evaluation", "kind": "a", "topicId": "2.1"},
+            {"id": "2.2", "title": "Characteristics", "sub": "valence · centrality…", "kind": "a", "topicId": "2.2", "lmr": true, "note": "Packs valence, multiplicity, needs, centrality, pervasiveness, invisible, acquired"},
+            {"id": "2.3", "title": "ABC components", "sub": "affect · cognition · behaviour", "kind": "a", "topicId": "2.3", "lmr": true}
+          ]
+        },
+        {
+          "heading": "Emotions & EI",
+          "nodes": [
+            {"id": "2.4", "title": "Emotions vs mood", "sub": "healthy / unhealthy", "kind": "b", "topicId": "2.4"},
+            {"id": "2.5", "title": "Goleman EI", "sub": "5 competencies", "kind": "b", "topicId": "2.5", "lmr": true},
+            {"id": "2.6", "title": "Inter- vs Intrapersonal", "sub": "others vs self", "kind": "b", "topicId": "2.6", "note": "Faculty: EI > interpersonal intelligence alone for exam priority"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Leadership and Managing Excellence",
+      "weight": "standard",
+      "root": {
+        "id": "m3_root",
+        "title": "Module 3",
+        "sub": "Teams · leaders · sociometry",
+        "kind": "root",
+        "path": "BS605 → Module 3",
+        "body": "How teams form and perform, leadership types and styles (Lewin, transformational, situational), plus sociometry, branding, time, and relationships.",
+        "points": [
+          "Storming is a stage, not failure",
+          "Situational leadership: no single best style",
+          "Live Class 3 preview: sociometry + Tuckman often called out"
+        ]
+      },
+      "levels": [
+        {
+          "heading": "Teams",
+          "nodes": [
+            {"id": "3.1", "title": "Team design", "sub": "composition · roles", "kind": "a", "topicId": "3.1"},
+            {"id": "3.2", "title": "Tuckman lifecycle", "sub": "forming → adjourning", "kind": "a", "topicId": "3.2", "lmr": true},
+            {"id": "3.3", "title": "Team building", "sub": "types · performance issues", "kind": "a", "topicId": "3.3", "note": "Merges team-building types + performance issues"}
+          ]
+        },
+        {
+          "heading": "Leadership",
+          "nodes": [
+            {"id": "3.4", "title": "Leader types · Lewin", "sub": "auto · demo · laissez", "kind": "b", "topicId": "3.4"},
+            {"id": "3.5", "title": "Transformational / Transactional", "sub": "4 Is vs exchange", "kind": "b", "topicId": "3.5"},
+            {"id": "3.6", "title": "Situational leadership", "sub": "S1–S4 readiness", "kind": "b", "topicId": "3.6", "lmr": true}
+          ]
+        },
+        {
+          "heading": "Excellence tools",
+          "nodes": [
+            {"id": "3.7", "title": "Change · Sociometry", "sub": "star · net · isolate", "kind": "c", "topicId": "3.7", "lmr": true, "note": "Merges strategic change/ADKAR-like stages with sociometry — sociometry is the higher-yield half"},
+            {"id": "3.8", "title": "Brand · Time · Work–life", "sub": "integration ≠ balance", "kind": "c", "topicId": "3.8", "lmr": true, "note": "Merges branding, time, work–life integration, relationship management"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Conflict Resolution and Negotiation",
+      "weight": "standard",
+      "root": {
+        "id": "m4_root",
+        "title": "Module 4",
+        "sub": "Conflict · mediation · negotiation",
+        "kind": "root",
+        "path": "BS605 → Module 4",
+        "body": "Conflict is common and not always bad. Map sources and stages, choose a management style, use mediation when needed, then negotiate with the four pillars.",
+        "points": [
+          "Disagreements ≠ full conflicts",
+          "Mediator facilitates; does not take sides",
+          "Flow on map: diagnose conflict → choose style → mediate if needed → negotiate"
+        ]
+      },
+      "levels": [
+        {
+          "heading": "Conflict landscape",
+          "nodes": [
+            {"id": "4.1", "title": "Meaning · stages · types", "sub": "latent → manifest", "kind": "a", "topicId": "4.1"},
+            {"id": "4.2", "title": "Impact & ethics", "sub": "dilemmas under pressure", "kind": "a", "topicId": "4.2"},
+            {"id": "4.3", "title": "Resolution styles", "sub": "compete · collaborate…", "kind": "a", "topicId": "4.3"}
+          ]
+        },
+        {
+          "heading": "Intervention & negotiation",
+          "nodes": [
+            {"id": "4.4", "title": "Mediation · intercultural", "sub": "neutral facilitator", "kind": "b", "topicId": "4.4"},
+            {"id": "4.5", "title": "Negotiation basics", "sub": "distributive vs integrative", "kind": "b", "topicId": "4.5"},
+            {"id": "4.6", "title": "Four pillars · closing", "sub": "outcomes not points", "kind": "b", "topicId": "4.6"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Values, Ethics, Resilience and Agility",
+      "weight": "standard",
+      "root": {
+        "id": "m5_root",
+        "title": "Module 5",
+        "sub": "Values · resilience · VUCA",
+        "kind": "root",
+        "path": "BS605 → Module 5",
+        "body": "Values and ethics guide desirable ends and means; resilience is positive adaptation under adversity; agility answers VUCA turbulence.",
+        "points": [
+          "Rokeach: terminal vs instrumental values",
+          "Ellis ABC ≠ Attitude ABC",
+          "Tie resilience answers to adversity + positive adaptation (both required)"
+        ]
+      },
+      "levels": [
+        {
+          "heading": "Values & ethics",
+          "nodes": [
+            {"id": "5.1", "title": "Values · ethics · Rokeach", "sub": "terminal vs instrumental", "kind": "a", "topicId": "5.1", "lmr": true},
+            {"id": "5.2", "title": "Personal & core values", "sub": "empathy · integrity…", "kind": "a", "topicId": "5.2"}
+          ]
+        },
+        {
+          "heading": "Resilience & agility",
+          "nodes": [
+            {"id": "5.3", "title": "Resilience", "sub": "adversity + adaptation", "kind": "b", "topicId": "5.3", "lmr": true},
+            {"id": "5.4", "title": "Choice paradox · Ellis ABC", "sub": "beliefs mediate feelings", "kind": "b", "topicId": "5.4", "lmr": true},
+            {"id": "5.5", "title": "Stress & networks", "sub": "support resources", "kind": "b", "topicId": "5.5"},
+            {"id": "5.6", "title": "VUCA agility", "sub": "volatility → ambiguity", "kind": "b", "topicId": "5.6"}
+          ]
+        }
+      ]
+    }
+  ]
+}

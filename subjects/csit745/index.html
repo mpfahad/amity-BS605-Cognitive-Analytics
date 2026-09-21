@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CSIT745 Study Pack — Research Methodology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --ink: #15231c;
+  --muted: #4a5c52;
+  --paper: #f3f6f1;
+  --panel: rgba(255,255,255,0.78);
+  --line: rgba(21,35,28,0.12);
+  --accent: #0f6b4c;
+  --accent-2: #c45c26;
+  --accent-soft: #d8efe4;
+  --warn: #8a3b12;
+  --ok: #1f7a4d;
+  --bad: #a33b3b;
+  --shadow: 0 18px 50px rgba(21,35,28,0.12);
+  --radius: 18px;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-body);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #d7ebe0 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, #f3dfd0 0%, transparent 45%),
+    linear-gradient(180deg, #eef4ef 0%, var(--paper) 40%, #e7eee8 100%);
+  min-height: 100vh;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image:
+    linear-gradient(rgba(21,35,28,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(21,35,28,0.03) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(180deg, #000, transparent 85%);
+}
+a { color: var(--accent); }
+.wrap { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; padding: 1.5rem 0 3rem; position: relative; }
+.hero {
+  display: grid;
+  gap: 1rem;
+  padding: 1.6rem 0 1.2rem;
+  animation: rise 0.6s ease both;
+}
+.kicker {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+h1 {
+  font-family: var(--font-display);
+  font-weight: 650;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  margin: 0.2rem 0;
+  letter-spacing: -0.02em;
+}
+.lede { margin: 0; max-width: 46rem; color: var(--muted); font-size: 1.05rem; }
+.navrow {
+  display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.6rem;
+}
+.btn, button.btn {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+.btn:hover, button.btn:hover { transform: translateY(-1px); border-color: rgba(15,107,76,0.35); }
+.btn.primary { background: var(--accent); color: #fff; border-color: transparent; }
+.btn.ghost { background: transparent; }
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+}
+.filters {
+  display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0;
+}
+.chip {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.65);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  font: inherit;
+}
+.chip.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+}
+.chip.lmr {
+  border-color: rgba(196,92,38,0.45);
+  color: var(--warn);
+}
+.chip.lmr.active { background: var(--accent-2); color: #fff; }
+.site-nav {
+  display: flex; flex-wrap: wrap; gap: 0.45rem;
+  align-items: center;
+  margin: 0 0 0.4rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.82);
+  backdrop-filter: blur(8px);
+  width: fit-content;
+  max-width: 100%;
+}
+.site-nav a {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+.site-nav a:hover { background: var(--accent-soft); color: var(--accent); }
+.site-nav a.home {
+  background: var(--accent);
+  color: #fff;
+}
+.site-nav a.here {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.meta {
+  display: flex; flex-wrap: wrap; gap: 0.75rem 1.2rem;
+  color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem;
+}
+.meta strong { color: var(--ink); }
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.6rem;
+  margin: 0.8rem 0;
+}
+.stat {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.8rem;
+}
+.stat b { display: block; font-size: 1.35rem; font-family: var(--font-display); color: var(--ink); }
+.stat span { color: var(--muted); font-size: 0.88rem; }
+.prog-line {
+  margin-top: 0.55rem;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(21,35,28,0.08);
+  overflow: hidden;
+}
+.prog-line > i {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), #2f9e74);
+  border-radius: inherit;
+}
+.links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+.links a {
+  display: block;
+  text-decoration: none;
+  padding: 0.7rem 0.85rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.links a.lmr-link {
+  background: linear-gradient(135deg, #fff4ec, #ffe8d8);
+  border-color: rgba(196,92,38,0.25);
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes flipIn {
+  from { opacity: 0; transform: rotateX(-8deg) translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+@media (max-width: 720px) {
+  .wrap { width: min(100% - 1.2rem, 1120px); }
+}
+
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; margin-top:1.2rem; }
+.cards a {
+  display:block; text-decoration:none; color:inherit; padding:1.3rem; border-radius:var(--radius);
+  border:1px solid var(--line); background:var(--panel); box-shadow:var(--shadow);
+  transition: transform .15s ease;
+}
+.cards a:hover { transform: translateY(-3px); }
+.cards h2 { font-family:var(--font-display); margin:0 0 .4rem; font-size:1.45rem; }
+.cards p { margin:0; color:var(--muted); }
+.cards .tool-prog { margin-top:0.75rem; font-size:0.92rem; color:var(--ink); font-weight:600; }
+</style>
+<script>window.AMITY_SUBJECT = "csit745";</script>
+<script src="../../shared/config.js"></script>
+<script src="../../shared/progress.js"></script>
+<script src="../../shared/sync-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <nav class="site-nav" aria-label="Site"><a href="index.html" class="home here">Home</a><a href="module-map.html">Module Map</a><a href="flashcards.html">Flashcards</a><a href="quiz.html">Quiz</a></nav><p style="margin:0.5rem 0 0;font-size:0.88rem"><a href="../../index.html">← All subjects</a></p>
+  <header class="hero">
+    <div class="kicker">Amity University Online · CSIT745</div>
+    <h1>Research Methodology study pack</h1>
+    <p class="lede">Home for every CSIT745 study tool. Connect a sync code once — progress auto-saves across phone and PC.</p>
+  </header>
+
+  <section class="panel" style="margin-bottom:1rem">
+    <strong>Your progress</strong>
+    <p class="lede" style="margin:0.35rem 0 0.7rem;font-size:0.95rem">Live totals from this device (and cloud when connected).</p>
+    <div class="summary-grid" id="homeStats">
+      <div class="stat"><b id="homeFlash">0/139</b><span>Flashcards seen</span><div class="prog-line"><i id="homeFlashBar"></i></div></div>
+      <div class="stat"><b id="homeKnown">0</b><span>Flashcards marked known</span></div>
+      <div class="stat"><b id="homeQuiz">0/92</b><span>Quiz answered · <span id="homeQuizCorrect">0</span> correct</span><div class="prog-line"><i id="homeQuizBar"></i></div></div>
+      <div class="stat"><b id="homeMap">0/92</b><span>Module-map answered · <span id="homeMapCorrect">0</span> correct</span><div class="prog-line"><i id="homeMapBar"></i></div></div>
+    </div>
+    <div id="amity-sync-root"></div>
+  </section>
+
+  <section class="panel">
+    <strong>All pages</strong>
+    <div class="cards" style="margin-top:0.9rem">
+      <a href="module-map.html"><h2>Module Map</h2><p>Structure maps + important questions.</p><div class="tool-prog" id="cardMapProg">Not started</div></a>
+      <a href="flashcards.html"><h2>Flashcards</h2><p>139 revision cards with LMR priority list.</p><div class="tool-prog" id="cardFlashProg">Not started</div></a>
+      <a href="quiz.html"><h2>Objective quiz</h2><p>92 MCQs with explanations, filter by module.</p><div class="tool-prog" id="cardQuizProg">Not started</div></a>
+      <a href="Research Methodology  Final.pdf" target="_blank"><h2>Study PDF</h2><p>Full SLM (opens in a new tab).</p></a>
+      
+    </div>
+  </section>
+</div>
+<script>
+const TOTALS = {"flashTotal": 139, "quizTotal": 92, "mapTotal": 92, "quizAnswerKey": {"1-1.1.1-q0": 1, "1-1.1.2-q0": 1, "1-1.1.3-q0": 1, "1-1.2.1-q0": 1, "1-1.2.2-q0": 1, "1-1.2.3-q0": 1, "1-1.2.4-q0": 1, "1-1.2.5-q0": 1, "1-1.3.1-q0": 1, "1-1.3.2-q0": 1, "1-1.3.3-q0": 1, "1-1.3.4-q0": 1, "1-1.3.5-q0": 1, "1-1.4.1-q0": 1, "1-1.4.2-q0": 1, "1-1.4.3-q0": 1, "1-1.4.4-q0": 1, "2-2.1.1-q0": 1, "2-2.1.2-q0": 1, "2-2.1.3-q0": 1, "2-2.2.1-q0": 1, "2-2.2.2-q0": 1, "2-2.2.3-q0": 1, "2-2.3.1-q0": 1, "2-2.3.2-q0": 1, "2-2.3.3-q0": 1, "2-2.3.4-q0": 1, "2-2.3.5-q0": 1, "2-2.3.6-q0": 1, "3-3.1.1-q0": 1, "3-3.1.2-q0": 1, "3-3.1.3-q0": 1, "3-3.1.4-q0": 1, "3-3.1.5-q0": 1, "3-3.1.6-q0": 1, "3-3.1.7-q0": 1, "3-3.1.8-q0": 1, "3-3.2.1-q0": 1, "3-3.2.2-q0": 1, "3-3.2.3-q0": 1, "3-3.2.4-q0": 1, "3-3.2.5-q0": 1, "3-3.2.6-q0": 1, "3-3.2.7-q0": 1, "3-3.2.8-q0": 1, "3-3.3.1-q0": 1, "3-3.3.2-q0": 1, "3-3.3.3-q0": 1, "4-4.1.1-q0": 1, "4-4.1.2-q0": 1, "4-4.1.3-q0": 1, "4-4.1.4-q0": 1, "4-4.1.5-q0": 1, "4-4.1.6-q0": 1, "4-4.1.7-q0": 1, "4-4.1.8-q0": 1, "4-4.1.9-q0": 1, "4-4.1.10-q0": 1, "4-4.1.11-q0": 1, "4-4.2.1-q0": 1, "4-4.2.2-q0": 1, "4-4.2.3-q0": 1, "4-4.2.4-q0": 1, "4-4.2.5-q0": 1, "4-4.2.6-q0": 1, "4-4.2.7-q0": 1, "4-4.2.8-q0": 1, "4-4.2.9-q0": 1, "4-4.2.10-q0": 1, "4-4.2.11-q0": 1, "5-5.1.1-q0": 1, "5-5.1.2-q0": 1, "5-5.1.3-q0": 1, "5-5.1.4-q0": 1, "5-5.1.5-q0": 1, "5-5.1.6-q0": 1, "5-5.1.7-q0": 1, "5-5.1.8-q0": 1, "5-5.1.9-q0": 1, "5-5.2.1-q0": 1, "5-5.2.2-q0": 1, "5-5.2.3-q0": 1, "5-5.2.4-q0": 1, "5-5.2.5-q0": 1, "5-5.3.1-q0": 1, "5-5.3.2-q0": 1, "5-5.3.3-q0": 1, "5-5.3.4-q0": 1, "5-5.3.5-q0": 1, "5-5.4.1-q0": 1, "5-5.4.2-q0": 1, "5-5.4.3-q0": 1}, "mapAnswerKey": {"1": {"0": 1, "1": 1, "2": 1, "3": 1, "4": 1, "5": 1, "6": 1, "7": 1, "8": 1, "9": 1, "10": 1, "11": 1, "12": 1, "13": 1, "14": 1, "15": 1, "16": 1}, "2": {"0": 1, "1": 1, "2": 1, "3": 1, "4": 1, "5": 1, "6": 1, "7": 1, "8": 1, "9": 1, "10": 1, "11": 1}, "3": {"0": 1, "1": 1, "2": 1, "3": 1, "4": 1, "5": 1, "6": 1, "7": 1, "8": 1, "9": 1, "10": 1, "11": 1, "12": 1, "13": 1, "14": 1, "15": 1, "16": 1, "17": 1, "18": 1}, "4": {"0": 1, "1": 1, "2": 1, "3": 1, "4": 1, "5": 1, "6": 1, "7": 1, "8": 1, "9": 1, "10": 1, "11": 1, "12": 1, "13": 1, "14": 1, "15": 1, "16": 1, "17": 1, "18": 1, "19": 1, "20": 1, "21": 1}, "5": {"0": 1, "1": 1, "2": 1, "3": 1, "4": 1, "5": 1, "6": 1, "7": 1, "8": 1, "9": 1, "10": 1, "11": 1, "12": 1, "13": 1, "14": 1, "15": 1, "16": 1, "17": 1, "18": 1, "19": 1, "20": 1, "21": 1}}};
+function paintHome(payload) {
+  const P = window.AmityProgress || window.BS605Progress;
+  if (!P) return;
+  const s = P.summarize(payload || {}, TOTALS);
+  const f = s.flashcards, q = s.quiz, m = s.map;
+  document.getElementById("homeFlash").textContent = f.seen + "/" + f.total;
+  document.getElementById("homeKnown").textContent = String(f.known);
+  document.getElementById("homeQuiz").textContent = q.attempted + "/" + q.total;
+  document.getElementById("homeQuizCorrect").textContent = String(q.correct);
+  document.getElementById("homeMap").textContent = m.attempted + "/" + m.total;
+  document.getElementById("homeMapCorrect").textContent = String(m.correct);
+  document.getElementById("homeFlashBar").style.width = (f.total ? (f.seen/f.total)*100 : 0) + "%";
+  document.getElementById("homeQuizBar").style.width = (q.total ? (q.attempted/q.total)*100 : 0) + "%";
+  document.getElementById("homeMapBar").style.width = (m.total ? (m.attempted/m.total)*100 : 0) + "%";
+  document.getElementById("cardFlashProg").textContent = f.seen
+    ? (f.seen + " seen · " + f.known + " known")
+    : "Not started";
+  document.getElementById("cardQuizProg").textContent = q.attempted
+    ? (q.attempted + " answered · " + q.correct + " correct")
+    : "Not started";
+  document.getElementById("cardMapProg").textContent = m.attempted
+    ? (m.attempted + " answered · " + m.correct + " correct" + (m.visited ? " · " + m.visited + " visited" : ""))
+    : "Not started";
+}
+
+function bootSync(restoreFn) {
+  const SUBJECT = "csit745";
+  function apply(subPayload) {
+    if (subPayload && restoreFn) restoreFn(subPayload);
+    window.__AMITY_SYNC_READY = true;
+    window.__BS605_SYNC_READY = true;
+  }
+  const P = window.AmityProgress || window.BS605Progress;
+  const UI = window.AmitySyncUI || window.BS605SyncUI;
+  if (UI) {
+    UI.mount(document.getElementById("amity-sync-root"), {
+      subjectLabel: "CSIT745",
+      onLoaded: (sub) => apply(sub),
+      onReady: (sub) => {
+        if (window.__AMITY_SYNC_READY) return;
+        const local = P && P.readLocalCache && P.readLocalCache();
+        const fallback = sub || (P && P.getSubjectPayload && P.getSubjectPayload(local?.payload, SUBJECT)) || null;
+        apply(fallback);
+      }
+    });
+  } else {
+    const local = P && P.readLocalCache && P.readLocalCache();
+    apply(P && P.getSubjectPayload ? P.getSubjectPayload(local?.payload, SUBJECT) : null);
+  }
+}
+
+bootSync(paintHome);
+</script>
+</body>
+</html>

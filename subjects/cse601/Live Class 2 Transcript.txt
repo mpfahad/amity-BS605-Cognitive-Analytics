@@ -1,0 +1,653 @@
+﻿CSE601 — Live Class 2 Transcript
+Subject: Data Structures and Algorithm Design (CSE601) — Semester II
+Topic: Trees and Graphs
+Date & Time: 20-Sep-26 & 09:00-09:50
+AMIGO: https://amigo.amityonline.com/mod/page/view.php?id=377964
+Vimeo: https://player.vimeo.com/video/1228567370?h=82a9374a29
+Duration: ~57 min (3398s)
+Source: Vimeo auto-generated English captions
+So I can see the folks are joining. A very good morning, class.
+And give me a twin check if you guys can hear me loud and clear.
+All right. Yes, sir, you are clear. Okay, great.
+Let me just bring up my screen.
+So in today's session, we're going to cover a very interesting concept, that is
+trees and graphs. So I hope that most of you must be familiar with these
+terminology, like trees, what are trees, what are graphs.
+Okay, you might have studied all these things in
+your class 11 to 12 as well, okay, in some sort of mathematics.
+Okay, but we will cover it, how the trees data structure.
+So remember in the first class we discussed
+what do you mean by data structure,
+and what are the different type of data structure.
+So we discussed that there are two types, primitive and non-primitive.
+And then we also discussed that there are further classifications of the data
+structures like the linear data structures and non-linear data structure.
+So linear data structure are those data structure where they are organizing the
+data in a linear way, or you can say in a sequential manner.
+But the non-linear data structure are those data structure which are organizing the
+data in the form of a hierarchy, or you can say in the form of a tree.
+So both trees and graphs will come under the non-linear data structure. Okay?
+And the major advantage of the non-linear data structure, can any one of you tell
+me what is the major advantage of using the non-linear data structure?
+Any idea?
+Amit, Ajima,
+Shefta, any idea why we use the non-linear data structure? Any major advantage?
+The only advantage we have is it helps in searching the data faster.
+The faster searching is always there in
+the non-linear. And same if you go with the linear part, it will take some time.
+So from the searching perspective, always prefer the non-linear data structures.
+With that, let me start our today's lecture.
+So we will start the basic definition of tree. What do you mean by tree?
+Any idea? What is tree?
+We have already discussed tree are the non-linear data structure.
+Okay, and then each tree consists of nodes and edges.
+I hope everyone knows. Okay, everyone has seen the tree.
+So trees are the
+basic data structure, which are used to represent the hierarchical relationship.
+Okay, so every tree represent,
+if you look at every tree, you will find out the nodes.
+Okay? The nodes and everything. So here you can see the nodes and edges.
+So each individual. This is called, can someone tell me, what is the name of this
+node?
+This is called root node. Why? Because this is the starting.
+Okay, Ashima, you can write down into the chat. Okay.
+I have the chat window open, so you can write down into the chat.
+Okay, so the first node will be called as the root node.
+Okay, now the bottom node,
+any idea what are these nodes called?
+These nodes are called leaf node. Correct, Amit.
+These nodes will be called as leaf node, and the rest, everything will be called as
+nodes. The intermediate nodes. Okay, similarly,
+this is called the parent. Okay, this is called the children node.
+So I hope this is clear. Okay. Again, this is a parent, these are the children.
+This is a parent,
+these are the childrens we have. So this is how the trees are represented
+with nodes and edges.
+Moving on to the next.
+So there are some applications of tree we have.
+Okay, so, you might have seen if you're working in an organizations.
+Okay, so usually we use trees to represent the organization chart, just
+like the CSO will be on the top, and then,
+the director, assistant director, VP, and everything will be at the bottom.
+And then under the VP and everything, there will be a certain different hierarchy.
+So again, if you have to represent the organization chart where you have to set up
+the relationship, you will use trees. Similarly, the expression trees.
+Okay, when we were solving the stacks and queues, we always use the expression
+trees.
+Okay, so these are some basic applications where the tree data section is used.
+Now, coming to the terminology of the tree.
+Okay,
+so here you can see, as I mentioned, the first node will be called as the root of
+the tree.
+The last node will be called as the leave of the tree.
+This will be called the parent of V, and V will be called as the child of the U.
+Okay?
+In every tree, there will be exactly one node, which will be called as the root.
+Okay, so you can't have more than one root in a tree. Okay, always remember.
+And then any node which is not having any children will be called as leaves.
+Okay, so again, this can't be a leaf. Why? Because this node have children.
+But again, if you look at this node,
+these nodes will be called as leaves. Why?
+Because they don't have any children as such.
+Okay, now moving on to the next.
+I hope you guys are clear with the concept of internal nodes and leaves.
+Okay, any node between root node and leaf node will be called as the internal
+nodes. Okay, and then,
+we have already discussed, these are called as leaves.
+Okay,
+are you clear with the concept of siblings?
+Sibling you all know, right? If both nodes have the same children.
+Sorry, same parent. So here you can see the V and W.
+V and W are having the same parent, U. So in that case, V and W will be sibling.
+Okay, so we also have the concept of ancestor and descendant.
+Amrita, is a root node is an internal node? No.
+A root node can't be an internal node.
+Okay, root will be the first node. Internal means anything between root and
+leaves will be called as internal node.
+Okay, now coming to the ancestor and descendant.
+So ancestor means, for example, the parent node.
+So whatever node that comes first will be called as ancestor.
+So U and V are the ancestor of X.
+U and V. Why? Because they come before X.
+So that is why we are saying U and V are the ancestor of X.
+Similarly, V and X are the descendant of U. Why?
+Because both V and X came after U.
+So is it clear, the concept of ancestor and descendant?
+Ancestor means whoever comes first, descendant means whoever comes after that.
+Clear?
+All right.
+Moving on to the fourth terminology.
+So tree and subtree, I hope you guys are clear with the concept of subtree.
+Any tree which is derived from the main tree will be called as subtree
+Okay. So if you look here, we have this complete tree.
+Okay, this is the entire tree we have.
+Now, what we did, we just took out the specific tree.
+Okay, so this will be called as the subtree.
+Again, a subtree will also consist of the root node, the children node,
+or you can say the leaf node.
+Is that clear to everyone, the concept of?
+Alright.
+Now, there's always a question in the exam that how you can find out the height of
+the tree. Okay, so can any one of you tell me how to calculate the height?
+How to calculate the height of the tree?
+Okay, so let me give you a very basic example.
+So what you have to do is whenever you have to find out the level and the height,
+okay, so what you can do is
+just count the number of edges from root to
+leaf.
+Okay, so we already know this is the root node and these are the leaf
+node. Now, if I have to traverse from root to leaf, how many edges I have
+to traverse?
+Just count. Again, this will be a leaf node. This can also be a leaf node.
+But what is the maximum number of edges I have to traverse?
+One,
+two, and three.
+So always the height will be three.
+Clear?
+And same with the level.
+We always start with the level zero.
+Level zero,
+level one, level two, and level three.
+Okay, so now if I have to traverse till N, then one, two, and three.
+Okay? This will be the height.
+Okay, let me give you an example so that you can understand it better.
+Binary tree. Binary tree, you are clear?
+Any tree where every node has at most two children.
+Okay, binary means two. So if every node has at most two children, it will be
+called as the binary tree. So there will be a left child, there will be a right
+child.
+So can we say that WZ is a binary tree?
+No.
+Why? Because a W only has one children,
+so it can't be a binary tree. Can we say U is a binary tree,
+UXY? Yes. Why? Because it is having
+two childrens. That is why it is called as the binary tree.
+Now, what is full binary tree? A full binary tree is that tree where every node
+has two children, except the leaf node.
+Okay, so here you can see every node has two.
+Only the leaf
+nodes are those node where we don't have any children.
+So that will be called as the full binary tree.
+All right.
+Now, property of-- Again, from the exam standpoint, this is good.
+This is
+a very good question. So, in the exam, what I expected that you will be given a
+tree and then they will ask you, okay, that how to calculate the total number of
+nodes, how many leaf nodes, and how many internal nodes.
+Okay, so this is the formula.
+Okay, so you guys can take a screenshot, or you can note it somewhere.
+Okay, this is the formula through which how you can calculate the total number of
+nodes, where H is the...
+What is H? H is the height of the tree.
+Now, let's take an example of this tree.
+Suppose we have this tree. Can any one of you tell me what is the height here?
+What is the value of H here?
+Okay, Ashima's saying three. Amitabh's saying two.
+What else?
+Any other number?
+Understand the concept which I told you
+two slides before.
+You have to traverse the edges,
+edges from root to leaf.
+Okay, so this is the root. This is the leaf.
+If I have to go from root to leaf, how many edges I have to traverse?
+One,
+two.
+Is that clear
+why the height is two?
+Yes, no, maybe?
+Okay. So in that case, the height of this tree will be two.
+Now, apply the formula here. If I have to find out what are the total number of
+nodes we have. So if I put H is equal to two here, so
+two to the power of two plus one, that is three.
+Two to the power of three is eight. Eight minus one, seven.
+Just calculate how many. So there will be seven number of nodes, one, two, three,
+four, five, six, seven. Yes.
+Same, leaf node. We know the value of H is two.
+Two to the power of two, that is four. One, two, three, four.
+There will be four nodes. Now, coming to the internal nodes, we know the value of H
+is two. Two to the power of two, that is four minus one, three.
+There will be three internal nodes.
+Now, can anyone of you tell me, what are the internal nodes we have?
+This one,
+and
+I think there is something wrong here. There's only two nodes.
+Yeah. Only two internal nodes we have.
+So we have two internal nodes, four leaf node, and seven number of total nodes.
+Okay?
+Internal nodes are those nodes
+where they have at least one children.
+Okay, so that is why we are not considering these are the internal nodes.
+So this node has one children, this node has at least one children.
+And again, this is the root node.
+Again, a specific algorithm that whenever you have the binary tree of height H,
+the number of nodes will always be less than two to the power H minus one.
+Okay, so you just have to remember the formula.
+You cannot have more nodes than a full binary tree of height H.
+Okay.
+Again, the minimum height of the binary tree, again, you can write down the
+formula. The minimum height of the binary tree, which is having N nodes, is log N
+plus one.
+Okay, nobody's asking you that, okay, derive this formula.
+Nobody will ask you, but it can be an MCQ question.
+That's how you can calculate the minimum height of any binary tree.
+Okay, binary tree ADT is not in your syllabus, so we are skipping that.
+Okay. Again, this is how the binary tree gets represented in the form of an array.
+So, let me show you how it is done. Suppose you have this binary tree.
+Okay, you will create a table. You will start with a root node, and then you will
+keep on moving. So first, left child will be one, right child will be two,
+and then you have to keep on the sequence.
+Now, again, you came back to the left child.
+Again, for the left child, we have the
+A is the left child of B, so you will mark it as three.
+Again, right child is C, we will mark it as four.
+Now, we will move to the F, because B is already done. Now we will move to the F.
+In the F, we have the left child, that is five, but we don't have any right child.
+So whenever you would not have any right child, you will mark it as minus one.
+Okay. Now, coming to the node A. Again, we don't have any left children or right
+children, so we will mark it as minus one, minus one.
+So this is how the binary tree gets represented in the form of array.
+Okay, this is our ADT representation.
+Amitha, you want me to repeat that, this array-based representation?
+Okay.
+So, yeah. Just look at this tree here. So we have this binary tree.
+Okay, just create a table here. Okay, starting with node, whatever nodes we have.
+Okay, start with a root node.
+Okay, so root will always be zero. Okay, we will always assign the value of root as
+zero. Now take the first node. Okay, there will be two column, left child and right
+child. Do we have the left child of D? Yes, no?
+Then mark it as one. Okay, always follow the sequence.
+Then, do we have the right child of D? Yes.
+Then
+increment the value. Yes. Now, again, take the left subtree.
+Start coming to the node B. In the B, we also have the left child.
+Increment the sequence. Three. Then, do we have the right child of B? Yes.
+Increment the value. Four. Now, left subtree is done. Move on to the right subtree.
+Coming to the node F, do we have the left child? Yes.
+Then increment the value, five. Now, in the F, do we have the right child of
+F?
+No. So whenever you don't have any child, you will mark it as minus one.
+Okay. Now, coming to the A.
+In A, we neither have the left nor we have the right child.
+So in that case, both will be minus one, minus one.
+Yeah, Amit, so root will always start from zero,
+and then you have to increment the value.
+Okay, so this is how the array-based representation of tree works.
+When someone asked that, can you represent a tree in the form of array?
+Yes, this is how that tree get represented.
+Okay. Again, this is also a reference-based representation, but
+nothing important from the exam standpoint.
+Now, moving on to another thing, that's another important topic, that is the tree
+traversal. I hope you already know the meaning of traversal.
+You already know the meaning of traversal?
+Tree traversal means that you are moving from one node to another node.
+Okay. So for example, we will start with the root node, and then we will cover each
+and every node. So similarly, in the binary tree also, we have this
+traversal technique. Okay, so we have this, the preorder, inorder,
+and postorder. I hope you all have heard about these terminology, preorder
+traversal, inorder traversal, postorder traversal.
+Okay? So again, these are the traversal technique we have. Now, let me show you.
+So, preorder means
+you will visit
+the left child.
+Okay, then
+can any one of you tell me what we do in the
+preorder?
+Pre means before.
+So first
+node, then left, and then right.
+Okay. N, L, and R. Okay, let me write it down somewhere.
+Okay, so if I have to find out the preorder, so first we will traverse the node,
+then we will do the left child, then we will do the right child.
+Now, if I have to do the inorder traversal, then first we will do the left child,
+then node,
+and then the right child.
+Similarly, if I have to do the postorder traversal, then first left,
+then right,
+and then N, the root node.
+Is that clear to everyone? The preorder, inorder, and postorder.
+The level order is not in your syllabus.
+Okay, so NLR, LNR, or LRN.
+Okay, and now we will see some example.
+Okay.
+Let's take an example of this tree.
+So if I go with the preorder, so in the preorder, what will we do?
+Okay, Amitha, you are asking why we are doing the preorder, inorder, and postorder.
+The reason is, these are the traversal technique.
+Okay, why we are doing the traversal?
+The question is why we are doing the traversal.
+The reason is, if you have to solve any mathematical expression like this.
+Okay. Now, if you don't know how to find out the formula, how will you be able
+to find out the solution of this problem
+if you don't do the traversal?
+Okay. So obviously, if you have the mathematical formula, always go with the
+inorder, because the solution can only be obtained by using the inorder.
+But if someone asks you that, okay, can you give me the solution of this tree based
+on the preorder traversal, then you have to follow the sequence.
+Okay. So let's take an example of the preorder.
+Can any one of you tell me what will be the preorder traversal here of this tree?
+Let's give a try. What will be the first order? What will be the first node?
+A, B, D, C? Mm-hmm.
+The first, again, as I mentioned, we will start with the root node,
+and then the left part, and then the right part.
+So first we will go with the A, then we will go to the B because B is coming to the
+left, then D,
+and then in the last, we have the C. So this is how the preorder traversal works.
+Now,
+suppose we have this tree.
+Okay. We have this tree. You guys can take a screenshot.
+We have this tree, and now we have to traverse in preorder, postorder, and
+inorder.
+Now, let's start with the preorder. So first will be A. What will be the next node?
+Okay.
+Correct. That will be B. Now, what next?
+B. Then?
+E. Correct. Then it will move to the right subtree.
+Then the right subtree, it will go to the C, F, G.
+So it will start with C or F?
+Go with the C, then F, then G. So this is a preorder
+traversal of this example. Now, let's do the postorder of the same tree.
+What will be the first node?
+Postorder. Okay, so that means first we will do the left subpart, then the right
+subpart, and then at the end, we will do the node.
+So we will start with the extreme left, that is D.
+So D will be your first node. Then?
+So again, Amrita, understand the concept. We are doing the postorder.
+So first left, then right, then node. The left part is D.
+What will be the right part?
+It will be E. Then the node.
+The node is
+B. Correct. So B will be the option. Then move to the right subpart.
+Then the right subpart, what will be the node?
+C or G?
+No. Amit, we can't directly go to the C.
+Okay, because if you're going to the C, then you have to traverse A also.
+Okay, so first we have to cover the entire right part. So it will be G.
+Then?
+F.
+Correct, F. And then C, and then A. So this is how the
+postorder traversal work. Is it clear to everyone how the preorder and postorder
+traversal is working?
+Okay. Now, coming to the inorder.
+Now tell me, what will be the first node?
+So in the inorder, first we will go with the left part,
+then node, and then the right part.
+So we will start with the extreme left, that is D,
+then B. Correct. Then?
+E. Correct.
+Then what will be the next node?
+A. Correct. Then?
+So C.
+So we have covered the left part. We have moved to the root node.
+Then we have to cover the right part.
+So in the right part, if you scroll down,
+we have to cover the C, F, and G. So we can't
+directly go with the C part first. We have to move to the F, and then we have to
+check whether you have any left child of F or not. We don't have any left child.
+So we will directly go to the F,
+then G.
+And then once it is done, we will again traverse again.
+So this is called the inorder traversal.
+Is that coming clear to everyone?
+Pre and post. Yeah. I mean, which is confusing, Amrita?
+The inorder traversal?
+I mean, this is very easy. I mean, understand the concept here.
+Okay, you have this node. First, you have to traverse
+the left. Okay, this will be your first, this will be your second, and then this
+will be your third.
+Okay. Again, we know the formula is left
+node and then right.
+So first traverse the left part. So we will start with the left.
+Left, node, right. Clear?
+Why this DB is coming?
+Okay. Then node.
+This is the node, so we will include A.
+Now,
+this is done. This is done. Now moving on to the right part.
+Okay, forget everything. This is the right node. Okay.
+As we know the formula is left and LNR.
+So come to the L. Come to the left of C. So we have F.
+Do we have anything of left of F? No.
+So then what we will do is we will simply print F.
+Then right of F. G.
+And once everything is done, we move to C.
+Okay, so again, you have to remember the formula.
+Okay.
+Now, let's take an example of this tree.
+Suppose these are the tree, and we have to traverse the preorder.
+Okay, A. Okay, so understand, we have to do the preorder.
+Pre means
+first,
+what is the formula of preorder?
+The first we will traverse the node.
+Then?
+Yes, NLR. Node, left, and right.
+Correct. So first we will start with the root node, that is A.
+Then the next one will be
+left part.
+Go to the left side.
+B. Mm-hmm. Then?
+D. Correct. Then?
+F. Then?
+H. Then I. And then E. C and G.
+Correct, Amrita. Yeah. This is how you have to do the preorder. Same.
+If you have to do the postorder, then?
+Postorder. That means LRM. The first to the left part.
+So we will start with
+which node?
+The extreme left.
+H,
+then I, then F, then D, then E, then
+B.
+So Amrita, understand the concept here, okay? Your answer is incorrect.
+LRM.
+Okay, then move to the right part, G, D, and A.
+Any doubts in the postorder traversal?
+Is that clear? The postorder.
+No. Complete silent into the chat.
+Amrita, Amit.
+Yeah, you need some practice. Okay.
+This is the portion which you can expect in your end-term exam.
+Okay, coming to the inorder. Inorder means
+LNR.
+Okay. So go with the left-hand side.
+We will start with D because this is the extreme left,
+then R.
+Okay. Now, your left-hand side is done.
+DSFIBE. Left-hand side is done. Moving on to the right-hand side, we will go to the
+A, C, and G. So this will be your inorder traversal.
+So Ashu, you have to decide. For example, which left node means?
+For example, you are going to the left-hand side, and then you are finding if there
+is extreme left.
+Why it is extreme left? Okay, let's take an example. Okay.
+Suppose you're going to the left-hand side. Okay. This is your left sub-tree.
+Okay, forget everything. This is your left sub-tree. Now, you are here. Okay.
+Now, you have come to the node number D. Do we have anything to the left of D?
+No. So that means D is extreme left because whatever the things we have, for
+example, F and I, this is the right side of the D, but not the left-hand side.
+Okay. That is why D is extreme left.
+Okay? Similarly, if you go to the right-hand side, so now here H is extreme left.
+That is why first B came, then H came
+in this sequence.
+Okay, so just do some practice.
+Again, from... Yeah, Alfred Tricky.
+Time complexity if the preorder traversal
+is almost constant, okay, because we are
+traversing each node only once and with the constant time, and
+constant, I mean, the same operation is performed.
+So overall time will always be ON, okay, where N is a number of nodes.
+Okay? The time complexity of the preorder traversal.
+Okay, algorithm no one is going to ask, okay, so we are skipping that.
+That is done. Okay. So that was all
+about the trees. Now moving on to the graphs. Graphs you all know.
+You all have studied in your graph theory.
+Okay, it is a combination of vertices and edges.
+Okay, just like tree. In the tree, we have the nodes and edges.
+Similarly, the same nodes will be called as vertex in graph,
+and whenever there's an edge, it will represent the relationship between the two
+items.
+Yes, Amit, the time complexity of the tree traversal is ON because you are doing
+the constant operation on every node.
+These are certain examples of the graphs, okay, like we have the molecular
+structures, okay, or if you have to show the connectivity between how the server or
+the devices are connected. Okay, so these are the examples we have.
+Formal definition you already know.
+A graph is a set of, or you can say a pair of, vertices and edges, okay,
+where the vertices are denoted by V and edges are denoted by E.
+Just like we have in the tree, okay, we also have the adjacent vertices.
+So if you look at this graph, so here you can see the U and V are adjacent because
+they have a direct relationship between them.
+Suppose if I say,
+let's keep this node as Z. Can we say U and Z or W and Z are
+adjacent?
+No. Oh, yes.
+Can we say W and Z are adjacent?
+Why? Because there is no edge
+between them.
+So that is why we can't say W and Z are adjacent. The rest all are adjacent.
+Can we say V and W are adjacent?
+You can go from V to Z indirectly via U.
+But again, there is no direct edge as such.
+So whenever there is no direct edge between any two vertices,
+okay, we can't say them as adjacent.
+Okay, coming to the path and simple path. Do you know what is path and simple path?
+If you are traversing, if you are moving from one node to another node,
+okay, and then... Correct. If you're traveling from one node to another node, okay,
+and then every node is appearing at most once, then it will be called as the
+path, or you can say a simple path.
+Okay, the path is in the path, the redundancy is allowed.
+In simple path, every node will appear at most once.
+So redundancy is usually not possible in simple path.
+You can easily go from V1 to V5.
+Okay, so if I have to go from V1 to V5, I can actually go from V1 to V2, V2 to V4,
+or V4 to V5.
+But here, this is not a path.
+Sorry, this is a path, but this is not a simple path.
+In a simple path, you have to cover every node.
+So the simple path will be V1 to V2, V2 to V3, V3 to V4, V4 to V5.
+Is that clear?
+Path and simple path
+Okay.
+Now, same with cycle and simple cycle.
+Cycle, if you are starting, if the cycle is a path that begins and adds at the same
+node.
+Okay. Similarly, if I talk about the simple cycle, that means every node
+will appear at most once, except the first and the last one.
+Amrita, you are saying path we can skip and simple path we can skip. Sorry.
+You are saying the same thing.
+In simple path, we can't skip.
+Correct.
+Similarly,
+the connected graph. A graph is said to be connected if there exists a path between
+them,
+any pair of distinct nodes. Otherwise, it will be called as disconnected.
+Now, look at the graph. Can we say this graph is connected?
+This graph is connected. Why? Because every node is connected to every other node.
+Okay, there is no isolation as such.
+So if I have to move from V1 to V5, I can directly go.
+Although there is no direct path, but indirect path is there.
+So this is called a connected graph.
+Okay, these are the, put an example of disconnected graph.
+So V1 to V7, there is no path.
+Okay, so we will call it as the disconnected graph.
+We can't go directly from V1 to V7.
+Okay, so this is another graph, and then there is no path between these two things.
+So disconnected.
+Atinderdeep, you are saying second is disconnected.
+If you're looking at individually second graph, this is connected.
+We can go. V8 to V9 is possible. V8 to V6 possible, V8 to V7 possible.
+Okay. So individual graph is not...
+They both are, individually, they are connected graph.
+But if you look at the whole picture,
+this will be called as a disconnected graph because
+you don't have a path between V1 and V7.
+Okay?
+Yeah. Okay, again, the same thing is there, connected component.
+If the graph is disconnected, it can be partitioned into the number of two
+different graphs.
+Now, moving on to the third one, that is complete graph. What is complete graph?
+Complete graph means
+there is a node between every pair.
+Okay, so if you look at the graph here, every node is having a pair, or every pair
+is having an edge between them.
+Okay, so this is called a complete graph.
+Connectivity, yes.
+Weighted graph. Weighted graph you all know?
+Where the edges have any weight assigned.
+That will be called as the weighted graph.
+Directed graph, where you have directions defined.
+So here you can see a directed arrow.
+Okay.
+So whenever you have the direction defined in a graph, it will be called as the
+directed graph, or sometimes it is also called as digraph.
+Okay, then we have the multigraph.
+Multigraph means
+where we have the multiple edges between two nodes.
+Okay, so wherever there is a multiple edges between two nodes, or you can say the
+self-edge is there.
+Okay, suppose we have these two nodes.
+Okay, these two nodes we have. So you can see, this is also one edge, this is also
+one edge. So we have the multiple edges.
+So whenever we have the multiple edges, it will form a loop.
+Similarly, there's a self-edge. Again, this will be a loop.
+So any graph which contains a loop or multiple edges will be called as
+multigraph.
+Okay, moving on to the property of the graph.
+So yeah, we know an undirected graph that is connected and has no
+cycle is a tree. Okay. A tree with N node have exactly N-1
+edges, and a connected undirected graph with N edges must
+have at least N-1 edges. Okay. So again, these are basic properties of the graph.
+Coming to the implementation of the graph, so this is quite easy.
+Okay, you have the graph. Okay, now what you have to do is,
+you just have to represent the nodes here, and then whenever there's a edge between
+them, you mark it as 1, otherwise mark it as 0.
+Is it clear? The edge is symmetric
+of a directed graph whenever there's a directed graph between nodes.
+Okay, so this is how you get two.
+Similarly, if you have the undirected graph, so the process is similar, but what
+you have to do is, if these are undirected, that means there is no direction as
+such, so you will mention the weight, and whenever there is no edge, you will mark
+it as infinite sign.
+The process is same.
+Clear?
+Yes, no, maybe.
+Okay. Yeah, Amit.
+In the directed graph, you don't need to put the width.
+Okay, you just have to mention the one, okay, if there is a edge.
+But in the undirected graph, you have to mention the width.
+Okay. Again, the same graph can be represented in the form of list as well.
+So whenever you have the graph and then someone is saying that, okay, can you
+represent in the form of list? Just mention down all the vertices we have, and then
+whenever there is a edge, just create a list.
+If there is no direct edge between V2 and V5, we cannot assume the width.
+No, no, we can't.
+We can't. We are not doing any Prim's or Kruskal's algorithm. Okay?
+So I think, the Prim's, Kruskal will take time, and
+we don't have that much level of
+time as such. So yeah, so what we're going to do is, we're going to cover the
+shortest path and
+the spanning tree concept,
+maybe in the next class. And then, yeah, because these are the important things
+from the exam perspective, so we can cover.
+And then, we'll also do the searching and sorting, and then, there's another
+complex topic that is coming, that is
+the LP.
+Okay. So yeah, so that we will cover.
+Okay, whatever you have in your syllabus, the important part.
+I'm not going to cover the entire syllabus, okay, because for that you need
+the whole classes, five to six-hour classes.
+But in one hour, whatever that is important from the exam perspective, we will
+cover those.
+Okay.
+Anything else
+before we wind up the class?
+In matrix, Atinder, you have to implement an infinite sign only whenever there's
+an undirected graph, plus
+edge between the vertices. Then you will mark that at infinity sign.
+Will be undirected graph, not in the directed one.
+In the directed one, you have to mark it as zero.
+Cool. Okay, thank you so much for your time today, and see you all in the next
+class then.
+The recording will be available in the Amico portal, so you can easily get access
+to that. And yeah, NP-hard is one of the topic which will take time, so that we
+will cover. NP-hard, NP-complete.

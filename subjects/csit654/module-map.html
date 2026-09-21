@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CSIT654 Module Map — Network Security &amp; Cryptography</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --ink: #15231c;
+  --muted: #4a5c52;
+  --paper: #f3f6f1;
+  --panel: rgba(255,255,255,0.78);
+  --line: rgba(21,35,28,0.12);
+  --accent: #0f6b4c;
+  --accent-2: #c45c26;
+  --accent-soft: #d8efe4;
+  --warn: #8a3b12;
+  --ok: #1f7a4d;
+  --bad: #a33b3b;
+  --shadow: 0 18px 50px rgba(21,35,28,0.12);
+  --radius: 18px;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-body);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #d7ebe0 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, #f3dfd0 0%, transparent 45%),
+    linear-gradient(180deg, #eef4ef 0%, var(--paper) 40%, #e7eee8 100%);
+  min-height: 100vh;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image:
+    linear-gradient(rgba(21,35,28,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(21,35,28,0.03) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(180deg, #000, transparent 85%);
+}
+a { color: var(--accent); }
+.wrap { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; padding: 1.5rem 0 3rem; position: relative; }
+.hero {
+  display: grid;
+  gap: 1rem;
+  padding: 1.6rem 0 1.2rem;
+  animation: rise 0.6s ease both;
+}
+.kicker {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+h1 {
+  font-family: var(--font-display);
+  font-weight: 650;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  margin: 0.2rem 0;
+  letter-spacing: -0.02em;
+}
+.lede { margin: 0; max-width: 46rem; color: var(--muted); font-size: 1.05rem; }
+.navrow {
+  display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.6rem;
+}
+.btn, button.btn {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+.btn:hover, button.btn:hover { transform: translateY(-1px); border-color: rgba(15,107,76,0.35); }
+.btn.primary { background: var(--accent); color: #fff; border-color: transparent; }
+.btn.ghost { background: transparent; }
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+}
+.filters {
+  display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0;
+}
+.chip {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.65);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  font: inherit;
+}
+.chip.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+}
+.chip.lmr {
+  border-color: rgba(196,92,38,0.45);
+  color: var(--warn);
+}
+.chip.lmr.active { background: var(--accent-2); color: #fff; }
+.site-nav {
+  display: flex; flex-wrap: wrap; gap: 0.45rem;
+  align-items: center;
+  margin: 0 0 0.4rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.82);
+  backdrop-filter: blur(8px);
+  width: fit-content;
+  max-width: 100%;
+}
+.site-nav a {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+.site-nav a:hover { background: var(--accent-soft); color: var(--accent); }
+.site-nav a.home {
+  background: var(--accent);
+  color: #fff;
+}
+.site-nav a.here {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.meta {
+  display: flex; flex-wrap: wrap; gap: 0.75rem 1.2rem;
+  color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem;
+}
+.meta strong { color: var(--ink); }
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.6rem;
+  margin: 0.8rem 0;
+}
+.stat {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.8rem;
+}
+.stat b { display: block; font-size: 1.35rem; font-family: var(--font-display); color: var(--ink); }
+.stat span { color: var(--muted); font-size: 0.88rem; }
+.prog-line {
+  margin-top: 0.55rem;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(21,35,28,0.08);
+  overflow: hidden;
+}
+.prog-line > i {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), #2f9e74);
+  border-radius: inherit;
+}
+.links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+.links a {
+  display: block;
+  text-decoration: none;
+  padding: 0.7rem 0.85rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.links a.lmr-link {
+  background: linear-gradient(135deg, #fff4ec, #ffe8d8);
+  border-color: rgba(196,92,38,0.25);
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes flipIn {
+  from { opacity: 0; transform: rotateX(-8deg) translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+@media (max-width: 720px) {
+  .wrap { width: min(100% - 1.2rem, 1120px); }
+}
+
+.progress {
+  height: 8px; border-radius: 999px; background: rgba(21,35,28,0.08); overflow: hidden;
+}
+.progress > span {
+  display: block; height: 100%; width: 0%;
+  background: linear-gradient(90deg, var(--accent), #2f9e74);
+  transition: width 0.25s ease;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 1.35fr .9fr;
+  gap: 1rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+@media (max-width: 920px) {
+  .layout { grid-template-columns: 1fr; }
+  .detail-panel { position: static !important; }
+}
+.flow-panel, .detail-panel, .quiz-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.detail-panel { position: sticky; top: 1rem; min-height: 280px; }
+.section-label {
+  font-size: .78rem; font-weight: 700; letter-spacing: .05em;
+  text-transform: uppercase; color: var(--muted); margin: 0 0 .7rem;
+}
+.tree { display: grid; gap: .85rem; }
+.level { display: grid; gap: .55rem; justify-items: center; }
+.connectors {
+  display: flex; justify-content: center; height: 18px; position: relative;
+}
+.connectors::before {
+  content: "";
+  position: absolute; top: 0; bottom: 50%;
+  width: 2px; background: rgba(15,107,76,.35);
+}
+.row {
+  display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; width: 100%;
+}
+.node {
+  appearance: none; border: 1px solid var(--line); background: #fff;
+  border-radius: 14px; padding: .7rem .85rem; min-width: 118px; max-width: 190px;
+  text-align: left; cursor: pointer; font: inherit; color: inherit;
+  box-shadow: 0 6px 16px rgba(21,35,28,.06);
+  transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+.node:hover { transform: translateY(-2px); border-color: rgba(15,107,76,.35); }
+.node.active {
+  border-color: transparent;
+  box-shadow: 0 10px 24px rgba(15,107,76,.22);
+  outline: 2px solid rgba(15,107,76,.55);
+}
+.node .n-title {
+  display: block; font-family: var(--font-display);
+  font-size: .98rem; line-height: 1.2; margin-bottom: .15rem;
+}
+.node .n-sub { display: block; color: var(--muted); font-size: .78rem; line-height: 1.3; }
+.node .n-badge {
+  display: inline-block; margin-top: .35rem; font-size: .68rem; font-weight: 800;
+  letter-spacing: .04em; text-transform: uppercase; padding: .15rem .4rem;
+  border-radius: 999px; background: #f3dfd0; color: var(--warn);
+}
+.node.root {
+  background: linear-gradient(145deg, #116b54, #0d4f3e);
+  color: #fff; min-width: 220px; max-width: 300px; text-align: center;
+}
+.node.root .n-sub { color: rgba(255,255,255,.82); }
+.node.root .n-badge { background: rgba(255,255,255,.2); color: #fff; }
+.node.a { background: #d8efe4; border-color: rgba(15,107,76,.2); }
+.node.b { background: #f7e4d5; border-color: rgba(154,74,28,.22); }
+.node.c { background: #dceaf7; border-color: rgba(31,79,120,.2); }
+.node.lmr-node { box-shadow: 0 0 0 2px rgba(196,92,38,.35); }
+.chip.weight-high { border-color: rgba(196,92,38,.55); }
+.chip.weight-high.active { background: var(--accent-2); }
+.criteria-box {
+  margin: 0.7rem 0 0;
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.7);
+  border: 1px dashed var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+.criteria-box strong { color: var(--ink); }
+.filter-row { display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center; margin-top:0.65rem; }
+.qcard.dimmed { opacity: 0.38; }
+.branch-block {
+  width: 100%; border: 1px dashed rgba(21,35,28,.16);
+  border-radius: 16px; padding: .75rem; background: rgba(255,255,255,.45);
+}
+.branch-block h3 {
+  margin: 0 0 .55rem; font-family: var(--font-display);
+  font-size: 1.05rem; text-align: center;
+}
+.legend {
+  display: flex; flex-wrap: wrap; gap: .55rem; margin: .2rem 0 .8rem; justify-content: center;
+}
+.legend span {
+  display: inline-flex; align-items: center; gap: .35rem;
+  font-size: .82rem; color: var(--muted); font-weight: 600;
+}
+.swatch { width: .75rem; height: .75rem; border-radius: 3px; display: inline-block; }
+.detail-empty { color: var(--muted); margin: 1.2rem 0 0; }
+.detail-kicker {
+  display: inline-flex; font-size: .75rem; font-weight: 700; letter-spacing: .04em;
+  text-transform: uppercase; padding: .25rem .55rem; border-radius: 999px;
+  margin-bottom: .55rem; background: var(--accent-soft); color: var(--accent);
+}
+.detail-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+  margin: 0 0 .55rem; line-height: 1.2;
+}
+.detail-body { color: var(--ink); line-height: 1.55; margin: 0 0 .7rem; }
+.detail-points { margin: 0; padding-left: 1.1rem; color: var(--muted); }
+.detail-points li { margin: .35rem 0; }
+.parent-path { font-size: .88rem; color: var(--muted); margin: 0 0 .7rem; }
+.quiz-panel { margin-top: 1rem; }
+.quiz-panel h2 { font-family: var(--font-display); margin: 0 0 .35rem; font-size: 1.45rem; }
+.qlist { display: grid; gap: .7rem; margin-top: .8rem; }
+.qcard {
+  border: 1px solid var(--line); border-radius: 14px; padding: .85rem .9rem; background: #fff;
+}
+.qcard h3 {
+  font-family: var(--font-display); font-size: 1.05rem; margin: 0 0 .55rem; line-height: 1.3;
+}
+.qmeta { color: var(--muted); font-size: .82rem; font-weight: 600; margin: 0 0 .45rem; }
+.opts { display: grid; gap: .4rem; }
+.opt {
+  appearance: none; width: 100%; text-align: left; font: inherit;
+  border: 1px solid var(--line); background: #fbfcfb; border-radius: 10px;
+  padding: .55rem .7rem; cursor: pointer;
+}
+.opt:hover:not(:disabled) { border-color: rgba(15,107,76,.35); }
+.opt.correct { background: #e7f6ee; border-color: rgba(15,107,76,.45); }
+.opt.wrong { background: #fdeeee; border-color: rgba(163,59,59,.4); }
+.explain {
+  display: none; margin-top: .55rem; color: var(--muted);
+  font-size: .92rem; background: #f3f7f4; border-radius: 10px; padding: .55rem .7rem;
+}
+.explain.show { display: block; }
+.hint-bar { text-align: center; color: var(--muted); font-size: .9rem; margin: 0 0 .7rem; }
+
+.node.visited { background: #cfeee0 !important; }
+</style>
+<script>window.AMITY_SUBJECT = "csit654";</script>
+<script src="../../shared/config.js"></script>
+<script src="../../shared/progress.js"></script>
+<script src="../../shared/sync-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <nav class="site-nav" aria-label="Site"><a href="index.html" class="home">Home</a><a href="module-map.html" class="here">Module Map</a><a href="flashcards.html">Flashcards</a><a href="quiz.html">Quiz</a></nav>
+  <header class="hero">
+    <div class="kicker">Amity · CSIT654 · Module Map</div>
+    <h1>Structure maps &amp; important questions</h1>
+    <p class="lede">Structure maps for each module. Click topics for summaries and practice questions.</p>
+    <div class="navrow">
+      <a class="btn" href="#questions">Important questions</a>
+    </div>
+  </header>
+
+  <section class="panel">
+    <div class="meta" style="margin-bottom:0.6rem">
+      <span>This module: <strong id="mapModAttempted">0</strong> / <strong id="mapModTotal">0</strong> answered</span>
+      <span>Correct <strong id="mapModCorrect">0</strong></span>
+      <span>Visited <strong id="mapVisitedCount">0</strong> topics</span>
+      <span>All modules: <strong id="mapAllAttempted">0</strong> / <strong id="mapAllTotal">0</strong></span>
+    </div>
+    <div class="progress" style="margin-bottom:0.85rem"><span id="mapProgressBar"></span></div>
+    <div class="summary-grid" id="mapStats"></div>
+    <div class="filters" id="moduleFilters"></div>
+    <div class="criteria-box">
+      <strong>How this map is built:</strong>
+      One card ≈ one study topic from the SLM outline.
+      Click a card to mark it visited (light green) and see details.
+      Orange outline = LMR priority.
+    </div>
+    <div id="amity-sync-root"></div>
+  </section>
+
+  <div class="layout">
+    <section class="flow-panel" aria-label="Structure flow diagram">
+      <p class="section-label" id="flowLabel">Interactive flow</p>
+      <p class="hint-bar">Tap a card → details open on the right (below on mobile). Visited cards stay light green.</p>
+      <div class="legend">
+        <span><i class="swatch" style="background:#116b54"></i> Module root</span>
+        <span><i class="swatch" style="background:#d8efe4"></i> Group A</span>
+        <span><i class="swatch" style="background:#f7e4d5"></i> Group B</span>
+        <span><i class="swatch" style="background:#dceaf7"></i> Group C</span>
+        <span><i class="swatch" style="background:#cfeee0;outline:2px solid rgba(15,107,76,.35)"></i> Visited</span>
+        <span><i class="swatch" style="background:#f3dfd0;outline:2px solid rgba(196,92,38,.45)"></i> LMR priority</span>
+      </div>
+      <div class="tree" id="tree"></div>
+    </section>
+    <aside class="detail-panel" id="detailPanel">
+      <p class="section-label">Selected term</p>
+      <div id="detailContent">
+        <p class="detail-empty">Click any card in the flow to see definition, place in the structure, and exam tips.</p>
+      </div>
+    </aside>
+  </div>
+
+  <section class="quiz-panel" id="questions">
+    <h2 id="questionsTitle">Important questions</h2>
+    <p class="lede" style="margin:0">Practice after you walk the map. Tap a map card to focus questions on that topic.</p>
+    <div class="filter-row">
+      <button type="button" class="btn primary" id="showAllQs">Show all module questions</button>
+      <span class="meta" style="margin:0" id="qFilterLabel">Showing all</span>
+    </div>
+    <div class="qlist" id="qlist"></div>
+  </section>
+</div>
+<script>
+const MAPS = {"modules": [{"id": 1, "title": "Module 1", "weight": "high", "rootId": "m1_root", "levels": [{"heading": "Module 1 · part 1", "nodes": [{"id": "1.1.1", "title": "Introduction to Security Attacks", "sub": "Network security", "kind": "a", "topicId": "1.1.1", "lmr": true}, {"id": "1.1.2", "title": "Services and Mechanism", "sub": "Network security", "kind": "b", "topicId": "1.1.2", "lmr": true}, {"id": "1.1.3", "title": "Classical Encryption Techniques", "sub": "Network security", "kind": "c", "topicId": "1.1.3", "lmr": true}]}, {"heading": "Module 1 · part 2", "nodes": [{"id": "1.1.4", "title": "Substitution Ciphers", "sub": "Network security", "kind": "a", "topicId": "1.1.4", "lmr": false}, {"id": "1.1.5", "title": "Transposition Ciphers", "sub": "Network security", "kind": "b", "topicId": "1.1.5", "lmr": false}, {"id": "1.1.6", "title": "Cryptanalysis", "sub": "Network security", "kind": "c", "topicId": "1.1.6", "lmr": false}]}, {"heading": "Module 1 · part 3", "nodes": [{"id": "1.1.7", "title": "Steganography", "sub": "Network security", "kind": "a", "topicId": "1.1.7", "lmr": false}, {"id": "1.1.8", "title": "Stream and Block Ciphers", "sub": "Network security", "kind": "b", "topicId": "1.1.8", "lmr": false}, {"id": "1.1.9", "title": "Overview of Hardware Security", "sub": "Network security", "kind": "c", "topicId": "1.1.9", "lmr": false}]}], "nodes": {"m1_root": {"kind": "root", "title": "Module 1", "path": "Network Security and Cryptography (CSIT654) → Module 1", "body": "Study map for Module 1 of Network Security and Cryptography (CSIT654). Click a topic, then practise its MCQs.", "points": ["Built from the SLM table of contents", "Orange LMR badges mark first-pass priorities"]}, "1.1.1": {"kind": "a", "title": "Introduction to Security Attacks", "path": "Module 1 · 1.1.1 · Introduction to Security Attacks", "body": "1.1.2 Services and Mechanism 1.1.3 Classical Encryption Techniques 1.1.4 Substitution Ciphers", "points": ["From Network Security and Cryptography (CSIT654) · 1.1.1 · Network security", "Name one exam point for Introduction to Security Attacks.: Be able to define Introduction to Security Attacks, state when it is used, and contrast it with a related concept in Network security."], "topicId": "1.1.1", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "1.1.2": {"kind": "b", "title": "Services and Mechanism", "path": "Module 1 · 1.1.2 · Services and Mechanism", "body": "1.1.3 Classical Encryption Techniques 1.1.4 Substitution Ciphers 1.1.5 Transposition Ciphers", "points": ["From Network Security and Cryptography (CSIT654) · 1.1.2 · Network security"], "topicId": "1.1.2", "lmr": true, "note": "", "qCount": 1, "fcCount": 1}, "1.1.3": {"kind": "c", "title": "Classical Encryption Techniques", "path": "Module 1 · 1.1.3 · Classical Encryption Techniques", "body": "1.1.4 Substitution Ciphers 1.1.5 Transposition Ciphers 1.1.6 Cryptanalysis", "points": ["From Network Security and Cryptography (CSIT654) · 1.1.3 · Network security", "Name one exam point for Classical Encryption Techniques.: Be able to define Classical Encryption Techniques, state when it is used, and contrast it with a related concept in Network security."], "topicId": "1.1.3", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "1.1.4": {"kind": "a", "title": "Substitution Ciphers", "path": "Module 1 · 1.1.4 · Substitution Ciphers", "body": "1.1.5 Transposition Ciphers 1.1.6 Cryptanalysis 1.1.7 Steganography", "points": ["From Network Security and Cryptography (CSIT654) · 1.1.4 · Network security"], "topicId": "1.1.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "1.1.5": {"kind": "b", "title": "Transposition Ciphers", "path": "Module 1 · 1.1.5 · Transposition Ciphers", "body": "1.1.6 Cryptanalysis 1.1.7 Steganography 1.1.8 Stream and Block Ciphers", "points": ["From Network Security and Cryptography (CSIT654) · 1.1.5 · Network security", "Name one exam point for Transposition Ciphers.: Be able to define Transposition Ciphers, state when it is used, and contrast it with a related concept in Network security."], "topicId": "1.1.5", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "1.1.6": {"kind": "c", "title": "Cryptanalysis", "path": "Module 1 · 1.1.6 · Cryptanalysis", "body": "1.1.7 Steganography 1.1.8 Stream and Block Ciphers 1.1.9 Overview of Hardware Security", "points": ["From Network Security and Cryptography (CSIT654) · 1.1.6 · Network security"], "topicId": "1.1.6", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "1.1.7": {"kind": "a", "title": "Steganography", "path": "Module 1 · 1.1.7 · Steganography", "body": "1.1.8 Stream and Block Ciphers 1.1.9 Overview of Hardware Security Module - II: Secret and Public Key Cryptography", "points": ["From Network Security and Cryptography (CSIT654) · 1.1.7 · Network security", "Name one exam point for Steganography.: Be able to define Steganography, state when it is used, and contrast it with a related concept in Network security."], "topicId": "1.1.7", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "1.1.8": {"kind": "b", "title": "Stream and Block Ciphers", "path": "Module 1 · 1.1.8 · Stream and Block Ciphers", "body": "1.1.9 Overview of Hardware Security Module - II: Secret and Public Key Cryptography 39", "points": ["From Network Security and Cryptography (CSIT654) · 1.1.8 · Network security"], "topicId": "1.1.8", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "1.1.9": {"kind": "c", "title": "Overview of Hardware Security", "path": "Module 1 · 1.1.9 · Overview of Hardware Security", "body": "Module - II: Secret and Public Key Cryptography 39 2.1 Secret Key Cryptography", "points": ["From Network Security and Cryptography (CSIT654) · 1.1.9 · Network security", "Name one exam point for Overview of Hardware Security.: Be able to define Overview of Hardware Security, state when it is used, and contrast it with a related concept in Network security."], "topicId": "1.1.9", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}}, "questions": [{"q": "Which statement best matches Introduction to Security Attacks?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Introduction to Security Attacks", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Introduction to Security Attacks is a syllabus topic under Network security in Module 1.", "topicId": "1.1.1", "topicTitle": "Introduction to Security Attacks"}, {"q": "Which statement best matches Services and Mechanism?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Services and Mechanism", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Services and Mechanism is a syllabus topic under Network security in Module 1.", "topicId": "1.1.2", "topicTitle": "Services and Mechanism"}, {"q": "Which statement best matches Classical Encryption Techniques?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Classical Encryption Techniques", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Classical Encryption Techniques is a syllabus topic under Network security in Module 1.", "topicId": "1.1.3", "topicTitle": "Classical Encryption Techniques"}, {"q": "Which statement best matches Substitution Ciphers?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Substitution Ciphers", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Substitution Ciphers is a syllabus topic under Network security in Module 1.", "topicId": "1.1.4", "topicTitle": "Substitution Ciphers"}, {"q": "Which statement best matches Transposition Ciphers?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Transposition Ciphers", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Transposition Ciphers is a syllabus topic under Network security in Module 1.", "topicId": "1.1.5", "topicTitle": "Transposition Ciphers"}, {"q": "Which statement best matches Cryptanalysis?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Cryptanalysis", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Cryptanalysis is a syllabus topic under Network security in Module 1.", "topicId": "1.1.6", "topicTitle": "Cryptanalysis"}, {"q": "Which statement best matches Steganography?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Steganography", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Steganography is a syllabus topic under Network security in Module 1.", "topicId": "1.1.7", "topicTitle": "Steganography"}, {"q": "Which statement best matches Stream and Block Ciphers?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Stream and Block Ciphers", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Stream and Block Ciphers is a syllabus topic under Network security in Module 1.", "topicId": "1.1.8", "topicTitle": "Stream and Block Ciphers"}, {"q": "Which statement best matches Overview of Hardware Security?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Overview of Hardware Security", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Overview of Hardware Security is a syllabus topic under Network security in Module 1.", "topicId": "1.1.9", "topicTitle": "Overview of Hardware Security"}]}, {"id": 2, "title": "Module 2", "weight": "standard", "rootId": "m2_root", "levels": [{"heading": "Module 2 · part 1", "nodes": [{"id": "2.1.1", "title": "Modern Block Ciphers: Block Ciphers Princi", "sub": "Secret Key Cryptography", "kind": "a", "topicId": "2.1.1", "lmr": true}, {"id": "2.1.2", "title": "Shannon’s Theory of Confusion and Diffusio", "sub": "Secret Key Cryptography", "kind": "b", "topicId": "2.1.2", "lmr": true}, {"id": "2.1.3", "title": "Fiestal Structure", "sub": "Secret Key Cryptography", "kind": "c", "topicId": "2.1.3", "lmr": true}, {"id": "2.1.4", "title": "Data Encryption Standard (DES)", "sub": "Secret Key Cryptography", "kind": "a", "topicId": "2.1.4", "lmr": false}, {"id": "2.1.5", "title": "Strength of DES", "sub": "Secret Key Cryptography", "kind": "b", "topicId": "2.1.5", "lmr": false}]}, {"heading": "Module 2 · part 2", "nodes": [{"id": "2.1.6", "title": "Idea of Differential Cryptanalysis", "sub": "Secret Key Cryptography", "kind": "c", "topicId": "2.1.6", "lmr": false}, {"id": "2.1.7", "title": "Block Cipher Modes of Operations", "sub": "Secret Key Cryptography", "kind": "a", "topicId": "2.1.7", "lmr": false}, {"id": "2.1.8", "title": "Triple DES", "sub": "Secret Key Cryptography", "kind": "b", "topicId": "2.1.8", "lmr": false}, {"id": "2.2.1", "title": "Advanced Encryption Standard (AES)", "sub": "Public Key Cryptography", "kind": "c", "topicId": "2.2.1", "lmr": false}, {"id": "2.2.2", "title": "Fermat’s and Euler’s Theorem", "sub": "Public Key Cryptography", "kind": "a", "topicId": "2.2.2", "lmr": false}]}, {"heading": "Module 2 · part 3", "nodes": [{"id": "2.2.3", "title": "Chinese Remainder Theorem", "sub": "Public Key Cryptography", "kind": "b", "topicId": "2.2.3", "lmr": false}, {"id": "2.2.4", "title": "Principals of Public Key Crypto Systems", "sub": "Public Key Cryptography", "kind": "c", "topicId": "2.2.4", "lmr": false}, {"id": "2.2.5", "title": "RSA Algorithm", "sub": "Public Key Cryptography", "kind": "a", "topicId": "2.2.5", "lmr": false}, {"id": "2.2.6", "title": "Security of RSA Algorithm", "sub": "Public Key Cryptography", "kind": "b", "topicId": "2.2.6", "lmr": false}]}], "nodes": {"m2_root": {"kind": "root", "title": "Module 2", "path": "Network Security and Cryptography (CSIT654) → Module 2", "body": "Study map for Module 2 of Network Security and Cryptography (CSIT654). Click a topic, then practise its MCQs.", "points": ["Built from the SLM table of contents", "Orange LMR badges mark first-pass priorities"]}, "2.1.1": {"kind": "a", "title": "Modern Block Ciphers: Block Ciphers Princi", "path": "Module 2 · 2.1.1 · Modern Block Ciphers: Block Ciphers Principles", "body": "2.1.2 Shannon’s Theory of Confusion and Diffusion 2.1.3 Fiestal Structure 2.1.4 Data Encryption Standard (DES)", "points": ["From Network Security and Cryptography (CSIT654) · 2.1.1 · Secret Key Cryptography", "Name one exam point for Modern Block Ciphers: Block Ciphers Principles.: Be able to define Modern Block Ciphers: Block Ciphers Principles, state when it is used, and contrast it with a related concept in Secret Key Cryptography."], "topicId": "2.1.1", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "2.1.2": {"kind": "b", "title": "Shannon’s Theory of Confusion and Diffusio", "path": "Module 2 · 2.1.2 · Shannon’s Theory of Confusion and Diffusion", "body": "2.1.3 Fiestal Structure 2.1.4 Data Encryption Standard (DES) 2.1.5 Strength of DES", "points": ["From Network Security and Cryptography (CSIT654) · 2.1.2 · Secret Key Cryptography"], "topicId": "2.1.2", "lmr": true, "note": "", "qCount": 1, "fcCount": 1}, "2.1.3": {"kind": "c", "title": "Fiestal Structure", "path": "Module 2 · 2.1.3 · Fiestal Structure", "body": "2.1.4 Data Encryption Standard (DES) 2.1.5 Strength of DES 2.1.6 Idea of Differential Cryptanalysis", "points": ["From Network Security and Cryptography (CSIT654) · 2.1.3 · Secret Key Cryptography", "Name one exam point for Fiestal Structure.: Be able to define Fiestal Structure, state when it is used, and contrast it with a related concept in Secret Key Cryptography."], "topicId": "2.1.3", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "2.1.4": {"kind": "a", "title": "Data Encryption Standard (DES)", "path": "Module 2 · 2.1.4 · Data Encryption Standard (DES)", "body": "2.1.5 Strength of DES 2.1.6 Idea of Differential Cryptanalysis 2.1.7 Block Cipher Modes of Operations", "points": ["From Network Security and Cryptography (CSIT654) · 2.1.4 · Secret Key Cryptography"], "topicId": "2.1.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "2.1.5": {"kind": "b", "title": "Strength of DES", "path": "Module 2 · 2.1.5 · Strength of DES", "body": "2.1.6 Idea of Differential Cryptanalysis 2.1.7 Block Cipher Modes of Operations 2.1.8 Triple DES", "points": ["From Network Security and Cryptography (CSIT654) · 2.1.5 · Secret Key Cryptography", "Name one exam point for Strength of DES.: Be able to define Strength of DES, state when it is used, and contrast it with a related concept in Secret Key Cryptography."], "topicId": "2.1.5", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "2.1.6": {"kind": "c", "title": "Idea of Differential Cryptanalysis", "path": "Module 2 · 2.1.6 · Idea of Differential Cryptanalysis", "body": "2.1.7 Block Cipher Modes of Operations 2.1.8 Triple DES 2.2 Public Key Cryptography", "points": ["From Network Security and Cryptography (CSIT654) · 2.1.6 · Secret Key Cryptography"], "topicId": "2.1.6", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "2.1.7": {"kind": "a", "title": "Block Cipher Modes of Operations", "path": "Module 2 · 2.1.7 · Block Cipher Modes of Operations", "body": "2.1.8 Triple DES 2.2 Public Key Cryptography 2.2.1 Advanced Encryption Standard (AES)", "points": ["From Network Security and Cryptography (CSIT654) · 2.1.7 · Secret Key Cryptography", "Name one exam point for Block Cipher Modes of Operations.: Be able to define Block Cipher Modes of Operations, state when it is used, and contrast it with a related concept in Secret Key Cryptography."], "topicId": "2.1.7", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "2.1.8": {"kind": "b", "title": "Triple DES", "path": "Module 2 · 2.1.8 · Triple DES", "body": "2.2 Public Key Cryptography 2.2.1 Advanced Encryption Standard (AES) 2.2.2 Fermat’s and Euler’s Theorem", "points": ["From Network Security and Cryptography (CSIT654) · 2.1.8 · Secret Key Cryptography"], "topicId": "2.1.8", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "2.2.1": {"kind": "c", "title": "Advanced Encryption Standard (AES)", "path": "Module 2 · 2.2.1 · Advanced Encryption Standard (AES)", "body": "2.2.2 Fermat’s and Euler’s Theorem 2.2.3 Chinese Remainder Theorem 2.2.4 Principals of Public Key Crypto Systems", "points": ["From Network Security and Cryptography (CSIT654) · 2.2.1 · Public Key Cryptography", "Name one exam point for Advanced Encryption Standard (AES).: Be able to define Advanced Encryption Standard (AES), state when it is used, and contrast it with a related concept in Public Key Cryptography."], "topicId": "2.2.1", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "2.2.2": {"kind": "a", "title": "Fermat’s and Euler’s Theorem", "path": "Module 2 · 2.2.2 · Fermat’s and Euler’s Theorem", "body": "2.2.3 Chinese Remainder Theorem 2.2.4 Principals of Public Key Crypto Systems 2.2.5 RSA Algorithm", "points": ["From Network Security and Cryptography (CSIT654) · 2.2.2 · Public Key Cryptography"], "topicId": "2.2.2", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "2.2.3": {"kind": "b", "title": "Chinese Remainder Theorem", "path": "Module 2 · 2.2.3 · Chinese Remainder Theorem", "body": "2.2.4 Principals of Public Key Crypto Systems 2.2.5 RSA Algorithm 2.2.6 Security of RSA Algorithm", "points": ["From Network Security and Cryptography (CSIT654) · 2.2.3 · Public Key Cryptography", "Name one exam point for Chinese Remainder Theorem.: Be able to define Chinese Remainder Theorem, state when it is used, and contrast it with a related concept in Public Key Cryptography."], "topicId": "2.2.3", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "2.2.4": {"kind": "c", "title": "Principals of Public Key Crypto Systems", "path": "Module 2 · 2.2.4 · Principals of Public Key Crypto Systems", "body": "2.2.5 RSA Algorithm 2.2.6 Security of RSA Algorithm Module - III: Authentication Standards and Key Management", "points": ["From Network Security and Cryptography (CSIT654) · 2.2.4 · Public Key Cryptography"], "topicId": "2.2.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "2.2.5": {"kind": "a", "title": "RSA Algorithm", "path": "Module 2 · 2.2.5 · RSA Algorithm", "body": "2.2.6 Security of RSA Algorithm Module - III: Authentication Standards and Key Management 72", "points": ["From Network Security and Cryptography (CSIT654) · 2.2.5 · Public Key Cryptography", "Name one exam point for RSA Algorithm.: Be able to define RSA Algorithm, state when it is used, and contrast it with a related concept in Public Key Cryptography."], "topicId": "2.2.5", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "2.2.6": {"kind": "b", "title": "Security of RSA Algorithm", "path": "Module 2 · 2.2.6 · Security of RSA Algorithm", "body": "Module - III: Authentication Standards and Key Management 72 3.1 Message Authentication Codes", "points": ["From Network Security and Cryptography (CSIT654) · 2.2.6 · Public Key Cryptography"], "topicId": "2.2.6", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}}, "questions": [{"q": "Which statement best matches Modern Block Ciphers: Block Ciphers Principles?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Modern Block Ciphers: Block Ciphers Principles", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Modern Block Ciphers: Block Ciphers Principles is a syllabus topic under Secret Key Cryptography in Module 2.", "topicId": "2.1.1", "topicTitle": "Modern Block Ciphers: Block Ciphers Principles"}, {"q": "Which statement best matches Shannon’s Theory of Confusion and Diffusion?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Shannon’s Theory of Confusion and Diffusion", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Shannon’s Theory of Confusion and Diffusion is a syllabus topic under Secret Key Cryptography in Module 2.", "topicId": "2.1.2", "topicTitle": "Shannon’s Theory of Confusion and Diffusion"}, {"q": "Which statement best matches Fiestal Structure?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Fiestal Structure", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Fiestal Structure is a syllabus topic under Secret Key Cryptography in Module 2.", "topicId": "2.1.3", "topicTitle": "Fiestal Structure"}, {"q": "Which statement best matches Data Encryption Standard (DES)?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Data Encryption Standard (DES)", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Data Encryption Standard (DES) is a syllabus topic under Secret Key Cryptography in Module 2.", "topicId": "2.1.4", "topicTitle": "Data Encryption Standard (DES)"}, {"q": "Which statement best matches Strength of DES?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Strength of DES", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Strength of DES is a syllabus topic under Secret Key Cryptography in Module 2.", "topicId": "2.1.5", "topicTitle": "Strength of DES"}, {"q": "Which statement best matches Idea of Differential Cryptanalysis?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Idea of Differential Cryptanalysis", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Idea of Differential Cryptanalysis is a syllabus topic under Secret Key Cryptography in Module 2.", "topicId": "2.1.6", "topicTitle": "Idea of Differential Cryptanalysis"}, {"q": "Which statement best matches Block Cipher Modes of Operations?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Block Cipher Modes of Operations", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Block Cipher Modes of Operations is a syllabus topic under Secret Key Cryptography in Module 2.", "topicId": "2.1.7", "topicTitle": "Block Cipher Modes of Operations"}, {"q": "Which statement best matches Triple DES?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Triple DES", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Triple DES is a syllabus topic under Secret Key Cryptography in Module 2.", "topicId": "2.1.8", "topicTitle": "Triple DES"}, {"q": "Which statement best matches Advanced Encryption Standard (AES)?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Advanced Encryption Standard (AES)", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Advanced Encryption Standard (AES) is a syllabus topic under Public Key Cryptography in Module 2.", "topicId": "2.2.1", "topicTitle": "Advanced Encryption Standard (AES)"}, {"q": "Which statement best matches Fermat’s and Euler’s Theorem?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Fermat’s and Euler’s Theorem", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Fermat’s and Euler’s Theorem is a syllabus topic under Public Key Cryptography in Module 2.", "topicId": "2.2.2", "topicTitle": "Fermat’s and Euler’s Theorem"}, {"q": "Which statement best matches Chinese Remainder Theorem?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Chinese Remainder Theorem", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Chinese Remainder Theorem is a syllabus topic under Public Key Cryptography in Module 2.", "topicId": "2.2.3", "topicTitle": "Chinese Remainder Theorem"}, {"q": "Which statement best matches Principals of Public Key Crypto Systems?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Principals of Public Key Crypto Systems", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Principals of Public Key Crypto Systems is a syllabus topic under Public Key Cryptography in Module 2.", "topicId": "2.2.4", "topicTitle": "Principals of Public Key Crypto Systems"}, {"q": "Which statement best matches RSA Algorithm?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: RSA Algorithm", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "RSA Algorithm is a syllabus topic under Public Key Cryptography in Module 2.", "topicId": "2.2.5", "topicTitle": "RSA Algorithm"}, {"q": "Which statement best matches Security of RSA Algorithm?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Security of RSA Algorithm", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Security of RSA Algorithm is a syllabus topic under Public Key Cryptography in Module 2.", "topicId": "2.2.6", "topicTitle": "Security of RSA Algorithm"}]}, {"id": 3, "title": "Module 3", "weight": "standard", "rootId": "m3_root", "levels": [{"heading": "Module 3 · part 1", "nodes": [{"id": "3.1.1", "title": "Introduction of Message Authentication Cod", "sub": "Message Authentication Codes", "kind": "a", "topicId": "3.1.1", "lmr": true}, {"id": "3.1.2", "title": "Authentication Functions", "sub": "Message Authentication Codes", "kind": "b", "topicId": "3.1.2", "lmr": true}, {"id": "3.1.3", "title": "Authentication Requirements", "sub": "Message Authentication Codes", "kind": "c", "topicId": "3.1.3", "lmr": true}]}, {"heading": "Module 3 · part 2", "nodes": [{"id": "3.1.4", "title": "Message Authentication Code (MAC)", "sub": "Message Authentication Codes", "kind": "a", "topicId": "3.1.4", "lmr": false}, {"id": "3.1.5", "title": "Secure Hash Algorithm (SHA)", "sub": "Message Authentication Codes", "kind": "b", "topicId": "3.1.5", "lmr": false}, {"id": "3.1.6", "title": "Message Digest", "sub": "Message Authentication Codes", "kind": "c", "topicId": "3.1.6", "lmr": false}]}, {"heading": "Module 3 · part 3", "nodes": [{"id": "3.2.1", "title": "Overview of Digital Signatures", "sub": "Digital Signatures", "kind": "a", "topicId": "3.2.1", "lmr": false}, {"id": "3.2.2", "title": "Digital Signature Standards (DSS)", "sub": "Digital Signatures", "kind": "b", "topicId": "3.2.2", "lmr": false}, {"id": "3.2.3", "title": "Proof of Digital Signature Algorithm", "sub": "Digital Signatures", "kind": "c", "topicId": "3.2.3", "lmr": false}]}], "nodes": {"m3_root": {"kind": "root", "title": "Module 3", "path": "Network Security and Cryptography (CSIT654) → Module 3", "body": "Study map for Module 3 of Network Security and Cryptography (CSIT654). Click a topic, then practise its MCQs.", "points": ["Built from the SLM table of contents", "Orange LMR badges mark first-pass priorities"]}, "3.1.1": {"kind": "a", "title": "Introduction of Message Authentication Cod", "path": "Module 3 · 3.1.1 · Introduction of Message Authentication Codes", "body": "3.1.2 Authentication Functions 3.1.3 Authentication Requirements 3.1.4 Message Authentication Code (MAC)", "points": ["From Network Security and Cryptography (CSIT654) · 3.1.1 · Message Authentication Codes", "Name one exam point for Introduction of Message Authentication Codes.: Be able to define Introduction of Message Authentication Codes, state when it is used, and contrast it with a related concept in Message Authentication Codes."], "topicId": "3.1.1", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "3.1.2": {"kind": "b", "title": "Authentication Functions", "path": "Module 3 · 3.1.2 · Authentication Functions", "body": "3.1.3 Authentication Requirements 3.1.4 Message Authentication Code (MAC) 3.1.5 Secure Hash Algorithm (SHA)", "points": ["From Network Security and Cryptography (CSIT654) · 3.1.2 · Message Authentication Codes"], "topicId": "3.1.2", "lmr": true, "note": "", "qCount": 1, "fcCount": 1}, "3.1.3": {"kind": "c", "title": "Authentication Requirements", "path": "Module 3 · 3.1.3 · Authentication Requirements", "body": "3.1.4 Message Authentication Code (MAC) 3.1.5 Secure Hash Algorithm (SHA) (c) Amity University Online", "points": ["From Network Security and Cryptography (CSIT654) · 3.1.3 · Message Authentication Codes", "Name one exam point for Authentication Requirements.: Be able to define Authentication Requirements, state when it is used, and contrast it with a related concept in Message Authentication Codes."], "topicId": "3.1.3", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "3.1.4": {"kind": "a", "title": "Message Authentication Code (MAC)", "path": "Module 3 · 3.1.4 · Message Authentication Code (MAC)", "body": "3.1.1 Introduction of Message Authentication Codes 3.1.2 Authentication Functions 3.1.3 Authentication Requirements", "points": ["From Network Security and Cryptography (CSIT654) · 3.1.4 · Message Authentication Codes"], "topicId": "3.1.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "3.1.5": {"kind": "b", "title": "Secure Hash Algorithm (SHA)", "path": "Module 3 · 3.1.5 · Secure Hash Algorithm (SHA)", "body": "● Discuss about Digital Signatures and its standards ●", "points": ["From Network Security and Cryptography (CSIT654) · 3.1.5 · Message Authentication Codes", "Name one exam point for Secure Hash Algorithm (SHA).: Be able to define Secure Hash Algorithm (SHA), state when it is used, and contrast it with a related concept in Message Authentication Codes."], "topicId": "3.1.5", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "3.1.6": {"kind": "c", "title": "Message Digest", "path": "Module 3 · 3.1.6 · Message Digest", "body": "3.2 Digital Signatures 3.2.1 Overview of Digital Signatures 3.2.2 Digital Signature Standards (DSS)", "points": ["From Network Security and Cryptography (CSIT654) · 3.1.6 · Message Authentication Codes"], "topicId": "3.1.6", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "3.2.1": {"kind": "a", "title": "Overview of Digital Signatures", "path": "Module 3 · 3.2.1 · Overview of Digital Signatures", "body": "3.2.2 Digital Signature Standards (DSS) 3.2.3 Proof of Digital Signature Algorithm Module - IV: Web Security", "points": ["From Network Security and Cryptography (CSIT654) · 3.2.1 · Digital Signatures", "Name one exam point for Overview of Digital Signatures.: Be able to define Overview of Digital Signatures, state when it is used, and contrast it with a related concept in Digital Signatures."], "topicId": "3.2.1", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "3.2.2": {"kind": "b", "title": "Digital Signature Standards (DSS)", "path": "Module 3 · 3.2.2 · Digital Signature Standards (DSS)", "body": "3.2.3 Proof of Digital Signature Algorithm Module - IV: Web Security 91", "points": ["From Network Security and Cryptography (CSIT654) · 3.2.2 · Digital Signatures"], "topicId": "3.2.2", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "3.2.3": {"kind": "c", "title": "Proof of Digital Signature Algorithm", "path": "Module 3 · 3.2.3 · Proof of Digital Signature Algorithm", "body": "Module - IV: Web Security 91 4.1 Introduction to Web Security", "points": ["From Network Security and Cryptography (CSIT654) · 3.2.3 · Digital Signatures", "Name one exam point for Proof of Digital Signature Algorithm.: Be able to define Proof of Digital Signature Algorithm, state when it is used, and contrast it with a related concept in Digital Signatures."], "topicId": "3.2.3", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}}, "questions": [{"q": "Which statement best matches Introduction of Message Authentication Codes?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Introduction of Message Authentication Codes", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Introduction of Message Authentication Codes is a syllabus topic under Message Authentication Codes in Module 3.", "topicId": "3.1.1", "topicTitle": "Introduction of Message Authentication Codes"}, {"q": "Which statement best matches Authentication Functions?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Authentication Functions", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Authentication Functions is a syllabus topic under Message Authentication Codes in Module 3.", "topicId": "3.1.2", "topicTitle": "Authentication Functions"}, {"q": "Which statement best matches Authentication Requirements?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Authentication Requirements", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Authentication Requirements is a syllabus topic under Message Authentication Codes in Module 3.", "topicId": "3.1.3", "topicTitle": "Authentication Requirements"}, {"q": "Which statement best matches Message Authentication Code (MAC)?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Message Authentication Code (MAC)", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Message Authentication Code (MAC) is a syllabus topic under Message Authentication Codes in Module 3.", "topicId": "3.1.4", "topicTitle": "Message Authentication Code (MAC)"}, {"q": "Which statement best matches Secure Hash Algorithm (SHA)?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Secure Hash Algorithm (SHA)", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Secure Hash Algorithm (SHA) is a syllabus topic under Message Authentication Codes in Module 3.", "topicId": "3.1.5", "topicTitle": "Secure Hash Algorithm (SHA)"}, {"q": "Which statement best matches Message Digest?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Message Digest", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Message Digest is a syllabus topic under Message Authentication Codes in Module 3.", "topicId": "3.1.6", "topicTitle": "Message Digest"}, {"q": "Which statement best matches Overview of Digital Signatures?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Overview of Digital Signatures", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Overview of Digital Signatures is a syllabus topic under Digital Signatures in Module 3.", "topicId": "3.2.1", "topicTitle": "Overview of Digital Signatures"}, {"q": "Which statement best matches Digital Signature Standards (DSS)?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Digital Signature Standards (DSS)", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Digital Signature Standards (DSS) is a syllabus topic under Digital Signatures in Module 3.", "topicId": "3.2.2", "topicTitle": "Digital Signature Standards (DSS)"}, {"q": "Which statement best matches Proof of Digital Signature Algorithm?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Proof of Digital Signature Algorithm", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Proof of Digital Signature Algorithm is a syllabus topic under Digital Signatures in Module 3.", "topicId": "3.2.3", "topicTitle": "Proof of Digital Signature Algorithm"}]}, {"id": 4, "title": "Module 4", "weight": "standard", "rootId": "m4_root", "levels": [{"heading": "Module 4 · part 1", "nodes": [{"id": "4.1.1", "title": "Authentication Applications: Kerberos", "sub": "Introduction to Web Security", "kind": "a", "topicId": "4.1.1", "lmr": true}, {"id": "4.1.2", "title": "Overview of Access Control List (ACL)", "sub": "Introduction to Web Security", "kind": "b", "topicId": "4.1.2", "lmr": true}, {"id": "4.1.3", "title": "Electronic Mail Security: Pretty Good Priv", "sub": "Introduction to Web Security", "kind": "c", "topicId": "4.1.3", "lmr": true}]}, {"heading": "Module 4 · part 2", "nodes": [{"id": "4.1.4", "title": "S/MIME", "sub": "Introduction to Web Security", "kind": "a", "topicId": "4.1.4", "lmr": false}, {"id": "4.2.1", "title": "IP Security Architecture Components", "sub": "IP Security", "kind": "b", "topicId": "4.2.1", "lmr": false}, {"id": "4.2.2", "title": "Secure Socket Layer", "sub": "IP Security", "kind": "c", "topicId": "4.2.2", "lmr": false}]}, {"heading": "Module 4 · part 3", "nodes": [{"id": "4.2.3", "title": "Secure electronic transaction (SET)", "sub": "IP Security", "kind": "a", "topicId": "4.2.3", "lmr": false}]}], "nodes": {"m4_root": {"kind": "root", "title": "Module 4", "path": "Network Security and Cryptography (CSIT654) → Module 4", "body": "Study map for Module 4 of Network Security and Cryptography (CSIT654). Click a topic, then practise its MCQs.", "points": ["Built from the SLM table of contents", "Orange LMR badges mark first-pass priorities"]}, "4.1.1": {"kind": "a", "title": "Authentication Applications: Kerberos", "path": "Module 4 · 4.1.1 · Authentication Applications: Kerberos", "body": "4.1.2 Overview of Access Control List (ACL) 4.1.3 Electronic Mail Security: Pretty Good Privacy (PGP) 4.1.4 S/MIME", "points": ["From Network Security and Cryptography (CSIT654) · 4.1.1 · Introduction to Web Security", "Name one exam point for Authentication Applications: Kerberos.: Be able to define Authentication Applications: Kerberos, state when it is used, and contrast it with a related concept in Introduction to Web Security."], "topicId": "4.1.1", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "4.1.2": {"kind": "b", "title": "Overview of Access Control List (ACL)", "path": "Module 4 · 4.1.2 · Overview of Access Control List (ACL)", "body": "4.1.3 Electronic Mail Security: Pretty Good Privacy (PGP) 4.1.4 S/MIME 4.2 IP Security", "points": ["From Network Security and Cryptography (CSIT654) · 4.1.2 · Introduction to Web Security"], "topicId": "4.1.2", "lmr": true, "note": "", "qCount": 1, "fcCount": 1}, "4.1.3": {"kind": "c", "title": "Electronic Mail Security: Pretty Good Priv", "path": "Module 4 · 4.1.3 · Electronic Mail Security: Pretty Good Privacy (PGP)", "body": "4.1.4 S/MIME 4.2 IP Security 4.2.1 IP Security Architecture Components", "points": ["From Network Security and Cryptography (CSIT654) · 4.1.3 · Introduction to Web Security", "Name one exam point for Electronic Mail Security: Pretty Good Privacy (PGP).: Be able to define Electronic Mail Security: Pretty Good Privacy (PGP), state when it is used, and contrast it with a related concept in Introduction to Web Security."], "topicId": "4.1.3", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "4.1.4": {"kind": "a", "title": "S/MIME", "path": "Module 4 · 4.1.4 · S/MIME", "body": "4.2 IP Security 4.2.1 IP Security Architecture Components 4.2.2 Secure Socket Layer", "points": ["From Network Security and Cryptography (CSIT654) · 4.1.4 · Introduction to Web Security"], "topicId": "4.1.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "4.2.1": {"kind": "b", "title": "IP Security Architecture Components", "path": "Module 4 · 4.2.1 · IP Security Architecture Components", "body": "4.2.2 Secure Socket Layer 4.2.3 Secure electronic transaction (SET) Module - V: Computational Learning Theor", "points": ["From Network Security and Cryptography (CSIT654) · 4.2.1 · IP Security", "Name one exam point for IP Security Architecture Components.: Be able to define IP Security Architecture Components, state when it is used, and contrast it with a related concept in IP Security."], "topicId": "4.2.1", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "4.2.2": {"kind": "c", "title": "Secure Socket Layer", "path": "Module 4 · 4.2.2 · Secure Socket Layer", "body": "4.2.3 Secure electronic transaction (SET) Module - V: Computational Learning Theor 151", "points": ["From Network Security and Cryptography (CSIT654) · 4.2.2 · IP Security"], "topicId": "4.2.2", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "4.2.3": {"kind": "a", "title": "Secure electronic transaction (SET)", "path": "Module 4 · 4.2.3 · Secure electronic transaction (SET)", "body": "Module - V: Computational Learning Theor 151 5.1 System Security", "points": ["From Network Security and Cryptography (CSIT654) · 4.2.3 · IP Security", "Name one exam point for Secure electronic transaction (SET).: Be able to define Secure electronic transaction (SET), state when it is used, and contrast it with a related concept in IP Security."], "topicId": "4.2.3", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}}, "questions": [{"q": "Which statement best matches Authentication Applications: Kerberos?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Authentication Applications: Kerberos", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Authentication Applications: Kerberos is a syllabus topic under Introduction to Web Security in Module 4.", "topicId": "4.1.1", "topicTitle": "Authentication Applications: Kerberos"}, {"q": "Which statement best matches Overview of Access Control List (ACL)?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Overview of Access Control List (ACL)", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Overview of Access Control List (ACL) is a syllabus topic under Introduction to Web Security in Module 4.", "topicId": "4.1.2", "topicTitle": "Overview of Access Control List (ACL)"}, {"q": "Which statement best matches Electronic Mail Security: Pretty Good Privacy (PGP)?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Electronic Mail Security: Pretty Good Privacy (PGP)", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Electronic Mail Security: Pretty Good Privacy (PGP) is a syllabus topic under Introduction to Web Security in Module 4.", "topicId": "4.1.3", "topicTitle": "Electronic Mail Security: Pretty Good Privacy (PGP)"}, {"q": "Which statement best matches S/MIME?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: S/MIME", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "S/MIME is a syllabus topic under Introduction to Web Security in Module 4.", "topicId": "4.1.4", "topicTitle": "S/MIME"}, {"q": "Which statement best matches IP Security Architecture Components?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: IP Security Architecture Components", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "IP Security Architecture Components is a syllabus topic under IP Security in Module 4.", "topicId": "4.2.1", "topicTitle": "IP Security Architecture Components"}, {"q": "Which statement best matches Secure Socket Layer?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Secure Socket Layer", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Secure Socket Layer is a syllabus topic under IP Security in Module 4.", "topicId": "4.2.2", "topicTitle": "Secure Socket Layer"}, {"q": "Which statement best matches Secure electronic transaction (SET)?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Secure electronic transaction (SET)", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Secure electronic transaction (SET) is a syllabus topic under IP Security in Module 4.", "topicId": "4.2.3", "topicTitle": "Secure electronic transaction (SET)"}]}, {"id": 5, "title": "Module 5", "weight": "standard", "rootId": "m5_root", "levels": [{"heading": "Module 5 · part 1", "nodes": [{"id": "5.1.1", "title": "Introductory Idea of Intrusion", "sub": "System Security", "kind": "a", "topicId": "5.1.1", "lmr": true}, {"id": "5.1.2", "title": "Intrusion Detection Techniques", "sub": "System Security", "kind": "b", "topicId": "5.1.2", "lmr": true}, {"id": "5.1.3", "title": "Viruses and Worms", "sub": "System Security", "kind": "c", "topicId": "5.1.3", "lmr": true}, {"id": "5.1.4", "title": "Firewall Overview and Design Principles", "sub": "System Security", "kind": "a", "topicId": "5.1.4", "lmr": false}, {"id": "5.1.5", "title": "Global Standards IT Acts and Cyber Laws", "sub": "System Security", "kind": "b", "topicId": "5.1.5", "lmr": false}, {"id": "5.1.6", "title": "Virtual Private Network", "sub": "System Security", "kind": "c", "topicId": "5.1.6", "lmr": false}]}, {"heading": "Module 5 · part 2", "nodes": [{"id": "5.1.7", "title": "Recent Network Attacks and Security Measur", "sub": "System Security", "kind": "a", "topicId": "5.1.7", "lmr": false}, {"id": "5.1.8", "title": "Blockchain Technology", "sub": "System Security", "kind": "b", "topicId": "5.1.8", "lmr": false}, {"id": "5.1.9", "title": "Internet Privacy and Piracy Prevention", "sub": "System Security", "kind": "c", "topicId": "5.1.9", "lmr": false}, {"id": "5.2.1", "title": "Overview of Cyber Forensic", "sub": "Cyber Forensic and Its Applications", "kind": "a", "topicId": "5.2.1", "lmr": false}, {"id": "5.2.2", "title": "Cyber Forensic Processes", "sub": "Cyber Forensic and Its Applications", "kind": "b", "topicId": "5.2.2", "lmr": false}, {"id": "5.2.3", "title": "Cyber Forensic Applications", "sub": "Cyber Forensic and Its Applications", "kind": "c", "topicId": "5.2.3", "lmr": false}]}, {"heading": "Module 5 · part 3", "nodes": [{"id": "5.2.4", "title": "Cyber Forensic Tools", "sub": "Cyber Forensic and Its Applications", "kind": "a", "topicId": "5.2.4", "lmr": false}, {"id": "5.2.5", "title": "Digital Evidence", "sub": "Cyber Forensic and Its Applications", "kind": "b", "topicId": "5.2.5", "lmr": false}, {"id": "5.2.6", "title": "Investigating Windows and Unix Systems", "sub": "Cyber Forensic and Its Applications", "kind": "c", "topicId": "5.2.6", "lmr": false}, {"id": "5.2.7", "title": "E-mail Tracing", "sub": "Cyber Forensic and Its Applications", "kind": "a", "topicId": "5.2.7", "lmr": false}]}], "nodes": {"m5_root": {"kind": "root", "title": "Module 5", "path": "Network Security and Cryptography (CSIT654) → Module 5", "body": "Study map for Module 5 of Network Security and Cryptography (CSIT654). Click a topic, then practise its MCQs.", "points": ["Built from the SLM table of contents", "Orange LMR badges mark first-pass priorities"]}, "5.1.1": {"kind": "a", "title": "Introductory Idea of Intrusion", "path": "Module 5 · 5.1.1 · Introductory Idea of Intrusion", "body": "5.1.2 Intrusion Detection Techniques 5.1.3 Viruses and Worms 5.1.4 Firewall Overview and Design Principles", "points": ["From Network Security and Cryptography (CSIT654) · 5.1.1 · System Security", "Name one exam point for Introductory Idea of Intrusion.: Be able to define Introductory Idea of Intrusion, state when it is used, and contrast it with a related concept in System Security."], "topicId": "5.1.1", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "5.1.2": {"kind": "b", "title": "Intrusion Detection Techniques", "path": "Module 5 · 5.1.2 · Intrusion Detection Techniques", "body": "5.1.3 Viruses and Worms 5.1.4 Firewall Overview and Design Principles 5.1.5 Global Standards IT Acts and Cyber Laws", "points": ["From Network Security and Cryptography (CSIT654) · 5.1.2 · System Security"], "topicId": "5.1.2", "lmr": true, "note": "", "qCount": 1, "fcCount": 1}, "5.1.3": {"kind": "c", "title": "Viruses and Worms", "path": "Module 5 · 5.1.3 · Viruses and Worms", "body": "5.1.4 Firewall Overview and Design Principles 5.1.5 Global Standards IT Acts and Cyber Laws 5.1.6 Virtual Private Network", "points": ["From Network Security and Cryptography (CSIT654) · 5.1.3 · System Security", "Name one exam point for Viruses and Worms.: Be able to define Viruses and Worms, state when it is used, and contrast it with a related concept in System Security."], "topicId": "5.1.3", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "5.1.4": {"kind": "a", "title": "Firewall Overview and Design Principles", "path": "Module 5 · 5.1.4 · Firewall Overview and Design Principles", "body": "5.1.5 Global Standards IT Acts and Cyber Laws 5.1.6 Virtual Private Network 5.1.7 Recent Network Attacks and Security Measures", "points": ["From Network Security and Cryptography (CSIT654) · 5.1.4 · System Security"], "topicId": "5.1.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "5.1.5": {"kind": "b", "title": "Global Standards IT Acts and Cyber Laws", "path": "Module 5 · 5.1.5 · Global Standards IT Acts and Cyber Laws", "body": "5.1.6 Virtual Private Network 5.1.7 Recent Network Attacks and Security Measures 5.1.8 Blockchain Technology", "points": ["From Network Security and Cryptography (CSIT654) · 5.1.5 · System Security", "Name one exam point for Global Standards IT Acts and Cyber Laws.: Be able to define Global Standards IT Acts and Cyber Laws, state when it is used, and contrast it with a related concept in System Security."], "topicId": "5.1.5", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "5.1.6": {"kind": "c", "title": "Virtual Private Network", "path": "Module 5 · 5.1.6 · Virtual Private Network", "body": "5.1.7 Recent Network Attacks and Security Measures 5.1.8 Blockchain Technology 5.1.9 Internet Privacy and Piracy Prevention", "points": ["From Network Security and Cryptography (CSIT654) · 5.1.6 · System Security"], "topicId": "5.1.6", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "5.1.7": {"kind": "a", "title": "Recent Network Attacks and Security Measur", "path": "Module 5 · 5.1.7 · Recent Network Attacks and Security Measures", "body": "5.1.8 Blockchain Technology 5.1.9 Internet Privacy and Piracy Prevention 5.2 Cyber Forensic and Its Applications", "points": ["From Network Security and Cryptography (CSIT654) · 5.1.7 · System Security", "Name one exam point for Recent Network Attacks and Security Measures.: Be able to define Recent Network Attacks and Security Measures, state when it is used, and contrast it with a related concept in System Security."], "topicId": "5.1.7", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "5.1.8": {"kind": "b", "title": "Blockchain Technology", "path": "Module 5 · 5.1.8 · Blockchain Technology", "body": "5.1.9 Internet Privacy and Piracy Prevention 5.2 Cyber Forensic and Its Applications 5.2.1 Overview of Cyber Forensic", "points": ["From Network Security and Cryptography (CSIT654) · 5.1.8 · System Security"], "topicId": "5.1.8", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "5.1.9": {"kind": "c", "title": "Internet Privacy and Piracy Prevention", "path": "Module 5 · 5.1.9 · Internet Privacy and Piracy Prevention", "body": "5.2 Cyber Forensic and Its Applications 5.2.1 Overview of Cyber Forensic 5.2.2 Cyber Forensic Processes", "points": ["From Network Security and Cryptography (CSIT654) · 5.1.9 · System Security", "Name one exam point for Internet Privacy and Piracy Prevention.: Be able to define Internet Privacy and Piracy Prevention, state when it is used, and contrast it with a related concept in System Security."], "topicId": "5.1.9", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "5.2.1": {"kind": "a", "title": "Overview of Cyber Forensic", "path": "Module 5 · 5.2.1 · Overview of Cyber Forensic", "body": "5.2.2 Cyber Forensic Processes 5.2.3 Cyber Forensic Applications 5.2.4 Cyber Forensic Tools", "points": ["From Network Security and Cryptography (CSIT654) · 5.2.1 · Cyber Forensic and Its Applications"], "topicId": "5.2.1", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "5.2.2": {"kind": "b", "title": "Cyber Forensic Processes", "path": "Module 5 · 5.2.2 · Cyber Forensic Processes", "body": "5.2.3 Cyber Forensic Applications 5.2.4 Cyber Forensic Tools 5.2.5 Digital Evidence", "points": ["From Network Security and Cryptography (CSIT654) · 5.2.2 · Cyber Forensic and Its Applications", "Name one exam point for Cyber Forensic Processes.: Be able to define Cyber Forensic Processes, state when it is used, and contrast it with a related concept in Cyber Forensic and Its Applications."], "topicId": "5.2.2", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "5.2.3": {"kind": "c", "title": "Cyber Forensic Applications", "path": "Module 5 · 5.2.3 · Cyber Forensic Applications", "body": "5.2.4 Cyber Forensic Tools 5.2.5 Digital Evidence 5.2.6 Investigating Windows and Unix Systems", "points": ["From Network Security and Cryptography (CSIT654) · 5.2.3 · Cyber Forensic and Its Applications"], "topicId": "5.2.3", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "5.2.4": {"kind": "a", "title": "Cyber Forensic Tools", "path": "Module 5 · 5.2.4 · Cyber Forensic Tools", "body": "5.2.5 Digital Evidence 5.2.6 Investigating Windows and Unix Systems 5.2.7 E-mail Tracing", "points": ["From Network Security and Cryptography (CSIT654) · 5.2.4 · Cyber Forensic and Its Applications", "Name one exam point for Cyber Forensic Tools.: Be able to define Cyber Forensic Tools, state when it is used, and contrast it with a related concept in Cyber Forensic and Its Applications."], "topicId": "5.2.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "5.2.5": {"kind": "b", "title": "Digital Evidence", "path": "Module 5 · 5.2.5 · Digital Evidence", "body": "5.2.6 Investigating Windows and Unix Systems 5.2.7 E-mail Tracing (c) Amity University Online", "points": ["From Network Security and Cryptography (CSIT654) · 5.2.5 · Cyber Forensic and Its Applications"], "topicId": "5.2.5", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "5.2.6": {"kind": "c", "title": "Investigating Windows and Unix Systems", "path": "Module 5 · 5.2.6 · Investigating Windows and Unix Systems", "body": "5.2.7 E-mail Tracing (c) Amity University Online", "points": ["From Network Security and Cryptography (CSIT654) · 5.2.6 · Cyber Forensic and Its Applications", "Name one exam point for Investigating Windows and Unix Systems.: Be able to define Investigating Windows and Unix Systems, state when it is used, and contrast it with a related concept in Cyber Forensic and Its Applications."], "topicId": "5.2.6", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "5.2.7": {"kind": "a", "title": "E-mail Tracing", "path": "Module 5 · 5.2.7 · E-mail Tracing", "body": "Key SLM topic: E-mail Tracing. Review definitions, steps, and one worked example from the study PDF.", "points": ["From Network Security and Cryptography (CSIT654) · 5.2.7 · Cyber Forensic and Its Applications"], "topicId": "5.2.7", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}}, "questions": [{"q": "Which statement best matches Introductory Idea of Intrusion?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Introductory Idea of Intrusion", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Introductory Idea of Intrusion is a syllabus topic under System Security in Module 5.", "topicId": "5.1.1", "topicTitle": "Introductory Idea of Intrusion"}, {"q": "Which statement best matches Intrusion Detection Techniques?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Intrusion Detection Techniques", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Intrusion Detection Techniques is a syllabus topic under System Security in Module 5.", "topicId": "5.1.2", "topicTitle": "Intrusion Detection Techniques"}, {"q": "Which statement best matches Viruses and Worms?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Viruses and Worms", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Viruses and Worms is a syllabus topic under System Security in Module 5.", "topicId": "5.1.3", "topicTitle": "Viruses and Worms"}, {"q": "Which statement best matches Firewall Overview and Design Principles?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Firewall Overview and Design Principles", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Firewall Overview and Design Principles is a syllabus topic under System Security in Module 5.", "topicId": "5.1.4", "topicTitle": "Firewall Overview and Design Principles"}, {"q": "Which statement best matches Global Standards IT Acts and Cyber Laws?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Global Standards IT Acts and Cyber Laws", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Global Standards IT Acts and Cyber Laws is a syllabus topic under System Security in Module 5.", "topicId": "5.1.5", "topicTitle": "Global Standards IT Acts and Cyber Laws"}, {"q": "Which statement best matches Virtual Private Network?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Virtual Private Network", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Virtual Private Network is a syllabus topic under System Security in Module 5.", "topicId": "5.1.6", "topicTitle": "Virtual Private Network"}, {"q": "Which statement best matches Recent Network Attacks and Security Measures?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Recent Network Attacks and Security Measures", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Recent Network Attacks and Security Measures is a syllabus topic under System Security in Module 5.", "topicId": "5.1.7", "topicTitle": "Recent Network Attacks and Security Measures"}, {"q": "Which statement best matches Blockchain Technology?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Blockchain Technology", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Blockchain Technology is a syllabus topic under System Security in Module 5.", "topicId": "5.1.8", "topicTitle": "Blockchain Technology"}, {"q": "Which statement best matches Internet Privacy and Piracy Prevention?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Internet Privacy and Piracy Prevention", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Internet Privacy and Piracy Prevention is a syllabus topic under System Security in Module 5.", "topicId": "5.1.9", "topicTitle": "Internet Privacy and Piracy Prevention"}, {"q": "Which statement best matches Overview of Cyber Forensic?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Overview of Cyber Forensic", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Overview of Cyber Forensic is a syllabus topic under Cyber Forensic and Its Applications in Module 5.", "topicId": "5.2.1", "topicTitle": "Overview of Cyber Forensic"}, {"q": "Which statement best matches Cyber Forensic Processes?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Cyber Forensic Processes", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Cyber Forensic Processes is a syllabus topic under Cyber Forensic and Its Applications in Module 5.", "topicId": "5.2.2", "topicTitle": "Cyber Forensic Processes"}, {"q": "Which statement best matches Cyber Forensic Applications?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Cyber Forensic Applications", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Cyber Forensic Applications is a syllabus topic under Cyber Forensic and Its Applications in Module 5.", "topicId": "5.2.3", "topicTitle": "Cyber Forensic Applications"}, {"q": "Which statement best matches Cyber Forensic Tools?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Cyber Forensic Tools", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Cyber Forensic Tools is a syllabus topic under Cyber Forensic and Its Applications in Module 5.", "topicId": "5.2.4", "topicTitle": "Cyber Forensic Tools"}, {"q": "Which statement best matches Digital Evidence?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Digital Evidence", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Digital Evidence is a syllabus topic under Cyber Forensic and Its Applications in Module 5.", "topicId": "5.2.5", "topicTitle": "Digital Evidence"}, {"q": "Which statement best matches Investigating Windows and Unix Systems?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: Investigating Windows and Unix Systems", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Investigating Windows and Unix Systems is a syllabus topic under Cyber Forensic and Its Applications in Module 5.", "topicId": "5.2.6", "topicTitle": "Investigating Windows and Unix Systems"}, {"q": "Which statement best matches E-mail Tracing?", "options": ["A definition-only topic with no applications", "A core idea in Network Security & Cryptography: E-mail Tracing", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "E-mail Tracing is a syllabus topic under Cyber Forensic and Its Applications in Module 5.", "topicId": "5.2.7", "topicTitle": "E-mail Tracing"}]}]};
+let activeModuleId = String(MAPS.modules[0].id);
+let current = MAPS.modules[0];
+let mapAnswers = {};
+let mapVisited = {};
+let restoring = false;
+let topicFilter = null;
+let selectedNodeId = null;
+
+const el = id => document.getElementById(id);
+const mapProgressBar = el("mapProgressBar");
+const mapAllTotal = MAPS.modules.reduce((n, m) => n + (m.questions || []).length, 0);
+el("mapAllTotal").textContent = mapAllTotal;
+
+function visitedKey(nodeId) {
+  return String(activeModuleId) + ":" + nodeId;
+}
+
+function currentModule() {
+  return MAPS.modules.find(m => String(m.id) === String(activeModuleId)) || MAPS.modules[0];
+}
+
+function weightLabel(w) {
+  if (w === "high") return " · exam focus";
+  if (w === "foundation") return " · foundation";
+  return "";
+}
+
+function countVisited() {
+  return Object.keys(mapVisited).filter(k => mapVisited[k]).length;
+}
+
+function updateMapStats() {
+  current = currentModule();
+  const list = current.questions || [];
+  const mid = String(current.id);
+  const answers = mapAnswers[mid] || {};
+  let attempted = 0, correct = 0;
+  list.forEach((item, qi) => {
+    if (answers[qi] === undefined || answers[qi] === null) return;
+    attempted += 1;
+    if (Number(answers[qi]) === item.answer) correct += 1;
+  });
+  el("mapModAttempted").textContent = attempted;
+  el("mapModTotal").textContent = list.length;
+  el("mapModCorrect").textContent = correct;
+  el("mapVisitedCount").textContent = countVisited();
+  mapProgressBar.style.width = list.length ? ((attempted / list.length) * 100) + "%" : "0%";
+
+  let allA = 0;
+  MAPS.modules.forEach(m => {
+    const ans = mapAnswers[String(m.id)] || {};
+    (m.questions || []).forEach((item, qi) => {
+      if (ans[qi] === undefined || ans[qi] === null) return;
+      allA += 1;
+    });
+  });
+  el("mapAllAttempted").textContent = allA;
+
+  el("mapStats").innerHTML = MAPS.modules.map(m => {
+    const qs = m.questions || [];
+    const ans = mapAnswers[String(m.id)] || {};
+    let a = 0, c = 0;
+    qs.forEach((item, qi) => {
+      if (ans[qi] === undefined || ans[qi] === null) return;
+      a += 1;
+      if (Number(ans[qi]) === item.answer) c += 1;
+    });
+    const pct = qs.length ? Math.round((a / qs.length) * 100) : 0;
+    const w = m.weight === "high" ? " · high weight" : "";
+    return `<div class="stat"><b>${c}/${qs.length}</b><span>Module ${m.id}${w} · ${a} answered</span><div class="prog-line"><i style="width:${pct}%"></i></div></div>`;
+  }).join("");
+}
+
+function persistMap() {
+  if (restoring) return;
+  const P = window.AmityProgress || window.BS605Progress;
+  if (!P || !window.__AMITY_SYNC_READY) return;
+  P.saveSubjectProgress({
+    mapAnswers: mapAnswers,
+    mapVisited: mapVisited,
+    mapMeta: { activeModuleId: String(activeModuleId), topicFilter: topicFilter, selectedNodeId: selectedNodeId }
+  });
+}
+
+function restoreMap(payload) {
+  if (!payload) return;
+  restoring = true;
+  if (payload.mapAnswers && typeof payload.mapAnswers === "object") mapAnswers = payload.mapAnswers;
+  if (payload.mapVisited && typeof payload.mapVisited === "object") mapVisited = payload.mapVisited;
+  if (payload.mapMeta && payload.mapMeta.activeModuleId) activeModuleId = String(payload.mapMeta.activeModuleId);
+  if (payload.mapMeta) {
+    topicFilter = payload.mapMeta.topicFilter || null;
+    selectedNodeId = payload.mapMeta.selectedNodeId || null;
+  }
+  renderAll();
+  restoring = false;
+}
+
+function renderFilters() {
+  const box = el("moduleFilters");
+  box.innerHTML = MAPS.modules.map(m => {
+    const wClass = m.weight === "high" ? " weight-high" : "";
+    return `<button type="button" class="chip${wClass} ${String(activeModuleId)===String(m.id)?"active":""}" data-m="${m.id}">M${m.id}: ${m.title}${weightLabel(m.weight)}</button>`;
+  }).join("");
+  box.querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {
+    activeModuleId = btn.dataset.m;
+    topicFilter = null;
+    selectedNodeId = null;
+    renderAll();
+    persistMap();
+  }));
+}
+
+function makeNode(id, title, sub, cls, lmr) {
+  const badge = lmr ? `<span class="n-badge">LMR</span>` : "";
+  const lmrCls = lmr ? " lmr-node" : "";
+  const visCls = mapVisited[visitedKey(id)] ? " visited" : "";
+  return `<button type="button" class="node ${cls}${lmrCls}${visCls}" data-id="${id}"><span class="n-title">${title}</span><span class="n-sub">${sub || ""}</span>${badge}</button>`;
+}
+
+function renderTree() {
+  current = currentModule();
+  el("flowLabel").textContent = `Module ${current.id} · Interactive flow`;
+  const parts = [];
+  parts.push(`<div class="level">${makeNode(current.rootId, current.nodes[current.rootId].title, current.nodes[current.rootId].path, "root", false)}</div>`);
+  current.levels.forEach(level => {
+    parts.push(`<div class="connectors"></div>`);
+    const row = level.nodes.map(n => makeNode(n.id, n.title, n.sub, n.kind || "a", n.lmr)).join("");
+    parts.push(`<div class="branch-block"><h3>${level.heading}</h3><div class="row">${row}</div></div>`);
+  });
+  el("tree").innerHTML = parts.join("");
+  el("tree").querySelectorAll(".node").forEach(btn => {
+    btn.addEventListener("click", () => showNode(btn.dataset.id));
+  });
+  showNode(selectedNodeId && current.nodes[selectedNodeId] ? selectedNodeId : current.rootId);
+}
+
+function showNode(id) {
+  const n = current.nodes[id];
+  if (!n) return;
+  selectedNodeId = id;
+  mapVisited[visitedKey(id)] = true;
+  document.querySelectorAll(".node").forEach(node => {
+    node.classList.toggle("active", node.dataset.id === id);
+    node.classList.toggle("visited", Boolean(mapVisited[visitedKey(node.dataset.id)]));
+  });
+  const points = (n.points || []).map(p => `<li>${p}</li>`).join("");
+  const lmrLine = n.lmr ? `<span class="detail-kicker" style="background:#f8e5d8;color:var(--warn)">LMR priority</span>` : "";
+  const counts = n.kind === "root" ? "" : `<p class="parent-path">${n.fcCount || 0} flashcards · ${n.qCount || 0} MCQs in bank</p>`;
+  el("detailContent").innerHTML = `
+    ${lmrLine}
+    <div class="detail-kicker">${n.kind === "root" ? "Module" : "Topic"}</div>
+    <h2 class="detail-title">${n.title}</h2>
+    <p class="parent-path">${n.path || ""}</p>
+    ${counts}
+    <p class="detail-body">${n.body || ""}</p>
+    ${points ? `<ul class="detail-points">${points}</ul>` : ""}
+    ${n.kind !== "root" ? `<div class="navrow" style="margin-top:0.8rem"><button type="button" class="btn primary" id="focusQsBtn">Practice this topic</button></div>` : ""}
+  `;
+  const focusBtn = el("focusQsBtn");
+  if (focusBtn) {
+    focusBtn.addEventListener("click", () => {
+      topicFilter = n.topicId || id;
+      renderQuestions();
+      persistMap();
+      el("questions").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+  if (n.kind !== "root") {
+    topicFilter = n.topicId || id;
+    renderQuestions();
+  } else {
+    topicFilter = null;
+    renderQuestions();
+  }
+  updateMapStats();
+  if (window.matchMedia("(max-width: 920px)").matches) {
+    el("detailPanel").scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+  if (!restoring) persistMap();
+}
+
+function applySavedAnswer(qi) {
+  const mid = String(current.id);
+  const saved = mapAnswers[mid] && mapAnswers[mid][qi];
+  if (saved === undefined || saved === null) return;
+  const item = current.questions[qi];
+  const card = document.getElementById("q" + qi);
+  if (!item || !card) return;
+  const i = Number(saved);
+  card.querySelectorAll(".opt").forEach((o, idx) => {
+    o.disabled = true;
+    if (idx === item.answer) o.classList.add("correct");
+    if (idx === i && i !== item.answer) o.classList.add("wrong");
+  });
+  const ex = document.getElementById("ex" + qi);
+  ex.textContent = (i === item.answer ? "Correct. " : "Not quite. ") + (item.explain || "");
+  ex.classList.add("show");
+}
+
+function renderQuestions() {
+  el("questionsTitle").textContent = `Important questions — Module ${current.id}`;
+  const letters = ["A","B","C","D"];
+  const list = current.questions || [];
+  const filtered = topicFilter
+    ? list.map((item, qi) => ({item, qi})).filter(x => String(x.item.topicId) === String(topicFilter))
+    : list.map((item, qi) => ({item, qi}));
+  el("qFilterLabel").textContent = topicFilter
+    ? `Focused on topic ${topicFilter} (${filtered.length} of ${list.length})`
+    : `Showing all ${list.length} questions`;
+  el("qlist").innerHTML = filtered.map(({item, qi}) => {
+    const opts = item.options.map((o, i) =>
+      `<button type="button" class="opt" data-q="${qi}" data-i="${i}"><strong>${letters[i]}.</strong> ${o}</button>`
+    ).join("");
+    return `<article class="qcard" id="q${qi}"><p class="qmeta">${item.topicId} · ${item.topicTitle}</p><h3>${qi+1}. ${item.q}</h3><div class="opts">${opts}</div><div class="explain" id="ex${qi}"></div></article>`;
+  }).join("") || `<p class="detail-empty">No MCQs for this filter.</p>`;
+  filtered.forEach(({qi}) => applySavedAnswer(qi));
+  updateMapStats();
+}
+
+el("showAllQs").addEventListener("click", () => {
+  topicFilter = null;
+  selectedNodeId = current.rootId;
+  renderTree();
+  persistMap();
+});
+
+el("qlist").addEventListener("click", e => {
+  const btn = e.target.closest(".opt");
+  if (!btn || btn.disabled) return;
+  const qi = Number(btn.dataset.q);
+  const i = Number(btn.dataset.i);
+  const item = current.questions[qi];
+  const card = document.getElementById("q" + qi);
+  card.querySelectorAll(".opt").forEach((o, idx) => {
+    o.disabled = true;
+    if (idx === item.answer) o.classList.add("correct");
+    if (idx === i && i !== item.answer) o.classList.add("wrong");
+  });
+  const ex = document.getElementById("ex" + qi);
+  ex.textContent = (i === item.answer ? "Correct. " : "Not quite. ") + (item.explain || "");
+  ex.classList.add("show");
+  const mid = String(current.id);
+  if (!mapAnswers[mid]) mapAnswers[mid] = {};
+  mapAnswers[mid][qi] = i;
+  updateMapStats();
+  persistMap();
+});
+
+function renderAll() {
+  renderFilters();
+  renderTree();
+}
+
+renderAll();
+
+function bootSync(restoreFn) {
+  const SUBJECT = "csit654";
+  function apply(subPayload) {
+    if (subPayload && restoreFn) restoreFn(subPayload);
+    window.__AMITY_SYNC_READY = true;
+    window.__BS605_SYNC_READY = true;
+  }
+  const P = window.AmityProgress || window.BS605Progress;
+  const UI = window.AmitySyncUI || window.BS605SyncUI;
+  if (UI) {
+    UI.mount(document.getElementById("amity-sync-root"), {
+      subjectLabel: "CSIT654",
+      onLoaded: (sub) => apply(sub),
+      onReady: (sub) => {
+        if (window.__AMITY_SYNC_READY) return;
+        const local = P && P.readLocalCache && P.readLocalCache();
+        const fallback = sub || (P && P.getSubjectPayload && P.getSubjectPayload(local?.payload, SUBJECT)) || null;
+        apply(fallback);
+      }
+    });
+  } else {
+    const local = P && P.readLocalCache && P.readLocalCache();
+    apply(P && P.getSubjectPayload ? P.getSubjectPayload(local?.payload, SUBJECT) : null);
+  }
+}
+
+bootSync(restoreMap);
+</script>
+</body>
+</html>

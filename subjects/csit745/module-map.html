@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CSIT745 Module Map — Research Methodology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --ink: #15231c;
+  --muted: #4a5c52;
+  --paper: #f3f6f1;
+  --panel: rgba(255,255,255,0.78);
+  --line: rgba(21,35,28,0.12);
+  --accent: #0f6b4c;
+  --accent-2: #c45c26;
+  --accent-soft: #d8efe4;
+  --warn: #8a3b12;
+  --ok: #1f7a4d;
+  --bad: #a33b3b;
+  --shadow: 0 18px 50px rgba(21,35,28,0.12);
+  --radius: 18px;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-body);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #d7ebe0 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, #f3dfd0 0%, transparent 45%),
+    linear-gradient(180deg, #eef4ef 0%, var(--paper) 40%, #e7eee8 100%);
+  min-height: 100vh;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image:
+    linear-gradient(rgba(21,35,28,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(21,35,28,0.03) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(180deg, #000, transparent 85%);
+}
+a { color: var(--accent); }
+.wrap { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; padding: 1.5rem 0 3rem; position: relative; }
+.hero {
+  display: grid;
+  gap: 1rem;
+  padding: 1.6rem 0 1.2rem;
+  animation: rise 0.6s ease both;
+}
+.kicker {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+h1 {
+  font-family: var(--font-display);
+  font-weight: 650;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  margin: 0.2rem 0;
+  letter-spacing: -0.02em;
+}
+.lede { margin: 0; max-width: 46rem; color: var(--muted); font-size: 1.05rem; }
+.navrow {
+  display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.6rem;
+}
+.btn, button.btn {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+.btn:hover, button.btn:hover { transform: translateY(-1px); border-color: rgba(15,107,76,0.35); }
+.btn.primary { background: var(--accent); color: #fff; border-color: transparent; }
+.btn.ghost { background: transparent; }
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+}
+.filters {
+  display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0;
+}
+.chip {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.65);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  font: inherit;
+}
+.chip.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+}
+.chip.lmr {
+  border-color: rgba(196,92,38,0.45);
+  color: var(--warn);
+}
+.chip.lmr.active { background: var(--accent-2); color: #fff; }
+.site-nav {
+  display: flex; flex-wrap: wrap; gap: 0.45rem;
+  align-items: center;
+  margin: 0 0 0.4rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.82);
+  backdrop-filter: blur(8px);
+  width: fit-content;
+  max-width: 100%;
+}
+.site-nav a {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+.site-nav a:hover { background: var(--accent-soft); color: var(--accent); }
+.site-nav a.home {
+  background: var(--accent);
+  color: #fff;
+}
+.site-nav a.here {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.meta {
+  display: flex; flex-wrap: wrap; gap: 0.75rem 1.2rem;
+  color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem;
+}
+.meta strong { color: var(--ink); }
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.6rem;
+  margin: 0.8rem 0;
+}
+.stat {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.8rem;
+}
+.stat b { display: block; font-size: 1.35rem; font-family: var(--font-display); color: var(--ink); }
+.stat span { color: var(--muted); font-size: 0.88rem; }
+.prog-line {
+  margin-top: 0.55rem;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(21,35,28,0.08);
+  overflow: hidden;
+}
+.prog-line > i {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), #2f9e74);
+  border-radius: inherit;
+}
+.links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+.links a {
+  display: block;
+  text-decoration: none;
+  padding: 0.7rem 0.85rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.links a.lmr-link {
+  background: linear-gradient(135deg, #fff4ec, #ffe8d8);
+  border-color: rgba(196,92,38,0.25);
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes flipIn {
+  from { opacity: 0; transform: rotateX(-8deg) translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+@media (max-width: 720px) {
+  .wrap { width: min(100% - 1.2rem, 1120px); }
+}
+
+.progress {
+  height: 8px; border-radius: 999px; background: rgba(21,35,28,0.08); overflow: hidden;
+}
+.progress > span {
+  display: block; height: 100%; width: 0%;
+  background: linear-gradient(90deg, var(--accent), #2f9e74);
+  transition: width 0.25s ease;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 1.35fr .9fr;
+  gap: 1rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+@media (max-width: 920px) {
+  .layout { grid-template-columns: 1fr; }
+  .detail-panel { position: static !important; }
+}
+.flow-panel, .detail-panel, .quiz-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.detail-panel { position: sticky; top: 1rem; min-height: 280px; }
+.section-label {
+  font-size: .78rem; font-weight: 700; letter-spacing: .05em;
+  text-transform: uppercase; color: var(--muted); margin: 0 0 .7rem;
+}
+.tree { display: grid; gap: .85rem; }
+.level { display: grid; gap: .55rem; justify-items: center; }
+.connectors {
+  display: flex; justify-content: center; height: 18px; position: relative;
+}
+.connectors::before {
+  content: "";
+  position: absolute; top: 0; bottom: 50%;
+  width: 2px; background: rgba(15,107,76,.35);
+}
+.row {
+  display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; width: 100%;
+}
+.node {
+  appearance: none; border: 1px solid var(--line); background: #fff;
+  border-radius: 14px; padding: .7rem .85rem; min-width: 118px; max-width: 190px;
+  text-align: left; cursor: pointer; font: inherit; color: inherit;
+  box-shadow: 0 6px 16px rgba(21,35,28,.06);
+  transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+.node:hover { transform: translateY(-2px); border-color: rgba(15,107,76,.35); }
+.node.active {
+  border-color: transparent;
+  box-shadow: 0 10px 24px rgba(15,107,76,.22);
+  outline: 2px solid rgba(15,107,76,.55);
+}
+.node .n-title {
+  display: block; font-family: var(--font-display);
+  font-size: .98rem; line-height: 1.2; margin-bottom: .15rem;
+}
+.node .n-sub { display: block; color: var(--muted); font-size: .78rem; line-height: 1.3; }
+.node .n-badge {
+  display: inline-block; margin-top: .35rem; font-size: .68rem; font-weight: 800;
+  letter-spacing: .04em; text-transform: uppercase; padding: .15rem .4rem;
+  border-radius: 999px; background: #f3dfd0; color: var(--warn);
+}
+.node.root {
+  background: linear-gradient(145deg, #116b54, #0d4f3e);
+  color: #fff; min-width: 220px; max-width: 300px; text-align: center;
+}
+.node.root .n-sub { color: rgba(255,255,255,.82); }
+.node.root .n-badge { background: rgba(255,255,255,.2); color: #fff; }
+.node.a { background: #d8efe4; border-color: rgba(15,107,76,.2); }
+.node.b { background: #f7e4d5; border-color: rgba(154,74,28,.22); }
+.node.c { background: #dceaf7; border-color: rgba(31,79,120,.2); }
+.node.lmr-node { box-shadow: 0 0 0 2px rgba(196,92,38,.35); }
+.chip.weight-high { border-color: rgba(196,92,38,.55); }
+.chip.weight-high.active { background: var(--accent-2); }
+.criteria-box {
+  margin: 0.7rem 0 0;
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.7);
+  border: 1px dashed var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+.criteria-box strong { color: var(--ink); }
+.filter-row { display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center; margin-top:0.65rem; }
+.qcard.dimmed { opacity: 0.38; }
+.branch-block {
+  width: 100%; border: 1px dashed rgba(21,35,28,.16);
+  border-radius: 16px; padding: .75rem; background: rgba(255,255,255,.45);
+}
+.branch-block h3 {
+  margin: 0 0 .55rem; font-family: var(--font-display);
+  font-size: 1.05rem; text-align: center;
+}
+.legend {
+  display: flex; flex-wrap: wrap; gap: .55rem; margin: .2rem 0 .8rem; justify-content: center;
+}
+.legend span {
+  display: inline-flex; align-items: center; gap: .35rem;
+  font-size: .82rem; color: var(--muted); font-weight: 600;
+}
+.swatch { width: .75rem; height: .75rem; border-radius: 3px; display: inline-block; }
+.detail-empty { color: var(--muted); margin: 1.2rem 0 0; }
+.detail-kicker {
+  display: inline-flex; font-size: .75rem; font-weight: 700; letter-spacing: .04em;
+  text-transform: uppercase; padding: .25rem .55rem; border-radius: 999px;
+  margin-bottom: .55rem; background: var(--accent-soft); color: var(--accent);
+}
+.detail-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+  margin: 0 0 .55rem; line-height: 1.2;
+}
+.detail-body { color: var(--ink); line-height: 1.55; margin: 0 0 .7rem; }
+.detail-points { margin: 0; padding-left: 1.1rem; color: var(--muted); }
+.detail-points li { margin: .35rem 0; }
+.parent-path { font-size: .88rem; color: var(--muted); margin: 0 0 .7rem; }
+.quiz-panel { margin-top: 1rem; }
+.quiz-panel h2 { font-family: var(--font-display); margin: 0 0 .35rem; font-size: 1.45rem; }
+.qlist { display: grid; gap: .7rem; margin-top: .8rem; }
+.qcard {
+  border: 1px solid var(--line); border-radius: 14px; padding: .85rem .9rem; background: #fff;
+}
+.qcard h3 {
+  font-family: var(--font-display); font-size: 1.05rem; margin: 0 0 .55rem; line-height: 1.3;
+}
+.qmeta { color: var(--muted); font-size: .82rem; font-weight: 600; margin: 0 0 .45rem; }
+.opts { display: grid; gap: .4rem; }
+.opt {
+  appearance: none; width: 100%; text-align: left; font: inherit;
+  border: 1px solid var(--line); background: #fbfcfb; border-radius: 10px;
+  padding: .55rem .7rem; cursor: pointer;
+}
+.opt:hover:not(:disabled) { border-color: rgba(15,107,76,.35); }
+.opt.correct { background: #e7f6ee; border-color: rgba(15,107,76,.45); }
+.opt.wrong { background: #fdeeee; border-color: rgba(163,59,59,.4); }
+.explain {
+  display: none; margin-top: .55rem; color: var(--muted);
+  font-size: .92rem; background: #f3f7f4; border-radius: 10px; padding: .55rem .7rem;
+}
+.explain.show { display: block; }
+.hint-bar { text-align: center; color: var(--muted); font-size: .9rem; margin: 0 0 .7rem; }
+
+.node.visited { background: #cfeee0 !important; }
+</style>
+<script>window.AMITY_SUBJECT = "csit745";</script>
+<script src="../../shared/config.js"></script>
+<script src="../../shared/progress.js"></script>
+<script src="../../shared/sync-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <nav class="site-nav" aria-label="Site"><a href="index.html" class="home">Home</a><a href="module-map.html" class="here">Module Map</a><a href="flashcards.html">Flashcards</a><a href="quiz.html">Quiz</a></nav>
+  <header class="hero">
+    <div class="kicker">Amity · CSIT745 · Module Map</div>
+    <h1>Structure maps &amp; important questions</h1>
+    <p class="lede">Module structure maps with topic details and important questions.</p>
+    <div class="navrow">
+      <a class="btn" href="#questions">Important questions</a>
+    </div>
+  </header>
+
+  <section class="panel">
+    <div class="meta" style="margin-bottom:0.6rem">
+      <span>This module: <strong id="mapModAttempted">0</strong> / <strong id="mapModTotal">0</strong> answered</span>
+      <span>Correct <strong id="mapModCorrect">0</strong></span>
+      <span>Visited <strong id="mapVisitedCount">0</strong> topics</span>
+      <span>All modules: <strong id="mapAllAttempted">0</strong> / <strong id="mapAllTotal">0</strong></span>
+    </div>
+    <div class="progress" style="margin-bottom:0.85rem"><span id="mapProgressBar"></span></div>
+    <div class="summary-grid" id="mapStats"></div>
+    <div class="filters" id="moduleFilters"></div>
+    <div class="criteria-box">
+      <strong>How this map is built:</strong>
+      One card ≈ one study topic from the SLM outline.
+      Click a card to mark it visited (light green) and see details.
+      Orange outline = LMR priority.
+    </div>
+    <div id="amity-sync-root"></div>
+  </section>
+
+  <div class="layout">
+    <section class="flow-panel" aria-label="Structure flow diagram">
+      <p class="section-label" id="flowLabel">Interactive flow</p>
+      <p class="hint-bar">Tap a card → details open on the right (below on mobile). Visited cards stay light green.</p>
+      <div class="legend">
+        <span><i class="swatch" style="background:#116b54"></i> Module root</span>
+        <span><i class="swatch" style="background:#d8efe4"></i> Group A</span>
+        <span><i class="swatch" style="background:#f7e4d5"></i> Group B</span>
+        <span><i class="swatch" style="background:#dceaf7"></i> Group C</span>
+        <span><i class="swatch" style="background:#cfeee0;outline:2px solid rgba(15,107,76,.35)"></i> Visited</span>
+        <span><i class="swatch" style="background:#f3dfd0;outline:2px solid rgba(196,92,38,.45)"></i> LMR priority</span>
+      </div>
+      <div class="tree" id="tree"></div>
+    </section>
+    <aside class="detail-panel" id="detailPanel">
+      <p class="section-label">Selected term</p>
+      <div id="detailContent">
+        <p class="detail-empty">Click any card in the flow to see definition, place in the structure, and exam tips.</p>
+      </div>
+    </aside>
+  </div>
+
+  <section class="quiz-panel" id="questions">
+    <h2 id="questionsTitle">Important questions</h2>
+    <p class="lede" style="margin:0">Practice after you walk the map. Tap a map card to focus questions on that topic.</p>
+    <div class="filter-row">
+      <button type="button" class="btn primary" id="showAllQs">Show all module questions</button>
+      <span class="meta" style="margin:0" id="qFilterLabel">Showing all</span>
+    </div>
+    <div class="qlist" id="qlist"></div>
+  </section>
+</div>
+<script>
+const MAPS = {"modules": [{"id": 1, "title": "Module 1", "weight": "high", "rootId": "m1_root", "levels": [{"heading": "Module 1 · part 1", "nodes": [{"id": "1.1.1", "title": "Definition and Objectives of Research", "sub": "Research", "kind": "a", "topicId": "1.1.1", "lmr": true}, {"id": "1.1.2", "title": "Characteristics of Research", "sub": "Research", "kind": "b", "topicId": "1.1.2", "lmr": true}, {"id": "1.1.3", "title": "Difference b/w Research Methods and Resear", "sub": "Research", "kind": "c", "topicId": "1.1.3", "lmr": true}, {"id": "1.2.1", "title": "Research Criteria and Research Process", "sub": "Research Process", "kind": "a", "topicId": "1.2.1", "lmr": false}, {"id": "1.2.2", "title": "Approaches of Research: Deductive, Inducti", "sub": "Research Process", "kind": "b", "topicId": "1.2.2", "lmr": false}, {"id": "1.2.3", "title": "Research Proposal and Aspects", "sub": "Research Process", "kind": "c", "topicId": "1.2.3", "lmr": false}]}, {"heading": "Module 1 · part 2", "nodes": [{"id": "1.2.4", "title": "Literature Survey and Review", "sub": "Research Process", "kind": "a", "topicId": "1.2.4", "lmr": false}, {"id": "1.2.5", "title": "Errors in Research", "sub": "Research Process", "kind": "b", "topicId": "1.2.5", "lmr": false}, {"id": "1.3.1", "title": "Pure and Applied", "sub": "Types of Research Design", "kind": "c", "topicId": "1.3.1", "lmr": false}, {"id": "1.3.2", "title": "Causal and Correlational", "sub": "Types of Research Design", "kind": "a", "topicId": "1.3.2", "lmr": false}, {"id": "1.3.3", "title": "Crossectional and Longitudinal", "sub": "Types of Research Design", "kind": "b", "topicId": "1.3.3", "lmr": false}, {"id": "1.3.4", "title": "Experimental, Semi-experimental and Non-Ex", "sub": "Types of Research Design", "kind": "c", "topicId": "1.3.4", "lmr": false}]}, {"heading": "Module 1 · part 3", "nodes": [{"id": "1.3.5", "title": "Descriptive and Exploratory", "sub": "Types of Research Design", "kind": "a", "topicId": "1.3.5", "lmr": false}, {"id": "1.4.1", "title": "Types of Models", "sub": "Research Modeling", "kind": "b", "topicId": "1.4.1", "lmr": false}, {"id": "1.4.2", "title": "Model Building and Stages", "sub": "Research Modeling", "kind": "c", "topicId": "1.4.2", "lmr": false}, {"id": "1.4.3", "title": "Data Consideration and Testing", "sub": "Research Modeling", "kind": "a", "topicId": "1.4.3", "lmr": false}, {"id": "1.4.4", "title": "Heuristic and Simulation Modeling", "sub": "Research Modeling", "kind": "b", "topicId": "1.4.4", "lmr": false}]}], "nodes": {"m1_root": {"kind": "root", "title": "Module 1", "path": "Research Methodology (CSIT745) → Module 1", "body": "Study map for Module 1 of Research Methodology (CSIT745). Click a topic, then practise its MCQs.", "points": ["Built from the SLM table of contents", "Orange LMR badges mark first-pass priorities"]}, "1.1.1": {"kind": "a", "title": "Definition and Objectives of Research", "path": "Module 1 · 1.1.1 · Definition and Objectives of Research", "body": "1.1.2 Characteristics of Research 1.1.3 Difference b/w Research Methods and Research Methodology 1.2 Research Process", "points": ["From Research Methodology (CSIT745) · 1.1.1 · Research", "Name one exam point for Definition and Objectives of Research.: Be able to define Definition and Objectives of Research, state when it is used, and contrast it with a related concept in Research."], "topicId": "1.1.1", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "1.1.2": {"kind": "b", "title": "Characteristics of Research", "path": "Module 1 · 1.1.2 · Characteristics of Research", "body": "1.1.3 Difference b/w Research Methods and Research Methodology 1.2 Research Process 1.2.1 Research Criteria and Research Process", "points": ["From Research Methodology (CSIT745) · 1.1.2 · Research"], "topicId": "1.1.2", "lmr": true, "note": "", "qCount": 1, "fcCount": 1}, "1.1.3": {"kind": "c", "title": "Difference b/w Research Methods and Resear", "path": "Module 1 · 1.1.3 · Difference b/w Research Methods and Research Methodology", "body": "1.2 Research Process 1.2.1 Research Criteria and Research Process 1.2.2 Approaches of Research: Deductive, Inductive, Quantitative and Qualitative", "points": ["From Research Methodology (CSIT745) · 1.1.3 · Research", "Name one exam point for Difference b/w Research Methods and Research Methodology.: Be able to define Difference b/w Research Methods and Research Methodology, state when it is used, and contrast it with a related concept in Research."], "topicId": "1.1.3", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "1.2.1": {"kind": "a", "title": "Research Criteria and Research Process", "path": "Module 1 · 1.2.1 · Research Criteria and Research Process", "body": "1.2.2 Approaches of Research: Deductive, Inductive, Quantitative and Qualitative 1.2.3 Research Proposal and Aspects 1.2.4 Literature Survey and Review", "points": ["From Research Methodology (CSIT745) · 1.2.1 · Research Process"], "topicId": "1.2.1", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "1.2.2": {"kind": "b", "title": "Approaches of Research: Deductive, Inducti", "path": "Module 1 · 1.2.2 · Approaches of Research: Deductive, Inductive, Quantitative and Qualitative", "body": "1.2.3 Research Proposal and Aspects 1.2.4 Literature Survey and Review 1.2.5 Errors in Research", "points": ["From Research Methodology (CSIT745) · 1.2.2 · Research Process", "Name one exam point for Approaches of Research: Deductive, Inductive, Quantitative and Qualitative.: Be able to define Approaches of Research: Deductive, Inductive, Quantitative and Qualitative, state when it is used, and contrast it with a related concept in Research Process."], "topicId": "1.2.2", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "1.2.3": {"kind": "c", "title": "Research Proposal and Aspects", "path": "Module 1 · 1.2.3 · Research Proposal and Aspects", "body": "1.2.4 Literature Survey and Review 1.2.5 Errors in Research 1.3 Types of Research Design", "points": ["From Research Methodology (CSIT745) · 1.2.3 · Research Process"], "topicId": "1.2.3", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "1.2.4": {"kind": "a", "title": "Literature Survey and Review", "path": "Module 1 · 1.2.4 · Literature Survey and Review", "body": "1.2.5 Errors in Research 1.3 Types of Research Design 1.3.1 Pure and Applied", "points": ["From Research Methodology (CSIT745) · 1.2.4 · Research Process", "Name one exam point for Literature Survey and Review.: Be able to define Literature Survey and Review, state when it is used, and contrast it with a related concept in Research Process."], "topicId": "1.2.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "1.2.5": {"kind": "b", "title": "Errors in Research", "path": "Module 1 · 1.2.5 · Errors in Research", "body": "1.3 Types of Research Design 1.3.1 Pure and Applied 1.3.2 Causal and Correlational", "points": ["From Research Methodology (CSIT745) · 1.2.5 · Research Process"], "topicId": "1.2.5", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "1.3.1": {"kind": "c", "title": "Pure and Applied", "path": "Module 1 · 1.3.1 · Pure and Applied", "body": "1.3.2 Causal and Correlational 1.3.3 Crossectional and Longitudinal 1.3.4 Experimental, Semi-experimental and Non-Experimental", "points": ["From Research Methodology (CSIT745) · 1.3.1 · Types of Research Design", "Name one exam point for Pure and Applied.: Be able to define Pure and Applied, state when it is used, and contrast it with a related concept in Types of Research Design."], "topicId": "1.3.1", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "1.3.2": {"kind": "a", "title": "Causal and Correlational", "path": "Module 1 · 1.3.2 · Causal and Correlational", "body": "1.3.3 Crossectional and Longitudinal 1.3.4 Experimental, Semi-experimental and Non-Experimental 1.3.5 Descriptive and Exploratory", "points": ["From Research Methodology (CSIT745) · 1.3.2 · Types of Research Design"], "topicId": "1.3.2", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "1.3.3": {"kind": "b", "title": "Crossectional and Longitudinal", "path": "Module 1 · 1.3.3 · Crossectional and Longitudinal", "body": "1.3.4 Experimental, Semi-experimental and Non-Experimental 1.3.5 Descriptive and Exploratory 1.4 Research Modeling", "points": ["From Research Methodology (CSIT745) · 1.3.3 · Types of Research Design", "Name one exam point for Crossectional and Longitudinal.: Be able to define Crossectional and Longitudinal, state when it is used, and contrast it with a related concept in Types of Research Design."], "topicId": "1.3.3", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "1.3.4": {"kind": "c", "title": "Experimental, Semi-experimental and Non-Ex", "path": "Module 1 · 1.3.4 · Experimental, Semi-experimental and Non-Experimental", "body": "1.3.5 Descriptive and Exploratory 1.4 Research Modeling 1.4.1 Types of Models", "points": ["From Research Methodology (CSIT745) · 1.3.4 · Types of Research Design"], "topicId": "1.3.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "1.3.5": {"kind": "a", "title": "Descriptive and Exploratory", "path": "Module 1 · 1.3.5 · Descriptive and Exploratory", "body": "1.4 Research Modeling 1.4.1 Types of Models 1.4.2 Model Building and Stages", "points": ["From Research Methodology (CSIT745) · 1.3.5 · Types of Research Design", "Name one exam point for Descriptive and Exploratory.: Be able to define Descriptive and Exploratory, state when it is used, and contrast it with a related concept in Types of Research Design."], "topicId": "1.3.5", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "1.4.1": {"kind": "b", "title": "Types of Models", "path": "Module 1 · 1.4.1 · Types of Models", "body": "1.4.2 Model Building and Stages 1.4.3 Data Consideration and Testing 1.4.4 Heuristic and Simulation Modeling", "points": ["From Research Methodology (CSIT745) · 1.4.1 · Research Modeling"], "topicId": "1.4.1", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "1.4.2": {"kind": "c", "title": "Model Building and Stages", "path": "Module 1 · 1.4.2 · Model Building and Stages", "body": "1.4.3 Data Consideration and Testing 1.4.4 Heuristic and Simulation Modeling Module - II: Sampling", "points": ["From Research Methodology (CSIT745) · 1.4.2 · Research Modeling", "Name one exam point for Model Building and Stages.: Be able to define Model Building and Stages, state when it is used, and contrast it with a related concept in Research Modeling."], "topicId": "1.4.2", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "1.4.3": {"kind": "a", "title": "Data Consideration and Testing", "path": "Module 1 · 1.4.3 · Data Consideration and Testing", "body": "1.4.4 Heuristic and Simulation Modeling Module - II: Sampling 25", "points": ["From Research Methodology (CSIT745) · 1.4.3 · Research Modeling"], "topicId": "1.4.3", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "1.4.4": {"kind": "b", "title": "Heuristic and Simulation Modeling", "path": "Module 1 · 1.4.4 · Heuristic and Simulation Modeling", "body": "Module - II: Sampling 25 2.1 Data Collection", "points": ["From Research Methodology (CSIT745) · 1.4.4 · Research Modeling", "Name one exam point for Heuristic and Simulation Modeling.: Be able to define Heuristic and Simulation Modeling, state when it is used, and contrast it with a related concept in Research Modeling."], "topicId": "1.4.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}}, "questions": [{"q": "Which statement best matches Definition and Objectives of Research?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Definition and Objectives of Research", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Definition and Objectives of Research is a syllabus topic under Research in Module 1.", "topicId": "1.1.1", "topicTitle": "Definition and Objectives of Research"}, {"q": "Which statement best matches Characteristics of Research?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Characteristics of Research", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Characteristics of Research is a syllabus topic under Research in Module 1.", "topicId": "1.1.2", "topicTitle": "Characteristics of Research"}, {"q": "Which statement best matches Difference b/w Research Methods and Research Methodology?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Difference b/w Research Methods and Research Methodology", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Difference b/w Research Methods and Research Methodology is a syllabus topic under Research in Module 1.", "topicId": "1.1.3", "topicTitle": "Difference b/w Research Methods and Research Methodology"}, {"q": "Which statement best matches Research Criteria and Research Process?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Research Criteria and Research Process", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Research Criteria and Research Process is a syllabus topic under Research Process in Module 1.", "topicId": "1.2.1", "topicTitle": "Research Criteria and Research Process"}, {"q": "Which statement best matches Approaches of Research: Deductive, Inductive, Quantitative and Qualitative?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Approaches of Research: Deductive, Inductive, Quantitative and Qualitative", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Approaches of Research: Deductive, Inductive, Quantitative and Qualitative is a syllabus topic under Research Process in Module 1.", "topicId": "1.2.2", "topicTitle": "Approaches of Research: Deductive, Inductive, Quantitative and Qualitative"}, {"q": "Which statement best matches Research Proposal and Aspects?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Research Proposal and Aspects", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Research Proposal and Aspects is a syllabus topic under Research Process in Module 1.", "topicId": "1.2.3", "topicTitle": "Research Proposal and Aspects"}, {"q": "Which statement best matches Literature Survey and Review?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Literature Survey and Review", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Literature Survey and Review is a syllabus topic under Research Process in Module 1.", "topicId": "1.2.4", "topicTitle": "Literature Survey and Review"}, {"q": "Which statement best matches Errors in Research?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Errors in Research", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Errors in Research is a syllabus topic under Research Process in Module 1.", "topicId": "1.2.5", "topicTitle": "Errors in Research"}, {"q": "Which statement best matches Pure and Applied?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Pure and Applied", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Pure and Applied is a syllabus topic under Types of Research Design in Module 1.", "topicId": "1.3.1", "topicTitle": "Pure and Applied"}, {"q": "Which statement best matches Causal and Correlational?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Causal and Correlational", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Causal and Correlational is a syllabus topic under Types of Research Design in Module 1.", "topicId": "1.3.2", "topicTitle": "Causal and Correlational"}, {"q": "Which statement best matches Crossectional and Longitudinal?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Crossectional and Longitudinal", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Crossectional and Longitudinal is a syllabus topic under Types of Research Design in Module 1.", "topicId": "1.3.3", "topicTitle": "Crossectional and Longitudinal"}, {"q": "Which statement best matches Experimental, Semi-experimental and Non-Experimental?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Experimental, Semi-experimental and Non-Experimental", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Experimental, Semi-experimental and Non-Experimental is a syllabus topic under Types of Research Design in Module 1.", "topicId": "1.3.4", "topicTitle": "Experimental, Semi-experimental and Non-Experimental"}, {"q": "Which statement best matches Descriptive and Exploratory?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Descriptive and Exploratory", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Descriptive and Exploratory is a syllabus topic under Types of Research Design in Module 1.", "topicId": "1.3.5", "topicTitle": "Descriptive and Exploratory"}, {"q": "Which statement best matches Types of Models?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Types of Models", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Types of Models is a syllabus topic under Research Modeling in Module 1.", "topicId": "1.4.1", "topicTitle": "Types of Models"}, {"q": "Which statement best matches Model Building and Stages?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Model Building and Stages", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Model Building and Stages is a syllabus topic under Research Modeling in Module 1.", "topicId": "1.4.2", "topicTitle": "Model Building and Stages"}, {"q": "Which statement best matches Data Consideration and Testing?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Data Consideration and Testing", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Data Consideration and Testing is a syllabus topic under Research Modeling in Module 1.", "topicId": "1.4.3", "topicTitle": "Data Consideration and Testing"}, {"q": "Which statement best matches Heuristic and Simulation Modeling?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Heuristic and Simulation Modeling", "Unrelated to Module 1", "Only a programming language keyword"], "answer": 1, "explain": "Heuristic and Simulation Modeling is a syllabus topic under Research Modeling in Module 1.", "topicId": "1.4.4", "topicTitle": "Heuristic and Simulation Modeling"}]}, {"id": 2, "title": "Module 2", "weight": "standard", "rootId": "m2_root", "levels": [{"heading": "Module 2 · part 1", "nodes": [{"id": "2.1.1", "title": "Introduction to Data Collection", "sub": "Data Collection", "kind": "a", "topicId": "2.1.1", "lmr": true}, {"id": "2.1.2", "title": "Data Collection Methods", "sub": "Data Collection", "kind": "b", "topicId": "2.1.2", "lmr": true}, {"id": "2.1.3", "title": "Tabulating and Validating Data", "sub": "Data Collection", "kind": "c", "topicId": "2.1.3", "lmr": true}, {"id": "2.2.1", "title": "Steps in Constructing a Questionnaire", "sub": "Questionnaire Designing", "kind": "a", "topicId": "2.2.1", "lmr": false}]}, {"heading": "Module 2 · part 2", "nodes": [{"id": "2.2.2", "title": "Types of Questions", "sub": "Questionnaire Designing", "kind": "b", "topicId": "2.2.2", "lmr": false}, {"id": "2.2.3", "title": "Format of Questionnaire", "sub": "Questionnaire Designing", "kind": "c", "topicId": "2.2.3", "lmr": false}, {"id": "2.3.1", "title": "Sampling Plan", "sub": "Sampling", "kind": "a", "topicId": "2.3.1", "lmr": false}, {"id": "2.3.2", "title": "Sampling Frame", "sub": "Sampling", "kind": "b", "topicId": "2.3.2", "lmr": false}]}, {"heading": "Module 2 · part 3", "nodes": [{"id": "2.3.3", "title": "Sample Selection Methods", "sub": "Sampling", "kind": "c", "topicId": "2.3.3", "lmr": false}, {"id": "2.3.4", "title": "Probability Sampling Techniques", "sub": "Sampling", "kind": "a", "topicId": "2.3.4", "lmr": false}, {"id": "2.3.5", "title": "Non-Probability Sampling Techniques", "sub": "Sampling", "kind": "b", "topicId": "2.3.5", "lmr": false}, {"id": "2.3.6", "title": "Sampling and Non-sampling Errors", "sub": "Sampling", "kind": "c", "topicId": "2.3.6", "lmr": false}]}], "nodes": {"m2_root": {"kind": "root", "title": "Module 2", "path": "Research Methodology (CSIT745) → Module 2", "body": "Study map for Module 2 of Research Methodology (CSIT745). Click a topic, then practise its MCQs.", "points": ["Built from the SLM table of contents", "Orange LMR badges mark first-pass priorities"]}, "2.1.1": {"kind": "a", "title": "Introduction to Data Collection", "path": "Module 2 · 2.1.1 · Introduction to Data Collection", "body": "2.1.2 Data Collection Methods 2.1.3 Tabulating and Validating Data 2.2 Questionnaire Designing", "points": ["From Research Methodology (CSIT745) · 2.1.1 · Data Collection", "Name one exam point for Introduction to Data Collection.: Be able to define Introduction to Data Collection, state when it is used, and contrast it with a related concept in Data Collection."], "topicId": "2.1.1", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "2.1.2": {"kind": "b", "title": "Data Collection Methods", "path": "Module 2 · 2.1.2 · Data Collection Methods", "body": "2.1.3 Tabulating and Validating Data 2.2 Questionnaire Designing 2.2.1 Steps in Constructing a Questionnaire", "points": ["From Research Methodology (CSIT745) · 2.1.2 · Data Collection"], "topicId": "2.1.2", "lmr": true, "note": "", "qCount": 1, "fcCount": 1}, "2.1.3": {"kind": "c", "title": "Tabulating and Validating Data", "path": "Module 2 · 2.1.3 · Tabulating and Validating Data", "body": "2.2 Questionnaire Designing 2.2.1 Steps in Constructing a Questionnaire 2.2.2 Types of Questions", "points": ["From Research Methodology (CSIT745) · 2.1.3 · Data Collection", "Name one exam point for Tabulating and Validating Data.: Be able to define Tabulating and Validating Data, state when it is used, and contrast it with a related concept in Data Collection."], "topicId": "2.1.3", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "2.2.1": {"kind": "a", "title": "Steps in Constructing a Questionnaire", "path": "Module 2 · 2.2.1 · Steps in Constructing a Questionnaire", "body": "2.2.2 Types of Questions 2.2.3 Format of Questionnaire 2.3 Sampling", "points": ["From Research Methodology (CSIT745) · 2.2.1 · Questionnaire Designing"], "topicId": "2.2.1", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "2.2.2": {"kind": "b", "title": "Types of Questions", "path": "Module 2 · 2.2.2 · Types of Questions", "body": "2.2.3 Format of Questionnaire 2.3 Sampling 2.3.1 Sampling Plan", "points": ["From Research Methodology (CSIT745) · 2.2.2 · Questionnaire Designing", "Name one exam point for Types of Questions.: Be able to define Types of Questions, state when it is used, and contrast it with a related concept in Questionnaire Designing."], "topicId": "2.2.2", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "2.2.3": {"kind": "c", "title": "Format of Questionnaire", "path": "Module 2 · 2.2.3 · Format of Questionnaire", "body": "2.3 Sampling 2.3.1 Sampling Plan 2.3.2 Sampling Frame", "points": ["From Research Methodology (CSIT745) · 2.2.3 · Questionnaire Designing"], "topicId": "2.2.3", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "2.3.1": {"kind": "a", "title": "Sampling Plan", "path": "Module 2 · 2.3.1 · Sampling Plan", "body": "2.3.2 Sampling Frame (c) Amity University Online", "points": ["From Research Methodology (CSIT745) · 2.3.1 · Sampling", "Name one exam point for Sampling Plan.: Be able to define Sampling Plan, state when it is used, and contrast it with a related concept in Sampling."], "topicId": "2.3.1", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "2.3.2": {"kind": "b", "title": "Sampling Frame", "path": "Module 2 · 2.3.2 · Sampling Frame", "body": "3. Select the Sampling Method: Decide whether to use probability or non-probability sampling.", "points": ["From Research Methodology (CSIT745) · 2.3.2 · Sampling"], "topicId": "2.3.2", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "2.3.3": {"kind": "c", "title": "Sample Selection Methods", "path": "Module 2 · 2.3.3 · Sample Selection Methods", "body": "2.3.4 Probability Sampling Techniques 2.3.5 Non-Probability Sampling Techniques 2.3.6 Sampling and Non-sampling Errors", "points": ["From Research Methodology (CSIT745) · 2.3.3 · Sampling", "Name one exam point for Sample Selection Methods.: Be able to define Sample Selection Methods, state when it is used, and contrast it with a related concept in Sampling."], "topicId": "2.3.3", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "2.3.4": {"kind": "a", "title": "Probability Sampling Techniques", "path": "Module 2 · 2.3.4 · Probability Sampling Techniques", "body": "2.3.5 Non-Probability Sampling Techniques 2.3.6 Sampling and Non-sampling Errors Module - III: Data Collection and Experiments", "points": ["From Research Methodology (CSIT745) · 2.3.4 · Sampling"], "topicId": "2.3.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "2.3.5": {"kind": "b", "title": "Non-Probability Sampling Techniques", "path": "Module 2 · 2.3.5 · Non-Probability Sampling Techniques", "body": "2.3.6 Sampling and Non-sampling Errors Module - III: Data Collection and Experiments 50", "points": ["From Research Methodology (CSIT745) · 2.3.5 · Sampling", "Name one exam point for Non-Probability Sampling Techniques.: Be able to define Non-Probability Sampling Techniques, state when it is used, and contrast it with a related concept in Sampling."], "topicId": "2.3.5", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "2.3.6": {"kind": "c", "title": "Sampling and Non-sampling Errors", "path": "Module 2 · 2.3.6 · Sampling and Non-sampling Errors", "body": "Module - III: Data Collection and Experiments 50 3.1 Design of Experiments", "points": ["From Research Methodology (CSIT745) · 2.3.6 · Sampling"], "topicId": "2.3.6", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}}, "questions": [{"q": "Which statement best matches Introduction to Data Collection?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Introduction to Data Collection", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Introduction to Data Collection is a syllabus topic under Data Collection in Module 2.", "topicId": "2.1.1", "topicTitle": "Introduction to Data Collection"}, {"q": "Which statement best matches Data Collection Methods?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Data Collection Methods", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Data Collection Methods is a syllabus topic under Data Collection in Module 2.", "topicId": "2.1.2", "topicTitle": "Data Collection Methods"}, {"q": "Which statement best matches Tabulating and Validating Data?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Tabulating and Validating Data", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Tabulating and Validating Data is a syllabus topic under Data Collection in Module 2.", "topicId": "2.1.3", "topicTitle": "Tabulating and Validating Data"}, {"q": "Which statement best matches Steps in Constructing a Questionnaire?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Steps in Constructing a Questionnaire", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Steps in Constructing a Questionnaire is a syllabus topic under Questionnaire Designing in Module 2.", "topicId": "2.2.1", "topicTitle": "Steps in Constructing a Questionnaire"}, {"q": "Which statement best matches Types of Questions?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Types of Questions", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Types of Questions is a syllabus topic under Questionnaire Designing in Module 2.", "topicId": "2.2.2", "topicTitle": "Types of Questions"}, {"q": "Which statement best matches Format of Questionnaire?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Format of Questionnaire", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Format of Questionnaire is a syllabus topic under Questionnaire Designing in Module 2.", "topicId": "2.2.3", "topicTitle": "Format of Questionnaire"}, {"q": "Which statement best matches Sampling Plan?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Sampling Plan", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Sampling Plan is a syllabus topic under Sampling in Module 2.", "topicId": "2.3.1", "topicTitle": "Sampling Plan"}, {"q": "Which statement best matches Sampling Frame?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Sampling Frame", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Sampling Frame is a syllabus topic under Sampling in Module 2.", "topicId": "2.3.2", "topicTitle": "Sampling Frame"}, {"q": "Which statement best matches Sample Selection Methods?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Sample Selection Methods", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Sample Selection Methods is a syllabus topic under Sampling in Module 2.", "topicId": "2.3.3", "topicTitle": "Sample Selection Methods"}, {"q": "Which statement best matches Probability Sampling Techniques?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Probability Sampling Techniques", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Probability Sampling Techniques is a syllabus topic under Sampling in Module 2.", "topicId": "2.3.4", "topicTitle": "Probability Sampling Techniques"}, {"q": "Which statement best matches Non-Probability Sampling Techniques?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Non-Probability Sampling Techniques", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Non-Probability Sampling Techniques is a syllabus topic under Sampling in Module 2.", "topicId": "2.3.5", "topicTitle": "Non-Probability Sampling Techniques"}, {"q": "Which statement best matches Sampling and Non-sampling Errors?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Sampling and Non-sampling Errors", "Unrelated to Module 2", "Only a programming language keyword"], "answer": 1, "explain": "Sampling and Non-sampling Errors is a syllabus topic under Sampling in Module 2.", "topicId": "2.3.6", "topicTitle": "Sampling and Non-sampling Errors"}]}, {"id": 3, "title": "Module 3", "weight": "standard", "rootId": "m3_root", "levels": [{"heading": "Module 3 · part 1", "nodes": [{"id": "3.1.1", "title": "Design of Experiment: Objectives and Strat", "sub": "Design of Experiments", "kind": "a", "topicId": "3.1.1", "lmr": true}, {"id": "3.1.2", "title": "Pre-Experimental Research Design", "sub": "Design of Experiments", "kind": "b", "topicId": "3.1.2", "lmr": true}, {"id": "3.1.3", "title": "Quasi Experimental Research Design", "sub": "Design of Experiments", "kind": "c", "topicId": "3.1.3", "lmr": true}, {"id": "3.1.4", "title": "True Experimental Research Design", "sub": "Design of Experiments", "kind": "a", "topicId": "3.1.4", "lmr": false}, {"id": "3.1.5", "title": "Factorial Experimental Design", "sub": "Design of Experiments", "kind": "b", "topicId": "3.1.5", "lmr": false}, {"id": "3.1.6", "title": "Designing Engineering Experiments", "sub": "Design of Experiments", "kind": "c", "topicId": "3.1.6", "lmr": false}, {"id": "3.1.7", "title": "Causal Attributions", "sub": "Design of Experiments", "kind": "a", "topicId": "3.1.7", "lmr": false}]}, {"heading": "Module 3 · part 2", "nodes": [{"id": "3.1.8", "title": "Statistical Control", "sub": "Design of Experiments", "kind": "b", "topicId": "3.1.8", "lmr": false}, {"id": "3.2.1", "title": "Collection of Data via Observation and Int", "sub": "Data Collection", "kind": "c", "topicId": "3.2.1", "lmr": false}, {"id": "3.2.2", "title": "Collection of Data through Cases", "sub": "Data Collection", "kind": "a", "topicId": "3.2.2", "lmr": false}, {"id": "3.2.3", "title": "Collection of Data through Questionnaires", "sub": "Data Collection", "kind": "b", "topicId": "3.2.3", "lmr": false}, {"id": "3.2.4", "title": "Guidelines for Preparing Questionnaire", "sub": "Data Collection", "kind": "c", "topicId": "3.2.4", "lmr": false}, {"id": "3.2.5", "title": "Data Editing", "sub": "Data Collection", "kind": "a", "topicId": "3.2.5", "lmr": false}, {"id": "3.2.6", "title": "Data Coding Rules", "sub": "Data Collection", "kind": "b", "topicId": "3.2.6", "lmr": false}]}, {"heading": "Module 3 · part 3", "nodes": [{"id": "3.2.7", "title": "Don’t Know” Responses", "sub": "Data Collection", "kind": "c", "topicId": "3.2.7", "lmr": false}, {"id": "3.2.8", "title": "Missing Data", "sub": "Data Collection", "kind": "a", "topicId": "3.2.8", "lmr": false}, {"id": "3.3.1", "title": "Validity and Reliability", "sub": "Basic Principles", "kind": "b", "topicId": "3.3.1", "lmr": false}, {"id": "3.3.2", "title": "Replication, Randomisation and Blocking", "sub": "Basic Principles", "kind": "c", "topicId": "3.3.2", "lmr": false}, {"id": "3.3.3", "title": "Orthogonality and False Positives", "sub": "Basic Principles", "kind": "a", "topicId": "3.3.3", "lmr": false}]}], "nodes": {"m3_root": {"kind": "root", "title": "Module 3", "path": "Research Methodology (CSIT745) → Module 3", "body": "Study map for Module 3 of Research Methodology (CSIT745). Click a topic, then practise its MCQs.", "points": ["Built from the SLM table of contents", "Orange LMR badges mark first-pass priorities"]}, "3.1.1": {"kind": "a", "title": "Design of Experiment: Objectives and Strat", "path": "Module 3 · 3.1.1 · Design of Experiment: Objectives and Strategies", "body": "3.1.1 Design of Experiment: Objectives and Strategies 3.1.2 Pre-Experimental Research Design 3.1.3 Quasi Experimental Research Design", "points": ["From Research Methodology (CSIT745) · 3.1.1 · Design of Experiments", "Name one exam point for Design of Experiment: Objectives and Strategies.: Be able to define Design of Experiment: Objectives and Strategies, state when it is used, and contrast it with a related concept in Design of Experiments."], "topicId": "3.1.1", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "3.1.2": {"kind": "b", "title": "Pre-Experimental Research Design", "path": "Module 3 · 3.1.2 · Pre-Experimental Research Design", "body": "3.1.3 Quasi Experimental Research Design 3.1.4 True Experimental Research Design 3.1.5 Factorial Experimental Design", "points": ["From Research Methodology (CSIT745) · 3.1.2 · Design of Experiments"], "topicId": "3.1.2", "lmr": true, "note": "", "qCount": 1, "fcCount": 1}, "3.1.3": {"kind": "c", "title": "Quasi Experimental Research Design", "path": "Module 3 · 3.1.3 · Quasi Experimental Research Design", "body": "3.1.4 True Experimental Research Design 3.1.5 Factorial Experimental Design 3.1.6 Designing Engineering Experiments", "points": ["From Research Methodology (CSIT745) · 3.1.3 · Design of Experiments", "Name one exam point for Quasi Experimental Research Design.: Be able to define Quasi Experimental Research Design, state when it is used, and contrast it with a related concept in Design of Experiments."], "topicId": "3.1.3", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "3.1.4": {"kind": "a", "title": "True Experimental Research Design", "path": "Module 3 · 3.1.4 · True Experimental Research Design", "body": "3.1.5 Factorial Experimental Design 3.1.6 Designing Engineering Experiments 3.1.7 Causal Attributions", "points": ["From Research Methodology (CSIT745) · 3.1.4 · Design of Experiments"], "topicId": "3.1.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "3.1.5": {"kind": "b", "title": "Factorial Experimental Design", "path": "Module 3 · 3.1.5 · Factorial Experimental Design", "body": "3.1.6 Designing Engineering Experiments 3.1.7 Causal Attributions 3.1.8 Statistical Control", "points": ["From Research Methodology (CSIT745) · 3.1.5 · Design of Experiments", "Name one exam point for Factorial Experimental Design.: Be able to define Factorial Experimental Design, state when it is used, and contrast it with a related concept in Design of Experiments."], "topicId": "3.1.5", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "3.1.6": {"kind": "c", "title": "Designing Engineering Experiments", "path": "Module 3 · 3.1.6 · Designing Engineering Experiments", "body": "3.1.7 Causal Attributions 3.1.8 Statistical Control 3.2 Data Collection", "points": ["From Research Methodology (CSIT745) · 3.1.6 · Design of Experiments"], "topicId": "3.1.6", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "3.1.7": {"kind": "a", "title": "Causal Attributions", "path": "Module 3 · 3.1.7 · Causal Attributions", "body": "3.1.8 Statistical Control 3.2 Data Collection 3.2.1 Collection of Data via Observation and Interview", "points": ["From Research Methodology (CSIT745) · 3.1.7 · Design of Experiments", "Name one exam point for Causal Attributions.: Be able to define Causal Attributions, state when it is used, and contrast it with a related concept in Design of Experiments."], "topicId": "3.1.7", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "3.1.8": {"kind": "b", "title": "Statistical Control", "path": "Module 3 · 3.1.8 · Statistical Control", "body": "3.2 Data Collection 3.2.1 Collection of Data via Observation and Interview 3.2.2 Collection of Data through Cases", "points": ["From Research Methodology (CSIT745) · 3.1.8 · Design of Experiments"], "topicId": "3.1.8", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "3.2.1": {"kind": "c", "title": "Collection of Data via Observation and Int", "path": "Module 3 · 3.2.1 · Collection of Data via Observation and Interview", "body": "3.2.2 Collection of Data through Cases 3.2.3 Collection of Data through Questionnaires 3.2.4 Guidelines for Preparing Questionnaire", "points": ["From Research Methodology (CSIT745) · 3.2.1 · Data Collection", "Name one exam point for Collection of Data via Observation and Interview.: Be able to define Collection of Data via Observation and Interview, state when it is used, and contrast it with a related concept in Data Collection."], "topicId": "3.2.1", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "3.2.2": {"kind": "a", "title": "Collection of Data through Cases", "path": "Module 3 · 3.2.2 · Collection of Data through Cases", "body": "3.2.2 Collection of Data through Cases 3.2.3 Collection of Data through Questionnaires 3.2.4 Guidelines for Preparing Questionnaire", "points": ["From Research Methodology (CSIT745) · 3.2.2 · Data Collection"], "topicId": "3.2.2", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "3.2.3": {"kind": "b", "title": "Collection of Data through Questionnaires", "path": "Module 3 · 3.2.3 · Collection of Data through Questionnaires", "body": "3.2.2 Collection of Data through Cases 3.2.3 Collection of Data through Questionnaires 3.2.4 Guidelines for Preparing Questionnaire", "points": ["From Research Methodology (CSIT745) · 3.2.3 · Data Collection", "Name one exam point for Collection of Data through Questionnaires.: Be able to define Collection of Data through Questionnaires, state when it is used, and contrast it with a related concept in Data Collection."], "topicId": "3.2.3", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "3.2.4": {"kind": "c", "title": "Guidelines for Preparing Questionnaire", "path": "Module 3 · 3.2.4 · Guidelines for Preparing Questionnaire", "body": "3.2.5 Data Editing 3.2.6 Data Coding Rules 3.2.7 Don’t Know” Responses", "points": ["From Research Methodology (CSIT745) · 3.2.4 · Data Collection"], "topicId": "3.2.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "3.2.5": {"kind": "a", "title": "Data Editing", "path": "Module 3 · 3.2.5 · Data Editing", "body": "3.2.6 Data Coding Rules 3.2.7 Don’t Know” Responses 3.2.8 Missing Data", "points": ["From Research Methodology (CSIT745) · 3.2.5 · Data Collection", "Name one exam point for Data Editing.: Be able to define Data Editing, state when it is used, and contrast it with a related concept in Data Collection."], "topicId": "3.2.5", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "3.2.6": {"kind": "b", "title": "Data Coding Rules", "path": "Module 3 · 3.2.6 · Data Coding Rules", "body": "3.2.7 Don’t Know” Responses 3.2.8 Missing Data 3.3 Basic Principles", "points": ["From Research Methodology (CSIT745) · 3.2.6 · Data Collection"], "topicId": "3.2.6", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "3.2.7": {"kind": "c", "title": "Don’t Know” Responses", "path": "Module 3 · 3.2.7 · Don’t Know” Responses", "body": "3.2.8 Missing Data 3.3 Basic Principles 3.3.1 Validity and Reliability", "points": ["From Research Methodology (CSIT745) · 3.2.7 · Data Collection", "Name one exam point for Don’t Know” Responses.: Be able to define Don’t Know” Responses, state when it is used, and contrast it with a related concept in Data Collection."], "topicId": "3.2.7", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "3.2.8": {"kind": "a", "title": "Missing Data", "path": "Module 3 · 3.2.8 · Missing Data", "body": "3.3 Basic Principles 3.3.1 Validity and Reliability 3.3.2 Replication, Randomisation and Blocking", "points": ["From Research Methodology (CSIT745) · 3.2.8 · Data Collection"], "topicId": "3.2.8", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "3.3.1": {"kind": "b", "title": "Validity and Reliability", "path": "Module 3 · 3.3.1 · Validity and Reliability", "body": "3.3.2 Replication, Randomisation and Blocking 3.3.3 Orthogonality and False Positives Module - IV: Models and Hypothesis", "points": ["From Research Methodology (CSIT745) · 3.3.1 · Basic Principles", "Name one exam point for Validity and Reliability.: Be able to define Validity and Reliability, state when it is used, and contrast it with a related concept in Basic Principles."], "topicId": "3.3.1", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "3.3.2": {"kind": "c", "title": "Replication, Randomisation and Blocking", "path": "Module 3 · 3.3.2 · Replication, Randomisation and Blocking", "body": "3.3.3 Orthogonality and False Positives Module - IV: Models and Hypothesis 80", "points": ["From Research Methodology (CSIT745) · 3.3.2 · Basic Principles"], "topicId": "3.3.2", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "3.3.3": {"kind": "a", "title": "Orthogonality and False Positives", "path": "Module 3 · 3.3.3 · Orthogonality and False Positives", "body": "Module - IV: Models and Hypothesis 80 4.1 Hypothesis Testing", "points": ["From Research Methodology (CSIT745) · 3.3.3 · Basic Principles", "Name one exam point for Orthogonality and False Positives.: Be able to define Orthogonality and False Positives, state when it is used, and contrast it with a related concept in Basic Principles."], "topicId": "3.3.3", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}}, "questions": [{"q": "Which statement best matches Design of Experiment: Objectives and Strategies?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Design of Experiment: Objectives and Strategies", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Design of Experiment: Objectives and Strategies is a syllabus topic under Design of Experiments in Module 3.", "topicId": "3.1.1", "topicTitle": "Design of Experiment: Objectives and Strategies"}, {"q": "Which statement best matches Pre-Experimental Research Design?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Pre-Experimental Research Design", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Pre-Experimental Research Design is a syllabus topic under Design of Experiments in Module 3.", "topicId": "3.1.2", "topicTitle": "Pre-Experimental Research Design"}, {"q": "Which statement best matches Quasi Experimental Research Design?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Quasi Experimental Research Design", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Quasi Experimental Research Design is a syllabus topic under Design of Experiments in Module 3.", "topicId": "3.1.3", "topicTitle": "Quasi Experimental Research Design"}, {"q": "Which statement best matches True Experimental Research Design?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: True Experimental Research Design", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "True Experimental Research Design is a syllabus topic under Design of Experiments in Module 3.", "topicId": "3.1.4", "topicTitle": "True Experimental Research Design"}, {"q": "Which statement best matches Factorial Experimental Design?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Factorial Experimental Design", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Factorial Experimental Design is a syllabus topic under Design of Experiments in Module 3.", "topicId": "3.1.5", "topicTitle": "Factorial Experimental Design"}, {"q": "Which statement best matches Designing Engineering Experiments?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Designing Engineering Experiments", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Designing Engineering Experiments is a syllabus topic under Design of Experiments in Module 3.", "topicId": "3.1.6", "topicTitle": "Designing Engineering Experiments"}, {"q": "Which statement best matches Causal Attributions?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Causal Attributions", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Causal Attributions is a syllabus topic under Design of Experiments in Module 3.", "topicId": "3.1.7", "topicTitle": "Causal Attributions"}, {"q": "Which statement best matches Statistical Control?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Statistical Control", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Statistical Control is a syllabus topic under Design of Experiments in Module 3.", "topicId": "3.1.8", "topicTitle": "Statistical Control"}, {"q": "Which statement best matches Collection of Data via Observation and Interview?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Collection of Data via Observation and Interview", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Collection of Data via Observation and Interview is a syllabus topic under Data Collection in Module 3.", "topicId": "3.2.1", "topicTitle": "Collection of Data via Observation and Interview"}, {"q": "Which statement best matches Collection of Data through Cases?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Collection of Data through Cases", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Collection of Data through Cases is a syllabus topic under Data Collection in Module 3.", "topicId": "3.2.2", "topicTitle": "Collection of Data through Cases"}, {"q": "Which statement best matches Collection of Data through Questionnaires?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Collection of Data through Questionnaires", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Collection of Data through Questionnaires is a syllabus topic under Data Collection in Module 3.", "topicId": "3.2.3", "topicTitle": "Collection of Data through Questionnaires"}, {"q": "Which statement best matches Guidelines for Preparing Questionnaire?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Guidelines for Preparing Questionnaire", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Guidelines for Preparing Questionnaire is a syllabus topic under Data Collection in Module 3.", "topicId": "3.2.4", "topicTitle": "Guidelines for Preparing Questionnaire"}, {"q": "Which statement best matches Data Editing?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Data Editing", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Data Editing is a syllabus topic under Data Collection in Module 3.", "topicId": "3.2.5", "topicTitle": "Data Editing"}, {"q": "Which statement best matches Data Coding Rules?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Data Coding Rules", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Data Coding Rules is a syllabus topic under Data Collection in Module 3.", "topicId": "3.2.6", "topicTitle": "Data Coding Rules"}, {"q": "Which statement best matches Don’t Know” Responses?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Don’t Know” Responses", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Don’t Know” Responses is a syllabus topic under Data Collection in Module 3.", "topicId": "3.2.7", "topicTitle": "Don’t Know” Responses"}, {"q": "Which statement best matches Missing Data?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Missing Data", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Missing Data is a syllabus topic under Data Collection in Module 3.", "topicId": "3.2.8", "topicTitle": "Missing Data"}, {"q": "Which statement best matches Validity and Reliability?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Validity and Reliability", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Validity and Reliability is a syllabus topic under Basic Principles in Module 3.", "topicId": "3.3.1", "topicTitle": "Validity and Reliability"}, {"q": "Which statement best matches Replication, Randomisation and Blocking?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Replication, Randomisation and Blocking", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Replication, Randomisation and Blocking is a syllabus topic under Basic Principles in Module 3.", "topicId": "3.3.2", "topicTitle": "Replication, Randomisation and Blocking"}, {"q": "Which statement best matches Orthogonality and False Positives?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Orthogonality and False Positives", "Unrelated to Module 3", "Only a programming language keyword"], "answer": 1, "explain": "Orthogonality and False Positives is a syllabus topic under Basic Principles in Module 3.", "topicId": "3.3.3", "topicTitle": "Orthogonality and False Positives"}]}, {"id": 4, "title": "Module 4", "weight": "standard", "rootId": "m4_root", "levels": [{"heading": "Module 4 · part 1", "nodes": [{"id": "4.1.1", "title": "Introduction to Hypothesis", "sub": "Hypothesis Testing", "kind": "a", "topicId": "4.1.1", "lmr": true}, {"id": "4.1.2", "title": "Developing Hypothesis : Null and Alternate", "sub": "Hypothesis Testing", "kind": "b", "topicId": "4.1.2", "lmr": true}, {"id": "4.1.3", "title": "Type I and Type II Error", "sub": "Hypothesis Testing", "kind": "c", "topicId": "4.1.3", "lmr": true}, {"id": "4.1.4", "title": "One-Tailed and Two-tailed Test", "sub": "Hypothesis Testing", "kind": "a", "topicId": "4.1.4", "lmr": false}, {"id": "4.1.5", "title": "Degree of Freedom", "sub": "Hypothesis Testing", "kind": "b", "topicId": "4.1.5", "lmr": false}, {"id": "4.1.6", "title": "Confidence Intervals", "sub": "Hypothesis Testing", "kind": "c", "topicId": "4.1.6", "lmr": false}, {"id": "4.1.7", "title": "Level of Significance: The Confidence Coef", "sub": "Hypothesis Testing", "kind": "a", "topicId": "4.1.7", "lmr": false}, {"id": "4.1.8", "title": "Rejection and Non-rejection Regions", "sub": "Hypothesis Testing", "kind": "b", "topicId": "4.1.8", "lmr": false}]}, {"heading": "Module 4 · part 2", "nodes": [{"id": "4.1.9", "title": "Hypothesis Testing Procedure", "sub": "Hypothesis Testing", "kind": "c", "topicId": "4.1.9", "lmr": false}, {"id": "4.1.10", "title": "Types of Tests", "sub": "Hypothesis Testing", "kind": "a", "topicId": "4.1.10", "lmr": false}, {"id": "4.1.11", "title": "How to Select a Test", "sub": "Hypothesis Testing", "kind": "b", "topicId": "4.1.11", "lmr": false}, {"id": "4.2.1", "title": "Important Parametric Tests", "sub": "Parametric Test", "kind": "c", "topicId": "4.2.1", "lmr": false}, {"id": "4.2.2", "title": "Hypothesis Testing of Means: Single Popula", "sub": "Parametric Test", "kind": "a", "topicId": "4.2.2", "lmr": false}, {"id": "4.2.3", "title": "Hypothesis Testing of Means: Single Popula", "sub": "Parametric Test", "kind": "b", "topicId": "4.2.3", "lmr": false}, {"id": "4.2.4", "title": "Hypothesis Testing for Population Proporti", "sub": "Parametric Test", "kind": "c", "topicId": "4.2.4", "lmr": false}, {"id": "4.2.5", "title": "Hypothesis Testing for Comparing a Varianc", "sub": "Parametric Test", "kind": "a", "topicId": "4.2.5", "lmr": false}]}, {"heading": "Module 4 · part 3", "nodes": [{"id": "4.2.6", "title": "Testing the Equality of Variances of Two N", "sub": "Parametric Test", "kind": "b", "topicId": "4.2.6", "lmr": false}, {"id": "4.2.7", "title": "ANOVA for Fixed Effect Model", "sub": "Parametric Test", "kind": "c", "topicId": "4.2.7", "lmr": false}, {"id": "4.2.8", "title": "Total, Treatment & error of Squares", "sub": "Parametric Test", "kind": "a", "topicId": "4.2.8", "lmr": false}, {"id": "4.2.9", "title": "ANOVA for Random Effect Model", "sub": "Parametric Test", "kind": "b", "topicId": "4.2.9", "lmr": false}, {"id": "4.2.10", "title": "Single Factor Experiment", "sub": "Parametric Test", "kind": "c", "topicId": "4.2.10", "lmr": false}, {"id": "4.2.11", "title": "Model Adequacy Checking", "sub": "Parametric Test", "kind": "a", "topicId": "4.2.11", "lmr": false}]}], "nodes": {"m4_root": {"kind": "root", "title": "Module 4", "path": "Research Methodology (CSIT745) → Module 4", "body": "Study map for Module 4 of Research Methodology (CSIT745). Click a topic, then practise its MCQs.", "points": ["Built from the SLM table of contents", "Orange LMR badges mark first-pass priorities"]}, "4.1.1": {"kind": "a", "title": "Introduction to Hypothesis", "path": "Module 4 · 4.1.1 · Introduction to Hypothesis", "body": "4.1.2 Developing Hypothesis : Null and Alternate 4.1.3 Type I and Type II Error 4.1.4 One-Tailed and Two-tailed Test", "points": ["From Research Methodology (CSIT745) · 4.1.1 · Hypothesis Testing", "Name one exam point for Introduction to Hypothesis.: Be able to define Introduction to Hypothesis, state when it is used, and contrast it with a related concept in Hypothesis Testing."], "topicId": "4.1.1", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "4.1.2": {"kind": "b", "title": "Developing Hypothesis : Null and Alternate", "path": "Module 4 · 4.1.2 · Developing Hypothesis : Null and Alternate", "body": "4.1.3 Type I and Type II Error 4.1.4 One-Tailed and Two-tailed Test 4.1.5 Degree of Freedom", "points": ["From Research Methodology (CSIT745) · 4.1.2 · Hypothesis Testing"], "topicId": "4.1.2", "lmr": true, "note": "", "qCount": 1, "fcCount": 1}, "4.1.3": {"kind": "c", "title": "Type I and Type II Error", "path": "Module 4 · 4.1.3 · Type I and Type II Error", "body": "4.1.4 One-Tailed and Two-tailed Test 4.1.5 Degree of Freedom 4.1.6 Confidence Intervals", "points": ["From Research Methodology (CSIT745) · 4.1.3 · Hypothesis Testing", "Name one exam point for Type I and Type II Error.: Be able to define Type I and Type II Error, state when it is used, and contrast it with a related concept in Hypothesis Testing."], "topicId": "4.1.3", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "4.1.4": {"kind": "a", "title": "One-Tailed and Two-tailed Test", "path": "Module 4 · 4.1.4 · One-Tailed and Two-tailed Test", "body": "4.1.5 Degree of Freedom 4.1.6 Confidence Intervals 4.1.7 Level of Significance: The Confidence Coefficient", "points": ["From Research Methodology (CSIT745) · 4.1.4 · Hypothesis Testing"], "topicId": "4.1.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "4.1.5": {"kind": "b", "title": "Degree of Freedom", "path": "Module 4 · 4.1.5 · Degree of Freedom", "body": "4.1.6 Confidence Intervals 4.1.7 Level of Significance: The Confidence Coefficient (c) Amity University Online", "points": ["From Research Methodology (CSIT745) · 4.1.5 · Hypothesis Testing", "Name one exam point for Degree of Freedom.: Be able to define Degree of Freedom, state when it is used, and contrast it with a related concept in Hypothesis Testing."], "topicId": "4.1.5", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "4.1.6": {"kind": "c", "title": "Confidence Intervals", "path": "Module 4 · 4.1.6 · Confidence Intervals", "body": "4.1.7 Level of Significance: The Confidence Coefficient (c) Amity University Online", "points": ["From Research Methodology (CSIT745) · 4.1.6 · Hypothesis Testing"], "topicId": "4.1.6", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "4.1.7": {"kind": "a", "title": "Level of Significance: The Confidence Coef", "path": "Module 4 · 4.1.7 · Level of Significance: The Confidence Coefficient", "body": "Key SLM topic: Level of Significance: The Confidence Coefficient. Review definitions, steps, and one worked example from the study PDF.", "points": ["From Research Methodology (CSIT745) · 4.1.7 · Hypothesis Testing", "Name one exam point for Level of Significance: The Confidence Coefficient.: Be able to define Level of Significance: The Confidence Coefficient, state when it is used, and contrast it with a related concept in Hypothesis Testing."], "topicId": "4.1.7", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "4.1.8": {"kind": "b", "title": "Rejection and Non-rejection Regions", "path": "Module 4 · 4.1.8 · Rejection and Non-rejection Regions", "body": "4.1.9 Hypothesis Testing Procedure 4.1.10 Types of Tests 4.1.11 How to Select a Test", "points": ["From Research Methodology (CSIT745) · 4.1.8 · Hypothesis Testing"], "topicId": "4.1.8", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "4.1.9": {"kind": "c", "title": "Hypothesis Testing Procedure", "path": "Module 4 · 4.1.9 · Hypothesis Testing Procedure", "body": "4.1.10 Types of Tests 4.1.11 How to Select a Test 4.2 Parametric Test", "points": ["From Research Methodology (CSIT745) · 4.1.9 · Hypothesis Testing", "Name one exam point for Hypothesis Testing Procedure.: Be able to define Hypothesis Testing Procedure, state when it is used, and contrast it with a related concept in Hypothesis Testing."], "topicId": "4.1.9", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "4.1.10": {"kind": "a", "title": "Types of Tests", "path": "Module 4 · 4.1.10 · Types of Tests", "body": "4.1.11 How to Select a Test 4.2 Parametric Test 4.2.1 Important Parametric Tests", "points": ["From Research Methodology (CSIT745) · 4.1.10 · Hypothesis Testing"], "topicId": "4.1.10", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "4.1.11": {"kind": "b", "title": "How to Select a Test", "path": "Module 4 · 4.1.11 · How to Select a Test", "body": "4.2 Parametric Test 4.2.1 Important Parametric Tests 4.2.2 Hypothesis Testing of Means: Single Population Mean Using Z-statistic", "points": ["From Research Methodology (CSIT745) · 4.1.11 · Hypothesis Testing", "Name one exam point for How to Select a Test.: Be able to define How to Select a Test, state when it is used, and contrast it with a related concept in Hypothesis Testing."], "topicId": "4.1.11", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "4.2.1": {"kind": "c", "title": "Important Parametric Tests", "path": "Module 4 · 4.2.1 · Important Parametric Tests", "body": "4.2.2 Hypothesis Testing of Means: Single Population Mean Using Z-statistic 4.2.3 Hypothesis Testing of Means: Single Population Mean Using T-statistic 4.2.4 Hypothesis Testing for Population Proportions", "points": ["From Research Methodology (CSIT745) · 4.2.1 · Parametric Test"], "topicId": "4.2.1", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "4.2.2": {"kind": "a", "title": "Hypothesis Testing of Means: Single Popula", "path": "Module 4 · 4.2.2 · Hypothesis Testing of Means: Single Population Mean Using Z-statistic", "body": "4.1.10 Types of Tests 4.1.11 How to Select a Test 4.2 Parametric Test", "points": ["From Research Methodology (CSIT745) · 4.2.2 · Parametric Test", "Name one exam point for Hypothesis Testing of Means: Single Population Mean Using Z-statistic.: Be able to define Hypothesis Testing of Means: Single Population Mean Using Z-statistic, state when it is used, and contrast it with a related concept in Parametric Test."], "topicId": "4.2.2", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "4.2.3": {"kind": "b", "title": "Hypothesis Testing of Means: Single Popula", "path": "Module 4 · 4.2.3 · Hypothesis Testing of Means: Single Population Mean Using T-statistic", "body": "4.1.10 Types of Tests 4.1.11 How to Select a Test 4.2 Parametric Test", "points": ["From Research Methodology (CSIT745) · 4.2.3 · Parametric Test"], "topicId": "4.2.3", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "4.2.4": {"kind": "c", "title": "Hypothesis Testing for Population Proporti", "path": "Module 4 · 4.2.4 · Hypothesis Testing for Population Proportions", "body": "4.1.10 Types of Tests 4.1.11 How to Select a Test 4.2 Parametric Test", "points": ["From Research Methodology (CSIT745) · 4.2.4 · Parametric Test", "Name one exam point for Hypothesis Testing for Population Proportions.: Be able to define Hypothesis Testing for Population Proportions, state when it is used, and contrast it with a related concept in Parametric Test."], "topicId": "4.2.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "4.2.5": {"kind": "a", "title": "Hypothesis Testing for Comparing a Varianc", "path": "Module 4 · 4.2.5 · Hypothesis Testing for Comparing a Variance to Hypothesized Population Variance", "body": "4.1.10 Types of Tests 4.1.11 How to Select a Test 4.2 Parametric Test", "points": ["From Research Methodology (CSIT745) · 4.2.5 · Parametric Test"], "topicId": "4.2.5", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "4.2.6": {"kind": "b", "title": "Testing the Equality of Variances of Two N", "path": "Module 4 · 4.2.6 · Testing the Equality of Variances of Two Normal Populations", "body": "4.2.7 ANOVA for Fixed Effect Model 4.2.8 Total, Treatment & error of Squares 4.2.9 ANOVA for Random Effect Model", "points": ["From Research Methodology (CSIT745) · 4.2.6 · Parametric Test", "Name one exam point for Testing the Equality of Variances of Two Normal Populations.: Be able to define Testing the Equality of Variances of Two Normal Populations, state when it is used, and contrast it with a related concept in Parametric Test."], "topicId": "4.2.6", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "4.2.7": {"kind": "c", "title": "ANOVA for Fixed Effect Model", "path": "Module 4 · 4.2.7 · ANOVA for Fixed Effect Model", "body": "4.2.8 Total, Treatment & error of Squares 4.2.9 ANOVA for Random Effect Model 4.2.10 Single Factor Experiment", "points": ["From Research Methodology (CSIT745) · 4.2.7 · Parametric Test"], "topicId": "4.2.7", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "4.2.8": {"kind": "a", "title": "Total, Treatment & error of Squares", "path": "Module 4 · 4.2.8 · Total, Treatment & error of Squares", "body": "4.2.9 ANOVA for Random Effect Model 4.2.10 Single Factor Experiment 4.2.11 Model Adequacy Checking", "points": ["From Research Methodology (CSIT745) · 4.2.8 · Parametric Test", "Name one exam point for Total, Treatment & error of Squares.: Be able to define Total, Treatment & error of Squares, state when it is used, and contrast it with a related concept in Parametric Test."], "topicId": "4.2.8", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "4.2.9": {"kind": "b", "title": "ANOVA for Random Effect Model", "path": "Module 4 · 4.2.9 · ANOVA for Random Effect Model", "body": "4.2.10 Single Factor Experiment 4.2.11 Model Adequacy Checking Module - V: Report Writing", "points": ["From Research Methodology (CSIT745) · 4.2.9 · Parametric Test"], "topicId": "4.2.9", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "4.2.10": {"kind": "c", "title": "Single Factor Experiment", "path": "Module 4 · 4.2.10 · Single Factor Experiment", "body": "4.2.11 Model Adequacy Checking Module - V: Report Writing 124", "points": ["From Research Methodology (CSIT745) · 4.2.10 · Parametric Test", "Name one exam point for Single Factor Experiment.: Be able to define Single Factor Experiment, state when it is used, and contrast it with a related concept in Parametric Test."], "topicId": "4.2.10", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "4.2.11": {"kind": "a", "title": "Model Adequacy Checking", "path": "Module 4 · 4.2.11 · Model Adequacy Checking", "body": "Module - V: Report Writing 124 5.1 Research Report Writing", "points": ["From Research Methodology (CSIT745) · 4.2.11 · Parametric Test"], "topicId": "4.2.11", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}}, "questions": [{"q": "Which statement best matches Introduction to Hypothesis?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Introduction to Hypothesis", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Introduction to Hypothesis is a syllabus topic under Hypothesis Testing in Module 4.", "topicId": "4.1.1", "topicTitle": "Introduction to Hypothesis"}, {"q": "Which statement best matches Developing Hypothesis : Null and Alternate?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Developing Hypothesis : Null and Alternate", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Developing Hypothesis : Null and Alternate is a syllabus topic under Hypothesis Testing in Module 4.", "topicId": "4.1.2", "topicTitle": "Developing Hypothesis : Null and Alternate"}, {"q": "Which statement best matches Type I and Type II Error?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Type I and Type II Error", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Type I and Type II Error is a syllabus topic under Hypothesis Testing in Module 4.", "topicId": "4.1.3", "topicTitle": "Type I and Type II Error"}, {"q": "Which statement best matches One-Tailed and Two-tailed Test?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: One-Tailed and Two-tailed Test", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "One-Tailed and Two-tailed Test is a syllabus topic under Hypothesis Testing in Module 4.", "topicId": "4.1.4", "topicTitle": "One-Tailed and Two-tailed Test"}, {"q": "Which statement best matches Degree of Freedom?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Degree of Freedom", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Degree of Freedom is a syllabus topic under Hypothesis Testing in Module 4.", "topicId": "4.1.5", "topicTitle": "Degree of Freedom"}, {"q": "Which statement best matches Confidence Intervals?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Confidence Intervals", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Confidence Intervals is a syllabus topic under Hypothesis Testing in Module 4.", "topicId": "4.1.6", "topicTitle": "Confidence Intervals"}, {"q": "Which statement best matches Level of Significance: The Confidence Coefficient?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Level of Significance: The Confidence Coefficient", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Level of Significance: The Confidence Coefficient is a syllabus topic under Hypothesis Testing in Module 4.", "topicId": "4.1.7", "topicTitle": "Level of Significance: The Confidence Coefficient"}, {"q": "Which statement best matches Rejection and Non-rejection Regions?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Rejection and Non-rejection Regions", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Rejection and Non-rejection Regions is a syllabus topic under Hypothesis Testing in Module 4.", "topicId": "4.1.8", "topicTitle": "Rejection and Non-rejection Regions"}, {"q": "Which statement best matches Hypothesis Testing Procedure?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Hypothesis Testing Procedure", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Hypothesis Testing Procedure is a syllabus topic under Hypothesis Testing in Module 4.", "topicId": "4.1.9", "topicTitle": "Hypothesis Testing Procedure"}, {"q": "Which statement best matches Types of Tests?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Types of Tests", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Types of Tests is a syllabus topic under Hypothesis Testing in Module 4.", "topicId": "4.1.10", "topicTitle": "Types of Tests"}, {"q": "Which statement best matches How to Select a Test?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: How to Select a Test", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "How to Select a Test is a syllabus topic under Hypothesis Testing in Module 4.", "topicId": "4.1.11", "topicTitle": "How to Select a Test"}, {"q": "Which statement best matches Important Parametric Tests?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Important Parametric Tests", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Important Parametric Tests is a syllabus topic under Parametric Test in Module 4.", "topicId": "4.2.1", "topicTitle": "Important Parametric Tests"}, {"q": "Which statement best matches Hypothesis Testing of Means: Single Population Mean Using Z-statistic?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Hypothesis Testing of Means: Single Population Mean Using Z-statistic", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Hypothesis Testing of Means: Single Population Mean Using Z-statistic is a syllabus topic under Parametric Test in Module 4.", "topicId": "4.2.2", "topicTitle": "Hypothesis Testing of Means: Single Population Mean Using Z-statistic"}, {"q": "Which statement best matches Hypothesis Testing of Means: Single Population Mean Using T-statistic?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Hypothesis Testing of Means: Single Population Mean Using T-statistic", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Hypothesis Testing of Means: Single Population Mean Using T-statistic is a syllabus topic under Parametric Test in Module 4.", "topicId": "4.2.3", "topicTitle": "Hypothesis Testing of Means: Single Population Mean Using T-statistic"}, {"q": "Which statement best matches Hypothesis Testing for Population Proportions?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Hypothesis Testing for Population Proportions", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Hypothesis Testing for Population Proportions is a syllabus topic under Parametric Test in Module 4.", "topicId": "4.2.4", "topicTitle": "Hypothesis Testing for Population Proportions"}, {"q": "Which statement best matches Hypothesis Testing for Comparing a Variance to Hypothesized Population Variance?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Hypothesis Testing for Comparing a Variance to Hypothesized Population Variance", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Hypothesis Testing for Comparing a Variance to Hypothesized Population Variance is a syllabus topic under Parametric Test in Module 4.", "topicId": "4.2.5", "topicTitle": "Hypothesis Testing for Comparing a Variance to Hypothesized Population Variance"}, {"q": "Which statement best matches Testing the Equality of Variances of Two Normal Populations?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Testing the Equality of Variances of Two Normal Populations", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Testing the Equality of Variances of Two Normal Populations is a syllabus topic under Parametric Test in Module 4.", "topicId": "4.2.6", "topicTitle": "Testing the Equality of Variances of Two Normal Populations"}, {"q": "Which statement best matches ANOVA for Fixed Effect Model?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: ANOVA for Fixed Effect Model", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "ANOVA for Fixed Effect Model is a syllabus topic under Parametric Test in Module 4.", "topicId": "4.2.7", "topicTitle": "ANOVA for Fixed Effect Model"}, {"q": "Which statement best matches Total, Treatment & error of Squares?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Total, Treatment & error of Squares", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Total, Treatment & error of Squares is a syllabus topic under Parametric Test in Module 4.", "topicId": "4.2.8", "topicTitle": "Total, Treatment & error of Squares"}, {"q": "Which statement best matches ANOVA for Random Effect Model?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: ANOVA for Random Effect Model", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "ANOVA for Random Effect Model is a syllabus topic under Parametric Test in Module 4.", "topicId": "4.2.9", "topicTitle": "ANOVA for Random Effect Model"}, {"q": "Which statement best matches Single Factor Experiment?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Single Factor Experiment", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Single Factor Experiment is a syllabus topic under Parametric Test in Module 4.", "topicId": "4.2.10", "topicTitle": "Single Factor Experiment"}, {"q": "Which statement best matches Model Adequacy Checking?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Model Adequacy Checking", "Unrelated to Module 4", "Only a programming language keyword"], "answer": 1, "explain": "Model Adequacy Checking is a syllabus topic under Parametric Test in Module 4.", "topicId": "4.2.11", "topicTitle": "Model Adequacy Checking"}]}, {"id": 5, "title": "Module 5", "weight": "standard", "rootId": "m5_root", "levels": [{"heading": "Module 5 · part 1", "nodes": [{"id": "5.1.1", "title": "Meaning of Research Report", "sub": "Research Report Writing", "kind": "a", "topicId": "5.1.1", "lmr": true}, {"id": "5.1.2", "title": "Structure of Scientific Report", "sub": "Research Report Writing", "kind": "b", "topicId": "5.1.2", "lmr": true}, {"id": "5.1.3", "title": "Components of Scientific Report", "sub": "Research Report Writing", "kind": "c", "topicId": "5.1.3", "lmr": true}, {"id": "5.1.4", "title": "Types of Reports", "sub": "Research Report Writing", "kind": "a", "topicId": "5.1.4", "lmr": false}, {"id": "5.1.5", "title": "Steps in Report Writing", "sub": "Research Report Writing", "kind": "b", "topicId": "5.1.5", "lmr": false}, {"id": "5.1.6", "title": "Format and Writing Style", "sub": "Research Report Writing", "kind": "c", "topicId": "5.1.6", "lmr": false}, {"id": "5.1.7", "title": "Illustrations and Tables", "sub": "Research Report Writing", "kind": "a", "topicId": "5.1.7", "lmr": false}, {"id": "5.1.8", "title": "Citing and Referencing Sources", "sub": "Research Report Writing", "kind": "b", "topicId": "5.1.8", "lmr": false}]}, {"heading": "Module 5 · part 2", "nodes": [{"id": "5.1.9", "title": "Footnotes", "sub": "Research Report Writing", "kind": "c", "topicId": "5.1.9", "lmr": false}, {"id": "5.2.1", "title": "Oral Presentation", "sub": "Presentation", "kind": "a", "topicId": "5.2.1", "lmr": false}, {"id": "5.2.2", "title": "Making Presentation", "sub": "Presentation", "kind": "b", "topicId": "5.2.2", "lmr": false}, {"id": "5.2.3", "title": "Use of Visual Aids", "sub": "Presentation", "kind": "c", "topicId": "5.2.3", "lmr": false}, {"id": "5.2.4", "title": "Importance of Effective Communication", "sub": "Presentation", "kind": "a", "topicId": "5.2.4", "lmr": false}, {"id": "5.2.5", "title": "Convention and Strategies of Authenticatio", "sub": "Presentation", "kind": "b", "topicId": "5.2.5", "lmr": false}, {"id": "5.3.1", "title": "Preparing Research Papers for Journals", "sub": "Writing a Research Paper", "kind": "c", "topicId": "5.3.1", "lmr": false}, {"id": "5.3.2", "title": "Design of Paper Using Template", "sub": "Writing a Research Paper", "kind": "a", "topicId": "5.3.2", "lmr": false}]}, {"heading": "Module 5 · part 3", "nodes": [{"id": "5.3.3", "title": "Calculation of Impact Factor of a Journal", "sub": "Writing a Research Paper", "kind": "b", "topicId": "5.3.3", "lmr": false}, {"id": "5.3.4", "title": "Citation Index", "sub": "Writing a Research Paper", "kind": "c", "topicId": "5.3.4", "lmr": false}, {"id": "5.3.5", "title": "ISBN and ISSN", "sub": "Writing a Research Paper", "kind": "a", "topicId": "5.3.5", "lmr": false}, {"id": "5.4.1", "title": "Identifying and Defining Problem", "sub": "Planning a Project Proposal", "kind": "b", "topicId": "5.4.1", "lmr": false}, {"id": "5.4.2", "title": "Research Problem Aspects and Consideration", "sub": "Planning a Project Proposal", "kind": "c", "topicId": "5.4.2", "lmr": false}, {"id": "5.4.3", "title": "Research Plan", "sub": "Planning a Project Proposal", "kind": "a", "topicId": "5.4.3", "lmr": false}]}], "nodes": {"m5_root": {"kind": "root", "title": "Module 5", "path": "Research Methodology (CSIT745) → Module 5", "body": "Study map for Module 5 of Research Methodology (CSIT745). Click a topic, then practise its MCQs.", "points": ["Built from the SLM table of contents", "Orange LMR badges mark first-pass priorities"]}, "5.1.1": {"kind": "a", "title": "Meaning of Research Report", "path": "Module 5 · 5.1.1 · Meaning of Research Report", "body": "5.1.2 Structure of Scientific Report 5.1.3 Components of Scientific Report 5.1.4 Types of Reports", "points": ["From Research Methodology (CSIT745) · 5.1.1 · Research Report Writing", "Name one exam point for Meaning of Research Report.: Be able to define Meaning of Research Report, state when it is used, and contrast it with a related concept in Research Report Writing."], "topicId": "5.1.1", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "5.1.2": {"kind": "b", "title": "Structure of Scientific Report", "path": "Module 5 · 5.1.2 · Structure of Scientific Report", "body": "5.1.3 Components of Scientific Report 5.1.4 Types of Reports 5.1.5 Steps in Report Writing", "points": ["From Research Methodology (CSIT745) · 5.1.2 · Research Report Writing"], "topicId": "5.1.2", "lmr": true, "note": "", "qCount": 1, "fcCount": 1}, "5.1.3": {"kind": "c", "title": "Components of Scientific Report", "path": "Module 5 · 5.1.3 · Components of Scientific Report", "body": "5.1.4 Types of Reports 5.1.5 Steps in Report Writing 5.1.6 Format and Writing Style", "points": ["From Research Methodology (CSIT745) · 5.1.3 · Research Report Writing", "Name one exam point for Components of Scientific Report.: Be able to define Components of Scientific Report, state when it is used, and contrast it with a related concept in Research Report Writing."], "topicId": "5.1.3", "lmr": true, "note": "", "qCount": 1, "fcCount": 2}, "5.1.4": {"kind": "a", "title": "Types of Reports", "path": "Module 5 · 5.1.4 · Types of Reports", "body": "5.1.5 Steps in Report Writing 5.1.6 Format and Writing Style 5.1.7 Illustrations and Tables", "points": ["From Research Methodology (CSIT745) · 5.1.4 · Research Report Writing"], "topicId": "5.1.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "5.1.5": {"kind": "b", "title": "Steps in Report Writing", "path": "Module 5 · 5.1.5 · Steps in Report Writing", "body": "5.1.6 Format and Writing Style 5.1.7 Illustrations and Tables 5.1.8 Citing and Referencing Sources", "points": ["From Research Methodology (CSIT745) · 5.1.5 · Research Report Writing", "Name one exam point for Steps in Report Writing.: Be able to define Steps in Report Writing, state when it is used, and contrast it with a related concept in Research Report Writing."], "topicId": "5.1.5", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "5.1.6": {"kind": "c", "title": "Format and Writing Style", "path": "Module 5 · 5.1.6 · Format and Writing Style", "body": "5.1.7 Illustrations and Tables 5.1.8 Citing and Referencing Sources 5.1.9 Footnotes", "points": ["From Research Methodology (CSIT745) · 5.1.6 · Research Report Writing"], "topicId": "5.1.6", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "5.1.7": {"kind": "a", "title": "Illustrations and Tables", "path": "Module 5 · 5.1.7 · Illustrations and Tables", "body": "5.1.8 Citing and Referencing Sources 5.1.9 Footnotes 5.2 Presentation", "points": ["From Research Methodology (CSIT745) · 5.1.7 · Research Report Writing", "Name one exam point for Illustrations and Tables.: Be able to define Illustrations and Tables, state when it is used, and contrast it with a related concept in Research Report Writing."], "topicId": "5.1.7", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "5.1.8": {"kind": "b", "title": "Citing and Referencing Sources", "path": "Module 5 · 5.1.8 · Citing and Referencing Sources", "body": "5.1.9 Footnotes 5.2 Presentation 5.2.1 Oral Presentation", "points": ["From Research Methodology (CSIT745) · 5.1.8 · Research Report Writing"], "topicId": "5.1.8", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "5.1.9": {"kind": "c", "title": "Footnotes", "path": "Module 5 · 5.1.9 · Footnotes", "body": "5.2 Presentation 5.2.1 Oral Presentation 5.2.2 Making Presentation", "points": ["From Research Methodology (CSIT745) · 5.1.9 · Research Report Writing", "Name one exam point for Footnotes.: Be able to define Footnotes, state when it is used, and contrast it with a related concept in Research Report Writing."], "topicId": "5.1.9", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "5.2.1": {"kind": "a", "title": "Oral Presentation", "path": "Module 5 · 5.2.1 · Oral Presentation", "body": "5.2.2 Making Presentation 5.2.3 Use of Visual Aids 5.2.4 Importance of Effective Communication", "points": ["From Research Methodology (CSIT745) · 5.2.1 · Presentation"], "topicId": "5.2.1", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "5.2.2": {"kind": "b", "title": "Making Presentation", "path": "Module 5 · 5.2.2 · Making Presentation", "body": "5.2.3 Use of Visual Aids 5.2.4 Importance of Effective Communication 5.2.5 Convention and Strategies of Authentication", "points": ["From Research Methodology (CSIT745) · 5.2.2 · Presentation", "Name one exam point for Making Presentation.: Be able to define Making Presentation, state when it is used, and contrast it with a related concept in Presentation."], "topicId": "5.2.2", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "5.2.3": {"kind": "c", "title": "Use of Visual Aids", "path": "Module 5 · 5.2.3 · Use of Visual Aids", "body": "5.2.4 Importance of Effective Communication 5.2.5 Convention and Strategies of Authentication 5.3 Writing a Research Paper", "points": ["From Research Methodology (CSIT745) · 5.2.3 · Presentation"], "topicId": "5.2.3", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "5.2.4": {"kind": "a", "title": "Importance of Effective Communication", "path": "Module 5 · 5.2.4 · Importance of Effective Communication", "body": "5.2.5 Convention and Strategies of Authentication 5.3 Writing a Research Paper 5.3.1 Preparing Research Papers for Journals", "points": ["From Research Methodology (CSIT745) · 5.2.4 · Presentation", "Name one exam point for Importance of Effective Communication.: Be able to define Importance of Effective Communication, state when it is used, and contrast it with a related concept in Presentation."], "topicId": "5.2.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "5.2.5": {"kind": "b", "title": "Convention and Strategies of Authenticatio", "path": "Module 5 · 5.2.5 · Convention and Strategies of Authentication", "body": "5.3 Writing a Research Paper 5.3.1 Preparing Research Papers for Journals 5.3.2 Design of Paper Using Template", "points": ["From Research Methodology (CSIT745) · 5.2.5 · Presentation"], "topicId": "5.2.5", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "5.3.1": {"kind": "c", "title": "Preparing Research Papers for Journals", "path": "Module 5 · 5.3.1 · Preparing Research Papers for Journals", "body": "5.3.2 Design of Paper Using Template 5.3.3 Calculation of Impact Factor of a Journal (c) Amity University Online", "points": ["From Research Methodology (CSIT745) · 5.3.1 · Writing a Research Paper", "Name one exam point for Preparing Research Papers for Journals.: Be able to define Preparing Research Papers for Journals, state when it is used, and contrast it with a related concept in Writing a Research Paper."], "topicId": "5.3.1", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "5.3.2": {"kind": "a", "title": "Design of Paper Using Template", "path": "Module 5 · 5.3.2 · Design of Paper Using Template", "body": "5.3.3 Calculation of Impact Factor of a Journal (c) Amity University Online", "points": ["From Research Methodology (CSIT745) · 5.3.2 · Writing a Research Paper"], "topicId": "5.3.2", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "5.3.3": {"kind": "b", "title": "Calculation of Impact Factor of a Journal", "path": "Module 5 · 5.3.3 · Calculation of Impact Factor of a Journal", "body": "Key SLM topic: Calculation of Impact Factor of a Journal. Review definitions, steps, and one worked example from the study PDF.", "points": ["From Research Methodology (CSIT745) · 5.3.3 · Writing a Research Paper", "Name one exam point for Calculation of Impact Factor of a Journal.: Be able to define Calculation of Impact Factor of a Journal, state when it is used, and contrast it with a related concept in Writing a Research Paper."], "topicId": "5.3.3", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "5.3.4": {"kind": "c", "title": "Citation Index", "path": "Module 5 · 5.3.4 · Citation Index", "body": "5.3.5 ISBN and ISSN 5.4 Planning a Project Proposal 5.4.1 Identifying and Defining Problem", "points": ["From Research Methodology (CSIT745) · 5.3.4 · Writing a Research Paper"], "topicId": "5.3.4", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "5.3.5": {"kind": "a", "title": "ISBN and ISSN", "path": "Module 5 · 5.3.5 · ISBN and ISSN", "body": "5.4 Planning a Project Proposal 5.4.1 Identifying and Defining Problem 5.4.2 Research Problem Aspects and Considerations", "points": ["From Research Methodology (CSIT745) · 5.3.5 · Writing a Research Paper", "Name one exam point for ISBN and ISSN.: Be able to define ISBN and ISSN, state when it is used, and contrast it with a related concept in Writing a Research Paper."], "topicId": "5.3.5", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "5.4.1": {"kind": "b", "title": "Identifying and Defining Problem", "path": "Module 5 · 5.4.1 · Identifying and Defining Problem", "body": "5.4.2 Research Problem Aspects and Considerations 5.4.3 Research Plan (c) Amity University Online", "points": ["From Research Methodology (CSIT745) · 5.4.1 · Planning a Project Proposal"], "topicId": "5.4.1", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}, "5.4.2": {"kind": "c", "title": "Research Problem Aspects and Consideration", "path": "Module 5 · 5.4.2 · Research Problem Aspects and Considerations", "body": "5.4.3 Research Plan (c) Amity University Online", "points": ["From Research Methodology (CSIT745) · 5.4.2 · Planning a Project Proposal", "Name one exam point for Research Problem Aspects and Considerations.: Be able to define Research Problem Aspects and Considerations, state when it is used, and contrast it with a related concept in Planning a Project Proposal."], "topicId": "5.4.2", "lmr": false, "note": "", "qCount": 1, "fcCount": 2}, "5.4.3": {"kind": "a", "title": "Research Plan", "path": "Module 5 · 5.4.3 · Research Plan", "body": "goal. Take, for example, a study of an organisation’s contribution to environmental sustainability. The specific goals will be as follows:", "points": ["From Research Methodology (CSIT745) · 5.4.3 · Planning a Project Proposal"], "topicId": "5.4.3", "lmr": false, "note": "", "qCount": 1, "fcCount": 1}}, "questions": [{"q": "Which statement best matches Meaning of Research Report?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Meaning of Research Report", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Meaning of Research Report is a syllabus topic under Research Report Writing in Module 5.", "topicId": "5.1.1", "topicTitle": "Meaning of Research Report"}, {"q": "Which statement best matches Structure of Scientific Report?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Structure of Scientific Report", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Structure of Scientific Report is a syllabus topic under Research Report Writing in Module 5.", "topicId": "5.1.2", "topicTitle": "Structure of Scientific Report"}, {"q": "Which statement best matches Components of Scientific Report?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Components of Scientific Report", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Components of Scientific Report is a syllabus topic under Research Report Writing in Module 5.", "topicId": "5.1.3", "topicTitle": "Components of Scientific Report"}, {"q": "Which statement best matches Types of Reports?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Types of Reports", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Types of Reports is a syllabus topic under Research Report Writing in Module 5.", "topicId": "5.1.4", "topicTitle": "Types of Reports"}, {"q": "Which statement best matches Steps in Report Writing?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Steps in Report Writing", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Steps in Report Writing is a syllabus topic under Research Report Writing in Module 5.", "topicId": "5.1.5", "topicTitle": "Steps in Report Writing"}, {"q": "Which statement best matches Format and Writing Style?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Format and Writing Style", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Format and Writing Style is a syllabus topic under Research Report Writing in Module 5.", "topicId": "5.1.6", "topicTitle": "Format and Writing Style"}, {"q": "Which statement best matches Illustrations and Tables?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Illustrations and Tables", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Illustrations and Tables is a syllabus topic under Research Report Writing in Module 5.", "topicId": "5.1.7", "topicTitle": "Illustrations and Tables"}, {"q": "Which statement best matches Citing and Referencing Sources?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Citing and Referencing Sources", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Citing and Referencing Sources is a syllabus topic under Research Report Writing in Module 5.", "topicId": "5.1.8", "topicTitle": "Citing and Referencing Sources"}, {"q": "Which statement best matches Footnotes?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Footnotes", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Footnotes is a syllabus topic under Research Report Writing in Module 5.", "topicId": "5.1.9", "topicTitle": "Footnotes"}, {"q": "Which statement best matches Oral Presentation?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Oral Presentation", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Oral Presentation is a syllabus topic under Presentation in Module 5.", "topicId": "5.2.1", "topicTitle": "Oral Presentation"}, {"q": "Which statement best matches Making Presentation?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Making Presentation", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Making Presentation is a syllabus topic under Presentation in Module 5.", "topicId": "5.2.2", "topicTitle": "Making Presentation"}, {"q": "Which statement best matches Use of Visual Aids?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Use of Visual Aids", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Use of Visual Aids is a syllabus topic under Presentation in Module 5.", "topicId": "5.2.3", "topicTitle": "Use of Visual Aids"}, {"q": "Which statement best matches Importance of Effective Communication?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Importance of Effective Communication", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Importance of Effective Communication is a syllabus topic under Presentation in Module 5.", "topicId": "5.2.4", "topicTitle": "Importance of Effective Communication"}, {"q": "Which statement best matches Convention and Strategies of Authentication?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Convention and Strategies of Authentication", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Convention and Strategies of Authentication is a syllabus topic under Presentation in Module 5.", "topicId": "5.2.5", "topicTitle": "Convention and Strategies of Authentication"}, {"q": "Which statement best matches Preparing Research Papers for Journals?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Preparing Research Papers for Journals", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Preparing Research Papers for Journals is a syllabus topic under Writing a Research Paper in Module 5.", "topicId": "5.3.1", "topicTitle": "Preparing Research Papers for Journals"}, {"q": "Which statement best matches Design of Paper Using Template?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Design of Paper Using Template", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Design of Paper Using Template is a syllabus topic under Writing a Research Paper in Module 5.", "topicId": "5.3.2", "topicTitle": "Design of Paper Using Template"}, {"q": "Which statement best matches Calculation of Impact Factor of a Journal?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Calculation of Impact Factor of a Journal", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Calculation of Impact Factor of a Journal is a syllabus topic under Writing a Research Paper in Module 5.", "topicId": "5.3.3", "topicTitle": "Calculation of Impact Factor of a Journal"}, {"q": "Which statement best matches Citation Index?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Citation Index", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Citation Index is a syllabus topic under Writing a Research Paper in Module 5.", "topicId": "5.3.4", "topicTitle": "Citation Index"}, {"q": "Which statement best matches ISBN and ISSN?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: ISBN and ISSN", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "ISBN and ISSN is a syllabus topic under Writing a Research Paper in Module 5.", "topicId": "5.3.5", "topicTitle": "ISBN and ISSN"}, {"q": "Which statement best matches Identifying and Defining Problem?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Identifying and Defining Problem", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Identifying and Defining Problem is a syllabus topic under Planning a Project Proposal in Module 5.", "topicId": "5.4.1", "topicTitle": "Identifying and Defining Problem"}, {"q": "Which statement best matches Research Problem Aspects and Considerations?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Research Problem Aspects and Considerations", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Research Problem Aspects and Considerations is a syllabus topic under Planning a Project Proposal in Module 5.", "topicId": "5.4.2", "topicTitle": "Research Problem Aspects and Considerations"}, {"q": "Which statement best matches Research Plan?", "options": ["A definition-only topic with no applications", "A core idea in Research Methodology: Research Plan", "Unrelated to Module 5", "Only a programming language keyword"], "answer": 1, "explain": "Research Plan is a syllabus topic under Planning a Project Proposal in Module 5.", "topicId": "5.4.3", "topicTitle": "Research Plan"}]}]};
+let activeModuleId = String(MAPS.modules[0].id);
+let current = MAPS.modules[0];
+let mapAnswers = {};
+let mapVisited = {};
+let restoring = false;
+let topicFilter = null;
+let selectedNodeId = null;
+
+const el = id => document.getElementById(id);
+const mapProgressBar = el("mapProgressBar");
+const mapAllTotal = MAPS.modules.reduce((n, m) => n + (m.questions || []).length, 0);
+el("mapAllTotal").textContent = mapAllTotal;
+
+function visitedKey(nodeId) {
+  return String(activeModuleId) + ":" + nodeId;
+}
+
+function currentModule() {
+  return MAPS.modules.find(m => String(m.id) === String(activeModuleId)) || MAPS.modules[0];
+}
+
+function weightLabel(w) {
+  if (w === "high") return " · exam focus";
+  if (w === "foundation") return " · foundation";
+  return "";
+}
+
+function countVisited() {
+  return Object.keys(mapVisited).filter(k => mapVisited[k]).length;
+}
+
+function updateMapStats() {
+  current = currentModule();
+  const list = current.questions || [];
+  const mid = String(current.id);
+  const answers = mapAnswers[mid] || {};
+  let attempted = 0, correct = 0;
+  list.forEach((item, qi) => {
+    if (answers[qi] === undefined || answers[qi] === null) return;
+    attempted += 1;
+    if (Number(answers[qi]) === item.answer) correct += 1;
+  });
+  el("mapModAttempted").textContent = attempted;
+  el("mapModTotal").textContent = list.length;
+  el("mapModCorrect").textContent = correct;
+  el("mapVisitedCount").textContent = countVisited();
+  mapProgressBar.style.width = list.length ? ((attempted / list.length) * 100) + "%" : "0%";
+
+  let allA = 0;
+  MAPS.modules.forEach(m => {
+    const ans = mapAnswers[String(m.id)] || {};
+    (m.questions || []).forEach((item, qi) => {
+      if (ans[qi] === undefined || ans[qi] === null) return;
+      allA += 1;
+    });
+  });
+  el("mapAllAttempted").textContent = allA;
+
+  el("mapStats").innerHTML = MAPS.modules.map(m => {
+    const qs = m.questions || [];
+    const ans = mapAnswers[String(m.id)] || {};
+    let a = 0, c = 0;
+    qs.forEach((item, qi) => {
+      if (ans[qi] === undefined || ans[qi] === null) return;
+      a += 1;
+      if (Number(ans[qi]) === item.answer) c += 1;
+    });
+    const pct = qs.length ? Math.round((a / qs.length) * 100) : 0;
+    const w = m.weight === "high" ? " · high weight" : "";
+    return `<div class="stat"><b>${c}/${qs.length}</b><span>Module ${m.id}${w} · ${a} answered</span><div class="prog-line"><i style="width:${pct}%"></i></div></div>`;
+  }).join("");
+}
+
+function persistMap() {
+  if (restoring) return;
+  const P = window.AmityProgress || window.BS605Progress;
+  if (!P || !window.__AMITY_SYNC_READY) return;
+  P.saveSubjectProgress({
+    mapAnswers: mapAnswers,
+    mapVisited: mapVisited,
+    mapMeta: { activeModuleId: String(activeModuleId), topicFilter: topicFilter, selectedNodeId: selectedNodeId }
+  });
+}
+
+function restoreMap(payload) {
+  if (!payload) return;
+  restoring = true;
+  if (payload.mapAnswers && typeof payload.mapAnswers === "object") mapAnswers = payload.mapAnswers;
+  if (payload.mapVisited && typeof payload.mapVisited === "object") mapVisited = payload.mapVisited;
+  if (payload.mapMeta && payload.mapMeta.activeModuleId) activeModuleId = String(payload.mapMeta.activeModuleId);
+  if (payload.mapMeta) {
+    topicFilter = payload.mapMeta.topicFilter || null;
+    selectedNodeId = payload.mapMeta.selectedNodeId || null;
+  }
+  renderAll();
+  restoring = false;
+}
+
+function renderFilters() {
+  const box = el("moduleFilters");
+  box.innerHTML = MAPS.modules.map(m => {
+    const wClass = m.weight === "high" ? " weight-high" : "";
+    return `<button type="button" class="chip${wClass} ${String(activeModuleId)===String(m.id)?"active":""}" data-m="${m.id}">M${m.id}: ${m.title}${weightLabel(m.weight)}</button>`;
+  }).join("");
+  box.querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {
+    activeModuleId = btn.dataset.m;
+    topicFilter = null;
+    selectedNodeId = null;
+    renderAll();
+    persistMap();
+  }));
+}
+
+function makeNode(id, title, sub, cls, lmr) {
+  const badge = lmr ? `<span class="n-badge">LMR</span>` : "";
+  const lmrCls = lmr ? " lmr-node" : "";
+  const visCls = mapVisited[visitedKey(id)] ? " visited" : "";
+  return `<button type="button" class="node ${cls}${lmrCls}${visCls}" data-id="${id}"><span class="n-title">${title}</span><span class="n-sub">${sub || ""}</span>${badge}</button>`;
+}
+
+function renderTree() {
+  current = currentModule();
+  el("flowLabel").textContent = `Module ${current.id} · Interactive flow`;
+  const parts = [];
+  parts.push(`<div class="level">${makeNode(current.rootId, current.nodes[current.rootId].title, current.nodes[current.rootId].path, "root", false)}</div>`);
+  current.levels.forEach(level => {
+    parts.push(`<div class="connectors"></div>`);
+    const row = level.nodes.map(n => makeNode(n.id, n.title, n.sub, n.kind || "a", n.lmr)).join("");
+    parts.push(`<div class="branch-block"><h3>${level.heading}</h3><div class="row">${row}</div></div>`);
+  });
+  el("tree").innerHTML = parts.join("");
+  el("tree").querySelectorAll(".node").forEach(btn => {
+    btn.addEventListener("click", () => showNode(btn.dataset.id));
+  });
+  showNode(selectedNodeId && current.nodes[selectedNodeId] ? selectedNodeId : current.rootId);
+}
+
+function showNode(id) {
+  const n = current.nodes[id];
+  if (!n) return;
+  selectedNodeId = id;
+  mapVisited[visitedKey(id)] = true;
+  document.querySelectorAll(".node").forEach(node => {
+    node.classList.toggle("active", node.dataset.id === id);
+    node.classList.toggle("visited", Boolean(mapVisited[visitedKey(node.dataset.id)]));
+  });
+  const points = (n.points || []).map(p => `<li>${p}</li>`).join("");
+  const lmrLine = n.lmr ? `<span class="detail-kicker" style="background:#f8e5d8;color:var(--warn)">LMR priority</span>` : "";
+  const counts = n.kind === "root" ? "" : `<p class="parent-path">${n.fcCount || 0} flashcards · ${n.qCount || 0} MCQs in bank</p>`;
+  el("detailContent").innerHTML = `
+    ${lmrLine}
+    <div class="detail-kicker">${n.kind === "root" ? "Module" : "Topic"}</div>
+    <h2 class="detail-title">${n.title}</h2>
+    <p class="parent-path">${n.path || ""}</p>
+    ${counts}
+    <p class="detail-body">${n.body || ""}</p>
+    ${points ? `<ul class="detail-points">${points}</ul>` : ""}
+    ${n.kind !== "root" ? `<div class="navrow" style="margin-top:0.8rem"><button type="button" class="btn primary" id="focusQsBtn">Practice this topic</button></div>` : ""}
+  `;
+  const focusBtn = el("focusQsBtn");
+  if (focusBtn) {
+    focusBtn.addEventListener("click", () => {
+      topicFilter = n.topicId || id;
+      renderQuestions();
+      persistMap();
+      el("questions").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+  if (n.kind !== "root") {
+    topicFilter = n.topicId || id;
+    renderQuestions();
+  } else {
+    topicFilter = null;
+    renderQuestions();
+  }
+  updateMapStats();
+  if (window.matchMedia("(max-width: 920px)").matches) {
+    el("detailPanel").scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+  if (!restoring) persistMap();
+}
+
+function applySavedAnswer(qi) {
+  const mid = String(current.id);
+  const saved = mapAnswers[mid] && mapAnswers[mid][qi];
+  if (saved === undefined || saved === null) return;
+  const item = current.questions[qi];
+  const card = document.getElementById("q" + qi);
+  if (!item || !card) return;
+  const i = Number(saved);
+  card.querySelectorAll(".opt").forEach((o, idx) => {
+    o.disabled = true;
+    if (idx === item.answer) o.classList.add("correct");
+    if (idx === i && i !== item.answer) o.classList.add("wrong");
+  });
+  const ex = document.getElementById("ex" + qi);
+  ex.textContent = (i === item.answer ? "Correct. " : "Not quite. ") + (item.explain || "");
+  ex.classList.add("show");
+}
+
+function renderQuestions() {
+  el("questionsTitle").textContent = `Important questions — Module ${current.id}`;
+  const letters = ["A","B","C","D"];
+  const list = current.questions || [];
+  const filtered = topicFilter
+    ? list.map((item, qi) => ({item, qi})).filter(x => String(x.item.topicId) === String(topicFilter))
+    : list.map((item, qi) => ({item, qi}));
+  el("qFilterLabel").textContent = topicFilter
+    ? `Focused on topic ${topicFilter} (${filtered.length} of ${list.length})`
+    : `Showing all ${list.length} questions`;
+  el("qlist").innerHTML = filtered.map(({item, qi}) => {
+    const opts = item.options.map((o, i) =>
+      `<button type="button" class="opt" data-q="${qi}" data-i="${i}"><strong>${letters[i]}.</strong> ${o}</button>`
+    ).join("");
+    return `<article class="qcard" id="q${qi}"><p class="qmeta">${item.topicId} · ${item.topicTitle}</p><h3>${qi+1}. ${item.q}</h3><div class="opts">${opts}</div><div class="explain" id="ex${qi}"></div></article>`;
+  }).join("") || `<p class="detail-empty">No MCQs for this filter.</p>`;
+  filtered.forEach(({qi}) => applySavedAnswer(qi));
+  updateMapStats();
+}
+
+el("showAllQs").addEventListener("click", () => {
+  topicFilter = null;
+  selectedNodeId = current.rootId;
+  renderTree();
+  persistMap();
+});
+
+el("qlist").addEventListener("click", e => {
+  const btn = e.target.closest(".opt");
+  if (!btn || btn.disabled) return;
+  const qi = Number(btn.dataset.q);
+  const i = Number(btn.dataset.i);
+  const item = current.questions[qi];
+  const card = document.getElementById("q" + qi);
+  card.querySelectorAll(".opt").forEach((o, idx) => {
+    o.disabled = true;
+    if (idx === item.answer) o.classList.add("correct");
+    if (idx === i && i !== item.answer) o.classList.add("wrong");
+  });
+  const ex = document.getElementById("ex" + qi);
+  ex.textContent = (i === item.answer ? "Correct. " : "Not quite. ") + (item.explain || "");
+  ex.classList.add("show");
+  const mid = String(current.id);
+  if (!mapAnswers[mid]) mapAnswers[mid] = {};
+  mapAnswers[mid][qi] = i;
+  updateMapStats();
+  persistMap();
+});
+
+function renderAll() {
+  renderFilters();
+  renderTree();
+}
+
+renderAll();
+
+function bootSync(restoreFn) {
+  const SUBJECT = "csit745";
+  function apply(subPayload) {
+    if (subPayload && restoreFn) restoreFn(subPayload);
+    window.__AMITY_SYNC_READY = true;
+    window.__BS605_SYNC_READY = true;
+  }
+  const P = window.AmityProgress || window.BS605Progress;
+  const UI = window.AmitySyncUI || window.BS605SyncUI;
+  if (UI) {
+    UI.mount(document.getElementById("amity-sync-root"), {
+      subjectLabel: "CSIT745",
+      onLoaded: (sub) => apply(sub),
+      onReady: (sub) => {
+        if (window.__AMITY_SYNC_READY) return;
+        const local = P && P.readLocalCache && P.readLocalCache();
+        const fallback = sub || (P && P.getSubjectPayload && P.getSubjectPayload(local?.payload, SUBJECT)) || null;
+        apply(fallback);
+      }
+    });
+  } else {
+    const local = P && P.readLocalCache && P.readLocalCache();
+    apply(P && P.getSubjectPayload ? P.getSubjectPayload(local?.payload, SUBJECT) : null);
+  }
+}
+
+bootSync(restoreMap);
+</script>
+</body>
+</html>

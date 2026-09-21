@@ -1,0 +1,3861 @@
+WEBVTT
+
+1
+00:00:06.270 --> 00:00:06.660
+All right.
+
+2
+00:00:08.310 --> 00:00:13.605
+Yeah. So today will be our first session, and we will start the introduction to
+
+3
+00:00:13.650 --> 00:00:16.770
+data structure and algorithmic design. Okay.
+
+4
+00:00:18.991 --> 00:00:21.000
+So I hope you all are aware of the guidelines.
+
+5
+00:00:21.120 --> 00:00:22.890
+Okay, this will be an interactive session.
+
+6
+00:00:23.280 --> 00:00:27.810
+So I want everyone to equally participate in the session.
+
+7
+00:00:28.320 --> 00:00:33.661
+And if you have any doubts, any queries, feel free to ask during the class, okay,
+
+8
+00:00:33.750 --> 00:00:36.000
+and I will try to answer that. Okay?
+
+9
+00:00:37.200 --> 00:00:41.401
+So before we start, I just wanted to have a quick pulse check on the group.
+
+10
+00:00:42.330 --> 00:00:47.130
+So do you have any basic understanding of what the algorithm is
+
+11
+00:00:48.179 --> 00:00:52.500
+and how to write the algorithm?
+
+12
+00:00:56.160 --> 00:00:56.670
+Anyone?
+
+13
+00:00:57.420 --> 00:00:58.261
+We just got-
+
+14
+00:01:04.860 --> 00:01:05.490
+Any idea?
+
+15
+00:01:08.040 --> 00:01:09.420
+No. Yes. Maybe.
+
+16
+00:01:17.461 --> 00:01:17.790
+All right.
+
+17
+00:01:19.770 --> 00:01:23.940
+So I will consider silence as yes. Okay.
+
+18
+00:01:24.420 --> 00:01:28.620
+So we will start with the basic introduction of the data structure and algorithmic
+
+19
+00:01:28.650 --> 00:01:32.610
+design. Okay. So before we start, do you know what is data structure?
+
+20
+00:01:34.711 --> 00:01:37.290
+How many of you already aware of what a data structure is?
+
+21
+00:01:39.630 --> 00:01:40.200
+Any idea?
+
+22
+00:01:45.480 --> 00:01:50.461
+Data are the collection of raw facts and figures, or you can say the values are the
+
+23
+00:01:50.521 --> 00:01:56.040
+set of values. Okay, and structure means that how you are organizing the data.
+
+24
+00:01:56.700 --> 00:02:02.370
+So if I combine these two terms, the data structure means that the way of
+
+25
+00:02:02.490 --> 00:02:07.320
+organizing the data in such a way that it will become more
+
+26
+00:02:07.380 --> 00:02:12.330
+efficient for the assessing. Okay, that is called the data structure.
+
+27
+00:02:13.800 --> 00:02:17.820
+Similarly, so at the end of the session, we will be able to cover these concepts.
+
+28
+00:02:17.851 --> 00:02:21.570
+We will discuss the data structure, we will discuss the types of data structures,
+
+29
+00:02:22.171 --> 00:02:23.250
+the applications,
+
+30
+00:02:24.510 --> 00:02:28.290
+the different algorithms, and then ADT. ADT is not in your syllabus.
+
+31
+00:02:28.470 --> 00:02:32.849
+That is the abstract data type. Okay, so we going to skip that part.
+
+32
+00:02:32.910 --> 00:02:37.351
+Okay, but we will try to cover today these four important topics. Okay?
+
+33
+00:02:41.220 --> 00:02:44.910
+So let's start with the terminology. What is algorithm?
+
+34
+00:02:45.180 --> 00:02:47.400
+Algorithm means, any idea what is algorithm?
+
+35
+00:02:48.930 --> 00:02:54.060
+This is all about topic. Algorithm. Anyone?
+
+36
+00:02:54.870 --> 00:02:55.830
+Set of instruction.
+
+37
+00:02:57.180 --> 00:02:59.490
+Set of instructions. Okay.
+
+38
+00:03:00.870 --> 00:03:01.860
+Can you please elaborate?
+
+39
+00:03:06.690 --> 00:03:07.590
+Set of instruction.
+
+40
+00:03:11.730 --> 00:03:14.460
+Because a program is also considered a set of instruction.
+
+41
+00:03:14.880 --> 00:03:17.550
+Then what is the difference between program and algorithm?
+
+42
+00:03:22.050 --> 00:03:22.546
+Anyone?
+
+43
+00:03:23.070 --> 00:03:23.460
+No, sir.
+
+44
+00:03:24.390 --> 00:03:24.570
+No?
+
+45
+00:03:25.921 --> 00:03:28.680
+Yeah. So you are partially correct.
+
+46
+00:03:29.160 --> 00:03:34.470
+The algorithm is the step-by-step instruction, or you can say the
+
+47
+00:03:34.560 --> 00:03:36.810
+step-by-step procedure to solve any given problem,
+
+48
+00:03:38.041 --> 00:03:40.500
+while the program is the set of instruction.
+
+49
+00:03:41.430 --> 00:03:47.324
+So if you are including the instruction, the software instruction, without any
+
+50
+00:03:47.460 --> 00:03:50.940
+order, it can be considered as a program. Okay?
+
+51
+00:03:51.210 --> 00:03:54.840
+It is different that it will not generate the desired output, but you can call it
+
+52
+00:03:54.870 --> 00:04:00.510
+as a program. But if you are following a step-by-step
+
+53
+00:04:00.541 --> 00:04:04.860
+procedure, or if you're following the step-by-step solution to any given problem,
+
+54
+00:04:05.310 --> 00:04:06.360
+then it will be called as
+
+55
+00:04:07.680 --> 00:04:08.370
+the algorithm.
+
+56
+00:04:10.260 --> 00:04:15.750
+Okay, so both programming and the algorithm, they are actually interrelated.
+
+57
+00:04:17.760 --> 00:04:22.275
+Okay, so if you have a good algorithm, you will be able to write good program, but
+
+58
+00:04:22.275 --> 00:04:23.550
+the vice versa is not true.
+
+59
+00:04:25.110 --> 00:04:29.490
+Okay, so you have to focus more on the understanding of the logic.
+
+60
+00:04:30.330 --> 00:04:34.320
+If you are good with the logic, you can easily write program, you can easily write
+
+61
+00:04:34.350 --> 00:04:34.980
+the algorithm.
+
+62
+00:04:36.330 --> 00:04:38.160
+Have you heard about the term pseudocode?
+
+63
+00:04:41.130 --> 00:04:42.660
+Any one of you, pseudocode.
+
+64
+00:04:47.430 --> 00:04:53.400
+Any idea what is pseudocode? Pseudo means false, coding means a
+
+65
+00:04:53.460 --> 00:04:59.130
+normal code. So if you are writing a code in a normal English
+
+66
+00:04:59.190 --> 00:05:03.060
+language, it will be called as the pseudocode.
+
+67
+00:05:05.701 --> 00:05:09.180
+Okay, so I hope that now the concept is clear. What is algorithm?
+
+68
+00:05:09.225 --> 00:05:15.120
+Algorithm is a step-by-step instruction, or you can say the step-by-step
+
+69
+00:05:15.180 --> 00:05:20.160
+procedure to solve any given problem. Is that clear to everyone?
+
+70
+00:05:20.820 --> 00:05:21.570
+What is algorithm?
+
+71
+00:05:27.000 --> 00:05:29.355
+So whenever we write any program-
+
+72
+00:05:29.355 --> 00:05:31.560
+Sir, can you repeat that again? I just joined.
+
+73
+00:05:32.310 --> 00:05:36.000
+Right, Amrita. So Amrita, we have just started, we were discussing on what a data
+
+74
+00:05:36.031 --> 00:05:41.940
+structure is. So I told others that data structure is a way of organizing the
+
+75
+00:05:42.000 --> 00:05:47.640
+data. Okay, so data is simply a raw facts or figure, so you can say the
+
+76
+00:05:47.701 --> 00:05:52.244
+values or the set of values. Okay, and there's a difference between the data and
+
+77
+00:05:52.290 --> 00:05:57.420
+the information. Okay, so data become information when it get processed.
+
+78
+00:05:58.440 --> 00:06:00.870
+For example, if I give an example of a mark sheet.
+
+79
+00:06:01.531 --> 00:06:07.140
+So in the mark sheet, suppose if I say that, Amrita, you got 90
+
+80
+00:06:07.201 --> 00:06:10.800
+marks in mathematics. Do you think you are pass or fail?
+
+81
+00:06:12.720 --> 00:06:16.020
+Will you be able to tell the overall result?
+
+82
+00:06:17.910 --> 00:06:23.535
+No, because the individual marks will not be able to justify that overall
+
+83
+00:06:23.580 --> 00:06:28.320
+context. If I'm not giving you the overall context, how can someone determine it
+
+84
+00:06:28.349 --> 00:06:30.061
+whether that person is pass or fail?
+
+85
+00:06:31.770 --> 00:06:36.841
+Okay, so that is called as the data. The data is simply a raw fact.
+
+86
+00:06:37.530 --> 00:06:41.460
+Okay, it is just giving you that, okay, that someone is securing 90 marks in
+
+87
+00:06:41.490 --> 00:06:46.890
+English or 90 marks in math. But if you don't know the denominator, how can you
+
+88
+00:06:46.920 --> 00:06:49.770
+identify that whether that person is pass or fail?
+
+89
+00:06:50.760 --> 00:06:54.750
+So anything which is not giving you the information, anything which is just a
+
+90
+00:06:54.811 --> 00:06:57.091
+normal fact, is called a data.
+
+91
+00:06:59.430 --> 00:07:04.230
+Okay. Well, Ashish is busy in solving the Rubik cube.
+
+92
+00:07:04.245 --> 00:07:05.850
+So Ashish, is that clear to you?
+
+93
+00:07:16.530 --> 00:07:16.770
+So
+
+94
+00:07:18.360 --> 00:07:21.720
+when the data get processed, it will become an information.
+
+95
+00:07:22.951 --> 00:07:27.510
+Right, for example, in a mark sheet. So you have the multiple datas.
+
+96
+00:07:27.570 --> 00:07:32.880
+Okay, when these datas get consolidated in a single page where we have all the
+
+97
+00:07:32.970 --> 00:07:37.576
+denominator, we have all the maximum marks, then it will become a information.
+
+98
+00:07:37.680 --> 00:07:40.966
+So by looking at the mark sheet, you can easily tell that whether that person's,
+
+99
+00:07:41.311 --> 00:07:45.451
+what is the division, what is the overall percentage, what is the CGPA, what is the
+
+100
+00:07:45.540 --> 00:07:48.091
+SGPA. So everything you can easily get.
+
+101
+00:07:48.151 --> 00:07:52.020
+Okay, so data in a processed form is called as information.
+
+102
+00:07:52.081 --> 00:07:58.020
+But data itself is a raw fact, and the organizing of the data in the form
+
+103
+00:07:58.110 --> 00:08:03.660
+of meaningful way, or so that you can easily access the data whenever you want,
+
+104
+00:08:04.170 --> 00:08:06.210
+this is called the data structure.
+
+105
+00:08:07.500 --> 00:08:10.380
+Okay? Then we discuss the concept of algorithm.
+
+106
+00:08:11.130 --> 00:08:14.670
+Algorithm is a step-by-step procedure to solve any given problem.
+
+107
+00:08:15.630 --> 00:08:18.690
+Okay, someone said that algorithm is nothing.
+
+108
+00:08:18.750 --> 00:08:22.020
+Algorithm is a set of instruction, which is partially correct.
+
+109
+00:08:22.110 --> 00:08:23.490
+Algorithm is a set of instruction.
+
+110
+00:08:23.550 --> 00:08:26.160
+Even the programming program also is a set of instruction.
+
+111
+00:08:27.540 --> 00:08:31.770
+But the only difference between program and algorithm is that in program, the
+
+112
+00:08:31.800 --> 00:08:36.660
+instruction sequence can be anything, but in the algorithm, you have to follow a
+
+113
+00:08:36.675 --> 00:08:41.670
+specific sequence. So whenever you write any program, you have to focus on two
+
+114
+00:08:41.730 --> 00:08:46.980
+things. The first is the algorithm and its corresponding data structure.
+
+115
+00:08:49.561 --> 00:08:52.350
+Is that clear to you now, Amrita, what did we discuss?
+
+116
+00:08:54.690 --> 00:08:55.320
+Yes, sir.
+
+117
+00:08:55.800 --> 00:08:56.490
+Okay. Yeah.
+
+118
+00:08:58.410 --> 00:09:02.760
+So moving on. So we have already gone through the data set that we have gone to the
+
+119
+00:09:03.030 --> 00:09:07.561
+algorithm. So what are the different characteristics you can think about the
+
+120
+00:09:07.620 --> 00:09:11.670
+algorithm? What do you think that whenever you write any algorithm, what are the
+
+121
+00:09:11.700 --> 00:09:13.380
+basic things that you have to consider?
+
+122
+00:09:16.395 --> 00:09:16.995
+Any idea?
+
+123
+00:09:19.936 --> 00:09:22.785
+Sir, time complexity and space complexity.
+
+124
+00:09:23.565 --> 00:09:26.056
+Time complexity and space complexity. Very good.
+
+125
+00:09:27.436 --> 00:09:28.605
+These are the two major things.
+
+126
+00:09:30.195 --> 00:09:34.635
+But these are the time complexity and the space complexity is the
+
+127
+00:09:34.665 --> 00:09:39.015
+measurement. I'm asking about the characteristics of an algorithm.
+
+128
+00:09:42.135 --> 00:09:43.635
+Data type, sir.
+
+129
+00:09:44.115 --> 00:09:45.135
+Data type. Okay.
+
+130
+00:09:46.545 --> 00:09:47.265
+Anyone else?
+
+131
+00:09:48.405 --> 00:09:51.075
+Sir, it should be readable, less complicated.
+
+132
+00:09:51.405 --> 00:09:51.885
+Mm-hmm.
+
+133
+00:09:54.526 --> 00:09:58.545
+Readable, less complicated. Correct. Okay. What else?
+
+134
+00:10:02.415 --> 00:10:05.445
+Sir, the algorithm should be universal, right?
+
+135
+00:10:05.535 --> 00:10:06.795
+For all the,
+
+136
+00:10:07.995 --> 00:10:13.965
+means we can use different data, and the output will be correct for
+
+137
+00:10:14.026 --> 00:10:14.175
+that.
+
+138
+00:10:14.985 --> 00:10:19.605
+Mm-hmm. Yeah. You guys are absolutely correct.
+
+139
+00:10:20.100 --> 00:10:22.755
+I mean, the readability, the usability,
+
+140
+00:10:25.276 --> 00:10:26.026
+everything is right.
+
+141
+00:10:27.255 --> 00:10:29.955
+Even you guys are forgetting the basic thing.
+
+142
+00:10:30.436 --> 00:10:33.735
+The first thing is that the input. Input
+
+143
+00:10:35.745 --> 00:10:40.125
+means that whatever the algorithm that you have, it should have at least one input.
+
+144
+00:10:40.425 --> 00:10:43.276
+You can't design any algorithm which is not having any input.
+
+145
+00:10:45.225 --> 00:10:49.276
+Are you getting my point? So whatever the algorithm that you are designing, it
+
+146
+00:10:49.306 --> 00:10:50.865
+should have at least one input.
+
+147
+00:10:52.186 --> 00:10:54.436
+Input, process, and then output.
+
+148
+00:10:54.645 --> 00:11:00.345
+Correct. So that is the, I mean, this is the exact sequence of how the information
+
+149
+00:11:00.405 --> 00:11:04.155
+gets processed. You will give some information, your computer will process some
+
+150
+00:11:04.186 --> 00:11:06.345
+instruction, and then it will give you an output.
+
+151
+00:11:06.405 --> 00:11:08.385
+That's the other way.
+
+152
+00:11:08.445 --> 00:11:13.276
+Okay. So similarly, what you have to do is... Just a second.
+
+153
+00:11:15.526 --> 00:11:31.665
+Right.
+
+154
+00:11:31.995 --> 00:11:32.115
+So,
+
+155
+00:11:33.825 --> 00:11:37.306
+whenever you design any algorithm, so it must have at least one input.
+
+156
+00:11:37.320 --> 00:11:42.526
+For example, suppose if I ask you that I hope everyone knows how to make a tea.
+
+157
+00:11:43.695 --> 00:11:44.925
+Everyone knows how to make a tea?
+
+158
+00:11:46.335 --> 00:11:51.374
+Is there anyone who is not aware? How can you create a tea? Or not create.
+
+159
+00:11:51.556 --> 00:11:56.145
+How can you process a tea? How can you make a tea? Everyone?
+
+160
+00:11:57.045 --> 00:11:58.936
+What is the first step in making a tea?
+
+161
+00:12:02.056 --> 00:12:03.075
+Boiling water.
+
+162
+00:12:04.276 --> 00:12:06.931
+You have to take water, you have to boil it. Okay. Then?
+
+163
+00:12:10.186 --> 00:12:10.905
+You have to add?
+
+164
+00:12:11.175 --> 00:12:12.315
+Adding ingredients.
+
+165
+00:12:12.436 --> 00:12:16.455
+Adding ingredients. Ingredients may include the sugar, the tea leaves, milk.
+
+166
+00:12:16.725 --> 00:12:20.325
+You have to boil it for a certain temperature and for a certain interval of time,
+
+167
+00:12:20.865 --> 00:12:24.375
+and then you have to refrain it. This is the overall step of making a tea.
+
+168
+00:12:25.605 --> 00:12:26.205
+Yes, sir.
+
+169
+00:12:26.445 --> 00:12:30.945
+Right. Now, if I change the sequence, so what I did, I just followed the sequence
+
+170
+00:12:30.975 --> 00:12:34.860
+of the step. Okay, first you have to boil the water, then you have to add tea
+
+171
+00:12:34.936 --> 00:12:39.105
+leaves, then you have to add sugar, then you have to add milk, et cetera, and then
+
+172
+00:12:39.225 --> 00:12:40.815
+you will be able to get your final output.
+
+173
+00:12:41.475 --> 00:12:43.695
+If I change the sequence, will I be able to make a tea?
+
+174
+00:12:48.045 --> 00:12:49.394
+Not correctly, no.
+
+175
+00:12:49.455 --> 00:12:51.165
+Not correctly. Absolutely.
+
+176
+00:12:51.255 --> 00:12:53.865
+We'll be able to make, but the taste will not be like that.
+
+177
+00:12:54.015 --> 00:12:58.485
+Correct. Right. So I will be, I mean, the final output will be a tea, but the taste
+
+178
+00:12:58.545 --> 00:13:04.395
+will be airy. Okay? The taste will not sound like, just like an actual tea.
+
+179
+00:13:04.485 --> 00:13:10.215
+Okay, so similarly, in algorithm also, you have different steps, but if you change
+
+180
+00:13:10.276 --> 00:13:13.786
+the sequence of the step, okay, your program will behave differently.
+
+181
+00:13:14.595 --> 00:13:19.155
+And just like an example, okay, in the tea making, the ingredients were
+
+182
+00:13:19.185 --> 00:13:24.286
+considered as an input. Similarly, in algorithm, you need certain input.
+
+183
+00:13:25.095 --> 00:13:28.320
+If you're not putting the sugar, if you're not putting the water, if you're not
+
+184
+00:13:28.335 --> 00:13:32.880
+putting the milk or tea leaf, you will not be able to get your final output as a
+
+185
+00:13:32.985 --> 00:13:33.165
+tea.
+
+186
+00:13:34.395 --> 00:13:38.835
+Right? So the first thing, which is important from an algorithm perspective, is
+
+187
+00:13:39.225 --> 00:13:43.665
+that every algorithm must have an input. Is that clear to everyone?
+
+188
+00:13:45.975 --> 00:13:46.605
+Yes, sir.
+
+189
+00:13:46.815 --> 00:13:49.935
+Right. The second thing is, what do you mean by second characteristic?
+
+190
+00:13:50.806 --> 00:13:53.085
+It should have at least one output.
+
+191
+00:13:54.435 --> 00:13:58.635
+At least one. I mean, it may have more than one output, but at least one output
+
+192
+00:13:58.665 --> 00:14:03.075
+should be there. If your algorithm is not generating any output, that means your
+
+193
+00:14:03.090 --> 00:14:04.065
+algorithm is useless.
+
+194
+00:14:06.975 --> 00:14:07.246
+Clear?
+
+195
+00:14:10.725 --> 00:14:11.056
+Yes, sir.
+
+196
+00:14:11.655 --> 00:14:14.026
+The third step. Can anyone help me with the third step?
+
+197
+00:14:17.056 --> 00:14:19.695
+What is the third characteristic you can expect from an algorithm?
+
+198
+00:14:24.975 --> 00:14:27.975
+It should solve a given problem.
+
+199
+00:14:28.095 --> 00:14:29.145
+Final result.
+
+200
+00:14:30.526 --> 00:14:33.345
+Final result we have already discussed, right, in the form of output.
+
+201
+00:14:36.075 --> 00:14:36.526
+What else?
+
+202
+00:14:39.286 --> 00:14:40.155
+Finite step.
+
+203
+00:14:41.026 --> 00:14:44.565
+Finite step. Yeah. Absolutely correct. Finite step.
+
+204
+00:14:44.895 --> 00:14:49.036
+That means that whatever the number of steps that you are writing in your
+
+205
+00:14:49.065 --> 00:14:52.005
+algorithm, it should be finite. Finite means?
+
+206
+00:14:54.315 --> 00:14:58.485
+Finite means it should end after some steps, okay?
+
+207
+00:14:58.545 --> 00:15:00.825
+There should not be any infinite number of steps.
+
+208
+00:15:01.276 --> 00:15:04.996
+Obviously, you can't write an algorithm that can run infinitely.
+
+209
+00:15:05.955 --> 00:15:09.435
+It should be executed. It should be terminated after a few steps.
+
+210
+00:15:11.565 --> 00:15:12.735
+Are you guys agreeing with this?
+
+211
+00:15:13.905 --> 00:15:14.070
+Yes, sir.
+
+212
+00:15:14.085 --> 00:15:15.676
+Whatever the steps that we are writing-
+
+213
+00:15:15.720 --> 00:15:15.720
+Yes, sir
+
+214
+00:15:15.720 --> 00:15:18.465
+... it should have finiteness. Okay.
+
+215
+00:15:18.885 --> 00:15:20.895
+What will be the next characteristic of an algorithm?
+
+216
+00:15:21.676 --> 00:15:22.545
+Definiteness.
+
+217
+00:15:23.056 --> 00:15:25.860
+Definiteness. Definiteness or definiteness.
+
+218
+00:15:25.935 --> 00:15:29.776
+That means that whatever the steps that you are writing in your algorithm, it
+
+219
+00:15:29.865 --> 00:15:35.295
+should be unambiguous. Now, again, a new English word, unambiguous.
+
+220
+00:15:35.355 --> 00:15:36.195
+Unambiguous means?
+
+221
+00:15:39.554 --> 00:15:41.176
+Something which is clear.
+
+222
+00:15:41.265 --> 00:15:43.485
+Clear. There should not be any confusion.
+
+223
+00:15:44.265 --> 00:15:47.265
+Okay, you can't write a very complicated statement in your algorithm.
+
+224
+00:15:47.985 --> 00:15:52.200
+Just like I gave an example of tea. In the tea, everything is very clear and crisp.
+
+225
+00:15:53.475 --> 00:15:54.855
+Okay? Everything is defined.
+
+226
+00:15:56.205 --> 00:16:00.435
+Okay. Now, if I come up with a very hypothetical step that, hey, I need a water
+
+227
+00:16:00.496 --> 00:16:05.505
+which is coming from XYZ company, and then, a lot of other things which I...
+
+228
+00:16:05.565 --> 00:16:10.335
+If I add the complexity, obviously, it is not satisfying the requirement.
+
+229
+00:16:12.645 --> 00:16:14.746
+Okay? The requirement of the algorithm.
+
+230
+00:16:17.056 --> 00:16:19.845
+So what are the four things which we have discussed?
+
+231
+00:16:20.445 --> 00:16:24.854
+The input, the output, the definiteness, the finiteness.
+
+232
+00:16:26.235 --> 00:16:27.045
+I need one more.
+
+233
+00:16:29.625 --> 00:16:30.255
+Correctness.
+
+234
+00:16:31.095 --> 00:16:32.415
+Correctness we have already discussed.
+
+235
+00:16:34.485 --> 00:16:35.265
+Feasibility.
+
+236
+00:16:36.015 --> 00:16:37.215
+Feasibility. Yes.
+
+237
+00:16:38.475 --> 00:16:43.125
+Feasibility, or you can say the effectiveness of an algorithm, that whatever the
+
+238
+00:16:43.155 --> 00:16:48.375
+algorithm that you are writing, it should be executed with the number of available
+
+239
+00:16:48.465 --> 00:16:54.375
+resources. Suppose if my computer is of 2 GB RAM, and if I'm writing an algorithm
+
+240
+00:16:54.435 --> 00:16:59.295
+which is actually consuming 8 GB and 16 GB of memory, then do you think that that
+
+241
+00:16:59.355 --> 00:17:02.026
+memory is feasible, that algorithm is feasible?
+
+242
+00:17:03.765 --> 00:17:04.306
+No, sir.
+
+243
+00:17:05.715 --> 00:17:10.246
+Right. So these are the certain things you have to remember whenever you design
+
+244
+00:17:10.335 --> 00:17:15.361
+your algorithm. Your input, your output, your definiteness, your finiteness, and
+
+245
+00:17:15.405 --> 00:17:18.736
+the last is the effectiveness, or you can say the feasibility.
+
+246
+00:17:23.385 --> 00:17:25.665
+Okay, so we have discussed algorithm steps.
+
+247
+00:17:25.845 --> 00:17:28.515
+Okay, these are the things which I told you. Right.
+
+248
+00:17:28.605 --> 00:17:31.095
+So you don't need to remember each and every step, okay?
+
+249
+00:17:31.725 --> 00:17:35.084
+In the exam paper, they will simply ask you what is the algorithm, what are the
+
+250
+00:17:35.115 --> 00:17:36.405
+characteristics of an algorithm.
+
+251
+00:17:36.645 --> 00:17:41.655
+So you just have to mention algorithm, a basic example of algorithm, and then these
+
+252
+00:17:41.685 --> 00:17:45.315
+five steps: input, output, definiteness, finiteness, and effectiveness.
+
+253
+00:17:47.655 --> 00:17:47.910
+Clear?
+
+254
+00:17:51.075 --> 00:17:51.945
+Yes, sir.
+
+255
+00:17:52.035 --> 00:17:57.135
+Okay, so now, whenever you start develop any algorithm, so there are two
+
+256
+00:17:57.195 --> 00:18:01.515
+ways by which you can measure the effectiveness of an algorithm.
+
+257
+00:18:01.815 --> 00:18:06.045
+Right, the last step was effectiveness, how you can measure the effectiveness of an
+
+258
+00:18:06.075 --> 00:18:06.585
+algorithm.
+
+259
+00:18:08.025 --> 00:18:12.075
+I remember someone was saying the time complexity and the space complexity.
+
+260
+00:18:13.635 --> 00:18:14.385
+Yes, sir.
+
+261
+00:18:14.715 --> 00:18:20.205
+Right. So time complexity. The complexity measurement is the way of measurement
+
+262
+00:18:21.015 --> 00:18:23.265
+of any algorithm effectiveness.
+
+263
+00:18:25.125 --> 00:18:27.915
+Have you heard about the time complexity, space complexity?
+
+264
+00:18:29.670 --> 00:18:32.520
+In algorithm contest, any one of you?
+
+265
+00:18:32.790 --> 00:18:35.551
+Yes. Just know the symbol only.
+
+266
+00:18:35.611 --> 00:18:37.080
+You know the symbol only? Okay.
+
+267
+00:18:37.305 --> 00:18:37.305
+Yeah.
+
+268
+00:18:37.350 --> 00:18:42.121
+That's good. That's enough. Okay. From the exam standpoint, that is enough. Okay.
+
+269
+00:18:42.210 --> 00:18:46.230
+Obviously, I have never seen any questions on algorithmic complexity
+
+270
+00:18:47.790 --> 00:18:49.230
+in the last five to six years,
+
+271
+00:18:50.551 --> 00:18:52.320
+whatever the question paper I have seen.
+
+272
+00:18:53.790 --> 00:18:58.575
+Sir, can you just little elaborate this term that complexity, time complexity,
+
+273
+00:18:58.621 --> 00:19:02.895
+because it is everywhere in the book, but nothing is specifically about that.
+
+274
+00:19:03.285 --> 00:19:03.285
+Yeah.
+
+275
+00:19:03.330 --> 00:19:06.000
+It's just written the symbol everywhere.
+
+276
+00:19:06.121 --> 00:19:06.660
+Sure.
+
+277
+00:19:08.611 --> 00:19:09.570
+Yeah. So,
+
+278
+00:19:10.861 --> 00:19:14.699
+why do we need this? First of all, why do we need these notations?
+
+279
+00:19:15.301 --> 00:19:19.290
+You mentioned that these notations are mentioned everywhere in the book.
+
+280
+00:19:19.350 --> 00:19:19.365
+Mm-hmm.
+
+281
+00:19:19.440 --> 00:19:24.494
+Okay. You might have seen big O, little o, omega notation, theta notation,
+
+282
+00:19:24.600 --> 00:19:29.611
+something like that in your book. Right? Why do we need these notations?
+
+283
+00:19:32.670 --> 00:19:36.060
+Sir, just like you said, for feasibility.
+
+284
+00:19:36.075 --> 00:19:36.075
+Yeah.
+
+285
+00:19:36.121 --> 00:19:38.954
+Like how much space it will take, use case complexity.
+
+286
+00:19:38.954 --> 00:19:44.040
+If you have to measure the weight, you need a unit that is kilogram or gram.
+
+287
+00:19:44.130 --> 00:19:47.760
+If you need to measure a liquid, you need a liter or milliliter.
+
+288
+00:19:48.330 --> 00:19:52.590
+If you have to measure a distance, you need a kilometer, meter or centimeter. Okay?
+
+289
+00:19:52.680 --> 00:19:55.621
+So every measurement is associated with certain unit.
+
+290
+00:19:56.460 --> 00:20:02.310
+Similarly, for algorithmic measure, if you have to measure the time taken by
+
+291
+00:20:02.340 --> 00:20:07.770
+an algorithm to execute or to give the exact input,
+
+292
+00:20:08.280 --> 00:20:10.111
+that is called the time complexity.
+
+293
+00:20:12.780 --> 00:20:14.220
+Okay, I will go one by one.
+
+294
+00:20:14.400 --> 00:20:18.750
+Yeah, but sir, the different unit, how it tell that this-
+
+295
+00:20:19.500 --> 00:20:20.085
+I'll tell you.
+
+296
+00:20:20.085 --> 00:20:20.085
+Okay.
+
+297
+00:20:20.085 --> 00:20:20.640
+I'll tell you.
+
+298
+00:20:20.790 --> 00:20:21.149
+Okay.
+
+299
+00:20:21.690 --> 00:20:24.750
+Okay. So first understand the meaning of time complexity.
+
+300
+00:20:24.990 --> 00:20:30.361
+Is that clear to everyone? Time complexity means the time taken by an algorithm
+
+301
+00:20:31.710 --> 00:20:33.900
+to produce a desired output.
+
+302
+00:20:35.910 --> 00:20:38.940
+But sir, on different computers, it would take different amount of time.
+
+303
+00:20:39.000 --> 00:20:40.770
+So how will we measure that?
+
+304
+00:20:41.250 --> 00:20:46.680
+So that is why, your algorithm is depending on the number of resources.
+
+305
+00:20:48.600 --> 00:20:49.080
+Okay?
+
+306
+00:20:49.260 --> 00:20:53.910
+No, but you are saying the time complexity needs basically the amount of time an
+
+307
+00:20:54.030 --> 00:20:59.085
+algorithm takes, but different computers, on the basis of its performance, will
+
+308
+00:20:59.130 --> 00:21:02.760
+take different amount of time for the same algorithm, right?
+
+309
+00:21:02.820 --> 00:21:03.090
+Mm-hmm.
+
+310
+00:21:03.930 --> 00:21:04.530
+So it's not-
+
+311
+00:21:05.040 --> 00:21:10.440
+Whenever you design your algorithm, okay, you have to consider the available
+
+312
+00:21:10.470 --> 00:21:11.371
+resources also.
+
+313
+00:21:14.160 --> 00:21:18.210
+Okay? Okay, let me simplify. Suppose whenever we're writing a program,
+
+314
+00:21:19.500 --> 00:21:23.640
+okay, suppose you are creating a program of addition of two number.
+
+315
+00:21:24.480 --> 00:21:28.109
+I hope everyone knows how to add two numbers in any of the language.
+
+316
+00:21:28.170 --> 00:21:28.710
+Yes.
+
+317
+00:21:28.830 --> 00:21:29.190
+Yes.
+
+318
+00:21:29.460 --> 00:21:34.440
+Okay. Now, if you are creating on a
+
+319
+00:21:35.700 --> 00:21:38.430
+machine which is having a very high-end configuration.
+
+320
+00:21:38.460 --> 00:21:44.384
+Suppose it is having an SSD, it is having a 16 GB RAM, DDR3, DDR4 RAM, okay, with
+
+321
+00:21:44.430 --> 00:21:47.400
+GPU and everything is enabled. What do you think?
+
+322
+00:21:48.030 --> 00:21:50.190
+What is the time it will take to execute?
+
+323
+00:21:52.590 --> 00:21:54.090
+Some milliseconds, sir.
+
+324
+00:21:54.210 --> 00:21:55.680
+Some milliseconds?
+
+325
+00:21:55.740 --> 00:21:56.070
+Yeah.
+
+326
+00:21:56.160 --> 00:21:56.400
+Okay.
+
+327
+00:21:56.460 --> 00:22:00.240
+Sir, depends on the system that we are using to calculate.
+
+328
+00:22:00.330 --> 00:22:05.895
+Uh-huh. Okay. Understood. Suppose the same program is executed on a normal
+
+329
+00:22:05.970 --> 00:22:09.345
+machine. Okay? It is
+
+330
+00:22:11.220 --> 00:22:16.890
+having a very normal configuration, like 1 GB RAM, okay, and a very basic resource.
+
+331
+00:22:17.880 --> 00:22:20.820
+Now tell me, how much time it will take?
+
+332
+00:22:23.130 --> 00:22:27.240
+But how can you tell, sir, unless we know the specs of the system, right?
+
+333
+00:22:27.361 --> 00:22:31.470
+On a basic respect, okay, I'm giving you a very basic example.
+
+334
+00:22:31.861 --> 00:22:36.121
+Suppose you have a normal computer lab system, normal computer lab, which is very
+
+335
+00:22:36.210 --> 00:22:42.180
+basic, 1 GB RAM, okay, 250 GB hard disk, 100 GB hard disk.
+
+336
+00:22:45.210 --> 00:22:49.590
+Sir, it might take some second, like one second or two second.
+
+337
+00:22:50.986 --> 00:22:50.986
+Okay.
+
+338
+00:22:51.000 --> 00:22:54.390
+It depends upon the number of steps the algorithm has.
+
+339
+00:22:54.930 --> 00:22:55.320
+Correct.
+
+340
+00:22:56.640 --> 00:22:59.460
+So now the concept should be clear to everyone.
+
+341
+00:22:59.551 --> 00:23:01.770
+It is not dependent on the hardware configuration.
+
+342
+00:23:02.190 --> 00:23:03.960
+It is dependent on the number of steps.
+
+343
+00:23:04.170 --> 00:23:08.371
+It is dependent on the instruction, how you have written, how many variables you
+
+344
+00:23:08.430 --> 00:23:08.880
+have taken,
+
+345
+00:23:10.440 --> 00:23:11.790
+what logic you have followed.
+
+346
+00:23:14.220 --> 00:23:19.305
+Okay, so your algorithm execution will depend on how you have written this
+
+347
+00:23:19.500 --> 00:23:19.950
+statement.
+
+348
+00:23:21.301 --> 00:23:23.611
+Okay, the same algorithm will take the same time.
+
+349
+00:23:24.000 --> 00:23:29.986
+Sir, basically just like AI, sometimes this command is going on, that command is
+
+350
+00:23:30.000 --> 00:23:33.361
+going on. Is that maybe also related to this?
+
+351
+00:23:33.420 --> 00:23:33.915
+That-
+
+352
+00:23:33.990 --> 00:23:35.340
+Yeah. I
+
+353
+00:23:36.570 --> 00:23:39.060
+hope that everyone is using ChatGPT.
+
+354
+00:23:39.900 --> 00:23:40.290
+Yeah.
+
+355
+00:23:40.470 --> 00:23:40.680
+Right.
+
+356
+00:23:40.996 --> 00:23:40.996
+Yeah.
+
+357
+00:23:41.010 --> 00:23:46.260
+So whenever you use the ChatGPT, we have two ways to get the answer.
+
+358
+00:23:46.801 --> 00:23:51.210
+The first is the fastest model, which will give you the result based on the
+
+359
+00:23:51.270 --> 00:23:52.470
+available repository.
+
+360
+00:23:54.000 --> 00:23:54.150
+Yeah.
+
+361
+00:23:54.180 --> 00:23:57.765
+Okay? So if you ask a very simple question, what is data structure?
+
+362
+00:23:57.871 --> 00:24:02.190
+The ChatGPT will give you the definition of data structure, the type of data
+
+363
+00:24:02.280 --> 00:24:05.490
+structure, and everything along with the example.
+
+364
+00:24:05.611 --> 00:24:05.760
+Yeah.
+
+365
+00:24:05.970 --> 00:24:09.150
+Okay? Because it is stored in their repository.
+
+366
+00:24:09.240 --> 00:24:12.390
+The second way of searching in the ChatGPT is the thinking mode.
+
+367
+00:24:13.320 --> 00:24:15.239
+I hope that you all have seen the thinking mode.
+
+368
+00:24:16.590 --> 00:24:17.010
+Yeah.
+
+369
+00:24:17.190 --> 00:24:20.220
+It is just at bottom left corner.
+
+370
+00:24:20.970 --> 00:24:21.270
+Yes, sir.
+
+371
+00:24:21.840 --> 00:24:27.630
+Right. So if you enable the thinking mode, now it will give you the result based
+
+372
+00:24:27.810 --> 00:24:32.880
+on the current state, and it will start thinking from your perspective, and then it
+
+373
+00:24:32.940 --> 00:24:33.960
+will give you the result.
+
+374
+00:24:36.240 --> 00:24:41.670
+Okay, so the same query will generate different output
+
+375
+00:24:42.750 --> 00:24:44.220
+based on the mode selection.
+
+376
+00:24:48.270 --> 00:24:54.180
+Okay, so what is happening, now it is not using its pre-stored repository.
+
+377
+00:24:54.614 --> 00:24:59.910
+It is now making a request to the public repositories, which are actually available
+
+378
+00:25:00.000 --> 00:25:04.170
+on the Google or any other social media platform or any other searching platform,
+
+379
+00:25:04.230 --> 00:25:07.111
+and there it will gather the request response.
+
+380
+00:25:09.450 --> 00:25:12.780
+Okay, so now the thinking mode will always take time,
+
+381
+00:25:14.010 --> 00:25:18.780
+while if you are sending the request directly without enabling the thinking mode,
+
+382
+00:25:19.290 --> 00:25:21.420
+it will be executed in a less time.
+
+383
+00:25:23.655 --> 00:25:29.160
+So the time complexity will tell us that how the running time will grow when the
+
+384
+00:25:29.250 --> 00:25:34.890
+amount of data increase. So if I gave an example that suppose you have to add two
+
+385
+00:25:34.920 --> 00:25:35.371
+numbers,
+
+386
+00:25:36.780 --> 00:25:41.190
+okay, and then you have to give the output, the number of input is same, the number
+
+387
+00:25:41.250 --> 00:25:46.770
+of output is same. The time complexity will remain always same, irrespective of
+
+388
+00:25:46.830 --> 00:25:48.690
+whatever the machine that you are executing.
+
+389
+00:25:51.420 --> 00:25:52.545
+Is that clear to everyone?
+
+390
+00:25:55.080 --> 00:25:57.270
+We are not making changes in the input and output.
+
+391
+00:25:59.730 --> 00:26:04.530
+And that is not the case every time, because in the real world programming, the
+
+392
+00:26:04.620 --> 00:26:07.741
+input and output keeps on changing. It keeps on increasing.
+
+393
+00:26:07.785 --> 00:26:09.571
+Suppose your banking application.
+
+394
+00:26:09.630 --> 00:26:14.551
+Your banking applications are designed in such a way that it handles a multiple
+
+395
+00:26:14.611 --> 00:26:15.601
+input at the same time.
+
+396
+00:26:19.861 --> 00:26:23.250
+Right? Your gaming application. Your gaming application deals with the multiple
+
+397
+00:26:23.310 --> 00:26:28.995
+input at the same time. How can you clearly estimate that a person will click only
+
+398
+00:26:29.040 --> 00:26:33.150
+on these three buttons? There might be a possibility that if he want to click
+
+399
+00:26:33.180 --> 00:26:34.395
+multiple button at the same time,
+
+400
+00:26:35.970 --> 00:26:38.504
+then how you will determine that, how your algorithm will behave?
+
+401
+00:26:39.750 --> 00:26:43.111
+So that is the beauty of the time complexity and the space complexity.
+
+402
+00:26:43.470 --> 00:26:48.510
+You have to determine that how this algorithm will behave if I'm increasing the
+
+403
+00:26:48.540 --> 00:26:51.690
+number of input, if I'm increasing the number of amount of the data.
+
+404
+00:26:53.700 --> 00:26:57.420
+Okay, suppose as of now, my algorithm is only accepting two inputs.
+
+405
+00:26:58.230 --> 00:27:01.020
+It is working fine. It is giving me an output in millisecond.
+
+406
+00:27:02.130 --> 00:27:05.970
+Now, what will happen if I increase the out number of input, if I increase the
+
+407
+00:27:06.000 --> 00:27:11.010
+amount of data? Obviously, it will take more time. Are you guys agreeing with this?
+
+408
+00:27:13.080 --> 00:27:13.470
+Yes, sir.
+
+409
+00:27:13.890 --> 00:27:19.351
+Yes. The algorithm which is taking input, okay, because in my case, I have given
+
+410
+00:27:19.440 --> 00:27:24.241
+you the constraint that I need a program which will only accept two number.
+
+411
+00:27:25.380 --> 00:27:28.080
+So irrespective of any machine, it will only take two number.
+
+412
+00:27:30.210 --> 00:27:31.950
+The amount of data is not going to increase.
+
+413
+00:27:33.150 --> 00:27:35.851
+So we will have the constant time complexity
+
+414
+00:27:39.258 --> 00:27:43.639
+But if my amount of data is increasing, then what will happen?
+
+415
+00:27:45.378 --> 00:27:47.058
+My time complexity will also grow.
+
+416
+00:27:48.649 --> 00:27:50.748
+Suppose it is taking one millisecond at this moment.
+
+417
+00:27:51.258 --> 00:27:54.288
+If the amount of data grows, then what will happen?
+
+418
+00:27:54.603 --> 00:27:56.208
+It will take more time to execute.
+
+419
+00:27:58.308 --> 00:27:58.997
+Yes, sir.
+
+420
+00:27:59.928 --> 00:28:04.518
+Right. Again, a very simple example because the complexity is very important topic.
+
+421
+00:28:04.818 --> 00:28:07.038
+Suppose you have four people. Suppose you have,
+
+422
+00:28:08.268 --> 00:28:12.468
+let's say, Utkarsh, Rahul, Amit, and Ravi. These are the four people you have.
+
+423
+00:28:13.669 --> 00:28:15.408
+Okay, and now you want to find the Ravi.
+
+424
+00:28:17.478 --> 00:28:21.858
+So your computer may check the first person name. It is matching? No.
+
+425
+00:28:22.218 --> 00:28:25.848
+Go to the second person name. No. Third person name. No. Fourth person. Yes.
+
+426
+00:28:26.149 --> 00:28:29.268
+So what it will do is, what it is doing, it is taking the item one by one.
+
+427
+00:28:31.639 --> 00:28:33.649
+Agree? Yes or no?
+
+428
+00:28:33.708 --> 00:28:34.158
+Yes, sir.
+
+429
+00:28:34.818 --> 00:28:37.218
+Okay. So what will be the time complexity of this is?
+
+430
+00:28:37.399 --> 00:28:40.188
+Linear, depending on the number of input?
+
+431
+00:28:40.639 --> 00:28:42.348
+Yes. O .
+
+432
+00:28:42.438 --> 00:28:44.448
+Okay, so O will be the time complexity.
+
+433
+00:28:47.508 --> 00:28:47.718
+Now-
+
+434
+00:28:47.808 --> 00:28:47.973
+Yes
+
+435
+00:28:48.318 --> 00:28:54.078
+... if I ask you that now we have 1,000 people, and then you have to find
+
+436
+00:28:54.108 --> 00:29:00.078
+out the particular person, XYZ. So obviously
+
+437
+00:29:00.139 --> 00:29:02.568
+the more the number of the student, more will be the time.
+
+438
+00:29:04.818 --> 00:29:05.328
+Yes, sir.
+
+439
+00:29:05.839 --> 00:29:06.018
+Yes.
+
+440
+00:29:06.228 --> 00:29:09.408
+But the time complexity will always remain constant, O ?
+
+441
+00:29:09.529 --> 00:29:10.233
+O , yes, sir.
+
+442
+00:29:11.118 --> 00:29:16.698
+Okay. So this is how the time complexity is measured because the way
+
+443
+00:29:17.389 --> 00:29:21.498
+through which we have written our program, the way our computer program is checking
+
+444
+00:29:21.529 --> 00:29:24.198
+the instruction, this is how they determine
+
+445
+00:29:26.208 --> 00:29:27.318
+the time complexity.
+
+446
+00:29:28.548 --> 00:29:34.008
+Now, if I have included the binary search or, what I say, the
+
+447
+00:29:34.998 --> 00:29:37.428
+different searching technique. Okay.
+
+448
+00:29:37.548 --> 00:29:40.038
+There are two types of searching technique, linear searching, binary search.
+
+449
+00:29:40.669 --> 00:29:41.748
+I hope you know these things.
+
+450
+00:29:42.018 --> 00:29:42.438
+Yes. Yes, sir.
+
+451
+00:29:42.483 --> 00:29:45.649
+Right. So what we are doing right now is linear searching.
+
+452
+00:29:45.889 --> 00:29:47.058
+We are doing one-by-one check.
+
+453
+00:29:48.288 --> 00:29:51.258
+Now, if I do the binary search, then what will happen?
+
+454
+00:29:51.318 --> 00:29:52.698
+The time complexity will change.
+
+455
+00:29:53.478 --> 00:29:53.718
+Yes.
+
+456
+00:29:54.649 --> 00:29:56.089
+Okay. It will become a login.
+
+457
+00:29:56.149 --> 00:29:56.628
+Login.
+
+458
+00:29:58.698 --> 00:30:00.483
+I hope, Ashima, you're-
+
+459
+00:30:03.108 --> 00:30:03.123
+Yes, sir
+
+460
+00:30:03.123 --> 00:30:05.448
+... understand the concept of login and login.
+
+461
+00:30:06.018 --> 00:30:06.108
+Yes.
+
+462
+00:30:06.169 --> 00:30:10.818
+Right. So login means anything, any value which is less than N. Okay?
+
+463
+00:30:10.908 --> 00:30:12.378
+Then we will consider that slot.
+
+464
+00:30:13.968 --> 00:30:18.858
+Sir, how do we decide means, what is difference between big O and omega and-
+
+465
+00:30:18.948 --> 00:30:23.358
+Yeah, I'm coming to that topic. But are you guys clear with the time complexity?
+
+466
+00:30:23.373 --> 00:30:23.868
+Yes, sir.
+
+467
+00:30:23.958 --> 00:30:24.889
+Yes, sir.
+
+468
+00:30:25.158 --> 00:30:28.848
+Okay. Now, moving on to the space complexity.
+
+469
+00:30:29.389 --> 00:30:32.358
+Okay, I will tell you big O, little o, everything. Okay.
+
+470
+00:30:32.868 --> 00:30:35.794
+Now, coming to the space complexity. Space complexity means?
+
+471
+00:30:38.149 --> 00:30:40.758
+How much space, uh, algorithm is taking.
+
+472
+00:30:41.628 --> 00:30:45.048
+Right. So again, it is all dependent on the number of inputs.
+
+473
+00:30:45.078 --> 00:30:49.487
+The space complexity will tell you that how much additional memory a program will
+
+474
+00:30:49.518 --> 00:30:52.608
+require if the input size will get grow.
+
+475
+00:30:56.688 --> 00:31:02.328
+Okay. For example, suppose you are creating a program where you are taking an
+
+476
+00:31:02.508 --> 00:31:08.328
+age or salary as an input. Okay, so suppose if my age is 35,
+
+477
+00:31:08.628 --> 00:31:13.368
+okay, so if I will write int age is equal to 35, int salary, let's say
+
+478
+00:31:13.428 --> 00:31:19.308
+15,000. 15,000 is my salary. Okay, so what I'm doing is I'm using a fixed number of
+
+479
+00:31:19.368 --> 00:31:22.608
+variables. I have defined the age as constant.
+
+480
+00:31:22.938 --> 00:31:25.368
+I have defined my salary as a fixed constant.
+
+481
+00:31:26.899 --> 00:31:31.458
+So even if the input will become huge, for example, if I say that, okay, salary is
+
+482
+00:31:31.488 --> 00:31:36.514
+not 15,000, salary is 50 lakh, what do you think? What will be my space complexity?
+
+483
+00:31:40.008 --> 00:31:42.318
+The space complexity will be constant. Why?
+
+484
+00:31:42.378 --> 00:31:44.508
+Because we are using the constant values.
+
+485
+00:31:46.578 --> 00:31:47.089
+Yes, sir.
+
+486
+00:31:47.598 --> 00:31:53.582
+But if I'm using some variables value, suppose my salary is 50,000
+
+487
+00:31:53.598 --> 00:31:59.524
+rupees plus XYZ of 10% of XYZ, and then 70%
+
+488
+00:31:59.598 --> 00:32:03.108
+of DA and 80% of HR, something like that.
+
+489
+00:32:03.198 --> 00:32:06.978
+Then now what my data is, my data is continuously growing. It is not fixed.
+
+490
+00:32:08.133 --> 00:32:13.968
+So now the space complexity will get changed because now my amount of
+
+491
+00:32:13.998 --> 00:32:14.928
+data is increasing.
+
+492
+00:32:18.858 --> 00:32:19.938
+Is that clear to everyone?
+
+493
+00:32:20.808 --> 00:32:21.169
+Yes, sir.
+
+494
+00:32:22.128 --> 00:32:22.818
+Sir, I just-
+
+495
+00:32:22.893 --> 00:32:22.893
+Yes
+
+496
+00:32:23.268 --> 00:32:25.068
+... want to clear this up.
+
+497
+00:32:27.078 --> 00:32:32.419
+If in the time complexity, we are growing the value, or we are
+
+498
+00:32:32.478 --> 00:32:34.038
+growing the data-
+
+499
+00:32:34.428 --> 00:32:34.654
+Mm-hmm
+
+500
+00:32:34.669 --> 00:32:37.188
+... I mean, the data is increasing, then it will be-
+
+501
+00:32:37.473 --> 00:32:37.473
+Mm-hmm
+
+502
+00:32:37.878 --> 00:32:41.389
+... constant, and in space complexity, it will not be constant.
+
+503
+00:32:41.419 --> 00:32:43.068
+That's what you mean, sir?
+
+504
+00:32:43.698 --> 00:32:44.268
+Yes.
+
+505
+00:32:47.478 --> 00:32:47.748
+Okay.
+
+506
+00:32:47.808 --> 00:32:48.169
+Sir?
+
+507
+00:32:49.248 --> 00:32:49.518
+Yeah.
+
+508
+00:32:50.238 --> 00:32:55.264
+Sir, will the space complexity will depend on the data types we use in an
+
+509
+00:32:55.264 --> 00:32:55.818
+algorithm?
+
+510
+00:32:56.133 --> 00:32:56.133
+Yep.
+
+511
+00:32:56.178 --> 00:32:57.318
+Like in Java-
+
+512
+00:32:57.678 --> 00:32:57.993
+Mm-hmm
+
+513
+00:32:58.458 --> 00:33:02.508
+... number data type have different byte size-
+
+514
+00:33:02.688 --> 00:33:02.733
+Mm-hmm
+
+515
+00:33:02.733 --> 00:33:04.578
+... character have different byte size.
+
+516
+00:33:04.608 --> 00:33:04.908
+Mm-hmm.
+
+517
+00:33:05.298 --> 00:33:10.848
+In space complexity will change whether we use number or character,
+
+518
+00:33:10.863 --> 00:33:11.328
+right?
+
+519
+00:33:11.568 --> 00:33:15.048
+This is right. No, it's depending on the data type. Okay.
+
+520
+00:33:16.038 --> 00:33:21.468
+In C, the space complexity might be different if you are using any other language
+
+521
+00:33:21.529 --> 00:33:27.348
+like Java or .NET or Python or, I mean, the newly born language
+
+522
+00:33:27.378 --> 00:33:31.158
+like Rust, Scala, and Perl, Ruby, et cetera.
+
+523
+00:33:31.518 --> 00:33:34.998
+So you will get a different set of data types.
+
+524
+00:33:36.348 --> 00:33:37.038
+So it depends-
+
+525
+00:33:37.158 --> 00:33:37.383
+Yes
+
+526
+00:33:37.908 --> 00:33:41.928
+... what data type you are using. Okay. Now, coming to the measurement.
+
+527
+00:33:42.018 --> 00:33:45.798
+So as I mentioned in the beginning, that you need a certain unit to measure.
+
+528
+00:33:47.419 --> 00:33:53.328
+So for measuring the time complexity and the space complexity, okay, you need
+
+529
+00:33:53.389 --> 00:33:57.948
+a measurement, and those measurement are called as, those units are called as
+
+530
+00:33:58.339 --> 00:34:01.998
+asymptotic notations. Have you heard this term, asymptotic notation?
+
+531
+00:34:04.038 --> 00:34:04.757
+No, sir.
+
+532
+00:34:06.678 --> 00:34:08.149
+Anyone? Yes, no?
+
+533
+00:34:09.919 --> 00:34:10.908
+No, sir.
+
+534
+00:34:10.983 --> 00:34:11.373
+No, sir.
+
+535
+00:34:11.373 --> 00:34:11.658
+No? Okay.
+
+536
+00:34:11.748 --> 00:34:13.788
+Heard about that, but don't know about that.
+
+537
+00:34:15.589 --> 00:34:17.569
+Okay. This is written in your module number one only.
+
+538
+00:34:18.169 --> 00:34:18.798
+Yeah.
+
+539
+00:34:20.658 --> 00:34:25.518
+Okay, the asymptotic notation. So asymptotic, I can write into the chat so that you
+
+540
+00:34:25.578 --> 00:34:25.774
+can
+
+541
+00:34:27.018 --> 00:34:28.458
+search on Google as well.
+
+542
+00:34:30.828 --> 00:34:34.578
+It is asymptotic
+
+543
+00:34:36.138 --> 00:34:37.008
+notations.
+
+544
+00:34:40.548 --> 00:34:43.819
+I hope my chat is visible to everyone.
+
+545
+00:34:49.308 --> 00:34:50.237
+Yes, sir.
+
+546
+00:34:50.328 --> 00:34:52.339
+Okay. Yeah, so asymptotic notation.
+
+547
+00:34:52.413 --> 00:34:56.358
+So asymptotic notation will tell you that how you can measure the time and the
+
+548
+00:34:56.373 --> 00:35:01.143
+space complexity. So we have big O, little o, big Theta, I mean Theta notations, et
+
+549
+00:35:01.158 --> 00:35:03.588
+cetera. So let's start with the first one, that is big O.
+
+550
+00:35:04.068 --> 00:35:06.618
+What do you mean by big O? Any idea?
+
+551
+00:35:10.038 --> 00:35:12.768
+Sir, it measures the worst case.
+
+552
+00:35:12.978 --> 00:35:13.998
+It measures the worst case.
+
+553
+00:35:14.628 --> 00:35:14.838
+Yeah.
+
+554
+00:35:14.943 --> 00:35:15.558
+No, sir, big O.
+
+555
+00:35:18.199 --> 00:35:23.688
+Big O, yeah. I mean, pick up. So big O will always tell you the upper bound of an
+
+556
+00:35:23.718 --> 00:35:25.308
+algorithm.
+
+557
+00:35:26.598 --> 00:35:29.118
+So you are absolutely right, the worst case.
+
+558
+00:35:30.003 --> 00:35:35.838
+I mean, it will tell you that how much time can this algorithm will take
+
+559
+00:35:35.928 --> 00:35:37.353
+at worst-case scenario.
+
+560
+00:35:40.699 --> 00:35:43.878
+Okay. So for example, suppose, everyone is familiar with the loop?
+
+561
+00:35:46.038 --> 00:35:46.398
+Yes, sir.
+
+562
+00:35:46.458 --> 00:35:46.878
+Yes, sir.
+
+563
+00:35:47.298 --> 00:35:50.538
+Right. Suppose if I create a loop, okay, I am using a for loop.
+
+564
+00:35:52.128 --> 00:35:56.868
+For i is equal to zero, I'm initializing with zero, i is less than n,
+
+565
+00:35:57.228 --> 00:35:58.128
+i++.
+
+566
+00:35:59.808 --> 00:36:02.868
+And then what I'm doing is I'm printing the value of i.
+
+567
+00:36:06.108 --> 00:36:08.898
+Can you tell me how many times this loop will execute?
+
+568
+00:36:09.708 --> 00:36:10.188
+n times.
+
+569
+00:36:10.968 --> 00:36:12.168
+n time?
+
+570
+00:36:12.199 --> 00:36:12.348
+Yes.
+
+571
+00:36:12.438 --> 00:36:13.368
+Yes, sir.
+
+572
+00:36:13.458 --> 00:36:18.738
+Okay, so what will be the time complexity? The time complexity of this is O .
+
+573
+00:36:18.753 --> 00:36:18.753
+O .
+
+574
+00:36:19.638 --> 00:36:19.654
+O .
+
+575
+00:36:19.668 --> 00:36:24.199
+Okay, why? Because the algorithm which we have written, this algorithm will not
+
+576
+00:36:24.318 --> 00:36:26.208
+grow faster than the approximately,
+
+577
+00:36:27.798 --> 00:36:29.148
+the value which we have defined, n.
+
+578
+00:36:29.868 --> 00:36:34.233
+If I say that, okay, that this value is going beyond the value of n, no, it will
+
+579
+00:36:34.279 --> 00:36:38.148
+never happen. It will only take one by one, because this is a loop.
+
+580
+00:36:40.279 --> 00:36:45.078
+So the maximum value is defined earlier. The upper bound is already defined as n.
+
+581
+00:36:45.093 --> 00:36:45.093
+So-
+
+582
+00:36:47.118 --> 00:36:48.949
+So whenever you have
+
+583
+00:36:50.658 --> 00:36:54.753
+upper value which is already defined of an algorithm, you will always measure in
+
+584
+00:36:54.798 --> 00:36:55.878
+terms of big O.
+
+585
+00:36:58.818 --> 00:37:02.238
+Any doubts before we move into the little o?
+
+586
+00:37:07.098 --> 00:37:09.138
+Clear to everyone? Yes, no?
+
+587
+00:37:10.038 --> 00:37:10.518
+Yes, sir.
+
+588
+00:37:12.978 --> 00:37:13.173
+Okay.
+
+589
+00:37:14.658 --> 00:37:19.998
+Moving on to the omega. Can you tell me what does this omega notation signifies?
+
+590
+00:37:21.228 --> 00:37:24.949
+Sir, it signifies the best case, the lower bound.
+
+591
+00:37:24.978 --> 00:37:25.818
+The lower bound.
+
+592
+00:37:26.478 --> 00:37:30.978
+Lower bound. Yes. So O notation, the big O will always tell you the upper bound.
+
+593
+00:37:31.758 --> 00:37:34.188
+The omega will always give you the lower bound.
+
+594
+00:37:35.358 --> 00:37:40.699
+That means that what is the minimum amount of work this algorithm must do in order
+
+595
+00:37:40.728 --> 00:37:41.598
+to get the result.
+
+596
+00:37:45.108 --> 00:37:48.708
+Okay. For example, I hope everyone is familiar with the linear search.
+
+597
+00:37:48.858 --> 00:37:50.088
+Suppose we have four element
+
+598
+00:37:51.648 --> 00:37:53.538
+and I want to search the first element only.
+
+599
+00:37:55.248 --> 00:37:56.568
+Then how much time it will take?
+
+600
+00:38:00.378 --> 00:38:02.688
+The first element, obviously the constant time.
+
+601
+00:38:03.228 --> 00:38:03.858
+Okay.
+
+602
+00:38:04.368 --> 00:38:05.478
+That is omega one.
+
+603
+00:38:07.818 --> 00:38:07.998
+Yes.
+
+604
+00:38:09.048 --> 00:38:14.568
+Right. So omega notation will always give you the lower bound of an algorithm.
+
+605
+00:38:20.688 --> 00:38:25.008
+Okay. That means that what is the minimum amount of time, what is the minimum
+
+606
+00:38:25.068 --> 00:38:27.228
+amount of work this algorithm will do.
+
+607
+00:38:29.418 --> 00:38:34.308
+Now, moving on to the last one. That is the theta notation. Theta is a which bound?
+
+608
+00:38:34.638 --> 00:38:35.523
+Upper bound or lower bound?
+
+609
+00:38:35.718 --> 00:38:37.188
+Tight bound.
+
+610
+00:38:37.279 --> 00:38:38.178
+Theta is a tight bound.
+
+611
+00:38:38.298 --> 00:38:39.768
+Tight bound.
+
+612
+00:38:39.828 --> 00:38:42.618
+Tight bound means that both upper and lower.
+
+613
+00:38:44.088 --> 00:38:49.699
+So if an algorithm is growing at a constant rate, at the same rate in both the
+
+614
+00:38:49.728 --> 00:38:55.098
+upper side and both the lower side, then it will be called as the theta notation.
+
+615
+00:38:55.158 --> 00:38:58.188
+Can you give me an example of theta notation?
+
+616
+00:39:04.098 --> 00:39:10.068
+Anyone. Consider the same loop which I told
+
+617
+00:39:10.128 --> 00:39:15.318
+you. For loop, int I is equal 0, I is less than N,
+
+618
+00:39:15.949 --> 00:39:16.758
+I++.
+
+619
+00:39:18.093 --> 00:39:22.068
+And then what we are doing is system.out.print ln I.
+
+620
+00:39:24.828 --> 00:39:30.018
+Now, can anyone of you tell me what is the maximum number of step it can take?
+
+621
+00:39:32.928 --> 00:39:33.078
+N.
+
+622
+00:39:34.473 --> 00:39:35.583
+N. So N is the upper bound?
+
+623
+00:39:36.108 --> 00:39:36.378
+Yes.
+
+624
+00:39:37.128 --> 00:39:39.783
+Okay. What is the minimum number of steps?
+
+625
+00:39:42.678 --> 00:39:42.949
+One.
+
+626
+00:39:44.688 --> 00:39:45.078
+Minimum.
+
+627
+00:39:52.188 --> 00:39:53.238
+Minimum is also N.
+
+628
+00:39:54.708 --> 00:39:54.738
+I
+
+629
+00:39:56.238 --> 00:40:01.652
+mean, this loop which I told you, I is equal to 0, I is less than N, I++,
+
+630
+00:40:02.328 --> 00:40:04.488
+it cannot run significantly less than N time.
+
+631
+00:40:05.178 --> 00:40:05.283
+Right.
+
+632
+00:40:05.328 --> 00:40:07.398
+It will have to follow the complete loop, right?
+
+633
+00:40:08.838 --> 00:40:09.408
+Yes, sir.
+
+634
+00:40:09.978 --> 00:40:13.248
+Okay. And it also cannot run significantly more than N time.
+
+635
+00:40:15.378 --> 00:40:15.588
+Yes.
+
+636
+00:40:16.279 --> 00:40:19.788
+Okay. So therefore, the time complexity of this case will be theta N.
+
+637
+00:40:25.848 --> 00:40:26.628
+Is that clear?
+
+638
+00:40:27.138 --> 00:40:27.318
+Yes.
+
+639
+00:40:27.408 --> 00:40:30.798
+Omega, O and theta notation. Any doubts?
+
+640
+00:40:32.898 --> 00:40:35.418
+Sir, theta I didn't get it, sir, actually.
+
+641
+00:40:36.048 --> 00:40:36.288
+Yeah.
+
+642
+00:40:36.558 --> 00:40:39.708
+Sir, theta means is it like
+
+643
+00:40:41.568 --> 00:40:47.328
+when we require an output and when we use the best config laptop and the
+
+644
+00:40:47.388 --> 00:40:50.418
+worst config laptop, and both the time is same-
+
+645
+00:40:50.898 --> 00:40:51.048
+Mm-hmm.
+
+646
+00:40:51.108 --> 00:40:51.949
+For that algorithm.
+
+647
+00:40:54.078 --> 00:40:55.128
+Yeah.
+
+648
+00:40:56.748 --> 00:40:56.898
+So,
+
+649
+00:40:58.338 --> 00:41:02.628
+sorry, I forgot. Amrita, were you asking the theta notation?
+
+650
+00:41:03.588 --> 00:41:04.158
+Yes, sir.
+
+651
+00:41:04.758 --> 00:41:08.029
+Okay, Amrita, so theta notation means tight bound.
+
+652
+00:41:08.088 --> 00:41:13.038
+That means whatever the algorithm you have designed, it will take the constant time
+
+653
+00:41:13.128 --> 00:41:13.638
+everywhere.
+
+654
+00:41:15.438 --> 00:41:18.138
+Either in the worst case scenario or the best case scenario.
+
+655
+00:41:18.258 --> 00:41:22.728
+Every time it will take the same time. Both worst case and best case are same.
+
+656
+00:41:24.138 --> 00:41:27.423
+Okay. Even if we increase the data also that will-
+
+657
+00:41:27.949 --> 00:41:32.208
+That also. Yeah. In that case also, it will take the same time.
+
+658
+00:41:33.288 --> 00:41:35.718
+So that will be your tight bound, theta.
+
+659
+00:41:36.768 --> 00:41:37.938
+Okay.
+
+660
+00:41:38.779 --> 00:41:41.508
+Okay? Now, moving on to the next one. That is little o.
+
+661
+00:41:42.618 --> 00:41:44.358
+Okay, what type of bound little o is?
+
+662
+00:41:49.578 --> 00:41:51.348
+Omega, lower bound.
+
+663
+00:41:52.338 --> 00:41:54.783
+No. What is o? O is the upper bound.
+
+664
+00:41:55.518 --> 00:41:56.208
+Oh, got you.
+
+665
+00:41:56.808 --> 00:41:58.638
+So little o is strict upper bound.
+
+666
+00:42:00.768 --> 00:42:01.038
+Okay.
+
+667
+00:42:01.324 --> 00:42:05.029
+Okay? So whenever you write little o, you have to mention strict upper bound.
+
+668
+00:42:06.858 --> 00:42:09.529
+Now, what do you mean by strict upper bound?
+
+669
+00:42:15.199 --> 00:42:17.449
+In that it will check only the upper bound.
+
+670
+00:42:18.648 --> 00:42:24.588
+It means that whatever the algorithm we have, it will grow strictly slower than the
+
+671
+00:42:24.648 --> 00:42:25.428
+another function.
+
+672
+00:42:27.858 --> 00:42:30.693
+That means, for example, suppose we have
+
+673
+00:42:33.468 --> 00:42:34.443
+big O N square
+
+674
+00:42:35.748 --> 00:42:40.998
+and little o n square. So if I compare between big O N square and little o n
+
+675
+00:42:41.178 --> 00:42:43.279
+square. Okay, this is the time complexity.
+
+676
+00:42:45.258 --> 00:42:47.298
+So it is all dependent on the value of N.
+
+677
+00:42:49.908 --> 00:42:54.348
+Big O N square is also dependent on N, and little o n square is also dependent on
+
+678
+00:42:54.529 --> 00:42:54.708
+N.
+
+679
+00:42:57.708 --> 00:43:03.558
+As soon as the N becomes very large, okay, suppose initially the
+
+680
+00:43:03.618 --> 00:43:06.108
+value of N is one or two or three, which is fine.
+
+681
+00:43:06.798 --> 00:43:10.203
+In that case, both the algorithms, the big O and little o, will give the same
+
+682
+00:43:10.218 --> 00:43:15.858
+result. But now assume that the value of N is keep on increasing.
+
+683
+00:43:16.007 --> 00:43:19.022
+Now the value of N is thousand or millions.
+
+684
+00:43:21.468 --> 00:43:23.508
+Okay, in that case, what will happen?
+
+685
+00:43:24.768 --> 00:43:30.138
+Even the N is becoming a very large, the complexity of the little o
+
+686
+00:43:30.828 --> 00:43:32.658
+will become much slower.
+
+687
+00:43:34.518 --> 00:43:35.988
+Very slower rate.
+
+688
+00:43:40.728 --> 00:43:44.328
+Okay. So big O will always give you the upper limit.
+
+689
+00:43:45.378 --> 00:43:47.808
+The omega will give you the lower limit.
+
+690
+00:43:48.588 --> 00:43:53.598
+And then even in the upper limit, if you have to strictly match,
+
+691
+00:43:54.228 --> 00:43:57.918
+strictly bound to the upper limit, then it will be called as little o.
+
+692
+00:43:57.949 --> 00:43:59.779
+Little o, I mean, this is very rare.
+
+693
+00:43:59.838 --> 00:44:04.848
+I mean, I haven't seen any algorithm which is having a little o complexity.
+
+694
+00:44:05.103 --> 00:44:10.128
+In most of the algorithm which I have seen, their complexity usually lies between
+
+695
+00:44:11.298 --> 00:44:12.378
+big O and omega.
+
+696
+00:44:17.958 --> 00:44:20.763
+I hope that now I'm able to solve a little bit doubt
+
+697
+00:44:22.428 --> 00:44:24.558
+of time complexity.
+
+698
+00:44:24.618 --> 00:44:25.158
+Yes, sir.
+
+699
+00:44:25.338 --> 00:44:26.568
+Yes, sir.
+
+700
+00:44:27.918 --> 00:44:33.228
+Okay. Yeah, I mean, it is defined in a very detailed manner in your SLN.
+
+701
+00:44:35.118 --> 00:44:37.248
+So you can refer to that.
+
+702
+00:44:38.478 --> 00:44:42.828
+Okay, so this is what we have discussed so far, the time and the space complexity.
+
+703
+00:44:43.098 --> 00:44:44.868
+Okay. Going ahead,
+
+704
+00:44:47.538 --> 00:44:53.058
+algorithm analysis we have discussed, length of the program, ease of programming we
+
+705
+00:44:53.088 --> 00:44:55.788
+have done. Okay, the need for data structure.
+
+706
+00:44:56.178 --> 00:44:58.578
+I hope everyone understand what is the need of data structure.
+
+707
+00:45:01.279 --> 00:45:01.548
+Yes.
+
+708
+00:45:02.388 --> 00:45:07.683
+Okay. Data structure, the need is to how you can organize the data so that you can
+
+709
+00:45:07.788 --> 00:45:10.998
+more efficiently access the data whenever you want.
+
+710
+00:45:12.318 --> 00:45:15.768
+And it should take less time complexity and less space complexity.
+
+711
+00:45:16.758 --> 00:45:20.088
+This is the ultimate goal of having a data structure.
+
+712
+00:45:20.808 --> 00:45:26.088
+Whatever the program that we are designing, it should have less time, less space,
+
+713
+00:45:27.408 --> 00:45:28.998
+because resources are very costly.
+
+714
+00:45:31.098 --> 00:45:33.498
+Okay, time is precious. Resources are costly.
+
+715
+00:45:33.798 --> 00:45:35.628
+You can't waste your time in a single program.
+
+716
+00:45:39.348 --> 00:45:39.558
+Okay?
+
+717
+00:45:41.178 --> 00:45:43.038
+Now, how you select the data structure?
+
+718
+00:45:44.988 --> 00:45:48.333
+Do you think that you can work with the same data structure every time?
+
+719
+00:45:50.491 --> 00:45:53.714
+Depending on the use case, sir, what we want to do with the data.
+
+720
+00:45:53.790 --> 00:45:56.160
+Correct. So depending on the use cases.
+
+721
+00:45:58.351 --> 00:46:04.290
+What's your requirement? If your priority is searching, then you can
+
+722
+00:46:04.351 --> 00:46:09.241
+go with a different data type. Okay, if your priority is only sorting, then you can
+
+723
+00:46:09.300 --> 00:46:11.580
+go with a different data structure.
+
+724
+00:46:12.270 --> 00:46:15.450
+So it's all depending on how you want to tackle.
+
+725
+00:46:18.390 --> 00:46:21.991
+Any idea? Do you know what are the different type of data structure we have?
+
+726
+00:46:24.540 --> 00:46:26.445
+Sir, like stack-
+
+727
+00:46:26.445 --> 00:46:27.360
+List or a-
+
+728
+00:46:28.260 --> 00:46:32.160
+Linked list, and then tree, stack.
+
+729
+00:46:32.221 --> 00:46:32.790
+Mm-hmm.
+
+730
+00:46:32.851 --> 00:46:33.510
+And map.
+
+731
+00:46:35.280 --> 00:46:36.270
+Tree graph.
+
+732
+00:46:38.160 --> 00:46:43.170
+Right. So as a programmer, your job is to choose the right data structure based on
+
+733
+00:46:43.260 --> 00:46:47.851
+the nature of the data and whatever the process that needs to be performed.
+
+734
+00:46:47.971 --> 00:46:52.110
+So if you choose the wrong structure, obviously your program might run very slowly.
+
+735
+00:46:53.550 --> 00:46:55.590
+Okay, so from the data structure point of view,
+
+736
+00:46:57.030 --> 00:47:00.570
+your algorithm will fall into several categories.
+
+737
+00:47:00.930 --> 00:47:05.700
+Okay, so you might have the searching algorithm, you might have the sorting
+
+738
+00:47:05.760 --> 00:47:10.440
+algorithm, insertion algorithm, update algorithm, or deletion algorithm.
+
+739
+00:47:14.640 --> 00:47:15.825
+Okay. So now,
+
+740
+00:47:17.370 --> 00:47:20.670
+let's take a few different example. So yeah.
+
+741
+00:47:20.940 --> 00:47:22.410
+So there are two types of data structure.
+
+742
+00:47:22.440 --> 00:47:25.020
+The primitive data structure and non-primitive data structure.
+
+743
+00:47:25.739 --> 00:47:27.616
+Any idea what is primitive and non-primitive?
+
+744
+00:47:28.800 --> 00:47:32.160
+Primitives, sir, they are inbuilt in the language.
+
+745
+00:47:32.221 --> 00:47:32.520
+Mm-hmm.
+
+746
+00:47:32.640 --> 00:47:34.741
+For example, arrays, list.
+
+747
+00:47:35.221 --> 00:47:35.505
+Mm-hmm.
+
+748
+00:47:35.971 --> 00:47:37.410
+And non-primitive is
+
+749
+00:47:38.790 --> 00:47:41.250
+manmade, made by a programmer.
+
+750
+00:47:41.851 --> 00:47:42.991
+Mm-hmm.
+
+751
+00:47:43.080 --> 00:47:43.680
+Yeah.
+
+752
+00:47:43.860 --> 00:47:48.480
+Yeah. So non-primitive data structure are those data structures which are created
+
+753
+00:47:48.540 --> 00:47:51.780
+by human by using the primitive data structures.
+
+754
+00:47:55.500 --> 00:47:55.860
+Yes.
+
+755
+00:47:55.890 --> 00:47:58.935
+Okay. For example, arrays, stacks, linked list, queue.
+
+756
+00:47:58.980 --> 00:48:01.410
+These are all dependent on the primitive one.
+
+757
+00:48:02.460 --> 00:48:05.971
+Similarly, we also have another classification that is linear and non-linear data
+
+758
+00:48:06.540 --> 00:48:12.360
+structures. Linear means if your data is stored in the linear manner or in the
+
+759
+00:48:12.390 --> 00:48:15.750
+sequential manner, then you will call it as a linear data structure.
+
+760
+00:48:16.110 --> 00:48:20.580
+If your data is getting stored in the form of hierarchy, then it will be called as
+
+761
+00:48:20.640 --> 00:48:22.050
+the non-linear data structure.
+
+762
+00:48:23.580 --> 00:48:23.971
+Clear?
+
+763
+00:48:26.430 --> 00:48:26.940
+Yes, sir.
+
+764
+00:48:33.480 --> 00:48:37.020
+Now, moving on to the first. ADT is not in your syllabus, so we are not going to
+
+765
+00:48:37.050 --> 00:48:43.020
+cover that. Okay, so we will start with the first one, that is the stack.
+
+766
+00:48:43.080 --> 00:48:44.310
+Okay, let's start with the list.
+
+767
+00:48:45.570 --> 00:48:46.351
+Do you know what is list?
+
+768
+00:48:50.310 --> 00:48:55.320
+It's like an array, sir, but we can store different data types in a same array.
+
+769
+00:48:57.030 --> 00:48:58.530
+Okay. Anyone else?
+
+770
+00:49:05.340 --> 00:49:05.670
+No one?
+
+771
+00:49:14.130 --> 00:49:14.640
+So, see,
+
+772
+00:49:16.320 --> 00:49:21.150
+list is, as you mentioned, list is a linear collection of the data element.
+
+773
+00:49:21.180 --> 00:49:25.710
+It is a linear data structure. But there's a difference between array and list.
+
+774
+00:49:28.200 --> 00:49:30.000
+Can you tell me the difference between array and list?
+
+775
+00:49:33.180 --> 00:49:37.500
+Sir, we can only store a single type of elements in an array, but we can store
+
+776
+00:49:37.530 --> 00:49:38.851
+multiple types in list.
+
+777
+00:49:38.910 --> 00:49:39.300
+Correct.
+
+778
+00:49:40.741 --> 00:49:45.570
+Sir, we can store different types in JavaScript also.
+
+779
+00:49:45.900 --> 00:49:48.870
+Like an array, I can store a string in
+
+780
+00:49:50.460 --> 00:49:51.360
+same array.
+
+781
+00:49:52.351 --> 00:49:56.580
+Sir, static and dynamic. Array is static and list is dynamic.
+
+782
+00:49:56.730 --> 00:49:58.890
+It can grow at any time.
+
+783
+00:49:59.430 --> 00:50:01.890
+Yes. Just like your normal shopping cart.
+
+784
+00:50:03.601 --> 00:50:09.165
+Okay, in the shopping cart, whenever you want to add anything, just simply click on
+
+785
+00:50:09.165 --> 00:50:13.096
+add to cart, and then that item will be added. So what is this?
+
+786
+00:50:13.155 --> 00:50:15.300
+Sir, same thing can happen with arrays in JavaScript.
+
+787
+00:50:15.360 --> 00:50:16.995
+Like, in JavaSc-
+
+788
+00:50:17.025 --> 00:50:19.471
+JavaScript. I mean, where from, where this JavaScript is coming?
+
+789
+00:50:20.010 --> 00:50:21.044
+No, sir, the thing is,
+
+790
+00:50:22.290 --> 00:50:28.050
+if there is a data type, you're saying that array is different
+
+791
+00:50:28.110 --> 00:50:32.624
+from list, then it has to be different for every programming language, no?
+
+792
+00:50:32.910 --> 00:50:33.180
+Mm-hmm.
+
+793
+00:50:34.260 --> 00:50:40.200
+So it's not like it is different in Java or it is, but it is similar
+
+794
+00:50:40.230 --> 00:50:42.330
+in JavaScript.
+
+795
+00:50:42.420 --> 00:50:47.310
+Okay. So someone mentioned it, the lists are the static one and the...
+
+796
+00:50:47.610 --> 00:50:50.400
+Sorry, arrays are the static one and lists are the dynamic one.
+
+797
+00:50:50.491 --> 00:50:54.991
+That is the actual difference. Arrays are always rigid.
+
+798
+00:50:55.741 --> 00:50:57.241
+You just have to specify the size.
+
+799
+00:50:58.950 --> 00:51:04.440
+Okay, and you can't insert any element which is beyond the size of an array.
+
+800
+00:51:05.550 --> 00:51:06.930
+But the lists are dynamic.
+
+801
+00:51:08.520 --> 00:51:14.010
+Okay, just like in, you all have seen the bucket cart in Amazon or any other
+
+802
+00:51:14.070 --> 00:51:18.630
+e-commerce platform. Okay, so whenever you do the shopping, you simply add element
+
+803
+00:51:18.690 --> 00:51:19.260
+one by one.
+
+804
+00:51:20.940 --> 00:51:22.425
+Okay. And then,
+
+805
+00:51:24.360 --> 00:51:27.826
+as soon as you add any element, it will add it to the bottom.
+
+806
+00:51:30.451 --> 00:51:34.981
+So the list will always grow or shrink based on your need.
+
+807
+00:51:39.330 --> 00:51:45.255
+Okay. So, as I mentioned, the list is a linear data structure where each
+
+808
+00:51:45.270 --> 00:51:51.120
+element is this separate object, and you can say that it is an ordered set of
+
+809
+00:51:51.150 --> 00:51:51.481
+data.
+
+810
+00:51:57.870 --> 00:52:03.420
+Okay. So, it can be different, as you can see on my slide, it can be described as
+
+811
+00:52:03.451 --> 00:52:06.451
+the difference between the physical order and logical order.
+
+812
+00:52:06.510 --> 00:52:09.960
+So list will always follow the sequential implementations.
+
+813
+00:52:12.810 --> 00:52:15.540
+Okay. And it can be implemented in the form of linked list.
+
+814
+00:52:17.370 --> 00:52:19.319
+I hope everyone has worked on linked list.
+
+815
+00:52:20.340 --> 00:52:20.760
+Yes.
+
+816
+00:52:21.330 --> 00:52:21.420
+Yes.
+
+817
+00:52:21.479 --> 00:52:24.900
+Okay. Right. So this is how the linked-- So you just have to connect a node.
+
+818
+00:52:25.170 --> 00:52:28.020
+Whenever you insert any new node, you just have to put a connection with the
+
+819
+00:52:28.471 --> 00:52:32.130
+previous node, and then you are good to go. In the array, it is not possible.
+
+820
+00:52:33.481 --> 00:52:34.770
+You have to shift the element.
+
+821
+00:52:37.201 --> 00:52:41.340
+Remember? In the array, you have to shift the element, then only you have to create
+
+822
+00:52:41.356 --> 00:52:42.870
+the space, then only you can insert.
+
+823
+00:52:44.670 --> 00:52:47.849
+In linked list, it is not a shifting of the element.
+
+824
+00:52:47.910 --> 00:52:52.891
+You can simply connect a node, and a single node can be connected to a multiple
+
+825
+00:52:52.920 --> 00:52:55.680
+node as well, which is not possible in arrayed.
+
+826
+00:52:59.190 --> 00:52:59.550
+Yes, sir.
+
+827
+00:53:00.570 --> 00:53:00.885
+Clear?
+
+828
+00:53:02.460 --> 00:53:02.805
+Yes, sir.
+
+829
+00:53:03.780 --> 00:53:04.110
+I know-
+
+830
+00:53:04.260 --> 00:53:05.010
+Yes, sir
+
+831
+00:53:05.190 --> 00:53:10.380
+... algorithm is a very complex subject, but you should have to understand the
+
+832
+00:53:10.440 --> 00:53:11.070
+basic things.
+
+833
+00:53:16.860 --> 00:53:19.560
+Okay, so linked list implementation we will see. Okay.
+
+834
+00:53:20.101 --> 00:53:21.990
+We are just covering the basic thing.
+
+835
+00:53:22.050 --> 00:53:25.170
+Okay, then there will be an individual topic on each and every data structure.
+
+836
+00:53:25.320 --> 00:53:27.750
+Let's start with the stack. Stack you all know?
+
+837
+00:53:29.731 --> 00:53:30.060
+Yes.
+
+838
+00:53:31.170 --> 00:53:34.201
+Okay. Whenever you go to the party or any other functions.
+
+839
+00:53:34.665 --> 00:53:34.665
+Yes.
+
+840
+00:53:34.680 --> 00:53:39.300
+Okay. You will see a stack of plates piled up on a table.
+
+841
+00:53:40.275 --> 00:53:43.290
+So what pattern you follow? FIFO or LIFO?
+
+842
+00:53:43.905 --> 00:53:43.905
+LIFO.
+
+843
+00:53:45.060 --> 00:53:49.560
+LIFO. That means the last plate will always be picked the first.
+
+844
+00:53:52.770 --> 00:53:53.310
+Yes, sir.
+
+845
+00:53:53.851 --> 00:53:59.701
+Clear? So in the stack, both the insertion and deletion always be performed at
+
+846
+00:53:59.851 --> 00:54:02.940
+only one end, which is called the top of the stack.
+
+847
+00:54:07.141 --> 00:54:10.050
+Okay, in the queue, we have different end.
+
+848
+00:54:11.221 --> 00:54:13.951
+Okay, we have the front end and the rear end.
+
+849
+00:54:14.040 --> 00:54:18.451
+So insertion will always take from the rear end, while the deletion will always
+
+850
+00:54:18.481 --> 00:54:20.971
+happen from the front end in the queue.
+
+851
+00:54:22.530 --> 00:54:24.090
+In the stack, it is totally different.
+
+852
+00:54:25.410 --> 00:54:29.760
+In the stack, both insertion and deletion will always be performed only at the one
+
+853
+00:54:29.820 --> 00:54:30.029
+end.
+
+854
+00:54:32.340 --> 00:54:35.130
+So what are the different operations which are performed on the stack?
+
+855
+00:54:37.380 --> 00:54:37.891
+The first is-
+
+856
+00:54:37.920 --> 00:54:38.610
+The Tower of Hanoi.
+
+857
+00:54:39.721 --> 00:54:40.830
+The Tower of Hanoi.
+
+858
+00:54:42.180 --> 00:54:46.709
+Yeah, Tower of Hanoi can be done. Tower of Hanoi can be done.
+
+859
+00:54:46.800 --> 00:54:51.180
+There are other examples also. Okay.
+
+860
+00:54:51.690 --> 00:54:54.016
+Stack-based applications are very common
+
+861
+00:54:55.315 --> 00:54:58.434
+Okay, so these are the operations that can be performed on the stack.
+
+862
+00:54:58.494 --> 00:55:02.454
+We can store, retrieve, and display. Okay.
+
+863
+00:55:05.544 --> 00:55:09.324
+We have this push and pop operation. Push and pop, you know?
+
+864
+00:55:10.780 --> 00:55:10.780
+Yeah.
+
+865
+00:55:10.794 --> 00:55:13.315
+Push means you are adding item to the stack.
+
+866
+00:55:13.734 --> 00:55:15.954
+Pop means you are deleting item from the stack.
+
+867
+00:55:18.565 --> 00:55:18.744
+Okay.
+
+868
+00:55:20.035 --> 00:55:22.433
+So for example, suppose this is on a stack.
+
+869
+00:55:23.754 --> 00:55:29.139
+Okay, and now you want... Okay, so the top is located at the value 40.
+
+870
+00:55:29.694 --> 00:55:35.664
+10, 20, 30, 40. Now, as soon as you delete the element, what will happen?
+
+871
+00:55:35.724 --> 00:55:39.204
+The value of top will be deleted, will be decreased by one.
+
+872
+00:55:41.004 --> 00:55:44.334
+So now the value of top gets changed.
+
+873
+00:55:44.394 --> 00:55:48.864
+So after each deletion, there will be the change in the value of top.
+
+874
+00:55:51.655 --> 00:55:52.494
+Sir?
+
+875
+00:55:52.584 --> 00:55:53.304
+Yeah.
+
+876
+00:55:53.664 --> 00:55:55.884
+Sir, suppose if we want to delete
+
+877
+00:55:57.174 --> 00:56:02.875
+20 only, so our only option is to delete both the top
+
+878
+00:56:03.264 --> 00:56:04.375
+element and one, right?
+
+879
+00:56:04.494 --> 00:56:04.794
+Yes.
+
+880
+00:56:05.484 --> 00:56:06.264
+Okay.
+
+881
+00:56:06.294 --> 00:56:11.319
+As I mentioned, the deletion and insertion both happens only at the one end, that
+
+882
+00:56:11.334 --> 00:56:12.174
+is the top.
+
+883
+00:56:14.004 --> 00:56:17.604
+So you have to bring your pointer to that particular element,
+
+884
+00:56:18.924 --> 00:56:20.934
+or your pointer element will be called as top.
+
+885
+00:56:21.324 --> 00:56:25.044
+So first you have to bring your top to that particular element, then only you can
+
+886
+00:56:25.074 --> 00:56:26.664
+perform the insertion or deletion.
+
+887
+00:56:28.644 --> 00:56:33.025
+Okay? You can't simply delete the element from the middle.
+
+888
+00:56:33.144 --> 00:56:38.574
+Obviously, I mean, consider the same example. You are going to the party. Okay.
+
+889
+00:56:38.634 --> 00:56:42.594
+You saw a pile of plates, and suppose you said that, "Okay, no, I will pick the
+
+890
+00:56:42.684 --> 00:56:44.364
+plate from the middle." So what will happen?
+
+891
+00:56:45.084 --> 00:56:49.044
+Rest all the plates above it will be removed or will be broken?
+
+892
+00:56:49.974 --> 00:56:51.025
+Obviously.
+
+893
+00:56:51.114 --> 00:56:56.724
+Right. So you can't do that. You just have to follow the one by one, from the top
+
+894
+00:56:56.815 --> 00:56:57.144
+only.
+
+895
+00:56:58.704 --> 00:57:02.440
+So there will be a condition when all the elements will be deleted from the stack,
+
+896
+00:57:05.004 --> 00:57:08.363
+okay? And that condition will be called as the underflow condition.
+
+897
+00:57:11.155 --> 00:57:16.734
+Okay? That means there is no element left to be deleted. Everything is deleted.
+
+898
+00:57:16.824 --> 00:57:17.905
+Now the stack is empty.
+
+899
+00:57:20.574 --> 00:57:23.394
+Okay. Similarly, we also have this overflow condition also.
+
+900
+00:57:25.104 --> 00:57:27.309
+Can anyone of you tell me what is the overflow condition?
+
+901
+00:57:28.854 --> 00:57:31.074
+Sir, when it reaches its maximum capacity.
+
+902
+00:57:31.315 --> 00:57:37.254
+Correct. So that means then when the stack is already full, okay, because
+
+903
+00:57:37.344 --> 00:57:43.164
+everything has its size now. Okay, so suppose the stack size is 50, and you have
+
+904
+00:57:43.194 --> 00:57:47.304
+already 50 element in the stack, and now you want to insert the 51 element.
+
+905
+00:57:48.144 --> 00:57:51.025
+Again, what will happen? There is no space left in the stack.
+
+906
+00:57:52.224 --> 00:57:56.094
+So in that case, it will be called as the stack overflow condition.
+
+907
+00:57:56.155 --> 00:58:00.114
+That means that if you further add any element, what will happen?
+
+908
+00:58:00.594 --> 00:58:04.285
+The element will start deleting. Okay?
+
+909
+00:58:04.344 --> 00:58:06.924
+You will not be able to add any element.
+
+910
+00:58:07.704 --> 00:58:11.153
+So both underflow and overflow conditions are very important in the stack
+
+911
+00:58:11.184 --> 00:58:12.174
+programming.
+
+912
+00:58:14.394 --> 00:58:14.664
+Okay?
+
+913
+00:58:14.875 --> 00:58:15.204
+Sir.
+
+914
+00:58:15.714 --> 00:58:16.344
+Yeah.
+
+915
+00:58:16.734 --> 00:58:19.584
+Sir, in exam, do we have to write the pseudocode for it?
+
+916
+00:58:19.704 --> 00:58:20.544
+Yes.
+
+917
+00:58:22.164 --> 00:58:23.934
+They may ask you to write the pseudocode.
+
+918
+00:58:24.954 --> 00:58:25.494
+Okay, sir.
+
+919
+00:58:26.065 --> 00:58:29.724
+Okay, yeah. I saw a few questions in the last semester.
+
+920
+00:58:31.734 --> 00:58:37.464
+Okay. So there were a few questions where they asked to write a pseudocode or write
+
+921
+00:58:37.554 --> 00:58:41.304
+an algorithm. So whenever you will get a question in your exam to write an
+
+922
+00:58:41.334 --> 00:58:44.125
+algorithm, you just have to write the pseudocode.
+
+923
+00:58:44.184 --> 00:58:48.639
+No need to write the entire algorithms because there will be very high chances that
+
+924
+00:58:48.655 --> 00:58:49.418
+you will get it wrong,
+
+925
+00:58:51.384 --> 00:58:55.194
+okay, or there will be a syntax mistake and you will not be able to complete your
+
+926
+00:58:55.285 --> 00:58:57.714
+algorithm. So always write the pseudocode.
+
+927
+00:59:00.054 --> 00:59:03.144
+See, this is one example of the pseudocode.
+
+928
+00:59:04.074 --> 00:59:07.914
+Okay, so this is the way how you should write in your exam.
+
+929
+00:59:10.405 --> 00:59:15.655
+Okay, so now what we are doing is, I think we are over time, but let me quickly
+
+930
+00:59:16.194 --> 00:59:21.834
+cover this. Okay, suppose we are inserting an element or we are pushing any element
+
+931
+00:59:21.894 --> 00:59:24.969
+into the stack. So what is the first thing we have to check is?
+
+932
+00:59:26.155 --> 00:59:27.160
+The underflow condition.
+
+933
+00:59:29.544 --> 00:59:35.214
+Sorry, the overflow condition. If we are inserting any element, first we have to
+
+934
+00:59:35.244 --> 00:59:37.375
+check whether there is any empty space or not.
+
+935
+00:59:39.084 --> 00:59:45.054
+So how we will determine? We will have to address the pointer of the
+
+936
+00:59:45.114 --> 00:59:48.114
+top. So where is the location of the top pointer?
+
+937
+00:59:48.414 --> 00:59:50.844
+If it is equal to the stack size minus one.
+
+938
+00:59:51.775 --> 00:59:54.804
+Because why we are keeping a stack size minus one?
+
+939
+00:59:55.134 --> 00:59:57.174
+The last index is included in the one.
+
+940
+00:59:57.625 --> 01:00:02.304
+Correct. So what we are doing is we will check the location of the top pointer.
+
+941
+01:00:02.994 --> 01:00:08.094
+If the value of the top pointer is equal to the stack size minus one, that means
+
+942
+01:00:08.125 --> 01:00:12.684
+the stack is already full. Okay, there is no space left.
+
+943
+01:00:12.744 --> 01:00:17.379
+So what we will do is, we will simply write print F, stack overflow, and then
+
+944
+01:00:17.424 --> 01:00:21.025
+return. I hope everyone knows what is the purpose of return statement.
+
+945
+01:00:21.474 --> 01:00:26.334
+It will automatically come out of the loop.
+
+946
+01:00:26.754 --> 01:00:29.213
+Sorry, out of the if condition.
+
+947
+01:00:30.114 --> 01:00:30.594
+Yes, sir.
+
+948
+01:00:31.014 --> 01:00:36.565
+Okay? Now, suppose the top is not equal to stack size minus one, that means there
+
+949
+01:00:36.594 --> 01:00:40.344
+is a space left in the stack. So what will happen?
+
+950
+01:00:40.674 --> 01:00:46.104
+You have to increase the value of top pointer, and then you will insert your
+
+951
+01:00:46.164 --> 01:00:46.554
+element.
+
+952
+01:00:49.224 --> 01:00:53.905
+So you have to increment the top and then insert an item, and now your insertion is
+
+953
+01:00:53.934 --> 01:00:58.375
+done. This is how you have to write the code in your exam paper.
+
+954
+01:01:01.405 --> 01:01:03.504
+Is that clear to everyone, insert operation?
+
+955
+01:01:03.744 --> 01:01:04.224
+Yes, sir.
+
+956
+01:01:05.454 --> 01:01:11.214
+Okay. Yeah, I think let's hold the class for now, okay, because we are already
+
+957
+01:01:11.275 --> 01:01:11.875
+over time.
+
+958
+01:01:14.754 --> 01:01:18.924
+But we can cover the remaining stack operations because there are a lot of other
+
+959
+01:01:18.954 --> 01:01:24.113
+things, stack and then trees, then infix to postfix, postfix to prefix.
+
+960
+01:01:24.354 --> 01:01:27.984
+Again, these are the very important questions from the exam standpoint.
+
+961
+01:01:28.014 --> 01:01:30.444
+So we will cover all these things in the next class.
+
+962
+01:01:31.718 --> 01:01:32.574
+Okay, sir.
+
+963
+01:01:32.815 --> 01:01:36.114
+Okay, cool. Thank you so much for joining. See you all in the next class.
+
+964
+01:01:36.174 --> 01:01:36.504
+Thanks.
+
+965
+01:01:41.125 --> 01:01:41.754
+Thank you.
