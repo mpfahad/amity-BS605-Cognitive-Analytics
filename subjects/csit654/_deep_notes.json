@@ -1,0 +1,1122 @@
+{
+  "m1_root": {
+    "terms": [
+      {
+        "t": "Module 1",
+        "d": "Study map for Module 1 of Network Security and Cryptography (CSIT654). Click a topic, then practise its MCQs."
+      }
+    ],
+    "concepts": [
+      "Built from the SLM table of contents",
+      "Orange LMR badges mark first-pass priorities"
+    ],
+    "notes": [
+      "Open topic cards for Terms · Concepts · Short notes.",
+      "LMR cards (orange) are denser where marked."
+    ]
+  },
+  "m2_root": {
+    "terms": [
+      {
+        "t": "Module 2",
+        "d": "Study map for Module 2 of Network Security and Cryptography (CSIT654). Click a topic, then practise its MCQs."
+      }
+    ],
+    "concepts": [
+      "Built from the SLM table of contents",
+      "Orange LMR badges mark first-pass priorities"
+    ],
+    "notes": [
+      "Open topic cards for Terms · Concepts · Short notes.",
+      "LMR cards (orange) are denser where marked."
+    ]
+  },
+  "m3_root": {
+    "terms": [
+      {
+        "t": "Module 3",
+        "d": "Study map for Module 3 of Network Security and Cryptography (CSIT654). Click a topic, then practise its MCQs."
+      }
+    ],
+    "concepts": [
+      "Built from the SLM table of contents",
+      "Orange LMR badges mark first-pass priorities"
+    ],
+    "notes": [
+      "Open topic cards for Terms · Concepts · Short notes.",
+      "LMR cards (orange) are denser where marked."
+    ]
+  },
+  "m4_root": {
+    "terms": [
+      {
+        "t": "Module 4",
+        "d": "Study map for Module 4 of Network Security and Cryptography (CSIT654). Click a topic, then practise its MCQs."
+      }
+    ],
+    "concepts": [
+      "Built from the SLM table of contents",
+      "Orange LMR badges mark first-pass priorities"
+    ],
+    "notes": [
+      "Open topic cards for Terms · Concepts · Short notes.",
+      "LMR cards (orange) are denser where marked."
+    ]
+  },
+  "m5_root": {
+    "terms": [
+      {
+        "t": "Module 5",
+        "d": "Study map for Module 5 of Network Security and Cryptography (CSIT654). Click a topic, then practise its MCQs."
+      }
+    ],
+    "concepts": [
+      "Built from the SLM table of contents",
+      "Orange LMR badges mark first-pass priorities"
+    ],
+    "notes": [
+      "Open topic cards for Terms · Concepts · Short notes.",
+      "LMR cards (orange) are denser where marked."
+    ]
+  },
+  "1.1.1": {
+    "terms": [
+      {
+        "t": "the core idea of Introduction to Security Attacks",
+        "d": "1.1.2 Services and Mechanism 1.1.3 Classical Encryption Techniques 1.1.4 Substitution Ciphers"
+      },
+      {
+        "t": "one exam point for Introduction to Security Attacks.",
+        "d": "Be able to define Introduction to Security Attacks, state when it is used, and contrast it with a related concept in Network security."
+      }
+    ],
+    "concepts": [
+      "Hold Introduction to Security Attacks as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 1.1.1 · Network security",
+      "Exam cue: Introduction to Security Attacks is a syllabus topic under Network security in Module 1.",
+      "If asked “Which statement best matches Introduction to Security Attacks?” → A core idea in Network Security & Cryptography: Introduction to Security Attacks."
+    ]
+  },
+  "1.1.2": {
+    "terms": [
+      {
+        "t": "the core idea of Services and Mechanism",
+        "d": "1.1.3 Classical Encryption Techniques 1.1.4 Substitution Ciphers 1.1.5 Transposition Ciphers"
+      }
+    ],
+    "concepts": [
+      "Core of Services and Mechanism: be able to restate the definition without the flashcard wording.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 1.1.2 · Network security",
+      "Exam cue: Services and Mechanism is a syllabus topic under Network security in Module 1.",
+      "If asked “Which statement best matches Services and Mechanism?” → A core idea in Network Security & Cryptography: Services and Mechanism."
+    ]
+  },
+  "1.1.3": {
+    "terms": [
+      {
+        "t": "the core idea of Classical Encryption Techniques",
+        "d": "1.1.4 Substitution Ciphers 1.1.5 Transposition Ciphers 1.1.6 Cryptanalysis"
+      },
+      {
+        "t": "one exam point for Classical Encryption Techniques.",
+        "d": "Be able to define Classical Encryption Techniques, state when it is used, and contrast it with a related concept in Network security."
+      }
+    ],
+    "concepts": [
+      "Hold Classical Encryption Techniques as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 1.1.3 · Network security",
+      "Exam cue: Classical Encryption Techniques is a syllabus topic under Network security in Module 1.",
+      "If asked “Which statement best matches Classical Encryption Techniques?” → A core idea in Network Security & Cryptography: Classical Encryption Techniques."
+    ]
+  },
+  "1.1.4": {
+    "terms": [
+      {
+        "t": "the core idea of Substitution Ciphers",
+        "d": "1.1.5 Transposition Ciphers 1.1.6 Cryptanalysis 1.1.7 Steganography"
+      }
+    ],
+    "concepts": [
+      "Core of Substitution Ciphers: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 1.1.4 · Network security",
+      "Exam cue: Substitution Ciphers is a syllabus topic under Network security in Module 1.",
+      "If asked “Which statement best matches Substitution Ciphers?” → A core idea in Network Security & Cryptography: Substitution Ciphers."
+    ]
+  },
+  "1.1.5": {
+    "terms": [
+      {
+        "t": "the core idea of Transposition Ciphers",
+        "d": "1.1.6 Cryptanalysis 1.1.7 Steganography 1.1.8 Stream and Block Ciphers"
+      },
+      {
+        "t": "one exam point for Transposition Ciphers.",
+        "d": "Be able to define Transposition Ciphers, state when it is used, and contrast it with a related concept in Network security."
+      }
+    ],
+    "concepts": [
+      "Hold Transposition Ciphers as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 1.1.5 · Network security",
+      "Exam cue: Transposition Ciphers is a syllabus topic under Network security in Module 1.",
+      "If asked “Which statement best matches Transposition Ciphers?” → A core idea in Network Security & Cryptography: Transposition Ciphers."
+    ]
+  },
+  "1.1.6": {
+    "terms": [
+      {
+        "t": "the core idea of Cryptanalysis",
+        "d": "1.1.7 Steganography 1.1.8 Stream and Block Ciphers 1.1.9 Overview of Hardware Security"
+      }
+    ],
+    "concepts": [
+      "Core of Cryptanalysis: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 1.1.6 · Network security",
+      "Exam cue: Cryptanalysis is a syllabus topic under Network security in Module 1.",
+      "If asked “Which statement best matches Cryptanalysis?” → A core idea in Network Security & Cryptography: Cryptanalysis."
+    ]
+  },
+  "1.1.7": {
+    "terms": [
+      {
+        "t": "the core idea of Steganography",
+        "d": "1.1.8 Stream and Block Ciphers 1.1.9 Overview of Hardware Security Module - II: Secret and Public Key Cryptography"
+      },
+      {
+        "t": "one exam point for Steganography.",
+        "d": "Be able to define Steganography, state when it is used, and contrast it with a related concept in Network security."
+      }
+    ],
+    "concepts": [
+      "Hold Steganography as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 1.1.7 · Network security",
+      "Exam cue: Steganography is a syllabus topic under Network security in Module 1.",
+      "If asked “Which statement best matches Steganography?” → A core idea in Network Security & Cryptography: Steganography."
+    ]
+  },
+  "1.1.8": {
+    "terms": [
+      {
+        "t": "the core idea of Stream and Block Ciphers",
+        "d": "1.1.9 Overview of Hardware Security Module - II: Secret and Public Key Cryptography 39"
+      }
+    ],
+    "concepts": [
+      "Core of Stream and Block Ciphers: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 1.1.8 · Network security",
+      "Exam cue: Stream and Block Ciphers is a syllabus topic under Network security in Module 1.",
+      "If asked “Which statement best matches Stream and Block Ciphers?” → A core idea in Network Security & Cryptography: Stream and Block Ciphers."
+    ]
+  },
+  "1.1.9": {
+    "terms": [
+      {
+        "t": "the core idea of Overview of Hardware Security",
+        "d": "Module - II: Secret and Public Key Cryptography 39 2.1 Secret Key Cryptography"
+      },
+      {
+        "t": "one exam point for Overview of Hardware Security.",
+        "d": "Be able to define Overview of Hardware Security, state when it is used, and contrast it with a related concept in Network security."
+      }
+    ],
+    "concepts": [
+      "Hold Overview of Hardware Security as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 1.1.9 · Network security",
+      "Exam cue: Overview of Hardware Security is a syllabus topic under Network security in Module 1.",
+      "If asked “Which statement best matches Overview of Hardware Security?” → A core idea in Network Security & Cryptography: Overview of Hardware Security."
+    ]
+  },
+  "2.1.1": {
+    "terms": [
+      {
+        "t": "the core idea of Modern Block Ciphers: Block Ciphers Principles",
+        "d": "2.1.2 Shannon’s Theory of Confusion and Diffusion 2.1.3 Fiestal Structure 2.1.4 Data Encryption Standard (DES)"
+      },
+      {
+        "t": "one exam point for Modern Block Ciphers: Block Ciphers Principles.",
+        "d": "Be able to define Modern Block Ciphers: Block Ciphers Principles, state when it is used, and contrast it with a related concept in Secret Key Cryptography."
+      }
+    ],
+    "concepts": [
+      "Hold Modern Block Ciphers: Block Ciphers Principles as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 2.1.1 · Secret Key Cryptography",
+      "Exam cue: Modern Block Ciphers: Block Ciphers Principles is a syllabus topic under Secret Key Cryptography in Module 2.",
+      "If asked “Which statement best matches Modern Block Ciphers: Block Ciphers Principles?” → A core idea in Network Security & Cryptography: Modern Block Ciphers: Block Ciphers Principles."
+    ]
+  },
+  "2.1.2": {
+    "terms": [
+      {
+        "t": "the core idea of Shannon’s Theory of Confusion and Diffusion",
+        "d": "2.1.3 Fiestal Structure 2.1.4 Data Encryption Standard (DES) 2.1.5 Strength of DES"
+      }
+    ],
+    "concepts": [
+      "Core of Shannon’s Theory of Confusion and Diffusion: be able to restate the definition without the flashcard wording.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 2.1.2 · Secret Key Cryptography",
+      "Exam cue: Shannon’s Theory of Confusion and Diffusion is a syllabus topic under Secret Key Cryptography in Module 2.",
+      "If asked “Which statement best matches Shannon’s Theory of Confusion and Diffusion?” → A core idea in Network Security & Cryptography: Shannon’s Theory of Confusion and Diffusion."
+    ]
+  },
+  "2.1.3": {
+    "terms": [
+      {
+        "t": "the core idea of Fiestal Structure",
+        "d": "2.1.4 Data Encryption Standard (DES) 2.1.5 Strength of DES 2.1.6 Idea of Differential Cryptanalysis"
+      },
+      {
+        "t": "one exam point for Fiestal Structure.",
+        "d": "Be able to define Fiestal Structure, state when it is used, and contrast it with a related concept in Secret Key Cryptography."
+      }
+    ],
+    "concepts": [
+      "Hold Fiestal Structure as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 2.1.3 · Secret Key Cryptography",
+      "Exam cue: Fiestal Structure is a syllabus topic under Secret Key Cryptography in Module 2.",
+      "If asked “Which statement best matches Fiestal Structure?” → A core idea in Network Security & Cryptography: Fiestal Structure."
+    ]
+  },
+  "2.1.4": {
+    "terms": [
+      {
+        "t": "the core idea of Data Encryption Standard (DES)",
+        "d": "2.1.5 Strength of DES 2.1.6 Idea of Differential Cryptanalysis 2.1.7 Block Cipher Modes of Operations"
+      }
+    ],
+    "concepts": [
+      "Core of Data Encryption Standard (DES): be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 2.1.4 · Secret Key Cryptography",
+      "Exam cue: Data Encryption Standard (DES) is a syllabus topic under Secret Key Cryptography in Module 2.",
+      "If asked “Which statement best matches Data Encryption Standard (DES)?” → A core idea in Network Security & Cryptography: Data Encryption Standard (DES)."
+    ]
+  },
+  "2.1.5": {
+    "terms": [
+      {
+        "t": "the core idea of Strength of DES",
+        "d": "2.1.6 Idea of Differential Cryptanalysis 2.1.7 Block Cipher Modes of Operations 2.1.8 Triple DES"
+      },
+      {
+        "t": "one exam point for Strength of DES.",
+        "d": "Be able to define Strength of DES, state when it is used, and contrast it with a related concept in Secret Key Cryptography."
+      }
+    ],
+    "concepts": [
+      "Hold Strength of DES as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 2.1.5 · Secret Key Cryptography",
+      "Exam cue: Strength of DES is a syllabus topic under Secret Key Cryptography in Module 2.",
+      "If asked “Which statement best matches Strength of DES?” → A core idea in Network Security & Cryptography: Strength of DES."
+    ]
+  },
+  "2.1.6": {
+    "terms": [
+      {
+        "t": "the core idea of Idea of Differential Cryptanalysis",
+        "d": "2.1.7 Block Cipher Modes of Operations 2.1.8 Triple DES 2.2 Public Key Cryptography"
+      }
+    ],
+    "concepts": [
+      "Core of Idea of Differential Cryptanalysis: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 2.1.6 · Secret Key Cryptography",
+      "Exam cue: Idea of Differential Cryptanalysis is a syllabus topic under Secret Key Cryptography in Module 2.",
+      "If asked “Which statement best matches Idea of Differential Cryptanalysis?” → A core idea in Network Security & Cryptography: Idea of Differential Cryptanalysis."
+    ]
+  },
+  "2.1.7": {
+    "terms": [
+      {
+        "t": "the core idea of Block Cipher Modes of Operations",
+        "d": "2.1.8 Triple DES 2.2 Public Key Cryptography 2.2.1 Advanced Encryption Standard (AES)"
+      },
+      {
+        "t": "one exam point for Block Cipher Modes of Operations.",
+        "d": "Be able to define Block Cipher Modes of Operations, state when it is used, and contrast it with a related concept in Secret Key Cryptography."
+      }
+    ],
+    "concepts": [
+      "Hold Block Cipher Modes of Operations as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 2.1.7 · Secret Key Cryptography",
+      "Exam cue: Block Cipher Modes of Operations is a syllabus topic under Secret Key Cryptography in Module 2.",
+      "If asked “Which statement best matches Block Cipher Modes of Operations?” → A core idea in Network Security & Cryptography: Block Cipher Modes of Operations."
+    ]
+  },
+  "2.1.8": {
+    "terms": [
+      {
+        "t": "the core idea of Triple DES",
+        "d": "2.2 Public Key Cryptography 2.2.1 Advanced Encryption Standard (AES) 2.2.2 Fermat’s and Euler’s Theorem"
+      }
+    ],
+    "concepts": [
+      "Core of Triple DES: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 2.1.8 · Secret Key Cryptography",
+      "Exam cue: Triple DES is a syllabus topic under Secret Key Cryptography in Module 2.",
+      "If asked “Which statement best matches Triple DES?” → A core idea in Network Security & Cryptography: Triple DES."
+    ]
+  },
+  "2.2.1": {
+    "terms": [
+      {
+        "t": "the core idea of Advanced Encryption Standard (AES)",
+        "d": "2.2.2 Fermat’s and Euler’s Theorem 2.2.3 Chinese Remainder Theorem 2.2.4 Principals of Public Key Crypto Systems"
+      },
+      {
+        "t": "one exam point for Advanced Encryption Standard (AES).",
+        "d": "Be able to define Advanced Encryption Standard (AES), state when it is used, and contrast it with a related concept in Public Key Cryptography."
+      }
+    ],
+    "concepts": [
+      "Hold Advanced Encryption Standard (AES) as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 2.2.1 · Public Key Cryptography",
+      "Exam cue: Advanced Encryption Standard (AES) is a syllabus topic under Public Key Cryptography in Module 2.",
+      "If asked “Which statement best matches Advanced Encryption Standard (AES)?” → A core idea in Network Security & Cryptography: Advanced Encryption Standard (AES)."
+    ]
+  },
+  "2.2.2": {
+    "terms": [
+      {
+        "t": "the core idea of Fermat’s and Euler’s Theorem",
+        "d": "2.2.3 Chinese Remainder Theorem 2.2.4 Principals of Public Key Crypto Systems 2.2.5 RSA Algorithm"
+      }
+    ],
+    "concepts": [
+      "Core of Fermat’s and Euler’s Theorem: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 2.2.2 · Public Key Cryptography",
+      "Exam cue: Fermat’s and Euler’s Theorem is a syllabus topic under Public Key Cryptography in Module 2.",
+      "If asked “Which statement best matches Fermat’s and Euler’s Theorem?” → A core idea in Network Security & Cryptography: Fermat’s and Euler’s Theorem."
+    ]
+  },
+  "2.2.3": {
+    "terms": [
+      {
+        "t": "the core idea of Chinese Remainder Theorem",
+        "d": "2.2.4 Principals of Public Key Crypto Systems 2.2.5 RSA Algorithm 2.2.6 Security of RSA Algorithm"
+      },
+      {
+        "t": "one exam point for Chinese Remainder Theorem.",
+        "d": "Be able to define Chinese Remainder Theorem, state when it is used, and contrast it with a related concept in Public Key Cryptography."
+      }
+    ],
+    "concepts": [
+      "Hold Chinese Remainder Theorem as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 2.2.3 · Public Key Cryptography",
+      "Exam cue: Chinese Remainder Theorem is a syllabus topic under Public Key Cryptography in Module 2.",
+      "If asked “Which statement best matches Chinese Remainder Theorem?” → A core idea in Network Security & Cryptography: Chinese Remainder Theorem."
+    ]
+  },
+  "2.2.4": {
+    "terms": [
+      {
+        "t": "the core idea of Principals of Public Key Crypto Systems",
+        "d": "2.2.5 RSA Algorithm 2.2.6 Security of RSA Algorithm Module - III: Authentication Standards and Key Management"
+      }
+    ],
+    "concepts": [
+      "Core of Principals of Public Key Crypto Systems: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 2.2.4 · Public Key Cryptography",
+      "Exam cue: Principals of Public Key Crypto Systems is a syllabus topic under Public Key Cryptography in Module 2.",
+      "If asked “Which statement best matches Principals of Public Key Crypto Systems?” → A core idea in Network Security & Cryptography: Principals of Public Key Crypto Systems."
+    ]
+  },
+  "2.2.5": {
+    "terms": [
+      {
+        "t": "the core idea of RSA Algorithm",
+        "d": "2.2.6 Security of RSA Algorithm Module - III: Authentication Standards and Key Management 72"
+      },
+      {
+        "t": "one exam point for RSA Algorithm.",
+        "d": "Be able to define RSA Algorithm, state when it is used, and contrast it with a related concept in Public Key Cryptography."
+      }
+    ],
+    "concepts": [
+      "Hold RSA Algorithm as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 2.2.5 · Public Key Cryptography",
+      "Exam cue: RSA Algorithm is a syllabus topic under Public Key Cryptography in Module 2.",
+      "If asked “Which statement best matches RSA Algorithm?” → A core idea in Network Security & Cryptography: RSA Algorithm."
+    ]
+  },
+  "2.2.6": {
+    "terms": [
+      {
+        "t": "the core idea of Security of RSA Algorithm",
+        "d": "Module - III: Authentication Standards and Key Management 72 3.1 Message Authentication Codes"
+      }
+    ],
+    "concepts": [
+      "Core of Security of RSA Algorithm: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 2.2.6 · Public Key Cryptography",
+      "Exam cue: Security of RSA Algorithm is a syllabus topic under Public Key Cryptography in Module 2.",
+      "If asked “Which statement best matches Security of RSA Algorithm?” → A core idea in Network Security & Cryptography: Security of RSA Algorithm."
+    ]
+  },
+  "3.1.1": {
+    "terms": [
+      {
+        "t": "the core idea of Introduction of Message Authentication Codes",
+        "d": "3.1.2 Authentication Functions 3.1.3 Authentication Requirements 3.1.4 Message Authentication Code (MAC)"
+      },
+      {
+        "t": "one exam point for Introduction of Message Authentication Codes.",
+        "d": "Be able to define Introduction of Message Authentication Codes, state when it is used, and contrast it with a related concept in Message Authentication Codes."
+      }
+    ],
+    "concepts": [
+      "Hold Introduction of Message Authentication Codes as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 3.1.1 · Message Authentication Codes",
+      "Exam cue: Introduction of Message Authentication Codes is a syllabus topic under Message Authentication Codes in Module 3.",
+      "If asked “Which statement best matches Introduction of Message Authentication Codes?” → A core idea in Network Security & Cryptography: Introduction of Message Authentication Codes."
+    ]
+  },
+  "3.1.2": {
+    "terms": [
+      {
+        "t": "the core idea of Authentication Functions",
+        "d": "3.1.3 Authentication Requirements 3.1.4 Message Authentication Code (MAC) 3.1.5 Secure Hash Algorithm (SHA)"
+      }
+    ],
+    "concepts": [
+      "Core of Authentication Functions: be able to restate the definition without the flashcard wording.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 3.1.2 · Message Authentication Codes",
+      "Exam cue: Authentication Functions is a syllabus topic under Message Authentication Codes in Module 3.",
+      "If asked “Which statement best matches Authentication Functions?” → A core idea in Network Security & Cryptography: Authentication Functions."
+    ]
+  },
+  "3.1.3": {
+    "terms": [
+      {
+        "t": "the core idea of Authentication Requirements",
+        "d": "3.1.4 Message Authentication Code (MAC) 3.1.5 Secure Hash Algorithm (SHA) (c) Amity University Online"
+      },
+      {
+        "t": "one exam point for Authentication Requirements.",
+        "d": "Be able to define Authentication Requirements, state when it is used, and contrast it with a related concept in Message Authentication Codes."
+      }
+    ],
+    "concepts": [
+      "Hold Authentication Requirements as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 3.1.3 · Message Authentication Codes",
+      "Exam cue: Authentication Requirements is a syllabus topic under Message Authentication Codes in Module 3.",
+      "If asked “Which statement best matches Authentication Requirements?” → A core idea in Network Security & Cryptography: Authentication Requirements."
+    ]
+  },
+  "3.1.4": {
+    "terms": [
+      {
+        "t": "the core idea of Message Authentication Code (MAC)",
+        "d": "3.1.1 Introduction of Message Authentication Codes 3.1.2 Authentication Functions 3.1.3 Authentication Requirements"
+      }
+    ],
+    "concepts": [
+      "Core of Message Authentication Code (MAC): be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 3.1.4 · Message Authentication Codes",
+      "Exam cue: Message Authentication Code (MAC) is a syllabus topic under Message Authentication Codes in Module 3.",
+      "If asked “Which statement best matches Message Authentication Code (MAC)?” → A core idea in Network Security & Cryptography: Message Authentication Code (MAC)."
+    ]
+  },
+  "3.1.5": {
+    "terms": [
+      {
+        "t": "the core idea of Secure Hash Algorithm (SHA)",
+        "d": "● Discuss about Digital Signatures and its standards ●"
+      },
+      {
+        "t": "one exam point for Secure Hash Algorithm (SHA).",
+        "d": "Be able to define Secure Hash Algorithm (SHA), state when it is used, and contrast it with a related concept in Message Authentication Codes."
+      }
+    ],
+    "concepts": [
+      "Hold Secure Hash Algorithm (SHA) as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 3.1.5 · Message Authentication Codes",
+      "Exam cue: Secure Hash Algorithm (SHA) is a syllabus topic under Message Authentication Codes in Module 3.",
+      "If asked “Which statement best matches Secure Hash Algorithm (SHA)?” → A core idea in Network Security & Cryptography: Secure Hash Algorithm (SHA)."
+    ]
+  },
+  "3.1.6": {
+    "terms": [
+      {
+        "t": "the core idea of Message Digest",
+        "d": "3.2 Digital Signatures 3.2.1 Overview of Digital Signatures 3.2.2 Digital Signature Standards (DSS)"
+      }
+    ],
+    "concepts": [
+      "Core of Message Digest: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 3.1.6 · Message Authentication Codes",
+      "Exam cue: Message Digest is a syllabus topic under Message Authentication Codes in Module 3.",
+      "If asked “Which statement best matches Message Digest?” → A core idea in Network Security & Cryptography: Message Digest."
+    ]
+  },
+  "3.2.1": {
+    "terms": [
+      {
+        "t": "the core idea of Overview of Digital Signatures",
+        "d": "3.2.2 Digital Signature Standards (DSS) 3.2.3 Proof of Digital Signature Algorithm Module - IV: Web Security"
+      },
+      {
+        "t": "one exam point for Overview of Digital Signatures.",
+        "d": "Be able to define Overview of Digital Signatures, state when it is used, and contrast it with a related concept in Digital Signatures."
+      }
+    ],
+    "concepts": [
+      "Hold Overview of Digital Signatures as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 3.2.1 · Digital Signatures",
+      "Exam cue: Overview of Digital Signatures is a syllabus topic under Digital Signatures in Module 3.",
+      "If asked “Which statement best matches Overview of Digital Signatures?” → A core idea in Network Security & Cryptography: Overview of Digital Signatures."
+    ]
+  },
+  "3.2.2": {
+    "terms": [
+      {
+        "t": "the core idea of Digital Signature Standards (DSS)",
+        "d": "3.2.3 Proof of Digital Signature Algorithm Module - IV: Web Security 91"
+      }
+    ],
+    "concepts": [
+      "Core of Digital Signature Standards (DSS): be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 3.2.2 · Digital Signatures",
+      "Exam cue: Digital Signature Standards (DSS) is a syllabus topic under Digital Signatures in Module 3.",
+      "If asked “Which statement best matches Digital Signature Standards (DSS)?” → A core idea in Network Security & Cryptography: Digital Signature Standards (DSS)."
+    ]
+  },
+  "3.2.3": {
+    "terms": [
+      {
+        "t": "the core idea of Proof of Digital Signature Algorithm",
+        "d": "Module - IV: Web Security 91 4.1 Introduction to Web Security"
+      },
+      {
+        "t": "one exam point for Proof of Digital Signature Algorithm.",
+        "d": "Be able to define Proof of Digital Signature Algorithm, state when it is used, and contrast it with a related concept in Digital Signatures."
+      }
+    ],
+    "concepts": [
+      "Hold Proof of Digital Signature Algorithm as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 3.2.3 · Digital Signatures",
+      "Exam cue: Proof of Digital Signature Algorithm is a syllabus topic under Digital Signatures in Module 3.",
+      "If asked “Which statement best matches Proof of Digital Signature Algorithm?” → A core idea in Network Security & Cryptography: Proof of Digital Signature Algorithm."
+    ]
+  },
+  "4.1.1": {
+    "terms": [
+      {
+        "t": "the core idea of Authentication Applications: Kerberos",
+        "d": "4.1.2 Overview of Access Control List (ACL) 4.1.3 Electronic Mail Security: Pretty Good Privacy (PGP) 4.1.4 S/MIME"
+      },
+      {
+        "t": "one exam point for Authentication Applications: Kerberos.",
+        "d": "Be able to define Authentication Applications: Kerberos, state when it is used, and contrast it with a related concept in Introduction to Web Security."
+      }
+    ],
+    "concepts": [
+      "Hold Authentication Applications: Kerberos as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 4.1.1 · Introduction to Web Security",
+      "Exam cue: Authentication Applications: Kerberos is a syllabus topic under Introduction to Web Security in Module 4.",
+      "If asked “Which statement best matches Authentication Applications: Kerberos?” → A core idea in Network Security & Cryptography: Authentication Applications: Kerberos."
+    ]
+  },
+  "4.1.2": {
+    "terms": [
+      {
+        "t": "the core idea of Overview of Access Control List (ACL)",
+        "d": "4.1.3 Electronic Mail Security: Pretty Good Privacy (PGP) 4.1.4 S/MIME 4.2 IP Security"
+      }
+    ],
+    "concepts": [
+      "Core of Overview of Access Control List (ACL): be able to restate the definition without the flashcard wording.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 4.1.2 · Introduction to Web Security",
+      "Exam cue: Overview of Access Control List (ACL) is a syllabus topic under Introduction to Web Security in Module 4.",
+      "If asked “Which statement best matches Overview of Access Control List (ACL)?” → A core idea in Network Security & Cryptography: Overview of Access Control List (ACL)."
+    ]
+  },
+  "4.1.3": {
+    "terms": [
+      {
+        "t": "the core idea of Electronic Mail Security: Pretty Good Privacy (PGP)",
+        "d": "4.1.4 S/MIME 4.2 IP Security 4.2.1 IP Security Architecture Components"
+      },
+      {
+        "t": "one exam point for Electronic Mail Security: Pretty Good Privacy (P…",
+        "d": "Be able to define Electronic Mail Security: Pretty Good Privacy (PGP), state when it is used, and contrast it with a related concept in Introduction to Web Security."
+      }
+    ],
+    "concepts": [
+      "Hold Electronic Mail Security: Pretty Good Privacy (PGP) as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 4.1.3 · Introduction to Web Security",
+      "Exam cue: Electronic Mail Security: Pretty Good Privacy (PGP) is a syllabus topic under Introduction to Web Security in Module 4.",
+      "If asked “Which statement best matches Electronic Mail Security: Pretty Good Privacy (PGP)?” → A core idea in Network Security & Cryptography: Electronic Mail Security: Pretty Good Privacy (PGP)."
+    ]
+  },
+  "4.1.4": {
+    "terms": [
+      {
+        "t": "the core idea of S/MIME",
+        "d": "4.2 IP Security 4.2.1 IP Security Architecture Components 4.2.2 Secure Socket Layer"
+      }
+    ],
+    "concepts": [
+      "Core of S/MIME: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 4.1.4 · Introduction to Web Security",
+      "Exam cue: S/MIME is a syllabus topic under Introduction to Web Security in Module 4.",
+      "If asked “Which statement best matches S/MIME?” → A core idea in Network Security & Cryptography: S/MIME."
+    ]
+  },
+  "4.2.1": {
+    "terms": [
+      {
+        "t": "the core idea of IP Security Architecture Components",
+        "d": "4.2.2 Secure Socket Layer 4.2.3 Secure electronic transaction (SET) Module - V: Computational Learning Theor"
+      },
+      {
+        "t": "one exam point for IP Security Architecture Components.",
+        "d": "Be able to define IP Security Architecture Components, state when it is used, and contrast it with a related concept in IP Security."
+      }
+    ],
+    "concepts": [
+      "Hold IP Security Architecture Components as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 4.2.1 · IP Security",
+      "Exam cue: IP Security Architecture Components is a syllabus topic under IP Security in Module 4.",
+      "If asked “Which statement best matches IP Security Architecture Components?” → A core idea in Network Security & Cryptography: IP Security Architecture Components."
+    ]
+  },
+  "4.2.2": {
+    "terms": [
+      {
+        "t": "the core idea of Secure Socket Layer",
+        "d": "4.2.3 Secure electronic transaction (SET) Module - V: Computational Learning Theor 151"
+      }
+    ],
+    "concepts": [
+      "Core of Secure Socket Layer: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 4.2.2 · IP Security",
+      "Exam cue: Secure Socket Layer is a syllabus topic under IP Security in Module 4.",
+      "If asked “Which statement best matches Secure Socket Layer?” → A core idea in Network Security & Cryptography: Secure Socket Layer."
+    ]
+  },
+  "4.2.3": {
+    "terms": [
+      {
+        "t": "the core idea of Secure electronic transaction (SET)",
+        "d": "Module - V: Computational Learning Theor 151 5.1 System Security"
+      },
+      {
+        "t": "one exam point for Secure electronic transaction (SET).",
+        "d": "Be able to define Secure electronic transaction (SET), state when it is used, and contrast it with a related concept in IP Security."
+      }
+    ],
+    "concepts": [
+      "Hold Secure electronic transaction (SET) as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 4.2.3 · IP Security",
+      "Exam cue: Secure electronic transaction (SET) is a syllabus topic under IP Security in Module 4.",
+      "If asked “Which statement best matches Secure electronic transaction (SET)?” → A core idea in Network Security & Cryptography: Secure electronic transaction (SET)."
+    ]
+  },
+  "5.1.1": {
+    "terms": [
+      {
+        "t": "the core idea of Introductory Idea of Intrusion",
+        "d": "5.1.2 Intrusion Detection Techniques 5.1.3 Viruses and Worms 5.1.4 Firewall Overview and Design Principles"
+      },
+      {
+        "t": "one exam point for Introductory Idea of Intrusion.",
+        "d": "Be able to define Introductory Idea of Intrusion, state when it is used, and contrast it with a related concept in System Security."
+      }
+    ],
+    "concepts": [
+      "Hold Introductory Idea of Intrusion as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 5.1.1 · System Security",
+      "Exam cue: Introductory Idea of Intrusion is a syllabus topic under System Security in Module 5.",
+      "If asked “Which statement best matches Introductory Idea of Intrusion?” → A core idea in Network Security & Cryptography: Introductory Idea of Intrusion."
+    ]
+  },
+  "5.1.2": {
+    "terms": [
+      {
+        "t": "the core idea of Intrusion Detection Techniques",
+        "d": "5.1.3 Viruses and Worms 5.1.4 Firewall Overview and Design Principles 5.1.5 Global Standards IT Acts and Cyber Laws"
+      }
+    ],
+    "concepts": [
+      "Core of Intrusion Detection Techniques: be able to restate the definition without the flashcard wording.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 5.1.2 · System Security",
+      "Exam cue: Intrusion Detection Techniques is a syllabus topic under System Security in Module 5.",
+      "If asked “Which statement best matches Intrusion Detection Techniques?” → A core idea in Network Security & Cryptography: Intrusion Detection Techniques."
+    ]
+  },
+  "5.1.3": {
+    "terms": [
+      {
+        "t": "the core idea of Viruses and Worms",
+        "d": "5.1.4 Firewall Overview and Design Principles 5.1.5 Global Standards IT Acts and Cyber Laws 5.1.6 Virtual Private Network"
+      },
+      {
+        "t": "one exam point for Viruses and Worms.",
+        "d": "Be able to define Viruses and Worms, state when it is used, and contrast it with a related concept in System Security."
+      }
+    ],
+    "concepts": [
+      "Hold Viruses and Worms as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 5.1.3 · System Security",
+      "Exam cue: Viruses and Worms is a syllabus topic under System Security in Module 5.",
+      "If asked “Which statement best matches Viruses and Worms?” → A core idea in Network Security & Cryptography: Viruses and Worms."
+    ]
+  },
+  "5.1.4": {
+    "terms": [
+      {
+        "t": "the core idea of Firewall Overview and Design Principles",
+        "d": "5.1.5 Global Standards IT Acts and Cyber Laws 5.1.6 Virtual Private Network 5.1.7 Recent Network Attacks and Security Measures"
+      }
+    ],
+    "concepts": [
+      "Core of Firewall Overview and Design Principles: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 5.1.4 · System Security",
+      "Exam cue: Firewall Overview and Design Principles is a syllabus topic under System Security in Module 5.",
+      "If asked “Which statement best matches Firewall Overview and Design Principles?” → A core idea in Network Security & Cryptography: Firewall Overview and Design Principles."
+    ]
+  },
+  "5.1.5": {
+    "terms": [
+      {
+        "t": "the core idea of Global Standards IT Acts and Cyber Laws",
+        "d": "5.1.6 Virtual Private Network 5.1.7 Recent Network Attacks and Security Measures 5.1.8 Blockchain Technology"
+      },
+      {
+        "t": "one exam point for Global Standards IT Acts and Cyber Laws.",
+        "d": "Be able to define Global Standards IT Acts and Cyber Laws, state when it is used, and contrast it with a related concept in System Security."
+      }
+    ],
+    "concepts": [
+      "Hold Global Standards IT Acts and Cyber Laws as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 5.1.5 · System Security",
+      "Exam cue: Global Standards IT Acts and Cyber Laws is a syllabus topic under System Security in Module 5.",
+      "If asked “Which statement best matches Global Standards IT Acts and Cyber Laws?” → A core idea in Network Security & Cryptography: Global Standards IT Acts and Cyber Laws."
+    ]
+  },
+  "5.1.6": {
+    "terms": [
+      {
+        "t": "the core idea of Virtual Private Network",
+        "d": "5.1.7 Recent Network Attacks and Security Measures 5.1.8 Blockchain Technology 5.1.9 Internet Privacy and Piracy Prevention"
+      }
+    ],
+    "concepts": [
+      "Core of Virtual Private Network: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 5.1.6 · System Security",
+      "Exam cue: Virtual Private Network is a syllabus topic under System Security in Module 5.",
+      "If asked “Which statement best matches Virtual Private Network?” → A core idea in Network Security & Cryptography: Virtual Private Network."
+    ]
+  },
+  "5.1.7": {
+    "terms": [
+      {
+        "t": "the core idea of Recent Network Attacks and Security Measures",
+        "d": "5.1.8 Blockchain Technology 5.1.9 Internet Privacy and Piracy Prevention 5.2 Cyber Forensic and Its Applications"
+      },
+      {
+        "t": "one exam point for Recent Network Attacks and Security Measures.",
+        "d": "Be able to define Recent Network Attacks and Security Measures, state when it is used, and contrast it with a related concept in System Security."
+      }
+    ],
+    "concepts": [
+      "Hold Recent Network Attacks and Security Measures as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 5.1.7 · System Security",
+      "Exam cue: Recent Network Attacks and Security Measures is a syllabus topic under System Security in Module 5.",
+      "If asked “Which statement best matches Recent Network Attacks and Security Measures?” → A core idea in Network Security & Cryptography: Recent Network Attacks and Security Measures."
+    ]
+  },
+  "5.1.8": {
+    "terms": [
+      {
+        "t": "the core idea of Blockchain Technology",
+        "d": "5.1.9 Internet Privacy and Piracy Prevention 5.2 Cyber Forensic and Its Applications 5.2.1 Overview of Cyber Forensic"
+      }
+    ],
+    "concepts": [
+      "Core of Blockchain Technology: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 5.1.8 · System Security",
+      "Exam cue: Blockchain Technology is a syllabus topic under System Security in Module 5.",
+      "If asked “Which statement best matches Blockchain Technology?” → A core idea in Network Security & Cryptography: Blockchain Technology."
+    ]
+  },
+  "5.1.9": {
+    "terms": [
+      {
+        "t": "the core idea of Internet Privacy and Piracy Prevention",
+        "d": "5.2 Cyber Forensic and Its Applications 5.2.1 Overview of Cyber Forensic 5.2.2 Cyber Forensic Processes"
+      },
+      {
+        "t": "one exam point for Internet Privacy and Piracy Prevention.",
+        "d": "Be able to define Internet Privacy and Piracy Prevention, state when it is used, and contrast it with a related concept in System Security."
+      }
+    ],
+    "concepts": [
+      "Hold Internet Privacy and Piracy Prevention as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 5.1.9 · System Security",
+      "Exam cue: Internet Privacy and Piracy Prevention is a syllabus topic under System Security in Module 5.",
+      "If asked “Which statement best matches Internet Privacy and Piracy Prevention?” → A core idea in Network Security & Cryptography: Internet Privacy and Piracy Prevention."
+    ]
+  },
+  "5.2.1": {
+    "terms": [
+      {
+        "t": "the core idea of Overview of Cyber Forensic",
+        "d": "5.2.2 Cyber Forensic Processes 5.2.3 Cyber Forensic Applications 5.2.4 Cyber Forensic Tools"
+      }
+    ],
+    "concepts": [
+      "Core of Overview of Cyber Forensic: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 5.2.1 · Cyber Forensic and Its Applications",
+      "Exam cue: Overview of Cyber Forensic is a syllabus topic under Cyber Forensic and Its Applications in Module 5.",
+      "If asked “Which statement best matches Overview of Cyber Forensic?” → A core idea in Network Security & Cryptography: Overview of Cyber Forensic."
+    ]
+  },
+  "5.2.2": {
+    "terms": [
+      {
+        "t": "the core idea of Cyber Forensic Processes",
+        "d": "5.2.3 Cyber Forensic Applications 5.2.4 Cyber Forensic Tools 5.2.5 Digital Evidence"
+      },
+      {
+        "t": "one exam point for Cyber Forensic Processes.",
+        "d": "Be able to define Cyber Forensic Processes, state when it is used, and contrast it with a related concept in Cyber Forensic and Its Applications."
+      }
+    ],
+    "concepts": [
+      "Hold Cyber Forensic Processes as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 5.2.2 · Cyber Forensic and Its Applications",
+      "Exam cue: Cyber Forensic Processes is a syllabus topic under Cyber Forensic and Its Applications in Module 5.",
+      "If asked “Which statement best matches Cyber Forensic Processes?” → A core idea in Network Security & Cryptography: Cyber Forensic Processes."
+    ]
+  },
+  "5.2.3": {
+    "terms": [
+      {
+        "t": "the core idea of Cyber Forensic Applications",
+        "d": "5.2.4 Cyber Forensic Tools 5.2.5 Digital Evidence 5.2.6 Investigating Windows and Unix Systems"
+      }
+    ],
+    "concepts": [
+      "Core of Cyber Forensic Applications: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 5.2.3 · Cyber Forensic and Its Applications",
+      "Exam cue: Cyber Forensic Applications is a syllabus topic under Cyber Forensic and Its Applications in Module 5.",
+      "If asked “Which statement best matches Cyber Forensic Applications?” → A core idea in Network Security & Cryptography: Cyber Forensic Applications."
+    ]
+  },
+  "5.2.4": {
+    "terms": [
+      {
+        "t": "the core idea of Cyber Forensic Tools",
+        "d": "5.2.5 Digital Evidence 5.2.6 Investigating Windows and Unix Systems 5.2.7 E-mail Tracing"
+      },
+      {
+        "t": "one exam point for Cyber Forensic Tools.",
+        "d": "Be able to define Cyber Forensic Tools, state when it is used, and contrast it with a related concept in Cyber Forensic and Its Applications."
+      }
+    ],
+    "concepts": [
+      "Hold Cyber Forensic Tools as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 5.2.4 · Cyber Forensic and Its Applications",
+      "Exam cue: Cyber Forensic Tools is a syllabus topic under Cyber Forensic and Its Applications in Module 5.",
+      "If asked “Which statement best matches Cyber Forensic Tools?” → A core idea in Network Security & Cryptography: Cyber Forensic Tools."
+    ]
+  },
+  "5.2.5": {
+    "terms": [
+      {
+        "t": "the core idea of Digital Evidence",
+        "d": "5.2.6 Investigating Windows and Unix Systems 5.2.7 E-mail Tracing (c) Amity University Online"
+      }
+    ],
+    "concepts": [
+      "Core of Digital Evidence: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 5.2.5 · Cyber Forensic and Its Applications",
+      "Exam cue: Digital Evidence is a syllabus topic under Cyber Forensic and Its Applications in Module 5.",
+      "If asked “Which statement best matches Digital Evidence?” → A core idea in Network Security & Cryptography: Digital Evidence."
+    ]
+  },
+  "5.2.6": {
+    "terms": [
+      {
+        "t": "the core idea of Investigating Windows and Unix Systems",
+        "d": "5.2.7 E-mail Tracing (c) Amity University Online"
+      },
+      {
+        "t": "one exam point for Investigating Windows and Unix Systems.",
+        "d": "Be able to define Investigating Windows and Unix Systems, state when it is used, and contrast it with a related concept in Cyber Forensic and Its Applications."
+      }
+    ],
+    "concepts": [
+      "Hold Investigating Windows and Unix Systems as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 5.2.6 · Cyber Forensic and Its Applications",
+      "Exam cue: Investigating Windows and Unix Systems is a syllabus topic under Cyber Forensic and Its Applications in Module 5.",
+      "If asked “Which statement best matches Investigating Windows and Unix Systems?” → A core idea in Network Security & Cryptography: Investigating Windows and Unix Systems."
+    ]
+  },
+  "5.2.7": {
+    "terms": [
+      {
+        "t": "the core idea of E-mail Tracing",
+        "d": "Key SLM topic: E-mail Tracing. Review definitions, steps, and one worked example from the study PDF."
+      }
+    ],
+    "concepts": [
+      "Core of E-mail Tracing: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Network Security and Cryptography (CSIT654) · 5.2.7 · Cyber Forensic and Its Applications",
+      "Exam cue: E-mail Tracing is a syllabus topic under Cyber Forensic and Its Applications in Module 5.",
+      "If asked “Which statement best matches E-mail Tracing?” → A core idea in Network Security & Cryptography: E-mail Tracing."
+    ]
+  }
+}

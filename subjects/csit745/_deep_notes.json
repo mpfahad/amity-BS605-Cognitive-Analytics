@@ -1,0 +1,1804 @@
+{
+  "m1_root": {
+    "terms": [
+      {
+        "t": "Module 1",
+        "d": "Study map for Module 1 of Research Methodology (CSIT745). Click a topic, then practise its MCQs."
+      }
+    ],
+    "concepts": [
+      "Built from the SLM table of contents",
+      "Orange LMR badges mark first-pass priorities"
+    ],
+    "notes": [
+      "Open topic cards for Terms · Concepts · Short notes.",
+      "LMR cards (orange) are denser where marked."
+    ]
+  },
+  "m2_root": {
+    "terms": [
+      {
+        "t": "Module 2",
+        "d": "Study map for Module 2 of Research Methodology (CSIT745). Click a topic, then practise its MCQs."
+      }
+    ],
+    "concepts": [
+      "Built from the SLM table of contents",
+      "Orange LMR badges mark first-pass priorities"
+    ],
+    "notes": [
+      "Open topic cards for Terms · Concepts · Short notes.",
+      "LMR cards (orange) are denser where marked."
+    ]
+  },
+  "m3_root": {
+    "terms": [
+      {
+        "t": "Module 3",
+        "d": "Study map for Module 3 of Research Methodology (CSIT745). Click a topic, then practise its MCQs."
+      }
+    ],
+    "concepts": [
+      "Built from the SLM table of contents",
+      "Orange LMR badges mark first-pass priorities"
+    ],
+    "notes": [
+      "Open topic cards for Terms · Concepts · Short notes.",
+      "LMR cards (orange) are denser where marked."
+    ]
+  },
+  "m4_root": {
+    "terms": [
+      {
+        "t": "Module 4",
+        "d": "Study map for Module 4 of Research Methodology (CSIT745). Click a topic, then practise its MCQs."
+      }
+    ],
+    "concepts": [
+      "Built from the SLM table of contents",
+      "Orange LMR badges mark first-pass priorities"
+    ],
+    "notes": [
+      "Open topic cards for Terms · Concepts · Short notes.",
+      "LMR cards (orange) are denser where marked."
+    ]
+  },
+  "m5_root": {
+    "terms": [
+      {
+        "t": "Module 5",
+        "d": "Study map for Module 5 of Research Methodology (CSIT745). Click a topic, then practise its MCQs."
+      }
+    ],
+    "concepts": [
+      "Built from the SLM table of contents",
+      "Orange LMR badges mark first-pass priorities"
+    ],
+    "notes": [
+      "Open topic cards for Terms · Concepts · Short notes.",
+      "LMR cards (orange) are denser where marked."
+    ]
+  },
+  "1.1.1": {
+    "terms": [
+      {
+        "t": "the core idea of Definition and Objectives of Research",
+        "d": "1.1.2 Characteristics of Research 1.1.3 Difference b/w Research Methods and Research Methodology 1.2 Research Process"
+      },
+      {
+        "t": "one exam point for Definition and Objectives of Research.",
+        "d": "Be able to define Definition and Objectives of Research, state when it is used, and contrast it with a related concept in Research."
+      }
+    ],
+    "concepts": [
+      "Hold Definition and Objectives of Research as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.1.1 · Research",
+      "Exam cue: Definition and Objectives of Research is a syllabus topic under Research in Module 1.",
+      "If asked “Which statement best matches Definition and Objectives of Research?” → A core idea in Research Methodology: Definition and Objectives of Research."
+    ]
+  },
+  "1.1.2": {
+    "terms": [
+      {
+        "t": "the core idea of Characteristics of Research",
+        "d": "1.1.3 Difference b/w Research Methods and Research Methodology 1.2 Research Process 1.2.1 Research Criteria and Research Process"
+      }
+    ],
+    "concepts": [
+      "Core of Characteristics of Research: be able to restate the definition without the flashcard wording.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.1.2 · Research",
+      "Exam cue: Characteristics of Research is a syllabus topic under Research in Module 1.",
+      "If asked “Which statement best matches Characteristics of Research?” → A core idea in Research Methodology: Characteristics of Research."
+    ]
+  },
+  "1.1.3": {
+    "terms": [
+      {
+        "t": "the core idea of Difference b/w Research Methods and Research Metho…",
+        "d": "1.2 Research Process 1.2.1 Research Criteria and Research Process 1.2.2 Approaches of Research: Deductive, Inductive, Quantitative and Qualitative"
+      },
+      {
+        "t": "one exam point for Difference b/w Research Methods and Research Met…",
+        "d": "Be able to define Difference b/w Research Methods and Research Methodology, state when it is used, and contrast it with a related concept in Research."
+      }
+    ],
+    "concepts": [
+      "Hold Difference b/w Research Methods and Research Methodology as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.1.3 · Research",
+      "Exam cue: Difference b/w Research Methods and Research Methodology is a syllabus topic under Research in Module 1.",
+      "If asked “Which statement best matches Difference b/w Research Methods and Research Methodology?” → A core idea in Research Methodology: Difference b/w Research Methods and Research Methodology."
+    ]
+  },
+  "1.2.1": {
+    "terms": [
+      {
+        "t": "the core idea of Research Criteria and Research Process",
+        "d": "1.2.2 Approaches of Research: Deductive, Inductive, Quantitative and Qualitative 1.2.3 Research Proposal and Aspects 1.2.4 Literature Survey and Review"
+      }
+    ],
+    "concepts": [
+      "Core of Research Criteria and Research Process: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.2.1 · Research Process",
+      "Exam cue: Research Criteria and Research Process is a syllabus topic under Research Process in Module 1.",
+      "If asked “Which statement best matches Research Criteria and Research Process?” → A core idea in Research Methodology: Research Criteria and Research Process."
+    ]
+  },
+  "1.2.2": {
+    "terms": [
+      {
+        "t": "the core idea of Approaches of Research: Deductive, Inductive, Quan…",
+        "d": "1.2.3 Research Proposal and Aspects 1.2.4 Literature Survey and Review 1.2.5 Errors in Research"
+      },
+      {
+        "t": "one exam point for Approaches of Research: Deductive, Inductive, Qu…",
+        "d": "Be able to define Approaches of Research: Deductive, Inductive, Quantitative and Qualitative, state when it is used, and contrast it with a related concept in Research Process."
+      }
+    ],
+    "concepts": [
+      "Hold Approaches of Research: Deductive, Inductive, Quantitative and Qualitative as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.2.2 · Research Process",
+      "Exam cue: Approaches of Research: Deductive, Inductive, Quantitative and Qualitative is a syllabus topic under Research Process in Module 1.",
+      "If asked “Which statement best matches Approaches of Research: Deductive, Inductive, Quantitative and Qualitative?” → A core idea in Research Methodology: Approaches of Research: Deductive, Inductive, Quantitative and Qualitative."
+    ]
+  },
+  "1.2.3": {
+    "terms": [
+      {
+        "t": "the core idea of Research Proposal and Aspects",
+        "d": "1.2.4 Literature Survey and Review 1.2.5 Errors in Research 1.3 Types of Research Design"
+      }
+    ],
+    "concepts": [
+      "Core of Research Proposal and Aspects: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.2.3 · Research Process",
+      "Exam cue: Research Proposal and Aspects is a syllabus topic under Research Process in Module 1.",
+      "If asked “Which statement best matches Research Proposal and Aspects?” → A core idea in Research Methodology: Research Proposal and Aspects."
+    ]
+  },
+  "1.2.4": {
+    "terms": [
+      {
+        "t": "the core idea of Literature Survey and Review",
+        "d": "1.2.5 Errors in Research 1.3 Types of Research Design 1.3.1 Pure and Applied"
+      },
+      {
+        "t": "one exam point for Literature Survey and Review.",
+        "d": "Be able to define Literature Survey and Review, state when it is used, and contrast it with a related concept in Research Process."
+      }
+    ],
+    "concepts": [
+      "Hold Literature Survey and Review as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.2.4 · Research Process",
+      "Exam cue: Literature Survey and Review is a syllabus topic under Research Process in Module 1.",
+      "If asked “Which statement best matches Literature Survey and Review?” → A core idea in Research Methodology: Literature Survey and Review."
+    ]
+  },
+  "1.2.5": {
+    "terms": [
+      {
+        "t": "the core idea of Errors in Research",
+        "d": "1.3 Types of Research Design 1.3.1 Pure and Applied 1.3.2 Causal and Correlational"
+      }
+    ],
+    "concepts": [
+      "Core of Errors in Research: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.2.5 · Research Process",
+      "Exam cue: Errors in Research is a syllabus topic under Research Process in Module 1.",
+      "If asked “Which statement best matches Errors in Research?” → A core idea in Research Methodology: Errors in Research."
+    ]
+  },
+  "1.3.1": {
+    "terms": [
+      {
+        "t": "the core idea of Pure and Applied",
+        "d": "1.3.2 Causal and Correlational 1.3.3 Crossectional and Longitudinal 1.3.4 Experimental, Semi-experimental and Non-Experimental"
+      },
+      {
+        "t": "one exam point for Pure and Applied.",
+        "d": "Be able to define Pure and Applied, state when it is used, and contrast it with a related concept in Types of Research Design."
+      }
+    ],
+    "concepts": [
+      "Hold Pure and Applied as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.3.1 · Types of Research Design",
+      "Exam cue: Pure and Applied is a syllabus topic under Types of Research Design in Module 1.",
+      "If asked “Which statement best matches Pure and Applied?” → A core idea in Research Methodology: Pure and Applied."
+    ]
+  },
+  "1.3.2": {
+    "terms": [
+      {
+        "t": "the core idea of Causal and Correlational",
+        "d": "1.3.3 Crossectional and Longitudinal 1.3.4 Experimental, Semi-experimental and Non-Experimental 1.3.5 Descriptive and Exploratory"
+      }
+    ],
+    "concepts": [
+      "Core of Causal and Correlational: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.3.2 · Types of Research Design",
+      "Exam cue: Causal and Correlational is a syllabus topic under Types of Research Design in Module 1.",
+      "If asked “Which statement best matches Causal and Correlational?” → A core idea in Research Methodology: Causal and Correlational."
+    ]
+  },
+  "1.3.3": {
+    "terms": [
+      {
+        "t": "the core idea of Crossectional and Longitudinal",
+        "d": "1.3.4 Experimental, Semi-experimental and Non-Experimental 1.3.5 Descriptive and Exploratory 1.4 Research Modeling"
+      },
+      {
+        "t": "one exam point for Crossectional and Longitudinal.",
+        "d": "Be able to define Crossectional and Longitudinal, state when it is used, and contrast it with a related concept in Types of Research Design."
+      }
+    ],
+    "concepts": [
+      "Hold Crossectional and Longitudinal as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.3.3 · Types of Research Design",
+      "Exam cue: Crossectional and Longitudinal is a syllabus topic under Types of Research Design in Module 1.",
+      "If asked “Which statement best matches Crossectional and Longitudinal?” → A core idea in Research Methodology: Crossectional and Longitudinal."
+    ]
+  },
+  "1.3.4": {
+    "terms": [
+      {
+        "t": "the core idea of Experimental, Semi-experimental and Non-Experimental",
+        "d": "1.3.5 Descriptive and Exploratory 1.4 Research Modeling 1.4.1 Types of Models"
+      }
+    ],
+    "concepts": [
+      "Core of Experimental, Semi-experimental and Non-Experimental: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.3.4 · Types of Research Design",
+      "Exam cue: Experimental, Semi-experimental and Non-Experimental is a syllabus topic under Types of Research Design in Module 1.",
+      "If asked “Which statement best matches Experimental, Semi-experimental and Non-Experimental?” → A core idea in Research Methodology: Experimental, Semi-experimental and Non-Experimental."
+    ]
+  },
+  "1.3.5": {
+    "terms": [
+      {
+        "t": "the core idea of Descriptive and Exploratory",
+        "d": "1.4 Research Modeling 1.4.1 Types of Models 1.4.2 Model Building and Stages"
+      },
+      {
+        "t": "one exam point for Descriptive and Exploratory.",
+        "d": "Be able to define Descriptive and Exploratory, state when it is used, and contrast it with a related concept in Types of Research Design."
+      }
+    ],
+    "concepts": [
+      "Hold Descriptive and Exploratory as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.3.5 · Types of Research Design",
+      "Exam cue: Descriptive and Exploratory is a syllabus topic under Types of Research Design in Module 1.",
+      "If asked “Which statement best matches Descriptive and Exploratory?” → A core idea in Research Methodology: Descriptive and Exploratory."
+    ]
+  },
+  "1.4.1": {
+    "terms": [
+      {
+        "t": "the core idea of Types of Models",
+        "d": "1.4.2 Model Building and Stages 1.4.3 Data Consideration and Testing 1.4.4 Heuristic and Simulation Modeling"
+      }
+    ],
+    "concepts": [
+      "Core of Types of Models: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.4.1 · Research Modeling",
+      "Exam cue: Types of Models is a syllabus topic under Research Modeling in Module 1.",
+      "If asked “Which statement best matches Types of Models?” → A core idea in Research Methodology: Types of Models."
+    ]
+  },
+  "1.4.2": {
+    "terms": [
+      {
+        "t": "the core idea of Model Building and Stages",
+        "d": "1.4.3 Data Consideration and Testing 1.4.4 Heuristic and Simulation Modeling Module - II: Sampling"
+      },
+      {
+        "t": "one exam point for Model Building and Stages.",
+        "d": "Be able to define Model Building and Stages, state when it is used, and contrast it with a related concept in Research Modeling."
+      }
+    ],
+    "concepts": [
+      "Hold Model Building and Stages as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.4.2 · Research Modeling",
+      "Exam cue: Model Building and Stages is a syllabus topic under Research Modeling in Module 1.",
+      "If asked “Which statement best matches Model Building and Stages?” → A core idea in Research Methodology: Model Building and Stages."
+    ]
+  },
+  "1.4.3": {
+    "terms": [
+      {
+        "t": "the core idea of Data Consideration and Testing",
+        "d": "1.4.4 Heuristic and Simulation Modeling Module - II: Sampling 25"
+      }
+    ],
+    "concepts": [
+      "Core of Data Consideration and Testing: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.4.3 · Research Modeling",
+      "Exam cue: Data Consideration and Testing is a syllabus topic under Research Modeling in Module 1.",
+      "If asked “Which statement best matches Data Consideration and Testing?” → A core idea in Research Methodology: Data Consideration and Testing."
+    ]
+  },
+  "1.4.4": {
+    "terms": [
+      {
+        "t": "the core idea of Heuristic and Simulation Modeling",
+        "d": "Module - II: Sampling 25 2.1 Data Collection"
+      },
+      {
+        "t": "one exam point for Heuristic and Simulation Modeling.",
+        "d": "Be able to define Heuristic and Simulation Modeling, state when it is used, and contrast it with a related concept in Research Modeling."
+      }
+    ],
+    "concepts": [
+      "Hold Heuristic and Simulation Modeling as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 1.4.4 · Research Modeling",
+      "Exam cue: Heuristic and Simulation Modeling is a syllabus topic under Research Modeling in Module 1.",
+      "If asked “Which statement best matches Heuristic and Simulation Modeling?” → A core idea in Research Methodology: Heuristic and Simulation Modeling."
+    ]
+  },
+  "2.1.1": {
+    "terms": [
+      {
+        "t": "the core idea of Introduction to Data Collection",
+        "d": "2.1.2 Data Collection Methods 2.1.3 Tabulating and Validating Data 2.2 Questionnaire Designing"
+      },
+      {
+        "t": "one exam point for Introduction to Data Collection.",
+        "d": "Be able to define Introduction to Data Collection, state when it is used, and contrast it with a related concept in Data Collection."
+      }
+    ],
+    "concepts": [
+      "Hold Introduction to Data Collection as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 2.1.1 · Data Collection",
+      "Exam cue: Introduction to Data Collection is a syllabus topic under Data Collection in Module 2.",
+      "If asked “Which statement best matches Introduction to Data Collection?” → A core idea in Research Methodology: Introduction to Data Collection."
+    ]
+  },
+  "2.1.2": {
+    "terms": [
+      {
+        "t": "the core idea of Data Collection Methods",
+        "d": "2.1.3 Tabulating and Validating Data 2.2 Questionnaire Designing 2.2.1 Steps in Constructing a Questionnaire"
+      }
+    ],
+    "concepts": [
+      "Core of Data Collection Methods: be able to restate the definition without the flashcard wording.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 2.1.2 · Data Collection",
+      "Exam cue: Data Collection Methods is a syllabus topic under Data Collection in Module 2.",
+      "If asked “Which statement best matches Data Collection Methods?” → A core idea in Research Methodology: Data Collection Methods."
+    ]
+  },
+  "2.1.3": {
+    "terms": [
+      {
+        "t": "the core idea of Tabulating and Validating Data",
+        "d": "2.2 Questionnaire Designing 2.2.1 Steps in Constructing a Questionnaire 2.2.2 Types of Questions"
+      },
+      {
+        "t": "one exam point for Tabulating and Validating Data.",
+        "d": "Be able to define Tabulating and Validating Data, state when it is used, and contrast it with a related concept in Data Collection."
+      }
+    ],
+    "concepts": [
+      "Hold Tabulating and Validating Data as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 2.1.3 · Data Collection",
+      "Exam cue: Tabulating and Validating Data is a syllabus topic under Data Collection in Module 2.",
+      "If asked “Which statement best matches Tabulating and Validating Data?” → A core idea in Research Methodology: Tabulating and Validating Data."
+    ]
+  },
+  "2.2.1": {
+    "terms": [
+      {
+        "t": "the core idea of Steps in Constructing a Questionnaire",
+        "d": "2.2.2 Types of Questions 2.2.3 Format of Questionnaire 2.3 Sampling"
+      }
+    ],
+    "concepts": [
+      "Core of Steps in Constructing a Questionnaire: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 2.2.1 · Questionnaire Designing",
+      "Exam cue: Steps in Constructing a Questionnaire is a syllabus topic under Questionnaire Designing in Module 2.",
+      "If asked “Which statement best matches Steps in Constructing a Questionnaire?” → A core idea in Research Methodology: Steps in Constructing a Questionnaire."
+    ]
+  },
+  "2.2.2": {
+    "terms": [
+      {
+        "t": "the core idea of Types of Questions",
+        "d": "2.2.3 Format of Questionnaire 2.3 Sampling 2.3.1 Sampling Plan"
+      },
+      {
+        "t": "one exam point for Types of Questions.",
+        "d": "Be able to define Types of Questions, state when it is used, and contrast it with a related concept in Questionnaire Designing."
+      }
+    ],
+    "concepts": [
+      "Hold Types of Questions as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 2.2.2 · Questionnaire Designing",
+      "Exam cue: Types of Questions is a syllabus topic under Questionnaire Designing in Module 2.",
+      "If asked “Which statement best matches Types of Questions?” → A core idea in Research Methodology: Types of Questions."
+    ]
+  },
+  "2.2.3": {
+    "terms": [
+      {
+        "t": "the core idea of Format of Questionnaire",
+        "d": "2.3 Sampling 2.3.1 Sampling Plan 2.3.2 Sampling Frame"
+      }
+    ],
+    "concepts": [
+      "Core of Format of Questionnaire: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 2.2.3 · Questionnaire Designing",
+      "Exam cue: Format of Questionnaire is a syllabus topic under Questionnaire Designing in Module 2.",
+      "If asked “Which statement best matches Format of Questionnaire?” → A core idea in Research Methodology: Format of Questionnaire."
+    ]
+  },
+  "2.3.1": {
+    "terms": [
+      {
+        "t": "the core idea of Sampling Plan",
+        "d": "2.3.2 Sampling Frame (c) Amity University Online"
+      },
+      {
+        "t": "one exam point for Sampling Plan.",
+        "d": "Be able to define Sampling Plan, state when it is used, and contrast it with a related concept in Sampling."
+      }
+    ],
+    "concepts": [
+      "Hold Sampling Plan as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 2.3.1 · Sampling",
+      "Exam cue: Sampling Plan is a syllabus topic under Sampling in Module 2.",
+      "If asked “Which statement best matches Sampling Plan?” → A core idea in Research Methodology: Sampling Plan."
+    ]
+  },
+  "2.3.2": {
+    "terms": [
+      {
+        "t": "the core idea of Sampling Frame",
+        "d": "3. Select the Sampling Method: Decide whether to use probability or non-probability sampling."
+      }
+    ],
+    "concepts": [
+      "Core of Sampling Frame: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 2.3.2 · Sampling",
+      "Exam cue: Sampling Frame is a syllabus topic under Sampling in Module 2.",
+      "If asked “Which statement best matches Sampling Frame?” → A core idea in Research Methodology: Sampling Frame."
+    ]
+  },
+  "2.3.3": {
+    "terms": [
+      {
+        "t": "the core idea of Sample Selection Methods",
+        "d": "2.3.4 Probability Sampling Techniques 2.3.5 Non-Probability Sampling Techniques 2.3.6 Sampling and Non-sampling Errors"
+      },
+      {
+        "t": "one exam point for Sample Selection Methods.",
+        "d": "Be able to define Sample Selection Methods, state when it is used, and contrast it with a related concept in Sampling."
+      }
+    ],
+    "concepts": [
+      "Hold Sample Selection Methods as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 2.3.3 · Sampling",
+      "Exam cue: Sample Selection Methods is a syllabus topic under Sampling in Module 2.",
+      "If asked “Which statement best matches Sample Selection Methods?” → A core idea in Research Methodology: Sample Selection Methods."
+    ]
+  },
+  "2.3.4": {
+    "terms": [
+      {
+        "t": "the core idea of Probability Sampling Techniques",
+        "d": "2.3.5 Non-Probability Sampling Techniques 2.3.6 Sampling and Non-sampling Errors Module - III: Data Collection and Experiments"
+      }
+    ],
+    "concepts": [
+      "Core of Probability Sampling Techniques: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 2.3.4 · Sampling",
+      "Exam cue: Probability Sampling Techniques is a syllabus topic under Sampling in Module 2.",
+      "If asked “Which statement best matches Probability Sampling Techniques?” → A core idea in Research Methodology: Probability Sampling Techniques."
+    ]
+  },
+  "2.3.5": {
+    "terms": [
+      {
+        "t": "the core idea of Non-Probability Sampling Techniques",
+        "d": "2.3.6 Sampling and Non-sampling Errors Module - III: Data Collection and Experiments 50"
+      },
+      {
+        "t": "one exam point for Non-Probability Sampling Techniques.",
+        "d": "Be able to define Non-Probability Sampling Techniques, state when it is used, and contrast it with a related concept in Sampling."
+      }
+    ],
+    "concepts": [
+      "Hold Non-Probability Sampling Techniques as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 2.3.5 · Sampling",
+      "Exam cue: Non-Probability Sampling Techniques is a syllabus topic under Sampling in Module 2.",
+      "If asked “Which statement best matches Non-Probability Sampling Techniques?” → A core idea in Research Methodology: Non-Probability Sampling Techniques."
+    ]
+  },
+  "2.3.6": {
+    "terms": [
+      {
+        "t": "the core idea of Sampling and Non-sampling Errors",
+        "d": "Module - III: Data Collection and Experiments 50 3.1 Design of Experiments"
+      }
+    ],
+    "concepts": [
+      "Core of Sampling and Non-sampling Errors: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 2.3.6 · Sampling",
+      "Exam cue: Sampling and Non-sampling Errors is a syllabus topic under Sampling in Module 2.",
+      "If asked “Which statement best matches Sampling and Non-sampling Errors?” → A core idea in Research Methodology: Sampling and Non-sampling Errors."
+    ]
+  },
+  "3.1.1": {
+    "terms": [
+      {
+        "t": "the core idea of Design of Experiment: Objectives and Strategies",
+        "d": "3.1.1 Design of Experiment: Objectives and Strategies 3.1.2 Pre-Experimental Research Design 3.1.3 Quasi Experimental Research Design"
+      },
+      {
+        "t": "one exam point for Design of Experiment: Objectives and Strategies.",
+        "d": "Be able to define Design of Experiment: Objectives and Strategies, state when it is used, and contrast it with a related concept in Design of Experiments."
+      }
+    ],
+    "concepts": [
+      "Hold Design of Experiment: Objectives and Strategies as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.1.1 · Design of Experiments",
+      "Exam cue: Design of Experiment: Objectives and Strategies is a syllabus topic under Design of Experiments in Module 3.",
+      "If asked “Which statement best matches Design of Experiment: Objectives and Strategies?” → A core idea in Research Methodology: Design of Experiment: Objectives and Strategies."
+    ]
+  },
+  "3.1.2": {
+    "terms": [
+      {
+        "t": "the core idea of Pre-Experimental Research Design",
+        "d": "3.1.3 Quasi Experimental Research Design 3.1.4 True Experimental Research Design 3.1.5 Factorial Experimental Design"
+      }
+    ],
+    "concepts": [
+      "Core of Pre-Experimental Research Design: be able to restate the definition without the flashcard wording.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.1.2 · Design of Experiments",
+      "Exam cue: Pre-Experimental Research Design is a syllabus topic under Design of Experiments in Module 3.",
+      "If asked “Which statement best matches Pre-Experimental Research Design?” → A core idea in Research Methodology: Pre-Experimental Research Design."
+    ]
+  },
+  "3.1.3": {
+    "terms": [
+      {
+        "t": "the core idea of Quasi Experimental Research Design",
+        "d": "3.1.4 True Experimental Research Design 3.1.5 Factorial Experimental Design 3.1.6 Designing Engineering Experiments"
+      },
+      {
+        "t": "one exam point for Quasi Experimental Research Design.",
+        "d": "Be able to define Quasi Experimental Research Design, state when it is used, and contrast it with a related concept in Design of Experiments."
+      }
+    ],
+    "concepts": [
+      "Hold Quasi Experimental Research Design as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.1.3 · Design of Experiments",
+      "Exam cue: Quasi Experimental Research Design is a syllabus topic under Design of Experiments in Module 3.",
+      "If asked “Which statement best matches Quasi Experimental Research Design?” → A core idea in Research Methodology: Quasi Experimental Research Design."
+    ]
+  },
+  "3.1.4": {
+    "terms": [
+      {
+        "t": "the core idea of True Experimental Research Design",
+        "d": "3.1.5 Factorial Experimental Design 3.1.6 Designing Engineering Experiments 3.1.7 Causal Attributions"
+      }
+    ],
+    "concepts": [
+      "Core of True Experimental Research Design: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.1.4 · Design of Experiments",
+      "Exam cue: True Experimental Research Design is a syllabus topic under Design of Experiments in Module 3.",
+      "If asked “Which statement best matches True Experimental Research Design?” → A core idea in Research Methodology: True Experimental Research Design."
+    ]
+  },
+  "3.1.5": {
+    "terms": [
+      {
+        "t": "the core idea of Factorial Experimental Design",
+        "d": "3.1.6 Designing Engineering Experiments 3.1.7 Causal Attributions 3.1.8 Statistical Control"
+      },
+      {
+        "t": "one exam point for Factorial Experimental Design.",
+        "d": "Be able to define Factorial Experimental Design, state when it is used, and contrast it with a related concept in Design of Experiments."
+      }
+    ],
+    "concepts": [
+      "Hold Factorial Experimental Design as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.1.5 · Design of Experiments",
+      "Exam cue: Factorial Experimental Design is a syllabus topic under Design of Experiments in Module 3.",
+      "If asked “Which statement best matches Factorial Experimental Design?” → A core idea in Research Methodology: Factorial Experimental Design."
+    ]
+  },
+  "3.1.6": {
+    "terms": [
+      {
+        "t": "the core idea of Designing Engineering Experiments",
+        "d": "3.1.7 Causal Attributions 3.1.8 Statistical Control 3.2 Data Collection"
+      }
+    ],
+    "concepts": [
+      "Core of Designing Engineering Experiments: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.1.6 · Design of Experiments",
+      "Exam cue: Designing Engineering Experiments is a syllabus topic under Design of Experiments in Module 3.",
+      "If asked “Which statement best matches Designing Engineering Experiments?” → A core idea in Research Methodology: Designing Engineering Experiments."
+    ]
+  },
+  "3.1.7": {
+    "terms": [
+      {
+        "t": "the core idea of Causal Attributions",
+        "d": "3.1.8 Statistical Control 3.2 Data Collection 3.2.1 Collection of Data via Observation and Interview"
+      },
+      {
+        "t": "one exam point for Causal Attributions.",
+        "d": "Be able to define Causal Attributions, state when it is used, and contrast it with a related concept in Design of Experiments."
+      }
+    ],
+    "concepts": [
+      "Hold Causal Attributions as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.1.7 · Design of Experiments",
+      "Exam cue: Causal Attributions is a syllabus topic under Design of Experiments in Module 3.",
+      "If asked “Which statement best matches Causal Attributions?” → A core idea in Research Methodology: Causal Attributions."
+    ]
+  },
+  "3.1.8": {
+    "terms": [
+      {
+        "t": "the core idea of Statistical Control",
+        "d": "3.2 Data Collection 3.2.1 Collection of Data via Observation and Interview 3.2.2 Collection of Data through Cases"
+      }
+    ],
+    "concepts": [
+      "Core of Statistical Control: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.1.8 · Design of Experiments",
+      "Exam cue: Statistical Control is a syllabus topic under Design of Experiments in Module 3.",
+      "If asked “Which statement best matches Statistical Control?” → A core idea in Research Methodology: Statistical Control."
+    ]
+  },
+  "3.2.1": {
+    "terms": [
+      {
+        "t": "the core idea of Collection of Data via Observation and Interview",
+        "d": "3.2.2 Collection of Data through Cases 3.2.3 Collection of Data through Questionnaires 3.2.4 Guidelines for Preparing Questionnaire"
+      },
+      {
+        "t": "one exam point for Collection of Data via Observation and Interview.",
+        "d": "Be able to define Collection of Data via Observation and Interview, state when it is used, and contrast it with a related concept in Data Collection."
+      }
+    ],
+    "concepts": [
+      "Hold Collection of Data via Observation and Interview as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.2.1 · Data Collection",
+      "Exam cue: Collection of Data via Observation and Interview is a syllabus topic under Data Collection in Module 3.",
+      "If asked “Which statement best matches Collection of Data via Observation and Interview?” → A core idea in Research Methodology: Collection of Data via Observation and Interview."
+    ]
+  },
+  "3.2.2": {
+    "terms": [
+      {
+        "t": "the core idea of Collection of Data through Cases",
+        "d": "3.2.2 Collection of Data through Cases 3.2.3 Collection of Data through Questionnaires 3.2.4 Guidelines for Preparing Questionnaire"
+      }
+    ],
+    "concepts": [
+      "Core of Collection of Data through Cases: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.2.2 · Data Collection",
+      "Exam cue: Collection of Data through Cases is a syllabus topic under Data Collection in Module 3.",
+      "If asked “Which statement best matches Collection of Data through Cases?” → A core idea in Research Methodology: Collection of Data through Cases."
+    ]
+  },
+  "3.2.3": {
+    "terms": [
+      {
+        "t": "the core idea of Collection of Data through Questionnaires",
+        "d": "3.2.2 Collection of Data through Cases 3.2.3 Collection of Data through Questionnaires 3.2.4 Guidelines for Preparing Questionnaire"
+      },
+      {
+        "t": "one exam point for Collection of Data through Questionnaires.",
+        "d": "Be able to define Collection of Data through Questionnaires, state when it is used, and contrast it with a related concept in Data Collection."
+      }
+    ],
+    "concepts": [
+      "Hold Collection of Data through Questionnaires as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.2.3 · Data Collection",
+      "Exam cue: Collection of Data through Questionnaires is a syllabus topic under Data Collection in Module 3.",
+      "If asked “Which statement best matches Collection of Data through Questionnaires?” → A core idea in Research Methodology: Collection of Data through Questionnaires."
+    ]
+  },
+  "3.2.4": {
+    "terms": [
+      {
+        "t": "the core idea of Guidelines for Preparing Questionnaire",
+        "d": "3.2.5 Data Editing 3.2.6 Data Coding Rules 3.2.7 Don’t Know” Responses"
+      }
+    ],
+    "concepts": [
+      "Core of Guidelines for Preparing Questionnaire: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.2.4 · Data Collection",
+      "Exam cue: Guidelines for Preparing Questionnaire is a syllabus topic under Data Collection in Module 3.",
+      "If asked “Which statement best matches Guidelines for Preparing Questionnaire?” → A core idea in Research Methodology: Guidelines for Preparing Questionnaire."
+    ]
+  },
+  "3.2.5": {
+    "terms": [
+      {
+        "t": "the core idea of Data Editing",
+        "d": "3.2.6 Data Coding Rules 3.2.7 Don’t Know” Responses 3.2.8 Missing Data"
+      },
+      {
+        "t": "one exam point for Data Editing.",
+        "d": "Be able to define Data Editing, state when it is used, and contrast it with a related concept in Data Collection."
+      }
+    ],
+    "concepts": [
+      "Hold Data Editing as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.2.5 · Data Collection",
+      "Exam cue: Data Editing is a syllabus topic under Data Collection in Module 3.",
+      "If asked “Which statement best matches Data Editing?” → A core idea in Research Methodology: Data Editing."
+    ]
+  },
+  "3.2.6": {
+    "terms": [
+      {
+        "t": "the core idea of Data Coding Rules",
+        "d": "3.2.7 Don’t Know” Responses 3.2.8 Missing Data 3.3 Basic Principles"
+      }
+    ],
+    "concepts": [
+      "Core of Data Coding Rules: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.2.6 · Data Collection",
+      "Exam cue: Data Coding Rules is a syllabus topic under Data Collection in Module 3.",
+      "If asked “Which statement best matches Data Coding Rules?” → A core idea in Research Methodology: Data Coding Rules."
+    ]
+  },
+  "3.2.7": {
+    "terms": [
+      {
+        "t": "the core idea of Don’t Know” Responses",
+        "d": "3.2.8 Missing Data 3.3 Basic Principles 3.3.1 Validity and Reliability"
+      },
+      {
+        "t": "one exam point for Don’t Know” Responses.",
+        "d": "Be able to define Don’t Know” Responses, state when it is used, and contrast it with a related concept in Data Collection."
+      }
+    ],
+    "concepts": [
+      "Hold Don’t Know” Responses as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.2.7 · Data Collection",
+      "Exam cue: Don’t Know” Responses is a syllabus topic under Data Collection in Module 3.",
+      "If asked “Which statement best matches Don’t Know” Responses?” → A core idea in Research Methodology: Don’t Know” Responses."
+    ]
+  },
+  "3.2.8": {
+    "terms": [
+      {
+        "t": "the core idea of Missing Data",
+        "d": "3.3 Basic Principles 3.3.1 Validity and Reliability 3.3.2 Replication, Randomisation and Blocking"
+      }
+    ],
+    "concepts": [
+      "Core of Missing Data: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.2.8 · Data Collection",
+      "Exam cue: Missing Data is a syllabus topic under Data Collection in Module 3.",
+      "If asked “Which statement best matches Missing Data?” → A core idea in Research Methodology: Missing Data."
+    ]
+  },
+  "3.3.1": {
+    "terms": [
+      {
+        "t": "the core idea of Validity and Reliability",
+        "d": "3.3.2 Replication, Randomisation and Blocking 3.3.3 Orthogonality and False Positives Module - IV: Models and Hypothesis"
+      },
+      {
+        "t": "one exam point for Validity and Reliability.",
+        "d": "Be able to define Validity and Reliability, state when it is used, and contrast it with a related concept in Basic Principles."
+      }
+    ],
+    "concepts": [
+      "Hold Validity and Reliability as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.3.1 · Basic Principles",
+      "Exam cue: Validity and Reliability is a syllabus topic under Basic Principles in Module 3.",
+      "If asked “Which statement best matches Validity and Reliability?” → A core idea in Research Methodology: Validity and Reliability."
+    ]
+  },
+  "3.3.2": {
+    "terms": [
+      {
+        "t": "the core idea of Replication, Randomisation and Blocking",
+        "d": "3.3.3 Orthogonality and False Positives Module - IV: Models and Hypothesis 80"
+      }
+    ],
+    "concepts": [
+      "Core of Replication, Randomisation and Blocking: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.3.2 · Basic Principles",
+      "Exam cue: Replication, Randomisation and Blocking is a syllabus topic under Basic Principles in Module 3.",
+      "If asked “Which statement best matches Replication, Randomisation and Blocking?” → A core idea in Research Methodology: Replication, Randomisation and Blocking."
+    ]
+  },
+  "3.3.3": {
+    "terms": [
+      {
+        "t": "the core idea of Orthogonality and False Positives",
+        "d": "Module - IV: Models and Hypothesis 80 4.1 Hypothesis Testing"
+      },
+      {
+        "t": "one exam point for Orthogonality and False Positives.",
+        "d": "Be able to define Orthogonality and False Positives, state when it is used, and contrast it with a related concept in Basic Principles."
+      }
+    ],
+    "concepts": [
+      "Hold Orthogonality and False Positives as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 3.3.3 · Basic Principles",
+      "Exam cue: Orthogonality and False Positives is a syllabus topic under Basic Principles in Module 3.",
+      "If asked “Which statement best matches Orthogonality and False Positives?” → A core idea in Research Methodology: Orthogonality and False Positives."
+    ]
+  },
+  "4.1.1": {
+    "terms": [
+      {
+        "t": "the core idea of Introduction to Hypothesis",
+        "d": "4.1.2 Developing Hypothesis : Null and Alternate 4.1.3 Type I and Type II Error 4.1.4 One-Tailed and Two-tailed Test"
+      },
+      {
+        "t": "one exam point for Introduction to Hypothesis.",
+        "d": "Be able to define Introduction to Hypothesis, state when it is used, and contrast it with a related concept in Hypothesis Testing."
+      }
+    ],
+    "concepts": [
+      "Hold Introduction to Hypothesis as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.1.1 · Hypothesis Testing",
+      "Exam cue: Introduction to Hypothesis is a syllabus topic under Hypothesis Testing in Module 4.",
+      "If asked “Which statement best matches Introduction to Hypothesis?” → A core idea in Research Methodology: Introduction to Hypothesis."
+    ]
+  },
+  "4.1.2": {
+    "terms": [
+      {
+        "t": "the core idea of Developing Hypothesis : Null and Alternate",
+        "d": "4.1.3 Type I and Type II Error 4.1.4 One-Tailed and Two-tailed Test 4.1.5 Degree of Freedom"
+      }
+    ],
+    "concepts": [
+      "Core of Developing Hypothesis : Null and Alternate: be able to restate the definition without the flashcard wording.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.1.2 · Hypothesis Testing",
+      "Exam cue: Developing Hypothesis : Null and Alternate is a syllabus topic under Hypothesis Testing in Module 4.",
+      "If asked “Which statement best matches Developing Hypothesis : Null and Alternate?” → A core idea in Research Methodology: Developing Hypothesis : Null and Alternate."
+    ]
+  },
+  "4.1.3": {
+    "terms": [
+      {
+        "t": "the core idea of Type I and Type II Error",
+        "d": "4.1.4 One-Tailed and Two-tailed Test 4.1.5 Degree of Freedom 4.1.6 Confidence Intervals"
+      },
+      {
+        "t": "one exam point for Type I and Type II Error.",
+        "d": "Be able to define Type I and Type II Error, state when it is used, and contrast it with a related concept in Hypothesis Testing."
+      }
+    ],
+    "concepts": [
+      "Hold Type I and Type II Error as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.1.3 · Hypothesis Testing",
+      "Exam cue: Type I and Type II Error is a syllabus topic under Hypothesis Testing in Module 4.",
+      "If asked “Which statement best matches Type I and Type II Error?” → A core idea in Research Methodology: Type I and Type II Error."
+    ]
+  },
+  "4.1.4": {
+    "terms": [
+      {
+        "t": "the core idea of One-Tailed and Two-tailed Test",
+        "d": "4.1.5 Degree of Freedom 4.1.6 Confidence Intervals 4.1.7 Level of Significance: The Confidence Coefficient"
+      }
+    ],
+    "concepts": [
+      "Core of One-Tailed and Two-tailed Test: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.1.4 · Hypothesis Testing",
+      "Exam cue: One-Tailed and Two-tailed Test is a syllabus topic under Hypothesis Testing in Module 4.",
+      "If asked “Which statement best matches One-Tailed and Two-tailed Test?” → A core idea in Research Methodology: One-Tailed and Two-tailed Test."
+    ]
+  },
+  "4.1.5": {
+    "terms": [
+      {
+        "t": "the core idea of Degree of Freedom",
+        "d": "4.1.6 Confidence Intervals 4.1.7 Level of Significance: The Confidence Coefficient (c) Amity University Online"
+      },
+      {
+        "t": "one exam point for Degree of Freedom.",
+        "d": "Be able to define Degree of Freedom, state when it is used, and contrast it with a related concept in Hypothesis Testing."
+      }
+    ],
+    "concepts": [
+      "Hold Degree of Freedom as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.1.5 · Hypothesis Testing",
+      "Exam cue: Degree of Freedom is a syllabus topic under Hypothesis Testing in Module 4.",
+      "If asked “Which statement best matches Degree of Freedom?” → A core idea in Research Methodology: Degree of Freedom."
+    ]
+  },
+  "4.1.6": {
+    "terms": [
+      {
+        "t": "the core idea of Confidence Intervals",
+        "d": "4.1.7 Level of Significance: The Confidence Coefficient (c) Amity University Online"
+      }
+    ],
+    "concepts": [
+      "Core of Confidence Intervals: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.1.6 · Hypothesis Testing",
+      "Exam cue: Confidence Intervals is a syllabus topic under Hypothesis Testing in Module 4.",
+      "If asked “Which statement best matches Confidence Intervals?” → A core idea in Research Methodology: Confidence Intervals."
+    ]
+  },
+  "4.1.7": {
+    "terms": [
+      {
+        "t": "the core idea of Level of Significance: The Confidence Coefficient",
+        "d": "Key SLM topic: Level of Significance: The Confidence Coefficient. Review definitions, steps, and one worked example from the study PDF."
+      },
+      {
+        "t": "one exam point for Level of Significance: The Confidence Coefficient.",
+        "d": "Be able to define Level of Significance: The Confidence Coefficient, state when it is used, and contrast it with a related concept in Hypothesis Testing."
+      }
+    ],
+    "concepts": [
+      "Hold Level of Significance: The Confidence Coefficient as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.1.7 · Hypothesis Testing",
+      "Exam cue: Level of Significance: The Confidence Coefficient is a syllabus topic under Hypothesis Testing in Module 4.",
+      "If asked “Which statement best matches Level of Significance: The Confidence Coefficient?” → A core idea in Research Methodology: Level of Significance: The Confidence Coefficient."
+    ]
+  },
+  "4.1.8": {
+    "terms": [
+      {
+        "t": "the core idea of Rejection and Non-rejection Regions",
+        "d": "4.1.9 Hypothesis Testing Procedure 4.1.10 Types of Tests 4.1.11 How to Select a Test"
+      }
+    ],
+    "concepts": [
+      "Core of Rejection and Non-rejection Regions: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.1.8 · Hypothesis Testing",
+      "Exam cue: Rejection and Non-rejection Regions is a syllabus topic under Hypothesis Testing in Module 4.",
+      "If asked “Which statement best matches Rejection and Non-rejection Regions?” → A core idea in Research Methodology: Rejection and Non-rejection Regions."
+    ]
+  },
+  "4.1.9": {
+    "terms": [
+      {
+        "t": "the core idea of Hypothesis Testing Procedure",
+        "d": "4.1.10 Types of Tests 4.1.11 How to Select a Test 4.2 Parametric Test"
+      },
+      {
+        "t": "one exam point for Hypothesis Testing Procedure.",
+        "d": "Be able to define Hypothesis Testing Procedure, state when it is used, and contrast it with a related concept in Hypothesis Testing."
+      }
+    ],
+    "concepts": [
+      "Hold Hypothesis Testing Procedure as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.1.9 · Hypothesis Testing",
+      "Exam cue: Hypothesis Testing Procedure is a syllabus topic under Hypothesis Testing in Module 4.",
+      "If asked “Which statement best matches Hypothesis Testing Procedure?” → A core idea in Research Methodology: Hypothesis Testing Procedure."
+    ]
+  },
+  "4.1.10": {
+    "terms": [
+      {
+        "t": "the core idea of Types of Tests",
+        "d": "4.1.11 How to Select a Test 4.2 Parametric Test 4.2.1 Important Parametric Tests"
+      }
+    ],
+    "concepts": [
+      "Core of Types of Tests: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.1.10 · Hypothesis Testing",
+      "Exam cue: Types of Tests is a syllabus topic under Hypothesis Testing in Module 4.",
+      "If asked “Which statement best matches Types of Tests?” → A core idea in Research Methodology: Types of Tests."
+    ]
+  },
+  "4.1.11": {
+    "terms": [
+      {
+        "t": "the core idea of How to Select a Test",
+        "d": "4.2 Parametric Test 4.2.1 Important Parametric Tests 4.2.2 Hypothesis Testing of Means: Single Population Mean Using Z-statistic"
+      },
+      {
+        "t": "one exam point for How to Select a Test.",
+        "d": "Be able to define How to Select a Test, state when it is used, and contrast it with a related concept in Hypothesis Testing."
+      }
+    ],
+    "concepts": [
+      "Hold How to Select a Test as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.1.11 · Hypothesis Testing",
+      "Exam cue: How to Select a Test is a syllabus topic under Hypothesis Testing in Module 4.",
+      "If asked “Which statement best matches How to Select a Test?” → A core idea in Research Methodology: How to Select a Test."
+    ]
+  },
+  "4.2.1": {
+    "terms": [
+      {
+        "t": "the core idea of Important Parametric Tests",
+        "d": "4.2.2 Hypothesis Testing of Means: Single Population Mean Using Z-statistic 4.2.3 Hypothesis Testing of Means: Single Population Mean Using T-statistic 4.2.4 Hypothesis Testing for Population Proportions"
+      }
+    ],
+    "concepts": [
+      "Core of Important Parametric Tests: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.2.1 · Parametric Test",
+      "Exam cue: Important Parametric Tests is a syllabus topic under Parametric Test in Module 4.",
+      "If asked “Which statement best matches Important Parametric Tests?” → A core idea in Research Methodology: Important Parametric Tests."
+    ]
+  },
+  "4.2.2": {
+    "terms": [
+      {
+        "t": "the core idea of Hypothesis Testing of Means: Single Population Mea…",
+        "d": "4.1.10 Types of Tests 4.1.11 How to Select a Test 4.2 Parametric Test"
+      },
+      {
+        "t": "one exam point for Hypothesis Testing of Means: Single Population M…",
+        "d": "Be able to define Hypothesis Testing of Means: Single Population Mean Using Z-statistic, state when it is used, and contrast it with a related concept in Parametric Test."
+      }
+    ],
+    "concepts": [
+      "Hold Hypothesis Testing of Means: Single Population Mean Using Z-statistic as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.2.2 · Parametric Test",
+      "Exam cue: Hypothesis Testing of Means: Single Population Mean Using Z-statistic is a syllabus topic under Parametric Test in Module 4.",
+      "If asked “Which statement best matches Hypothesis Testing of Means: Single Population Mean Using Z-statistic?” → A core idea in Research Methodology: Hypothesis Testing of Means: Single Population Mean Using Z-statistic."
+    ]
+  },
+  "4.2.3": {
+    "terms": [
+      {
+        "t": "the core idea of Hypothesis Testing of Means: Single Population Mea…",
+        "d": "4.1.10 Types of Tests 4.1.11 How to Select a Test 4.2 Parametric Test"
+      }
+    ],
+    "concepts": [
+      "Core of Hypothesis Testing of Means: Single Population Mean Using T-statistic: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.2.3 · Parametric Test",
+      "Exam cue: Hypothesis Testing of Means: Single Population Mean Using T-statistic is a syllabus topic under Parametric Test in Module 4.",
+      "If asked “Which statement best matches Hypothesis Testing of Means: Single Population Mean Using T-statistic?” → A core idea in Research Methodology: Hypothesis Testing of Means: Single Population Mean Using T-statistic."
+    ]
+  },
+  "4.2.4": {
+    "terms": [
+      {
+        "t": "the core idea of Hypothesis Testing for Population Proportions",
+        "d": "4.1.10 Types of Tests 4.1.11 How to Select a Test 4.2 Parametric Test"
+      },
+      {
+        "t": "one exam point for Hypothesis Testing for Population Proportions.",
+        "d": "Be able to define Hypothesis Testing for Population Proportions, state when it is used, and contrast it with a related concept in Parametric Test."
+      }
+    ],
+    "concepts": [
+      "Hold Hypothesis Testing for Population Proportions as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.2.4 · Parametric Test",
+      "Exam cue: Hypothesis Testing for Population Proportions is a syllabus topic under Parametric Test in Module 4.",
+      "If asked “Which statement best matches Hypothesis Testing for Population Proportions?” → A core idea in Research Methodology: Hypothesis Testing for Population Proportions."
+    ]
+  },
+  "4.2.5": {
+    "terms": [
+      {
+        "t": "the core idea of Hypothesis Testing for Comparing a Variance to Hyp…",
+        "d": "4.1.10 Types of Tests 4.1.11 How to Select a Test 4.2 Parametric Test"
+      }
+    ],
+    "concepts": [
+      "Core of Hypothesis Testing for Comparing a Variance to Hypothesized Population Variance: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.2.5 · Parametric Test",
+      "Exam cue: Hypothesis Testing for Comparing a Variance to Hypothesized Population Variance is a syllabus topic under Parametric Test in Module 4.",
+      "If asked “Which statement best matches Hypothesis Testing for Comparing a Variance to Hypothesized Population Variance?” → A core idea in Research Methodology: Hypothesis Testing for Comparing a Variance to Hypothesized Population Variance."
+    ]
+  },
+  "4.2.6": {
+    "terms": [
+      {
+        "t": "the core idea of Testing the Equality of Variances of Two Normal Po…",
+        "d": "4.2.7 ANOVA for Fixed Effect Model 4.2.8 Total, Treatment & error of Squares 4.2.9 ANOVA for Random Effect Model"
+      },
+      {
+        "t": "one exam point for Testing the Equality of Variances of Two Normal …",
+        "d": "Be able to define Testing the Equality of Variances of Two Normal Populations, state when it is used, and contrast it with a related concept in Parametric Test."
+      }
+    ],
+    "concepts": [
+      "Hold Testing the Equality of Variances of Two Normal Populations as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.2.6 · Parametric Test",
+      "Exam cue: Testing the Equality of Variances of Two Normal Populations is a syllabus topic under Parametric Test in Module 4.",
+      "If asked “Which statement best matches Testing the Equality of Variances of Two Normal Populations?” → A core idea in Research Methodology: Testing the Equality of Variances of Two Normal Populations."
+    ]
+  },
+  "4.2.7": {
+    "terms": [
+      {
+        "t": "the core idea of ANOVA for Fixed Effect Model",
+        "d": "4.2.8 Total, Treatment & error of Squares 4.2.9 ANOVA for Random Effect Model 4.2.10 Single Factor Experiment"
+      }
+    ],
+    "concepts": [
+      "Core of ANOVA for Fixed Effect Model: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.2.7 · Parametric Test",
+      "Exam cue: ANOVA for Fixed Effect Model is a syllabus topic under Parametric Test in Module 4.",
+      "If asked “Which statement best matches ANOVA for Fixed Effect Model?” → A core idea in Research Methodology: ANOVA for Fixed Effect Model."
+    ]
+  },
+  "4.2.8": {
+    "terms": [
+      {
+        "t": "the core idea of Total, Treatment & error of Squares",
+        "d": "4.2.9 ANOVA for Random Effect Model 4.2.10 Single Factor Experiment 4.2.11 Model Adequacy Checking"
+      },
+      {
+        "t": "one exam point for Total, Treatment & error of Squares.",
+        "d": "Be able to define Total, Treatment & error of Squares, state when it is used, and contrast it with a related concept in Parametric Test."
+      }
+    ],
+    "concepts": [
+      "Hold Total, Treatment & error of Squares as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.2.8 · Parametric Test",
+      "Exam cue: Total, Treatment & error of Squares is a syllabus topic under Parametric Test in Module 4.",
+      "If asked “Which statement best matches Total, Treatment & error of Squares?” → A core idea in Research Methodology: Total, Treatment & error of Squares."
+    ]
+  },
+  "4.2.9": {
+    "terms": [
+      {
+        "t": "the core idea of ANOVA for Random Effect Model",
+        "d": "4.2.10 Single Factor Experiment 4.2.11 Model Adequacy Checking Module - V: Report Writing"
+      }
+    ],
+    "concepts": [
+      "Core of ANOVA for Random Effect Model: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.2.9 · Parametric Test",
+      "Exam cue: ANOVA for Random Effect Model is a syllabus topic under Parametric Test in Module 4.",
+      "If asked “Which statement best matches ANOVA for Random Effect Model?” → A core idea in Research Methodology: ANOVA for Random Effect Model."
+    ]
+  },
+  "4.2.10": {
+    "terms": [
+      {
+        "t": "the core idea of Single Factor Experiment",
+        "d": "4.2.11 Model Adequacy Checking Module - V: Report Writing 124"
+      },
+      {
+        "t": "one exam point for Single Factor Experiment.",
+        "d": "Be able to define Single Factor Experiment, state when it is used, and contrast it with a related concept in Parametric Test."
+      }
+    ],
+    "concepts": [
+      "Hold Single Factor Experiment as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.2.10 · Parametric Test",
+      "Exam cue: Single Factor Experiment is a syllabus topic under Parametric Test in Module 4.",
+      "If asked “Which statement best matches Single Factor Experiment?” → A core idea in Research Methodology: Single Factor Experiment."
+    ]
+  },
+  "4.2.11": {
+    "terms": [
+      {
+        "t": "the core idea of Model Adequacy Checking",
+        "d": "Module - V: Report Writing 124 5.1 Research Report Writing"
+      }
+    ],
+    "concepts": [
+      "Core of Model Adequacy Checking: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 4.2.11 · Parametric Test",
+      "Exam cue: Model Adequacy Checking is a syllabus topic under Parametric Test in Module 4.",
+      "If asked “Which statement best matches Model Adequacy Checking?” → A core idea in Research Methodology: Model Adequacy Checking."
+    ]
+  },
+  "5.1.1": {
+    "terms": [
+      {
+        "t": "the core idea of Meaning of Research Report",
+        "d": "5.1.2 Structure of Scientific Report 5.1.3 Components of Scientific Report 5.1.4 Types of Reports"
+      },
+      {
+        "t": "one exam point for Meaning of Research Report.",
+        "d": "Be able to define Meaning of Research Report, state when it is used, and contrast it with a related concept in Research Report Writing."
+      }
+    ],
+    "concepts": [
+      "Hold Meaning of Research Report as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.1.1 · Research Report Writing",
+      "Exam cue: Meaning of Research Report is a syllabus topic under Research Report Writing in Module 5.",
+      "If asked “Which statement best matches Meaning of Research Report?” → A core idea in Research Methodology: Meaning of Research Report."
+    ]
+  },
+  "5.1.2": {
+    "terms": [
+      {
+        "t": "the core idea of Structure of Scientific Report",
+        "d": "5.1.3 Components of Scientific Report 5.1.4 Types of Reports 5.1.5 Steps in Report Writing"
+      }
+    ],
+    "concepts": [
+      "Core of Structure of Scientific Report: be able to restate the definition without the flashcard wording.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.1.2 · Research Report Writing",
+      "Exam cue: Structure of Scientific Report is a syllabus topic under Research Report Writing in Module 5.",
+      "If asked “Which statement best matches Structure of Scientific Report?” → A core idea in Research Methodology: Structure of Scientific Report."
+    ]
+  },
+  "5.1.3": {
+    "terms": [
+      {
+        "t": "the core idea of Components of Scientific Report",
+        "d": "5.1.4 Types of Reports 5.1.5 Steps in Report Writing 5.1.6 Format and Writing Style"
+      },
+      {
+        "t": "one exam point for Components of Scientific Report.",
+        "d": "Be able to define Components of Scientific Report, state when it is used, and contrast it with a related concept in Research Report Writing."
+      }
+    ],
+    "concepts": [
+      "Hold Components of Scientific Report as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.1.3 · Research Report Writing",
+      "Exam cue: Components of Scientific Report is a syllabus topic under Research Report Writing in Module 5.",
+      "If asked “Which statement best matches Components of Scientific Report?” → A core idea in Research Methodology: Components of Scientific Report."
+    ]
+  },
+  "5.1.4": {
+    "terms": [
+      {
+        "t": "the core idea of Types of Reports",
+        "d": "5.1.5 Steps in Report Writing 5.1.6 Format and Writing Style 5.1.7 Illustrations and Tables"
+      }
+    ],
+    "concepts": [
+      "Core of Types of Reports: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.1.4 · Research Report Writing",
+      "Exam cue: Types of Reports is a syllabus topic under Research Report Writing in Module 5.",
+      "If asked “Which statement best matches Types of Reports?” → A core idea in Research Methodology: Types of Reports."
+    ]
+  },
+  "5.1.5": {
+    "terms": [
+      {
+        "t": "the core idea of Steps in Report Writing",
+        "d": "5.1.6 Format and Writing Style 5.1.7 Illustrations and Tables 5.1.8 Citing and Referencing Sources"
+      },
+      {
+        "t": "one exam point for Steps in Report Writing.",
+        "d": "Be able to define Steps in Report Writing, state when it is used, and contrast it with a related concept in Research Report Writing."
+      }
+    ],
+    "concepts": [
+      "Hold Steps in Report Writing as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.1.5 · Research Report Writing",
+      "Exam cue: Steps in Report Writing is a syllabus topic under Research Report Writing in Module 5.",
+      "If asked “Which statement best matches Steps in Report Writing?” → A core idea in Research Methodology: Steps in Report Writing."
+    ]
+  },
+  "5.1.6": {
+    "terms": [
+      {
+        "t": "the core idea of Format and Writing Style",
+        "d": "5.1.7 Illustrations and Tables 5.1.8 Citing and Referencing Sources 5.1.9 Footnotes"
+      }
+    ],
+    "concepts": [
+      "Core of Format and Writing Style: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.1.6 · Research Report Writing",
+      "Exam cue: Format and Writing Style is a syllabus topic under Research Report Writing in Module 5.",
+      "If asked “Which statement best matches Format and Writing Style?” → A core idea in Research Methodology: Format and Writing Style."
+    ]
+  },
+  "5.1.7": {
+    "terms": [
+      {
+        "t": "the core idea of Illustrations and Tables",
+        "d": "5.1.8 Citing and Referencing Sources 5.1.9 Footnotes 5.2 Presentation"
+      },
+      {
+        "t": "one exam point for Illustrations and Tables.",
+        "d": "Be able to define Illustrations and Tables, state when it is used, and contrast it with a related concept in Research Report Writing."
+      }
+    ],
+    "concepts": [
+      "Hold Illustrations and Tables as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.1.7 · Research Report Writing",
+      "Exam cue: Illustrations and Tables is a syllabus topic under Research Report Writing in Module 5.",
+      "If asked “Which statement best matches Illustrations and Tables?” → A core idea in Research Methodology: Illustrations and Tables."
+    ]
+  },
+  "5.1.8": {
+    "terms": [
+      {
+        "t": "the core idea of Citing and Referencing Sources",
+        "d": "5.1.9 Footnotes 5.2 Presentation 5.2.1 Oral Presentation"
+      }
+    ],
+    "concepts": [
+      "Core of Citing and Referencing Sources: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.1.8 · Research Report Writing",
+      "Exam cue: Citing and Referencing Sources is a syllabus topic under Research Report Writing in Module 5.",
+      "If asked “Which statement best matches Citing and Referencing Sources?” → A core idea in Research Methodology: Citing and Referencing Sources."
+    ]
+  },
+  "5.1.9": {
+    "terms": [
+      {
+        "t": "the core idea of Footnotes",
+        "d": "5.2 Presentation 5.2.1 Oral Presentation 5.2.2 Making Presentation"
+      },
+      {
+        "t": "one exam point for Footnotes.",
+        "d": "Be able to define Footnotes, state when it is used, and contrast it with a related concept in Research Report Writing."
+      }
+    ],
+    "concepts": [
+      "Hold Footnotes as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.1.9 · Research Report Writing",
+      "Exam cue: Footnotes is a syllabus topic under Research Report Writing in Module 5.",
+      "If asked “Which statement best matches Footnotes?” → A core idea in Research Methodology: Footnotes."
+    ]
+  },
+  "5.2.1": {
+    "terms": [
+      {
+        "t": "the core idea of Oral Presentation",
+        "d": "5.2.2 Making Presentation 5.2.3 Use of Visual Aids 5.2.4 Importance of Effective Communication"
+      }
+    ],
+    "concepts": [
+      "Core of Oral Presentation: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.2.1 · Presentation",
+      "Exam cue: Oral Presentation is a syllabus topic under Presentation in Module 5.",
+      "If asked “Which statement best matches Oral Presentation?” → A core idea in Research Methodology: Oral Presentation."
+    ]
+  },
+  "5.2.2": {
+    "terms": [
+      {
+        "t": "the core idea of Making Presentation",
+        "d": "5.2.3 Use of Visual Aids 5.2.4 Importance of Effective Communication 5.2.5 Convention and Strategies of Authentication"
+      },
+      {
+        "t": "one exam point for Making Presentation.",
+        "d": "Be able to define Making Presentation, state when it is used, and contrast it with a related concept in Presentation."
+      }
+    ],
+    "concepts": [
+      "Hold Making Presentation as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.2.2 · Presentation",
+      "Exam cue: Making Presentation is a syllabus topic under Presentation in Module 5.",
+      "If asked “Which statement best matches Making Presentation?” → A core idea in Research Methodology: Making Presentation."
+    ]
+  },
+  "5.2.3": {
+    "terms": [
+      {
+        "t": "the core idea of Use of Visual Aids",
+        "d": "5.2.4 Importance of Effective Communication 5.2.5 Convention and Strategies of Authentication 5.3 Writing a Research Paper"
+      }
+    ],
+    "concepts": [
+      "Core of Use of Visual Aids: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.2.3 · Presentation",
+      "Exam cue: Use of Visual Aids is a syllabus topic under Presentation in Module 5.",
+      "If asked “Which statement best matches Use of Visual Aids?” → A core idea in Research Methodology: Use of Visual Aids."
+    ]
+  },
+  "5.2.4": {
+    "terms": [
+      {
+        "t": "the core idea of Importance of Effective Communication",
+        "d": "5.2.5 Convention and Strategies of Authentication 5.3 Writing a Research Paper 5.3.1 Preparing Research Papers for Journals"
+      },
+      {
+        "t": "one exam point for Importance of Effective Communication.",
+        "d": "Be able to define Importance of Effective Communication, state when it is used, and contrast it with a related concept in Presentation."
+      }
+    ],
+    "concepts": [
+      "Hold Importance of Effective Communication as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.2.4 · Presentation",
+      "Exam cue: Importance of Effective Communication is a syllabus topic under Presentation in Module 5.",
+      "If asked “Which statement best matches Importance of Effective Communication?” → A core idea in Research Methodology: Importance of Effective Communication."
+    ]
+  },
+  "5.2.5": {
+    "terms": [
+      {
+        "t": "the core idea of Convention and Strategies of Authentication",
+        "d": "5.3 Writing a Research Paper 5.3.1 Preparing Research Papers for Journals 5.3.2 Design of Paper Using Template"
+      }
+    ],
+    "concepts": [
+      "Core of Convention and Strategies of Authentication: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.2.5 · Presentation",
+      "Exam cue: Convention and Strategies of Authentication is a syllabus topic under Presentation in Module 5.",
+      "If asked “Which statement best matches Convention and Strategies of Authentication?” → A core idea in Research Methodology: Convention and Strategies of Authentication."
+    ]
+  },
+  "5.3.1": {
+    "terms": [
+      {
+        "t": "the core idea of Preparing Research Papers for Journals",
+        "d": "5.3.2 Design of Paper Using Template 5.3.3 Calculation of Impact Factor of a Journal (c) Amity University Online"
+      },
+      {
+        "t": "one exam point for Preparing Research Papers for Journals.",
+        "d": "Be able to define Preparing Research Papers for Journals, state when it is used, and contrast it with a related concept in Writing a Research Paper."
+      }
+    ],
+    "concepts": [
+      "Hold Preparing Research Papers for Journals as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.3.1 · Writing a Research Paper",
+      "Exam cue: Preparing Research Papers for Journals is a syllabus topic under Writing a Research Paper in Module 5.",
+      "If asked “Which statement best matches Preparing Research Papers for Journals?” → A core idea in Research Methodology: Preparing Research Papers for Journals."
+    ]
+  },
+  "5.3.2": {
+    "terms": [
+      {
+        "t": "the core idea of Design of Paper Using Template",
+        "d": "5.3.3 Calculation of Impact Factor of a Journal (c) Amity University Online"
+      }
+    ],
+    "concepts": [
+      "Core of Design of Paper Using Template: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.3.2 · Writing a Research Paper",
+      "Exam cue: Design of Paper Using Template is a syllabus topic under Writing a Research Paper in Module 5.",
+      "If asked “Which statement best matches Design of Paper Using Template?” → A core idea in Research Methodology: Design of Paper Using Template."
+    ]
+  },
+  "5.3.3": {
+    "terms": [
+      {
+        "t": "the core idea of Calculation of Impact Factor of a Journal",
+        "d": "Key SLM topic: Calculation of Impact Factor of a Journal. Review definitions, steps, and one worked example from the study PDF."
+      },
+      {
+        "t": "one exam point for Calculation of Impact Factor of a Journal.",
+        "d": "Be able to define Calculation of Impact Factor of a Journal, state when it is used, and contrast it with a related concept in Writing a Research Paper."
+      }
+    ],
+    "concepts": [
+      "Hold Calculation of Impact Factor of a Journal as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.3.3 · Writing a Research Paper",
+      "Exam cue: Calculation of Impact Factor of a Journal is a syllabus topic under Writing a Research Paper in Module 5.",
+      "If asked “Which statement best matches Calculation of Impact Factor of a Journal?” → A core idea in Research Methodology: Calculation of Impact Factor of a Journal."
+    ]
+  },
+  "5.3.4": {
+    "terms": [
+      {
+        "t": "the core idea of Citation Index",
+        "d": "5.3.5 ISBN and ISSN 5.4 Planning a Project Proposal 5.4.1 Identifying and Defining Problem"
+      }
+    ],
+    "concepts": [
+      "Core of Citation Index: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.3.4 · Writing a Research Paper",
+      "Exam cue: Citation Index is a syllabus topic under Writing a Research Paper in Module 5.",
+      "If asked “Which statement best matches Citation Index?” → A core idea in Research Methodology: Citation Index."
+    ]
+  },
+  "5.3.5": {
+    "terms": [
+      {
+        "t": "the core idea of ISBN and ISSN",
+        "d": "5.4 Planning a Project Proposal 5.4.1 Identifying and Defining Problem 5.4.2 Research Problem Aspects and Considerations"
+      },
+      {
+        "t": "one exam point for ISBN and ISSN.",
+        "d": "Be able to define ISBN and ISSN, state when it is used, and contrast it with a related concept in Writing a Research Paper."
+      }
+    ],
+    "concepts": [
+      "Hold ISBN and ISSN as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.3.5 · Writing a Research Paper",
+      "Exam cue: ISBN and ISSN is a syllabus topic under Writing a Research Paper in Module 5.",
+      "If asked “Which statement best matches ISBN and ISSN?” → A core idea in Research Methodology: ISBN and ISSN."
+    ]
+  },
+  "5.4.1": {
+    "terms": [
+      {
+        "t": "the core idea of Identifying and Defining Problem",
+        "d": "5.4.2 Research Problem Aspects and Considerations 5.4.3 Research Plan (c) Amity University Online"
+      }
+    ],
+    "concepts": [
+      "Core of Identifying and Defining Problem: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.4.1 · Planning a Project Proposal",
+      "Exam cue: Identifying and Defining Problem is a syllabus topic under Planning a Project Proposal in Module 5.",
+      "If asked “Which statement best matches Identifying and Defining Problem?” → A core idea in Research Methodology: Identifying and Defining Problem."
+    ]
+  },
+  "5.4.2": {
+    "terms": [
+      {
+        "t": "the core idea of Research Problem Aspects and Considerations",
+        "d": "5.4.3 Research Plan (c) Amity University Online"
+      },
+      {
+        "t": "one exam point for Research Problem Aspects and Considerations.",
+        "d": "Be able to define Research Problem Aspects and Considerations, state when it is used, and contrast it with a related concept in Planning a Project Proposal."
+      }
+    ],
+    "concepts": [
+      "Hold Research Problem Aspects and Considerations as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.4.2 · Planning a Project Proposal",
+      "Exam cue: Research Problem Aspects and Considerations is a syllabus topic under Planning a Project Proposal in Module 5.",
+      "If asked “Which statement best matches Research Problem Aspects and Considerations?” → A core idea in Research Methodology: Research Problem Aspects and Considerations."
+    ]
+  },
+  "5.4.3": {
+    "terms": [
+      {
+        "t": "the core idea of Research Plan",
+        "d": "goal. Take, for example, a study of an organisation’s contribution to environmental sustainability. The specific goals will be as follows:"
+      }
+    ],
+    "concepts": [
+      "Core of Research Plan: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Research Methodology (CSIT745) · 5.4.3 · Planning a Project Proposal",
+      "Exam cue: Research Plan is a syllabus topic under Planning a Project Proposal in Module 5.",
+      "If asked “Which statement best matches Research Plan?” → A core idea in Research Methodology: Research Plan."
+    ]
+  }
+}

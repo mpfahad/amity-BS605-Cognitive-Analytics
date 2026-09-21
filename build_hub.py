@@ -186,23 +186,49 @@ def load_subject(subject_id: str) -> tuple[dict, dict, str, dict, dict]:
     return data, maps, lmr, meta, deep_notes
 
 
-def _synth_deep_from_topic(topic: dict | None) -> dict:
+def _synth_deep_from_topic(topic: dict | None, lmr: bool = False) -> dict:
+    """Fallback when _deep_notes.json lacks an entry — never emit generic filler."""
     terms: list[dict] = []
+    concepts: list[str] = []
     notes: list[str] = []
     if not topic:
         return {"terms": [], "concepts": [], "notes": []}
+    title = topic.get("title") or topic.get("id")
     for c in topic.get("flashcards") or []:
         front = (c.get("front") or "").strip().rstrip("?")
-        if len(front) > 72:
-            front = front[:69] + "…"
-        terms.append({"t": front or "Key point", "d": c.get("back") or ""})
+        for prefix in ("What is ", "What are ", "Define ", "Explain ", "List ", "Name ", "Describe "):
+            if front.lower().startswith(prefix.lower()):
+                front = front[len(prefix) :]
+                break
+        if len(front) > 70:
+            front = front[:67] + "…"
+        back = c.get("back") or ""
+        if back:
+            terms.append({"t": front or "Key idea", "d": back})
         if c.get("detail"):
             notes.append(c["detail"])
-    concepts = [f"Core topic: {topic.get('title') or topic.get('id')}."]
-    return {"terms": terms, "concepts": concepts, "notes": notes}
+    for q in topic.get("mcqs") or []:
+        explain = (q.get("explain") or "").strip()
+        if explain:
+            notes.append(f"Exam cue: {explain}")
+    if terms:
+        concepts.append(f"Hold {title} as definitions you can say in one line each.")
+    if lmr:
+        concepts.append("LMR: prioritise the term list and exam cues below.")
+    seen: set[str] = set()
+    uniq = []
+    for n in notes:
+        if n and n not in seen:
+            seen.add(n)
+            uniq.append(n)
+    return {
+        "terms": terms[: 8 if lmr else 5],
+        "concepts": concepts[: 4 if lmr else 3],
+        "notes": uniq[: 8 if lmr else 4],
+    }
 
 
-def _deep_for(key: str, deep_notes: dict, topic: dict | None) -> dict:
+def _deep_for(key: str, deep_notes: dict, topic: dict | None, lmr: bool = False) -> dict:
     raw = deep_notes.get(key) if deep_notes else None
     if raw and isinstance(raw, dict):
         return {
@@ -210,7 +236,7 @@ def _deep_for(key: str, deep_notes: dict, topic: dict | None) -> dict:
             "concepts": raw.get("concepts") or [],
             "notes": raw.get("notes") or [],
         }
-    return _synth_deep_from_topic(topic)
+    return _synth_deep_from_topic(topic, lmr=lmr)
 
 
 def enrich_maps_payload(data: dict, maps: dict, deep_notes: dict | None = None) -> dict:
@@ -283,9 +309,10 @@ def enrich_maps_payload(data: dict, maps: dict, deep_notes: dict | None = None) 
                 if n.get("note"):
                     points.insert(0, "Map note: " + n["note"])
                 topic_id = str(n.get("topicId") or nid)
-                deep = _deep_for(topic_id, deep_notes, topic)
+                is_lmr = bool(n.get("lmr"))
+                deep = _deep_for(topic_id, deep_notes, topic, lmr=is_lmr)
                 if not any(deep.values()):
-                    deep = _deep_for(nid, deep_notes, topic)
+                    deep = _deep_for(nid, deep_notes, topic, lmr=is_lmr)
                 nodes[nid] = {
                     "kind": n.get("kind", "a"),
                     "title": title,
@@ -293,7 +320,7 @@ def enrich_maps_payload(data: dict, maps: dict, deep_notes: dict | None = None) 
                     "body": body or n.get("body") or "Open flashcards for this topic for full notes.",
                     "points": points,
                     "topicId": topic_id,
-                    "lmr": bool(n.get("lmr")),
+                    "lmr": is_lmr,
                     "note": n.get("note") or "",
                     "qCount": q_count,
                     "fcCount": fc_count,

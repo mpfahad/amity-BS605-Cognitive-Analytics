@@ -2,34 +2,1007 @@
   "m1_root": {
     "terms": [
       {
-        "t": "Module 1",
-        "d": "How we understand the self, think flexibly, solve problems, and interpret other people — from TEA and Johari through attribution, stereotypes, and criticism."
+        "t": "Self tools",
+        "d": "TEA, Johari, PE Scale, esteem/efficacy/respect, assertiveness."
+      },
+      {
+        "t": "Thinking tools",
+        "d": "ICEDIP, Six Hats, cognitive flexibility and errors."
+      },
+      {
+        "t": "Social cognition",
+        "d": "Schemas, attribution, stereotype vs prejudice."
       }
     ],
     "concepts": [
-      "Faculty: foundations here; Module 2 (EI/attitudes) usually carries more exam weight",
-      "Walk Self tools → thinking tools → social cognition",
-      "Map criterion: one node ≈ one study topic (several SLM § merged where they share one exam idea)"
+      "Walk the map: Self → thinking tools → social cognition.",
+      "Faculty often weight Module 2 (EI/attitudes) higher than Module 1 foundations.",
+      "Many Module 1 LMR items are definition + contrast pairs."
     ],
     "notes": [
-      "Open topic cards for Terms · Concepts · Short notes."
+      "Open each card’s Deep notes for term lists and exam traps.",
+      "LMR cards (orange outline) are denser — prioritise those for revision."
     ]
   },
   "m2_root": {
     "terms": [
       {
-        "t": "Module 2",
-        "d": "Exam-heavy module: attitude structure (ABC + characteristics) and emotional intelligence (Goleman), plus interpersonal vs intrapersonal intelligence."
+        "t": "Attitude",
+        "d": "Evaluation of a person, idea, or object as favourable or unfavourable."
+      },
+      {
+        "t": "Emotional intelligence (Goleman)",
+        "d": "Interpret, understand, and manage own and others’ emotions at work."
+      },
+      {
+        "t": "Attitude ABC",
+        "d": "Affective · Behavioural · Cognitive — not Ellis ABC."
       }
     ],
     "concepts": [
-      "Faculty: Module 2 / EI usually outweighs Module 1",
-      "Do not confuse Attitude ABC with Ellis ABC (Module 5)",
-      "Live-class extras not given their own node: locus of control; cognition→emotion→behaviour pathway (see tips below)",
-      "Locus of control (internal/external) links EI + resilience — use in case answers even though SLM nests it lightly"
+      "Exam-heavy module: attitude structure + Goleman EI usually outweigh Module 1 alone.",
+      "Attitude ABC ≠ Ellis ABC (Module 5: Adversity–Beliefs–Consequences).",
+      "EI (self + others) ≠ Gardner intrapersonal (self only)."
     ],
     "notes": [
-      "Open topic cards for Terms · Concepts · Short notes."
+      "If a stem mixes ABC flavours, check which module frame it is asking for.",
+      "Locus of control (internal/external) is a live-class extra — useful in case answers."
+    ]
+  },
+  "m4_root": {
+    "terms": [
+      {
+        "t": "Conflict",
+        "d": "Incompatible goals, cognitions, or emotions leading to opposition."
+      },
+      {
+        "t": "Mediation",
+        "d": "Neutral facilitation — not taking sides or judging."
+      },
+      {
+        "t": "Negotiation",
+        "d": "Distributive (claim value) vs integrative (create value)."
+      }
+    ],
+    "concepts": [
+      "Flow: diagnose conflict → choose style → mediate if needed → negotiate.",
+      "Disagreement ≠ full conflict; conflict is not always negative.",
+      "Four pillars sit on top of negotiation technique."
+    ],
+    "notes": [
+      "Match resolution style to stakes and time (compete vs collaborate vs avoid).",
+      "Mediator ≠ arbitrator who decides for the parties."
+    ]
+  },
+  "m5_root": {
+    "terms": [
+      {
+        "t": "Values (Rokeach)",
+        "d": "Terminal = desired ends; instrumental = preferred means/modes of behaviour."
+      },
+      {
+        "t": "Resilience",
+        "d": "Positive adaptation in the face of serious adversity — both parts required."
+      },
+      {
+        "t": "VUCA",
+        "d": "Volatility, Uncertainty, Complexity, Ambiguity."
+      }
+    ],
+    "concepts": [
+      "Ethics applies standards to conduct; values shape what is desirable.",
+      "Ellis ABC (beliefs mediate feelings) ≠ Attitude ABC.",
+      "Agility adapts behaviour under VUCA; resilience adapts under adversity."
+    ],
+    "notes": [
+      "Resilience stems need both adversity and positive adaptation.",
+      "Rokeach: responsibility as means to friendship = instrumental serving terminal."
+    ]
+  },
+  "1.1": {
+    "terms": [
+      {
+        "t": "Self",
+        "d": "Sense of personal identity; studied via person–situation interaction."
+      },
+      {
+        "t": "ABCs of the self",
+        "d": "Affective, Behavioural, Cognitive domains of the self."
+      },
+      {
+        "t": "Self-concept",
+        "d": "Knowledge representation about oneself — traits, roles, values — organised into self-schemas."
+      },
+      {
+        "t": "Self-schema",
+        "d": "Mental structure that guides processing of self-relevant information."
+      }
+    ],
+    "concepts": [
+      "Self-concept is cognitive self-knowledge; it is not the same as self-esteem (global worth).",
+      "ABCs here describe domains of the self — different from Attitude ABC and Ellis ABC.",
+      "Schemas about the self filter what you notice and remember about yourself."
+    ],
+    "notes": [
+      "Stem “knowledge about oneself / self-schemas” → self-concept.",
+      "Stem “global worth / liking yourself” → self-esteem (1.5), not self-concept.",
+      "Don’t answer Attitude ABC when the stem is about the self’s ABCs."
+    ]
+  },
+  "1.2": {
+    "terms": [
+      {
+        "t": "T-E-A model",
+        "d": "Thoughts, Emotions, and Actions constantly influence each other."
+      },
+      {
+        "t": "Thoughts",
+        "d": "Internal processing and beliefs."
+      },
+      {
+        "t": "Emotions",
+        "d": "Internal states and felt values."
+      },
+      {
+        "t": "Actions",
+        "d": "External behaviours and words."
+      }
+    ],
+    "concepts": [
+      "Changing one TEA component tends to shift the others — reciprocal, not one-way.",
+      "Useful for coaching/case answers: intervene at thought, feeling, or behaviour level.",
+      "Related to but not identical with Attitude ABC (evaluation components) or Ellis ABC (adversity→beliefs→consequences)."
+    ],
+    "notes": [
+      "LMR: “mutual influence / change one shifts others” → TEA.",
+      "If stem lists Affective–Behavioural–Cognitive as attitude parts → Module 2, not TEA.",
+      "If stem is Adversity–Beliefs–Consequences → Ellis (5.4), not TEA.",
+      "One-line exam answer: Thoughts, emotions, and actions continually influence each other."
+    ]
+  },
+  "1.3": {
+    "terms": [
+      {
+        "t": "Johari Window",
+        "d": "Four panes of known/unknown information to self and others (Luft & Ingham)."
+      },
+      {
+        "t": "Open / Arena",
+        "d": "Known to self and known to others."
+      },
+      {
+        "t": "Blind spot",
+        "d": "Known to others, unknown to self."
+      },
+      {
+        "t": "Hidden / Façade",
+        "d": "Known to self, unknown to others."
+      },
+      {
+        "t": "Unknown",
+        "d": "Unknown to self and unknown to others."
+      }
+    ],
+    "concepts": [
+      "Enlarge Open by feedback (shrink Blind) + disclosure (shrink Hidden).",
+      "Trust grows when disclosure and learning from feedback work together.",
+      "PE Scale (1.4) are skills that operate on Johari panes — they are not the four panes themselves."
+    ],
+    "notes": [
+      "LMR: “others know / you don’t” → Blind; “you know / others don’t” → Hidden.",
+      "Listing panes without Unknown is a common miss.",
+      "Don’t confuse Johari panes with PE Scale dimensions (SD, OTF, Perceptiveness).",
+      "Stem “enlarge the Arena” → feedback + disclosure."
+    ]
+  },
+  "1.4": {
+    "terms": [
+      {
+        "t": "PE Scale",
+        "d": "Personal Effectiveness: Self-disclosure (SD), Openness to feedback (OTF), Perceptiveness."
+      },
+      {
+        "t": "Self-disclosure (SD)",
+        "d": "Willingness to share relevant self-information."
+      },
+      {
+        "t": "Openness to feedback (OTF)",
+        "d": "Willingness to receive and use others’ observations."
+      },
+      {
+        "t": "Perceptiveness",
+        "d": "Ability to notice cues about self, others, and situations."
+      }
+    ],
+    "concepts": [
+      "Effective people use SD + OTF + perceptiveness to shrink secret/blind areas and enlarge the Arena.",
+      "PE dimensions act on Johari — they are tools, not the pane names.",
+      "Low SD + low OTF keeps people stuck with large Hidden/Blind areas."
+    ],
+    "notes": [
+      "Stem asks for three PE dimensions → SD, OTF, Perceptiveness.",
+      "If options are Open/Blind/Hidden/Unknown → Johari, not PE Scale.",
+      "Link answer to Johari when asked how PE improves the Open area."
+    ]
+  },
+  "1.5": {
+    "terms": [
+      {
+        "t": "Self-esteem",
+        "d": "Overall subjective sense of personal worth / liking of self."
+      },
+      {
+        "t": "Self-efficacy (Bandura)",
+        "d": "Belief you can succeed at a specific task or goal — not a global trait."
+      },
+      {
+        "t": "Self-respect",
+        "d": "Pride in who you are, moral courage, and standards for how you allow yourself to be treated."
+      },
+      {
+        "t": "Self-concept",
+        "d": "Cognitive map of who you are (see 1.1) — distinct from esteem and efficacy."
+      }
+    ],
+    "concepts": [
+      "Esteem = global worth; efficacy = task-specific confidence; respect = dignity/treatment standards.",
+      "You can have high esteem but low efficacy on a hard exam task (or the reverse).",
+      "Faculty often test the esteem vs efficacy contrast with one concrete example."
+    ],
+    "notes": [
+      "LMR: “task-specific belief I can do X” → self-efficacy.",
+      "LMR: “overall worth / like myself” → self-esteem.",
+      "Don’t use self-concept when the stem is about worth or task confidence.",
+      "One example ready: “I value myself (esteem) but doubt I can code this module (low efficacy).”"
+    ]
+  },
+  "1.6": {
+    "terms": [
+      {
+        "t": "Assertiveness",
+        "d": "Express thoughts/feelings truthfully while respecting others — between passivity and aggression."
+      },
+      {
+        "t": "Passive",
+        "d": "Withhold needs; avoid conflict at personal cost."
+      },
+      {
+        "t": "Aggressive",
+        "d": "Push needs without respect for others."
+      },
+      {
+        "t": "Assertive skill set",
+        "d": "Respect, Openness, Honesty, Accountability, Self-control, Delegation."
+      }
+    ],
+    "concepts": [
+      "Assertive ≠ aggressive: honesty plus respect is the differentiator.",
+      "Delegation appears in the assertive skills list — not only a management technique.",
+      "Links to EI (Module 2): self-regulation and social skill support assertiveness."
+    ],
+    "notes": [
+      "LMR: “between passive and aggressive” → assertiveness.",
+      "Be ready to list 4–6 skills if asked (ROHASD mnemonic: Respect, Openness, Honesty, Accountability, Self-control, Delegation).",
+      "If stem rewards “winning at all costs” → competing/aggression, not assertiveness."
+    ]
+  },
+  "1.7": {
+    "terms": [
+      {
+        "t": "Professional social media etiquette",
+        "d": "Respectful communication, privacy awareness, and appropriate sharing online."
+      },
+      {
+        "t": "Technology adoption",
+        "d": "How thoughtfully people take up tools in ways that affect reputation and norms."
+      }
+    ],
+    "concepts": [
+      "Online presence is part of workplace reputation — etiquette is professional behaviour, not optional manners.",
+      "Oversharing and ignoring organisational norms are classic exam “wrong” cues."
+    ],
+    "notes": [
+      "Stem emphasises privacy / respectful posting / appropriate sharing → etiquette.",
+      "Don’t answer with maximum authenticity-via-oversharing."
+    ]
+  },
+  "1.8": {
+    "terms": [
+      {
+        "t": "ICEDIP (Geoff Petty)",
+        "d": "Inspiration, Clarification, Distillation, Perspiration, Evaluation, Incubation."
+      },
+      {
+        "t": "Incubation",
+        "d": "Stepping away so subconscious processing can occur."
+      },
+      {
+        "t": "Evaluation",
+        "d": "Judging strengths and flaws — not the same as incubation."
+      },
+      {
+        "t": "Visualization",
+        "d": "Mental rehearsal: combine outcome + process simulation; participant > observer perspective."
+      }
+    ],
+    "concepts": [
+      "ICEDIP phases can occur in any order and repeat; each phase has its own mind-set.",
+      "Incubation ≠ evaluation — frequent mix-up.",
+      "Visualization works better when you rehearse steps (process) not only the trophy (outcome)."
+    ],
+    "notes": [
+      "LMR: expand all six ICEDIP letters once under exam pressure.",
+      "“Step away / subconscious” → Incubation; “judge quality” → Evaluation.",
+      "Visualization: participant perspective generally beats observer perspective.",
+      "Order rule: any order, repeatable — don’t invent a fixed sequence as the only truth."
+    ]
+  },
+  "1.9": {
+    "terms": [
+      {
+        "t": "Problem sensitivity",
+        "d": "Capacity to notice when something is wrong or likely to go wrong."
+      }
+    ],
+    "concepts": [
+      "Sensitivity = recognition only; it does not include solving the problem.",
+      "Distinct from cognitive flexibility (adapting strategies) and from Six Hats (structured thinking modes)."
+    ],
+    "notes": [
+      "Stem “notice only / not solve” → problem sensitivity.",
+      "If options include fixing the issue, that is problem solving — not sensitivity."
+    ]
+  },
+  "1.10": {
+    "terms": [
+      {
+        "t": "Blue hat",
+        "d": "Process control — director of the thinking agenda."
+      },
+      {
+        "t": "White hat",
+        "d": "Facts and data only — no spin."
+      },
+      {
+        "t": "Red hat",
+        "d": "Feelings and intuition — no justification required in the moment."
+      },
+      {
+        "t": "Black hat",
+        "d": "Risks, caution, critical flaws — detached risk analysis."
+      },
+      {
+        "t": "Yellow hat",
+        "d": "Benefits and optimism."
+      },
+      {
+        "t": "Green hat",
+        "d": "Creativity and alternatives."
+      }
+    ],
+    "concepts": [
+      "Hats are parallel thinking modes — one mode at a time, not personality labels forever.",
+      "Blue is meta-control: manages when other hats are used.",
+      "Black ≠ “being a bad person”; it is disciplined caution."
+    ],
+    "notes": [
+      "LMR: map colour → function cold (Blue/White/Red/Black/Yellow/Green).",
+      "“Facts only / detective” → White; “feelings” → Red; “risks” → Black; “ideas” → Green.",
+      "Blue hat ≠ content expert — it runs the process.",
+      "Don’t confuse hat colours with Tuckman stages or conflict styles."
+    ]
+  },
+  "1.11": {
+    "terms": [
+      {
+        "t": "Cognitive flexibility",
+        "d": "Disengage from one task, hold several concepts, adapt strategies to new conditions — learnable."
+      },
+      {
+        "t": "Polarized / all-or-nothing",
+        "d": "Seeing only extremes; no middle ground."
+      },
+      {
+        "t": "Overgeneralization",
+        "d": "One event becomes a forever rule."
+      },
+      {
+        "t": "Mental filter",
+        "d": "Dwelling on one negative detail."
+      },
+      {
+        "t": "Emotional reasoning",
+        "d": "“I feel it, therefore it is true.”"
+      },
+      {
+        "t": "Mind reading / fortune telling",
+        "d": "Assuming others’ thoughts or predicting catastrophe as fact."
+      }
+    ],
+    "concepts": [
+      "SLM packs flexibility with Beck/Burns cognitive errors as one exam cluster.",
+      "Flexibility is executive-function skill; errors are biased thinking patterns — related but not identical.",
+      "Emotional reasoning is a high-yield named error with a one-line example."
+    ],
+    "notes": [
+      "LMR: name 4–5 errors with a tiny example each (especially emotional reasoning, all-or-nothing).",
+      "“I feel anxious so the project is failing” → emotional reasoning.",
+      "Flexibility stem focuses on adapting / switching sets, not listing biases.",
+      "Don’t dump Six Hats colours as “cognitive errors.”"
+    ]
+  },
+  "1.12": {
+    "terms": [
+      {
+        "t": "Social cognition",
+        "d": "How people perceive, recall, attend to, and use social information."
+      },
+      {
+        "t": "Schema",
+        "d": "Mental structure of general knowledge about a social object or situation."
+      },
+      {
+        "t": "Salience",
+        "d": "How much a cue stands out and grabs attention."
+      },
+      {
+        "t": "Priming",
+        "d": "Recent exposure makes a schema more accessible."
+      },
+      {
+        "t": "Social inference",
+        "d": "Inferring intentions, desires, emotions, traits from observed behaviour."
+      }
+    ],
+    "concepts": [
+      "Salience and priming both raise schema accessibility — different routes.",
+      "Social inference supports social success; it is part of the social cognition family.",
+      "Attribution (1.13) is a specialised form of causal inference about behaviour."
+    ],
+    "notes": [
+      "“Recent exposure makes idea come to mind” → priming.",
+      "Don’t answer FAE when the stem is only about schemas/priming."
+    ]
+  },
+  "1.13": {
+    "terms": [
+      {
+        "t": "Attribution",
+        "d": "Inferring causes of behaviour."
+      },
+      {
+        "t": "Internal / personal causes",
+        "d": "Personality, ability, effort."
+      },
+      {
+        "t": "External / situational causes",
+        "d": "Environment, luck, others’ actions."
+      },
+      {
+        "t": "Fundamental attribution error (FAE)",
+        "d": "For others: overestimate personal causes, underestimate situation."
+      },
+      {
+        "t": "Actor–observer difference",
+        "d": "For self as actor: emphasise external causes more than when observing others."
+      },
+      {
+        "t": "Self-serving bias",
+        "d": "Credit success internally; blame failure externally."
+      }
+    ],
+    "concepts": [
+      "FAE targets explanations of others; actor–observer is about self vs other perspectives; self-serving protects self-image.",
+      "All three are attribution biases — learn the trio as a set.",
+      "Internal vs external is the basic causal split before biases."
+    ],
+    "notes": [
+      "LMR trio: FAE · actor–observer · self-serving — one line each.",
+      "“He failed because he’s lazy” (ignoring context) → FAE.",
+      "“I failed because the exam was unfair” after “I passed because I’m smart” → self-serving.",
+      "Don’t swap FAE with self-serving when the stem is about judging other people."
+    ]
+  },
+  "1.14": {
+    "terms": [
+      {
+        "t": "Stereotype",
+        "d": "Cognitive generalization about a group (“pictures in our heads”)."
+      },
+      {
+        "t": "Prejudice",
+        "d": "Derogatory / evaluative attitude toward group members."
+      },
+      {
+        "t": "Discrimination",
+        "d": "Behaviour — unfair treatment based on group membership."
+      },
+      {
+        "t": "Contact hypothesis path",
+        "d": "Intergroup contact can reduce prejudice via knowledge, lower anxiety, empathy."
+      }
+    ],
+    "concepts": [
+      "Stereotype = cognitive; prejudice = evaluative attitude; discrimination = behaviour.",
+      "Prejudice is not automatically the same as discriminatory acts.",
+      "Accepting criticism skills (calm, restate, open perspectives) are packed on this map card with S-P-D."
+    ],
+    "notes": [
+      "LMR: “generalized idea about a group” → stereotype; “negative attitude” → prejudice; “unequal treatment” → discrimination.",
+      "Contact reduces prejudice by knowledge + empathy + lower anxiety — not by increasing distance.",
+      "Criticism steps: remain calm → reiterate (“So you’re saying…”) → open both views → polite exit if needed.",
+      "Don’t call prejudice a behaviour; that’s discrimination."
+    ]
+  },
+  "2.1": {
+    "terms": [
+      {
+        "t": "Attitude",
+        "d": "Evaluation of a person, idea, or object as favourable or unfavourable."
+      }
+    ],
+    "concepts": [
+      "Attitudes are evaluative orientations that influence perception and behaviour (Allport’s centrality in social psychology).",
+      "Attitude object = whatever is being evaluated."
+    ],
+    "notes": [
+      "Definition stem → evaluation, not a Tuckman stage or sociometric pattern."
+    ]
+  },
+  "2.2": {
+    "terms": [
+      {
+        "t": "Valence",
+        "d": "Magnitude of favourability or unfavourability."
+      },
+      {
+        "t": "Multiplicity",
+        "d": "Number of components in the attitude system (simple vs complex)."
+      },
+      {
+        "t": "Centrality",
+        "d": "Importance of the object to the person; central attitudes resist change."
+      },
+      {
+        "t": "Pervasiveness",
+        "d": "Attitudes show up across domains via socialization."
+      },
+      {
+        "t": "Invisible / acquired",
+        "d": "Inferred from effects; learned over life (often family-transmitted)."
+      }
+    ],
+    "concepts": [
+      "Characteristics pack: valence, multiplicity, needs served, centrality, pervasiveness, invisible, acquired.",
+      "High centrality → hard to change; useful for persuasion and change questions.",
+      "Valence is strength of +/−, not the same as multiplicity (how many pieces)."
+    ],
+    "notes": [
+      "LMR: “strength of favour/unfavour” → valence; “importance / resists change” → centrality.",
+      "Be ready to explain needs, pervasiveness, invisible, acquired in one line each.",
+      "Don’t confuse valence with VI (Idealized Influence) or with emotion intensity alone."
+    ]
+  },
+  "2.3": {
+    "terms": [
+      {
+        "t": "Cognitive component",
+        "d": "Beliefs and knowledge about the attitude object."
+      },
+      {
+        "t": "Affective component",
+        "d": "Feelings toward the object."
+      },
+      {
+        "t": "Behavioural component",
+        "d": "Action tendency / how one tends to act."
+      }
+    ],
+    "concepts": [
+      "Attitude ABC = Affective–Behavioural–Cognitive evaluation structure.",
+      "Ellis ABC (Module 5) is Adversity–Beliefs–Consequences — different model, similar letters.",
+      "Belief statement (“discrimination is wrong”) is mainly cognitive; anger about it is affective."
+    ],
+    "notes": [
+      "LMR: map stem language to A/B/C carefully.",
+      "If Adversity/Activating event appears → Ellis, not Attitude ABC.",
+      "TEA (1.2) is thoughts–emotions–actions influence, not the attitude ABC triad."
+    ]
+  },
+  "2.4": {
+    "terms": [
+      {
+        "t": "Emotion",
+        "d": "Powerful, often triggered, more intentional affective state."
+      },
+      {
+        "t": "Mood",
+        "d": "Prolonged, less intense, not necessarily triggered; may lack intentionality."
+      },
+      {
+        "t": "Healthy expression",
+        "d": "Less intense/lasting; life can continue."
+      },
+      {
+        "t": "Unhealthy expression",
+        "d": "High intensity, long duration, hard to control, disrupts daily life."
+      }
+    ],
+    "concepts": [
+      "SLM does not say “positive = good / negative = useless” — intensity, duration, and control matter.",
+      "Self-awareness of emotion underpins EI (2.5)."
+    ],
+    "notes": [
+      "Emotion vs mood: intensity + trigger + intentionality.",
+      "Unhealthy ≠ simply “negative feeling.”"
+    ]
+  },
+  "2.5": {
+    "terms": [
+      {
+        "t": "Emotional intelligence",
+        "d": "Interpret, reason about, understand, and manage own and others’ emotions; stay stable and communicate."
+      },
+      {
+        "t": "Self-awareness",
+        "d": "Know your emotions as they happen."
+      },
+      {
+        "t": "Self-regulation",
+        "d": "Think before acting; manage disruptive impulses."
+      },
+      {
+        "t": "Motivation",
+        "d": "Drive toward goals with energy and persistence."
+      },
+      {
+        "t": "Empathy",
+        "d": "Understand others’ feelings."
+      },
+      {
+        "t": "Social skills",
+        "d": "Manage relationships and build networks."
+      }
+    ],
+    "concepts": [
+      "Goleman five: self-awareness, self-regulation, motivation, empathy, social skills.",
+      "Personal competence = awareness/regulation/motivation; social competence = empathy + social skills.",
+      "Faculty: EI usually outweighs interpersonal intelligence alone for exam priority."
+    ],
+    "notes": [
+      "LMR: list all five competencies cold.",
+      "Sociometric starring / Tuckman / hat colours are not EI competencies.",
+      "EI spans self and others; intrapersonal (2.6) focuses on self."
+    ]
+  },
+  "2.6": {
+    "terms": [
+      {
+        "t": "Interpersonal intelligence",
+        "d": "Understand others’ minds; communicate; form and sustain relationships."
+      },
+      {
+        "t": "Intrapersonal intelligence (Gardner)",
+        "d": "Understand oneself — interests, fears, abilities — and manage one’s life."
+      }
+    ],
+    "concepts": [
+      "Interpersonal = others; intrapersonal = self; EI covers both with emotion focus.",
+      "Self-awareness underpins intrapersonal skill and EI.",
+      "Exam priority cue from faculty: EI > interpersonal intelligence alone."
+    ],
+    "notes": [
+      "“Understanding myself to manage my life” → intrapersonal.",
+      "“Reading others / rapport / social comfort” → interpersonal.",
+      "If stem asks which faculty prioritises → EI over interpersonal alone."
+    ]
+  },
+  "4.1": {
+    "terms": [
+      {
+        "t": "Conflict",
+        "d": "Incompatible goals, cognitions, or emotions within/between people or groups."
+      },
+      {
+        "t": "Goal conflict",
+        "d": "Incompatible desired outcomes."
+      },
+      {
+        "t": "Cognitive conflict",
+        "d": "Incompatible ideas or interpretations."
+      },
+      {
+        "t": "Affective conflict",
+        "d": "Incompatible emotions (e.g. anger between people)."
+      },
+      {
+        "t": "Latent stage",
+        "d": "Conditions with potential for conflict before open clash."
+      },
+      {
+        "t": "Manifest stage",
+        "d": "Open antagonistic behaviour."
+      }
+    ],
+    "concepts": [
+      "Stages often framed: Latent → Perceived → Felt → Manifest.",
+      "Conflict is common and not always negative — resolution can yield constructive problem solving.",
+      "Sources include unclear responsibilities, poor processes, communication problems."
+    ],
+    "notes": [
+      "“Incompatible feelings / anger at each other” → affective conflict.",
+      "“Conditions exist but no open fight yet” → latent.",
+      "Disagreement alone ≠ full conflict until opposition escalates."
+    ]
+  },
+  "4.2": {
+    "terms": [
+      {
+        "t": "Conflict impact",
+        "d": "Can harm trust/performance — or spur creativity if managed."
+      },
+      {
+        "t": "Ethical dilemma under pressure",
+        "d": "e.g. unrealistic goals that tempt cutting corners; toxic culture; misuse of time/tech."
+      }
+    ],
+    "concepts": [
+      "Impact is two-sided: damage vs constructive tension.",
+      "Goal pressure is a classic ethics risk in conflict settings."
+    ],
+    "notes": [
+      "Unrealistic targets + corner-cutting → ethical dilemma framing.",
+      "Don’t answer “conflict is always good.”"
+    ]
+  },
+  "4.3": {
+    "terms": [
+      {
+        "t": "Competing",
+        "d": "High assertiveness, low cooperativeness — win at all costs."
+      },
+      {
+        "t": "Collaborating",
+        "d": "High assertiveness and cooperativeness — seek win–win."
+      },
+      {
+        "t": "Compromising",
+        "d": "Moderate on both — split the difference."
+      },
+      {
+        "t": "Avoiding",
+        "d": "Low assertiveness and cooperativeness — sidestep."
+      },
+      {
+        "t": "Accommodating",
+        "d": "Low assertiveness, high cooperativeness — yield."
+      }
+    ],
+    "concepts": [
+      "Match style to stakes: outcome-critical → competing; relationship + outcome → collaborate/compromise.",
+      "Little time → avoiding / competing / accommodating; lots of time → collaborate / compromise.",
+      "Styles are tools, not personality forever."
+    ],
+    "notes": [
+      "“Win at all costs / highly assertive, uncooperative” → competing.",
+      "Relationship + outcome + time allows → collaborate or compromise.",
+      "Don’t pick collaborating when the stem says emergency with no time."
+    ]
+  },
+  "4.4": {
+    "terms": [
+      {
+        "t": "Mediation",
+        "d": "Neutral facilitator helps parties; does not take sides or impose a verdict."
+      },
+      {
+        "t": "Interests under positions",
+        "d": "What people truly need vs the demands they state."
+      },
+      {
+        "t": "Intercultural conflict",
+        "d": "Culture shapes how disagreement, face-saving, and decisions are expressed."
+      }
+    ],
+    "concepts": [
+      "Mediator keeps process fair, focuses on interests, avoids blame, helps generate options.",
+      "Preconditions: willingness to participate and a workable setting.",
+      "Misreading cultural cues can escalate conflict."
+    ],
+    "notes": [
+      "Mediator ≠ judge or partisan advocate.",
+      "Intercultural awareness is communication skill inside conflict resolution, not a separate “hat.”"
+    ]
+  },
+  "4.5": {
+    "terms": [
+      {
+        "t": "Distributive negotiation",
+        "d": "Claim value — fixed pie."
+      },
+      {
+        "t": "Integrative negotiation",
+        "d": "Create value — expand joint gains."
+      },
+      {
+        "t": "Negotiation stages",
+        "d": "Often preparation → exchange/bargaining → closing → implementation."
+      }
+    ],
+    "concepts": [
+      "Purpose includes agreements, contracts, and solving joint problems.",
+      "Integrative seeks mutual gains; distributive divides a limited resource."
+    ],
+    "notes": [
+      "“Expand joint gains / mutual value” → integrative.",
+      "“Split a fixed amount” → distributive."
+    ]
+  },
+  "4.6": {
+    "terms": [
+      {
+        "t": "Pillar 1 — relationships",
+        "d": "Build productive relationships (Comprehend–Anticipate–Connect)."
+      },
+      {
+        "t": "Pillar 2 — outcomes",
+        "d": "Pursue outcomes, not debating points."
+      },
+      {
+        "t": "Pillar 3 — joint problem solving",
+        "d": "Shift from “your way/my way” to shared needs."
+      },
+      {
+        "t": "Pillar 4 — fairness",
+        "d": "Agreements people will carry out voluntarily."
+      }
+    ],
+    "concepts": [
+      "Persuasion, professional conduct, and clear closing support follow-through.",
+      "Fairness and relationship quality affect whether deals stick."
+    ],
+    "notes": [
+      "“Pursue outcomes, not points” = check whether terms advance real goals.",
+      "Comprehend–Anticipate–Connect → relationship pillar, not Black-hat criticism."
+    ]
+  },
+  "5.1": {
+    "terms": [
+      {
+        "t": "Values",
+        "d": "Fundamental beliefs directing desirable behaviour or end states."
+      },
+      {
+        "t": "Terminal values",
+        "d": "Desired end outcomes (e.g. freedom, true friendship)."
+      },
+      {
+        "t": "Instrumental values",
+        "d": "Preferred modes of behaviour/means (e.g. responsibility, independence)."
+      },
+      {
+        "t": "Ethics",
+        "d": "Moral right/wrong and codes of conduct (from ethos, “character”)."
+      }
+    ],
+    "concepts": [
+      "Instrumental values help reach terminal ends (means → ends).",
+      "Values shape what is desirable; ethics judges right conduct — related but distinct.",
+      "Organisations encode both in mission, vision, and policies."
+    ],
+    "notes": [
+      "LMR: terminal = ends; instrumental = means.",
+      "“Being responsible to achieve true friendship” → instrumental serving terminal.",
+      "Don’t confuse Rokeach types with Attitude valence or Tuckman stages."
+    ]
+  },
+  "5.2": {
+    "terms": [
+      {
+        "t": "Personal values (examples)",
+        "d": "Empathy, honesty, courage, commitment."
+      },
+      {
+        "t": "Core values (SLM set)",
+        "d": "Respect, responsibility, integrity, care, harmony."
+      }
+    ],
+    "concepts": [
+      "Moral values and moral icons support character / “new self-awareness.”",
+      "Core values list is a frequent recall item."
+    ],
+    "notes": [
+      "Core values set: respect, responsibility, integrity, care, harmony.",
+      "Don’t substitute Tuckman stage names for core values."
+    ]
+  },
+  "5.3": {
+    "terms": [
+      {
+        "t": "Resilience",
+        "d": "Dynamic positive adaptation in the face of serious adversity."
+      },
+      {
+        "t": "Adversity",
+        "d": "Acute crises or chronic low-intensity workplace stress."
+      }
+    ],
+    "concepts": [
+      "Definition requires both adversity experience and positive adaptation.",
+      "Viewed as trait, developable capability, and/or process.",
+      "Links to EI, networks (5.5), and agility (5.6) without being identical to them."
+    ],
+    "notes": [
+      "LMR: both adversity + positive adaptation must appear in the answer.",
+      "High valence attitudes alone ≠ resilience.",
+      "Sociometric star ≠ resilience definition."
+    ]
+  },
+  "5.4": {
+    "terms": [
+      {
+        "t": "Paradox of choice",
+        "d": "Many options can overwhelm decisions and reduce satisfaction."
+      },
+      {
+        "t": "Ellis ABC",
+        "d": "Adversity/Activating event → Beliefs → Consequences (emotions/behaviours)."
+      }
+    ],
+    "concepts": [
+      "Beliefs mediate reactions — events alone do not fully determine feelings.",
+      "Ellis ABC ≠ Attitude ABC (affective–behavioural–cognitive).",
+      "Choice paradox is a coping/uncertainty theme beside Ellis."
+    ],
+    "notes": [
+      "LMR: B = Beliefs in Ellis ABC.",
+      "Attitude ABC centres on evaluation components; Ellis centres on beliefs about adversity.",
+      "Don’t answer Blue hat or branding for Ellis “B.”"
+    ]
+  },
+  "5.5": {
+    "terms": [
+      {
+        "t": "Resilience resources",
+        "d": "Personality/cognitive variables, family/social networks, work demands and resources."
+      },
+      {
+        "t": "Stress management",
+        "d": "Coping skills, support, and resource building."
+      }
+    ],
+    "concepts": [
+      "Family and social networks are framed as supports that can promote resilience.",
+      "Stress shows models, symptoms, consequences — management is resource-based."
+    ],
+    "notes": [
+      "Networks in Unit 5.2 framing = resilience-promoting supports, not irrelevant.",
+      "Don’t treat networks only as FAE sources."
+    ]
+  },
+  "5.6": {
+    "terms": [
+      {
+        "t": "VUCA",
+        "d": "Volatility, Uncertainty, Complexity, Ambiguity."
+      },
+      {
+        "t": "Agility",
+        "d": "Adapting methods and behaviours under turbulent, unpredictable conditions."
+      },
+      {
+        "t": "VUCA Prime (Johansen)",
+        "d": "e.g. Vision as a response pairing to Volatility."
+      }
+    ],
+    "concepts": [
+      "Agility answers VUCA; resilience answers adversity — complementary.",
+      "U in VUCA = Uncertainty (not Utility/Urgency alone)."
+    ],
+    "notes": [
+      "“U” → Uncertainty.",
+      "Agility ≠ refusing change; ≠ only competing conflict style.",
+      "Don’t enlarge Hidden Johari pane as an agility answer."
     ]
   },
   "m3_root": {
@@ -54,404 +1027,6 @@
     "notes": [
       "Use Deep notes on each card for definitions and traps.",
       "LMR cards (orange outline) carry denser notes."
-    ]
-  },
-  "m4_root": {
-    "terms": [
-      {
-        "t": "Module 4",
-        "d": "Conflict is common and not always bad. Map sources and stages, choose a management style, use mediation when needed, then negotiate with the four pillars."
-      }
-    ],
-    "concepts": [
-      "Disagreements ≠ full conflicts",
-      "Mediator facilitates; does not take sides",
-      "Flow on map: diagnose conflict → choose style → mediate if needed → negotiate"
-    ],
-    "notes": [
-      "Open topic cards for Terms · Concepts · Short notes."
-    ]
-  },
-  "m5_root": {
-    "terms": [
-      {
-        "t": "Module 5",
-        "d": "Values and ethics guide desirable ends and means; resilience is positive adaptation under adversity; agility answers VUCA turbulence."
-      }
-    ],
-    "concepts": [
-      "Rokeach: terminal vs instrumental values",
-      "Ellis ABC ≠ Attitude ABC",
-      "Tie resilience answers to adversity + positive adaptation (both required)"
-    ],
-    "notes": [
-      "Open topic cards for Terms · Concepts · Short notes."
-    ]
-  },
-  "1.1": {
-    "terms": [
-      {
-        "t": "The self, and what are the ABCs of the self",
-        "d": "The self is a sense of personal identity. Social psychologists study person–situation interaction using the ABCs of the self: Affective, Behavioural, and Cognitive."
-      },
-      {
-        "t": "Self-concept, and how do self-schemas organise it",
-        "d": "Self-concept is the knowledge representation about oneself—traits, attributes, skills, values, and roles—organised into self-schemas that guide how we process self-relevant information."
-      }
-    ],
-    "concepts": [
-      "Core topic: Understanding the Self."
-    ],
-    "notes": [
-      "Faculty distinguish self-concept (your beliefs about yourself) from self-esteem (global worth).",
-      "Skim Overview first, then flashcards for drill."
-    ]
-  },
-  "1.2": {
-    "terms": [
-      {
-        "t": "The T-E-A model",
-        "d": "Thoughts (internal processing/beliefs), Emotions (internal states/values), and Actions (external behaviours/words) constantly influence each other; changing one tends to shift the others."
-      }
-    ],
-    "concepts": [
-      "Core topic: T-E-A Model.",
-      "LMR focus: be able to define each term in one line and spot exam traps below."
-    ],
-    "notes": [
-      "Recall cue — What is the T-E-A model.",
-      "Don’t confuse neighbouring topics that share similar vocabulary."
-    ]
-  },
-  "1.3": {
-    "terms": [
-      {
-        "t": "The four panes of the Johari Window (Luft & Ingham, 1955).",
-        "d": "Open/Arena (known to self and others); Blind spot (known to others, unknown to self); Hidden/Façade (known to self, unknown to others); Unknown (unknown to both)."
-      },
-      {
-        "t": "You enlarge the Open/Arena pane",
-        "d": "Reduce the Blind spot through feedback; reduce the Hidden/Façade through disclosure. Trust grows from disclosure plus learning from feedback."
-      }
-    ],
-    "concepts": [
-      "Core topic: Johari Window.",
-      "LMR focus: be able to define each term in one line and spot exam traps below."
-    ],
-    "notes": [
-      "Recall cue — Name the four panes of the Johari Window (Luft & Ingham, 1955)..",
-      "Recall cue — How do you enlarge the Open/Arena pane.",
-      "Don’t confuse neighbouring topics that share similar vocabulary."
-    ]
-  },
-  "1.4": {
-    "terms": [
-      {
-        "t": "The three PE Scale dimensions, and how do they relate to Johari",
-        "d": "Self-disclosure (SD), Openness to feedback (OTF), and Perceptiveness. Effective people use these to shrink secret/blind areas and enlarge the arena—they operate on Johari panes; they are not the four panes themselves."
-      }
-    ],
-    "concepts": [
-      "Core topic: PE Scale (Personal Effectiveness)."
-    ],
-    "notes": [
-      "Skim Overview first, then flashcards for drill."
-    ]
-  },
-  "1.5": {
-    "terms": [
-      {
-        "t": "Self-esteem, self-efficacy, and self-respect.",
-        "d": "Self-esteem = overall subjective sense of personal worth. Self-efficacy (Bandura) = belief you can succeed at a specific task/goal—not a global trait. Self-respect = pride in who you are, moral courage, and deciding how you allow yourself to be treated."
-      },
-      {
-        "t": "Why is self-efficacy not the same as self-esteem",
-        "d": "Efficacy is task-specific confidence about what you can achieve with your abilities. Esteem is global worth/liking of self. You can have high esteem but low efficacy on a particular task (or vice versa)."
-      }
-    ],
-    "concepts": [
-      "Core topic: Self-esteem, Self-efficacy, and Self-respect.",
-      "LMR focus: be able to define each term in one line and spot exam traps below."
-    ],
-    "notes": [
-      "Recall cue — Distinguish self-esteem, self-efficacy, and self-respect..",
-      "Recall cue — Why is self-efficacy not the same as self-esteem.",
-      "Don’t confuse neighbouring topics that share similar vocabulary."
-    ]
-  },
-  "1.6": {
-    "terms": [
-      {
-        "t": "Assertiveness, and which skills support it",
-        "d": "Assertiveness sits between passivity and aggression: express thoughts/feelings truthfully and accurately while respecting others. Skills include Respect, Openness, Honesty, Accountability, Self-control, and Delegation."
-      }
-    ],
-    "concepts": [
-      "Core topic: Assertive Skills.",
-      "LMR focus: be able to define each term in one line and spot exam traps below."
-    ],
-    "notes": [
-      "Recall cue — What is assertiveness, and which skills support it.",
-      "Don’t confuse neighbouring topics that share similar vocabulary."
-    ]
-  },
-  "1.7": {
-    "terms": [
-      {
-        "t": "Why do technology adoption and social media etiquette matter professi…",
-        "d": "Professional presence online and thoughtful technology use affect reputation, relationships, and workplace norms; etiquette covers respectful communication, privacy, and appropriate sharing."
-      }
-    ],
-    "concepts": [
-      "Core topic: Technology Adoption and Social Media Etiquette."
-    ],
-    "notes": [
-      "Skim Overview first, then flashcards for drill."
-    ]
-  },
-  "1.8": {
-    "terms": [
-      {
-        "t": "Expand ICEDIP (Geoff Petty) and note its order rule.",
-        "d": "Inspiration, Clarification, Distillation, Perspiration, Evaluation, Incubation. Phases can occur in any order and are repeatable; each has its own mind-set. Incubation ≠ evaluation."
-      },
-      {
-        "t": "Visualization be used for performance",
-        "d": "Combine outcome simulation (final result) with process simulation (steps). A participant perspective is generally more effective than an observer perspective."
-      }
-    ],
-    "concepts": [
-      "Core topic: Creativity (ICEDIP) and Visualization.",
-      "LMR focus: be able to define each term in one line and spot exam traps below."
-    ],
-    "notes": [
-      "Recall cue — Expand ICEDIP (Geoff Petty) and note its order rule..",
-      "Recall cue — How should visualization be used for performance.",
-      "Don’t confuse neighbouring topics that share similar vocabulary."
-    ]
-  },
-  "1.9": {
-    "terms": [
-      {
-        "t": "Problem sensitivity",
-        "d": "The capacity to tell when something is wrong or likely to go wrong. It does not include solving the problem—only recognising it."
-      }
-    ],
-    "concepts": [
-      "Core topic: Problem Sensitivity."
-    ],
-    "notes": [
-      "Skim Overview first, then flashcards for drill."
-    ]
-  },
-  "1.10": {
-    "terms": [
-      {
-        "t": "The Six Thinking Hats colours to their roles (de Bono).",
-        "d": "Blue = process control; White = facts/data only; Red = feelings/intuition; Black = risks/caution; Yellow = benefits/optimism; Green = creativity/alternatives."
-      },
-      {
-        "t": "The Blue hat’s special role",
-        "d": "Like a movie director: manages the thinking process, agenda, and use of the other hats—meta-control rather than content alone."
-      }
-    ],
-    "concepts": [
-      "Core topic: Six Thinking Hats.",
-      "LMR focus: be able to define each term in one line and spot exam traps below."
-    ],
-    "notes": [
-      "Recall cue — Match the Six Thinking Hats colours to their roles (de Bono)..",
-      "Recall cue — What is the Blue hat’s special role.",
-      "Don’t confuse neighbouring topics that share similar vocabulary."
-    ]
-  },
-  "1.11": {
-    "terms": [
-      {
-        "t": "Cognitive flexibility",
-        "d": "Ability to disengage from one task, hold several concepts, and adapt cognitive strategies to new/unexpected conditions. It is learnable and linked to executive function."
-      },
-      {
-        "t": "Common cognitive errors (Beck/Burns) examined in the SLM.",
-        "d": "Examples: polarized/all-or-nothing thinking; overgeneralization; mental filter; disqualifying the positive; mind reading; fortune telling; magnification/minimization; emotional reasoning (“I feel it, so it must be true”)."
-      }
-    ],
-    "concepts": [
-      "Core topic: Cognitive Flexibility and Cognitive Errors.",
-      "LMR focus: be able to define each term in one line and spot exam traps below."
-    ],
-    "notes": [
-      "Recall cue — What is cognitive flexibility.",
-      "Recall cue — Name common cognitive errors (Beck/Burns) examined in the SLM..",
-      "Don’t confuse neighbouring topics that share similar vocabulary."
-    ]
-  },
-  "1.12": {
-    "terms": [
-      {
-        "t": "Social cognition, schemas, salience, and priming.",
-        "d": "Social cognition is how people perceive, recall, attend to, and use social information. Schemas are mental structures of general knowledge about social objects. Salience and priming make schemas more accessible."
-      },
-      {
-        "t": "Social inference",
-        "d": "Inferring mental states—intentions, desires, emotions, traits—from observed behaviour; it is needed for social success."
-      }
-    ],
-    "concepts": [
-      "Core topic: Social Cognition and Social Inference."
-    ],
-    "notes": [
-      "Skim Overview first, then flashcards for drill."
-    ]
-  },
-  "1.13": {
-    "terms": [
-      {
-        "t": "Attribution, and what are internal vs external causes",
-        "d": "Attribution is inferring causes of behaviour. Internal/personal causes include personality, ability, effort; external/situational causes include environment, luck, and others’ actions."
-      },
-      {
-        "t": "FAE, actor–observer difference, and self-serving bias.",
-        "d": "FAE: for others, overestimate personal and underestimate situational causes. Actor–observer: for self, emphasise external causes. Self-serving: credit success internally; blame failure externally."
-      }
-    ],
-    "concepts": [
-      "Core topic: Attribution Processes.",
-      "LMR focus: be able to define each term in one line and spot exam traps below."
-    ],
-    "notes": [
-      "Recall cue — What is attribution, and what are internal vs external causes.",
-      "Recall cue — Distinguish FAE, actor–observer difference, and self-serving bias..",
-      "Don’t confuse neighbouring topics that share similar vocabulary."
-    ]
-  },
-  "1.14": {
-    "terms": [
-      {
-        "t": "Stereotype, prejudice, and discrimination differ",
-        "d": "Stereotype = cognitive generalization about a group (“pictures in our heads”). Prejudice = derogatory/evaluative attitude toward group members (belief/attitude). Discrimination = behaviour. Prejudice is not the same as discriminatory acts."
-      },
-      {
-        "t": "What immediate steps help when accepting criticism",
-        "d": "Remain calm; reiterate the point (“So what you’re saying is…”); open both perspectives; make a polite exit if needed—and protect self-esteem after unfair criticism."
-      }
-    ],
-    "concepts": [
-      "Core topic: Stereotyping, Prejudice, and Accepting Criticism.",
-      "LMR focus: be able to define each term in one line and spot exam traps below."
-    ],
-    "notes": [
-      "Recall cue — How do stereotype, prejudice, and discrimination differ.",
-      "Recall cue — What immediate steps help when accepting criticism.",
-      "Don’t confuse neighbouring topics that share similar vocabulary."
-    ]
-  },
-  "2.1": {
-    "terms": [
-      {
-        "t": "An attitude",
-        "d": "An evaluation of a person, idea, or object as favourable or unfavourable. Overall evaluations influence perception and behaviour (Allport treated attitude as central in social psychology)."
-      }
-    ],
-    "concepts": [
-      "Core topic: Understanding Attitudes."
-    ],
-    "notes": [
-      "Skim Overview first, then flashcards for drill."
-    ]
-  },
-  "2.2": {
-    "terms": [
-      {
-        "t": "Valence, multiplicity, and centrality of attitudes.",
-        "d": "Valence = magnitude of favourability/unfavourability. Multiplicity = number of components making up the attitude system (simple vs complex). Centrality = importance of the object to the person; central attitudes resist change."
-      },
-      {
-        "t": "Relation to needs, pervasiveness, invisible, and acquired.",
-        "d": "Attitudes differ by needs they serve; pervasiveness means they appear across domains via socialization; they are invisible (inferred from effects) and acquired/learned over life (often transmitted in families)."
-      }
-    ],
-    "concepts": [
-      "Core topic: Attitude Characteristics.",
-      "LMR focus: be able to define each term in one line and spot exam traps below."
-    ],
-    "notes": [
-      "Recall cue — Explain valence, multiplicity, and centrality of attitudes..",
-      "Recall cue — Explain relation to needs, pervasiveness, invisible, and acquired..",
-      "Don’t confuse neighbouring topics that share similar vocabulary."
-    ]
-  },
-  "2.3": {
-    "terms": [
-      {
-        "t": "The ABC components of attitudes",
-        "d": "Cognitive = beliefs/knowledge; Affective = feelings toward the object; Behavioural = action tendency / how one acts. Do not confuse with Ellis ABC (Adversity–Beliefs–Consequences) in Module 5."
-      }
-    ],
-    "concepts": [
-      "Core topic: ABC Components of Attitudes.",
-      "LMR focus: be able to define each term in one line and spot exam traps below."
-    ],
-    "notes": [
-      "Recall cue — What are the ABC components of attitudes.",
-      "Don’t confuse neighbouring topics that share similar vocabulary."
-    ]
-  },
-  "2.4": {
-    "terms": [
-      {
-        "t": "Emotion and mood differ",
-        "d": "Emotion = powerful, subjective affective state often in response to something, frequently conscious/intentional. Mood = prolonged, less intense, not necessarily triggered, may lack intentionality."
-      },
-      {
-        "t": "Healthy vs unhealthy expressions of emotion (SLM framing)",
-        "d": "Unhealthy: high intensity, long duration, hard to control, disrupt daily life. Healthy: less intense/lasting and allow life to continue. Self-awareness of emotions is a foundation of EI. Not simply “positive = good / negative = useless.”"
-      }
-    ],
-    "concepts": [
-      "Core topic: Emotions and Their Expression."
-    ],
-    "notes": [
-      "Skim Overview first, then flashcards for drill."
-    ]
-  },
-  "2.5": {
-    "terms": [
-      {
-        "t": "Emotional intelligence, and why does it matter at work",
-        "d": "Ability to interpret, reason about, understand, and manage own and others’ emotions; communicate, regulate, and preserve emotional stability. Critical for high-performing teams and leadership. Faculty: EI carries heavier exam weight than interpersonal intelligence alone."
-      },
-      {
-        "t": "Goleman’s five EI competencies.",
-        "d": "Self-awareness; Self-regulation (think before acting); Motivation; Empathy; Social skills. Personal competence covers self-awareness/regulation/motivation; social competence covers empathy and social skills."
-      }
-    ],
-    "concepts": [
-      "Core topic: Emotional Intelligence at Work (Goleman).",
-      "LMR focus: be able to define each term in one line and spot exam traps below."
-    ],
-    "notes": [
-      "Recall cue — What is emotional intelligence, and why does it matter at work.",
-      "Recall cue — List Goleman’s five EI competencies..",
-      "Don’t confuse neighbouring topics that share similar vocabulary."
-    ]
-  },
-  "2.6": {
-    "terms": [
-      {
-        "t": "Interpersonal intelligence",
-        "d": "Ability to communicate efficiently, understand others’ minds, and form/sustain relationships. Components include social sensitivity, influence for the greater good, verbal/nonverbal skill, empathy, confidence, rapport, and social comfort."
-      },
-      {
-        "t": "Intrapersonal intelligence (Gardner), vs EI",
-        "d": "Capacity to understand oneself—interests, fears, abilities—and use that knowledge to manage one’s life. Focused on self; EI spans self and others (including empathy). Self-awareness underpins both."
-      }
-    ],
-    "concepts": [
-      "Core topic: Interpersonal and Intrapersonal Intelligence."
-    ],
-    "notes": [
-      "Skim Overview first, then flashcards for drill."
     ]
   },
   "3.1": {
@@ -744,202 +1319,6 @@
       "Important vs urgent → time management cue.",
       "Personal branding needs a target audience + differentiation, not generic positivity.",
       "Bundle reminder: this card packs four themes — answer the stem’s focus (brand / time / integration / relationships)."
-    ]
-  },
-  "4.1": {
-    "terms": [
-      {
-        "t": "The SLM define conflict, and what basic types exist",
-        "d": "Conflict = incompatible goals, cognitions, or emotions within/between people or groups leading to opposition. Types: goal conflict, cognitive conflict, affective conflict. Conflict is common and not always negative—resolution can yield constructive problem solving."
-      },
-      {
-        "t": "Key stages of conflict.",
-        "d": "Latent (conditions with potential for conflict); Perceived; Felt; Manifest (open antagonistic behaviour). Sources include unclear responsibilities, poor processes, and communication problems."
-      }
-    ],
-    "concepts": [
-      "Core topic: Meaning, Nature, Sources, Stages, and Types of Conflict."
-    ],
-    "notes": [
-      "Skim Overview first, then flashcards for drill."
-    ]
-  },
-  "4.2": {
-    "terms": [
-      {
-        "t": "What impacts and ethical dilemmas arise in conflict",
-        "d": "Conflict can harm trust, performance, and climate—or spur creativity if managed. Ethical dilemmas include toxic culture pressures, unrealistic goals that tempt cutting corners, and misuse of company technology/time."
-      }
-    ],
-    "concepts": [
-      "Core topic: Impact of Conflict and Ethical Dilemmas."
-    ],
-    "notes": [
-      "Skim Overview first, then flashcards for drill."
-    ]
-  },
-  "4.3": {
-    "terms": [
-      {
-        "t": "Major conflict management styles and when to match them.",
-        "d": "Avoiding, Accommodating, Compromising, Collaborating, Competing. Match to stakes: outcome-critical → competing; relationship + outcome → collaborate/compromise; little time → avoiding/competing/accommodating; lots of time → collaborate/compromise."
-      }
-    ],
-    "concepts": [
-      "Core topic: Conflict Resolution Strategies and Styles."
-    ],
-    "notes": [
-      "Skim Overview first, then flashcards for drill."
-    ]
-  },
-  "4.4": {
-    "terms": [
-      {
-        "t": "The mediator’s role in third-party intervention",
-        "d": "Act as a neutral facilitator (not a judge): recognise disagreement, keep process fair, focus on interests under positions, avoid blame, and help parties generate options. Preconditions include willingness to participate and a workable setting."
-      },
-      {
-        "t": "Why does intercultural communication matter in conflict resolution",
-        "d": "Culture shapes norms for expressing disagreement, face-saving, and decision styles; misreading these cues can escalate conflict, so culturally aware communication supports resolution."
-      }
-    ],
-    "concepts": [
-      "Core topic: Mediation and Intercultural Conflict."
-    ],
-    "notes": [
-      "Skim Overview first, then flashcards for drill."
-    ]
-  },
-  "4.5": {
-    "terms": [
-      {
-        "t": "Major negotiation types and typical stages",
-        "d": "Common contrast: distributive (claim value) vs integrative (create value). Purpose includes agreements, contracts, and solving joint problems. Stages often include preparation, exchange/bargaining, closing, and implementing the agreed course of action."
-      }
-    ],
-    "concepts": [
-      "Core topic: Negotiation: Types, Purpose, and Stages."
-    ],
-    "notes": [
-      "Skim Overview first, then flashcards for drill."
-    ]
-  },
-  "4.6": {
-    "terms": [
-      {
-        "t": "The four pillars of negotiation (SLM)",
-        "d": "1) Build productive relationships (Comprehend–Anticipate–Connect). 2) Pursue outcomes, not points. 3) Solve problems together (shift from “your way/my way” to joint needs). 4) Focus on fairness so agreements are carried out voluntarily."
-      },
-      {
-        "t": "What matters in persuasion, conduct, and closing",
-        "d": "Persuade toward workable outcomes; behave respectfully and professionally; close with clear terms and a plan to implement—fairness and relationship quality affect follow-through."
-      }
-    ],
-    "concepts": [
-      "Core topic: Four Pillars, Persuasion, Conduct, and Closing."
-    ],
-    "notes": [
-      "Skim Overview first, then flashcards for drill."
-    ]
-  },
-  "5.1": {
-    "terms": [
-      {
-        "t": "Values, and how do terminal and instrumental values differ (Rokeach)",
-        "d": "Values are fundamental beliefs directing desirable behaviour/end states. Terminal values = desired end outcomes (e.g., freedom, true friendship). Instrumental values = preferred modes of behaviour/means (e.g., responsibility, independence) that help reach terminal ends."
-      },
-      {
-        "t": "Ethics and values relate",
-        "d": "Ethics (from Greek ethos, “character”) concerns moral right/wrong and codes of conduct. Values are guiding beliefs; ethics applies standards to behaviour. Related but distinct: values shape what is desirable; ethics judges right conduct. Organisations encode both in mission, vision, and policies."
-      }
-    ],
-    "concepts": [
-      "Core topic: Values, Ethics, and Rokeach Types.",
-      "LMR focus: be able to define each term in one line and spot exam traps below."
-    ],
-    "notes": [
-      "Recall cue — What are values, and how do terminal and instrumental values differ (Rokeach).",
-      "Recall cue — How do ethics and values relate.",
-      "Don’t confuse neighbouring topics that share similar vocabulary."
-    ]
-  },
-  "5.2": {
-    "terms": [
-      {
-        "t": "Which personal and core values does Unit 5.1 emphasise",
-        "d": "Personal values: empathy, honesty, courage, commitment. Core values: respect, responsibility, integrity, care, and harmony. Moral values and moral icons support personality development and character building (“new self-awareness”)."
-      }
-    ],
-    "concepts": [
-      "Core topic: Moral Values, Personal Values, and Core Values."
-    ],
-    "notes": [
-      "Skim Overview first, then flashcards for drill."
-    ]
-  },
-  "5.3": {
-    "terms": [
-      {
-        "t": "How is resilience defined (Luthar et al.), and how is it viewed",
-        "d": "Dynamic positive adaptation in the face of serious adversity—requires both adversity and positive adaptation. Viewed as trait, developable capability, and/or process. Workplace adversity may be acute crises or chronic low-intensity stress."
-      }
-    ],
-    "concepts": [
-      "Core topic: Resilience Overview.",
-      "LMR focus: be able to define each term in one line and spot exam traps below."
-    ],
-    "notes": [
-      "Recall cue — How is resilience defined (Luthar et al.), and how is it viewed.",
-      "Don’t confuse neighbouring topics that share similar vocabulary."
-    ]
-  },
-  "5.4": {
-    "terms": [
-      {
-        "t": "The paradox of choice in the resilience unit",
-        "d": "Having many options can overwhelm decision-making and reduce satisfaction; managing choice is part of coping under uncertainty."
-      },
-      {
-        "t": "Ellis’s ABC technique for negative feelings.",
-        "d": "Adversity/Activating event → Beliefs about the event → Consequences (emotions and behaviours). Beliefs mediate reactions—events alone do not fully determine feelings. Distinct from attitude ABC (Affective–Behavioural–Cognitive)."
-      }
-    ],
-    "concepts": [
-      "Core topic: Paradox of Choice and Ellis ABC.",
-      "LMR focus: be able to define each term in one line and spot exam traps below."
-    ],
-    "notes": [
-      "Recall cue — What is the paradox of choice in the resilience unit.",
-      "Recall cue — Explain Ellis’s ABC technique for negative feelings..",
-      "Don’t confuse neighbouring topics that share similar vocabulary."
-    ]
-  },
-  "5.5": {
-    "terms": [
-      {
-        "t": "What factors and strategies relate to stress and resilience",
-        "d": "Personality/cognitive variables, family and social networks, and work demands/resources shape resilience. Stress shows models, symptoms, and consequences; management strategies include coping skills, support, and resource building."
-      }
-    ],
-    "concepts": [
-      "Core topic: Stress, Networks, and Stress Management."
-    ],
-    "notes": [
-      "Skim Overview first, then flashcards for drill."
-    ]
-  },
-  "5.6": {
-    "terms": [
-      {
-        "t": "What does VUCA mean, and how does agility respond",
-        "d": "Volatility, Uncertainty, Complexity, Ambiguity. Agility is adapting methods and behaviours under these conditions. Johansen’s VUCA Prime pairs responses such as Vision to meet Volatility; resilience plus agility support higher performance in uncertainty."
-      }
-    ],
-    "concepts": [
-      "Core topic: Agility in VUCA and Higher Performance."
-    ],
-    "notes": [
-      "Skim Overview first, then flashcards for drill."
     ]
   }
 }

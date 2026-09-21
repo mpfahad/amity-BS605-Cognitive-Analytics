@@ -1,0 +1,1191 @@
+{
+  "m1_root": {
+    "terms": [
+      {
+        "t": "Module 1",
+        "d": "Study map for Module 1 of Data Structures and Algorithm Design (CSE601). Click a topic, then practise its MCQs."
+      }
+    ],
+    "concepts": [
+      "Built from the SLM table of contents",
+      "Orange LMR badges mark first-pass priorities"
+    ],
+    "notes": [
+      "Open topic cards for Terms · Concepts · Short notes.",
+      "LMR cards (orange) are denser where marked."
+    ]
+  },
+  "m2_root": {
+    "terms": [
+      {
+        "t": "Module 2",
+        "d": "Study map for Module 2 of Data Structures and Algorithm Design (CSE601). Click a topic, then practise its MCQs."
+      }
+    ],
+    "concepts": [
+      "Built from the SLM table of contents",
+      "Orange LMR badges mark first-pass priorities"
+    ],
+    "notes": [
+      "Open topic cards for Terms · Concepts · Short notes.",
+      "LMR cards (orange) are denser where marked."
+    ]
+  },
+  "m3_root": {
+    "terms": [
+      {
+        "t": "Module 3",
+        "d": "Study map for Module 3 of Data Structures and Algorithm Design (CSE601). Click a topic, then practise its MCQs."
+      }
+    ],
+    "concepts": [
+      "Built from the SLM table of contents",
+      "Orange LMR badges mark first-pass priorities"
+    ],
+    "notes": [
+      "Open topic cards for Terms · Concepts · Short notes.",
+      "LMR cards (orange) are denser where marked."
+    ]
+  },
+  "m4_root": {
+    "terms": [
+      {
+        "t": "Module 4",
+        "d": "Study map for Module 4 of Data Structures and Algorithm Design (CSE601). Click a topic, then practise its MCQs."
+      }
+    ],
+    "concepts": [
+      "Built from the SLM table of contents",
+      "Orange LMR badges mark first-pass priorities"
+    ],
+    "notes": [
+      "Open topic cards for Terms · Concepts · Short notes.",
+      "LMR cards (orange) are denser where marked."
+    ]
+  },
+  "m5_root": {
+    "terms": [
+      {
+        "t": "Module 5",
+        "d": "Study map for Module 5 of Data Structures and Algorithm Design (CSE601). Click a topic, then practise its MCQs."
+      }
+    ],
+    "concepts": [
+      "Built from the SLM table of contents",
+      "Orange LMR badges mark first-pass priorities"
+    ],
+    "notes": [
+      "Open topic cards for Terms · Concepts · Short notes.",
+      "LMR cards (orange) are denser where marked."
+    ]
+  },
+  "1.1.1": {
+    "terms": [
+      {
+        "t": "the core idea of Stack",
+        "d": "1.1.2 Evaluation of Postfix Expression 1.1.3 Tower of Hanoi Problem 1.1.4 Queue"
+      },
+      {
+        "t": "one exam point for Stack.",
+        "d": "Be able to define Stack, state when it is used, and contrast it with a related concept in Big Data Structures."
+      }
+    ],
+    "concepts": [
+      "Hold Stack as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.1.1 · Big Data Structures",
+      "Exam cue: Stack is a syllabus topic under Big Data Structures in Module 1.",
+      "If asked “Which statement best matches Stack?” → A core idea in Data Structures & Algorithms: Stack."
+    ]
+  },
+  "1.1.2": {
+    "terms": [
+      {
+        "t": "the core idea of Evaluation of Postfix Expression",
+        "d": "1.1.3 Tower of Hanoi Problem 1.1.4 Queue 1.1.5 Linked List"
+      }
+    ],
+    "concepts": [
+      "Core of Evaluation of Postfix Expression: be able to restate the definition without the flashcard wording.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.1.2 · Big Data Structures",
+      "Exam cue: Evaluation of Postfix Expression is a syllabus topic under Big Data Structures in Module 1.",
+      "If asked “Which statement best matches Evaluation of Postfix Expression?” → A core idea in Data Structures & Algorithms: Evaluation of Postfix Expression."
+    ]
+  },
+  "1.1.3": {
+    "terms": [
+      {
+        "t": "the core idea of Tower of Hanoi Problem",
+        "d": "1.1.4 Queue 1.1.5 Linked List 1.1.6 Double Linked List"
+      },
+      {
+        "t": "one exam point for Tower of Hanoi Problem.",
+        "d": "Be able to define Tower of Hanoi Problem, state when it is used, and contrast it with a related concept in Big Data Structures."
+      }
+    ],
+    "concepts": [
+      "Hold Tower of Hanoi Problem as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.1.3 · Big Data Structures",
+      "Exam cue: Tower of Hanoi Problem is a syllabus topic under Big Data Structures in Module 1.",
+      "If asked “Which statement best matches Tower of Hanoi Problem?” → A core idea in Data Structures & Algorithms: Tower of Hanoi Problem."
+    ]
+  },
+  "1.1.4": {
+    "terms": [
+      {
+        "t": "the core idea of Queue",
+        "d": "1.1.5 Linked List 1.1.6 Double Linked List 1.2 Algorithm"
+      }
+    ],
+    "concepts": [
+      "Core of Queue: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.1.4 · Big Data Structures",
+      "Exam cue: Queue is a syllabus topic under Big Data Structures in Module 1.",
+      "If asked “Which statement best matches Queue?” → A core idea in Data Structures & Algorithms: Queue."
+    ]
+  },
+  "1.1.5": {
+    "terms": [
+      {
+        "t": "the core idea of Linked List",
+        "d": "1.1.6 Double Linked List 1.2 Algorithm 1.2.1 Algorithm and Characteristics"
+      },
+      {
+        "t": "one exam point for Linked List.",
+        "d": "Be able to define Linked List, state when it is used, and contrast it with a related concept in Big Data Structures."
+      }
+    ],
+    "concepts": [
+      "Hold Linked List as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.1.5 · Big Data Structures",
+      "Exam cue: Linked List is a syllabus topic under Big Data Structures in Module 1.",
+      "If asked “Which statement best matches Linked List?” → A core idea in Data Structures & Algorithms: Linked List."
+    ]
+  },
+  "1.1.6": {
+    "terms": [
+      {
+        "t": "the core idea of Double Linked List",
+        "d": "1.2 Algorithm 1.2.1 Algorithm and Characteristics 1.2.2 Asymtotic Notations"
+      }
+    ],
+    "concepts": [
+      "Core of Double Linked List: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.1.6 · Big Data Structures",
+      "Exam cue: Double Linked List is a syllabus topic under Big Data Structures in Module 1.",
+      "If asked “Which statement best matches Double Linked List?” → A core idea in Data Structures & Algorithms: Double Linked List."
+    ]
+  },
+  "1.2.1": {
+    "terms": [
+      {
+        "t": "the core idea of Algorithm and Characteristics",
+        "d": "1.2.2 Asymtotic Notations 1.2.3 Algorithm Time Complexity 1.2.4 Recursive Program Analysis Strategies"
+      },
+      {
+        "t": "one exam point for Algorithm and Characteristics.",
+        "d": "Be able to define Algorithm and Characteristics, state when it is used, and contrast it with a related concept in Algorithm."
+      }
+    ],
+    "concepts": [
+      "Hold Algorithm and Characteristics as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.2.1 · Algorithm",
+      "Exam cue: Algorithm and Characteristics is a syllabus topic under Algorithm in Module 1.",
+      "If asked “Which statement best matches Algorithm and Characteristics?” → A core idea in Data Structures & Algorithms: Algorithm and Characteristics."
+    ]
+  },
+  "1.2.2": {
+    "terms": [
+      {
+        "t": "the core idea of Asymtotic Notations",
+        "d": "1.2.3 Algorithm Time Complexity 1.2.4 Recursive Program Analysis Strategies 1.2.5 Master Theorem"
+      }
+    ],
+    "concepts": [
+      "Core of Asymtotic Notations: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.2.2 · Algorithm",
+      "Exam cue: Asymtotic Notations is a syllabus topic under Algorithm in Module 1.",
+      "If asked “Which statement best matches Asymtotic Notations?” → A core idea in Data Structures & Algorithms: Asymtotic Notations."
+    ]
+  },
+  "1.2.3": {
+    "terms": [
+      {
+        "t": "the core idea of Algorithm Time Complexity",
+        "d": "1.2.4 Recursive Program Analysis Strategies 1.2.5 Master Theorem 1.3 Divide and Conquer Paradigm"
+      },
+      {
+        "t": "one exam point for Algorithm Time Complexity.",
+        "d": "Be able to define Algorithm Time Complexity, state when it is used, and contrast it with a related concept in Algorithm."
+      }
+    ],
+    "concepts": [
+      "Hold Algorithm Time Complexity as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.2.3 · Algorithm",
+      "Exam cue: Algorithm Time Complexity is a syllabus topic under Algorithm in Module 1.",
+      "If asked “Which statement best matches Algorithm Time Complexity?” → A core idea in Data Structures & Algorithms: Algorithm Time Complexity."
+    ]
+  },
+  "1.2.4": {
+    "terms": [
+      {
+        "t": "the core idea of Recursive Program Analysis Strategies",
+        "d": "1.2.5 Master Theorem 1.3 Divide and Conquer Paradigm 1.3.1 Divide-Conquer Recurrence Equations Solutions"
+      }
+    ],
+    "concepts": [
+      "Core of Recursive Program Analysis Strategies: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.2.4 · Algorithm",
+      "Exam cue: Recursive Program Analysis Strategies is a syllabus topic under Algorithm in Module 1.",
+      "If asked “Which statement best matches Recursive Program Analysis Strategies?” → A core idea in Data Structures & Algorithms: Recursive Program Analysis Strategies."
+    ]
+  },
+  "1.2.5": {
+    "terms": [
+      {
+        "t": "the core idea of Master Theorem",
+        "d": "1.3 Divide and Conquer Paradigm 1.3.1 Divide-Conquer Recurrence Equations Solutions 1.4 Sorting Techniques"
+      },
+      {
+        "t": "one exam point for Master Theorem.",
+        "d": "Be able to define Master Theorem, state when it is used, and contrast it with a related concept in Algorithm."
+      }
+    ],
+    "concepts": [
+      "Hold Master Theorem as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.2.5 · Algorithm",
+      "Exam cue: Master Theorem is a syllabus topic under Algorithm in Module 1.",
+      "If asked “Which statement best matches Master Theorem?” → A core idea in Data Structures & Algorithms: Master Theorem."
+    ]
+  },
+  "1.3.1": {
+    "terms": [
+      {
+        "t": "the core idea of Divide-Conquer Recurrence Equations Solutions",
+        "d": "1.4 Sorting Techniques 1.4.1 Bubble Sort 1.4.2 Insertion Sort"
+      }
+    ],
+    "concepts": [
+      "Core of Divide-Conquer Recurrence Equations Solutions: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.3.1 · Divide and Conquer Paradigm",
+      "Exam cue: Divide-Conquer Recurrence Equations Solutions is a syllabus topic under Divide and Conquer Paradigm in Module 1.",
+      "If asked “Which statement best matches Divide-Conquer Recurrence Equations Solutions?” → A core idea in Data Structures & Algorithms: Divide-Conquer Recurrence Equations Solutions."
+    ]
+  },
+  "1.4.1": {
+    "terms": [
+      {
+        "t": "the core idea of Bubble Sort",
+        "d": "1.4.2 Insertion Sort 1.4.3 Selection Sort 1.4.4 Merge Sort"
+      },
+      {
+        "t": "one exam point for Bubble Sort.",
+        "d": "Be able to define Bubble Sort, state when it is used, and contrast it with a related concept in Sorting Techniques."
+      }
+    ],
+    "concepts": [
+      "Hold Bubble Sort as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.4.1 · Sorting Techniques",
+      "Exam cue: Bubble Sort is a syllabus topic under Sorting Techniques in Module 1.",
+      "If asked “Which statement best matches Bubble Sort?” → A core idea in Data Structures & Algorithms: Bubble Sort."
+    ]
+  },
+  "1.4.2": {
+    "terms": [
+      {
+        "t": "the core idea of Insertion Sort",
+        "d": "1.4.3 Selection Sort 1.4.4 Merge Sort 1.4.5 Heap Sort"
+      }
+    ],
+    "concepts": [
+      "Core of Insertion Sort: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.4.2 · Sorting Techniques",
+      "Exam cue: Insertion Sort is a syllabus topic under Sorting Techniques in Module 1.",
+      "If asked “Which statement best matches Insertion Sort?” → A core idea in Data Structures & Algorithms: Insertion Sort."
+    ]
+  },
+  "1.4.3": {
+    "terms": [
+      {
+        "t": "the core idea of Selection Sort",
+        "d": "1.4.4 Merge Sort 1.4.5 Heap Sort 1.4.6 Quick Sort"
+      },
+      {
+        "t": "one exam point for Selection Sort.",
+        "d": "Be able to define Selection Sort, state when it is used, and contrast it with a related concept in Sorting Techniques."
+      }
+    ],
+    "concepts": [
+      "Hold Selection Sort as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.4.3 · Sorting Techniques",
+      "Exam cue: Selection Sort is a syllabus topic under Sorting Techniques in Module 1.",
+      "If asked “Which statement best matches Selection Sort?” → A core idea in Data Structures & Algorithms: Selection Sort."
+    ]
+  },
+  "1.4.4": {
+    "terms": [
+      {
+        "t": "the core idea of Merge Sort",
+        "d": "1.4.5 Heap Sort 1.4.6 Quick Sort Module - II: Tree and Graphs"
+      }
+    ],
+    "concepts": [
+      "Core of Merge Sort: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.4.4 · Sorting Techniques",
+      "Exam cue: Merge Sort is a syllabus topic under Sorting Techniques in Module 1.",
+      "If asked “Which statement best matches Merge Sort?” → A core idea in Data Structures & Algorithms: Merge Sort."
+    ]
+  },
+  "1.4.5": {
+    "terms": [
+      {
+        "t": "the core idea of Heap Sort",
+        "d": "1.4.6 Quick Sort Module - II: Tree and Graphs 55"
+      },
+      {
+        "t": "one exam point for Heap Sort.",
+        "d": "Be able to define Heap Sort, state when it is used, and contrast it with a related concept in Sorting Techniques."
+      }
+    ],
+    "concepts": [
+      "Hold Heap Sort as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.4.5 · Sorting Techniques",
+      "Exam cue: Heap Sort is a syllabus topic under Sorting Techniques in Module 1.",
+      "If asked “Which statement best matches Heap Sort?” → A core idea in Data Structures & Algorithms: Heap Sort."
+    ]
+  },
+  "1.4.6": {
+    "terms": [
+      {
+        "t": "the core idea of Quick Sort",
+        "d": "● Searching Algorithms: Techniques like Binary Search employ Divide and Conquer to efficiently search through a sorted array or list."
+      }
+    ],
+    "concepts": [
+      "Core of Quick Sort: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 1.4.6 · Sorting Techniques",
+      "Exam cue: Quick Sort is a syllabus topic under Sorting Techniques in Module 1.",
+      "If asked “Which statement best matches Quick Sort?” → A core idea in Data Structures & Algorithms: Quick Sort."
+    ]
+  },
+  "2.1.1": {
+    "terms": [
+      {
+        "t": "the core idea of Basic Terminology and Applications",
+        "d": "2.1.2 Binary Trees 2.1.3 Binary Search Trees 2.1.4 Optimal Binary Search Tree"
+      },
+      {
+        "t": "one exam point for Basic Terminology and Applications.",
+        "d": "Be able to define Basic Terminology and Applications, state when it is used, and contrast it with a related concept in Tree."
+      }
+    ],
+    "concepts": [
+      "Hold Basic Terminology and Applications as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 2.1.1 · Tree",
+      "Exam cue: Basic Terminology and Applications is a syllabus topic under Tree in Module 2.",
+      "If asked “Which statement best matches Basic Terminology and Applications?” → A core idea in Data Structures & Algorithms: Basic Terminology and Applications."
+    ]
+  },
+  "2.1.2": {
+    "terms": [
+      {
+        "t": "the core idea of Binary Trees",
+        "d": "2.1.3 Binary Search Trees 2.1.4 Optimal Binary Search Tree 2.1.5 Red-Black Trees"
+      }
+    ],
+    "concepts": [
+      "Core of Binary Trees: be able to restate the definition without the flashcard wording.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 2.1.2 · Tree",
+      "Exam cue: Binary Trees is a syllabus topic under Tree in Module 2.",
+      "If asked “Which statement best matches Binary Trees?” → A core idea in Data Structures & Algorithms: Binary Trees."
+    ]
+  },
+  "2.1.3": {
+    "terms": [
+      {
+        "t": "the core idea of Binary Search Trees",
+        "d": "2.1.4 Optimal Binary Search Tree 2.1.5 Red-Black Trees 2.1.6 AVL Trees"
+      },
+      {
+        "t": "one exam point for Binary Search Trees.",
+        "d": "Be able to define Binary Search Trees, state when it is used, and contrast it with a related concept in Tree."
+      }
+    ],
+    "concepts": [
+      "Hold Binary Search Trees as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 2.1.3 · Tree",
+      "Exam cue: Binary Search Trees is a syllabus topic under Tree in Module 2.",
+      "If asked “Which statement best matches Binary Search Trees?” → A core idea in Data Structures & Algorithms: Binary Search Trees."
+    ]
+  },
+  "2.1.4": {
+    "terms": [
+      {
+        "t": "the core idea of Optimal Binary Search Tree",
+        "d": "2.1.5 Red-Black Trees 2.1.6 AVL Trees 2.1.7 B Trees"
+      }
+    ],
+    "concepts": [
+      "Core of Optimal Binary Search Tree: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 2.1.4 · Tree",
+      "Exam cue: Optimal Binary Search Tree is a syllabus topic under Tree in Module 2.",
+      "If asked “Which statement best matches Optimal Binary Search Tree?” → A core idea in Data Structures & Algorithms: Optimal Binary Search Tree."
+    ]
+  },
+  "2.1.5": {
+    "terms": [
+      {
+        "t": "the core idea of Red-Black Trees",
+        "d": "2.1.6 AVL Trees 2.1.7 B Trees 2.1.8 Spanning Trees"
+      },
+      {
+        "t": "one exam point for Red-Black Trees.",
+        "d": "Be able to define Red-Black Trees, state when it is used, and contrast it with a related concept in Tree."
+      }
+    ],
+    "concepts": [
+      "Hold Red-Black Trees as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 2.1.5 · Tree",
+      "Exam cue: Red-Black Trees is a syllabus topic under Tree in Module 2.",
+      "If asked “Which statement best matches Red-Black Trees?” → A core idea in Data Structures & Algorithms: Red-Black Trees."
+    ]
+  },
+  "2.1.6": {
+    "terms": [
+      {
+        "t": "the core idea of AVL Trees",
+        "d": "2.1.7 B Trees 2.1.8 Spanning Trees 2.1.9 Prim’s Algorithm"
+      }
+    ],
+    "concepts": [
+      "Core of AVL Trees: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 2.1.6 · Tree",
+      "Exam cue: AVL Trees is a syllabus topic under Tree in Module 2.",
+      "If asked “Which statement best matches AVL Trees?” → A core idea in Data Structures & Algorithms: AVL Trees."
+    ]
+  },
+  "2.1.7": {
+    "terms": [
+      {
+        "t": "the core idea of B Trees",
+        "d": "2.1.8 Spanning Trees 2.1.9 Prim’s Algorithm 2.1.10 Kruskal’s Algorithm"
+      },
+      {
+        "t": "one exam point for B Trees.",
+        "d": "Be able to define B Trees, state when it is used, and contrast it with a related concept in Tree."
+      }
+    ],
+    "concepts": [
+      "Hold B Trees as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 2.1.7 · Tree",
+      "Exam cue: B Trees is a syllabus topic under Tree in Module 2.",
+      "If asked “Which statement best matches B Trees?” → A core idea in Data Structures & Algorithms: B Trees."
+    ]
+  },
+  "2.1.8": {
+    "terms": [
+      {
+        "t": "the core idea of Spanning Trees",
+        "d": "2.1.9 Prim’s Algorithm 2.1.10 Kruskal’s Algorithm 2.2 Graphs"
+      }
+    ],
+    "concepts": [
+      "Core of Spanning Trees: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 2.1.8 · Tree",
+      "Exam cue: Spanning Trees is a syllabus topic under Tree in Module 2.",
+      "If asked “Which statement best matches Spanning Trees?” → A core idea in Data Structures & Algorithms: Spanning Trees."
+    ]
+  },
+  "2.1.9": {
+    "terms": [
+      {
+        "t": "the core idea of Prim’s Algorithm",
+        "d": "2.1.10 Kruskal’s Algorithm 2.2 Graphs 2.2.1 Terminology, Representations, Traversals"
+      },
+      {
+        "t": "one exam point for Prim’s Algorithm.",
+        "d": "Be able to define Prim’s Algorithm, state when it is used, and contrast it with a related concept in Tree."
+      }
+    ],
+    "concepts": [
+      "Hold Prim’s Algorithm as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 2.1.9 · Tree",
+      "Exam cue: Prim’s Algorithm is a syllabus topic under Tree in Module 2.",
+      "If asked “Which statement best matches Prim’s Algorithm?” → A core idea in Data Structures & Algorithms: Prim’s Algorithm."
+    ]
+  },
+  "2.1.10": {
+    "terms": [
+      {
+        "t": "the core idea of Kruskal’s Algorithm",
+        "d": "2.2 Graphs 2.2.1 Terminology, Representations, Traversals 2.2.2 Depth-First Search (DFS)"
+      }
+    ],
+    "concepts": [
+      "Core of Kruskal’s Algorithm: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 2.1.10 · Tree",
+      "Exam cue: Kruskal’s Algorithm is a syllabus topic under Tree in Module 2.",
+      "If asked “Which statement best matches Kruskal’s Algorithm?” → A core idea in Data Structures & Algorithms: Kruskal’s Algorithm."
+    ]
+  },
+  "2.2.1": {
+    "terms": [
+      {
+        "t": "the core idea of Terminology, Representations, Traversals",
+        "d": "2.2.2 Depth-First Search (DFS) (C) Amity University Online"
+      },
+      {
+        "t": "one exam point for Terminology, Representations, Traversals.",
+        "d": "Be able to define Terminology, Representations, Traversals, state when it is used, and contrast it with a related concept in Graphs."
+      }
+    ],
+    "concepts": [
+      "Hold Terminology, Representations, Traversals as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 2.2.1 · Graphs",
+      "Exam cue: Terminology, Representations, Traversals is a syllabus topic under Graphs in Module 2.",
+      "If asked “Which statement best matches Terminology, Representations, Traversals?” → A core idea in Data Structures & Algorithms: Terminology, Representations, Traversals."
+    ]
+  },
+  "2.2.2": {
+    "terms": [
+      {
+        "t": "the core idea of Depth-First Search (DFS)",
+        "d": "Key SLM topic: Depth-First Search (DFS). Review definitions, steps, and one worked example from the study PDF."
+      }
+    ],
+    "concepts": [
+      "Core of Depth-First Search (DFS): be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 2.2.2 · Graphs",
+      "Exam cue: Depth-First Search (DFS) is a syllabus topic under Graphs in Module 2.",
+      "If asked “Which statement best matches Depth-First Search (DFS)?” → A core idea in Data Structures & Algorithms: Depth-First Search (DFS)."
+    ]
+  },
+  "2.2.3": {
+    "terms": [
+      {
+        "t": "the core idea of Breadth-First Search (BFS)",
+        "d": "2.2.4 Single-Source Shortest Path 2.2.5 All-Pair Shortest Path Module - III: Dynamic and Greedy Approach"
+      },
+      {
+        "t": "one exam point for Breadth-First Search (BFS).",
+        "d": "Be able to define Breadth-First Search (BFS), state when it is used, and contrast it with a related concept in Graphs."
+      }
+    ],
+    "concepts": [
+      "Hold Breadth-First Search (BFS) as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 2.2.3 · Graphs",
+      "Exam cue: Breadth-First Search (BFS) is a syllabus topic under Graphs in Module 2.",
+      "If asked “Which statement best matches Breadth-First Search (BFS)?” → A core idea in Data Structures & Algorithms: Breadth-First Search (BFS)."
+    ]
+  },
+  "2.2.4": {
+    "terms": [
+      {
+        "t": "the core idea of Single-Source Shortest Path",
+        "d": "2.2.5 All-Pair Shortest Path Module - III: Dynamic and Greedy Approach 107"
+      }
+    ],
+    "concepts": [
+      "Core of Single-Source Shortest Path: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 2.2.4 · Graphs",
+      "Exam cue: Single-Source Shortest Path is a syllabus topic under Graphs in Module 2.",
+      "If asked “Which statement best matches Single-Source Shortest Path?” → A core idea in Data Structures & Algorithms: Single-Source Shortest Path."
+    ]
+  },
+  "2.2.5": {
+    "terms": [
+      {
+        "t": "the core idea of All-Pair Shortest Path",
+        "d": "Module - III: Dynamic and Greedy Approach 107 3.1 Dynamic Programming"
+      },
+      {
+        "t": "one exam point for All-Pair Shortest Path.",
+        "d": "Be able to define All-Pair Shortest Path, state when it is used, and contrast it with a related concept in Graphs."
+      }
+    ],
+    "concepts": [
+      "Hold All-Pair Shortest Path as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 2.2.5 · Graphs",
+      "Exam cue: All-Pair Shortest Path is a syllabus topic under Graphs in Module 2.",
+      "If asked “Which statement best matches All-Pair Shortest Path?” → A core idea in Data Structures & Algorithms: All-Pair Shortest Path."
+    ]
+  },
+  "3.1.1": {
+    "terms": [
+      {
+        "t": "the core idea of Dynamic Programming Approach",
+        "d": "3.1.1 Dynamic Programming Approach 3.1.2 Principle of Optimality 3.1.3 Strassens Matrix Multiplication"
+      },
+      {
+        "t": "one exam point for Dynamic Programming Approach.",
+        "d": "Be able to define Dynamic Programming Approach, state when it is used, and contrast it with a related concept in Dynamic Programming."
+      }
+    ],
+    "concepts": [
+      "Hold Dynamic Programming Approach as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 3.1.1 · Dynamic Programming",
+      "Exam cue: Dynamic Programming Approach is a syllabus topic under Dynamic Programming in Module 3.",
+      "If asked “Which statement best matches Dynamic Programming Approach?” → A core idea in Data Structures & Algorithms: Dynamic Programming Approach."
+    ]
+  },
+  "3.1.2": {
+    "terms": [
+      {
+        "t": "the core idea of Principle of Optimality",
+        "d": "3.1.3 Strassens Matrix Multiplication 3.1.4 Matrix Chain Multiplication 3.1.5 Longest Common subsequence"
+      }
+    ],
+    "concepts": [
+      "Core of Principle of Optimality: be able to restate the definition without the flashcard wording.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 3.1.2 · Dynamic Programming",
+      "Exam cue: Principle of Optimality is a syllabus topic under Dynamic Programming in Module 3.",
+      "If asked “Which statement best matches Principle of Optimality?” → A core idea in Data Structures & Algorithms: Principle of Optimality."
+    ]
+  },
+  "3.1.3": {
+    "terms": [
+      {
+        "t": "the core idea of Strassens Matrix Multiplication",
+        "d": "3.1.4 Matrix Chain Multiplication 3.1.5 Longest Common subsequence 3.1.6 0/1 Knapsack Problem"
+      },
+      {
+        "t": "one exam point for Strassens Matrix Multiplication.",
+        "d": "Be able to define Strassens Matrix Multiplication, state when it is used, and contrast it with a related concept in Dynamic Programming."
+      }
+    ],
+    "concepts": [
+      "Hold Strassens Matrix Multiplication as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 3.1.3 · Dynamic Programming",
+      "Exam cue: Strassens Matrix Multiplication is a syllabus topic under Dynamic Programming in Module 3.",
+      "If asked “Which statement best matches Strassens Matrix Multiplication?” → A core idea in Data Structures & Algorithms: Strassens Matrix Multiplication."
+    ]
+  },
+  "3.1.4": {
+    "terms": [
+      {
+        "t": "the core idea of Matrix Chain Multiplication",
+        "d": "3.1.5 Longest Common subsequence 3.1.6 0/1 Knapsack Problem 3.2 Greedy Approach"
+      }
+    ],
+    "concepts": [
+      "Core of Matrix Chain Multiplication: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 3.1.4 · Dynamic Programming",
+      "Exam cue: Matrix Chain Multiplication is a syllabus topic under Dynamic Programming in Module 3.",
+      "If asked “Which statement best matches Matrix Chain Multiplication?” → A core idea in Data Structures & Algorithms: Matrix Chain Multiplication."
+    ]
+  },
+  "3.1.5": {
+    "terms": [
+      {
+        "t": "the core idea of Longest Common subsequence",
+        "d": "3.1.6 0/1 Knapsack Problem 3.2 Greedy Approach 3.2.1 Introduction of Greedy Approach"
+      },
+      {
+        "t": "one exam point for Longest Common subsequence.",
+        "d": "Be able to define Longest Common subsequence, state when it is used, and contrast it with a related concept in Dynamic Programming."
+      }
+    ],
+    "concepts": [
+      "Hold Longest Common subsequence as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 3.1.5 · Dynamic Programming",
+      "Exam cue: Longest Common subsequence is a syllabus topic under Dynamic Programming in Module 3.",
+      "If asked “Which statement best matches Longest Common subsequence?” → A core idea in Data Structures & Algorithms: Longest Common subsequence."
+    ]
+  },
+  "3.1.6": {
+    "terms": [
+      {
+        "t": "the core idea of 0/1 Knapsack Problem",
+        "d": "3.2 Greedy Approach 3.2.1 Introduction of Greedy Approach 3.2.2 Activity Selection Problem"
+      }
+    ],
+    "concepts": [
+      "Core of 0/1 Knapsack Problem: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 3.1.6 · Dynamic Programming",
+      "Exam cue: 0/1 Knapsack Problem is a syllabus topic under Dynamic Programming in Module 3.",
+      "If asked “Which statement best matches 0/1 Knapsack Problem?” → A core idea in Data Structures & Algorithms: 0/1 Knapsack Problem."
+    ]
+  },
+  "3.2.1": {
+    "terms": [
+      {
+        "t": "the core idea of Introduction of Greedy Approach",
+        "d": "3.2.2 Activity Selection Problem 3.2.3 Huffman Codes 3.2.4 Fractional Knapsack Problem"
+      },
+      {
+        "t": "one exam point for Introduction of Greedy Approach.",
+        "d": "Be able to define Introduction of Greedy Approach, state when it is used, and contrast it with a related concept in Greedy Approach."
+      }
+    ],
+    "concepts": [
+      "Hold Introduction of Greedy Approach as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 3.2.1 · Greedy Approach",
+      "Exam cue: Introduction of Greedy Approach is a syllabus topic under Greedy Approach in Module 3.",
+      "If asked “Which statement best matches Introduction of Greedy Approach?” → A core idea in Data Structures & Algorithms: Introduction of Greedy Approach."
+    ]
+  },
+  "3.2.2": {
+    "terms": [
+      {
+        "t": "the core idea of Activity Selection Problem",
+        "d": "3.2.3 Huffman Codes 3.2.4 Fractional Knapsack Problem 3.3 Branch and Bound Approach"
+      }
+    ],
+    "concepts": [
+      "Core of Activity Selection Problem: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 3.2.2 · Greedy Approach",
+      "Exam cue: Activity Selection Problem is a syllabus topic under Greedy Approach in Module 3.",
+      "If asked “Which statement best matches Activity Selection Problem?” → A core idea in Data Structures & Algorithms: Activity Selection Problem."
+    ]
+  },
+  "3.2.3": {
+    "terms": [
+      {
+        "t": "the core idea of Huffman Codes",
+        "d": "3.2.4 Fractional Knapsack Problem 3.3 Branch and Bound Approach 3.3.1 Traveling Salesman Problem"
+      },
+      {
+        "t": "one exam point for Huffman Codes.",
+        "d": "Be able to define Huffman Codes, state when it is used, and contrast it with a related concept in Greedy Approach."
+      }
+    ],
+    "concepts": [
+      "Hold Huffman Codes as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 3.2.3 · Greedy Approach",
+      "Exam cue: Huffman Codes is a syllabus topic under Greedy Approach in Module 3.",
+      "If asked “Which statement best matches Huffman Codes?” → A core idea in Data Structures & Algorithms: Huffman Codes."
+    ]
+  },
+  "3.2.4": {
+    "terms": [
+      {
+        "t": "the core idea of Fractional Knapsack Problem",
+        "d": "3.3 Branch and Bound Approach 3.3.1 Traveling Salesman Problem 3.3.2 Knapsack Problem"
+      }
+    ],
+    "concepts": [
+      "Core of Fractional Knapsack Problem: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 3.2.4 · Greedy Approach",
+      "Exam cue: Fractional Knapsack Problem is a syllabus topic under Greedy Approach in Module 3.",
+      "If asked “Which statement best matches Fractional Knapsack Problem?” → A core idea in Data Structures & Algorithms: Fractional Knapsack Problem."
+    ]
+  },
+  "3.3.1": {
+    "terms": [
+      {
+        "t": "the core idea of Traveling Salesman Problem",
+        "d": "3.3.2 Knapsack Problem 3.3.3 Job Sequencing 3.3.4 Job Sequencing with Deadline"
+      },
+      {
+        "t": "one exam point for Traveling Salesman Problem.",
+        "d": "Be able to define Traveling Salesman Problem, state when it is used, and contrast it with a related concept in Branch and Bound Approach."
+      }
+    ],
+    "concepts": [
+      "Hold Traveling Salesman Problem as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 3.3.1 · Branch and Bound Approach",
+      "Exam cue: Traveling Salesman Problem is a syllabus topic under Branch and Bound Approach in Module 3.",
+      "If asked “Which statement best matches Traveling Salesman Problem?” → A core idea in Data Structures & Algorithms: Traveling Salesman Problem."
+    ]
+  },
+  "3.3.2": {
+    "terms": [
+      {
+        "t": "the core idea of Knapsack Problem",
+        "d": "3.2 Greedy Approach 3.2.1 Introduction of Greedy Approach 3.2.2 Activity Selection Problem"
+      }
+    ],
+    "concepts": [
+      "Core of Knapsack Problem: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 3.3.2 · Branch and Bound Approach",
+      "Exam cue: Knapsack Problem is a syllabus topic under Branch and Bound Approach in Module 3.",
+      "If asked “Which statement best matches Knapsack Problem?” → A core idea in Data Structures & Algorithms: Knapsack Problem."
+    ]
+  },
+  "3.3.3": {
+    "terms": [
+      {
+        "t": "the core idea of Job Sequencing",
+        "d": "3.3.4 Job Sequencing with Deadline Module - IV: E String Matching Algorithms and Approximation Algorithms 141"
+      },
+      {
+        "t": "one exam point for Job Sequencing.",
+        "d": "Be able to define Job Sequencing, state when it is used, and contrast it with a related concept in Branch and Bound Approach."
+      }
+    ],
+    "concepts": [
+      "Hold Job Sequencing as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 3.3.3 · Branch and Bound Approach",
+      "Exam cue: Job Sequencing is a syllabus topic under Branch and Bound Approach in Module 3.",
+      "If asked “Which statement best matches Job Sequencing?” → A core idea in Data Structures & Algorithms: Job Sequencing."
+    ]
+  },
+  "3.3.4": {
+    "terms": [
+      {
+        "t": "the core idea of Job Sequencing with Deadline",
+        "d": "Module - IV: E String Matching Algorithms and Approximation Algorithms 141 4.1 String Matching Algorithm"
+      }
+    ],
+    "concepts": [
+      "Core of Job Sequencing with Deadline: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 3.3.4 · Branch and Bound Approach",
+      "Exam cue: Job Sequencing with Deadline is a syllabus topic under Branch and Bound Approach in Module 3.",
+      "If asked “Which statement best matches Job Sequencing with Deadline?” → A core idea in Data Structures & Algorithms: Job Sequencing with Deadline."
+    ]
+  },
+  "4.1.1": {
+    "terms": [
+      {
+        "t": "the core idea of Naïve String Matching Algorithm",
+        "d": "4.1,2 String Searching Algorithm: Knuth Morris and Pratt 4.1.3 String Matching Algorithm: Rabin Karp 4.2 Approximation Algorithm"
+      },
+      {
+        "t": "one exam point for Naïve String Matching Algorithm.",
+        "d": "Be able to define Naïve String Matching Algorithm, state when it is used, and contrast it with a related concept in String Matching Algorithm."
+      }
+    ],
+    "concepts": [
+      "Hold Naïve String Matching Algorithm as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 4.1.1 · String Matching Algorithm",
+      "Exam cue: Naïve String Matching Algorithm is a syllabus topic under String Matching Algorithm in Module 4.",
+      "If asked “Which statement best matches Naïve String Matching Algorithm?” → A core idea in Data Structures & Algorithms: Naïve String Matching Algorithm."
+    ]
+  },
+  "4.1.3": {
+    "terms": [
+      {
+        "t": "the core idea of String Matching Algorithm: Rabin Karp",
+        "d": "141 4.1 String Matching Algorithm 4.1.1 Naïve String Matching Algorithm"
+      }
+    ],
+    "concepts": [
+      "Core of String Matching Algorithm: Rabin Karp: be able to restate the definition without the flashcard wording.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 4.1.3 · String Matching Algorithm",
+      "Exam cue: String Matching Algorithm: Rabin Karp is a syllabus topic under String Matching Algorithm in Module 4.",
+      "If asked “Which statement best matches String Matching Algorithm: Rabin Karp?” → A core idea in Data Structures & Algorithms: String Matching Algorithm: Rabin Karp."
+    ]
+  },
+  "4.2.1": {
+    "terms": [
+      {
+        "t": "the core idea of Vertex-Cover Algorithm",
+        "d": "4.2.2 Set Covering Problem 4.2.3 Randomisation and Linear Programming 4.2.4 The Subset-sum Problem"
+      },
+      {
+        "t": "one exam point for Vertex-Cover Algorithm.",
+        "d": "Be able to define Vertex-Cover Algorithm, state when it is used, and contrast it with a related concept in Approximation Algorithm."
+      }
+    ],
+    "concepts": [
+      "Hold Vertex-Cover Algorithm as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 4.2.1 · Approximation Algorithm",
+      "Exam cue: Vertex-Cover Algorithm is a syllabus topic under Approximation Algorithm in Module 4.",
+      "If asked “Which statement best matches Vertex-Cover Algorithm?” → A core idea in Data Structures & Algorithms: Vertex-Cover Algorithm."
+    ]
+  },
+  "4.2.2": {
+    "terms": [
+      {
+        "t": "the core idea of Set Covering Problem",
+        "d": "4.2.3 Randomisation and Linear Programming 4.2.4 The Subset-sum Problem Module -V: NP-Completeness"
+      }
+    ],
+    "concepts": [
+      "Core of Set Covering Problem: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 4.2.2 · Approximation Algorithm",
+      "Exam cue: Set Covering Problem is a syllabus topic under Approximation Algorithm in Module 4.",
+      "If asked “Which statement best matches Set Covering Problem?” → A core idea in Data Structures & Algorithms: Set Covering Problem."
+    ]
+  },
+  "4.2.3": {
+    "terms": [
+      {
+        "t": "the core idea of Randomisation and Linear Programming",
+        "d": "4.2.4 The Subset-sum Problem Module -V: NP-Completeness 172"
+      },
+      {
+        "t": "one exam point for Randomisation and Linear Programming.",
+        "d": "Be able to define Randomisation and Linear Programming, state when it is used, and contrast it with a related concept in Approximation Algorithm."
+      }
+    ],
+    "concepts": [
+      "Hold Randomisation and Linear Programming as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 4.2.3 · Approximation Algorithm",
+      "Exam cue: Randomisation and Linear Programming is a syllabus topic under Approximation Algorithm in Module 4.",
+      "If asked “Which statement best matches Randomisation and Linear Programming?” → A core idea in Data Structures & Algorithms: Randomisation and Linear Programming."
+    ]
+  },
+  "4.2.4": {
+    "terms": [
+      {
+        "t": "the core idea of The Subset-sum Problem",
+        "d": "Module -V: NP-Completeness 172 5.1 Polynomial Time"
+      }
+    ],
+    "concepts": [
+      "Core of The Subset-sum Problem: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 4.2.4 · Approximation Algorithm",
+      "Exam cue: The Subset-sum Problem is a syllabus topic under Approximation Algorithm in Module 4.",
+      "If asked “Which statement best matches The Subset-sum Problem?” → A core idea in Data Structures & Algorithms: The Subset-sum Problem."
+    ]
+  },
+  "5.1.1": {
+    "terms": [
+      {
+        "t": "the core idea of Green Technology",
+        "d": "5.1.2 Hamiltonian Cycles 5.2 NP-Completeness 5.2.1 NP-completeness Proofs"
+      },
+      {
+        "t": "one exam point for Green Technology.",
+        "d": "Be able to define Green Technology, state when it is used, and contrast it with a related concept in Polynomial Time."
+      }
+    ],
+    "concepts": [
+      "Hold Green Technology as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 5.1.1 · Polynomial Time",
+      "Exam cue: Green Technology is a syllabus topic under Polynomial Time in Module 5.",
+      "If asked “Which statement best matches Green Technology?” → A core idea in Data Structures & Algorithms: Green Technology."
+    ]
+  },
+  "5.1.2": {
+    "terms": [
+      {
+        "t": "the core idea of Hamiltonian Cycles",
+        "d": "5.2 NP-Completeness 5.2.1 NP-completeness Proofs 5.2.2 NP-completeness Problems"
+      }
+    ],
+    "concepts": [
+      "Core of Hamiltonian Cycles: be able to restate the definition without the flashcard wording.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 5.1.2 · Polynomial Time",
+      "Exam cue: Hamiltonian Cycles is a syllabus topic under Polynomial Time in Module 5.",
+      "If asked “Which statement best matches Hamiltonian Cycles?” → A core idea in Data Structures & Algorithms: Hamiltonian Cycles."
+    ]
+  },
+  "5.2.1": {
+    "terms": [
+      {
+        "t": "the core idea of NP-completeness Proofs",
+        "d": "5.2.2 NP-completeness Problems 5.2.3 NP-Hard and SAT Problems 5.2.4 NP-completeness and Reducibility"
+      },
+      {
+        "t": "one exam point for NP-completeness Proofs.",
+        "d": "Be able to define NP-completeness Proofs, state when it is used, and contrast it with a related concept in NP-Completeness."
+      }
+    ],
+    "concepts": [
+      "Hold NP-completeness Proofs as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word.",
+      "LMR: prioritise term list + exam cues; practise saying definitions aloud."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 5.2.1 · NP-Completeness",
+      "Exam cue: NP-completeness Proofs is a syllabus topic under NP-Completeness in Module 5.",
+      "If asked “Which statement best matches NP-completeness Proofs?” → A core idea in Data Structures & Algorithms: NP-completeness Proofs."
+    ]
+  },
+  "5.2.2": {
+    "terms": [
+      {
+        "t": "the core idea of NP-completeness Problems",
+        "d": "5.2.2 NP-completeness Problems 5.2.3 NP-Hard and SAT Problems 5.2.4 NP-completeness and Reducibility"
+      }
+    ],
+    "concepts": [
+      "Core of NP-completeness Problems: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 5.2.2 · NP-Completeness",
+      "Exam cue: NP-completeness Problems is a syllabus topic under NP-Completeness in Module 5.",
+      "If asked “Which statement best matches NP-completeness Problems?” → A core idea in Data Structures & Algorithms: NP-completeness Problems."
+    ]
+  },
+  "5.2.3": {
+    "terms": [
+      {
+        "t": "the core idea of NP-Hard and SAT Problems",
+        "d": "5.2.4 NP-completeness and Reducibility (C) Amity University Online"
+      },
+      {
+        "t": "one exam point for NP-Hard and SAT Problems.",
+        "d": "Be able to define NP-Hard and SAT Problems, state when it is used, and contrast it with a related concept in NP-Completeness."
+      }
+    ],
+    "concepts": [
+      "Hold NP-Hard and SAT Problems as a cluster: learn each term below as a one-line definition.",
+      "Compare the cards — exam stems often hinge on one contrasting word."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 5.2.3 · NP-Completeness",
+      "Exam cue: NP-Hard and SAT Problems is a syllabus topic under NP-Completeness in Module 5.",
+      "If asked “Which statement best matches NP-Hard and SAT Problems?” → A core idea in Data Structures & Algorithms: NP-Hard and SAT Problems."
+    ]
+  },
+  "5.2.4": {
+    "terms": [
+      {
+        "t": "the core idea of NP-completeness and Reducibility",
+        "d": "Module - IV: E String Matching Algorithms  and Approximation Algorithms"
+      }
+    ],
+    "concepts": [
+      "Core of NP-completeness and Reducibility: be able to restate the definition without the flashcard wording."
+    ],
+    "notes": [
+      "From Data Structures and Algorithm Design (CSE601) · 5.2.4 · NP-Completeness",
+      "Exam cue: NP-completeness and Reducibility is a syllabus topic under NP-Completeness in Module 5.",
+      "If asked “Which statement best matches NP-completeness and Reducibility?” → A core idea in Data Structures & Algorithms: NP-completeness and Reducibility."
+    ]
+  }
+}
