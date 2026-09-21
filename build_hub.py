@@ -105,34 +105,39 @@ FLASH_CSS = _FLASH_CSS + r"""
 """
 
 MAP_CSS = _MAP_CSS + r"""
-/* Visit depth: deepen each group's own colour (not a flat green override). */
-.node.a.depth-1 { background: #cfeee0; border-color: rgba(15,107,76,.28); }
-.node.a.depth-2 { background: #a8dfc8; border-color: rgba(15,107,76,.36); }
-.node.a.depth-3 { background: #7ecfad; border-color: rgba(15,107,76,.45); }
-.node.a.depth-4 { background: #55b890; border-color: rgba(15,107,76,.55); color: #0d3d2e; }
-.node.a.depth-5 { background: #2f9a72; border-color: rgba(15,107,76,.7); color: #fff; }
+/* Visit depth: first click must be clearly darker than the pale unvisited base. */
+.node.a.depth-1 { background: #a8dfc8; border-color: rgba(15,107,76,.4); }
+.node.a.depth-2 { background: #7ecfad; border-color: rgba(15,107,76,.48); }
+.node.a.depth-3 { background: #55b890; border-color: rgba(15,107,76,.55); color: #0d3d2e; }
+.node.a.depth-4 { background: #3aaa7a; border-color: rgba(15,107,76,.65); color: #fff; }
+.node.a.depth-4 .n-sub { color: rgba(255,255,255,.85); }
+.node.a.depth-5 { background: #2f9a72; border-color: rgba(15,107,76,.75); color: #fff; }
 .node.a.depth-5 .n-sub { color: rgba(255,255,255,.85); }
 
-.node.b.depth-1 { background: #f3dfd0; border-color: rgba(154,74,28,.28); }
-.node.b.depth-2 { background: #ecc8b0; border-color: rgba(154,74,28,.36); }
-.node.b.depth-3 { background: #e0a888; border-color: rgba(154,74,28,.45); }
-.node.b.depth-4 { background: #d08860; border-color: rgba(154,74,28,.55); color: #4a2410; }
-.node.b.depth-5 { background: #b8622e; border-color: rgba(154,74,28,.7); color: #fff; }
+.node.b.depth-1 { background: #ecc8b0; border-color: rgba(154,74,28,.4); }
+.node.b.depth-2 { background: #e0a888; border-color: rgba(154,74,28,.48); }
+.node.b.depth-3 { background: #d08860; border-color: rgba(154,74,28,.55); color: #4a2410; }
+.node.b.depth-4 { background: #c4743a; border-color: rgba(154,74,28,.65); color: #fff; }
+.node.b.depth-4 .n-sub { color: rgba(255,255,255,.85); }
+.node.b.depth-5 { background: #b8622e; border-color: rgba(154,74,28,.75); color: #fff; }
 .node.b.depth-5 .n-sub { color: rgba(255,255,255,.85); }
 
-.node.c.depth-1 { background: #d0e4f5; border-color: rgba(31,79,120,.28); }
-.node.c.depth-2 { background: #b4d2ec; border-color: rgba(31,79,120,.36); }
-.node.c.depth-3 { background: #8fb8dc; border-color: rgba(31,79,120,.45); }
-.node.c.depth-4 { background: #6a9cc8; border-color: rgba(31,79,120,.55); color: #16324a; }
-.node.c.depth-5 { background: #3f7aad; border-color: rgba(31,79,120,.7); color: #fff; }
+.node.c.depth-1 { background: #b4d2ec; border-color: rgba(31,79,120,.4); }
+.node.c.depth-2 { background: #8fb8dc; border-color: rgba(31,79,120,.48); }
+.node.c.depth-3 { background: #6a9cc8; border-color: rgba(31,79,120,.55); color: #16324a; }
+.node.c.depth-4 { background: #4f88b8; border-color: rgba(31,79,120,.65); color: #fff; }
+.node.c.depth-4 .n-sub { color: rgba(255,255,255,.85); }
+.node.c.depth-5 { background: #3f7aad; border-color: rgba(31,79,120,.75); color: #fff; }
 .node.c.depth-5 .n-sub { color: rgba(255,255,255,.85); }
 
 /* LMR cards deepen in the coral/red family (keep outline). */
-.node.lmr-node.depth-1 { background: #f3dfd0; border-color: rgba(196,92,38,.4); }
-.node.lmr-node.depth-2 { background: #ecc8b0; border-color: rgba(196,92,38,.48); }
-.node.lmr-node.depth-3 { background: #e0a888; border-color: rgba(196,92,38,.56); }
-.node.lmr-node.depth-4 { background: #d08860; border-color: rgba(196,92,38,.64); color: #4a2410; }
-.node.lmr-node.depth-5 { background: #c45c26; border-color: rgba(196,92,38,.78); color: #fff; }
+.node.lmr-node.depth-1 { background: #ecc8b0; border-color: rgba(196,92,38,.5); }
+.node.lmr-node.depth-2 { background: #e0a888; border-color: rgba(196,92,38,.58); }
+.node.lmr-node.depth-3 { background: #d08860; border-color: rgba(196,92,38,.66); color: #4a2410; }
+.node.lmr-node.depth-4 { background: #c96a3a; border-color: rgba(196,92,38,.74); color: #fff; }
+.node.lmr-node.depth-4 .n-sub { color: rgba(255,255,255,.85); }
+.node.lmr-node.depth-4 .n-badge { background: rgba(255,255,255,.22); color: #fff; }
+.node.lmr-node.depth-5 { background: #c45c26; border-color: rgba(196,92,38,.82); color: #fff; }
 .node.lmr-node.depth-5 .n-sub { color: rgba(255,255,255,.85); }
 .node.lmr-node.depth-5 .n-badge { background: rgba(255,255,255,.22); color: #fff; }
 
