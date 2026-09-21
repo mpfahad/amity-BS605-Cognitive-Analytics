@@ -1,7 +1,9 @@
 """Generate _study_facts.json + _module_maps.json + _lmr_notes.txt from PDF headings."""
 from __future__ import annotations
 
+import hashlib
 import json
+import random
 import re
 from collections import defaultdict
 from pathlib import Path
@@ -129,21 +131,18 @@ def build_subject(code: str) -> None:
             ans = min(1, len(title) % 4)
             options = [
                 f"A definition-only topic with no applications",
-                f"A core concept under {parent_title} used in {meta['title_short']}",
+                f"A core idea in {meta['title_short']}: {title}",
                 f"Unrelated to Module {mid}",
                 f"Only a programming language keyword",
             ]
-            # put correct at index 1 usually
-            options = [
-                options[0],
-                f"A core idea in {meta['title_short']}: {title}",
-                options[2],
-                options[3],
-            ]
+            seed = int(hashlib.md5(f"Which statement best matches {title}?".encode()).hexdigest()[:8], 16)
+            rng = random.Random(seed)
+            correct = options[1]
+            rng.shuffle(options)
             mcq = {
                 "q": f"Which statement best matches {title}?",
                 "options": options,
-                "answer": 1,
+                "answer": options.index(correct),
                 "explain": f"{title} is a syllabus topic under {parent_title} in Module {mid}.",
             }
             topics.append({"id": tid, "title": title, "flashcards": fc, "mcqs": [mcq]})

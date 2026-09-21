@@ -23,12 +23,12 @@
             {
               "q": "The ABCs of the self refer to which three domains?",
               "options": [
-                "Attitude, Belief, Culture",
                 "Affective, Behavioural, Cognitive",
                 "Assertive, Blind, Covert",
+                "Attitude, Belief, Culture",
                 "Ability, Behaviour, Character"
               ],
-              "answer": 1,
+              "answer": 0,
               "explain": "Social psychologists frame the self in affective, behavioural, and cognitive terms."
             },
             {
@@ -36,10 +36,10 @@
               "options": [
                 "Task-specific confidence",
                 "Global sense of personal worth",
-                "Knowledge representation about oneself organised into self-schemas",
-                "Pride in how you allow yourself to be treated"
+                "Pride in how you allow yourself to be treated",
+                "Knowledge representation about oneself organised into self-schemas"
               ],
-              "answer": 2,
+              "answer": 3,
               "explain": "Self-concept is cognitive self-knowledge; esteem, efficacy, and respect are distinct."
             }
           ]
@@ -57,10 +57,10 @@
             {
               "q": "In the T-E-A model, which statement is most accurate?",
               "options": [
-                "Only actions influence thoughts",
-                "Thoughts, emotions, and actions mutually influence each other",
                 "Emotions are independent of thoughts",
-                "Actions never affect emotions"
+                "Thoughts, emotions, and actions mutually influence each other",
+                "Actions never affect emotions",
+                "Only actions influence thoughts"
               ],
               "answer": 1,
               "explain": "T-E-A emphasises reciprocal influence among thoughts, emotions, and actions."
@@ -86,21 +86,21 @@
               "options": [
                 "Open / Arena",
                 "Hidden / Façade",
-                "Blind spot",
-                "Unknown"
+                "Unknown",
+                "Blind spot"
               ],
-              "answer": 2,
+              "answer": 3,
               "explain": "Blind = others know / you do not; Hidden = you know / others do not."
             },
             {
               "q": "Which pair of actions best enlarges the Open area?",
               "options": [
-                "Avoidance and denial",
-                "Feedback and disclosure",
+                "Stereotyping and priming",
                 "Mind reading and fortune telling",
-                "Stereotyping and priming"
+                "Avoidance and denial",
+                "Feedback and disclosure"
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "Feedback shrinks the blind area; disclosure shrinks the hidden area."
             }
           ]
@@ -119,11 +119,11 @@
               "q": "Which trio makes up the PE Scale dimensions?",
               "options": [
                 "Open, Blind, Hidden",
+                "Valence, Multiplicity, Centrality",
                 "Self-disclosure, Openness to feedback, Perceptiveness",
-                "Forming, Storming, Norming",
-                "Valence, Multiplicity, Centrality"
+                "Forming, Storming, Norming"
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "PE Scale = SD, OTF, and perceptiveness; do not confuse with Johari panes."
             }
           ]
@@ -145,23 +145,23 @@
             {
               "q": "Belief in ability to succeed at a specific task is called:",
               "options": [
-                "Self-esteem",
-                "Self-efficacy",
                 "Self-concept",
-                "Self-respect"
+                "Self-respect",
+                "Self-efficacy",
+                "Self-esteem"
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "Bandura’s self-efficacy is task-specific, not global worth."
             },
             {
               "q": "Which construct is closest to “how much you value and like yourself overall”?",
               "options": [
-                "Self-efficacy",
-                "Priming",
+                "Salience",
                 "Self-esteem",
-                "Salience"
+                "Priming",
+                "Self-efficacy"
               ],
-              "answer": 2,
+              "answer": 1,
               "explain": "Self-esteem is the global subjective sense of personal worth."
             }
           ]
@@ -202,12 +202,12 @@
             {
               "q": "Professional social media etiquette primarily emphasises:",
               "options": [
-                "Maximum oversharing for authenticity",
-                "Respectful communication, privacy awareness, and appropriate sharing",
                 "Ignoring organisational norms online",
-                "Using company time freely for personal posts"
+                "Using company time freely for personal posts",
+                "Respectful communication, privacy awareness, and appropriate sharing",
+                "Maximum oversharing for authenticity"
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "Etiquette protects reputation and relationships through respectful, appropriate use."
             }
           ]
@@ -231,10 +231,10 @@
               "options": [
                 "Perspiration",
                 "Evaluation",
-                "Incubation",
-                "Clarification"
+                "Clarification",
+                "Incubation"
               ],
-              "answer": 2,
+              "answer": 3,
               "explain": "Incubation is stepping away; evaluation judges strengths/flaws."
             }
           ]
@@ -252,12 +252,12 @@
             {
               "q": "Problem sensitivity differs from problem solving because it:",
               "options": [
-                "Always includes fixing the issue",
                 "Only recognises that a problem exists or is likely",
+                "Is identical to cognitive flexibility",
                 "Requires Six Hats by definition",
-                "Is identical to cognitive flexibility"
+                "Always includes fixing the issue"
               ],
-              "answer": 1,
+              "answer": 0,
               "explain": "Sensitivity = notice only; solving is a separate capacity."
             }
           ]
@@ -279,23 +279,23 @@
             {
               "q": "Which hat focuses on facts and data without assumptions?",
               "options": [
-                "Red",
                 "White",
-                "Green",
-                "Yellow"
+                "Red",
+                "Yellow",
+                "Green"
               ],
-              "answer": 1,
+              "answer": 0,
               "explain": "White = detective/facts; Red = feelings; Green = creativity."
             },
             {
               "q": "The Black hat is best used to:",
               "options": [
-                "Generate wild alternatives only",
+                "Control the meeting agenda exclusively",
                 "Express unjustified feelings",
-                "Analyse risks, flaws, and caution in a detached way",
-                "Control the meeting agenda exclusively"
+                "Generate wild alternatives only",
+                "Analyse risks, flaws, and caution in a detached way"
               ],
-              "answer": 2,
+              "answer": 3,
               "explain": "Black is critical risk analysis—not “being a bad person.”"
             }
           ]
@@ -317,12 +317,12 @@
             {
               "q": "“I feel anxious, so the project must be failing” exemplifies:",
               "options": [
-                "Emotional reasoning",
-                "White-hat thinking",
+                "Johari disclosure",
                 "Self-efficacy",
-                "Johari disclosure"
+                "Emotional reasoning",
+                "White-hat thinking"
               ],
-              "answer": 0,
+              "answer": 2,
               "explain": "Emotional reasoning treats feelings as proof of fact."
             }
           ]
@@ -344,12 +344,12 @@
             {
               "q": "Making schemas more accessible through recent exposure is called:",
               "options": [
-                "Adjourning",
-                "Priming",
                 "Delegation",
-                "Valence"
+                "Adjourning",
+                "Valence",
+                "Priming"
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "Priming (and salience) increase schema accessibility."
             }
           ]
@@ -371,23 +371,23 @@
             {
               "q": "Overestimating personality and underestimating situation when explaining another person’s behaviour is the:",
               "options": [
-                "Self-serving bias",
-                "Fundamental attribution error",
+                "Outgroup homogeneity",
                 "Actor–observer difference applied to self",
-                "Outgroup homogeneity"
+                "Self-serving bias",
+                "Fundamental attribution error"
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "FAE targets explanations of others’ behaviour."
             },
             {
               "q": "Taking credit for success but blaming circumstances for failure is:",
               "options": [
+                "Attitudinal ambivalence",
                 "Self-serving bias",
                 "Problem sensitivity",
-                "Idealized influence",
-                "Attitudinal ambivalence"
+                "Idealized influence"
               ],
-              "answer": 0,
+              "answer": 1,
               "explain": "Self-serving bias protects self-image via asymmetric attributions."
             }
           ]
@@ -409,23 +409,23 @@
             {
               "q": "A generalized idea about people in the same social group is a:",
               "options": [
+                "Discrimination",
                 "Prejudice only",
                 "Stereotype",
-                "Discrimination",
                 "Sociogram"
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "Stereotypes are cognitive generalizations; prejudice is evaluative."
             },
             {
               "q": "Intergroup contact tends to reduce prejudice by increasing knowledge and:",
               "options": [
                 "Anxiety and distance",
+                "Self-serving bias",
                 "Empathy/perspective-taking and lower anxiety",
-                "Outgroup homogeneity only",
-                "Self-serving bias"
+                "Outgroup homogeneity only"
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "Contact can build knowledge, reduce anxiety, and foster empathy."
             }
           ]
@@ -450,11 +450,11 @@
               "q": "An attitude is best defined as:",
               "options": [
                 "A physiological arousal pattern only",
+                "A sociometric star",
                 "An evaluation of a person, idea, or object",
-                "A Tuckman stage",
-                "A sociometric star"
+                "A Tuckman stage"
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "Attitudes are evaluative orientations toward attitude objects."
             }
           ]
@@ -476,23 +476,23 @@
             {
               "q": "Strength of favourability or unfavourability of an attitude is its:",
               "options": [
-                "Multiplicity",
                 "Valence",
-                "Pervasiveness",
-                "Blind spot"
+                "Blind spot",
+                "Multiplicity",
+                "Pervasiveness"
               ],
-              "answer": 1,
+              "answer": 0,
               "explain": "Valence = magnitude of +/− evaluation."
             },
             {
               "q": "Attitudes that are highly important to the person and hard to change are high in:",
               "options": [
-                "Centrality",
+                "Laissez-faire",
                 "Incubation",
                 "Salience only",
-                "Laissez-faire"
+                "Centrality"
               ],
-              "answer": 0,
+              "answer": 3,
               "explain": "Centrality = importance/resistance to change."
             }
           ]
@@ -511,22 +511,22 @@
               "q": "In attitude ABC, the affective component refers to:",
               "options": [
                 "Beliefs and knowledge only",
+                "Process control like the Blue hat",
                 "Feelings toward the attitude object",
-                "Only observable discrimination",
-                "Process control like the Blue hat"
+                "Only observable discrimination"
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "Affective = feelings; cognitive = beliefs; behavioural = action tendency."
             },
             {
               "q": "“Discrimination is wrong” as a belief mainly illustrates the attitude’s:",
               "options": [
-                "Affective component",
-                "Cognitive component",
                 "Unknown Johari pane",
-                "Green hat"
+                "Green hat",
+                "Cognitive component",
+                "Affective component"
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "Beliefs/knowledge are the cognitive component."
             }
           ]
@@ -548,12 +548,12 @@
             {
               "q": "Compared with mood, emotion is typically:",
               "options": [
-                "Less intense and longer lasting",
-                "More intense, often triggered, and more intentional",
+                "Only physiological with no cognition",
                 "Identical to attitude valence",
-                "Only physiological with no cognition"
+                "Less intense and longer lasting",
+                "More intense, often triggered, and more intentional"
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "Emotion is stronger/shorter and often intentional; mood is prolonged and milder."
             }
           ]
@@ -575,23 +575,23 @@
             {
               "q": "Which is NOT one of Goleman’s five EI competencies?",
               "options": [
-                "Self-awareness",
-                "Self-regulation",
                 "Sociometric starring",
+                "Self-regulation",
+                "Self-awareness",
                 "Empathy"
               ],
-              "answer": 2,
+              "answer": 0,
               "explain": "Goleman: self-awareness, self-regulation, motivation, empathy, social skills."
             },
             {
               "q": "Faculty exam priority among related constructs is typically:",
               "options": [
-                "Interpersonal intelligence alone over EI",
-                "EI over interpersonal intelligence alone",
+                "Only Lewin styles",
                 "Only intrapersonal Gardner skills",
-                "Only Lewin styles"
+                "Interpersonal intelligence alone over EI",
+                "EI over interpersonal intelligence alone"
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "Live-class emphasis: Emotional intelligence > interpersonal intelligence alone."
             }
           ]
@@ -614,8 +614,8 @@
               "q": "Gardner’s intrapersonal intelligence primarily concerns:",
               "options": [
                 "Understanding and managing oneself",
-                "Only persuading large crowds",
                 "Only measuring sociograms",
+                "Only persuading large crowds",
                 "Only transactional rewards"
               ],
               "answer": 0,
@@ -624,12 +624,12 @@
             {
               "q": "EI differs from intrapersonal intelligence mainly because EI also emphasises:",
               "options": [
-                "Ignoring others’ feelings",
                 "Empathy and managing emotions in social contexts",
                 "Only terminal values",
-                "Only White-hat facts"
+                "Only White-hat facts",
+                "Ignoring others’ feelings"
               ],
-              "answer": 1,
+              "answer": 0,
               "explain": "EI covers self and others; intrapersonal focuses on the self."
             }
           ]
@@ -653,12 +653,12 @@
             {
               "q": "Deep-level diversity in teams usually refers to differences in:",
               "options": [
+                "Only hat colours",
                 "Only visible demographics",
                 "Values, personality, and attitudes that often matter longer term",
-                "Only seating charts",
-                "Only hat colours"
+                "Only seating charts"
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "Deep-level diversity (values/personality) typically has longer-lasting effects than surface-level alone."
             }
           ]
@@ -676,12 +676,12 @@
             {
               "q": "Conflict and challenges to leadership are most characteristic of:",
               "options": [
+                "Performing",
                 "Forming",
                 "Storming",
-                "Performing",
                 "Adjourning only"
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "Storming is a normal stage, not automatic team failure."
             },
             {
@@ -689,8 +689,8 @@
               "options": [
                 "Storming",
                 "Norming",
-                "Latent conflict",
-                "Black-hat only sessions"
+                "Black-hat only sessions",
+                "Latent conflict"
               ],
               "answer": 1,
               "explain": "Norming builds cohesion and maintenance norms."
@@ -711,11 +711,11 @@
               "q": "Using MBTI profiles in a workshop is closest to which team-building type?",
               "options": [
                 "Only coercive leadership",
-                "Personality-based",
                 "Only distributive negotiation",
-                "Only White-hat auditing"
+                "Only White-hat auditing",
+                "Personality-based"
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "Personality-based team building uses preference/type frameworks such as MBTI."
             }
           ]
@@ -737,12 +737,12 @@
             {
               "q": "In Lewin’s model, maximum subordinate independence with help only when asked is:",
               "options": [
-                "Autocratic",
-                "Democratic",
+                "Coercive only",
                 "Laissez-faire",
-                "Coercive only"
+                "Autocratic",
+                "Democratic"
               ],
-              "answer": 2,
+              "answer": 1,
               "explain": "Laissez-faire / free-rein maximises independence."
             }
           ]
@@ -764,12 +764,12 @@
             {
               "q": "Individualized Consideration is one of the:",
               "options": [
-                "Tuckman stages",
                 "Transformational 4 Is",
                 "PE Scale dimensions",
-                "Attitude valence types"
+                "Attitude valence types",
+                "Tuckman stages"
               ],
-              "answer": 1,
+              "answer": 0,
               "explain": "4 Is: IM, IS, Idealized Influence, Individualized Consideration."
             }
           ]
@@ -791,23 +791,23 @@
             {
               "q": "A follower with low competence but high commitment is best matched to:",
               "options": [
-                "S4 Delegating",
-                "S1 Telling",
                 "Only laissez-faire",
-                "Only Green hat"
+                "Only Green hat",
+                "S4 Delegating",
+                "S1 Telling"
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "Low competence/high commitment → S1 Telling."
             },
             {
               "q": "Situational leadership claims that:",
               "options": [
-                "One style always wins",
-                "Leaders should adapt style to follower readiness/situation",
                 "Only coercion works",
-                "Teams skip storming"
+                "Teams skip storming",
+                "Leaders should adapt style to follower readiness/situation",
+                "One style always wins"
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "No single best style; adapt to readiness and context."
             }
           ]
@@ -829,23 +829,23 @@
             {
               "q": "The person most often chosen on a sociometric criterion is the:",
               "options": [
+                "Hidden Johari pane",
                 "Isolate",
                 "Sociometric star",
-                "Hidden Johari pane",
                 "Black hat"
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "Sociometric star = most chosen for a given criterion."
             },
             {
               "q": "A democratic multi-link choice pattern on a sociogram is often called a:",
               "options": [
                 "Star only",
+                "Terminal value",
                 "Net",
-                "FAE",
-                "Terminal value"
+                "FAE"
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "Net = multi-link democratic pattern; star = authoritarian hub pattern."
             }
           ]
@@ -868,22 +868,22 @@
               "q": "Compared with traditional work–life balance, work–life integration emphasises:",
               "options": [
                 "Hard separation of all domains always",
-                "Prioritizing and blending work and personal aspects of identity",
                 "Ignoring SMART goals",
-                "Only competing conflict styles"
+                "Only competing conflict styles",
+                "Prioritizing and blending work and personal aspects of identity"
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "SLM frames integration as more realistic than strict separation."
             },
             {
               "q": "Prioritizing “important vs urgent” is a core element of:",
               "options": [
-                "Time management",
+                "Only FAE",
                 "Only prejudice reduction",
                 "Only ICEDIP incubation",
-                "Only FAE"
+                "Time management"
               ],
-              "answer": 0,
+              "answer": 3,
               "explain": "Effective time use allocates right time to right tasks via prioritization."
             }
           ]
@@ -911,23 +911,23 @@
             {
               "q": "Incompatible feelings that make people angry with one another illustrate:",
               "options": [
-                "Only goal conflict",
-                "Affective conflict",
+                "Adjourning",
                 "Only White-hat data",
-                "Adjourning"
+                "Only goal conflict",
+                "Affective conflict"
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "Affective conflict = incompatible emotions."
             },
             {
               "q": "Conditions with potential for conflict, before open clash, are the:",
               "options": [
+                "Unknown Johari pane",
                 "Manifest stage",
-                "Latent stage",
                 "Performing stage",
-                "Unknown Johari pane"
+                "Latent stage"
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "Latent stage = underlying conditions that can spark conflict."
             }
           ]
@@ -945,12 +945,12 @@
             {
               "q": "Unrealistic targets that pressure people to cut ethical corners are framed as:",
               "options": [
+                "A sociometric isolate",
                 "A healthy Red-hat exercise",
-                "An ethical dilemma risk in conflict/goal settings",
                 "Proof that conflict is always good",
-                "A sociometric isolate"
+                "An ethical dilemma risk in conflict/goal settings"
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "Unrealistic/conflicting goals can create ethical red flags under pressure."
             }
           ]
@@ -968,23 +968,23 @@
             {
               "q": "A highly assertive, uncooperative “win at all costs” style is:",
               "options": [
+                "Avoiding",
                 "Accommodating",
                 "Competing",
-                "Avoiding",
                 "Norming"
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "Competing = high assertiveness, low cooperativeness."
             },
             {
               "q": "When both relationship and outcome matter and time allows, prefer:",
               "options": [
-                "Only competing",
                 "Collaborating or compromising",
-                "Only ignoring ethics",
-                "Only FAE"
+                "Only FAE",
+                "Only competing",
+                "Only ignoring ethics"
               ],
-              "answer": 1,
+              "answer": 0,
               "explain": "SLM matching: relationship + outcome → collaborate/compromise."
             }
           ]
@@ -1006,12 +1006,12 @@
             {
               "q": "A mediator should primarily:",
               "options": [
-                "Take sides immediately",
                 "Facilitate neutrally and focus on interests under positions",
                 "Punish both parties publicly",
-                "Replace negotiation with coercion always"
+                "Replace negotiation with coercion always",
+                "Take sides immediately"
               ],
-              "answer": 1,
+              "answer": 0,
               "explain": "Mediator = unbiased facilitator, not partisan judge."
             }
           ]
@@ -1056,23 +1056,23 @@
             {
               "q": "“Pursue outcomes, not points” means negotiators should:",
               "options": [
-                "Win every minor argument regardless of goals",
-                "Check whether terms actually advance desired results",
+                "Ignore fairness",
                 "Avoid all preparation",
-                "Ignore fairness"
+                "Check whether terms actually advance desired results",
+                "Win every minor argument regardless of goals"
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "Pillar 2 prioritises results over scoring debating points."
             },
             {
               "q": "Comprehend–Anticipate–Connect mainly supports which pillar theme?",
               "options": [
-                "Building productive relationships",
-                "Only Black-hat criticism",
                 "Only self-serving bias",
-                "Only ICEDIP perspiration"
+                "Building productive relationships",
+                "Only ICEDIP perspiration",
+                "Only Black-hat criticism"
               ],
-              "answer": 0,
+              "answer": 1,
               "explain": "Those three steps prepare relationship-based negotiation."
             }
           ]
@@ -1100,10 +1100,10 @@
             {
               "q": "Rokeach terminal values represent:",
               "options": [
-                "Only negotiation tactics",
-                "Desired end outcomes",
                 "Only sociograms",
-                "Only cognitive errors"
+                "Desired end outcomes",
+                "Only cognitive errors",
+                "Only negotiation tactics"
               ],
               "answer": 1,
               "explain": "Terminal = ends; instrumental = means/modes of behaviour."
@@ -1111,12 +1111,12 @@
             {
               "q": "Being responsible as a means to achieve true friendship illustrates:",
               "options": [
-                "An instrumental value serving a terminal value",
-                "Only FAE",
                 "Only storming",
-                "Only White-hat data"
+                "Only FAE",
+                "Only White-hat data",
+                "An instrumental value serving a terminal value"
               ],
-              "answer": 0,
+              "answer": 3,
               "explain": "Instrumental means help attain terminal ends."
             }
           ]
@@ -1134,12 +1134,12 @@
             {
               "q": "Which set matches SLM core values?",
               "options": [
-                "Respect, responsibility, integrity, care, harmony",
-                "Only forming and storming",
                 "Only Black and Red hats",
+                "Only forming and storming",
+                "Respect, responsibility, integrity, care, harmony",
                 "Only distributive and integrative"
               ],
-              "answer": 0,
+              "answer": 2,
               "explain": "Core values listed: respect, responsibility, integrity, care, harmony."
             }
           ]
@@ -1157,12 +1157,12 @@
             {
               "q": "Resilience requires which pair of features?",
               "options": [
-                "Only high valence attitudes",
                 "Adversity experience and positive adaptation",
                 "Only sociometric starring",
+                "Only high valence attitudes",
                 "Only autocratic control"
               ],
-              "answer": 1,
+              "answer": 0,
               "explain": "Both adversity and positive adaptation define resilience."
             }
           ]
@@ -1184,21 +1184,21 @@
             {
               "q": "In Ellis ABC, the “B” stands for:",
               "options": [
+                "Branding",
                 "Behavioural conflict only",
-                "Beliefs",
                 "Blue hat",
-                "Branding"
+                "Beliefs"
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "Adversity → Beliefs → Consequences."
             },
             {
               "q": "Attitude ABC and Ellis ABC differ because Ellis ABC centres on:",
               "options": [
-                "Hat colours",
+                "Only sociomatrices",
                 "How beliefs about adversity shape emotional/behavioural consequences",
                 "Only Tuckman stages",
-                "Only sociomatrices"
+                "Hat colours"
               ],
               "answer": 1,
               "explain": "Do not confuse Rosenberg/Hovland attitude components with Ellis’s model."
@@ -1218,12 +1218,12 @@
             {
               "q": "Family and social networks in Unit 5.2 are mainly framed as:",
               "options": [
-                "Irrelevant to resilience",
                 "Supports that can promote resilience under adversity",
                 "Only sources of FAE",
-                "Only negotiation pillars"
+                "Only negotiation pillars",
+                "Irrelevant to resilience"
               ],
-              "answer": 1,
+              "answer": 0,
               "explain": "Social/family networks are resilience-promoting resources."
             }
           ]
@@ -1241,23 +1241,23 @@
             {
               "q": "In VUCA, the “U” stands for:",
               "options": [
-                "Utility",
                 "Uncertainty",
+                "Utility",
                 "Unanimity",
                 "Urgency only"
               ],
-              "answer": 1,
+              "answer": 0,
               "explain": "VUCA = Volatility, Uncertainty, Complexity, Ambiguity."
             },
             {
               "q": "Agility in a VUCA environment primarily means:",
               "options": [
-                "Refusing all change",
-                "Adapting skills and behaviours to turbulent, unpredictable conditions",
+                "Only enlarging the Hidden Johari pane",
                 "Only using competing conflict style",
-                "Only enlarging the Hidden Johari pane"
+                "Refusing all change",
+                "Adapting skills and behaviours to turbulent, unpredictable conditions"
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "Agility = adaptive capacity under VUCA pressures."
             }
           ]
