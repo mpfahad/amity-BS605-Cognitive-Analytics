@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BS605 Module 3 — Deep notes sample (draft)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --ink: #15231c;
+  --muted: #4a5c52;
+  --paper: #f3f6f1;
+  --panel: rgba(255,255,255,0.78);
+  --line: rgba(21,35,28,0.12);
+  --accent: #0f6b4c;
+  --accent-2: #c45c26;
+  --accent-soft: #d8efe4;
+  --warn: #8a3b12;
+  --shadow: 0 18px 50px rgba(21,35,28,0.12);
+  --radius: 18px;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-body);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #d7ebe0 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, #f3dfd0 0%, transparent 45%),
+    linear-gradient(180deg, #eef4ef 0%, var(--paper) 40%, #e7eee8 100%);
+  min-height: 100vh;
+}
+.wrap { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; padding: 1.5rem 0 3rem; }
+.banner {
+  background: #fff6e8;
+  border: 1px solid rgba(196,92,38,.35);
+  border-radius: 12px;
+  padding: .75rem 1rem;
+  margin-bottom: 1rem;
+  color: var(--warn);
+  font-size: .92rem;
+  line-height: 1.45;
+}
+.banner strong { color: var(--ink); }
+.kicker {
+  color: var(--accent); font-weight: 700; letter-spacing: .04em;
+  text-transform: uppercase; font-size: .78rem; margin: 0 0 .35rem;
+}
+h1 {
+  font-family: var(--font-display); font-weight: 650;
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem); margin: 0 0 .4rem; line-height: 1.15;
+}
+.lede { margin: 0 0 1.2rem; color: var(--muted); max-width: 42rem; }
+.layout {
+  display: grid;
+  grid-template-columns: 1.15fr .95fr;
+  gap: 1rem;
+  align-items: start;
+}
+@media (max-width: 860px) { .layout { grid-template-columns: 1fr; } }
+.flow-panel, .detail-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+}
+.section-label {
+  font-size: .75rem; font-weight: 700; letter-spacing: .05em;
+  text-transform: uppercase; color: var(--muted); margin: 0 0 .55rem;
+}
+.hint-bar { text-align: center; color: var(--muted); font-size: .9rem; margin: 0 0 .7rem; }
+.legend {
+  display: flex; flex-wrap: wrap; gap: .55rem; margin: 0 0 .8rem; justify-content: center;
+}
+.legend span {
+  display: inline-flex; align-items: center; gap: .35rem;
+  font-size: .82rem; color: var(--muted); font-weight: 600;
+}
+.swatch { width: .75rem; height: .75rem; border-radius: 3px; display: inline-block; }
+.tree { display: grid; gap: .55rem; justify-items: center; }
+.connectors { width: 2px; height: 14px; background: rgba(15,107,76,.35); }
+.branch-block {
+  width: 100%; border: 1px dashed rgba(21,35,28,.16);
+  border-radius: 16px; padding: .75rem; background: rgba(255,255,255,.45);
+}
+.branch-block h3 {
+  margin: 0 0 .55rem; font-family: var(--font-display);
+  font-size: 1.05rem; text-align: center;
+}
+.row { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; width: 100%; }
+.node {
+  appearance: none; border: 1px solid var(--line); background: #fff;
+  border-radius: 14px; padding: .7rem .85rem; min-width: 118px; max-width: 190px;
+  text-align: left; cursor: pointer; font: inherit; color: inherit;
+  box-shadow: 0 6px 16px rgba(21,35,28,.06);
+  transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+.node:hover { transform: translateY(-2px); border-color: rgba(15,107,76,.35); }
+.node.active {
+  border-color: transparent;
+  box-shadow: 0 10px 24px rgba(15,107,76,.22);
+  outline: 2px solid rgba(15,107,76,.55);
+}
+.node .n-title {
+  display: block; font-family: var(--font-display);
+  font-size: .98rem; line-height: 1.2; margin-bottom: .15rem;
+}
+.node .n-sub { display: block; color: var(--muted); font-size: .78rem; line-height: 1.3; }
+.node .n-badge {
+  display: inline-block; margin-top: .35rem; font-size: .68rem; font-weight: 800;
+  letter-spacing: .04em; text-transform: uppercase; padding: .15rem .4rem;
+  border-radius: 999px; background: #f3dfd0; color: var(--warn);
+}
+.node.root {
+  background: linear-gradient(145deg, #116b54, #0d4f3e);
+  color: #fff; min-width: 220px; max-width: 300px; text-align: center;
+}
+.node.root .n-sub { color: rgba(255,255,255,.82); }
+.node.a { background: #d8efe4; border-color: rgba(15,107,76,.2); }
+.node.b { background: #f7e4d5; border-color: rgba(154,74,28,.22); }
+.node.c { background: #dceaf7; border-color: rgba(31,79,120,.2); }
+.node.lmr-node { box-shadow: 0 0 0 2px rgba(196,92,38,.35); }
+
+.tabs {
+  display: flex; gap: .35rem; margin: 0 0 .85rem;
+  border-bottom: 1px solid var(--line); padding-bottom: .45rem;
+}
+.tab {
+  appearance: none; border: 1px solid transparent; background: transparent;
+  font: inherit; font-weight: 700; font-size: .88rem; color: var(--muted);
+  padding: .4rem .75rem; border-radius: 999px; cursor: pointer;
+}
+.tab:hover { color: var(--ink); background: rgba(255,255,255,.55); }
+.tab.active {
+  color: #fff; background: var(--accent); border-color: transparent;
+}
+.detail-kicker {
+  display: inline-flex; font-size: .75rem; font-weight: 700; letter-spacing: .04em;
+  text-transform: uppercase; padding: .25rem .55rem; border-radius: 999px;
+  margin: 0 .35rem .55rem 0; background: var(--accent-soft); color: var(--accent);
+}
+.detail-kicker.lmr { background: #f8e5d8; color: var(--warn); }
+.detail-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2.2vw, 1.55rem);
+  margin: 0 0 .45rem; line-height: 1.2;
+}
+.parent-path { font-size: .88rem; color: var(--muted); margin: 0 0 .7rem; }
+.detail-body { color: var(--ink); line-height: 1.55; margin: 0 0 .7rem; }
+.detail-points { margin: 0; padding-left: 1.1rem; color: var(--muted); }
+.detail-points li { margin: .35rem 0; }
+.detail-empty { color: var(--muted); margin: 1.2rem 0 0; }
+
+.deep-block { margin: 0 0 1rem; }
+.deep-block h3 {
+  font-family: var(--font-display); font-size: 1.05rem;
+  margin: 0 0 .4rem; color: var(--accent);
+}
+.deep-block.lmr-heavy h3 { color: var(--warn); }
+.deep-block ul { margin: 0; padding-left: 1.1rem; color: var(--ink); }
+.deep-block li { margin: .35rem 0; line-height: 1.45; }
+.deep-block li strong { font-weight: 700; }
+.note-trap {
+  background: #fff6e8; border-left: 3px solid rgba(196,92,38,.55);
+  padding: .55rem .7rem; border-radius: 0 10px 10px 0; margin: .45rem 0;
+  color: var(--muted); font-size: .92rem;
+}
+.sample-meta {
+  margin-top: 1rem; font-size: .82rem; color: var(--muted);
+  border-top: 1px dashed var(--line); padding-top: .7rem;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="banner">
+    <strong>Draft sample — Module 3 only.</strong>
+    Not wired into the live hub or build yet. Review Overview vs Deep notes tone/length, then we fold the approved shape into <code>build_hub.py</code>.
+  </div>
+
+  <p class="kicker">Amity · BS605 · Sample</p>
+  <h1>Module 3 · Overview + Deep notes</h1>
+  <p class="lede">Tap a card. Overview stays the short map blurb. Deep notes adds terms, concepts, and short notes — denser on LMR topics (3.2, 3.6, 3.7, 3.8).</p>
+
+  <div class="layout">
+    <section class="flow-panel" aria-label="Module 3 flow">
+      <p class="section-label">Module 3 · Interactive flow</p>
+      <p class="hint-bar">Tap a card → Overview / Deep notes on the right.</p>
+      <div class="legend">
+        <span><i class="swatch" style="background:#116b54"></i> Module root</span>
+        <span><i class="swatch" style="background:#d8efe4"></i> Teams</span>
+        <span><i class="swatch" style="background:#f7e4d5"></i> Leadership</span>
+        <span><i class="swatch" style="background:#dceaf7"></i> Excellence</span>
+        <span><i class="swatch" style="background:#f3dfd0;outline:2px solid rgba(196,92,38,.45)"></i> LMR</span>
+      </div>
+      <div class="tree" id="tree"></div>
+    </section>
+
+    <aside class="detail-panel">
+      <p class="section-label">Selected term</p>
+      <div class="tabs" role="tablist">
+        <button type="button" class="tab active" role="tab" id="tabOverview" aria-selected="true">Overview</button>
+        <button type="button" class="tab" role="tab" id="tabDeep" aria-selected="false">Deep notes</button>
+      </div>
+      <div id="detailContent">
+        <p class="detail-empty">Click any card in the flow.</p>
+      </div>
+      <p class="sample-meta" id="sampleMeta"></p>
+    </aside>
+  </div>
+</div>
+
+<script>
+const NODES = {
+  m3_root: {
+    kind: "root",
+    title: "Module 3",
+    path: "BS605 → Module 3",
+    lmr: false,
+    overview: {
+      body: "How teams form and perform, leadership types and styles (Lewin, transformational, situational), plus sociometry, branding, time, and relationships.",
+      points: [
+        "Storming is a stage, not failure",
+        "Situational leadership: no single best style",
+        "Live Class 3 preview: sociometry + Tuckman often called out"
+      ]
+    },
+    deep: {
+      terms: [
+        { t: "Team", d: "People working together for shared goals with commitment to a vision." },
+        { t: "Leadership style", d: "Pattern of how a leader influences and directs others." },
+        { t: "Sociometry", d: "Measuring interpersonal choice/relatedness in a group (Moreno)." }
+      ],
+      concepts: [
+        "Flow on this map: Teams → Leadership → Excellence tools.",
+        "Exam cluster: Tuckman + situational leadership + sociometry patterns show up often."
+      ],
+      notes: [
+        "Use Deep notes on each card for definitions and traps.",
+        "LMR cards (orange outline) carry denser notes."
+      ]
+    }
+  },
+  "3.1": {
+    kind: "a",
+    title: "Team design",
+    path: "Module 3 · 3.1 · Team Design Features",
+    lmr: false,
+    overview: {
+      body: "A team works together for common goals/purpose with commitment to a vision. Design includes composition (KSAOs; surface- vs deep-level diversity), roles (often clarified in storming), and task characteristics (higher interdependence increases need for teams).",
+      points: []
+    },
+    deep: {
+      terms: [
+        { t: "Team", d: "Interdependent members pursuing common goals/purpose with shared vision." },
+        { t: "Composition", d: "Who is on the team — skills, knowledge, abilities, other characteristics (KSAOs)." },
+        { t: "Surface-level diversity", d: "Visible differences (e.g. demographics) — effects often fade over time." },
+        { t: "Deep-level diversity", d: "Values, personality, attitudes — often matter longer term." },
+        { t: "Task interdependence", d: "How much members must rely on each other; higher interdependence → stronger need for real teamwork." }
+      ],
+      concepts: [
+        "Design levers: composition + roles + task characteristics.",
+        "Roles are often clarified during storming, not only at kickoff.",
+        "Deep-level diversity ≠ surface-level; exam likes the longer-term impact of deep-level."
+      ],
+      notes: [
+        "Don’t answer “diversity” without saying surface vs deep when asked.",
+        "Team ≠ people sitting near each other; look for shared purpose + interdependence."
+      ]
+    }
+  },
+  "3.2": {
+    kind: "a",
+    title: "Tuckman lifecycle",
+    path: "Module 3 · 3.2 · Tuckman Team Life Cycle",
+    lmr: true,
+    overview: {
+      body: "Forming (orientation/politeness); Storming (conflict, assertiveness, challenge leadership—roles often sorted here); Norming (cohesion, trust, norms); Performing (task focus, less leader dependence); Adjourning/Mourning (disband; celebrate).",
+      points: []
+    },
+    deep: {
+      terms: [
+        { t: "Tuckman model", d: "Five-stage team life cycle describing how groups develop over time (plus later Adjourning)." },
+        { t: "Forming", d: "Orientation and politeness; members test boundaries; high dependence on leader and structure." },
+        { t: "Storming", d: "Conflict and assertiveness; challenges to leadership; roles and power often sorted here." },
+        { t: "Norming", d: "Cohesion and trust grow; shared norms and group maintenance become clearer." },
+        { t: "Performing", d: "Strong task focus; high functioning; less day-to-day dependence on the leader." },
+        { t: "Adjourning / Mourning", d: "Team disbands; closure, recognition, and emotional wind-down (celebrate / let go)." }
+      ],
+      concepts: [
+        "Fixed exam order: Forming → Storming → Norming → Performing → Adjourning.",
+        "Storming ≠ failure: conflict is expected while roles and influence settle.",
+        "Norming vs Performing: Norming builds the social glue; Performing converts that glue into output.",
+        "Leader load falls across stages: high structure early → more facilitation later → less needed in Performing.",
+        "Lifecycle can recycle: new members, new goals, or crises can push a performing team back toward storming/norming.",
+        "Link to team design (3.1): composition sets who enters forming; roles often become clear in storming."
+      ],
+      notes: [
+        "One-word cues: polite → Forming · conflict → Storming · trust/norms → Norming · task/output → Performing · goodbye → Adjourning.",
+        "Stem says “challenge leadership / disagreement / assertiveness” → Storming.",
+        "Stem says “cohesion / shared norms / trust” → Norming (not Performing unless task results are emphasised).",
+        "Listing stages without Adjourning is a common miss — tuck it on the end.",
+        "Don’t confuse Tuckman stages with Lewin styles or Blanchard S1–S4 (those are leadership frames, not team phases).",
+        "If asked “is storming bad?” — answer: normal stage; unmanaged conflict is the problem, not the stage itself."
+      ]
+    }
+  },
+  "3.3": {
+    kind: "a",
+    title: "Team building",
+    path: "Module 3 · 3.3 · Team Building Types and Performance Issues",
+    lmr: false,
+    overview: {
+      body: "Personality-based (e.g., MBTI), activity-based, skill-based, and problem-solving-based approaches; development work addresses roles, trust, and process issues that can impair performance.",
+      points: ["Map note: Merges team-building types + performance issues"]
+    },
+    deep: {
+      terms: [
+        { t: "Personality-based building", d: "Uses type/preference tools (e.g. MBTI) to improve understanding." },
+        { t: "Activity-based building", d: "Shared tasks/experiences to build bonds and cooperation." },
+        { t: "Skill-based building", d: "Targets specific team skills (communication, coordination)." },
+        { t: "Problem-solving-based building", d: "Uses real or simulated problems to improve process together." }
+      ],
+      concepts: [
+        "Team building is intentional development work — not only social events.",
+        "Performance issues often sit in roles, trust, or process — building aims at those gaps.",
+        "Match type of building to the diagnosis (skill gap vs trust gap vs process gap)."
+      ],
+      notes: [
+        "MBTI workshop → personality-based (classic MCQ cue).",
+        "Don’t confuse team building types with Tuckman stages."
+      ]
+    }
+  },
+  "3.4": {
+    kind: "b",
+    title: "Leader types · Lewin",
+    path: "Module 3 · 3.4 · Types of Leaders and Lewin Styles",
+    lmr: false,
+    overview: {
+      body: "From least to most powerful impact: Managerial → Relational → Motivational → Inspirational → Transformational (develops other leaders).",
+      points: [
+        "Lewin (1939): Autocratic — full control; Laissez-faire — maximum independence; Democratic — consultation/consensus (may slow decisions)."
+      ]
+    },
+    deep: {
+      terms: [
+        { t: "Managerial → Transformational ladder", d: "Impact rises: Managerial → Relational → Motivational → Inspirational → Transformational (develops other leaders)." },
+        { t: "Autocratic / Authoritarian", d: "Leader holds control; little subordinate initiative." },
+        { t: "Democratic / Participative", d: "Consultation and mutual consensus; can slow decisions." },
+        { t: "Laissez-faire / Free-rein", d: "Maximum independence; leader helps when asked." }
+      ],
+      concepts: [
+        "Two frames in one topic: (1) types-by-impact ladder, (2) Lewin’s three styles.",
+        "Lewin styles are about how decisions/control are shared — not the same list as Bass 4 Is.",
+        "Democratic ≠ slow always, but SLM notes consensus can take time."
+      ],
+      notes: [
+        "“Help only when asked / max independence” → laissez-faire.",
+        "Don’t mix Lewin trio with Blanchard S1–S4 (that’s 3.6)."
+      ]
+    }
+  },
+  "3.5": {
+    kind: "b",
+    title: "Transformational / Transactional",
+    path: "Module 3 · 3.5 · Transformational and Transactional Leadership",
+    lmr: false,
+    overview: {
+      body: "Transformational 4 Is: Inspirational Motivation; Intellectual Stimulation; Idealized Influence; Individualized Consideration. Transactional focuses on monitoring, organisation, short-term planning, and exchanges/rewards.",
+      points: []
+    },
+    deep: {
+      terms: [
+        { t: "Inspirational Motivation (IM)", d: "Vision, enthusiasm, meaning that energises followers." },
+        { t: "Intellectual Stimulation (IS)", d: "Challenges assumptions; encourages new thinking." },
+        { t: "Idealized Influence", d: "Role-model / charismatic trust and respect." },
+        { t: "Individualized Consideration", d: "Coaches and develops people as individuals." },
+        { t: "Transactional leadership", d: "Exchange, monitoring, rewards/corrective action; short-term planning; useful in emergencies or clear gain–exchange settings." }
+      ],
+      concepts: [
+        "Transformational develops and inspires; transactional manages exchanges and compliance.",
+        "Both can appear in practice — not always either/or.",
+        "4 Is are the high-yield list — Individualized Consideration is a frequent MCQ distractor vs PE Scale / Tuckman."
+      ],
+      notes: [
+        "Mnemonic tip: IM · IS · Idealized · Individualized.",
+        "If answer options mix Tuckman and 4 Is, pick the leadership frame."
+      ]
+    }
+  },
+  "3.6": {
+    kind: "b",
+    title: "Situational leadership",
+    path: "Module 3 · 3.6 · Situational Leadership",
+    lmr: true,
+    overview: {
+      body: "There is no one best style; adapt to situation and follower readiness. Positional power alone is outdated (Blanchard). Match style to development level.",
+      points: [
+        "S1 Telling → S2 Selling → S3 Participating → S4 Delegating (low competence/high commitment → S1; high competence/high commitment → S4).",
+        "Goleman styles: Coaching, Pacesetting, Democratic, Affiliative, Authoritative, Coercive."
+      ]
+    },
+    deep: {
+      terms: [
+        { t: "Situational leadership", d: "No single best style — match leader behaviour to follower readiness/development and the situation." },
+        { t: "S1 Telling", d: "High directive / low supportive — for low competence, high commitment (enthusiastic beginner)." },
+        { t: "S2 Selling", d: "High directive / high supportive — competence growing; still needs direction plus persuasion." },
+        { t: "S3 Participating", d: "Low directive / high supportive — capable but variable commitment; share decisions." },
+        { t: "S4 Delegating", d: "Low directive / low supportive — high competence and high commitment." },
+        { t: "Follower readiness", d: "Combination of competence and commitment (development level)." }
+      ],
+      concepts: [
+        "Core claim: adapt style — positional power alone is outdated.",
+        "Match table: low competence + high commitment → S1; high competence + high commitment → S4.",
+        "Goleman’s six styles (coaching, pacesetting, democratic, affiliative, authoritative, coercive) is a related “situational” menu — don’t confuse with S1–S4 labels.",
+        "Contrast with Lewin (fixed style labels) and with transformational 4 Is (qualities), not readiness matching."
+      ],
+      notes: [
+        "LMR: if stem gives competence + commitment, map straight to S1–S4.",
+        "“No one best style” is the slogan answer for situational leadership.",
+        "Don’t pick S4 Delegating for a novice who is still keen — that’s S1.",
+        "Keep Lewin / Bass / Blanchard in separate mental drawers."
+      ]
+    }
+  },
+  "3.7": {
+    kind: "c",
+    title: "Change · Sociometry",
+    path: "Module 3 · 3.7 · Strategic Leadership, Change, and Sociometry",
+    lmr: true,
+    overview: {
+      body: "Mentoring, building trust, and guiding people through change stages (ADKAR-like awareness → desire → knowledge → ability → reinforcement) so change sticks. Sociometry measures interpersonal relatedness/choice patterns.",
+      points: [
+        "Map note: Sociometry is usually the higher-yield half of this card.",
+        "Sociogram maps networks; sociomatrix tables choices; patterns: isolate, pair, triangle, chain, star, net."
+      ]
+    },
+    deep: {
+      terms: [
+        { t: "Sociometry (Moreno)", d: "Measurement of interpersonal relatedness and choice patterns (socius + metrum)." },
+        { t: "Sociogram", d: "Visual map of who chooses whom / network links." },
+        { t: "Sociomatrix", d: "Table of choices between members." },
+        { t: "Sociometric star", d: "Person most often chosen for a given criterion (hub)." },
+        { t: "Isolate", d: "Little or no choice links — peripheral in the network." },
+        { t: "Net", d: "Democratic multi-link pattern (many reciprocal/cross links)." },
+        { t: "Star pattern", d: "Hub-and-spoke / more authoritarian choice structure." },
+        { t: "ADKAR-like change", d: "Awareness → Desire → Knowledge → Ability → Reinforcement — stages so change sticks." }
+      ],
+      concepts: [
+        "Strategic leadership themes: mentoring, trust, guiding people through change.",
+        "Sociometry is diagnostic of group structure — not the same as Johari panes.",
+        "Star vs net: hub concentration vs distributed democratic links — exam contrast.",
+        "Change stages explain adoption; sociometry explains relationships inside the group."
+      ],
+      notes: [
+        "LMR: star = most chosen; isolate = least connected; net = multi-link democratic.",
+        "If asked for Moreno / sociogram / criterion choices → sociometry, not Tuckman.",
+        "Don’t confuse sociometric star with transformational Idealized Influence.",
+        "Remember ADKAR order if change stages are asked; prioritise sociometry patterns when both appear."
+      ]
+    }
+  },
+  "3.8": {
+    kind: "c",
+    title: "Brand · Time · Work–life",
+    path: "Module 3 · 3.8 · Personal Branding, Time, Work–Life, and Relationships",
+    lmr: true,
+    overview: {
+      body: "Personal branding: strategic development and positioning of a positive, differentiated self-image/narrative for a target audience. Time management prioritises important vs urgent. Work–life integration blends identities (vs rigid balance).",
+      points: [
+        "Map note: Merges branding, time, work–life integration, relationship management."
+      ]
+    },
+    deep: {
+      terms: [
+        { t: "Personal branding", d: "Strategic positioning of a positive, differentiated self-image/narrative for a target audience; needs introspection." },
+        { t: "Time management", d: "Plan, goals, deadlines, delegation; allocate right time via important vs urgent." },
+        { t: "Work–life balance", d: "Traditional framing: keep domains separated." },
+        { t: "Work–life integration", d: "Prioritising and blending work and personal aspects of identity — SLM treats this as more realistic than hard separation." },
+        { t: "Relationship management (workplace)", d: "Healthy relationships can raise productivity and lower turnover when guided by policy and discreet managerial skill." }
+      ],
+      concepts: [
+        "Branding is intentional narrative, not only “being yourself online.”",
+        "Integration vs balance is a favourite compare-contrast: blend vs separate.",
+        "Time skill = prioritisation (important/urgent), not only working longer hours.",
+        "Relationship management links excellence tools back to leadership/climate."
+      ],
+      notes: [
+        "LMR: integration ≠ balance — say “blend identities” vs “rigid separation.”",
+        "Important vs urgent → time management cue.",
+        "Personal branding needs a target audience + differentiation, not generic positivity.",
+        "Bundle reminder: this card packs four themes — answer the stem’s focus (brand / time / integration / relationships)."
+      ]
+    }
+  }
+};
+
+const LEVELS = [
+  {
+    heading: "Teams",
+    nodes: [
+      { id: "3.1", title: "Team design", sub: "composition · roles", kind: "a", lmr: false },
+      { id: "3.2", title: "Tuckman lifecycle", sub: "forming → adjourning", kind: "a", lmr: true },
+      { id: "3.3", title: "Team building", sub: "types · performance issues", kind: "a", lmr: false }
+    ]
+  },
+  {
+    heading: "Leadership",
+    nodes: [
+      { id: "3.4", title: "Leader types · Lewin", sub: "auto · demo · laissez", kind: "b", lmr: false },
+      { id: "3.5", title: "Transformational / Transactional", sub: "4 Is vs exchange", kind: "b", lmr: false },
+      { id: "3.6", title: "Situational leadership", sub: "S1–S4 readiness", kind: "b", lmr: true }
+    ]
+  },
+  {
+    heading: "Excellence tools",
+    nodes: [
+      { id: "3.7", title: "Change · Sociometry", sub: "star · net · isolate", kind: "c", lmr: true },
+      { id: "3.8", title: "Brand · Time · Work–life", sub: "integration ≠ balance", kind: "c", lmr: true }
+    ]
+  }
+];
+
+let selectedId = "3.1";
+let activeTab = "overview";
+
+const el = (id) => document.getElementById(id);
+
+function makeNode(id, title, sub, kind, lmr) {
+  const badge = lmr ? `<span class="n-badge">LMR</span>` : "";
+  const lmrCls = lmr ? " lmr-node" : "";
+  return `<button type="button" class="node ${kind}${lmrCls}" data-id="${id}"><span class="n-title">${title}</span><span class="n-sub">${sub || ""}</span>${badge}</button>`;
+}
+
+function renderTree() {
+  const parts = [];
+  parts.push(`<div class="level">${makeNode("m3_root", "Module 3", "BS605 → Module 3", "root", false)}</div>`);
+  LEVELS.forEach((level) => {
+    parts.push(`<div class="connectors"></div>`);
+    const row = level.nodes.map((n) => makeNode(n.id, n.title, n.sub, n.kind, n.lmr)).join("");
+    parts.push(`<div class="branch-block"><h3>${level.heading}</h3><div class="row">${row}</div></div>`);
+  });
+  el("tree").innerHTML = parts.join("");
+  el("tree").querySelectorAll(".node").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      selectedId = btn.dataset.id;
+      renderDetail();
+    });
+  });
+}
+
+function renderOverview(n) {
+  const points = (n.overview.points || []).map((p) => `<li>${p}</li>`).join("");
+  const lmrLine = n.lmr
+    ? `<span class="detail-kicker lmr">LMR priority</span>`
+    : "";
+  return `
+    ${lmrLine}
+    <span class="detail-kicker">${n.kind === "root" ? "Module" : "Topic"}</span>
+    <h2 class="detail-title">${n.title}</h2>
+    <p class="parent-path">${n.path || ""}</p>
+    <p class="detail-body">${n.overview.body || ""}</p>
+    ${points ? `<ul class="detail-points">${points}</ul>` : ""}
+  `;
+}
+
+function renderDeep(n) {
+  const d = n.deep || { terms: [], concepts: [], notes: [] };
+  const heavy = n.lmr ? " lmr-heavy" : "";
+  const lmrLine = n.lmr
+    ? `<span class="detail-kicker lmr">LMR · denser notes</span>`
+    : "";
+  const terms = (d.terms || [])
+    .map((x) => `<li><strong>${x.t}:</strong> ${x.d}</li>`)
+    .join("");
+  const concepts = (d.concepts || []).map((c) => `<li>${c}</li>`).join("");
+  const notes = (d.notes || [])
+    .map((note) => `<div class="note-trap">${note}</div>`)
+    .join("");
+  return `
+    ${lmrLine}
+    <span class="detail-kicker">Deep notes</span>
+    <h2 class="detail-title">${n.title}</h2>
+    <p class="parent-path">${n.path || ""}</p>
+    <div class="deep-block${heavy}">
+      <h3>Terms</h3>
+      <ul>${terms || "<li>None yet</li>"}</ul>
+    </div>
+    <div class="deep-block${heavy}">
+      <h3>Concepts</h3>
+      <ul>${concepts || "<li>None yet</li>"}</ul>
+    </div>
+    <div class="deep-block${heavy}">
+      <h3>Short notes</h3>
+      ${notes || "<p class='detail-empty'>None yet</p>"}
+    </div>
+  `;
+}
+
+function renderDetail() {
+  const n = NODES[selectedId];
+  if (!n) return;
+  document.querySelectorAll(".node").forEach((node) => {
+    node.classList.toggle("active", node.dataset.id === selectedId);
+  });
+  el("tabOverview").classList.toggle("active", activeTab === "overview");
+  el("tabDeep").classList.toggle("active", activeTab === "deep");
+  el("tabOverview").setAttribute("aria-selected", activeTab === "overview" ? "true" : "false");
+  el("tabDeep").setAttribute("aria-selected", activeTab === "deep" ? "true" : "false");
+
+  el("detailContent").innerHTML =
+    activeTab === "overview" ? renderOverview(n) : renderDeep(n);
+
+  const termCount = (n.deep && n.deep.terms && n.deep.terms.length) || 0;
+  const noteCount = (n.deep && n.deep.notes && n.deep.notes.length) || 0;
+  el("sampleMeta").textContent = n.lmr
+    ? `LMR topic · ${termCount} terms · ${noteCount} short notes (denser sample)`
+    : `Standard topic · ${termCount} terms · ${noteCount} short notes`;
+}
+
+el("tabOverview").addEventListener("click", () => {
+  activeTab = "overview";
+  renderDetail();
+});
+el("tabDeep").addEventListener("click", () => {
+  activeTab = "deep";
+  renderDetail();
+});
+
+renderTree();
+renderDetail();
+</script>
+</body>
+</html>

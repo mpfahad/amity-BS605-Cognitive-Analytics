@@ -135,6 +135,31 @@ MAP_CSS = _MAP_CSS + r"""
 .node.lmr-node.depth-5 { background: #c45c26; border-color: rgba(196,92,38,.78); color: #fff; }
 .node.lmr-node.depth-5 .n-sub { color: rgba(255,255,255,.85); }
 .node.lmr-node.depth-5 .n-badge { background: rgba(255,255,255,.22); color: #fff; }
+
+.detail-tabs {
+  display: flex; gap: .35rem; margin: 0 0 .85rem;
+  border-bottom: 1px solid var(--line); padding-bottom: .45rem;
+}
+.detail-tabs .tab {
+  appearance: none; border: 1px solid transparent; background: transparent;
+  font: inherit; font-weight: 700; font-size: .88rem; color: var(--muted);
+  padding: .4rem .75rem; border-radius: 999px; cursor: pointer;
+}
+.detail-tabs .tab:hover { color: var(--ink); background: rgba(255,255,255,.55); }
+.detail-tabs .tab.active { color: #fff; background: var(--accent); border-color: transparent; }
+.deep-block { margin: 0 0 1rem; }
+.deep-block h3 {
+  font-family: var(--font-display); font-size: 1.05rem;
+  margin: 0 0 .4rem; color: var(--accent);
+}
+.deep-block.lmr-heavy h3 { color: var(--warn); }
+.deep-block ul { margin: 0; padding-left: 1.1rem; color: var(--ink); }
+.deep-block li { margin: .35rem 0; line-height: 1.45; }
+.note-trap {
+  background: #fff6e8; border-left: 3px solid rgba(196,92,38,.55);
+  padding: .55rem .7rem; border-radius: 0 10px 10px 0; margin: .45rem 0;
+  color: var(--muted); font-size: .92rem;
+}
 """
 
 FONT_LINK = (
@@ -145,16 +170,46 @@ FONT_LINK = (
 )
 
 
-def load_subject(subject_id: str) -> tuple[dict, dict, str, dict]:
+def load_subject(subject_id: str) -> tuple[dict, dict, str, dict, dict]:
     base = SUBJECTS_DIR / subject_id
     data = json.loads((base / "_study_facts.json").read_text(encoding="utf-8"))
     maps = json.loads((base / "_module_maps.json").read_text(encoding="utf-8"))
     lmr = (base / "_lmr_notes.txt").read_text(encoding="utf-8")
+    deep_path = base / "_deep_notes.json"
+    deep_notes = json.loads(deep_path.read_text(encoding="utf-8")) if deep_path.exists() else {}
     meta = SUBJECTS[subject_id]
-    return data, maps, lmr, meta
+    return data, maps, lmr, meta, deep_notes
 
 
-def enrich_maps_payload(data: dict, maps: dict) -> dict:
+def _synth_deep_from_topic(topic: dict | None) -> dict:
+    terms: list[dict] = []
+    notes: list[str] = []
+    if not topic:
+        return {"terms": [], "concepts": [], "notes": []}
+    for c in topic.get("flashcards") or []:
+        front = (c.get("front") or "").strip().rstrip("?")
+        if len(front) > 72:
+            front = front[:69] + "…"
+        terms.append({"t": front or "Key point", "d": c.get("back") or ""})
+        if c.get("detail"):
+            notes.append(c["detail"])
+    concepts = [f"Core topic: {topic.get('title') or topic.get('id')}."]
+    return {"terms": terms, "concepts": concepts, "notes": notes}
+
+
+def _deep_for(key: str, deep_notes: dict, topic: dict | None) -> dict:
+    raw = deep_notes.get(key) if deep_notes else None
+    if raw and isinstance(raw, dict):
+        return {
+            "terms": raw.get("terms") or [],
+            "concepts": raw.get("concepts") or [],
+            "notes": raw.get("notes") or [],
+        }
+    return _synth_deep_from_topic(topic)
+
+
+def enrich_maps_payload(data: dict, maps: dict, deep_notes: dict | None = None) -> dict:
+    deep_notes = deep_notes or {}
     topics_by_id: dict[str, dict] = {}
     mcqs_by_module: dict[int, list] = {}
     for m in data["modules"]:
@@ -179,12 +234,21 @@ def enrich_maps_payload(data: dict, maps: dict) -> dict:
         mid = int(mod["id"])
         nodes: dict[str, dict] = {}
         root = dict(mod["root"])
+        root_deep = _deep_for(root["id"], deep_notes, None)
+        if not any(root_deep.values()):
+            root_deep = {
+                "terms": [{"t": root["title"], "d": root.get("body") or ""}],
+                "concepts": list(root.get("points") or []),
+                "notes": ["Open topic cards for Terms · Concepts · Short notes."],
+            }
         nodes[root["id"]] = {
             "kind": root.get("kind", "root"),
             "title": root["title"],
             "path": root.get("path", ""),
             "body": root.get("body", ""),
             "points": root.get("points") or [],
+            "deepNotes": root_deep,
+            "lmr": False,
         }
         levels_out = []
         for level in mod["levels"]:
@@ -213,17 +277,22 @@ def enrich_maps_payload(data: dict, maps: dict) -> dict:
                     fc_count = 0
                 if n.get("note"):
                     points.insert(0, "Map note: " + n["note"])
+                topic_id = str(n.get("topicId") or nid)
+                deep = _deep_for(topic_id, deep_notes, topic)
+                if not any(deep.values()):
+                    deep = _deep_for(nid, deep_notes, topic)
                 nodes[nid] = {
                     "kind": n.get("kind", "a"),
                     "title": title,
                     "path": path,
                     "body": body or n.get("body") or "Open flashcards for this topic for full notes.",
                     "points": points,
-                    "topicId": str(n.get("topicId") or nid),
+                    "topicId": topic_id,
                     "lmr": bool(n.get("lmr")),
                     "note": n.get("note") or "",
                     "qCount": q_count,
                     "fcCount": fc_count,
+                    "deepNotes": deep,
                 }
                 level_nodes.append(
                     {
@@ -231,7 +300,7 @@ def enrich_maps_payload(data: dict, maps: dict) -> dict:
                         "title": n["title"],
                         "sub": n.get("sub") or "",
                         "kind": n.get("kind", "a"),
-                        "topicId": str(n.get("topicId") or nid),
+                        "topicId": topic_id,
                         "lmr": bool(n.get("lmr")),
                     }
                 )
@@ -945,8 +1014,8 @@ bootSync(restoreQuiz);
 """
 
 
-def build_module_map(subject_id: str, data: dict, maps: dict, meta: dict) -> str:
-    payload = enrich_maps_payload(data, maps)
+def build_module_map(subject_id: str, data: dict, maps: dict, meta: dict, deep_notes: dict | None = None) -> str:
+    payload = enrich_maps_payload(data, maps, deep_notes)
     data_json = json.dumps(payload, ensure_ascii=False)
     code = meta["code"]
     return f"""<!DOCTYPE html>
@@ -984,8 +1053,8 @@ def build_module_map(subject_id: str, data: dict, maps: dict, meta: dict) -> str
     <div class="criteria-box">
       <strong>How this map is built:</strong>
       One card ≈ one study topic from the SLM outline.
-      Click a card to deepen its own colour (green stays green, peach stays peach, LMR deepens coral).
-      Each revisit darkens one step. Orange outline = LMR priority.
+      Overview = short blurb. Deep notes = terms, concepts, and short notes (denser on LMR).
+      More taps darken a card’s own colour. Orange outline = LMR priority.
     </div>
     <div id="amity-sync-root"></div>
   </section>
@@ -993,7 +1062,7 @@ def build_module_map(subject_id: str, data: dict, maps: dict, meta: dict) -> str
   <div class="layout">
     <section class="flow-panel" aria-label="Structure flow diagram">
       <p class="section-label" id="flowLabel">Interactive flow</p>
-      <p class="hint-bar">Tap a card → details open on the right (below on mobile). More taps = darker shade of the same colour.</p>
+      <p class="hint-bar">Tap a card → Overview / Deep notes on the right. More taps = darker shade of the same colour.</p>
       <div class="legend">
         <span><i class="swatch" style="background:#116b54"></i> Module root</span>
         <span><i class="swatch" style="background:#d8efe4"></i> Group A</span>
@@ -1006,6 +1075,10 @@ def build_module_map(subject_id: str, data: dict, maps: dict, meta: dict) -> str
     </section>
     <aside class="detail-panel" id="detailPanel">
       <p class="section-label">Selected term</p>
+      <div class="detail-tabs" role="tablist">
+        <button type="button" class="tab active" role="tab" id="tabOverview" aria-selected="true">Overview</button>
+        <button type="button" class="tab" role="tab" id="tabDeep" aria-selected="false">Deep notes</button>
+      </div>
       <div id="detailContent">
         <p class="detail-empty">Click any card in the flow to see definition, place in the structure, and exam tips.</p>
       </div>
@@ -1031,6 +1104,7 @@ let mapVisited = {{}};
 let restoring = false;
 let topicFilter = null;
 let selectedNodeId = null;
+let detailTab = "overview";
 
 const el = id => document.getElementById(id);
 const mapProgressBar = el("mapProgressBar");
@@ -1203,10 +1277,47 @@ function showNode(id, opts) {{
     node.classList.toggle("active", node.dataset.id === id);
     applyVisitDepth(node);
   }});
+  renderDetailPanel(n, id);
+  if (n.kind !== "root") topicFilter = n.topicId || id;
+  else topicFilter = null;
+  renderQuestions();
+  updateMapStats();
+  if (window.matchMedia("(max-width: 920px)").matches) {{
+    el("detailPanel").scrollIntoView({{ behavior: "smooth", block: "nearest" }});
+  }}
+  if (!restoring) persistMap();
+}}
+
+function renderDetailPanel(n, id) {{
+  const tabOverview = el("tabOverview");
+  const tabDeep = el("tabDeep");
+  if (tabOverview && tabDeep) {{
+    tabOverview.classList.toggle("active", detailTab === "overview");
+    tabDeep.classList.toggle("active", detailTab === "deep");
+    tabOverview.setAttribute("aria-selected", detailTab === "overview" ? "true" : "false");
+    tabDeep.setAttribute("aria-selected", detailTab === "deep" ? "true" : "false");
+  }}
+  if (detailTab === "deep") {{
+    el("detailContent").innerHTML = renderDeepNotes(n);
+  }} else {{
+    el("detailContent").innerHTML = renderOverview(n, id);
+    const focusBtn = el("focusQsBtn");
+    if (focusBtn) {{
+      focusBtn.addEventListener("click", () => {{
+        topicFilter = n.topicId || id;
+        renderQuestions();
+        persistMap();
+        el("questions").scrollIntoView({{ behavior: "smooth", block: "start" }});
+      }});
+    }}
+  }}
+}}
+
+function renderOverview(n, id) {{
   const points = (n.points || []).map(p => `<li>${{p}}</li>`).join("");
   const lmrLine = n.lmr ? `<span class="detail-kicker" style="background:#f8e5d8;color:var(--warn)">LMR priority</span>` : "";
   const counts = n.kind === "root" ? "" : `<p class="parent-path">${{n.fcCount || 0}} flashcards · ${{n.qCount || 0}} MCQs in bank</p>`;
-  el("detailContent").innerHTML = `
+  return `
     ${{lmrLine}}
     <div class="detail-kicker">${{n.kind === "root" ? "Module" : "Topic"}}</div>
     <h2 class="detail-title">${{n.title}}</h2>
@@ -1216,27 +1327,26 @@ function showNode(id, opts) {{
     ${{points ? `<ul class="detail-points">${{points}}</ul>` : ""}}
     ${{n.kind !== "root" ? `<div class="navrow" style="margin-top:0.8rem"><button type="button" class="btn primary" id="focusQsBtn">Practice this topic</button></div>` : ""}}
   `;
-  const focusBtn = el("focusQsBtn");
-  if (focusBtn) {{
-    focusBtn.addEventListener("click", () => {{
-      topicFilter = n.topicId || id;
-      renderQuestions();
-      persistMap();
-      el("questions").scrollIntoView({{ behavior: "smooth", block: "start" }});
-    }});
-  }}
-  if (n.kind !== "root") {{
-    topicFilter = n.topicId || id;
-    renderQuestions();
-  }} else {{
-    topicFilter = null;
-    renderQuestions();
-  }}
-  updateMapStats();
-  if (window.matchMedia("(max-width: 920px)").matches) {{
-    el("detailPanel").scrollIntoView({{ behavior: "smooth", block: "nearest" }});
-  }}
-  if (!restoring) persistMap();
+}}
+
+function renderDeepNotes(n) {{
+  const d = n.deepNotes || {{}};
+  const terms = (d.terms || []).map(x => `<li><strong>${{x.t}}:</strong> ${{x.d}}</li>`).join("");
+  const concepts = (d.concepts || []).map(c => `<li>${{c}}</li>`).join("");
+  const notes = (d.notes || []).map(note => `<div class="note-trap">${{note}}</div>`).join("");
+  const heavy = n.lmr ? " lmr-heavy" : "";
+  const lmrLine = n.lmr ? `<span class="detail-kicker" style="background:#f8e5d8;color:var(--warn)">LMR · denser notes</span>` : "";
+  const empty = !terms && !concepts && !notes;
+  return `
+    ${{lmrLine}}
+    <div class="detail-kicker">Deep notes</div>
+    <h2 class="detail-title">${{n.title}}</h2>
+    <p class="parent-path">${{n.path || ""}}</p>
+    ${{empty ? `<p class="detail-empty">Deep notes for this topic are still being added — use Overview and flashcards for now.</p>` : ""}}
+    ${{terms ? `<div class="deep-block${{heavy}}"><h3>Terms</h3><ul>${{terms}}</ul></div>` : ""}}
+    ${{concepts ? `<div class="deep-block${{heavy}}"><h3>Concepts</h3><ul>${{concepts}}</ul></div>` : ""}}
+    ${{notes ? `<div class="deep-block${{heavy}}"><h3>Short notes</h3>${{notes}}</div>` : ""}}
+  `;
 }}
 
 function applySavedAnswer(qi) {{
@@ -1276,6 +1386,15 @@ function renderQuestions() {{
   filtered.forEach(({{qi}}) => applySavedAnswer(qi));
   updateMapStats();
 }}
+
+el("tabOverview").addEventListener("click", () => {{
+  detailTab = "overview";
+  if (selectedNodeId && current.nodes[selectedNodeId]) renderDetailPanel(current.nodes[selectedNodeId], selectedNodeId);
+}});
+el("tabDeep").addEventListener("click", () => {{
+  detailTab = "deep";
+  if (selectedNodeId && current.nodes[selectedNodeId]) renderDetailPanel(current.nodes[selectedNodeId], selectedNodeId);
+}});
 
 el("showAllQs").addEventListener("click", () => {{
   topicFilter = null;
@@ -1320,8 +1439,8 @@ bootSync(restoreMap);
 """
 
 
-def build_subject_index(subject_id: str, data: dict, maps: dict, meta: dict) -> str:
-    maps_payload = enrich_maps_payload(data, maps)
+def build_subject_index(subject_id: str, data: dict, maps: dict, meta: dict, deep_notes: dict | None = None) -> str:
+    maps_payload = enrich_maps_payload(data, maps, deep_notes)
     totals = count_totals(data, maps_payload)
     totals_json = json.dumps(
         {
@@ -1526,17 +1645,17 @@ def copy_root_js() -> None:
 
 
 def build_subject(subject_id: str) -> dict:
-    data, maps, lmr, meta = load_subject(subject_id)
+    data, maps, lmr, meta, deep_notes = load_subject(subject_id)
     out = SUBJECTS_DIR / subject_id
     out.mkdir(parents=True, exist_ok=True)
-    maps_payload = enrich_maps_payload(data, maps)
+    maps_payload = enrich_maps_payload(data, maps, deep_notes)
     totals = count_totals(data, maps_payload)
 
     pages = {
-        "index.html": build_subject_index(subject_id, data, maps, meta),
+        "index.html": build_subject_index(subject_id, data, maps, meta, deep_notes),
         "flashcards.html": build_flashcards(subject_id, data, lmr, meta),
         "quiz.html": build_quiz(subject_id, data, meta),
-        "module-map.html": build_module_map(subject_id, data, maps, meta),
+        "module-map.html": build_module_map(subject_id, data, maps, meta, deep_notes),
     }
     for name, html in pages.items():
         (out / name).write_text(html, encoding="utf-8")
