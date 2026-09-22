@@ -10,13 +10,34 @@
           "title": "Introduction to Security Attacks",
           "flashcards": [
             {
-              "front": "What is Introduction to Security Attacks?",
-              "back": "Introduction to Security Attacks: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "1.1.1 · Network security"
+              "front": "What is Security attack?",
+              "back": "Any action that compromises information security (CIA or related goals).",
+              "detail": "1.1.1 · Introduction to Security Attacks"
             },
             {
-              "front": "Exam focus: Introduction to Security Attacks",
-              "back": "Define Introduction to Security Attacks in one line, name when/why it is used, and contrast it with one related idea under Network security."
+              "front": "What is Passive attack?",
+              "back": "Eavesdropping / traffic analysis — learn without altering data.",
+              "detail": "1.1.1 · Introduction to Security Attacks"
+            },
+            {
+              "front": "What is Active attack?",
+              "back": "Modify, fabricate, replay, or interrupt — alters system/data behaviour.",
+              "detail": "1.1.1 · Introduction to Security Attacks"
+            },
+            {
+              "front": "What is Interruption?",
+              "back": "Availability attack: destroy or block an asset (DoS flavour).",
+              "detail": "1.1.1 · Introduction to Security Attacks"
+            },
+            {
+              "front": "What is Interception?",
+              "back": "Confidentiality attack: unauthorised access to an asset.",
+              "detail": "1.1.1 · Introduction to Security Attacks"
+            },
+            {
+              "front": "What is Modification / Fabrication?",
+              "back": "Integrity attacks: change data or insert bogus objects.",
+              "detail": "1.1.1 · Introduction to Security Attacks"
             }
           ],
           "mcqs": [
@@ -38,13 +59,34 @@
           "title": "Services and Mechanism",
           "flashcards": [
             {
-              "front": "What is Services and Mechanism?",
-              "back": "Learn various Services and Mechanism to ensure Network Security",
-              "detail": "1.1.2 · Network security"
+              "front": "What is Security service?",
+              "back": "A service that enhances security of systems/data transfers (what we want).",
+              "detail": "1.1.2 · Services and Mechanism"
             },
             {
-              "front": "Exam focus: Services and Mechanism",
-              "back": "Define Services and Mechanism in one line, name when/why it is used, and contrast it with one related idea under Network security."
+              "front": "What is Security mechanism?",
+              "back": "A process or device that detects, prevents, or recovers from attacks (how).",
+              "detail": "1.1.2 · Services and Mechanism"
+            },
+            {
+              "front": "What is Confidentiality?",
+              "back": "Information not disclosed to unauthorised parties.",
+              "detail": "1.1.2 · Services and Mechanism"
+            },
+            {
+              "front": "What is Authentication?",
+              "back": "Assure that a communicating entity is who it claims to be.",
+              "detail": "1.1.2 · Services and Mechanism"
+            },
+            {
+              "front": "What is Integrity?",
+              "back": "Data not altered in an unauthorised manner.",
+              "detail": "1.1.2 · Services and Mechanism"
+            },
+            {
+              "front": "What is Non-repudiation?",
+              "back": "Prevent denying previous commitments or actions.",
+              "detail": "1.1.2 · Services and Mechanism"
             }
           ],
           "mcqs": [
@@ -66,13 +108,34 @@
           "title": "Classical Encryption Techniques",
           "flashcards": [
             {
-              "front": "What is Classical Encryption Techniques?",
-              "back": "Classical Encryption Techniques: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "1.1.3 · Network security"
+              "front": "What is Classical encryption?",
+              "back": "Pre-computer / simple ciphers based on substitution and/or transposition.",
+              "detail": "1.1.3 · Classical Encryption Techniques"
             },
             {
-              "front": "Exam focus: Classical Encryption Techniques",
-              "back": "Define Classical Encryption Techniques in one line, name when/why it is used, and contrast it with one related idea under Network security."
+              "front": "What is Plaintext / Ciphertext?",
+              "back": "Original message / encrypted message.",
+              "detail": "1.1.3 · Classical Encryption Techniques"
+            },
+            {
+              "front": "What is Key?",
+              "back": "Secret parameter that selects a specific transformation from a cipher family.",
+              "detail": "1.1.3 · Classical Encryption Techniques"
+            },
+            {
+              "front": "What is Encryption / Decryption?",
+              "back": "Plaintext→ciphertext / reverse using the key (symmetric classical case).",
+              "detail": "1.1.3 · Classical Encryption Techniques"
+            },
+            {
+              "front": "What is Cryptography?",
+              "back": "Art/science of designing secure transformative schemes.",
+              "detail": "1.1.3 · Classical Encryption Techniques"
+            },
+            {
+              "front": "What is Cryptanalysis?",
+              "back": "Art/science of breaking ciphers without the key (or testing strength).",
+              "detail": "1.1.3 · Classical Encryption Techniques"
             }
           ],
           "mcqs": [
@@ -94,13 +157,34 @@
           "title": "Substitution Ciphers",
           "flashcards": [
             {
-              "front": "What is Substitution Ciphers?",
-              "back": "Information encryption conspire in which units of the plaintext (for the most part",
-              "detail": "1.1.4 · Network security"
+              "front": "What is Substitution cipher?",
+              "back": "Replace each plaintext unit with a ciphertext unit by a mapping.",
+              "detail": "1.1.4 · Substitution Ciphers"
             },
             {
-              "front": "Exam focus: Substitution Ciphers",
-              "back": "Define Substitution Ciphers in one line, name when/why it is used, and contrast it with one related idea under Network security."
+              "front": "What is Caesar cipher?",
+              "back": "Shift each letter by a fixed k (mod 26); key space only 25 nontrivial shifts.",
+              "detail": "1.1.4 · Substitution Ciphers"
+            },
+            {
+              "front": "What is Monoalphabetic?",
+              "back": "Fixed substitution alphabet for the whole message.",
+              "detail": "1.1.4 · Substitution Ciphers"
+            },
+            {
+              "front": "What is Polyalphabetic?",
+              "back": "Multiple substitution alphabets (e.g. Vigenère) — varies with position.",
+              "detail": "1.1.4 · Substitution Ciphers"
+            },
+            {
+              "front": "What is Playfair?",
+              "back": "Digraph substitution using a 5×5 key square.",
+              "detail": "1.1.4 · Substitution Ciphers"
+            },
+            {
+              "front": "Key idea (Substitution Ciphers)",
+              "back": "Monoalphabetic preserves letter frequencies; polyalphabetic flattens them somewhat.",
+              "detail": "1.1.4 · concept"
             }
           ],
           "mcqs": [
@@ -122,13 +206,34 @@
           "title": "Transposition Ciphers",
           "flashcards": [
             {
-              "front": "What is Transposition Ciphers?",
-              "back": "A more intricate plan would be to write the message in a square, row by row, and",
-              "detail": "1.1.5 · Network security"
+              "front": "What is Transposition cipher?",
+              "back": "Permute positions of plaintext symbols; symbols themselves unchanged.",
+              "detail": "1.1.5 · Transposition Ciphers"
             },
             {
-              "front": "Exam focus: Transposition Ciphers",
-              "back": "Define Transposition Ciphers in one line, name when/why it is used, and contrast it with one related idea under Network security."
+              "front": "What is Rail fence?",
+              "back": "Write plaintext in zigzag rows; read off by rows.",
+              "detail": "1.1.5 · Transposition Ciphers"
+            },
+            {
+              "front": "What is Columnar transposition?",
+              "back": "Write in a rectangle by rows; read columns in key order.",
+              "detail": "1.1.5 · Transposition Ciphers"
+            },
+            {
+              "front": "What is Permutation key?",
+              "back": "The reordering rule (often derived from a keyword).",
+              "detail": "1.1.5 · Transposition Ciphers"
+            },
+            {
+              "front": "Key idea (Transposition Ciphers)",
+              "back": "Transposition keeps frequencies of letters; digraph/position stats change.",
+              "detail": "1.1.5 · concept"
+            },
+            {
+              "front": "Also remember (Transposition Ciphers)",
+              "back": "Substitution changes identity of symbols; transposition changes order only.",
+              "detail": "1.1.5 · concept"
             }
           ],
           "mcqs": [
@@ -151,12 +256,33 @@
           "flashcards": [
             {
               "front": "What is Cryptanalysis?",
-              "back": "It is to identify and exploit flaws in cryptographic systems, while cryptographers use these findings to enhance security. Cryptology encompasses both cryptanalysis and cryptography, with cryptographers creating encryption algorithms and cryptanalysts deciphering them.",
-              "detail": "1.1.6 · Network security"
+              "back": "Recover plaintext and/or key by exploiting cipher weaknesses.",
+              "detail": "1.1.6 · Cryptanalysis"
             },
             {
-              "front": "Exam focus: Cryptanalysis",
-              "back": "Define Cryptanalysis in one line, name when/why it is used, and contrast it with one related idea under Network security."
+              "front": "What is Ciphertext-only?",
+              "back": "Attacker has only ciphertext.",
+              "detail": "1.1.6 · Cryptanalysis"
+            },
+            {
+              "front": "What is Known-plaintext?",
+              "back": "Attacker has plaintext–ciphertext pairs.",
+              "detail": "1.1.6 · Cryptanalysis"
+            },
+            {
+              "front": "What is Chosen-plaintext / Chosen-ciphertext?",
+              "back": "Attacker can encrypt chosen texts / decrypt chosen ciphertexts.",
+              "detail": "1.1.6 · Cryptanalysis"
+            },
+            {
+              "front": "What is Brute force?",
+              "back": "Try all keys until decryption is meaningful.",
+              "detail": "1.1.6 · Cryptanalysis"
+            },
+            {
+              "front": "What about Attack models ordered roughly by power?",
+              "back": "ciphertext-only < known < chosen.",
+              "detail": "1.1.6 · key idea"
             }
           ],
           "mcqs": [
@@ -179,12 +305,33 @@
           "flashcards": [
             {
               "front": "What is Steganography?",
-              "back": "It is used to conceal confidential information within seemingly innocuous files or messages, making it a valuable technique for secure communication and data protection.",
-              "detail": "1.1.7 · Network security"
+              "back": "Hide the existence of a message inside cover media (image, audio, text).",
+              "detail": "1.1.7 · Steganography"
             },
             {
-              "front": "Exam focus: Steganography",
-              "back": "Define Steganography in one line, name when/why it is used, and contrast it with one related idea under Network security."
+              "front": "What is Cover / Stego-object?",
+              "back": "Innocent carrier / carrier after embedding.",
+              "detail": "1.1.7 · Steganography"
+            },
+            {
+              "front": "What is Payload?",
+              "back": "Hidden secret data embedded in the cover.",
+              "detail": "1.1.7 · Steganography"
+            },
+            {
+              "front": "What is LSB embedding?",
+              "back": "Common image method: alter least-significant bits.",
+              "detail": "1.1.7 · Steganography"
+            },
+            {
+              "front": "Cryptography hides meaning; steganography hides presence?",
+              "back": "often used together.",
+              "detail": "1.1.7 · key idea"
+            },
+            {
+              "front": "Also remember (Steganography)",
+              "back": "Detecting stego (steganalysis) ≠ recovering plaintext of a cipher.",
+              "detail": "1.1.7 · concept"
             }
           ],
           "mcqs": [
@@ -206,13 +353,34 @@
           "title": "Stream and Block Ciphers",
           "flashcards": [
             {
-              "front": "What is Stream and Block Ciphers?",
-              "back": "The difference between stream and block cyphers in cryptographic symmetric",
-              "detail": "1.1.8 · Network security"
+              "front": "What is Stream cipher?",
+              "back": "Encrypts plaintext bit/byte stream, typically with a keystream XOR.",
+              "detail": "1.1.8 · Stream and Block Ciphers"
             },
             {
-              "front": "Exam focus: Stream and Block Ciphers",
-              "back": "Define Stream and Block Ciphers in one line, name when/why it is used, and contrast it with one related idea under Network security."
+              "front": "What is Block cipher?",
+              "back": "Encrypts fixed-size blocks (e.g. 64 or 128 bits) under one key.",
+              "detail": "1.1.8 · Stream and Block Ciphers"
+            },
+            {
+              "front": "What is Keystream?",
+              "back": "Pseudorandom sequence combined with plaintext (classically by XOR).",
+              "detail": "1.1.8 · Stream and Block Ciphers"
+            },
+            {
+              "front": "What is Synchronous vs self-synchronising?",
+              "back": "Keystream independent of ciphertext vs depends on prior ciphertext.",
+              "detail": "1.1.8 · Stream and Block Ciphers"
+            },
+            {
+              "front": "What is Padding?",
+              "back": "Block ciphers need padding when message length is not a multiple of block size.",
+              "detail": "1.1.8 · Stream and Block Ciphers"
+            },
+            {
+              "front": "What about Stream?",
+              "back": "low latency, no block padding; reuse of keystream is catastrophic.",
+              "detail": "1.1.8 · key idea"
             }
           ],
           "mcqs": [
@@ -234,13 +402,34 @@
           "title": "Overview of Hardware Security",
           "flashcards": [
             {
-              "front": "What is Overview of Hardware Security?",
-              "back": "Module - II: Secret and Public Key Cryptography",
-              "detail": "1.1.9 · Network security"
+              "front": "What is Hardware security?",
+              "back": "Protecting systems via physical/hardware roots of trust and isolation.",
+              "detail": "1.1.9 · Overview of Hardware Security"
             },
             {
-              "front": "Exam focus: Overview of Hardware Security",
-              "back": "Define Overview of Hardware Security in one line, name when/why it is used, and contrast it with one related idea under Network security."
+              "front": "What is TPM / secure element?",
+              "back": "Dedicated chip storing keys and performing crypto in isolation.",
+              "detail": "1.1.9 · Overview of Hardware Security"
+            },
+            {
+              "front": "What is Side-channel?",
+              "back": "Leakage via timing, power, EM — attacks beyond pure maths of the cipher.",
+              "detail": "1.1.9 · Overview of Hardware Security"
+            },
+            {
+              "front": "What is Hardware Root of Trust?",
+              "back": "Immutable/boot-anchored component that verifies later software stages.",
+              "detail": "1.1.9 · Overview of Hardware Security"
+            },
+            {
+              "front": "Key idea (Overview of Hardware Security)",
+              "back": "Software crypto can be correct yet leak via side channels on real hardware.",
+              "detail": "1.1.9 · concept"
+            },
+            {
+              "front": "Also remember (Overview of Hardware Security)",
+              "back": "Secure boot chains trust from ROM/firmware upward.",
+              "detail": "1.1.9 · concept"
             }
           ],
           "mcqs": [
@@ -268,13 +457,34 @@
           "title": "Modern Block Ciphers: Block Ciphers Principles",
           "flashcards": [
             {
-              "front": "What is Modern Block Ciphers: Block Ciphers Principles?",
-              "back": "2.1.1 Modern Block Ciphers: Block Ciphers Principles",
-              "detail": "2.1.1 · Secret Key Cryptography"
+              "front": "What is Block cipher?",
+              "back": "Keyed invertible transformation on n-bit blocks (typical n=64 or 128).",
+              "detail": "2.1.1 · Modern Block Ciphers: Block Ciphers Principles"
             },
             {
-              "front": "Exam focus: Modern Block Ciphers: Block Ciphers Principles",
-              "back": "Define Modern Block Ciphers: Block Ciphers Principles in one line, name when/why it is used, and contrast it with one related idea under Secret Key Cryptography."
+              "front": "What is Product cipher?",
+              "back": "Composition of substitutions and permutations (Shannon-style).",
+              "detail": "2.1.1 · Modern Block Ciphers: Block Ciphers Principles"
+            },
+            {
+              "front": "What is Round?",
+              "back": "Repeated keyed mixing step; more rounds increase diffusion/confusion cost.",
+              "detail": "2.1.1 · Modern Block Ciphers: Block Ciphers Principles"
+            },
+            {
+              "front": "What is Key schedule?",
+              "back": "Derives round keys from the master key.",
+              "detail": "2.1.1 · Modern Block Ciphers: Block Ciphers Principles"
+            },
+            {
+              "front": "What is Ideal properties?",
+              "back": "Pseudorandom permutation behaviour under secret key; avalanche effect.",
+              "detail": "2.1.1 · Modern Block Ciphers: Block Ciphers Principles"
+            },
+            {
+              "front": "What about Principles?",
+              "back": "confusion + diffusion realised via SPN or Feistel structures.",
+              "detail": "2.1.1 · key idea"
             }
           ],
           "mcqs": [
@@ -296,13 +506,34 @@
           "title": "Shannon’s Theory of Confusion and Diffusion",
           "flashcards": [
             {
-              "front": "What is Shannon’s Theory of Confusion and Diffusion?",
-              "back": "CONFUSION and DIFFUSION region unit the properties for making a protected",
-              "detail": "2.1.2 · Secret Key Cryptography"
+              "front": "What is Confusion?",
+              "back": "Make the relationship between ciphertext and key as complex as possible.",
+              "detail": "2.1.2 · Shannon’s Theory of Confusion and Diffusion"
             },
             {
-              "front": "Exam focus: Shannon’s Theory of Confusion and Diffusion",
-              "back": "Define Shannon’s Theory of Confusion and Diffusion in one line, name when/why it is used, and contrast it with one related idea under Secret Key Cryptography."
+              "front": "What is Diffusion?",
+              "back": "Spread plaintext statistical structure over many ciphertext bits.",
+              "detail": "2.1.2 · Shannon’s Theory of Confusion and Diffusion"
+            },
+            {
+              "front": "What is Substitution?",
+              "back": "Primary tool for confusion (S-boxes).",
+              "detail": "2.1.2 · Shannon’s Theory of Confusion and Diffusion"
+            },
+            {
+              "front": "What is Permutation / linear mixing?",
+              "back": "Primary tool for diffusion (P-boxes, MixColumns).",
+              "detail": "2.1.2 · Shannon’s Theory of Confusion and Diffusion"
+            },
+            {
+              "front": "What is Avalanche effect?",
+              "back": "Small input change yields large, unpredictable output change.",
+              "detail": "2.1.2 · Shannon’s Theory of Confusion and Diffusion"
+            },
+            {
+              "front": "What about Shannon?",
+              "back": "both properties needed; either alone is insufficient against cryptanalysis.",
+              "detail": "2.1.2 · key idea"
             }
           ],
           "mcqs": [
@@ -324,13 +555,34 @@
           "title": "Fiestal Structure",
           "flashcards": [
             {
-              "front": "What is Fiestal Structure?",
-              "back": "The Feistel Structure serves as the foundation for both the encryption and",
-              "detail": "2.1.3 · Secret Key Cryptography"
+              "front": "What is Feistel structure?",
+              "back": "Split block into L∥R; round function F updates one half using the other + round key.",
+              "detail": "2.1.3 · Fiestal Structure"
             },
             {
-              "front": "Exam focus: Fiestal Structure",
-              "back": "Define Fiestal Structure in one line, name when/why it is used, and contrast it with one related idea under Secret Key Cryptography."
+              "front": "What is Round function F?",
+              "back": "Need not be invertible; overall Feistel cipher remains invertible.",
+              "detail": "2.1.3 · Fiestal Structure"
+            },
+            {
+              "front": "What is Swap / combine?",
+              "back": "Classic: L_i = R_{i−1}; R_i = L_{i−1} ⊕ F(R_{i−1}, K_i).",
+              "detail": "2.1.3 · Fiestal Structure"
+            },
+            {
+              "front": "What is Decryption?",
+              "back": "Same structure with reverse round-key order — major engineering advantage.",
+              "detail": "2.1.3 · Fiestal Structure"
+            },
+            {
+              "front": "What is DES as Feistel?",
+              "back": "16-round Feistel network with 64-bit block (56-bit effective key).",
+              "detail": "2.1.3 · Fiestal Structure"
+            },
+            {
+              "front": "What about Feistel vs SPN?",
+              "back": "Feistel encrypts one half per round; SPN mixes the whole block each round.",
+              "detail": "2.1.3 · key idea"
             }
           ],
           "mcqs": [
@@ -352,13 +604,34 @@
           "title": "Data Encryption Standard (DES)",
           "flashcards": [
             {
-              "front": "What is Data Encryption Standard (DES)?",
-              "back": "A symmetric-key block cipher algorithm adopted by NIST in the 1970s, using 48-bit keys to transform plaintext into ciphertext.",
-              "detail": "2.1.4 · Secret Key Cryptography"
+              "front": "What is DES?",
+              "back": "64-bit block Feistel cipher; 56-bit effective key (+8 parity bits in 64-bit keying material).",
+              "detail": "2.1.4 · Data Encryption Standard (DES)"
             },
             {
-              "front": "Exam focus: Data Encryption Standard (DES)",
-              "back": "Define Data Encryption Standard (DES) in one line, name when/why it is used, and contrast it with one related idea under Secret Key Cryptography."
+              "front": "What is Initial / Final permutation?",
+              "back": "IP and FP (IP⁻¹) bookend the 16 Feistel rounds.",
+              "detail": "2.1.4 · Data Encryption Standard (DES)"
+            },
+            {
+              "front": "What is f-function?",
+              "back": "Expansion E, XOR round key, 8 S-boxes, then permutation P.",
+              "detail": "2.1.4 · Data Encryption Standard (DES)"
+            },
+            {
+              "front": "What is S-box?",
+              "back": "Nonlinear 6→4 bit substitution — primary DES confusion source.",
+              "detail": "2.1.4 · Data Encryption Standard (DES)"
+            },
+            {
+              "front": "What is Round keys?",
+              "back": "48-bit subkeys from key schedule (PC-1, rotations, PC-2).",
+              "detail": "2.1.4 · Data Encryption Standard (DES)"
+            },
+            {
+              "front": "Effective security is ~56-bit key?",
+              "back": "historically breakable by brute force.",
+              "detail": "2.1.4 · key idea"
             }
           ],
           "mcqs": [
@@ -380,13 +653,34 @@
           "title": "Strength of DES",
           "flashcards": [
             {
-              "front": "What is Strength of DES?",
-              "back": "The block cypher algorithm known as the Data Encryption Standard (DES) uses",
-              "detail": "2.1.5 · Secret Key Cryptography"
+              "front": "What is Brute-force vulnerability?",
+              "back": "2^56 key space is searchable with specialised hardware (DES cracker era).",
+              "detail": "2.1.5 · Strength of DES"
             },
             {
-              "front": "Exam focus: Strength of DES",
-              "back": "Define Strength of DES in one line, name when/why it is used, and contrast it with one related idea under Secret Key Cryptography."
+              "front": "What is Complementary property?",
+              "back": "DES has a known complementary relationship exploitable in some analyses.",
+              "detail": "2.1.5 · Strength of DES"
+            },
+            {
+              "front": "What is Weak / semi-weak keys?",
+              "back": "Pathological keys with poor schedule behaviour (must be avoided).",
+              "detail": "2.1.5 · Strength of DES"
+            },
+            {
+              "front": "What is Analytical attacks?",
+              "back": "Differential and linear cryptanalysis reduce complexity vs pure brute force (still costly for full DES).",
+              "detail": "2.1.5 · Strength of DES"
+            },
+            {
+              "front": "Key idea (Strength of DES)",
+              "back": "Practical insecurity today is mainly short key length, not failure of Feistel idea.",
+              "detail": "2.1.5 · concept"
+            },
+            {
+              "front": "Also remember (Strength of DES)",
+              "back": "3DES lengthens effective keying to extend life of DES hardware/software.",
+              "detail": "2.1.5 · concept"
             }
           ],
           "mcqs": [
@@ -408,13 +702,34 @@
           "title": "Idea of Differential Cryptanalysis",
           "flashcards": [
             {
-              "front": "What is Idea of Differential Cryptanalysis?",
-              "back": "Differential cryptanalysis tries to discover the contrast between related plaintexts",
-              "detail": "2.1.6 · Secret Key Cryptography"
+              "front": "What is Differential cryptanalysis?",
+              "back": "Study how differences in plaintext pairs propagate to ciphertext differences.",
+              "detail": "2.1.6 · Idea of Differential Cryptanalysis"
             },
             {
-              "front": "Exam focus: Idea of Differential Cryptanalysis",
-              "back": "Define Idea of Differential Cryptanalysis in one line, name when/why it is used, and contrast it with one related idea under Secret Key Cryptography."
+              "front": "What is Differential?",
+              "back": "Chosen ΔP and observed ΔC statistics that leak key bits of S-boxes/rounds.",
+              "detail": "2.1.6 · Idea of Differential Cryptanalysis"
+            },
+            {
+              "front": "What is Characteristic?",
+              "back": "Predicted difference path through rounds with some probability.",
+              "detail": "2.1.6 · Idea of Differential Cryptanalysis"
+            },
+            {
+              "front": "What is Chosen-plaintext flavour?",
+              "back": "Typically needs many chosen pairs to amplify probabilistic biases.",
+              "detail": "2.1.6 · Idea of Differential Cryptanalysis"
+            },
+            {
+              "front": "Key idea (Idea of Differential Cryptanalysis)",
+              "back": "Attacks nonlinear components (S-boxes) via difference distribution tables.",
+              "detail": "2.1.6 · concept"
+            },
+            {
+              "front": "DES S-boxes resist DC better than random boxes?",
+              "back": "design target.",
+              "detail": "2.1.6 · key idea"
             }
           ],
           "mcqs": [
@@ -436,13 +751,34 @@
           "title": "Block Cipher Modes of Operations",
           "flashcards": [
             {
-              "front": "What is Block Cipher Modes of Operations?",
-              "back": "The fact that block figures only allow you to encrypt messages of a size equal to",
-              "detail": "2.1.7 · Secret Key Cryptography"
+              "front": "What is ECB?",
+              "back": "Independent encryption of each block — identical plaintext blocks → identical ciphertext.",
+              "detail": "2.1.7 · Block Cipher Modes of Operations"
             },
             {
-              "front": "Exam focus: Block Cipher Modes of Operations",
-              "back": "Define Block Cipher Modes of Operations in one line, name when/why it is used, and contrast it with one related idea under Secret Key Cryptography."
+              "front": "What is CBC?",
+              "back": "C_i = E_K(P_i ⊕ C_{i−1}); needs IV; hides patterns better than ECB.",
+              "detail": "2.1.7 · Block Cipher Modes of Operations"
+            },
+            {
+              "front": "What is CFB / OFB?",
+              "back": "Stream-like modes from a block cipher; CFB self-synchronising; OFB keystream independent of plaintext.",
+              "detail": "2.1.7 · Block Cipher Modes of Operations"
+            },
+            {
+              "front": "What is CTR?",
+              "back": "Encrypt counter values to make a keystream; parallelisable; never reuse counter under same key.",
+              "detail": "2.1.7 · Block Cipher Modes of Operations"
+            },
+            {
+              "front": "What is IV / nonce?",
+              "back": "Initialisation vector or unique counter start — secrecy less critical than uniqueness (mode-dependent).",
+              "detail": "2.1.7 · Block Cipher Modes of Operations"
+            },
+            {
+              "front": "What about Mode ≠ algorithm?",
+              "back": "AES-CBC is AES used in CBC mode.",
+              "detail": "2.1.7 · key idea"
             }
           ],
           "mcqs": [
@@ -464,13 +800,34 @@
           "title": "Triple DES",
           "flashcards": [
             {
-              "front": "What is Triple DES?",
-              "back": "algorithm three times for increased security. The Advanced Encryption Standard (AES)",
-              "detail": "2.1.8 · Secret Key Cryptography"
+              "front": "What is Triple DES (3DES)?",
+              "back": "Apply DES three times: typically EDE (encrypt–decrypt–encrypt) with 2 or 3 keys.",
+              "detail": "2.1.8 · Triple DES"
             },
             {
-              "front": "Exam focus: Triple DES",
-              "back": "Define Triple DES in one line, name when/why it is used, and contrast it with one related idea under Secret Key Cryptography."
+              "front": "What is Two-key 3DES?",
+              "back": "K1–K2–K1 pattern; intended ~112-bit security (meet-in-the-middle caveats).",
+              "detail": "2.1.8 · Triple DES"
+            },
+            {
+              "front": "What is Three-key 3DES?",
+              "back": "Independent K1,K2,K3 — strongest 3DES variant.",
+              "detail": "2.1.8 · Triple DES"
+            },
+            {
+              "front": "What is Why EDE?",
+              "back": "Compatibility: if K1=K2=K3, 3DES collapses to single DES for legacy interop.",
+              "detail": "2.1.8 · Triple DES"
+            },
+            {
+              "front": "3DES block size remains 64 bits?",
+              "back": "birthday bound limits large-volume use.",
+              "detail": "2.1.8 · key idea"
+            },
+            {
+              "front": "Also remember (Triple DES)",
+              "back": "Slower than AES; modern guidance prefers AES-128/256.",
+              "detail": "2.1.8 · concept"
             }
           ],
           "mcqs": [
@@ -492,13 +849,34 @@
           "title": "Advanced Encryption Standard (AES)",
           "flashcards": [
             {
-              "front": "What is Advanced Encryption Standard (AES)?",
-              "back": "Identify Advanced Encryption Standard (AES) of Public key Cryptography",
-              "detail": "2.2.1 · Public Key Cryptography"
+              "front": "What is AES?",
+              "back": "Rijndael-based SPN standard: 128-bit block; keys 128/192/256 → 10/12/14 rounds.",
+              "detail": "2.2.1 · Advanced Encryption Standard (AES)"
             },
             {
-              "front": "Exam focus: Advanced Encryption Standard (AES)",
-              "back": "Define Advanced Encryption Standard (AES) in one line, name when/why it is used, and contrast it with one related idea under Public Key Cryptography."
+              "front": "What is SubBytes?",
+              "back": "Nonlinear byte substitution via S-box (confusion).",
+              "detail": "2.2.1 · Advanced Encryption Standard (AES)"
+            },
+            {
+              "front": "What is ShiftRows?",
+              "back": "Row-wise byte rotation (helps diffusion).",
+              "detail": "2.2.1 · Advanced Encryption Standard (AES)"
+            },
+            {
+              "front": "What is MixColumns?",
+              "back": "Column mixing over GF(2^8) (diffusion); omitted in final round.",
+              "detail": "2.2.1 · Advanced Encryption Standard (AES)"
+            },
+            {
+              "front": "What is AddRoundKey?",
+              "back": "XOR state with round key.",
+              "detail": "2.2.1 · Advanced Encryption Standard (AES)"
+            },
+            {
+              "front": "What about AES is not Feistel?",
+              "back": "full-block layers each round.",
+              "detail": "2.2.1 · key idea"
             }
           ],
           "mcqs": [
@@ -520,13 +898,34 @@
           "title": "Fermat’s and Euler’s Theorem",
           "flashcards": [
             {
-              "front": "What is Fermat’s and Euler’s Theorem?",
-              "back": "Fermat's theorem and Euler's theorem are two ideas that are crucial to public-key",
-              "detail": "2.2.2 · Public Key Cryptography"
+              "front": "What is Fermat’s Little Theorem?",
+              "back": "If p prime and gcd(a,p)=1, then a^(p−1) ≡ 1 (mod p).",
+              "detail": "2.2.2 · Fermat’s and Euler’s Theorem"
             },
             {
-              "front": "Exam focus: Fermat’s and Euler’s Theorem",
-              "back": "Define Fermat’s and Euler’s Theorem in one line, name when/why it is used, and contrast it with one related idea under Public Key Cryptography."
+              "front": "What is Euler’s totient φ(n)?",
+              "back": "Count of integers in 1..n−1 coprime to n.",
+              "detail": "2.2.2 · Fermat’s and Euler’s Theorem"
+            },
+            {
+              "front": "What is Euler’s theorem?",
+              "back": "If gcd(a,n)=1, then a^φ(n) ≡ 1 (mod n).",
+              "detail": "2.2.2 · Fermat’s and Euler’s Theorem"
+            },
+            {
+              "front": "What is Use in RSA?",
+              "back": "Encryption/decryption exponents related via e·d ≡ 1 (mod φ(n)).",
+              "detail": "2.2.2 · Fermat’s and Euler’s Theorem"
+            },
+            {
+              "front": "Key idea (Fermat’s and Euler’s Theorem)",
+              "back": "Fermat is the special case of Euler when n is prime (φ(p)=p−1).",
+              "detail": "2.2.2 · concept"
+            },
+            {
+              "front": "Also remember (Fermat’s and Euler’s Theorem)",
+              "back": "These theorems justify why RSA decryption undoes encryption under modular exponentiation.",
+              "detail": "2.2.2 · concept"
             }
           ],
           "mcqs": [
@@ -548,13 +947,34 @@
           "title": "Chinese Remainder Theorem",
           "flashcards": [
             {
-              "front": "What is Chinese Remainder Theorem?",
-              "back": "The Chinese mathematician Sun Zi, who originally articulated this idea in the third",
-              "detail": "2.2.3 · Public Key Cryptography"
+              "front": "What is Chinese Remainder Theorem (CRT)?",
+              "back": "System x≡a_i (mod m_i) has unique solution mod M=∏m_i if moduli pairwise coprime.",
+              "detail": "2.2.3 · Chinese Remainder Theorem"
             },
             {
-              "front": "Exam focus: Chinese Remainder Theorem",
-              "back": "Define Chinese Remainder Theorem in one line, name when/why it is used, and contrast it with one related idea under Public Key Cryptography."
+              "front": "What is Constructive use?",
+              "back": "Combine residues to recover x modulo product of moduli.",
+              "detail": "2.2.3 · Chinese Remainder Theorem"
+            },
+            {
+              "front": "What is RSA speedup?",
+              "back": "Compute mod p and mod q separately, then CRT-combine for decryption.",
+              "detail": "2.2.3 · Chinese Remainder Theorem"
+            },
+            {
+              "front": "What is Pairwise coprime?",
+              "back": "Necessary condition for the standard unique CRT statement.",
+              "detail": "2.2.3 · Chinese Remainder Theorem"
+            },
+            {
+              "front": "Key idea (Chinese Remainder Theorem)",
+              "back": "CRT reduces large modular exponentiation to two smaller ones in RSA.",
+              "detail": "2.2.3 · concept"
+            },
+            {
+              "front": "Also remember (Chinese Remainder Theorem)",
+              "back": "Also used in some secret-sharing / multiprime constructions.",
+              "detail": "2.2.3 · concept"
             }
           ],
           "mcqs": [
@@ -576,13 +996,34 @@
           "title": "Principals of Public Key Crypto Systems",
           "flashcards": [
             {
-              "front": "What is Principals of Public Key Crypto Systems?",
-              "back": "Asymmetric cryptography, or public-key cryptography, is an essential part of",
-              "detail": "2.2.4 · Public Key Cryptography"
+              "front": "What is Public-key cryptography?",
+              "back": "Key pair: public key for encrypt/verify; private key for decrypt/sign.",
+              "detail": "2.2.4 · Principals of Public Key Crypto Systems"
             },
             {
-              "front": "Exam focus: Principals of Public Key Crypto Systems",
-              "back": "Define Principals of Public Key Crypto Systems in one line, name when/why it is used, and contrast it with one related idea under Public Key Cryptography."
+              "front": "What is Trapdoor one-way function?",
+              "back": "Easy one way, hard to invert without trapdoor (private key).",
+              "detail": "2.2.4 · Principals of Public Key Crypto Systems"
+            },
+            {
+              "front": "What is Key distribution relief?",
+              "back": "No shared secret needed before first confidential message (vs symmetric).",
+              "detail": "2.2.4 · Principals of Public Key Crypto Systems"
+            },
+            {
+              "front": "What is Hybrid encryption?",
+              "back": "Use public-key to wrap a symmetric session key; bulk data uses AES/etc.",
+              "detail": "2.2.4 · Principals of Public Key Crypto Systems"
+            },
+            {
+              "front": "Public-key ops are slower?",
+              "back": "practically always hybrid with symmetric ciphers.",
+              "detail": "2.2.4 · key idea"
+            },
+            {
+              "front": "What about Confidentiality?",
+              "back": "encrypt with recipient’s public key; authenticity: sign with sender’s private key.",
+              "detail": "2.2.4 · key idea"
             }
           ],
           "mcqs": [
@@ -604,13 +1045,34 @@
           "title": "RSA Algorithm",
           "flashcards": [
             {
-              "front": "What is RSA Algorithm?",
-              "back": "Module - III: Authentication Standards and Key Management",
-              "detail": "2.2.5 · Public Key Cryptography"
+              "front": "What is RSA setup?",
+              "back": "Choose primes p,q; n=pq; pick e with gcd(e,φ(n))=1; d≡e⁻¹ (mod φ(n)).",
+              "detail": "2.2.5 · RSA Algorithm"
             },
             {
-              "front": "Exam focus: RSA Algorithm",
-              "back": "Define RSA Algorithm in one line, name when/why it is used, and contrast it with one related idea under Public Key Cryptography."
+              "front": "What is Encrypt?",
+              "back": "C = M^e mod n (public: n,e).",
+              "detail": "2.2.5 · RSA Algorithm"
+            },
+            {
+              "front": "What is Decrypt?",
+              "back": "M = C^d mod n (private: d, and usually p,q).",
+              "detail": "2.2.5 · RSA Algorithm"
+            },
+            {
+              "front": "What is φ(n)?",
+              "back": "(p−1)(q−1) for distinct primes p,q.",
+              "detail": "2.2.5 · RSA Algorithm"
+            },
+            {
+              "front": "What is Signing variant?",
+              "back": "Sign with d; verify with e — same maths, different goal.",
+              "detail": "2.2.5 · RSA Algorithm"
+            },
+            {
+              "front": "What about Correctness follows from Euler/Fermat?",
+              "back": "M^{ed} ≡ M (mod n) under standard conditions.",
+              "detail": "2.2.5 · key idea"
             }
           ],
           "mcqs": [
@@ -632,13 +1094,34 @@
           "title": "Security of RSA Algorithm",
           "flashcards": [
             {
-              "front": "What is Security of RSA Algorithm?",
-              "back": "Module - III: Authentication Standards and Key Management",
-              "detail": "2.2.6 · Public Key Cryptography"
+              "front": "What is Factoring threat?",
+              "back": "If n=pq is factored, φ(n) and d are recovered — RSA breaks.",
+              "detail": "2.2.6 · Security of RSA Algorithm"
             },
             {
-              "front": "Exam focus: Security of RSA Algorithm",
-              "back": "Define Security of RSA Algorithm in one line, name when/why it is used, and contrast it with one related idea under Public Key Cryptography."
+              "front": "What is Small/exponent attacks?",
+              "back": "Bad choices (tiny e with small M, Wiener small-d) leak information.",
+              "detail": "2.2.6 · Security of RSA Algorithm"
+            },
+            {
+              "front": "What is Common modulus?",
+              "back": "Reusing n with different e’s for same M can be fatal.",
+              "detail": "2.2.6 · Security of RSA Algorithm"
+            },
+            {
+              "front": "What is Side channels?",
+              "back": "Timing/power on modular exponentiation can leak d.",
+              "detail": "2.2.6 · Security of RSA Algorithm"
+            },
+            {
+              "front": "What is Padding necessity?",
+              "back": "Textbook RSA without padding is insecure against multiple practical attacks.",
+              "detail": "2.2.6 · Security of RSA Algorithm"
+            },
+            {
+              "front": "Key idea (Security of RSA Algorithm)",
+              "back": "RSA security ≈ hardness of factoring n (and related RSA problems) under good parameters.",
+              "detail": "2.2.6 · concept"
             }
           ],
           "mcqs": [
@@ -666,13 +1149,34 @@
           "title": "Introduction of Message Authentication Codes",
           "flashcards": [
             {
-              "front": "What is Introduction of Message Authentication Codes?",
-              "back": "A message authentication code (MAC) may be a cryptographic checksum on data",
-              "detail": "3.1.1 · Message Authentication Codes"
+              "front": "What is Message authentication?",
+              "back": "Verify that a message is from the claimed sender and was not altered.",
+              "detail": "3.1.1 · Introduction of Message Authentication Codes"
             },
             {
-              "front": "Exam focus: Introduction of Message Authentication Codes",
-              "back": "Define Introduction of Message Authentication Codes in one line, name when/why it is used, and contrast it with one related idea under Message Authentication Codes."
+              "front": "What is MAC (idea)?",
+              "back": "Short authentication tag computed with a shared secret key.",
+              "detail": "3.1.1 · Introduction of Message Authentication Codes"
+            },
+            {
+              "front": "What is Impersonation / alteration threats?",
+              "back": "Active attacks that authentication aims to detect.",
+              "detail": "3.1.1 · Introduction of Message Authentication Codes"
+            },
+            {
+              "front": "What is Secrecy vs authenticity?",
+              "back": "Encryption alone does not always authenticate; auth alone does not encrypt.",
+              "detail": "3.1.1 · Introduction of Message Authentication Codes"
+            },
+            {
+              "front": "Key idea (Introduction of Message Authentication Codes)",
+              "back": "Introduces why confidentiality mechanisms are insufficient for integrity/origin.",
+              "detail": "3.1.1 · concept"
+            },
+            {
+              "front": "Also remember (Introduction of Message Authentication Codes)",
+              "back": "MACs are symmetric; digital signatures are asymmetric counterparts.",
+              "detail": "3.1.1 · concept"
             }
           ],
           "mcqs": [
@@ -694,13 +1198,34 @@
           "title": "Authentication Functions",
           "flashcards": [
             {
-              "front": "What is Authentication Functions?",
-              "back": "Digital signatures and message authentication are commonly perceived as having",
-              "detail": "3.1.2 · Message Authentication Codes"
+              "front": "What is Authentication function?",
+              "back": "Function producing an authenticator from message (±key/secret).",
+              "detail": "3.1.2 · Authentication Functions"
             },
             {
-              "front": "Exam focus: Authentication Functions",
-              "back": "Define Authentication Functions in one line, name when/why it is used, and contrast it with one related idea under Message Authentication Codes."
+              "front": "What is Message encryption as authenticator?",
+              "back": "Sometimes ciphertext itself is used — weak/ambiguous without structure.",
+              "detail": "3.1.2 · Authentication Functions"
+            },
+            {
+              "front": "What is Message authentication code?",
+              "back": "Keyed function; verifier recomputes tag with shared key.",
+              "detail": "3.1.2 · Authentication Functions"
+            },
+            {
+              "front": "What is Hash function authenticator?",
+              "back": "Unkeyed digest; needs additional binding (e.g. encrypt digest, or HMAC).",
+              "detail": "3.1.2 · Authentication Functions"
+            },
+            {
+              "front": "What about Three classical textbook classes?",
+              "back": "encryption, MAC, hash-based schemes.",
+              "detail": "3.1.2 · key idea"
+            },
+            {
+              "front": "Hash alone is public?",
+              "back": "attacker can recompute digest after modification.",
+              "detail": "3.1.2 · key idea"
             }
           ],
           "mcqs": [
@@ -722,13 +1247,34 @@
           "title": "Authentication Requirements",
           "flashcards": [
             {
-              "front": "What is Authentication Requirements?",
-              "back": "Define Authentication Requirements and Secure Hash Algorithm (SHA)",
-              "detail": "3.1.3 · Message Authentication Codes"
+              "front": "What is Disclosure protection?",
+              "back": "Not the primary MAC goal — that’s confidentiality.",
+              "detail": "3.1.3 · Authentication Requirements"
             },
             {
-              "front": "Exam focus: Authentication Requirements",
-              "back": "Define Authentication Requirements in one line, name when/why it is used, and contrast it with one related idea under Message Authentication Codes."
+              "front": "What is Content integrity?",
+              "back": "Detect modification of message content.",
+              "detail": "3.1.3 · Authentication Requirements"
+            },
+            {
+              "front": "What is Origin authentication?",
+              "back": "Assure message originated from claimed sender.",
+              "detail": "3.1.3 · Authentication Requirements"
+            },
+            {
+              "front": "What is Sequencing / timeliness?",
+              "back": "Detect replay, reordering, delay when required by the application.",
+              "detail": "3.1.3 · Authentication Requirements"
+            },
+            {
+              "front": "What is Non-repudiation (optional)?",
+              "back": "Usually needs signatures/TTP — not provided by ordinary MAC.",
+              "detail": "3.1.3 · Authentication Requirements"
+            },
+            {
+              "front": "What about Requirements depend on threat model?",
+              "back": "integrity alone vs integrity+freshness.",
+              "detail": "3.1.3 · key idea"
             }
           ],
           "mcqs": [
@@ -750,13 +1296,34 @@
           "title": "Message Authentication Code (MAC)",
           "flashcards": [
             {
-              "front": "What is Message Authentication Code (MAC)?",
-              "back": "the authenticator is a public function of the message that generates a fixed-length value using a secret key. Hash function: A public function called the hash function converts any length of message into a fixed-length hash result, which serves as the authenticator. Message Encryption: Message encryption can act as a kind of authentication on its own. Compared to symmetric and public-key encryption methods, the analy",
-              "detail": "3.1.4 · Message Authentication Codes"
+              "front": "What is MAC?",
+              "back": "MAC_K(M) → tag; verify by recomputing and comparing tags.",
+              "detail": "3.1.4 · Message Authentication Code (MAC)"
             },
             {
-              "front": "Exam focus: Message Authentication Code (MAC)",
-              "back": "Define Message Authentication Code (MAC) in one line, name when/why it is used, and contrast it with one related idea under Message Authentication Codes."
+              "front": "What is HMAC?",
+              "back": "Keyed-hash MAC: hash with key mixed via ipad/opad construction.",
+              "detail": "3.1.4 · Message Authentication Code (MAC)"
+            },
+            {
+              "front": "What is CBC-MAC / CMAC?",
+              "back": "MAC from block cipher chaining (careful with variable-length messages).",
+              "detail": "3.1.4 · Message Authentication Code (MAC)"
+            },
+            {
+              "front": "What is Forgery resistance?",
+              "back": "Without K, producing a valid tag for a new message should be infeasible.",
+              "detail": "3.1.4 · Message Authentication Code (MAC)"
+            },
+            {
+              "front": "Key idea (Message Authentication Code (MAC))",
+              "back": "MAC uses shared secret → both sides can generate tags (no non-repudiation).",
+              "detail": "3.1.4 · concept"
+            },
+            {
+              "front": "Truncating tags reduces security bits?",
+              "back": "length is an exam parameter sometimes.",
+              "detail": "3.1.4 · key idea"
             }
           ],
           "mcqs": [
@@ -778,13 +1345,34 @@
           "title": "Secure Hash Algorithm (SHA)",
           "flashcards": [
             {
-              "front": "What is Secure Hash Algorithm (SHA)?",
-              "back": "Define Authentication Requirements and Secure Hash Algorithm (SHA)",
-              "detail": "3.1.5 · Message Authentication Codes"
+              "front": "What is SHA family?",
+              "back": "Secure Hash Algorithm standards (SHA-1 legacy; SHA-2/SHA-3 modern).",
+              "detail": "3.1.5 · Secure Hash Algorithm (SHA)"
             },
             {
-              "front": "Exam focus: Secure Hash Algorithm (SHA)",
-              "back": "Define Secure Hash Algorithm (SHA) in one line, name when/why it is used, and contrast it with one related idea under Message Authentication Codes."
+              "front": "What is SHA-1?",
+              "back": "160-bit digest — collision-broken for practical attacks; avoid for new security.",
+              "detail": "3.1.5 · Secure Hash Algorithm (SHA)"
+            },
+            {
+              "front": "What is SHA-256?",
+              "back": "SHA-2 variant with 256-bit digest — common integrity workhorse.",
+              "detail": "3.1.5 · Secure Hash Algorithm (SHA)"
+            },
+            {
+              "front": "What is One-way / compression?",
+              "back": "Fixed-length output from arbitrary-length input via iterated compression.",
+              "detail": "3.1.5 · Secure Hash Algorithm (SHA)"
+            },
+            {
+              "front": "What about Hash properties?",
+              "back": "preimage, second-preimage, collision resistance.",
+              "detail": "3.1.5 · key idea"
+            },
+            {
+              "front": "Also remember (Secure Hash Algorithm (SHA))",
+              "back": "SHA used inside HMAC, digital signatures, and fingerprinting.",
+              "detail": "3.1.5 · concept"
             }
           ],
           "mcqs": [
@@ -806,13 +1394,34 @@
           "title": "Message Digest",
           "flashcards": [
             {
-              "front": "What is Message Digest?",
-              "back": "Message Digest: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "3.1.6 · Message Authentication Codes"
+              "front": "What is Message digest?",
+              "back": "Fixed-length hash output representing a message’s fingerprint.",
+              "detail": "3.1.6 · Message Digest"
             },
             {
-              "front": "Exam focus: Message Digest",
-              "back": "Define Message Digest in one line, name when/why it is used, and contrast it with one related idea under Message Authentication Codes."
+              "front": "What is MD5?",
+              "back": "128-bit digest — broken for collisions; legacy checksum only.",
+              "detail": "3.1.6 · Message Digest"
+            },
+            {
+              "front": "What is Integrity check?",
+              "back": "Compare digests to detect accidental/malicious change (if digest protected).",
+              "detail": "3.1.6 · Message Digest"
+            },
+            {
+              "front": "What is Digest vs MAC?",
+              "back": "Digest unkeyed; MAC keyed — digests alone don’t authenticate origin.",
+              "detail": "3.1.6 · Message Digest"
+            },
+            {
+              "front": "Key idea (Message Digest)",
+              "back": "“Message digest” often means the hash value in exam language (MD5/SHA).",
+              "detail": "3.1.6 · concept"
+            },
+            {
+              "front": "Also remember (Message Digest)",
+              "back": "Signing a digest is how practical digital signatures work on large files.",
+              "detail": "3.1.6 · concept"
             }
           ],
           "mcqs": [
@@ -834,13 +1443,34 @@
           "title": "Overview of Digital Signatures",
           "flashcards": [
             {
-              "front": "What is Overview of Digital Signatures?",
-              "back": "Overview of Digital Signatures: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "3.2.1 · Digital Signatures"
+              "front": "What is Digital signature?",
+              "back": "Asymmetric authenticator binding message to signer’s private key.",
+              "detail": "3.2.1 · Overview of Digital Signatures"
             },
             {
-              "front": "Exam focus: Overview of Digital Signatures",
-              "back": "Define Overview of Digital Signatures in one line, name when/why it is used, and contrast it with one related idea under Digital Signatures."
+              "front": "What is Sign / Verify?",
+              "back": "Sign with private key; verify with corresponding public key.",
+              "detail": "3.2.1 · Overview of Digital Signatures"
+            },
+            {
+              "front": "What is Non-repudiation?",
+              "back": "Signer cannot credibly deny the signature if private key was not compromised.",
+              "detail": "3.2.1 · Overview of Digital Signatures"
+            },
+            {
+              "front": "What is Hash-then-sign?",
+              "back": "Hash message first; sign the digest for efficiency.",
+              "detail": "3.2.1 · Overview of Digital Signatures"
+            },
+            {
+              "front": "Key idea (Overview of Digital Signatures)",
+              "back": "Signatures provide integrity + origin + non-repudiation; MACs do not give third-party non-repudiation.",
+              "detail": "3.2.1 · concept"
+            },
+            {
+              "front": "Anyone with the public key can verify?",
+              "back": "no shared secret required.",
+              "detail": "3.2.1 · key idea"
             }
           ],
           "mcqs": [
@@ -862,13 +1492,34 @@
           "title": "Digital Signature Standards (DSS)",
           "flashcards": [
             {
-              "front": "What is Digital Signature Standards (DSS)?",
-              "back": "applied to digital signature verification and data encryption. The system's security is",
-              "detail": "3.2.2 · Digital Signatures"
+              "front": "What is DSS?",
+              "back": "NIST Digital Signature Standard specifying approved signature algorithms.",
+              "detail": "3.2.2 · Digital Signature Standards (DSS)"
             },
             {
-              "front": "Exam focus: Digital Signature Standards (DSS)",
-              "back": "Define Digital Signature Standards (DSS) in one line, name when/why it is used, and contrast it with one related idea under Digital Signatures."
+              "front": "What is DSA?",
+              "back": "Digital Signature Algorithm (original DSS algorithm) based on discrete log in a subgroup.",
+              "detail": "3.2.2 · Digital Signature Standards (DSS)"
+            },
+            {
+              "front": "What is Parameters?",
+              "back": "Global domain parameters (p,q,g) plus per-user key pair.",
+              "detail": "3.2.2 · Digital Signature Standards (DSS)"
+            },
+            {
+              "front": "What is Modern DSS scope?",
+              "back": "May include DSA, RSA signatures, ECDSA depending on revision era.",
+              "detail": "3.2.2 · Digital Signature Standards (DSS)"
+            },
+            {
+              "front": "Key idea (Digital Signature Standards (DSS))",
+              "back": "DSS is the standard framework; DSA is a specific algorithm often taught under DSS.",
+              "detail": "3.2.2 · concept"
+            },
+            {
+              "front": "DSA signatures use per-message randomness k?",
+              "back": "reuse of k is catastrophic.",
+              "detail": "3.2.2 · key idea"
             }
           ],
           "mcqs": [
@@ -890,13 +1541,34 @@
           "title": "Proof of Digital Signature Algorithm",
           "flashcards": [
             {
-              "front": "What is Proof of Digital Signature Algorithm?",
-              "back": "Proof of Digital Signature Algorithm: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "3.2.3 · Digital Signatures"
+              "front": "What is DSA signing?",
+              "back": "Compute r from g^k mod p; s from k⁻¹(H(M)+x·r) mod q — schematic form.",
+              "detail": "3.2.3 · Proof of Digital Signature Algorithm"
             },
             {
-              "front": "Exam focus: Proof of Digital Signature Algorithm",
-              "back": "Define Proof of Digital Signature Algorithm in one line, name when/why it is used, and contrast it with one related idea under Digital Signatures."
+              "front": "What is DSA verify?",
+              "back": "Recompute using public y=g^x and check r matches reconstructed value.",
+              "detail": "3.2.3 · Proof of Digital Signature Algorithm"
+            },
+            {
+              "front": "What is Correctness idea?",
+              "back": "Verification equation holds iff s,r came from private x and hash H(M).",
+              "detail": "3.2.3 · Proof of Digital Signature Algorithm"
+            },
+            {
+              "front": "What is Security basis?",
+              "back": "Hardness of discrete logarithm in the chosen group.",
+              "detail": "3.2.3 · Proof of Digital Signature Algorithm"
+            },
+            {
+              "front": "Key idea (Proof of Digital Signature Algorithm)",
+              "back": "Proof/correctness shows verify accepts honest signatures and rejects altered M (w.h.p.).",
+              "detail": "3.2.3 · concept"
+            },
+            {
+              "front": "Also remember (Proof of Digital Signature Algorithm)",
+              "back": "Private key x never leaves the signer; public y is published.",
+              "detail": "3.2.3 · concept"
             }
           ],
           "mcqs": [
@@ -924,13 +1596,34 @@
           "title": "Authentication Applications: Kerberos",
           "flashcards": [
             {
-              "front": "What is Authentication Applications: Kerberos?",
-              "back": "Authentication Applications: Kerberos: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "4.1.1 · Introduction to Web Security"
+              "front": "What is Kerberos?",
+              "back": "Trusted third-party authentication protocol using tickets and symmetric crypto.",
+              "detail": "4.1.1 · Authentication Applications: Kerberos"
             },
             {
-              "front": "Exam focus: Authentication Applications: Kerberos",
-              "back": "Define Authentication Applications: Kerberos in one line, name when/why it is used, and contrast it with one related idea under Introduction to Web Security."
+              "front": "What is KDC?",
+              "back": "Key Distribution Center: Authentication Server (AS) + Ticket Granting Server (TGS).",
+              "detail": "4.1.1 · Authentication Applications: Kerberos"
+            },
+            {
+              "front": "What is TGT?",
+              "back": "Ticket-Granting Ticket — proves AS authentication to obtain service tickets.",
+              "detail": "4.1.1 · Authentication Applications: Kerberos"
+            },
+            {
+              "front": "What is Service ticket?",
+              "back": "Credential presented to an application server for access.",
+              "detail": "4.1.1 · Authentication Applications: Kerberos"
+            },
+            {
+              "front": "What is Authenticator?",
+              "back": "Fresh encrypted blob (timestamp) proving possession of session key — anti-replay.",
+              "detail": "4.1.1 · Authentication Applications: Kerberos"
+            },
+            {
+              "front": "Key idea (Authentication Applications: Kerberos)",
+              "back": "Client authenticates to AS → TGT → TGS issues service ticket → server verifies.",
+              "detail": "4.1.1 · concept"
             }
           ],
           "mcqs": [
@@ -952,13 +1645,34 @@
           "title": "Overview of Access Control List (ACL)",
           "flashcards": [
             {
-              "front": "What is Overview of Access Control List (ACL)?",
-              "back": "Overview of Access Control List (ACL): a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "4.1.2 · Introduction to Web Security"
+              "front": "What is ACL?",
+              "back": "Access Control List: permissions attached to an object listing allowed subjects/actions.",
+              "detail": "4.1.2 · Overview of Access Control List (ACL)"
             },
             {
-              "front": "Exam focus: Overview of Access Control List (ACL)",
-              "back": "Define Overview of Access Control List (ACL) in one line, name when/why it is used, and contrast it with one related idea under Introduction to Web Security."
+              "front": "What is Subject / Object?",
+              "back": "Active entity (user/process) / passive resource (file, socket).",
+              "detail": "4.1.2 · Overview of Access Control List (ACL)"
+            },
+            {
+              "front": "What is Access right?",
+              "back": "Operation permitted: read, write, execute, delete, etc.",
+              "detail": "4.1.2 · Overview of Access Control List (ACL)"
+            },
+            {
+              "front": "What is Capability (contrast)?",
+              "back": "Unforgeable token held by subject naming allowed object operations.",
+              "detail": "4.1.2 · Overview of Access Control List (ACL)"
+            },
+            {
+              "front": "What is DAC flavour?",
+              "back": "Owner-controlled ACLs are common discretionary access control realisation.",
+              "detail": "4.1.2 · Overview of Access Control List (ACL)"
+            },
+            {
+              "front": "ACL is object-centric; capability list is subject-centric?",
+              "back": "dual views of an access matrix.",
+              "detail": "4.1.2 · key idea"
             }
           ],
           "mcqs": [
@@ -980,13 +1694,34 @@
           "title": "Electronic Mail Security: Pretty Good Privacy (PGP)",
           "flashcards": [
             {
-              "front": "What is Electronic Mail Security: Pretty Good Privacy (PGP)?",
-              "back": "4.1.3 Electronic Mail Security: Pretty Good Privacy (PGP)",
-              "detail": "4.1.3 · Introduction to Web Security"
+              "front": "What is PGP?",
+              "back": "Pretty Good Privacy — email/file encryption and signing with hybrid crypto.",
+              "detail": "4.1.3 · Electronic Mail Security: Pretty Good Privacy (PGP)"
             },
             {
-              "front": "Exam focus: Electronic Mail Security: Pretty Good Privacy (PGP)",
-              "back": "Define Electronic Mail Security: Pretty Good Privacy (PGP) in one line, name when/why it is used, and contrast it with one related idea under Introduction to Web Security."
+              "front": "What is Web of trust?",
+              "back": "Users sign others’ keys; trust is decentralised, not only CA-based.",
+              "detail": "4.1.3 · Electronic Mail Security: Pretty Good Privacy (PGP)"
+            },
+            {
+              "front": "What is Session key?",
+              "back": "Random symmetric key encrypts the message; RSA/ElGamal wraps that key.",
+              "detail": "4.1.3 · Electronic Mail Security: Pretty Good Privacy (PGP)"
+            },
+            {
+              "front": "What is Signature in PGP?",
+              "back": "Hash of message signed with sender’s private key for authenticity.",
+              "detail": "4.1.3 · Electronic Mail Security: Pretty Good Privacy (PGP)"
+            },
+            {
+              "front": "What is Key rings?",
+              "back": "Local collections of public/private keys and trust metadata.",
+              "detail": "4.1.3 · Electronic Mail Security: Pretty Good Privacy (PGP)"
+            },
+            {
+              "front": "What about Confidentiality?",
+              "back": "symmetric bulk + public-key wrap; authenticity: detached/inline signatures.",
+              "detail": "4.1.3 · key idea"
             }
           ],
           "mcqs": [
@@ -1009,12 +1744,33 @@
           "flashcards": [
             {
               "front": "What is S/MIME?",
-              "back": "for sophisticated mark capabilities and encryption. It is also used in programming",
-              "detail": "4.1.4 · Introduction to Web Security"
+              "back": "Secure/Multipurpose Internet Mail Extensions — MIME + crypto based on PKI.",
+              "detail": "4.1.4 · S/MIME"
             },
             {
-              "front": "Exam focus: S/MIME",
-              "back": "Define S/MIME in one line, name when/why it is used, and contrast it with one related idea under Introduction to Web Security."
+              "front": "What is X.509 certificates?",
+              "back": "CA-issued bindings of identity to public keys used by S/MIME.",
+              "detail": "4.1.4 · S/MIME"
+            },
+            {
+              "front": "What is Enveloped data?",
+              "back": "Encrypted content for confidentiality.",
+              "detail": "4.1.4 · S/MIME"
+            },
+            {
+              "front": "What is Signed data?",
+              "back": "Cryptographic signature over MIME entities for authenticity/integrity.",
+              "detail": "4.1.4 · S/MIME"
+            },
+            {
+              "front": "Key idea (S/MIME)",
+              "back": "S/MIME integrates with existing CA hierarchies familiar to enterprises.",
+              "detail": "4.1.4 · concept"
+            },
+            {
+              "front": "Also remember (S/MIME)",
+              "back": "Same hybrid crypto idea as PGP, different trust and formatting model.",
+              "detail": "4.1.4 · concept"
             }
           ],
           "mcqs": [
@@ -1036,13 +1792,34 @@
           "title": "IP Security Architecture Components",
           "flashcards": [
             {
-              "front": "What is IP Security Architecture Components?",
-              "back": "IP Security Architecture Components: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "4.2.1 · IP Security"
+              "front": "What is IPsec?",
+              "back": "Security architecture for the Internet Protocol — AH, ESP, and key management.",
+              "detail": "4.2.1 · IP Security Architecture Components"
             },
             {
-              "front": "Exam focus: IP Security Architecture Components",
-              "back": "Define IP Security Architecture Components in one line, name when/why it is used, and contrast it with one related idea under IP Security."
+              "front": "What is AH?",
+              "back": "Authentication Header — integrity/authenticity of IP packet parts (no encryption).",
+              "detail": "4.2.1 · IP Security Architecture Components"
+            },
+            {
+              "front": "What is ESP?",
+              "back": "Encapsulating Security Payload — confidentiality ± integrity for payload.",
+              "detail": "4.2.1 · IP Security Architecture Components"
+            },
+            {
+              "front": "What is SA / SPD?",
+              "back": "Security Association (crypto params) / Security Policy Database (what to protect).",
+              "detail": "4.2.1 · IP Security Architecture Components"
+            },
+            {
+              "front": "What is Transport vs tunnel?",
+              "back": "Protect upper-layer payload vs encapsulate whole IP packet (VPN-style).",
+              "detail": "4.2.1 · IP Security Architecture Components"
+            },
+            {
+              "front": "IPsec operates at network layer?",
+              "back": "transparent to many apps.",
+              "detail": "4.2.1 · key idea"
             }
           ],
           "mcqs": [
@@ -1064,13 +1841,34 @@
           "title": "Secure Socket Layer",
           "flashcards": [
             {
-              "front": "What is Secure Socket Layer?",
-              "back": "Secure Socket Layer: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "4.2.2 · IP Security"
+              "front": "What is SSL/TLS?",
+              "back": "Secure transport-layer protocol providing confidentiality, integrity, and authentication.",
+              "detail": "4.2.2 · Secure Socket Layer"
             },
             {
-              "front": "Exam focus: Secure Socket Layer",
-              "back": "Define Secure Socket Layer in one line, name when/why it is used, and contrast it with one related idea under IP Security."
+              "front": "What is Handshake?",
+              "back": "Negotiate version/ciphers, authenticate (usually server cert), derive session keys.",
+              "detail": "4.2.2 · Secure Socket Layer"
+            },
+            {
+              "front": "What is Record protocol?",
+              "back": "Fragments, optionally compresses, MACs, and encrypts application data.",
+              "detail": "4.2.2 · Secure Socket Layer"
+            },
+            {
+              "front": "What is Certificates?",
+              "back": "X.509 server (and optional client) certificates bind names to public keys.",
+              "detail": "4.2.2 · Secure Socket Layer"
+            },
+            {
+              "front": "SSL is historical name; TLS is the standardised successor?",
+              "back": "exams often say SSL loosely.",
+              "detail": "4.2.2 · key idea"
+            },
+            {
+              "front": "What about Ends at transport?",
+              "back": "protects hop to the server, not necessarily end-to-end through intermediaries.",
+              "detail": "4.2.2 · key idea"
             }
           ],
           "mcqs": [
@@ -1092,13 +1890,34 @@
           "title": "Secure electronic transaction (SET)",
           "flashcards": [
             {
-              "front": "What is Secure electronic transaction (SET)?",
-              "back": "Secure electronic transaction (SET): a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "4.2.3 · IP Security"
+              "front": "What is SET?",
+              "back": "Secure Electronic Transaction — payment-card purchase protocol with dual signatures.",
+              "detail": "4.2.3 · Secure electronic transaction (SET)"
             },
             {
-              "front": "Exam focus: Secure electronic transaction (SET)",
-              "back": "Define Secure electronic transaction (SET) in one line, name when/why it is used, and contrast it with one related idea under IP Security."
+              "front": "What is Dual signature?",
+              "back": "Links order info for merchant and payment info for bank without cross-revealing.",
+              "detail": "4.2.3 · Secure electronic transaction (SET)"
+            },
+            {
+              "front": "What is Payment gateway?",
+              "back": "Interface between merchant and card issuer/acquirer networks.",
+              "detail": "4.2.3 · Secure electronic transaction (SET)"
+            },
+            {
+              "front": "What is Certificates?",
+              "back": "Cardholder, merchant, and bank certificates in the SET PKI.",
+              "detail": "4.2.3 · Secure electronic transaction (SET)"
+            },
+            {
+              "front": "What about SET aims?",
+              "back": "authenticate parties, protect payment data, ensure integrity, privacy split merchant/bank.",
+              "detail": "4.2.3 · key idea"
+            },
+            {
+              "front": "Also remember (Secure electronic transaction (SET))",
+              "back": "Merchant need not see full payment credentials; bank need not see full order details.",
+              "detail": "4.2.3 · concept"
             }
           ],
           "mcqs": [
@@ -1126,13 +1945,34 @@
           "title": "Introductory Idea of Intrusion",
           "flashcards": [
             {
-              "front": "What is Introductory Idea of Intrusion?",
-              "back": "Introductory Idea of Intrusion: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.1.1 · System Security"
+              "front": "What is Intrusion?",
+              "back": "Unauthorised act of using, misusing, or attempting to misuse a system.",
+              "detail": "5.1.1 · Introductory Idea of Intrusion"
             },
             {
-              "front": "Exam focus: Introductory Idea of Intrusion",
-              "back": "Define Introductory Idea of Intrusion in one line, name when/why it is used, and contrast it with one related idea under System Security."
+              "front": "What is Intruder classes?",
+              "back": "Masquerader (outsider), misfeasor (insider abuse), clandestine user (seizes control).",
+              "detail": "5.1.1 · Introductory Idea of Intrusion"
+            },
+            {
+              "front": "What is Attack stages?",
+              "back": "Reconnaissance → gain access → privilege escalation → maintain/cover tracks (typical pattern).",
+              "detail": "5.1.1 · Introductory Idea of Intrusion"
+            },
+            {
+              "front": "What is Security audit trail?",
+              "back": "Logs that later support detection and forensics.",
+              "detail": "5.1.1 · Introductory Idea of Intrusion"
+            },
+            {
+              "front": "Intrusion is broader than “virus”?",
+              "back": "includes account abuse and unauthorised access attempts.",
+              "detail": "5.1.1 · key idea"
+            },
+            {
+              "front": "Also remember (Introductory Idea of Intrusion)",
+              "back": "Prevention, detection, and recovery are complementary controls.",
+              "detail": "5.1.1 · concept"
             }
           ],
           "mcqs": [
@@ -1154,13 +1994,34 @@
           "title": "Intrusion Detection Techniques",
           "flashcards": [
             {
-              "front": "What is Intrusion Detection Techniques?",
-              "back": "such as firewalls, antivirus software, intrusion detection systems (IDS), encryption,",
-              "detail": "5.1.2 · System Security"
+              "front": "What is IDS?",
+              "back": "Intrusion Detection System — monitors for suspicious activity and alerts/responds.",
+              "detail": "5.1.2 · Intrusion Detection Techniques"
             },
             {
-              "front": "Exam focus: Intrusion Detection Techniques",
-              "back": "Define Intrusion Detection Techniques in one line, name when/why it is used, and contrast it with one related idea under System Security."
+              "front": "What is Host-based IDS (HIDS)?",
+              "back": "Watches OS logs, files, processes on a single host.",
+              "detail": "5.1.2 · Intrusion Detection Techniques"
+            },
+            {
+              "front": "What is Network-based IDS (NIDS)?",
+              "back": "Watches packets/traffic on a network segment.",
+              "detail": "5.1.2 · Intrusion Detection Techniques"
+            },
+            {
+              "front": "What is Signature detection?",
+              "back": "Match known attack patterns — low novelty, fewer novel false mysteries.",
+              "detail": "5.1.2 · Intrusion Detection Techniques"
+            },
+            {
+              "front": "What is Anomaly detection?",
+              "back": "Flag deviation from baseline behaviour — can catch unknowns, more false positives.",
+              "detail": "5.1.2 · Intrusion Detection Techniques"
+            },
+            {
+              "front": "What about Detection ≠ prevention?",
+              "back": "IDS may be passive; IPS actively blocks.",
+              "detail": "5.1.2 · key idea"
             }
           ],
           "mcqs": [
@@ -1182,13 +2043,34 @@
           "title": "Viruses and Worms",
           "flashcards": [
             {
-              "front": "What is Viruses and Worms?",
-              "back": "Viruses and Worms: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.1.3 · System Security"
+              "front": "What is Virus?",
+              "back": "Malware that attaches to a host program/file and spreads when that host runs/shares.",
+              "detail": "5.1.3 · Viruses and Worms"
             },
             {
-              "front": "Exam focus: Viruses and Worms",
-              "back": "Define Viruses and Worms in one line, name when/why it is used, and contrast it with one related idea under System Security."
+              "front": "What is Worm?",
+              "back": "Standalone malware that self-replicates across networks without needing a host file.",
+              "detail": "5.1.3 · Viruses and Worms"
+            },
+            {
+              "front": "What is Trojan?",
+              "back": "Malware disguised as legitimate software — does not self-replicate by classic definition.",
+              "detail": "5.1.3 · Viruses and Worms"
+            },
+            {
+              "front": "What is Payload?",
+              "back": "Damaging or spying action delivered after infection (erase, encrypt ransomware, backdoor).",
+              "detail": "5.1.3 · Viruses and Worms"
+            },
+            {
+              "front": "What is Infection vectors?",
+              "back": "Email attachments, removable media, network services, drive-by downloads.",
+              "detail": "5.1.3 · Viruses and Worms"
+            },
+            {
+              "front": "Key idea (Viruses and Worms)",
+              "back": "Virus needs human/host execution chain; worm emphasises autonomous network propagation.",
+              "detail": "5.1.3 · concept"
             }
           ],
           "mcqs": [
@@ -1210,13 +2092,34 @@
           "title": "Firewall Overview and Design Principles",
           "flashcards": [
             {
-              "front": "What is Firewall Overview and Design Principles?",
-              "back": "A network security control that filters traffic between trust zones according to rules.",
-              "detail": "5.1.4 · System Security"
+              "front": "What is Firewall?",
+              "back": "Policy enforcement point controlling traffic between networks (typically perimeter).",
+              "detail": "5.1.4 · Firewall Overview and Design Principles"
             },
             {
-              "front": "Exam focus: Firewall Overview and Design Principles",
-              "back": "Define Firewall Overview and Design Principles in one line, name when/why it is used, and contrast it with one related idea under System Security."
+              "front": "What is Packet filter?",
+              "back": "Allow/deny by header fields (IP, port, protocol) — stateless or stateful.",
+              "detail": "5.1.4 · Firewall Overview and Design Principles"
+            },
+            {
+              "front": "What is Stateful inspection?",
+              "back": "Tracks connection state, not only isolated packets.",
+              "detail": "5.1.4 · Firewall Overview and Design Principles"
+            },
+            {
+              "front": "What is Application proxy / gateway?",
+              "back": "Intermediates application protocols; can enforce deep policy.",
+              "detail": "5.1.4 · Firewall Overview and Design Principles"
+            },
+            {
+              "front": "What is DMZ?",
+              "back": "Screened subnet for public services separated from internal LAN.",
+              "detail": "5.1.4 · Firewall Overview and Design Principles"
+            },
+            {
+              "front": "Key idea (Firewall Overview and Design Principles)",
+              "back": "Default-deny is safer than default-allow when designing rulebases.",
+              "detail": "5.1.4 · concept"
             }
           ],
           "mcqs": [
@@ -1238,13 +2141,34 @@
           "title": "Global Standards IT Acts and Cyber Laws",
           "flashcards": [
             {
-              "front": "What is Global Standards IT Acts and Cyber Laws?",
-              "back": "Global Standards IT Acts and Cyber Laws: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.1.5 · System Security"
+              "front": "What is IT Act (India context)?",
+              "back": "Legal framework addressing cyber offences, electronic records, and intermediary issues (exam locale often IT Act 2000/amendments).",
+              "detail": "5.1.5 · Global Standards IT Acts and Cyber Laws"
             },
             {
-              "front": "Exam focus: Global Standards IT Acts and Cyber Laws",
-              "back": "Define Global Standards IT Acts and Cyber Laws in one line, name when/why it is used, and contrast it with one related idea under System Security."
+              "front": "What is Cyber crime categories?",
+              "back": "Unauthorised access, data theft, fraud, obscenity, identity offences, etc., as defined in statute.",
+              "detail": "5.1.5 · Global Standards IT Acts and Cyber Laws"
+            },
+            {
+              "front": "What is Electronic evidence?",
+              "back": "Digital records admissible subject to procedural authenticity requirements.",
+              "detail": "5.1.5 · Global Standards IT Acts and Cyber Laws"
+            },
+            {
+              "front": "What is Compliance duties?",
+              "back": "Organisations may need reasonable security practices and privacy safeguards under applicable rules.",
+              "detail": "5.1.5 · Global Standards IT Acts and Cyber Laws"
+            },
+            {
+              "front": "Key idea (Global Standards IT Acts and Cyber Laws)",
+              "back": "Law defines offences and penalties; technical controls implement compliance.",
+              "detail": "5.1.5 · concept"
+            },
+            {
+              "front": "Jurisdiction and attribution are hard?",
+              "back": "logs and forensics matter in prosecution.",
+              "detail": "5.1.5 · key idea"
             }
           ],
           "mcqs": [
@@ -1266,13 +2190,34 @@
           "title": "Virtual Private Network",
           "flashcards": [
             {
-              "front": "What is Virtual Private Network?",
-              "back": "Virtual Private Network (VPN): A technology that provides a secure and encrypted",
-              "detail": "5.1.6 · System Security"
+              "front": "What is VPN?",
+              "back": "Virtual Private Network — private connectivity over a public network using tunnelling + crypto.",
+              "detail": "5.1.6 · Virtual Private Network"
             },
             {
-              "front": "Exam focus: Virtual Private Network",
-              "back": "Define Virtual Private Network in one line, name when/why it is used, and contrast it with one related idea under System Security."
+              "front": "What is Tunnel?",
+              "back": "Encapsulation of private packets inside outer packets across the Internet.",
+              "detail": "5.1.6 · Virtual Private Network"
+            },
+            {
+              "front": "What is Remote-access VPN?",
+              "back": "User to gateway (road warrior).",
+              "detail": "5.1.6 · Virtual Private Network"
+            },
+            {
+              "front": "What is Site-to-site VPN?",
+              "back": "Gateway to gateway linking networks.",
+              "detail": "5.1.6 · Virtual Private Network"
+            },
+            {
+              "front": "What is IPsec / SSL VPN?",
+              "back": "Common technology choices for tunnel security.",
+              "detail": "5.1.6 · Virtual Private Network"
+            },
+            {
+              "front": "Key idea (Virtual Private Network)",
+              "back": "VPN provides confidentiality and integrity of transit; endpoints still need hardening.",
+              "detail": "5.1.6 · concept"
             }
           ],
           "mcqs": [
@@ -1294,13 +2239,34 @@
           "title": "Recent Network Attacks and Security Measures",
           "flashcards": [
             {
-              "front": "What is Recent Network Attacks and Security Measures?",
-              "back": "Recent Network Attacks and Security Measures: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.1.7 · System Security"
+              "front": "What is DDoS?",
+              "back": "Distributed denial of service — overwhelm availability with many sources.",
+              "detail": "5.1.7 · Recent Network Attacks and Security Measures"
             },
             {
-              "front": "Exam focus: Recent Network Attacks and Security Measures",
-              "back": "Define Recent Network Attacks and Security Measures in one line, name when/why it is used, and contrast it with one related idea under System Security."
+              "front": "What is Phishing / social engineering?",
+              "back": "Trick users into revealing credentials or running malware.",
+              "detail": "5.1.7 · Recent Network Attacks and Security Measures"
+            },
+            {
+              "front": "What is Ransomware?",
+              "back": "Encrypts or locks data for extortion.",
+              "detail": "5.1.7 · Recent Network Attacks and Security Measures"
+            },
+            {
+              "front": "What is APT?",
+              "back": "Advanced Persistent Threat — long-term targeted intrusion.",
+              "detail": "5.1.7 · Recent Network Attacks and Security Measures"
+            },
+            {
+              "front": "What is Mitigations?",
+              "back": "Patching, MFA, segmentation, backups, filtering, threat intel, least privilege.",
+              "detail": "5.1.7 · Recent Network Attacks and Security Measures"
+            },
+            {
+              "front": "Key idea (Recent Network Attacks and Security Measures)",
+              "back": "Attacks evolve; measures combine prevention, detection, and resilience (backups/IR).",
+              "detail": "5.1.7 · concept"
             }
           ],
           "mcqs": [
@@ -1322,13 +2288,34 @@
           "title": "Blockchain Technology",
           "flashcards": [
             {
-              "front": "What is Blockchain Technology?",
-              "back": "Blockchain Technology: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.1.8 · System Security"
+              "front": "What is Blockchain?",
+              "back": "Append-only distributed ledger of chained, hashed blocks agreed by consensus.",
+              "detail": "5.1.8 · Blockchain Technology"
             },
             {
-              "front": "Exam focus: Blockchain Technology",
-              "back": "Define Blockchain Technology in one line, name when/why it is used, and contrast it with one related idea under System Security."
+              "front": "What is Block?",
+              "back": "Batch of transactions plus hash linking to previous block.",
+              "detail": "5.1.8 · Blockchain Technology"
+            },
+            {
+              "front": "What is Consensus?",
+              "back": "Protocol (PoW/PoS/etc.) for agreeing on the next valid chain state.",
+              "detail": "5.1.8 · Blockchain Technology"
+            },
+            {
+              "front": "What is Immutability (practical)?",
+              "back": "Altering history requires redoing consensus work / controlling majority — costly.",
+              "detail": "5.1.8 · Blockchain Technology"
+            },
+            {
+              "front": "What is Smart contract?",
+              "back": "Programmable logic executed by the chain’s VM (platform-dependent).",
+              "detail": "5.1.8 · Blockchain Technology"
+            },
+            {
+              "front": "Key idea (Blockchain Technology)",
+              "back": "Integrity and transparency are strengths; confidentiality and key custody are not automatic.",
+              "detail": "5.1.8 · concept"
             }
           ],
           "mcqs": [
@@ -1350,13 +2337,34 @@
           "title": "Internet Privacy and Piracy Prevention",
           "flashcards": [
             {
-              "front": "What is Internet Privacy and Piracy Prevention?",
-              "back": "Internet Privacy and Piracy Prevention: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.1.9 · System Security"
+              "front": "What is Internet privacy?",
+              "back": "Control over personal data collection, use, and disclosure online.",
+              "detail": "5.1.9 · Internet Privacy and Piracy Prevention"
             },
             {
-              "front": "Exam focus: Internet Privacy and Piracy Prevention",
-              "back": "Define Internet Privacy and Piracy Prevention in one line, name when/why it is used, and contrast it with one related idea under System Security."
+              "front": "What is PII?",
+              "back": "Personally Identifiable Information — data that identifies a person.",
+              "detail": "5.1.9 · Internet Privacy and Piracy Prevention"
+            },
+            {
+              "front": "What is Piracy prevention?",
+              "back": "Technical/legal measures against unauthorised copying/distribution of copyrighted works.",
+              "detail": "5.1.9 · Internet Privacy and Piracy Prevention"
+            },
+            {
+              "front": "What is DRM?",
+              "back": "Digital Rights Management — access-control mechanisms on digital content.",
+              "detail": "5.1.9 · Internet Privacy and Piracy Prevention"
+            },
+            {
+              "front": "What is Tracking / cookies?",
+              "back": "Common privacy threats via behavioural profiling.",
+              "detail": "5.1.9 · Internet Privacy and Piracy Prevention"
+            },
+            {
+              "front": "Privacy focuses on personal data rights; piracy focuses on IP infringement?",
+              "back": "related policy space, different aims.",
+              "detail": "5.1.9 · key idea"
             }
           ],
           "mcqs": [
@@ -1378,13 +2386,34 @@
           "title": "Overview of Cyber Forensic",
           "flashcards": [
             {
-              "front": "What is Overview of Cyber Forensic?",
-              "back": "Overview of Cyber Forensic: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.2.1 · Cyber Forensic and Its Applications"
+              "front": "What is Cyber forensics?",
+              "back": "Collection, preservation, analysis, and presentation of digital evidence.",
+              "detail": "5.2.1 · Overview of Cyber Forensic"
             },
             {
-              "front": "Exam focus: Overview of Cyber Forensic",
-              "back": "Define Overview of Cyber Forensic in one line, name when/why it is used, and contrast it with one related idea under Cyber Forensic and Its Applications."
+              "front": "What is Goal?",
+              "back": "Reconstruct events for investigation/court while maintaining evidential integrity.",
+              "detail": "5.2.1 · Overview of Cyber Forensic"
+            },
+            {
+              "front": "What is Volatile vs non-volatile?",
+              "back": "RAM/network state vs disk — acquisition order matters.",
+              "detail": "5.2.1 · Overview of Cyber Forensic"
+            },
+            {
+              "front": "What is Chain of custody?",
+              "back": "Documented handling history proving evidence was not tampered with.",
+              "detail": "5.2.1 · Overview of Cyber Forensic"
+            },
+            {
+              "front": "What about Forensics is process-heavy?",
+              "back": "methodology beats ad-hoc “looking around”.",
+              "detail": "5.2.1 · key idea"
+            },
+            {
+              "front": "Differs from incident response containment?",
+              "back": "though they interact.",
+              "detail": "5.2.1 · key idea"
             }
           ],
           "mcqs": [
@@ -1406,13 +2435,34 @@
           "title": "Cyber Forensic Processes",
           "flashcards": [
             {
-              "front": "What is Cyber Forensic Processes?",
-              "back": "Cyber Forensic Processes: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.2.2 · Cyber Forensic and Its Applications"
+              "front": "What is Identification?",
+              "back": "Recognise potential evidence sources and scope.",
+              "detail": "5.2.2 · Cyber Forensic Processes"
             },
             {
-              "front": "Exam focus: Cyber Forensic Processes",
-              "back": "Define Cyber Forensic Processes in one line, name when/why it is used, and contrast it with one related idea under Cyber Forensic and Its Applications."
+              "front": "What is Preservation?",
+              "back": "Isolate, image, write-block — prevent change.",
+              "detail": "5.2.2 · Cyber Forensic Processes"
+            },
+            {
+              "front": "What is Collection / acquisition?",
+              "back": "Bit-for-bit imaging and labelling of media.",
+              "detail": "5.2.2 · Cyber Forensic Processes"
+            },
+            {
+              "front": "What is Examination / analysis?",
+              "back": "Recover artefacts, timelines, deleted data, logs.",
+              "detail": "5.2.2 · Cyber Forensic Processes"
+            },
+            {
+              "front": "What is Presentation?",
+              "back": "Report findings clearly for investigators/court.",
+              "detail": "5.2.2 · Cyber Forensic Processes"
+            },
+            {
+              "front": "Key idea (Cyber Forensic Processes)",
+              "back": "Order of volatility guides what to capture first on a live system.",
+              "detail": "5.2.2 · concept"
             }
           ],
           "mcqs": [
@@ -1434,13 +2484,34 @@
           "title": "Cyber Forensic Applications",
           "flashcards": [
             {
-              "front": "What is Cyber Forensic Applications?",
-              "back": "Cyber Forensic Applications: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.2.3 · Cyber Forensic and Its Applications"
+              "front": "What is Criminal investigation?",
+              "back": "Support prosecution of hacking, fraud, abuse, etc.",
+              "detail": "5.2.3 · Cyber Forensic Applications"
             },
             {
-              "front": "Exam focus: Cyber Forensic Applications",
-              "back": "Define Cyber Forensic Applications in one line, name when/why it is used, and contrast it with one related idea under Cyber Forensic and Its Applications."
+              "front": "What is Civil / corporate?",
+              "back": "IP theft, employee misuse, policy violations.",
+              "detail": "5.2.3 · Cyber Forensic Applications"
+            },
+            {
+              "front": "What is Incident response support?",
+              "back": "Scope breach, attribute activity, guide recovery.",
+              "detail": "5.2.3 · Cyber Forensic Applications"
+            },
+            {
+              "front": "What is Intelligence / threat hunting?",
+              "back": "Longer-term artefact study across cases.",
+              "detail": "5.2.3 · Cyber Forensic Applications"
+            },
+            {
+              "front": "Key idea (Cyber Forensic Applications)",
+              "back": "Same forensic process adapts to different legal/business contexts.",
+              "detail": "5.2.3 · concept"
+            },
+            {
+              "front": "Also remember (Cyber Forensic Applications)",
+              "back": "Corporate cases still need careful preservation if litigation is possible.",
+              "detail": "5.2.3 · concept"
             }
           ],
           "mcqs": [
@@ -1462,13 +2533,34 @@
           "title": "Cyber Forensic Tools",
           "flashcards": [
             {
-              "front": "What is Cyber Forensic Tools?",
-              "back": "Cyber Forensic Tools: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.2.4 · Cyber Forensic and Its Applications"
+              "front": "What is Imaging tools?",
+              "back": "Create forensic disk images (e.g. dd-family, FTK Imager-class tools).",
+              "detail": "5.2.4 · Cyber Forensic Tools"
             },
             {
-              "front": "Exam focus: Cyber Forensic Tools",
-              "back": "Define Cyber Forensic Tools in one line, name when/why it is used, and contrast it with one related idea under Cyber Forensic and Its Applications."
+              "front": "What is Analysis suites?",
+              "back": "EnCase, Autopsy/Sleuth Kit-class platforms for browsing artefacts.",
+              "detail": "5.2.4 · Cyber Forensic Tools"
+            },
+            {
+              "front": "What is Write blocker?",
+              "back": "Hardware/software preventing writes to evidence media.",
+              "detail": "5.2.4 · Cyber Forensic Tools"
+            },
+            {
+              "front": "What is Hashing utilities?",
+              "back": "MD5/SHA digests to verify image integrity (MD5 legacy for checksumming).",
+              "detail": "5.2.4 · Cyber Forensic Tools"
+            },
+            {
+              "front": "What is Memory tools?",
+              "back": "Capture/analyse RAM for volatile evidence.",
+              "detail": "5.2.4 · Cyber Forensic Tools"
+            },
+            {
+              "front": "Key idea (Cyber Forensic Tools)",
+              "back": "Tool choice must be defensible and validated; version notes belong in reports.",
+              "detail": "5.2.4 · concept"
             }
           ],
           "mcqs": [
@@ -1490,13 +2582,34 @@
           "title": "Digital Evidence",
           "flashcards": [
             {
-              "front": "What is Digital Evidence?",
-              "back": "Digital Evidence: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.2.5 · Cyber Forensic and Its Applications"
+              "front": "What is Digital evidence?",
+              "back": "Information of probative value stored or transmitted in digital form.",
+              "detail": "5.2.5 · Digital Evidence"
             },
             {
-              "front": "Exam focus: Digital Evidence",
-              "back": "Define Digital Evidence in one line, name when/why it is used, and contrast it with one related idea under Cyber Forensic and Its Applications."
+              "front": "What is Locard’s principle (digital)?",
+              "back": "Contact leaves traces — logs, metadata, remnants.",
+              "detail": "5.2.5 · Digital Evidence"
+            },
+            {
+              "front": "What is Metadata?",
+              "back": "Data about data: timestamps, authors, EXIF, filesystem attributes.",
+              "detail": "5.2.5 · Digital Evidence"
+            },
+            {
+              "front": "What is Integrity of evidence?",
+              "back": "Protected via imaging, hashing, custody, and controlled analysis.",
+              "detail": "5.2.5 · Digital Evidence"
+            },
+            {
+              "front": "Key idea (Digital Evidence)",
+              "back": "Evidence may be latent (deleted/slack) or active files/logs.",
+              "detail": "5.2.5 · concept"
+            },
+            {
+              "front": "Also remember (Digital Evidence)",
+              "back": "Timestamps need timezone and clock-skew interpretation.",
+              "detail": "5.2.5 · concept"
             }
           ],
           "mcqs": [
@@ -1518,13 +2631,34 @@
           "title": "Investigating Windows and Unix Systems",
           "flashcards": [
             {
-              "front": "What is Investigating Windows and Unix Systems?",
-              "back": "Investigating Windows and Unix Systems: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.2.6 · Cyber Forensic and Its Applications"
+              "front": "What is Windows artefacts?",
+              "back": "Event logs, Registry, Prefetch, LNK, USN journal, user profiles.",
+              "detail": "5.2.6 · Investigating Windows and Unix Systems"
             },
             {
-              "front": "Exam focus: Investigating Windows and Unix Systems",
-              "back": "Define Investigating Windows and Unix Systems in one line, name when/why it is used, and contrast it with one related idea under Cyber Forensic and Its Applications."
+              "front": "What is Unix/Linux artefacts?",
+              "back": "syslog/journald, auth logs, shell history, cron, package logs, /proc.",
+              "detail": "5.2.6 · Investigating Windows and Unix Systems"
+            },
+            {
+              "front": "What is Filesystem differences?",
+              "back": "NTFS vs ext4/XFS — different metadata and recovery quirks.",
+              "detail": "5.2.6 · Investigating Windows and Unix Systems"
+            },
+            {
+              "front": "What is Live response?",
+              "back": "Collect volatile data with known-good tools before power-down decisions.",
+              "detail": "5.2.6 · Investigating Windows and Unix Systems"
+            },
+            {
+              "front": "Key idea (Investigating Windows and Unix Systems)",
+              "back": "OS-specific knowledge drives where evidence lives.",
+              "detail": "5.2.6 · concept"
+            },
+            {
+              "front": "Also remember (Investigating Windows and Unix Systems)",
+              "back": "Admin privileges and rootkits can undermine live collection trustworthiness.",
+              "detail": "5.2.6 · concept"
             }
           ],
           "mcqs": [
@@ -1546,13 +2680,34 @@
           "title": "E-mail Tracing",
           "flashcards": [
             {
-              "front": "What is E-mail Tracing?",
-              "back": "E-mail Tracing: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.2.7 · Cyber Forensic and Its Applications"
+              "front": "What is Email tracing?",
+              "back": "Follow Received headers and related metadata to reconstruct message path.",
+              "detail": "5.2.7 · E-mail Tracing"
             },
             {
-              "front": "Exam focus: E-mail Tracing",
-              "back": "Define E-mail Tracing in one line, name when/why it is used, and contrast it with one related idea under Cyber Forensic and Its Applications."
+              "front": "What is Received headers?",
+              "back": "Added by MTAs; read typically bottom-up for origin path.",
+              "detail": "5.2.7 · E-mail Tracing"
+            },
+            {
+              "front": "What is Message-ID?",
+              "back": "Unique identifier useful for correlation across servers.",
+              "detail": "5.2.7 · E-mail Tracing"
+            },
+            {
+              "front": "What is Spoofing caveat?",
+              "back": "From: can be forged; trust server-added Received chains more.",
+              "detail": "5.2.7 · E-mail Tracing"
+            },
+            {
+              "front": "What is Supporting logs?",
+              "back": "MTA logs, spam gateway logs, DNS/IP WHOIS for hop investigation.",
+              "detail": "5.2.7 · E-mail Tracing"
+            },
+            {
+              "front": "Tracing establishes path/attribution hypotheses?",
+              "back": "not always a single “smoking gun”.",
+              "detail": "5.2.7 · key idea"
             }
           ],
           "mcqs": [

@@ -11,12 +11,33 @@
           "flashcards": [
             {
               "front": "What is Stack?",
-              "back": "A Last-In-First-Out (LIFO) structure where elements are added and removed from the top.",
-              "detail": "1.1.1 · Big Data Structures"
+              "back": "LIFO structure: push/pop at the same end (the top).",
+              "detail": "1.1.1 · Stack"
             },
             {
-              "front": "Exam focus: Stack",
-              "back": "Define Stack in one line, name when/why it is used, and contrast it with one related idea under Big Data Structures."
+              "front": "What is Push?",
+              "back": "Insert an element on top.",
+              "detail": "1.1.1 · Stack"
+            },
+            {
+              "front": "What is Pop?",
+              "back": "Remove the top element.",
+              "detail": "1.1.1 · Stack"
+            },
+            {
+              "front": "What is Peek / top?",
+              "back": "Read the top without removing it.",
+              "detail": "1.1.1 · Stack"
+            },
+            {
+              "front": "What is Underflow / overflow?",
+              "back": "Pop on empty / push on full (array stack).",
+              "detail": "1.1.1 · Stack"
+            },
+            {
+              "front": "What about Stack ≠ queue?",
+              "back": "LIFO vs FIFO.",
+              "detail": "1.1.1 · key idea"
             }
           ],
           "mcqs": [
@@ -38,13 +59,29 @@
           "title": "Evaluation of Postfix Expression",
           "flashcards": [
             {
-              "front": "What is Evaluation of Postfix Expression?",
-              "back": "The virtue of postfix notation is that it enables easy evaluation of expressions.",
-              "detail": "1.1.2 · Big Data Structures"
+              "front": "What is Postfix (RPN)?",
+              "back": "Operators follow their operands (e.g. 3 4 +).",
+              "detail": "1.1.2 · Evaluation of Postfix Expression"
             },
             {
-              "front": "Exam focus: Evaluation of Postfix Expression",
-              "back": "Define Evaluation of Postfix Expression in one line, name when/why it is used, and contrast it with one related idea under Big Data Structures."
+              "front": "What is Evaluation with stack?",
+              "back": "Scan left→right: push operands; on operator, pop args, push result.",
+              "detail": "1.1.2 · Evaluation of Postfix Expression"
+            },
+            {
+              "front": "What is Why stack?",
+              "back": "Defers operators until operands are known — natural LIFO.",
+              "detail": "1.1.2 · Evaluation of Postfix Expression"
+            },
+            {
+              "front": "Key idea (Evaluation of Postfix Expression)",
+              "back": "Infix needs precedence/parentheses; postfix does not.",
+              "detail": "1.1.2 · concept"
+            },
+            {
+              "front": "Also remember (Evaluation of Postfix Expression)",
+              "back": "Each operator pops the right number of operands (usually 2 for binary).",
+              "detail": "1.1.2 · concept"
             }
           ],
           "mcqs": [
@@ -66,13 +103,29 @@
           "title": "Tower of Hanoi Problem",
           "flashcards": [
             {
-              "front": "What is Tower of Hanoi Problem?",
-              "back": "In the Tower of Hanoi problem, how many steps are required to solve a puzzle with",
-              "detail": "1.1.3 · Big Data Structures"
+              "front": "What is Tower of Hanoi?",
+              "back": "Move n disks from source to target using auxiliary peg.",
+              "detail": "1.1.3 · Tower of Hanoi Problem"
             },
             {
-              "front": "Exam focus: Tower of Hanoi Problem",
-              "back": "Define Tower of Hanoi Problem in one line, name when/why it is used, and contrast it with one related idea under Big Data Structures."
+              "front": "What is Rule?",
+              "back": "Only one disk at a time; never place larger on smaller.",
+              "detail": "1.1.3 · Tower of Hanoi Problem"
+            },
+            {
+              "front": "What is Recurrence?",
+              "back": "T(n)=2T(n−1)+1, T(1)=1 → T(n)=2^n−1 moves.",
+              "detail": "1.1.3 · Tower of Hanoi Problem"
+            },
+            {
+              "front": "What about Recursive idea?",
+              "back": "move n−1 aside, move largest, move n−1 on top.",
+              "detail": "1.1.3 · key idea"
+            },
+            {
+              "front": "Also remember (Tower of Hanoi Problem)",
+              "back": "Shows divide-and-conquer / recursion cost explosion.",
+              "detail": "1.1.3 · concept"
             }
           ],
           "mcqs": [
@@ -95,12 +148,28 @@
           "flashcards": [
             {
               "front": "What is Queue?",
-              "back": "A First-In-First-Out (FIFO) structure where elements are added at the end and removed from the beginning.",
-              "detail": "1.1.4 · Big Data Structures"
+              "back": "FIFO: enqueue at rear, dequeue at front.",
+              "detail": "1.1.4 · Queue"
             },
             {
-              "front": "Exam focus: Queue",
-              "back": "Define Queue in one line, name when/why it is used, and contrast it with one related idea under Big Data Structures."
+              "front": "What is Enqueue / Dequeue?",
+              "back": "Insert rear / remove front.",
+              "detail": "1.1.4 · Queue"
+            },
+            {
+              "front": "What is Circular queue?",
+              "back": "Wrap indices to reuse array space.",
+              "detail": "1.1.4 · Queue"
+            },
+            {
+              "front": "Key idea (Queue)",
+              "back": "Queue ≠ stack (FIFO vs LIFO).",
+              "detail": "1.1.4 · concept"
+            },
+            {
+              "front": "Also remember (Queue)",
+              "back": "BFS uses a queue; DFS uses a stack/recursion.",
+              "detail": "1.1.4 · concept"
             }
           ],
           "mcqs": [
@@ -122,13 +191,29 @@
           "title": "Linked List",
           "flashcards": [
             {
-              "front": "What is Linked List?",
-              "back": "A collection of elements linked together by pointers, allowing dynamic insertion and deletion.",
-              "detail": "1.1.5 · Big Data Structures"
+              "front": "What is Linked list?",
+              "back": "Nodes with data + pointer(s); dynamic size.",
+              "detail": "1.1.5 · Linked List"
             },
             {
-              "front": "Exam focus: Linked List",
-              "back": "Define Linked List in one line, name when/why it is used, and contrast it with one related idea under Big Data Structures."
+              "front": "What is Singly linked?",
+              "back": "Each node points to next only.",
+              "detail": "1.1.5 · Linked List"
+            },
+            {
+              "front": "What is Head?",
+              "back": "Entry pointer to the first node.",
+              "detail": "1.1.5 · Linked List"
+            },
+            {
+              "front": "Key idea (Linked List)",
+              "back": "Insert/delete can be O(1) given a node reference; search is O(n).",
+              "detail": "1.1.5 · concept"
+            },
+            {
+              "front": "What about Vs array?",
+              "back": "no random access O(1), but flexible growth.",
+              "detail": "1.1.5 · key idea"
             }
           ],
           "mcqs": [
@@ -150,13 +235,29 @@
           "title": "Double Linked List",
           "flashcards": [
             {
-              "front": "What is Double Linked List?",
-              "back": "The Doubly Linked List is a form of linked list in which there are two links to each",
-              "detail": "1.1.6 · Big Data Structures"
+              "front": "What is Doubly linked list?",
+              "back": "Each node has next and prev pointers.",
+              "detail": "1.1.6 · Double Linked List"
             },
             {
-              "front": "Exam focus: Double Linked List",
-              "back": "Define Double Linked List in one line, name when/why it is used, and contrast it with one related idea under Big Data Structures."
+              "front": "What is Bidirectional traversal?",
+              "back": "Walk forward or backward.",
+              "detail": "1.1.6 · Double Linked List"
+            },
+            {
+              "front": "What is Delete convenience?",
+              "back": "Easier deletion when you have the node (prev is known).",
+              "detail": "1.1.6 · Double Linked List"
+            },
+            {
+              "front": "Key idea (Double Linked List)",
+              "back": "Extra pointer cost vs singly linked.",
+              "detail": "1.1.6 · concept"
+            },
+            {
+              "front": "Also remember (Double Linked List)",
+              "back": "Still no O(1) index access like arrays.",
+              "detail": "1.1.6 · concept"
             }
           ],
           "mcqs": [
@@ -178,13 +279,24 @@
           "title": "Algorithm and Characteristics",
           "flashcards": [
             {
-              "front": "What is Algorithm and Characteristics?",
-              "back": "To accomplish a certain predefined task, an algorithm is a finite set of instructions",
-              "detail": "1.2.1 · Algorithm"
+              "front": "What is Algorithm?",
+              "back": "Finite, unambiguous sequence of steps producing output from input.",
+              "detail": "1.2.1 · Algorithm and Characteristics"
             },
             {
-              "front": "Exam focus: Algorithm and Characteristics",
-              "back": "Define Algorithm and Characteristics in one line, name when/why it is used, and contrast it with one related idea under Algorithm."
+              "front": "What is Characteristics?",
+              "back": "Input, output, finiteness, definiteness, effectiveness (and often generality).",
+              "detail": "1.2.1 · Algorithm and Characteristics"
+            },
+            {
+              "front": "Key idea (Algorithm and Characteristics)",
+              "back": "Program implements an algorithm in a language.",
+              "detail": "1.2.1 · concept"
+            },
+            {
+              "front": "What about Finiteness?",
+              "back": "must terminate; definiteness: each step clear.",
+              "detail": "1.2.1 · key idea"
             }
           ],
           "mcqs": [
@@ -206,13 +318,34 @@
           "title": "Asymtotic Notations",
           "flashcards": [
             {
-              "front": "What is Asymtotic Notations?",
-              "back": "Asymptotic notations (Big-O, Ω, Θ) describe growth rates of time/space as input size grows.",
-              "detail": "1.2.2 · Algorithm"
+              "front": "What is Big-O?",
+              "back": "Upper bound on growth rate (worst-case flavour in teaching).",
+              "detail": "1.2.2 · Asymtotic Notations"
             },
             {
-              "front": "Exam focus: Asymtotic Notations",
-              "back": "Define Asymtotic Notations in one line, name when/why it is used, and contrast it with one related idea under Algorithm."
+              "front": "What is Ω (Omega)?",
+              "back": "Lower bound on growth.",
+              "detail": "1.2.2 · Asymtotic Notations"
+            },
+            {
+              "front": "What is Θ (Theta)?",
+              "back": "Tight bound — both O and Ω.",
+              "detail": "1.2.2 · Asymtotic Notations"
+            },
+            {
+              "front": "What is Little-o / ~?",
+              "back": "Stricter / asymptotic equivalence ideas (if taught).",
+              "detail": "1.2.2 · Asymtotic Notations"
+            },
+            {
+              "front": "Key idea (Asymtotic Notations)",
+              "back": "Asymptotics ignore constants and lower-order terms.",
+              "detail": "1.2.2 · concept"
+            },
+            {
+              "front": "Also remember (Asymtotic Notations)",
+              "back": "O(n^2) does not mean ‘exactly n^2 steps’.",
+              "detail": "1.2.2 · concept"
             }
           ],
           "mcqs": [
@@ -234,13 +367,29 @@
           "title": "Algorithm Time Complexity",
           "flashcards": [
             {
-              "front": "What is Algorithm Time Complexity?",
-              "back": "An algorithm’s time complexity reflects the amount of time needed for the algorithm",
-              "detail": "1.2.3 · Algorithm"
+              "front": "What is Time complexity?",
+              "back": "How running time grows with input size n.",
+              "detail": "1.2.3 · Algorithm Time Complexity"
             },
             {
-              "front": "Exam focus: Algorithm Time Complexity",
-              "back": "Define Algorithm Time Complexity in one line, name when/why it is used, and contrast it with one related idea under Algorithm."
+              "front": "What is Best / average / worst?",
+              "back": "Different cases; exams often want worst-case Big-O.",
+              "detail": "1.2.3 · Algorithm Time Complexity"
+            },
+            {
+              "front": "What is Space complexity?",
+              "back": "Extra memory growth with n.",
+              "detail": "1.2.3 · Algorithm Time Complexity"
+            },
+            {
+              "front": "Key idea (Algorithm Time Complexity)",
+              "back": "Count dominant operations, not wall-clock alone.",
+              "detail": "1.2.3 · concept"
+            },
+            {
+              "front": "Also remember (Algorithm Time Complexity)",
+              "back": "Nested loops often multiply costs.",
+              "detail": "1.2.3 · concept"
             }
           ],
           "mcqs": [
@@ -262,13 +411,29 @@
           "title": "Recursive Program Analysis Strategies",
           "flashcards": [
             {
-              "front": "What is Recursive Program Analysis Strategies?",
-              "back": "Many algorithms are necessarily recursive. We get a recurrence relation for time",
-              "detail": "1.2.4 · Algorithm"
+              "front": "What is Recurrence?",
+              "back": "T(n) defined in terms of T(smaller).",
+              "detail": "1.2.4 · Recursive Program Analysis Strategies"
             },
             {
-              "front": "Exam focus: Recursive Program Analysis Strategies",
-              "back": "Define Recursive Program Analysis Strategies in one line, name when/why it is used, and contrast it with one related idea under Algorithm."
+              "front": "What is Recursion tree / substitution / Master?",
+              "back": "Strategies to solve recurrences.",
+              "detail": "1.2.4 · Recursive Program Analysis Strategies"
+            },
+            {
+              "front": "What is Base case?",
+              "back": "Stops recursion; needed for well-founded analysis.",
+              "detail": "1.2.4 · Recursive Program Analysis Strategies"
+            },
+            {
+              "front": "Key idea (Recursive Program Analysis Strategies)",
+              "back": "Wrong base case ⇒ wrong closed form.",
+              "detail": "1.2.4 · concept"
+            },
+            {
+              "front": "Also remember (Recursive Program Analysis Strategies)",
+              "back": "Unfold a few levels before guessing the pattern.",
+              "detail": "1.2.4 · concept"
             }
           ],
           "mcqs": [
@@ -290,13 +455,29 @@
           "title": "Master Theorem",
           "flashcards": [
             {
-              "front": "What is Master Theorem?",
-              "back": "A straightforward way to get the solution is the Master Method. The master method",
-              "detail": "1.2.5 · Algorithm"
+              "front": "What is Master theorem?",
+              "back": "Solves T(n)=aT(n/b)+f(n) for many standard f.",
+              "detail": "1.2.5 · Master Theorem"
             },
             {
-              "front": "Exam focus: Master Theorem",
-              "back": "Define Master Theorem in one line, name when/why it is used, and contrast it with one related idea under Algorithm."
+              "front": "What is Cases?",
+              "back": "Compare f(n) with n^{log_b a} (three main cases).",
+              "detail": "1.2.5 · Master Theorem"
+            },
+            {
+              "front": "What is Limitations?",
+              "back": "Not all recurrences fit; need regularity conditions.",
+              "detail": "1.2.5 · Master Theorem"
+            },
+            {
+              "front": "Identify a, b, f(n) first?",
+              "back": "then case.",
+              "detail": "1.2.5 · key idea"
+            },
+            {
+              "front": "What about Merge sort?",
+              "back": "a=2,b=2,f=Θ(n) → Θ(n log n).",
+              "detail": "1.2.5 · key idea"
             }
           ],
           "mcqs": [
@@ -318,13 +499,29 @@
           "title": "Divide-Conquer Recurrence Equations Solutions",
           "flashcards": [
             {
-              "front": "What is Divide-Conquer Recurrence Equations Solutions?",
-              "back": "The issue at hand is divided into smaller subproblems in the divide and conquer",
-              "detail": "1.3.1 · Divide and Conquer Paradigm"
+              "front": "What is Divide and conquer?",
+              "back": "Divide → conquer recursively → combine.",
+              "detail": "1.3.1 · Divide-Conquer Recurrence Equations Solutions"
             },
             {
-              "front": "Exam focus: Divide-Conquer Recurrence Equations Solutions",
-              "back": "Define Divide-Conquer Recurrence Equations Solutions in one line, name when/why it is used, and contrast it with one related idea under Divide and Conquer Paradigm."
+              "front": "What is Recurrence form?",
+              "back": "Often T(n)=aT(n/b)+f(n).",
+              "detail": "1.3.1 · Divide-Conquer Recurrence Equations Solutions"
+            },
+            {
+              "front": "What is Examples?",
+              "back": "Merge sort, binary search, some matrix methods.",
+              "detail": "1.3.1 · Divide-Conquer Recurrence Equations Solutions"
+            },
+            {
+              "front": "Key idea (Divide-Conquer Recurrence Equations Solutions)",
+              "back": "Combine cost f(n) matters as much as subproblem count.",
+              "detail": "1.3.1 · concept"
+            },
+            {
+              "front": "Also remember (Divide-Conquer Recurrence Equations Solutions)",
+              "back": "Not every recursive algorithm is efficient D&C.",
+              "detail": "1.3.1 · concept"
             }
           ],
           "mcqs": [
@@ -346,13 +543,29 @@
           "title": "Bubble Sort",
           "flashcards": [
             {
-              "front": "What is Bubble Sort?",
-              "back": "Bubble sorting is a basic algorithm for sorting. This sorting algorithm is a",
-              "detail": "1.4.1 · Sorting Techniques"
+              "front": "What is Bubble sort?",
+              "back": "Repeatedly swap adjacent out-of-order pairs.",
+              "detail": "1.4.1 · Bubble Sort"
             },
             {
-              "front": "Exam focus: Bubble Sort",
-              "back": "Define Bubble Sort in one line, name when/why it is used, and contrast it with one related idea under Sorting Techniques."
+              "front": "What is Time?",
+              "back": "O(n^2) typical/worst; can be O(n) if already sorted with early exit.",
+              "detail": "1.4.1 · Bubble Sort"
+            },
+            {
+              "front": "What is Stable??",
+              "back": "Can be implemented stable.",
+              "detail": "1.4.1 · Bubble Sort"
+            },
+            {
+              "front": "Key idea (Bubble Sort)",
+              "back": "Simple but slow for large n.",
+              "detail": "1.4.1 · concept"
+            },
+            {
+              "front": "Also remember (Bubble Sort)",
+              "back": "After pass i, largest elements ‘bubble’ to the end.",
+              "detail": "1.4.1 · concept"
             }
           ],
           "mcqs": [
@@ -374,13 +587,29 @@
           "title": "Insertion Sort",
           "flashcards": [
             {
-              "front": "What is Insertion Sort?",
-              "back": "This is a sorting algorithm that uses in-place comparisons. Here, a sub-list that is",
-              "detail": "1.4.2 · Sorting Techniques"
+              "front": "What is Insertion sort?",
+              "back": "Build sorted prefix; insert next element into place.",
+              "detail": "1.4.2 · Insertion Sort"
             },
             {
-              "front": "Exam focus: Insertion Sort",
-              "back": "Define Insertion Sort in one line, name when/why it is used, and contrast it with one related idea under Sorting Techniques."
+              "front": "What is Time?",
+              "back": "O(n^2) worst; O(n) best on nearly sorted data.",
+              "detail": "1.4.2 · Insertion Sort"
+            },
+            {
+              "front": "What is Stable?",
+              "back": "Yes (typical implementation).",
+              "detail": "1.4.2 · Insertion Sort"
+            },
+            {
+              "front": "Key idea (Insertion Sort)",
+              "back": "Good for small or nearly sorted arrays.",
+              "detail": "1.4.2 · concept"
+            },
+            {
+              "front": "What about Online?",
+              "back": "can sort as data arrives.",
+              "detail": "1.4.2 · key idea"
             }
           ],
           "mcqs": [
@@ -402,13 +631,29 @@
           "title": "Selection Sort",
           "flashcards": [
             {
-              "front": "What is Selection Sort?",
-              "back": "Selection sort is a basic algorithm for sorting. This sorting algorithm is a",
-              "detail": "1.4.3 · Sorting Techniques"
+              "front": "What is Selection sort?",
+              "back": "Repeatedly select min (or max) from unsorted part and swap into place.",
+              "detail": "1.4.3 · Selection Sort"
             },
             {
-              "front": "Exam focus: Selection Sort",
-              "back": "Define Selection Sort in one line, name when/why it is used, and contrast it with one related idea under Sorting Techniques."
+              "front": "What is Time?",
+              "back": "Θ(n^2) comparisons roughly always.",
+              "detail": "1.4.3 · Selection Sort"
+            },
+            {
+              "front": "What is Not stable?",
+              "back": "Typical swap-based version is unstable.",
+              "detail": "1.4.3 · Selection Sort"
+            },
+            {
+              "front": "Key idea (Selection Sort)",
+              "back": "Fewer writes than some sorts, but still quadratic comparisons.",
+              "detail": "1.4.3 · concept"
+            },
+            {
+              "front": "Also remember (Selection Sort)",
+              "back": "Unlike insertion, does not benefit much from nearly sorted input.",
+              "detail": "1.4.3 · concept"
             }
           ],
           "mcqs": [
@@ -430,13 +675,34 @@
           "title": "Merge Sort",
           "flashcards": [
             {
-              "front": "What is Merge Sort?",
-              "back": "necessitates extra space for its operations.",
-              "detail": "1.4.4 · Sorting Techniques"
+              "front": "What is Merge sort?",
+              "back": "Divide array, sort halves, merge sorted runs.",
+              "detail": "1.4.4 · Merge Sort"
             },
             {
-              "front": "Exam focus: Merge Sort",
-              "back": "Define Merge Sort in one line, name when/why it is used, and contrast it with one related idea under Sorting Techniques."
+              "front": "What is Time?",
+              "back": "Θ(n log n) guaranteed.",
+              "detail": "1.4.4 · Merge Sort"
+            },
+            {
+              "front": "What is Space?",
+              "back": "Needs Θ(n) auxiliary for classic merge.",
+              "detail": "1.4.4 · Merge Sort"
+            },
+            {
+              "front": "What is Stable?",
+              "back": "Yes.",
+              "detail": "1.4.4 · Merge Sort"
+            },
+            {
+              "front": "Predictable performance?",
+              "back": "good exam ‘guaranteed n log n’ answer.",
+              "detail": "1.4.4 · key idea"
+            },
+            {
+              "front": "Also remember (Merge Sort)",
+              "back": "Merge is the combine step.",
+              "detail": "1.4.4 · concept"
             }
           ],
           "mcqs": [
@@ -458,13 +724,29 @@
           "title": "Heap Sort",
           "flashcards": [
             {
-              "front": "What is Heap Sort?",
-              "back": "Heap sort can be understood as the improved version of the binary search tree.",
-              "detail": "1.4.5 · Sorting Techniques"
+              "front": "What is Heap sort?",
+              "back": "Build heap, repeatedly extract max/min.",
+              "detail": "1.4.5 · Heap Sort"
             },
             {
-              "front": "Exam focus: Heap Sort",
-              "back": "Define Heap Sort in one line, name when/why it is used, and contrast it with one related idea under Sorting Techniques."
+              "front": "What is Time?",
+              "back": "O(n log n).",
+              "detail": "1.4.5 · Heap Sort"
+            },
+            {
+              "front": "What is In-place?",
+              "back": "Yes (array heap); not typically stable.",
+              "detail": "1.4.5 · Heap Sort"
+            },
+            {
+              "front": "What about Uses heap property?",
+              "back": "parent ordered vs children.",
+              "detail": "1.4.5 · key idea"
+            },
+            {
+              "front": "Also remember (Heap Sort)",
+              "back": "Build-heap is O(n); extracts cost O(n log n).",
+              "detail": "1.4.5 · concept"
             }
           ],
           "mcqs": [
@@ -486,13 +768,29 @@
           "title": "Quick Sort",
           "flashcards": [
             {
-              "front": "What is Quick Sort?",
-              "back": "Quick sort is a very popular sorting method. The name comes from the fact that,",
-              "detail": "1.4.6 · Sorting Techniques"
+              "front": "What is Quick sort?",
+              "back": "Partition around pivot; recurse on parts.",
+              "detail": "1.4.6 · Quick Sort"
             },
             {
-              "front": "Exam focus: Quick Sort",
-              "back": "Define Quick Sort in one line, name when/why it is used, and contrast it with one related idea under Sorting Techniques."
+              "front": "What is Average time?",
+              "back": "O(n log n); worst O(n^2) on bad pivots.",
+              "detail": "1.4.6 · Quick Sort"
+            },
+            {
+              "front": "What is In-place?",
+              "back": "Mostly yes (small stack); not stable typically.",
+              "detail": "1.4.6 · Quick Sort"
+            },
+            {
+              "front": "Key idea (Quick Sort)",
+              "back": "Pivot choice affects balance.",
+              "detail": "1.4.6 · concept"
+            },
+            {
+              "front": "Also remember (Quick Sort)",
+              "back": "Often fastest in practice despite worst case.",
+              "detail": "1.4.6 · concept"
             }
           ],
           "mcqs": [
@@ -520,13 +818,29 @@
           "title": "Basic Terminology and Applications",
           "flashcards": [
             {
-              "front": "What is Basic Terminology and Applications?",
-              "back": "Basic Terminology and Applications: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "2.1.1 · Tree"
+              "front": "What is Tree?",
+              "back": "Connected acyclic graph; hierarchical parent–child.",
+              "detail": "2.1.1 · Basic Terminology and Applications"
             },
             {
-              "front": "Exam focus: Basic Terminology and Applications",
-              "back": "Define Basic Terminology and Applications in one line, name when/why it is used, and contrast it with one related idea under Tree."
+              "front": "What is Root / leaf / internal?",
+              "back": "Top node / no children / has children.",
+              "detail": "2.1.1 · Basic Terminology and Applications"
+            },
+            {
+              "front": "What is Applications?",
+              "back": "File systems, expression trees, search structures, heaps.",
+              "detail": "2.1.1 · Basic Terminology and Applications"
+            },
+            {
+              "front": "Key idea (Basic Terminology and Applications)",
+              "back": "Tree ≠ general graph with cycles.",
+              "detail": "2.1.1 · concept"
+            },
+            {
+              "front": "Height/depth definitions vary slightly?",
+              "back": "use syllabus convention.",
+              "detail": "2.1.1 · key idea"
             }
           ],
           "mcqs": [
@@ -548,13 +862,29 @@
           "title": "Binary Trees",
           "flashcards": [
             {
-              "front": "What is Binary Trees?",
-              "back": "There are different sorts of binary trees, and every one of these binary tree types",
-              "detail": "2.1.2 · Tree"
+              "front": "What is Binary tree?",
+              "back": "Each node has at most two children (left/right).",
+              "detail": "2.1.2 · Binary Trees"
             },
             {
-              "front": "Exam focus: Binary Trees",
-              "back": "Define Binary Trees in one line, name when/why it is used, and contrast it with one related idea under Tree."
+              "front": "What is Full / complete / perfect?",
+              "back": "Variants about occupancy of levels (syllabus defs).",
+              "detail": "2.1.2 · Binary Trees"
+            },
+            {
+              "front": "What is Traversals?",
+              "back": "Inorder, preorder, postorder, level-order.",
+              "detail": "2.1.2 · Binary Trees"
+            },
+            {
+              "front": "Key idea (Binary Trees)",
+              "back": "Binary tree ≠ BST (BST adds ordering invariant).",
+              "detail": "2.1.2 · concept"
+            },
+            {
+              "front": "Also remember (Binary Trees)",
+              "back": "Array representation possible for complete trees (heaps).",
+              "detail": "2.1.2 · concept"
             }
           ],
           "mcqs": [
@@ -576,13 +906,29 @@
           "title": "Binary Search Trees",
           "flashcards": [
             {
-              "front": "What is Binary Search Trees?",
-              "back": "Heap sort can be understood as the improved version of the binary search tree.",
-              "detail": "2.1.3 · Tree"
+              "front": "What is BST?",
+              "back": "Left keys < node < right keys (standard ordering).",
+              "detail": "2.1.3 · Binary Search Trees"
             },
             {
-              "front": "Exam focus: Binary Search Trees",
-              "back": "Define Binary Search Trees in one line, name when/why it is used, and contrast it with one related idea under Tree."
+              "front": "What is Search / insert?",
+              "back": "Follow comparisons down a path.",
+              "detail": "2.1.3 · Binary Search Trees"
+            },
+            {
+              "front": "What is Inorder traversal?",
+              "back": "Yields keys in sorted order.",
+              "detail": "2.1.3 · Binary Search Trees"
+            },
+            {
+              "front": "Key idea (Binary Search Trees)",
+              "back": "Balanced BST ⇒ O(log n); skewed ⇒ O(n).",
+              "detail": "2.1.3 · concept"
+            },
+            {
+              "front": "What about Deletion has cases?",
+              "back": "leaf / one child / two children (successor/predecessor).",
+              "detail": "2.1.3 · key idea"
             }
           ],
           "mcqs": [
@@ -604,13 +950,24 @@
           "title": "Optimal Binary Search Tree",
           "flashcards": [
             {
-              "front": "What is Optimal Binary Search Tree?",
-              "back": "As we realise that in the binary search tree, the hubs in the left subtree have lesser",
-              "detail": "2.1.4 · Tree"
+              "front": "What is Optimal BST?",
+              "back": "BST arranged to minimise expected search cost given key probabilities.",
+              "detail": "2.1.4 · Optimal Binary Search Tree"
             },
             {
-              "front": "Exam focus: Optimal Binary Search Tree",
-              "back": "Define Optimal Binary Search Tree in one line, name when/why it is used, and contrast it with one related idea under Tree."
+              "front": "What is DP construction?",
+              "back": "Classic dynamic-programming optimisation on key ranges.",
+              "detail": "2.1.4 · Optimal Binary Search Tree"
+            },
+            {
+              "front": "Not the same as ‘any balanced BST’?",
+              "back": "optimality uses frequencies.",
+              "detail": "2.1.4 · key idea"
+            },
+            {
+              "front": "Also remember (Optimal Binary Search Tree)",
+              "back": "Related to matrix-chain style interval DP.",
+              "detail": "2.1.4 · concept"
             }
           ],
           "mcqs": [
@@ -632,13 +989,24 @@
           "title": "Red-Black Trees",
           "flashcards": [
             {
-              "front": "What is Red-Black Trees?",
-              "back": "The majority of the BST activities (e.g., search, max, min, embed, erase.. and so",
-              "detail": "2.1.5 · Tree"
+              "front": "What is Red-Black tree?",
+              "back": "Self-balancing BST with coloured nodes and rotation/recolour rules.",
+              "detail": "2.1.5 · Red-Black Trees"
             },
             {
-              "front": "Exam focus: Red-Black Trees",
-              "back": "Define Red-Black Trees in one line, name when/why it is used, and contrast it with one related idea under Tree."
+              "front": "What is Balance guarantee?",
+              "back": "Height O(log n); operations O(log n).",
+              "detail": "2.1.5 · Red-Black Trees"
+            },
+            {
+              "front": "Key idea (Red-Black Trees)",
+              "back": "Alternative to AVL with slightly different balance strictness.",
+              "detail": "2.1.5 · concept"
+            },
+            {
+              "front": "Also remember (Red-Black Trees)",
+              "back": "Used widely in libraries (e.g. some map implementations).",
+              "detail": "2.1.5 · concept"
             }
           ],
           "mcqs": [
@@ -660,13 +1028,29 @@
           "title": "AVL Trees",
           "flashcards": [
             {
-              "front": "What is AVL Trees?",
-              "back": "AVL Trees: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "2.1.6 · Tree"
+              "front": "What is AVL tree?",
+              "back": "BST where |height(left)−height(right)| ≤ 1 at every node.",
+              "detail": "2.1.6 · AVL Trees"
             },
             {
-              "front": "Exam focus: AVL Trees",
-              "back": "Define AVL Trees in one line, name when/why it is used, and contrast it with one related idea under Tree."
+              "front": "What is Rotations?",
+              "back": "LL, RR, LR, RL fix imbalance after insert/delete.",
+              "detail": "2.1.6 · AVL Trees"
+            },
+            {
+              "front": "What is Complexity?",
+              "back": "Search/insert/delete O(log n).",
+              "detail": "2.1.6 · AVL Trees"
+            },
+            {
+              "front": "Key idea (AVL Trees)",
+              "back": "Stricter balance than Red-Black often ⇒ more rotations.",
+              "detail": "2.1.6 · concept"
+            },
+            {
+              "front": "Also remember (AVL Trees)",
+              "back": "Balance factor is the height difference.",
+              "detail": "2.1.6 · concept"
             }
           ],
           "mcqs": [
@@ -688,13 +1072,29 @@
           "title": "B Trees",
           "flashcards": [
             {
-              "front": "What is B Trees?",
-              "back": "B Trees: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "2.1.7 · Tree"
+              "front": "What is B-tree?",
+              "back": "Multiway balanced search tree for disk/block storage.",
+              "detail": "2.1.7 · B Trees"
             },
             {
-              "front": "Exam focus: B Trees",
-              "back": "Define B Trees in one line, name when/why it is used, and contrast it with one related idea under Tree."
+              "front": "What is High fanout?",
+              "back": "Many keys per node ⇒ shallow tree ⇒ fewer disk reads.",
+              "detail": "2.1.7 · B Trees"
+            },
+            {
+              "front": "What is Properties?",
+              "back": "All leaves at same level; node occupancy bounds (order).",
+              "detail": "2.1.7 · B Trees"
+            },
+            {
+              "front": "Key idea (B Trees)",
+              "back": "Designed for secondary storage, not only RAM.",
+              "detail": "2.1.7 · concept"
+            },
+            {
+              "front": "B+ trees (if taught) keep data in leaves?",
+              "back": "don’t conflate blindly.",
+              "detail": "2.1.7 · key idea"
             }
           ],
           "mcqs": [
@@ -716,13 +1116,24 @@
           "title": "Spanning Trees",
           "flashcards": [
             {
-              "front": "What is Spanning Trees?",
-              "back": "Spanning Trees: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "2.1.8 · Tree"
+              "front": "What is Spanning tree?",
+              "back": "Subgraph that is a tree connecting all vertices.",
+              "detail": "2.1.8 · Spanning Trees"
             },
             {
-              "front": "Exam focus: Spanning Trees",
-              "back": "Define Spanning Trees in one line, name when/why it is used, and contrast it with one related idea under Tree."
+              "front": "What is MST?",
+              "back": "Spanning tree of minimum total edge weight.",
+              "detail": "2.1.8 · Spanning Trees"
+            },
+            {
+              "front": "Key idea (Spanning Trees)",
+              "back": "Exists for connected undirected graphs.",
+              "detail": "2.1.8 · concept"
+            },
+            {
+              "front": "Also remember (Spanning Trees)",
+              "back": "Prim/Kruskal compute MSTs.",
+              "detail": "2.1.8 · concept"
             }
           ],
           "mcqs": [
@@ -744,13 +1155,24 @@
           "title": "Prim’s Algorithm",
           "flashcards": [
             {
-              "front": "What is Prim’s Algorithm?",
-              "back": "Prim’s Algorithm: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "2.1.9 · Tree"
+              "front": "What is Prim’s algorithm?",
+              "back": "Grow MST from a start vertex by always adding lightest safe edge out.",
+              "detail": "2.1.9 · Prim’s Algorithm"
             },
             {
-              "front": "Exam focus: Prim’s Algorithm",
-              "back": "Define Prim’s Algorithm in one line, name when/why it is used, and contrast it with one related idea under Tree."
+              "front": "What is Data structure?",
+              "back": "Often priority queue for cut edges.",
+              "detail": "2.1.9 · Prim’s Algorithm"
+            },
+            {
+              "front": "What about Cut property?",
+              "back": "lightest edge crossing the cut is safe for MST.",
+              "detail": "2.1.9 · key idea"
+            },
+            {
+              "front": "Also remember (Prim’s Algorithm)",
+              "back": "Prim is vertex-centric growth.",
+              "detail": "2.1.9 · concept"
             }
           ],
           "mcqs": [
@@ -772,13 +1194,24 @@
           "title": "Kruskal’s Algorithm",
           "flashcards": [
             {
-              "front": "What is Kruskal’s Algorithm?",
-              "back": "Kruskal’s Algorithm: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "2.1.10 · Tree"
+              "front": "What is Kruskal’s algorithm?",
+              "back": "Sort edges by weight; add if it doesn’t form a cycle (Union–Find).",
+              "detail": "2.1.10 · Kruskal’s Algorithm"
             },
             {
-              "front": "Exam focus: Kruskal’s Algorithm",
-              "back": "Define Kruskal’s Algorithm in one line, name when/why it is used, and contrast it with one related idea under Tree."
+              "front": "What is Union–Find?",
+              "back": "Tracks components to detect cycles efficiently.",
+              "detail": "2.1.10 · Kruskal’s Algorithm"
+            },
+            {
+              "front": "Key idea (Kruskal’s Algorithm)",
+              "back": "Edge-centric; works well on sparse graphs.",
+              "detail": "2.1.10 · concept"
+            },
+            {
+              "front": "Also remember (Kruskal’s Algorithm)",
+              "back": "Same MST cut/cycle properties as Prim’s goal.",
+              "detail": "2.1.10 · concept"
             }
           ],
           "mcqs": [
@@ -800,13 +1233,29 @@
           "title": "Terminology, Representations, Traversals",
           "flashcards": [
             {
-              "front": "What is Terminology, Representations, Traversals?",
-              "back": "Terminology, Representations, Traversals: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "2.2.1 · Graphs"
+              "front": "What is Graph?",
+              "back": "G=(V,E); directed/undirected; weighted/unweighted.",
+              "detail": "2.2.1 · Terminology, Representations, Traversals"
             },
             {
-              "front": "Exam focus: Terminology, Representations, Traversals",
-              "back": "Define Terminology, Representations, Traversals in one line, name when/why it is used, and contrast it with one related idea under Graphs."
+              "front": "What is Representations?",
+              "back": "Adjacency matrix vs adjacency list.",
+              "detail": "2.2.1 · Terminology, Representations, Traversals"
+            },
+            {
+              "front": "What is Traversal?",
+              "back": "Systematic visit: DFS/BFS.",
+              "detail": "2.2.1 · Terminology, Representations, Traversals"
+            },
+            {
+              "front": "What about Matrix?",
+              "back": "O(1) edge query, O(V^2) space; list: better for sparse.",
+              "detail": "2.2.1 · key idea"
+            },
+            {
+              "front": "Also remember (Terminology, Representations, Traversals)",
+              "back": "Degree, path, cycle are core terms.",
+              "detail": "2.2.1 · concept"
             }
           ],
           "mcqs": [
@@ -828,13 +1277,24 @@
           "title": "Depth-First Search (DFS)",
           "flashcards": [
             {
-              "front": "What is Depth-First Search (DFS)?",
-              "back": "Depth-First Search (DFS): a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "2.2.2 · Graphs"
+              "front": "What is DFS?",
+              "back": "Explore deep along a path; backtrack; stack/recursion.",
+              "detail": "2.2.2 · Depth-First Search (DFS)"
             },
             {
-              "front": "Exam focus: Depth-First Search (DFS)",
-              "back": "Define Depth-First Search (DFS) in one line, name when/why it is used, and contrast it with one related idea under Graphs."
+              "front": "What is Uses?",
+              "back": "Cycle detect, topological sort, components, path finding.",
+              "detail": "2.2.2 · Depth-First Search (DFS)"
+            },
+            {
+              "front": "Key idea (Depth-First Search (DFS))",
+              "back": "DFS forest / timestamps appear in CLRS-style analysis.",
+              "detail": "2.2.2 · concept"
+            },
+            {
+              "front": "Also remember (Depth-First Search (DFS))",
+              "back": "Not optimal shortest path in weighted graphs by itself.",
+              "detail": "2.2.2 · concept"
             }
           ],
           "mcqs": [
@@ -856,13 +1316,24 @@
           "title": "Breadth-First Search (BFS)",
           "flashcards": [
             {
-              "front": "What is Breadth-First Search (BFS)?",
-              "back": "Breadth-First Search (BFS): a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "2.2.3 · Graphs"
+              "front": "What is BFS?",
+              "back": "Explore level by level using a queue.",
+              "detail": "2.2.3 · Breadth-First Search (BFS)"
             },
             {
-              "front": "Exam focus: Breadth-First Search (BFS)",
-              "back": "Define Breadth-First Search (BFS) in one line, name when/why it is used, and contrast it with one related idea under Graphs."
+              "front": "What is Unweighted shortest path?",
+              "back": "BFS layers give fewest edges from source.",
+              "detail": "2.2.3 · Breadth-First Search (BFS)"
+            },
+            {
+              "front": "Key idea (Breadth-First Search (BFS))",
+              "back": "Queue is essential; mark visited to avoid reprocessing.",
+              "detail": "2.2.3 · concept"
+            },
+            {
+              "front": "Also remember (Breadth-First Search (BFS))",
+              "back": "Contrast with Dijkstra for weighted graphs.",
+              "detail": "2.2.3 · concept"
             }
           ],
           "mcqs": [
@@ -884,13 +1355,29 @@
           "title": "Single-Source Shortest Path",
           "flashcards": [
             {
-              "front": "What is Single-Source Shortest Path?",
-              "back": "Single-Source Shortest Path: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "2.2.4 · Graphs"
+              "front": "What is Single-source shortest path?",
+              "back": "Shortest paths from one source to all vertices.",
+              "detail": "2.2.4 · Single-Source Shortest Path"
             },
             {
-              "front": "Exam focus: Single-Source Shortest Path",
-              "back": "Define Single-Source Shortest Path in one line, name when/why it is used, and contrast it with one related idea under Graphs."
+              "front": "What is Dijkstra?",
+              "back": "Non-negative weights; greedy with priority queue.",
+              "detail": "2.2.4 · Single-Source Shortest Path"
+            },
+            {
+              "front": "What is Bellman–Ford?",
+              "back": "Handles negative edges; detects negative cycles.",
+              "detail": "2.2.4 · Single-Source Shortest Path"
+            },
+            {
+              "front": "Key idea (Single-Source Shortest Path)",
+              "back": "Dijkstra fails with negative edges.",
+              "detail": "2.2.4 · concept"
+            },
+            {
+              "front": "Also remember (Single-Source Shortest Path)",
+              "back": "Relaxation is the common primitive.",
+              "detail": "2.2.4 · concept"
             }
           ],
           "mcqs": [
@@ -912,13 +1399,29 @@
           "title": "All-Pair Shortest Path",
           "flashcards": [
             {
-              "front": "What is All-Pair Shortest Path?",
-              "back": "Module - III: Dynamic and Greedy Approach",
-              "detail": "2.2.5 · Graphs"
+              "front": "What is All-pairs shortest path?",
+              "back": "Shortest paths between every pair.",
+              "detail": "2.2.5 · All-Pair Shortest Path"
             },
             {
-              "front": "Exam focus: All-Pair Shortest Path",
-              "back": "Define All-Pair Shortest Path in one line, name when/why it is used, and contrast it with one related idea under Graphs."
+              "front": "What is Floyd–Warshall?",
+              "back": "DP over intermediate vertices; O(V^3).",
+              "detail": "2.2.5 · All-Pair Shortest Path"
+            },
+            {
+              "front": "What is Johnson’s (if taught)?",
+              "back": "Reweighting + Dijkstra from each source.",
+              "detail": "2.2.5 · All-Pair Shortest Path"
+            },
+            {
+              "front": "Key idea (All-Pair Shortest Path)",
+              "back": "Floyd works with negatives but not negative cycles.",
+              "detail": "2.2.5 · concept"
+            },
+            {
+              "front": "What about Matrix DP update?",
+              "back": "d[i][j] = min(d[i][j], d[i][k]+d[k][j]).",
+              "detail": "2.2.5 · key idea"
             }
           ],
           "mcqs": [
@@ -946,13 +1449,29 @@
           "title": "Dynamic Programming Approach",
           "flashcards": [
             {
-              "front": "What is Dynamic Programming Approach?",
-              "back": "In breaking down the problem into smaller and smaller potential sub-problems,",
-              "detail": "3.1.1 · Dynamic Programming"
+              "front": "What is Dynamic programming?",
+              "back": "Solve overlapping subproblems once; store answers.",
+              "detail": "3.1.1 · Dynamic Programming Approach"
             },
             {
-              "front": "Exam focus: Dynamic Programming Approach",
-              "back": "Define Dynamic Programming Approach in one line, name when/why it is used, and contrast it with one related idea under Dynamic Programming."
+              "front": "What is Memoisation vs tabulation?",
+              "back": "Top-down cache vs bottom-up table.",
+              "detail": "3.1.1 · Dynamic Programming Approach"
+            },
+            {
+              "front": "What is When?",
+              "back": "Optimal substructure + overlapping subproblems.",
+              "detail": "3.1.1 · Dynamic Programming Approach"
+            },
+            {
+              "front": "Key idea (Dynamic Programming Approach)",
+              "back": "DP ≠ divide-and-conquer alone (D&C may not overlap).",
+              "detail": "3.1.1 · concept"
+            },
+            {
+              "front": "Also remember (Dynamic Programming Approach)",
+              "back": "DP ≠ greedy (greedy never revisits choices systematically).",
+              "detail": "3.1.1 · concept"
             }
           ],
           "mcqs": [
@@ -974,13 +1493,24 @@
           "title": "Principle of Optimality",
           "flashcards": [
             {
-              "front": "What is Principle of Optimality?",
-              "back": "Principle of Optimality: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "3.1.2 · Dynamic Programming"
+              "front": "What is Principle of optimality?",
+              "back": "Optimal solution contains optimal solutions to subproblems.",
+              "detail": "3.1.2 · Principle of Optimality"
             },
             {
-              "front": "Exam focus: Principle of Optimality",
-              "back": "Define Principle of Optimality in one line, name when/why it is used, and contrast it with one related idea under Dynamic Programming."
+              "front": "What is Role in DP?",
+              "back": "Justifies composing sub-results into global optimum.",
+              "detail": "3.1.2 · Principle of Optimality"
+            },
+            {
+              "front": "Key idea (Principle of Optimality)",
+              "back": "If principle fails, DP formulation is invalid.",
+              "detail": "3.1.2 · concept"
+            },
+            {
+              "front": "Also remember (Principle of Optimality)",
+              "back": "Check on a small example before coding a table.",
+              "detail": "3.1.2 · concept"
             }
           ],
           "mcqs": [
@@ -1002,13 +1532,24 @@
           "title": "Strassens Matrix Multiplication",
           "flashcards": [
             {
-              "front": "What is Strassens Matrix Multiplication?",
-              "back": "Strassens Matrix Multiplication: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "3.1.3 · Dynamic Programming"
+              "front": "What is Strassen multiplication?",
+              "back": "Faster matrix multiply than naïve O(n^3) using 7 recursive multiplies.",
+              "detail": "3.1.3 · Strassens Matrix Multiplication"
             },
             {
-              "front": "Exam focus: Strassens Matrix Multiplication",
-              "back": "Define Strassens Matrix Multiplication in one line, name when/why it is used, and contrast it with one related idea under Dynamic Programming."
+              "front": "What is Idea?",
+              "back": "Algebraic recombination reduces multiplications; adds more additions.",
+              "detail": "3.1.3 · Strassens Matrix Multiplication"
+            },
+            {
+              "front": "Key idea (Strassens Matrix Multiplication)",
+              "back": "Asymptotically better; constants/practicality may vary.",
+              "detail": "3.1.3 · concept"
+            },
+            {
+              "front": "Also remember (Strassens Matrix Multiplication)",
+              "back": "Still divide-and-conquer on quadrants.",
+              "detail": "3.1.3 · concept"
             }
           ],
           "mcqs": [
@@ -1030,13 +1571,24 @@
           "title": "Matrix Chain Multiplication",
           "flashcards": [
             {
-              "front": "What is Matrix Chain Multiplication?",
-              "back": "Matrix Chain Multiplication: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "3.1.4 · Dynamic Programming"
+              "front": "What is Matrix chain multiplication?",
+              "back": "Parenthesise matrix product to minimise scalar multiplies.",
+              "detail": "3.1.4 · Matrix Chain Multiplication"
             },
             {
-              "front": "Exam focus: Matrix Chain Multiplication",
-              "back": "Define Matrix Chain Multiplication in one line, name when/why it is used, and contrast it with one related idea under Dynamic Programming."
+              "front": "What is DP?",
+              "back": "Interval DP over chain length.",
+              "detail": "3.1.4 · Matrix Chain Multiplication"
+            },
+            {
+              "front": "Key idea (Matrix Chain Multiplication)",
+              "back": "Order of multiplication changes cost, not the mathematical product.",
+              "detail": "3.1.4 · concept"
+            },
+            {
+              "front": "Also remember (Matrix Chain Multiplication)",
+              "back": "Classic DP table m[i][j].",
+              "detail": "3.1.4 · concept"
             }
           ],
           "mcqs": [
@@ -1058,13 +1610,24 @@
           "title": "Longest Common subsequence",
           "flashcards": [
             {
-              "front": "What is Longest Common subsequence?",
-              "back": "Longest Common subsequence: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "3.1.5 · Dynamic Programming"
+              "front": "What is LCS?",
+              "back": "Longest common subsequence of two strings (not necessarily contiguous).",
+              "detail": "3.1.5 · Longest Common subsequence"
             },
             {
-              "front": "Exam focus: Longest Common subsequence",
-              "back": "Define Longest Common subsequence in one line, name when/why it is used, and contrast it with one related idea under Dynamic Programming."
+              "front": "What is DP table?",
+              "back": "If chars equal, diagonal+1; else max of skip either.",
+              "detail": "3.1.5 · Longest Common subsequence"
+            },
+            {
+              "front": "Key idea (Longest Common subsequence)",
+              "back": "Subsequence ≠ substring (substring is contiguous).",
+              "detail": "3.1.5 · concept"
+            },
+            {
+              "front": "Also remember (Longest Common subsequence)",
+              "back": "Used in diff tools / bioinformatics examples.",
+              "detail": "3.1.5 · concept"
             }
           ],
           "mcqs": [
@@ -1086,13 +1649,29 @@
           "title": "0/1 Knapsack Problem",
           "flashcards": [
             {
-              "front": "What is 0/1 Knapsack Problem?",
-              "back": "0/1 Knapsack Problem: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "3.1.6 · Dynamic Programming"
+              "front": "What is 0/1 knapsack?",
+              "back": "Each item take or not; maximise value under weight limit.",
+              "detail": "3.1.6 · 0/1 Knapsack Problem"
             },
             {
-              "front": "Exam focus: 0/1 Knapsack Problem",
-              "back": "Define 0/1 Knapsack Problem in one line, name when/why it is used, and contrast it with one related idea under Dynamic Programming."
+              "front": "What is DP?",
+              "back": "dp[i][w] style; pseudo-polynomial in capacity.",
+              "detail": "3.1.6 · 0/1 Knapsack Problem"
+            },
+            {
+              "front": "What is Not fractional?",
+              "back": "Cannot break items.",
+              "detail": "3.1.6 · 0/1 Knapsack Problem"
+            },
+            {
+              "front": "Key idea (0/1 Knapsack Problem)",
+              "back": "Contrast fractional knapsack (greedy by value/weight).",
+              "detail": "3.1.6 · concept"
+            },
+            {
+              "front": "Also remember (0/1 Knapsack Problem)",
+              "back": "NP-hard as optimisation in general; DP works for integer capacity.",
+              "detail": "3.1.6 · concept"
             }
           ],
           "mcqs": [
@@ -1114,13 +1693,29 @@
           "title": "Introduction of Greedy Approach",
           "flashcards": [
             {
-              "front": "What is Introduction of Greedy Approach?",
-              "back": "Introduction of Greedy Approach: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "3.2.1 · Greedy Approach"
+              "front": "What is Greedy approach?",
+              "back": "Build solution by locally best choice at each step.",
+              "detail": "3.2.1 · Introduction of Greedy Approach"
             },
             {
-              "front": "Exam focus: Introduction of Greedy Approach",
-              "back": "Define Introduction of Greedy Approach in one line, name when/why it is used, and contrast it with one related idea under Greedy Approach."
+              "front": "What is Greedy choice property?",
+              "back": "Local optimum can lead to global (when algorithm is correct).",
+              "detail": "3.2.1 · Introduction of Greedy Approach"
+            },
+            {
+              "front": "What is Exchange argument?",
+              "back": "Proof style that swaps to show optimality.",
+              "detail": "3.2.1 · Introduction of Greedy Approach"
+            },
+            {
+              "front": "Greedy is fast but not always optimal?",
+              "back": "need a proof or known pattern.",
+              "detail": "3.2.1 · key idea"
+            },
+            {
+              "front": "What about Examples?",
+              "back": "activity selection, Huffman, fractional knapsack.",
+              "detail": "3.2.1 · key idea"
             }
           ],
           "mcqs": [
@@ -1142,13 +1737,24 @@
           "title": "Activity Selection Problem",
           "flashcards": [
             {
-              "front": "What is Activity Selection Problem?",
-              "back": "Activity Selection Problem: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "3.2.2 · Greedy Approach"
+              "front": "What is Activity selection?",
+              "back": "Select max non-overlapping activities.",
+              "detail": "3.2.2 · Activity Selection Problem"
             },
             {
-              "front": "Exam focus: Activity Selection Problem",
-              "back": "Define Activity Selection Problem in one line, name when/why it is used, and contrast it with one related idea under Greedy Approach."
+              "front": "What is Greedy rule?",
+              "back": "Usually earliest finishing time first.",
+              "detail": "3.2.2 · Activity Selection Problem"
+            },
+            {
+              "front": "Key idea (Activity Selection Problem)",
+              "back": "Sort by finish time, then pick compatible next.",
+              "detail": "3.2.2 · concept"
+            },
+            {
+              "front": "Also remember (Activity Selection Problem)",
+              "back": "Classic proof via greedy choice + optimal substructure.",
+              "detail": "3.2.2 · concept"
             }
           ],
           "mcqs": [
@@ -1170,13 +1776,29 @@
           "title": "Huffman Codes",
           "flashcards": [
             {
-              "front": "What is Huffman Codes?",
-              "back": "Huffman Codes: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "3.2.3 · Greedy Approach"
+              "front": "What is Huffman codes?",
+              "back": "Optimal prefix codes using frequency-greedy tree.",
+              "detail": "3.2.3 · Huffman Codes"
             },
             {
-              "front": "Exam focus: Huffman Codes",
-              "back": "Define Huffman Codes in one line, name when/why it is used, and contrast it with one related idea under Greedy Approach."
+              "front": "What is Prefix-free?",
+              "back": "No codeword is prefix of another — unique decode.",
+              "detail": "3.2.3 · Huffman Codes"
+            },
+            {
+              "front": "What is Build?",
+              "back": "Repeatedly merge two least frequent nodes.",
+              "detail": "3.2.3 · Huffman Codes"
+            },
+            {
+              "front": "Key idea (Huffman Codes)",
+              "back": "More frequent symbols → shorter codes.",
+              "detail": "3.2.3 · concept"
+            },
+            {
+              "front": "Also remember (Huffman Codes)",
+              "back": "Related to binary trees and priority queues.",
+              "detail": "3.2.3 · concept"
             }
           ],
           "mcqs": [
@@ -1198,13 +1820,24 @@
           "title": "Fractional Knapsack Problem",
           "flashcards": [
             {
-              "front": "What is Fractional Knapsack Problem?",
-              "back": "Fractional Knapsack Problem: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "3.2.4 · Greedy Approach"
+              "front": "What is Fractional knapsack?",
+              "back": "May take fraction of an item.",
+              "detail": "3.2.4 · Fractional Knapsack Problem"
             },
             {
-              "front": "Exam focus: Fractional Knapsack Problem",
-              "back": "Define Fractional Knapsack Problem in one line, name when/why it is used, and contrast it with one related idea under Greedy Approach."
+              "front": "What is Greedy?",
+              "back": "Sort by value/weight ratio; take until capacity fills.",
+              "detail": "3.2.4 · Fractional Knapsack Problem"
+            },
+            {
+              "front": "Key idea (Fractional Knapsack Problem)",
+              "back": "Optimal for fractional case; not for 0/1.",
+              "detail": "3.2.4 · concept"
+            },
+            {
+              "front": "Also remember (Fractional Knapsack Problem)",
+              "back": "Last item may be taken partially.",
+              "detail": "3.2.4 · concept"
             }
           ],
           "mcqs": [
@@ -1226,13 +1859,29 @@
           "title": "Traveling Salesman Problem",
           "flashcards": [
             {
-              "front": "What is Traveling Salesman Problem?",
-              "back": "Traveling Salesman Problem: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "3.3.1 · Branch and Bound Approach"
+              "front": "What is TSP?",
+              "back": "Visit each city once and return; minimise tour length.",
+              "detail": "3.3.1 · Traveling Salesman Problem"
             },
             {
-              "front": "Exam focus: Traveling Salesman Problem",
-              "back": "Define Traveling Salesman Problem in one line, name when/why it is used, and contrast it with one related idea under Branch and Bound Approach."
+              "front": "What is Hardness?",
+              "back": "Classic NP-hard optimisation problem.",
+              "detail": "3.3.1 · Traveling Salesman Problem"
+            },
+            {
+              "front": "What is Approaches?",
+              "back": "Brute force, DP (Held–Karp), heuristics/approx.",
+              "detail": "3.3.1 · Traveling Salesman Problem"
+            },
+            {
+              "front": "Brute force is factorial?",
+              "back": "not scalable.",
+              "detail": "3.3.1 · key idea"
+            },
+            {
+              "front": "Also remember (Traveling Salesman Problem)",
+              "back": "Don’t claim a simple greedy always optimal for general TSP.",
+              "detail": "3.3.1 · concept"
             }
           ],
           "mcqs": [
@@ -1254,13 +1903,24 @@
           "title": "Knapsack Problem",
           "flashcards": [
             {
-              "front": "What is Knapsack Problem?",
-              "back": "Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.",
-              "detail": "3.3.2 · Branch and Bound Approach"
+              "front": "What is Knapsack problem (general)?",
+              "back": "Select items under capacity to maximise value.",
+              "detail": "3.3.2 · Knapsack Problem"
             },
             {
-              "front": "Exam focus: Knapsack Problem",
-              "back": "Define Knapsack Problem in one line, name when/why it is used, and contrast it with one related idea under Branch and Bound Approach."
+              "front": "What is Variants?",
+              "back": "0/1, fractional, unbounded — different algorithms.",
+              "detail": "3.3.2 · Knapsack Problem"
+            },
+            {
+              "front": "Key idea (Knapsack Problem)",
+              "back": "Name the variant before choosing DP vs greedy.",
+              "detail": "3.3.2 · concept"
+            },
+            {
+              "front": "Also remember (Knapsack Problem)",
+              "back": "Syllabus may revisit knapsack under ‘problems’ cluster.",
+              "detail": "3.3.2 · concept"
             }
           ],
           "mcqs": [
@@ -1282,13 +1942,24 @@
           "title": "Job Sequencing",
           "flashcards": [
             {
-              "front": "What is Job Sequencing?",
-              "back": "Module - IV: E String Matching Algorithms and Approximation Algorithms",
-              "detail": "3.3.3 · Branch and Bound Approach"
+              "front": "What is Job sequencing?",
+              "back": "Schedule jobs to maximise profit under constraints (often deadlines/slots).",
+              "detail": "3.3.3 · Job Sequencing"
             },
             {
-              "front": "Exam focus: Job Sequencing",
-              "back": "Define Job Sequencing in one line, name when/why it is used, and contrast it with one related idea under Branch and Bound Approach."
+              "front": "What is Greedy pattern?",
+              "back": "Often sort by profit; place in latest free slot before deadline.",
+              "detail": "3.3.3 · Job Sequencing"
+            },
+            {
+              "front": "Key idea (Job Sequencing)",
+              "back": "Related to deadline scheduling themes.",
+              "detail": "3.3.3 · concept"
+            },
+            {
+              "front": "Also remember (Job Sequencing)",
+              "back": "Check whether multiple slots / unit time jobs assumed.",
+              "detail": "3.3.3 · concept"
             }
           ],
           "mcqs": [
@@ -1310,13 +1981,24 @@
           "title": "Job Sequencing with Deadline",
           "flashcards": [
             {
-              "front": "What is Job Sequencing with Deadline?",
-              "back": "Module - IV: E String Matching Algorithms and Approximation Algorithms",
-              "detail": "3.3.4 · Branch and Bound Approach"
+              "front": "What is Job sequencing with deadline?",
+              "back": "Unit-time jobs with deadlines and profits; maximise profit.",
+              "detail": "3.3.4 · Job Sequencing with Deadline"
             },
             {
-              "front": "Exam focus: Job Sequencing with Deadline",
-              "back": "Define Job Sequencing with Deadline in one line, name when/why it is used, and contrast it with one related idea under Branch and Bound Approach."
+              "front": "What is Method?",
+              "back": "Sort profits descending; assign to feasible time slot.",
+              "detail": "3.3.4 · Job Sequencing with Deadline"
+            },
+            {
+              "front": "What about Feasibility?",
+              "back": "finish by deadline.",
+              "detail": "3.3.4 · key idea"
+            },
+            {
+              "front": "Also remember (Job Sequencing with Deadline)",
+              "back": "Greedy placement into latest possible slot is common.",
+              "detail": "3.3.4 · concept"
             }
           ],
           "mcqs": [
@@ -1344,13 +2026,24 @@
           "title": "Naïve String Matching Algorithm",
           "flashcards": [
             {
-              "front": "What is Naïve String Matching Algorithm?",
-              "back": "Naïve String Matching Algorithm: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "4.1.1 · String Matching Algorithm"
+              "front": "What is Naïve string matching?",
+              "back": "Try P at every shift of T; compare chars.",
+              "detail": "4.1.1 · Naïve String Matching Algorithm"
             },
             {
-              "front": "Exam focus: Naïve String Matching Algorithm",
-              "back": "Define Naïve String Matching Algorithm in one line, name when/why it is used, and contrast it with one related idea under String Matching Algorithm."
+              "front": "What is Time?",
+              "back": "O((n−m+1)m) worst case.",
+              "detail": "4.1.1 · Naïve String Matching Algorithm"
+            },
+            {
+              "front": "Key idea (Naïve String Matching Algorithm)",
+              "back": "Simple baseline for Rabin–Karp / KMP comparisons.",
+              "detail": "4.1.1 · concept"
+            },
+            {
+              "front": "Also remember (Naïve String Matching Algorithm)",
+              "back": "Many mismatches still cost comparisons.",
+              "detail": "4.1.1 · concept"
             }
           ],
           "mcqs": [
@@ -1372,13 +2065,29 @@
           "title": "String Matching Algorithm: Rabin Karp",
           "flashcards": [
             {
-              "front": "What is String Matching Algorithm: Rabin Karp?",
-              "back": "Module - IV: E String Matching Algorithms and Approximation Algorithms",
-              "detail": "4.1.3 · String Matching Algorithm"
+              "front": "What is Rabin–Karp?",
+              "back": "Rolling hash of windows; verify on hash hit.",
+              "detail": "4.1.3 · String Matching Algorithm: Rabin Karp"
             },
             {
-              "front": "Exam focus: String Matching Algorithm: Rabin Karp",
-              "back": "Define String Matching Algorithm: Rabin Karp in one line, name when/why it is used, and contrast it with one related idea under String Matching Algorithm."
+              "front": "What is Spurious hit?",
+              "back": "Hash match but strings differ — must verify.",
+              "detail": "4.1.3 · String Matching Algorithm: Rabin Karp"
+            },
+            {
+              "front": "What is Average?",
+              "back": "Good with strong hash; worst can degrade.",
+              "detail": "4.1.3 · String Matching Algorithm: Rabin Karp"
+            },
+            {
+              "front": "Key idea (String Matching Algorithm: Rabin Karp)",
+              "back": "Rolling hash updates in O(1) per shift.",
+              "detail": "4.1.3 · concept"
+            },
+            {
+              "front": "Also remember (String Matching Algorithm: Rabin Karp)",
+              "back": "Multiple patterns can share hashing ideas.",
+              "detail": "4.1.3 · concept"
             }
           ],
           "mcqs": [
@@ -1400,13 +2109,24 @@
           "title": "Vertex-Cover Algorithm",
           "flashcards": [
             {
-              "front": "What is Vertex-Cover Algorithm?",
-              "back": "Vertex-Cover Algorithm: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "4.2.1 · Approximation Algorithm"
+              "front": "What is Vertex cover?",
+              "back": "Set of vertices incident to every edge.",
+              "detail": "4.2.1 · Vertex-Cover Algorithm"
             },
             {
-              "front": "Exam focus: Vertex-Cover Algorithm",
-              "back": "Define Vertex-Cover Algorithm in one line, name when/why it is used, and contrast it with one related idea under Approximation Algorithm."
+              "front": "What is Approx algorithm?",
+              "back": "Classic 2-approx: pick both ends of an uncovered edge, repeat.",
+              "detail": "4.2.1 · Vertex-Cover Algorithm"
+            },
+            {
+              "front": "Key idea (Vertex-Cover Algorithm)",
+              "back": "Decision version is NP-complete; approx is taught for algorithms design.",
+              "detail": "4.2.1 · concept"
+            },
+            {
+              "front": "Minimal vs minimum?",
+              "back": "wording matters.",
+              "detail": "4.2.1 · key idea"
             }
           ],
           "mcqs": [
@@ -1428,13 +2148,24 @@
           "title": "Set Covering Problem",
           "flashcards": [
             {
-              "front": "What is Set Covering Problem?",
-              "back": "Set Covering Problem: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "4.2.2 · Approximation Algorithm"
+              "front": "What is Set cover?",
+              "back": "Cover universe with minimum number of subsets.",
+              "detail": "4.2.2 · Set Covering Problem"
             },
             {
-              "front": "Exam focus: Set Covering Problem",
-              "back": "Define Set Covering Problem in one line, name when/why it is used, and contrast it with one related idea under Approximation Algorithm."
+              "front": "What is Greedy approx?",
+              "back": "Repeatedly pick set covering most remaining elements.",
+              "detail": "4.2.2 · Set Covering Problem"
+            },
+            {
+              "front": "Key idea (Set Covering Problem)",
+              "back": "NP-hard; greedy gives logarithmic approximation classically.",
+              "detail": "4.2.2 · concept"
+            },
+            {
+              "front": "Also remember (Set Covering Problem)",
+              "back": "Related to hitting-set formulations.",
+              "detail": "4.2.2 · concept"
             }
           ],
           "mcqs": [
@@ -1456,13 +2187,24 @@
           "title": "Randomisation and Linear Programming",
           "flashcards": [
             {
-              "front": "What is Randomisation and Linear Programming?",
-              "back": "Randomisation and Linear Programming: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "4.2.3 · Approximation Algorithm"
+              "front": "What is Randomisation?",
+              "back": "Algorithms that use randomness for speed/simplicity (expected performance).",
+              "detail": "4.2.3 · Randomisation and Linear Programming"
             },
             {
-              "front": "Exam focus: Randomisation and Linear Programming",
-              "back": "Define Randomisation and Linear Programming in one line, name when/why it is used, and contrast it with one related idea under Approximation Algorithm."
+              "front": "What is Linear programming?",
+              "back": "Optimise linear objective under linear constraints — algorithmic tool.",
+              "detail": "4.2.3 · Randomisation and Linear Programming"
+            },
+            {
+              "front": "Key idea (Randomisation and Linear Programming)",
+              "back": "Syllabus pairs ideas for advanced design techniques.",
+              "detail": "4.2.3 · concept"
+            },
+            {
+              "front": "Also remember (Randomisation and Linear Programming)",
+              "back": "Randomised algorithms need expected/high-probability analysis.",
+              "detail": "4.2.3 · concept"
             }
           ],
           "mcqs": [
@@ -1484,13 +2226,24 @@
           "title": "The Subset-sum Problem",
           "flashcards": [
             {
-              "front": "What is The Subset-sum Problem?",
-              "back": "The Subset-sum Problem: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "4.2.4 · Approximation Algorithm"
+              "front": "What is Subset-sum?",
+              "back": "Is there a subset summing to target t?",
+              "detail": "4.2.4 · The Subset-sum Problem"
             },
             {
-              "front": "Exam focus: The Subset-sum Problem",
-              "back": "Define The Subset-sum Problem in one line, name when/why it is used, and contrast it with one related idea under Approximation Algorithm."
+              "front": "What is Hardness / DP?",
+              "back": "NP-complete decision; pseudo-poly DP possible.",
+              "detail": "4.2.4 · The Subset-sum Problem"
+            },
+            {
+              "front": "Key idea (The Subset-sum Problem)",
+              "back": "Related to knapsack decision version.",
+              "detail": "4.2.4 · concept"
+            },
+            {
+              "front": "Also remember (The Subset-sum Problem)",
+              "back": "Meet-in-the-middle sometimes taught for moderate n.",
+              "detail": "4.2.4 · concept"
             }
           ],
           "mcqs": [
@@ -1518,13 +2271,24 @@
           "title": "Green Technology",
           "flashcards": [
             {
-              "front": "What is Green Technology?",
-              "back": "Green Technology: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.1.1 · Polynomial Time"
+              "front": "What is Green technology (in this module)?",
+              "back": "Efficiency/resource-conscious computing themes tied to algorithmic cost.",
+              "detail": "5.1.1 · Green Technology"
             },
             {
-              "front": "Exam focus: Green Technology",
-              "back": "Define Green Technology in one line, name when/why it is used, and contrast it with one related idea under Polynomial Time."
+              "front": "What is Link to complexity?",
+              "back": "Fewer operations / less energy as a motivation for better algorithms.",
+              "detail": "5.1.1 · Green Technology"
+            },
+            {
+              "front": "Key idea (Green Technology)",
+              "back": "Treat as syllabus framing unless SLM gives a narrower definition.",
+              "detail": "5.1.1 · concept"
+            },
+            {
+              "front": "Also remember (Green Technology)",
+              "back": "Connect to choosing efficient algorithms over naïve ones.",
+              "detail": "5.1.1 · concept"
             }
           ],
           "mcqs": [
@@ -1546,13 +2310,24 @@
           "title": "Hamiltonian Cycles",
           "flashcards": [
             {
-              "front": "What is Hamiltonian Cycles?",
-              "back": "Hamiltonian Cycles: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.1.2 · Polynomial Time"
+              "front": "What is Hamiltonian cycle?",
+              "back": "Cycle visiting each vertex exactly once and returning.",
+              "detail": "5.1.2 · Hamiltonian Cycles"
             },
             {
-              "front": "Exam focus: Hamiltonian Cycles",
-              "back": "Define Hamiltonian Cycles in one line, name when/why it is used, and contrast it with one related idea under Polynomial Time."
+              "front": "What is Hardness?",
+              "back": "Deciding existence is NP-complete (classic).",
+              "detail": "5.1.2 · Hamiltonian Cycles"
+            },
+            {
+              "front": "What about Vs Euler tour?",
+              "back": "Euler uses every edge; Hamiltonian every vertex.",
+              "detail": "5.1.2 · key idea"
+            },
+            {
+              "front": "Also remember (Hamiltonian Cycles)",
+              "back": "TSP optimisation builds on Hamiltonian ideas.",
+              "detail": "5.1.2 · concept"
             }
           ],
           "mcqs": [
@@ -1574,13 +2349,24 @@
           "title": "NP-completeness Proofs",
           "flashcards": [
             {
-              "front": "What is NP-completeness Proofs?",
-              "back": "NP-completeness Proofs: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.2.1 · NP-Completeness"
+              "front": "What is NP-completeness proof?",
+              "back": "Show problem in NP + polynomial reduction from known NP-complete problem.",
+              "detail": "5.2.1 · NP-completeness Proofs"
             },
             {
-              "front": "Exam focus: NP-completeness Proofs",
-              "back": "Define NP-completeness Proofs in one line, name when/why it is used, and contrast it with one related idea under NP-Completeness."
+              "front": "What is Certificate?",
+              "back": "Short verifiable witness for yes instances (for NP).",
+              "detail": "5.2.1 · NP-completeness Proofs"
+            },
+            {
+              "front": "What about Reduction direction?",
+              "back": "known hard ≤p your problem.",
+              "detail": "5.2.1 · key idea"
+            },
+            {
+              "front": "Also remember (NP-completeness Proofs)",
+              "back": "Polynomial-time verification ≠ polynomial-time solving.",
+              "detail": "5.2.1 · concept"
             }
           ],
           "mcqs": [
@@ -1602,13 +2388,24 @@
           "title": "NP-completeness Problems",
           "flashcards": [
             {
-              "front": "What is NP-completeness Problems?",
-              "back": "NP-completeness Problems: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.2.2 · NP-Completeness"
+              "front": "What is NP-complete problems?",
+              "back": "Hardest problems in NP (under poly reductions).",
+              "detail": "5.2.2 · NP-completeness Problems"
             },
             {
-              "front": "Exam focus: NP-completeness Problems",
-              "back": "Define NP-completeness Problems in one line, name when/why it is used, and contrast it with one related idea under NP-Completeness."
+              "front": "What is Examples?",
+              "back": "SAT, vertex cover decision, Hamiltonian cycle, subset-sum, …",
+              "detail": "5.2.2 · NP-completeness Problems"
+            },
+            {
+              "front": "Key idea (NP-completeness Problems)",
+              "back": "If any NP-complete problem has poly algorithm, P=NP.",
+              "detail": "5.2.2 · concept"
+            },
+            {
+              "front": "Also remember (NP-completeness Problems)",
+              "back": "Practice recognising ‘decision version’ wording.",
+              "detail": "5.2.2 · concept"
             }
           ],
           "mcqs": [
@@ -1630,13 +2427,24 @@
           "title": "NP-Hard and SAT Problems",
           "flashcards": [
             {
-              "front": "What is NP-Hard and SAT Problems?",
-              "back": "NP-Hard and SAT Problems: a syllabus topic in this module — learn the definition, when it is used, key operations/steps, and one contrast with a related concept.",
-              "detail": "5.2.3 · NP-Completeness"
+              "front": "What is NP-hard?",
+              "back": "At least as hard as NP-complete; may not be in NP.",
+              "detail": "5.2.3 · NP-Hard and SAT Problems"
             },
             {
-              "front": "Exam focus: NP-Hard and SAT Problems",
-              "back": "Define NP-Hard and SAT Problems in one line, name when/why it is used, and contrast it with one related idea under NP-Completeness."
+              "front": "What is SAT?",
+              "back": "Satisfiability of Boolean formulas — central NP-complete problem.",
+              "detail": "5.2.3 · NP-Hard and SAT Problems"
+            },
+            {
+              "front": "Key idea (NP-Hard and SAT Problems)",
+              "back": "NP-hard includes problems outside NP (e.g. some optimisation/undecidable-adjacent teaching examples).",
+              "detail": "5.2.3 · concept"
+            },
+            {
+              "front": "Also remember (NP-Hard and SAT Problems)",
+              "back": "SAT is the usual reduction source.",
+              "detail": "5.2.3 · concept"
             }
           ],
           "mcqs": [
@@ -1658,13 +2466,24 @@
           "title": "NP-completeness and Reducibility",
           "flashcards": [
             {
-              "front": "What is NP-completeness and Reducibility?",
-              "back": "Let L1 and L2 alone be two choice issues. Assume calculation A2 settles L2. That",
-              "detail": "5.2.4 · NP-Completeness"
+              "front": "What is Reducibility?",
+              "back": "Problem A ≤p B if A transforms to B in poly time.",
+              "detail": "5.2.4 · NP-completeness and Reducibility"
             },
             {
-              "front": "Exam focus: NP-completeness and Reducibility",
-              "back": "Define NP-completeness and Reducibility in one line, name when/why it is used, and contrast it with one related idea under NP-Completeness."
+              "front": "What is Meaning?",
+              "back": "B is at least as hard as A (for hardness proofs).",
+              "detail": "5.2.4 · NP-completeness and Reducibility"
+            },
+            {
+              "front": "Key idea (NP-completeness and Reducibility)",
+              "back": "Cook–Levin historically links SAT to NP-completeness theory.",
+              "detail": "5.2.4 · concept"
+            },
+            {
+              "front": "Also remember (NP-completeness and Reducibility)",
+              "back": "Always state what reduces to what.",
+              "detail": "5.2.4 · concept"
             }
           ],
           "mcqs": [
