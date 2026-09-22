@@ -194,7 +194,6 @@ def build_subject(code: str) -> None:
 
     modules_out = []
     maps_modules = []
-    lmr_lines = []
 
     kinds = ["a", "b", "c"]
     toc_hits = 0
@@ -244,6 +243,8 @@ def build_subject(code: str) -> None:
                     "explain": f"{title}: {definition}",
                 })
             topics.append({"id": tid, "title": title, "flashcards": fc, "mcqs": mcqs})
+            # LMR is never auto-assigned (no first-N rule). Hand-picked flags
+            # come from deep notes via apply_handpicked_lmr.py after outline gen.
             level_nodes.append(
                 {
                     "id": tid,
@@ -251,11 +252,9 @@ def build_subject(code: str) -> None:
                     "sub": parent_title[:36],
                     "kind": kinds[i % 3],
                     "topicId": tid,
-                    "lmr": i < 3,
+                    "lmr": False,
                 }
             )
-            if i < 3:
-                lmr_lines.append(f"{len(lmr_lines)+1}. {tid} {title} — Module {mid} priority.")
 
         chunk = max(1, (len(level_nodes) + 2) // 3)
         levels = []
@@ -280,7 +279,7 @@ def build_subject(code: str) -> None:
                     "body": f"Study map for Module {mid} of {meta['course']}. Click a topic for Overview and Deep notes, then practise MCQs.",
                     "points": [
                         "Built from the SLM outline + PDF definitions where available",
-                        "Orange LMR badges mark first-pass priorities",
+                        "Orange LMR badges mark hand-picked exam priorities from study materials",
                     ],
                 },
                 "levels": levels,
@@ -291,7 +290,11 @@ def build_subject(code: str) -> None:
     maps = {"modules": maps_modules}
     (dest / "_study_facts.json").write_text(json.dumps(facts, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (dest / "_module_maps.json").write_text(json.dumps(maps, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    lmr = f"{meta['course']} — LMR priorities\n\n" + "\n".join(lmr_lines[:16]) + "\n"
+    # Placeholder only — run apply_handpicked_lmr.py after deep notes exist.
+    lmr = (
+        f"{meta['course']} — LMR priorities (hand-picked from study materials)\n\n"
+        "Run apply_handpicked_lmr.py after handcrafted deep notes are written.\n"
+    )
     (dest / "_lmr_notes.txt").write_text(lmr, encoding="utf-8")
     n_fc = sum(len(t["flashcards"]) for m in modules_out for t in m["topics"])
     n_q = sum(len(t["mcqs"]) for m in modules_out for t in m["topics"])

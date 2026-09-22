@@ -26,7 +26,8 @@
     "notes": [
       "Prioritise LMR: attacks, services/mechanisms, classical techniques.",
       "Never answer “encryption” when the stem asks for a service name (confidentiality)."
-    ]
+    ],
+    "lmr": false
   },
   "m2_root": {
     "terms": [
@@ -55,7 +56,8 @@
     "notes": [
       "LMR first: block principles, Shannon C&D, Feistel.",
       "Trap: confusing Feistel rounds with AES SubBytes/ShiftRows/MixColumns."
-    ]
+    ],
+    "lmr": false
   },
   "m3_root": {
     "terms": [
@@ -80,7 +82,8 @@
     "notes": [
       "LMR: intro MACs, authentication functions, requirements.",
       "Stem “shared secret tag” → MAC; “no shared secret digest” → hash."
-    ]
+    ],
+    "lmr": false
   },
   "m4_root": {
     "terms": [
@@ -109,7 +112,8 @@
     "notes": [
       "LMR: Kerberos, ACL, PGP.",
       "Don’t mix SET payment flow with generic SSL shopping sites."
-    ]
+    ],
+    "lmr": false
   },
   "m5_root": {
     "terms": [
@@ -138,7 +142,8 @@
     "notes": [
       "LMR: intrusion idea, IDS techniques, viruses/worms.",
       "Email tracing belongs under forensics (headers), not PGP crypto."
-    ]
+    ],
+    "lmr": false
   },
   "1.1.1": {
     "terms": [
@@ -180,7 +185,8 @@
       "Fabrication ≠ modification: insert new fake object vs change existing one.",
       "Trap: calling traffic analysis “active” because it feels invasive — it is passive.",
       "One-line: attacks threaten CIA; mechanisms implement services that counter them."
-    ]
+    ],
+    "lmr": true
   },
   "1.1.2": {
     "terms": [
@@ -222,7 +228,8 @@
       "Authentication ≠ authorisation: identity proof vs permission to act.",
       "Non-repudiation usually needs signatures/trusted third party — not only a MAC.",
       "Trap: listing CIA alone when the question asks for ITU/X.800-style service list."
-    ]
+    ],
+    "lmr": true
   },
   "1.1.3": {
     "terms": [
@@ -263,7 +270,8 @@
       "Don’t confuse cryptography (design) with cryptanalysis (attack/analysis).",
       "Kerckhoffs principle: assume adversary knows the algorithm.",
       "Exam one-liner: classical crypto = substitution + transposition under a shared key."
-    ]
+    ],
+    "lmr": true
   },
   "1.1.4": {
     "terms": [
@@ -298,7 +306,8 @@
       "Stem “one mapping for all letters” → monoalphabetic.",
       "Trap: claiming polyalphabetic is unbreakable — Kasiski/Friedman still apply.",
       "Frequency analysis hits monoalphabetic hardest."
-    ]
+    ],
+    "lmr": false
   },
   "1.1.5": {
     "terms": [
@@ -329,7 +338,8 @@
       "Trap: calling columnar a substitution because a keyword is used — keyword orders columns.",
       "Rail fence key is often the number of rails.",
       "Cryptanalysis may use anagramming / multiple anagramming on short texts."
-    ]
+    ],
+    "lmr": false
   },
   "1.1.6": {
     "terms": [
@@ -364,7 +374,8 @@
       "Trap: equating “cryptanalysis” with only brute force.",
       "Exhaustive search cost scales with key space size.",
       "Modern ciphers aim to make all practical attack models infeasible."
-    ]
+    ],
+    "lmr": false
   },
   "1.1.7": {
     "terms": [
@@ -395,7 +406,8 @@
       "Stem “make message unreadable” → cryptography.",
       "Trap: calling watermarking the same as secret messaging — related but goals differ.",
       "Capacity vs undetectability is the usual trade-off."
-    ]
+    ],
+    "lmr": false
   },
   "1.1.8": {
     "terms": [
@@ -430,7 +442,8 @@
       "Stem “encrypt 128-bit chunks” → block cipher.",
       "Trap: reusing the same stream keystream for two messages → plaintext recovery.",
       "ECB/CBC are modes of block ciphers, not stream ciphers themselves."
-    ]
+    ],
+    "lmr": false
   },
   "1.1.9": {
     "terms": [
@@ -461,7 +474,8 @@
       "Trap: assuming AES in software is automatically safe on embedded devices.",
       "Hardware security complements, does not replace, algorithmic crypto strength.",
       "Exam: define + one example (TPM, smart card, secure enclave)."
-    ]
+    ],
+    "lmr": false
   },
   "2.1.1": {
     "terms": [
@@ -498,7 +512,8 @@
       "Avalanche: one-bit plaintext/key change should flip ~half the ciphertext bits.",
       "Don’t confuse key length with number of rounds.",
       "Exam: principles precede named algorithms (DES/AES)."
-    ]
+    ],
+    "lmr": true
   },
   "2.1.2": {
     "terms": [
@@ -535,7 +550,8 @@
       "Trap: swapping the two definitions — common MCQ fail.",
       "S-box without diffusion still leaves structure; permutation without nonlinear S-boxes is weak.",
       "Link answer to a concrete layer (S-box vs MixColumns) when asked “how AES achieves…”."
-    ]
+    ],
+    "lmr": true
   },
   "2.1.3": {
     "terms": [
@@ -572,7 +588,8 @@
       "Why F needn’t be invertible: XOR undoes the combination if F output is known from the other half.",
       "More rounds ≠ automatically secure if F is weak — design of F matters.",
       "Exam sketch: diagram L0 R0 → rounds → ciphertext halves."
-    ]
+    ],
+    "lmr": true
   },
   "2.1.4": {
     "terms": [
@@ -607,7 +624,8 @@
       "Trap: saying DES key is 64-bit secure — 8 bits are parity.",
       "Don’t confuse DES f-function expansion with AES MixColumns.",
       "IP/FP add no cryptographic strength alone — they are fixed permutations."
-    ]
+    ],
+    "lmr": false
   },
   "2.1.5": {
     "terms": [
@@ -638,7 +656,8 @@
       "Trap: claiming differential cryptanalysis “breaks DES instantly” — historically guided design; full attack still expensive.",
       "Weak keys are rare but examiners love the term.",
       "Security of DES ≠ security of a DES-like cipher with longer keys."
-    ]
+    ],
+    "lmr": false
   },
   "2.1.6": {
     "terms": [
@@ -669,7 +688,8 @@
       "Trap: confusing with traffic analysis or side-channel power analysis.",
       "Not the same as a simple known-plaintext lookup.",
       "Mention probability of characteristics if asked for method outline."
-    ]
+    ],
+    "lmr": false
   },
   "2.1.7": {
     "terms": [
@@ -704,7 +724,8 @@
       "Stem “XOR previous ciphertext” → CBC.",
       "Trap: OFB vs CFB — OFB does not feed ciphertext into the next encrypt input the same way.",
       "CTR: parallel encrypt, but nonce reuse is catastrophic (like stream keystream reuse)."
-    ]
+    ],
+    "lmr": false
   },
   "2.1.8": {
     "terms": [
@@ -735,7 +756,8 @@
       "Trap: claiming 3DES has 192-bit security for three 56-bit keys — MITM reduces it.",
       "Not “three different algorithms” — three DES operations.",
       "AES replaces 3DES for new designs; 3DES is transitional/legacy."
-    ]
+    ],
+    "lmr": false
   },
   "2.2.1": {
     "terms": [
@@ -770,7 +792,8 @@
       "Trap: listing DES IP/FP as AES steps.",
       "Final round skips MixColumns — classic detail question.",
       "AES-128 means 128-bit key (and still 128-bit block), not “128 rounds”."
-    ]
+    ],
+    "lmr": false
   },
   "2.2.2": {
     "terms": [
@@ -801,7 +824,8 @@
       "Stem “a^φ(n)≡1 mod n” → Euler.",
       "Trap: applying Fermat when modulus is composite.",
       "Link to RSA: ed=1 mod φ(n) (or mod λ(n) in modern statements)."
-    ]
+    ],
+    "lmr": false
   },
   "2.2.3": {
     "terms": [
@@ -832,7 +856,8 @@
       "Trap: forgetting pairwise coprime hypothesis.",
       "RSA CRT decryption is an optimisation, not a different cryptosystem.",
       "Be ready for a tiny numeric example (mod 3 and mod 5)."
-    ]
+    ],
+    "lmr": false
   },
   "2.2.4": {
     "terms": [
@@ -863,7 +888,8 @@
       "Trap: encrypting with private key for secrecy — that is signing territory, not confidentiality.",
       "Diffie–Hellman is key agreement, not a full encryption scheme by itself.",
       "Security assumes hard problems (factoring, discrete log) — not “public key is secret”."
-    ]
+    ],
+    "lmr": false
   },
   "2.2.5": {
     "terms": [
@@ -898,7 +924,8 @@
       "Trap: publishing p and q — private factors must stay secret.",
       "n is public; factoring n yields φ(n) and thus d.",
       "Message must be encoded as integer 0 < M < n (with padding scheme)."
-    ]
+    ],
+    "lmr": false
   },
   "2.2.6": {
     "terms": [
@@ -933,7 +960,8 @@
       "Trap: “RSA is secure because e is secret” — e is public.",
       "Don’t claim quantum-safe: Shor’s algorithm threatens factoring/DL based schemes.",
       "Hybrid use doesn’t remove need for strong RSA parameters on the key wrap."
-    ]
+    ],
+    "lmr": false
   },
   "3.1.1": {
     "terms": [
@@ -966,7 +994,8 @@
       "Trap: equating checksum/CRC with cryptographic MAC — CRC has no key.",
       "Active modification without detection is the motivating attack.",
       "One-liner: MAC provides integrity + origin authentication under shared key."
-    ]
+    ],
+    "lmr": true
   },
   "3.1.2": {
     "terms": [
@@ -999,7 +1028,8 @@
       "Trap: saying encrypted message automatically authenticates — malleable ciphers break this.",
       "HMAC = hash used inside a keyed MAC construction.",
       "Compare: MAC secret shared; signature private signing key."
-    ]
+    ],
+    "lmr": true
   },
   "3.1.3": {
     "terms": [
@@ -1036,7 +1066,8 @@
       "Replay: same valid MAC can be resent — need nonce/timestamp countermeasures.",
       "Trap: listing confidentiality as a MAC requirement.",
       "Be ready to contrast MAC requirements vs digital signature requirements."
-    ]
+    ],
+    "lmr": true
   },
   "3.1.4": {
     "terms": [
@@ -1067,7 +1098,8 @@
       "Trap: publishing the MAC key with the message.",
       "HMAC needs a cryptographic hash (SHA family), not a CRC.",
       "Unlike signatures, verifier must already share K with sender."
-    ]
+    ],
+    "lmr": false
   },
   "3.1.5": {
     "terms": [
@@ -1098,7 +1130,8 @@
       "Trap: treating SHA as encryption — hashes are not secret-key reversible transforms.",
       "Collision ≠ preimage: collision finds any two messages; preimage inverts a digest.",
       "Longer digest generally raises brute-force collision cost (birthday bound)."
-    ]
+    ],
+    "lmr": false
   },
   "3.1.6": {
     "terms": [
@@ -1129,7 +1162,8 @@
       "Trap: using MD5 for security-critical signatures today.",
       "Digest length is not confidentiality strength.",
       "Protect the digest (MAC/sign/encrypt) or the channel — don’t rely on bare MD."
-    ]
+    ],
+    "lmr": false
   },
   "3.2.1": {
     "terms": [
@@ -1160,7 +1194,8 @@
       "Trap: encrypting with public key and calling it a signature.",
       "Signature does not hide message content unless combined with encryption.",
       "Contrast with MAC: shared secret vs key pair."
-    ]
+    ],
+    "lmr": false
   },
   "3.2.2": {
     "terms": [
@@ -1191,7 +1226,8 @@
       "Stem “discrete log subgroup signature” → DSA.",
       "Trap: saying DSS encrypts files — it standardises signatures.",
       "Random nonce k must be unique and secret per signature."
-    ]
+    ],
+    "lmr": false
   },
   "3.2.3": {
     "terms": [
@@ -1222,7 +1258,8 @@
       "Trap: omitting the hash H(M) in the equations.",
       "If k leaks or repeats, x can be recovered — implementation proof obligation.",
       "Don’t paste RSA ed≡1 proof when the question is DSA discrete-log proof."
-    ]
+    ],
+    "lmr": false
   },
   "4.1.1": {
     "terms": [
@@ -1260,7 +1297,8 @@
       "TGT ≠ service ticket: TGT talks to TGS; service ticket talks to the app server.",
       "Clock skew failures are a classic operational Kerberos symptom.",
       "Contrast with SSL: Kerberos is SSO/authn in a realm; SSL secures a transport session."
-    ]
+    ],
+    "lmr": true
   },
   "4.1.2": {
     "terms": [
@@ -1297,7 +1335,8 @@
       "Trap: mixing authentication (Kerberos) with authorisation (ACL).",
       "Empty/default-deny vs default-allow policies change security posture.",
       "Exam contrast: access matrix row = capability list; column = ACL."
-    ]
+    ],
+    "lmr": true
   },
   "4.1.3": {
     "terms": [
@@ -1334,7 +1373,8 @@
       "Private key decrypts the session key, not each byte directly.",
       "Revocation and key authenticity remain user-managed problems.",
       "Contrast with S/MIME: corporate PKI vs web of trust."
-    ]
+    ],
+    "lmr": true
   },
   "4.1.4": {
     "terms": [
@@ -1365,7 +1405,8 @@
       "Trap: web of trust answer when the stem says corporate CA.",
       "S/MIME ≠ SSL: mail end-to-end vs transport session to a server.",
       "Both signed-only and encrypted+signed messages are possible."
-    ]
+    ],
+    "lmr": false
   },
   "4.2.1": {
     "terms": [
@@ -1400,7 +1441,8 @@
       "Tunnel mode common for VPNs between gateways.",
       "Trap: placing IPsec at the application layer like PGP.",
       "SPD decides; SA describes the actual negotiated connection."
-    ]
+    ],
+    "lmr": false
   },
   "4.2.2": {
     "terms": [
@@ -1431,7 +1473,8 @@
       "Trap: equating SSL with end-to-end mail crypto (PGP/S/MIME).",
       "Handshake failure ≠ record encryption bug — different subprotocols.",
       "IPsec vs SSL: IP layer vs TCP/application-above-TCP deployment."
-    ]
+    ],
+    "lmr": false
   },
   "4.2.3": {
     "terms": [
@@ -1462,7 +1505,8 @@
       "Trap: describing SET as “just SSL on a shop website”.",
       "SET is application-level payment security, not a general VPN.",
       "Remember three certificate roles: cardholder, merchant, payment gateway."
-    ]
+    ],
+    "lmr": false
   },
   "5.1.1": {
     "terms": [
@@ -1495,7 +1539,8 @@
       "Trap: treating every malware incident as the definition of intrusion (overlap, not identity).",
       "Clandestine user seizes supervisory control to evade auditing.",
       "Link forward to IDS techniques (5.1.2) as the detection response."
-    ]
+    ],
+    "lmr": true
   },
   "5.1.2": {
     "terms": [
@@ -1532,7 +1577,8 @@
       "Trap: claiming anomaly detection has no false positives.",
       "NIDS may miss encrypted payload details; HIDS sees host outcomes.",
       "Exam: state where sensors sit and what data they consume."
-    ]
+    ],
+    "lmr": true
   },
   "5.1.3": {
     "terms": [
@@ -1569,7 +1615,8 @@
       "Trap: calling all malware “viruses”.",
       "Trojan ≠ worm: deception vs replication mechanism.",
       "Macro viruses live in documents — still viruses by attachment model."
-    ]
+    ],
+    "lmr": true
   },
   "5.1.4": {
     "terms": [
@@ -1604,7 +1651,8 @@
       "Trap: assuming firewalls stop all insider USB malware.",
       "Proxy vs packet filter: application awareness vs speed/simplicity.",
       "DMZ hosts are semi-trusted — still hardened, not “internal”."
-    ]
+    ],
+    "lmr": false
   },
   "5.1.5": {
     "terms": [
@@ -1635,7 +1683,8 @@
       "Trap: citing only technical firewalls when asked for legal measures.",
       "Know that amendments expanded offence coverage after early IT Act.",
       "Privacy/piracy topics (5.1.9) overlap but are not identical to the Act overview."
-    ]
+    ],
+    "lmr": false
   },
   "5.1.6": {
     "terms": [
@@ -1670,7 +1719,8 @@
       "Trap: VPN = anonymity network (Tor) — different goals.",
       "Remote-access ≠ site-to-site topology.",
       "Weak auth on VPN concentrators undoes strong tunnel crypto."
-    ]
+    ],
+    "lmr": false
   },
   "5.1.7": {
     "terms": [
@@ -1705,7 +1755,8 @@
       "Trap: single antivirus as complete answer to APTs.",
       "Ransomware defence emphasises offline/immutable backups.",
       "Map each attack to CIA: DDoS→A, ransomware→A/I/C mix, sniffing→C."
-    ]
+    ],
+    "lmr": false
   },
   "5.1.8": {
     "terms": [
@@ -1740,7 +1791,8 @@
       "Trap: “blockchain = Bitcoin only” or “blockchain encrypts all data”.",
       "Lost private keys ⇒ lost assets — crypto custody risk.",
       "Not a substitute for access control inside enterprise apps by default."
-    ]
+    ],
+    "lmr": false
   },
   "5.1.9": {
     "terms": [
@@ -1775,7 +1827,8 @@
       "Stem “limit profiling of users” → privacy controls.",
       "Trap: equating encryption with complete privacy (metadata still leaks).",
       "IT Acts/IP law provide legal backing; tech provides enforcement aids."
-    ]
+    ],
+    "lmr": false
   },
   "5.2.1": {
     "terms": [
@@ -1806,7 +1859,8 @@
       "Trap: modifying the live suspect disk without imaging first.",
       "Overview before process details (5.2.2) and tools (5.2.4).",
       "Hashing images verifies integrity of copies."
-    ]
+    ],
+    "lmr": false
   },
   "5.2.2": {
     "terms": [
@@ -1841,7 +1895,8 @@
       "Trap: analysing the original disk read/write instead of a verified image.",
       "Presentation without chain-of-custody docs weakens the case.",
       "Documentation is continuous, not only the final report."
-    ]
+    ],
+    "lmr": false
   },
   "5.2.3": {
     "terms": [
@@ -1872,7 +1927,8 @@
       "Trap: assuming only police perform forensics — enterprises run internal teams.",
       "Cloud apps add provider logs and legal process constraints.",
       "Tie application back to evidence types (5.2.5)."
-    ]
+    ],
+    "lmr": false
   },
   "5.2.4": {
     "terms": [
@@ -1907,7 +1963,8 @@
       "Trap: installing analysis software on the suspect disk.",
       "Always hash before/after acquisition and record algorithms.",
       "Memory tools matter when disk alone lacks encryption keys/malware."
-    ]
+    ],
+    "lmr": false
   },
   "5.2.5": {
     "terms": [
@@ -1938,7 +1995,8 @@
       "Trap: editing screenshots as “primary evidence” without raw sources.",
       "Metadata can be forged — corroborate across multiple artefacts.",
       "Admissibility needs relevance, authenticity, and lawful collection."
-    ]
+    ],
+    "lmr": false
   },
   "5.2.6": {
     "terms": [
@@ -1969,7 +2027,8 @@
       "Stem “/var/log/auth.log brute force” → Unix investigation.",
       "Trap: applying only Windows tool paths on a Linux disk image.",
       "Note timezone and UTC in log correlation across systems."
-    ]
+    ],
+    "lmr": false
   },
   "5.2.7": {
     "terms": [
@@ -2004,6 +2063,7 @@
       "Trap: trusting visible From: address as proof of origin.",
       "Bottom-most Received often closest to originating MTA (with caveats).",
       "Timezones and relay delays matter when building timelines."
-    ]
+    ],
+    "lmr": false
   }
 }

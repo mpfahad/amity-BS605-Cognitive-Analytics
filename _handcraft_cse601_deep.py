@@ -22,8 +22,8 @@ def note(n: str) -> str:
 
 
 def pack(terms, concepts, notes, lmr: bool = False) -> dict:
-    # LMR denser caps already satisfied by richer lists from callers
-    return {"terms": terms, "concepts": concepts, "notes": notes}
+    """Handcrafted deep-note pack. Set lmr=True for exam-priority topics only."""
+    return {"terms": terms, "concepts": concepts, "notes": notes, "lmr": bool(lmr)}
 
 
 # =============================================================================

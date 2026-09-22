@@ -27,7 +27,8 @@
       "Prioritise LMR cards 1.1.1–1.1.3 before design catalogues.",
       "Trap: inductive ≠ qualitative automatically; deductive ≠ only quantitative.",
       "When asked for ‘process’, list problem→approach→design→data→analysis→report."
-    ]
+    ],
+    "lmr": false
   },
   "m2_root": {
     "terms": [
@@ -53,7 +54,8 @@
       "Exam contrast: probability (known chance) vs non-probability (unknown chance).",
       "Always name the sampling frame when discussing sample selection.",
       "Open/closed questions and Likert scales show up with reliability/validity in Module 3."
-    ]
+    ],
+    "lmr": false
   },
   "m3_root": {
     "terms": [
@@ -79,7 +81,8 @@
       "Causal attribution needs manipulation + control + (ideally) random assignment.",
       "Reliability without validity = consistent but wrong measure.",
       "Don’t Know / missing-data rules affect bias before any ANOVA."
-    ]
+    ],
+    "lmr": false
   },
   "m4_root": {
     "terms": [
@@ -105,7 +108,8 @@
       "Reject H0 when test statistic falls in the rejection region (p < α).",
       "Type I = false positive (reject true H0); Type II = miss (fail to reject false H0).",
       "One-tailed vs two-tailed changes critical value and wording of H1."
-    ]
+    ],
+    "lmr": false
   },
   "m5_root": {
     "terms": [
@@ -135,7 +139,8 @@
       "Standard report arc: title/abstract → intro → methods → results → discussion → refs.",
       "Cite to avoid plagiarism and to show scholarly trail.",
       "Proposal must define problem before methods and timeline."
-    ]
+    ],
+    "lmr": false
   },
   "1.1.1": {
     "terms": [
@@ -176,7 +181,8 @@
       "Don’t stop at ‘finding facts’ — mention hypothesis testing or generalisation.",
       "Breakthrough vs incremental improvement both count as research outcomes.",
       "Action-oriented wording in characteristics (1.1.2) complements objectives here."
-    ]
+    ],
+    "lmr": true
   },
   "1.1.2": {
     "terms": [
@@ -217,7 +223,8 @@
       "Trap: creativity alone is not enough without systematic procedure.",
       "‘Successful’ often means generative — one question spawns further research.",
       "Delivery format for managers/community is an exam-listed characteristic."
-    ]
+    ],
+    "lmr": true
   },
   "1.1.3": {
     "terms": [
@@ -254,7 +261,8 @@
       "Methodology provides the research work plan; methods execute collection and analysis.",
       "Experiments and statistics are methods; choosing experimental vs survey design is methodological.",
       "One-liner: Methods are the tools; methodology is the logic of using them."
-    ]
+    ],
+    "lmr": true
   },
   "1.2.1": {
     "terms": [
@@ -285,7 +293,8 @@
       "Stem ‘disclose shortcomings of design’ → criteria of good research.",
       "Trap: conclusions must be supported by findings — speculation fails criteria.",
       "Greater trust if researcher has reputation and integrity (exam criterion)."
-    ]
+    ],
+    "lmr": false
   },
   "1.2.2": {
     "terms": [
@@ -316,7 +325,8 @@
       "Stem ‘find pattern in observations’ → inductive.",
       "Trap: SLM wording sometimes flips ‘specific/general’ — anchor on theory-first vs data-first.",
       "Mixed methods combine both — mention if stem asks for ‘approaches’ broadly."
-    ]
+    ],
+    "lmr": false
   },
   "1.2.3": {
     "terms": [
@@ -347,7 +357,8 @@
       "Link to 5.4.x project-proposal topics for problem definition detail.",
       "Trap: proposal ≠ final report — plan vs results.",
       "Include how you will analyse data, not only how you will collect it."
-    ]
+    ],
+    "lmr": false
   },
   "1.2.4": {
     "terms": [
@@ -378,7 +389,8 @@
       "Use recent peer-reviewed sources for method and findings, not only textbooks.",
       "Trap: annotated bibliography ≠ analytical literature review.",
       "End review with how your objectives address the gap."
-    ]
+    ],
+    "lmr": false
   },
   "1.2.5": {
     "terms": [
@@ -409,7 +421,8 @@
       "Larger sample reduces sampling error, not necessarily bias.",
       "Trap: Type I/II (Module 4) are decision errors, not the same as measurement error.",
       "Pilot tests catch instrument wording errors early."
-    ]
+    ],
+    "lmr": false
   },
   "1.3.1": {
     "terms": [
@@ -435,7 +448,8 @@
       "Stem ‘no immediate practical aim / extend theory’ → pure.",
       "Stem ‘improve organisational practice / policy’ → applied.",
       "Trap: applied ≠ unscientific; it still needs systematic method."
-    ]
+    ],
+    "lmr": false
   },
   "1.3.2": {
     "terms": [
@@ -466,7 +480,8 @@
       "Stem ‘relationship / association between’ → correlational.",
       "Trap: ‘linked’ in a stem is not automatic causation.",
       "Control of confounders separates weak association studies from strong causal ones."
-    ]
+    ],
+    "lmr": false
   },
   "1.3.3": {
     "terms": [
@@ -497,7 +512,8 @@
       "Stem ‘over months/years / track change’ → longitudinal.",
       "Trap: SLM spelling ‘Crossectional’ still means cross-sectional.",
       "Causal claims are stronger with longitudinal or experimental evidence than one snapshot."
-    ]
+    ],
+    "lmr": false
   },
   "1.3.4": {
     "terms": [
@@ -528,7 +544,8 @@
       "Stem ‘pre-existing groups / no randomisation’ → quasi/semi.",
       "Map to 3.1.2–3.1.4 for design subtypes (one-shot, pretest–posttest, etc.).",
       "Trap: ‘experiment’ in casual speech ≠ true experimental design."
-    ]
+    ],
+    "lmr": false
   },
   "1.3.5": {
     "terms": [
@@ -554,7 +571,8 @@
       "Stem ‘map the situation / prevalence’ → descriptive.",
       "Stem ‘little prior knowledge / formulate hypotheses’ → exploratory.",
       "Trap: descriptive statistics ≠ automatically ‘descriptive research design’ label — check purpose."
-    ]
+    ],
+    "lmr": false
   },
   "1.4.1": {
     "terms": [
@@ -588,7 +606,8 @@
       "Stem ‘equations relating variables’ → mathematical/symbolic.",
       "Stem ‘scale model of a machine’ → physical/iconic.",
       "Trap: a flowchart conceptual model is still a model — not ‘only maths counts’."
-    ]
+    ],
+    "lmr": false
   },
   "1.4.2": {
     "terms": [
@@ -619,7 +638,8 @@
       "Stem ‘does the coded model match the intended logic’ → verification.",
       "Stem ‘does output match the real system’ → validation.",
       "Overfitting a statistical model fails adequacy even if R² looks high."
-    ]
+    ],
+    "lmr": false
   },
   "1.4.3": {
     "terms": [
@@ -649,7 +669,8 @@
       "Stem ‘suitability of input data for the model’ → data consideration.",
       "Always state units, period, and population the data represent.",
       "Trap: significant hypothesis test ≠ validated predictive model."
-    ]
+    ],
+    "lmr": false
   },
   "1.4.4": {
     "terms": [
@@ -680,7 +701,8 @@
       "Stem ‘computer imitation of system over time’ → simulation.",
       "Trap: simulation ≠ experiment on the real system — it is a model run.",
       "Report random seeds/replication count when simulation results are stochastic."
-    ]
+    ],
+    "lmr": false
   },
   "2.1.1": {
     "terms": [
@@ -717,7 +739,8 @@
       "Always state unit of analysis to avoid ecological fallacy later.",
       "Link to 2.1.2 methods and 2.1.3 validation/tabulation.",
       "Trap: big secondary datasets still need validation for your construct definitions."
-    ]
+    ],
+    "lmr": true
   },
   "2.1.2": {
     "terms": [
@@ -754,7 +777,8 @@
       "Multi-method (triangulation) strengthens credibility.",
       "Trap: ‘survey’ is not one technique — it usually means questionnaire-based collection.",
       "Module 3.2 revisits observation/interview/cases/questionnaires in design context."
-    ]
+    ],
+    "lmr": true
   },
   "2.1.3": {
     "terms": [
@@ -791,7 +815,8 @@
       "Out-of-range ages or contradictory yes/no paths fail validation.",
       "Document cleaning rules for reproducibility.",
       "Trap: pretty charts ≠ validated data."
-    ]
+    ],
+    "lmr": true
   },
   "2.2.1": {
     "terms": [
@@ -817,7 +842,8 @@
       "Exam: recite sequential steps; emphasise pilot/revise.",
       "Stem ‘pre-test the instrument’ → pilot.",
       "Trap: writing questions before clarifying objectives produces irrelevant items."
-    ]
+    ],
+    "lmr": false
   },
   "2.2.2": {
     "terms": [
@@ -852,7 +878,8 @@
       "Stem ‘select from listed options’ → closed.",
       "Avoid double-barrelled and leading questions in any type.",
       "Trap: Likert is ordinal by strict view — still often treated as interval in exams if stated."
-    ]
+    ],
+    "lmr": false
   },
   "2.2.3": {
     "terms": [
@@ -882,7 +909,8 @@
       "Stem ‘order and layout of items’ → format/sequence.",
       "Put demographics usually at end unless needed for screening.",
       "Trap: pretty design cannot fix invalid constructs — still need validity (3.3.1)."
-    ]
+    ],
+    "lmr": false
   },
   "2.3.1": {
     "terms": [
@@ -908,7 +936,8 @@
       "Stem ‘framework research projects rely on for sampling’ → sampling plan.",
       "Always name population + method + n in exam answers.",
       "Trap: large n does not fix a biased selection method."
-    ]
+    ],
+    "lmr": false
   },
   "2.3.2": {
     "terms": [
@@ -935,7 +964,8 @@
       "Population ≠ frame when some units are missing or ineligible units appear.",
       "Trap: using an employee email list to study ‘all citizens’ is frame bias.",
       "State the frame explicitly in methods sections."
-    ]
+    ],
+    "lmr": false
   },
   "2.3.3": {
     "terms": [
@@ -961,7 +991,8 @@
       "First branch exam answer: probability vs non-probability.",
       "Stem ‘known nonzero probability’ → probability family.",
       "Trap: ‘random’ in casual speech ≠ statistical random sample."
-    ]
+    ],
+    "lmr": false
   },
   "2.3.4": {
     "terms": [
@@ -996,7 +1027,8 @@
       "Stem ‘select whole groups first’ → cluster.",
       "Trap: stratified ≠ quota (quota is non-probability unless randomised within).",
       "Name at least three techniques in long answers."
-    ]
+    ],
+    "lmr": false
   },
   "2.3.5": {
     "terms": [
@@ -1027,7 +1059,8 @@
       "Stem ‘ask respondents to refer others’ → snowball.",
       "Trap: non-probability ≠ always ‘wrong’ — wrong when claiming representative population estimates.",
       "Disclose method limitations in the report."
-    ]
+    ],
+    "lmr": false
   },
   "2.3.6": {
     "terms": [
@@ -1058,7 +1091,8 @@
       "Stem ‘wrong question wording / bad frame’ → non-sampling.",
       "Trap: ‘reduce error by bigger sample’ is incomplete — say which error.",
       "Report response rate as a non-response quality indicator."
-    ]
+    ],
+    "lmr": false
   },
   "3.1.1": {
     "terms": [
@@ -1095,7 +1129,8 @@
       "Trap: observing a natural event ≠ designed experiment.",
       "Engineering experiments (3.1.6) apply the same principles to processes/products.",
       "Link forward to ANOVA (4.2.7+) for analysing designed data."
-    ]
+    ],
+    "lmr": true
   },
   "3.1.2": {
     "terms": [
@@ -1128,7 +1163,8 @@
       "Trap: pretest–posttest alone ≠ true experiment.",
       "Compare to quasi (3.1.3) and true (3.1.4) on control features.",
       "Exam phrase: ‘inadequate for rigorous causal attribution’."
-    ]
+    ],
+    "lmr": true
   },
   "3.1.3": {
     "terms": [
@@ -1161,7 +1197,8 @@
       "Trap: quasi ≠ ‘almost any non-survey design’.",
       "Report baseline differences and adjustment strategies.",
       "Causal language must be hedged relative to randomised trials."
-    ]
+    ],
+    "lmr": true
   },
   "3.1.4": {
     "terms": [
@@ -1191,7 +1228,8 @@
       "Stem ‘randomly assigned treatment and control’ → true experimental.",
       "Solomon four-group is the classic ‘detect pretest interaction’ design.",
       "Trap: random sampling ≠ random assignment (population vs causal internal validity)."
-    ]
+    ],
+    "lmr": false
   },
   "3.1.5": {
     "terms": [
@@ -1221,7 +1259,8 @@
       "Stem ‘study A and B together / interaction’ → factorial.",
       "Significant interaction ⇒ interpret simple effects, not only main effects.",
       "Trap: more factors explode cell counts — need replication planning."
-    ]
+    ],
+    "lmr": false
   },
   "3.1.6": {
     "terms": [
@@ -1251,7 +1290,8 @@
       "Stem ‘plant process factors / product quality’ → engineering DOE framing.",
       "State controllable vs noise factors in answers.",
       "Trap: one successful run ≠ designed experiment with replication."
-    ]
+    ],
+    "lmr": false
   },
   "3.1.7": {
     "terms": [
@@ -1281,7 +1321,8 @@
       "Exam triad: covariation + time order + rule out alternatives.",
       "Stem ‘can we say X caused Y’ → discuss design threats, not only p-values.",
       "Trap: significant correlation ≠ causal attribution."
-    ]
+    ],
+    "lmr": false
   },
   "3.1.8": {
     "terms": [
@@ -1311,7 +1352,8 @@
       "Stem ‘hold Z constant statistically’ → statistical control.",
       "Mention assumption risks in long answers.",
       "Trap: ‘controlled for everything’ is never literally true."
-    ]
+    ],
+    "lmr": false
   },
   "3.2.1": {
     "terms": [
@@ -1341,7 +1383,8 @@
       "Contrast observation (see) vs interview (ask).",
       "Stem ‘checklist of behaviours every 5 minutes’ → structured observation.",
       "Trap: interview transcripts still need coding rules (3.2.6)."
-    ]
+    ],
+    "lmr": false
   },
   "3.2.2": {
     "terms": [
@@ -1367,7 +1410,8 @@
       "Stem ‘detailed investigation of one organisation’ → case study.",
       "State bounding of the case and data sources.",
       "Trap: n=1 case ≠ census; mind generalisation claims."
-    ]
+    ],
+    "lmr": false
   },
   "3.2.3": {
     "terms": [
@@ -1393,7 +1437,8 @@
       "Link each batch to the sampling plan (2.3.1).",
       "Stem ‘mail/online form completed by respondent’ → self-administered questionnaire.",
       "Trap: collecting without a codebook makes 3.2.6 painful later."
-    ]
+    ],
+    "lmr": false
   },
   "3.2.4": {
     "terms": [
@@ -1423,7 +1468,8 @@
       "Exam: list 4–5 concrete guidelines with a bad vs good example.",
       "Stem ‘two questions in one’ → double-barrelled flaw.",
       "Trap: jargon and negations (‘not infrequently’) inflate error."
-    ]
+    ],
+    "lmr": false
   },
   "3.2.5": {
     "terms": [
@@ -1453,7 +1499,8 @@
       "Stem ‘scrutinise questionnaires for errors before coding’ → editing.",
       "Distinguish field vs central editing in long answers.",
       "Trap: editing ≠ analysing hypotheses."
-    ]
+    ],
+    "lmr": false
   },
   "3.2.6": {
     "terms": [
@@ -1483,7 +1530,8 @@
       "Stem ‘convert answers to numbers for computer analysis’ → coding.",
       "Exhaustive + mutually exclusive categories is a classic rule pair.",
       "Trap: reusing code ‘9’ for both ‘age 9’ and ‘missing’ without scheme — disaster."
-    ]
+    ],
+    "lmr": false
   },
   "3.2.7": {
     "terms": [
@@ -1509,7 +1557,8 @@
       "Stem ‘respondent selects Don’t Know’ → code distinctly; analyse carefully.",
       "Trap: treating DK as neutral midpoint on Likert without justification.",
       "Link to missing-data topic 3.2.8 when DK is later blanked."
-    ]
+    ],
+    "lmr": false
   },
   "3.2.8": {
     "terms": [
@@ -1539,7 +1588,8 @@
       "Stem ‘blank fields after editing’ → missing data problem.",
       "Always report % missing and the handling rule.",
       "Trap: mean imputation shrinks variance and distorts correlations."
-    ]
+    ],
+    "lmr": false
   },
   "3.3.1": {
     "terms": [
@@ -1574,7 +1624,8 @@
       "Stem ‘measures the intended construct’ → validity.",
       "Trap: high α ≠ proof of unidimensional valid construct.",
       "Threats to internal validity: history, maturation, selection, mortality, testing, instrumentation."
-    ]
+    ],
+    "lmr": false
   },
   "3.3.2": {
     "terms": [
@@ -1604,7 +1655,8 @@
       "LMR-adjacent: name all three principles in DOE answers (also 3.1.1).",
       "Stem ‘group by machine/shift then randomise’ → blocking.",
       "Trap: one observation per treatment with no replication — cannot estimate error well."
-    ]
+    ],
+    "lmr": false
   },
   "3.3.3": {
     "terms": [
@@ -1634,7 +1686,8 @@
       "Stem ‘independent estimation of factor effects’ → orthogonality.",
       "Stem ‘significant by chance among many tests’ → false positive / multiplicity.",
       "Trap: p < 0.05 on one of 40 unplanned tests is weak evidence."
-    ]
+    ],
+    "lmr": false
   },
   "4.1.1": {
     "terms": [
@@ -1667,7 +1720,8 @@
       "Distinguish research question (ask) from hypothesis (claim).",
       "Next cards formalise H0/H1 and error types.",
       "Directional vs non-directional wording sets up one- vs two-tailed tests."
-    ]
+    ],
+    "lmr": true
   },
   "4.1.2": {
     "terms": [
@@ -1704,7 +1758,8 @@
       "Never put the research claim only in H0 if you hope to ‘prove’ it by rejection logic.",
       "p-value is computed under H0 assumed true.",
       "Match H1 to one-/two-tailed critical regions (4.1.4, 4.1.8)."
-    ]
+    ],
+    "lmr": true
   },
   "4.1.3": {
     "terms": [
@@ -1741,7 +1796,8 @@
       "State α before seeing data in proper procedure.",
       "Trap: non-significant result ≠ proof of no effect (β may be large).",
       "Report power or justify n when claiming ‘no difference’."
-    ]
+    ],
+    "lmr": true
   },
   "4.1.4": {
     "terms": [
@@ -1767,7 +1823,8 @@
       "Stem ‘H1: μ > 100’ → one-tailed right.",
       "Stem ‘H1: μ ≠ 100’ → two-tailed.",
       "Trap: reporting only one tail to ‘get significance’ without prior justification."
-    ]
+    ],
+    "lmr": false
   },
   "4.1.5": {
     "terms": [
@@ -1797,7 +1854,8 @@
       "Stem ‘n−1 for sample variance/t’ → classic one-sample df.",
       "Always state df with t/F reporting.",
       "Trap: using z critical values for small n with unknown σ — wrong distribution."
-    ]
+    ],
+    "lmr": false
   },
   "4.1.6": {
     "terms": [
@@ -1827,7 +1885,8 @@
       "Stem ‘range with 95% confidence’ → CI.",
       "Report estimate ± margin or (lower, upper).",
       "Trap: CI for mean ≠ prediction interval for a new observation."
-    ]
+    ],
+    "lmr": false
   },
   "4.1.7": {
     "terms": [
@@ -1853,7 +1912,8 @@
       "Stem ‘probability of rejecting true H0’ → α / significance level.",
       "Stem ‘0.95 when α=0.05’ → confidence coefficient.",
       "Trap: ‘result is 95% significant’ — wrong phrasing; say significant at 5% level."
-    ]
+    ],
+    "lmr": false
   },
   "4.1.8": {
     "terms": [
@@ -1883,7 +1943,8 @@
       "Stem ‘values of z that cause rejection’ → rejection region.",
       "Sketch tails in long answers for one- vs two-tailed.",
       "Trap: non-rejection ≠ proving H0; it is insufficient evidence against it."
-    ]
+    ],
+    "lmr": false
   },
   "4.1.9": {
     "terms": [
@@ -1913,7 +1974,8 @@
       "Memorise the step list for 6–8 mark answers.",
       "Always end with meaning for the original research question.",
       "Trap: computing a t without stating H0/H1 first."
-    ]
+    ],
+    "lmr": false
   },
   "4.1.10": {
     "terms": [
@@ -1939,7 +2001,8 @@
       "Stem ‘assume normal population’ → parametric family.",
       "Stem ‘ranks / distribution-free’ → non-parametric.",
       "Trap: using ANOVA on wildly non-normal tiny samples without comment."
-    ]
+    ],
+    "lmr": false
   },
   "4.1.11": {
     "terms": [
@@ -1969,7 +2032,8 @@
       "Decision tree: parameter (mean/prop/var) → samples → known σ → choose statistic.",
       "Stem ‘three teaching methods, compare means’ → ANOVA.",
       "Trap: multiple t-tests without α correction instead of ANOVA."
-    ]
+    ],
+    "lmr": false
   },
   "4.2.1": {
     "terms": [
@@ -1995,7 +2059,8 @@
       "List major parametric tests and the parameter each targets.",
       "State assumptions explicitly in answers.",
       "Trap: ‘parametric’ does not mean ‘uses parameters in H0 only’ — all tests have parameters; it means distributional model."
-    ]
+    ],
+    "lmr": false
   },
   "4.2.2": {
     "terms": [
@@ -2021,7 +2086,8 @@
       "Write formula + decision rule in numerical questions.",
       "Stem ‘σ known’ → z over t.",
       "Trap: using σ/√n with sample σ claimed ‘known’ incorrectly."
-    ]
+    ],
+    "lmr": false
   },
   "4.2.3": {
     "terms": [
@@ -2047,7 +2113,8 @@
       "Stem ‘s instead of σ’ → t-statistic.",
       "Show df = n−1 in working.",
       "Trap: paired data need paired t, not one-sample on raw unpaired list without differencing."
-    ]
+    ],
+    "lmr": false
   },
   "4.2.4": {
     "terms": [
@@ -2073,7 +2140,8 @@
       "Stem ‘percentage of defectives / voters’ → proportion test.",
       "Use p0 in SE under H0 for classic score-style z.",
       "Trap: applying t-for-means formulas to 0/1 data without thinking proportion model."
-    ]
+    ],
+    "lmr": false
   },
   "4.2.5": {
     "terms": [
@@ -2099,7 +2167,8 @@
       "Stem ‘population variance equals hypothesised value’ → χ² variance test.",
       "State normality assumption.",
       "Trap: confusing this with two-variance F-test (4.2.6)."
-    ]
+    ],
+    "lmr": false
   },
   "4.2.6": {
     "terms": [
@@ -2125,7 +2194,8 @@
       "Stem ‘equality of variances of two normal populations’ → F-test.",
       "Report both dfs.",
       "Trap: significant F for variances ≠ significant difference in means."
-    ]
+    ],
+    "lmr": false
   },
   "4.2.7": {
     "terms": [
@@ -2155,7 +2225,8 @@
       "Stem ‘compare means of 3+ fixed treatments’ → fixed-effect ANOVA.",
       "Write ANOVA table sketch: Source | SS | df | MS | F.",
       "Trap: interpreting a significant F as every pair differs."
-    ]
+    ],
+    "lmr": false
   },
   "4.2.8": {
     "terms": [
@@ -2185,7 +2256,8 @@
       "Memorise SST = treatment + error for one-factor.",
       "Stem ‘within-group sum of squares’ → error SS.",
       "Trap: mixing up SST total with treatment SS naming across textbooks."
-    ]
+    ],
+    "lmr": false
   },
   "4.2.9": {
     "terms": [
@@ -2211,7 +2283,8 @@
       "Stem ‘levels randomly sampled from many possible’ → random effects.",
       "Contrast explicitly with fixed-effect interpretation (4.2.7).",
       "Trap: calling every ANOVA ‘random effects’ — wrong."
-    ]
+    ],
+    "lmr": false
   },
   "4.2.10": {
     "terms": [
@@ -2237,7 +2310,8 @@
       "Stem ‘only one factor varied’ → single-factor experiment.",
       "State randomisation and replication in design description.",
       "Trap: multiple factors analysed as if single-factor — misses interactions."
-    ]
+    ],
+    "lmr": false
   },
   "4.2.11": {
     "terms": [
@@ -2267,7 +2341,8 @@
       "Stem ‘check residuals after ANOVA’ → adequacy checking.",
       "List at least two diagnostics in exam answers.",
       "Trap: only looking at p-value and ignoring residual patterns."
-    ]
+    ],
+    "lmr": false
   },
   "5.1.1": {
     "terms": [
@@ -2300,7 +2375,8 @@
       "Match length/detail to audience (thesis vs executive brief).",
       "Links to structure (5.1.2) and components (5.1.3).",
       "Citation integrity (5.1.8) is part of report meaning, not optional polish."
-    ]
+    ],
+    "lmr": true
   },
   "5.1.2": {
     "terms": [
@@ -2333,7 +2409,8 @@
       "Abstract is structured summary — not a teaser omitting methods/findings.",
       "Number sections consistently for cross-reference.",
       "Pair with components list in 5.1.3 for full marks."
-    ]
+    ],
+    "lmr": true
   },
   "5.1.3": {
     "terms": [
@@ -2374,7 +2451,8 @@
       "Trap: putting citations only in intro and skipping a reference list.",
       "Tables/figures are components of results communication (5.1.7).",
       "Footnotes (5.1.9) support, not replace, main components."
-    ]
+    ],
+    "lmr": true
   },
   "5.1.4": {
     "terms": [
@@ -2404,7 +2482,8 @@
       "Stem ‘report for lay readers’ → popular style.",
       "Name 3–4 types in exam lists.",
       "Trap: jargon-heavy ‘academic’ tone in a managerial brief."
-    ]
+    ],
+    "lmr": false
   },
   "5.1.5": {
     "terms": [
@@ -2434,7 +2513,8 @@
       "Give ordered steps in long answers.",
       "Stem ‘prepare outline before full draft’ → report-writing step.",
       "Trap: writing conclusions before results are finalised."
-    ]
+    ],
+    "lmr": false
   },
   "5.1.6": {
     "terms": [
@@ -2464,7 +2544,8 @@
       "Stem ‘follow university thesis layout’ → format.",
       "Prefer active clarity over vague passive stacks when SLM allows.",
       "Trap: switching tenses randomly between methods and results."
-    ]
+    ],
+    "lmr": false
   },
   "5.1.7": {
     "terms": [
@@ -2494,7 +2575,8 @@
       "Stem ‘present exact cell frequencies’ → table.",
       "Stem ‘show trend over time visually’ → figure.",
       "Trap: 3D chart junk that obscures values."
-    ]
+    ],
+    "lmr": false
   },
   "5.1.8": {
     "terms": [
@@ -2524,7 +2606,8 @@
       "Stem ‘list of sources at end’ → references.",
       "Every in-text cite needs a reference entry and vice versa (usually).",
       "Trap: URL-only ‘references’ without author/year/title when style requires them."
-    ]
+    ],
+    "lmr": false
   },
   "5.1.9": {
     "terms": [
@@ -2550,7 +2633,8 @@
       "Stem ‘note at bottom of page’ → footnote.",
       "Distinguish footnote (content) from citation system required by venue.",
       "Trap: hiding key methods only in footnotes."
-    ]
+    ],
+    "lmr": false
   },
   "5.2.1": {
     "terms": [
@@ -2576,7 +2660,8 @@
       "Stem ‘present findings verbally at a seminar’ → oral presentation.",
       "State 3–4 structural parts of a research talk.",
       "Trap: drowning audience in every table from the thesis."
-    ]
+    ],
+    "lmr": false
   },
   "5.2.2": {
     "terms": [
@@ -2602,7 +2687,8 @@
       "Exam: preparation → delivery → discussion steps.",
       "Stem ‘rehearse and adapt to audience’ → making presentation.",
       "Trap: apologetic filler and unread dense paragraphs on slides."
-    ]
+    ],
+    "lmr": false
   },
   "5.2.3": {
     "terms": [
@@ -2628,7 +2714,8 @@
       "Stem ‘PowerPoint/charts during talk’ → visual aids.",
       "Rule of thumb: fewer words, larger graphics.",
       "Trap: reading every bullet verbatim."
-    ]
+    ],
+    "lmr": false
   },
   "5.2.4": {
     "terms": [
@@ -2654,7 +2741,8 @@
       "Stem ‘importance of clear transfer of research meaning’ → effective communication.",
       "List barriers + one mitigation each.",
       "Trap: equating persuasion with exaggeration of p-values."
-    ]
+    ],
+    "lmr": false
   },
   "5.2.5": {
     "terms": [
@@ -2680,7 +2768,8 @@
       "Stem ‘conventions to show work is authentic’ → authentication strategies.",
       "Mention funding/conflict disclosure as exam-ready examples.",
       "Trap: fancy slides without source attribution for borrowed figures."
-    ]
+    ],
+    "lmr": false
   },
   "5.3.1": {
     "terms": [
@@ -2710,7 +2799,8 @@
       "Stem ‘format study for periodical publication’ → journal paper prep.",
       "Follow IMRaD unless journal specifies otherwise.",
       "Trap: submitting one manuscript simultaneously to multiple journals (unethical)."
-    ]
+    ],
+    "lmr": false
   },
   "5.3.2": {
     "terms": [
@@ -2736,7 +2826,8 @@
       "Stem ‘design paper using publisher template’ → template-based formatting.",
       "Use styles, not manual spacing hacks.",
       "Trap: altering margins to squeeze extra pages against rules."
-    ]
+    ],
+    "lmr": false
   },
   "5.3.3": {
     "terms": [
@@ -2762,7 +2853,8 @@
       "Stem ‘calculate / meaning of journal impact factor’ → citations/citable articles ratio.",
       "Emphasise journal-level, not article-level, nature.",
       "Trap: saying IF = how many times your paper was cited."
-    ]
+    ],
+    "lmr": false
   },
   "5.3.4": {
     "terms": [
@@ -2788,7 +2880,8 @@
       "Stem ‘database of who cited whom’ → citation index.",
       "Distinguish citation index (system) from impact factor (journal metric).",
       "Trap: equating zero citations yet with worthless research — time lag exists."
-    ]
+    ],
+    "lmr": false
   },
   "5.3.5": {
     "terms": [
@@ -2814,7 +2907,8 @@
       "Stem ‘code for books’ → ISBN; ‘code for journals/serials’ → ISSN.",
       "One-liner contrast scores easy marks.",
       "Trap: claiming ISBN measures quality like IF — it does not."
-    ]
+    ],
+    "lmr": false
   },
   "5.4.1": {
     "terms": [
@@ -2840,7 +2934,8 @@
       "Stem ‘identify and define the problem’ → first proposal step.",
       "Write problem as a precise statement, not a thesis title only.",
       "Trap: choosing methods before the problem is clear."
-    ]
+    ],
+    "lmr": false
   },
   "5.4.2": {
     "terms": [
@@ -2870,7 +2965,8 @@
       "List multiple considerations in 6–8 mark answers.",
       "Stem ‘factors while selecting a research problem’ → aspects/considerations.",
       "Trap: ignoring ethics until after data collection design."
-    ]
+    ],
+    "lmr": false
   },
   "5.4.3": {
     "terms": [
@@ -2900,6 +2996,7 @@
       "Stem ‘schedule and resources for the study’ → research plan.",
       "Include risk/contingency briefly for realism marks.",
       "Trap: plan with methods but no timeline or population definition."
-    ]
+    ],
+    "lmr": false
   }
 }

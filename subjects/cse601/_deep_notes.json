@@ -21,7 +21,8 @@
     "notes": [
       "LMR first: Stack, postfix, Tower of Hanoi.",
       "Never give only a name — always add LIFO/FIFO or Big-O when asked."
-    ]
+    ],
+    "lmr": false
   },
   "m2_root": {
     "terms": [
@@ -40,7 +41,8 @@
     ],
     "notes": [
       "LMR: binary tree / BST basics before AVL/B-tree detail."
-    ]
+    ],
+    "lmr": false
   },
   "m3_root": {
     "terms": [
@@ -63,7 +65,8 @@
     ],
     "notes": [
       "LMR: DP approach, optimality principle, Strassen."
-    ]
+    ],
+    "lmr": false
   },
   "m4_root": {
     "terms": [
@@ -82,7 +85,8 @@
     ],
     "notes": [
       "LMR: naïve matching, Rabin–Karp, vertex cover."
-    ]
+    ],
+    "lmr": false
   },
   "m5_root": {
     "terms": [
@@ -105,7 +109,8 @@
     ],
     "notes": [
       "LMR: NP proofs / reducibility vocabulary."
-    ]
+    ],
+    "lmr": false
   },
   "1.1.1": {
     "terms": [
@@ -139,7 +144,8 @@
       "Trap: do not say FIFO for stack.",
       "Stem “last in first out / top only” → stack.",
       "LMR: define + one use + contrast with queue."
-    ]
+    ],
+    "lmr": true
   },
   "1.1.2": {
     "terms": [
@@ -164,7 +170,8 @@
       "Trap: processing order is left to right, not ‘operator first’.",
       "If expression is infix, convert first — don’t evaluate infix with raw postfix rules.",
       "LMR: walk one tiny example on paper."
-    ]
+    ],
+    "lmr": true
   },
   "1.1.3": {
     "terms": [
@@ -188,7 +195,8 @@
     "notes": [
       "Trap: minimum moves are 2^n−1, not n^2.",
       "LMR: state recurrence + closed form."
-    ]
+    ],
+    "lmr": true
   },
   "1.1.4": {
     "terms": [
@@ -212,7 +220,8 @@
     "notes": [
       "Trap: don’t pop from rear for a normal queue.",
       "Stem “first come first served” → queue."
-    ]
+    ],
+    "lmr": false
   },
   "1.1.5": {
     "terms": [
@@ -236,7 +245,8 @@
     "notes": [
       "Trap: linked list ≠ array contiguous memory.",
       "Always track head (and sometimes tail) carefully."
-    ]
+    ],
+    "lmr": false
   },
   "1.1.6": {
     "terms": [
@@ -259,7 +269,8 @@
     ],
     "notes": [
       "Trap: update both next and prev on insert/delete — half-updates break the list."
-    ]
+    ],
+    "lmr": false
   },
   "1.2.1": {
     "terms": [
@@ -278,7 +289,8 @@
     ],
     "notes": [
       "Trap: infinite loop is not a valid algorithm characteristic."
-    ]
+    ],
+    "lmr": false
   },
   "1.2.2": {
     "terms": [
@@ -306,7 +318,8 @@
     "notes": [
       "Trap: O is not the same as Θ unless also Ω.",
       "Spelling in syllabus: ‘Asymtotic’ = asymptotic notations."
-    ]
+    ],
+    "lmr": false
   },
   "1.2.3": {
     "terms": [
@@ -329,7 +342,8 @@
     ],
     "notes": [
       "Trap: ‘faster machine’ does not change asymptotic class."
-    ]
+    ],
+    "lmr": false
   },
   "1.2.4": {
     "terms": [
@@ -352,7 +366,8 @@
     ],
     "notes": [
       "Trap: forgetting the +f(n) combine cost in divide-and-conquer."
-    ]
+    ],
+    "lmr": false
   },
   "1.2.5": {
     "terms": [
@@ -375,7 +390,8 @@
     ],
     "notes": [
       "Trap: applying Master when split is uneven or f doesn’t fit cases."
-    ]
+    ],
+    "lmr": false
   },
   "1.3.1": {
     "terms": [
@@ -398,7 +414,8 @@
     ],
     "notes": [
       "Trap: confusing D&C with DP (DP stores overlapping results)."
-    ]
+    ],
+    "lmr": false
   },
   "1.4.1": {
     "terms": [
@@ -421,7 +438,8 @@
     ],
     "notes": [
       "Trap: don’t claim O(n log n) for bubble sort."
-    ]
+    ],
+    "lmr": false
   },
   "1.4.2": {
     "terms": [
@@ -444,7 +462,8 @@
     ],
     "notes": [
       "Trap: best-case O(n) ≠ average O(n)."
-    ]
+    ],
+    "lmr": false
   },
   "1.4.3": {
     "terms": [
@@ -467,7 +486,8 @@
     ],
     "notes": [
       "Trap: selection ≠ insertion — selection always scans remaining min."
-    ]
+    ],
+    "lmr": false
   },
   "1.4.4": {
     "terms": [
@@ -494,7 +514,8 @@
     ],
     "notes": [
       "Trap: merge sort is not in-place in the standard form."
-    ]
+    ],
+    "lmr": false
   },
   "1.4.5": {
     "terms": [
@@ -517,7 +538,8 @@
     ],
     "notes": [
       "Trap: heap sort ≠ priority-queue ADT lecture alone — it’s a sorting algorithm."
-    ]
+    ],
+    "lmr": false
   },
   "1.4.6": {
     "terms": [
@@ -540,7 +562,8 @@
     ],
     "notes": [
       "Trap: worst case is quadratic — mention randomised/median-of-three if asked."
-    ]
+    ],
+    "lmr": false
   },
   "2.1.1": {
     "terms": [
@@ -564,7 +587,8 @@
     "notes": [
       "LMR: terminology first before BST/AVL detail.",
       "Trap: ‘tree’ in CS usually means rooted tree in DSA units."
-    ]
+    ],
+    "lmr": true
   },
   "2.1.2": {
     "terms": [
@@ -588,7 +612,8 @@
     "notes": [
       "LMR: define binary tree + name three DFS-style traversals.",
       "Trap: don’t assume sorted order without BST property."
-    ]
+    ],
+    "lmr": true
   },
   "2.1.3": {
     "terms": [
@@ -612,7 +637,8 @@
     "notes": [
       "LMR: state ordering invariant clearly.",
       "Trap: binary tree without order is not a BST."
-    ]
+    ],
+    "lmr": true
   },
   "2.1.4": {
     "terms": [
@@ -631,7 +657,8 @@
     ],
     "notes": [
       "Trap: AVL/Red-Black balance ≠ probability-optimal BST."
-    ]
+    ],
+    "lmr": false
   },
   "2.1.5": {
     "terms": [
@@ -650,7 +677,8 @@
     ],
     "notes": [
       "Trap: colour rules are invariants — don’t invent ‘just paint randomly’."
-    ]
+    ],
+    "lmr": false
   },
   "2.1.6": {
     "terms": [
@@ -673,7 +701,8 @@
     ],
     "notes": [
       "Trap: AVL is a BST plus height invariant — not a heap."
-    ]
+    ],
+    "lmr": false
   },
   "2.1.7": {
     "terms": [
@@ -696,7 +725,8 @@
     ],
     "notes": [
       "Trap: B-tree ≠ binary tree; ‘B’ is not ‘binary’."
-    ]
+    ],
+    "lmr": false
   },
   "2.1.8": {
     "terms": [
@@ -715,7 +745,8 @@
     ],
     "notes": [
       "Trap: spanning tree has V−1 edges — no cycles."
-    ]
+    ],
+    "lmr": false
   },
   "2.1.9": {
     "terms": [
@@ -734,7 +765,8 @@
     ],
     "notes": [
       "Trap: Prim ≠ Kruskal (Kruskal sorts edges globally)."
-    ]
+    ],
+    "lmr": false
   },
   "2.1.10": {
     "terms": [
@@ -753,7 +785,8 @@
     ],
     "notes": [
       "Trap: adding lightest edge blindly without cycle check is wrong."
-    ]
+    ],
+    "lmr": false
   },
   "2.2.1": {
     "terms": [
@@ -776,7 +809,8 @@
     ],
     "notes": [
       "Trap: pick representation based on density — not always matrix."
-    ]
+    ],
+    "lmr": false
   },
   "2.2.2": {
     "terms": [
@@ -795,7 +829,8 @@
     ],
     "notes": [
       "Trap: DFS ≠ BFS order; DFS not for unweighted shortest path."
-    ]
+    ],
+    "lmr": false
   },
   "2.2.3": {
     "terms": [
@@ -814,7 +849,8 @@
     ],
     "notes": [
       "Trap: BFS on weighted edges with different weights ≠ Dijkstra."
-    ]
+    ],
+    "lmr": false
   },
   "2.2.4": {
     "terms": [
@@ -837,7 +873,8 @@
     ],
     "notes": [
       "Trap: using Dijkstra with negatives — wrong."
-    ]
+    ],
+    "lmr": false
   },
   "2.2.5": {
     "terms": [
@@ -860,7 +897,8 @@
     ],
     "notes": [
       "Trap: Floyd ≠ single BFS from each node on weighted graphs."
-    ]
+    ],
+    "lmr": false
   },
   "3.1.1": {
     "terms": [
@@ -884,7 +922,8 @@
     "notes": [
       "LMR: say both conditions for DP.",
       "Trap: calling every recursion ‘DP’ without storage of overlaps."
-    ]
+    ],
+    "lmr": true
   },
   "3.1.2": {
     "terms": [
@@ -904,7 +943,8 @@
     "notes": [
       "LMR: one-line definition of optimality principle.",
       "Trap: optimality principle ≠ ‘greedy choice property’ (that’s greedy)."
-    ]
+    ],
+    "lmr": true
   },
   "3.1.3": {
     "terms": [
@@ -924,7 +964,8 @@
     "notes": [
       "LMR: ‘7 products instead of 8’ is the memorable fact.",
       "Trap: Strassen is not related to shortest paths."
-    ]
+    ],
+    "lmr": true
   },
   "3.1.4": {
     "terms": [
@@ -943,7 +984,8 @@
     ],
     "notes": [
       "Trap: this is about cost of parenthesisation — not Strassen’s algorithm itself."
-    ]
+    ],
+    "lmr": false
   },
   "3.1.5": {
     "terms": [
@@ -962,7 +1004,8 @@
     ],
     "notes": [
       "Trap: LCS vs longest common substring — contiguousness."
-    ]
+    ],
+    "lmr": false
   },
   "3.1.6": {
     "terms": [
@@ -985,7 +1028,8 @@
     ],
     "notes": [
       "Trap: using greedy value/weight for 0/1 — incorrect in general."
-    ]
+    ],
+    "lmr": false
   },
   "3.2.1": {
     "terms": [
@@ -1008,7 +1052,8 @@
     ],
     "notes": [
       "Trap: ‘greedy always works’ — false."
-    ]
+    ],
+    "lmr": false
   },
   "3.2.2": {
     "terms": [
@@ -1027,7 +1072,8 @@
     ],
     "notes": [
       "Trap: sorting by start time alone is not the standard optimal greedy."
-    ]
+    ],
+    "lmr": false
   },
   "3.2.3": {
     "terms": [
@@ -1050,7 +1096,8 @@
     ],
     "notes": [
       "Trap: Huffman is for encoding efficiency — not encryption security."
-    ]
+    ],
+    "lmr": false
   },
   "3.2.4": {
     "terms": [
@@ -1069,7 +1116,8 @@
     ],
     "notes": [
       "Trap: applying fractional greedy to 0/1 knapsack."
-    ]
+    ],
+    "lmr": false
   },
   "3.3.1": {
     "terms": [
@@ -1092,7 +1140,8 @@
     ],
     "notes": [
       "Trap: confusing TSP with MST (MST is not a tour)."
-    ]
+    ],
+    "lmr": false
   },
   "3.3.2": {
     "terms": [
@@ -1111,7 +1160,8 @@
     ],
     "notes": [
       "Trap: one word ‘knapsack’ — always specify 0/1 vs fractional."
-    ]
+    ],
+    "lmr": false
   },
   "3.3.3": {
     "terms": [
@@ -1130,7 +1180,8 @@
     ],
     "notes": [
       "Trap: sequencing ≠ OS process scheduling vocabulary unless syllabus links them."
-    ]
+    ],
+    "lmr": false
   },
   "3.3.4": {
     "terms": [
@@ -1149,7 +1200,8 @@
     ],
     "notes": [
       "Trap: ignoring deadline when taking highest profit first blindly."
-    ]
+    ],
+    "lmr": false
   },
   "4.1.1": {
     "terms": [
@@ -1169,7 +1221,8 @@
     "notes": [
       "LMR: state complexity clearly.",
       "Trap: naïve is not hashing-based."
-    ]
+    ],
+    "lmr": true
   },
   "4.1.3": {
     "terms": [
@@ -1193,7 +1246,8 @@
     "notes": [
       "LMR: hash then verify — never skip verify.",
       "Trap: hash equality ≠ string equality."
-    ]
+    ],
+    "lmr": true
   },
   "4.2.1": {
     "terms": [
@@ -1213,7 +1267,8 @@
     "notes": [
       "LMR: definition + idea of 2-approximation.",
       "Trap: vertex cover ≠ vertex colouring."
-    ]
+    ],
+    "lmr": true
   },
   "4.2.2": {
     "terms": [
@@ -1232,7 +1287,8 @@
     ],
     "notes": [
       "Trap: set cover ≠ vertex cover (different universe structure)."
-    ]
+    ],
+    "lmr": false
   },
   "4.2.3": {
     "terms": [
@@ -1251,7 +1307,8 @@
     ],
     "notes": [
       "Trap: randomised ≠ incorrect; analyse failure probability."
-    ]
+    ],
+    "lmr": false
   },
   "4.2.4": {
     "terms": [
@@ -1270,7 +1327,8 @@
     ],
     "notes": [
       "Trap: subset-sum is not always polynomial — numeric magnitude matters."
-    ]
+    ],
+    "lmr": false
   },
   "5.1.1": {
     "terms": [
@@ -1290,7 +1348,8 @@
     "notes": [
       "LMR: one line linking green goals to algorithmic efficiency.",
       "Trap: don’t invent unrelated ecology essays — stay CS-framed."
-    ]
+    ],
+    "lmr": true
   },
   "5.1.2": {
     "terms": [
@@ -1310,7 +1369,8 @@
     "notes": [
       "LMR: vertex-once cycle definition + NP-complete mention.",
       "Trap: Hamiltonian ≠ Eulerian."
-    ]
+    ],
+    "lmr": true
   },
   "5.2.1": {
     "terms": [
@@ -1330,7 +1390,8 @@
     "notes": [
       "LMR: two parts of a completeness proof.",
       "Trap: reducing your problem to SAT shows yours is ‘no harder’ — wrong direction for hardness."
-    ]
+    ],
+    "lmr": true
   },
   "5.2.2": {
     "terms": [
@@ -1349,7 +1410,8 @@
     ],
     "notes": [
       "Trap: optimisation TSP vs decision Hamiltonian — related but not identical statements."
-    ]
+    ],
+    "lmr": false
   },
   "5.2.3": {
     "terms": [
@@ -1368,7 +1430,8 @@
     ],
     "notes": [
       "Trap: NP-hard ≠ NP-complete unless also in NP."
-    ]
+    ],
+    "lmr": false
   },
   "5.2.4": {
     "terms": [
@@ -1387,6 +1450,7 @@
     ],
     "notes": [
       "Trap: arrow direction mistakes fail proofs."
-    ]
+    ],
+    "lmr": false
   }
 }
