@@ -42,15 +42,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Introduction to Security Attacks?",
+              "q": "Which statement best defines Security attack?",
               "options": [
-                "Unrelated to Module 1",
-                "A core idea in Network Security & Cryptography: Introduction to Security Attacks",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "Pseudorandom permutation behaviour under secret key; avalanche effect.",
+                "X.509 server (and optional client) certificates bind names to public keys.",
+                "Any action that compromises information security (CIA or related goals).",
+                "SHA-2 variant with 256-bit digest — common integrity workhorse."
               ],
-              "answer": 1,
-              "explain": "Introduction to Security Attacks is a syllabus topic under Network security in Module 1."
+              "answer": 2,
+              "explain": "Security attack: Any action that compromises information security (CIA or related goals)."
+            },
+            {
+              "q": "Which statement best defines Passive attack?",
+              "options": [
+                "Standalone malware that self-replicates across networks without needing a host file.",
+                "Encapsulation of private packets inside outer packets across the Internet.",
+                "Secure Hash Algorithm standards (SHA-1 legacy; SHA-2/SHA-3 modern).",
+                "Eavesdropping / traffic analysis — learn without altering data."
+              ],
+              "answer": 3,
+              "explain": "Passive attack: Eavesdropping / traffic analysis — learn without altering data."
+            },
+            {
+              "q": "Which statement best defines Active attack?",
+              "options": [
+                "Modify, fabricate, replay, or interrupt — alters system/data behaviour.",
+                "Replace each plaintext unit with a ciphertext unit by a mapping.",
+                "Art/science of breaking ciphers without the key (or testing strength).",
+                "Stream vs block; steganography hides existence, not just meaning."
+              ],
+              "answer": 0,
+              "explain": "Active attack: Modify, fabricate, replay, or interrupt — alters system/data behaviour."
+            },
+            {
+              "q": "Which statement about Introduction to Security Attacks is correct?",
+              "options": [
+                "Create forensic disk images (e.g. dd-family, FTK Imager-class tools).",
+                "Study how differences in plaintext pairs propagate to ciphertext differences.",
+                "Common technology choices for tunnel security.",
+                "Passive vs active: secrecy of monitoring vs alteration/disruption."
+              ],
+              "answer": 3,
+              "explain": "Passive vs active: secrecy of monitoring vs alteration/disruption."
             }
           ]
         },
@@ -91,15 +124,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Services and Mechanism?",
+              "q": "Which statement best defines Security service?",
               "options": [
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A core idea in Network Security & Cryptography: Services and Mechanism",
-                "Unrelated to Module 1"
+                "Gateway to gateway linking networks.",
+                "Report findings clearly for investigators/court.",
+                "A service that enhances security of systems/data transfers (what we want).",
+                "Allow/deny by header fields (IP, port, protocol) — stateless or stateful."
               ],
               "answer": 2,
-              "explain": "Services and Mechanism is a syllabus topic under Network security in Module 1."
+              "explain": "Security service: A service that enhances security of systems/data transfers (what we want)."
+            },
+            {
+              "q": "Which statement best defines Security mechanism?",
+              "options": [
+                "A process or device that detects, prevents, or recovers from attacks (how).",
+                "Encryption alone does not always authenticate; auth alone does not encrypt.",
+                "Key Distribution Center: Authentication Server (AS) + Ticket Granting Server (TGS).",
+                "Nonlinear 6→4 bit substitution — primary DES confusion source."
+              ],
+              "answer": 0,
+              "explain": "Security mechanism: A process or device that detects, prevents, or recovers from attacks (how)."
+            },
+            {
+              "q": "Which statement best defines Confidentiality?",
+              "options": [
+                "2^56 key space is searchable with specialised hardware (DES cracker era).",
+                "Information not disclosed to unauthorised parties.",
+                "Hash of message signed with sender’s private key for authenticity.",
+                "May include DSA, RSA signatures, ECDSA depending on revision era."
+              ],
+              "answer": 1,
+              "explain": "Confidentiality: Information not disclosed to unauthorised parties."
+            },
+            {
+              "q": "Which key idea belongs with Services and Mechanism?",
+              "options": [
+                "Altering history requires redoing consensus work / controlling majority — costly.",
+                "Chosen ΔP and observed ΔC statistics that leak key bits of S-boxes/rounds.",
+                "Verification equation holds iff s,r came from private x and hash H(M).",
+                "Service = goal/abstract need; mechanism = concrete technique (e.g. encryption, MAC)."
+              ],
+              "answer": 3,
+              "explain": "Service = goal/abstract need; mechanism = concrete technique (e.g. encryption, MAC)."
             }
           ]
         },
@@ -140,15 +206,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Classical Encryption Techniques?",
+              "q": "Which statement best defines Classical encryption?",
               "options": [
-                "Unrelated to Module 1",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "A core idea in Network Security & Cryptography: Classical Encryption Techniques",
-                "Only a programming-language keyword with no syllabus meaning"
+                "Watches OS logs, files, processes on a single host.",
+                "Secure Hash Algorithm standards (SHA-1 legacy; SHA-2/SHA-3 modern).",
+                "Pre-computer / simple ciphers based on substitution and/or transposition.",
+                "Nonlinear 6→4 bit substitution — primary DES confusion source."
               ],
               "answer": 2,
-              "explain": "Classical Encryption Techniques is a syllabus topic under Network security in Module 1."
+              "explain": "Classical encryption: Pre-computer / simple ciphers based on substitution and/or transposition."
+            },
+            {
+              "q": "Which statement best defines Plaintext / Ciphertext?",
+              "options": [
+                "Original message / encrypted message.",
+                "Scope breach, attribute activity, guide recovery.",
+                "Assure that a communicating entity is who it claims to be.",
+                "Documented handling history proving evidence was not tampered with."
+              ],
+              "answer": 0,
+              "explain": "Plaintext / Ciphertext: Original message / encrypted message."
+            },
+            {
+              "q": "Which statement best defines Key?",
+              "options": [
+                "Secret parameter that selects a specific transformation from a cipher family.",
+                "Encapsulating Security Payload — confidentiality ± integrity for payload.",
+                "Follow Received headers and related metadata to reconstruct message path.",
+                "Digital Signature Algorithm (original DSS algorithm) based on discrete log in a subgroup."
+              ],
+              "answer": 0,
+              "explain": "Key: Secret parameter that selects a specific transformation from a cipher family."
+            },
+            {
+              "q": "Which key idea belongs with Classical Encryption Techniques?",
+              "options": [
+                "Substitution and transposition; cryptanalysis recovers key/plaintext.",
+                "Interface between merchant and card issuer/acquirer networks.",
+                "Reconnaissance → gain access → privilege escalation → maintain/cover tracks (typical pattern).",
+                "Classical systems rely on secrecy of the algorithm+key historically; modern Kerckhoffs: algorithm public, key secret."
+              ],
+              "answer": 3,
+              "explain": "Classical systems rely on secrecy of the algorithm+key historically; modern Kerckhoffs: algorithm public, key secret."
             }
           ]
         },
@@ -189,15 +288,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Substitution Ciphers?",
+              "q": "Which statement best defines Substitution cipher?",
               "options": [
-                "Unrelated to Module 1",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "A core idea in Network Security & Cryptography: Substitution Ciphers"
+                "Secure/Multipurpose Internet Mail Extensions — MIME + crypto based on PKI.",
+                "Unkeyed digest; needs additional binding (e.g. encrypt digest, or HMAC).",
+                "Replace each plaintext unit with a ciphertext unit by a mapping.",
+                "Links order info for merchant and payment info for bank without cross-revealing."
               ],
-              "answer": 3,
-              "explain": "Substitution Ciphers is a syllabus topic under Network security in Module 1."
+              "answer": 2,
+              "explain": "Substitution cipher: Replace each plaintext unit with a ciphertext unit by a mapping."
+            },
+            {
+              "q": "Which statement best defines Caesar cipher?",
+              "options": [
+                "Shift each letter by a fixed k (mod 26); key space only 25 nontrivial shifts.",
+                "Write plaintext in zigzag rows; read off by rows.",
+                "Typically needs many chosen pairs to amplify probabilistic biases.",
+                "MAC needs a shared secret; plain hash does not."
+              ],
+              "answer": 0,
+              "explain": "Caesar cipher: Shift each letter by a fixed k (mod 26); key space only 25 nontrivial shifts."
+            },
+            {
+              "q": "Which statement best defines Monoalphabetic?",
+              "options": [
+                "PGP and S/MIME for end-to-end mail confidentiality/auth.",
+                "Fixed substitution alphabet for the whole message.",
+                "Typically needs many chosen pairs to amplify probabilistic biases.",
+                "Organisations may need reasonable security practices and privacy safeguards under applicable rules."
+              ],
+              "answer": 1,
+              "explain": "Monoalphabetic: Fixed substitution alphabet for the whole message."
+            },
+            {
+              "q": "Which key idea belongs with Substitution Ciphers?",
+              "options": [
+                "Active entity (user/process) / passive resource (file, socket).",
+                "Monoalphabetic preserves letter frequencies; polyalphabetic flattens them somewhat.",
+                "The reordering rule (often derived from a keyword).",
+                "Derives round keys from the master key."
+              ],
+              "answer": 1,
+              "explain": "Monoalphabetic preserves letter frequencies; polyalphabetic flattens them somewhat."
             }
           ]
         },
@@ -238,15 +370,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Transposition Ciphers?",
+              "q": "Which statement best defines Transposition cipher?",
               "options": [
-                "A core idea in Network Security & Cryptography: Transposition Ciphers",
-                "Only a programming-language keyword with no syllabus meaning",
-                "Unrelated to Module 1",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "Fresh encrypted blob (timestamp) proving possession of session key — anti-replay.",
+                "No shared secret needed before first confidential message (vs symmetric).",
+                "Permute positions of plaintext symbols; symbols themselves unchanged.",
+                "XOR state with round key."
+              ],
+              "answer": 2,
+              "explain": "Transposition cipher: Permute positions of plaintext symbols; symbols themselves unchanged."
+            },
+            {
+              "q": "Which statement best defines Rail fence?",
+              "options": [
+                "Write plaintext in zigzag rows; read off by rows.",
+                "Keyed invertible transformation on n-bit blocks (typical n=64 or 128).",
+                "Signer cannot credibly deny the signature if private key was not compromised.",
+                "Credential presented to an application server for access."
               ],
               "answer": 0,
-              "explain": "Transposition Ciphers is a syllabus topic under Network security in Module 1."
+              "explain": "Rail fence: Write plaintext in zigzag rows; read off by rows."
+            },
+            {
+              "q": "Which statement best defines Columnar transposition?",
+              "options": [
+                "Reconstruct events for investigation/court while maintaining evidential integrity.",
+                "Write in a rectangle by rows; read columns in key order.",
+                "Protecting systems via physical/hardware roots of trust and isolation.",
+                "Compatibility: if K1=K2=K3, 3DES collapses to single DES for legacy interop."
+              ],
+              "answer": 1,
+              "explain": "Columnar transposition: Write in a rectangle by rows; read columns in key order."
+            },
+            {
+              "q": "Which key idea belongs with Transposition Ciphers?",
+              "options": [
+                "syslog/journald, auth logs, shell history, cron, package logs, /proc.",
+                "Transposition keeps frequencies of letters; digraph/position stats change.",
+                "Digraph substitution using a 5×5 key square.",
+                "Reusing n with different e’s for same M can be fatal."
+              ],
+              "answer": 1,
+              "explain": "Transposition keeps frequencies of letters; digraph/position stats change."
             }
           ]
         },
@@ -287,15 +452,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Cryptanalysis?",
+              "q": "Which statement best defines Cryptanalysis?",
               "options": [
-                "A core idea in Network Security & Cryptography: Cryptanalysis",
-                "Unrelated to Module 1",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "Fermat/Euler, CRT; RSA for encryption and signatures.",
+                "Control over personal data collection, use, and disclosure online.",
+                "Recover plaintext and/or key by exploiting cipher weaknesses.",
+                "Eavesdropping / traffic analysis — learn without altering data."
               ],
-              "answer": 0,
-              "explain": "Cryptanalysis is a syllabus topic under Network security in Module 1."
+              "answer": 2,
+              "explain": "Cryptanalysis: Recover plaintext and/or key by exploiting cipher weaknesses."
+            },
+            {
+              "q": "Which statement best defines Ciphertext-only?",
+              "options": [
+                "Dedicated chip storing keys and performing crypto in isolation.",
+                "Not the primary MAC goal — that’s confidentiality.",
+                "Attacker has only ciphertext.",
+                "Easy one way, hard to invert without trapdoor (private key)."
+              ],
+              "answer": 2,
+              "explain": "Ciphertext-only: Attacker has only ciphertext."
+            },
+            {
+              "q": "Which statement best defines Known-plaintext?",
+              "options": [
+                "Unauthorised access, data theft, fraud, obscenity, identity offences, etc., as defined in statute.",
+                "Attacker has plaintext–ciphertext pairs.",
+                "Count of integers in 1..n−1 coprime to n.",
+                "Capture/analyse RAM for volatile evidence."
+              ],
+              "answer": 1,
+              "explain": "Known-plaintext: Attacker has plaintext–ciphertext pairs."
+            },
+            {
+              "q": "Which key idea belongs with Cryptanalysis?",
+              "options": [
+                "Digital Signature Algorithm (original DSS algorithm) based on discrete log in a subgroup.",
+                "Attack models ordered roughly by power: ciphertext-only < known < chosen.",
+                "Key Distribution Center: Authentication Server (AS) + Ticket Granting Server (TGS).",
+                "MD5/SHA digests to verify image integrity (MD5 legacy for checksumming)."
+              ],
+              "answer": 1,
+              "explain": "Attack models ordered roughly by power: ciphertext-only < known < chosen."
             }
           ]
         },
@@ -336,15 +534,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Steganography?",
+              "q": "Which statement best defines Steganography?",
               "options": [
-                "Unrelated to Module 1",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "A core idea in Network Security & Cryptography: Steganography",
-                "Only a programming-language keyword with no syllabus meaning"
+                "Prove origin and integrity — not secrecy alone.",
+                "Random symmetric key encrypts the message; RSA/ElGamal wraps that key.",
+                "Hide the existence of a message inside cover media (image, audio, text).",
+                "Try all keys until decryption is meaningful."
               ],
               "answer": 2,
-              "explain": "Steganography is a syllabus topic under Network security in Module 1."
+              "explain": "Steganography: Hide the existence of a message inside cover media (image, audio, text)."
+            },
+            {
+              "q": "Which statement best defines Cover / Stego-object?",
+              "options": [
+                "Combine residues to recover x modulo product of moduli.",
+                "Innocent carrier / carrier after embedding.",
+                "Confidentiality, Integrity, Availability — core security goals.",
+                "Original message / encrypted message."
+              ],
+              "answer": 1,
+              "explain": "Cover / Stego-object: Innocent carrier / carrier after embedding."
+            },
+            {
+              "q": "Which statement best defines Payload?",
+              "options": [
+                "Predicted difference path through rounds with some probability.",
+                "Hidden secret data embedded in the cover.",
+                "Recompute using public y=g^x and check r matches reconstructed value.",
+                "Damaging or spying action delivered after infection (erase, encrypt ransomware, backdoor)."
+              ],
+              "answer": 1,
+              "explain": "Payload: Hidden secret data embedded in the cover."
+            },
+            {
+              "q": "Regarding “Cryptography hides meaning; steganography hides presence”, which is correct?",
+              "options": [
+                "Count of integers in 1..n−1 coprime to n.",
+                "often used together.",
+                "Bad choices (tiny e with small M, Wiener small-d) leak information.",
+                "Keyed-hash MAC: hash with key mixed via ipad/opad construction."
+              ],
+              "answer": 1,
+              "explain": "Cryptography hides meaning; steganography hides presence — often used together."
             }
           ]
         },
@@ -385,15 +616,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Stream and Block Ciphers?",
+              "q": "Which statement best defines Stream cipher?",
               "options": [
-                "Unrelated to Module 1",
-                "A core idea in Network Security & Cryptography: Stream and Block Ciphers",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Only a programming-language keyword with no syllabus meaning"
+                "Fresh encrypted blob (timestamp) proving possession of session key — anti-replay.",
+                "Encrypts plaintext bit/byte stream, typically with a keystream XOR.",
+                "Technical/legal measures against unauthorised copying/distribution of copyrighted works.",
+                "16-round Feistel network with 64-bit block (56-bit effective key)."
               ],
               "answer": 1,
-              "explain": "Stream and Block Ciphers is a syllabus topic under Network security in Module 1."
+              "explain": "Stream cipher: Encrypts plaintext bit/byte stream, typically with a keystream XOR."
+            },
+            {
+              "q": "Which statement best defines Block cipher?",
+              "options": [
+                "Innocent carrier / carrier after embedding.",
+                "Organisations may need reasonable security practices and privacy safeguards under applicable rules.",
+                "Encrypts fixed-size blocks (e.g. 64 or 128 bits) under one key.",
+                "Fresh encrypted blob (timestamp) proving possession of session key — anti-replay."
+              ],
+              "answer": 2,
+              "explain": "Block cipher: Encrypts fixed-size blocks (e.g. 64 or 128 bits) under one key."
+            },
+            {
+              "q": "Which statement best defines Keystream?",
+              "options": [
+                "EnCase, Autopsy/Sleuth Kit-class platforms for browsing artefacts.",
+                "Fresh encrypted blob (timestamp) proving possession of session key — anti-replay.",
+                "IP theft, employee misuse, policy violations.",
+                "Pseudorandom sequence combined with plaintext (classically by XOR)."
+              ],
+              "answer": 3,
+              "explain": "Keystream: Pseudorandom sequence combined with plaintext (classically by XOR)."
+            },
+            {
+              "q": "Which key idea belongs with Stream and Block Ciphers?",
+              "options": [
+                "Modify, fabricate, replay, or interrupt — alters system/data behaviour.",
+                "Nonlinear byte substitution via S-box (confusion).",
+                "Encryption alone does not always authenticate; auth alone does not encrypt.",
+                "Stream: low latency, no block padding; reuse of keystream is catastrophic."
+              ],
+              "answer": 3,
+              "explain": "Stream: low latency, no block padding; reuse of keystream is catastrophic."
             }
           ]
         },
@@ -434,15 +698,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Overview of Hardware Security?",
+              "q": "Which statement best defines Hardware security?",
               "options": [
-                "A definition-only label with no role in Network Security & Cryptography",
-                "A core idea in Network Security & Cryptography: Overview of Hardware Security",
-                "Only a programming-language keyword with no syllabus meaning",
-                "Unrelated to Module 1"
+                "Hardware/software preventing writes to evidence media.",
+                "MTA logs, spam gateway logs, DNS/IP WHOIS for hop investigation.",
+                "Protecting systems via physical/hardware roots of trust and isolation.",
+                "Art/science of designing secure transformative schemes."
+              ],
+              "answer": 2,
+              "explain": "Hardware security: Protecting systems via physical/hardware roots of trust and isolation."
+            },
+            {
+              "q": "Which statement best defines TPM / secure element?",
+              "options": [
+                "Rijndael-based SPN standard: 128-bit block; keys 128/192/256 → 10/12/14 rounds.",
+                "Dedicated chip storing keys and performing crypto in isolation.",
+                "Protect upper-layer payload vs encapsulate whole IP packet (VPN-style).",
+                "Protected via imaging, hashing, custody, and controlled analysis."
               ],
               "answer": 1,
-              "explain": "Overview of Hardware Security is a syllabus topic under Network security in Module 1."
+              "explain": "TPM / secure element: Dedicated chip storing keys and performing crypto in isolation."
+            },
+            {
+              "q": "Which statement best defines Side-channel?",
+              "options": [
+                "Match known attack patterns — low novelty, fewer novel false mysteries.",
+                "May include DSA, RSA signatures, ECDSA depending on revision era.",
+                "Spread plaintext statistical structure over many ciphertext bits.",
+                "Leakage via timing, power, EM — attacks beyond pure maths of the cipher."
+              ],
+              "answer": 3,
+              "explain": "Side-channel: Leakage via timing, power, EM — attacks beyond pure maths of the cipher."
+            },
+            {
+              "q": "Which key idea belongs with Overview of Hardware Security?",
+              "options": [
+                "From: can be forged; trust server-added Received chains more.",
+                "Sign with d; verify with e — same maths, different goal.",
+                "Hardness of discrete logarithm in the chosen group.",
+                "Software crypto can be correct yet leak via side channels on real hardware."
+              ],
+              "answer": 3,
+              "explain": "Software crypto can be correct yet leak via side channels on real hardware."
             }
           ]
         }
@@ -489,15 +786,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Modern Block Ciphers: Block Ciphers Principles?",
+              "q": "Which statement best defines Block cipher?",
               "options": [
-                "Only a programming-language keyword with no syllabus meaning",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "A core idea in Network Security & Cryptography: Modern Block Ciphers: Block Ciphers Principles",
-                "Unrelated to Module 2"
+                "Write in a rectangle by rows; read columns in key order.",
+                "Keyed invertible transformation on n-bit blocks (typical n=64 or 128).",
+                "Ticket-Granting Ticket — proves AS authentication to obtain service tickets.",
+                "Pre-computer / simple ciphers based on substitution and/or transposition."
               ],
-              "answer": 2,
-              "explain": "Modern Block Ciphers: Block Ciphers Principles is a syllabus topic under Secret Key Cryptography in Module 2."
+              "answer": 1,
+              "explain": "Block cipher: Keyed invertible transformation on n-bit blocks (typical n=64 or 128)."
+            },
+            {
+              "q": "Which statement best defines Product cipher?",
+              "options": [
+                "Any action that compromises information security (CIA or related goals).",
+                "Virtual Private Network — private connectivity over a public network using tunnelling + crypto.",
+                "SHA-2 variant with 256-bit digest — common integrity workhorse.",
+                "Composition of substitutions and permutations (Shannon-style)."
+              ],
+              "answer": 3,
+              "explain": "Product cipher: Composition of substitutions and permutations (Shannon-style)."
+            },
+            {
+              "q": "Which statement best defines Round?",
+              "options": [
+                "Repeated keyed mixing step; more rounds increase diffusion/confusion cost.",
+                "Need not be invertible; overall Feistel cipher remains invertible.",
+                "Make the relationship between ciphertext and key as complex as possible.",
+                "Composition of substitutions and permutations (Shannon-style)."
+              ],
+              "answer": 0,
+              "explain": "Round: Repeated keyed mixing step; more rounds increase diffusion/confusion cost."
+            },
+            {
+              "q": "Which key idea belongs with Modern Block Ciphers: Block Ciphers Principles?",
+              "options": [
+                "Append-only distributed ledger of chained, hashed blocks agreed by consensus.",
+                "Function producing an authenticator from message (±key/secret).",
+                "Screened subnet for public services separated from internal LAN.",
+                "Principles: confusion + diffusion realised via SPN or Feistel structures."
+              ],
+              "answer": 3,
+              "explain": "Principles: confusion + diffusion realised via SPN or Feistel structures."
             }
           ]
         },
@@ -538,15 +868,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Shannon’s Theory of Confusion and Diffusion?",
+              "q": "Which statement best defines Confusion?",
               "options": [
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Only a programming-language keyword with no syllabus meaning",
-                "Unrelated to Module 2",
-                "A core idea in Network Security & Cryptography: Shannon’s Theory of Confusion and Diffusion"
+                "Assure that a communicating entity is who it claims to be.",
+                "Hidden secret data embedded in the cover.",
+                "Make the relationship between ciphertext and key as complex as possible.",
+                "Verification equation holds iff s,r came from private x and hash H(M)."
+              ],
+              "answer": 2,
+              "explain": "Confusion: Make the relationship between ciphertext and key as complex as possible."
+            },
+            {
+              "q": "Which statement best defines Diffusion?",
+              "options": [
+                "Spread plaintext statistical structure over many ciphertext bits.",
+                "Usually needs signatures/TTP — not provided by ordinary MAC.",
+                "System x≡a_i (mod m_i) has unique solution mod M=∏m_i if moduli pairwise coprime.",
+                "Eavesdropping / traffic analysis — learn without altering data."
+              ],
+              "answer": 0,
+              "explain": "Diffusion: Spread plaintext statistical structure over many ciphertext bits."
+            },
+            {
+              "q": "Which statement best defines Substitution?",
+              "options": [
+                "Verify that a message is from the claimed sender and was not altered.",
+                "Intrusion Detection System — monitors for suspicious activity and alerts/responds.",
+                "Expansion E, XOR round key, 8 S-boxes, then permutation P.",
+                "Primary tool for confusion (S-boxes)."
               ],
               "answer": 3,
-              "explain": "Shannon’s Theory of Confusion and Diffusion is a syllabus topic under Secret Key Cryptography in Module 2."
+              "explain": "Substitution: Primary tool for confusion (S-boxes)."
+            },
+            {
+              "q": "Which key idea belongs with Shannon’s Theory of Confusion and Diffusion?",
+              "options": [
+                "Longer-term artefact study across cases.",
+                "Necessary condition for the standard unique CRT statement.",
+                "Shannon: both properties needed; either alone is insufficient against cryptanalysis.",
+                "Hash of message signed with sender’s private key for authenticity."
+              ],
+              "answer": 2,
+              "explain": "Shannon: both properties needed; either alone is insufficient against cryptanalysis."
             }
           ]
         },
@@ -587,15 +950,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Fiestal Structure?",
+              "q": "Which statement best defines Feistel structure?",
               "options": [
-                "A core idea in Network Security & Cryptography: Fiestal Structure",
-                "Only a programming-language keyword with no syllabus meaning",
-                "Unrelated to Module 2",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "Bit-for-bit imaging and labelling of media.",
+                "Split block into L∥R; round function F updates one half using the other + round key.",
+                "Reconnaissance → gain access → privilege escalation → maintain/cover tracks (typical pattern).",
+                "Nonlinear 6→4 bit substitution — primary DES confusion source."
+              ],
+              "answer": 1,
+              "explain": "Feistel structure: Split block into L∥R; round function F updates one half using the other + round key."
+            },
+            {
+              "q": "Which statement best defines Round function F?",
+              "options": [
+                "Authentication Header — integrity/authenticity of IP packet parts (no encryption).",
+                "Need not be invertible; overall Feistel cipher remains invertible.",
+                "Row-wise byte rotation (helps diffusion).",
+                "EnCase, Autopsy/Sleuth Kit-class platforms for browsing artefacts."
+              ],
+              "answer": 1,
+              "explain": "Round function F: Need not be invertible; overall Feistel cipher remains invertible."
+            },
+            {
+              "q": "Which statement best defines Swap / combine?",
+              "options": [
+                "Classic: L_i = R_{i−1}; R_i = L_{i−1} ⊕ F(R_{i−1}, K_i).",
+                "16-round Feistel network with 64-bit block (56-bit effective key).",
+                "Substitution and transposition; cryptanalysis recovers key/plaintext.",
+                "Not the primary MAC goal — that’s confidentiality."
               ],
               "answer": 0,
-              "explain": "Fiestal Structure is a syllabus topic under Secret Key Cryptography in Module 2."
+              "explain": "Swap / combine: Classic: L_i = R_{i−1}; R_i = L_{i−1} ⊕ F(R_{i−1}, K_i)."
+            },
+            {
+              "q": "Which statement about Fiestal Structure is correct?",
+              "options": [
+                "Feistel vs SPN: Feistel encrypts one half per round; SPN mixes the whole block each round.",
+                "Recognise potential evidence sources and scope.",
+                "RAM/network state vs disk — acquisition order matters.",
+                "Prove origin and integrity — not secrecy alone."
+              ],
+              "answer": 0,
+              "explain": "Feistel vs SPN: Feistel encrypts one half per round; SPN mixes the whole block each round."
             }
           ]
         },
@@ -636,15 +1032,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Data Encryption Standard (DES)?",
+              "q": "Which statement best defines DES?",
               "options": [
-                "Unrelated to Module 2",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "A core idea in Network Security & Cryptography: Data Encryption Standard (DES)",
-                "Only a programming-language keyword with no syllabus meaning"
+                "64-bit block Feistel cipher; 56-bit effective key (+8 parity bits in 64-bit keying material).",
+                "IP theft, employee misuse, policy violations.",
+                "Hidden secret data embedded in the cover.",
+                "Longer-term artefact study across cases."
+              ],
+              "answer": 0,
+              "explain": "DES: 64-bit block Feistel cipher; 56-bit effective key (+8 parity bits in 64-bit keying material)."
+            },
+            {
+              "q": "Which statement best defines Initial / Final permutation?",
+              "options": [
+                "Virtual Private Network — private connectivity over a public network using tunnelling + crypto.",
+                "Art/science of designing secure transformative schemes.",
+                "IP and FP (IP⁻¹) bookend the 16 Feistel rounds.",
+                "Altering history requires redoing consensus work / controlling majority — costly."
               ],
               "answer": 2,
-              "explain": "Data Encryption Standard (DES) is a syllabus topic under Secret Key Cryptography in Module 2."
+              "explain": "Initial / Final permutation: IP and FP (IP⁻¹) bookend the 16 Feistel rounds."
+            },
+            {
+              "q": "Which statement best defines f-function?",
+              "options": [
+                "Expansion E, XOR round key, 8 S-boxes, then permutation P.",
+                "Virtual Private Network — private connectivity over a public network using tunnelling + crypto.",
+                "May include DSA, RSA signatures, ECDSA depending on revision era.",
+                "Recover artefacts, timelines, deleted data, logs."
+              ],
+              "answer": 0,
+              "explain": "f-function: Expansion E, XOR round key, 8 S-boxes, then permutation P."
+            },
+            {
+              "q": "Regarding “Effective security is ~56-bit key”, which is correct?",
+              "options": [
+                "Modify, fabricate, replay, or interrupt — alters system/data behaviour.",
+                "Hardness of discrete logarithm in the chosen group.",
+                "MAC_K(M) → tag; verify by recomputing and comparing tags.",
+                "historically breakable by brute force."
+              ],
+              "answer": 3,
+              "explain": "Effective security is ~56-bit key — historically breakable by brute force."
             }
           ]
         },
@@ -685,15 +1114,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Strength of DES?",
+              "q": "Which statement best defines Brute-force vulnerability?",
               "options": [
-                "A definition-only label with no role in Network Security & Cryptography",
-                "A core idea in Network Security & Cryptography: Strength of DES",
-                "Unrelated to Module 2",
-                "Only a programming-language keyword with no syllabus meaning"
+                "2^56 key space is searchable with specialised hardware (DES cracker era).",
+                "Easy one way, hard to invert without trapdoor (private key).",
+                "Repeated keyed mixing step; more rounds increase diffusion/confusion cost.",
+                "Batch of transactions plus hash linking to previous block."
+              ],
+              "answer": 0,
+              "explain": "Brute-force vulnerability: 2^56 key space is searchable with specialised hardware (DES cracker era)."
+            },
+            {
+              "q": "Which statement best defines Complementary property?",
+              "options": [
+                "Repeated keyed mixing step; more rounds increase diffusion/confusion cost.",
+                "Function producing an authenticator from message (±key/secret).",
+                "DES has a known complementary relationship exploitable in some analyses.",
+                "Innocent carrier / carrier after embedding."
+              ],
+              "answer": 2,
+              "explain": "Complementary property: DES has a known complementary relationship exploitable in some analyses."
+            },
+            {
+              "q": "Which statement best defines Weak / semi-weak keys?",
+              "options": [
+                "Pathological keys with poor schedule behaviour (must be avoided).",
+                "Hardness of discrete logarithm in the chosen group.",
+                "48-bit subkeys from key schedule (PC-1, rotations, PC-2).",
+                "Attacker has only ciphertext."
+              ],
+              "answer": 0,
+              "explain": "Weak / semi-weak keys: Pathological keys with poor schedule behaviour (must be avoided)."
+            },
+            {
+              "q": "Which key idea belongs with Strength of DES?",
+              "options": [
+                "EnCase, Autopsy/Sleuth Kit-class platforms for browsing artefacts.",
+                "Practical insecurity today is mainly short key length, not failure of Feistel idea.",
+                "Original message / encrypted message.",
+                "Fresh encrypted blob (timestamp) proving possession of session key — anti-replay."
               ],
               "answer": 1,
-              "explain": "Strength of DES is a syllabus topic under Secret Key Cryptography in Module 2."
+              "explain": "Practical insecurity today is mainly short key length, not failure of Feistel idea."
             }
           ]
         },
@@ -734,15 +1196,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Idea of Differential Cryptanalysis?",
+              "q": "Which statement best defines Differential cryptanalysis?",
               "options": [
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Unrelated to Module 2",
-                "A core idea in Network Security & Cryptography: Idea of Differential Cryptanalysis",
-                "Only a programming-language keyword with no syllabus meaning"
+                "Multiple substitution alphabets (e.g. Vigenère) — varies with position.",
+                "16-round Feistel network with 64-bit block (56-bit effective key).",
+                "Bit-for-bit imaging and labelling of media.",
+                "Study how differences in plaintext pairs propagate to ciphertext differences."
               ],
-              "answer": 2,
-              "explain": "Idea of Differential Cryptanalysis is a syllabus topic under Secret Key Cryptography in Module 2."
+              "answer": 3,
+              "explain": "Differential cryptanalysis: Study how differences in plaintext pairs propagate to ciphertext differences."
+            },
+            {
+              "q": "Which statement best defines Differential?",
+              "options": [
+                "NIST Digital Signature Standard specifying approved signature algorithms.",
+                "Chosen ΔP and observed ΔC statistics that leak key bits of S-boxes/rounds.",
+                "Damaging or spying action delivered after infection (erase, encrypt ransomware, backdoor).",
+                "Small input change yields large, unpredictable output change."
+              ],
+              "answer": 1,
+              "explain": "Differential: Chosen ΔP and observed ΔC statistics that leak key bits of S-boxes/rounds."
+            },
+            {
+              "q": "Which statement best defines Characteristic?",
+              "options": [
+                "Hash of message signed with sender’s private key for authenticity.",
+                "Predicted difference path through rounds with some probability.",
+                "Use public-key to wrap a symmetric session key; bulk data uses AES/etc.",
+                "Pseudorandom sequence combined with plaintext (classically by XOR)."
+              ],
+              "answer": 1,
+              "explain": "Characteristic: Predicted difference path through rounds with some probability."
+            },
+            {
+              "q": "Which key idea belongs with Idea of Differential Cryptanalysis?",
+              "options": [
+                "Keyed-hash MAC: hash with key mixed via ipad/opad construction.",
+                "Attacks nonlinear components (S-boxes) via difference distribution tables.",
+                "Shift each letter by a fixed k (mod 26); key space only 25 nontrivial shifts.",
+                "Feistel/DES lineage; AES is the SPN standard."
+              ],
+              "answer": 1,
+              "explain": "Attacks nonlinear components (S-boxes) via difference distribution tables."
             }
           ]
         },
@@ -783,15 +1278,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Block Cipher Modes of Operations?",
+              "q": "Which statement best defines ECB?",
               "options": [
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Unrelated to Module 2",
-                "A core idea in Network Security & Cryptography: Block Cipher Modes of Operations",
-                "Only a programming-language keyword with no syllabus meaning"
+                "Independent encryption of each block — identical plaintext blocks → identical ciphertext.",
+                "Hidden secret data embedded in the cover.",
+                "Assure message originated from claimed sender.",
+                "Secure/Multipurpose Internet Mail Extensions — MIME + crypto based on PKI."
               ],
-              "answer": 2,
-              "explain": "Block Cipher Modes of Operations is a syllabus topic under Secret Key Cryptography in Module 2."
+              "answer": 0,
+              "explain": "ECB: Independent encryption of each block — identical plaintext blocks → identical ciphertext."
+            },
+            {
+              "q": "Which statement best defines CBC?",
+              "options": [
+                "Row-wise byte rotation (helps diffusion).",
+                "C_i = E_K(P_i ⊕ C_{i−1}); needs IV; hides patterns better than ECB.",
+                "Predicted difference path through rounds with some probability.",
+                "Gateway to gateway linking networks."
+              ],
+              "answer": 1,
+              "explain": "CBC: C_i = E_K(P_i ⊕ C_{i−1}); needs IV; hides patterns better than ECB."
+            },
+            {
+              "q": "Which statement best defines CFB / OFB?",
+              "options": [
+                "Capture/analyse RAM for volatile evidence.",
+                "Stream-like modes from a block cipher; CFB self-synchronising; OFB keystream independent of plaintext.",
+                "Cardholder, merchant, and bank certificates in the SET PKI.",
+                "Pseudorandom sequence combined with plaintext (classically by XOR)."
+              ],
+              "answer": 1,
+              "explain": "CFB / OFB: Stream-like modes from a block cipher; CFB self-synchronising; OFB keystream independent of plaintext."
+            },
+            {
+              "q": "Which key idea belongs with Block Cipher Modes of Operations?",
+              "options": [
+                "Mode ≠ algorithm: AES-CBC is AES used in CBC mode.",
+                "If p prime and gcd(a,p)=1, then a^(p−1) ≡ 1 (mod p).",
+                "Collection, preservation, analysis, and presentation of digital evidence.",
+                "Malware that attaches to a host program/file and spreads when that host runs/shares."
+              ],
+              "answer": 0,
+              "explain": "Mode ≠ algorithm: AES-CBC is AES used in CBC mode."
             }
           ]
         },
@@ -832,15 +1360,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Triple DES?",
+              "q": "Which statement best defines Triple DES (3DES)?",
               "options": [
-                "Only a programming-language keyword with no syllabus meaning",
-                "A core idea in Network Security & Cryptography: Triple DES",
-                "Unrelated to Module 2",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "Encryption alone does not always authenticate; auth alone does not encrypt.",
+                "Apply DES three times: typically EDE (encrypt–decrypt–encrypt) with 2 or 3 keys.",
+                "Documented handling history proving evidence was not tampered with.",
+                "Intermediates application protocols; can enforce deep policy."
               ],
               "answer": 1,
-              "explain": "Triple DES is a syllabus topic under Secret Key Cryptography in Module 2."
+              "explain": "Triple DES (3DES): Apply DES three times: typically EDE (encrypt–decrypt–encrypt) with 2 or 3 keys."
+            },
+            {
+              "q": "Which statement best defines Two-key 3DES?",
+              "options": [
+                "Protocol (PoW/PoS/etc.) for agreeing on the next valid chain state.",
+                "Security architecture for the Internet Protocol — AH, ESP, and key management.",
+                "Write plaintext in zigzag rows; read off by rows.",
+                "K1–K2–K1 pattern; intended ~112-bit security (meet-in-the-middle caveats)."
+              ],
+              "answer": 3,
+              "explain": "Two-key 3DES: K1–K2–K1 pattern; intended ~112-bit security (meet-in-the-middle caveats)."
+            },
+            {
+              "q": "Which statement best defines Three-key 3DES?",
+              "options": [
+                "Independent K1,K2,K3 — strongest 3DES variant.",
+                "Unforgeable token held by subject naming allowed object operations.",
+                "Multiple substitution alphabets (e.g. Vigenère) — varies with position.",
+                "Compute mod p and mod q separately, then CRT-combine for decryption."
+              ],
+              "answer": 0,
+              "explain": "Three-key 3DES: Independent K1,K2,K3 — strongest 3DES variant."
+            },
+            {
+              "q": "Regarding “3DES block size remains 64 bits”, which is correct?",
+              "options": [
+                "Encapsulating Security Payload — confidentiality ± integrity for payload.",
+                "Nonlinear byte substitution via S-box (confusion).",
+                "birthday bound limits large-volume use.",
+                "Digraph substitution using a 5×5 key square."
+              ],
+              "answer": 2,
+              "explain": "3DES block size remains 64 bits — birthday bound limits large-volume use."
             }
           ]
         },
@@ -881,15 +1442,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Advanced Encryption Standard (AES)?",
+              "q": "Which statement best defines AES?",
               "options": [
-                "A core idea in Network Security & Cryptography: Advanced Encryption Standard (AES)",
-                "Unrelated to Module 2",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "Control over personal data collection, use, and disclosure online.",
+                "Original message / encrypted message.",
+                "Timing/power on modular exponentiation can leak d.",
+                "Rijndael-based SPN standard: 128-bit block; keys 128/192/256 → 10/12/14 rounds."
+              ],
+              "answer": 3,
+              "explain": "AES: Rijndael-based SPN standard: 128-bit block; keys 128/192/256 → 10/12/14 rounds."
+            },
+            {
+              "q": "Which statement best defines SubBytes?",
+              "options": [
+                "Blockchain, privacy/piracy, recent attack patterns.",
+                "C = M^e mod n (public: n,e).",
+                "160-bit digest — collision-broken for practical attacks; avoid for new security.",
+                "Nonlinear byte substitution via S-box (confusion)."
+              ],
+              "answer": 3,
+              "explain": "SubBytes: Nonlinear byte substitution via S-box (confusion)."
+            },
+            {
+              "q": "Which statement best defines ShiftRows?",
+              "options": [
+                "Access Control List: permissions attached to an object listing allowed subjects/actions.",
+                "Secret parameter that selects a specific transformation from a cipher family.",
+                "Row-wise byte rotation (helps diffusion).",
+                "Standalone malware that self-replicates across networks without needing a host file."
+              ],
+              "answer": 2,
+              "explain": "ShiftRows: Row-wise byte rotation (helps diffusion)."
+            },
+            {
+              "q": "Which key idea belongs with Advanced Encryption Standard (AES)?",
+              "options": [
+                "AES is not Feistel: full-block layers each round.",
+                "Encrypted content for confidentiality.",
+                "Credential presented to an application server for access.",
+                "Cryptographic signature over MIME entities for authenticity/integrity."
               ],
               "answer": 0,
-              "explain": "Advanced Encryption Standard (AES) is a syllabus topic under Public Key Cryptography in Module 2."
+              "explain": "AES is not Feistel: full-block layers each round."
             }
           ]
         },
@@ -930,15 +1524,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Fermat’s and Euler’s Theorem?",
+              "q": "Which statement best defines Fermat’s Little Theorem?",
               "options": [
-                "Unrelated to Module 2",
-                "A core idea in Network Security & Cryptography: Fermat’s and Euler’s Theorem",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "If p prime and gcd(a,p)=1, then a^(p−1) ≡ 1 (mod p).",
+                "Encrypted content for confidentiality.",
+                "Protecting systems via physical/hardware roots of trust and isolation.",
+                "Security architecture for the Internet Protocol — AH, ESP, and key management."
               ],
-              "answer": 1,
-              "explain": "Fermat’s and Euler’s Theorem is a syllabus topic under Public Key Cryptography in Module 2."
+              "answer": 0,
+              "explain": "Fermat’s Little Theorem: If p prime and gcd(a,p)=1, then a^(p−1) ≡ 1 (mod p)."
+            },
+            {
+              "q": "Which statement best defines Euler’s totient φ(n)?",
+              "options": [
+                "Count of integers in 1..n−1 coprime to n.",
+                "Shift each letter by a fixed k (mod 26); key space only 25 nontrivial shifts.",
+                "Reconstruct events for investigation/court while maintaining evidential integrity.",
+                "Write in a rectangle by rows; read columns in key order."
+              ],
+              "answer": 0,
+              "explain": "Euler’s totient φ(n): Count of integers in 1..n−1 coprime to n."
+            },
+            {
+              "q": "Which statement best defines Euler’s theorem?",
+              "options": [
+                "Without K, producing a valid tag for a new message should be infeasible.",
+                "IPsec at IP; SSL/TLS at transport; SET for payment.",
+                "Any action that compromises information security (CIA or related goals).",
+                "If gcd(a,n)=1, then a^φ(n) ≡ 1 (mod n)."
+              ],
+              "answer": 3,
+              "explain": "Euler’s theorem: If gcd(a,n)=1, then a^φ(n) ≡ 1 (mod n)."
+            },
+            {
+              "q": "Which key idea belongs with Fermat’s and Euler’s Theorem?",
+              "options": [
+                "Fermat is the special case of Euler when n is prime (φ(p)=p−1).",
+                "Recompute using public y=g^x and check r matches reconstructed value.",
+                "Small input change yields large, unpredictable output change.",
+                "Added by MTAs; read typically bottom-up for origin path."
+              ],
+              "answer": 0,
+              "explain": "Fermat is the special case of Euler when n is prime (φ(p)=p−1)."
             }
           ]
         },
@@ -979,15 +1606,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Chinese Remainder Theorem?",
+              "q": "Which statement best defines Chinese Remainder Theorem (CRT)?",
               "options": [
-                "Only a programming-language keyword with no syllabus meaning",
-                "A core idea in Network Security & Cryptography: Chinese Remainder Theorem",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Unrelated to Module 2"
+                "System x≡a_i (mod m_i) has unique solution mod M=∏m_i if moduli pairwise coprime.",
+                "If gcd(a,n)=1, then a^φ(n) ≡ 1 (mod n).",
+                "Independent encryption of each block — identical plaintext blocks → identical ciphertext.",
+                "Keyed-hash MAC: hash with key mixed via ipad/opad construction."
               ],
-              "answer": 1,
-              "explain": "Chinese Remainder Theorem is a syllabus topic under Public Key Cryptography in Module 2."
+              "answer": 0,
+              "explain": "Chinese Remainder Theorem (CRT): System x≡a_i (mod m_i) has unique solution mod M=∏m_i if moduli pairwise coprime."
+            },
+            {
+              "q": "Which statement best defines Constructive use?",
+              "options": [
+                "Nonlinear 6→4 bit substitution — primary DES confusion source.",
+                "Stream-like modes from a block cipher; CFB self-synchronising; OFB keystream independent of plaintext.",
+                "Combine residues to recover x modulo product of moduli.",
+                "Encryption alone does not always authenticate; auth alone does not encrypt."
+              ],
+              "answer": 2,
+              "explain": "Constructive use: Combine residues to recover x modulo product of moduli."
+            },
+            {
+              "q": "Which statement best defines RSA speedup?",
+              "options": [
+                "Intermediates application protocols; can enforce deep policy.",
+                "Follow Received headers and related metadata to reconstruct message path.",
+                "Compute mod p and mod q separately, then CRT-combine for decryption.",
+                "Make the relationship between ciphertext and key as complex as possible."
+              ],
+              "answer": 2,
+              "explain": "RSA speedup: Compute mod p and mod q separately, then CRT-combine for decryption."
+            },
+            {
+              "q": "Which key idea belongs with Chinese Remainder Theorem?",
+              "options": [
+                "Intrusion Detection System — monitors for suspicious activity and alerts/responds.",
+                "Security architecture for the Internet Protocol — AH, ESP, and key management.",
+                "Common privacy threats via behavioural profiling.",
+                "CRT reduces large modular exponentiation to two smaller ones in RSA."
+              ],
+              "answer": 3,
+              "explain": "CRT reduces large modular exponentiation to two smaller ones in RSA."
             }
           ]
         },
@@ -1028,15 +1688,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Principals of Public Key Crypto Systems?",
+              "q": "Which statement best defines Public-key cryptography?",
               "options": [
-                "Only a programming-language keyword with no syllabus meaning",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "A core idea in Network Security & Cryptography: Principals of Public Key Crypto Systems",
-                "Unrelated to Module 2"
+                "Recover plaintext and/or key by exploiting cipher weaknesses.",
+                "Stream vs block; steganography hides existence, not just meaning.",
+                "Key pair: public key for encrypt/verify; private key for decrypt/sign.",
+                "NTFS vs ext4/XFS — different metadata and recovery quirks."
               ],
               "answer": 2,
-              "explain": "Principals of Public Key Crypto Systems is a syllabus topic under Public Key Cryptography in Module 2."
+              "explain": "Public-key cryptography: Key pair: public key for encrypt/verify; private key for decrypt/sign."
+            },
+            {
+              "q": "Which statement best defines Trapdoor one-way function?",
+              "options": [
+                "Without K, producing a valid tag for a new message should be infeasible.",
+                "Combine residues to recover x modulo product of moduli.",
+                "Independent K1,K2,K3 — strongest 3DES variant.",
+                "Easy one way, hard to invert without trapdoor (private key)."
+              ],
+              "answer": 3,
+              "explain": "Trapdoor one-way function: Easy one way, hard to invert without trapdoor (private key)."
+            },
+            {
+              "q": "Which statement best defines Key distribution relief?",
+              "options": [
+                "Data not altered in an unauthorised manner.",
+                "No shared secret needed before first confidential message (vs symmetric).",
+                "Use public-key to wrap a symmetric session key; bulk data uses AES/etc.",
+                "Eavesdropping / traffic analysis — learn without altering data."
+              ],
+              "answer": 1,
+              "explain": "Key distribution relief: No shared secret needed before first confidential message (vs symmetric)."
+            },
+            {
+              "q": "Regarding “Public-key ops are slower”, which is correct?",
+              "options": [
+                "Isolate, image, write-block — prevent change.",
+                "Digest unkeyed; MAC keyed — digests alone don’t authenticate origin.",
+                "practically always hybrid with symmetric ciphers.",
+                "Patching, MFA, segmentation, backups, filtering, threat intel, least privilege."
+              ],
+              "answer": 2,
+              "explain": "Public-key ops are slower — practically always hybrid with symmetric ciphers."
             }
           ]
         },
@@ -1077,15 +1770,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches RSA Algorithm?",
+              "q": "Which statement best defines RSA setup?",
               "options": [
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A core idea in Network Security & Cryptography: RSA Algorithm",
-                "Unrelated to Module 2"
+                "Personally Identifiable Information — data that identifies a person.",
+                "Choose primes p,q; n=pq; pick e with gcd(e,φ(n))=1; d≡e⁻¹ (mod φ(n)).",
+                "Longer-term artefact study across cases.",
+                "Recover plaintext and/or key by exploiting cipher weaknesses."
+              ],
+              "answer": 1,
+              "explain": "RSA setup: Choose primes p,q; n=pq; pick e with gcd(e,φ(n))=1; d≡e⁻¹ (mod φ(n))."
+            },
+            {
+              "q": "Which statement best defines Encrypt?",
+              "options": [
+                "C = M^e mod n (public: n,e).",
+                "Stream vs block; steganography hides existence, not just meaning.",
+                "Patching, MFA, segmentation, backups, filtering, threat intel, least privilege.",
+                "Logs that later support detection and forensics."
+              ],
+              "answer": 0,
+              "explain": "Encrypt: C = M^e mod n (public: n,e)."
+            },
+            {
+              "q": "Which statement best defines Decrypt?",
+              "options": [
+                "Shift each letter by a fixed k (mod 26); key space only 25 nontrivial shifts.",
+                "M = C^d mod n (private: d, and usually p,q).",
+                "Assure that a communicating entity is who it claims to be.",
+                "Usually needs signatures/TTP — not provided by ordinary MAC."
+              ],
+              "answer": 1,
+              "explain": "Decrypt: M = C^d mod n (private: d, and usually p,q)."
+            },
+            {
+              "q": "Which key idea belongs with RSA Algorithm?",
+              "options": [
+                "Digital Signature Algorithm (original DSS algorithm) based on discrete log in a subgroup.",
+                "Keyed invertible transformation on n-bit blocks (typical n=64 or 128).",
+                "Correctness follows from Euler/Fermat: M^{ed} ≡ M (mod n) under standard conditions.",
+                "Encrypts plaintext bit/byte stream, typically with a keystream XOR."
               ],
               "answer": 2,
-              "explain": "RSA Algorithm is a syllabus topic under Public Key Cryptography in Module 2."
+              "explain": "Correctness follows from Euler/Fermat: M^{ed} ≡ M (mod n) under standard conditions."
             }
           ]
         },
@@ -1126,15 +1852,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Security of RSA Algorithm?",
+              "q": "Which statement best defines Factoring threat?",
               "options": [
-                "A core idea in Network Security & Cryptography: Security of RSA Algorithm",
-                "Only a programming-language keyword with no syllabus meaning",
-                "Unrelated to Module 2",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "Global domain parameters (p,q,g) plus per-user key pair.",
+                "If n=pq is factored, φ(n) and d are recovered — RSA breaks.",
+                "Nonlinear 6→4 bit substitution — primary DES confusion source.",
+                "Data not altered in an unauthorised manner."
               ],
-              "answer": 0,
-              "explain": "Security of RSA Algorithm is a syllabus topic under Public Key Cryptography in Module 2."
+              "answer": 1,
+              "explain": "Factoring threat: If n=pq is factored, φ(n) and d are recovered — RSA breaks."
+            },
+            {
+              "q": "Which statement best defines Small/exponent attacks?",
+              "options": [
+                "Attacker has plaintext–ciphertext pairs.",
+                "Bad choices (tiny e with small M, Wiener small-d) leak information.",
+                "Nonlinear 6→4 bit substitution — primary DES confusion source.",
+                "Choose primes p,q; n=pq; pick e with gcd(e,φ(n))=1; d≡e⁻¹ (mod φ(n))."
+              ],
+              "answer": 1,
+              "explain": "Small/exponent attacks: Bad choices (tiny e with small M, Wiener small-d) leak information."
+            },
+            {
+              "q": "Which statement best defines Common modulus?",
+              "options": [
+                "IP and FP (IP⁻¹) bookend the 16 Feistel rounds.",
+                "Attacker has plaintext–ciphertext pairs.",
+                "Predicted difference path through rounds with some probability.",
+                "Reusing n with different e’s for same M can be fatal."
+              ],
+              "answer": 3,
+              "explain": "Common modulus: Reusing n with different e’s for same M can be fatal."
+            },
+            {
+              "q": "Which key idea belongs with Security of RSA Algorithm?",
+              "options": [
+                "Primary tool for diffusion (P-boxes, MixColumns).",
+                "RSA security ≈ hardness of factoring n (and related RSA problems) under good parameters.",
+                "Asymmetric authenticator binding message to signer’s private key.",
+                "MAC_K(M) → tag; verify by recomputing and comparing tags."
+              ],
+              "answer": 1,
+              "explain": "RSA security ≈ hardness of factoring n (and related RSA problems) under good parameters."
             }
           ]
         }
@@ -1181,15 +1940,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Introduction of Message Authentication Codes?",
+              "q": "Which statement best defines Message authentication?",
               "options": [
-                "Only a programming-language keyword with no syllabus meaning",
-                "A core idea in Network Security & Cryptography: Introduction of Message Authentication Codes",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Unrelated to Module 3"
+                "Legal framework addressing cyber offences, electronic records, and intermediary issues (exam locale often IT Act 2000/amendments).",
+                "PGP and S/MIME for end-to-end mail confidentiality/auth.",
+                "Tracks connection state, not only isolated packets.",
+                "Verify that a message is from the claimed sender and was not altered."
+              ],
+              "answer": 3,
+              "explain": "Message authentication: Verify that a message is from the claimed sender and was not altered."
+            },
+            {
+              "q": "Which statement best defines MAC (idea)?",
+              "options": [
+                "Hidden secret data embedded in the cover.",
+                "Short authentication tag computed with a shared secret key.",
+                "Independent K1,K2,K3 — strongest 3DES variant.",
+                "Study how differences in plaintext pairs propagate to ciphertext differences."
               ],
               "answer": 1,
-              "explain": "Introduction of Message Authentication Codes is a syllabus topic under Message Authentication Codes in Module 3."
+              "explain": "MAC (idea): Short authentication tag computed with a shared secret key."
+            },
+            {
+              "q": "Which statement best defines Impersonation / alteration threats?",
+              "options": [
+                "Encrypts or locks data for extortion.",
+                "Pathological keys with poor schedule behaviour (must be avoided).",
+                "Active attacks that authentication aims to detect.",
+                "Combine residues to recover x modulo product of moduli."
+              ],
+              "answer": 2,
+              "explain": "Impersonation / alteration threats: Active attacks that authentication aims to detect."
+            },
+            {
+              "q": "Which key idea belongs with Introduction of Message Authentication Codes?",
+              "options": [
+                "Shannon: hide key–ciphertext link; spread plaintext influence.",
+                "Follow Received headers and related metadata to reconstruct message path.",
+                "Plaintext→ciphertext / reverse using the key (symmetric classical case).",
+                "Introduces why confidentiality mechanisms are insufficient for integrity/origin."
+              ],
+              "answer": 3,
+              "explain": "Introduces why confidentiality mechanisms are insufficient for integrity/origin."
             }
           ]
         },
@@ -1230,15 +2022,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Authentication Functions?",
+              "q": "Which statement best defines Authentication function?",
               "options": [
-                "A core idea in Network Security & Cryptography: Authentication Functions",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Unrelated to Module 3"
+                "Fixed-length hash output representing a message’s fingerprint.",
+                "Gateway to gateway linking networks.",
+                "Function producing an authenticator from message (±key/secret).",
+                "No shared secret needed before first confidential message (vs symmetric)."
+              ],
+              "answer": 2,
+              "explain": "Authentication function: Function producing an authenticator from message (±key/secret)."
+            },
+            {
+              "q": "Which statement best defines Message encryption as authenticator?",
+              "options": [
+                "Sometimes ciphertext itself is used — weak/ambiguous without structure.",
+                "Function producing an authenticator from message (±key/secret).",
+                "Ticket-Granting Ticket — proves AS authentication to obtain service tickets.",
+                "Recover plaintext and/or key by exploiting cipher weaknesses."
               ],
               "answer": 0,
-              "explain": "Authentication Functions is a syllabus topic under Message Authentication Codes in Module 3."
+              "explain": "Message encryption as authenticator: Sometimes ciphertext itself is used — weak/ambiguous without structure."
+            },
+            {
+              "q": "Which statement best defines Message authentication code?",
+              "options": [
+                "Virtual Private Network — private connectivity over a public network using tunnelling + crypto.",
+                "Keyed function; verifier recomputes tag with shared key.",
+                "Watches OS logs, files, processes on a single host.",
+                "Availability attack: destroy or block an asset (DoS flavour)."
+              ],
+              "answer": 1,
+              "explain": "Message authentication code: Keyed function; verifier recomputes tag with shared key."
+            },
+            {
+              "q": "Which key idea belongs with Authentication Functions?",
+              "options": [
+                "Encryption/decryption exponents related via e·d ≡ 1 (mod φ(n)).",
+                "Easy one way, hard to invert without trapdoor (private key).",
+                "Three classical textbook classes: encryption, MAC, hash-based schemes.",
+                "Immutable/boot-anchored component that verifies later software stages."
+              ],
+              "answer": 2,
+              "explain": "Three classical textbook classes: encryption, MAC, hash-based schemes."
             }
           ]
         },
@@ -1279,15 +2104,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Authentication Requirements?",
+              "q": "Which statement best defines Disclosure protection?",
               "options": [
-                "Unrelated to Module 3",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "A core idea in Network Security & Cryptography: Authentication Requirements",
-                "Only a programming-language keyword with no syllabus meaning"
+                "Unkeyed digest; needs additional binding (e.g. encrypt digest, or HMAC).",
+                "NIST Digital Signature Standard specifying approved signature algorithms.",
+                "Secret parameter that selects a specific transformation from a cipher family.",
+                "Not the primary MAC goal — that’s confidentiality."
               ],
-              "answer": 2,
-              "explain": "Authentication Requirements is a syllabus topic under Message Authentication Codes in Module 3."
+              "answer": 3,
+              "explain": "Disclosure protection: Not the primary MAC goal — that’s confidentiality."
+            },
+            {
+              "q": "Which statement best defines Content integrity?",
+              "options": [
+                "RAM/network state vs disk — acquisition order matters.",
+                "Collection, preservation, analysis, and presentation of digital evidence.",
+                "Report findings clearly for investigators/court.",
+                "Detect modification of message content."
+              ],
+              "answer": 3,
+              "explain": "Content integrity: Detect modification of message content."
+            },
+            {
+              "q": "Which statement best defines Origin authentication?",
+              "options": [
+                "Assure message originated from claimed sender.",
+                "Damaging or spying action delivered after infection (erase, encrypt ransomware, backdoor).",
+                "Detect misuse; viruses/worms differ in replication.",
+                "Nonlinear byte substitution via S-box (confusion)."
+              ],
+              "answer": 0,
+              "explain": "Origin authentication: Assure message originated from claimed sender."
+            },
+            {
+              "q": "Which statement about Authentication Requirements is correct?",
+              "options": [
+                "Bad choices (tiny e with small M, Wiener small-d) leak information.",
+                "Requirements depend on threat model: integrity alone vs integrity+freshness.",
+                "Try all keys until decryption is meaningful.",
+                "IPsec at IP; SSL/TLS at transport; SET for payment."
+              ],
+              "answer": 1,
+              "explain": "Requirements depend on threat model: integrity alone vs integrity+freshness."
             }
           ]
         },
@@ -1328,15 +2186,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Message Authentication Code (MAC)?",
+              "q": "Which statement best defines MAC?",
               "options": [
-                "Only a programming-language keyword with no syllabus meaning",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Unrelated to Module 3",
-                "A core idea in Network Security & Cryptography: Message Authentication Code (MAC)"
+                "Logs that later support detection and forensics.",
+                "Modify, fabricate, replay, or interrupt — alters system/data behaviour.",
+                "Original message / encrypted message.",
+                "MAC_K(M) → tag; verify by recomputing and comparing tags."
               ],
               "answer": 3,
-              "explain": "Message Authentication Code (MAC) is a syllabus topic under Message Authentication Codes in Module 3."
+              "explain": "MAC: MAC_K(M) → tag; verify by recomputing and comparing tags."
+            },
+            {
+              "q": "Which statement best defines HMAC?",
+              "options": [
+                "Keyed-hash MAC: hash with key mixed via ipad/opad construction.",
+                "Short authentication tag computed with a shared secret key.",
+                "Detect modification of message content.",
+                "NTFS vs ext4/XFS — different metadata and recovery quirks."
+              ],
+              "answer": 0,
+              "explain": "HMAC: Keyed-hash MAC: hash with key mixed via ipad/opad construction."
+            },
+            {
+              "q": "Which statement best defines CBC-MAC / CMAC?",
+              "options": [
+                "Interface between merchant and card issuer/acquirer networks.",
+                "Asymmetric integrity + non-repudiation; DSS/DSA family.",
+                "MAC from block cipher chaining (careful with variable-length messages).",
+                "Immutable/boot-anchored component that verifies later software stages."
+              ],
+              "answer": 2,
+              "explain": "CBC-MAC / CMAC: MAC from block cipher chaining (careful with variable-length messages)."
+            },
+            {
+              "q": "Which statement about Message Authentication Code (MAC) is correct?",
+              "options": [
+                "Support prosecution of hacking, fraud, abuse, etc.",
+                "Tracks connection state, not only isolated packets.",
+                "Write plaintext in zigzag rows; read off by rows.",
+                "MAC uses shared secret → both sides can generate tags (no non-repudiation)."
+              ],
+              "answer": 3,
+              "explain": "MAC uses shared secret → both sides can generate tags (no non-repudiation)."
             }
           ]
         },
@@ -1377,15 +2268,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Secure Hash Algorithm (SHA)?",
+              "q": "Which statement best defines SHA family?",
               "options": [
-                "A core idea in Network Security & Cryptography: Secure Hash Algorithm (SHA)",
-                "Unrelated to Module 3",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "Secure Hash Algorithm standards (SHA-1 legacy; SHA-2/SHA-3 modern).",
+                "Digraph substitution using a 5×5 key square.",
+                "Stream vs block; steganography hides existence, not just meaning.",
+                "Data about data: timestamps, authors, EXIF, filesystem attributes."
               ],
               "answer": 0,
-              "explain": "Secure Hash Algorithm (SHA) is a syllabus topic under Message Authentication Codes in Module 3."
+              "explain": "SHA family: Secure Hash Algorithm standards (SHA-1 legacy; SHA-2/SHA-3 modern)."
+            },
+            {
+              "q": "Which statement best defines SHA-1?",
+              "options": [
+                "Encryption/decryption exponents related via e·d ≡ 1 (mod φ(n)).",
+                "Owner-controlled ACLs are common discretionary access control realisation.",
+                "160-bit digest — collision-broken for practical attacks; avoid for new security.",
+                "Protected via imaging, hashing, custody, and controlled analysis."
+              ],
+              "answer": 2,
+              "explain": "SHA-1: 160-bit digest — collision-broken for practical attacks; avoid for new security."
+            },
+            {
+              "q": "Which statement best defines SHA-256?",
+              "options": [
+                "SHA-2 variant with 256-bit digest — common integrity workhorse.",
+                "Spread plaintext statistical structure over many ciphertext bits.",
+                "Trusted third-party authentication protocol using tickets and symmetric crypto.",
+                "Count of integers in 1..n−1 coprime to n."
+              ],
+              "answer": 0,
+              "explain": "SHA-256: SHA-2 variant with 256-bit digest — common integrity workhorse."
+            },
+            {
+              "q": "Which key idea belongs with Secure Hash Algorithm (SHA)?",
+              "options": [
+                "Keyed-hash MAC: hash with key mixed via ipad/opad construction.",
+                "PGP and S/MIME for end-to-end mail confidentiality/auth.",
+                "Hash properties: preimage, second-preimage, collision resistance.",
+                "Use public-key to wrap a symmetric session key; bulk data uses AES/etc."
+              ],
+              "answer": 2,
+              "explain": "Hash properties: preimage, second-preimage, collision resistance."
             }
           ]
         },
@@ -1426,15 +2350,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Message Digest?",
+              "q": "Which statement best defines Message digest?",
               "options": [
-                "A definition-only label with no role in Network Security & Cryptography",
-                "A core idea in Network Security & Cryptography: Message Digest",
-                "Only a programming-language keyword with no syllabus meaning",
-                "Unrelated to Module 3"
+                "Fixed-length hash output representing a message’s fingerprint.",
+                "Key Distribution Center: Authentication Server (AS) + Ticket Granting Server (TGS).",
+                "PGP and S/MIME for end-to-end mail confidentiality/auth.",
+                "Recompute using public y=g^x and check r matches reconstructed value."
               ],
-              "answer": 1,
-              "explain": "Message Digest is a syllabus topic under Message Authentication Codes in Module 3."
+              "answer": 0,
+              "explain": "Message digest: Fixed-length hash output representing a message’s fingerprint."
+            },
+            {
+              "q": "Which statement best defines MD5?",
+              "options": [
+                "May include DSA, RSA signatures, ECDSA depending on revision era.",
+                "Match known attack patterns — low novelty, fewer novel false mysteries.",
+                "Bad choices (tiny e with small M, Wiener small-d) leak information.",
+                "128-bit digest — broken for collisions; legacy checksum only."
+              ],
+              "answer": 3,
+              "explain": "MD5: 128-bit digest — broken for collisions; legacy checksum only."
+            },
+            {
+              "q": "Which statement best defines Integrity check?",
+              "options": [
+                "Encrypts or locks data for extortion.",
+                "Compute r from g^k mod p; s from k⁻¹(H(M)+x·r) mod q — schematic form.",
+                "Global domain parameters (p,q,g) plus per-user key pair.",
+                "Compare digests to detect accidental/malicious change (if digest protected)."
+              ],
+              "answer": 3,
+              "explain": "Integrity check: Compare digests to detect accidental/malicious change (if digest protected)."
+            },
+            {
+              "q": "Which key idea belongs with Message Digest?",
+              "options": [
+                "Access Control List: permissions attached to an object listing allowed subjects/actions.",
+                "Programmable logic executed by the chain’s VM (platform-dependent).",
+                "Study how differences in plaintext pairs propagate to ciphertext differences.",
+                "“Message digest” often means the hash value in exam language (MD5/SHA)."
+              ],
+              "answer": 3,
+              "explain": "“Message digest” often means the hash value in exam language (MD5/SHA)."
             }
           ]
         },
@@ -1475,15 +2432,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Overview of Digital Signatures?",
+              "q": "Which statement best defines Digital signature?",
               "options": [
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A core idea in Network Security & Cryptography: Overview of Digital Signatures",
-                "Unrelated to Module 3"
+                "Digital Rights Management — access-control mechanisms on digital content.",
+                "Nonlinear byte substitution via S-box (confusion).",
+                "Art/science of breaking ciphers without the key (or testing strength).",
+                "Asymmetric authenticator binding message to signer’s private key."
               ],
-              "answer": 2,
-              "explain": "Overview of Digital Signatures is a syllabus topic under Digital Signatures in Module 3."
+              "answer": 3,
+              "explain": "Digital signature: Asymmetric authenticator binding message to signer’s private key."
+            },
+            {
+              "q": "Which statement best defines Sign / Verify?",
+              "options": [
+                "Column mixing over GF(2^8) (diffusion); omitted in final round.",
+                "Sign with private key; verify with corresponding public key.",
+                "Trick users into revealing credentials or running malware.",
+                "Art/science of breaking ciphers without the key (or testing strength)."
+              ],
+              "answer": 1,
+              "explain": "Sign / Verify: Sign with private key; verify with corresponding public key."
+            },
+            {
+              "q": "Which statement best defines Non-repudiation?",
+              "options": [
+                "Signer cannot credibly deny the signature if private key was not compromised.",
+                "Common technology choices for tunnel security.",
+                "Firewalls filter; VPN tunnels private traffic over public nets.",
+                "Gateway to gateway linking networks."
+              ],
+              "answer": 0,
+              "explain": "Non-repudiation: Signer cannot credibly deny the signature if private key was not compromised."
+            },
+            {
+              "q": "Which key idea belongs with Overview of Digital Signatures?",
+              "options": [
+                "Signatures provide integrity + origin + non-repudiation; MACs do not give third-party non-repudiation.",
+                "Links order info for merchant and payment info for bank without cross-revealing.",
+                "Prevent denying previous commitments or actions.",
+                "Attacker can encrypt chosen texts / decrypt chosen ciphertexts."
+              ],
+              "answer": 0,
+              "explain": "Signatures provide integrity + origin + non-repudiation; MACs do not give third-party non-repudiation."
             }
           ]
         },
@@ -1524,15 +2514,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Digital Signature Standards (DSS)?",
+              "q": "Which statement best defines DSS?",
               "options": [
-                "Unrelated to Module 3",
-                "A core idea in Network Security & Cryptography: Digital Signature Standards (DSS)",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Only a programming-language keyword with no syllabus meaning"
+                "Eavesdropping / traffic analysis — learn without altering data.",
+                "IT Acts + evidence-preserving investigation processes.",
+                "NIST Digital Signature Standard specifying approved signature algorithms.",
+                "Key pair: public key for encrypt/verify; private key for decrypt/sign."
+              ],
+              "answer": 2,
+              "explain": "DSS: NIST Digital Signature Standard specifying approved signature algorithms."
+            },
+            {
+              "q": "Which statement best defines DSA?",
+              "options": [
+                "Digital Signature Algorithm (original DSS algorithm) based on discrete log in a subgroup.",
+                "Key Distribution Center: Authentication Server (AS) + Ticket Granting Server (TGS).",
+                "Damaging or spying action delivered after infection (erase, encrypt ransomware, backdoor).",
+                "Integrity attacks: change data or insert bogus objects."
+              ],
+              "answer": 0,
+              "explain": "DSA: Digital Signature Algorithm (original DSS algorithm) based on discrete log in a subgroup."
+            },
+            {
+              "q": "Which statement best defines Parameters?",
+              "options": [
+                "Global domain parameters (p,q,g) plus per-user key pair.",
+                "Recover artefacts, timelines, deleted data, logs.",
+                "Dedicated chip storing keys and performing crypto in isolation.",
+                "Nonlinear 6→4 bit substitution — primary DES confusion source."
+              ],
+              "answer": 0,
+              "explain": "Parameters: Global domain parameters (p,q,g) plus per-user key pair."
+            },
+            {
+              "q": "Which key idea belongs with Digital Signature Standards (DSS)?",
+              "options": [
+                "Append-only distributed ledger of chained, hashed blocks agreed by consensus.",
+                "DSS is the standard framework; DSA is a specific algorithm often taught under DSS.",
+                "Assure message originated from claimed sender.",
+                "Sign with private key; verify with corresponding public key."
               ],
               "answer": 1,
-              "explain": "Digital Signature Standards (DSS) is a syllabus topic under Digital Signatures in Module 3."
+              "explain": "DSS is the standard framework; DSA is a specific algorithm often taught under DSS."
             }
           ]
         },
@@ -1573,15 +2596,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Proof of Digital Signature Algorithm?",
+              "q": "Which statement best defines DSA signing?",
               "options": [
-                "A core idea in Network Security & Cryptography: Proof of Digital Signature Algorithm",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Unrelated to Module 3"
+                "Usually needs signatures/TTP — not provided by ordinary MAC.",
+                "Substitution and transposition; cryptanalysis recovers key/plaintext.",
+                "Compute r from g^k mod p; s from k⁻¹(H(M)+x·r) mod q — schematic form.",
+                "ECB/CBC/CFB/OFB/CTR change how a block cipher is used on messages."
+              ],
+              "answer": 2,
+              "explain": "DSA signing: Compute r from g^k mod p; s from k⁻¹(H(M)+x·r) mod q — schematic form."
+            },
+            {
+              "q": "Which statement best defines DSA verify?",
+              "options": [
+                "Keyed function; verifier recomputes tag with shared key.",
+                "Any action that compromises information security (CIA or related goals).",
+                "Recompute using public y=g^x and check r matches reconstructed value.",
+                "MAC_K(M) → tag; verify by recomputing and comparing tags."
+              ],
+              "answer": 2,
+              "explain": "DSA verify: Recompute using public y=g^x and check r matches reconstructed value."
+            },
+            {
+              "q": "Which statement best defines Correctness idea?",
+              "options": [
+                "Verification equation holds iff s,r came from private x and hash H(M).",
+                "Collection, preservation, analysis, and presentation of digital evidence.",
+                "Compare digests to detect accidental/malicious change (if digest protected).",
+                "Match known attack patterns — low novelty, fewer novel false mysteries."
               ],
               "answer": 0,
-              "explain": "Proof of Digital Signature Algorithm is a syllabus topic under Digital Signatures in Module 3."
+              "explain": "Correctness idea: Verification equation holds iff s,r came from private x and hash H(M)."
+            },
+            {
+              "q": "Which key idea belongs with Proof of Digital Signature Algorithm?",
+              "options": [
+                "Proof/correctness shows verify accepts honest signatures and rejects altered M (w.h.p.).",
+                "A service that enhances security of systems/data transfers (what we want).",
+                "Match known attack patterns — low novelty, fewer novel false mysteries.",
+                "Local collections of public/private keys and trust metadata."
+              ],
+              "answer": 0,
+              "explain": "Proof/correctness shows verify accepts honest signatures and rejects altered M (w.h.p.)."
             }
           ]
         }
@@ -1628,15 +2684,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Authentication Applications: Kerberos?",
+              "q": "Which statement best defines Kerberos?",
               "options": [
-                "Only a programming-language keyword with no syllabus meaning",
-                "A core idea in Network Security & Cryptography: Authentication Applications: Kerberos",
-                "Unrelated to Module 4",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "Easy one way, hard to invert without trapdoor (private key).",
+                "Trusted third-party authentication protocol using tickets and symmetric crypto.",
+                "Apply DES three times: typically EDE (encrypt–decrypt–encrypt) with 2 or 3 keys.",
+                "Standalone malware that self-replicates across networks without needing a host file."
               ],
               "answer": 1,
-              "explain": "Authentication Applications: Kerberos is a syllabus topic under Introduction to Web Security in Module 4."
+              "explain": "Kerberos: Trusted third-party authentication protocol using tickets and symmetric crypto."
+            },
+            {
+              "q": "Which statement best defines KDC?",
+              "options": [
+                "Encapsulating Security Payload — confidentiality ± integrity for payload.",
+                "Advanced Persistent Threat — long-term targeted intrusion.",
+                "Key Distribution Center: Authentication Server (AS) + Ticket Granting Server (TGS).",
+                "Confidentiality, Integrity, Availability — core security goals."
+              ],
+              "answer": 2,
+              "explain": "KDC: Key Distribution Center: Authentication Server (AS) + Ticket Granting Server (TGS)."
+            },
+            {
+              "q": "Which statement best defines TGT?",
+              "options": [
+                "Ticket-Granting Ticket — proves AS authentication to obtain service tickets.",
+                "Chosen ΔP and observed ΔC statistics that leak key bits of S-boxes/rounds.",
+                "Digital Signature Algorithm (original DSS algorithm) based on discrete log in a subgroup.",
+                "Leakage via timing, power, EM — attacks beyond pure maths of the cipher."
+              ],
+              "answer": 0,
+              "explain": "TGT: Ticket-Granting Ticket — proves AS authentication to obtain service tickets."
+            },
+            {
+              "q": "Which statement about Authentication Applications: Kerberos is correct?",
+              "options": [
+                "Keyed invertible transformation on n-bit blocks (typical n=64 or 128).",
+                "Watches packets/traffic on a network segment.",
+                "Protected via imaging, hashing, custody, and controlled analysis.",
+                "Client authenticates to AS → TGT → TGS issues service ticket → server verifies."
+              ],
+              "answer": 3,
+              "explain": "Client authenticates to AS → TGT → TGS issues service ticket → server verifies."
             }
           ]
         },
@@ -1677,15 +2766,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Overview of Access Control List (ACL)?",
+              "q": "Which statement best defines ACL?",
               "options": [
-                "Unrelated to Module 4",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A core idea in Network Security & Cryptography: Overview of Access Control List (ACL)"
+                "Access Control List: permissions attached to an object listing allowed subjects/actions.",
+                "Users sign others’ keys; trust is decentralised, not only CA-based.",
+                "Compare digests to detect accidental/malicious change (if digest protected).",
+                "Digest unkeyed; MAC keyed — digests alone don’t authenticate origin."
               ],
-              "answer": 3,
-              "explain": "Overview of Access Control List (ACL) is a syllabus topic under Introduction to Web Security in Module 4."
+              "answer": 0,
+              "explain": "ACL: Access Control List: permissions attached to an object listing allowed subjects/actions."
+            },
+            {
+              "q": "Which statement best defines Subject / Object?",
+              "options": [
+                "Active entity (user/process) / passive resource (file, socket).",
+                "Immutable/boot-anchored component that verifies later software stages.",
+                "Attacker has only ciphertext.",
+                "Cryptographic signature over MIME entities for authenticity/integrity."
+              ],
+              "answer": 0,
+              "explain": "Subject / Object: Active entity (user/process) / passive resource (file, socket)."
+            },
+            {
+              "q": "Which statement best defines Access right?",
+              "options": [
+                "Operation permitted: read, write, execute, delete, etc.",
+                "Encryption alone does not always authenticate; auth alone does not encrypt.",
+                "Ticket-Granting Ticket — proves AS authentication to obtain service tickets.",
+                "Signer cannot credibly deny the signature if private key was not compromised."
+              ],
+              "answer": 0,
+              "explain": "Access right: Operation permitted: read, write, execute, delete, etc."
+            },
+            {
+              "q": "Regarding “ACL is object-centric; capability list is subject-centric”, which is correct?",
+              "options": [
+                "dual views of an access matrix.",
+                "C = M^e mod n (public: n,e).",
+                "Study how differences in plaintext pairs propagate to ciphertext differences.",
+                "Event logs, Registry, Prefetch, LNK, USN journal, user profiles."
+              ],
+              "answer": 0,
+              "explain": "ACL is object-centric; capability list is subject-centric — dual views of an access matrix."
             }
           ]
         },
@@ -1726,15 +2848,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Electronic Mail Security: Pretty Good Privacy (PGP)?",
+              "q": "Which statement best defines PGP?",
               "options": [
-                "Unrelated to Module 4",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A core idea in Network Security & Cryptography: Electronic Mail Security: Pretty Good Privacy (PGP)"
+                "Repeated keyed mixing step; more rounds increase diffusion/confusion cost.",
+                "Replace each plaintext unit with a ciphertext unit by a mapping.",
+                "Bad choices (tiny e with small M, Wiener small-d) leak information.",
+                "Pretty Good Privacy — email/file encryption and signing with hybrid crypto."
               ],
               "answer": 3,
-              "explain": "Electronic Mail Security: Pretty Good Privacy (PGP) is a syllabus topic under Introduction to Web Security in Module 4."
+              "explain": "PGP: Pretty Good Privacy — email/file encryption and signing with hybrid crypto."
+            },
+            {
+              "q": "Which statement best defines Web of trust?",
+              "options": [
+                "Added by MTAs; read typically bottom-up for origin path.",
+                "Users sign others’ keys; trust is decentralised, not only CA-based.",
+                "Make the relationship between ciphertext and key as complex as possible.",
+                "No shared secret needed before first confidential message (vs symmetric)."
+              ],
+              "answer": 1,
+              "explain": "Web of trust: Users sign others’ keys; trust is decentralised, not only CA-based."
+            },
+            {
+              "q": "Which statement best defines Session key?",
+              "options": [
+                "Not the primary MAC goal — that’s confidentiality.",
+                "May include DSA, RSA signatures, ECDSA depending on revision era.",
+                "Random symmetric key encrypts the message; RSA/ElGamal wraps that key.",
+                "Longer-term artefact study across cases."
+              ],
+              "answer": 2,
+              "explain": "Session key: Random symmetric key encrypts the message; RSA/ElGamal wraps that key."
+            },
+            {
+              "q": "Which key idea belongs with Electronic Mail Security: Pretty Good Privacy (PGP)?",
+              "options": [
+                "Digital Signature Algorithm (original DSS algorithm) based on discrete log in a subgroup.",
+                "Legal framework addressing cyber offences, electronic records, and intermediary issues (exam locale often IT Act 2000/amendments).",
+                "Confidentiality: symmetric bulk + public-key wrap; authenticity: detached/inline signatures.",
+                "Data about data: timestamps, authors, EXIF, filesystem attributes."
+              ],
+              "answer": 2,
+              "explain": "Confidentiality: symmetric bulk + public-key wrap; authenticity: detached/inline signatures."
             }
           ]
         },
@@ -1775,15 +2930,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches S/MIME?",
+              "q": "Which statement best defines S/MIME?",
               "options": [
-                "Unrelated to Module 4",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "A core idea in Network Security & Cryptography: S/MIME",
-                "Only a programming-language keyword with no syllabus meaning"
+                "MTA logs, spam gateway logs, DNS/IP WHOIS for hop investigation.",
+                "Secure/Multipurpose Internet Mail Extensions — MIME + crypto based on PKI.",
+                "Make the relationship between ciphertext and key as complex as possible.",
+                "Art/science of designing secure transformative schemes."
+              ],
+              "answer": 1,
+              "explain": "S/MIME: Secure/Multipurpose Internet Mail Extensions — MIME + crypto based on PKI."
+            },
+            {
+              "q": "Which statement best defines X.509 certificates?",
+              "options": [
+                "Recover plaintext and/or key by exploiting cipher weaknesses.",
+                "CA-issued bindings of identity to public keys used by S/MIME.",
+                "Bad choices (tiny e with small M, Wiener small-d) leak information.",
+                "Follow Received headers and related metadata to reconstruct message path."
+              ],
+              "answer": 1,
+              "explain": "X.509 certificates: CA-issued bindings of identity to public keys used by S/MIME."
+            },
+            {
+              "q": "Which statement best defines Enveloped data?",
+              "options": [
+                "Encrypted content for confidentiality.",
+                "Digraph substitution using a 5×5 key square.",
+                "MTA logs, spam gateway logs, DNS/IP WHOIS for hop investigation.",
+                "From: can be forged; trust server-added Received chains more."
+              ],
+              "answer": 0,
+              "explain": "Enveloped data: Encrypted content for confidentiality."
+            },
+            {
+              "q": "Which key idea belongs with S/MIME?",
+              "options": [
+                "Verify that a message is from the claimed sender and was not altered.",
+                "Textbook RSA without padding is insecure against multiple practical attacks.",
+                "S/MIME integrates with existing CA hierarchies familiar to enterprises.",
+                "Negotiate version/ciphers, authenticate (usually server cert), derive session keys."
               ],
               "answer": 2,
-              "explain": "S/MIME is a syllabus topic under Introduction to Web Security in Module 4."
+              "explain": "S/MIME integrates with existing CA hierarchies familiar to enterprises."
             }
           ]
         },
@@ -1824,15 +3012,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches IP Security Architecture Components?",
+              "q": "Which statement best defines IPsec?",
               "options": [
-                "A definition-only label with no role in Network Security & Cryptography",
-                "A core idea in Network Security & Cryptography: IP Security Architecture Components",
-                "Unrelated to Module 4",
-                "Only a programming-language keyword with no syllabus meaning"
+                "Security architecture for the Internet Protocol — AH, ESP, and key management.",
+                "Intermediates application protocols; can enforce deep policy.",
+                "Bit-for-bit imaging and labelling of media.",
+                "Textbook RSA without padding is insecure against multiple practical attacks."
               ],
-              "answer": 1,
-              "explain": "IP Security Architecture Components is a syllabus topic under IP Security in Module 4."
+              "answer": 0,
+              "explain": "IPsec: Security architecture for the Internet Protocol — AH, ESP, and key management."
+            },
+            {
+              "q": "Which statement best defines AH?",
+              "options": [
+                "Authentication Header — integrity/authenticity of IP packet parts (no encryption).",
+                "Assure that a communicating entity is who it claims to be.",
+                "May include DSA, RSA signatures, ECDSA depending on revision era.",
+                "MAC needs a shared secret; plain hash does not."
+              ],
+              "answer": 0,
+              "explain": "AH: Authentication Header — integrity/authenticity of IP packet parts (no encryption)."
+            },
+            {
+              "q": "Which statement best defines ESP?",
+              "options": [
+                "Assure that a communicating entity is who it claims to be.",
+                "Small input change yields large, unpredictable output change.",
+                "Encapsulating Security Payload — confidentiality ± integrity for payload.",
+                "Shannon: hide key–ciphertext link; spread plaintext influence."
+              ],
+              "answer": 2,
+              "explain": "ESP: Encapsulating Security Payload — confidentiality ± integrity for payload."
+            },
+            {
+              "q": "Regarding “IPsec operates at network layer”, which is correct?",
+              "options": [
+                "Key Distribution Center: Authentication Server (AS) + Ticket Granting Server (TGS).",
+                "Expansion E, XOR round key, 8 S-boxes, then permutation P.",
+                "Reconnaissance → gain access → privilege escalation → maintain/cover tracks (typical pattern).",
+                "transparent to many apps."
+              ],
+              "answer": 3,
+              "explain": "IPsec operates at network layer — transparent to many apps."
             }
           ]
         },
@@ -1873,15 +3094,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Secure Socket Layer?",
+              "q": "Which statement best defines SSL/TLS?",
               "options": [
-                "Only a programming-language keyword with no syllabus meaning",
-                "A core idea in Network Security & Cryptography: Secure Socket Layer",
-                "Unrelated to Module 4",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "Secure transport-layer protocol providing confidentiality, integrity, and authentication.",
+                "Detect replay, reordering, delay when required by the application.",
+                "MD5/SHA digests to verify image integrity (MD5 legacy for checksumming).",
+                "Legal framework addressing cyber offences, electronic records, and intermediary issues (exam locale often IT Act 2000/amendments)."
               ],
-              "answer": 1,
-              "explain": "Secure Socket Layer is a syllabus topic under IP Security in Module 4."
+              "answer": 0,
+              "explain": "SSL/TLS: Secure transport-layer protocol providing confidentiality, integrity, and authentication."
+            },
+            {
+              "q": "Which statement best defines Handshake?",
+              "options": [
+                "IP and FP (IP⁻¹) bookend the 16 Feistel rounds.",
+                "64-bit block Feistel cipher; 56-bit effective key (+8 parity bits in 64-bit keying material).",
+                "Negotiate version/ciphers, authenticate (usually server cert), derive session keys.",
+                "Sign with d; verify with e — same maths, different goal."
+              ],
+              "answer": 2,
+              "explain": "Handshake: Negotiate version/ciphers, authenticate (usually server cert), derive session keys."
+            },
+            {
+              "q": "Which statement best defines Record protocol?",
+              "options": [
+                "Reusing n with different e’s for same M can be fatal.",
+                "Sometimes ciphertext itself is used — weak/ambiguous without structure.",
+                "If n=pq is factored, φ(n) and d are recovered — RSA breaks.",
+                "Fragments, optionally compresses, MACs, and encrypts application data."
+              ],
+              "answer": 3,
+              "explain": "Record protocol: Fragments, optionally compresses, MACs, and encrypts application data."
+            },
+            {
+              "q": "Regarding “SSL is historical name; TLS is the standardised successor”, which is correct?",
+              "options": [
+                "Nonlinear 6→4 bit substitution — primary DES confusion source.",
+                "Initialisation vector or unique counter start — secrecy less critical than uniqueness (mode-dependent).",
+                "Compare digests to detect accidental/malicious change (if digest protected).",
+                "exams often say SSL loosely."
+              ],
+              "answer": 3,
+              "explain": "SSL is historical name; TLS is the standardised successor — exams often say SSL loosely."
             }
           ]
         },
@@ -1922,15 +3176,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Secure electronic transaction (SET)?",
+              "q": "Which statement best defines SET?",
               "options": [
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Unrelated to Module 4",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A core idea in Network Security & Cryptography: Secure electronic transaction (SET)"
+                "Secure Electronic Transaction — payment-card purchase protocol with dual signatures.",
+                "Secure/Multipurpose Internet Mail Extensions — MIME + crypto based on PKI.",
+                "Encrypts or locks data for extortion.",
+                "Links order info for merchant and payment info for bank without cross-revealing."
               ],
-              "answer": 3,
-              "explain": "Secure electronic transaction (SET) is a syllabus topic under IP Security in Module 4."
+              "answer": 0,
+              "explain": "SET: Secure Electronic Transaction — payment-card purchase protocol with dual signatures."
+            },
+            {
+              "q": "Which statement best defines Dual signature?",
+              "options": [
+                "Verification equation holds iff s,r came from private x and hash H(M).",
+                "Column mixing over GF(2^8) (diffusion); omitted in final round.",
+                "Links order info for merchant and payment info for bank without cross-revealing.",
+                "Trick users into revealing credentials or running malware."
+              ],
+              "answer": 2,
+              "explain": "Dual signature: Links order info for merchant and payment info for bank without cross-revealing."
+            },
+            {
+              "q": "Which statement best defines Payment gateway?",
+              "options": [
+                "Stream-like modes from a block cipher; CFB self-synchronising; OFB keystream independent of plaintext.",
+                "Interface between merchant and card issuer/acquirer networks.",
+                "Batch of transactions plus hash linking to previous block.",
+                "Collect volatile data with known-good tools before power-down decisions."
+              ],
+              "answer": 1,
+              "explain": "Payment gateway: Interface between merchant and card issuer/acquirer networks."
+            },
+            {
+              "q": "Which key idea belongs with Secure electronic transaction (SET)?",
+              "options": [
+                "Compute mod p and mod q separately, then CRT-combine for decryption.",
+                "Encrypts fixed-size blocks (e.g. 64 or 128 bits) under one key.",
+                "SET aims: authenticate parties, protect payment data, ensure integrity, privacy split merchant/bank.",
+                "Eavesdropping / traffic analysis — learn without altering data."
+              ],
+              "answer": 2,
+              "explain": "SET aims: authenticate parties, protect payment data, ensure integrity, privacy split merchant/bank."
             }
           ]
         }
@@ -1977,15 +3264,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Introductory Idea of Intrusion?",
+              "q": "Which statement best defines Intrusion?",
               "options": [
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Unrelated to Module 5",
-                "A core idea in Network Security & Cryptography: Introductory Idea of Intrusion",
-                "Only a programming-language keyword with no syllabus meaning"
+                "Allow/deny by header fields (IP, port, protocol) — stateless or stateful.",
+                "Fixed-length hash output representing a message’s fingerprint.",
+                "Unauthorised act of using, misusing, or attempting to misuse a system.",
+                "Any action that compromises information security (CIA or related goals)."
               ],
               "answer": 2,
-              "explain": "Introductory Idea of Intrusion is a syllabus topic under System Security in Module 5."
+              "explain": "Intrusion: Unauthorised act of using, misusing, or attempting to misuse a system."
+            },
+            {
+              "q": "Which statement best defines Intruder classes?",
+              "options": [
+                "XOR state with round key.",
+                "Hide the existence of a message inside cover media (image, audio, text).",
+                "Trick users into revealing credentials or running malware.",
+                "Masquerader (outsider), misfeasor (insider abuse), clandestine user (seizes control)."
+              ],
+              "answer": 3,
+              "explain": "Intruder classes: Masquerader (outsider), misfeasor (insider abuse), clandestine user (seizes control)."
+            },
+            {
+              "q": "Which statement best defines Attack stages?",
+              "options": [
+                "Data about data: timestamps, authors, EXIF, filesystem attributes.",
+                "Subject–object permission lists for access control.",
+                "Reconnaissance → gain access → privilege escalation → maintain/cover tracks (typical pattern).",
+                "System x≡a_i (mod m_i) has unique solution mod M=∏m_i if moduli pairwise coprime."
+              ],
+              "answer": 2,
+              "explain": "Attack stages: Reconnaissance → gain access → privilege escalation → maintain/cover tracks (typical pattern)."
+            },
+            {
+              "q": "Regarding “Intrusion is broader than “virus””, which is correct?",
+              "options": [
+                "includes account abuse and unauthorised access attempts.",
+                "Reconnaissance → gain access → privilege escalation → maintain/cover tracks (typical pattern).",
+                "IPsec at IP; SSL/TLS at transport; SET for payment.",
+                "syslog/journald, auth logs, shell history, cron, package logs, /proc."
+              ],
+              "answer": 0,
+              "explain": "Intrusion is broader than “virus” — includes account abuse and unauthorised access attempts."
             }
           ]
         },
@@ -2026,15 +3346,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Intrusion Detection Techniques?",
+              "q": "Which statement best defines IDS?",
               "options": [
-                "Unrelated to Module 5",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A core idea in Network Security & Cryptography: Intrusion Detection Techniques",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "Documented handling history proving evidence was not tampered with.",
+                "If n=pq is factored, φ(n) and d are recovered — RSA breaks.",
+                "Usually needs signatures/TTP — not provided by ordinary MAC.",
+                "Intrusion Detection System — monitors for suspicious activity and alerts/responds."
               ],
-              "answer": 2,
-              "explain": "Intrusion Detection Techniques is a syllabus topic under System Security in Module 5."
+              "answer": 3,
+              "explain": "IDS: Intrusion Detection System — monitors for suspicious activity and alerts/responds."
+            },
+            {
+              "q": "Which statement best defines Host-based IDS (HIDS)?",
+              "options": [
+                "NTFS vs ext4/XFS — different metadata and recovery quirks.",
+                "MD5/SHA digests to verify image integrity (MD5 legacy for checksumming).",
+                "Trick users into revealing credentials or running malware.",
+                "Watches OS logs, files, processes on a single host."
+              ],
+              "answer": 3,
+              "explain": "Host-based IDS (HIDS): Watches OS logs, files, processes on a single host."
+            },
+            {
+              "q": "Which statement best defines Network-based IDS (NIDS)?",
+              "options": [
+                "Watches packets/traffic on a network segment.",
+                "Intrusion Detection System — monitors for suspicious activity and alerts/responds.",
+                "48-bit subkeys from key schedule (PC-1, rotations, PC-2).",
+                "Modify, fabricate, replay, or interrupt — alters system/data behaviour."
+              ],
+              "answer": 0,
+              "explain": "Network-based IDS (NIDS): Watches packets/traffic on a network segment."
+            },
+            {
+              "q": "Which key idea belongs with Intrusion Detection Techniques?",
+              "options": [
+                "Detection ≠ prevention: IDS may be passive; IPS actively blocks.",
+                "Protecting systems via physical/hardware roots of trust and isolation.",
+                "Interface between merchant and card issuer/acquirer networks.",
+                "EnCase, Autopsy/Sleuth Kit-class platforms for browsing artefacts."
+              ],
+              "answer": 0,
+              "explain": "Detection ≠ prevention: IDS may be passive; IPS actively blocks."
             }
           ]
         },
@@ -2075,15 +3428,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Viruses and Worms?",
+              "q": "Which statement best defines Virus?",
               "options": [
-                "A core idea in Network Security & Cryptography: Viruses and Worms",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Unrelated to Module 5"
+                "Confidentiality, Integrity, Availability — core security goals.",
+                "C_i = E_K(P_i ⊕ C_{i−1}); needs IV; hides patterns better than ECB.",
+                "Random symmetric key encrypts the message; RSA/ElGamal wraps that key.",
+                "Malware that attaches to a host program/file and spreads when that host runs/shares."
+              ],
+              "answer": 3,
+              "explain": "Virus: Malware that attaches to a host program/file and spreads when that host runs/shares."
+            },
+            {
+              "q": "Which statement best defines Worm?",
+              "options": [
+                "Standalone malware that self-replicates across networks without needing a host file.",
+                "Bad choices (tiny e with small M, Wiener small-d) leak information.",
+                "Intermediates application protocols; can enforce deep policy.",
+                "Pseudorandom permutation behaviour under secret key; avalanche effect."
               ],
               "answer": 0,
-              "explain": "Viruses and Worms is a syllabus topic under System Security in Module 5."
+              "explain": "Worm: Standalone malware that self-replicates across networks without needing a host file."
+            },
+            {
+              "q": "Which statement best defines Trojan?",
+              "options": [
+                "Malware disguised as legitimate software — does not self-replicate by classic definition.",
+                "Signer cannot credibly deny the signature if private key was not compromised.",
+                "A service that enhances security of systems/data transfers (what we want).",
+                "Encryption alone does not always authenticate; auth alone does not encrypt."
+              ],
+              "answer": 0,
+              "explain": "Trojan: Malware disguised as legitimate software — does not self-replicate by classic definition."
+            },
+            {
+              "q": "Which key idea belongs with Viruses and Worms?",
+              "options": [
+                "Availability attack: destroy or block an asset (DoS flavour).",
+                "Virus needs human/host execution chain; worm emphasises autonomous network propagation.",
+                "Unique identifier useful for correlation across servers.",
+                "Hidden secret data embedded in the cover."
+              ],
+              "answer": 1,
+              "explain": "Virus needs human/host execution chain; worm emphasises autonomous network propagation."
             }
           ]
         },
@@ -2124,15 +3510,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Firewall Overview and Design Principles?",
+              "q": "Which statement best defines Firewall?",
               "options": [
-                "Only a programming-language keyword with no syllabus meaning",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "A core idea in Network Security & Cryptography: Firewall Overview and Design Principles",
-                "Unrelated to Module 5"
+                "Independent K1,K2,K3 — strongest 3DES variant.",
+                "Policy enforcement point controlling traffic between networks (typically perimeter).",
+                "Allow/deny by header fields (IP, port, protocol) — stateless or stateful.",
+                "Immutable/boot-anchored component that verifies later software stages."
+              ],
+              "answer": 1,
+              "explain": "Firewall: Policy enforcement point controlling traffic between networks (typically perimeter)."
+            },
+            {
+              "q": "Which statement best defines Packet filter?",
+              "options": [
+                "Allow/deny by header fields (IP, port, protocol) — stateless or stateful.",
+                "Common technology choices for tunnel security.",
+                "Necessary condition for the standard unique CRT statement.",
+                "Hardness of discrete logarithm in the chosen group."
+              ],
+              "answer": 0,
+              "explain": "Packet filter: Allow/deny by header fields (IP, port, protocol) — stateless or stateful."
+            },
+            {
+              "q": "Which statement best defines Stateful inspection?",
+              "options": [
+                "Hash message first; sign the digest for efficiency.",
+                "Art/science of breaking ciphers without the key (or testing strength).",
+                "Tracks connection state, not only isolated packets.",
+                "Pathological keys with poor schedule behaviour (must be avoided)."
               ],
               "answer": 2,
-              "explain": "Firewall Overview and Design Principles is a syllabus topic under System Security in Module 5."
+              "explain": "Stateful inspection: Tracks connection state, not only isolated packets."
+            },
+            {
+              "q": "Which key idea belongs with Firewall Overview and Design Principles?",
+              "options": [
+                "Art/science of designing secure transformative schemes.",
+                "Default-deny is safer than default-allow when designing rulebases.",
+                "Watches OS logs, files, processes on a single host.",
+                "Added by MTAs; read typically bottom-up for origin path."
+              ],
+              "answer": 1,
+              "explain": "Default-deny is safer than default-allow when designing rulebases."
             }
           ]
         },
@@ -2173,15 +3592,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Global Standards IT Acts and Cyber Laws?",
+              "q": "Which statement best defines IT Act (India context)?",
               "options": [
-                "A core idea in Network Security & Cryptography: Global Standards IT Acts and Cyber Laws",
-                "Only a programming-language keyword with no syllabus meaning",
-                "Unrelated to Module 5",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "Bad choices (tiny e with small M, Wiener small-d) leak information.",
+                "Legal framework addressing cyber offences, electronic records, and intermediary issues (exam locale often IT Act 2000/amendments).",
+                "Write plaintext in zigzag rows; read off by rows.",
+                "Spread plaintext statistical structure over many ciphertext bits."
+              ],
+              "answer": 1,
+              "explain": "IT Act (India context): Legal framework addressing cyber offences, electronic records, and intermediary issues (exam locale often IT Act 2000/amendments)."
+            },
+            {
+              "q": "Which statement best defines Cyber crime categories?",
+              "options": [
+                "Unauthorised access, data theft, fraud, obscenity, identity offences, etc., as defined in statute.",
+                "Active attacks that authentication aims to detect.",
+                "Firewalls filter; VPN tunnels private traffic over public nets.",
+                "Easy one way, hard to invert without trapdoor (private key)."
               ],
               "answer": 0,
-              "explain": "Global Standards IT Acts and Cyber Laws is a syllabus topic under System Security in Module 5."
+              "explain": "Cyber crime categories: Unauthorised access, data theft, fraud, obscenity, identity offences, etc., as defined in statute."
+            },
+            {
+              "q": "Which statement best defines Electronic evidence?",
+              "options": [
+                "Multiple substitution alphabets (e.g. Vigenère) — varies with position.",
+                "Common privacy threats via behavioural profiling.",
+                "Digital records admissible subject to procedural authenticity requirements.",
+                "CA-issued bindings of identity to public keys used by S/MIME."
+              ],
+              "answer": 2,
+              "explain": "Electronic evidence: Digital records admissible subject to procedural authenticity requirements."
+            },
+            {
+              "q": "Which key idea belongs with Global Standards IT Acts and Cyber Laws?",
+              "options": [
+                "Law defines offences and penalties; technical controls implement compliance.",
+                "Permute positions of plaintext symbols; symbols themselves unchanged.",
+                "Attacker has plaintext–ciphertext pairs.",
+                "Added by MTAs; read typically bottom-up for origin path."
+              ],
+              "answer": 0,
+              "explain": "Law defines offences and penalties; technical controls implement compliance."
             }
           ]
         },
@@ -2222,15 +3674,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Virtual Private Network?",
+              "q": "Which statement best defines VPN?",
               "options": [
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Only a programming-language keyword with no syllabus meaning",
-                "Unrelated to Module 5",
-                "A core idea in Network Security & Cryptography: Virtual Private Network"
+                "Compute mod p and mod q separately, then CRT-combine for decryption.",
+                "Immutable/boot-anchored component that verifies later software stages.",
+                "Leakage via timing, power, EM — attacks beyond pure maths of the cipher.",
+                "Virtual Private Network — private connectivity over a public network using tunnelling + crypto."
               ],
               "answer": 3,
-              "explain": "Virtual Private Network is a syllabus topic under System Security in Module 5."
+              "explain": "VPN: Virtual Private Network — private connectivity over a public network using tunnelling + crypto."
+            },
+            {
+              "q": "Which statement best defines Tunnel?",
+              "options": [
+                "Unkeyed digest; needs additional binding (e.g. encrypt digest, or HMAC).",
+                "Replace each plaintext unit with a ciphertext unit by a mapping.",
+                "Encapsulation of private packets inside outer packets across the Internet.",
+                "Digital Rights Management — access-control mechanisms on digital content."
+              ],
+              "answer": 2,
+              "explain": "Tunnel: Encapsulation of private packets inside outer packets across the Internet."
+            },
+            {
+              "q": "Which statement best defines Remote-access VPN?",
+              "options": [
+                "User to gateway (road warrior).",
+                "Added by MTAs; read typically bottom-up for origin path.",
+                "Confidentiality attack: unauthorised access to an asset.",
+                "Reconnaissance → gain access → privilege escalation → maintain/cover tracks (typical pattern)."
+              ],
+              "answer": 0,
+              "explain": "Remote-access VPN: User to gateway (road warrior)."
+            },
+            {
+              "q": "Which key idea belongs with Virtual Private Network?",
+              "options": [
+                "Hardware/software preventing writes to evidence media.",
+                "Dedicated chip storing keys and performing crypto in isolation.",
+                "VPN provides confidentiality and integrity of transit; endpoints still need hardening.",
+                "System x≡a_i (mod m_i) has unique solution mod M=∏m_i if moduli pairwise coprime."
+              ],
+              "answer": 2,
+              "explain": "VPN provides confidentiality and integrity of transit; endpoints still need hardening."
             }
           ]
         },
@@ -2271,15 +3756,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Recent Network Attacks and Security Measures?",
+              "q": "Which statement best defines DDoS?",
               "options": [
-                "Unrelated to Module 5",
-                "A core idea in Network Security & Cryptography: Recent Network Attacks and Security Measures",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Only a programming-language keyword with no syllabus meaning"
+                "Distributed denial of service — overwhelm availability with many sources.",
+                "Capture/analyse RAM for volatile evidence.",
+                "Encapsulating Security Payload — confidentiality ± integrity for payload.",
+                "Data about data: timestamps, authors, EXIF, filesystem attributes."
               ],
-              "answer": 1,
-              "explain": "Recent Network Attacks and Security Measures is a syllabus topic under System Security in Module 5."
+              "answer": 0,
+              "explain": "DDoS: Distributed denial of service — overwhelm availability with many sources."
+            },
+            {
+              "q": "Which statement best defines Phishing / social engineering?",
+              "options": [
+                "Stream vs block; steganography hides existence, not just meaning.",
+                "Owner-controlled ACLs are common discretionary access control realisation.",
+                "Collect volatile data with known-good tools before power-down decisions.",
+                "Trick users into revealing credentials or running malware."
+              ],
+              "answer": 3,
+              "explain": "Phishing / social engineering: Trick users into revealing credentials or running malware."
+            },
+            {
+              "q": "Which statement best defines Ransomware?",
+              "options": [
+                "Encrypted content for confidentiality.",
+                "Append-only distributed ledger of chained, hashed blocks agreed by consensus.",
+                "Encrypts or locks data for extortion.",
+                "EnCase, Autopsy/Sleuth Kit-class platforms for browsing artefacts."
+              ],
+              "answer": 2,
+              "explain": "Ransomware: Encrypts or locks data for extortion."
+            },
+            {
+              "q": "Which key idea belongs with Recent Network Attacks and Security Measures?",
+              "options": [
+                "From: can be forged; trust server-added Received chains more.",
+                "Damaging or spying action delivered after infection (erase, encrypt ransomware, backdoor).",
+                "Write plaintext in zigzag rows; read off by rows.",
+                "Attacks evolve; measures combine prevention, detection, and resilience (backups/IR)."
+              ],
+              "answer": 3,
+              "explain": "Attacks evolve; measures combine prevention, detection, and resilience (backups/IR)."
             }
           ]
         },
@@ -2320,15 +3838,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Blockchain Technology?",
+              "q": "Which statement best defines Blockchain?",
               "options": [
-                "A core idea in Network Security & Cryptography: Blockchain Technology",
-                "Unrelated to Module 5",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Only a programming-language keyword with no syllabus meaning"
+                "Follow Received headers and related metadata to reconstruct message path.",
+                "Digest unkeyed; MAC keyed — digests alone don’t authenticate origin.",
+                "Append-only distributed ledger of chained, hashed blocks agreed by consensus.",
+                "Reconnaissance → gain access → privilege escalation → maintain/cover tracks (typical pattern)."
+              ],
+              "answer": 2,
+              "explain": "Blockchain: Append-only distributed ledger of chained, hashed blocks agreed by consensus."
+            },
+            {
+              "q": "Which statement best defines Block?",
+              "options": [
+                "Batch of transactions plus hash linking to previous block.",
+                "Plaintext→ciphertext / reverse using the key (symmetric classical case).",
+                "DES has a known complementary relationship exploitable in some analyses.",
+                "Unauthorised access, data theft, fraud, obscenity, identity offences, etc., as defined in statute."
               ],
               "answer": 0,
-              "explain": "Blockchain Technology is a syllabus topic under System Security in Module 5."
+              "explain": "Block: Batch of transactions plus hash linking to previous block."
+            },
+            {
+              "q": "Which statement best defines Consensus?",
+              "options": [
+                "2^56 key space is searchable with specialised hardware (DES cracker era).",
+                "Protocol (PoW/PoS/etc.) for agreeing on the next valid chain state.",
+                "Hardness of discrete logarithm in the chosen group.",
+                "Collection, preservation, analysis, and presentation of digital evidence."
+              ],
+              "answer": 1,
+              "explain": "Consensus: Protocol (PoW/PoS/etc.) for agreeing on the next valid chain state."
+            },
+            {
+              "q": "Which key idea belongs with Blockchain Technology?",
+              "options": [
+                "Integrity and transparency are strengths; confidentiality and key custody are not automatic.",
+                "Same structure with reverse round-key order — major engineering advantage.",
+                "Protect upper-layer payload vs encapsulate whole IP packet (VPN-style).",
+                "Virtual Private Network — private connectivity over a public network using tunnelling + crypto."
+              ],
+              "answer": 0,
+              "explain": "Integrity and transparency are strengths; confidentiality and key custody are not automatic."
             }
           ]
         },
@@ -2369,15 +3920,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Internet Privacy and Piracy Prevention?",
+              "q": "Which statement best defines Internet privacy?",
               "options": [
-                "A core idea in Network Security & Cryptography: Internet Privacy and Piracy Prevention",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Only a programming-language keyword with no syllabus meaning",
-                "Unrelated to Module 5"
+                "Differential and linear cryptanalysis reduce complexity vs pure brute force (still costly for full DES).",
+                "Combine residues to recover x modulo product of moduli.",
+                "Control over personal data collection, use, and disclosure online.",
+                "If gcd(a,n)=1, then a^φ(n) ≡ 1 (mod n)."
               ],
-              "answer": 0,
-              "explain": "Internet Privacy and Piracy Prevention is a syllabus topic under System Security in Module 5."
+              "answer": 2,
+              "explain": "Internet privacy: Control over personal data collection, use, and disclosure online."
+            },
+            {
+              "q": "Which statement best defines PII?",
+              "options": [
+                "(p−1)(q−1) for distinct primes p,q.",
+                "Personally Identifiable Information — data that identifies a person.",
+                "Use public-key to wrap a symmetric session key; bulk data uses AES/etc.",
+                "Watches packets/traffic on a network segment."
+              ],
+              "answer": 1,
+              "explain": "PII: Personally Identifiable Information — data that identifies a person."
+            },
+            {
+              "q": "Which statement best defines Piracy prevention?",
+              "options": [
+                "CA-issued bindings of identity to public keys used by S/MIME.",
+                "Textbook RSA without padding is insecure against multiple practical attacks.",
+                "Technical/legal measures against unauthorised copying/distribution of copyrighted works.",
+                "NIST Digital Signature Standard specifying approved signature algorithms."
+              ],
+              "answer": 2,
+              "explain": "Piracy prevention: Technical/legal measures against unauthorised copying/distribution of copyrighted works."
+            },
+            {
+              "q": "Regarding “Privacy focuses on personal data rights; piracy focuses on IP infringement”, which is correct?",
+              "options": [
+                "Keyed invertible transformation on n-bit blocks (typical n=64 or 128).",
+                "Hardness of discrete logarithm in the chosen group.",
+                "related policy space, different aims.",
+                "Feistel/DES lineage; AES is the SPN standard."
+              ],
+              "answer": 2,
+              "explain": "Privacy focuses on personal data rights; piracy focuses on IP infringement — related policy space, different aims."
             }
           ]
         },
@@ -2418,15 +4002,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Overview of Cyber Forensic?",
+              "q": "Which statement best defines Cyber forensics?",
               "options": [
-                "A core idea in Network Security & Cryptography: Overview of Cyber Forensic",
-                "Unrelated to Module 5",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "If gcd(a,n)=1, then a^φ(n) ≡ 1 (mod n).",
+                "Secure transport-layer protocol providing confidentiality, integrity, and authentication.",
+                "Collection, preservation, analysis, and presentation of digital evidence.",
+                "Original message / encrypted message."
+              ],
+              "answer": 2,
+              "explain": "Cyber forensics: Collection, preservation, analysis, and presentation of digital evidence."
+            },
+            {
+              "q": "Which statement best defines Goal?",
+              "options": [
+                "Compare digests to detect accidental/malicious change (if digest protected).",
+                "Hash message first; sign the digest for efficiency.",
+                "NIST Digital Signature Standard specifying approved signature algorithms.",
+                "Reconstruct events for investigation/court while maintaining evidential integrity."
+              ],
+              "answer": 3,
+              "explain": "Goal: Reconstruct events for investigation/court while maintaining evidential integrity."
+            },
+            {
+              "q": "Which statement best defines Volatile vs non-volatile?",
+              "options": [
+                "MAC from block cipher chaining (careful with variable-length messages).",
+                "Apply DES three times: typically EDE (encrypt–decrypt–encrypt) with 2 or 3 keys.",
+                "Encrypt counter values to make a keystream; parallelisable; never reuse counter under same key.",
+                "RAM/network state vs disk — acquisition order matters."
+              ],
+              "answer": 3,
+              "explain": "Volatile vs non-volatile: RAM/network state vs disk — acquisition order matters."
+            },
+            {
+              "q": "Which key idea belongs with Overview of Cyber Forensic?",
+              "options": [
+                "Forensics is process-heavy: methodology beats ad-hoc “looking around”.",
+                "If gcd(a,n)=1, then a^φ(n) ≡ 1 (mod n).",
+                "Sign with private key; verify with corresponding public key.",
+                "Create forensic disk images (e.g. dd-family, FTK Imager-class tools)."
               ],
               "answer": 0,
-              "explain": "Overview of Cyber Forensic is a syllabus topic under Cyber Forensic and Its Applications in Module 5."
+              "explain": "Forensics is process-heavy: methodology beats ad-hoc “looking around”."
             }
           ]
         },
@@ -2467,15 +4084,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Cyber Forensic Processes?",
+              "q": "Which statement best defines Identification?",
               "options": [
-                "Unrelated to Module 5",
-                "A core idea in Network Security & Cryptography: Cyber Forensic Processes",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "Plaintext→ciphertext / reverse using the key (symmetric classical case).",
+                "Recognise potential evidence sources and scope.",
+                "Sign with private key; verify with corresponding public key.",
+                "Row-wise byte rotation (helps diffusion)."
               ],
               "answer": 1,
-              "explain": "Cyber Forensic Processes is a syllabus topic under Cyber Forensic and Its Applications in Module 5."
+              "explain": "Identification: Recognise potential evidence sources and scope."
+            },
+            {
+              "q": "Which statement best defines Preservation?",
+              "options": [
+                "Isolate, image, write-block — prevent change.",
+                "Authentication Header — integrity/authenticity of IP packet parts (no encryption).",
+                "Not the primary MAC goal — that’s confidentiality.",
+                "Detect replay, reordering, delay when required by the application."
+              ],
+              "answer": 0,
+              "explain": "Preservation: Isolate, image, write-block — prevent change."
+            },
+            {
+              "q": "Which statement best defines Collection / acquisition?",
+              "options": [
+                "Bit-for-bit imaging and labelling of media.",
+                "Easy one way, hard to invert without trapdoor (private key).",
+                "Split block into L∥R; round function F updates one half using the other + round key.",
+                "Rijndael-based SPN standard: 128-bit block; keys 128/192/256 → 10/12/14 rounds."
+              ],
+              "answer": 0,
+              "explain": "Collection / acquisition: Bit-for-bit imaging and labelling of media."
+            },
+            {
+              "q": "Which key idea belongs with Cyber Forensic Processes?",
+              "options": [
+                "Order of volatility guides what to capture first on a live system.",
+                "Study how differences in plaintext pairs propagate to ciphertext differences.",
+                "Asymmetric authenticator binding message to signer’s private key.",
+                "Data about data: timestamps, authors, EXIF, filesystem attributes."
+              ],
+              "answer": 0,
+              "explain": "Order of volatility guides what to capture first on a live system."
             }
           ]
         },
@@ -2516,15 +4166,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Cyber Forensic Applications?",
+              "q": "Which statement best defines Criminal investigation?",
               "options": [
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A core idea in Network Security & Cryptography: Cyber Forensic Applications",
-                "Unrelated to Module 5"
+                "Support prosecution of hacking, fraud, abuse, etc.",
+                "Write in a rectangle by rows; read columns in key order.",
+                "Recognise potential evidence sources and scope.",
+                "May include DSA, RSA signatures, ECDSA depending on revision era."
+              ],
+              "answer": 0,
+              "explain": "Criminal investigation: Support prosecution of hacking, fraud, abuse, etc."
+            },
+            {
+              "q": "Which statement best defines Civil / corporate?",
+              "options": [
+                "Innocent carrier / carrier after embedding.",
+                "IP theft, employee misuse, policy violations.",
+                "Assure message originated from claimed sender.",
+                "Asymmetric authenticator binding message to signer’s private key."
+              ],
+              "answer": 1,
+              "explain": "Civil / corporate: IP theft, employee misuse, policy violations."
+            },
+            {
+              "q": "Which statement best defines Incident response support?",
+              "options": [
+                "Detect replay, reordering, delay when required by the application.",
+                "Fixed-length output from arbitrary-length input via iterated compression.",
+                "Scope breach, attribute activity, guide recovery.",
+                "Nonlinear byte substitution via S-box (confusion)."
               ],
               "answer": 2,
-              "explain": "Cyber Forensic Applications is a syllabus topic under Cyber Forensic and Its Applications in Module 5."
+              "explain": "Incident response support: Scope breach, attribute activity, guide recovery."
+            },
+            {
+              "q": "Which key idea belongs with Cyber Forensic Applications?",
+              "options": [
+                "Recover artefacts, timelines, deleted data, logs.",
+                "Access Control List: permissions attached to an object listing allowed subjects/actions.",
+                "Control over personal data collection, use, and disclosure online.",
+                "Same forensic process adapts to different legal/business contexts."
+              ],
+              "answer": 3,
+              "explain": "Same forensic process adapts to different legal/business contexts."
             }
           ]
         },
@@ -2565,15 +4248,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Cyber Forensic Tools?",
+              "q": "Which statement best defines Imaging tools?",
               "options": [
-                "A core idea in Network Security & Cryptography: Cyber Forensic Tools",
-                "Unrelated to Module 5",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Only a programming-language keyword with no syllabus meaning"
+                "Documented handling history proving evidence was not tampered with.",
+                "Create forensic disk images (e.g. dd-family, FTK Imager-class tools).",
+                "Information of probative value stored or transmitted in digital form.",
+                "Masquerader (outsider), misfeasor (insider abuse), clandestine user (seizes control)."
               ],
-              "answer": 0,
-              "explain": "Cyber Forensic Tools is a syllabus topic under Cyber Forensic and Its Applications in Module 5."
+              "answer": 1,
+              "explain": "Imaging tools: Create forensic disk images (e.g. dd-family, FTK Imager-class tools)."
+            },
+            {
+              "q": "Which statement best defines Analysis suites?",
+              "options": [
+                "Users sign others’ keys; trust is decentralised, not only CA-based.",
+                "Protect upper-layer payload vs encapsulate whole IP packet (VPN-style).",
+                "Asymmetric authenticator binding message to signer’s private key.",
+                "EnCase, Autopsy/Sleuth Kit-class platforms for browsing artefacts."
+              ],
+              "answer": 3,
+              "explain": "Analysis suites: EnCase, Autopsy/Sleuth Kit-class platforms for browsing artefacts."
+            },
+            {
+              "q": "Which statement best defines Write blocker?",
+              "options": [
+                "Short authentication tag computed with a shared secret key.",
+                "Threats → what we want (services) → how we achieve it (mechanisms).",
+                "Hardware/software preventing writes to evidence media.",
+                "A process or device that detects, prevents, or recovers from attacks (how)."
+              ],
+              "answer": 2,
+              "explain": "Write blocker: Hardware/software preventing writes to evidence media."
+            },
+            {
+              "q": "Which key idea belongs with Cyber Forensic Tools?",
+              "options": [
+                "160-bit digest — collision-broken for practical attacks; avoid for new security.",
+                "Blockchain, privacy/piracy, recent attack patterns.",
+                "MAC_K(M) → tag; verify by recomputing and comparing tags.",
+                "Tool choice must be defensible and validated; version notes belong in reports."
+              ],
+              "answer": 3,
+              "explain": "Tool choice must be defensible and validated; version notes belong in reports."
             }
           ]
         },
@@ -2614,15 +4330,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Digital Evidence?",
+              "q": "Which statement best defines Digital evidence?",
               "options": [
-                "A core idea in Network Security & Cryptography: Digital Evidence",
-                "Unrelated to Module 5",
-                "A definition-only label with no role in Network Security & Cryptography",
-                "Only a programming-language keyword with no syllabus meaning"
+                "Information of probative value stored or transmitted in digital form.",
+                "Dedicated chip storing keys and performing crypto in isolation.",
+                "Virtual Private Network — private connectivity over a public network using tunnelling + crypto.",
+                "Secure Hash Algorithm standards (SHA-1 legacy; SHA-2/SHA-3 modern)."
               ],
               "answer": 0,
-              "explain": "Digital Evidence is a syllabus topic under Cyber Forensic and Its Applications in Module 5."
+              "explain": "Digital evidence: Information of probative value stored or transmitted in digital form."
+            },
+            {
+              "q": "Which statement best defines Locard’s principle (digital)?",
+              "options": [
+                "Contact leaves traces — logs, metadata, remnants.",
+                "Owner-controlled ACLs are common discretionary access control realisation.",
+                "Independent encryption of each block — identical plaintext blocks → identical ciphertext.",
+                "M = C^d mod n (private: d, and usually p,q)."
+              ],
+              "answer": 0,
+              "explain": "Locard’s principle (digital): Contact leaves traces — logs, metadata, remnants."
+            },
+            {
+              "q": "Which statement best defines Metadata?",
+              "options": [
+                "Digital Rights Management — access-control mechanisms on digital content.",
+                "Data about data: timestamps, authors, EXIF, filesystem attributes.",
+                "Compare digests to detect accidental/malicious change (if digest protected).",
+                "Added by MTAs; read typically bottom-up for origin path."
+              ],
+              "answer": 1,
+              "explain": "Metadata: Data about data: timestamps, authors, EXIF, filesystem attributes."
+            },
+            {
+              "q": "Which key idea belongs with Digital Evidence?",
+              "options": [
+                "Art/science of breaking ciphers without the key (or testing strength).",
+                "Evidence may be latent (deleted/slack) or active files/logs.",
+                "Dedicated chip storing keys and performing crypto in isolation.",
+                "Digital records admissible subject to procedural authenticity requirements."
+              ],
+              "answer": 1,
+              "explain": "Evidence may be latent (deleted/slack) or active files/logs."
             }
           ]
         },
@@ -2663,15 +4412,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches Investigating Windows and Unix Systems?",
+              "q": "Which statement best defines Windows artefacts?",
               "options": [
-                "A core idea in Network Security & Cryptography: Investigating Windows and Unix Systems",
-                "Unrelated to Module 5",
-                "Only a programming-language keyword with no syllabus meaning",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "Event logs, Registry, Prefetch, LNK, USN journal, user profiles.",
+                "Secret parameter that selects a specific transformation from a cipher family.",
+                "Data about data: timestamps, authors, EXIF, filesystem attributes.",
+                "Hardware/software preventing writes to evidence media."
               ],
               "answer": 0,
-              "explain": "Investigating Windows and Unix Systems is a syllabus topic under Cyber Forensic and Its Applications in Module 5."
+              "explain": "Windows artefacts: Event logs, Registry, Prefetch, LNK, USN journal, user profiles."
+            },
+            {
+              "q": "Which statement best defines Unix/Linux artefacts?",
+              "options": [
+                "Encapsulation of private packets inside outer packets across the Internet.",
+                "Count of integers in 1..n−1 coprime to n.",
+                "syslog/journald, auth logs, shell history, cron, package logs, /proc.",
+                "Choose primes p,q; n=pq; pick e with gcd(e,φ(n))=1; d≡e⁻¹ (mod φ(n))."
+              ],
+              "answer": 2,
+              "explain": "Unix/Linux artefacts: syslog/journald, auth logs, shell history, cron, package logs, /proc."
+            },
+            {
+              "q": "Which statement best defines Filesystem differences?",
+              "options": [
+                "Try all keys until decryption is meaningful.",
+                "Protecting systems via physical/hardware roots of trust and isolation.",
+                "NTFS vs ext4/XFS — different metadata and recovery quirks.",
+                "2^56 key space is searchable with specialised hardware (DES cracker era)."
+              ],
+              "answer": 2,
+              "explain": "Filesystem differences: NTFS vs ext4/XFS — different metadata and recovery quirks."
+            },
+            {
+              "q": "Which key idea belongs with Investigating Windows and Unix Systems?",
+              "options": [
+                "Immutable/boot-anchored component that verifies later software stages.",
+                "OS-specific knowledge drives where evidence lives.",
+                "SHA-2 variant with 256-bit digest — common integrity workhorse.",
+                "Report findings clearly for investigators/court."
+              ],
+              "answer": 1,
+              "explain": "OS-specific knowledge drives where evidence lives."
             }
           ]
         },
@@ -2712,15 +4494,48 @@
           ],
           "mcqs": [
             {
-              "q": "Which statement best matches E-mail Tracing?",
+              "q": "Which statement best defines Email tracing?",
               "options": [
-                "Only a programming-language keyword with no syllabus meaning",
-                "Unrelated to Module 5",
-                "A core idea in Network Security & Cryptography: E-mail Tracing",
-                "A definition-only label with no role in Network Security & Cryptography"
+                "Follow Received headers and related metadata to reconstruct message path.",
+                "NIST Digital Signature Standard specifying approved signature algorithms.",
+                "Keyed-hash MAC: hash with key mixed via ipad/opad construction.",
+                "RAM/network state vs disk — acquisition order matters."
+              ],
+              "answer": 0,
+              "explain": "Email tracing: Follow Received headers and related metadata to reconstruct message path."
+            },
+            {
+              "q": "Which statement best defines Received headers?",
+              "options": [
+                "Patching, MFA, segmentation, backups, filtering, threat intel, least privilege.",
+                "If n=pq is factored, φ(n) and d are recovered — RSA breaks.",
+                "Added by MTAs; read typically bottom-up for origin path.",
+                "Legal framework addressing cyber offences, electronic records, and intermediary issues (exam locale often IT Act 2000/amendments)."
               ],
               "answer": 2,
-              "explain": "E-mail Tracing is a syllabus topic under Cyber Forensic and Its Applications in Module 5."
+              "explain": "Received headers: Added by MTAs; read typically bottom-up for origin path."
+            },
+            {
+              "q": "Which statement best defines Message-ID?",
+              "options": [
+                "Fixed substitution alphabet for the whole message.",
+                "Eavesdropping / traffic analysis — learn without altering data.",
+                "Unique identifier useful for correlation across servers.",
+                "Information of probative value stored or transmitted in digital form."
+              ],
+              "answer": 2,
+              "explain": "Message-ID: Unique identifier useful for correlation across servers."
+            },
+            {
+              "q": "Regarding “Tracing establishes path/attribution hypotheses”, which is correct?",
+              "options": [
+                "Malware disguised as legitimate software — does not self-replicate by classic definition.",
+                "not always a single “smoking gun”.",
+                "Typically needs many chosen pairs to amplify probabilistic biases.",
+                "Links order info for merchant and payment info for bank without cross-revealing."
+              ],
+              "answer": 1,
+              "explain": "Tracing establishes path/attribution hypotheses — not always a single “smoking gun”."
             }
           ]
         }

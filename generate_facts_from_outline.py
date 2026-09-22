@@ -224,24 +224,26 @@ def build_subject(code: str) -> None:
                     ),
                 },
             ]
-            options = [
-                f"A definition-only label with no role in {meta['title_short']}",
-                f"A core idea in {meta['title_short']}: {title}",
-                f"Unrelated to Module {mid}",
-                f"Only a programming-language keyword with no syllabus meaning",
-            ]
-            seed = int(hashlib.md5(f"Which statement best matches {title}?".encode()).hexdigest()[:8], 16)
-            rng = random.Random(seed)
-            correct = options[1]
-            rng.shuffle(options)
-            mcq = {
-                "q": f"Which statement best matches {title}?",
-                "options": options,
-                "answer": options.index(correct),
-                "explain": f"{title} is a syllabus topic under {parent_title} in Module {mid}.",
-            }
-            # Prefer a second MCQ from the definition when it has a clear keyword
-            topics.append({"id": tid, "title": title, "flashcards": fc, "mcqs": [mcq]})
+            # TEMPLATE MCQ REMOVED — do not emit "Which statement best matches".
+            # Real MCQs come from rebuild_mcqs_from_deep.py / deep notes.
+            mcqs = []
+            if definition and not looks_like_toc(definition):
+                wrongs = [
+                    "It has no role in algorithmic problem-solving.",
+                    "It only names a UI widget with no technical meaning.",
+                    "It always guarantees O(1) time for every input size.",
+                ]
+                opts = [definition] + wrongs
+                seed = int(hashlib.md5(f"define:{tid}:{title}".encode()).hexdigest()[:8], 16)
+                rng = random.Random(seed)
+                rng.shuffle(opts)
+                mcqs.append({
+                    "q": f"Which statement best defines {title}?",
+                    "options": opts,
+                    "answer": opts.index(definition),
+                    "explain": f"{title}: {definition}",
+                })
+            topics.append({"id": tid, "title": title, "flashcards": fc, "mcqs": mcqs})
             level_nodes.append(
                 {
                     "id": tid,
