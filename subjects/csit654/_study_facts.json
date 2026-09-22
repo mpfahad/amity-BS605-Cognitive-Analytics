@@ -113,7 +113,7 @@
             },
             {
               "front": "What is Integrity?",
-              "back": "Data not altered in an unauthorised manner.",
+              "back": "Integrity: Data not altered in an unauthorised manner.",
               "detail": "1.1.2 · Services and Mechanism"
             },
             {
@@ -180,7 +180,7 @@
             },
             {
               "front": "What is Plaintext / Ciphertext?",
-              "back": "Original message / encrypted message.",
+              "back": "Plaintext / Ciphertext: Original message / encrypted message.",
               "detail": "1.1.3 · Classical Encryption Techniques"
             },
             {
@@ -277,13 +277,13 @@
             },
             {
               "front": "What is Playfair?",
-              "back": "Digraph substitution using a 5×5 key square.",
+              "back": "Playfair: Digraph substitution using a 5×5 key square.",
               "detail": "1.1.4 · Substitution Ciphers"
             },
             {
               "front": "Key idea (Substitution Ciphers)",
               "back": "Monoalphabetic preserves letter frequencies; polyalphabetic flattens them somewhat.",
-              "detail": "1.1.4 · concept"
+              "detail": "1.1.4 · key idea"
             }
           ],
           "mcqs": [
@@ -360,12 +360,12 @@
             {
               "front": "Key idea (Transposition Ciphers)",
               "back": "Transposition keeps frequencies of letters; digraph/position stats change.",
-              "detail": "1.1.5 · concept"
+              "detail": "1.1.5 · key idea"
             },
             {
               "front": "Also remember (Transposition Ciphers)",
               "back": "Substitution changes identity of symbols; transposition changes order only.",
-              "detail": "1.1.5 · concept"
+              "detail": "1.1.5 · key idea"
             }
           ],
           "mcqs": [
@@ -426,12 +426,12 @@
             },
             {
               "front": "What is Ciphertext-only?",
-              "back": "Attacker has only ciphertext.",
+              "back": "Ciphertext-only: Attacker has only ciphertext.",
               "detail": "1.1.6 · Cryptanalysis"
             },
             {
               "front": "What is Known-plaintext?",
-              "back": "Attacker has plaintext–ciphertext pairs.",
+              "back": "Known-plaintext: Attacker has plaintext–ciphertext pairs.",
               "detail": "1.1.6 · Cryptanalysis"
             },
             {
@@ -441,12 +441,12 @@
             },
             {
               "front": "What is Brute force?",
-              "back": "Try all keys until decryption is meaningful.",
+              "back": "Brute force: Try all keys until decryption is meaningful.",
               "detail": "1.1.6 · Cryptanalysis"
             },
             {
-              "front": "What about Attack models ordered roughly by power?",
-              "back": "ciphertext-only < known < chosen.",
+              "front": "Key idea (Cryptanalysis)",
+              "back": "Attack models ordered roughly by power: ciphertext-only < known < chosen.",
               "detail": "1.1.6 · key idea"
             }
           ],
@@ -508,12 +508,12 @@
             },
             {
               "front": "What is Cover / Stego-object?",
-              "back": "Innocent carrier / carrier after embedding.",
+              "back": "Cover / Stego-object: Innocent carrier / carrier after embedding.",
               "detail": "1.1.7 · Steganography"
             },
             {
               "front": "What is Payload?",
-              "back": "Hidden secret data embedded in the cover.",
+              "back": "Payload: Hidden secret data embedded in the cover.",
               "detail": "1.1.7 · Steganography"
             },
             {
@@ -522,14 +522,14 @@
               "detail": "1.1.7 · Steganography"
             },
             {
-              "front": "Cryptography hides meaning; steganography hides presence?",
-              "back": "often used together.",
+              "front": "Key contrast in Steganography",
+              "back": "Cryptography hides meaning; steganography hides presence — often used together.",
               "detail": "1.1.7 · key idea"
             },
             {
               "front": "Also remember (Steganography)",
               "back": "Detecting stego (steganalysis) ≠ recovering plaintext of a cipher.",
-              "detail": "1.1.7 · concept"
+              "detail": "1.1.7 · key idea"
             }
           ],
           "mcqs": [
@@ -688,12 +688,12 @@
             {
               "front": "Key idea (Overview of Hardware Security)",
               "back": "Software crypto can be correct yet leak via side channels on real hardware.",
-              "detail": "1.1.9 · concept"
+              "detail": "1.1.9 · key idea"
             },
             {
               "front": "Also remember (Overview of Hardware Security)",
               "back": "Secure boot chains trust from ROM/firmware upward.",
-              "detail": "1.1.9 · concept"
+              "detail": "1.1.9 · key idea"
             }
           ],
           "mcqs": [
@@ -770,7 +770,7 @@
             },
             {
               "front": "What is Key schedule?",
-              "back": "Derives round keys from the master key.",
+              "back": "Key schedule: Derives round keys from the master key.",
               "detail": "2.1.1 · Modern Block Ciphers: Block Ciphers Principles"
             },
             {
@@ -847,7 +847,7 @@
             },
             {
               "front": "What is Substitution?",
-              "back": "Primary tool for confusion (S-boxes).",
+              "back": "Substitution: Primary tool for confusion (S-boxes).",
               "detail": "2.1.2 · Shannon’s Theory of Confusion and Diffusion"
             },
             {
@@ -1025,8 +1025,8 @@
               "detail": "2.1.4 · Data Encryption Standard (DES)"
             },
             {
-              "front": "Effective security is ~56-bit key?",
-              "back": "historically breakable by brute force.",
+              "front": "Key contrast in Data Encryption Standard (DES)",
+              "back": "Effective security is ~56-bit key — historically breakable by brute force.",
               "detail": "2.1.4 · key idea"
             }
           ],
@@ -1104,12 +1104,12 @@
             {
               "front": "Key idea (Strength of DES)",
               "back": "Practical insecurity today is mainly short key length, not failure of Feistel idea.",
-              "detail": "2.1.5 · concept"
+              "detail": "2.1.5 · key idea"
             },
             {
               "front": "Also remember (Strength of DES)",
               "back": "3DES lengthens effective keying to extend life of DES hardware/software.",
-              "detail": "2.1.5 · concept"
+              "detail": "2.1.5 · key idea"
             }
           ],
           "mcqs": [
@@ -1186,11 +1186,11 @@
             {
               "front": "Key idea (Idea of Differential Cryptanalysis)",
               "back": "Attacks nonlinear components (S-boxes) via difference distribution tables.",
-              "detail": "2.1.6 · concept"
+              "detail": "2.1.6 · key idea"
             },
             {
-              "front": "DES S-boxes resist DC better than random boxes?",
-              "back": "design target.",
+              "front": "Key contrast in Idea of Differential Cryptanalysis",
+              "back": "DES S-boxes resist DC better than random boxes — design target.",
               "detail": "2.1.6 · key idea"
             }
           ],
@@ -1271,8 +1271,8 @@
               "detail": "2.1.7 · Block Cipher Modes of Operations"
             },
             {
-              "front": "What about Mode ≠ algorithm?",
-              "back": "AES-CBC is AES used in CBC mode.",
+              "front": "Key idea (Block Cipher Modes of Operations)",
+              "back": "Mode ≠ algorithm: AES-CBC is AES used in CBC mode.",
               "detail": "2.1.7 · key idea"
             }
           ],
@@ -1348,14 +1348,14 @@
               "detail": "2.1.8 · Triple DES"
             },
             {
-              "front": "3DES block size remains 64 bits?",
-              "back": "birthday bound limits large-volume use.",
+              "front": "Key contrast in Triple DES",
+              "back": "3DES block size remains 64 bits — birthday bound limits large-volume use.",
               "detail": "2.1.8 · key idea"
             },
             {
               "front": "Also remember (Triple DES)",
               "back": "Slower than AES; modern guidance prefers AES-128/256.",
-              "detail": "2.1.8 · concept"
+              "detail": "2.1.8 · key idea"
             }
           ],
           "mcqs": [
@@ -1421,7 +1421,7 @@
             },
             {
               "front": "What is ShiftRows?",
-              "back": "Row-wise byte rotation (helps diffusion).",
+              "back": "ShiftRows: Row-wise byte rotation (helps diffusion).",
               "detail": "2.2.1 · Advanced Encryption Standard (AES)"
             },
             {
@@ -1431,12 +1431,12 @@
             },
             {
               "front": "What is AddRoundKey?",
-              "back": "XOR state with round key.",
+              "back": "In Advanced Encryption Standard (AES), AddRoundKey means: XOR state with round key.",
               "detail": "2.2.1 · Advanced Encryption Standard (AES)"
             },
             {
-              "front": "What about AES is not Feistel?",
-              "back": "full-block layers each round.",
+              "front": "Key idea (Advanced Encryption Standard (AES))",
+              "back": "AES is not Feistel: full-block layers each round.",
               "detail": "2.2.1 · key idea"
             }
           ],
@@ -1498,12 +1498,12 @@
             },
             {
               "front": "What is Euler’s totient φ(n)?",
-              "back": "Count of integers in 1..n−1 coprime to n.",
+              "back": "Euler’s totient φ(n): Count of integers in 1..n−1 coprime to n.",
               "detail": "2.2.2 · Fermat’s and Euler’s Theorem"
             },
             {
               "front": "What is Euler’s theorem?",
-              "back": "If gcd(a,n)=1, then a^φ(n) ≡ 1 (mod n).",
+              "back": "Euler’s theorem: If gcd(a,n)=1, then a^φ(n) ≡ 1 (mod n).",
               "detail": "2.2.2 · Fermat’s and Euler’s Theorem"
             },
             {
@@ -1514,12 +1514,12 @@
             {
               "front": "Key idea (Fermat’s and Euler’s Theorem)",
               "back": "Fermat is the special case of Euler when n is prime (φ(p)=p−1).",
-              "detail": "2.2.2 · concept"
+              "detail": "2.2.2 · key idea"
             },
             {
               "front": "Also remember (Fermat’s and Euler’s Theorem)",
               "back": "These theorems justify why RSA decryption undoes encryption under modular exponentiation.",
-              "detail": "2.2.2 · concept"
+              "detail": "2.2.2 · key idea"
             }
           ],
           "mcqs": [
@@ -1596,12 +1596,12 @@
             {
               "front": "Key idea (Chinese Remainder Theorem)",
               "back": "CRT reduces large modular exponentiation to two smaller ones in RSA.",
-              "detail": "2.2.3 · concept"
+              "detail": "2.2.3 · key idea"
             },
             {
               "front": "Also remember (Chinese Remainder Theorem)",
               "back": "Also used in some secret-sharing / multiprime constructions.",
-              "detail": "2.2.3 · concept"
+              "detail": "2.2.3 · key idea"
             }
           ],
           "mcqs": [
@@ -1744,17 +1744,17 @@
             },
             {
               "front": "What is Encrypt?",
-              "back": "C = M^e mod n (public: n,e).",
+              "back": "In RSA Algorithm, Encrypt means: C = M^e mod n (public: n,e).",
               "detail": "2.2.5 · RSA Algorithm"
             },
             {
               "front": "What is Decrypt?",
-              "back": "M = C^d mod n (private: d, and usually p,q).",
+              "back": "Decrypt: M = C^d mod n (private: d, and usually p,q).",
               "detail": "2.2.5 · RSA Algorithm"
             },
             {
               "front": "What is φ(n)?",
-              "back": "(p−1)(q−1) for distinct primes p,q.",
+              "back": "In RSA Algorithm, φ(n) means: (p−1)(q−1) for distinct primes p,q.",
               "detail": "2.2.5 · RSA Algorithm"
             },
             {
@@ -1847,7 +1847,7 @@
             {
               "front": "Key idea (Security of RSA Algorithm)",
               "back": "RSA security ≈ hardness of factoring n (and related RSA problems) under good parameters.",
-              "detail": "2.2.6 · concept"
+              "detail": "2.2.6 · key idea"
             }
           ],
           "mcqs": [
@@ -1930,12 +1930,12 @@
             {
               "front": "Key idea (Introduction of Message Authentication Codes)",
               "back": "Introduces why confidentiality mechanisms are insufficient for integrity/origin.",
-              "detail": "3.1.1 · concept"
+              "detail": "3.1.1 · key idea"
             },
             {
               "front": "Also remember (Introduction of Message Authentication Codes)",
               "back": "MACs are symmetric; digital signatures are asymmetric counterparts.",
-              "detail": "3.1.1 · concept"
+              "detail": "3.1.1 · key idea"
             }
           ],
           "mcqs": [
@@ -2010,8 +2010,8 @@
               "detail": "3.1.2 · Authentication Functions"
             },
             {
-              "front": "What about Three classical textbook classes?",
-              "back": "encryption, MAC, hash-based schemes.",
+              "front": "Key idea (Authentication Functions)",
+              "back": "Three classical textbook classes: encryption, MAC, hash-based schemes.",
               "detail": "3.1.2 · key idea"
             },
             {
@@ -2078,7 +2078,7 @@
             },
             {
               "front": "What is Content integrity?",
-              "back": "Detect modification of message content.",
+              "back": "Content integrity: Detect modification of message content.",
               "detail": "3.1.3 · Authentication Requirements"
             },
             {
@@ -2097,8 +2097,8 @@
               "detail": "3.1.3 · Authentication Requirements"
             },
             {
-              "front": "What about Requirements depend on threat model?",
-              "back": "integrity alone vs integrity+freshness.",
+              "front": "Key idea (Authentication Requirements)",
+              "back": "Requirements depend on threat model: integrity alone vs integrity+freshness.",
               "detail": "3.1.3 · key idea"
             }
           ],
@@ -2176,11 +2176,11 @@
             {
               "front": "Key idea (Message Authentication Code (MAC))",
               "back": "MAC uses shared secret → both sides can generate tags (no non-repudiation).",
-              "detail": "3.1.4 · concept"
+              "detail": "3.1.4 · key idea"
             },
             {
-              "front": "Truncating tags reduces security bits?",
-              "back": "length is an exam parameter sometimes.",
+              "front": "Key contrast in Message Authentication Code (MAC)",
+              "back": "Truncating tags reduces security bits — length is an exam parameter sometimes.",
               "detail": "3.1.4 · key idea"
             }
           ],
@@ -2263,7 +2263,7 @@
             {
               "front": "Also remember (Secure Hash Algorithm (SHA))",
               "back": "SHA used inside HMAC, digital signatures, and fingerprinting.",
-              "detail": "3.1.5 · concept"
+              "detail": "3.1.5 · key idea"
             }
           ],
           "mcqs": [
@@ -2340,12 +2340,12 @@
             {
               "front": "Key idea (Message Digest)",
               "back": "“Message digest” often means the hash value in exam language (MD5/SHA).",
-              "detail": "3.1.6 · concept"
+              "detail": "3.1.6 · key idea"
             },
             {
               "front": "Also remember (Message Digest)",
               "back": "Signing a digest is how practical digital signatures work on large files.",
-              "detail": "3.1.6 · concept"
+              "detail": "3.1.6 · key idea"
             }
           ],
           "mcqs": [
@@ -2422,11 +2422,11 @@
             {
               "front": "Key idea (Overview of Digital Signatures)",
               "back": "Signatures provide integrity + origin + non-repudiation; MACs do not give third-party non-repudiation.",
-              "detail": "3.2.1 · concept"
+              "detail": "3.2.1 · key idea"
             },
             {
-              "front": "Anyone with the public key can verify?",
-              "back": "no shared secret required.",
+              "front": "Key contrast in Overview of Digital Signatures",
+              "back": "Anyone with the public key can verify — no shared secret required.",
               "detail": "3.2.1 · key idea"
             }
           ],
@@ -2504,11 +2504,11 @@
             {
               "front": "Key idea (Digital Signature Standards (DSS))",
               "back": "DSS is the standard framework; DSA is a specific algorithm often taught under DSS.",
-              "detail": "3.2.2 · concept"
+              "detail": "3.2.2 · key idea"
             },
             {
-              "front": "DSA signatures use per-message randomness k?",
-              "back": "reuse of k is catastrophic.",
+              "front": "Key contrast in Digital Signature Standards (DSS)",
+              "back": "DSA signatures use per-message randomness k — reuse of k is catastrophic.",
               "detail": "3.2.2 · key idea"
             }
           ],
@@ -2586,12 +2586,12 @@
             {
               "front": "Key idea (Proof of Digital Signature Algorithm)",
               "back": "Proof/correctness shows verify accepts honest signatures and rejects altered M (w.h.p.).",
-              "detail": "3.2.3 · concept"
+              "detail": "3.2.3 · key idea"
             },
             {
               "front": "Also remember (Proof of Digital Signature Algorithm)",
               "back": "Private key x never leaves the signer; public y is published.",
-              "detail": "3.2.3 · concept"
+              "detail": "3.2.3 · key idea"
             }
           ],
           "mcqs": [
@@ -2679,7 +2679,7 @@
             {
               "front": "Key idea (Authentication Applications: Kerberos)",
               "back": "Client authenticates to AS → TGT → TGS issues service ticket → server verifies.",
-              "detail": "4.1.1 · concept"
+              "detail": "4.1.1 · key idea"
             }
           ],
           "mcqs": [
@@ -2759,8 +2759,8 @@
               "detail": "4.1.2 · Overview of Access Control List (ACL)"
             },
             {
-              "front": "ACL is object-centric; capability list is subject-centric?",
-              "back": "dual views of an access matrix.",
+              "front": "Key contrast in Overview of Access Control List (ACL)",
+              "back": "ACL is object-centric; capability list is subject-centric — dual views of an access matrix.",
               "detail": "4.1.2 · key idea"
             }
           ],
@@ -2909,7 +2909,7 @@
             },
             {
               "front": "What is Enveloped data?",
-              "back": "Encrypted content for confidentiality.",
+              "back": "Enveloped data: Encrypted content for confidentiality.",
               "detail": "4.1.4 · S/MIME"
             },
             {
@@ -2920,12 +2920,12 @@
             {
               "front": "Key idea (S/MIME)",
               "back": "S/MIME integrates with existing CA hierarchies familiar to enterprises.",
-              "detail": "4.1.4 · concept"
+              "detail": "4.1.4 · key idea"
             },
             {
               "front": "Also remember (S/MIME)",
               "back": "Same hybrid crypto idea as PGP, different trust and formatting model.",
-              "detail": "4.1.4 · concept"
+              "detail": "4.1.4 · key idea"
             }
           ],
           "mcqs": [
@@ -3005,8 +3005,8 @@
               "detail": "4.2.1 · IP Security Architecture Components"
             },
             {
-              "front": "IPsec operates at network layer?",
-              "back": "transparent to many apps.",
+              "front": "Key contrast in IP Security Architecture Components",
+              "back": "IPsec operates at network layer — transparent to many apps.",
               "detail": "4.2.1 · key idea"
             }
           ],
@@ -3082,8 +3082,8 @@
               "detail": "4.2.2 · Secure Socket Layer"
             },
             {
-              "front": "SSL is historical name; TLS is the standardised successor?",
-              "back": "exams often say SSL loosely.",
+              "front": "Key contrast in Secure Socket Layer",
+              "back": "SSL is historical name; TLS is the standardised successor — exams often say SSL loosely.",
               "detail": "4.2.2 · key idea"
             },
             {
@@ -3171,7 +3171,7 @@
             {
               "front": "Also remember (Secure electronic transaction (SET))",
               "back": "Merchant need not see full payment credentials; bank need not see full order details.",
-              "detail": "4.2.3 · concept"
+              "detail": "4.2.3 · key idea"
             }
           ],
           "mcqs": [
@@ -3259,7 +3259,7 @@
             {
               "front": "Also remember (Introductory Idea of Intrusion)",
               "back": "Prevention, detection, and recovery are complementary controls.",
-              "detail": "5.1.1 · concept"
+              "detail": "5.1.1 · key idea"
             }
           ],
           "mcqs": [
@@ -3423,7 +3423,7 @@
             {
               "front": "Key idea (Viruses and Worms)",
               "back": "Virus needs human/host execution chain; worm emphasises autonomous network propagation.",
-              "detail": "5.1.3 · concept"
+              "detail": "5.1.3 · key idea"
             }
           ],
           "mcqs": [
@@ -3505,7 +3505,7 @@
             {
               "front": "Key idea (Firewall Overview and Design Principles)",
               "back": "Default-deny is safer than default-allow when designing rulebases.",
-              "detail": "5.1.4 · concept"
+              "detail": "5.1.4 · key idea"
             }
           ],
           "mcqs": [
@@ -3582,7 +3582,7 @@
             {
               "front": "Key idea (Global Standards IT Acts and Cyber Laws)",
               "back": "Law defines offences and penalties; technical controls implement compliance.",
-              "detail": "5.1.5 · concept"
+              "detail": "5.1.5 · key idea"
             },
             {
               "front": "Jurisdiction and attribution are hard?",
@@ -3653,12 +3653,12 @@
             },
             {
               "front": "What is Remote-access VPN?",
-              "back": "User to gateway (road warrior).",
+              "back": "Remote-access VPN: User to gateway (road warrior).",
               "detail": "5.1.6 · Virtual Private Network"
             },
             {
               "front": "What is Site-to-site VPN?",
-              "back": "Gateway to gateway linking networks.",
+              "back": "Site-to-site VPN: Gateway to gateway linking networks.",
               "detail": "5.1.6 · Virtual Private Network"
             },
             {
@@ -3669,7 +3669,7 @@
             {
               "front": "Key idea (Virtual Private Network)",
               "back": "VPN provides confidentiality and integrity of transit; endpoints still need hardening.",
-              "detail": "5.1.6 · concept"
+              "detail": "5.1.6 · key idea"
             }
           ],
           "mcqs": [
@@ -3735,7 +3735,7 @@
             },
             {
               "front": "What is Ransomware?",
-              "back": "Encrypts or locks data for extortion.",
+              "back": "Ransomware: Encrypts or locks data for extortion.",
               "detail": "5.1.7 · Recent Network Attacks and Security Measures"
             },
             {
@@ -3751,7 +3751,7 @@
             {
               "front": "Key idea (Recent Network Attacks and Security Measures)",
               "back": "Attacks evolve; measures combine prevention, detection, and resilience (backups/IR).",
-              "detail": "5.1.7 · concept"
+              "detail": "5.1.7 · key idea"
             }
           ],
           "mcqs": [
@@ -3833,7 +3833,7 @@
             {
               "front": "Key idea (Blockchain Technology)",
               "back": "Integrity and transparency are strengths; confidentiality and key custody are not automatic.",
-              "detail": "5.1.8 · concept"
+              "detail": "5.1.8 · key idea"
             }
           ],
           "mcqs": [
@@ -3913,8 +3913,8 @@
               "detail": "5.1.9 · Internet Privacy and Piracy Prevention"
             },
             {
-              "front": "Privacy focuses on personal data rights; piracy focuses on IP infringement?",
-              "back": "related policy space, different aims.",
+              "front": "Key contrast in Internet Privacy and Piracy Prevention",
+              "back": "Privacy focuses on personal data rights; piracy focuses on IP infringement — related policy space, different aims.",
               "detail": "5.1.9 · key idea"
             }
           ],
@@ -3995,8 +3995,8 @@
               "detail": "5.2.1 · key idea"
             },
             {
-              "front": "Differs from incident response containment?",
-              "back": "though they interact.",
+              "front": "Key contrast in Overview of Cyber Forensic",
+              "back": "Differs from incident response containment — though they interact.",
               "detail": "5.2.1 · key idea"
             }
           ],
@@ -4063,7 +4063,7 @@
             },
             {
               "front": "What is Collection / acquisition?",
-              "back": "Bit-for-bit imaging and labelling of media.",
+              "back": "Collection / acquisition: Bit-for-bit imaging and labelling of media.",
               "detail": "5.2.2 · Cyber Forensic Processes"
             },
             {
@@ -4079,7 +4079,7 @@
             {
               "front": "Key idea (Cyber Forensic Processes)",
               "back": "Order of volatility guides what to capture first on a live system.",
-              "detail": "5.2.2 · concept"
+              "detail": "5.2.2 · key idea"
             }
           ],
           "mcqs": [
@@ -4150,18 +4150,18 @@
             },
             {
               "front": "What is Intelligence / threat hunting?",
-              "back": "Longer-term artefact study across cases.",
+              "back": "Intelligence / threat hunting: Longer-term artefact study across cases.",
               "detail": "5.2.3 · Cyber Forensic Applications"
             },
             {
               "front": "Key idea (Cyber Forensic Applications)",
               "back": "Same forensic process adapts to different legal/business contexts.",
-              "detail": "5.2.3 · concept"
+              "detail": "5.2.3 · key idea"
             },
             {
               "front": "Also remember (Cyber Forensic Applications)",
               "back": "Corporate cases still need careful preservation if litigation is possible.",
-              "detail": "5.2.3 · concept"
+              "detail": "5.2.3 · key idea"
             }
           ],
           "mcqs": [
@@ -4237,13 +4237,13 @@
             },
             {
               "front": "What is Memory tools?",
-              "back": "Capture/analyse RAM for volatile evidence.",
+              "back": "Memory tools: Capture/analyse RAM for volatile evidence.",
               "detail": "5.2.4 · Cyber Forensic Tools"
             },
             {
               "front": "Key idea (Cyber Forensic Tools)",
               "back": "Tool choice must be defensible and validated; version notes belong in reports.",
-              "detail": "5.2.4 · concept"
+              "detail": "5.2.4 · key idea"
             }
           ],
           "mcqs": [
@@ -4320,12 +4320,12 @@
             {
               "front": "Key idea (Digital Evidence)",
               "back": "Evidence may be latent (deleted/slack) or active files/logs.",
-              "detail": "5.2.5 · concept"
+              "detail": "5.2.5 · key idea"
             },
             {
               "front": "Also remember (Digital Evidence)",
               "back": "Timestamps need timezone and clock-skew interpretation.",
-              "detail": "5.2.5 · concept"
+              "detail": "5.2.5 · key idea"
             }
           ],
           "mcqs": [
@@ -4402,12 +4402,12 @@
             {
               "front": "Key idea (Investigating Windows and Unix Systems)",
               "back": "OS-specific knowledge drives where evidence lives.",
-              "detail": "5.2.6 · concept"
+              "detail": "5.2.6 · key idea"
             },
             {
               "front": "Also remember (Investigating Windows and Unix Systems)",
               "back": "Admin privileges and rootkits can undermine live collection trustworthiness.",
-              "detail": "5.2.6 · concept"
+              "detail": "5.2.6 · key idea"
             }
           ],
           "mcqs": [
@@ -4487,8 +4487,8 @@
               "detail": "5.2.7 · E-mail Tracing"
             },
             {
-              "front": "Tracing establishes path/attribution hypotheses?",
-              "back": "not always a single “smoking gun”.",
+              "front": "Key contrast in E-mail Tracing",
+              "back": "Tracing establishes path/attribution hypotheses — not always a single “smoking gun”.",
               "detail": "5.2.7 · key idea"
             }
           ],

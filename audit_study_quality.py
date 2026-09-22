@@ -1,0 +1,337 @@
+# -*- coding: utf-8 -*-
+"""Full quality audit for Amity multi-subject study packs.
+
+Flags template / placeholder / truncated content in:
+  - flashcards
+  - MCQs
+  - module maps (node bodies / deep notes surfaces)
+  - LMR / important-topics lists
+
+Run: python audit_study_quality.py
+Exit code 1 if any critical issues remain.
+"""
+from __future__ import annotations
+
+import json
+import re
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+SUBJECTS = ROOT / "subjects"
+CODES = ("bs605", "cse601", "csit654", "csit745")
+
+TEMPLATE_Q = re.compile(r"Which statement best matches\b", re.I)
+CORE_IDEA = re.compile(r"core idea in\b", re.I)
+SYLLABUS_TOPIC = re.compile(r"syllabus topic in this module", re.I)
+DEFINE_PROMPT = re.compile(r"^Define .+ in one line", re.I)
+EXAM_FOCUS = re.compile(r"^Exam focus:", re.I)
+PLACEHOLDER_BODY = re.compile(
+    r"Open flashcards for this topic|Deep notes for this topic are still|TODO|TBD|lorem ipsum",
+    re.I,
+)
+TRUNC_END = re.compile(r"(?:\b(?:the|a|an|with|for|and|of|to|is|are|in|on|by)\b|[,;:])\s*$", re.I)
+
+
+def weak_flash_back(back: str) -> str | None:
+    b = (back or "").strip()
+    if not b:
+        return "empty_back"
+    if DEFINE_PROMPT.search(b):
+        return "define_prompt_back"
+    if SYLLABUS_TOPIC.search(b):
+        return "syllabus_placeholder_back"
+    if len(b) < 25:
+        return "too_short_back"
+    if TRUNC_END.search(b) and len(b) < 90:
+        return "truncated_back"
+    if b.endswith("?") and not b.lower().startswith(("what", "which", "how", "why", "when", "where")):
+        # answer that is still a question
+        return "question_as_back"
+    return None
+
+
+def weak_flash_front(front: str) -> str | None:
+    f = (front or "").strip()
+    if EXAM_FOCUS.search(f):
+        return "exam_focus_front"
+    if not f:
+        return "empty_front"
+    return None
+
+
+def weak_mcq(q: dict) -> list[str]:
+    issues = []
+    text = q.get("q") or ""
+    opts = q.get("options") or []
+    explain = q.get("explain") or ""
+    if TEMPLATE_Q.search(text):
+        issues.append("template_best_matches_q")
+    if any(CORE_IDEA.search(o or "") for o in opts):
+        issues.append("core_idea_option")
+    if "is a syllabus topic under" in explain:
+        issues.append("syllabus_explain")
+    if len(opts) != 4:
+        issues.append(f"option_count_{len(opts)}")
+    if not text.strip():
+        issues.append("empty_q")
+    # identical options
+    norms = [re.sub(r"\s+", " ", (o or "").strip().lower()) for o in opts]
+    if len(set(norms)) < len(norms):
+        issues.append("duplicate_options")
+    ans = q.get("answer")
+    if not isinstance(ans, int) or ans < 0 or ans >= len(opts):
+        issues.append("bad_answer_index")
+    # correct option empty
+    if isinstance(ans, int) and 0 <= ans < len(opts) and not (opts[ans] or "").strip():
+        issues.append("empty_correct_option")
+    # all options look like meta labels
+    meta = sum(1 for o in opts if CORE_IDEA.search(o or "") or "Unrelated to Module" in (o or "") or "programming-language keyword" in (o or "") or "definition-only label" in (o or ""))
+    if meta >= 3:
+        issues.append("meta_options_cluster")
+    return issues
+
+
+def audit_facts(code: str) -> dict:
+    path = SUBJECTS / code / "_study_facts.json"
+    data = json.loads(path.read_text(encoding="utf-8"))
+    fc_issues = []
+    mcq_issues = []
+    fc_n = mcq_n = 0
+    for mod in data.get("modules") or []:
+        mid = mod.get("id")
+        for topic in mod.get("topics") or []:
+            tid = topic.get("id")
+            title = topic.get("title")
+            cards = topic.get("flashcards") or []
+            if not cards:
+                fc_issues.append({"id": tid, "issue": "no_flashcards", "title": title})
+            for i, c in enumerate(cards):
+                fc_n += 1
+                fi = weak_flash_front(c.get("front") or "")
+                bi = weak_flash_back(c.get("back") or "")
+                if fi or bi:
+                    fc_issues.append(
+                        {
+                            "id": tid,
+                            "card": i,
+                            "issue": ",".join(x for x in [fi, bi] if x),
+                            "front": (c.get("front") or "")[:80],
+                            "back": (c.get("back") or "")[:100],
+                        }
+                    )
+            qs = topic.get("mcqs") or []
+            if not qs:
+                mcq_issues.append({"id": tid, "issue": "no_mcqs", "title": title, "module": mid})
+            for i, q in enumerate(qs):
+                mcq_n += 1
+                bad = weak_mcq(q)
+                if bad:
+                    mcq_issues.append(
+                        {
+                            "id": tid,
+                            "q_i": i,
+                            "issue": ",".join(bad),
+                            "q": (q.get("q") or "")[:100],
+                        }
+                    )
+    return {
+        "flash_total": fc_n,
+        "flash_issues": fc_issues,
+        "mcq_total": mcq_n,
+        "mcq_issues": mcq_issues,
+    }
+
+
+def audit_maps(code: str) -> dict:
+    path = SUBJECTS / code / "_module_maps.json"
+    deep_path = SUBJECTS / code / "_deep_notes.json"
+    issues = []
+    node_n = 0
+    if not path.exists():
+        return {"nodes": 0, "issues": [{"issue": "missing_module_maps"}]}
+    maps = json.loads(path.read_text(encoding="utf-8"))
+    deep = json.loads(deep_path.read_text(encoding="utf-8")) if deep_path.exists() else {}
+
+    for mod in maps.get("modules") or []:
+        root = mod.get("root") or {}
+        node_n += 1
+        body = root.get("body") or ""
+        if PLACEHOLDER_BODY.search(body):
+            issues.append({"id": root.get("id"), "issue": "placeholder_root_body", "body": body[:100]})
+        for level in mod.get("levels") or []:
+            for n in level.get("nodes") or []:
+                node_n += 1
+                nid = n.get("id") or n.get("topicId")
+                title = n.get("title") or ""
+                # deep notes coverage for topic nodes
+                tid = n.get("topicId") or nid
+                if tid and not str(tid).endswith("_root"):
+                    pack = deep.get(tid)
+                    if not pack:
+                        issues.append({"id": tid, "issue": "map_node_missing_deep_notes", "title": title})
+                    else:
+                        terms = pack.get("terms") or []
+                        if not terms:
+                            issues.append({"id": tid, "issue": "deep_notes_no_terms", "title": title})
+                        else:
+                            # weak term defs
+                            for t in terms:
+                                d = (t.get("d") or "").strip()
+                                if not d or SYLLABUS_TOPIC.search(d) or len(d) < 15:
+                                    issues.append(
+                                        {
+                                            "id": tid,
+                                            "issue": "weak_deep_term",
+                                            "term": t.get("t"),
+                                            "d": d[:80],
+                                        }
+                                    )
+                body = n.get("body") or ""
+                if body and PLACEHOLDER_BODY.search(body):
+                    issues.append({"id": nid, "issue": "placeholder_node_body", "body": body[:100]})
+    return {"nodes": node_n, "issues": issues}
+
+
+def audit_lmr(code: str) -> dict:
+    path = SUBJECTS / code / "_lmr_notes.txt"
+    issues = []
+    lines = []
+    if not path.exists():
+        return {"lines": 0, "issues": [{"issue": "missing_lmr_notes"}]}
+    text = path.read_text(encoding="utf-8")
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+        if line.lower().startswith(code) or "—" in line[:40] and "LMR" in line:
+            continue
+        if re.match(r"^\d+[\).]", line) or line[0].isdigit() or line.startswith("-"):
+            lines.append(line)
+            if SYLLABUS_TOPIC.search(line) or "priority." == line[-9:]:
+                # "1.1.1 Stack — Module 1 priority." is thin but acceptable as LMR pointer
+                pass
+            if TEMPLATE_Q.search(line) or CORE_IDEA.search(line):
+                issues.append({"issue": "template_in_lmr", "line": line[:120]})
+            if len(line) < 8:
+                issues.append({"issue": "too_short_lmr", "line": line})
+    if len(lines) < 3:
+        issues.append({"issue": "too_few_lmr_items", "count": len(lines)})
+    return {"lines": len(lines), "issues": issues}
+
+
+def audit_html_embed(code: str) -> dict:
+    """Ensure generated HTML no longer embeds known template strings."""
+    issues = []
+    base = SUBJECTS / code
+    checks = {
+        "flashcards.html": ["Exam focus:", "syllabus topic in this module", "Define "],
+        "quiz.html": ["Which statement best matches", "core idea in", "is a syllabus topic under"],
+    }
+    for fname, needles in checks.items():
+        path = base / fname
+        if not path.exists():
+            issues.append({"file": fname, "issue": "missing_html"})
+            continue
+        text = path.read_text(encoding="utf-8")
+        for needle in needles:
+            # Allow "Define" only as part of legitimate questions like "Which statement best defines"
+            if needle == "Define ":
+                # count Define-prompt backs specifically
+                if "Define " in text and " in one line" in text:
+                    issues.append({"file": fname, "issue": "html_contains", "needle": "Define ... in one line"})
+                continue
+            if needle in text:
+                issues.append({"file": fname, "issue": "html_contains", "needle": needle})
+    return {"issues": issues}
+
+
+def main() -> int:
+    report = {"subjects": {}, "critical": 0, "warn": 0}
+    critical_keys = {
+        "template_best_matches_q",
+        "core_idea_option",
+        "syllabus_explain",
+        "meta_options_cluster",
+        "exam_focus_front",
+        "define_prompt_back",
+        "syllabus_placeholder_back",
+        "html_contains",
+        "no_flashcards",
+        "no_mcqs",
+    }
+
+    for code in CODES:
+        facts = audit_facts(code)
+        maps = audit_maps(code)
+        lmr = audit_lmr(code)
+        html = audit_html_embed(code)
+        sub = {
+            "facts": {
+                "flash_total": facts["flash_total"],
+                "flash_issue_count": len(facts["flash_issues"]),
+                "mcq_total": facts["mcq_total"],
+                "mcq_issue_count": len(facts["mcq_issues"]),
+                "flash_issues_sample": facts["flash_issues"][:8],
+                "mcq_issues_sample": facts["mcq_issues"][:8],
+            },
+            "maps": {
+                "nodes": maps["nodes"],
+                "issue_count": len(maps["issues"]),
+                "issues_sample": maps["issues"][:8],
+            },
+            "lmr": {
+                "lines": lmr["lines"],
+                "issue_count": len(lmr["issues"]),
+                "issues": lmr["issues"][:8],
+            },
+            "html": html,
+        }
+        report["subjects"][code] = sub
+
+        def count_crit(items, key="issue"):
+            n = 0
+            for it in items:
+                iss = it.get(key) or ""
+                for part in iss.split(","):
+                    if part in critical_keys or part.startswith("html_contains"):
+                        n += 1
+            return n
+
+        crit = 0
+        crit += count_crit(facts["flash_issues"])
+        crit += count_crit(facts["mcq_issues"])
+        crit += count_crit(html["issues"])
+        # missing deep notes for maps = warn not critical if overview still works
+        warn = len(facts["flash_issues"]) + len(facts["mcq_issues"]) + len(maps["issues"]) + len(lmr["issues"]) - crit
+        report["critical"] += crit
+        report["warn"] += max(0, warn)
+
+    out = ROOT / "_quality_audit_report.json"
+    out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # human summary
+    print(f"CRITICAL={report['critical']} WARN~={report['warn']}")
+    for code, sub in report["subjects"].items():
+        f, m = sub["facts"], sub["maps"]
+        print(
+            f"{code}: flash {f['flash_total']} (issues {f['flash_issue_count']}) | "
+            f"mcq {f['mcq_total']} (issues {f['mcq_issue_count']}) | "
+            f"map nodes {m['nodes']} (issues {m['issue_count']}) | "
+            f"lmr {sub['lmr']['lines']} (issues {sub['lmr']['issue_count']}) | "
+            f"html_issues {len(sub['html']['issues'])}"
+        )
+        for sample in f["mcq_issues_sample"][:3]:
+            print(f"  MCQ {sample.get('id')}: {sample.get('issue')} | {sample.get('q')}")
+        for sample in f["flash_issues_sample"][:3]:
+            print(f"  FC  {sample.get('id')}: {sample.get('issue')} | {sample.get('front')}")
+        for sample in m["issues_sample"][:3]:
+            print(f"  MAP {sample.get('id')}: {sample.get('issue')}")
+        for sample in sub["html"]["issues"][:3]:
+            print(f"  HTML {sample.get('file')}: {sample.get('needle') or sample.get('issue')}")
+    print(f"Wrote {out}")
+    return 1 if report["critical"] else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

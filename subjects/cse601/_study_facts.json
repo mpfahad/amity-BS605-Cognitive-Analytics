@@ -16,27 +16,27 @@
             },
             {
               "front": "What is Push?",
-              "back": "Insert an element on top.",
+              "back": "In Stack, Push means: Insert an element on top.",
               "detail": "1.1.1 · Stack"
             },
             {
               "front": "What is Pop?",
-              "back": "Remove the top element.",
+              "back": "In Stack, Pop means: Remove the top element.",
               "detail": "1.1.1 · Stack"
             },
             {
               "front": "What is Peek / top?",
-              "back": "Read the top without removing it.",
+              "back": "Peek / top: Read the top without removing it.",
               "detail": "1.1.1 · Stack"
             },
             {
               "front": "What is Underflow / overflow?",
-              "back": "Pop on empty / push on full (array stack).",
+              "back": "Underflow / overflow: Pop on empty / push on full (array stack).",
               "detail": "1.1.1 · Stack"
             },
             {
-              "front": "What about Stack ≠ queue?",
-              "back": "LIFO vs FIFO.",
+              "front": "Key idea (Stack)",
+              "back": "Stack ≠ queue: LIFO vs FIFO.",
               "detail": "1.1.1 · key idea"
             }
           ],
@@ -56,7 +56,7 @@
               "q": "Which statement best defines Push?",
               "options": [
                 "All leaves at same level; node occupancy bounds (order).",
-                "O(n log n).",
+                "O(n log n) overall; build-heap is O(n), then n extracts.",
                 "Easier deletion when you have the node (prev is known).",
                 "Insert an element on top."
               ],
@@ -77,7 +77,7 @@
             {
               "q": "Which statement about Stack is correct?",
               "options": [
-                "Θ(n log n) guaranteed.",
+                "Θ(n log n) in all cases — predictable guaranteed bound.",
                 "Θ(n^2) comparisons roughly always.",
                 "Hard decision problems; reductions show hardness.",
                 "Stack ≠ queue: LIFO vs FIFO."
@@ -109,12 +109,12 @@
             {
               "front": "Key idea (Evaluation of Postfix Expression)",
               "back": "Infix needs precedence/parentheses; postfix does not.",
-              "detail": "1.1.2 · concept"
+              "detail": "1.1.2 · key idea"
             },
             {
               "front": "Also remember (Evaluation of Postfix Expression)",
               "back": "Each operator pops the right number of operands (usually 2 for binary).",
-              "detail": "1.1.2 · concept"
+              "detail": "1.1.2 · key idea"
             }
           ],
           "mcqs": [
@@ -123,7 +123,7 @@
               "options": [
                 "Optimal substructure + overlapping subproblems; store results.",
                 "Operators follow their operands (e.g. 3 4 +).",
-                "Build heap, repeatedly extract max/min.",
+                "Build heap, repeatedly extract max/min to place next sorted item.",
                 "How running time grows with input size n."
               ],
               "answer": 1,
@@ -132,7 +132,7 @@
             {
               "q": "Which statement best defines Evaluation with stack?",
               "options": [
-                "Build heap, repeatedly extract max/min.",
+                "Build heap, repeatedly extract max/min to place next sorted item.",
                 "Different cases; exams often want worst-case Big-O.",
                 "Inorder, preorder, postorder, level-order.",
                 "Scan left→right: push operands; on operator, pop args, push result."
@@ -180,7 +180,7 @@
             },
             {
               "front": "What is Recurrence?",
-              "back": "T(n)=2T(n−1)+1, T(1)=1 → T(n)=2^n−1 moves.",
+              "back": "Recurrence: T(n)=2T(n−1)+1, T(1)=1 → T(n)=2^n−1 moves.",
               "detail": "1.1.3 · Tower of Hanoi Problem"
             },
             {
@@ -191,7 +191,7 @@
             {
               "front": "Also remember (Tower of Hanoi Problem)",
               "back": "Shows divide-and-conquer / recursion cost explosion.",
-              "detail": "1.1.3 · concept"
+              "detail": "1.1.3 · key idea"
             }
           ],
           "mcqs": [
@@ -222,7 +222,7 @@
               "options": [
                 "T(n)=2T(n−1)+1, T(1)=1 → T(n)=2^n−1 moves.",
                 "Algebraic recombination reduces multiplications; adds more additions.",
-                "Θ(n log n) guaranteed.",
+                "Θ(n log n) in all cases — predictable guaranteed bound.",
                 "Build solution by locally best choice at each step."
               ],
               "answer": 0,
@@ -247,28 +247,28 @@
           "flashcards": [
             {
               "front": "What is Queue?",
-              "back": "FIFO: enqueue at rear, dequeue at front.",
+              "back": "Queue: FIFO: enqueue at rear, dequeue at front.",
               "detail": "1.1.4 · Queue"
             },
             {
               "front": "What is Enqueue / Dequeue?",
-              "back": "Insert rear / remove front.",
+              "back": "Enqueue / Dequeue: Insert rear / remove front.",
               "detail": "1.1.4 · Queue"
             },
             {
               "front": "What is Circular queue?",
-              "back": "Wrap indices to reuse array space.",
+              "back": "Circular queue: Wrap indices to reuse array space.",
               "detail": "1.1.4 · Queue"
             },
             {
               "front": "Key idea (Queue)",
               "back": "Queue ≠ stack (FIFO vs LIFO).",
-              "detail": "1.1.4 · concept"
+              "detail": "1.1.4 · key idea"
             },
             {
               "front": "Also remember (Queue)",
               "back": "BFS uses a queue; DFS uses a stack/recursion.",
-              "detail": "1.1.4 · concept"
+              "detail": "1.1.4 · key idea"
             }
           ],
           "mcqs": [
@@ -288,7 +288,7 @@
               "options": [
                 "Try P at every shift of T; compare chars.",
                 "Multiway balanced search tree for disk/block storage.",
-                "Is there a subset summing to target t?",
+                "Decision problem: decide whether any subset of numbers adds exactly to target t.",
                 "Insert rear / remove front."
               ],
               "answer": 3,
@@ -324,23 +324,23 @@
           "flashcards": [
             {
               "front": "What is Linked list?",
-              "back": "Nodes with data + pointer(s); dynamic size.",
+              "back": "Linked list: Nodes with data + pointer(s); dynamic size.",
               "detail": "1.1.5 · Linked List"
             },
             {
               "front": "What is Singly linked?",
-              "back": "Each node points to next only.",
+              "back": "Singly linked: Each node points to next only.",
               "detail": "1.1.5 · Linked List"
             },
             {
               "front": "What is Head?",
-              "back": "Entry pointer to the first node.",
+              "back": "In Linked List, Head means: Entry pointer to the first node.",
               "detail": "1.1.5 · Linked List"
             },
             {
               "front": "Key idea (Linked List)",
               "back": "Insert/delete can be O(1) given a node reference; search is O(n).",
-              "detail": "1.1.5 · concept"
+              "detail": "1.1.5 · key idea"
             },
             {
               "front": "What about Vs array?",
@@ -387,7 +387,7 @@
               "options": [
                 "Insert/delete can be O(1) given a node reference; search is O(n).",
                 "Compare algorithms by time, space, and stability.",
-                "O(n log n).",
+                "O(n log n) overall; build-heap is O(n), then n extracts.",
                 "Proof style that swaps to show optimality."
               ],
               "answer": 0,
@@ -401,12 +401,12 @@
           "flashcards": [
             {
               "front": "What is Doubly linked list?",
-              "back": "Each node has next and prev pointers.",
+              "back": "Doubly linked list: Each node has next and prev pointers.",
               "detail": "1.1.6 · Double Linked List"
             },
             {
               "front": "What is Bidirectional traversal?",
-              "back": "Walk forward or backward.",
+              "back": "Bidirectional traversal: Walk forward or backward.",
               "detail": "1.1.6 · Double Linked List"
             },
             {
@@ -417,12 +417,12 @@
             {
               "front": "Key idea (Double Linked List)",
               "back": "Extra pointer cost vs singly linked.",
-              "detail": "1.1.6 · concept"
+              "detail": "1.1.6 · key idea"
             },
             {
               "front": "Also remember (Double Linked List)",
               "back": "Still no O(1) index access like arrays.",
-              "detail": "1.1.6 · concept"
+              "detail": "1.1.6 · key idea"
             }
           ],
           "mcqs": [
@@ -463,7 +463,7 @@
               "q": "Which statement about Double Linked List is correct?",
               "options": [
                 "Classic NP-hard optimisation problem.",
-                "Is there a subset summing to target t?",
+                "Decision problem: decide whether any subset of numbers adds exactly to target t.",
                 "Systematic visit: DFS/BFS.",
                 "Extra pointer cost vs singly linked."
               ],
@@ -489,7 +489,7 @@
             {
               "front": "Key idea (Algorithm and Characteristics)",
               "back": "Program implements an algorithm in a language.",
-              "detail": "1.2.1 · concept"
+              "detail": "1.2.1 · key idea"
             },
             {
               "front": "What about Finiteness?",
@@ -515,7 +515,7 @@
                 "Visit each vertex once and return — classic NP-complete flavour.",
                 "Mostly yes (small stack); not stable typically.",
                 "Input, output, finiteness, definiteness, effectiveness (and often generality).",
-                "O(n log n)."
+                "O(n log n) overall; build-heap is O(n), then n extracts."
               ],
               "answer": 2,
               "explain": "Characteristics: Input, output, finiteness, definiteness, effectiveness (and often generality)."
@@ -544,12 +544,12 @@
             },
             {
               "front": "What is Ω (Omega)?",
-              "back": "Lower bound on growth.",
+              "back": "In Asymtotic Notations, Ω (Omega) means: Lower bound on growth.",
               "detail": "1.2.2 · Asymtotic Notations"
             },
             {
               "front": "What is Θ (Theta)?",
-              "back": "Tight bound — both O and Ω.",
+              "back": "In Asymtotic Notations, Θ (Theta) means: Tight bound — both O and Ω.",
               "detail": "1.2.2 · Asymtotic Notations"
             },
             {
@@ -560,12 +560,12 @@
             {
               "front": "Key idea (Asymtotic Notations)",
               "back": "Asymptotics ignore constants and lower-order terms.",
-              "detail": "1.2.2 · concept"
+              "detail": "1.2.2 · key idea"
             },
             {
               "front": "Also remember (Asymtotic Notations)",
               "back": "O(n^2) does not mean ‘exactly n^2 steps’.",
-              "detail": "1.2.2 · concept"
+              "detail": "1.2.2 · key idea"
             }
           ],
           "mcqs": [
@@ -621,7 +621,7 @@
           "flashcards": [
             {
               "front": "What is Time complexity?",
-              "back": "How running time grows with input size n.",
+              "back": "Time complexity: How running time grows with input size n.",
               "detail": "1.2.3 · Algorithm Time Complexity"
             },
             {
@@ -631,18 +631,18 @@
             },
             {
               "front": "What is Space complexity?",
-              "back": "Extra memory growth with n.",
+              "back": "Space complexity: Extra memory growth with n.",
               "detail": "1.2.3 · Algorithm Time Complexity"
             },
             {
               "front": "Key idea (Algorithm Time Complexity)",
               "back": "Count dominant operations, not wall-clock alone.",
-              "detail": "1.2.3 · concept"
+              "detail": "1.2.3 · key idea"
             },
             {
               "front": "Also remember (Algorithm Time Complexity)",
               "back": "Nested loops often multiply costs.",
-              "detail": "1.2.3 · concept"
+              "detail": "1.2.3 · key idea"
             }
           ],
           "mcqs": [
@@ -698,12 +698,12 @@
           "flashcards": [
             {
               "front": "What is Recurrence?",
-              "back": "T(n) defined in terms of T(smaller).",
+              "back": "Recurrence: T(n) defined in terms of T(smaller).",
               "detail": "1.2.4 · Recursive Program Analysis Strategies"
             },
             {
               "front": "What is Recursion tree / substitution / Master?",
-              "back": "Strategies to solve recurrences.",
+              "back": "Recursion tree / substitution / Master: Strategies to solve recurrences.",
               "detail": "1.2.4 · Recursive Program Analysis Strategies"
             },
             {
@@ -714,12 +714,12 @@
             {
               "front": "Key idea (Recursive Program Analysis Strategies)",
               "back": "Wrong base case ⇒ wrong closed form.",
-              "detail": "1.2.4 · concept"
+              "detail": "1.2.4 · key idea"
             },
             {
               "front": "Also remember (Recursive Program Analysis Strategies)",
               "back": "Unfold a few levels before guessing the pattern.",
-              "detail": "1.2.4 · concept"
+              "detail": "1.2.4 · key idea"
             }
           ],
           "mcqs": [
@@ -739,7 +739,7 @@
               "options": [
                 "Strategies to solve recurrences.",
                 "Cycle visiting each vertex exactly once and returning.",
-                "Needs Θ(n) auxiliary for classic merge.",
+                "Needs Θ(n) auxiliary memory for the classic merge.",
                 "Vertex cover, set cover, subset-sum — often near-optimal algorithms."
               ],
               "answer": 0,
@@ -789,13 +789,13 @@
               "detail": "1.2.5 · Master Theorem"
             },
             {
-              "front": "Identify a, b, f(n) first?",
-              "back": "then case.",
+              "front": "Key contrast in Master Theorem",
+              "back": "Identify a, b, f(n) first — then case.",
               "detail": "1.2.5 · key idea"
             },
             {
-              "front": "What about Merge sort?",
-              "back": "a=2,b=2,f=Θ(n) → Θ(n log n).",
+              "front": "Key idea (Master Theorem)",
+              "back": "Merge sort: a=2,b=2,f=Θ(n) → Θ(n log n).",
               "detail": "1.2.5 · key idea"
             }
           ],
@@ -803,7 +803,7 @@
             {
               "q": "Which statement best defines Master theorem?",
               "options": [
-                "O(n log n).",
+                "O(n log n) overall; build-heap is O(n), then n extracts.",
                 "Solves T(n)=aT(n/b)+f(n) for many standard f.",
                 "Short verifiable witness for yes instances (for NP).",
                 "Faster matrix multiply than naïve O(n^3) using 7 recursive multiplies."
@@ -852,12 +852,12 @@
           "flashcards": [
             {
               "front": "What is Divide and conquer?",
-              "back": "Divide → conquer recursively → combine.",
+              "back": "Divide and conquer: Divide → conquer recursively → combine.",
               "detail": "1.3.1 · Divide-Conquer Recurrence Equations Solutions"
             },
             {
               "front": "What is Recurrence form?",
-              "back": "Often T(n)=aT(n/b)+f(n).",
+              "back": "In Divide-Conquer Recurrence Equations Solutions, Recurrence form means: Often T(n)=aT(n/b)+f(n).",
               "detail": "1.3.1 · Divide-Conquer Recurrence Equations Solutions"
             },
             {
@@ -868,12 +868,12 @@
             {
               "front": "Key idea (Divide-Conquer Recurrence Equations Solutions)",
               "back": "Combine cost f(n) matters as much as subproblem count.",
-              "detail": "1.3.1 · concept"
+              "detail": "1.3.1 · key idea"
             },
             {
               "front": "Also remember (Divide-Conquer Recurrence Equations Solutions)",
               "back": "Not every recursive algorithm is efficient D&C.",
-              "detail": "1.3.1 · concept"
+              "detail": "1.3.1 · key idea"
             }
           ],
           "mcqs": [
@@ -929,7 +929,7 @@
           "flashcards": [
             {
               "front": "What is Bubble sort?",
-              "back": "Repeatedly swap adjacent out-of-order pairs.",
+              "back": "Bubble sort: Repeatedly swap adjacent out-of-order pairs.",
               "detail": "1.4.1 · Bubble Sort"
             },
             {
@@ -939,18 +939,18 @@
             },
             {
               "front": "What is Stable??",
-              "back": "Can be implemented stable.",
+              "back": "In Bubble Sort, Stable? means: Can be implemented stable.",
               "detail": "1.4.1 · Bubble Sort"
             },
             {
               "front": "Key idea (Bubble Sort)",
               "back": "Simple but slow for large n.",
-              "detail": "1.4.1 · concept"
+              "detail": "1.4.1 · key idea"
             },
             {
               "front": "Also remember (Bubble Sort)",
               "back": "After pass i, largest elements ‘bubble’ to the end.",
-              "detail": "1.4.1 · concept"
+              "detail": "1.4.1 · key idea"
             }
           ],
           "mcqs": [
@@ -959,7 +959,7 @@
               "options": [
                 "Efficiency/resource angle linked in this module’s framing.",
                 "Connected acyclic graph; hierarchical parent–child.",
-                "Yes.",
+                "Yes — equal keys keep their relative order after sorting.",
                 "Repeatedly swap adjacent out-of-order pairs."
               ],
               "answer": 3,
@@ -1016,17 +1016,17 @@
             },
             {
               "front": "What is Stable?",
-              "back": "Yes (typical implementation).",
+              "back": "In Insertion Sort, Stable means: Yes (typical implementation).",
               "detail": "1.4.2 · Insertion Sort"
             },
             {
               "front": "Key idea (Insertion Sort)",
               "back": "Good for small or nearly sorted arrays.",
-              "detail": "1.4.2 · concept"
+              "detail": "1.4.2 · key idea"
             },
             {
-              "front": "What about Online?",
-              "back": "can sort as data arrives.",
+              "front": "Key idea (Insertion Sort)",
+              "back": "Online: can sort as data arrives.",
               "detail": "1.4.2 · key idea"
             }
           ],
@@ -1088,23 +1088,23 @@
             },
             {
               "front": "What is Time?",
-              "back": "Θ(n^2) comparisons roughly always.",
+              "back": "In Selection Sort, Time means: Θ(n^2) comparisons roughly always.",
               "detail": "1.4.3 · Selection Sort"
             },
             {
               "front": "What is Not stable?",
-              "back": "Typical swap-based version is unstable.",
+              "back": "Not stable: Typical swap-based version is unstable.",
               "detail": "1.4.3 · Selection Sort"
             },
             {
               "front": "Key idea (Selection Sort)",
               "back": "Fewer writes than some sorts, but still quadratic comparisons.",
-              "detail": "1.4.3 · concept"
+              "detail": "1.4.3 · key idea"
             },
             {
               "front": "Also remember (Selection Sort)",
               "back": "Unlike insertion, does not benefit much from nearly sorted input.",
-              "detail": "1.4.3 · concept"
+              "detail": "1.4.3 · key idea"
             }
           ],
           "mcqs": [
@@ -1165,28 +1165,28 @@
             },
             {
               "front": "What is Time?",
-              "back": "Θ(n log n) guaranteed.",
+              "back": "Θ(n log n) in all cases — predictable guaranteed bound.",
               "detail": "1.4.4 · Merge Sort"
             },
             {
               "front": "What is Space?",
-              "back": "Needs Θ(n) auxiliary for classic merge.",
+              "back": "Needs Θ(n) auxiliary memory for the classic merge.",
               "detail": "1.4.4 · Merge Sort"
             },
             {
               "front": "What is Stable?",
-              "back": "Yes.",
+              "back": "Yes — equal keys keep their relative order after sorting.",
               "detail": "1.4.4 · Merge Sort"
             },
             {
-              "front": "Predictable performance?",
-              "back": "good exam ‘guaranteed n log n’ answer.",
+              "front": "Key contrast in Merge Sort",
+              "back": "Predictable performance — good exam ‘guaranteed n log n’ answer.",
               "detail": "1.4.4 · key idea"
             },
             {
               "front": "Also remember (Merge Sort)",
               "back": "Merge is the combine step.",
-              "detail": "1.4.4 · concept"
+              "detail": "1.4.4 · key idea"
             }
           ],
           "mcqs": [
@@ -1204,24 +1204,24 @@
             {
               "q": "Which statement best defines Time?",
               "options": [
+                "Θ(n log n) in all cases — predictable guaranteed bound.",
                 "Read the top without removing it.",
-                "Θ(n log n) guaranteed.",
                 "Deciding existence is NP-complete (classic).",
                 "Build solution by locally best choice at each step."
               ],
-              "answer": 1,
-              "explain": "Time: Θ(n log n) guaranteed."
+              "answer": 0,
+              "explain": "Time: Θ(n log n) in all cases — predictable guaranteed bound."
             },
             {
               "q": "Which statement best defines Space?",
               "options": [
-                "Multiway balanced search tree for disk/block storage.",
                 "Interval DP over chain length.",
                 "All leaves at same level; node occupancy bounds (order).",
-                "Needs Θ(n) auxiliary for classic merge."
+                "Needs Θ(n) auxiliary memory for the classic merge.",
+                "Multiway balanced search tree for disk/block storage."
               ],
-              "answer": 3,
-              "explain": "Space: Needs Θ(n) auxiliary for classic merge."
+              "answer": 2,
+              "explain": "Space: Needs Θ(n) auxiliary memory for the classic merge."
             },
             {
               "q": "Regarding “Predictable performance”, which is correct?",
@@ -1242,52 +1242,52 @@
           "flashcards": [
             {
               "front": "What is Heap sort?",
-              "back": "Build heap, repeatedly extract max/min.",
+              "back": "Build heap, repeatedly extract max/min to place next sorted item.",
               "detail": "1.4.5 · Heap Sort"
             },
             {
               "front": "What is Time?",
-              "back": "O(n log n).",
+              "back": "O(n log n) overall; build-heap is O(n), then n extracts.",
               "detail": "1.4.5 · Heap Sort"
             },
             {
               "front": "What is In-place?",
-              "back": "Yes (array heap); not typically stable.",
+              "back": "In-place: Yes (array heap); not typically stable.",
               "detail": "1.4.5 · Heap Sort"
             },
             {
-              "front": "What about Uses heap property?",
-              "back": "parent ordered vs children.",
+              "front": "Key idea (Heap Sort)",
+              "back": "Uses heap property: parent ordered vs children.",
               "detail": "1.4.5 · key idea"
             },
             {
               "front": "Also remember (Heap Sort)",
               "back": "Build-heap is O(n); extracts cost O(n log n).",
-              "detail": "1.4.5 · concept"
+              "detail": "1.4.5 · key idea"
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best defines Heap sort?",
               "options": [
-                "Each node has at most two children (left/right).",
-                "Build heap, repeatedly extract max/min.",
+                "Build heap, repeatedly extract max/min to place next sorted item.",
+                "Cover universe with minimum number of subsets.",
                 "Adjacency matrix vs adjacency list.",
-                "Cover universe with minimum number of subsets."
+                "Each node has at most two children (left/right)."
               ],
-              "answer": 1,
-              "explain": "Heap sort: Build heap, repeatedly extract max/min."
+              "answer": 0,
+              "explain": "Heap sort: Build heap, repeatedly extract max/min to place next sorted item."
             },
             {
               "q": "Which statement best defines Time?",
               "options": [
                 "Usually earliest finishing time first.",
+                "Inorder, preorder, postorder, level-order.",
                 "0/1, fractional, unbounded — different algorithms.",
-                "O(n log n).",
-                "Inorder, preorder, postorder, level-order."
+                "O(n log n) overall; build-heap is O(n), then n extracts."
               ],
-              "answer": 2,
-              "explain": "Time: O(n log n)."
+              "answer": 3,
+              "explain": "Time: O(n log n) overall; build-heap is O(n), then n extracts."
             },
             {
               "q": "Which statement best defines In-place?",
@@ -1319,12 +1319,12 @@
           "flashcards": [
             {
               "front": "What is Quick sort?",
-              "back": "Partition around pivot; recurse on parts.",
+              "back": "Quick sort: Partition around pivot; recurse on parts.",
               "detail": "1.4.6 · Quick Sort"
             },
             {
               "front": "What is Average time?",
-              "back": "O(n log n); worst O(n^2) on bad pivots.",
+              "back": "Average time: O(n log n); worst O(n^2) on bad pivots.",
               "detail": "1.4.6 · Quick Sort"
             },
             {
@@ -1335,12 +1335,12 @@
             {
               "front": "Key idea (Quick Sort)",
               "back": "Pivot choice affects balance.",
-              "detail": "1.4.6 · concept"
+              "detail": "1.4.6 · key idea"
             },
             {
               "front": "Also remember (Quick Sort)",
               "back": "Often fastest in practice despite worst case.",
-              "detail": "1.4.6 · concept"
+              "detail": "1.4.6 · key idea"
             }
           ],
           "mcqs": [
@@ -1348,7 +1348,7 @@
               "q": "Which statement best defines Quick sort?",
               "options": [
                 "Visit each city once and return; minimise tour length.",
-                "Is there a subset summing to target t?",
+                "Decision problem: decide whether any subset of numbers adds exactly to target t.",
                 "Explore level by level using a queue.",
                 "Partition around pivot; recurse on parts."
               ],
@@ -1407,7 +1407,7 @@
             },
             {
               "front": "What is Root / leaf / internal?",
-              "back": "Top node / no children / has children.",
+              "back": "Root / leaf / internal: Top node / no children / has children.",
               "detail": "2.1.1 · Basic Terminology and Applications"
             },
             {
@@ -1418,11 +1418,11 @@
             {
               "front": "Key idea (Basic Terminology and Applications)",
               "back": "Tree ≠ general graph with cycles.",
-              "detail": "2.1.1 · concept"
+              "detail": "2.1.1 · key idea"
             },
             {
-              "front": "Height/depth definitions vary slightly?",
-              "back": "use syllabus convention.",
+              "front": "Key contrast in Basic Terminology and Applications",
+              "back": "Height/depth definitions vary slightly — use syllabus convention.",
               "detail": "2.1.1 · key idea"
             }
           ],
@@ -1454,7 +1454,7 @@
               "options": [
                 "Stops recursion; needed for well-founded analysis.",
                 "Left keys < node < right keys (standard ordering).",
-                "O(n log n).",
+                "O(n log n) overall; build-heap is O(n), then n extracts.",
                 "File systems, expression trees, search structures, heaps."
               ],
               "answer": 3,
@@ -1489,18 +1489,18 @@
             },
             {
               "front": "What is Traversals?",
-              "back": "Inorder, preorder, postorder, level-order.",
+              "back": "Traversals: Inorder, preorder, postorder, level-order.",
               "detail": "2.1.2 · Binary Trees"
             },
             {
               "front": "Key idea (Binary Trees)",
               "back": "Binary tree ≠ BST (BST adds ordering invariant).",
-              "detail": "2.1.2 · concept"
+              "detail": "2.1.2 · key idea"
             },
             {
               "front": "Also remember (Binary Trees)",
               "back": "Array representation possible for complete trees (heaps).",
-              "detail": "2.1.2 · concept"
+              "detail": "2.1.2 · key idea"
             }
           ],
           "mcqs": [
@@ -1529,10 +1529,10 @@
             {
               "q": "Which statement best defines Traversals?",
               "options": [
-                "Is there a subset summing to target t?",
+                "Decision problem: decide whether any subset of numbers adds exactly to target t.",
                 "Pop on empty / push on full (array stack).",
                 "Inorder, preorder, postorder, level-order.",
-                "NP-complete decision; pseudo-poly DP possible."
+                "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP."
               ],
               "answer": 2,
               "explain": "Traversals: Inorder, preorder, postorder, level-order."
@@ -1561,18 +1561,18 @@
             },
             {
               "front": "What is Search / insert?",
-              "back": "Follow comparisons down a path.",
+              "back": "Search / insert: Follow comparisons down a path.",
               "detail": "2.1.3 · Binary Search Trees"
             },
             {
               "front": "What is Inorder traversal?",
-              "back": "Yields keys in sorted order.",
+              "back": "Inorder traversal: Yields keys in sorted order.",
               "detail": "2.1.3 · Binary Search Trees"
             },
             {
               "front": "Key idea (Binary Search Trees)",
               "back": "Balanced BST ⇒ O(log n); skewed ⇒ O(n).",
-              "detail": "2.1.3 · concept"
+              "detail": "2.1.3 · key idea"
             },
             {
               "front": "What about Deletion has cases?",
@@ -1642,14 +1642,14 @@
               "detail": "2.1.4 · Optimal Binary Search Tree"
             },
             {
-              "front": "Not the same as ‘any balanced BST’?",
-              "back": "optimality uses frequencies.",
+              "front": "Key contrast in Optimal Binary Search Tree",
+              "back": "Not the same as ‘any balanced BST’ — optimality uses frequencies.",
               "detail": "2.1.4 · key idea"
             },
             {
               "front": "Also remember (Optimal Binary Search Tree)",
               "back": "Related to matrix-chain style interval DP.",
-              "detail": "2.1.4 · concept"
+              "detail": "2.1.4 · key idea"
             }
           ],
           "mcqs": [
@@ -1710,18 +1710,18 @@
             },
             {
               "front": "What is Balance guarantee?",
-              "back": "Height O(log n); operations O(log n).",
+              "back": "Balance guarantee: Height O(log n); operations O(log n).",
               "detail": "2.1.5 · Red-Black Trees"
             },
             {
               "front": "Key idea (Red-Black Trees)",
               "back": "Alternative to AVL with slightly different balance strictness.",
-              "detail": "2.1.5 · concept"
+              "detail": "2.1.5 · key idea"
             },
             {
               "front": "Also remember (Red-Black Trees)",
               "back": "Used widely in libraries (e.g. some map implementations).",
-              "detail": "2.1.5 · concept"
+              "detail": "2.1.5 · key idea"
             }
           ],
           "mcqs": [
@@ -1776,18 +1776,18 @@
             },
             {
               "front": "What is Complexity?",
-              "back": "Search/insert/delete O(log n).",
+              "back": "In AVL Trees, Complexity means: Search/insert/delete O(log n).",
               "detail": "2.1.6 · AVL Trees"
             },
             {
               "front": "Key idea (AVL Trees)",
               "back": "Stricter balance than Red-Black often ⇒ more rotations.",
-              "detail": "2.1.6 · concept"
+              "detail": "2.1.6 · key idea"
             },
             {
               "front": "Also remember (AVL Trees)",
               "back": "Balance factor is the height difference.",
-              "detail": "2.1.6 · concept"
+              "detail": "2.1.6 · key idea"
             }
           ],
           "mcqs": [
@@ -1859,11 +1859,11 @@
             {
               "front": "Key idea (B Trees)",
               "back": "Designed for secondary storage, not only RAM.",
-              "detail": "2.1.7 · concept"
+              "detail": "2.1.7 · key idea"
             },
             {
-              "front": "B+ trees (if taught) keep data in leaves?",
-              "back": "don’t conflate blindly.",
+              "front": "Key contrast in B Trees",
+              "back": "B+ trees (if taught) keep data in leaves — don’t conflate blindly.",
               "detail": "2.1.7 · key idea"
             }
           ],
@@ -1925,18 +1925,18 @@
             },
             {
               "front": "What is MST?",
-              "back": "Spanning tree of minimum total edge weight.",
+              "back": "MST: Spanning tree of minimum total edge weight.",
               "detail": "2.1.8 · Spanning Trees"
             },
             {
               "front": "Key idea (Spanning Trees)",
               "back": "Exists for connected undirected graphs.",
-              "detail": "2.1.8 · concept"
+              "detail": "2.1.8 · key idea"
             },
             {
               "front": "Also remember (Spanning Trees)",
               "back": "Prim/Kruskal compute MSTs.",
-              "detail": "2.1.8 · concept"
+              "detail": "2.1.8 · key idea"
             }
           ],
           "mcqs": [
@@ -1986,7 +1986,7 @@
             },
             {
               "front": "What is Data structure?",
-              "back": "Often priority queue for cut edges.",
+              "back": "Data structure: Often priority queue for cut edges.",
               "detail": "2.1.9 · Prim’s Algorithm"
             },
             {
@@ -1997,7 +1997,7 @@
             {
               "front": "Also remember (Prim’s Algorithm)",
               "back": "Prim is vertex-centric growth.",
-              "detail": "2.1.9 · concept"
+              "detail": "2.1.9 · key idea"
             }
           ],
           "mcqs": [
@@ -2053,12 +2053,12 @@
             {
               "front": "Key idea (Kruskal’s Algorithm)",
               "back": "Edge-centric; works well on sparse graphs.",
-              "detail": "2.1.10 · concept"
+              "detail": "2.1.10 · key idea"
             },
             {
               "front": "Also remember (Kruskal’s Algorithm)",
               "back": "Same MST cut/cycle properties as Prim’s goal.",
-              "detail": "2.1.10 · concept"
+              "detail": "2.1.10 · key idea"
             }
           ],
           "mcqs": [
@@ -2076,7 +2076,7 @@
             {
               "q": "Which statement best defines Union–Find?",
               "options": [
-                "Build heap, repeatedly extract max/min.",
+                "Build heap, repeatedly extract max/min to place next sorted item.",
                 "DP over intermediate vertices; O(V^3).",
                 "Tracks components to detect cycles efficiently.",
                 "Find pattern P in text T — naïve vs Rabin–Karp hashing."
@@ -2108,12 +2108,12 @@
             },
             {
               "front": "What is Representations?",
-              "back": "Adjacency matrix vs adjacency list.",
+              "back": "Representations: Adjacency matrix vs adjacency list.",
               "detail": "2.2.1 · Terminology, Representations, Traversals"
             },
             {
               "front": "What is Traversal?",
-              "back": "Systematic visit: DFS/BFS.",
+              "back": "In Terminology, Representations, Traversals, Traversal means: Systematic visit: DFS/BFS.",
               "detail": "2.2.1 · Terminology, Representations, Traversals"
             },
             {
@@ -2124,7 +2124,7 @@
             {
               "front": "Also remember (Terminology, Representations, Traversals)",
               "back": "Degree, path, cycle are core terms.",
-              "detail": "2.2.1 · concept"
+              "detail": "2.2.1 · key idea"
             }
           ],
           "mcqs": [
@@ -2191,12 +2191,12 @@
             {
               "front": "Key idea (Depth-First Search (DFS))",
               "back": "DFS forest / timestamps appear in CLRS-style analysis.",
-              "detail": "2.2.2 · concept"
+              "detail": "2.2.2 · key idea"
             },
             {
               "front": "Also remember (Depth-First Search (DFS))",
               "back": "Not optimal shortest path in weighted graphs by itself.",
-              "detail": "2.2.2 · concept"
+              "detail": "2.2.2 · key idea"
             }
           ],
           "mcqs": [
@@ -2204,7 +2204,7 @@
               "q": "Which statement best defines DFS?",
               "options": [
                 "Classic dynamic-programming optimisation on key ranges.",
-                "Build heap, repeatedly extract max/min.",
+                "Build heap, repeatedly extract max/min to place next sorted item.",
                 "Asymptotics, recurrence, Master theorem — how cost grows with n.",
                 "Explore deep along a path; backtrack; stack/recursion."
               ],
@@ -2241,23 +2241,23 @@
           "flashcards": [
             {
               "front": "What is BFS?",
-              "back": "Explore level by level using a queue.",
+              "back": "In Breadth-First Search (BFS), BFS means: Explore level by level using a queue.",
               "detail": "2.2.3 · Breadth-First Search (BFS)"
             },
             {
               "front": "What is Unweighted shortest path?",
-              "back": "BFS layers give fewest edges from source.",
+              "back": "Unweighted shortest path: BFS layers give fewest edges from source.",
               "detail": "2.2.3 · Breadth-First Search (BFS)"
             },
             {
               "front": "Key idea (Breadth-First Search (BFS))",
               "back": "Queue is essential; mark visited to avoid reprocessing.",
-              "detail": "2.2.3 · concept"
+              "detail": "2.2.3 · key idea"
             },
             {
               "front": "Also remember (Breadth-First Search (BFS))",
               "back": "Contrast with Dijkstra for weighted graphs.",
-              "detail": "2.2.3 · concept"
+              "detail": "2.2.3 · key idea"
             }
           ],
           "mcqs": [
@@ -2318,12 +2318,12 @@
             {
               "front": "Key idea (Single-Source Shortest Path)",
               "back": "Dijkstra fails with negative edges.",
-              "detail": "2.2.4 · concept"
+              "detail": "2.2.4 · key idea"
             },
             {
               "front": "Also remember (Single-Source Shortest Path)",
               "back": "Relaxation is the common primitive.",
-              "detail": "2.2.4 · concept"
+              "detail": "2.2.4 · key idea"
             }
           ],
           "mcqs": [
@@ -2379,23 +2379,23 @@
           "flashcards": [
             {
               "front": "What is All-pairs shortest path?",
-              "back": "Shortest paths between every pair.",
+              "back": "All-pairs shortest path: Shortest paths between every pair.",
               "detail": "2.2.5 · All-Pair Shortest Path"
             },
             {
               "front": "What is Floyd–Warshall?",
-              "back": "DP over intermediate vertices; O(V^3).",
+              "back": "Floyd–Warshall: DP over intermediate vertices; O(V^3).",
               "detail": "2.2.5 · All-Pair Shortest Path"
             },
             {
               "front": "What is Johnson’s (if taught)?",
-              "back": "Reweighting + Dijkstra from each source.",
+              "back": "Johnson’s (if taught): Reweighting + Dijkstra from each source.",
               "detail": "2.2.5 · All-Pair Shortest Path"
             },
             {
               "front": "Key idea (All-Pair Shortest Path)",
               "back": "Floyd works with negatives but not negative cycles.",
-              "detail": "2.2.5 · concept"
+              "detail": "2.2.5 · key idea"
             },
             {
               "front": "What about Matrix DP update?",
@@ -2467,7 +2467,7 @@
             },
             {
               "front": "What is Memoisation vs tabulation?",
-              "back": "Top-down cache vs bottom-up table.",
+              "back": "Memoisation vs tabulation: Top-down cache vs bottom-up table.",
               "detail": "3.1.1 · Dynamic Programming Approach"
             },
             {
@@ -2478,20 +2478,20 @@
             {
               "front": "Key idea (Dynamic Programming Approach)",
               "back": "DP ≠ divide-and-conquer alone (D&C may not overlap).",
-              "detail": "3.1.1 · concept"
+              "detail": "3.1.1 · key idea"
             },
             {
               "front": "Also remember (Dynamic Programming Approach)",
               "back": "DP ≠ greedy (greedy never revisits choices systematically).",
-              "detail": "3.1.1 · concept"
+              "detail": "3.1.1 · key idea"
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best defines Dynamic programming?",
               "options": [
-                "Yes.",
-                "NP-complete decision; pseudo-poly DP possible.",
+                "Yes — equal keys keep their relative order after sorting.",
+                "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP.",
                 "DP over intermediate vertices; O(V^3).",
                 "Solve overlapping subproblems once; store answers."
               ],
@@ -2526,7 +2526,7 @@
                 "DP ≠ divide-and-conquer alone (D&C may not overlap).",
                 "How running time grows with input size n.",
                 "Asymptotics, recurrence, Master theorem — how cost grows with n.",
-                "Build heap, repeatedly extract max/min."
+                "Build heap, repeatedly extract max/min to place next sorted item."
               ],
               "answer": 0,
               "explain": "DP ≠ divide-and-conquer alone (D&C may not overlap)."
@@ -2550,12 +2550,12 @@
             {
               "front": "Key idea (Principle of Optimality)",
               "back": "If principle fails, DP formulation is invalid.",
-              "detail": "3.1.2 · concept"
+              "detail": "3.1.2 · key idea"
             },
             {
               "front": "Also remember (Principle of Optimality)",
               "back": "Check on a small example before coding a table.",
-              "detail": "3.1.2 · concept"
+              "detail": "3.1.2 · key idea"
             }
           ],
           "mcqs": [
@@ -2611,12 +2611,12 @@
             {
               "front": "Key idea (Strassens Matrix Multiplication)",
               "back": "Asymptotically better; constants/practicality may vary.",
-              "detail": "3.1.3 · concept"
+              "detail": "3.1.3 · key idea"
             },
             {
               "front": "Also remember (Strassens Matrix Multiplication)",
               "back": "Still divide-and-conquer on quadrants.",
-              "detail": "3.1.3 · concept"
+              "detail": "3.1.3 · key idea"
             }
           ],
           "mcqs": [
@@ -2666,18 +2666,18 @@
             },
             {
               "front": "What is DP?",
-              "back": "Interval DP over chain length.",
+              "back": "In Matrix Chain Multiplication, DP means: Interval DP over chain length.",
               "detail": "3.1.4 · Matrix Chain Multiplication"
             },
             {
               "front": "Key idea (Matrix Chain Multiplication)",
               "back": "Order of multiplication changes cost, not the mathematical product.",
-              "detail": "3.1.4 · concept"
+              "detail": "3.1.4 · key idea"
             },
             {
               "front": "Also remember (Matrix Chain Multiplication)",
               "back": "Classic DP table m[i][j].",
-              "detail": "3.1.4 · concept"
+              "detail": "3.1.4 · key idea"
             }
           ],
           "mcqs": [
@@ -2686,7 +2686,7 @@
               "options": [
                 "Hash match but strings differ — must verify.",
                 "Parenthesise matrix product to minimise scalar multiplies.",
-                "O(n log n).",
+                "O(n log n) overall; build-heap is O(n), then n extracts.",
                 "O(n log n); worst O(n^2) on bad pivots."
               ],
               "answer": 1,
@@ -2733,12 +2733,12 @@
             {
               "front": "Key idea (Longest Common subsequence)",
               "back": "Subsequence ≠ substring (substring is contiguous).",
-              "detail": "3.1.5 · concept"
+              "detail": "3.1.5 · key idea"
             },
             {
               "front": "Also remember (Longest Common subsequence)",
               "back": "Used in diff tools / bioinformatics examples.",
-              "detail": "3.1.5 · concept"
+              "detail": "3.1.5 · key idea"
             }
           ],
           "mcqs": [
@@ -2793,18 +2793,18 @@
             },
             {
               "front": "What is Not fractional?",
-              "back": "Cannot break items.",
+              "back": "In 0/1 Knapsack Problem, Not fractional means: Cannot break items.",
               "detail": "3.1.6 · 0/1 Knapsack Problem"
             },
             {
               "front": "Key idea (0/1 Knapsack Problem)",
               "back": "Contrast fractional knapsack (greedy by value/weight).",
-              "detail": "3.1.6 · concept"
+              "detail": "3.1.6 · key idea"
             },
             {
               "front": "Also remember (0/1 Knapsack Problem)",
               "back": "NP-hard as optimisation in general; DP works for integer capacity.",
-              "detail": "3.1.6 · concept"
+              "detail": "3.1.6 · key idea"
             }
           ],
           "mcqs": [
@@ -2833,8 +2833,8 @@
             {
               "q": "Which statement best defines Not fractional?",
               "options": [
-                "Build heap, repeatedly extract max/min.",
-                "Is there a subset summing to target t?",
+                "Build heap, repeatedly extract max/min to place next sorted item.",
+                "Decision problem: decide whether any subset of numbers adds exactly to target t.",
                 "Cannot break items.",
                 "Justifies composing sub-results into global optimum."
               ],
@@ -2870,12 +2870,12 @@
             },
             {
               "front": "What is Exchange argument?",
-              "back": "Proof style that swaps to show optimality.",
+              "back": "Exchange argument: Proof style that swaps to show optimality.",
               "detail": "3.2.1 · Introduction of Greedy Approach"
             },
             {
-              "front": "Greedy is fast but not always optimal?",
-              "back": "need a proof or known pattern.",
+              "front": "Key contrast in Introduction of Greedy Approach",
+              "back": "Greedy is fast but not always optimal — need a proof or known pattern.",
               "detail": "3.2.1 · key idea"
             },
             {
@@ -2901,7 +2901,7 @@
               "options": [
                 "Repeatedly swap adjacent out-of-order pairs.",
                 "Local optimum can lead to global (when algorithm is correct).",
-                "Is there a subset summing to target t?",
+                "Decision problem: decide whether any subset of numbers adds exactly to target t.",
                 "Set of vertices incident to every edge."
               ],
               "answer": 1,
@@ -2937,23 +2937,23 @@
           "flashcards": [
             {
               "front": "What is Activity selection?",
-              "back": "Select max non-overlapping activities.",
+              "back": "Activity selection: Select max non-overlapping activities.",
               "detail": "3.2.2 · Activity Selection Problem"
             },
             {
               "front": "What is Greedy rule?",
-              "back": "Usually earliest finishing time first.",
+              "back": "Greedy rule: Usually earliest finishing time first.",
               "detail": "3.2.2 · Activity Selection Problem"
             },
             {
               "front": "Key idea (Activity Selection Problem)",
               "back": "Sort by finish time, then pick compatible next.",
-              "detail": "3.2.2 · concept"
+              "detail": "3.2.2 · key idea"
             },
             {
               "front": "Also remember (Activity Selection Problem)",
               "back": "Classic proof via greedy choice + optimal substructure.",
-              "detail": "3.2.2 · concept"
+              "detail": "3.2.2 · key idea"
             }
           ],
           "mcqs": [
@@ -3008,18 +3008,18 @@
             },
             {
               "front": "What is Build?",
-              "back": "Repeatedly merge two least frequent nodes.",
+              "back": "Build: Repeatedly merge two least frequent nodes.",
               "detail": "3.2.3 · Huffman Codes"
             },
             {
               "front": "Key idea (Huffman Codes)",
               "back": "More frequent symbols → shorter codes.",
-              "detail": "3.2.3 · concept"
+              "detail": "3.2.3 · key idea"
             },
             {
               "front": "Also remember (Huffman Codes)",
               "back": "Related to binary trees and priority queues.",
-              "detail": "3.2.3 · concept"
+              "detail": "3.2.3 · key idea"
             }
           ],
           "mcqs": [
@@ -3060,7 +3060,7 @@
               "q": "Which statement about Huffman Codes is correct?",
               "options": [
                 "More frequent symbols → shorter codes.",
-                "NP-complete decision; pseudo-poly DP possible.",
+                "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP.",
                 "Lower bound on growth.",
                 "Repeatedly pick set covering most remaining elements."
               ],
@@ -3075,7 +3075,7 @@
           "flashcards": [
             {
               "front": "What is Fractional knapsack?",
-              "back": "May take fraction of an item.",
+              "back": "Fractional knapsack: May take fraction of an item.",
               "detail": "3.2.4 · Fractional Knapsack Problem"
             },
             {
@@ -3086,12 +3086,12 @@
             {
               "front": "Key idea (Fractional Knapsack Problem)",
               "back": "Optimal for fractional case; not for 0/1.",
-              "detail": "3.2.4 · concept"
+              "detail": "3.2.4 · key idea"
             },
             {
               "front": "Also remember (Fractional Knapsack Problem)",
               "back": "Last item may be taken partially.",
-              "detail": "3.2.4 · concept"
+              "detail": "3.2.4 · key idea"
             }
           ],
           "mcqs": [
@@ -3141,7 +3141,7 @@
             },
             {
               "front": "What is Hardness?",
-              "back": "Classic NP-hard optimisation problem.",
+              "back": "Hardness: Classic NP-hard optimisation problem.",
               "detail": "3.3.1 · Traveling Salesman Problem"
             },
             {
@@ -3150,14 +3150,14 @@
               "detail": "3.3.1 · Traveling Salesman Problem"
             },
             {
-              "front": "Brute force is factorial?",
-              "back": "not scalable.",
+              "front": "Key contrast in Traveling Salesman Problem",
+              "back": "Brute force is factorial — not scalable.",
               "detail": "3.3.1 · key idea"
             },
             {
               "front": "Also remember (Traveling Salesman Problem)",
               "back": "Don’t claim a simple greedy always optimal for general TSP.",
-              "detail": "3.3.1 · concept"
+              "detail": "3.3.1 · key idea"
             }
           ],
           "mcqs": [
@@ -3224,12 +3224,12 @@
             {
               "front": "Key idea (Knapsack Problem)",
               "back": "Name the variant before choosing DP vs greedy.",
-              "detail": "3.3.2 · concept"
+              "detail": "3.3.2 · key idea"
             },
             {
               "front": "Also remember (Knapsack Problem)",
               "back": "Syllabus may revisit knapsack under ‘problems’ cluster.",
-              "detail": "3.3.2 · concept"
+              "detail": "3.3.2 · key idea"
             }
           ],
           "mcqs": [
@@ -3272,7 +3272,7 @@
                 "Scan left→right: push operands; on operator, pop args, push result.",
                 "Upper bound on growth rate (worst-case flavour in teaching).",
                 "Syllabus may revisit knapsack under ‘problems’ cluster.",
-                "Build heap, repeatedly extract max/min."
+                "Build heap, repeatedly extract max/min to place next sorted item."
               ],
               "answer": 2,
               "explain": "Syllabus may revisit knapsack under ‘problems’ cluster."
@@ -3296,12 +3296,12 @@
             {
               "front": "Key idea (Job Sequencing)",
               "back": "Related to deadline scheduling themes.",
-              "detail": "3.3.3 · concept"
+              "detail": "3.3.3 · key idea"
             },
             {
               "front": "Also remember (Job Sequencing)",
               "back": "Check whether multiple slots / unit time jobs assumed.",
-              "detail": "3.3.3 · concept"
+              "detail": "3.3.3 · key idea"
             }
           ],
           "mcqs": [
@@ -3330,7 +3330,7 @@
             {
               "q": "Which key idea belongs with Job Sequencing?",
               "options": [
-                "NP-complete decision; pseudo-poly DP possible.",
+                "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP.",
                 "Repeatedly swap adjacent out-of-order pairs.",
                 "Related to deadline scheduling themes.",
                 "Hash match but strings differ — must verify."
@@ -3355,14 +3355,14 @@
               "detail": "3.3.4 · Job Sequencing with Deadline"
             },
             {
-              "front": "What about Feasibility?",
-              "back": "finish by deadline.",
+              "front": "Key idea (Job Sequencing with Deadline)",
+              "back": "Feasibility: finish by deadline.",
               "detail": "3.3.4 · key idea"
             },
             {
               "front": "Also remember (Job Sequencing with Deadline)",
               "back": "Greedy placement into latest possible slot is common.",
-              "detail": "3.3.4 · concept"
+              "detail": "3.3.4 · key idea"
             }
           ],
           "mcqs": [
@@ -3413,23 +3413,23 @@
           "flashcards": [
             {
               "front": "What is Naïve string matching?",
-              "back": "Try P at every shift of T; compare chars.",
+              "back": "Naïve string matching: Try P at every shift of T; compare chars.",
               "detail": "4.1.1 · Naïve String Matching Algorithm"
             },
             {
               "front": "What is Time?",
-              "back": "O((n−m+1)m) worst case.",
+              "back": "In Naïve String Matching Algorithm, Time means: O((n−m+1)m) worst case.",
               "detail": "4.1.1 · Naïve String Matching Algorithm"
             },
             {
               "front": "Key idea (Naïve String Matching Algorithm)",
               "back": "Simple baseline for Rabin–Karp / KMP comparisons.",
-              "detail": "4.1.1 · concept"
+              "detail": "4.1.1 · key idea"
             },
             {
               "front": "Also remember (Naïve String Matching Algorithm)",
               "back": "Many mismatches still cost comparisons.",
-              "detail": "4.1.1 · concept"
+              "detail": "4.1.1 · key idea"
             }
           ],
           "mcqs": [
@@ -3438,7 +3438,7 @@
               "options": [
                 "All leaves at same level; node occupancy bounds (order).",
                 "Try P at every shift of T; compare chars.",
-                "O(n log n).",
+                "O(n log n) overall; build-heap is O(n), then n extracts.",
                 "Yields keys in sorted order."
               ],
               "answer": 1,
@@ -3447,7 +3447,7 @@
             {
               "q": "Which statement best defines Time?",
               "options": [
-                "Needs Θ(n) auxiliary for classic merge.",
+                "Needs Θ(n) auxiliary memory for the classic merge.",
                 "Classic 2-approx: pick both ends of an uncovered edge, repeat.",
                 "Find pattern P in text T — naïve vs Rabin–Karp hashing.",
                 "O((n−m+1)m) worst case."
@@ -3474,28 +3474,28 @@
           "flashcards": [
             {
               "front": "What is Rabin–Karp?",
-              "back": "Rolling hash of windows; verify on hash hit.",
+              "back": "Rabin–Karp: Rolling hash of windows; verify on hash hit.",
               "detail": "4.1.3 · String Matching Algorithm: Rabin Karp"
             },
             {
               "front": "What is Spurious hit?",
-              "back": "Hash match but strings differ — must verify.",
+              "back": "Spurious hit: Hash match but strings differ — must verify.",
               "detail": "4.1.3 · String Matching Algorithm: Rabin Karp"
             },
             {
               "front": "What is Average?",
-              "back": "Good with strong hash; worst can degrade.",
+              "back": "Average: Good with strong hash; worst can degrade.",
               "detail": "4.1.3 · String Matching Algorithm: Rabin Karp"
             },
             {
               "front": "Key idea (String Matching Algorithm: Rabin Karp)",
               "back": "Rolling hash updates in O(1) per shift.",
-              "detail": "4.1.3 · concept"
+              "detail": "4.1.3 · key idea"
             },
             {
               "front": "Also remember (String Matching Algorithm: Rabin Karp)",
               "back": "Multiple patterns can share hashing ideas.",
-              "detail": "4.1.3 · concept"
+              "detail": "4.1.3 · key idea"
             }
           ],
           "mcqs": [
@@ -3551,7 +3551,7 @@
           "flashcards": [
             {
               "front": "What is Vertex cover?",
-              "back": "Set of vertices incident to every edge.",
+              "back": "Vertex cover: Set of vertices incident to every edge.",
               "detail": "4.2.1 · Vertex-Cover Algorithm"
             },
             {
@@ -3562,11 +3562,11 @@
             {
               "front": "Key idea (Vertex-Cover Algorithm)",
               "back": "Decision version is NP-complete; approx is taught for algorithms design.",
-              "detail": "4.2.1 · concept"
+              "detail": "4.2.1 · key idea"
             },
             {
-              "front": "Minimal vs minimum?",
-              "back": "wording matters.",
+              "front": "Key contrast in Vertex-Cover Algorithm",
+              "back": "Minimal vs minimum — wording matters.",
               "detail": "4.2.1 · key idea"
             }
           ],
@@ -3598,7 +3598,7 @@
               "options": [
                 "Decision version is NP-complete; approx is taught for algorithms design.",
                 "O(n^2) worst; O(n) best on nearly sorted data.",
-                "O(n log n).",
+                "O(n log n) overall; build-heap is O(n), then n extracts.",
                 "Explore level by level using a queue."
               ],
               "answer": 0,
@@ -3607,7 +3607,7 @@
             {
               "q": "Regarding “Minimal vs minimum”, which is correct?",
               "options": [
-                "NP-complete decision; pseudo-poly DP possible.",
+                "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP.",
                 "wording matters.",
                 "Knapsack variants, activity selection, Huffman, TSP.",
                 "Partition around pivot; recurse on parts."
@@ -3634,12 +3634,12 @@
             {
               "front": "Key idea (Set Covering Problem)",
               "back": "NP-hard; greedy gives logarithmic approximation classically.",
-              "detail": "4.2.2 · concept"
+              "detail": "4.2.2 · key idea"
             },
             {
               "front": "Also remember (Set Covering Problem)",
               "back": "Related to hitting-set formulations.",
-              "detail": "4.2.2 · concept"
+              "detail": "4.2.2 · key idea"
             }
           ],
           "mcqs": [
@@ -3695,12 +3695,12 @@
             {
               "front": "Key idea (Randomisation and Linear Programming)",
               "back": "Syllabus pairs ideas for advanced design techniques.",
-              "detail": "4.2.3 · concept"
+              "detail": "4.2.3 · key idea"
             },
             {
               "front": "Also remember (Randomisation and Linear Programming)",
               "back": "Randomised algorithms need expected/high-probability analysis.",
-              "detail": "4.2.3 · concept"
+              "detail": "4.2.3 · key idea"
             }
           ],
           "mcqs": [
@@ -3745,58 +3745,58 @@
           "flashcards": [
             {
               "front": "What is Subset-sum?",
-              "back": "Is there a subset summing to target t?",
+              "back": "Decision problem: decide whether any subset of numbers adds exactly to target t.",
               "detail": "4.2.4 · The Subset-sum Problem"
             },
             {
               "front": "What is Hardness / DP?",
-              "back": "NP-complete decision; pseudo-poly DP possible.",
+              "back": "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP.",
               "detail": "4.2.4 · The Subset-sum Problem"
             },
             {
               "front": "Key idea (The Subset-sum Problem)",
-              "back": "Related to knapsack decision version.",
-              "detail": "4.2.4 · concept"
+              "back": "Related to the knapsack decision version.",
+              "detail": "4.2.4 · key idea"
             },
             {
               "front": "Also remember (The Subset-sum Problem)",
-              "back": "Meet-in-the-middle sometimes taught for moderate n.",
-              "detail": "4.2.4 · concept"
+              "back": "Meet-in-the-middle is sometimes taught for moderate n.",
+              "detail": "4.2.4 · key idea"
             }
           ],
           "mcqs": [
             {
               "q": "Which statement best defines Subset-sum?",
               "options": [
-                "Is there a subset summing to target t?",
-                "Entry pointer to the first node.",
                 "Cycle visiting each vertex exactly once and returning.",
-                "Walk forward or backward."
+                "Entry pointer to the first node.",
+                "Walk forward or backward.",
+                "Decision problem: decide whether any subset of numbers adds exactly to target t."
               ],
-              "answer": 0,
-              "explain": "Subset-sum: Is there a subset summing to target t?"
+              "answer": 3,
+              "explain": "Subset-sum: Decision problem: decide whether any subset of numbers adds exactly to target t."
             },
             {
               "q": "Which statement best defines Hardness / DP?",
               "options": [
-                "Each node has at most two children (left/right).",
-                "Top node / no children / has children.",
                 "Optimal solution contains optimal solutions to subproblems.",
-                "NP-complete decision; pseudo-poly DP possible."
+                "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP.",
+                "Top node / no children / has children.",
+                "Each node has at most two children (left/right)."
               ],
-              "answer": 3,
-              "explain": "Hardness / DP: NP-complete decision; pseudo-poly DP possible."
+              "answer": 1,
+              "explain": "Hardness / DP: NP-complete as a decision problem; solvable in pseudo-polynomial time via DP."
             },
             {
               "q": "Which key idea belongs with The Subset-sum Problem?",
               "options": [
-                "Brute force, DP (Held–Karp), heuristics/approx.",
                 "Solve overlapping subproblems once; store answers.",
-                "Related to knapsack decision version.",
-                "Solves T(n)=aT(n/b)+f(n) for many standard f."
+                "Related to the knapsack decision version.",
+                "Solves T(n)=aT(n/b)+f(n) for many standard f.",
+                "Brute force, DP (Held–Karp), heuristics/approx."
               ],
-              "answer": 2,
-              "explain": "Related to knapsack decision version."
+              "answer": 1,
+              "explain": "Related to the knapsack decision version."
             }
           ]
         }
@@ -3823,12 +3823,12 @@
             {
               "front": "Key idea (Green Technology)",
               "back": "Treat as syllabus framing unless SLM gives a narrower definition.",
-              "detail": "5.1.1 · concept"
+              "detail": "5.1.1 · key idea"
             },
             {
               "front": "Also remember (Green Technology)",
               "back": "Connect to choosing efficient algorithms over naïve ones.",
-              "detail": "5.1.1 · concept"
+              "detail": "5.1.1 · key idea"
             }
           ],
           "mcqs": [
@@ -3878,7 +3878,7 @@
             },
             {
               "front": "What is Hardness?",
-              "back": "Deciding existence is NP-complete (classic).",
+              "back": "Hardness: Deciding existence is NP-complete (classic).",
               "detail": "5.1.2 · Hamiltonian Cycles"
             },
             {
@@ -3889,7 +3889,7 @@
             {
               "front": "Also remember (Hamiltonian Cycles)",
               "back": "TSP optimisation builds on Hamiltonian ideas.",
-              "detail": "5.1.2 · concept"
+              "detail": "5.1.2 · key idea"
             }
           ],
           "mcqs": [
@@ -3943,14 +3943,14 @@
               "detail": "5.2.1 · NP-completeness Proofs"
             },
             {
-              "front": "What about Reduction direction?",
-              "back": "known hard ≤p your problem.",
+              "front": "Key idea (NP-completeness Proofs)",
+              "back": "Reduction direction: known hard ≤p your problem.",
               "detail": "5.2.1 · key idea"
             },
             {
               "front": "Also remember (NP-completeness Proofs)",
               "back": "Polynomial-time verification ≠ polynomial-time solving.",
-              "detail": "5.2.1 · concept"
+              "detail": "5.2.1 · key idea"
             }
           ],
           "mcqs": [
@@ -3969,7 +3969,7 @@
               "q": "Which statement best defines Certificate?",
               "options": [
                 "Only one disk at a time; never place larger on smaller.",
-                "Yes.",
+                "Yes — equal keys keep their relative order after sorting.",
                 "Short verifiable witness for yes instances (for NP).",
                 "Divide array, sort halves, merge sorted runs."
               ],
@@ -4006,12 +4006,12 @@
             {
               "front": "Key idea (NP-completeness Problems)",
               "back": "If any NP-complete problem has poly algorithm, P=NP.",
-              "detail": "5.2.2 · concept"
+              "detail": "5.2.2 · key idea"
             },
             {
               "front": "Also remember (NP-completeness Problems)",
               "back": "Practice recognising ‘decision version’ wording.",
-              "detail": "5.2.2 · concept"
+              "detail": "5.2.2 · key idea"
             }
           ],
           "mcqs": [
@@ -4040,7 +4040,7 @@
             {
               "q": "Which key idea belongs with NP-completeness Problems?",
               "options": [
-                "Yes.",
+                "Yes — equal keys keep their relative order after sorting.",
                 "Schedule jobs to maximise profit under constraints (often deadlines/slots).",
                 "If any NP-complete problem has poly algorithm, P=NP.",
                 "Partition around pivot; recurse on parts."
@@ -4067,12 +4067,12 @@
             {
               "front": "Key idea (NP-Hard and SAT Problems)",
               "back": "NP-hard includes problems outside NP (e.g. some optimisation/undecidable-adjacent teaching examples).",
-              "detail": "5.2.3 · concept"
+              "detail": "5.2.3 · key idea"
             },
             {
               "front": "Also remember (NP-Hard and SAT Problems)",
               "back": "SAT is the usual reduction source.",
-              "detail": "5.2.3 · concept"
+              "detail": "5.2.3 · key idea"
             }
           ],
           "mcqs": [
@@ -4128,12 +4128,12 @@
             {
               "front": "Key idea (NP-completeness and Reducibility)",
               "back": "Cook–Levin historically links SAT to NP-completeness theory.",
-              "detail": "5.2.4 · concept"
+              "detail": "5.2.4 · key idea"
             },
             {
               "front": "Also remember (NP-completeness and Reducibility)",
               "back": "Always state what reduces to what.",
-              "detail": "5.2.4 · concept"
+              "detail": "5.2.4 · key idea"
             }
           ],
           "mcqs": [

@@ -46,10 +46,17 @@ def cards_from_deep(topic_title: str, tid: str, deep: dict | None) -> list[dict]
         desc = (term.get("d") or "").strip()
         if not name or not desc:
             continue
+        back = desc
+        if len(back) < 45:
+            back = f"{name}: {desc}"
+        if len(back) < 45:
+            back = f"In {topic_title}, {name} means: {desc}"
+        if len(back) < 25:
+            continue
         cards.append(
             {
                 "front": f"What is {name}?",
-                "back": desc,
+                "back": back,
                 "detail": f"{tid} · {topic_title}" if tid else topic_title,
             }
         )
@@ -58,33 +65,38 @@ def cards_from_deep(topic_title: str, tid: str, deep: dict | None) -> list[dict]
         text = (concept or "").strip()
         if not text:
             continue
-        # Prefer short concept as Q/A split when it contains a clear contrast
         if " — " in text:
             left, right = text.split(" — ", 1)
-            cards.append(
-                {
-                    "front": left.strip().rstrip(".") + "?",
-                    "back": right.strip(),
-                    "detail": f"{tid} · key idea",
-                }
-            )
+            left, right = left.strip(), right.strip()
+            if len(right) >= 40:
+                front = left.rstrip(".?") + "?"
+                back = right
+            else:
+                # Keep full contrast as the answer; avoid tiny fragments like "LIFO vs FIFO."
+                front = f"Key contrast in {topic_title}"
+                back = text
         elif ": " in text and len(text) < 160:
             left, right = text.split(": ", 1)
-            cards.append(
-                {
-                    "front": f"What about {left.strip()}?",
-                    "back": right.strip(),
-                    "detail": f"{tid} · key idea",
-                }
-            )
+            left, right = left.strip(), right.strip()
+            if len(right) >= 40:
+                front = f"What about {left}?"
+                back = right
+            else:
+                front = f"Key idea ({topic_title})"
+                back = text
         else:
-            cards.append(
-                {
-                    "front": f"Key idea ({topic_title})" if i == 0 else f"Also remember ({topic_title})",
-                    "back": text,
-                    "detail": f"{tid} · concept",
-                }
-            )
+            front = f"Key idea ({topic_title})" if i == 0 else f"Also remember ({topic_title})"
+            back = text
+
+        if len(back) < 25:
+            continue
+        cards.append(
+            {
+                "front": front,
+                "back": back,
+                "detail": f"{tid} · key idea",
+            }
+        )
 
     # Cap per topic so decks stay usable; keep richest first (terms already first)
     return cards[:6]

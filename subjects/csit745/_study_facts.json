@@ -11,7 +11,7 @@
           "flashcards": [
             {
               "front": "What is Research (Redman & Mory)?",
-              "back": "Systematised effort to gain new knowledge.",
+              "back": "Research (Redman & Mory): Systematised effort to gain new knowledge.",
               "detail": "1.1.1 · Definition and Objectives of Research"
             },
             {
@@ -201,7 +201,7 @@
             {
               "front": "Key idea (Difference b/w Research Methods and Research Methodology)",
               "back": "Methods = ‘what techniques’; methodology = ‘why this design and these techniques’.",
-              "detail": "1.1.3 · concept"
+              "detail": "1.1.3 · key idea"
             }
           ],
           "mcqs": [
@@ -283,7 +283,7 @@
             {
               "front": "Also remember (Research Criteria and Research Process)",
               "back": "Impartiality is required even though researcher philosophy always influences framing.",
-              "detail": "1.2.1 · concept"
+              "detail": "1.2.1 · key idea"
             }
           ],
           "mcqs": [
@@ -360,11 +360,11 @@
             {
               "front": "Key idea (Approaches of Research: Deductive, Inductive, Quantitative and Qualitative)",
               "back": "Deductive fits theory-testing; inductive fits theory-building from data.",
-              "detail": "1.2.2 · concept"
+              "detail": "1.2.2 · key idea"
             },
             {
-              "front": "Quantitative often pairs with deduction; qualitative often with induction?",
-              "back": "but not absolute rules.",
+              "front": "Key contrast in Approaches of Research: Deductive, Inductive, Quantitative and Qualitative",
+              "back": "Quantitative often pairs with deduction; qualitative often with induction — but not absolute rules.",
               "detail": "1.2.2 · key idea"
             }
           ],
@@ -442,12 +442,12 @@
             {
               "front": "Key idea (Research Proposal and Aspects)",
               "back": "Proposal sells and guides the study before data collection starts.",
-              "detail": "1.2.3 · concept"
+              "detail": "1.2.3 · key idea"
             },
             {
               "front": "Also remember (Research Proposal and Aspects)",
               "back": "Objectives in the proposal must match design and analysis later.",
-              "detail": "1.2.3 · concept"
+              "detail": "1.2.3 · key idea"
             }
           ],
           "mcqs": [
@@ -524,12 +524,12 @@
             {
               "front": "Key idea (Literature Survey and Review)",
               "back": "Survey gathers; review evaluates and positions your study.",
-              "detail": "1.2.4 · concept"
+              "detail": "1.2.4 · key idea"
             },
             {
               "front": "Also remember (Literature Survey and Review)",
               "back": "Good review avoids plagiarism by paraphrase + citation, and shows scholarly conversation.",
-              "detail": "1.2.4 · concept"
+              "detail": "1.2.4 · key idea"
             }
           ],
           "mcqs": [
@@ -604,14 +604,14 @@
               "detail": "1.2.5 · Errors in Research"
             },
             {
-              "front": "Errors can enter at every process step?",
-              "back": "problem framing through reporting.",
+              "front": "Key contrast in Errors in Research",
+              "back": "Errors can enter at every process step — problem framing through reporting.",
               "detail": "1.2.5 · key idea"
             },
             {
               "front": "Also remember (Errors in Research)",
               "back": "Sampling error (Module 2) is only one class; design/measurement errors matter too.",
-              "detail": "1.2.5 · concept"
+              "detail": "1.2.5 · key idea"
             }
           ],
           "mcqs": [
@@ -681,19 +681,19 @@
               "detail": "1.3.1 · Pure and Applied"
             },
             {
-              "front": "Motive differs: curiosity/theory vs immediate use?",
-              "back": "methods may look similar.",
+              "front": "Key contrast in Pure and Applied",
+              "back": "Motive differs: curiosity/theory vs immediate use — methods may look similar.",
               "detail": "1.3.1 · key idea"
             },
             {
               "front": "Also remember (Pure and Applied)",
               "back": "R&D organisations often fund applied work; universities emphasise both.",
-              "detail": "1.3.1 · concept"
+              "detail": "1.3.1 · key idea"
             },
             {
               "front": "Also remember (Pure and Applied)",
               "back": "Same topic can be framed as pure or applied depending on objectives.",
-              "detail": "1.3.1 · concept"
+              "detail": "1.3.1 · key idea"
             }
           ],
           "mcqs": [
@@ -770,12 +770,12 @@
             {
               "front": "Key idea (Causal and Correlational)",
               "back": "Correlation is necessary but not sufficient for causation.",
-              "detail": "1.3.2 · concept"
+              "detail": "1.3.2 · key idea"
             },
             {
               "front": "Also remember (Causal and Correlational)",
               "back": "Experiments strengthen causal claims; surveys often yield correlational evidence.",
-              "detail": "1.3.2 · concept"
+              "detail": "1.3.2 · key idea"
             }
           ],
           "mcqs": [
@@ -852,12 +852,12 @@
             {
               "front": "Key idea (Crossectional and Longitudinal)",
               "back": "Cross-sectional is cheaper/faster; longitudinal better for development and causality over time.",
-              "detail": "1.3.3 · concept"
+              "detail": "1.3.3 · key idea"
             },
             {
               "front": "Also remember (Crossectional and Longitudinal)",
               "back": "Attrition is a classic longitudinal threat.",
-              "detail": "1.3.3 · concept"
+              "detail": "1.3.3 · key idea"
             }
           ],
           "mcqs": [
@@ -934,12 +934,12 @@
             {
               "front": "Key idea (Experimental, Semi-experimental and Non-Experimental)",
               "back": "Random assignment distinguishes true experiments (Module 3) from quasi designs.",
-              "detail": "1.3.4 · concept"
+              "detail": "1.3.4 · key idea"
             },
             {
               "front": "Also remember (Experimental, Semi-experimental and Non-Experimental)",
               "back": "Non-experimental can still be rigorous (e.g., well-sampled surveys) but causal claims weaken.",
-              "detail": "1.3.4 · concept"
+              "detail": "1.3.4 · key idea"
             }
           ],
           "mcqs": [
@@ -1011,17 +1011,17 @@
             {
               "front": "Key idea (Descriptive and Exploratory)",
               "back": "Exploratory precedes precise descriptive or causal studies when little is known.",
-              "detail": "1.3.5 · concept"
+              "detail": "1.3.5 · key idea"
             },
             {
               "front": "Also remember (Descriptive and Exploratory)",
               "back": "Descriptive answers who/what/where/when; causal answers why/how (with design support).",
-              "detail": "1.3.5 · concept"
+              "detail": "1.3.5 · key idea"
             },
             {
               "front": "Also remember (Descriptive and Exploratory)",
               "back": "Both can use surveys; purpose and analysis depth differ.",
-              "detail": "1.3.5 · concept"
+              "detail": "1.3.5 · key idea"
             }
           ],
           "mcqs": [
@@ -1082,7 +1082,7 @@
             },
             {
               "front": "What is Physical / iconic models?",
-              "back": "Scaled tangible replicas.",
+              "back": "Physical / iconic models: Scaled tangible replicas.",
               "detail": "1.4.1 · Types of Models"
             },
             {
@@ -1092,7 +1092,7 @@
             },
             {
               "front": "What is Mathematical / symbolic models?",
-              "back": "Equations and symbols relating variables.",
+              "back": "Mathematical / symbolic models: Equations and symbols relating variables.",
               "detail": "1.4.1 · Types of Models"
             },
             {
@@ -1178,8 +1178,8 @@
               "detail": "1.4.2 · Model Building and Stages"
             },
             {
-              "front": "What about Building stages parallel the research process?",
-              "back": "define, design, test, report.",
+              "front": "Key idea (Model Building and Stages)",
+              "back": "Building stages parallel the research process: define, design, test, report.",
               "detail": "1.4.2 · key idea"
             },
             {
@@ -1267,7 +1267,7 @@
             {
               "front": "Also remember (Data Consideration and Testing)",
               "back": "Split samples / cross-validation are common testing ideas for predictive models.",
-              "detail": "1.4.3 · concept"
+              "detail": "1.4.3 · key idea"
             }
           ],
           "mcqs": [
@@ -1338,18 +1338,18 @@
             },
             {
               "front": "What is Optimality vs feasibility?",
-              "back": "Heuristics may not guarantee global optimum.",
+              "back": "Optimality vs feasibility: Heuristics may not guarantee global optimum.",
               "detail": "1.4.4 · Heuristic and Simulation Modeling"
             },
             {
               "front": "Key idea (Heuristic and Simulation Modeling)",
               "back": "Use heuristics when exact optimisation is intractable; use simulation when closed form is unavailable.",
-              "detail": "1.4.4 · concept"
+              "detail": "1.4.4 · key idea"
             },
             {
               "front": "Also remember (Heuristic and Simulation Modeling)",
               "back": "Simulation needs a conceptual model plus data/parameters (1.4.2–1.4.3).",
-              "detail": "1.4.4 · concept"
+              "detail": "1.4.4 · key idea"
             }
           ],
           "mcqs": [
@@ -1426,7 +1426,7 @@
             },
             {
               "front": "What is Qualitative vs quantitative data?",
-              "back": "Text/observations vs numeric measurements.",
+              "back": "Qualitative vs quantitative data: Text/observations vs numeric measurements.",
               "detail": "2.1.1 · Introduction to Data Collection"
             },
             {
@@ -1435,8 +1435,8 @@
               "detail": "2.1.1 · Introduction to Data Collection"
             },
             {
-              "front": "Collection decisions follow objectives and design?",
-              "back": "not the reverse.",
+              "front": "Key contrast in Introduction to Data Collection",
+              "back": "Collection decisions follow objectives and design — not the reverse.",
               "detail": "2.1.1 · key idea"
             }
           ],
@@ -1508,7 +1508,7 @@
             },
             {
               "front": "What is Documentary / archival methods?",
-              "back": "Extract from records, logs, databases.",
+              "back": "Documentary / archival methods: Extract from records, logs, databases.",
               "detail": "2.1.2 · Data Collection Methods"
             },
             {
@@ -1519,7 +1519,7 @@
             {
               "front": "Key idea (Data Collection Methods)",
               "back": "Method choice trades depth, cost, bias risk, and scalability.",
-              "detail": "2.1.2 · concept"
+              "detail": "2.1.2 · key idea"
             }
           ],
           "mcqs": [
@@ -1671,19 +1671,19 @@
               "detail": "2.2.1 · Steps in Constructing a Questionnaire"
             },
             {
-              "front": "Every item should earn its place against objectives?",
-              "back": "drop orphans.",
+              "front": "Key contrast in Steps in Constructing a Questionnaire",
+              "back": "Every item should earn its place against objectives — drop orphans.",
               "detail": "2.2.1 · key idea"
             },
             {
               "front": "Also remember (Steps in Constructing a Questionnaire)",
               "back": "Pilot before full field work saves non-sampling error.",
-              "detail": "2.2.1 · concept"
+              "detail": "2.2.1 · key idea"
             },
             {
               "front": "Also remember (Steps in Constructing a Questionnaire)",
               "back": "Mode (online/paper/interview) constrains wording and length.",
-              "detail": "2.2.1 · concept"
+              "detail": "2.2.1 · key idea"
             }
           ],
           "mcqs": [
@@ -1739,7 +1739,7 @@
           "flashcards": [
             {
               "front": "What is Open-ended questions?",
-              "back": "Free response — rich detail, harder to code.",
+              "back": "Open-ended questions: Free response — rich detail, harder to code.",
               "detail": "2.2.2 · Types of Questions"
             },
             {
@@ -1749,23 +1749,23 @@
             },
             {
               "front": "What is Dichotomous / multiple choice?",
-              "back": "Yes–no or several alternatives.",
+              "back": "Dichotomous / multiple choice: Yes–no or several alternatives.",
               "detail": "2.2.2 · Types of Questions"
             },
             {
               "front": "What is Rating / Likert-type items?",
-              "back": "Ordered agreement or intensity scales.",
+              "back": "Rating / Likert-type items: Ordered agreement or intensity scales.",
               "detail": "2.2.2 · Types of Questions"
             },
             {
               "front": "What is Ranking questions?",
-              "back": "Order preferences among options.",
+              "back": "Ranking questions: Order preferences among options.",
               "detail": "2.2.2 · Types of Questions"
             },
             {
               "front": "Key idea (Types of Questions)",
               "back": "Open for exploration; closed for quantification and comparison.",
-              "detail": "2.2.2 · concept"
+              "detail": "2.2.2 · key idea"
             }
           ],
           "mcqs": [
@@ -1831,7 +1831,7 @@
             },
             {
               "front": "What is Skip logic?",
-              "back": "Route respondents past irrelevant blocks.",
+              "back": "Skip logic: Route respondents past irrelevant blocks.",
               "detail": "2.2.3 · Format of Questionnaire"
             },
             {
@@ -1842,12 +1842,12 @@
             {
               "front": "Key idea (Format of Questionnaire)",
               "back": "Format affects response rate and error as much as wording.",
-              "detail": "2.2.3 · concept"
+              "detail": "2.2.3 · key idea"
             },
             {
               "front": "Also remember (Format of Questionnaire)",
               "back": "Crowded pages and unclear instructions inflate Don’t Know / missing (3.2.7–3.2.8).",
-              "detail": "2.2.3 · concept"
+              "detail": "2.2.3 · key idea"
             }
           ],
           "mcqs": [
@@ -1908,7 +1908,7 @@
             },
             {
               "front": "What is Target population?",
-              "back": "Universe to which you want to generalise.",
+              "back": "Target population: Universe to which you want to generalise.",
               "detail": "2.3.1 · Sampling Plan"
             },
             {
@@ -1924,12 +1924,12 @@
             {
               "front": "Also remember (Sampling Plan)",
               "back": "Size without a method still leaves selection bias risk.",
-              "detail": "2.3.1 · concept"
+              "detail": "2.3.1 · key idea"
             },
             {
               "front": "Also remember (Sampling Plan)",
               "back": "Plan documents inclusion/exclusion and replacement rules.",
-              "detail": "2.3.1 · concept"
+              "detail": "2.3.1 · key idea"
             }
           ],
           "mcqs": [
@@ -2001,17 +2001,17 @@
             {
               "front": "Key idea (Sampling Frame)",
               "back": "No probability sample without a workable frame (or equivalent listing mechanism).",
-              "detail": "2.3.2 · concept"
+              "detail": "2.3.2 · key idea"
             },
             {
               "front": "Also remember (Sampling Frame)",
               "back": "Updating frames (students enrolled this term) matters for currency.",
-              "detail": "2.3.2 · concept"
+              "detail": "2.3.2 · key idea"
             },
             {
               "front": "Also remember (Sampling Frame)",
               "back": "Web panels and incomplete registries are classic imperfect frames.",
-              "detail": "2.3.2 · concept"
+              "detail": "2.3.2 · key idea"
             }
           ],
           "mcqs": [
@@ -2083,17 +2083,17 @@
             {
               "front": "Key idea (Sample Selection Methods)",
               "back": "Selection method drives whether sampling error theory and CIs apply cleanly.",
-              "detail": "2.3.3 · concept"
+              "detail": "2.3.3 · key idea"
             },
             {
               "front": "Also remember (Sample Selection Methods)",
               "back": "2.3.4 and 2.3.5 unpack the two families.",
-              "detail": "2.3.3 · concept"
+              "detail": "2.3.3 · key idea"
             },
             {
               "front": "Also remember (Sample Selection Methods)",
               "back": "Multi-stage designs combine techniques (e.g., cluster then SRS).",
-              "detail": "2.3.3 · concept"
+              "detail": "2.3.3 · key idea"
             }
           ],
           "mcqs": [
@@ -2154,7 +2154,7 @@
             },
             {
               "front": "What is Systematic sampling?",
-              "back": "Every k-th unit after a random start.",
+              "back": "Systematic sampling: Every k-th unit after a random start.",
               "detail": "2.3.4 · Probability Sampling Techniques"
             },
             {
@@ -2175,7 +2175,7 @@
             {
               "front": "Key idea (Probability Sampling Techniques)",
               "back": "Probability ⇒ can estimate sampling error and use inferential machinery more defensibly.",
-              "detail": "2.3.4 · concept"
+              "detail": "2.3.4 · key idea"
             }
           ],
           "mcqs": [
@@ -2252,12 +2252,12 @@
             {
               "front": "Key idea (Non-Probability Sampling Techniques)",
               "back": "Unknown selection probabilities limit generalisation and classic sampling-error formulas.",
-              "detail": "2.3.5 · concept"
+              "detail": "2.3.5 · key idea"
             },
             {
               "front": "Also remember (Non-Probability Sampling Techniques)",
               "back": "Useful for exploratory/qualitative work; weak for population parameter estimates.",
-              "detail": "2.3.5 · concept"
+              "detail": "2.3.5 · key idea"
             }
           ],
           "mcqs": [
@@ -2328,7 +2328,7 @@
             },
             {
               "front": "What is Total survey error?",
-              "back": "Combined sampling + non-sampling components.",
+              "back": "Total survey error: Combined sampling + non-sampling components.",
               "detail": "2.3.6 · Sampling and Non-sampling Errors"
             },
             {
@@ -2339,7 +2339,7 @@
             {
               "front": "Also remember (Sampling and Non-sampling Errors)",
               "back": "Probability samples quantify sampling error; non-sampling needs process quality control.",
-              "detail": "2.3.6 · concept"
+              "detail": "2.3.6 · key idea"
             }
           ],
           "mcqs": [
@@ -2425,8 +2425,8 @@
               "detail": "3.1.1 · Design of Experiment: Objectives and Strategies"
             },
             {
-              "front": "DOE is methodology for causal/engineering experiments?",
-              "back": "not just ‘running a test once’.",
+              "front": "Key contrast in Design of Experiment: Objectives and Strategies",
+              "back": "DOE is methodology for causal/engineering experiments — not just ‘running a test once’.",
               "detail": "3.1.1 · key idea"
             }
           ],
@@ -2488,7 +2488,7 @@
             },
             {
               "front": "What is One-shot case study?",
-              "back": "X then O — no pretest, no control group.",
+              "back": "One-shot case study: X then O — no pretest, no control group.",
               "detail": "3.1.2 · Pre-Experimental Research Design"
             },
             {
@@ -2498,18 +2498,18 @@
             },
             {
               "front": "What is Static-group comparison?",
-              "back": "X O vs O — groups not randomly assigned.",
+              "back": "Static-group comparison: X O vs O — groups not randomly assigned.",
               "detail": "3.1.2 · Pre-Experimental Research Design"
             },
             {
               "front": "Key idea (Pre-Experimental Research Design)",
               "back": "Pre-experimental lacks random assignment and often lacks adequate controls.",
-              "detail": "3.1.2 · concept"
+              "detail": "3.1.2 · key idea"
             },
             {
               "front": "Also remember (Pre-Experimental Research Design)",
               "back": "Useful for pilots/ideas, weak for strong causal claims.",
-              "detail": "3.1.2 · concept"
+              "detail": "3.1.2 · key idea"
             }
           ],
           "mcqs": [
@@ -2586,12 +2586,12 @@
             {
               "front": "Key idea (Quasi Experimental Research Design)",
               "back": "Stronger than pre-experimental when trends/controls are used carefully.",
-              "detail": "3.1.3 · concept"
+              "detail": "3.1.3 · key idea"
             },
             {
               "front": "Also remember (Quasi Experimental Research Design)",
               "back": "Weaker internal validity than true experiments due to selection confounds.",
-              "detail": "3.1.3 · concept"
+              "detail": "3.1.3 · key idea"
             }
           ],
           "mcqs": [
@@ -2652,12 +2652,12 @@
             },
             {
               "front": "What is Pretest–posttest control group?",
-              "back": "R: O1 X O2 vs O1  O2.",
+              "back": "Pretest–posttest control group: R: O1 X O2 vs O1  O2.",
               "detail": "3.1.4 · True Experimental Research Design"
             },
             {
               "front": "What is Posttest-only control group?",
-              "back": "R: X O vs O — avoids pretest sensitisation.",
+              "back": "Posttest-only control group: R: X O vs O — avoids pretest sensitisation.",
               "detail": "3.1.4 · True Experimental Research Design"
             },
             {
@@ -2668,12 +2668,12 @@
             {
               "front": "Key idea (True Experimental Research Design)",
               "back": "Randomisation equates groups in expectation on known and unknown confounders.",
-              "detail": "3.1.4 · concept"
+              "detail": "3.1.4 · key idea"
             },
             {
               "front": "Also remember (True Experimental Research Design)",
               "back": "Control group estimates the counterfactual without treatment.",
-              "detail": "3.1.4 · concept"
+              "detail": "3.1.4 · key idea"
             }
           ],
           "mcqs": [
@@ -2750,12 +2750,12 @@
             {
               "front": "Key idea (Factorial Experimental Design)",
               "back": "Factorials are efficient versus one-factor-at-a-time for discovering interactions.",
-              "detail": "3.1.5 · concept"
+              "detail": "3.1.5 · key idea"
             },
             {
               "front": "Also remember (Factorial Experimental Design)",
               "back": "ANOVA for factorial partitions variance into main effects, interaction, error.",
-              "detail": "3.1.5 · concept"
+              "detail": "3.1.5 · key idea"
             }
           ],
           "mcqs": [
@@ -2826,18 +2826,18 @@
             },
             {
               "front": "What is Robust design idea?",
-              "back": "Reduce sensitivity to noise factors.",
+              "back": "Robust design idea: Reduce sensitivity to noise factors.",
               "detail": "3.1.6 · Designing Engineering Experiments"
             },
             {
               "front": "Key idea (Designing Engineering Experiments)",
               "back": "Same statistical principles as behavioural experiments; domain responses differ.",
-              "detail": "3.1.6 · concept"
+              "detail": "3.1.6 · key idea"
             },
             {
               "front": "Also remember (Designing Engineering Experiments)",
               "back": "Often uses factorial/fractional factorial and ANOVA/regression.",
-              "detail": "3.1.6 · concept"
+              "detail": "3.1.6 · key idea"
             }
           ],
           "mcqs": [
@@ -2898,28 +2898,28 @@
             },
             {
               "front": "What is Covariation?",
-              "back": "Cause and effect must associate.",
+              "back": "Covariation: Cause and effect must associate.",
               "detail": "3.1.7 · Causal Attributions"
             },
             {
               "front": "What is Temporal precedence?",
-              "back": "Cause occurs before effect.",
+              "back": "Temporal precedence: Cause occurs before effect.",
               "detail": "3.1.7 · Causal Attributions"
             },
             {
               "front": "What is Nonspuriousness?",
-              "back": "No plausible confounder explains the link.",
+              "back": "Nonspuriousness: No plausible confounder explains the link.",
               "detail": "3.1.7 · Causal Attributions"
             },
             {
               "front": "Key idea (Causal Attributions)",
               "back": "Design (randomisation/control) is the main tool for nonspuriousness.",
-              "detail": "3.1.7 · concept"
+              "detail": "3.1.7 · key idea"
             },
             {
               "front": "Also remember (Causal Attributions)",
               "back": "Correlational designs struggle on temporal order and confounds.",
-              "detail": "3.1.7 · concept"
+              "detail": "3.1.7 · key idea"
             }
           ],
           "mcqs": [
@@ -2996,12 +2996,12 @@
             {
               "front": "Key idea (Statistical Control)",
               "back": "Control by design (randomise/block) beats control only by statistics when possible.",
-              "detail": "3.1.8 · concept"
+              "detail": "3.1.8 · key idea"
             },
             {
               "front": "Also remember (Statistical Control)",
               "back": "ANCOVA assumes covariate measured before treatment and linear relationships, etc.",
-              "detail": "3.1.8 · concept"
+              "detail": "3.1.8 · key idea"
             }
           ],
           "mcqs": [
@@ -3072,17 +3072,17 @@
             },
             {
               "front": "What is Unstructured interview?",
-              "back": "Flexible probes — rich qualitative data.",
+              "back": "Unstructured interview: Flexible probes — rich qualitative data.",
               "detail": "3.2.1 · Collection of Data via Observation and Interview"
             },
             {
               "front": "Key idea (Collection of Data via Observation and Interview)",
               "back": "Complements questionnaires when behaviour ≠ self-report.",
-              "detail": "3.2.1 · concept"
+              "detail": "3.2.1 · key idea"
             },
             {
-              "front": "Observer drift and reactivity are threats?",
-              "back": "train and calibrate observers.",
+              "front": "Key contrast in Collection of Data via Observation and Interview",
+              "back": "Observer drift and reactivity are threats — train and calibrate observers.",
               "detail": "3.2.1 · key idea"
             }
           ],
@@ -3155,17 +3155,17 @@
             {
               "front": "Key idea (Collection of Data through Cases)",
               "back": "Cases excel at context and process; weak for prevalence estimates alone.",
-              "detail": "3.2.2 · concept"
+              "detail": "3.2.2 · key idea"
             },
             {
               "front": "Also remember (Collection of Data through Cases)",
               "back": "Multiple cases strengthen pattern matching versus single anecdote.",
-              "detail": "3.2.2 · concept"
+              "detail": "3.2.2 · key idea"
             },
             {
               "front": "Also remember (Collection of Data through Cases)",
               "back": "Not the same as a legal ‘case’ or a single questionnaire respondent.",
-              "detail": "3.2.2 · concept"
+              "detail": "3.2.2 · key idea"
             }
           ],
           "mcqs": [
@@ -3221,12 +3221,12 @@
           "flashcards": [
             {
               "front": "What is Questionnaire data collection?",
-              "back": "Standardised items administered to a sample.",
+              "back": "Questionnaire data collection: Standardised items administered to a sample.",
               "detail": "3.2.3 · Collection of Data through Questionnaires"
             },
             {
               "front": "What is Self-administered vs interviewer-administered?",
-              "back": "Mode affects bias, cost, literacy needs.",
+              "back": "Self-administered vs interviewer-administered: Mode affects bias, cost, literacy needs.",
               "detail": "3.2.3 · Collection of Data through Questionnaires"
             },
             {
@@ -3237,7 +3237,7 @@
             {
               "front": "Key idea (Collection of Data through Questionnaires)",
               "back": "Builds on Module 2.2 design; here emphasis is collection execution.",
-              "detail": "3.2.3 · concept"
+              "detail": "3.2.3 · key idea"
             },
             {
               "front": "What about Mode effects?",
@@ -3247,7 +3247,7 @@
             {
               "front": "Also remember (Collection of Data through Questionnaires)",
               "back": "Follow-ups and incentives are practical response-rate tools.",
-              "detail": "3.2.3 · concept"
+              "detail": "3.2.3 · key idea"
             }
           ],
           "mcqs": [
@@ -3318,18 +3318,18 @@
             },
             {
               "front": "What is Appropriate length & language?",
-              "back": "Match respondent literacy and attention.",
+              "back": "Appropriate length & language: Match respondent literacy and attention.",
               "detail": "3.2.4 · Guidelines for Preparing Questionnaire"
             },
             {
               "front": "Key idea (Guidelines for Preparing Questionnaire)",
               "back": "Guidelines operationalise validity/reliability before statistics.",
-              "detail": "3.2.4 · concept"
+              "detail": "3.2.4 · key idea"
             },
             {
               "front": "Also remember (Guidelines for Preparing Questionnaire)",
               "back": "Translate/back-translate for multilingual studies.",
-              "detail": "3.2.4 · concept"
+              "detail": "3.2.4 · key idea"
             }
           ],
           "mcqs": [
@@ -3395,7 +3395,7 @@
             },
             {
               "front": "What is Central editing?",
-              "back": "Office/system review after data arrive.",
+              "back": "Central editing: Office/system review after data arrive.",
               "detail": "3.2.5 · Data Editing"
             },
             {
@@ -3404,14 +3404,14 @@
               "detail": "3.2.5 · Data Editing"
             },
             {
-              "front": "Editing precedes coding and analysis?",
-              "back": "catches non-sampling errors early.",
+              "front": "Key contrast in Data Editing",
+              "back": "Editing precedes coding and analysis — catches non-sampling errors early.",
               "detail": "3.2.5 · key idea"
             },
             {
               "front": "Also remember (Data Editing)",
               "back": "Rules must be documented for auditability.",
-              "detail": "3.2.5 · concept"
+              "detail": "3.2.5 · key idea"
             }
           ],
           "mcqs": [
@@ -3488,12 +3488,12 @@
             {
               "front": "Key idea (Data Coding Rules)",
               "back": "Closed items are pre-coded; open items need coding frames.",
-              "detail": "3.2.6 · concept"
+              "detail": "3.2.6 · key idea"
             },
             {
               "front": "Also remember (Data Coding Rules)",
               "back": "Bad coding creates measurement error indistinguishable from ‘findings’.",
-              "detail": "3.2.6 · concept"
+              "detail": "3.2.6 · key idea"
             }
           ],
           "mcqs": [
@@ -3565,17 +3565,17 @@
             {
               "front": "Key idea (Don’t Know” Responses)",
               "back": "High DK rates flag wording, knowledge mismatch, or sensitive topics.",
-              "detail": "3.2.7 · concept"
+              "detail": "3.2.7 · key idea"
             },
             {
               "front": "Also remember (Don’t Know” Responses)",
               "back": "Forcing a choice when knowledge is absent adds measurement error.",
-              "detail": "3.2.7 · concept"
+              "detail": "3.2.7 · key idea"
             },
             {
               "front": "Also remember (Don’t Know” Responses)",
               "back": "Report DK rates as a quality diagnostic.",
-              "detail": "3.2.7 · concept"
+              "detail": "3.2.7 · key idea"
             }
           ],
           "mcqs": [
@@ -3652,12 +3652,12 @@
             {
               "front": "Key idea (Missing Data)",
               "back": "Mechanism of missingness matters more than the mere count of holes.",
-              "detail": "3.2.8 · concept"
+              "detail": "3.2.8 · key idea"
             },
             {
               "front": "Also remember (Missing Data)",
               "back": "Prevent missingness via design; handle residual missingness transparently.",
-              "detail": "3.2.8 · concept"
+              "detail": "3.2.8 · key idea"
             }
           ],
           "mcqs": [
@@ -3718,7 +3718,7 @@
             },
             {
               "front": "What is Reliability?",
-              "back": "Consistency / repeatability of measurement.",
+              "back": "Reliability: Consistency / repeatability of measurement.",
               "detail": "3.3.1 · Validity and Reliability"
             },
             {
@@ -3739,7 +3739,7 @@
             {
               "front": "Key idea (Validity and Reliability)",
               "back": "Reliability is necessary but not sufficient for validity.",
-              "detail": "3.3.1 · concept"
+              "detail": "3.3.1 · key idea"
             }
           ],
           "mcqs": [
@@ -3816,12 +3816,12 @@
             {
               "front": "Key idea (Replication, Randomisation and Blocking)",
               "back": "Replication ≠ pseudoreplication (repeated measures on one unit miscounted as independent).",
-              "detail": "3.3.2 · concept"
+              "detail": "3.3.2 · key idea"
             },
             {
               "front": "Also remember (Replication, Randomisation and Blocking)",
               "back": "Blocking is design analogue of statistical control for known nuisance factors.",
-              "detail": "3.3.2 · concept"
+              "detail": "3.3.2 · key idea"
             }
           ],
           "mcqs": [
@@ -3898,12 +3898,12 @@
             {
               "front": "Key idea (Orthogonality and False Positives)",
               "back": "Orthogonal designs simplify interpretation and variance allocation.",
-              "detail": "3.3.3 · concept"
+              "detail": "3.3.3 · key idea"
             },
             {
               "front": "Also remember (Orthogonality and False Positives)",
               "back": "False positives link design multiplicity to hypothesis testing (Module 4 Type I).",
-              "detail": "3.3.3 · concept"
+              "detail": "3.3.3 · key idea"
             }
           ],
           "mcqs": [
@@ -3991,7 +3991,7 @@
             {
               "front": "Also remember (Introduction to Hypothesis)",
               "back": "Not all studies test hypotheses (purely descriptive), but this module assumes they do.",
-              "detail": "4.1.1 · concept"
+              "detail": "4.1.1 · key idea"
             }
           ],
           "mcqs": [
@@ -4073,7 +4073,7 @@
             {
               "front": "Key idea (Developing Hypothesis : Null and Alternate)",
               "back": "Tests put H0 at risk; science progresses by rejecting untenable nulls.",
-              "detail": "4.1.2 · concept"
+              "detail": "4.1.2 · key idea"
             }
           ],
           "mcqs": [
@@ -4129,7 +4129,7 @@
           "flashcards": [
             {
               "front": "What is Type I error (α)?",
-              "back": "Reject H0 when H0 is true — false positive.",
+              "back": "Type I error (α): Reject H0 when H0 is true — false positive.",
               "detail": "4.1.3 · Type I and Type II Error"
             },
             {
@@ -4144,7 +4144,7 @@
             },
             {
               "front": "What is Power (1 − β)?",
-              "back": "Probability of correctly rejecting false H0.",
+              "back": "Power (1 − β): Probability of correctly rejecting false H0.",
               "detail": "4.1.3 · Type I and Type II Error"
             },
             {
@@ -4155,7 +4155,7 @@
             {
               "front": "Key idea (Type I and Type II Error)",
               "back": "Error types are about decisions, not sampling error (2.3.6).",
-              "detail": "4.1.3 · concept"
+              "detail": "4.1.3 · key idea"
             }
           ],
           "mcqs": [
@@ -4230,8 +4230,8 @@
               "detail": "4.1.4 · key idea"
             },
             {
-              "front": "Choosing one-tailed after seeing data is p-hacking?",
-              "back": "unjustified.",
+              "front": "Key contrast in One-Tailed and Two-tailed Test",
+              "back": "Choosing one-tailed after seeing data is p-hacking — unjustified.",
               "detail": "4.1.4 · key idea"
             },
             {
@@ -4298,7 +4298,7 @@
             },
             {
               "front": "What is t df example?",
-              "back": "One-sample t: df = n − 1 (mean estimated).",
+              "back": "t df example: One-sample t: df = n − 1 (mean estimated).",
               "detail": "4.1.5 · Degree of Freedom"
             },
             {
@@ -4314,12 +4314,12 @@
             {
               "front": "Key idea (Degree of Freedom)",
               "back": "Each parameter estimated from data typically costs one df.",
-              "detail": "4.1.5 · concept"
+              "detail": "4.1.5 · key idea"
             },
             {
               "front": "Also remember (Degree of Freedom)",
               "back": "ANOVA df split across treatments and error (4.2.8).",
-              "detail": "4.1.5 · concept"
+              "detail": "4.1.5 · key idea"
             }
           ],
           "mcqs": [
@@ -4394,14 +4394,14 @@
               "detail": "4.1.6 · Confidence Intervals"
             },
             {
-              "front": "CI estimates magnitude; hypothesis test gives reject/not decision?",
-              "back": "complementary.",
+              "front": "Key contrast in Confidence Intervals",
+              "back": "CI estimates magnitude; hypothesis test gives reject/not decision — complementary.",
               "detail": "4.1.6 · key idea"
             },
             {
               "front": "Also remember (Confidence Intervals)",
               "back": "Narrower CI from larger n or smaller variance.",
-              "detail": "4.1.6 · concept"
+              "detail": "4.1.6 · key idea"
             }
           ],
           "mcqs": [
@@ -4473,17 +4473,17 @@
             {
               "front": "Key idea (Level of Significance: The Confidence Coefficient)",
               "back": "α is chosen before testing; it is not the p-value.",
-              "detail": "4.1.7 · concept"
+              "detail": "4.1.7 · key idea"
             },
             {
               "front": "Also remember (Level of Significance: The Confidence Coefficient)",
               "back": "Smaller α means stronger evidence required to reject H0.",
-              "detail": "4.1.7 · concept"
+              "detail": "4.1.7 · key idea"
             },
             {
               "front": "Also remember (Level of Significance: The Confidence Coefficient)",
               "back": "Confidence coefficient naming emphasises the CI duality.",
-              "detail": "4.1.7 · concept"
+              "detail": "4.1.7 · key idea"
             }
           ],
           "mcqs": [
@@ -4544,12 +4544,12 @@
             },
             {
               "front": "What is Non-rejection (acceptance) region?",
-              "back": "Values where you fail to reject H0.",
+              "back": "Non-rejection (acceptance) region: Values where you fail to reject H0.",
               "detail": "4.1.8 · Rejection and Non-rejection Regions"
             },
             {
               "front": "What is Critical region placement?",
-              "back": "One or both tails depending on H1.",
+              "back": "Critical region placement: One or both tails depending on H1.",
               "detail": "4.1.8 · Rejection and Non-rejection Regions"
             },
             {
@@ -4560,7 +4560,7 @@
             {
               "front": "Key idea (Rejection and Non-rejection Regions)",
               "back": "Regions partition the statistic’s support under the null distribution.",
-              "detail": "4.1.8 · concept"
+              "detail": "4.1.8 · key idea"
             },
             {
               "front": "p-value approach: reject if p ≤ α?",
@@ -4640,14 +4640,14 @@
               "detail": "4.1.9 · Hypothesis Testing Procedure"
             },
             {
-              "front": "Procedure is standardised?",
-              "back": "marks for order and interpretation.",
+              "front": "Key contrast in Hypothesis Testing Procedure",
+              "back": "Procedure is standardised — marks for order and interpretation.",
               "detail": "4.1.9 · key idea"
             },
             {
               "front": "Also remember (Hypothesis Testing Procedure)",
               "back": "Skipping assumption checks risks invalid Type I/II rates.",
-              "detail": "4.1.9 · concept"
+              "detail": "4.1.9 · key idea"
             }
           ],
           "mcqs": [
@@ -4719,16 +4719,16 @@
             {
               "front": "Key idea (Types of Tests)",
               "back": "Module 4.2 focuses parametric; know non-parametric exist when assumptions fail.",
-              "detail": "4.1.10 · concept"
+              "detail": "4.1.10 · key idea"
             },
             {
               "front": "Also remember (Types of Tests)",
               "back": "χ² goodness-of-fit/independence often taught alongside even if ‘non-parametric’.",
-              "detail": "4.1.10 · concept"
+              "detail": "4.1.10 · key idea"
             },
             {
-              "front": "Test type ≠ research type (exploratory etc.)?",
-              "back": "different axes.",
+              "front": "Key contrast in Types of Tests",
+              "back": "Test type ≠ research type (exploratory etc.) — different axes.",
               "detail": "4.1.10 · key idea"
             }
           ],
@@ -4806,12 +4806,12 @@
             {
               "front": "Key idea (How to Select a Test)",
               "back": "Wrong test = wrong assumptions = wrong error rates.",
-              "detail": "4.1.11 · concept"
+              "detail": "4.1.11 · key idea"
             },
             {
               "front": "Also remember (How to Select a Test)",
               "back": "Measurement scale gates means vs medians vs proportions.",
-              "detail": "4.1.11 · concept"
+              "detail": "4.1.11 · key idea"
             }
           ],
           "mcqs": [
@@ -4883,17 +4883,17 @@
             {
               "front": "Key idea (Important Parametric Tests)",
               "back": "Parametric power is higher when assumptions hold versus many non-parametric alternatives.",
-              "detail": "4.2.1 · concept"
+              "detail": "4.2.1 · key idea"
             },
             {
               "front": "Also remember (Important Parametric Tests)",
               "back": "Central Limit Theorem justifies z approx for large n even if population is non-normal.",
-              "detail": "4.2.1 · concept"
+              "detail": "4.2.1 · key idea"
             },
             {
               "front": "Also remember (Important Parametric Tests)",
               "back": "4.2.2–4.2.11 specialise these tests.",
-              "detail": "4.2.1 · concept"
+              "detail": "4.2.1 · key idea"
             }
           ],
           "mcqs": [
@@ -4954,27 +4954,27 @@
             },
             {
               "front": "What is Standard error of mean?",
-              "back": "σ/√n — variability of x̄.",
+              "back": "Standard error of mean: σ/√n — variability of x̄.",
               "detail": "4.2.2 · Hypothesis Testing of Means: Single Population Mean Using Z-statistic"
             },
             {
               "front": "What is Large-sample practice?",
-              "back": "Sometimes replace σ by s when n is large.",
+              "back": "Large-sample practice: Sometimes replace σ by s when n is large.",
               "detail": "4.2.2 · Hypothesis Testing of Means: Single Population Mean Using Z-statistic"
             },
             {
-              "front": "Use when population SD known?",
-              "back": "rare in practice, common in exams.",
+              "front": "Key contrast in Hypothesis Testing of Means: Single Population Mean Using Z-statistic",
+              "back": "Use when population SD known — rare in practice, common in exams.",
               "detail": "4.2.2 · key idea"
             },
             {
               "front": "Also remember (Hypothesis Testing of Means: Single Population Mean Using Z-statistic)",
               "back": "Compare |z| to zα or zα/2 critical values.",
-              "detail": "4.2.2 · concept"
+              "detail": "4.2.2 · key idea"
             },
             {
-              "front": "What about Equivalent CI?",
-              "back": "x̄ ± zα/2 · σ/√n.",
+              "front": "Key idea (Hypothesis Testing of Means: Single Population Mean Using Z-statistic)",
+              "back": "Equivalent CI: x̄ ± zα/2 · σ/√n.",
               "detail": "4.2.2 · key idea"
             }
           ],
@@ -5036,7 +5036,7 @@
             },
             {
               "front": "What is Student’s t distribution?",
-              "back": "Heavier tails than z; depends on df.",
+              "back": "Student’s t distribution: Heavier tails than z; depends on df.",
               "detail": "4.2.3 · Hypothesis Testing of Means: Single Population Mean Using T-statistic"
             },
             {
@@ -5047,17 +5047,17 @@
             {
               "front": "Key idea (Hypothesis Testing of Means: Single Population Mean Using T-statistic)",
               "back": "Default mean test when σ unknown.",
-              "detail": "4.2.3 · concept"
+              "detail": "4.2.3 · key idea"
             },
             {
               "front": "Also remember (Hypothesis Testing of Means: Single Population Mean Using T-statistic)",
               "back": "As df↑, t critical values → z critical values.",
-              "detail": "4.2.3 · concept"
+              "detail": "4.2.3 · key idea"
             },
             {
               "front": "Also remember (Hypothesis Testing of Means: Single Population Mean Using T-statistic)",
               "back": "Report t, df, p, and CI for μ.",
-              "detail": "4.2.3 · concept"
+              "detail": "4.2.3 · key idea"
             }
           ],
           "mcqs": [
@@ -5118,7 +5118,7 @@
             },
             {
               "front": "What is Sample proportion p̂?",
-              "back": "x/n successes in Bernoulli/binomial setup.",
+              "back": "Sample proportion p̂: x/n successes in Bernoulli/binomial setup.",
               "detail": "4.2.4 · Hypothesis Testing for Population Proportions"
             },
             {
@@ -5129,17 +5129,17 @@
             {
               "front": "Key idea (Hypothesis Testing for Population Proportions)",
               "back": "Binary outcomes → proportions, not means of continuous Y.",
-              "detail": "4.2.4 · concept"
+              "detail": "4.2.4 · key idea"
             },
             {
               "front": "Also remember (Hypothesis Testing for Population Proportions)",
               "back": "Two-proportion z-tests compare independent groups.",
-              "detail": "4.2.4 · concept"
+              "detail": "4.2.4 · key idea"
             },
             {
               "front": "Also remember (Hypothesis Testing for Population Proportions)",
               "back": "Exact binomial tests used when n small.",
-              "detail": "4.2.4 · concept"
+              "detail": "4.2.4 · key idea"
             }
           ],
           "mcqs": [
@@ -5200,7 +5200,7 @@
             },
             {
               "front": "What is One-sided variance alternatives?",
-              "back": "σ² > or < σ0² — process control contexts.",
+              "back": "One-sided variance alternatives: σ² > or < σ0² — process control contexts.",
               "detail": "4.2.5 · Hypothesis Testing for Comparing a Variance to Hypothesized Population Variance"
             },
             {
@@ -5211,17 +5211,17 @@
             {
               "front": "Key idea (Hypothesis Testing for Comparing a Variance to Hypothesized Population Variance)",
               "back": "Used in quality control when variability itself is the claim.",
-              "detail": "4.2.5 · concept"
+              "detail": "4.2.5 · key idea"
             },
             {
-              "front": "Distinct from tests about means?",
-              "back": "different parameter.",
+              "front": "Key contrast in Hypothesis Testing for Comparing a Variance to Hypothesized Population Variance",
+              "back": "Distinct from tests about means — different parameter.",
               "detail": "4.2.5 · key idea"
             },
             {
               "front": "Also remember (Hypothesis Testing for Comparing a Variance to Hypothesized Population Variance)",
               "back": "CI for variance uses χ² quantiles inverted.",
-              "detail": "4.2.5 · concept"
+              "detail": "4.2.5 · key idea"
             }
           ],
           "mcqs": [
@@ -5291,19 +5291,19 @@
               "detail": "4.2.6 · Testing the Equality of Variances of Two Normal Populations"
             },
             {
-              "front": "Place larger s² on top if using upper-tail tables carefully?",
-              "back": "follow your SLM convention.",
+              "front": "Key contrast in Testing the Equality of Variances of Two Normal Populations",
+              "back": "Place larger s² on top if using upper-tail tables carefully — follow your SLM convention.",
               "detail": "4.2.6 · key idea"
             },
             {
               "front": "Also remember (Testing the Equality of Variances of Two Normal Populations)",
               "back": "Levene/Brown–Forsythe are more robust alternatives in modern practice.",
-              "detail": "4.2.6 · concept"
+              "detail": "4.2.6 · key idea"
             },
             {
               "front": "Also remember (Testing the Equality of Variances of Two Normal Populations)",
               "back": "ANOVA’s F is related but tests mean equality via variance ratios of mean squares.",
-              "detail": "4.2.6 · concept"
+              "detail": "4.2.6 · key idea"
             }
           ],
           "mcqs": [
@@ -5369,7 +5369,7 @@
             },
             {
               "front": "What is H0 in one-way ANOVA?",
-              "back": "μ1 = μ2 = … = μk.",
+              "back": "In ANOVA for Fixed Effect Model, H0 in one-way ANOVA means: μ1 = μ2 = … = μk.",
               "detail": "4.2.7 · ANOVA for Fixed Effect Model"
             },
             {
@@ -5378,8 +5378,8 @@
               "detail": "4.2.7 · ANOVA for Fixed Effect Model"
             },
             {
-              "front": "Rejecting H0 means at least one mean differs?",
-              "back": "not which one (need post hoc).",
+              "front": "Key contrast in ANOVA for Fixed Effect Model",
+              "back": "Rejecting H0 means at least one mean differs — not which one (need post hoc).",
               "detail": "4.2.7 · key idea"
             },
             {
@@ -5446,28 +5446,28 @@
             },
             {
               "front": "What is Treatment SS (SSTr)?",
-              "back": "Variability explained by treatment means.",
+              "back": "Treatment SS (SSTr): Variability explained by treatment means.",
               "detail": "4.2.8 · Total, Treatment & error of Squares"
             },
             {
               "front": "What is Error SS (SSE)?",
-              "back": "Within-treatment residual variability.",
+              "back": "Error SS (SSE): Within-treatment residual variability.",
               "detail": "4.2.8 · Total, Treatment & error of Squares"
             },
             {
               "front": "What is Identity?",
-              "back": "SST = SSTr + SSE (one-way).",
+              "back": "In Total, Treatment & error of Squares, Identity means: SST = SSTr + SSE (one-way).",
               "detail": "4.2.8 · Total, Treatment & error of Squares"
             },
             {
               "front": "Key idea (Total, Treatment & error of Squares)",
               "back": "Mean squares = SS/df; F uses MSTr/MSE.",
-              "detail": "4.2.8 · concept"
+              "detail": "4.2.8 · key idea"
             },
             {
               "front": "Also remember (Total, Treatment & error of Squares)",
               "back": "Large SSTr relative to SSE → evidence of treatment effects.",
-              "detail": "4.2.8 · concept"
+              "detail": "4.2.8 · key idea"
             }
           ],
           "mcqs": [
@@ -5539,17 +5539,17 @@
             {
               "front": "Key idea (ANOVA for Random Effect Model)",
               "back": "Use when interest is variability among a universe of treatments (batches, operators, labs).",
-              "detail": "4.2.9 · concept"
+              "detail": "4.2.9 · key idea"
             },
             {
-              "front": "Expected mean squares differ from fixed model?",
-              "back": "F tests may change form.",
+              "front": "Key contrast in ANOVA for Random Effect Model",
+              "back": "Expected mean squares differ from fixed model — F tests may change form.",
               "detail": "4.2.9 · key idea"
             },
             {
               "front": "Also remember (ANOVA for Random Effect Model)",
               "back": "Mixed models combine fixed and random factors.",
-              "detail": "4.2.9 · concept"
+              "detail": "4.2.9 · key idea"
             }
           ],
           "mcqs": [
@@ -5610,28 +5610,28 @@
             },
             {
               "front": "What is Completely randomised design (CRD)?",
-              "back": "Units randomly assigned to factor levels.",
+              "back": "Completely randomised design (CRD): Units randomly assigned to factor levels.",
               "detail": "4.2.10 · Single Factor Experiment"
             },
             {
               "front": "What is Response model?",
-              "back": "y_ij = μ + τ_i + ε_ij.",
+              "back": "In Single Factor Experiment, Response model means: y_ij = μ + τ_i + ε_ij.",
               "detail": "4.2.10 · Single Factor Experiment"
             },
             {
               "front": "Key idea (Single Factor Experiment)",
               "back": "Simplest designed experiment analysed by one-way ANOVA.",
-              "detail": "4.2.10 · concept"
+              "detail": "4.2.10 · key idea"
             },
             {
               "front": "Also remember (Single Factor Experiment)",
               "back": "Add blocking → RCBD; add factors → factorial (3.1.5).",
-              "detail": "4.2.10 · concept"
+              "detail": "4.2.10 · key idea"
             },
             {
               "front": "Also remember (Single Factor Experiment)",
               "back": "Replication per level estimates MSE.",
-              "detail": "4.2.10 · concept"
+              "detail": "4.2.10 · key idea"
             }
           ],
           "mcqs": [
@@ -5697,7 +5697,7 @@
             },
             {
               "front": "What is Normality of residuals?",
-              "back": "QQ plot / tests — ANOVA/t validity support.",
+              "back": "Normality of residuals: QQ plot / tests — ANOVA/t validity support.",
               "detail": "4.2.11 · Model Adequacy Checking"
             },
             {
@@ -5708,12 +5708,12 @@
             {
               "front": "Key idea (Model Adequacy Checking)",
               "back": "Significant ANOVA with bad residuals → unreliable inference.",
-              "detail": "4.2.11 · concept"
+              "detail": "4.2.11 · key idea"
             },
             {
               "front": "Also remember (Model Adequacy Checking)",
               "back": "Transforms or nonparametric alternatives if assumptions fail badly.",
-              "detail": "4.2.11 · concept"
+              "detail": "4.2.11 · key idea"
             }
           ],
           "mcqs": [
@@ -5801,7 +5801,7 @@
             {
               "front": "Also remember (Meaning of Research Report)",
               "back": "Meaning ≠ template alone; it is accountable public knowledge claim.",
-              "detail": "5.1.1 · concept"
+              "detail": "5.1.1 · key idea"
             }
           ],
           "mcqs": [
@@ -5867,7 +5867,7 @@
             },
             {
               "front": "What is Back matter?",
-              "back": "References, appendices, acknowledgements.",
+              "back": "Back matter: References, appendices, acknowledgements.",
               "detail": "5.1.2 · Structure of Scientific Report"
             },
             {
@@ -5876,13 +5876,13 @@
               "detail": "5.1.2 · Structure of Scientific Report"
             },
             {
-              "front": "Structure aids peer review and replication?",
-              "back": "readers know where to look.",
+              "front": "Key contrast in Structure of Scientific Report",
+              "back": "Structure aids peer review and replication — readers know where to look.",
               "detail": "5.1.2 · key idea"
             },
             {
-              "front": "Results state findings; discussion interprets?",
-              "back": "keep separate.",
+              "front": "Key contrast in Structure of Scientific Report",
+              "back": "Results state findings; discussion interprets — keep separate.",
               "detail": "5.1.2 · key idea"
             }
           ],
@@ -6026,17 +6026,17 @@
             },
             {
               "front": "What is Popular / popularised report?",
-              "back": "Accessible language for general audiences.",
+              "back": "Popular / popularised report: Accessible language for general audiences.",
               "detail": "5.1.4 · Types of Reports"
             },
             {
               "front": "What is Interim vs final reports?",
-              "back": "Progress updates versus complete findings.",
+              "back": "Interim vs final reports: Progress updates versus complete findings.",
               "detail": "5.1.4 · Types of Reports"
             },
             {
               "front": "What is Thesis / dissertation / journal article?",
-              "back": "Academic genres with venue-specific norms.",
+              "back": "Thesis / dissertation / journal article: Academic genres with venue-specific norms.",
               "detail": "5.1.4 · Types of Reports"
             },
             {
@@ -6047,7 +6047,7 @@
             {
               "front": "Also remember (Types of Reports)",
               "back": "Executive summaries front business reports; abstracts front journal articles.",
-              "detail": "5.1.4 · concept"
+              "detail": "5.1.4 · key idea"
             }
           ],
           "mcqs": [
@@ -6122,14 +6122,14 @@
               "detail": "5.1.5 · Steps in Report Writing"
             },
             {
-              "front": "Writing is iterative?",
-              "back": "parallel to model refinement.",
+              "front": "Key contrast in Steps in Report Writing",
+              "back": "Writing is iterative — parallel to model refinement.",
               "detail": "5.1.5 · key idea"
             },
             {
               "front": "Also remember (Steps in Report Writing)",
               "back": "Freeze analysis decisions before rewriting results ad hoc to chase significance.",
-              "detail": "5.1.5 · concept"
+              "detail": "5.1.5 · key idea"
             }
           ],
           "mcqs": [
@@ -6195,7 +6195,7 @@
             },
             {
               "front": "What is Tone?",
-              "back": "Objective — avoid promotional adjectives.",
+              "back": "Tone: Objective — avoid promotional adjectives.",
               "detail": "5.1.6 · Format and Writing Style"
             },
             {
@@ -6206,11 +6206,11 @@
             {
               "front": "Key idea (Format and Writing Style)",
               "back": "Format compliance is often gated before content review.",
-              "detail": "5.1.6 · concept"
+              "detail": "5.1.6 · key idea"
             },
             {
-              "front": "Style serves clarity and credibility?",
-              "back": "not ornament.",
+              "front": "Key contrast in Format and Writing Style",
+              "back": "Style serves clarity and credibility — not ornament.",
               "detail": "5.1.6 · key idea"
             }
           ],
@@ -6272,7 +6272,7 @@
             },
             {
               "front": "What is Figures / illustrations?",
-              "back": "Graphs, diagrams, images — visual patterns.",
+              "back": "Figures / illustrations: Graphs, diagrams, images — visual patterns.",
               "detail": "5.1.7 · Illustrations and Tables"
             },
             {
@@ -6288,12 +6288,12 @@
             {
               "front": "Key idea (Illustrations and Tables)",
               "back": "Choose table for precision, figure for trends/comparisons.",
-              "detail": "5.1.7 · concept"
+              "detail": "5.1.7 · key idea"
             },
             {
               "front": "Also remember (Illustrations and Tables)",
               "back": "Don’t duplicate the same numbers in both without purpose.",
-              "detail": "5.1.7 · concept"
+              "detail": "5.1.7 · key idea"
             }
           ],
           "mcqs": [
@@ -6368,14 +6368,14 @@
               "detail": "5.1.8 · Citing and Referencing Sources"
             },
             {
-              "front": "Citation styles differ in order and punctuation?",
-              "back": "follow the mandated style sheet.",
+              "front": "Key contrast in Citing and Referencing Sources",
+              "back": "Citation styles differ in order and punctuation — follow the mandated style sheet.",
               "detail": "5.1.8 · key idea"
             },
             {
               "front": "Also remember (Citing and Referencing Sources)",
               "back": "Software (Zotero/EndNote) helps but must be checked.",
-              "detail": "5.1.8 · concept"
+              "detail": "5.1.8 · key idea"
             }
           ],
           "mcqs": [
@@ -6452,12 +6452,12 @@
             {
               "front": "Also remember (Footnotes)",
               "back": "Some styles discourage footnotes for citations (author–date) but allow content notes.",
-              "detail": "5.1.9 · concept"
+              "detail": "5.1.9 · key idea"
             },
             {
               "front": "Also remember (Footnotes)",
               "back": "Numbering must stay consistent after revisions.",
-              "detail": "5.1.9 · concept"
+              "detail": "5.1.9 · key idea"
             }
           ],
           "mcqs": [
@@ -6523,23 +6523,23 @@
             },
             {
               "front": "What is Time discipline?",
-              "back": "Design for the slot; rehearsed pacing.",
+              "back": "Time discipline: Design for the slot; rehearsed pacing.",
               "detail": "5.2.1 · Oral Presentation"
             },
             {
-              "front": "Oral ≠ reading the full paper aloud?",
-              "back": "curate a narrative.",
+              "front": "Key contrast in Oral Presentation",
+              "back": "Oral ≠ reading the full paper aloud — curate a narrative.",
               "detail": "5.2.1 · key idea"
             },
             {
               "front": "Also remember (Oral Presentation)",
               "back": "Anticipate questions on validity, sample, and limitations.",
-              "detail": "5.2.1 · concept"
+              "detail": "5.2.1 · key idea"
             },
             {
               "front": "Also remember (Oral Presentation)",
               "back": "Authentication/credibility cues continue in 5.2.5.",
-              "detail": "5.2.1 · concept"
+              "detail": "5.2.1 · key idea"
             }
           ],
           "mcqs": [
@@ -6600,7 +6600,7 @@
             },
             {
               "front": "What is Audience analysis?",
-              "back": "Adjust jargon and depth to listeners.",
+              "back": "Audience analysis: Adjust jargon and depth to listeners.",
               "detail": "5.2.2 · Making Presentation"
             },
             {
@@ -6609,19 +6609,19 @@
               "detail": "5.2.2 · Making Presentation"
             },
             {
-              "front": "Delivery skills amplify content clarity?",
-              "back": "eye contact, voice, posture.",
+              "front": "Key contrast in Making Presentation",
+              "back": "Delivery skills amplify content clarity — eye contact, voice, posture.",
               "detail": "5.2.2 · key idea"
             },
             {
               "front": "Also remember (Making Presentation)",
               "back": "Backup plans for tech failure are professional practice.",
-              "detail": "5.2.2 · concept"
+              "detail": "5.2.2 · key idea"
             },
             {
               "front": "Also remember (Making Presentation)",
               "back": "One idea per slide pairs with 5.2.3 visual aids.",
-              "detail": "5.2.2 · concept"
+              "detail": "5.2.2 · key idea"
             }
           ],
           "mcqs": [
@@ -6693,7 +6693,7 @@
             {
               "front": "Key idea (Use of Visual Aids)",
               "back": "Aids support, not replace, the speaker.",
-              "detail": "5.2.3 · concept"
+              "detail": "5.2.3 · key idea"
             },
             {
               "front": "What about Accessibility?",
@@ -6703,7 +6703,7 @@
             {
               "front": "Also remember (Use of Visual Aids)",
               "back": "Handouts optionally leave precise tables for later.",
-              "detail": "5.2.3 · concept"
+              "detail": "5.2.3 · key idea"
             }
           ],
           "mcqs": [
@@ -6775,17 +6775,17 @@
             {
               "front": "Key idea (Importance of Effective Communication)",
               "back": "Research value is lost if stakeholders cannot understand claims and limits.",
-              "detail": "5.2.4 · concept"
+              "detail": "5.2.4 · key idea"
             },
             {
               "front": "Also remember (Importance of Effective Communication)",
               "back": "Matches report style goals (5.1.6) in spoken form.",
-              "detail": "5.2.4 · concept"
+              "detail": "5.2.4 · key idea"
             },
             {
               "front": "Also remember (Importance of Effective Communication)",
               "back": "Ethical communication avoids hype of uncertain findings.",
-              "detail": "5.2.4 · concept"
+              "detail": "5.2.4 · key idea"
             }
           ],
           "mcqs": [
@@ -6857,17 +6857,17 @@
             {
               "front": "Key idea (Convention and Strategies of Authentication)",
               "back": "Authentication underpins trust in both talks and papers.",
-              "detail": "5.2.5 · concept"
+              "detail": "5.2.5 · key idea"
             },
             {
               "front": "Also remember (Convention and Strategies of Authentication)",
               "back": "Related to academic integrity and anti-plagiarism (5.1.8).",
-              "detail": "5.2.5 · concept"
+              "detail": "5.2.5 · key idea"
             },
             {
               "front": "Also remember (Convention and Strategies of Authentication)",
               "back": "Digital contexts may add DOIs, ORCID, timestamps.",
-              "detail": "5.2.5 · concept"
+              "detail": "5.2.5 · key idea"
             }
           ],
           "mcqs": [
@@ -6933,7 +6933,7 @@
             },
             {
               "front": "What is Peer review?",
-              "back": "Independent evaluation before publication.",
+              "back": "Peer review: Independent evaluation before publication.",
               "detail": "5.3.1 · Preparing Research Papers for Journals"
             },
             {
@@ -6944,11 +6944,11 @@
             {
               "front": "Key idea (Preparing Research Papers for Journals)",
               "back": "Preparing for journals is stricter than coursework reports.",
-              "detail": "5.3.1 · concept"
+              "detail": "5.3.1 · key idea"
             },
             {
-              "front": "Select journal by scope, audience, and metrics (5.3.3–5.3.4)?",
-              "back": "not prestige alone.",
+              "front": "Key contrast in Preparing Research Papers for Journals",
+              "back": "Select journal by scope, audience, and metrics (5.3.3–5.3.4) — not prestige alone.",
               "detail": "5.3.1 · key idea"
             }
           ],
@@ -7021,17 +7021,17 @@
             {
               "front": "Key idea (Design of Paper Using Template)",
               "back": "Templates enforce 5.1.6 format at publication scale.",
-              "detail": "5.3.2 · concept"
+              "detail": "5.3.2 · key idea"
             },
             {
               "front": "Also remember (Design of Paper Using Template)",
               "back": "Ignoring template causes desk rejection even if science is sound.",
-              "detail": "5.3.2 · concept"
+              "detail": "5.3.2 · key idea"
             },
             {
               "front": "Also remember (Design of Paper Using Template)",
               "back": "Figures must meet resolution/column-width rules in the template.",
-              "detail": "5.3.2 · concept"
+              "detail": "5.3.2 · key idea"
             }
           ],
           "mcqs": [
@@ -7101,19 +7101,19 @@
               "detail": "5.3.3 · Calculation of Impact Factor of a Journal"
             },
             {
-              "front": "IF compares journals within fields cautiously?",
-              "back": "fields differ in citation practices.",
+              "front": "Key contrast in Calculation of Impact Factor of a Journal",
+              "back": "IF compares journals within fields cautiously — fields differ in citation practices.",
               "detail": "5.3.3 · key idea"
             },
             {
               "front": "Also remember (Calculation of Impact Factor of a Journal)",
               "back": "New journals may lack IF; other indices exist.",
-              "detail": "5.3.3 · concept"
+              "detail": "5.3.3 · key idea"
             },
             {
               "front": "Also remember (Calculation of Impact Factor of a Journal)",
               "back": "Researchers should not be judged solely by IF of venue.",
-              "detail": "5.3.3 · concept"
+              "detail": "5.3.3 · key idea"
             }
           ],
           "mcqs": [
@@ -7185,17 +7185,17 @@
             {
               "front": "Key idea (Citation Index)",
               "back": "Citation indices (Web of Science, Scopus, Google Scholar) enable IF and literature search.",
-              "detail": "5.3.4 · concept"
+              "detail": "5.3.4 · key idea"
             },
             {
               "front": "Also remember (Citation Index)",
               "back": "Citations ≠ automatic endorsement (critical cites count too).",
-              "detail": "5.3.4 · concept"
+              "detail": "5.3.4 · key idea"
             },
             {
               "front": "Also remember (Citation Index)",
               "back": "Field-normalised metrics address raw-count bias.",
-              "detail": "5.3.4 · concept"
+              "detail": "5.3.4 · key idea"
             }
           ],
           "mcqs": [
@@ -7265,19 +7265,19 @@
               "detail": "5.3.5 · ISBN and ISSN"
             },
             {
-              "front": "What about ISBN ≠ ISSN?",
-              "back": "book vs serial is the exam contrast.",
+              "front": "Key idea (ISBN and ISSN)",
+              "back": "ISBN ≠ ISSN: book vs serial is the exam contrast.",
               "detail": "5.3.5 · key idea"
             },
             {
               "front": "Also remember (ISBN and ISSN)",
               "back": "A journal has ISSN; a special issue book might also carry ISBN.",
-              "detail": "5.3.5 · concept"
+              "detail": "5.3.5 · key idea"
             },
             {
               "front": "Also remember (ISBN and ISSN)",
               "back": "Identifiers support correct referencing and retrieval.",
-              "detail": "5.3.5 · concept"
+              "detail": "5.3.5 · key idea"
             }
           ],
           "mcqs": [
@@ -7354,12 +7354,12 @@
             {
               "front": "Also remember (Identifying and Defining Problem)",
               "back": "Links back to 1.2.3 proposal aspects and 1.2.4 gap from literature.",
-              "detail": "5.4.1 · concept"
+              "detail": "5.4.1 · key idea"
             },
             {
               "front": "Also remember (Identifying and Defining Problem)",
               "back": "Good problems are important, researchable, and ethical.",
-              "detail": "5.4.1 · concept"
+              "detail": "5.4.1 · key idea"
             }
           ],
           "mcqs": [
@@ -7425,7 +7425,7 @@
             },
             {
               "front": "What is Scope & delimitations?",
-              "back": "What is in/out of the study by choice.",
+              "back": "Scope & delimitations: What is in/out of the study by choice.",
               "detail": "5.4.2 · Research Problem Aspects and Considerations"
             },
             {
@@ -7436,12 +7436,12 @@
             {
               "front": "Key idea (Research Problem Aspects and Considerations)",
               "back": "Aspects/considerations turn a topic into a doable project.",
-              "detail": "5.4.2 · concept"
+              "detail": "5.4.2 · key idea"
             },
             {
               "front": "Also remember (Research Problem Aspects and Considerations)",
               "back": "Ethics (consent, privacy, harm) can veto otherwise interesting problems.",
-              "detail": "5.4.2 · concept"
+              "detail": "5.4.2 · key idea"
             }
           ],
           "mcqs": [
@@ -7512,18 +7512,18 @@
             },
             {
               "front": "What is Resource plan?",
-              "back": "People, tools, access, contingency.",
+              "back": "Resource plan: People, tools, access, contingency.",
               "detail": "5.4.3 · Research Plan"
             },
             {
               "front": "Key idea (Research Plan)",
               "back": "Plan implements methodology as a managed project.",
-              "detail": "5.4.3 · concept"
+              "detail": "5.4.3 · key idea"
             },
             {
               "front": "Also remember (Research Plan)",
               "back": "Aligns with process steps (1.2.1) and proposal content (1.2.3).",
-              "detail": "5.4.3 · concept"
+              "detail": "5.4.3 · key idea"
             }
           ],
           "mcqs": [

@@ -477,15 +477,15 @@
       },
       {
         "t": "Time",
-        "d": "Θ(n log n) guaranteed."
+        "d": "Θ(n log n) in all cases — predictable guaranteed bound."
       },
       {
         "t": "Space",
-        "d": "Needs Θ(n) auxiliary for classic merge."
+        "d": "Needs Θ(n) auxiliary memory for the classic merge."
       },
       {
         "t": "Stable",
-        "d": "Yes."
+        "d": "Yes — equal keys keep their relative order after sorting."
       }
     ],
     "concepts": [
@@ -500,11 +500,11 @@
     "terms": [
       {
         "t": "Heap sort",
-        "d": "Build heap, repeatedly extract max/min."
+        "d": "Build heap, repeatedly extract max/min to place next sorted item."
       },
       {
         "t": "Time",
-        "d": "O(n log n)."
+        "d": "O(n log n) overall; build-heap is O(n), then n extracts."
       },
       {
         "t": "In-place",
@@ -1257,19 +1257,19 @@
     "terms": [
       {
         "t": "Subset-sum",
-        "d": "Is there a subset summing to target t?"
+        "d": "Decision problem: decide whether any subset of numbers adds exactly to target t."
       },
       {
         "t": "Hardness / DP",
-        "d": "NP-complete decision; pseudo-poly DP possible."
+        "d": "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP."
       }
     ],
     "concepts": [
-      "Related to knapsack decision version.",
-      "Meet-in-the-middle sometimes taught for moderate n."
+      "Related to the knapsack decision version.",
+      "Meet-in-the-middle is sometimes taught for moderate n."
     ],
     "notes": [
-      "Trap: subset-sum ≠ always polynomial — depends on numeric magnitude."
+      "Trap: subset-sum is not always polynomial — numeric magnitude matters."
     ]
   },
   "5.1.1": {

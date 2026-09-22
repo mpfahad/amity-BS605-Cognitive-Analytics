@@ -1,0 +1,98 @@
+{
+  "subjects": {
+    "bs605": {
+      "facts": {
+        "flash_total": 63,
+        "flash_issue_count": 0,
+        "mcq_total": 60,
+        "mcq_issue_count": 0,
+        "flash_issues_sample": [],
+        "mcq_issues_sample": []
+      },
+      "maps": {
+        "nodes": 45,
+        "issue_count": 0,
+        "issues_sample": []
+      },
+      "lmr": {
+        "lines": 16,
+        "issue_count": 0,
+        "issues": []
+      },
+      "html": {
+        "issues": []
+      }
+    },
+    "cse601": {
+      "facts": {
+        "flash_total": 270,
+        "flash_issue_count": 0,
+        "mcq_total": 211,
+        "mcq_issue_count": 0,
+        "flash_issues_sample": [],
+        "mcq_issues_sample": []
+      },
+      "maps": {
+        "nodes": 64,
+        "issue_count": 0,
+        "issues_sample": []
+      },
+      "lmr": {
+        "lines": 15,
+        "issue_count": 0,
+        "issues": []
+      },
+      "html": {
+        "issues": []
+      }
+    },
+    "csit654": {
+      "facts": {
+        "flash_total": 330,
+        "flash_issue_count": 0,
+        "mcq_total": 220,
+        "mcq_issue_count": 0,
+        "flash_issues_sample": [],
+        "mcq_issues_sample": []
+      },
+      "maps": {
+        "nodes": 60,
+        "issue_count": 0,
+        "issues_sample": []
+      },
+      "lmr": {
+        "lines": 15,
+        "issue_count": 0,
+        "issues": []
+      },
+      "html": {
+        "issues": []
+      }
+    },
+    "csit745": {
+      "facts": {
+        "flash_total": 552,
+        "flash_issue_count": 0,
+        "mcq_total": 368,
+        "mcq_issue_count": 0,
+        "flash_issues_sample": [],
+        "mcq_issues_sample": []
+      },
+      "maps": {
+        "nodes": 97,
+        "issue_count": 0,
+        "issues_sample": []
+      },
+      "lmr": {
+        "lines": 15,
+        "issue_count": 0,
+        "issues": []
+      },
+      "html": {
+        "issues": []
+      }
+    }
+  },
+  "critical": 0,
+  "warn": 0
+}
