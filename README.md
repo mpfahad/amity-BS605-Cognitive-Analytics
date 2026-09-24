@@ -20,10 +20,15 @@ On first load the hub migrates legacy flat payloads into `subjects.bs605` automa
 ## Rebuild
 ```bash
 python generate_facts_from_outline.py   # only if regenerating CSE601/CSIT packs from PDF outlines
+python _write_handcrafted_deep_json.py
+python apply_handpicked_lmr.py
+python rebuild_cse601_exam_mcqs.py      # CSE601 live-class weighted quizzes
 python build_hub.py
+python audit_study_quality.py           # must be CRITICAL=0 (includes curation checklist)
 ```
 
 ## Docs
+- [EXAM-CURATION-GUIDE.md](EXAM-CURATION-GUIDE.md) — **change guide + checklist** for LMR, quizzes, maps, next modules
 - [SETUP-SYNC.md](SETUP-SYNC.md) — Supabase (already configured)
 - [MODULE-MAP.md](MODULE-MAP.md) — map criteria (BS605)
-- Working notes live under `C:\Users\User\Projects\AMITY\`
+- Per curated subject: `subjects/<code>/_exam_policy.json` (machine checklist for audit)

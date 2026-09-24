@@ -1438,7 +1438,7 @@ def build_module_map() -> str:
       <div class="legend">
         <span><i class="swatch" style="background:#116b54"></i> Module root</span>
         <span><i class="swatch" style="background:#d8efe4"></i> Group A</span>
-        <span><i class="swatch" style="background:#f7e4d5"></i> Group B</span>
+        <span><i class="swatch" style="background:#ebe4f5"></i> Group B</span>
         <span><i class="swatch" style="background:#dceaf7"></i> Group C</span>
         <span><i class="swatch" style="background:#f3dfd0;outline:2px solid rgba(196,92,38,.45)"></i> LMR priority</span>
       </div>

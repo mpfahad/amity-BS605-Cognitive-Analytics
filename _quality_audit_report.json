@@ -21,6 +21,13 @@
       },
       "html": {
         "issues": []
+      },
+      "curation": {
+        "enabled": false,
+        "check_count": 0,
+        "issue_count": 0,
+        "issues": [],
+        "lmr_expected": []
       }
     },
     "cse601": {
@@ -44,6 +51,20 @@
       },
       "html": {
         "issues": []
+      },
+      "curation": {
+        "enabled": true,
+        "check_count": 7,
+        "issue_count": 0,
+        "issues": [],
+        "lmr_expected": [
+          "1.1.1",
+          "1.1.2",
+          "1.2.1",
+          "2.1.1",
+          "2.1.2",
+          "2.2.1"
+        ]
       }
     },
     "csit654": {
@@ -67,6 +88,13 @@
       },
       "html": {
         "issues": []
+      },
+      "curation": {
+        "enabled": false,
+        "check_count": 0,
+        "issue_count": 0,
+        "issues": [],
+        "lmr_expected": []
       }
     },
     "csit745": {
@@ -90,6 +118,13 @@
       },
       "html": {
         "issues": []
+      },
+      "curation": {
+        "enabled": false,
+        "check_count": 0,
+        "issue_count": 0,
+        "issues": [],
+        "lmr_expected": []
       }
     }
   },

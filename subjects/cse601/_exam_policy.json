@@ -1,0 +1,57 @@
+{
+  "code": "cse601",
+  "title": "Data Structures & Algorithms",
+  "live_classes": [
+    "Live Class 1 Transcript.txt",
+    "Live Class 2 Transcript.txt"
+  ],
+  "lmr_source": "live_class",
+  "lmr_topic_ids": [
+    "1.1.1",
+    "1.1.2",
+    "1.2.1",
+    "2.1.1",
+    "2.1.2",
+    "2.2.1"
+  ],
+  "deferred_modules": [3, 4],
+  "quiz_skip_topics": [
+    "1.2.4",
+    "1.2.5",
+    "5.1.1"
+  ],
+  "high_quiz_topics": [
+    "1.1.1",
+    "1.1.2",
+    "1.2.1",
+    "2.1.1",
+    "2.1.2",
+    "2.2.1"
+  ],
+  "low_quiz_topics": [
+    "1.1.3",
+    "1.2.2",
+    "1.2.3"
+  ],
+  "module_weights": {
+    "1": "high",
+    "2": "high",
+    "3": "deferred",
+    "4": "deferred",
+    "5": "standard"
+  },
+  "out_of_syllabus_notes": [
+    "ADT not in syllabus (Class 1-2)",
+    "Level-order traversal not in syllabus (Class 2)"
+  ],
+  "foreshadowed_not_lmr_yet": [
+    "2.1.8 Spanning trees — next class",
+    "2.2.4 Shortest path — next class",
+    "NP-hard / NP-complete — later class"
+  ],
+  "map_ui": {
+    "group_b_must_not_be_coral": true,
+    "forbidden_group_b_bg": "#f7e4d5",
+    "lmr_requires_badge_and_coral": true
+  }
+}

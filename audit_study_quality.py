@@ -6,9 +6,12 @@ Flags template / placeholder / truncated content in:
   - MCQs
   - module maps (node bodies / deep notes surfaces)
   - LMR / important-topics lists
+  - exam curation checklist (subjects with _exam_policy.json)
 
 Run: python audit_study_quality.py
 Exit code 1 if any critical issues remain.
+
+See EXAM-CURATION-GUIDE.md for the human checklist.
 """
 from __future__ import annotations
 
@@ -31,6 +34,7 @@ PLACEHOLDER_BODY = re.compile(
     re.I,
 )
 TRUNC_END = re.compile(r"(?:\b(?:the|a|an|with|for|and|of|to|is|are|in|on|by)\b|[,;:])\s*$", re.I)
+TOPIC_ID_RE = re.compile(r"^\d+(\.\d+)+$")
 
 
 def weak_flash_back(back: str) -> str | None:
@@ -248,6 +252,174 @@ def audit_html_embed(code: str) -> dict:
     return {"issues": issues}
 
 
+def _topic_sort_key(tid: str):
+    parts = []
+    for p in str(tid).split("."):
+        try:
+            parts.append(int(p))
+        except ValueError:
+            parts.append(p)
+    return parts
+
+
+def audit_curation(code: str) -> dict:
+    """Checklist from subjects/<code>/_exam_policy.json (EXAM-CURATION-GUIDE.md)."""
+    base = SUBJECTS / code
+    policy_path = base / "_exam_policy.json"
+    if not policy_path.exists():
+        return {"enabled": False, "issues": [], "checks": []}
+
+    policy = json.loads(policy_path.read_text(encoding="utf-8"))
+    issues: list[dict] = []
+    checks: list[str] = []
+
+    deep = {}
+    deep_path = base / "_deep_notes.json"
+    if deep_path.exists():
+        deep = json.loads(deep_path.read_text(encoding="utf-8"))
+    maps = {}
+    maps_path = base / "_module_maps.json"
+    if maps_path.exists():
+        maps = json.loads(maps_path.read_text(encoding="utf-8"))
+    facts = {}
+    facts_path = base / "_study_facts.json"
+    if facts_path.exists():
+        facts = json.loads(facts_path.read_text(encoding="utf-8"))
+
+    want_lmr = sorted(policy.get("lmr_topic_ids") or [], key=_topic_sort_key)
+    deep_lmr = sorted(
+        (
+            k
+            for k, v in deep.items()
+            if isinstance(v, dict) and v.get("lmr") and TOPIC_ID_RE.match(str(k))
+        ),
+        key=_topic_sort_key,
+    )
+    map_lmr = []
+    for mod in maps.get("modules") or []:
+        for level in mod.get("levels") or []:
+            for n in level.get("nodes") or []:
+                if n.get("lmr"):
+                    map_lmr.append(str(n.get("topicId") or n.get("id")))
+    map_lmr = sorted(set(map_lmr), key=_topic_sort_key)
+
+    checks.append("lmr_sets_aligned")
+    if deep_lmr != want_lmr:
+        issues.append(
+            {
+                "issue": "curation_lmr_deep_mismatch",
+                "expected": want_lmr,
+                "actual": deep_lmr,
+            }
+        )
+    if map_lmr != want_lmr:
+        issues.append(
+            {
+                "issue": "curation_lmr_map_mismatch",
+                "expected": want_lmr,
+                "actual": map_lmr,
+            }
+        )
+
+    # Live-class files present when claimed
+    for fname in policy.get("live_classes") or []:
+        checks.append(f"live_class_present:{fname}")
+        if not (base / fname).exists():
+            issues.append({"issue": "curation_missing_live_class", "file": fname})
+
+    # Module weights
+    want_weights = {str(k): v for k, v in (policy.get("module_weights") or {}).items()}
+    if want_weights:
+        checks.append("module_weights")
+        for mod in maps.get("modules") or []:
+            mid = str(mod.get("id"))
+            if mid in want_weights and (mod.get("weight") or "standard") != want_weights[mid]:
+                issues.append(
+                    {
+                        "issue": "curation_module_weight_mismatch",
+                        "module": mid,
+                        "expected": want_weights[mid],
+                        "actual": mod.get("weight"),
+                    }
+                )
+
+    deferred = {int(x) for x in (policy.get("deferred_modules") or [])}
+    skip_topics = set(policy.get("quiz_skip_topics") or [])
+    if deferred or skip_topics:
+        checks.append("quiz_skip_and_deferred")
+        for mod in facts.get("modules") or []:
+            mid = int(mod.get("id"))
+            for topic in mod.get("topics") or []:
+                tid = str(topic.get("id") or "")
+                n_mcq = len(topic.get("mcqs") or [])
+                skipped = bool(topic.get("quizSkip"))
+                if mid in deferred:
+                    if n_mcq:
+                        issues.append(
+                            {
+                                "issue": "curation_deferred_module_has_mcqs",
+                                "module": mid,
+                                "id": tid,
+                                "mcq_count": n_mcq,
+                            }
+                        )
+                    if not skipped:
+                        issues.append(
+                            {
+                                "issue": "curation_deferred_missing_quizSkip",
+                                "module": mid,
+                                "id": tid,
+                            }
+                        )
+                if tid in skip_topics:
+                    if n_mcq:
+                        issues.append(
+                            {
+                                "issue": "curation_skip_topic_has_mcqs",
+                                "id": tid,
+                                "mcq_count": n_mcq,
+                            }
+                        )
+                    if not skipped:
+                        issues.append(
+                            {
+                                "issue": "curation_skip_topic_missing_quizSkip",
+                                "id": tid,
+                            }
+                        )
+
+    # Foreshadowed topics must not be LMR-badged
+    foreshadow = policy.get("foreshadowed_not_lmr_yet") or []
+    if foreshadow:
+        checks.append("foreshadow_not_lmr")
+        for line in foreshadow:
+            m = re.match(r"^(\d+(?:\.\d+)+)\b", str(line).strip())
+            if not m:
+                continue
+            tid = m.group(1)
+            if tid in want_lmr or tid in deep_lmr or tid in map_lmr:
+                issues.append({"issue": "curation_foreshadow_still_lmr", "id": tid, "note": line})
+
+    # Map UI: Group B must not reuse old coral peach
+    map_ui = policy.get("map_ui") or {}
+    if map_ui.get("group_b_must_not_be_coral"):
+        checks.append("group_b_not_coral")
+        forbidden = (map_ui.get("forbidden_group_b_bg") or "#f7e4d5").lower()
+        html_path = base / "module-map.html"
+        if html_path.exists():
+            html = html_path.read_text(encoding="utf-8")
+            # Old pattern: .node.b { background: #f7e4d5
+            if re.search(rf"\.node\.b\s*\{{[^}}]*background:\s*{re.escape(forbidden)}", html, re.I):
+                issues.append(
+                    {
+                        "issue": "curation_group_b_coral_collision",
+                        "detail": f".node.b still uses {forbidden} (collides with LMR)",
+                    }
+                )
+
+    return {"enabled": True, "issues": issues, "checks": checks, "lmr_expected": want_lmr}
+
+
 def main() -> int:
     report = {"subjects": {}, "critical": 0, "warn": 0}
     critical_keys = {
@@ -261,6 +433,17 @@ def main() -> int:
         "html_contains",
         "no_flashcards",
         "no_mcqs",
+        # curation checklist (EXAM-CURATION-GUIDE.md)
+        "curation_lmr_deep_mismatch",
+        "curation_lmr_map_mismatch",
+        "curation_missing_live_class",
+        "curation_module_weight_mismatch",
+        "curation_deferred_module_has_mcqs",
+        "curation_deferred_missing_quizSkip",
+        "curation_skip_topic_has_mcqs",
+        "curation_skip_topic_missing_quizSkip",
+        "curation_foreshadow_still_lmr",
+        "curation_group_b_coral_collision",
     }
 
     for code in CODES:
@@ -268,6 +451,7 @@ def main() -> int:
         maps = audit_maps(code)
         lmr = audit_lmr(code)
         html = audit_html_embed(code)
+        curation = audit_curation(code)
         sub = {
             "facts": {
                 "flash_total": facts["flash_total"],
@@ -288,6 +472,13 @@ def main() -> int:
                 "issues": lmr["issues"][:8],
             },
             "html": html,
+            "curation": {
+                "enabled": curation["enabled"],
+                "check_count": len(curation.get("checks") or []),
+                "issue_count": len(curation["issues"]),
+                "issues": curation["issues"][:12],
+                "lmr_expected": curation.get("lmr_expected") or [],
+            },
         }
         report["subjects"][code] = sub
 
@@ -296,7 +487,7 @@ def main() -> int:
             for it in items:
                 iss = it.get(key) or ""
                 for part in iss.split(","):
-                    if part in critical_keys or part.startswith("html_contains"):
+                    if part in critical_keys or part.startswith("html_contains") or part.startswith("curation_"):
                         n += 1
             return n
 
@@ -304,8 +495,16 @@ def main() -> int:
         crit += count_crit(facts["flash_issues"])
         crit += count_crit(facts["mcq_issues"])
         crit += count_crit(html["issues"])
+        crit += count_crit(curation["issues"])
         # missing deep notes for maps = warn not critical if overview still works
-        warn = len(facts["flash_issues"]) + len(facts["mcq_issues"]) + len(maps["issues"]) + len(lmr["issues"]) - crit
+        warn = (
+            len(facts["flash_issues"])
+            + len(facts["mcq_issues"])
+            + len(maps["issues"])
+            + len(lmr["issues"])
+            + len(curation["issues"])
+            - crit
+        )
         report["critical"] += crit
         report["warn"] += max(0, warn)
 
@@ -316,12 +515,18 @@ def main() -> int:
     print(f"CRITICAL={report['critical']} WARN~={report['warn']}")
     for code, sub in report["subjects"].items():
         f, m = sub["facts"], sub["maps"]
+        cur = sub["curation"]
+        cur_bit = (
+            f"curation {cur['check_count']} checks (issues {cur['issue_count']})"
+            if cur["enabled"]
+            else "curation off"
+        )
         print(
             f"{code}: flash {f['flash_total']} (issues {f['flash_issue_count']}) | "
             f"mcq {f['mcq_total']} (issues {f['mcq_issue_count']}) | "
             f"map nodes {m['nodes']} (issues {m['issue_count']}) | "
             f"lmr {sub['lmr']['lines']} (issues {sub['lmr']['issue_count']}) | "
-            f"html_issues {len(sub['html']['issues'])}"
+            f"html_issues {len(sub['html']['issues'])} | {cur_bit}"
         )
         for sample in f["mcq_issues_sample"][:3]:
             print(f"  MCQ {sample.get('id')}: {sample.get('issue')} | {sample.get('q')}")
@@ -331,6 +536,8 @@ def main() -> int:
             print(f"  MAP {sample.get('id')}: {sample.get('issue')}")
         for sample in sub["html"]["issues"][:3]:
             print(f"  HTML {sample.get('file')}: {sample.get('needle') or sample.get('issue')}")
+        for sample in cur["issues"][:5]:
+            print(f"  CURATION {sample.get('issue')}: {sample.get('id') or sample.get('module') or sample.get('detail') or sample.get('file') or sample.get('expected')}")
     print(f"Wrote {out}")
     return 1 if report["critical"] else 0
 

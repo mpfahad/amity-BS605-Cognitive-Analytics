@@ -24,40 +24,31 @@ from rebuild_mcqs_from_deep import (
 
 ROOT = Path(__file__).resolve().parent
 BASE = ROOT / "subjects" / "cse601"
+POLICY_PATH = BASE / "_exam_policy.json"
+
+
+def load_policy() -> dict:
+    if not POLICY_PATH.exists():
+        raise SystemExit(f"Missing {POLICY_PATH} — see EXAM-CURATION-GUIDE.md")
+    return json.loads(POLICY_PATH.read_text(encoding="utf-8"))
+
+
+POLICY = load_policy()
 
 # No live-class transcript weight yet — exclude from all quizzes.
-SKIP_MODULES = {3, 4}
+SKIP_MODULES = {int(x) for x in (POLICY.get("deferred_modules") or [])}
 
 # Skip from quizzes even inside covered modules (teacher downweight / not exam-focus).
-SKIP_TOPICS = {
-    "1.2.4",  # recursive analysis strategies — symbols/basics enough per Class 1
-    "1.2.5",  # Master theorem — rarely the exam ask per teacher
-    "5.1.1",  # green technology — syllabus framing, not live-class weighted
-}
+SKIP_TOPICS = set(POLICY.get("quiz_skip_topics") or [])
 
-# Live Class 1–2 taught exam priorities only (not “next class” foreshadow).
-HIGH_TOPICS = {
-    "1.1.1",  # stack + overflow/underflow + pseudocode
-    "1.1.2",  # infix/postfix/prefix
-    "1.2.1",  # algorithm characteristics
-    "2.1.1",  # tree height / terminology
-    "2.1.2",  # binary tree properties + traversals
-    "2.2.1",  # graph representations
-}
+# Live Class taught exam priorities — denser quiz weight.
+HIGH_TOPICS = set(POLICY.get("high_quiz_topics") or POLICY.get("lmr_topic_ids") or [])
 
 # Light coverage (know symbols / stack application / related syllabus).
-LOW_TOPICS = {
-    "1.1.3",  # Tower of Hanoi — mentioned, not primary weight
-    "1.2.2",  # asymptotic notations — symbols enough
-    "1.2.3",  # time complexity — understand, rarely deep exam Q
-}
+LOW_TOPICS = set(POLICY.get("low_quiz_topics") or [])
 
 MODULE_WEIGHTS = {
-    1: "high",
-    2: "high",
-    3: "deferred",  # later live class
-    4: "deferred",
-    5: "standard",  # NP foreshadowed
+    int(k): v for k, v in (POLICY.get("module_weights") or {}).items()
 }
 
 

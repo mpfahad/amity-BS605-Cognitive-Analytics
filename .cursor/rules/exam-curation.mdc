@@ -1,0 +1,25 @@
+---
+description: Exam curation criteria for Amity study hub (LMR, quizzes, maps, audit)
+alwaysApply: true
+---
+
+# Exam curation (Amity hub)
+
+Follow [EXAM-CURATION-GUIDE.md](EXAM-CURATION-GUIDE.md) for all subject/module study content.
+
+## Hard rules
+
+1. **Source order:** live-class teacher weightage → SLM/PDF → never invent LMR.
+2. **No fake LMR:** never `first N topics` / `i < 3`. LMR only via deep-notes `lmr=True` + `apply_handpicked_lmr.py`.
+3. **Foreshadow ≠ badge:** “next class” topics stay off LMR until that class is curated.
+4. **Deferred modules:** no quiz MCQs; set `quizSkip` and module `weight: deferred`.
+5. **Policy file:** keep `subjects/<code>/_exam_policy.json` in sync with maps, deep notes, and quizzes.
+6. **Publish gate:** `python audit_study_quality.py` must report `CRITICAL=0`.
+7. **Map UI:** Group B must not use coral/peach (`#f7e4d5`); LMR is coral + badge only.
+
+## Pipeline reminder
+
+```text
+handcraft deep notes → _write_handcrafted_deep_json.py → apply_handpicked_lmr.py
+→ weighted MCQ rebuild → build_hub.py → audit_study_quality.py
+```
