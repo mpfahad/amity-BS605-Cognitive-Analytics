@@ -52,7 +52,7 @@ SUBJECTS: dict[str, dict] = {
         "kicker": "Data Structures and Algorithm Design",
         "pdf": "Data Structure and Algorithm F.pdf",
         "flash_lede": "Revision cards from the CSE601 SLM and Live Class 1–2 focus — filter by module and track what you know.",
-        "quiz_lede": "MCQs weighted to Live Class exam focus (Modules 1–2 + NP). Modules 3–4 deferred until those live classes.",
+        "quiz_lede": "Modules 1–2 weighted to Live Class exam focus; Modules 3–5 quizzes are SLM hand-picks. Skips only teacher avoid-list items.",
         "map_lede": "Orange LMR badges follow teacher exam weightage from Live Class 1–2. Click cards for notes; practice MCQs below.",
         "links": [
             ("Live Class 1 transcript", "Live Class 1 Transcript.txt"),

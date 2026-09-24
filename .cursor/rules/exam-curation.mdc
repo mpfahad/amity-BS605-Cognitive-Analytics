@@ -12,10 +12,11 @@ Follow [EXAM-CURATION-GUIDE.md](EXAM-CURATION-GUIDE.md) for all subject/module s
 1. **Source order:** live-class teacher weightage → SLM/PDF → never invent LMR.
 2. **No fake LMR:** never `first N topics` / `i < 3`. LMR only via deep-notes `lmr=True` + `apply_handpicked_lmr.py`.
 3. **Foreshadow ≠ badge:** “next class” topics stay off LMR until that class is curated.
-4. **Deferred modules:** no quiz MCQs; set `quizSkip` and module `weight: deferred`.
-5. **Policy file:** keep `subjects/<code>/_exam_policy.json` in sync with maps, deep notes, and quizzes.
-6. **Publish gate:** `python audit_study_quality.py` must report `CRITICAL=0`.
-7. **Map UI:** Group B must not use coral/peach (`#f7e4d5`); LMR is coral + badge only.
+4. **Later modules without live class:** keep **SLM hand-picked quizzes**; do not blank whole modules unless the teacher said to avoid them.
+5. **Avoid-list only:** skip `quiz_skip_topics` / out-of-syllabus items the teacher named (e.g. ADT, level-order).
+6. **Policy file:** keep `subjects/<code>/_exam_policy.json` in sync with maps, deep notes, and quizzes.
+7. **Publish gate:** `python audit_study_quality.py` must report `CRITICAL=0`.
+8. **Map UI:** Group B must not use coral/peach (`#f7e4d5`); LMR is coral + badge only.
 
 ## Pipeline reminder
 

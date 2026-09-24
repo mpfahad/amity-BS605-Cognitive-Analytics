@@ -59,7 +59,8 @@ CSE601: dict[str, dict] = {
          T("Classic problems", "Knapsack variants, activity selection, Huffman, TSP.")],
         ["0/1 knapsack → DP; fractional knapsack → greedy — classic exam trap.",
          "TSP is typically hard; don’t treat it as a simple greedy always."],
-        ["No Live Class transcript yet for Module 3 — study from SLM; LMR badges deferred until teacher weights them."],
+        ["No Live Class yet — Module 3 quizzes are SLM hand-picks (DP, optimality, knapsack, greedy).",
+         "LMR badges stay on Class 1–2 priorities until a later class weights Module 3."],
     ),
     "m4_root": pack(
         [T("String matching", "Find pattern P in text T — naïve vs Rabin–Karp hashing."),
@@ -67,7 +68,8 @@ CSE601: dict[str, dict] = {
         ["Rabin–Karp uses rolling hash; naïve compares character by character.",
          "Vertex cover / set cover are classic approximation settings.",
          "Teacher (Class 2) flagged LP as a later complex topic — watch that live class."],
-        ["No Live Class transcript yet for Module 4 string/approx focus — no LMR badges until teacher weights them."],
+        ["No Live Class yet — Module 4 quizzes are SLM hand-picks (naïve, Rabin–Karp, vertex cover).",
+         "Avoid inventing weightage; refine when the live class lands."],
     ),
     "m5_root": pack(
         [T("NP-completeness", "Hard decision problems; reductions show hardness."),
@@ -75,8 +77,8 @@ CSE601: dict[str, dict] = {
          T("Green technology (syllabus)", "Efficiency/resource angle linked in this module’s framing.")],
         ["NP-complete vs NP-hard: completeness is in NP + hard for NP.",
          "Reducibility is the proof tool — map known hard problem to yours."],
-        ["Teacher foreshadow (Class 2): NP-hard / NP-complete — LMR badge after that live class.",
-         "Green-technology framing is syllabus text — not live-class weighted."],
+        ["Teacher foreshadow (Class 2): NP-hard / NP-complete — SLM handpick quizzes OK; LMR badge after that live class.",
+         "Green-technology framing is syllabus text — skipped from quizzes (not live-class weighted)."],
     ),
     "1.1.1": pack(
         [T("Stack", "LIFO structure: push/pop at the same end (the top)."),

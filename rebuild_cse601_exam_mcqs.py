@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Rebuild CSE601 MCQs from deep notes using Live Class 1–2 exam weightage.
+"""Rebuild CSE601 MCQs from deep notes + _exam_policy.json.
 
-- Modules 3 & 4: no live-class weight yet → cleared from quizzes
-- LMR topics: denser MCQ sets
-- Low-weight / foreshadow-only topics: thin or skipped
-- Out-of-syllabus cues stay in deep notes, not in quiz stems
+- Modules 1–2: denser MCQs on Live Class exam priorities (LMR)
+- Modules 3–5: quizzes kept — hand-picked high-weight topics from SLM
+- Skip only policy quiz_skip_topics (teacher avoid / downweight)
+- deferred_modules (if any) cleared from quizzes
 
 Run after deep notes + apply_handpicked_lmr.py:
   python rebuild_cse601_exam_mcqs.py
@@ -143,13 +143,13 @@ def update_module_map_weights() -> None:
         mod["weight"] = MODULE_WEIGHTS.get(mid, "standard")
         root = mod.get("root") or {}
         points = list(root.get("points") or [])
-        # Ensure map root states quiz policy clearly
-        deferred = "Quiz deferred until live class weights this module"
-        points = [p for p in points if "Quiz deferred" not in p and "exam focus" not in p.lower()]
+        points = [p for p in points if "Quiz deferred" not in p and "exam focus" not in p.lower() and "SLM hand-pick" not in p]
         if MODULE_WEIGHTS.get(mid) == "deferred":
-            points.append(deferred)
+            points.append("Quiz deferred until live class weights this module")
         elif MODULE_WEIGHTS.get(mid) == "high":
             points.append("Module map LMR badges + quiz weight follow Live Class exam focus")
+        else:
+            points.append("Quizzes are SLM hand-picks until a live class weights this module")
         root["points"] = points
         mod["root"] = root
     path.write_text(json.dumps(maps, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

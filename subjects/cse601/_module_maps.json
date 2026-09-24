@@ -337,7 +337,7 @@
     {
       "id": 3,
       "title": "Module 3",
-      "weight": "deferred",
+      "weight": "standard",
       "root": {
         "id": "m3_root",
         "title": "Module 3",
@@ -348,7 +348,7 @@
         "points": [
           "Built from the SLM outline + PDF definitions where available",
           "Orange LMR badges mark hand-picked exam priorities from study materials",
-          "Quiz deferred until live class weights this module"
+          "Quizzes are SLM hand-picks until a live class weights this module"
         ]
       },
       "levels": [
@@ -484,7 +484,7 @@
     {
       "id": 4,
       "title": "Module 4",
-      "weight": "deferred",
+      "weight": "standard",
       "root": {
         "id": "m4_root",
         "title": "Module 4",
@@ -495,7 +495,7 @@
         "points": [
           "Built from the SLM outline + PDF definitions where available",
           "Orange LMR badges mark hand-picked exam priorities from study materials",
-          "Quiz deferred until live class weights this module"
+          "Quizzes are SLM hand-picks until a live class weights this module"
         ]
       },
       "levels": [
@@ -577,7 +577,8 @@
         "body": "Study map for Module 5 of Data Structures and Algorithm Design (CSE601). Click a topic for Overview and Deep notes, then practise MCQs.",
         "points": [
           "Built from the SLM outline + PDF definitions where available",
-          "Orange LMR badges mark hand-picked exam priorities from study materials"
+          "Orange LMR badges mark hand-picked exam priorities from study materials",
+          "Quizzes are SLM hand-picks until a live class weights this module"
         ]
       },
       "levels": [

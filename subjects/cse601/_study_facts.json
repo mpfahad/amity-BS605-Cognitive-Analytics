@@ -2189,8 +2189,63 @@
               "detail": "3.1.1 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Dynamic programming?",
+              "options": [
+                "0/1, fractional, unbounded — different algorithms.",
+                "Solve overlapping subproblems once; store answers.",
+                "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP.",
+                "Input, output, definiteness, finiteness, effectiveness/feasibility — teacher Class 1 list."
+              ],
+              "answer": 1,
+              "explain": "Dynamic programming: Solve overlapping subproblems once; store answers."
+            },
+            {
+              "q": "Which statement best defines Memoisation vs tabulation?",
+              "options": [
+                "Often T(n)=aT(n/b)+f(n).",
+                "Top-down cache vs bottom-up table.",
+                "If chars equal, diagonal+1; else max of skip either.",
+                "Rolling hash of windows; verify on hash hit."
+              ],
+              "answer": 1,
+              "explain": "Memoisation vs tabulation: Top-down cache vs bottom-up table."
+            },
+            {
+              "q": "Which statement best defines When?",
+              "options": [
+                "Hardest problems in NP (under poly reductions).",
+                "Solve overlapping subproblems once; store answers.",
+                "Optimal substructure + overlapping subproblems.",
+                "Compare f(n) with n^{log_b a} (three main cases)."
+              ],
+              "answer": 2,
+              "explain": "When: Optimal substructure + overlapping subproblems."
+            },
+            {
+              "q": "Which key idea belongs with Dynamic Programming Approach?",
+              "options": [
+                "DP ≠ divide-and-conquer alone (D&C may not overlap).",
+                "Stricter / asymptotic equivalence ideas (if taught).",
+                "Teacher stress: infix→postfix and postfix↔prefix are exam favourites.",
+                "Divide array, sort halves, merge sorted runs."
+              ],
+              "answer": 0,
+              "explain": "DP ≠ divide-and-conquer alone (D&C may not overlap)."
+            },
+            {
+              "q": "Which exam tip fits Dynamic Programming Approach?",
+              "options": [
+                "Repeatedly merge two least frequent nodes.",
+                "Justifies composing sub-results into global optimum.",
+                "Hard decision problems; reductions show hardness.",
+                "Trap: calling every recursion ‘DP’ without storage of overlaps."
+              ],
+              "answer": 3,
+              "explain": "Trap: calling every recursion ‘DP’ without storage of overlaps."
+            }
+          ]
         },
         {
           "id": "3.1.2",
@@ -2217,8 +2272,52 @@
               "detail": "3.1.2 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Principle of optimality?",
+              "options": [
+                "Problem A ≤p B if A transforms to B in poly time.",
+                "Optimal solution contains optimal solutions to subproblems.",
+                "Grow MST from a start vertex by always adding lightest safe edge out.",
+                "Each node points to next only."
+              ],
+              "answer": 1,
+              "explain": "Principle of optimality: Optimal solution contains optimal solutions to subproblems."
+            },
+            {
+              "q": "Which statement best defines Role in DP?",
+              "options": [
+                "Justifies composing sub-results into global optimum.",
+                "Faster matrix multiply than naïve O(n^3) using 7 recursive multiplies.",
+                "Not all recurrences fit; need regularity conditions.",
+                "Hard decision problems; reductions show hardness."
+              ],
+              "answer": 0,
+              "explain": "Role in DP: Justifies composing sub-results into global optimum."
+            },
+            {
+              "q": "Which key idea belongs with Principle of Optimality?",
+              "options": [
+                "Walk forward or backward.",
+                "Build heap, repeatedly extract max/min to place next sorted item.",
+                "If principle fails, DP formulation is invalid.",
+                "Wrap indices to reuse array space."
+              ],
+              "answer": 2,
+              "explain": "If principle fails, DP formulation is invalid."
+            },
+            {
+              "q": "Which exam tip fits Principle of Optimality?",
+              "options": [
+                "Good with strong hash; worst can degrade.",
+                "Trap: optimality principle ≠ ‘greedy choice property’ (that’s greedy).",
+                "Knapsack variants, activity selection, Huffman, TSP.",
+                "Non-negative weights; greedy with priority queue."
+              ],
+              "answer": 1,
+              "explain": "Trap: optimality principle ≠ ‘greedy choice property’ (that’s greedy)."
+            }
+          ]
         },
         {
           "id": "3.1.3",
@@ -2245,8 +2344,41 @@
               "detail": "3.1.3 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Strassen multiplication?",
+              "options": [
+                "Preorder, inorder, postorder — Class 2: expect these in end-term.",
+                "Repeatedly merge two least frequent nodes.",
+                "Faster matrix multiply than naïve O(n^3) using 7 recursive multiplies.",
+                "Top-down cache vs bottom-up table."
+              ],
+              "answer": 2,
+              "explain": "Strassen multiplication: Faster matrix multiply than naïve O(n^3) using 7 recursive multiplies."
+            },
+            {
+              "q": "Which statement best defines Idea?",
+              "options": [
+                "Algebraic recombination reduces multiplications; adds more additions.",
+                "Top node / no children / has children.",
+                "O((n−m+1)m) worst case.",
+                "Fewer operations / less energy as a motivation for better algorithms."
+              ],
+              "answer": 0,
+              "explain": "Idea: Algebraic recombination reduces multiplications; adds more additions."
+            },
+            {
+              "q": "Which key idea belongs with Strassens Matrix Multiplication?",
+              "options": [
+                "Mostly yes (small stack); not stable typically.",
+                "Repeatedly swap adjacent out-of-order pairs.",
+                "Lower bound on growth.",
+                "Asymptotically better; constants/practicality may vary."
+              ],
+              "answer": 3,
+              "explain": "Asymptotically better; constants/practicality may vary."
+            }
+          ]
         },
         {
           "id": "3.1.4",
@@ -2273,8 +2405,41 @@
               "detail": "3.1.4 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Matrix chain multiplication?",
+              "options": [
+                "Build heap, repeatedly extract max/min to place next sorted item.",
+                "Parenthesise matrix product to minimise scalar multiplies.",
+                "Short verifiable witness for yes instances (for NP).",
+                "Easier deletion when you have the node (prev is known)."
+              ],
+              "answer": 1,
+              "explain": "Matrix chain multiplication: Parenthesise matrix product to minimise scalar multiplies."
+            },
+            {
+              "q": "Which statement best defines DP?",
+              "options": [
+                "Explore deep along a path; backtrack; stack/recursion.",
+                "Hierarchical linked structures; BST/AVL/B-tree variants balance search cost.",
+                "Top node / no children / has children.",
+                "Interval DP over chain length."
+              ],
+              "answer": 3,
+              "explain": "DP: Interval DP over chain length."
+            },
+            {
+              "q": "Which key idea belongs with Matrix Chain Multiplication?",
+              "options": [
+                "O(n^2) worst; O(n) best on nearly sorted data.",
+                "Repeatedly merge two least frequent nodes.",
+                "Build heap, repeatedly extract max/min to place next sorted item.",
+                "Order of multiplication changes cost, not the mathematical product."
+              ],
+              "answer": 3,
+              "explain": "Order of multiplication changes cost, not the mathematical product."
+            }
+          ]
         },
         {
           "id": "3.1.5",
@@ -2301,8 +2466,41 @@
               "detail": "3.1.5 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines LCS?",
+              "options": [
+                "Longest common subsequence of two strings (not necessarily contiguous).",
+                "Optimal substructure + overlapping subproblems; store results.",
+                "Yes — equal keys keep their relative order after sorting.",
+                "How running time grows with input size n."
+              ],
+              "answer": 0,
+              "explain": "LCS: Longest common subsequence of two strings (not necessarily contiguous)."
+            },
+            {
+              "q": "Which statement best defines DP table?",
+              "options": [
+                "Top-down cache vs bottom-up table.",
+                "If chars equal, diagonal+1; else max of skip either.",
+                "Different cases; exams often want worst-case Big-O.",
+                "Repeatedly merge two least frequent nodes."
+              ],
+              "answer": 1,
+              "explain": "DP table: If chars equal, diagonal+1; else max of skip either."
+            },
+            {
+              "q": "Which key idea belongs with Longest Common subsequence?",
+              "options": [
+                "Subsequence ≠ substring (substring is contiguous).",
+                "Yes — equal keys keep their relative order after sorting.",
+                "Often priority queue for cut edges.",
+                "LL, RR, LR, RL fix imbalance after insert/delete."
+              ],
+              "answer": 0,
+              "explain": "Subsequence ≠ substring (substring is contiguous)."
+            }
+          ]
         },
         {
           "id": "3.1.6",
@@ -2334,8 +2532,63 @@
               "detail": "3.1.6 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines 0/1 knapsack?",
+              "options": [
+                "Local optimum can lead to global (when algorithm is correct).",
+                "Proof style that swaps to show optimality.",
+                "Each item take or not; maximise value under weight limit.",
+                "File systems, expression trees, search structures, heaps."
+              ],
+              "answer": 2,
+              "explain": "0/1 knapsack: Each item take or not; maximise value under weight limit."
+            },
+            {
+              "q": "Which statement best defines DP?",
+              "options": [
+                "Vertices + edges; DFS/BFS and shortest paths are core traversals.",
+                "Θ(n log n) in all cases — predictable guaranteed bound.",
+                "dp[i][w] style; pseudo-polynomial in capacity.",
+                "Compare algorithms by time, space, and stability."
+              ],
+              "answer": 2,
+              "explain": "DP: dp[i][w] style; pseudo-polynomial in capacity."
+            },
+            {
+              "q": "Which statement best defines Not fractional?",
+              "options": [
+                "Try P at every shift of T; compare chars.",
+                "Preorder, inorder, postorder — Class 2: expect these in end-term.",
+                "Each node has at most two children (left/right).",
+                "Cannot break items."
+              ],
+              "answer": 3,
+              "explain": "Not fractional: Cannot break items."
+            },
+            {
+              "q": "Which key idea belongs with 0/1 Knapsack Problem?",
+              "options": [
+                "Sort profits descending; assign to feasible time slot.",
+                "Satisfiability of Boolean formulas — central NP-complete problem.",
+                "T(n)=2T(n−1)+1, T(1)=1 → T(n)=2^n−1 moves.",
+                "Contrast fractional knapsack (greedy by value/weight)."
+              ],
+              "answer": 3,
+              "explain": "Contrast fractional knapsack (greedy by value/weight)."
+            },
+            {
+              "q": "Which exam tip fits 0/1 Knapsack Problem?",
+              "options": [
+                "Lower bound on growth.",
+                "Optimal substructure + overlapping subproblems.",
+                "Trap: using greedy value/weight for 0/1 — incorrect in general.",
+                "Remove the top element."
+              ],
+              "answer": 2,
+              "explain": "Trap: using greedy value/weight for 0/1 — incorrect in general."
+            }
+          ]
         },
         {
           "id": "3.2.1",
@@ -2367,8 +2620,63 @@
               "detail": "3.2.1 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Greedy approach?",
+              "options": [
+                "Reweighting + Dijkstra from each source.",
+                "Stricter / asymptotic equivalence ideas (if taught).",
+                "Build solution by locally best choice at each step.",
+                "Set of vertices incident to every edge."
+              ],
+              "answer": 2,
+              "explain": "Greedy approach: Build solution by locally best choice at each step."
+            },
+            {
+              "q": "Which statement best defines Greedy choice property?",
+              "options": [
+                "Repeatedly merge two least frequent nodes.",
+                "Local optimum can lead to global (when algorithm is correct).",
+                "O(n log n); worst O(n^2) on bad pivots.",
+                "Repeatedly swap adjacent out-of-order pairs."
+              ],
+              "answer": 1,
+              "explain": "Greedy choice property: Local optimum can lead to global (when algorithm is correct)."
+            },
+            {
+              "q": "Which statement best defines Exchange argument?",
+              "options": [
+                "Proof style that swaps to show optimality.",
+                "Show problem in NP + polynomial reduction from known NP-complete problem.",
+                "Build heap, repeatedly extract max/min to place next sorted item.",
+                "Classic dynamic-programming optimisation on key ranges."
+              ],
+              "answer": 0,
+              "explain": "Exchange argument: Proof style that swaps to show optimality."
+            },
+            {
+              "q": "Which key idea belongs with Introduction of Greedy Approach?",
+              "options": [
+                "Yields keys in sorted order.",
+                "Greedy is fast but not always optimal — need a proof or known pattern.",
+                "Usually earliest finishing time first.",
+                "Θ(n^2) comparisons roughly always."
+              ],
+              "answer": 1,
+              "explain": "Greedy is fast but not always optimal — need a proof or known pattern."
+            },
+            {
+              "q": "Which exam tip fits Introduction of Greedy Approach?",
+              "options": [
+                "Operators follow their operands (e.g. 3 4 +).",
+                "Teacher: undirected missing edge → ∞ (or no edge mark); directed missing → 0 as taught.",
+                "Insert rear / remove front.",
+                "Trap: ‘greedy always works’ — false."
+              ],
+              "answer": 3,
+              "explain": "Trap: ‘greedy always works’ — false."
+            }
+          ]
         },
         {
           "id": "3.2.2",
@@ -2395,8 +2703,41 @@
               "detail": "3.2.2 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Activity selection?",
+              "options": [
+                "B is at least as hard as A (for hardness proofs).",
+                "Select max non-overlapping activities.",
+                "Optimal substructure + overlapping subproblems; store results.",
+                "Repeatedly swap adjacent out-of-order pairs."
+              ],
+              "answer": 1,
+              "explain": "Activity selection: Select max non-overlapping activities."
+            },
+            {
+              "q": "Which statement best defines Greedy rule?",
+              "options": [
+                "O(n log n) overall; build-heap is O(n), then n extracts.",
+                "Teacher exam expect: properties / formulas for binary trees of height H.",
+                "Usually earliest finishing time first.",
+                "Faster matrix multiply than naïve O(n^3) using 7 recursive multiplies."
+              ],
+              "answer": 2,
+              "explain": "Greedy rule: Usually earliest finishing time first."
+            },
+            {
+              "q": "Which key idea belongs with Activity Selection Problem?",
+              "options": [
+                "Stack, queue, linked lists — order and access rules matter.",
+                "Problem A ≤p B if A transforms to B in poly time.",
+                "Yes (array heap); not typically stable.",
+                "Sort by finish time, then pick compatible next."
+              ],
+              "answer": 3,
+              "explain": "Sort by finish time, then pick compatible next."
+            }
+          ]
         },
         {
           "id": "3.2.3",
@@ -2428,8 +2769,41 @@
               "detail": "3.2.3 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Huffman codes?",
+              "options": [
+                "Optimal solution contains optimal solutions to subproblems.",
+                "Θ(n^2) comparisons roughly always.",
+                "Find pattern P in text T — naïve vs Rabin–Karp hashing.",
+                "Optimal prefix codes using frequency-greedy tree."
+              ],
+              "answer": 3,
+              "explain": "Huffman codes: Optimal prefix codes using frequency-greedy tree."
+            },
+            {
+              "q": "Which statement best defines Prefix-free?",
+              "options": [
+                "BST where |height(left)−height(right)| ≤ 1 at every node.",
+                "Cover universe with minimum number of subsets.",
+                "No codeword is prefix of another — unique decode.",
+                "Algorithms that use randomness for speed/simplicity (expected performance)."
+              ],
+              "answer": 2,
+              "explain": "Prefix-free: No codeword is prefix of another — unique decode."
+            },
+            {
+              "q": "Which statement best defines Build?",
+              "options": [
+                "Can be implemented stable.",
+                "Repeatedly merge two least frequent nodes.",
+                "Preorder, inorder, postorder — Class 2: expect these in end-term.",
+                "dp[i][w] style; pseudo-polynomial in capacity."
+              ],
+              "answer": 1,
+              "explain": "Build: Repeatedly merge two least frequent nodes."
+            }
+          ]
         },
         {
           "id": "3.2.4",
@@ -2456,8 +2830,52 @@
               "detail": "3.2.4 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Fractional knapsack?",
+              "options": [
+                "Upper bound on growth rate (worst-case flavour in teaching).",
+                "May take fraction of an item.",
+                "Often sort by profit; place in latest free slot before deadline.",
+                "Compare algorithms by time, space, and stability."
+              ],
+              "answer": 1,
+              "explain": "Fractional knapsack: May take fraction of an item."
+            },
+            {
+              "q": "Which statement best defines Greedy?",
+              "options": [
+                "O(n log n) overall; build-heap is O(n), then n extracts.",
+                "Teacher: height of a tree is a recurring exam question — practise on a drawn tree.",
+                "Sort by value/weight ratio; take until capacity fills.",
+                "Cycle detect, topological sort, components, path finding."
+              ],
+              "answer": 2,
+              "explain": "Greedy: Sort by value/weight ratio; take until capacity fills."
+            },
+            {
+              "q": "Which key idea belongs with Fractional Knapsack Problem?",
+              "options": [
+                "Optimal for fractional case; not for 0/1.",
+                "Extra memory growth with n.",
+                "Set of vertices incident to every edge.",
+                "Visit each vertex once and return — classic NP-complete flavour."
+              ],
+              "answer": 0,
+              "explain": "Optimal for fractional case; not for 0/1."
+            },
+            {
+              "q": "Which exam tip fits Fractional Knapsack Problem?",
+              "options": [
+                "Trap: applying fractional greedy to 0/1 knapsack.",
+                "Asymptotics, recurrence, Master theorem — how cost grows with n.",
+                "Reweighting + Dijkstra from each source.",
+                "Usually earliest finishing time first."
+              ],
+              "answer": 0,
+              "explain": "Trap: applying fractional greedy to 0/1 knapsack."
+            }
+          ]
         },
         {
           "id": "3.3.1",
@@ -2489,8 +2907,41 @@
               "detail": "3.3.1 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines TSP?",
+              "options": [
+                "Spanning tree of minimum total edge weight.",
+                "Knapsack variants, activity selection, Huffman, TSP.",
+                "Height O(log n); operations O(log n).",
+                "Visit each city once and return; minimise tour length."
+              ],
+              "answer": 3,
+              "explain": "TSP: Visit each city once and return; minimise tour length."
+            },
+            {
+              "q": "Which statement best defines Hardness?",
+              "options": [
+                "Variants about occupancy of levels (syllabus defs).",
+                "Connected acyclic graph; hierarchical parent–child.",
+                "Classic NP-hard optimisation problem.",
+                "Sort profits descending; assign to feasible time slot."
+              ],
+              "answer": 2,
+              "explain": "Hardness: Classic NP-hard optimisation problem."
+            },
+            {
+              "q": "Which statement best defines Approaches?",
+              "options": [
+                "Problem A ≤p B if A transforms to B in poly time.",
+                "Satisfiability of Boolean formulas — central NP-complete problem.",
+                "Insert an element on top.",
+                "Brute force, DP (Held–Karp), heuristics/approx."
+              ],
+              "answer": 3,
+              "explain": "Approaches: Brute force, DP (Held–Karp), heuristics/approx."
+            }
+          ]
         },
         {
           "id": "3.3.2",
@@ -2517,8 +2968,41 @@
               "detail": "3.3.2 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Knapsack problem (general)?",
+              "options": [
+                "Repeatedly merge two least frequent nodes.",
+                "Select items under capacity to maximise value.",
+                "Yes (array heap); not typically stable.",
+                "O((n−m+1)m) worst case."
+              ],
+              "answer": 1,
+              "explain": "Knapsack problem (general): Select items under capacity to maximise value."
+            },
+            {
+              "q": "Which statement best defines Variants?",
+              "options": [
+                "Find pattern P in text T — naïve vs Rabin–Karp hashing.",
+                "0/1, fractional, unbounded — different algorithms.",
+                "Wrap indices to reuse array space.",
+                "Efficiency/resource-conscious computing themes tied to algorithmic cost."
+              ],
+              "answer": 1,
+              "explain": "Variants: 0/1, fractional, unbounded — different algorithms."
+            },
+            {
+              "q": "Which key idea belongs with Knapsack Problem?",
+              "options": [
+                "Name the variant before choosing DP vs greedy.",
+                "Select max non-overlapping activities.",
+                "Divide array, sort halves, merge sorted runs.",
+                "Entry pointer to the first node."
+              ],
+              "answer": 0,
+              "explain": "Name the variant before choosing DP vs greedy."
+            }
+          ]
         },
         {
           "id": "3.3.3",
@@ -2545,8 +3029,41 @@
               "detail": "3.3.3 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Job sequencing?",
+              "options": [
+                "Schedule jobs to maximise profit under constraints (often deadlines/slots).",
+                "Yields keys in sorted order.",
+                "Good with strong hash; worst can degrade.",
+                "Efficiency/resource-conscious computing themes tied to algorithmic cost."
+              ],
+              "answer": 0,
+              "explain": "Job sequencing: Schedule jobs to maximise profit under constraints (often deadlines/slots)."
+            },
+            {
+              "q": "Which statement best defines Greedy pattern?",
+              "options": [
+                "Many keys per node ⇒ shallow tree ⇒ fewer disk reads.",
+                "Nodes with data + pointer(s); dynamic size.",
+                "Each node has next and prev pointers.",
+                "Often sort by profit; place in latest free slot before deadline."
+              ],
+              "answer": 3,
+              "explain": "Greedy pattern: Often sort by profit; place in latest free slot before deadline."
+            },
+            {
+              "q": "Which key idea belongs with Job Sequencing?",
+              "options": [
+                "T(n) defined in terms of T(smaller).",
+                "Non-negative weights; greedy with priority queue.",
+                "Related to deadline scheduling themes.",
+                "Select items under capacity to maximise value."
+              ],
+              "answer": 2,
+              "explain": "Related to deadline scheduling themes."
+            }
+          ]
         },
         {
           "id": "3.3.4",
@@ -2573,8 +3090,41 @@
               "detail": "3.3.4 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Job sequencing with deadline?",
+              "options": [
+                "Unit-time jobs with deadlines and profits; maximise profit.",
+                "Visit each vertex once and return — classic NP-complete flavour.",
+                "Optimal prefix codes using frequency-greedy tree.",
+                "O((n−m+1)m) worst case."
+              ],
+              "answer": 0,
+              "explain": "Job sequencing with deadline: Unit-time jobs with deadlines and profits; maximise profit."
+            },
+            {
+              "q": "Which statement best defines Method?",
+              "options": [
+                "Build solution by locally best choice at each step.",
+                "Cannot break items.",
+                "Grow MST from a start vertex by always adding lightest safe edge out.",
+                "Sort profits descending; assign to feasible time slot."
+              ],
+              "answer": 3,
+              "explain": "Method: Sort profits descending; assign to feasible time slot."
+            },
+            {
+              "q": "Which key idea belongs with Job Sequencing with Deadline?",
+              "options": [
+                "Feasibility: finish by deadline.",
+                "T(n) defined in terms of T(smaller).",
+                "Interval DP over chain length.",
+                "Greedy placement into latest possible slot is common."
+              ],
+              "answer": 0,
+              "explain": "Feasibility: finish by deadline."
+            }
+          ]
         }
       ]
     },
@@ -2607,8 +3157,52 @@
               "detail": "4.1.1 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Naïve string matching?",
+              "options": [
+                "Entry pointer to the first node.",
+                "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP.",
+                "Try P at every shift of T; compare chars.",
+                "All leaves at same level; node occupancy bounds (order)."
+              ],
+              "answer": 2,
+              "explain": "Naïve string matching: Try P at every shift of T; compare chars."
+            },
+            {
+              "q": "Which statement best defines Time?",
+              "options": [
+                "Efficiency/resource angle linked in this module’s framing.",
+                "O((n−m+1)m) worst case.",
+                "Unit-time jobs with deadlines and profits; maximise profit.",
+                "Teacher stress: infix→postfix and postfix↔prefix are exam favourites."
+              ],
+              "answer": 1,
+              "explain": "Time: O((n−m+1)m) worst case."
+            },
+            {
+              "q": "Which key idea belongs with Naïve String Matching Algorithm?",
+              "options": [
+                "Schedule jobs to maximise profit under constraints (often deadlines/slots).",
+                "Justifies composing sub-results into global optimum.",
+                "Often priority queue for cut edges.",
+                "Simple baseline for Rabin–Karp / KMP comparisons."
+              ],
+              "answer": 3,
+              "explain": "Simple baseline for Rabin–Karp / KMP comparisons."
+            },
+            {
+              "q": "Which exam tip fits Naïve String Matching Algorithm?",
+              "options": [
+                "Many keys per node ⇒ shallow tree ⇒ fewer disk reads.",
+                "Trap: naïve is not hashing-based.",
+                "Optimal substructure + overlapping subproblems.",
+                "Follow comparisons down a path."
+              ],
+              "answer": 1,
+              "explain": "Trap: naïve is not hashing-based."
+            }
+          ]
         },
         {
           "id": "4.1.3",
@@ -2640,8 +3234,63 @@
               "detail": "4.1.3 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Rabin–Karp?",
+              "options": [
+                "Upper bound on growth rate (worst-case flavour in teaching).",
+                "Merge sort, binary search, some matrix methods.",
+                "Subgraph that is a tree connecting all vertices.",
+                "Rolling hash of windows; verify on hash hit."
+              ],
+              "answer": 3,
+              "explain": "Rabin–Karp: Rolling hash of windows; verify on hash hit."
+            },
+            {
+              "q": "Which statement best defines Spurious hit?",
+              "options": [
+                "LL, RR, LR, RL fix imbalance after insert/delete.",
+                "Tracks components to detect cycles efficiently.",
+                "Hash match but strings differ — must verify.",
+                "Extra memory growth with n."
+              ],
+              "answer": 2,
+              "explain": "Spurious hit: Hash match but strings differ — must verify."
+            },
+            {
+              "q": "Which statement best defines Average?",
+              "options": [
+                "Insert rear / remove front.",
+                "Reweighting + Dijkstra from each source.",
+                "Solve overlapping subproblems once; store answers.",
+                "Good with strong hash; worst can degrade."
+              ],
+              "answer": 3,
+              "explain": "Average: Good with strong hash; worst can degrade."
+            },
+            {
+              "q": "Which key idea belongs with String Matching Algorithm: Rabin Karp?",
+              "options": [
+                "Upper bound on growth rate (worst-case flavour in teaching).",
+                "Explore deep along a path; backtrack; stack/recursion.",
+                "Insert an element on top.",
+                "Rolling hash updates in O(1) per shift."
+              ],
+              "answer": 3,
+              "explain": "Rolling hash updates in O(1) per shift."
+            },
+            {
+              "q": "Which exam tip fits String Matching Algorithm: Rabin Karp?",
+              "options": [
+                "Cycle detect, topological sort, components, path finding.",
+                "Trap: hash equality ≠ string equality.",
+                "Unit-time jobs with deadlines and profits; maximise profit.",
+                "Systematic visit: DFS/BFS."
+              ],
+              "answer": 1,
+              "explain": "Trap: hash equality ≠ string equality."
+            }
+          ]
         },
         {
           "id": "4.2.1",
@@ -2668,8 +3317,52 @@
               "detail": "4.2.1 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Vertex cover?",
+              "options": [
+                "Set of vertices incident to every edge.",
+                "If chars equal, diagonal+1; else max of skip either.",
+                "Self-balancing BST with coloured nodes and rotation/recolour rules.",
+                "Asymptotics, recurrence, Master theorem — how cost grows with n."
+              ],
+              "answer": 0,
+              "explain": "Vertex cover: Set of vertices incident to every edge."
+            },
+            {
+              "q": "Which statement best defines Approx algorithm?",
+              "options": [
+                "Each node points to next only.",
+                "Only one disk at a time; never place larger on smaller.",
+                "Classic 2-approx: pick both ends of an uncovered edge, repeat.",
+                "If chars equal, diagonal+1; else max of skip either."
+              ],
+              "answer": 2,
+              "explain": "Approx algorithm: Classic 2-approx: pick both ends of an uncovered edge, repeat."
+            },
+            {
+              "q": "Which key idea belongs with Vertex-Cover Algorithm?",
+              "options": [
+                "Optimal prefix codes using frequency-greedy tree.",
+                "Decision version is NP-complete; approx is taught for algorithms design.",
+                "Hierarchical linked structures; BST/AVL/B-tree variants balance search cost.",
+                "Yes (typical implementation)."
+              ],
+              "answer": 1,
+              "explain": "Decision version is NP-complete; approx is taught for algorithms design."
+            },
+            {
+              "q": "Which exam tip fits Vertex-Cover Algorithm?",
+              "options": [
+                "Efficiency/resource angle linked in this module’s framing.",
+                "Trap: vertex cover ≠ vertex colouring.",
+                "Show problem in NP + polynomial reduction from known NP-complete problem.",
+                "Vertex cover, set cover, subset-sum — often near-optimal algorithms."
+              ],
+              "answer": 1,
+              "explain": "Trap: vertex cover ≠ vertex colouring."
+            }
+          ]
         },
         {
           "id": "4.2.2",
@@ -2696,8 +3389,41 @@
               "detail": "4.2.2 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Set cover?",
+              "options": [
+                "May take fraction of an item.",
+                "Algorithms that use randomness for speed/simplicity (expected performance).",
+                "Sort by value/weight ratio; take until capacity fills.",
+                "Cover universe with minimum number of subsets."
+              ],
+              "answer": 3,
+              "explain": "Set cover: Cover universe with minimum number of subsets."
+            },
+            {
+              "q": "Which statement best defines Greedy approx?",
+              "options": [
+                "Repeatedly pick set covering most remaining elements.",
+                "Each item take or not; maximise value under weight limit.",
+                "Local optimum can lead to global (when algorithm is correct).",
+                "Definition + one simple example (e.g. tea/recipe) + the five characteristics."
+              ],
+              "answer": 0,
+              "explain": "Greedy approx: Repeatedly pick set covering most remaining elements."
+            },
+            {
+              "q": "Which key idea belongs with Set Covering Problem?",
+              "options": [
+                "Often T(n)=aT(n/b)+f(n).",
+                "Each node has at most two children (left/right).",
+                "NP-hard; greedy gives logarithmic approximation classically.",
+                "Deciding existence is NP-complete (classic)."
+              ],
+              "answer": 2,
+              "explain": "NP-hard; greedy gives logarithmic approximation classically."
+            }
+          ]
         },
         {
           "id": "4.2.3",
@@ -2724,8 +3450,41 @@
               "detail": "4.2.3 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Randomisation?",
+              "options": [
+                "Algorithms that use randomness for speed/simplicity (expected performance).",
+                "How running time grows with input size n.",
+                "Multiway balanced search tree for disk/block storage.",
+                "Self-balancing BST with coloured nodes and rotation/recolour rules."
+              ],
+              "answer": 0,
+              "explain": "Randomisation: Algorithms that use randomness for speed/simplicity (expected performance)."
+            },
+            {
+              "q": "Which statement best defines Linear programming?",
+              "options": [
+                "No codeword is prefix of another — unique decode.",
+                "Optimal solution contains optimal solutions to subproblems.",
+                "Merge sort, binary search, some matrix methods.",
+                "Optimise linear objective under linear constraints — algorithmic tool."
+              ],
+              "answer": 3,
+              "explain": "Linear programming: Optimise linear objective under linear constraints — algorithmic tool."
+            },
+            {
+              "q": "Which key idea belongs with Randomisation and Linear Programming?",
+              "options": [
+                "Syllabus pairs ideas for advanced design techniques.",
+                "Θ(n^2) comparisons roughly always.",
+                "Classic 2-approx: pick both ends of an uncovered edge, repeat.",
+                "0/1, fractional, unbounded — different algorithms."
+              ],
+              "answer": 0,
+              "explain": "Syllabus pairs ideas for advanced design techniques."
+            }
+          ]
         },
         {
           "id": "4.2.4",
@@ -2752,8 +3511,41 @@
               "detail": "4.2.4 · key idea"
             }
           ],
-          "mcqs": [],
-          "quizSkip": true
+          "mcqs": [
+            {
+              "q": "Which statement best defines Subset-sum?",
+              "options": [
+                "Fewer operations / less energy as a motivation for better algorithms.",
+                "Build sorted prefix; insert next element into place.",
+                "Follow comparisons down a path.",
+                "Decision problem: decide whether any subset of numbers adds exactly to target t."
+              ],
+              "answer": 3,
+              "explain": "Subset-sum: Decision problem: decide whether any subset of numbers adds exactly to target t."
+            },
+            {
+              "q": "Which statement best defines Hardness / DP?",
+              "options": [
+                "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP.",
+                "Solve overlapping subproblems once; store answers.",
+                "Needs Θ(n) auxiliary memory for the classic merge.",
+                "Easier deletion when you have the node (prev is known)."
+              ],
+              "answer": 0,
+              "explain": "Hardness / DP: NP-complete as a decision problem; solvable in pseudo-polynomial time via DP."
+            },
+            {
+              "q": "Which key idea belongs with The Subset-sum Problem?",
+              "options": [
+                "Set of vertices incident to every edge.",
+                "May take fraction of an item.",
+                "Compare algorithms by time, space, and stability.",
+                "Related to the knapsack decision version."
+              ],
+              "answer": 3,
+              "explain": "Related to the knapsack decision version."
+            }
+          ]
         }
       ]
     },
@@ -2847,6 +3639,17 @@
               ],
               "answer": 1,
               "explain": "Vs Euler tour: Euler uses every edge; Hamiltonian every vertex."
+            },
+            {
+              "q": "Which exam tip fits Hamiltonian Cycles?",
+              "options": [
+                "Yields keys in sorted order.",
+                "Teacher exam expect: properties / formulas for binary trees of height H.",
+                "All leaves at same level; node occupancy bounds (order).",
+                "Useful NP-complete example from SLM; teacher named NP-hard/complete generally (Class 2)."
+              ],
+              "answer": 3,
+              "explain": "Useful NP-complete example from SLM; teacher named NP-hard/complete generally (Class 2)."
             }
           ]
         },
@@ -2908,6 +3711,17 @@
               ],
               "answer": 3,
               "explain": "Reduction direction: known hard ≤p your problem."
+            },
+            {
+              "q": "Which exam tip fits NP-completeness Proofs?",
+              "options": [
+                "Each item take or not; maximise value under weight limit.",
+                "Trap: reducing your problem to SAT shows yours is ‘no harder’ — wrong direction for hardness.",
+                "Each node has next and prev pointers.",
+                "Finite, unambiguous sequence of steps producing output from input."
+              ],
+              "answer": 1,
+              "explain": "Trap: reducing your problem to SAT shows yours is ‘no harder’ — wrong direction for hardness."
             }
           ]
         },
@@ -3030,6 +3844,17 @@
               ],
               "answer": 3,
               "explain": "NP-hard includes problems outside NP (e.g. some optimisation/undecidable-adjacent teaching examples)."
+            },
+            {
+              "q": "Which exam tip fits NP-Hard and SAT Problems?",
+              "options": [
+                "Easier deletion when you have the node (prev is known).",
+                "Trap: NP-hard ≠ NP-complete unless also in NP.",
+                "Nodes with data + pointer(s); dynamic size.",
+                "Top node / no children / has children."
+              ],
+              "answer": 1,
+              "explain": "Trap: NP-hard ≠ NP-complete unless also in NP."
             }
           ]
         },

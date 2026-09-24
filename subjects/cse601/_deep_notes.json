@@ -68,7 +68,8 @@
       "TSP is typically hard; don’t treat it as a simple greedy always."
     ],
     "notes": [
-      "No Live Class transcript yet for Module 3 — study from SLM; LMR badges deferred until teacher weights them."
+      "No Live Class yet — Module 3 quizzes are SLM hand-picks (DP, optimality, knapsack, greedy).",
+      "LMR badges stay on Class 1–2 priorities until a later class weights Module 3."
     ],
     "lmr": false
   },
@@ -89,7 +90,8 @@
       "Teacher (Class 2) flagged LP as a later complex topic — watch that live class."
     ],
     "notes": [
-      "No Live Class transcript yet for Module 4 string/approx focus — no LMR badges until teacher weights them."
+      "No Live Class yet — Module 4 quizzes are SLM hand-picks (naïve, Rabin–Karp, vertex cover).",
+      "Avoid inventing weightage; refine when the live class lands."
     ],
     "lmr": false
   },
@@ -113,8 +115,8 @@
       "Reducibility is the proof tool — map known hard problem to yours."
     ],
     "notes": [
-      "Teacher foreshadow (Class 2): NP-hard / NP-complete — LMR badge after that live class.",
-      "Green-technology framing is syllabus text — not live-class weighted."
+      "Teacher foreshadow (Class 2): NP-hard / NP-complete — SLM handpick quizzes OK; LMR badge after that live class.",
+      "Green-technology framing is syllabus text — skipped from quizzes (not live-class weighted)."
     ],
     "lmr": false
   },

@@ -19,8 +19,8 @@ Criteria for hand-picking portal content (maps, LMR, flashcards, quizzes) so eve
 | --- | --- |
 | LMR from **Live Class teacher weightage**, then SLM | Portal is exam prep, not TOC decoration |
 | LMR only for topics **taught as exam-critical** in class | “Next class” foreshadow ≠ LMR badge yet |
-| Deferred Modules 3–4 from quizzes (`quizSkip`, weight `deferred`) | No live-class weight yet |
-| Quiz density: high on LMR, thin on low-weight, skip OOS / deferred | Match teacher advise |
+| Modules 3–5 quizzes **kept** as SLM hand-picks | Teacher did not say avoid those modules — only specific OOS items |
+| Quiz density: high on LMR + handpicked later topics; skip teacher avoid-list | Match teacher advise without blanking later modules |
 | Out-of-syllabus called out (ADT, level-order) | Teacher said skip |
 | Map Group B = violet; LMR = coral + badge | Peach Group B looked like fake LMR |
 | Per-subject `_exam_policy.json` | Audit checklist is machine-checkable |
@@ -55,9 +55,10 @@ If only SLM exists: curate content from SLM, but **do not** stamp LMR badges fro
 - [ ] Map legend: Group B colour ≠ LMR coral
 
 ### D. Quizzes / MCQs
-- [ ] Deferred modules have **zero** MCQs and `quizSkip: true` on those topics
-- [ ] Policy `quiz_skip_topics` have `quizSkip: true` and empty `mcqs`
-- [ ] LMR / high-weight topics have denser MCQs than standard topics
+- [ ] Modules with live-class weight: denser MCQs on LMR / high_quiz_topics
+- [ ] Modules **without** live class yet: keep quizzes on **SLM hand-pick** high topics (do not wipe whole modules unless teacher said avoid them)
+- [ ] Only `deferred_modules` (rare) or `quiz_skip_topics` have zero MCQs + `quizSkip: true`
+- [ ] Teacher avoid-list / out-of-syllabus items are in `quiz_skip_topics` or notes — never LMR
 - [ ] No template stems (“best matches”, “core idea in…”)
 - [ ] Quiz filter chips hide modules with no questions
 
