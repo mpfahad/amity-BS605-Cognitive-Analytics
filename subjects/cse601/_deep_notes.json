@@ -43,7 +43,8 @@
       "Out of syllabus (teacher): binary-tree ADT; level-order traversal."
     ],
     "notes": [
-      "LMR (Live Class 2): tree height + binary-tree properties + pre/in/postorder; graph representations; spanning trees & shortest paths (teacher: exam-important)."
+      "LMR (Live Class 2): tree height + binary-tree properties + pre/in/postorder; graph representations.",
+      "Next-class (not LMR yet): spanning trees, shortest paths."
     ],
     "lmr": false
   },
@@ -112,7 +113,7 @@
       "Reducibility is the proof tool — map known hard problem to yours."
     ],
     "notes": [
-      "LMR (teacher foreshadow, Class 2): NP-hard / NP-complete proofs and vocabulary.",
+      "Teacher foreshadow (Class 2): NP-hard / NP-complete — LMR badge after that live class.",
       "Green-technology framing is syllabus text — not live-class weighted."
     ],
     "lmr": false
@@ -771,13 +772,13 @@
     "concepts": [
       "Exists for connected undirected graphs.",
       "Prim/Kruskal compute MSTs.",
-      "Teacher (Class 2): spanning-tree concept flagged as exam-important for the next session."
+      "Teacher (Class 2): spanning-tree concept flagged for the next session — not LMR-badged until that class."
     ],
     "notes": [
-      "LMR (Class 2 foreshadow): spanning tree / MST idea before diving only into code.",
-      "Trap: spanning tree has V−1 edges — no cycles."
+      "Trap: spanning tree has V−1 edges — no cycles.",
+      "Watch the next live class for exam weight on MST/Prim/Kruskal."
     ],
-    "lmr": true
+    "lmr": false
   },
   "2.1.9": {
     "terms": [
@@ -907,13 +908,13 @@
     "concepts": [
       "Dijkstra fails with negative edges.",
       "Relaxation is the common primitive.",
-      "Teacher (Class 2): shortest path flagged with spanning trees as exam-important upcoming material."
+      "Teacher (Class 2): shortest path flagged for the next session — not LMR-badged until that class."
     ],
     "notes": [
-      "LMR (Class 2 foreshadow): single-source shortest path idea + Dijkstra vs negatives trap.",
-      "Trap: using Dijkstra with negatives — wrong."
+      "Trap: using Dijkstra with negatives — wrong.",
+      "Study the idea now; badge after the live class weights it."
     ],
-    "lmr": true
+    "lmr": false
   },
   "2.2.5": {
     "terms": [
@@ -1425,13 +1426,13 @@
     "concepts": [
       "Reduction direction: known hard ≤p your problem.",
       "Polynomial-time verification ≠ polynomial-time solving.",
-      "Teacher (Class 2): NP-hard / NP-complete will take dedicated time — exam-relevant."
+      "Teacher (Class 2): NP-hard / NP-complete coming later — no LMR badge until that class."
     ],
     "notes": [
-      "LMR (Class 2 foreshadow): two parts of a completeness proof.",
-      "Trap: reducing your problem to SAT shows yours is ‘no harder’ — wrong direction for hardness."
+      "Trap: reducing your problem to SAT shows yours is ‘no harder’ — wrong direction for hardness.",
+      "Know the two-part proof shape from SLM; live-class weight comes later."
     ],
-    "lmr": true
+    "lmr": false
   },
   "5.2.2": {
     "terms": [
@@ -1467,13 +1468,12 @@
     "concepts": [
       "NP-hard includes problems outside NP (e.g. some optimisation/undecidable-adjacent teaching examples).",
       "SAT is the usual reduction source.",
-      "Teacher (Class 2) explicitly named NP-hard and NP-complete as upcoming heavy topics."
+      "Teacher (Class 2) named NP-hard / NP-complete as upcoming — badge after that live class."
     ],
     "notes": [
-      "LMR (Class 2 foreshadow): NP-hard ≠ NP-complete unless also in NP.",
       "Trap: NP-hard ≠ NP-complete unless also in NP."
     ],
-    "lmr": true
+    "lmr": false
   },
   "5.2.4": {
     "terms": [

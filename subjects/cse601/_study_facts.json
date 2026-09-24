@@ -1686,17 +1686,6 @@
               ],
               "answer": 1,
               "explain": "Exists for connected undirected graphs."
-            },
-            {
-              "q": "Which exam tip fits Spanning Trees?",
-              "options": [
-                "Many keys per node ⇒ shallow tree ⇒ fewer disk reads.",
-                "Explore deep along a path; backtrack; stack/recursion.",
-                "Multiway balanced search tree for disk/block storage.",
-                "LMR (Class 2 foreshadow): spanning tree / MST idea before diving only into code."
-              ],
-              "answer": 3,
-              "explain": "LMR (Class 2 foreshadow): spanning tree / MST idea before diving only into code."
             }
           ]
         },
@@ -2095,17 +2084,6 @@
               ],
               "answer": 3,
               "explain": "Bellman–Ford: Handles negative edges; detects negative cycles."
-            },
-            {
-              "q": "Which key idea belongs with Single-Source Shortest Path?",
-              "options": [
-                "Remove the top element.",
-                "Not all recurrences fit; need regularity conditions.",
-                "Sort by value/weight ratio; take until capacity fills.",
-                "Dijkstra fails with negative edges."
-              ],
-              "answer": 3,
-              "explain": "Dijkstra fails with negative edges."
             }
           ]
         },
@@ -2930,17 +2908,6 @@
               ],
               "answer": 3,
               "explain": "Reduction direction: known hard ≤p your problem."
-            },
-            {
-              "q": "Which exam tip fits NP-completeness Proofs?",
-              "options": [
-                "LMR (Class 2 foreshadow): two parts of a completeness proof.",
-                "Finite, unambiguous sequence of steps producing output from input.",
-                "Each node has next and prev pointers.",
-                "Each item take or not; maximise value under weight limit."
-              ],
-              "answer": 0,
-              "explain": "LMR (Class 2 foreshadow): two parts of a completeness proof."
             }
           ]
         },
@@ -3063,17 +3030,6 @@
               ],
               "answer": 3,
               "explain": "NP-hard includes problems outside NP (e.g. some optimisation/undecidable-adjacent teaching examples)."
-            },
-            {
-              "q": "Which exam tip fits NP-Hard and SAT Problems?",
-              "options": [
-                "Top node / no children / has children.",
-                "Easier deletion when you have the node (prev is known).",
-                "LMR (Class 2 foreshadow): NP-hard ≠ NP-complete unless also in NP.",
-                "Nodes with data + pointer(s); dynamic size."
-              ],
-              "answer": 2,
-              "explain": "LMR (Class 2 foreshadow): NP-hard ≠ NP-complete unless also in NP."
             }
           ]
         },

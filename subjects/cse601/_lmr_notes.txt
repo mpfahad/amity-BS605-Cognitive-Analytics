@@ -5,8 +5,4 @@ CSE601 — LMR priorities (live-class teacher weightage + study materials)
 3. 1.2.1 Algorithm and Characteristics — “what is an algorithm + characteristics” — teacher said this is the exam ask.
 4. 2.1.1 Basic Terminology and Applications — “there’s always a question… how you can find out the height of the tree.”.
 5. 2.1.2 Binary Trees — binary-tree properties + pre/in/postorder (not level-order).
-6. 2.1.8 Spanning Trees — spanning tree / MST idea before diving only into code.
-7. 2.2.1 Terminology, Representations, Traversals — graph types + matrix vs list representation rules.
-8. 2.2.4 Single-Source Shortest Path — single-source shortest path idea + Dijkstra vs negatives trap.
-9. 5.2.1 NP-completeness Proofs — two parts of a completeness proof.
-10. 5.2.3 NP-Hard and SAT Problems — NP-hard ≠ NP-complete unless also in NP.
+6. 2.2.1 Terminology, Representations, Traversals — graph types + matrix vs list representation rules.

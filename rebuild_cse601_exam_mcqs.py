@@ -35,18 +35,14 @@ SKIP_TOPICS = {
     "5.1.1",  # green technology — syllabus framing, not live-class weighted
 }
 
-# Live Class LMR (and Class 2 foreshadow) — denser quiz weight.
+# Live Class 1–2 taught exam priorities only (not “next class” foreshadow).
 HIGH_TOPICS = {
     "1.1.1",  # stack + overflow/underflow + pseudocode
     "1.1.2",  # infix/postfix/prefix
     "1.2.1",  # algorithm characteristics
     "2.1.1",  # tree height / terminology
     "2.1.2",  # binary tree properties + traversals
-    "2.1.8",  # spanning trees
     "2.2.1",  # graph representations
-    "2.2.4",  # shortest path
-    "5.2.1",  # NP-completeness proofs
-    "5.2.3",  # NP-hard
 }
 
 # Light coverage (know symbols / stack application / related syllabus).

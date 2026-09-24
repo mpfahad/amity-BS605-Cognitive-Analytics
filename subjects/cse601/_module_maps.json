@@ -267,7 +267,7 @@
               "sub": "Tree",
               "kind": "b",
               "topicId": "2.1.8",
-              "lmr": true
+              "lmr": false
             },
             {
               "id": "2.1.9",
@@ -320,7 +320,7 @@
               "sub": "Graphs",
               "kind": "b",
               "topicId": "2.2.4",
-              "lmr": true
+              "lmr": false
             },
             {
               "id": "2.2.5",
@@ -611,7 +611,7 @@
               "sub": "NP-Completeness",
               "kind": "c",
               "topicId": "5.2.1",
-              "lmr": true
+              "lmr": false
             },
             {
               "id": "5.2.2",
@@ -632,7 +632,7 @@
               "sub": "NP-Completeness",
               "kind": "b",
               "topicId": "5.2.3",
-              "lmr": true
+              "lmr": false
             },
             {
               "id": "5.2.4",

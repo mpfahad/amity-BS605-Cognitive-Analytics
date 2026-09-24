@@ -1305,9 +1305,13 @@ MAP_CSS = SHARED_CSS + r"""
 .node.root .n-sub { color: rgba(255,255,255,.82); }
 .node.root .n-badge { background: rgba(255,255,255,.2); color: #fff; }
 .node.a { background: #d8efe4; border-color: rgba(15,107,76,.2); }
-.node.b { background: #f7e4d5; border-color: rgba(154,74,28,.22); }
+.node.b { background: #ebe4f5; border-color: rgba(90,70,140,.22); }
 .node.c { background: #dceaf7; border-color: rgba(31,79,120,.2); }
-.node.lmr-node { box-shadow: 0 0 0 2px rgba(196,92,38,.35); }
+.node.lmr-node {
+  box-shadow: 0 0 0 2px rgba(196,92,38,.5);
+  background: #f3dfd0;
+  border-color: rgba(196,92,38,.42);
+}
 .chip.weight-high { border-color: rgba(196,92,38,.55); }
 .chip.weight-high.active { background: var(--accent-2); }
 .criteria-box {
