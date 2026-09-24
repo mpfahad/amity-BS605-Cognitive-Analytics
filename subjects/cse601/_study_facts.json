@@ -44,45 +44,67 @@
             {
               "q": "Which statement best defines Stack?",
               "options": [
-                "LIFO structure: push/pop at the same end (the top).",
+                "Many keys per node ⇒ shallow tree ⇒ fewer disk reads.",
                 "Vertex cover, set cover, subset-sum — often near-optimal algorithms.",
-                "Only one disk at a time; never place larger on smaller.",
-                "Many keys per node ⇒ shallow tree ⇒ fewer disk reads."
+                "LIFO structure: push/pop at the same end (the top).",
+                "Asymptotics, recurrence, Master theorem — how cost grows with n."
               ],
-              "answer": 0,
+              "answer": 2,
               "explain": "Stack: LIFO structure: push/pop at the same end (the top)."
             },
             {
               "q": "Which statement best defines Push?",
               "options": [
-                "All leaves at same level; node occupancy bounds (order).",
-                "O(n log n) overall; build-heap is O(n), then n extracts.",
-                "Easier deletion when you have the node (prev is known).",
-                "Insert an element on top."
+                "Insert an element on top.",
+                "Cannot break items.",
+                "Yes (typical implementation).",
+                "Often sort by profit; place in latest free slot before deadline."
               ],
-              "answer": 3,
+              "answer": 0,
               "explain": "Push: Insert an element on top."
             },
             {
               "q": "Which statement best defines Pop?",
               "options": [
-                "Remove the top element.",
-                "Deciding existence is NP-complete (classic).",
+                "BST where |height(left)−height(right)| ≤ 1 at every node.",
                 "Stack, queue, linked lists — order and access rules matter.",
-                "Entry pointer to the first node."
+                "Reweighting + Dijkstra from each source.",
+                "Remove the top element."
               ],
-              "answer": 0,
+              "answer": 3,
               "explain": "Pop: Remove the top element."
             },
             {
-              "q": "Which statement about Stack is correct?",
+              "q": "Which statement best defines Peek / top?",
               "options": [
-                "Θ(n log n) in all cases — predictable guaranteed bound.",
-                "Θ(n^2) comparisons roughly always.",
-                "Hard decision problems; reductions show hardness.",
-                "Stack ≠ queue: LIFO vs FIFO."
+                "Read the top without removing it.",
+                "Sort edges by weight; add if it doesn’t form a cycle (Union–Find).",
+                "Follow comparisons down a path.",
+                "Partition around pivot; recurse on parts."
               ],
-              "answer": 3,
+              "answer": 0,
+              "explain": "Peek / top: Read the top without removing it."
+            },
+            {
+              "q": "Which statement best defines Underflow / overflow?",
+              "options": [
+                "Spanning tree of minimum total edge weight.",
+                "Connected acyclic graph; hierarchical parent–child.",
+                "Pop on empty / push on full (array stack).",
+                "Vertices + edges; DFS/BFS and shortest paths are core traversals."
+              ],
+              "answer": 2,
+              "explain": "Underflow / overflow: Pop on empty / push on full (array stack)."
+            },
+            {
+              "q": "Which key idea belongs with Stack?",
+              "options": [
+                "Upper bound on growth rate (worst-case flavour in teaching).",
+                "Stack ≠ queue: LIFO vs FIFO.",
+                "Classic dynamic-programming optimisation on key ranges.",
+                "Optimal prefix codes using frequency-greedy tree."
+              ],
+              "answer": 1,
               "explain": "Stack ≠ queue: LIFO vs FIFO."
             }
           ]
@@ -121,45 +143,45 @@
             {
               "q": "Which statement best defines Postfix (RPN)?",
               "options": [
-                "Optimal substructure + overlapping subproblems; store results.",
                 "Operators follow their operands (e.g. 3 4 +).",
-                "Build heap, repeatedly extract max/min to place next sorted item.",
-                "How running time grows with input size n."
+                "Proof style that swaps to show optimality.",
+                "Strategies to solve recurrences.",
+                "BFS layers give fewest edges from source."
               ],
-              "answer": 1,
+              "answer": 0,
               "explain": "Postfix (RPN): Operators follow their operands (e.g. 3 4 +)."
             },
             {
               "q": "Which statement best defines Evaluation with stack?",
               "options": [
-                "Build heap, repeatedly extract max/min to place next sorted item.",
-                "Different cases; exams often want worst-case Big-O.",
-                "Inorder, preorder, postorder, level-order.",
-                "Scan left→right: push operands; on operator, pop args, push result."
+                "Scan left→right: push operands; on operator, pop args, push result.",
+                "Often sort by profit; place in latest free slot before deadline.",
+                "Parenthesise matrix product to minimise scalar multiplies.",
+                "Repeatedly pick set covering most remaining elements."
               ],
-              "answer": 3,
+              "answer": 0,
               "explain": "Evaluation with stack: Scan left→right: push operands; on operator, pop args, push result."
             },
             {
-              "q": "Which statement best defines Why stack?",
+              "q": "Which statement best defines Infix / prefix conversions?",
               "options": [
-                "Self-balancing BST with coloured nodes and rotation/recolour rules.",
-                "Θ(n^2) comparisons roughly always.",
-                "Defers operators until operands are known — natural LIFO.",
-                "Hierarchical linked structures; BST/AVL/B-tree variants balance search cost."
+                "Teacher stress: infix→postfix and postfix↔prefix are exam favourites.",
+                "Teacher: undirected missing edge → ∞ (or no edge mark); directed missing → 0 as taught.",
+                "How running time grows with input size n.",
+                "Build solution by locally best choice at each step."
               ],
-              "answer": 2,
-              "explain": "Why stack: Defers operators until operands are known — natural LIFO."
+              "answer": 0,
+              "explain": "Infix / prefix conversions: Teacher stress: infix→postfix and postfix↔prefix are exam favourites."
             },
             {
               "q": "Which key idea belongs with Evaluation of Postfix Expression?",
               "options": [
+                "Repeatedly swap adjacent out-of-order pairs.",
+                "Compare algorithms by time, space, and stability.",
                 "Infix needs precedence/parentheses; postfix does not.",
-                "Walk forward or backward.",
-                "Rolling hash of windows; verify on hash hit.",
-                "Hierarchical linked structures; BST/AVL/B-tree variants balance search cost."
+                "Top node / no children / has children."
               ],
-              "answer": 0,
+              "answer": 2,
               "explain": "Infix needs precedence/parentheses; postfix does not."
             }
           ]
@@ -198,46 +220,13 @@
             {
               "q": "Which statement best defines Tower of Hanoi?",
               "options": [
-                "Move n disks from source to target using auxiliary peg.",
                 "Asymptotics, recurrence, Master theorem — how cost grows with n.",
-                "Rolling hash of windows; verify on hash hit.",
-                "0/1, fractional, unbounded — different algorithms."
+                "Brute force, DP (Held–Karp), heuristics/approx.",
+                "Cannot break items.",
+                "Move n disks from source to target using auxiliary peg."
               ],
-              "answer": 0,
+              "answer": 3,
               "explain": "Tower of Hanoi: Move n disks from source to target using auxiliary peg."
-            },
-            {
-              "q": "Which statement best defines Rule?",
-              "options": [
-                "Parenthesise matrix product to minimise scalar multiplies.",
-                "Algebraic recombination reduces multiplications; adds more additions.",
-                "Only one disk at a time; never place larger on smaller.",
-                "Repeatedly pick set covering most remaining elements."
-              ],
-              "answer": 2,
-              "explain": "Rule: Only one disk at a time; never place larger on smaller."
-            },
-            {
-              "q": "Which statement best defines Recurrence?",
-              "options": [
-                "T(n)=2T(n−1)+1, T(1)=1 → T(n)=2^n−1 moves.",
-                "Algebraic recombination reduces multiplications; adds more additions.",
-                "Θ(n log n) in all cases — predictable guaranteed bound.",
-                "Build solution by locally best choice at each step."
-              ],
-              "answer": 0,
-              "explain": "Recurrence: T(n)=2T(n−1)+1, T(1)=1 → T(n)=2^n−1 moves."
-            },
-            {
-              "q": "Which key idea belongs with Tower of Hanoi Problem?",
-              "options": [
-                "Explore deep along a path; backtrack; stack/recursion.",
-                "Insert an element on top.",
-                "Recursive idea: move n−1 aside, move largest, move n−1 on top.",
-                "Hash match but strings differ — must verify."
-              ],
-              "answer": 2,
-              "explain": "Recursive idea: move n−1 aside, move largest, move n−1 on top."
             }
           ]
         },
@@ -275,46 +264,35 @@
             {
               "q": "Which statement best defines Queue?",
               "options": [
-                "Build solution by locally best choice at each step.",
-                "Solves T(n)=aT(n/b)+f(n) for many standard f.",
-                "Defers operators until operands are known — natural LIFO.",
-                "FIFO: enqueue at rear, dequeue at front."
+                "Stops recursion; needed for well-founded analysis.",
+                "FIFO: enqueue at rear, dequeue at front.",
+                "Try P at every shift of T; compare chars.",
+                "Teacher stress: infix→postfix and postfix↔prefix are exam favourites."
               ],
-              "answer": 3,
+              "answer": 1,
               "explain": "Queue: FIFO: enqueue at rear, dequeue at front."
             },
             {
               "q": "Which statement best defines Enqueue / Dequeue?",
               "options": [
-                "Try P at every shift of T; compare chars.",
-                "Multiway balanced search tree for disk/block storage.",
-                "Decision problem: decide whether any subset of numbers adds exactly to target t.",
-                "Insert rear / remove front."
+                "Insert rear / remove front.",
+                "Local optimum can lead to global (when algorithm is correct).",
+                "Finite, unambiguous sequence of steps producing output from input.",
+                "Grow MST from a start vertex by always adding lightest safe edge out."
               ],
-              "answer": 3,
+              "answer": 0,
               "explain": "Enqueue / Dequeue: Insert rear / remove front."
             },
             {
               "q": "Which statement best defines Circular queue?",
               "options": [
-                "Insert an element on top.",
-                "Wrap indices to reuse array space.",
-                "O((n−m+1)m) worst case.",
-                "Upper bound on growth rate (worst-case flavour in teaching)."
+                "Cycle visiting each vertex exactly once and returning.",
+                "Decision problem: decide whether any subset of numbers adds exactly to target t.",
+                "Efficiency/resource-conscious computing themes tied to algorithmic cost.",
+                "Wrap indices to reuse array space."
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "Circular queue: Wrap indices to reuse array space."
-            },
-            {
-              "q": "Which statement about Queue is correct?",
-              "options": [
-                "How running time grows with input size n.",
-                "Queue ≠ stack (FIFO vs LIFO).",
-                "FIFO: enqueue at rear, dequeue at front.",
-                "Pop on empty / push on full (array stack)."
-              ],
-              "answer": 1,
-              "explain": "Queue ≠ stack (FIFO vs LIFO)."
             }
           ]
         },
@@ -353,9 +331,9 @@
               "q": "Which statement best defines Linked list?",
               "options": [
                 "Nodes with data + pointer(s); dynamic size.",
-                "Defers operators until operands are known — natural LIFO.",
-                "Build solution by locally best choice at each step.",
-                "Insert rear / remove front."
+                "0/1, fractional, unbounded — different algorithms.",
+                "Multiway balanced search tree for disk/block storage.",
+                "Teacher stress: infix→postfix and postfix↔prefix are exam favourites."
               ],
               "answer": 0,
               "explain": "Linked list: Nodes with data + pointer(s); dynamic size."
@@ -363,35 +341,24 @@
             {
               "q": "Which statement best defines Singly linked?",
               "options": [
-                "Each node has at most two children (left/right).",
-                "Each node points to next only.",
+                "Algebraic recombination reduces multiplications; adds more additions.",
                 "Insert an element on top.",
-                "Classic NP-hard optimisation problem."
+                "Try P at every shift of T; compare chars.",
+                "Each node points to next only."
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "Singly linked: Each node points to next only."
             },
             {
               "q": "Which statement best defines Head?",
               "options": [
+                "Entry pointer to the first node.",
                 "Top node / no children / has children.",
-                "Optimal prefix codes using frequency-greedy tree.",
                 "Optimal substructure + overlapping subproblems; store results.",
-                "Entry pointer to the first node."
-              ],
-              "answer": 3,
-              "explain": "Head: Entry pointer to the first node."
-            },
-            {
-              "q": "Which key idea belongs with Linked List?",
-              "options": [
-                "Insert/delete can be O(1) given a node reference; search is O(n).",
-                "Compare algorithms by time, space, and stability.",
-                "O(n log n) overall; build-heap is O(n), then n extracts.",
-                "Proof style that swaps to show optimality."
+                "Yields keys in sorted order."
               ],
               "answer": 0,
-              "explain": "Insert/delete can be O(1) given a node reference; search is O(n)."
+              "explain": "Head: Entry pointer to the first node."
             }
           ]
         },
@@ -429,10 +396,10 @@
             {
               "q": "Which statement best defines Doubly linked list?",
               "options": [
-                "Operators follow their operands (e.g. 3 4 +).",
+                "Unit-time jobs with deadlines and profits; maximise profit.",
                 "Each node has next and prev pointers.",
-                "Vertices + edges; DFS/BFS and shortest paths are core traversals.",
-                "Repeatedly pick set covering most remaining elements."
+                "Brute force, DP (Held–Karp), heuristics/approx.",
+                "Reweighting + Dijkstra from each source."
               ],
               "answer": 1,
               "explain": "Doubly linked list: Each node has next and prev pointers."
@@ -440,10 +407,10 @@
             {
               "q": "Which statement best defines Bidirectional traversal?",
               "options": [
-                "Shortest paths from one source to all vertices.",
-                "Inorder, preorder, postorder, level-order.",
+                "Try P at every shift of T; compare chars.",
+                "Θ(n^2) comparisons roughly always.",
                 "Walk forward or backward.",
-                "Typical swap-based version is unstable."
+                "O(n log n); worst O(n^2) on bad pivots."
               ],
               "answer": 2,
               "explain": "Bidirectional traversal: Walk forward or backward."
@@ -451,24 +418,13 @@
             {
               "q": "Which statement best defines Delete convenience?",
               "options": [
+                "Lower bound on growth.",
+                "Remove the top element.",
                 "Easier deletion when you have the node (prev is known).",
-                "LIFO structure: push/pop at the same end (the top).",
-                "Yields keys in sorted order.",
-                "Subgraph that is a tree connecting all vertices."
+                "Teacher: undirected missing edge → ∞ (or no edge mark); directed missing → 0 as taught."
               ],
-              "answer": 0,
+              "answer": 2,
               "explain": "Delete convenience: Easier deletion when you have the node (prev is known)."
-            },
-            {
-              "q": "Which statement about Double Linked List is correct?",
-              "options": [
-                "Classic NP-hard optimisation problem.",
-                "Decision problem: decide whether any subset of numbers adds exactly to target t.",
-                "Systematic visit: DFS/BFS.",
-                "Extra pointer cost vs singly linked."
-              ],
-              "answer": 3,
-              "explain": "Extra pointer cost vs singly linked."
             }
           ]
         },
@@ -501,34 +457,45 @@
             {
               "q": "Which statement best defines Algorithm?",
               "options": [
-                "LL, RR, LR, RL fix imbalance after insert/delete.",
-                "Often priority queue for cut edges.",
-                "Finite, unambiguous sequence of steps producing output from input.",
-                "Top node / no children / has children."
+                "Sort edges by weight; add if it doesn’t form a cycle (Union–Find).",
+                "BST where |height(left)−height(right)| ≤ 1 at every node.",
+                "List neighbours of each vertex — good for sparse graphs.",
+                "Finite, unambiguous sequence of steps producing output from input."
               ],
-              "answer": 2,
+              "answer": 3,
               "explain": "Algorithm: Finite, unambiguous sequence of steps producing output from input."
             },
             {
-              "q": "Which statement best defines Characteristics?",
+              "q": "Which statement best defines Characteristics (5)?",
               "options": [
-                "Visit each vertex once and return — classic NP-complete flavour.",
-                "Mostly yes (small stack); not stable typically.",
-                "Input, output, finiteness, definiteness, effectiveness (and often generality).",
-                "O(n log n) overall; build-heap is O(n), then n extracts."
+                "File systems, expression trees, search structures, heaps.",
+                "Input, output, definiteness, finiteness, effectiveness/feasibility — teacher Class 1 list.",
+                "Many keys per node ⇒ shallow tree ⇒ fewer disk reads.",
+                "Partition around pivot; recurse on parts."
               ],
-              "answer": 2,
-              "explain": "Characteristics: Input, output, finiteness, definiteness, effectiveness (and often generality)."
+              "answer": 1,
+              "explain": "Characteristics (5): Input, output, definiteness, finiteness, effectiveness/feasibility — teacher Class 1 list."
+            },
+            {
+              "q": "Which statement best defines Exam answer shape?",
+              "options": [
+                "Non-negative weights; greedy with priority queue.",
+                "dp[i][w] style; pseudo-polynomial in capacity.",
+                "O(n^2) worst; O(n) best on nearly sorted data.",
+                "Definition + one simple example (e.g. tea/recipe) + the five characteristics."
+              ],
+              "answer": 3,
+              "explain": "Exam answer shape: Definition + one simple example (e.g. tea/recipe) + the five characteristics."
             },
             {
               "q": "Which key idea belongs with Algorithm and Characteristics?",
               "options": [
-                "Select items under capacity to maximise value.",
-                "Program implements an algorithm in a language.",
-                "Unit-time jobs with deadlines and profits; maximise profit.",
-                "Reweighting + Dijkstra from each source."
+                "At least as hard as NP-complete; may not be in NP.",
+                "Lower bound on growth.",
+                "Faster matrix multiply than naïve O(n^3) using 7 recursive multiplies.",
+                "Program implements an algorithm in a language."
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "Program implements an algorithm in a language."
             }
           ]
@@ -572,46 +539,13 @@
             {
               "q": "Which statement best defines Big-O?",
               "options": [
-                "Satisfiability of Boolean formulas — central NP-complete problem.",
+                "Teacher exam expect: properties / formulas for binary trees of height H.",
+                "Non-negative weights; greedy with priority queue.",
                 "Upper bound on growth rate (worst-case flavour in teaching).",
-                "Shortest paths from one source to all vertices.",
-                "Classic 2-approx: pick both ends of an uncovered edge, repeat."
+                "Brute force, DP (Held–Karp), heuristics/approx."
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "Big-O: Upper bound on growth rate (worst-case flavour in teaching)."
-            },
-            {
-              "q": "Which statement best defines Ω (Omega)?",
-              "options": [
-                "Explore level by level using a queue.",
-                "Lower bound on growth.",
-                "Not all recurrences fit; need regularity conditions.",
-                "Cover universe with minimum number of subsets."
-              ],
-              "answer": 1,
-              "explain": "Ω (Omega): Lower bound on growth."
-            },
-            {
-              "q": "Which statement best defines Θ (Theta)?",
-              "options": [
-                "Tight bound — both O and Ω.",
-                "Good with strong hash; worst can degrade.",
-                "Read the top without removing it.",
-                "Insert an element on top."
-              ],
-              "answer": 0,
-              "explain": "Θ (Theta): Tight bound — both O and Ω."
-            },
-            {
-              "q": "Which key idea belongs with Asymtotic Notations?",
-              "options": [
-                "Asymptotics ignore constants and lower-order terms.",
-                "Reweighting + Dijkstra from each source.",
-                "Often T(n)=aT(n/b)+f(n).",
-                "Scan left→right: push operands; on operator, pop args, push result."
-              ],
-              "answer": 0,
-              "explain": "Asymptotics ignore constants and lower-order terms."
             }
           ]
         },
@@ -649,46 +583,13 @@
             {
               "q": "Which statement best defines Time complexity?",
               "options": [
-                "Inorder, preorder, postorder, level-order.",
-                "Repeatedly swap adjacent out-of-order pairs.",
+                "Shortest paths from one source to all vertices.",
+                "Compare f(n) with n^{log_b a} (three main cases).",
                 "How running time grows with input size n.",
-                "Deciding existence is NP-complete (classic)."
+                "Stops recursion; needed for well-founded analysis."
               ],
               "answer": 2,
               "explain": "Time complexity: How running time grows with input size n."
-            },
-            {
-              "q": "Which statement best defines Best / average / worst?",
-              "options": [
-                "Sort profits descending; assign to feasible time slot.",
-                "Shortest paths between every pair.",
-                "Move n disks from source to target using auxiliary peg.",
-                "Different cases; exams often want worst-case Big-O."
-              ],
-              "answer": 3,
-              "explain": "Best / average / worst: Different cases; exams often want worst-case Big-O."
-            },
-            {
-              "q": "Which statement best defines Space complexity?",
-              "options": [
-                "Visit each vertex once and return — classic NP-complete flavour.",
-                "dp[i][w] style; pseudo-polynomial in capacity.",
-                "Extra memory growth with n.",
-                "Adjacency matrix vs adjacency list."
-              ],
-              "answer": 2,
-              "explain": "Space complexity: Extra memory growth with n."
-            },
-            {
-              "q": "Which key idea belongs with Algorithm Time Complexity?",
-              "options": [
-                "Count dominant operations, not wall-clock alone.",
-                "Fewer operations / less energy as a motivation for better algorithms.",
-                "Try P at every shift of T; compare chars.",
-                "Non-negative weights; greedy with priority queue."
-              ],
-              "answer": 0,
-              "explain": "Count dominant operations, not wall-clock alone."
             }
           ]
         },
@@ -722,52 +623,8 @@
               "detail": "1.2.4 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Recurrence?",
-              "options": [
-                "Optimal substructure + overlapping subproblems; store results.",
-                "T(n) defined in terms of T(smaller).",
-                "Mostly yes (small stack); not stable typically.",
-                "Repeatedly pick set covering most remaining elements."
-              ],
-              "answer": 1,
-              "explain": "Recurrence: T(n) defined in terms of T(smaller)."
-            },
-            {
-              "q": "Which statement best defines Recursion tree / substitution / Master?",
-              "options": [
-                "Strategies to solve recurrences.",
-                "Cycle visiting each vertex exactly once and returning.",
-                "Needs Θ(n) auxiliary memory for the classic merge.",
-                "Vertex cover, set cover, subset-sum — often near-optimal algorithms."
-              ],
-              "answer": 0,
-              "explain": "Recursion tree / substitution / Master: Strategies to solve recurrences."
-            },
-            {
-              "q": "Which statement best defines Base case?",
-              "options": [
-                "Stops recursion; needed for well-founded analysis.",
-                "Reweighting + Dijkstra from each source.",
-                "Visit each vertex once and return — classic NP-complete flavour.",
-                "Each node points to next only."
-              ],
-              "answer": 0,
-              "explain": "Base case: Stops recursion; needed for well-founded analysis."
-            },
-            {
-              "q": "Which key idea belongs with Recursive Program Analysis Strategies?",
-              "options": [
-                "Wrong base case ⇒ wrong closed form.",
-                "Unfold a few levels before guessing the pattern.",
-                "Vertices + edges; DFS/BFS and shortest paths are core traversals.",
-                "Different cases; exams often want worst-case Big-O."
-              ],
-              "answer": 0,
-              "explain": "Wrong base case ⇒ wrong closed form."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "1.2.5",
@@ -799,52 +656,8 @@
               "detail": "1.2.5 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Master theorem?",
-              "options": [
-                "O(n log n) overall; build-heap is O(n), then n extracts.",
-                "Solves T(n)=aT(n/b)+f(n) for many standard f.",
-                "Short verifiable witness for yes instances (for NP).",
-                "Faster matrix multiply than naïve O(n^3) using 7 recursive multiplies."
-              ],
-              "answer": 1,
-              "explain": "Master theorem: Solves T(n)=aT(n/b)+f(n) for many standard f."
-            },
-            {
-              "q": "Which statement best defines Cases?",
-              "options": [
-                "Compare f(n) with n^{log_b a} (three main cases).",
-                "Rolling hash of windows; verify on hash hit.",
-                "Optimise linear objective under linear constraints — algorithmic tool.",
-                "Insert rear / remove front."
-              ],
-              "answer": 0,
-              "explain": "Cases: Compare f(n) with n^{log_b a} (three main cases)."
-            },
-            {
-              "q": "Which statement best defines Limitations?",
-              "options": [
-                "Not all recurrences fit; need regularity conditions.",
-                "Longest common subsequence of two strings (not necessarily contiguous).",
-                "Yes (array heap); not typically stable.",
-                "Easier deletion when you have the node (prev is known)."
-              ],
-              "answer": 0,
-              "explain": "Limitations: Not all recurrences fit; need regularity conditions."
-            },
-            {
-              "q": "Regarding “Identify a, b, f(n) first”, which is correct?",
-              "options": [
-                "then case.",
-                "Partition around pivot; recurse on parts.",
-                "Satisfiability of Boolean formulas — central NP-complete problem.",
-                "Extra memory growth with n."
-              ],
-              "answer": 0,
-              "explain": "Identify a, b, f(n) first — then case."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "1.3.1",
@@ -880,9 +693,9 @@
             {
               "q": "Which statement best defines Divide and conquer?",
               "options": [
-                "Brute force, DP (Held–Karp), heuristics/approx.",
-                "Merge sort, binary search, some matrix methods.",
-                "Short verifiable witness for yes instances (for NP).",
+                "Tracks components to detect cycles efficiently.",
+                "Repeatedly swap adjacent out-of-order pairs.",
+                "Decision problem: decide whether any subset of numbers adds exactly to target t.",
                 "Divide → conquer recursively → combine."
               ],
               "answer": 3,
@@ -891,35 +704,24 @@
             {
               "q": "Which statement best defines Recurrence form?",
               "options": [
-                "Inorder, preorder, postorder, level-order.",
-                "Easier deletion when you have the node (prev is known).",
                 "Often T(n)=aT(n/b)+f(n).",
-                "Can be implemented stable."
+                "Input, output, definiteness, finiteness, effectiveness/feasibility — teacher Class 1 list.",
+                "O(n^2) worst; O(n) best on nearly sorted data.",
+                "List neighbours of each vertex — good for sparse graphs."
               ],
-              "answer": 2,
+              "answer": 0,
               "explain": "Recurrence form: Often T(n)=aT(n/b)+f(n)."
             },
             {
               "q": "Which statement best defines Examples?",
               "options": [
-                "Sort by value/weight ratio; take until capacity fills.",
+                "No codeword is prefix of another — unique decode.",
+                "Visit each city once and return; minimise tour length.",
                 "Merge sort, binary search, some matrix methods.",
-                "O((n−m+1)m) worst case.",
-                "Upper bound on growth rate (worst-case flavour in teaching)."
+                "Tight bound — both O and Ω."
               ],
-              "answer": 1,
+              "answer": 2,
               "explain": "Examples: Merge sort, binary search, some matrix methods."
-            },
-            {
-              "q": "Which key idea belongs with Divide-Conquer Recurrence Equations Solutions?",
-              "options": [
-                "Hierarchical linked structures; BST/AVL/B-tree variants balance search cost.",
-                "Combine cost f(n) matters as much as subproblem count.",
-                "Problem A ≤p B if A transforms to B in poly time.",
-                "Walk forward or backward."
-              ],
-              "answer": 1,
-              "explain": "Combine cost f(n) matters as much as subproblem count."
             }
           ]
         },
@@ -957,46 +759,35 @@
             {
               "q": "Which statement best defines Bubble sort?",
               "options": [
-                "Efficiency/resource angle linked in this module’s framing.",
-                "Connected acyclic graph; hierarchical parent–child.",
-                "Yes — equal keys keep their relative order after sorting.",
-                "Repeatedly swap adjacent out-of-order pairs."
+                "T(n) defined in terms of T(smaller).",
+                "Repeatedly swap adjacent out-of-order pairs.",
+                "Partition around pivot; recurse on parts.",
+                "Preorder, inorder, postorder — Class 2: expect these in end-term."
               ],
-              "answer": 3,
+              "answer": 1,
               "explain": "Bubble sort: Repeatedly swap adjacent out-of-order pairs."
             },
             {
               "q": "Which statement best defines Time?",
               "options": [
+                "Yields keys in sorted order.",
+                "Sort by value/weight ratio; take until capacity fills.",
                 "O(n^2) typical/worst; can be O(n) if already sorted with early exit.",
-                "0/1, fractional, unbounded — different algorithms.",
-                "Compare f(n) with n^{log_b a} (three main cases).",
-                "BFS layers give fewest edges from source."
+                "Merge sort, binary search, some matrix methods."
               ],
-              "answer": 0,
+              "answer": 2,
               "explain": "Time: O(n^2) typical/worst; can be O(n) if already sorted with early exit."
             },
             {
               "q": "Which statement best defines Stable??",
               "options": [
-                "FIFO: enqueue at rear, dequeue at front.",
-                "Short verifiable witness for yes instances (for NP).",
-                "Optimal substructure + overlapping subproblems; store results.",
-                "Can be implemented stable."
+                "Can be implemented stable.",
+                "Solves T(n)=aT(n/b)+f(n) for many standard f.",
+                "Yes (array heap); not typically stable.",
+                "Operators follow their operands (e.g. 3 4 +)."
               ],
-              "answer": 3,
+              "answer": 0,
               "explain": "Stable?: Can be implemented stable."
-            },
-            {
-              "q": "Which key idea belongs with Bubble Sort?",
-              "options": [
-                "Find pattern P in text T — naïve vs Rabin–Karp hashing.",
-                "Divide array, sort halves, merge sorted runs.",
-                "Simple but slow for large n.",
-                "Schedule jobs to maximise profit under constraints (often deadlines/slots)."
-              ],
-              "answer": 2,
-              "explain": "Simple but slow for large n."
             }
           ]
         },
@@ -1034,21 +825,21 @@
             {
               "q": "Which statement best defines Insertion sort?",
               "options": [
-                "Stops recursion; needed for well-founded analysis.",
-                "Build sorted prefix; insert next element into place.",
+                "Wrap indices to reuse array space.",
                 "Insert rear / remove front.",
-                "Wrap indices to reuse array space."
+                "Strategies to solve recurrences.",
+                "Build sorted prefix; insert next element into place."
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "Insertion sort: Build sorted prefix; insert next element into place."
             },
             {
               "q": "Which statement best defines Time?",
               "options": [
-                "Rolling hash of windows; verify on hash hit.",
-                "Yields keys in sorted order.",
+                "Search/insert/delete O(log n).",
+                "Cannot break items.",
                 "O(n^2) worst; O(n) best on nearly sorted data.",
-                "FIFO: enqueue at rear, dequeue at front."
+                "Connected acyclic graph; hierarchical parent–child."
               ],
               "answer": 2,
               "explain": "Time: O(n^2) worst; O(n) best on nearly sorted data."
@@ -1056,24 +847,13 @@
             {
               "q": "Which statement best defines Stable?",
               "options": [
-                "Yes (typical implementation).",
-                "Classic dynamic-programming optimisation on key ranges.",
+                "Unit-time jobs with deadlines and profits; maximise profit.",
                 "Read the top without removing it.",
-                "Good with strong hash; worst can degrade."
+                "Good with strong hash; worst can degrade.",
+                "Yes (typical implementation)."
               ],
-              "answer": 0,
+              "answer": 3,
               "explain": "Stable: Yes (typical implementation)."
-            },
-            {
-              "q": "Which key idea belongs with Insertion Sort?",
-              "options": [
-                "LIFO structure: push/pop at the same end (the top).",
-                "Good for small or nearly sorted arrays.",
-                "Nodes with data + pointer(s); dynamic size.",
-                "Not all recurrences fit; need regularity conditions."
-              ],
-              "answer": 1,
-              "explain": "Good for small or nearly sorted arrays."
             }
           ]
         },
@@ -1111,46 +891,35 @@
             {
               "q": "Which statement best defines Selection sort?",
               "options": [
+                "How running time grows with input size n.",
                 "Repeatedly select min (or max) from unsorted part and swap into place.",
-                "Rolling hash of windows; verify on hash hit.",
-                "Cycle visiting each vertex exactly once and returning.",
-                "SAT, vertex cover decision, Hamiltonian cycle, subset-sum, …"
+                "Sort edges by weight; add if it doesn’t form a cycle (Union–Find).",
+                "Shortest paths from one source to all vertices."
               ],
-              "answer": 0,
+              "answer": 1,
               "explain": "Selection sort: Repeatedly select min (or max) from unsorted part and swap into place."
             },
             {
               "q": "Which statement best defines Time?",
               "options": [
-                "Visit each vertex once and return — classic NP-complete flavour.",
-                "LL, RR, LR, RL fix imbalance after insert/delete.",
-                "Finite, unambiguous sequence of steps producing output from input.",
-                "Θ(n^2) comparisons roughly always."
+                "Preorder, inorder, postorder — Class 2: expect these in end-term.",
+                "Algorithms that use randomness for speed/simplicity (expected performance).",
+                "Θ(n^2) comparisons roughly always.",
+                "Set of vertices incident to every edge."
               ],
-              "answer": 3,
+              "answer": 2,
               "explain": "Time: Θ(n^2) comparisons roughly always."
             },
             {
               "q": "Which statement best defines Not stable?",
               "options": [
-                "Interval DP over chain length.",
                 "Typical swap-based version is unstable.",
-                "Build sorted prefix; insert next element into place.",
+                "Short verifiable witness for yes instances (for NP).",
+                "Tight bound — both O and Ω.",
                 "Walk forward or backward."
               ],
-              "answer": 1,
+              "answer": 0,
               "explain": "Not stable: Typical swap-based version is unstable."
-            },
-            {
-              "q": "Which key idea belongs with Selection Sort?",
-              "options": [
-                "Defers operators until operands are known — natural LIFO.",
-                "Select max non-overlapping activities.",
-                "Fewer writes than some sorts, but still quadratic comparisons.",
-                "Connected acyclic graph; hierarchical parent–child."
-              ],
-              "answer": 2,
-              "explain": "Fewer writes than some sorts, but still quadratic comparisons."
             }
           ]
         },
@@ -1193,46 +962,35 @@
             {
               "q": "Which statement best defines Merge sort?",
               "options": [
-                "Search/insert/delete O(log n).",
-                "Nodes with data + pointer(s); dynamic size.",
+                "Classic dynamic-programming optimisation on key ranges.",
                 "Divide array, sort halves, merge sorted runs.",
-                "Move n disks from source to target using auxiliary peg."
+                "Top node / no children / has children.",
+                "Remove the top element."
               ],
-              "answer": 2,
+              "answer": 1,
               "explain": "Merge sort: Divide array, sort halves, merge sorted runs."
             },
             {
               "q": "Which statement best defines Time?",
               "options": [
-                "Θ(n log n) in all cases — predictable guaranteed bound.",
+                "Cycle visiting each vertex exactly once and returning.",
+                "Hardest problems in NP (under poly reductions).",
                 "Read the top without removing it.",
-                "Deciding existence is NP-complete (classic).",
-                "Build solution by locally best choice at each step."
+                "Θ(n log n) in all cases — predictable guaranteed bound."
               ],
-              "answer": 0,
+              "answer": 3,
               "explain": "Time: Θ(n log n) in all cases — predictable guaranteed bound."
             },
             {
               "q": "Which statement best defines Space?",
               "options": [
-                "Interval DP over chain length.",
-                "All leaves at same level; node occupancy bounds (order).",
+                "Stops recursion; needed for well-founded analysis.",
                 "Needs Θ(n) auxiliary memory for the classic merge.",
-                "Multiway balanced search tree for disk/block storage."
-              ],
-              "answer": 2,
-              "explain": "Space: Needs Θ(n) auxiliary memory for the classic merge."
-            },
-            {
-              "q": "Regarding “Predictable performance”, which is correct?",
-              "options": [
-                "Variants about occupancy of levels (syllabus defs).",
-                "good exam ‘guaranteed n log n’ answer.",
-                "Build sorted prefix; insert next element into place.",
-                "Vertex cover, set cover, subset-sum — often near-optimal algorithms."
+                "Multiway balanced search tree for disk/block storage.",
+                "O(n^2) worst; O(n) best on nearly sorted data."
               ],
               "answer": 1,
-              "explain": "Predictable performance — good exam ‘guaranteed n log n’ answer."
+              "explain": "Space: Needs Θ(n) auxiliary memory for the classic merge."
             }
           ]
         },
@@ -1270,20 +1028,20 @@
             {
               "q": "Which statement best defines Heap sort?",
               "options": [
+                "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP.",
                 "Build heap, repeatedly extract max/min to place next sorted item.",
-                "Cover universe with minimum number of subsets.",
-                "Adjacency matrix vs adjacency list.",
-                "Each node has at most two children (left/right)."
+                "Interval DP over chain length.",
+                "Teacher stress: infix→postfix and postfix↔prefix are exam favourites."
               ],
-              "answer": 0,
+              "answer": 1,
               "explain": "Heap sort: Build heap, repeatedly extract max/min to place next sorted item."
             },
             {
               "q": "Which statement best defines Time?",
               "options": [
-                "Usually earliest finishing time first.",
-                "Inorder, preorder, postorder, level-order.",
-                "0/1, fractional, unbounded — different algorithms.",
+                "Self-balancing BST with coloured nodes and rotation/recolour rules.",
+                "Lower bound on growth.",
+                "Repeatedly select min (or max) from unsorted part and swap into place.",
                 "O(n log n) overall; build-heap is O(n), then n extracts."
               ],
               "answer": 3,
@@ -1292,24 +1050,13 @@
             {
               "q": "Which statement best defines In-place?",
               "options": [
-                "Local optimum can lead to global (when algorithm is correct).",
                 "Yes (array heap); not typically stable.",
-                "Explore level by level using a queue.",
-                "Different cases; exams often want worst-case Big-O."
-              ],
-              "answer": 1,
-              "explain": "In-place: Yes (array heap); not typically stable."
-            },
-            {
-              "q": "Which statement about Heap Sort is correct?",
-              "options": [
-                "Uses heap property: parent ordered vs children.",
+                "Local optimum can lead to global (when algorithm is correct).",
                 "Non-negative weights; greedy with priority queue.",
-                "Asymptotics, recurrence, Master theorem — how cost grows with n.",
-                "Read the top without removing it."
+                "Explore deep along a path; backtrack; stack/recursion."
               ],
               "answer": 0,
-              "explain": "Uses heap property: parent ordered vs children."
+              "explain": "In-place: Yes (array heap); not typically stable."
             }
           ]
         },
@@ -1347,46 +1094,35 @@
             {
               "q": "Which statement best defines Quick sort?",
               "options": [
-                "Visit each city once and return; minimise tour length.",
-                "Decision problem: decide whether any subset of numbers adds exactly to target t.",
-                "Explore level by level using a queue.",
-                "Partition around pivot; recurse on parts."
+                "Partition around pivot; recurse on parts.",
+                "B is at least as hard as A (for hardness proofs).",
+                "Self-balancing BST with coloured nodes and rotation/recolour rules.",
+                "Optimal solution contains optimal solutions to subproblems."
               ],
-              "answer": 3,
+              "answer": 0,
               "explain": "Quick sort: Partition around pivot; recurse on parts."
             },
             {
               "q": "Which statement best defines Average time?",
               "options": [
-                "Asymptotics, recurrence, Master theorem — how cost grows with n.",
-                "Pop on empty / push on full (array stack).",
-                "Operators follow their operands (e.g. 3 4 +).",
-                "O(n log n); worst O(n^2) on bad pivots."
+                "Satisfiability of Boolean formulas — central NP-complete problem.",
+                "Move n disks from source to target using auxiliary peg.",
+                "O(n log n); worst O(n^2) on bad pivots.",
+                "Stack, queue, linked lists — order and access rules matter."
               ],
-              "answer": 3,
+              "answer": 2,
               "explain": "Average time: O(n log n); worst O(n^2) on bad pivots."
             },
             {
               "q": "Which statement best defines In-place?",
               "options": [
+                "Asymptotics, recurrence, Master theorem — how cost grows with n.",
                 "Mostly yes (small stack); not stable typically.",
-                "Proof style that swaps to show optimality.",
-                "Optimise linear objective under linear constraints — algorithmic tool.",
-                "Stops recursion; needed for well-founded analysis."
+                "Algebraic recombination reduces multiplications; adds more additions.",
+                "Satisfiability of Boolean formulas — central NP-complete problem."
               ],
-              "answer": 0,
+              "answer": 1,
               "explain": "In-place: Mostly yes (small stack); not stable typically."
-            },
-            {
-              "q": "Which key idea belongs with Quick Sort?",
-              "options": [
-                "Pivot choice affects balance.",
-                "Build solution by locally best choice at each step.",
-                "Stops recursion; needed for well-founded analysis.",
-                "Tracks components to detect cycles efficiently."
-              ],
-              "answer": 0,
-              "explain": "Pivot choice affects balance."
             }
           ]
         }
@@ -1430,31 +1166,42 @@
             {
               "q": "Which statement best defines Tree?",
               "options": [
-                "Find pattern P in text T — naïve vs Rabin–Karp hashing.",
-                "Cannot break items.",
-                "Fewer operations / less energy as a motivation for better algorithms.",
-                "Connected acyclic graph; hierarchical parent–child."
+                "Spanning tree of minimum total edge weight.",
+                "Cycle visiting each vertex exactly once and returning.",
+                "Connected acyclic graph; hierarchical parent–child.",
+                "Usually earliest finishing time first."
               ],
-              "answer": 3,
+              "answer": 2,
               "explain": "Tree: Connected acyclic graph; hierarchical parent–child."
             },
             {
               "q": "Which statement best defines Root / leaf / internal?",
               "options": [
-                "Move n disks from source to target using auxiliary peg.",
-                "Optimal prefix codes using frequency-greedy tree.",
-                "Efficiency/resource-conscious computing themes tied to algorithmic cost.",
-                "Top node / no children / has children."
+                "At least as hard as NP-complete; may not be in NP.",
+                "Top node / no children / has children.",
+                "Lower bound on growth.",
+                "Left keys < node < right keys (standard ordering)."
               ],
-              "answer": 3,
+              "answer": 1,
               "explain": "Root / leaf / internal: Top node / no children / has children."
+            },
+            {
+              "q": "Which statement best defines Height / level?",
+              "options": [
+                "Tight bound — both O and Ω.",
+                "Optimise linear objective under linear constraints — algorithmic tool.",
+                "Teacher: height of a tree is a recurring exam question — practise on a drawn tree.",
+                "Input, output, definiteness, finiteness, effectiveness/feasibility — teacher Class 1 list."
+              ],
+              "answer": 2,
+              "explain": "Height / level: Teacher: height of a tree is a recurring exam question — practise on a drawn tree."
             },
             {
               "q": "Which statement best defines Applications?",
               "options": [
-                "Stops recursion; needed for well-founded analysis.",
-                "Left keys < node < right keys (standard ordering).",
-                "O(n log n) overall; build-heap is O(n), then n extracts.",
+                "Nodes with data + pointer(s); dynamic size.",
+                "Not all recurrences fit; need regularity conditions.",
+                "Yes (typical implementation).",
                 "File systems, expression trees, search structures, heaps."
               ],
               "answer": 3,
@@ -1463,12 +1210,12 @@
             {
               "q": "Which key idea belongs with Basic Terminology and Applications?",
               "options": [
-                "Repeatedly select min (or max) from unsorted part and swap into place.",
-                "O(n^2) typical/worst; can be O(n) if already sorted with early exit.",
-                "Tree ≠ general graph with cycles.",
-                "Each item take or not; maximise value under weight limit."
+                "Pop on empty / push on full (array stack).",
+                "Visit each city once and return; minimise tour length.",
+                "Hardest problems in NP (under poly reductions).",
+                "Tree ≠ general graph with cycles."
               ],
-              "answer": 2,
+              "answer": 3,
               "explain": "Tree ≠ general graph with cycles."
             }
           ]
@@ -1507,45 +1254,56 @@
             {
               "q": "Which statement best defines Binary tree?",
               "options": [
-                "Cycle visiting each vertex exactly once and returning.",
-                "At least as hard as NP-complete; may not be in NP.",
-                "Move n disks from source to target using auxiliary peg.",
-                "Each node has at most two children (left/right)."
+                "Stack, queue, linked lists — order and access rules matter.",
+                "Each node has at most two children (left/right).",
+                "Teacher stress: infix→postfix and postfix↔prefix are exam favourites.",
+                "Shortest paths from one source to all vertices."
               ],
-              "answer": 3,
+              "answer": 1,
               "explain": "Binary tree: Each node has at most two children (left/right)."
             },
             {
               "q": "Which statement best defines Full / complete / perfect?",
               "options": [
-                "Optimal solution contains optimal solutions to subproblems.",
-                "Classic 2-approx: pick both ends of an uncovered edge, repeat.",
-                "Pop on empty / push on full (array stack).",
-                "Variants about occupancy of levels (syllabus defs)."
+                "Read the top without removing it.",
+                "dp[i][w] style; pseudo-polynomial in capacity.",
+                "Variants about occupancy of levels (syllabus defs).",
+                "Shortest paths between every pair."
               ],
-              "answer": 3,
+              "answer": 2,
               "explain": "Full / complete / perfect: Variants about occupancy of levels (syllabus defs)."
             },
             {
-              "q": "Which statement best defines Traversals?",
+              "q": "Which statement best defines Max nodes for height H?",
               "options": [
-                "Decision problem: decide whether any subset of numbers adds exactly to target t.",
-                "Pop on empty / push on full (array stack).",
-                "Inorder, preorder, postorder, level-order.",
-                "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP."
+                "Classic 2-approx: pick both ends of an uncovered edge, repeat.",
+                "Teacher exam expect: properties / formulas for binary trees of height H.",
+                "Solve overlapping subproblems once; store answers.",
+                "Explore deep along a path; backtrack; stack/recursion."
+              ],
+              "answer": 1,
+              "explain": "Max nodes for height H: Teacher exam expect: properties / formulas for binary trees of height H."
+            },
+            {
+              "q": "Which statement best defines Traversals (in syllabus)?",
+              "options": [
+                "Good with strong hash; worst can degrade.",
+                "Find pattern P in text T — naïve vs Rabin–Karp hashing.",
+                "Preorder, inorder, postorder — Class 2: expect these in end-term.",
+                "Explore deep along a path; backtrack; stack/recursion."
               ],
               "answer": 2,
-              "explain": "Traversals: Inorder, preorder, postorder, level-order."
+              "explain": "Traversals (in syllabus): Preorder, inorder, postorder — Class 2: expect these in end-term."
             },
             {
               "q": "Which key idea belongs with Binary Trees?",
               "options": [
-                "LL, RR, LR, RL fix imbalance after insert/delete.",
-                "Explore deep along a path; backtrack; stack/recursion.",
+                "Yields keys in sorted order.",
                 "Binary tree ≠ BST (BST adds ordering invariant).",
-                "Often T(n)=aT(n/b)+f(n)."
+                "Rolling hash of windows; verify on hash hit.",
+                "Can be implemented stable."
               ],
-              "answer": 2,
+              "answer": 1,
               "explain": "Binary tree ≠ BST (BST adds ordering invariant)."
             }
           ]
@@ -1584,46 +1342,35 @@
             {
               "q": "Which statement best defines BST?",
               "options": [
-                "Top-down cache vs bottom-up table.",
-                "Unit-time jobs with deadlines and profits; maximise profit.",
                 "Left keys < node < right keys (standard ordering).",
-                "Efficiency/resource-conscious computing themes tied to algorithmic cost."
+                "Explore level by level using a queue.",
+                "Explore deep along a path; backtrack; stack/recursion.",
+                "Build sorted prefix; insert next element into place."
               ],
-              "answer": 2,
+              "answer": 0,
               "explain": "BST: Left keys < node < right keys (standard ordering)."
             },
             {
               "q": "Which statement best defines Search / insert?",
               "options": [
-                "Cycle detect, topological sort, components, path finding.",
-                "Sort profits descending; assign to feasible time slot.",
+                "Systematic visit: DFS/BFS.",
                 "Follow comparisons down a path.",
-                "O(n^2) typical/worst; can be O(n) if already sorted with early exit."
+                "File systems, expression trees, search structures, heaps.",
+                "Stack, queue, linked lists — order and access rules matter."
               ],
-              "answer": 2,
+              "answer": 1,
               "explain": "Search / insert: Follow comparisons down a path."
             },
             {
               "q": "Which statement best defines Inorder traversal?",
               "options": [
-                "O(n log n); worst O(n^2) on bad pivots.",
-                "Self-balancing BST with coloured nodes and rotation/recolour rules.",
-                "Parenthesise matrix product to minimise scalar multiplies.",
-                "Yields keys in sorted order."
+                "Yields keys in sorted order.",
+                "Faster matrix multiply than naïve O(n^3) using 7 recursive multiplies.",
+                "Can be implemented stable.",
+                "O((n−m+1)m) worst case."
               ],
-              "answer": 3,
+              "answer": 0,
               "explain": "Inorder traversal: Yields keys in sorted order."
-            },
-            {
-              "q": "Which key idea belongs with Binary Search Trees?",
-              "options": [
-                "Explore level by level using a queue.",
-                "Balanced BST ⇒ O(log n); skewed ⇒ O(n).",
-                "Visit each vertex once and return — classic NP-complete flavour.",
-                "Stack, queue, linked lists — order and access rules matter."
-              ],
-              "answer": 1,
-              "explain": "Balanced BST ⇒ O(log n); skewed ⇒ O(n)."
             }
           ]
         },
@@ -1656,8 +1403,8 @@
             {
               "q": "Which statement best defines Optimal BST?",
               "options": [
-                "Optimal substructure + overlapping subproblems.",
-                "Yes (typical implementation).",
+                "Shortest paths between every pair.",
+                "Repeatedly swap adjacent out-of-order pairs.",
                 "Asymptotics, recurrence, Master theorem — how cost grows with n.",
                 "BST arranged to minimise expected search cost given key probabilities."
               ],
@@ -1667,35 +1414,24 @@
             {
               "q": "Which statement best defines DP construction?",
               "options": [
+                "Find pattern P in text T — naïve vs Rabin–Karp hashing.",
+                "Stricter / asymptotic equivalence ideas (if taught).",
                 "Classic dynamic-programming optimisation on key ranges.",
-                "Often T(n)=aT(n/b)+f(n).",
-                "Upper bound on growth rate (worst-case flavour in teaching).",
-                "Find pattern P in text T — naïve vs Rabin–Karp hashing."
+                "G=(V,E); directed/undirected; weighted/unweighted."
               ],
-              "answer": 0,
+              "answer": 2,
               "explain": "DP construction: Classic dynamic-programming optimisation on key ranges."
-            },
-            {
-              "q": "Regarding “Not the same as ‘any balanced BST’”, which is correct?",
-              "options": [
-                "Insert an element on top.",
-                "optimality uses frequencies.",
-                "Nodes with data + pointer(s); dynamic size.",
-                "O(n^2) worst; O(n) best on nearly sorted data."
-              ],
-              "answer": 1,
-              "explain": "Not the same as ‘any balanced BST’ — optimality uses frequencies."
             },
             {
               "q": "Which key idea belongs with Optimal Binary Search Tree?",
               "options": [
-                "Each node has next and prev pointers.",
-                "Sort by value/weight ratio; take until capacity fills.",
-                "Reweighting + Dijkstra from each source.",
-                "Related to matrix-chain style interval DP."
+                "Divide array, sort halves, merge sorted runs.",
+                "Not the same as ‘any balanced BST’ — optimality uses frequencies.",
+                "Non-negative weights; greedy with priority queue.",
+                "Shortest paths from one source to all vertices."
               ],
-              "answer": 3,
-              "explain": "Related to matrix-chain style interval DP."
+              "answer": 1,
+              "explain": "Not the same as ‘any balanced BST’ — optimality uses frequencies."
             }
           ]
         },
@@ -1728,7 +1464,7 @@
             {
               "q": "Which statement best defines Red-Black tree?",
               "options": [
-                "Yes (typical implementation).",
+                "O(n^2) worst; O(n) best on nearly sorted data.",
                 "Insert an element on top.",
                 "Self-balancing BST with coloured nodes and rotation/recolour rules.",
                 "Scan left→right: push operands; on operator, pop args, push result."
@@ -1739,23 +1475,23 @@
             {
               "q": "Which statement best defines Balance guarantee?",
               "options": [
-                "If chars equal, diagonal+1; else max of skip either.",
-                "Hash match but strings differ — must verify.",
-                "Not all recurrences fit; need regularity conditions.",
-                "Height O(log n); operations O(log n)."
+                "Rolling hash of windows; verify on hash hit.",
+                "Only one disk at a time; never place larger on smaller.",
+                "Height O(log n); operations O(log n).",
+                "Typical swap-based version is unstable."
               ],
-              "answer": 3,
+              "answer": 2,
               "explain": "Balance guarantee: Height O(log n); operations O(log n)."
             },
             {
               "q": "Which key idea belongs with Red-Black Trees?",
               "options": [
-                "Cover universe with minimum number of subsets.",
                 "Alternative to AVL with slightly different balance strictness.",
-                "G=(V,E); directed/undirected; weighted/unweighted.",
-                "Algorithms that use randomness for speed/simplicity (expected performance)."
+                "Divide → conquer recursively → combine.",
+                "Hardest problems in NP (under poly reductions).",
+                "Select max non-overlapping activities."
               ],
-              "answer": 1,
+              "answer": 0,
               "explain": "Alternative to AVL with slightly different balance strictness."
             }
           ]
@@ -1794,10 +1530,10 @@
             {
               "q": "Which statement best defines AVL tree?",
               "options": [
-                "Non-negative weights; greedy with priority queue.",
+                "Optimise linear objective under linear constraints — algorithmic tool.",
                 "BST where |height(left)−height(right)| ≤ 1 at every node.",
-                "Problem A ≤p B if A transforms to B in poly time.",
-                "Stops recursion; needed for well-founded analysis."
+                "Repeatedly select min (or max) from unsorted part and swap into place.",
+                "Entry pointer to the first node."
               ],
               "answer": 1,
               "explain": "AVL tree: BST where |height(left)−height(right)| ≤ 1 at every node."
@@ -1805,35 +1541,24 @@
             {
               "q": "Which statement best defines Rotations?",
               "options": [
-                "Cannot break items.",
-                "Solves T(n)=aT(n/b)+f(n) for many standard f.",
-                "Repeatedly swap adjacent out-of-order pairs.",
-                "LL, RR, LR, RL fix imbalance after insert/delete."
+                "Search/insert/delete O(log n).",
+                "LL, RR, LR, RL fix imbalance after insert/delete.",
+                "Yields keys in sorted order.",
+                "Θ(n^2) comparisons roughly always."
               ],
-              "answer": 3,
+              "answer": 1,
               "explain": "Rotations: LL, RR, LR, RL fix imbalance after insert/delete."
             },
             {
               "q": "Which statement best defines Complexity?",
               "options": [
-                "Search/insert/delete O(log n).",
+                "Stricter / asymptotic equivalence ideas (if taught).",
                 "Locally optimal choice hoping for global optimum — not always correct.",
-                "Repeatedly pick set covering most remaining elements.",
-                "How running time grows with input size n."
+                "Search/insert/delete O(log n).",
+                "Often T(n)=aT(n/b)+f(n)."
               ],
-              "answer": 0,
+              "answer": 2,
               "explain": "Complexity: Search/insert/delete O(log n)."
-            },
-            {
-              "q": "Which key idea belongs with AVL Trees?",
-              "options": [
-                "Stricter balance than Red-Black often ⇒ more rotations.",
-                "May take fraction of an item.",
-                "Remove the top element.",
-                "Explore deep along a path; backtrack; stack/recursion."
-              ],
-              "answer": 0,
-              "explain": "Stricter balance than Red-Black often ⇒ more rotations."
             }
           ]
         },
@@ -1871,10 +1596,10 @@
             {
               "q": "Which statement best defines B-tree?",
               "options": [
-                "T(n)=2T(n−1)+1, T(1)=1 → T(n)=2^n−1 moves.",
+                "At least as hard as NP-complete; may not be in NP.",
                 "Multiway balanced search tree for disk/block storage.",
-                "Θ(n^2) comparisons roughly always.",
-                "At least as hard as NP-complete; may not be in NP."
+                "Explore level by level using a queue.",
+                "Grow MST from a start vertex by always adding lightest safe edge out."
               ],
               "answer": 1,
               "explain": "B-tree: Multiway balanced search tree for disk/block storage."
@@ -1882,35 +1607,24 @@
             {
               "q": "Which statement best defines High fanout?",
               "options": [
-                "Good with strong hash; worst can degrade.",
-                "Many keys per node ⇒ shallow tree ⇒ fewer disk reads.",
-                "Optimal prefix codes using frequency-greedy tree.",
-                "Rolling hash of windows; verify on hash hit."
+                "Tracks components to detect cycles efficiently.",
+                "At least as hard as NP-complete; may not be in NP.",
+                "O(n log n); worst O(n^2) on bad pivots.",
+                "Many keys per node ⇒ shallow tree ⇒ fewer disk reads."
               ],
-              "answer": 1,
+              "answer": 3,
               "explain": "High fanout: Many keys per node ⇒ shallow tree ⇒ fewer disk reads."
             },
             {
               "q": "Which statement best defines Properties?",
               "options": [
+                "Repeatedly select min (or max) from unsorted part and swap into place.",
                 "All leaves at same level; node occupancy bounds (order).",
-                "Classic dynamic-programming optimisation on key ranges.",
-                "O(n log n); worst O(n^2) on bad pivots.",
-                "Local optimum can lead to global (when algorithm is correct)."
+                "T(n) defined in terms of T(smaller).",
+                "Preorder, inorder, postorder — Class 2: expect these in end-term."
               ],
-              "answer": 0,
+              "answer": 1,
               "explain": "Properties: All leaves at same level; node occupancy bounds (order)."
-            },
-            {
-              "q": "Which key idea belongs with B Trees?",
-              "options": [
-                "Hash match but strings differ — must verify.",
-                "Typical swap-based version is unstable.",
-                "Visit each vertex once and return — classic NP-complete flavour.",
-                "Designed for secondary storage, not only RAM."
-              ],
-              "answer": 3,
-              "explain": "Designed for secondary storage, not only RAM."
             }
           ]
         },
@@ -1943,35 +1657,46 @@
             {
               "q": "Which statement best defines Spanning tree?",
               "options": [
-                "Defers operators until operands are known — natural LIFO.",
-                "Optimal substructure + overlapping subproblems.",
                 "Subgraph that is a tree connecting all vertices.",
-                "Tracks components to detect cycles efficiently."
+                "T(n) defined in terms of T(smaller).",
+                "Walk forward or backward.",
+                "Good with strong hash; worst can degrade."
               ],
-              "answer": 2,
+              "answer": 0,
               "explain": "Spanning tree: Subgraph that is a tree connecting all vertices."
             },
             {
               "q": "Which statement best defines MST?",
               "options": [
-                "Nodes with data + pointer(s); dynamic size.",
-                "Efficiency/resource-conscious computing themes tied to algorithmic cost.",
+                "Yes — equal keys keep their relative order after sorting.",
                 "Spanning tree of minimum total edge weight.",
-                "0/1, fractional, unbounded — different algorithms."
+                "Good with strong hash; worst can degrade.",
+                "T(n)=2T(n−1)+1, T(1)=1 → T(n)=2^n−1 moves."
               ],
-              "answer": 2,
+              "answer": 1,
               "explain": "MST: Spanning tree of minimum total edge weight."
             },
             {
               "q": "Which key idea belongs with Spanning Trees?",
               "options": [
-                "Often priority queue for cut edges.",
-                "Follow comparisons down a path.",
+                "Problem A ≤p B if A transforms to B in poly time.",
                 "Exists for connected undirected graphs.",
-                "Satisfiability of Boolean formulas — central NP-complete problem."
+                "Read the top without removing it.",
+                "Definition + one simple example (e.g. tea/recipe) + the five characteristics."
               ],
-              "answer": 2,
+              "answer": 1,
               "explain": "Exists for connected undirected graphs."
+            },
+            {
+              "q": "Which exam tip fits Spanning Trees?",
+              "options": [
+                "Many keys per node ⇒ shallow tree ⇒ fewer disk reads.",
+                "Explore deep along a path; backtrack; stack/recursion.",
+                "Multiway balanced search tree for disk/block storage.",
+                "LMR (Class 2 foreshadow): spanning tree / MST idea before diving only into code."
+              ],
+              "answer": 3,
+              "explain": "LMR (Class 2 foreshadow): spanning tree / MST idea before diving only into code."
             }
           ]
         },
@@ -2004,34 +1729,34 @@
             {
               "q": "Which statement best defines Prim’s algorithm?",
               "options": [
-                "Select max non-overlapping activities.",
-                "Justifies composing sub-results into global optimum.",
-                "Unit-time jobs with deadlines and profits; maximise profit.",
-                "Grow MST from a start vertex by always adding lightest safe edge out."
+                "Build sorted prefix; insert next element into place.",
+                "Grow MST from a start vertex by always adding lightest safe edge out.",
+                "Algebraic recombination reduces multiplications; adds more additions.",
+                "Classic dynamic-programming optimisation on key ranges."
               ],
-              "answer": 3,
+              "answer": 1,
               "explain": "Prim’s algorithm: Grow MST from a start vertex by always adding lightest safe edge out."
             },
             {
               "q": "Which statement best defines Data structure?",
               "options": [
+                "Algorithms that use randomness for speed/simplicity (expected performance).",
+                "T(n)=2T(n−1)+1, T(1)=1 → T(n)=2^n−1 moves.",
                 "Often priority queue for cut edges.",
-                "Repeatedly merge two least frequent nodes.",
-                "Repeatedly swap adjacent out-of-order pairs.",
-                "Hardest problems in NP (under poly reductions)."
+                "Insert an element on top."
               ],
-              "answer": 0,
+              "answer": 2,
               "explain": "Data structure: Often priority queue for cut edges."
             },
             {
               "q": "Which key idea belongs with Prim’s Algorithm?",
               "options": [
-                "Cut property: lightest edge crossing the cut is safe for MST.",
                 "Sort by value/weight ratio; take until capacity fills.",
-                "Wrap indices to reuse array space.",
-                "Systematic visit: DFS/BFS."
+                "Shortest paths between every pair.",
+                "Mostly yes (small stack); not stable typically.",
+                "Cut property: lightest edge crossing the cut is safe for MST."
               ],
-              "answer": 0,
+              "answer": 3,
               "explain": "Cut property: lightest edge crossing the cut is safe for MST."
             }
           ]
@@ -2065,34 +1790,34 @@
             {
               "q": "Which statement best defines Kruskal’s algorithm?",
               "options": [
-                "Partition around pivot; recurse on parts.",
-                "Θ(n^2) comparisons roughly always.",
-                "Left keys < node < right keys (standard ordering).",
-                "Sort edges by weight; add if it doesn’t form a cycle (Union–Find)."
+                "Sort edges by weight; add if it doesn’t form a cycle (Union–Find).",
+                "Finite, unambiguous sequence of steps producing output from input.",
+                "Repeatedly pick set covering most remaining elements.",
+                "Variants about occupancy of levels (syllabus defs)."
               ],
-              "answer": 3,
+              "answer": 0,
               "explain": "Kruskal’s algorithm: Sort edges by weight; add if it doesn’t form a cycle (Union–Find)."
             },
             {
               "q": "Which statement best defines Union–Find?",
               "options": [
-                "Build heap, repeatedly extract max/min to place next sorted item.",
-                "DP over intermediate vertices; O(V^3).",
                 "Tracks components to detect cycles efficiently.",
-                "Find pattern P in text T — naïve vs Rabin–Karp hashing."
+                "Find pattern P in text T — naïve vs Rabin–Karp hashing.",
+                "Follow comparisons down a path.",
+                "Θ(n log n) in all cases — predictable guaranteed bound."
               ],
-              "answer": 2,
+              "answer": 0,
               "explain": "Union–Find: Tracks components to detect cycles efficiently."
             },
             {
               "q": "Which key idea belongs with Kruskal’s Algorithm?",
               "options": [
-                "Optimal prefix codes using frequency-greedy tree.",
                 "Edge-centric; works well on sparse graphs.",
-                "At least as hard as NP-complete; may not be in NP.",
-                "Sort by value/weight ratio; take until capacity fills."
+                "Each node has at most two children (left/right).",
+                "Grow MST from a start vertex by always adding lightest safe edge out.",
+                "T(n) defined in terms of T(smaller)."
               ],
-              "answer": 1,
+              "answer": 0,
               "explain": "Edge-centric; works well on sparse graphs."
             }
           ]
@@ -2131,45 +1856,56 @@
             {
               "q": "Which statement best defines Graph?",
               "options": [
-                "Schedule jobs to maximise profit under constraints (often deadlines/slots).",
-                "Set of vertices incident to every edge.",
-                "Repeatedly swap adjacent out-of-order pairs.",
-                "G=(V,E); directed/undirected; weighted/unweighted."
+                "All leaves at same level; node occupancy bounds (order).",
+                "G=(V,E); directed/undirected; weighted/unweighted.",
+                "Divide → conquer recursively → combine.",
+                "Self-balancing BST with coloured nodes and rotation/recolour rules."
               ],
-              "answer": 3,
+              "answer": 1,
               "explain": "Graph: G=(V,E); directed/undirected; weighted/unweighted."
             },
             {
-              "q": "Which statement best defines Representations?",
+              "q": "Which statement best defines Adjacency matrix?",
               "options": [
-                "Classic NP-hard optimisation problem.",
-                "Adjacency matrix vs adjacency list.",
-                "No codeword is prefix of another — unique decode.",
-                "If chars equal, diagonal+1; else max of skip either."
+                "Solve overlapping subproblems once; store answers.",
+                "Teacher: undirected missing edge → ∞ (or no edge mark); directed missing → 0 as taught.",
+                "List neighbours of each vertex — good for sparse graphs.",
+                "Each node has next and prev pointers."
               ],
               "answer": 1,
-              "explain": "Representations: Adjacency matrix vs adjacency list."
+              "explain": "Adjacency matrix: Teacher: undirected missing edge → ∞ (or no edge mark); directed missing → 0 as taught."
+            },
+            {
+              "q": "Which statement best defines Adjacency list?",
+              "options": [
+                "Each node points to next only.",
+                "Shortest paths between every pair.",
+                "List neighbours of each vertex — good for sparse graphs.",
+                "Vertices + edges; DFS/BFS and shortest paths are core traversals."
+              ],
+              "answer": 2,
+              "explain": "Adjacency list: List neighbours of each vertex — good for sparse graphs."
             },
             {
               "q": "Which statement best defines Traversal?",
               "options": [
-                "Multiway balanced search tree for disk/block storage.",
-                "Knapsack variants, activity selection, Huffman, TSP.",
+                "Locally optimal choice hoping for global optimum — not always correct.",
                 "Systematic visit: DFS/BFS.",
-                "Good with strong hash; worst can degrade."
+                "Easier deletion when you have the node (prev is known).",
+                "Sort profits descending; assign to feasible time slot."
               ],
-              "answer": 2,
+              "answer": 1,
               "explain": "Traversal: Systematic visit: DFS/BFS."
             },
             {
               "q": "Which key idea belongs with Terminology, Representations, Traversals?",
               "options": [
+                "Hardest problems in NP (under poly reductions).",
                 "Matrix: O(1) edge query, O(V^2) space; list: better for sparse.",
-                "Optimal substructure + overlapping subproblems; store results.",
-                "Build sorted prefix; insert next element into place.",
-                "Self-balancing BST with coloured nodes and rotation/recolour rules."
+                "Finite, unambiguous sequence of steps producing output from input.",
+                "Teacher: height of a tree is a recurring exam question — practise on a drawn tree."
               ],
-              "answer": 0,
+              "answer": 1,
               "explain": "Matrix: O(1) edge query, O(V^2) space; list: better for sparse."
             }
           ]
@@ -2203,34 +1939,34 @@
             {
               "q": "Which statement best defines DFS?",
               "options": [
-                "Classic dynamic-programming optimisation on key ranges.",
-                "Build heap, repeatedly extract max/min to place next sorted item.",
-                "Asymptotics, recurrence, Master theorem — how cost grows with n.",
-                "Explore deep along a path; backtrack; stack/recursion."
+                "Efficiency/resource-conscious computing themes tied to algorithmic cost.",
+                "Explore deep along a path; backtrack; stack/recursion.",
+                "File systems, expression trees, search structures, heaps.",
+                "Repeatedly pick set covering most remaining elements."
               ],
-              "answer": 3,
+              "answer": 1,
               "explain": "DFS: Explore deep along a path; backtrack; stack/recursion."
             },
             {
               "q": "Which statement best defines Uses?",
               "options": [
-                "Each node has next and prev pointers.",
-                "Partition around pivot; recurse on parts.",
-                "Adjacency matrix vs adjacency list.",
-                "Cycle detect, topological sort, components, path finding."
+                "Grow MST from a start vertex by always adding lightest safe edge out.",
+                "Cycle detect, topological sort, components, path finding.",
+                "Each node has at most two children (left/right).",
+                "Visit each vertex once and return — classic NP-complete flavour."
               ],
-              "answer": 3,
+              "answer": 1,
               "explain": "Uses: Cycle detect, topological sort, components, path finding."
             },
             {
               "q": "Which key idea belongs with Depth-First Search (DFS)?",
               "options": [
-                "Vertices + edges; DFS/BFS and shortest paths are core traversals.",
-                "Hash match but strings differ — must verify.",
-                "Repeatedly swap adjacent out-of-order pairs.",
-                "DFS forest / timestamps appear in CLRS-style analysis."
+                "DFS forest / timestamps appear in CLRS-style analysis.",
+                "Compare f(n) with n^{log_b a} (three main cases).",
+                "Algorithms that use randomness for speed/simplicity (expected performance).",
+                "Teacher: height of a tree is a recurring exam question — practise on a drawn tree."
               ],
-              "answer": 3,
+              "answer": 0,
               "explain": "DFS forest / timestamps appear in CLRS-style analysis."
             }
           ]
@@ -2264,32 +2000,32 @@
             {
               "q": "Which statement best defines BFS?",
               "options": [
-                "Divide → conquer recursively → combine.",
                 "Explore level by level using a queue.",
-                "T(n) defined in terms of T(smaller).",
-                "Yields keys in sorted order."
+                "Justifies composing sub-results into global optimum.",
+                "Finite, unambiguous sequence of steps producing output from input.",
+                "Strategies to solve recurrences."
               ],
-              "answer": 1,
+              "answer": 0,
               "explain": "BFS: Explore level by level using a queue."
             },
             {
               "q": "Which statement best defines Unweighted shortest path?",
               "options": [
-                "May take fraction of an item.",
-                "B is at least as hard as A (for hardness proofs).",
+                "O(n log n) overall; build-heap is O(n), then n extracts.",
                 "BFS layers give fewest edges from source.",
-                "Upper bound on growth rate (worst-case flavour in teaching)."
+                "Divide array, sort halves, merge sorted runs.",
+                "Teacher stress: infix→postfix and postfix↔prefix are exam favourites."
               ],
-              "answer": 2,
+              "answer": 1,
               "explain": "Unweighted shortest path: BFS layers give fewest edges from source."
             },
             {
               "q": "Which key idea belongs with Breadth-First Search (BFS)?",
               "options": [
-                "Top node / no children / has children.",
-                "Cycle visiting each vertex exactly once and returning.",
+                "Longest common subsequence of two strings (not necessarily contiguous).",
+                "Divide array, sort halves, merge sorted runs.",
                 "Queue is essential; mark visited to avoid reprocessing.",
-                "Each node has next and prev pointers."
+                "Fewer operations / less energy as a motivation for better algorithms."
               ],
               "answer": 2,
               "explain": "Queue is essential; mark visited to avoid reprocessing."
@@ -2330,31 +2066,31 @@
             {
               "q": "Which statement best defines Single-source shortest path?",
               "options": [
+                "Shortest paths from one source to all vertices.",
+                "Tracks components to detect cycles efficiently.",
                 "Vertices + edges; DFS/BFS and shortest paths are core traversals.",
-                "Upper bound on growth rate (worst-case flavour in teaching).",
-                "Wrap indices to reuse array space.",
-                "Shortest paths from one source to all vertices."
+                "Not all recurrences fit; need regularity conditions."
               ],
-              "answer": 3,
+              "answer": 0,
               "explain": "Single-source shortest path: Shortest paths from one source to all vertices."
             },
             {
               "q": "Which statement best defines Dijkstra?",
               "options": [
-                "Pop on empty / push on full (array stack).",
-                "Different cases; exams often want worst-case Big-O.",
+                "Easier deletion when you have the node (prev is known).",
                 "Non-negative weights; greedy with priority queue.",
-                "Yields keys in sorted order."
+                "Short verifiable witness for yes instances (for NP).",
+                "Hard decision problems; reductions show hardness."
               ],
-              "answer": 2,
+              "answer": 1,
               "explain": "Dijkstra: Non-negative weights; greedy with priority queue."
             },
             {
               "q": "Which statement best defines Bellman–Ford?",
               "options": [
                 "Find pattern P in text T — naïve vs Rabin–Karp hashing.",
-                "Classic dynamic-programming optimisation on key ranges.",
-                "No codeword is prefix of another — unique decode.",
+                "Subgraph that is a tree connecting all vertices.",
+                "Hash match but strings differ — must verify.",
                 "Handles negative edges; detects negative cycles."
               ],
               "answer": 3,
@@ -2363,12 +2099,12 @@
             {
               "q": "Which key idea belongs with Single-Source Shortest Path?",
               "options": [
-                "Good with strong hash; worst can degrade.",
-                "O((n−m+1)m) worst case.",
-                "Dijkstra fails with negative edges.",
-                "Defers operators until operands are known — natural LIFO."
+                "Remove the top element.",
+                "Not all recurrences fit; need regularity conditions.",
+                "Sort by value/weight ratio; take until capacity fills.",
+                "Dijkstra fails with negative edges."
               ],
-              "answer": 2,
+              "answer": 3,
               "explain": "Dijkstra fails with negative edges."
             }
           ]
@@ -2408,9 +2144,9 @@
               "q": "Which statement best defines All-pairs shortest path?",
               "options": [
                 "Shortest paths between every pair.",
-                "Interval DP over chain length.",
-                "Divide → conquer recursively → combine.",
-                "Only one disk at a time; never place larger on smaller."
+                "Set of vertices incident to every edge.",
+                "If chars equal, diagonal+1; else max of skip either.",
+                "Mostly yes (small stack); not stable typically."
               ],
               "answer": 0,
               "explain": "All-pairs shortest path: Shortest paths between every pair."
@@ -2418,35 +2154,24 @@
             {
               "q": "Which statement best defines Floyd–Warshall?",
               "options": [
+                "Short verifiable witness for yes instances (for NP).",
                 "DP over intermediate vertices; O(V^3).",
-                "Hash match but strings differ — must verify.",
-                "Input, output, finiteness, definiteness, effectiveness (and often generality).",
-                "At least as hard as NP-complete; may not be in NP."
+                "Interval DP over chain length.",
+                "Brute force, DP (Held–Karp), heuristics/approx."
               ],
-              "answer": 0,
+              "answer": 1,
               "explain": "Floyd–Warshall: DP over intermediate vertices; O(V^3)."
             },
             {
               "q": "Which statement best defines Johnson’s (if taught)?",
               "options": [
-                "Reweighting + Dijkstra from each source.",
-                "B is at least as hard as A (for hardness proofs).",
-                "Input, output, finiteness, definiteness, effectiveness (and often generality).",
-                "Shortest paths from one source to all vertices."
-              ],
-              "answer": 0,
-              "explain": "Johnson’s (if taught): Reweighting + Dijkstra from each source."
-            },
-            {
-              "q": "Which key idea belongs with All-Pair Shortest Path?",
-              "options": [
-                "Only one disk at a time; never place larger on smaller.",
-                "Cannot break items.",
-                "Often T(n)=aT(n/b)+f(n).",
-                "Floyd works with negatives but not negative cycles."
+                "Knapsack variants, activity selection, Huffman, TSP.",
+                "Set of vertices incident to every edge.",
+                "Non-negative weights; greedy with priority queue.",
+                "Reweighting + Dijkstra from each source."
               ],
               "answer": 3,
-              "explain": "Floyd works with negatives but not negative cycles."
+              "explain": "Johnson’s (if taught): Reweighting + Dijkstra from each source."
             }
           ]
         }
@@ -2486,52 +2211,8 @@
               "detail": "3.1.1 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Dynamic programming?",
-              "options": [
-                "Yes — equal keys keep their relative order after sorting.",
-                "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP.",
-                "DP over intermediate vertices; O(V^3).",
-                "Solve overlapping subproblems once; store answers."
-              ],
-              "answer": 3,
-              "explain": "Dynamic programming: Solve overlapping subproblems once; store answers."
-            },
-            {
-              "q": "Which statement best defines Memoisation vs tabulation?",
-              "options": [
-                "Top-down cache vs bottom-up table.",
-                "Each node has at most two children (left/right).",
-                "Can be implemented stable.",
-                "Brute force, DP (Held–Karp), heuristics/approx."
-              ],
-              "answer": 0,
-              "explain": "Memoisation vs tabulation: Top-down cache vs bottom-up table."
-            },
-            {
-              "q": "Which statement best defines When?",
-              "options": [
-                "Hardest problems in NP (under poly reductions).",
-                "Solve overlapping subproblems once; store answers.",
-                "Remove the top element.",
-                "Optimal substructure + overlapping subproblems."
-              ],
-              "answer": 3,
-              "explain": "When: Optimal substructure + overlapping subproblems."
-            },
-            {
-              "q": "Which key idea belongs with Dynamic Programming Approach?",
-              "options": [
-                "DP ≠ divide-and-conquer alone (D&C may not overlap).",
-                "How running time grows with input size n.",
-                "Asymptotics, recurrence, Master theorem — how cost grows with n.",
-                "Build heap, repeatedly extract max/min to place next sorted item."
-              ],
-              "answer": 0,
-              "explain": "DP ≠ divide-and-conquer alone (D&C may not overlap)."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "3.1.2",
@@ -2558,41 +2239,8 @@
               "detail": "3.1.2 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Principle of optimality?",
-              "options": [
-                "Yields keys in sorted order.",
-                "Optimal solution contains optimal solutions to subproblems.",
-                "Problem A ≤p B if A transforms to B in poly time.",
-                "Each node has next and prev pointers."
-              ],
-              "answer": 1,
-              "explain": "Principle of optimality: Optimal solution contains optimal solutions to subproblems."
-            },
-            {
-              "q": "Which statement best defines Role in DP?",
-              "options": [
-                "Justifies composing sub-results into global optimum.",
-                "Deciding existence is NP-complete (classic).",
-                "Compare f(n) with n^{log_b a} (three main cases).",
-                "Scan left→right: push operands; on operator, pop args, push result."
-              ],
-              "answer": 0,
-              "explain": "Role in DP: Justifies composing sub-results into global optimum."
-            },
-            {
-              "q": "Which key idea belongs with Principle of Optimality?",
-              "options": [
-                "Many keys per node ⇒ shallow tree ⇒ fewer disk reads.",
-                "If principle fails, DP formulation is invalid.",
-                "LL, RR, LR, RL fix imbalance after insert/delete.",
-                "Merge sort, binary search, some matrix methods."
-              ],
-              "answer": 1,
-              "explain": "If principle fails, DP formulation is invalid."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "3.1.3",
@@ -2619,41 +2267,8 @@
               "detail": "3.1.3 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Strassen multiplication?",
-              "options": [
-                "Faster matrix multiply than naïve O(n^3) using 7 recursive multiplies.",
-                "Θ(n^2) comparisons roughly always.",
-                "T(n)=2T(n−1)+1, T(1)=1 → T(n)=2^n−1 moves.",
-                "Try P at every shift of T; compare chars."
-              ],
-              "answer": 0,
-              "explain": "Strassen multiplication: Faster matrix multiply than naïve O(n^3) using 7 recursive multiplies."
-            },
-            {
-              "q": "Which statement best defines Idea?",
-              "options": [
-                "Yields keys in sorted order.",
-                "Multiway balanced search tree for disk/block storage.",
-                "Algebraic recombination reduces multiplications; adds more additions.",
-                "Input, output, finiteness, definiteness, effectiveness (and often generality)."
-              ],
-              "answer": 2,
-              "explain": "Idea: Algebraic recombination reduces multiplications; adds more additions."
-            },
-            {
-              "q": "Which key idea belongs with Strassens Matrix Multiplication?",
-              "options": [
-                "LL, RR, LR, RL fix imbalance after insert/delete.",
-                "Optimise linear objective under linear constraints — algorithmic tool.",
-                "Short verifiable witness for yes instances (for NP).",
-                "Asymptotically better; constants/practicality may vary."
-              ],
-              "answer": 3,
-              "explain": "Asymptotically better; constants/practicality may vary."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "3.1.4",
@@ -2680,41 +2295,8 @@
               "detail": "3.1.4 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Matrix chain multiplication?",
-              "options": [
-                "Hash match but strings differ — must verify.",
-                "Parenthesise matrix product to minimise scalar multiplies.",
-                "O(n log n) overall; build-heap is O(n), then n extracts.",
-                "O(n log n); worst O(n^2) on bad pivots."
-              ],
-              "answer": 1,
-              "explain": "Matrix chain multiplication: Parenthesise matrix product to minimise scalar multiplies."
-            },
-            {
-              "q": "Which statement best defines DP?",
-              "options": [
-                "Interval DP over chain length.",
-                "Each node has at most two children (left/right).",
-                "Hierarchical linked structures; BST/AVL/B-tree variants balance search cost.",
-                "FIFO: enqueue at rear, dequeue at front."
-              ],
-              "answer": 0,
-              "explain": "DP: Interval DP over chain length."
-            },
-            {
-              "q": "Which key idea belongs with Matrix Chain Multiplication?",
-              "options": [
-                "Nodes with data + pointer(s); dynamic size.",
-                "Stops recursion; needed for well-founded analysis.",
-                "Order of multiplication changes cost, not the mathematical product.",
-                "Insert rear / remove front."
-              ],
-              "answer": 2,
-              "explain": "Order of multiplication changes cost, not the mathematical product."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "3.1.5",
@@ -2741,41 +2323,8 @@
               "detail": "3.1.5 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines LCS?",
-              "options": [
-                "Longest common subsequence of two strings (not necessarily contiguous).",
-                "Systematic visit: DFS/BFS.",
-                "Each node points to next only.",
-                "Optimal substructure + overlapping subproblems."
-              ],
-              "answer": 0,
-              "explain": "LCS: Longest common subsequence of two strings (not necessarily contiguous)."
-            },
-            {
-              "q": "Which statement best defines DP table?",
-              "options": [
-                "Subgraph that is a tree connecting all vertices.",
-                "Vertices + edges; DFS/BFS and shortest paths are core traversals.",
-                "O(n^2) worst; O(n) best on nearly sorted data.",
-                "If chars equal, diagonal+1; else max of skip either."
-              ],
-              "answer": 3,
-              "explain": "DP table: If chars equal, diagonal+1; else max of skip either."
-            },
-            {
-              "q": "Which key idea belongs with Longest Common subsequence?",
-              "options": [
-                "Classic dynamic-programming optimisation on key ranges.",
-                "Subsequence ≠ substring (substring is contiguous).",
-                "Top node / no children / has children.",
-                "Not all recurrences fit; need regularity conditions."
-              ],
-              "answer": 1,
-              "explain": "Subsequence ≠ substring (substring is contiguous)."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "3.1.6",
@@ -2807,52 +2356,8 @@
               "detail": "3.1.6 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines 0/1 knapsack?",
-              "options": [
-                "LL, RR, LR, RL fix imbalance after insert/delete.",
-                "Non-negative weights; greedy with priority queue.",
-                "Optimal prefix codes using frequency-greedy tree.",
-                "Each item take or not; maximise value under weight limit."
-              ],
-              "answer": 3,
-              "explain": "0/1 knapsack: Each item take or not; maximise value under weight limit."
-            },
-            {
-              "q": "Which statement best defines DP?",
-              "options": [
-                "dp[i][w] style; pseudo-polynomial in capacity.",
-                "Stack, queue, linked lists — order and access rules matter.",
-                "Vertices + edges; DFS/BFS and shortest paths are core traversals.",
-                "Compare algorithms by time, space, and stability."
-              ],
-              "answer": 0,
-              "explain": "DP: dp[i][w] style; pseudo-polynomial in capacity."
-            },
-            {
-              "q": "Which statement best defines Not fractional?",
-              "options": [
-                "Build heap, repeatedly extract max/min to place next sorted item.",
-                "Decision problem: decide whether any subset of numbers adds exactly to target t.",
-                "Cannot break items.",
-                "Justifies composing sub-results into global optimum."
-              ],
-              "answer": 2,
-              "explain": "Not fractional: Cannot break items."
-            },
-            {
-              "q": "Which key idea belongs with 0/1 Knapsack Problem?",
-              "options": [
-                "T(n)=2T(n−1)+1, T(1)=1 → T(n)=2^n−1 moves.",
-                "Stack, queue, linked lists — order and access rules matter.",
-                "Contrast fractional knapsack (greedy by value/weight).",
-                "How running time grows with input size n."
-              ],
-              "answer": 2,
-              "explain": "Contrast fractional knapsack (greedy by value/weight)."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "3.2.1",
@@ -2884,52 +2389,8 @@
               "detail": "3.2.1 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Greedy approach?",
-              "options": [
-                "Good with strong hash; worst can degrade.",
-                "Build solution by locally best choice at each step.",
-                "Unit-time jobs with deadlines and profits; maximise profit.",
-                "Algebraic recombination reduces multiplications; adds more additions."
-              ],
-              "answer": 1,
-              "explain": "Greedy approach: Build solution by locally best choice at each step."
-            },
-            {
-              "q": "Which statement best defines Greedy choice property?",
-              "options": [
-                "Repeatedly swap adjacent out-of-order pairs.",
-                "Local optimum can lead to global (when algorithm is correct).",
-                "Decision problem: decide whether any subset of numbers adds exactly to target t.",
-                "Set of vertices incident to every edge."
-              ],
-              "answer": 1,
-              "explain": "Greedy choice property: Local optimum can lead to global (when algorithm is correct)."
-            },
-            {
-              "q": "Which statement best defines Exchange argument?",
-              "options": [
-                "O(n^2) typical/worst; can be O(n) if already sorted with early exit.",
-                "Handles negative edges; detects negative cycles.",
-                "Search/insert/delete O(log n).",
-                "Proof style that swaps to show optimality."
-              ],
-              "answer": 3,
-              "explain": "Exchange argument: Proof style that swaps to show optimality."
-            },
-            {
-              "q": "Regarding “Greedy is fast but not always optimal”, which is correct?",
-              "options": [
-                "Sort profits descending; assign to feasible time slot.",
-                "Top-down cache vs bottom-up table.",
-                "dp[i][w] style; pseudo-polynomial in capacity.",
-                "need a proof or known pattern."
-              ],
-              "answer": 3,
-              "explain": "Greedy is fast but not always optimal — need a proof or known pattern."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "3.2.2",
@@ -2956,41 +2417,8 @@
               "detail": "3.2.2 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Activity selection?",
-              "options": [
-                "Optimal solution contains optimal solutions to subproblems.",
-                "Short verifiable witness for yes instances (for NP).",
-                "Select max non-overlapping activities.",
-                "Hardest problems in NP (under poly reductions)."
-              ],
-              "answer": 2,
-              "explain": "Activity selection: Select max non-overlapping activities."
-            },
-            {
-              "q": "Which statement best defines Greedy rule?",
-              "options": [
-                "Vertex cover, set cover, subset-sum — often near-optimal algorithms.",
-                "Move n disks from source to target using auxiliary peg.",
-                "Rolling hash of windows; verify on hash hit.",
-                "Usually earliest finishing time first."
-              ],
-              "answer": 3,
-              "explain": "Greedy rule: Usually earliest finishing time first."
-            },
-            {
-              "q": "Which key idea belongs with Activity Selection Problem?",
-              "options": [
-                "Sort by finish time, then pick compatible next.",
-                "Yes (array heap); not typically stable.",
-                "Stack, queue, linked lists — order and access rules matter.",
-                "Find pattern P in text T — naïve vs Rabin–Karp hashing."
-              ],
-              "answer": 0,
-              "explain": "Sort by finish time, then pick compatible next."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "3.2.3",
@@ -3022,52 +2450,8 @@
               "detail": "3.2.3 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Huffman codes?",
-              "options": [
-                "Optimal prefix codes using frequency-greedy tree.",
-                "Sort profits descending; assign to feasible time slot.",
-                "Θ(n^2) comparisons roughly always.",
-                "Often sort by profit; place in latest free slot before deadline."
-              ],
-              "answer": 0,
-              "explain": "Huffman codes: Optimal prefix codes using frequency-greedy tree."
-            },
-            {
-              "q": "Which statement best defines Prefix-free?",
-              "options": [
-                "O(n^2) worst; O(n) best on nearly sorted data.",
-                "No codeword is prefix of another — unique decode.",
-                "Self-balancing BST with coloured nodes and rotation/recolour rules.",
-                "Optimal substructure + overlapping subproblems."
-              ],
-              "answer": 1,
-              "explain": "Prefix-free: No codeword is prefix of another — unique decode."
-            },
-            {
-              "q": "Which statement best defines Build?",
-              "options": [
-                "Connected acyclic graph; hierarchical parent–child.",
-                "Many keys per node ⇒ shallow tree ⇒ fewer disk reads.",
-                "Partition around pivot; recurse on parts.",
-                "Repeatedly merge two least frequent nodes."
-              ],
-              "answer": 3,
-              "explain": "Build: Repeatedly merge two least frequent nodes."
-            },
-            {
-              "q": "Which statement about Huffman Codes is correct?",
-              "options": [
-                "More frequent symbols → shorter codes.",
-                "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP.",
-                "Lower bound on growth.",
-                "Repeatedly pick set covering most remaining elements."
-              ],
-              "answer": 0,
-              "explain": "More frequent symbols → shorter codes."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "3.2.4",
@@ -3094,41 +2478,8 @@
               "detail": "3.2.4 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Fractional knapsack?",
-              "options": [
-                "Many keys per node ⇒ shallow tree ⇒ fewer disk reads.",
-                "Fewer operations / less energy as a motivation for better algorithms.",
-                "May take fraction of an item.",
-                "Visit each city once and return; minimise tour length."
-              ],
-              "answer": 2,
-              "explain": "Fractional knapsack: May take fraction of an item."
-            },
-            {
-              "q": "Which statement best defines Greedy?",
-              "options": [
-                "Search/insert/delete O(log n).",
-                "Spanning tree of minimum total edge weight.",
-                "Tracks components to detect cycles efficiently.",
-                "Sort by value/weight ratio; take until capacity fills."
-              ],
-              "answer": 3,
-              "explain": "Greedy: Sort by value/weight ratio; take until capacity fills."
-            },
-            {
-              "q": "Which key idea belongs with Fractional Knapsack Problem?",
-              "options": [
-                "Visit each vertex once and return — classic NP-complete flavour.",
-                "Optimal for fractional case; not for 0/1.",
-                "T(n) defined in terms of T(smaller).",
-                "Classic 2-approx: pick both ends of an uncovered edge, repeat."
-              ],
-              "answer": 1,
-              "explain": "Optimal for fractional case; not for 0/1."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "3.3.1",
@@ -3160,52 +2511,8 @@
               "detail": "3.3.1 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines TSP?",
-              "options": [
-                "Strategies to solve recurrences.",
-                "Partition around pivot; recurse on parts.",
-                "Adjacency matrix vs adjacency list.",
-                "Visit each city once and return; minimise tour length."
-              ],
-              "answer": 3,
-              "explain": "TSP: Visit each city once and return; minimise tour length."
-            },
-            {
-              "q": "Which statement best defines Hardness?",
-              "options": [
-                "Remove the top element.",
-                "Top-down cache vs bottom-up table.",
-                "Classic NP-hard optimisation problem.",
-                "Variants about occupancy of levels (syllabus defs)."
-              ],
-              "answer": 2,
-              "explain": "Hardness: Classic NP-hard optimisation problem."
-            },
-            {
-              "q": "Which statement best defines Approaches?",
-              "options": [
-                "Multiway balanced search tree for disk/block storage.",
-                "Insert an element on top.",
-                "Brute force, DP (Held–Karp), heuristics/approx.",
-                "Satisfiability of Boolean formulas — central NP-complete problem."
-              ],
-              "answer": 2,
-              "explain": "Approaches: Brute force, DP (Held–Karp), heuristics/approx."
-            },
-            {
-              "q": "Regarding “Brute force is factorial”, which is correct?",
-              "options": [
-                "FIFO: enqueue at rear, dequeue at front.",
-                "not scalable.",
-                "T(n)=2T(n−1)+1, T(1)=1 → T(n)=2^n−1 moves.",
-                "Build solution by locally best choice at each step."
-              ],
-              "answer": 1,
-              "explain": "Brute force is factorial — not scalable."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "3.3.2",
@@ -3232,52 +2539,8 @@
               "detail": "3.3.2 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Knapsack problem (general)?",
-              "options": [
-                "Stops recursion; needed for well-founded analysis.",
-                "Select items under capacity to maximise value.",
-                "Finite, unambiguous sequence of steps producing output from input.",
-                "O((n−m+1)m) worst case."
-              ],
-              "answer": 1,
-              "explain": "Knapsack problem (general): Select items under capacity to maximise value."
-            },
-            {
-              "q": "Which statement best defines Variants?",
-              "options": [
-                "0/1, fractional, unbounded — different algorithms.",
-                "Stops recursion; needed for well-founded analysis.",
-                "Divide array, sort halves, merge sorted runs.",
-                "Often sort by profit; place in latest free slot before deadline."
-              ],
-              "answer": 0,
-              "explain": "Variants: 0/1, fractional, unbounded — different algorithms."
-            },
-            {
-              "q": "Which statement about Knapsack Problem is correct?",
-              "options": [
-                "Classic NP-hard optimisation problem.",
-                "Entry pointer to the first node.",
-                "Name the variant before choosing DP vs greedy.",
-                "Efficiency/resource angle linked in this module’s framing."
-              ],
-              "answer": 2,
-              "explain": "Name the variant before choosing DP vs greedy."
-            },
-            {
-              "q": "Which key idea belongs with Knapsack Problem?",
-              "options": [
-                "Scan left→right: push operands; on operator, pop args, push result.",
-                "Upper bound on growth rate (worst-case flavour in teaching).",
-                "Syllabus may revisit knapsack under ‘problems’ cluster.",
-                "Build heap, repeatedly extract max/min to place next sorted item."
-              ],
-              "answer": 2,
-              "explain": "Syllabus may revisit knapsack under ‘problems’ cluster."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "3.3.3",
@@ -3304,41 +2567,8 @@
               "detail": "3.3.3 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Job sequencing?",
-              "options": [
-                "Algebraic recombination reduces multiplications; adds more additions.",
-                "Sort edges by weight; add if it doesn’t form a cycle (Union–Find).",
-                "Schedule jobs to maximise profit under constraints (often deadlines/slots).",
-                "Classic 2-approx: pick both ends of an uncovered edge, repeat."
-              ],
-              "answer": 2,
-              "explain": "Job sequencing: Schedule jobs to maximise profit under constraints (often deadlines/slots)."
-            },
-            {
-              "q": "Which statement best defines Greedy pattern?",
-              "options": [
-                "Multiway balanced search tree for disk/block storage.",
-                "Often sort by profit; place in latest free slot before deadline.",
-                "Each node has next and prev pointers.",
-                "Easier deletion when you have the node (prev is known)."
-              ],
-              "answer": 1,
-              "explain": "Greedy pattern: Often sort by profit; place in latest free slot before deadline."
-            },
-            {
-              "q": "Which key idea belongs with Job Sequencing?",
-              "options": [
-                "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP.",
-                "Repeatedly swap adjacent out-of-order pairs.",
-                "Related to deadline scheduling themes.",
-                "Hash match but strings differ — must verify."
-              ],
-              "answer": 2,
-              "explain": "Related to deadline scheduling themes."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "3.3.4",
@@ -3365,41 +2595,8 @@
               "detail": "3.3.4 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Job sequencing with deadline?",
-              "options": [
-                "Each node has next and prev pointers.",
-                "Unit-time jobs with deadlines and profits; maximise profit.",
-                "Only one disk at a time; never place larger on smaller.",
-                "Self-balancing BST with coloured nodes and rotation/recolour rules."
-              ],
-              "answer": 1,
-              "explain": "Job sequencing with deadline: Unit-time jobs with deadlines and profits; maximise profit."
-            },
-            {
-              "q": "Which statement best defines Method?",
-              "options": [
-                "Typical swap-based version is unstable.",
-                "If chars equal, diagonal+1; else max of skip either.",
-                "Usually earliest finishing time first.",
-                "Sort profits descending; assign to feasible time slot."
-              ],
-              "answer": 3,
-              "explain": "Method: Sort profits descending; assign to feasible time slot."
-            },
-            {
-              "q": "Which key idea belongs with Job Sequencing with Deadline?",
-              "options": [
-                "Compare f(n) with n^{log_b a} (three main cases).",
-                "Feasibility: finish by deadline.",
-                "Partition around pivot; recurse on parts.",
-                "Greedy placement into latest possible slot is common."
-              ],
-              "answer": 1,
-              "explain": "Feasibility: finish by deadline."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         }
       ]
     },
@@ -3432,41 +2629,8 @@
               "detail": "4.1.1 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Naïve string matching?",
-              "options": [
-                "All leaves at same level; node occupancy bounds (order).",
-                "Try P at every shift of T; compare chars.",
-                "O(n log n) overall; build-heap is O(n), then n extracts.",
-                "Yields keys in sorted order."
-              ],
-              "answer": 1,
-              "explain": "Naïve string matching: Try P at every shift of T; compare chars."
-            },
-            {
-              "q": "Which statement best defines Time?",
-              "options": [
-                "Needs Θ(n) auxiliary memory for the classic merge.",
-                "Classic 2-approx: pick both ends of an uncovered edge, repeat.",
-                "Find pattern P in text T — naïve vs Rabin–Karp hashing.",
-                "O((n−m+1)m) worst case."
-              ],
-              "answer": 3,
-              "explain": "Time: O((n−m+1)m) worst case."
-            },
-            {
-              "q": "Which key idea belongs with Naïve String Matching Algorithm?",
-              "options": [
-                "Non-negative weights; greedy with priority queue.",
-                "Simple baseline for Rabin–Karp / KMP comparisons.",
-                "Multiway balanced search tree for disk/block storage.",
-                "Vertices + edges; DFS/BFS and shortest paths are core traversals."
-              ],
-              "answer": 1,
-              "explain": "Simple baseline for Rabin–Karp / KMP comparisons."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "4.1.3",
@@ -3498,52 +2662,8 @@
               "detail": "4.1.3 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Rabin–Karp?",
-              "options": [
-                "Asymptotics, recurrence, Master theorem — how cost grows with n.",
-                "Rolling hash of windows; verify on hash hit.",
-                "Find pattern P in text T — naïve vs Rabin–Karp hashing.",
-                "0/1, fractional, unbounded — different algorithms."
-              ],
-              "answer": 1,
-              "explain": "Rabin–Karp: Rolling hash of windows; verify on hash hit."
-            },
-            {
-              "q": "Which statement best defines Spurious hit?",
-              "options": [
-                "Pop on empty / push on full (array stack).",
-                "Visit each vertex once and return — classic NP-complete flavour.",
-                "Non-negative weights; greedy with priority queue.",
-                "Hash match but strings differ — must verify."
-              ],
-              "answer": 3,
-              "explain": "Spurious hit: Hash match but strings differ — must verify."
-            },
-            {
-              "q": "Which statement best defines Average?",
-              "options": [
-                "Yes (typical implementation).",
-                "Easier deletion when you have the node (prev is known).",
-                "Not all recurrences fit; need regularity conditions.",
-                "Good with strong hash; worst can degrade."
-              ],
-              "answer": 3,
-              "explain": "Average: Good with strong hash; worst can degrade."
-            },
-            {
-              "q": "Which key idea belongs with String Matching Algorithm: Rabin Karp?",
-              "options": [
-                "Short verifiable witness for yes instances (for NP).",
-                "Rolling hash updates in O(1) per shift.",
-                "Yields keys in sorted order.",
-                "Insert an element on top."
-              ],
-              "answer": 1,
-              "explain": "Rolling hash updates in O(1) per shift."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "4.2.1",
@@ -3570,52 +2690,8 @@
               "detail": "4.2.1 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Vertex cover?",
-              "options": [
-                "Explore deep along a path; backtrack; stack/recursion.",
-                "Set of vertices incident to every edge.",
-                "Stack, queue, linked lists — order and access rules matter.",
-                "FIFO: enqueue at rear, dequeue at front."
-              ],
-              "answer": 1,
-              "explain": "Vertex cover: Set of vertices incident to every edge."
-            },
-            {
-              "q": "Which statement best defines Approx algorithm?",
-              "options": [
-                "Classic 2-approx: pick both ends of an uncovered edge, repeat.",
-                "Often T(n)=aT(n/b)+f(n).",
-                "Finite, unambiguous sequence of steps producing output from input.",
-                "Merge sort, binary search, some matrix methods."
-              ],
-              "answer": 0,
-              "explain": "Approx algorithm: Classic 2-approx: pick both ends of an uncovered edge, repeat."
-            },
-            {
-              "q": "Which key idea belongs with Vertex-Cover Algorithm?",
-              "options": [
-                "Decision version is NP-complete; approx is taught for algorithms design.",
-                "O(n^2) worst; O(n) best on nearly sorted data.",
-                "O(n log n) overall; build-heap is O(n), then n extracts.",
-                "Explore level by level using a queue."
-              ],
-              "answer": 0,
-              "explain": "Decision version is NP-complete; approx is taught for algorithms design."
-            },
-            {
-              "q": "Regarding “Minimal vs minimum”, which is correct?",
-              "options": [
-                "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP.",
-                "wording matters.",
-                "Knapsack variants, activity selection, Huffman, TSP.",
-                "Partition around pivot; recurse on parts."
-              ],
-              "answer": 1,
-              "explain": "Minimal vs minimum — wording matters."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "4.2.2",
@@ -3642,41 +2718,8 @@
               "detail": "4.2.2 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Set cover?",
-              "options": [
-                "Yields keys in sorted order.",
-                "Cover universe with minimum number of subsets.",
-                "Parenthesise matrix product to minimise scalar multiplies.",
-                "Optimise linear objective under linear constraints — algorithmic tool."
-              ],
-              "answer": 1,
-              "explain": "Set cover: Cover universe with minimum number of subsets."
-            },
-            {
-              "q": "Which statement best defines Greedy approx?",
-              "options": [
-                "Upper bound on growth rate (worst-case flavour in teaching).",
-                "Repeatedly pick set covering most remaining elements.",
-                "Optimal substructure + overlapping subproblems.",
-                "Select max non-overlapping activities."
-              ],
-              "answer": 1,
-              "explain": "Greedy approx: Repeatedly pick set covering most remaining elements."
-            },
-            {
-              "q": "Which key idea belongs with Set Covering Problem?",
-              "options": [
-                "Extra memory growth with n.",
-                "NP-hard; greedy gives logarithmic approximation classically.",
-                "Divide → conquer recursively → combine.",
-                "Self-balancing BST with coloured nodes and rotation/recolour rules."
-              ],
-              "answer": 1,
-              "explain": "NP-hard; greedy gives logarithmic approximation classically."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "4.2.3",
@@ -3703,41 +2746,8 @@
               "detail": "4.2.3 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Randomisation?",
-              "options": [
-                "If chars equal, diagonal+1; else max of skip either.",
-                "Hard decision problems; reductions show hardness.",
-                "Algorithms that use randomness for speed/simplicity (expected performance).",
-                "Insert rear / remove front."
-              ],
-              "answer": 2,
-              "explain": "Randomisation: Algorithms that use randomness for speed/simplicity (expected performance)."
-            },
-            {
-              "q": "Which statement best defines Linear programming?",
-              "options": [
-                "dp[i][w] style; pseudo-polynomial in capacity.",
-                "Θ(n^2) comparisons roughly always.",
-                "Optimise linear objective under linear constraints — algorithmic tool.",
-                "T(n) defined in terms of T(smaller)."
-              ],
-              "answer": 2,
-              "explain": "Linear programming: Optimise linear objective under linear constraints — algorithmic tool."
-            },
-            {
-              "q": "Which key idea belongs with Randomisation and Linear Programming?",
-              "options": [
-                "Upper bound on growth rate (worst-case flavour in teaching).",
-                "Syllabus pairs ideas for advanced design techniques.",
-                "Grow MST from a start vertex by always adding lightest safe edge out.",
-                "Satisfiability of Boolean formulas — central NP-complete problem."
-              ],
-              "answer": 1,
-              "explain": "Syllabus pairs ideas for advanced design techniques."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "4.2.4",
@@ -3764,41 +2774,8 @@
               "detail": "4.2.4 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Subset-sum?",
-              "options": [
-                "Cycle visiting each vertex exactly once and returning.",
-                "Entry pointer to the first node.",
-                "Walk forward or backward.",
-                "Decision problem: decide whether any subset of numbers adds exactly to target t."
-              ],
-              "answer": 3,
-              "explain": "Subset-sum: Decision problem: decide whether any subset of numbers adds exactly to target t."
-            },
-            {
-              "q": "Which statement best defines Hardness / DP?",
-              "options": [
-                "Optimal solution contains optimal solutions to subproblems.",
-                "NP-complete as a decision problem; solvable in pseudo-polynomial time via DP.",
-                "Top node / no children / has children.",
-                "Each node has at most two children (left/right)."
-              ],
-              "answer": 1,
-              "explain": "Hardness / DP: NP-complete as a decision problem; solvable in pseudo-polynomial time via DP."
-            },
-            {
-              "q": "Which key idea belongs with The Subset-sum Problem?",
-              "options": [
-                "Solve overlapping subproblems once; store answers.",
-                "Related to the knapsack decision version.",
-                "Solves T(n)=aT(n/b)+f(n) for many standard f.",
-                "Brute force, DP (Held–Karp), heuristics/approx."
-              ],
-              "answer": 1,
-              "explain": "Related to the knapsack decision version."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         }
       ]
     },
@@ -3831,41 +2808,8 @@
               "detail": "5.1.1 · key idea"
             }
           ],
-          "mcqs": [
-            {
-              "q": "Which statement best defines Green technology (in this module)?",
-              "options": [
-                "Systematic visit: DFS/BFS.",
-                "Tracks components to detect cycles efficiently.",
-                "Efficiency/resource-conscious computing themes tied to algorithmic cost.",
-                "If chars equal, diagonal+1; else max of skip either."
-              ],
-              "answer": 2,
-              "explain": "Green technology (in this module): Efficiency/resource-conscious computing themes tied to algorithmic cost."
-            },
-            {
-              "q": "Which statement best defines Link to complexity?",
-              "options": [
-                "O(n^2) worst; O(n) best on nearly sorted data.",
-                "Strategies to solve recurrences.",
-                "Cycle detect, topological sort, components, path finding.",
-                "Fewer operations / less energy as a motivation for better algorithms."
-              ],
-              "answer": 3,
-              "explain": "Link to complexity: Fewer operations / less energy as a motivation for better algorithms."
-            },
-            {
-              "q": "Which key idea belongs with Green Technology?",
-              "options": [
-                "Treat as syllabus framing unless SLM gives a narrower definition.",
-                "Good with strong hash; worst can degrade.",
-                "Cover universe with minimum number of subsets.",
-                "Hash match but strings differ — must verify."
-              ],
-              "answer": 0,
-              "explain": "Treat as syllabus framing unless SLM gives a narrower definition."
-            }
-          ]
+          "mcqs": [],
+          "quizSkip": true
         },
         {
           "id": "5.1.2",
@@ -3896,34 +2840,34 @@
             {
               "q": "Which statement best defines Hamiltonian cycle?",
               "options": [
+                "Spanning tree of minimum total edge weight.",
                 "Cycle visiting each vertex exactly once and returning.",
-                "Grow MST from a start vertex by always adding lightest safe edge out.",
-                "Classic dynamic-programming optimisation on key ranges.",
-                "Classic NP-hard optimisation problem."
+                "Justifies composing sub-results into global optimum.",
+                "Self-balancing BST with coloured nodes and rotation/recolour rules."
               ],
-              "answer": 0,
+              "answer": 1,
               "explain": "Hamiltonian cycle: Cycle visiting each vertex exactly once and returning."
             },
             {
               "q": "Which statement best defines Hardness?",
               "options": [
+                "Show problem in NP + polynomial reduction from known NP-complete problem.",
                 "Deciding existence is NP-complete (classic).",
-                "Input, output, finiteness, definiteness, effectiveness (and often generality).",
-                "Unit-time jobs with deadlines and profits; maximise profit.",
-                "Explore level by level using a queue."
+                "Asymptotics, recurrence, Master theorem — how cost grows with n.",
+                "Nodes with data + pointer(s); dynamic size."
               ],
-              "answer": 0,
+              "answer": 1,
               "explain": "Hardness: Deciding existence is NP-complete (classic)."
             },
             {
               "q": "Which key idea belongs with Hamiltonian Cycles?",
               "options": [
-                "Strategies to solve recurrences.",
-                "Visit each city once and return; minimise tour length.",
-                "Inorder, preorder, postorder, level-order.",
-                "Vs Euler tour: Euler uses every edge; Hamiltonian every vertex."
+                "Fewer operations / less energy as a motivation for better algorithms.",
+                "Vs Euler tour: Euler uses every edge; Hamiltonian every vertex.",
+                "Typical swap-based version is unstable.",
+                "Algorithms that use randomness for speed/simplicity (expected performance)."
               ],
-              "answer": 3,
+              "answer": 1,
               "explain": "Vs Euler tour: Euler uses every edge; Hamiltonian every vertex."
             }
           ]
@@ -3957,35 +2901,46 @@
             {
               "q": "Which statement best defines NP-completeness proof?",
               "options": [
-                "No codeword is prefix of another — unique decode.",
-                "Sort edges by weight; add if it doesn’t form a cycle (Union–Find).",
-                "Defers operators until operands are known — natural LIFO.",
-                "Show problem in NP + polynomial reduction from known NP-complete problem."
+                "Each node has next and prev pointers.",
+                "Stricter / asymptotic equivalence ideas (if taught).",
+                "Show problem in NP + polynomial reduction from known NP-complete problem.",
+                "BFS layers give fewest edges from source."
               ],
-              "answer": 3,
+              "answer": 2,
               "explain": "NP-completeness proof: Show problem in NP + polynomial reduction from known NP-complete problem."
             },
             {
               "q": "Which statement best defines Certificate?",
               "options": [
-                "Only one disk at a time; never place larger on smaller.",
-                "Yes — equal keys keep their relative order after sorting.",
+                "Algebraic recombination reduces multiplications; adds more additions.",
                 "Short verifiable witness for yes instances (for NP).",
-                "Divide array, sort halves, merge sorted runs."
+                "O(n^2) typical/worst; can be O(n) if already sorted with early exit.",
+                "Shortest paths from one source to all vertices."
               ],
-              "answer": 2,
+              "answer": 1,
               "explain": "Certificate: Short verifiable witness for yes instances (for NP)."
             },
             {
               "q": "Which key idea belongs with NP-completeness Proofs?",
               "options": [
-                "Reduction direction: known hard ≤p your problem.",
-                "Stops recursion; needed for well-founded analysis.",
-                "Left keys < node < right keys (standard ordering).",
-                "Mostly yes (small stack); not stable typically."
+                "Algorithms that use randomness for speed/simplicity (expected performance).",
+                "Interval DP over chain length.",
+                "O((n−m+1)m) worst case.",
+                "Reduction direction: known hard ≤p your problem."
+              ],
+              "answer": 3,
+              "explain": "Reduction direction: known hard ≤p your problem."
+            },
+            {
+              "q": "Which exam tip fits NP-completeness Proofs?",
+              "options": [
+                "LMR (Class 2 foreshadow): two parts of a completeness proof.",
+                "Finite, unambiguous sequence of steps producing output from input.",
+                "Each node has next and prev pointers.",
+                "Each item take or not; maximise value under weight limit."
               ],
               "answer": 0,
-              "explain": "Reduction direction: known hard ≤p your problem."
+              "explain": "LMR (Class 2 foreshadow): two parts of a completeness proof."
             }
           ]
         },
@@ -4019,9 +2974,9 @@
               "q": "Which statement best defines NP-complete problems?",
               "options": [
                 "Hardest problems in NP (under poly reductions).",
-                "Try P at every shift of T; compare chars.",
+                "Classic 2-approx: pick both ends of an uncovered edge, repeat.",
                 "Wrap indices to reuse array space.",
-                "Tight bound — both O and Ω."
+                "T(n)=2T(n−1)+1, T(1)=1 → T(n)=2^n−1 moves."
               ],
               "answer": 0,
               "explain": "NP-complete problems: Hardest problems in NP (under poly reductions)."
@@ -4030,9 +2985,9 @@
               "q": "Which statement best defines Examples?",
               "options": [
                 "SAT, vertex cover decision, Hamiltonian cycle, subset-sum, …",
-                "Variants about occupancy of levels (syllabus defs).",
-                "Schedule jobs to maximise profit under constraints (often deadlines/slots).",
-                "Tracks components to detect cycles efficiently."
+                "Hardest problems in NP (under poly reductions).",
+                "Shortest paths from one source to all vertices.",
+                "Satisfiability of Boolean formulas — central NP-complete problem."
               ],
               "answer": 0,
               "explain": "Examples: SAT, vertex cover decision, Hamiltonian cycle, subset-sum, …"
@@ -4040,12 +2995,12 @@
             {
               "q": "Which key idea belongs with NP-completeness Problems?",
               "options": [
-                "Yes — equal keys keep their relative order after sorting.",
-                "Schedule jobs to maximise profit under constraints (often deadlines/slots).",
                 "If any NP-complete problem has poly algorithm, P=NP.",
-                "Partition around pivot; recurse on parts."
+                "Each node has next and prev pointers.",
+                "Proof style that swaps to show optimality.",
+                "Upper bound on growth rate (worst-case flavour in teaching)."
               ],
-              "answer": 2,
+              "answer": 0,
               "explain": "If any NP-complete problem has poly algorithm, P=NP."
             }
           ]
@@ -4079,9 +3034,9 @@
             {
               "q": "Which statement best defines NP-hard?",
               "options": [
-                "Each node has at most two children (left/right).",
-                "Cover universe with minimum number of subsets.",
-                "Set of vertices incident to every edge.",
+                "O(n^2) worst; O(n) best on nearly sorted data.",
+                "Preorder, inorder, postorder — Class 2: expect these in end-term.",
+                "Optimal prefix codes using frequency-greedy tree.",
                 "At least as hard as NP-complete; may not be in NP."
               ],
               "answer": 3,
@@ -4090,24 +3045,35 @@
             {
               "q": "Which statement best defines SAT?",
               "options": [
-                "Left keys < node < right keys (standard ordering).",
-                "Finite, unambiguous sequence of steps producing output from input.",
                 "Satisfiability of Boolean formulas — central NP-complete problem.",
-                "Entry pointer to the first node."
+                "Top-down cache vs bottom-up table.",
+                "Vertex cover, set cover, subset-sum — often near-optimal algorithms.",
+                "Many keys per node ⇒ shallow tree ⇒ fewer disk reads."
               ],
-              "answer": 2,
+              "answer": 0,
               "explain": "SAT: Satisfiability of Boolean formulas — central NP-complete problem."
             },
             {
               "q": "Which key idea belongs with NP-Hard and SAT Problems?",
               "options": [
-                "Hash match but strings differ — must verify.",
-                "BST arranged to minimise expected search cost given key probabilities.",
-                "Non-negative weights; greedy with priority queue.",
+                "Self-balancing BST with coloured nodes and rotation/recolour rules.",
+                "Cover universe with minimum number of subsets.",
+                "Parenthesise matrix product to minimise scalar multiplies.",
                 "NP-hard includes problems outside NP (e.g. some optimisation/undecidable-adjacent teaching examples)."
               ],
               "answer": 3,
               "explain": "NP-hard includes problems outside NP (e.g. some optimisation/undecidable-adjacent teaching examples)."
+            },
+            {
+              "q": "Which exam tip fits NP-Hard and SAT Problems?",
+              "options": [
+                "Top node / no children / has children.",
+                "Easier deletion when you have the node (prev is known).",
+                "LMR (Class 2 foreshadow): NP-hard ≠ NP-complete unless also in NP.",
+                "Nodes with data + pointer(s); dynamic size."
+              ],
+              "answer": 2,
+              "explain": "LMR (Class 2 foreshadow): NP-hard ≠ NP-complete unless also in NP."
             }
           ]
         },
@@ -4140,10 +3106,10 @@
             {
               "q": "Which statement best defines Reducibility?",
               "options": [
+                "Θ(n log n) in all cases — predictable guaranteed bound.",
                 "Entry pointer to the first node.",
-                "At least as hard as NP-complete; may not be in NP.",
                 "Problem A ≤p B if A transforms to B in poly time.",
-                "Cover universe with minimum number of subsets."
+                "Classic 2-approx: pick both ends of an uncovered edge, repeat."
               ],
               "answer": 2,
               "explain": "Reducibility: Problem A ≤p B if A transforms to B in poly time."
@@ -4151,10 +3117,10 @@
             {
               "q": "Which statement best defines Meaning?",
               "options": [
-                "Shortest paths from one source to all vertices.",
-                "Yes (typical implementation).",
+                "If chars equal, diagonal+1; else max of skip either.",
+                "Set of vertices incident to every edge.",
                 "B is at least as hard as A (for hardness proofs).",
-                "Lower bound on growth."
+                "Each node points to next only."
               ],
               "answer": 2,
               "explain": "Meaning: B is at least as hard as A (for hardness proofs)."
@@ -4163,9 +3129,9 @@
               "q": "Which key idea belongs with NP-completeness and Reducibility?",
               "options": [
                 "Cook–Levin historically links SAT to NP-completeness theory.",
-                "Often priority queue for cut edges.",
-                "Hash match but strings differ — must verify.",
-                "Show problem in NP + polynomial reduction from known NP-complete problem."
+                "Lower bound on growth.",
+                "Sort profits descending; assign to feasible time slot.",
+                "Optimise linear objective under linear constraints — algorithmic tool."
               ],
               "answer": 0,
               "explain": "Cook–Levin historically links SAT to NP-completeness theory."

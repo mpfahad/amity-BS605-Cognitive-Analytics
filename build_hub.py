@@ -51,9 +51,9 @@ SUBJECTS: dict[str, dict] = {
         "title_short": "Data Structures & Algorithms",
         "kicker": "Data Structures and Algorithm Design",
         "pdf": "Data Structure and Algorithm F.pdf",
-        "flash_lede": "Revision cards from the CSE601 SLM outline — filter by module and track what you know.",
-        "quiz_lede": "Objective questions by module with explanations. Filter, shuffle, and review weak topics.",
-        "map_lede": "Walk the syllabus structure module by module. Click cards for notes; practice MCQs below.",
+        "flash_lede": "Revision cards from the CSE601 SLM and Live Class 1–2 focus — filter by module and track what you know.",
+        "quiz_lede": "MCQs weighted to Live Class exam focus (Modules 1–2 + NP). Modules 3–4 deferred until those live classes.",
+        "map_lede": "Orange LMR badges follow teacher exam weightage from Live Class 1–2. Click cards for notes; practice MCQs below.",
         "links": [
             ("Live Class 1 transcript", "Live Class 1 Transcript.txt"),
             ("Live Class 2 transcript", "Live Class 2 Transcript.txt"),
@@ -930,7 +930,11 @@ function applyFilter(preserveShuffle=false) {{
 
 function renderFilters() {{
   const box = el("moduleFilters");
-  const mods = [{{id:"all", title:"All modules"}}, ...DATA.modules.map(m => ({{id:String(m.id), title:"Module "+m.id}}))];
+  const quizMods = DATA.modules.filter(m => bank.some(q => q.moduleId === m.id));
+  const mods = [{{id:"all", title:"All exam modules"}}, ...quizMods.map(m => ({{id:String(m.id), title:"Module "+m.id}}))];
+  if (activeModule !== "all" && !quizMods.some(m => String(m.id) === String(activeModule))) {{
+    activeModule = "all";
+  }}
   box.innerHTML = mods.map(m => `<button type="button" class="chip ${{String(activeModule)===String(m.id)?"active":""}}" data-m="${{m.id}}">${{m.title}}</button>`).join("");
   box.querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {{
     activeModule = btn.dataset.m;
@@ -940,7 +944,8 @@ function renderFilters() {{
 
 function renderStats() {{
   const box = el("moduleStats");
-  box.innerHTML = DATA.modules.map(m => {{
+  const quizMods = DATA.modules.filter(m => bank.some(q => q.moduleId === m.id));
+  box.innerHTML = quizMods.map(m => {{
     const qs = bank.filter(q => q.moduleId === m.id);
     const attempted = qs.filter(q => state[q.id] !== undefined).length;
     const correct = qs.filter(q => state[q.id] === q.answer).length;
@@ -1156,6 +1161,7 @@ function currentModule() {{
 function weightLabel(w) {{
   if (w === "high") return " · exam focus";
   if (w === "foundation") return " · foundation";
+  if (w === "deferred") return " · later class";
   return "";
 }}
 

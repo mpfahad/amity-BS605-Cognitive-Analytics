@@ -122,6 +122,8 @@ def audit_facts(code: str) -> dict:
                     )
             qs = topic.get("mcqs") or []
             if not qs:
+                if topic.get("quizSkip"):
+                    continue  # intentional exam-weight skip
                 mcq_issues.append({"id": tid, "issue": "no_mcqs", "title": title, "module": mid})
             for i, q in enumerate(qs):
                 mcq_n += 1

@@ -16,11 +16,13 @@
     ],
     "concepts": [
       "Module 1 flow: structures → analysis → divide-and-conquer → sorts.",
-      "Exam style: define + complexity + one contrast (e.g. stack vs queue)."
+      "Exam style: define + one example + characteristics / operations (teacher: Class 1).",
+      "Out of syllabus (teacher): ADT — skip deep ADT write-ups."
     ],
     "notes": [
-      "LMR first: Stack, postfix, Tower of Hanoi.",
-      "Never give only a name — always add LIFO/FIFO or Big-O when asked."
+      "LMR (Live Class 1): Stack (ops + overflow/underflow + pseudocode), infix↔postfix/prefix, algorithm characteristics.",
+      "Teacher foreshadow: sorting & searching are exam-important in later sessions.",
+      "Never give only a name — always add LIFO/FIFO or the five algorithm characteristics when asked."
     ],
     "lmr": false
   },
@@ -37,10 +39,11 @@
     ],
     "concepts": [
       "Trees first, then graph traversals and path algorithms.",
-      "Prim vs Kruskal both build MSTs — different selection rules."
+      "Prim vs Kruskal both build MSTs — different selection rules.",
+      "Out of syllabus (teacher): binary-tree ADT; level-order traversal."
     ],
     "notes": [
-      "LMR: binary tree / BST basics before AVL/B-tree detail."
+      "LMR (Live Class 2): tree height + binary-tree properties + pre/in/postorder; graph representations; spanning trees & shortest paths (teacher: exam-important)."
     ],
     "lmr": false
   },
@@ -64,7 +67,7 @@
       "TSP is typically hard; don’t treat it as a simple greedy always."
     ],
     "notes": [
-      "LMR: DP approach, optimality principle, Strassen."
+      "No Live Class transcript yet for Module 3 — study from SLM; LMR badges deferred until teacher weights them."
     ],
     "lmr": false
   },
@@ -81,10 +84,11 @@
     ],
     "concepts": [
       "Rabin–Karp uses rolling hash; naïve compares character by character.",
-      "Vertex cover / set cover are classic approximation settings."
+      "Vertex cover / set cover are classic approximation settings.",
+      "Teacher (Class 2) flagged LP as a later complex topic — watch that live class."
     ],
     "notes": [
-      "LMR: naïve matching, Rabin–Karp, vertex cover."
+      "No Live Class transcript yet for Module 4 string/approx focus — no LMR badges until teacher weights them."
     ],
     "lmr": false
   },
@@ -108,7 +112,8 @@
       "Reducibility is the proof tool — map known hard problem to yours."
     ],
     "notes": [
-      "LMR: NP proofs / reducibility vocabulary."
+      "LMR (teacher foreshadow, Class 2): NP-hard / NP-complete proofs and vocabulary.",
+      "Green-technology framing is syllabus text — not live-class weighted."
     ],
     "lmr": false
   },
@@ -138,12 +143,13 @@
     "concepts": [
       "Stack ≠ queue: LIFO vs FIFO.",
       "Call stack / undo / postfix evaluation are classic uses.",
-      "Array stack needs capacity; linked stack grows with nodes."
+      "Array stack needs capacity; linked stack grows with nodes.",
+      "Exam write-up: use pseudocode (teacher) — check overflow before push, underflow before pop."
     ],
     "notes": [
+      "LMR (Class 1): overflow/underflow + push/pop pseudocode — teacher called these very important.",
       "Trap: do not say FIFO for stack.",
-      "Stem “last in first out / top only” → stack.",
-      "LMR: define + one use + contrast with queue."
+      "Stem “last in first out / top only” → stack."
     ],
     "lmr": true
   },
@@ -158,18 +164,19 @@
         "d": "Scan left→right: push operands; on operator, pop args, push result."
       },
       {
-        "t": "Why stack",
-        "d": "Defers operators until operands are known — natural LIFO."
+        "t": "Infix / prefix conversions",
+        "d": "Teacher stress: infix→postfix and postfix↔prefix are exam favourites."
       }
     ],
     "concepts": [
       "Infix needs precedence/parentheses; postfix does not.",
-      "Each operator pops the right number of operands (usually 2 for binary)."
+      "Each operator pops the right number of operands (usually 2 for binary).",
+      "Walk one tiny conversion + evaluation on paper every revision."
     ],
     "notes": [
+      "LMR (Class 1): infix↔postfix / postfix↔prefix — “very important from the exam standpoint”.",
       "Trap: processing order is left to right, not ‘operator first’.",
-      "If expression is infix, convert first — don’t evaluate infix with raw postfix rules.",
-      "LMR: walk one tiny example on paper."
+      "If expression is infix, convert first — don’t evaluate infix with raw postfix rules."
     ],
     "lmr": true
   },
@@ -190,13 +197,14 @@
     ],
     "concepts": [
       "Recursive idea: move n−1 aside, move largest, move n−1 on top.",
-      "Shows divide-and-conquer / recursion cost explosion."
+      "Shows divide-and-conquer / recursion cost explosion.",
+      "Class 1: mentioned as a stack application — not the primary exam weight vs postfix conversions."
     ],
     "notes": [
       "Trap: minimum moves are 2^n−1, not n^2.",
-      "LMR: state recurrence + closed form."
+      "Know recurrence + closed form if asked; priority after stack ops and expression conversion."
     ],
-    "lmr": true
+    "lmr": false
   },
   "1.1.4": {
     "terms": [
@@ -279,18 +287,24 @@
         "d": "Finite, unambiguous sequence of steps producing output from input."
       },
       {
-        "t": "Characteristics",
-        "d": "Input, output, finiteness, definiteness, effectiveness (and often generality)."
+        "t": "Characteristics (5)",
+        "d": "Input, output, definiteness, finiteness, effectiveness/feasibility — teacher Class 1 list."
+      },
+      {
+        "t": "Exam answer shape",
+        "d": "Definition + one simple example (e.g. tea/recipe) + the five characteristics."
       }
     ],
     "concepts": [
       "Program implements an algorithm in a language.",
-      "Finiteness: must terminate; definiteness: each step clear."
+      "Finiteness: must terminate; definiteness: each step clear.",
+      "Effectiveness/feasibility: runnable with available resources."
     ],
     "notes": [
+      "LMR (Class 1): “what is an algorithm + characteristics” — teacher said this is the exam ask.",
       "Trap: infinite loop is not a valid algorithm characteristic."
     ],
-    "lmr": false
+    "lmr": true
   },
   "1.2.2": {
     "terms": [
@@ -313,11 +327,13 @@
     ],
     "concepts": [
       "Asymptotics ignore constants and lower-order terms.",
-      "O(n^2) does not mean ‘exactly n^2 steps’."
+      "O(n^2) does not mean ‘exactly n^2 steps’.",
+      "Teacher (Class 1): knowing the symbols is enough for many papers — deep complexity proofs rarely appear."
     ],
     "notes": [
       "Trap: O is not the same as Θ unless also Ω.",
-      "Spelling in syllabus: ‘Asymtotic’ = asymptotic notations."
+      "Spelling in syllabus: ‘Asymtotic’ = asymptotic notations.",
+      "Still learn definitions — book uses them everywhere — but don’t over-invest vs stack/trees."
     ],
     "lmr": false
   },
@@ -338,7 +354,8 @@
     ],
     "concepts": [
       "Count dominant operations, not wall-clock alone.",
-      "Nested loops often multiply costs."
+      "Nested loops often multiply costs.",
+      "Teacher: important for understanding algorithms; heavy exam questions on complexity rare in recent papers he has seen."
     ],
     "notes": [
       "Trap: ‘faster machine’ does not change asymptotic class."
@@ -576,16 +593,21 @@
         "d": "Top node / no children / has children."
       },
       {
+        "t": "Height / level",
+        "d": "Teacher: height of a tree is a recurring exam question — practise on a drawn tree."
+      },
+      {
         "t": "Applications",
         "d": "File systems, expression trees, search structures, heaps."
       }
     ],
     "concepts": [
       "Tree ≠ general graph with cycles.",
-      "Height/depth definitions vary slightly — use syllabus convention."
+      "Height/depth definitions vary slightly — use the convention the teacher used in Class 2.",
+      "Also know parent/child/ancestor/descendant vocabulary."
     ],
     "notes": [
-      "LMR: terminology first before BST/AVL detail.",
+      "LMR (Class 2): “there’s always a question… how you can find out the height of the tree.”",
       "Trap: ‘tree’ in CS usually means rooted tree in DSA units."
     ],
     "lmr": true
@@ -601,17 +623,23 @@
         "d": "Variants about occupancy of levels (syllabus defs)."
       },
       {
-        "t": "Traversals",
-        "d": "Inorder, preorder, postorder, level-order."
+        "t": "Max nodes for height H",
+        "d": "Teacher exam expect: properties / formulas for binary trees of height H."
+      },
+      {
+        "t": "Traversals (in syllabus)",
+        "d": "Preorder, inorder, postorder — Class 2: expect these in end-term."
       }
     ],
     "concepts": [
       "Binary tree ≠ BST (BST adds ordering invariant).",
-      "Array representation possible for complete trees (heaps)."
+      "Array representation possible for complete trees (heaps).",
+      "Out of syllabus (teacher): binary-tree ADT; level-order traversal — do not spend exam time on them."
     ],
     "notes": [
-      "LMR: define binary tree + name three DFS-style traversals.",
-      "Trap: don’t assume sorted order without BST property."
+      "LMR (Class 2): binary-tree properties + pre/in/postorder (not level-order).",
+      "Trap: don’t assume sorted order without BST property.",
+      "Time for traversal is O(n) — visit every node once."
     ],
     "lmr": true
   },
@@ -632,13 +660,14 @@
     ],
     "concepts": [
       "Balanced BST ⇒ O(log n); skewed ⇒ O(n).",
-      "Deletion has cases: leaf / one child / two children (successor/predecessor)."
+      "Deletion has cases: leaf / one child / two children (successor/predecessor).",
+      "Class 2 focus was height/properties/traversals first — BST is syllabus, lower live-class weight so far."
     ],
     "notes": [
-      "LMR: state ordering invariant clearly.",
-      "Trap: binary tree without order is not a BST."
+      "Trap: binary tree without order is not a BST.",
+      "State ordering invariant clearly when asked."
     ],
-    "lmr": true
+    "lmr": false
   },
   "2.1.4": {
     "terms": [
@@ -741,12 +770,14 @@
     ],
     "concepts": [
       "Exists for connected undirected graphs.",
-      "Prim/Kruskal compute MSTs."
+      "Prim/Kruskal compute MSTs.",
+      "Teacher (Class 2): spanning-tree concept flagged as exam-important for the next session."
     ],
     "notes": [
+      "LMR (Class 2 foreshadow): spanning tree / MST idea before diving only into code.",
       "Trap: spanning tree has V−1 edges — no cycles."
     ],
-    "lmr": false
+    "lmr": true
   },
   "2.1.9": {
     "terms": [
@@ -795,8 +826,12 @@
         "d": "G=(V,E); directed/undirected; weighted/unweighted."
       },
       {
-        "t": "Representations",
-        "d": "Adjacency matrix vs adjacency list."
+        "t": "Adjacency matrix",
+        "d": "Teacher: undirected missing edge → ∞ (or no edge mark); directed missing → 0 as taught."
+      },
+      {
+        "t": "Adjacency list",
+        "d": "List neighbours of each vertex — good for sparse graphs."
       },
       {
         "t": "Traversal",
@@ -805,12 +840,14 @@
     ],
     "concepts": [
       "Matrix: O(1) edge query, O(V^2) space; list: better for sparse.",
-      "Degree, path, cycle are core terms."
+      "Degree, path, cycle, connected/disconnected are core terms.",
+      "Class 2 spent exam-weight time on representations and basic graph types."
     ],
     "notes": [
+      "LMR (Class 2): graph types + matrix vs list representation rules.",
       "Trap: pick representation based on density — not always matrix."
     ],
-    "lmr": false
+    "lmr": true
   },
   "2.2.2": {
     "terms": [
@@ -869,12 +906,14 @@
     ],
     "concepts": [
       "Dijkstra fails with negative edges.",
-      "Relaxation is the common primitive."
+      "Relaxation is the common primitive.",
+      "Teacher (Class 2): shortest path flagged with spanning trees as exam-important upcoming material."
     ],
     "notes": [
+      "LMR (Class 2 foreshadow): single-source shortest path idea + Dijkstra vs negatives trap.",
       "Trap: using Dijkstra with negatives — wrong."
     ],
-    "lmr": false
+    "lmr": true
   },
   "2.2.5": {
     "terms": [
@@ -920,10 +959,10 @@
       "DP ≠ greedy (greedy never revisits choices systematically)."
     ],
     "notes": [
-      "LMR: say both conditions for DP.",
+      "No live-class weight yet — study from SLM; say both DP conditions when asked.",
       "Trap: calling every recursion ‘DP’ without storage of overlaps."
     ],
-    "lmr": true
+    "lmr": false
   },
   "3.1.2": {
     "terms": [
@@ -941,10 +980,10 @@
       "Check on a small example before coding a table."
     ],
     "notes": [
-      "LMR: one-line definition of optimality principle.",
+      "No live-class weight yet — one-line definition is still worth memorising from SLM.",
       "Trap: optimality principle ≠ ‘greedy choice property’ (that’s greedy)."
     ],
-    "lmr": true
+    "lmr": false
   },
   "3.1.3": {
     "terms": [
@@ -962,10 +1001,10 @@
       "Still divide-and-conquer on quadrants."
     ],
     "notes": [
-      "LMR: ‘7 products instead of 8’ is the memorable fact.",
+      "No live-class weight yet — ‘7 products instead of 8’ is the SLM memorable fact.",
       "Trap: Strassen is not related to shortest paths."
     ],
-    "lmr": true
+    "lmr": false
   },
   "3.1.4": {
     "terms": [
@@ -1219,10 +1258,10 @@
       "Many mismatches still cost comparisons."
     ],
     "notes": [
-      "LMR: state complexity clearly.",
+      "No live-class weight yet — state complexity clearly from SLM.",
       "Trap: naïve is not hashing-based."
     ],
-    "lmr": true
+    "lmr": false
   },
   "4.1.3": {
     "terms": [
@@ -1244,10 +1283,10 @@
       "Multiple patterns can share hashing ideas."
     ],
     "notes": [
-      "LMR: hash then verify — never skip verify.",
+      "No live-class weight yet — hash then verify (never skip verify).",
       "Trap: hash equality ≠ string equality."
     ],
-    "lmr": true
+    "lmr": false
   },
   "4.2.1": {
     "terms": [
@@ -1265,10 +1304,10 @@
       "Minimal vs minimum — wording matters."
     ],
     "notes": [
-      "LMR: definition + idea of 2-approximation.",
+      "No live-class weight yet — definition + 2-approx idea from SLM.",
       "Trap: vertex cover ≠ vertex colouring."
     ],
-    "lmr": true
+    "lmr": false
   },
   "4.2.2": {
     "terms": [
@@ -1343,13 +1382,13 @@
     ],
     "concepts": [
       "Treat as syllabus framing unless SLM gives a narrower definition.",
-      "Connect to choosing efficient algorithms over naïve ones."
+      "Connect to choosing efficient algorithms over naïve ones.",
+      "Not live-class weighted so far — lower revision priority than NP topics."
     ],
     "notes": [
-      "LMR: one line linking green goals to algorithmic efficiency.",
       "Trap: don’t invent unrelated ecology essays — stay CS-framed."
     ],
-    "lmr": true
+    "lmr": false
   },
   "5.1.2": {
     "terms": [
@@ -1367,10 +1406,10 @@
       "TSP optimisation builds on Hamiltonian ideas."
     ],
     "notes": [
-      "LMR: vertex-once cycle definition + NP-complete mention.",
+      "Useful NP-complete example from SLM; teacher named NP-hard/complete generally (Class 2).",
       "Trap: Hamiltonian ≠ Eulerian."
     ],
-    "lmr": true
+    "lmr": false
   },
   "5.2.1": {
     "terms": [
@@ -1385,10 +1424,11 @@
     ],
     "concepts": [
       "Reduction direction: known hard ≤p your problem.",
-      "Polynomial-time verification ≠ polynomial-time solving."
+      "Polynomial-time verification ≠ polynomial-time solving.",
+      "Teacher (Class 2): NP-hard / NP-complete will take dedicated time — exam-relevant."
     ],
     "notes": [
-      "LMR: two parts of a completeness proof.",
+      "LMR (Class 2 foreshadow): two parts of a completeness proof.",
       "Trap: reducing your problem to SAT shows yours is ‘no harder’ — wrong direction for hardness."
     ],
     "lmr": true
@@ -1426,12 +1466,14 @@
     ],
     "concepts": [
       "NP-hard includes problems outside NP (e.g. some optimisation/undecidable-adjacent teaching examples).",
-      "SAT is the usual reduction source."
+      "SAT is the usual reduction source.",
+      "Teacher (Class 2) explicitly named NP-hard and NP-complete as upcoming heavy topics."
     ],
     "notes": [
+      "LMR (Class 2 foreshadow): NP-hard ≠ NP-complete unless also in NP.",
       "Trap: NP-hard ≠ NP-complete unless also in NP."
     ],
-    "lmr": false
+    "lmr": true
   },
   "5.2.4": {
     "terms": [

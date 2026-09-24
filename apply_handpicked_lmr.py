@@ -2,7 +2,7 @@
 """Apply hand-picked LMR flags from deep notes onto maps + _lmr_notes.txt.
 
 Source of truth: subjects/<code>/_deep_notes.json entry["lmr"] == True
-(set only in handcraft packs — never auto first-N).
+(CSE601: Live Class teacher weightage where available; else deferred).
 """
 from __future__ import annotations
 
@@ -16,7 +16,7 @@ SUBJECTS = ROOT / "subjects"
 # Subjects that use handcrafted deep notes as LMR source.
 HANDPICKED = ("cse601", "csit654", "csit745")
 
-LMR_NOTE_RE = re.compile(r"^\s*LMR\s*:", re.I)
+LMR_NOTE_RE = re.compile(r"^\s*LMR(?:\s*\([^)]*\))?\s*:", re.I)
 
 
 def load_json(path: Path) -> dict:
@@ -114,7 +114,7 @@ def apply_subject(code: str) -> dict:
                 parts.append(p)
         return parts
 
-    lines = [f"{code.upper()} — LMR priorities (hand-picked from study materials)", ""]
+    lines = [f"{code.upper()} — LMR priorities (live-class teacher weightage + study materials)", ""]
     for i, tid in enumerate(sorted(flagged_ids, key=sort_key), 1):
         title = topic_title(maps, tid)
         tip = lmr_tip(flagged[tid])
@@ -135,7 +135,7 @@ def main() -> None:
         info = apply_subject(code)
         print(
             f"{info['code']}: LMR topics={info['flagged']} "
-            f"map_flags_updated≈{info['map_nodes_changed']}"
+            f"map_flags_updated~={info['map_nodes_changed']}"
         )
         print("  " + ", ".join(info["ids"]))
 

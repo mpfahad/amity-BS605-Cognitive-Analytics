@@ -1,4 +1,4 @@
-CSIT654 — LMR priorities (hand-picked from study materials)
+CSIT654 — LMR priorities (live-class teacher weightage + study materials)
 
 1. 1.1.1 Introduction to Security Attacks — classify the stem as passive or active first.
 2. 1.1.2 Services and Mechanism — “what vs how” — service vs mechanism is the classic stem.

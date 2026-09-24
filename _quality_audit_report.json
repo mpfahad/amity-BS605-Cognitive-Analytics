@@ -27,7 +27,7 @@
       "facts": {
         "flash_total": 270,
         "flash_issue_count": 0,
-        "mcq_total": 211,
+        "mcq_total": 117,
         "mcq_issue_count": 0,
         "flash_issues_sample": [],
         "mcq_issues_sample": []
@@ -38,7 +38,7 @@
         "issues_sample": []
       },
       "lmr": {
-        "lines": 15,
+        "lines": 10,
         "issue_count": 0,
         "issues": []
       },
