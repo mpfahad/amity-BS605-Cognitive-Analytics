@@ -1,0 +1,1789 @@
+{
+  "pdf": "Research Methodology  Final.pdf",
+  "page_count": 165,
+  "outline": [],
+  "heading_guesses": [
+    {
+      "page": 4,
+      "title": "Module - I: Introduction"
+    },
+    {
+      "page": 4,
+      "title": "1.1 \t Research"
+    },
+    {
+      "page": 4,
+      "title": "1.1.1 Definition and Objectives of Research"
+    },
+    {
+      "page": 4,
+      "title": "1.1.2\t Characteristics of Research"
+    },
+    {
+      "page": 4,
+      "title": "1.1.3\t Difference b/w Research Methods and Research Methodology"
+    },
+    {
+      "page": 4,
+      "title": "1.2\t Research Process"
+    },
+    {
+      "page": 4,
+      "title": "1.2.1\t Research Criteria and Research Process"
+    },
+    {
+      "page": 4,
+      "title": "1.2.2\t Approaches of Research: Deductive, Inductive, Quantitative and Qualitative"
+    },
+    {
+      "page": 4,
+      "title": "1.2.3\t Research Proposal and Aspects"
+    },
+    {
+      "page": 4,
+      "title": "1.2.4\t Literature Survey and Review"
+    },
+    {
+      "page": 4,
+      "title": "1.2.5\t Errors in Research"
+    },
+    {
+      "page": 4,
+      "title": "1.3\t Types of Research Design"
+    },
+    {
+      "page": 4,
+      "title": "1.3.1\t Pure and Applied"
+    },
+    {
+      "page": 4,
+      "title": "1.3.2\t Causal and Correlational"
+    },
+    {
+      "page": 4,
+      "title": "1.3.3\t Crossectional and Longitudinal"
+    },
+    {
+      "page": 4,
+      "title": "1.3.4\t Experimental, Semi-experimental and Non-Experimental"
+    },
+    {
+      "page": 4,
+      "title": "1.3.5\t Descriptive and Exploratory"
+    },
+    {
+      "page": 4,
+      "title": "1.4\t Research Modeling"
+    },
+    {
+      "page": 4,
+      "title": "1.4.1\t Types of Models"
+    },
+    {
+      "page": 4,
+      "title": "1.4.2\t Model Building and Stages"
+    },
+    {
+      "page": 4,
+      "title": "1.4.3\t Data Consideration and Testing"
+    },
+    {
+      "page": 4,
+      "title": "1.4.4\t Heuristic and Simulation Modeling"
+    },
+    {
+      "page": 4,
+      "title": "Module - II: Sampling"
+    },
+    {
+      "page": 4,
+      "title": "2.1 \t Data Collection"
+    },
+    {
+      "page": 4,
+      "title": "2.1.1\t Introduction to Data Collection"
+    },
+    {
+      "page": 4,
+      "title": "2.1.2\t Data Collection Methods"
+    },
+    {
+      "page": 4,
+      "title": "2.1.3\t Tabulating and Validating Data"
+    },
+    {
+      "page": 4,
+      "title": "2.2\t Questionnaire Designing"
+    },
+    {
+      "page": 4,
+      "title": "2.2.1\t Steps in Constructing a Questionnaire"
+    },
+    {
+      "page": 4,
+      "title": "2.2.2\t Types of Questions"
+    },
+    {
+      "page": 4,
+      "title": "2.2.3\t Format of Questionnaire"
+    },
+    {
+      "page": 4,
+      "title": "2.3\t Sampling"
+    },
+    {
+      "page": 4,
+      "title": "2.3.1\t Sampling Plan"
+    },
+    {
+      "page": 4,
+      "title": "2.3.2\t Sampling Frame"
+    },
+    {
+      "page": 5,
+      "title": "2.3.3\t Sample Selection Methods"
+    },
+    {
+      "page": 5,
+      "title": "2.3.4\t Probability Sampling Techniques"
+    },
+    {
+      "page": 5,
+      "title": "2.3.5\t Non-Probability Sampling Techniques"
+    },
+    {
+      "page": 5,
+      "title": "2.3.6\t Sampling and Non-sampling Errors"
+    },
+    {
+      "page": 5,
+      "title": "Module - III: Data Collection and Experiments"
+    },
+    {
+      "page": 5,
+      "title": "3.1\t Design of Experiments"
+    },
+    {
+      "page": 5,
+      "title": "3.1.1 Design of Experiment: Objectives and Strategies"
+    },
+    {
+      "page": 5,
+      "title": "3.1.2\t Pre-Experimental Research Design"
+    },
+    {
+      "page": 5,
+      "title": "3.1.3\t Quasi Experimental Research Design"
+    },
+    {
+      "page": 5,
+      "title": "3.1.4\t True Experimental Research Design"
+    },
+    {
+      "page": 5,
+      "title": "3.1.5\t Factorial Experimental Design"
+    },
+    {
+      "page": 5,
+      "title": "3.1.6\t Designing Engineering Experiments"
+    },
+    {
+      "page": 5,
+      "title": "3.1.7\t Causal Attributions"
+    },
+    {
+      "page": 5,
+      "title": "3.1.8\t Statistical Control"
+    },
+    {
+      "page": 5,
+      "title": "3.2\t Data Collection"
+    },
+    {
+      "page": 5,
+      "title": "3.2.1 Collection of Data via Observation and Interview"
+    },
+    {
+      "page": 5,
+      "title": "3.2.2\t Collection of Data through Cases"
+    },
+    {
+      "page": 5,
+      "title": "3.2.3\t Collection of Data through Questionnaires"
+    },
+    {
+      "page": 5,
+      "title": "3.2.4\t Guidelines for Preparing Questionnaire"
+    },
+    {
+      "page": 5,
+      "title": "3.2.5\t Data Editing"
+    },
+    {
+      "page": 5,
+      "title": "3.2.6\t Data Coding Rules"
+    },
+    {
+      "page": 5,
+      "title": "3.2.7\t Don’t Know” Responses"
+    },
+    {
+      "page": 5,
+      "title": "3.2.8\t Missing Data"
+    },
+    {
+      "page": 5,
+      "title": "3.3\t Basic Principles"
+    },
+    {
+      "page": 5,
+      "title": "3.3.1\t Validity and Reliability"
+    },
+    {
+      "page": 5,
+      "title": "3.3.2\t Replication, Randomisation and Blocking"
+    },
+    {
+      "page": 5,
+      "title": "3.3.3 Orthogonality and False Positives"
+    },
+    {
+      "page": 5,
+      "title": "Module - IV: Models and Hypothesis"
+    },
+    {
+      "page": 5,
+      "title": "4.1\t Hypothesis Testing"
+    },
+    {
+      "page": 5,
+      "title": "4.1.1\t Introduction to Hypothesis"
+    },
+    {
+      "page": 5,
+      "title": "4.1.2\t Developing Hypothesis : Null and Alternate"
+    },
+    {
+      "page": 5,
+      "title": "4.1.3\t Type I and Type II Error"
+    },
+    {
+      "page": 5,
+      "title": "4.1.4 One-Tailed and Two-tailed Test"
+    },
+    {
+      "page": 5,
+      "title": "4.1.5\t Degree of Freedom"
+    },
+    {
+      "page": 5,
+      "title": "4.1.6 Confidence Intervals"
+    },
+    {
+      "page": 5,
+      "title": "4.1.7 Level of Significance: The Confidence Coefficient"
+    },
+    {
+      "page": 6,
+      "title": "4.1.8 Rejection and Non-rejection Regions"
+    },
+    {
+      "page": 6,
+      "title": "4.1.9\t Hypothesis Testing Procedure"
+    },
+    {
+      "page": 6,
+      "title": "4.1.10\tTypes of Tests"
+    },
+    {
+      "page": 6,
+      "title": "4.1.11\t How to Select a Test"
+    },
+    {
+      "page": 6,
+      "title": "4.2\t Parametric Test"
+    },
+    {
+      "page": 6,
+      "title": "4.2.1\t Important Parametric Tests"
+    },
+    {
+      "page": 6,
+      "title": "4.2.2\t Hypothesis Testing of Means: Single Population Mean Using Z-statistic"
+    },
+    {
+      "page": 6,
+      "title": "4.2.3\t Hypothesis Testing of Means: Single Population Mean Using T-statistic"
+    },
+    {
+      "page": 6,
+      "title": "4.2.4\t Hypothesis Testing for Population Proportions"
+    },
+    {
+      "page": 6,
+      "title": "4.2.5\t Hypothesis Testing for Comparing a Variance to Hypothesized Population Variance"
+    },
+    {
+      "page": 6,
+      "title": "4.2.6\t Testing the Equality of Variances of Two Normal Populations"
+    },
+    {
+      "page": 6,
+      "title": "4.2.7 ANOVA for Fixed Effect Model"
+    },
+    {
+      "page": 6,
+      "title": "4.2.8\t Total, Treatment & error of Squares"
+    },
+    {
+      "page": 6,
+      "title": "4.2.9 ANOVA for Random Effect Model"
+    },
+    {
+      "page": 6,
+      "title": "4.2.10\tSingle Factor Experiment"
+    },
+    {
+      "page": 6,
+      "title": "4.2.11\t Model Adequacy Checking"
+    },
+    {
+      "page": 6,
+      "title": "Module - V: Report Writing"
+    },
+    {
+      "page": 6,
+      "title": "5.1\t Research Report Writing"
+    },
+    {
+      "page": 6,
+      "title": "5.1.1\t Meaning of Research Report"
+    },
+    {
+      "page": 6,
+      "title": "5.1.2 Structure of Scientific Report"
+    },
+    {
+      "page": 6,
+      "title": "5.1.3 Components of Scientific Report"
+    },
+    {
+      "page": 6,
+      "title": "5.1.4\t Types of Reports"
+    },
+    {
+      "page": 6,
+      "title": "5.1.5\t Steps in Report Writing"
+    },
+    {
+      "page": 6,
+      "title": "5.1.6\t Format and Writing Style"
+    },
+    {
+      "page": 6,
+      "title": "5.1.7\t Illustrations and Tables"
+    },
+    {
+      "page": 6,
+      "title": "5.1.8\t Citing and Referencing Sources"
+    },
+    {
+      "page": 6,
+      "title": "5.1.9\t Footnotes"
+    },
+    {
+      "page": 6,
+      "title": "5.2\t Presentation"
+    },
+    {
+      "page": 6,
+      "title": "5.2.1 Oral Presentation"
+    },
+    {
+      "page": 6,
+      "title": "5.2.2\t Making Presentation"
+    },
+    {
+      "page": 6,
+      "title": "5.2.3\t Use of Visual Aids"
+    },
+    {
+      "page": 6,
+      "title": "5.2.4\t Importance of Effective Communication"
+    },
+    {
+      "page": 6,
+      "title": "5.2.5\t Convention and Strategies of Authentication"
+    },
+    {
+      "page": 6,
+      "title": "5.3\t Writing a Research Paper"
+    },
+    {
+      "page": 6,
+      "title": "5.3.1\t Preparing Research Papers for Journals"
+    },
+    {
+      "page": 6,
+      "title": "5.3.2\t Design of Paper Using Template"
+    },
+    {
+      "page": 6,
+      "title": "5.3.3\t Calculation of Impact Factor of a Journal"
+    },
+    {
+      "page": 7,
+      "title": "5.3.4\t Citation Index"
+    },
+    {
+      "page": 7,
+      "title": "5.3.5\t ISBN and ISSN"
+    },
+    {
+      "page": 7,
+      "title": "5.4 Planning a Project Proposal"
+    },
+    {
+      "page": 7,
+      "title": "5.4.1 Identifying and Defining Problem"
+    },
+    {
+      "page": 7,
+      "title": "5.4.2\t Research Problem Aspects and Considerations"
+    },
+    {
+      "page": 7,
+      "title": "5.4.3\t Research Plan"
+    },
+    {
+      "page": 8,
+      "title": "Module - I: Introduction"
+    },
+    {
+      "page": 8,
+      "title": "1.1 Research"
+    },
+    {
+      "page": 8,
+      "title": "1.1.1 Definition and Objectives of Research"
+    },
+    {
+      "page": 9,
+      "title": "1.1.2: Characteristics of Research"
+    },
+    {
+      "page": 10,
+      "title": "1.1.3 Differences b/w Research Methods and Research Methodology"
+    },
+    {
+      "page": 10,
+      "title": "1.2 Research Process"
+    },
+    {
+      "page": 10,
+      "title": "1.2.1 Research Criteria and Research Process"
+    },
+    {
+      "page": 11,
+      "title": "1.2.2: Approaches of Research: Deductive, Inductive, Quantitative"
+    },
+    {
+      "page": 13,
+      "title": "1. One-to-one interview"
+    },
+    {
+      "page": 13,
+      "title": "2.\t Focus groups"
+    },
+    {
+      "page": 13,
+      "title": "3.\t Ethnographic research"
+    },
+    {
+      "page": 13,
+      "title": "4.\t Content/Text analysis"
+    },
+    {
+      "page": 13,
+      "title": "5.\t Case study research"
+    },
+    {
+      "page": 14,
+      "title": "1.2.3 Research Proposal and Aspects"
+    },
+    {
+      "page": 17,
+      "title": "1.2.4: Literature Survey and Review"
+    },
+    {
+      "page": 19,
+      "title": "1.2.5: Errors in Research"
+    },
+    {
+      "page": 19,
+      "title": "1. \t Population Specification"
+    },
+    {
+      "page": 19,
+      "title": "2. \t Sampling and Sample Frame Errors"
+    },
+    {
+      "page": 19,
+      "title": "3. \t Selection"
+    },
+    {
+      "page": 20,
+      "title": "4. \t Non-responsive"
+    },
+    {
+      "page": 20,
+      "title": "5. \t Measurement"
+    },
+    {
+      "page": 21,
+      "title": "1.3: Types of Research Design"
+    },
+    {
+      "page": 21,
+      "title": "1.3.1 Pure and Applied"
+    },
+    {
+      "page": 22,
+      "title": "1.3.2: Causal and Correlational"
+    },
+    {
+      "page": 23,
+      "title": "1.3.3: Crosssectional and Longitudinal"
+    },
+    {
+      "page": 24,
+      "title": "1.3.4: Experimental, Semi-experimental and Non-Experimental"
+    },
+    {
+      "page": 25,
+      "title": "1.3.5 Descriptive and Exploratory"
+    },
+    {
+      "page": 26,
+      "title": "1.4: Research Modelling"
+    },
+    {
+      "page": 26,
+      "title": "1.4.1: Types of Models"
+    },
+    {
+      "page": 27,
+      "title": "1.4.2: Model Building and Stages"
+    },
+    {
+      "page": 28,
+      "title": "1.4.3: Data Consideration and Testing"
+    },
+    {
+      "page": 28,
+      "title": "1.4.4: Heuristic and Simulation Modelling"
+    },
+    {
+      "page": 30,
+      "title": "1. \t What is the typical starting point of research?"
+    },
+    {
+      "page": 30,
+      "title": "4. \t What is a key characteristic of research methods?"
+    },
+    {
+      "page": 31,
+      "title": "1. \t What is research typically said to commence with, and what is its ultimate goal?"
+    },
+    {
+      "page": 31,
+      "title": "2.  What is the difference between general objectives and specific objectives in research,"
+    },
+    {
+      "page": 31,
+      "title": "3. \t What are the key attributes that contribute to the credibility of a research study, and"
+    },
+    {
+      "page": 31,
+      "title": "4.  How has the research process evolved from early human inquiry to modern marketing"
+    },
+    {
+      "page": 31,
+      "title": "5. \t What are the key stages involved in the deductive approach to research, and how do"
+    },
+    {
+      "page": 31,
+      "title": "1. Slesinger, D.P., & Stephenson, H.W. (1930). Encyclopaedia of Social Sciences."
+    },
+    {
+      "page": 31,
+      "title": "2. Redman, E., & Mory, P. (1923). Systematized effort to gain new knowledge."
+    },
+    {
+      "page": 31,
+      "title": "3. Woody, C. (1917)"
+    },
+    {
+      "page": 31,
+      "title": "4. Educational Research Bulletin, 16(3)"
+    },
+    {
+      "page": 31,
+      "title": "5. Kothari, C.R. (2004). Research Methodology: Methods and Techniques (2nd"
+    },
+    {
+      "page": 31,
+      "title": "6. Creswell, J.W. (2014). Research Design: Qualitative, Quantitative, and Mixed"
+    },
+    {
+      "page": 32,
+      "title": "Module - II: Sampling"
+    },
+    {
+      "page": 33,
+      "title": "2.1.1 Introduction to Data Collection"
+    },
+    {
+      "page": 33,
+      "title": "2.1.2 Data Collection Methods"
+    },
+    {
+      "page": 33,
+      "title": "1. \t Primary Data and"
+    },
+    {
+      "page": 33,
+      "title": "2. \t Secondary Data"
+    },
+    {
+      "page": 37,
+      "title": "1. \t Data reliability—Who took the data? Where did you hear this? Which approach? Is"
+    },
+    {
+      "page": 37,
+      "title": "2. \t Data appropriateness — After studying the original inquiry’s scope and character,"
+    },
+    {
+      "page": 37,
+      "title": "3.  Adequacy-  If the data are not accurate or pertain to a scope that is too limited or too"
+    },
+    {
+      "page": 40,
+      "title": "2.1.3: Tabulating and Validating Data"
+    },
+    {
+      "page": 41,
+      "title": "1.  Construct Validity"
+    },
+    {
+      "page": 41,
+      "title": "2.  Internal Validity"
+    },
+    {
+      "page": 42,
+      "title": "3.  External Validity"
+    },
+    {
+      "page": 42,
+      "title": "7.  Statistical Conclusion Validity"
+    },
+    {
+      "page": 42,
+      "title": "2.2 Questionnaire Designing"
+    },
+    {
+      "page": 42,
+      "title": "2. \t Purpose:"
+    },
+    {
+      "page": 43,
+      "title": "3. \t Common Misconception:"
+    },
+    {
+      "page": 43,
+      "title": "2.2.1 Steps in Constructing a Questionnaire"
+    },
+    {
+      "page": 44,
+      "title": "2.2.2\t Types of Questions"
+    },
+    {
+      "page": 44,
+      "title": "2.2.3 Format of Questionnaire"
+    },
+    {
+      "page": 45,
+      "title": "2.3: Sampling"
+    },
+    {
+      "page": 46,
+      "title": "2.3.1: Sampling Plan"
+    },
+    {
+      "page": 46,
+      "title": "2.3.2: Sampling Frame"
+    },
+    {
+      "page": 47,
+      "title": "2.3.3: Sample Selection Methods"
+    },
+    {
+      "page": 47,
+      "title": "1. \t Simple random sampling"
+    },
+    {
+      "page": 47,
+      "title": "3.  Stratified sampling"
+    },
+    {
+      "page": 48,
+      "title": "4. \t Cluster sampling"
+    },
+    {
+      "page": 48,
+      "title": "1.  Convenience sampling refers to a non-probability sampling technique where"
+    },
+    {
+      "page": 48,
+      "title": "2. \t Quota sampling is a method of selecting a sample that ensures representation of"
+    },
+    {
+      "page": 48,
+      "title": "3. \t Purposive sampling is a method of selecting individuals or elements for a study"
+    },
+    {
+      "page": 48,
+      "title": "4. \t Snowball or referral sampling refers to a method of selecting participants for a study"
+    },
+    {
+      "page": 49,
+      "title": "2.3.4: Probability Sampling Techniques"
+    },
+    {
+      "page": 52,
+      "title": "2.3.5: Non - Probability Sampling Techniques"
+    },
+    {
+      "page": 53,
+      "title": "2.3.6: Sampling and Non-Sampling Errors"
+    },
+    {
+      "page": 54,
+      "title": "3.  Which step in constructing a questionnaire involves defining the purpose and topics?"
+    },
+    {
+      "page": 55,
+      "title": "1. \t Differentiate between primary and secondary data with examples."
+    },
+    {
+      "page": 55,
+      "title": "2. \t Explain why primary data collection might be preferred over secondary data in"
+    },
+    {
+      "page": 55,
+      "title": "3. \t Why is it important to tailor a questionnaire to the target audience’s language and"
+    },
+    {
+      "page": 55,
+      "title": "4.  Describe the benefits of using a reliable survey platform, such as QuestionPro, when"
+    },
+    {
+      "page": 55,
+      "title": "5. \t List and describe three key steps in constructing a questionnaire."
+    },
+    {
+      "page": 55,
+      "title": "1. \t Consider a research study aiming to understand consumer preferences for a new"
+    },
+    {
+      "page": 55,
+      "title": "2. \t Why might researchers choose to use a sample instead of studying an entire"
+    },
+    {
+      "page": 55,
+      "title": "1. Biemer, P. P., Lyberg, L. E., et al. (Eds.). (2016). Total Survey Error: Methods,"
+    },
+    {
+      "page": 55,
+      "title": "2. Brace, I. (2008). Questionnaire Design: How to Plan, Structure and Write"
+    },
+    {
+      "page": 55,
+      "title": "3. Cochran, W. G. (1977). Sampling Techniques, 3rd Edition. John Wiley & Sons."
+    },
+    {
+      "page": 55,
+      "title": "4. Creswell, J. W. (2013). Research Design: Qualitative, Quantitative, and Mixed"
+    },
+    {
+      "page": 56,
+      "title": "5. Rea, L. M., Parker, R. A. (2014). Designing and Conducting Survey Research:"
+    },
+    {
+      "page": 56,
+      "title": "6. Alreck, P. L., Settle, R. B. (2004). The Survey Research Handbook. McGraw-"
+    },
+    {
+      "page": 56,
+      "title": "7. Struhl, S. (2018). Practical Text Analytics: Interpreting Text and Unstructured"
+    },
+    {
+      "page": 56,
+      "title": "8. Brick, J. M. (2016). Data Collection: Key Concepts and Methods. SAGE"
+    },
+    {
+      "page": 57,
+      "title": "Module - III: Data Collection and Experiments"
+    },
+    {
+      "page": 57,
+      "title": "3.1: Design of Experiments"
+    },
+    {
+      "page": 57,
+      "title": "3.1.1: Design of Experiment: Objectives and Strategies"
+    },
+    {
+      "page": 59,
+      "title": "3.1.2: Pre-Experimental Research Design"
+    },
+    {
+      "page": 60,
+      "title": "3.1.3: Quasi-Experimental Research Design"
+    },
+    {
+      "page": 60,
+      "title": "3.1.4 True Experimental Research Design"
+    },
+    {
+      "page": 60,
+      "title": "3.1.5 Factorial Experimental Design"
+    },
+    {
+      "page": 61,
+      "title": "1. \t Does the discounted price yield greater effectiveness compared to the standard"
+    },
+    {
+      "page": 61,
+      "title": "2. \t Does the exhibit at the entrance have a greater impact than the display in the"
+    },
+    {
+      "page": 61,
+      "title": "1. \t Decrease in price accompanied by a prominently placed display at the entry."
+    },
+    {
+      "page": 61,
+      "title": "2. \t Price decrease indicated at the regular location."
+    },
+    {
+      "page": 61,
+      "title": "3. \t There is no display and the standard price is applied."
+    },
+    {
+      "page": 61,
+      "title": "4. \t Exhibit at the door with the standard fee in effect"
+    },
+    {
+      "page": 61,
+      "title": "3.1.6: Designing Engineering Experiments"
+    },
+    {
+      "page": 62,
+      "title": "1. \t Conjecture refers to the initial hypothesis that serves as the basis for"
+    },
+    {
+      "page": 62,
+      "title": "2. \t Experiment refers to the test used to examine the conjecture."
+    },
+    {
+      "page": 62,
+      "title": "3. \t Analysis refers to the process of statistically examining the data obtained from"
+    },
+    {
+      "page": 62,
+      "title": "4. \t Conclusion refers to findings on the first hypothesis based on the experiment."
+    },
+    {
+      "page": 62,
+      "title": "3.1.7: Causal Attributions"
+    },
+    {
+      "page": 63,
+      "title": "1.  Causal attribution, as defined by the OECD-DAC, refers to the process of"
+    },
+    {
+      "page": 63,
+      "title": "2. \t This criterion does not need that alterations are exclusively or entirely caused by the"
+    },
+    {
+      "page": 63,
+      "title": "3. \t Put simply, it acknowledges the possibility that other variables, such as additional"
+    },
+    {
+      "page": 65,
+      "title": "3.1.8: Statistical Control"
+    },
+    {
+      "page": 68,
+      "title": "3.2 Data Collection"
+    },
+    {
+      "page": 68,
+      "title": "3.2.1: Collection of Data via Observation and Interview"
+    },
+    {
+      "page": 69,
+      "title": "3.2.2: Collection of Data through Cases"
+    },
+    {
+      "page": 70,
+      "title": "5. \t Presentation of Results"
+    },
+    {
+      "page": 70,
+      "title": "3.2.3: Collection of Data through Questionnaires"
+    },
+    {
+      "page": 70,
+      "title": "1. \t Mailing Method"
+    },
+    {
+      "page": 70,
+      "title": "2. \t Enumerator Method"
+    },
+    {
+      "page": 71,
+      "title": "3.2.4: Guidelines for Preparing Questionnaire"
+    },
+    {
+      "page": 71,
+      "title": "1. \t Identify Your Research Aims and the Goal of Your Questionnaire"
+    },
+    {
+      "page": 72,
+      "title": "3.2.5: Data Editing"
+    },
+    {
+      "page": 72,
+      "title": "1.  Visual Inspection"
+    },
+    {
+      "page": 72,
+      "title": "2.  Computer Verification"
+    },
+    {
+      "page": 72,
+      "title": "3. \t Double Data Entry"
+    },
+    {
+      "page": 73,
+      "title": "3.2.6: Data Coding Rules"
+    },
+    {
+      "page": 74,
+      "title": "3.2.7: Don’t Know” Responses"
+    },
+    {
+      "page": 75,
+      "title": "3.2.8: Missing Data"
+    },
+    {
+      "page": 75,
+      "title": "3.3: Basic Principles"
+    },
+    {
+      "page": 76,
+      "title": "3.3.1: Validity and Reliability"
+    },
+    {
+      "page": 78,
+      "title": "0.7 ≤ α < 0.9: Good"
+    },
+    {
+      "page": 78,
+      "title": "0.6 ≤ α < 0.7: Acceptable"
+    },
+    {
+      "page": 78,
+      "title": "0.5 ≤ α < 0.6: Poor"
+    },
+    {
+      "page": 78,
+      "title": "3.3.2: Replication, Randomisation and Blocking"
+    },
+    {
+      "page": 80,
+      "title": "3.3.3: Orthogonality and False Positives"
+    },
+    {
+      "page": 85,
+      "title": "1. \t What is a key characteristic of experimental research?"
+    },
+    {
+      "page": 86,
+      "title": "1. “Experimental and Quasi-Experimental Designs for Generalized Causal"
+    },
+    {
+      "page": 86,
+      "title": "2.\t “Design and Analysis of Experiments” by Douglas C. Montgomery"
+    },
+    {
+      "page": 86,
+      "title": "3.\t “Research Design: Qualitative, Quantitative, and Mixed Methods Approaches”"
+    },
+    {
+      "page": 86,
+      "title": "4.\t “Experimental Design: Procedures for the Behavioural Sciences” by Roger E."
+    },
+    {
+      "page": 86,
+      "title": "5. “Introduction to Experimental Design” by John Lawson - An introductory"
+    },
+    {
+      "page": 86,
+      "title": "6. Campbell, D. T., & Stanley, J. C. (1963). “Experimental and Quasi-"
+    },
+    {
+      "page": 86,
+      "title": "7. Cook, T. D., & Campbell, D. T. (1979). “Quasi-Experimentation: Design &"
+    },
+    {
+      "page": 86,
+      "title": "8. Kirk, R. E. (2013). “Experimental Design: Procedures for the Behavioural"
+    },
+    {
+      "page": 86,
+      "title": "9. Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). “Experimental and"
+    },
+    {
+      "page": 86,
+      "title": "10. Trochim, W. M. K., & Donnelly, J. P. (2008). “Research Methods: The Essential"
+    },
+    {
+      "page": 87,
+      "title": "Module - IV: Models and Hypothesis"
+    },
+    {
+      "page": 87,
+      "title": "4.1: Hypothesis Testing"
+    },
+    {
+      "page": 87,
+      "title": "4.1.1 Introduction to Hypothesis"
+    },
+    {
+      "page": 88,
+      "title": "1.\t Smoking leads to Cancer"
+    },
+    {
+      "page": 88,
+      "title": "2.\t A high rate of unemployment leads to crimes."
+    },
+    {
+      "page": 88,
+      "title": "1.\t Smoking and other drugs lead to cancer, chest infections etc."
+    },
+    {
+      "page": 89,
+      "title": "2.\t The high rate of unemployment, poverty, illiteracy leads to crimes like dacoit,"
+    },
+    {
+      "page": 89,
+      "title": "4.1.2 Developing Hypothesis : Null and Alternate"
+    },
+    {
+      "page": 90,
+      "title": "4.1.3: Type I & Type II Error"
+    },
+    {
+      "page": 91,
+      "title": "4.1.4: One-tailed and Two-tailed Test"
+    },
+    {
+      "page": 92,
+      "title": "4.1.5 Degree of Freedom"
+    },
+    {
+      "page": 93,
+      "title": "4.1.6 Confidence Intervals"
+    },
+    {
+      "page": 94,
+      "title": "4.1.7: Level of Significance: The Confidence Coefficient"
+    },
+    {
+      "page": 95,
+      "title": "4.1.8: Rejection and Non-rejection Regions"
+    },
+    {
+      "page": 100,
+      "title": "4.1.9 Hypothesis Testing Procedure"
+    },
+    {
+      "page": 101,
+      "title": "4.1.10 Types of Tests"
+    },
+    {
+      "page": 102,
+      "title": "4.1.11 How to Select a Test"
+    },
+    {
+      "page": 102,
+      "title": "4.2 Parametric Test"
+    },
+    {
+      "page": 103,
+      "title": "4.2.1 Important Parametric Tests"
+    },
+    {
+      "page": 103,
+      "title": "1.  t-test"
+    },
+    {
+      "page": 103,
+      "title": "2.  Z-test"
+    },
+    {
+      "page": 104,
+      "title": "3.  F-test"
+    },
+    {
+      "page": 104,
+      "title": "4.2.2 Hypothesis Testing of Means: Single Population Mean Using"
+    },
+    {
+      "page": 105,
+      "title": "4.2.3 Hypothesis Testing of Means: Single Population Mean Using"
+    },
+    {
+      "page": 106,
+      "title": "4.2.4: Hypothesis Testing for Population Proportions"
+    },
+    {
+      "page": 107,
+      "title": "4.2.5: Hypothesis Testing for Comparing a Variance to Hypothesised"
+    },
+    {
+      "page": 108,
+      "title": "0.05. For 10 degrees of freedom, this critical value is approximately 18.307."
+    },
+    {
+      "page": 108,
+      "title": "4.2.6: Testing the Equality of Variances of Two Normal Populations"
+    },
+    {
+      "page": 110,
+      "title": "4.2.7 ANOVA for Fixed Effect Model"
+    },
+    {
+      "page": 110,
+      "title": "1. \t Computing and documenting individual discrepancies"
+    },
+    {
+      "page": 110,
+      "title": "2. \t Comprehending the cause behind each deviation"
+    },
+    {
+      "page": 110,
+      "title": "1. \t Market conditions have changed, making it impractical to continue employing quality"
+    },
+    {
+      "page": 110,
+      "title": "2. \t The budgeting rules followed may also be excessively utopian, for instance, the"
+    },
+    {
+      "page": 110,
+      "title": "3. \t The quality of service delivery may not meet expectations, for example, the initial"
+    },
+    {
+      "page": 110,
+      "title": "4. \t In certain instances, planning may lack a foundation, such as when the results of"
+    },
+    {
+      "page": 111,
+      "title": "1.  Material Variances: - These arise from the difference between actual costs of"
+    },
+    {
+      "page": 111,
+      "title": "2.  Labour variances:- This refers to the specific remuneration given to employees"
+    },
+    {
+      "page": 111,
+      "title": "3.  Overhead variances:- It may be described as the aggregate of indirect material,"
+    },
+    {
+      "page": 112,
+      "title": "4.2.8 Total, Treatment & Error of Squares"
+    },
+    {
+      "page": 113,
+      "title": "1.\t Calculate the square of the difference between the mean of a column and the"
+    },
+    {
+      "page": 113,
+      "title": "2.\t Compute the product by multiplying the outcome with the total count of items in"
+    },
+    {
+      "page": 113,
+      "title": "4.2.8 Total, Treatment & Error of Squares"
+    },
+    {
+      "page": 113,
+      "title": "4.2.9: ANOVA for Random Effect Model"
+    },
+    {
+      "page": 113,
+      "title": "1. \t Utilise 20 identical programmes and distribute 5 programmes randomly to each"
+    },
+    {
+      "page": 113,
+      "title": "2.  Utilise four duplicates of any five programmes, assigning one duplicate of each"
+    },
+    {
+      "page": 116,
+      "title": "4.2.10: Single Factor Experiment"
+    },
+    {
+      "page": 117,
+      "title": "1.\t y11y12 · · · y 1 ny 1 y¯ 1."
+    },
+    {
+      "page": 117,
+      "title": "2.\t y21y22 · · · y 2 ny 2. y¯ 2"
+    },
+    {
+      "page": 118,
+      "title": "1. = 11; n2 = 5, y2. = 75, y/"
+    },
+    {
+      "page": 118,
+      "title": "2. = 15; n3 = 4, y3. = 48 andy/"
+    },
+    {
+      "page": 118,
+      "title": "3. = 12."
+    },
+    {
+      "page": 126,
+      "title": "4.2.11 Model Adequacy Checking"
+    },
+    {
+      "page": 126,
+      "title": "1. \t The relationship between the research variable and explanatory factors is primarily"
+    },
+    {
+      "page": 126,
+      "title": "2. \t The mistake has a mean value of zero."
+    },
+    {
+      "page": 126,
+      "title": "3. \t The mistake exhibits a consistent variance."
+    },
+    {
+      "page": 126,
+      "title": "4. \t The mistakes are not connected."
+    },
+    {
+      "page": 126,
+      "title": "5. \t The mistakes follow a normal distribution."
+    },
+    {
+      "page": 126,
+      "title": "1. Case of one explanatory variable When there is just one explanatory variable in"
+    },
+    {
+      "page": 129,
+      "title": "1. \t What is a hypothesis?"
+    },
+    {
+      "page": 129,
+      "title": "2. \t Which type of hypothesis states that there is no relationship between the variables?"
+    },
+    {
+      "page": 129,
+      "title": "3.  What does the significance level in hypothesis testing represent?"
+    },
+    {
+      "page": 129,
+      "title": "4. \t What does the test statistic help determine in hypothesis testing?"
+    },
+    {
+      "page": 129,
+      "title": "5. \t Which error occurs when the null hypothesis is rejected, but it is actually true?"
+    },
+    {
+      "page": 130,
+      "title": "1. “Statistics for Business and Economics” by Paul Newbold, William L. Carlson,"
+    },
+    {
+      "page": 130,
+      "title": "2. “Hypothesis Testing: A Visual Introduction To Statistical Significance” by J.S."
+    },
+    {
+      "page": 130,
+      "title": "3.\t “Introduction to the Practice of Statistics” by David S. Moore, George P."
+    },
+    {
+      "page": 130,
+      "title": "4. “Statistical Methods for Psychology” by David C. Howell"
+    },
+    {
+      "page": 130,
+      "title": "5.\t “An Introduction to Statistical Learning: with Applications in R” by Gareth"
+    },
+    {
+      "page": 130,
+      "title": "6. Newbold, P., Carlson, W. L., & Thorne, B. (2020). Statistics for Business and"
+    },
+    {
+      "page": 130,
+      "title": "7. Kung, J. S. (2017). Hypothesis Testing: A Visual Introduction To Statistical"
+    },
+    {
+      "page": 130,
+      "title": "8. Moore, D. S., McCabe, G. P., & Craig, B. A. (2018). Introduction to the Practice"
+    },
+    {
+      "page": 130,
+      "title": "9. Howell, D. C. (2019). Statistical Methods for Psychology. Cengage Learning."
+    },
+    {
+      "page": 130,
+      "title": "10. James, G., Witten, D., Hastie, T., &Tibshirani, R. (2017). An Introduction to"
+    },
+    {
+      "page": 131,
+      "title": "Module - V: Report Writing"
+    },
+    {
+      "page": 131,
+      "title": "5.1 Research Report Writing"
+    },
+    {
+      "page": 131,
+      "title": "5.1.1 Meaning of Research Report"
+    },
+    {
+      "page": 131,
+      "title": "5.1.2 Structure of Scientific Report"
+    },
+    {
+      "page": 131,
+      "title": "1. \t Introduction"
+    },
+    {
+      "page": 132,
+      "title": "3. \t The reference materials:"
+    },
+    {
+      "page": 132,
+      "title": "5.1.3 Components of a Scientific Report"
+    },
+    {
+      "page": 133,
+      "title": "5.1.4 Types of Reports"
+    },
+    {
+      "page": 133,
+      "title": "1.  Oral Report When the researchers are asked to make an oral presentation then"
+    },
+    {
+      "page": 134,
+      "title": "4. \t Informal report: The supervisor’s report, published by completing the shift log book,"
+    },
+    {
+      "page": 134,
+      "title": "5.1.5: Steps in Report Writing"
+    },
+    {
+      "page": 134,
+      "title": "1. \t Title Page"
+    },
+    {
+      "page": 135,
+      "title": "2. \t Page Contents"
+    },
+    {
+      "page": 135,
+      "title": "3. \t Executive Summary"
+    },
+    {
+      "page": 135,
+      "title": "4. \t Body"
+    },
+    {
+      "page": 135,
+      "title": "5. \t Conclusions and Recommendations"
+    },
+    {
+      "page": 135,
+      "title": "6. \t Bibliography"
+    },
+    {
+      "page": 135,
+      "title": "7. \t Appendix"
+    },
+    {
+      "page": 135,
+      "title": "1. \t Title Page: The title page should clearly state the subject of the report. The report"
+    },
+    {
+      "page": 135,
+      "title": "2. \t Table of Contents: The table of contents provides a comprehensive overview of the"
+    },
+    {
+      "page": 135,
+      "title": "3. \t Executive Summary: If the report is excessively lengthy and verbose, the intended"
+    },
+    {
+      "page": 135,
+      "title": "4. \t The Body: This section includes"
+    },
+    {
+      "page": 136,
+      "title": "5. \t Conclusion and Recommendation:"
+    },
+    {
+      "page": 136,
+      "title": "6. \t Bibliography: When the report relies on secondary data, provide a bibliography"
+    },
+    {
+      "page": 136,
+      "title": "7.  Appendix: An appendix is a section of a report that is used to provide non-essential"
+    },
+    {
+      "page": 136,
+      "title": "5.1.6 Format and Writing Style"
+    },
+    {
+      "page": 137,
+      "title": "5.1.7 Illustrations and Tables"
+    },
+    {
+      "page": 139,
+      "title": "5.1.8 Citing and Referencing Sources"
+    },
+    {
+      "page": 140,
+      "title": "5.1.9: Footnotes"
+    },
+    {
+      "page": 140,
+      "title": "5.2 Presentation"
+    },
+    {
+      "page": 140,
+      "title": "5.2.1 Oral Presentation"
+    },
+    {
+      "page": 141,
+      "title": "5.2.2 Making Presentation"
+    },
+    {
+      "page": 143,
+      "title": "5.2.3 Use of Visual Aids"
+    },
+    {
+      "page": 145,
+      "title": "1. Have a clear and simple background."
+    },
+    {
+      "page": 145,
+      "title": "2.\t Avoid using too many different types of fonts or font sizes."
+    },
+    {
+      "page": 145,
+      "title": "3. Only use animations for a purpose, such as, to reveal the stages of a process,"
+    },
+    {
+      "page": 145,
+      "title": "4. Use a large font size - a minimum of 24pt."
+    },
+    {
+      "page": 145,
+      "title": "5.\t Use bullet points to summarise key points."
+    },
+    {
+      "page": 145,
+      "title": "6.\t Consider providing handouts of diagrams because the audience will find the"
+    },
+    {
+      "page": 145,
+      "title": "7.\t Avoid putting too much text on a slide."
+    },
+    {
+      "page": 145,
+      "title": "8.\t Avoid using red or green text as it’s difficult to read."
+    },
+    {
+      "page": 145,
+      "title": "9.\t There should only be one key point for each slide."
+    },
+    {
+      "page": 146,
+      "title": "5.2.4: Importance of Effective Communication"
+    },
+    {
+      "page": 146,
+      "title": "2. \t Preventing or resolving problems"
+    },
+    {
+      "page": 147,
+      "title": "3. \t Providing clarity and direction"
+    },
+    {
+      "page": 147,
+      "title": "4. \t Creates better relationships"
+    },
+    {
+      "page": 147,
+      "title": "5. \t Increases engagement"
+    },
+    {
+      "page": 147,
+      "title": "6. \t Improves productivity"
+    },
+    {
+      "page": 147,
+      "title": "7. \t Promotes team building"
+    },
+    {
+      "page": 147,
+      "title": "5.2.5 Convention and Strategies of Authentication"
+    },
+    {
+      "page": 148,
+      "title": "5.3 Writing a Research Paper"
+    },
+    {
+      "page": 148,
+      "title": "5.3.1 Preparing Research Papers for Journals"
+    },
+    {
+      "page": 148,
+      "title": "1. \t Determine the authors. When designing a search project, we recommend preparing"
+    },
+    {
+      "page": 148,
+      "title": "2. \t Start writing before the experiments are complete. We have to Start writing while we"
+    },
+    {
+      "page": 148,
+      "title": "3.  Decide it is time to publish. It is time to publish when our findings represent a complete"
+    },
+    {
+      "page": 148,
+      "title": "4.  Draft a title & abstract. Drafting a working title and an abstract helps define the"
+    },
+    {
+      "page": 148,
+      "title": "5.  (Re)examine the list of authors. When we are determined which experiments will"
+    },
+    {
+      "page": 148,
+      "title": "6.  Determine the basic format. There are three basic formats for peer-reviewed"
+    },
+    {
+      "page": 149,
+      "title": "7. \t Select the journal. There are several factors to think about when choosing a journal."
+    },
+    {
+      "page": 149,
+      "title": "8. \t Stock the sections of your paper. As we think about your paper, store relevant"
+    },
+    {
+      "page": 150,
+      "title": "9.  Construct the tables, figures, and legends. Create figures and tables before the"
+    },
+    {
+      "page": 150,
+      "title": "10.  Outline the paper. An outline is like a road map which define how we will get from"
+    },
+    {
+      "page": 150,
+      "title": "11.  Write the first draft. Write the primary draft of the complete manuscript. If we"
+    },
+    {
+      "page": 150,
+      "title": "12. \t Revise the manuscript. This step involves three major tasks, each to be carried out"
+    },
+    {
+      "page": 150,
+      "title": "13. \t Check the references. Make sure that the citations are correct and complete. Do one"
+    },
+    {
+      "page": 150,
+      "title": "14.  Write the final title and abstract. Several changes are created throughout the editing"
+    },
+    {
+      "page": 150,
+      "title": "15. \t Reread the journal’s Instructions to Authors. Review the main points of however the"
+    },
+    {
+      "page": 150,
+      "title": "16.  Prepare the final illustrations. Ensure that tables, figures, and figure legends are"
+    },
+    {
+      "page": 150,
+      "title": "17. \t Get feedback on manuscript and then revise manuscript again. Getting feedback is"
+    },
+    {
+      "page": 150,
+      "title": "18. \t Submit the manuscript to the editor. Follow the Instructions to Authors to determine"
+    },
+    {
+      "page": 151,
+      "title": "19.  Deal with reviewers’ comments. Most manuscripts are not accepted on the first"
+    },
+    {
+      "page": 151,
+      "title": "20.  Check the proof. Once the manuscript is accepted and ready for print, the publisher"
+    },
+    {
+      "page": 151,
+      "title": "20. Celebrate! Robert Day says in How to Write and Publish a Scientific Paper (1998),"
+    },
+    {
+      "page": 151,
+      "title": "5.3.2 Design of Paper using Template"
+    },
+    {
+      "page": 151,
+      "title": "1. \t Corresponding example or detail—either our insight or a critic’s comment"
+    },
+    {
+      "page": 151,
+      "title": "2.  Supporting example or detail (our discuss on supporting detail from a critic)"
+    },
+    {
+      "page": 151,
+      "title": "1.\t Supporting example or detail"
+    },
+    {
+      "page": 151,
+      "title": "2.\t Supporting example or detail"
+    },
+    {
+      "page": 152,
+      "title": "1. \t Supporting example—only one comment on this example:"
+    },
+    {
+      "page": 152,
+      "title": "2. \t Supporting example"
+    },
+    {
+      "page": 152,
+      "title": "5.3.3: Calculation of Impact Factor of a Journal"
+    },
+    {
+      "page": 153,
+      "title": "5.3.4 Citation Index"
+    },
+    {
+      "page": 154,
+      "title": "5.3.5 ISBN & ISSN"
+    },
+    {
+      "page": 158,
+      "title": "5.4 Planning a Project Proposal"
+    },
+    {
+      "page": 159,
+      "title": "10.\t Review and Revision:"
+    },
+    {
+      "page": 159,
+      "title": "5.4.1: Identifying and Defining Problem"
+    },
+    {
+      "page": 160,
+      "title": "5.4.2 Research Problem aspects and considerations"
+    },
+    {
+      "page": 162,
+      "title": "5.4.3 Research Plan"
+    },
+    {
+      "page": 164,
+      "title": "1. \t What is one of the fundamental characteristics of report writing?"
+    },
+    {
+      "page": 164,
+      "title": "2.  Which of the following is included in the preliminaries of a scientific report?"
+    },
+    {
+      "page": 164,
+      "title": "3.  In the structure of a scientific report, where would you find the research aims and"
+    },
+    {
+      "page": 164,
+      "title": "4. \t Which type of report is prepared for direct interaction with the audience and requires"
+    },
+    {
+      "page": 164,
+      "title": "5. \t Which sampling method ensures every item in the population has an equal chance"
+    },
+    {
+      "page": 165,
+      "title": "1. “The Craft of Research” by Wayne C. Booth, Gregory G. Colomb, and Joseph"
+    },
+    {
+      "page": 165,
+      "title": "2.\t “Scientific Writing and Communication: Papers, Proposals, and Presentations”"
+    },
+    {
+      "page": 165,
+      "title": "3. “Reporting Research in Psychology: How to Meet Journal Article Reporting"
+    },
+    {
+      "page": 165,
+      "title": "4. “Successful Scientific Writing: A Step-by-Step Guide for the Biological and"
+    },
+    {
+      "page": 165,
+      "title": "5.\t “Writing Empirical Research Reports: A Basic Guide for Students of the Social"
+    },
+    {
+      "page": 165,
+      "title": "6. Booth, W. C., Colomb, G. G., & Williams, J. M. (2008). The Craft of Research."
+    },
+    {
+      "page": 165,
+      "title": "7. Hofmann, A. H. (2014). Scientific Writing and Communication: Papers,"
+    },
+    {
+      "page": 165,
+      "title": "8. Cooper, H. M. (2016). Reporting Research in Psychology: How to Meet Journal"
+    },
+    {
+      "page": 165,
+      "title": "9. Matthews, J. R., & Matthews, R. W. (2014). Successful Scientific Writing:"
+    },
+    {
+      "page": 165,
+      "title": "10. Pyrczak, F., & Bruce, R. R. (2011). Writing Empirical Research Reports: A"
+    }
+  ],
+  "module_ranges": {
+    "1": [
+      8,
+      31
+    ],
+    "2": [
+      32,
+      56
+    ],
+    "3": [
+      57,
+      86
+    ],
+    "4": [
+      87,
+      130
+    ],
+    "5": [
+      131,
+      165
+    ]
+  }
+}

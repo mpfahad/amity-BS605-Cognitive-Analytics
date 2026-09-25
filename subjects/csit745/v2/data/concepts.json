@@ -1,0 +1,2621 @@
+{
+  "concepts": {
+    "1.1.1": {
+      "id": "1.1.1",
+      "title": "Definition and Objectives of Research",
+      "module": 1,
+      "pages": [
+        8,
+        9
+      ],
+      "section": "1.1.1",
+      "quick": "Research is a systematized effort to gain new knowledge, typically commencing with a question or problem.",
+      "keyIdeas": [
+        "Slesinger & Stephenson: manipulation of things, concepts or symbols to generalise, extend, correct or verify knowledge.",
+        "Redman & Mory: research is a “systematized effort to gain new knowledge” used in a technical, academic sense.",
+        "Clifford Woody: defining/redefining problems, formulating hypotheses, collecting and evaluating data, deducting, testing conclusions against hypotheses.",
+        "General (secondary) objectives give a broad view of a study’s goal; specific objectives divide that goal into smaller, measurable aims.",
+        "Specific objectives help define who, what, why, when, and how of the project."
+      ],
+      "detail": [
+        "Research is typically said to commence with a question or a problem. It creates new concepts, methodologies, and understandings through new knowledge or innovative application of existing knowledge, often by synthesising and analysing previous studies.",
+        "Classic definitions emphasise different facets: Slesinger & Stephenson stress generalising to extend, correct or verify knowledge for theory or practice; Redman & Mory stress systematised effort for new knowledge; Woody describes the full cycle from problem definition through hypothesis testing.",
+        "General objectives provide a detailed overview of what the study should accomplish (e.g., assessing an organisation’s contribution to environmental sustainability). Specific objectives break general aims into logically interconnected, primary goals that make planning and execution easier."
+      ],
+      "sourceQuote": "Systematized effort to gain new knowledge",
+      "related": [
+        "1.1.2",
+        "1.1.3",
+        "1.2.1"
+      ],
+      "compare": "General objectives give the broad study goal; specific objectives are those goals divided into smaller, interconnected primary aims.",
+      "example": "For an organisation’s environmental sustainability study, specific goals might include how practices changed historically and the impact of new practices, technology, and strategies on effectiveness."
+    },
+    "1.1.2": {
+      "id": "1.1.2",
+      "title": "Characteristics of Research",
+      "module": 1,
+      "pages": [
+        9
+      ],
+      "section": "1.1.2",
+      "quick": "Sound research is methodical, logical, condensed, repeatable, action-oriented, and delivered in useful formats within time and cost limits.",
+      "keyIdeas": [
+        "Concentrate on the most pressing issues; follow a structured, methodical procedure.",
+        "Follow a logical pattern; scientific progress requires manipulating ideas logically.",
+        "Findings should be condensed (shared) so others need not repeat the same work, and should be repeatable/verifiable in new settings.",
+        "Research ought to be successful (one topic can spark several others) and action-oriented (findings implementable).",
+        "Take an integrated multidisciplinary approach; involve stakeholders at all stages.",
+        "Use an easy-to-understand design, stay within timeframe and budget, and deliver findings in formats helpful to decision-makers."
+      ],
+      "detail": [
+        "The module lists characteristic requirements for research quality: focus on pressing issues; methodical and logical procedure; condensed reporting so others need not redo the work; and repeatability of findings across locations, environments, people, or time.",
+        "Research should also be successful (sparking further topics), action-oriented toward implementable solutions, multidisciplinary, and participatory—inviting policymakers to community members at all stages.",
+        "Practical constraints matter: clear design, specific timeframe, spending as little money as feasible, and presenting results in formats most useful to administrators, managers, or community members."
+      ],
+      "sourceQuote": "The investigation should be methodical. It emphasises the importance of following a structured procedure when conducting research.",
+      "related": [
+        "1.1.1",
+        "1.2.1"
+      ]
+    },
+    "1.1.3": {
+      "id": "1.1.3",
+      "title": "Research Methods vs Research Methodology",
+      "module": 1,
+      "pages": [
+        10
+      ],
+      "section": "1.1.3",
+      "quick": "Research methods are the procedures and tools used in a study; methodology is the systematic science of how research should be conducted.",
+      "keyIdeas": [
+        "Research methods: procedures, schemes, steps, and algorithms used during a study (observations, experiments, numerical/statistical approaches, etc.).",
+        "Methods are planned, scientific, and value-agnostic; they collect samples and data and seek verifiable explanations.",
+        "Business and scientific methods demand explanations based on facts, measurements, and observations—not solely reasoning.",
+        "Research methodology: a systematic approach to solving a problem; the science of how research should be conducted.",
+        "Methodology describes, explains, and predicts phenomena and provides a research work plan; it is the study of methods for gaining knowledge."
+      ],
+      "detail": [
+        "Although the names sound similar, methods and methodology differ. Methods are the concrete procedures, schemes, steps, and algorithms a researcher uses—observations, theoretical procedures, experiments, numerical schemes, statistical approaches, and so on.",
+        "Methods help collect samples and data and arrive at solutions. They favour explanations that can be verified through experiments, based on collected facts rather than reasoning alone.",
+        "Methodology is the systematic approach to solving a problem—the science studying how research should be done. It covers how researchers describe, explain, and predict phenomena and aims to provide a work plan for the research."
+      ],
+      "sourceQuote": "A systematic approach to solving a problem is known as research methodology. It is a science that studies how research should be conducted.",
+      "related": [
+        "1.1.1",
+        "1.2.1",
+        "1.3.1"
+      ],
+      "compare": "Methods = tools and procedures used in a study; methodology = the overall systematic plan and science of how research should be conducted."
+    },
+    "1.2.1": {
+      "id": "1.2.1",
+      "title": "Research Criteria and Research Process",
+      "module": 1,
+      "pages": [
+        10,
+        11
+      ],
+      "section": "1.2.1",
+      "quick": "Credible research meets clear criteria (purpose, design, analysis, integrity) and follows a staged process from problem definition to report presentation.",
+      "keyIdeas": [
+        "Criteria: clear goal; enough process description for replication; carefully prepared unbiased design; disclose shortcomings and their effects.",
+        "Analytic techniques must be suitable; data adequately analysed; legitimacy and dependability verified; conclusions only where findings support them.",
+        "Trust rises when the researcher is experienced, reputable, and a person of integrity.",
+        "Marketing research uses the scientific method impartially—systematic, recorded, time-scheduled steps.",
+        "Six listed process steps: Problem Definition; Development of an Approach; Research Design Formulation; Field Work/Data Collection; Data Preparation and Analysis; Report Preparation and Presentation."
+      ],
+      "detail": [
+        "Research criteria require a very clear goal, sufficient process description so another researcher can continue the work, carefully prepared procedural design for unbiased outcomes, and full disclosure of technique shortcomings and how they might affect results.",
+        "Data must be analysed with suitable techniques and checked for legitimacy and dependability. Only conclusions bolstered by findings should be drawn. Researcher experience, reputation, and integrity increase warranted trust.",
+        "The research process is planned methodically at every step. The module lists six main steps used when designing a project: problem definition, approach development, research design formulation, field work or data collection, data preparation and analysis, and report preparation and presentation. The study should be impartial and free of personal or political prejudice."
+      ],
+      "sourceQuote": "Only conclusions that are bolstered by the study findings and for which the facts offer a sufficient basis should be drawn.",
+      "related": [
+        "1.1.3",
+        "1.2.2",
+        "1.2.3"
+      ],
+      "example": "During a project you may discover the scope is insufficient, the topic too wide, information resources scarce, or gathered material contradicts the thesis—reasons to revisit earlier process steps."
+    },
+    "1.2.2": {
+      "id": "1.2.2",
+      "title": "Approaches: Deductive, Inductive, Qualitative and Quantitative",
+      "module": 1,
+      "pages": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "section": "1.2.2",
+      "quick": "Deductive tests theory-based hypotheses; inductive builds theory from observations; abductive explains surprising puzzles; qualitative and quantitative differ in depth vs numbers.",
+      "keyIdeas": [
+        "Deductive: develop hypothesis from existing theory, then design strategy to test it; benefits include clarifying relationships, quantitative measurement, and limited generalisation.",
+        "Deductive stages: deduce hypothesis → operationalise variables → test (e.g. regression/correlation) → examine confirm/reject vs literature → modify theory if needed.",
+        "Inductive: start with observations, seek patterns, propose theories; neither theory nor hypothesis need apply at the start; direction can change.",
+        "Abductive: addresses weaknesses of both; begins with surprising facts/puzzles and seeks the best explanation among alternatives (pragmatist).",
+        "Qualitative: non-statistical, in-depth in natural settings; sample often 6–10; open-ended; methods include interviews, focus groups, ethnography, content analysis, case study.",
+        "Quantitative: systematic statistical/computational focus on numbers; larger populations; closed-ended surveys, questionnaires, polls."
+      ],
+      "detail": [
+        "A deductive approach starts with a hypothesis based on existing theory and prepares a strategy to test it. Benefits include clarifying relationships between variables, measuring concepts quantitatively, and generalising findings to a certain extent. Stages run from deducing and operationalising hypotheses through testing and possibly modifying theory.",
+        "Inductive reasoning starts with observations; theories related to findings are proposed by finding patterns. At the outset neither theories nor hypotheses need apply, and the researcher may alter direction after the process begins. It is based on learning from experience.",
+        "Abductive reasoning addresses deductive’s problem of selecting which theory to test and inductive’s limit that no amount of data necessarily builds theory. It begins with surprising facts or puzzles and seeks the best explanation, combining numerical and cognitive reasoning when useful.",
+        "Qualitative research is a non-statistical inquiry for in-depth understanding in natural settings, usually with small samples and open-ended probing. Quantitative research gathers and analyses numerical data with closed-ended instruments across larger populations. An advocacy/participatory (emancipatory) approach engages vulnerable groups for reform rather than remaining impartial."
+      ],
+      "sourceQuote": "Abductive approaches begin with “surprising facts’’ or “puzzles,” and the goal of the research process is to figure out how to explain them.",
+      "related": [
+        "1.2.1",
+        "1.3.5",
+        "1.4.1"
+      ],
+      "compare": "Deductive tests theory → data; inductive builds theory from data; abductive explains surprising facts by choosing the best among alternative explanations.",
+      "example": "Qualitative methods listed: one-to-one interview, focus groups, ethnographic research, content/text analysis, case study research."
+    },
+    "1.2.3": {
+      "id": "1.2.3",
+      "title": "Research Proposal and Aspects",
+      "module": 1,
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "section": "1.2.3",
+      "quick": "A research proposal persuades others the project matters and is feasible, covering what, why, and how—including title, lit review, methodology, plan, budget, and team.",
+      "keyIdeas": [
+        "Answers what we want to do, why, and how; needed for competitive funding and to formulate, plan, perform, and monitor the project.",
+        "Core parts: Title, Introduction, Literature review, Methodology, Plan (Gantt), Budget, Research team (signed CVs).",
+        "Introduction covers challenge/goal, broad and particular aims, justification, concerns, IVs/DVs, hypothesis, and boundaries.",
+        "Study goals should be explicit, succinct, quantifiable, and doable; methodology is the work plan for solving the question.",
+        "Common errors: overly lofty goals; goals mismatched to title/problem; missing lit review; thin approach detail; over-ambitious schedule; unjustified budget."
+      ],
+      "detail": [
+        "A research proposal must encompass essential elements of the research procedure with enough detail for readers to evaluate the investigation. Good preparation supports competitive grant applications and helps the researcher formulate, plan, perform, and monitor the work.",
+        "Standard components include a clear descriptive title; an introduction that frames the challenge, aims, justification, variables, hypothesis, and boundaries; a literature review acknowledging prior work and showing the gap; methodology as the work plan (design, site, sampling, tools, data collection/analysis, ethics); a timed plan preferably via Gantt chart; a justified budget; and a research team with roles and signed CVs.",
+        "Common proposal errors include goals that are too general or lofty, goals that do not match the title or problem, missing references/literature review, insufficient methodological detail, over-ambitious time schedules, and excessive or insufficient budgets without rationale."
+      ],
+      "sourceQuote": "A research proposal is designed to persuade others that we have an important research project and that we are capable of finishing it given our work schedule and level of expertise.",
+      "related": [
+        "1.2.1",
+        "1.2.4",
+        "1.1.1"
+      ],
+      "example": "Plan time for acquiring supplies, carrying out the study, analysing data, and composing the project report; use a Gantt chart for the activity schedule."
+    },
+    "1.2.4": {
+      "id": "1.2.4",
+      "title": "Literature Survey and Review",
+      "module": 1,
+      "pages": [
+        17,
+        18,
+        19
+      ],
+      "section": "1.2.4",
+      "quick": "A literature review organises knowledge in a research area into a pool so the new study adds to and enriches the field rather than duplicating it.",
+      "keyIdeas": [
+        "“Review” = organise knowledge of the area into a pool; “literature” = theoretical, research-oriented, and practical studies in that discipline.",
+        "Human understanding stages: preservation, transmission, and advancement; research expands the knowledge reservoir.",
+        "Importance: supplies theories/ideas for new problems; shows if evidence already solves the problem (avoids replication); sources hypotheses; suggests data/methods/stats; supplies comparative findings for interpretation.",
+        "Sources: book indices, periodicals (journals, newspapers, abstracts), encyclopaedias, dissertations, theses, online libraries.",
+        "Practices: start with a generic textbook overview; then empirical sources; gather citations meticulously; document bibliographic details on cards."
+      ],
+      "detail": [
+        "Reviewing literature builds or expands a knowledge pool in a specific area. Researchers must check prior work so similar questions are not needlessly repeated and so they understand theory and research pertaining to the topic.",
+        "A successful review helps formulate problems, avoid replication when adequate evidence already exists, generate hypotheses, choose methodologies and statistical techniques, and locate comparative data for interpreting results.",
+        "Recommended practice starts with a generic textbook for meaning, nature, importance, and variables; then reviews empirical research via handbooks, encyclopaedias, and abstracts; gathers citations from educational indexes with meticulous accuracy; and documents bibliographic details methodically."
+      ],
+      "sourceQuote": "The term “review” means “to organise the knowledge of the specific research area to create a knowledge pool so that our study adds on to and enriches the field of research.”",
+      "related": [
+        "1.2.3",
+        "1.1.1"
+      ],
+      "example": "Sources include Cumulative Book Index, journals, newspapers, Encyclopaedia Britannica, dissertations, theses, and online libraries."
+    },
+    "1.2.5": {
+      "id": "1.2.5",
+      "title": "Errors in Research",
+      "module": 1,
+      "pages": [
+        19,
+        20,
+        21
+      ],
+      "section": "1.2.5",
+      "quick": "Research error types include population specification, sampling/frame, selection, non-response, measurement, plus surrogate information and experimental error.",
+      "keyIdeas": [
+        "Population specification: misunderstanding whom to survey (e.g., buyer vs consumer).",
+        "Sampling/sample frame: wrong subpopulation or non-representative sample (e.g., 1936 Roosevelt–Landon poll from car/phone directories).",
+        "Selection: non-probability self-selection or interviewer bias toward accessible agreeable respondents.",
+        "Non-response: non-contact (cannot reach) vs refusal (won’t answer items); absence of data rather than inaccurate data.",
+        "Measurement: difference between data produced and data the analyst needs.",
+        "Also: surrogate information error (substitutes/mismatch to the issue) and experimental error (true impact vs attributed impact of IV)."
+      ],
+      "detail": [
+        "Population specification errors occur when researchers do not understand whom they should survey. Sampling and sample-frame errors arise when the wrong subpopulation is used or the responding sample is not representative—illustrated by the 1936 election poll based on car registrations and telephone directories that skewed Republican.",
+        "Selection error appears with non-probability self-participation or biased grouping (e.g., intercept interviewers choosing friends). Non-response covers non-contact and refusal; the main issue is missing data. Measurement issues create a gap between produced data and required data.",
+        "Surrogate information error arises when needed information is obtained from substitutes or does not match what addresses the issue. Experimental error is non-correspondence between the true impact of and the impact attributed to the independent variable."
+      ],
+      "sourceQuote": "When the wrong subpopulation is used to select a sample then survey sampling and sample frame errors occur",
+      "related": [
+        "1.2.1",
+        "1.3.4"
+      ],
+      "compare": "Non-contact = respondent unreachable; refusal = respondent declines items—both are non-response errors (missing data).",
+      "example": "A random sample of 5,000 Indian adults that is 70% female over-weights female entertainment tastes and harms generalisation to the adult population."
+    },
+    "1.3.1": {
+      "id": "1.3.1",
+      "title": "Pure and Applied Research",
+      "module": 1,
+      "pages": [
+        21,
+        22
+      ],
+      "section": "1.3.1",
+      "quick": "Applied research solves specific practical problems; pure/basic research advances fundamental knowledge rather than fixing a particular problem.",
+      "keyIdeas": [
+        "Applied (contractual) research: solve a specific problem for a person, group, or society using scientific methods on everyday problems.",
+        "Applied work identifies a problem, develops hypotheses, tests via experiment; often empirical; may be seen as non-systematic follow-up validating pure research findings.",
+        "Business examples: improve hiring, workplace efficiency/policies, address skill gaps.",
+        "Pure/fundamental/basic research clarifies fundamental aspects of a topic, phenomenon, or natural law to advance knowledge.",
+        "Basic research may be exploratory, descriptive, or explanatory (often explanatory); data improve understanding that can later support solutions."
+      ],
+      "detail": [
+        "Research design is the blueprint for collecting, measuring, and analysing data. Within design types, applied research aims to solve specific problems affecting individuals, groups, or society—sometimes called contractual research because of its practical scientific application.",
+        "Applied researchers focus on identifying a problem, hypothesising, and experimenting; empirical methods often solve practical problems. It can dig deeper into pure research findings to validate them and develop innovative solutions.",
+        "Pure, fundamental, or basic research seeks to clarify fundamental aspects of topics, phenomena, or natural laws. Its goal is to advance knowledge rather than solve a specific problem. Understanding gained can later support proposed solutions."
+      ],
+      "sourceQuote": "The goal of this type of research is to advance knowledge rather than to solve a specific problem.",
+      "related": [
+        "1.3.2",
+        "1.3.5",
+        "1.1.3"
+      ],
+      "compare": "Applied → practical solutions to specific problems; pure/basic → fundamental understanding without a particular problem to fix.",
+      "example": "Education basic research: How do humans retain memory? How do teaching methods affect students’ concentration?"
+    },
+    "1.3.2": {
+      "id": "1.3.2",
+      "title": "Causal and Correlational Designs",
+      "module": 1,
+      "pages": [
+        22,
+        23
+      ],
+      "section": "1.3.2",
+      "quick": "Causal (explanatory) research studies cause-and-effect, often via experiments; correlational designs relate variables without manipulating them.",
+      "keyIdeas": [
+        "Causal/explanatory research determines scope and nature of cause-and-effect relationships and effects of changes on norms/processes.",
+        "Causal studies explain patterns of relationships between variables; experiments are the most common primary data method.",
+        "Correlational design finds how two variables relate without manipulating either—e.g., a favourable relationship when one changes and the other follows.",
+        "Main correlational approaches: naturalistic observation, survey research, and archival research.",
+        "Conceptual research (related note): abstract ideas/theories, often used by philosophers to develop or rework concepts."
+      ],
+      "detail": [
+        "Explanatory research, also called causal research, assesses cause-and-effect relationships and the effects of specific changes. Causal designs examine situations to explain relationship patterns among variables, typically collecting primary data through experiments.",
+        "Without manipulating either variable, correlational designs determine how two variables relate—such as whether a favourable relationship exists when change in one is followed by change in the other.",
+        "Naturalistic observation, survey research, and archival research are the three main approaches to correlational studies, each with different advantages and disadvantages."
+      ],
+      "sourceQuote": "Without manipulating either variable, researchers use a correlational study design to find out how two variables relate to one another.",
+      "related": [
+        "1.3.1",
+        "1.3.4",
+        "1.3.3"
+      ],
+      "compare": "Causal designs seek cause-and-effect (often experiments); correlational designs only describe associations without manipulation.",
+      "example": "Causal examples: FDI effects on Taiwanese growth; rebranding impact on loyalty; work-process re-engineering impact on employee motivation."
+    },
+    "1.3.3": {
+      "id": "1.3.3",
+      "title": "Cross-sectional and Longitudinal Studies",
+      "module": 1,
+      "pages": [
+        23,
+        24
+      ],
+      "section": "1.3.3",
+      "quick": "Both are observational; cross-sectional compares groups at one point in time, while longitudinal observes the same subjects repeatedly over a long period.",
+      "keyIdeas": [
+        "Observational: researchers record data without tampering with the research environment.",
+        "Cross-sectional: compare different population groups at a single point—like a photograph; can compare multiple variables at once.",
+        "Cross-sectional limitation: may not provide conclusive cause-and-effect because it is only a snapshot.",
+        "Longitudinal: multiple observations of the same subjects over a long period (sometimes years); can detect group and individual change and create event sequences.",
+        "Longitudinal designs are more likely than cross-sectional to suggest cause-and-effect but take longer to complete."
+      ],
+      "detail": [
+        "Longitudinal and cross-sectional studies are both observational: researchers measure without intervening (e.g., cholesterol in daily walkers vs non-walkers without persuading behaviour change).",
+        "A cross-sectional study compares different population groups at one point in time—like a photograph. It can examine several variables together (age, gender, income, education with walking and cholesterol) but cannot settle whether walking lowered cholesterol or walkers already had low levels.",
+        "A longitudinal study makes multiple observations of the same subjects over time, detecting changes at group and individual levels and creating event sequences. Because of its scope it is more likely to suggest cause-and-effect, though it takes longer than a cross-sectional study."
+      ],
+      "sourceQuote": "A cross-sectional study is distinguished by the ability to compare different population groups at a single point in time. Consider it like taking a photograph.",
+      "related": [
+        "1.3.2",
+        "1.3.4"
+      ],
+      "compare": "Cross-sectional = one-time snapshot across groups; longitudinal = repeated measures of the same subjects over time.",
+      "example": "Cholesterol in walkers vs non-walkers by age/gender at one time (cross-sectional) versus cholesterol change in women over 40 who walked daily for 20 years (longitudinal)."
+    },
+    "1.3.4": {
+      "id": "1.3.4",
+      "title": "Experimental, Semi-experimental and Non-Experimental",
+      "module": 1,
+      "pages": [
+        24,
+        25
+      ],
+      "section": "1.3.4",
+      "quick": "Experimental research manipulates control variables to measure impact; quasi-experimental manipulates without random assignment; non-experimental measures variables as they occur naturally.",
+      "keyIdeas": [
+        "Experimental: scientific manipulation of one or more control variables, then measure impact; used to trace cause-and-effect.",
+        "Quasi-/semi-experimental (Cook & Campbell): resembles experimental research; IV manipulated but participants not randomly assigned—directionality reduced but confounding remains.",
+        "Quasi-experiments common in field settings where random assignment is difficult (e.g., psychotherapy or educational interventions).",
+        "Non-experimental: no control/IV manipulated; variables measured as they occur naturally.",
+        "Non-experimental used when no causal question, IV cannot be changed, assignment not random, study is exploratory, relationship is non-causal, or information is limited."
+      ],
+      "detail": [
+        "Experimental research employs a scientific approach to manipulate one or more control variables and measure the impact. It is widely used when the goal is to trace cause-and-effect between defined variables.",
+        "Quasi-experimental research (prefix quasi = “similar to”) manipulates the independent variable before measuring the dependent variable but does not randomly assign participants. That eliminates the directionality problem yet leaves possible confounding differences between conditions.",
+        "Non-experimental research does not manipulate any control or independent variable; researchers measure variables as they occur naturally. It fits broad exploratory work, non-causal relationships, or situations where random assignment or IV change is impossible."
+      ],
+      "sourceQuote": "Non-experimental research is defined as research in which no control or independent variable is manipulated.",
+      "related": [
+        "1.3.2",
+        "1.2.5",
+        "1.3.3"
+      ],
+      "compare": "Experimental = manipulate + preferably randomise; quasi = manipulate without random assignment; non-experimental = no manipulation.",
+      "example": "Non-equivalent groups: split a class—half gets a new after-school programme expected to raise grades, half does not."
+    },
+    "1.3.5": {
+      "id": "1.3.5",
+      "title": "Descriptive and Exploratory Research",
+      "module": 1,
+      "pages": [
+        25,
+        26
+      ],
+      "section": "1.3.5",
+      "quick": "Descriptive research details the ‘what’ of a population or phenomenon without asking why; exploratory research learns about little-studied topics to sharpen the problem.",
+      "keyIdeas": [
+        "Descriptive: detailed account of researched population/phenomena; emphasises “what” over “why”; describes characteristics without explaining causes.",
+        "Descriptive examples: surveys on shopping frequency, food habits, product preference; reporting impulse-buying trends without explaining why they exist.",
+        "Exploratory: learn more about a topic not covered extensively; seldom definitive; enhances comprehension and helps develop a more targeted issue statement.",
+        "Also called interpretative research or grounded theory approach; answers what, how, and why as insight emerges.",
+        "Product example: beta testing of a truly new feature (e.g., Snapchat filters at launch) is exploratory; copying an existing feature (Telegram status like WhatsApp) is not."
+      ],
+      "detail": [
+        "Descriptive research provides a detailed account of a population or phenomenon and places greater emphasis on “what” than “why.” It describes demographic characteristics or patterns without explaining why events occur.",
+        "Exploratory research studies topics that have not been covered extensively. It rarely yields a definitive outcome but improves understanding of the current issue and helps form a more targeted problem statement. The process varies as new data or insight appears.",
+        "In product research after development (beta testing), exploration applies when the feature is new. If the feature already exists elsewhere, sufficient information may already be available and the research is not exploratory."
+      ],
+      "sourceQuote": "Without asking “why” an event happens, descriptive research mainly aims to describe the characteristics of a demographic group.",
+      "related": [
+        "1.3.1",
+        "1.2.2"
+      ],
+      "compare": "Descriptive reports what exists; exploratory probes little-known topics to deepen understanding and refine the problem—often without a definitive answer.",
+      "example": "Market researchers map impulse buying trends across Indian households (“what” only)—ideal descriptive research."
+    },
+    "1.4.1": {
+      "id": "1.4.1",
+      "title": "Types of Research Models",
+      "module": 1,
+      "pages": [
+        26,
+        27
+      ],
+      "section": "1.4.1",
+      "quick": "Research models are broadly qualitative (non-numerical, rich meaning) or quantitative (numerical patterns, predictions, and generalisation).",
+      "keyIdeas": [
+        "Uses of models: identify basic concepts; define meanings with precision; approach and simulate reality.",
+        "Importance: models guide theory development and research design; used heavily by social scientists as a structure for examining issues.",
+        "Qualitative model: non-numerical data to understand concepts, opinions, experiences; in-depth insights or new ideas; common in anthropology, sociology, education, health, history.",
+        "Qualitative approaches are flexible and focus on retaining rich meaning when interpreting data.",
+        "Quantitative model: collect/analyse numerical data for patterns, averages, predictions, causal tests, and generalisation to wider populations; used across natural and social sciences."
+      ],
+      "detail": [
+        "Research models help identify basic concepts, define meanings precisely, and simulate reality. Model building is integral to research design because models guide theory development and design choices.",
+        "Qualitative research models involve non-numerical collection and analysis to understand concepts, opinions, and experiences, gathering in-depth insights or developing new ideas. They are heavily used in social sciences and humanities and emphasise rich meaning.",
+        "Quantitative research models collect and analyse numerical data to locate patterns and averages, make predictions, test causal relationships, and generate results for wider populations, with wide use in biology, chemistry, psychology, economics, sociology, marketing, and related fields."
+      ],
+      "sourceQuote": "Research Models are classified broadly into two types as mentioned below:",
+      "related": [
+        "1.2.2",
+        "1.4.2",
+        "1.4.4"
+      ],
+      "compare": "Qualitative models → non-numerical rich meaning; quantitative models → numerical patterns, prediction, and broader generalisation."
+    },
+    "1.4.2": {
+      "id": "1.4.2",
+      "title": "Model Building and Stages",
+      "module": 1,
+      "pages": [
+        27,
+        28
+      ],
+      "section": "1.4.2",
+      "quick": "Model building creates abstract representations of real systems through staged definition, conceptualization, data, specification, estimation, validation, implementation, and reporting.",
+      "keyIdeas": [
+        "Define the problem: objectives, scope, constraints; gather context data.",
+        "Conceptualization: theoretical framework from literature; hypotheses and key variables; preliminary diagrammatic model of relationships.",
+        "Data collection from primary/secondary sources; ensure accuracy via cleaning/preprocessing.",
+        "Model specification translates the conceptual model into mathematical/statistical form with stated assumptions.",
+        "Estimation/calibration (e.g., regression, ML); validation (cross-validation, sensitivity, robustness); implementation and optimisation; interpret, document, and report."
+      ],
+      "detail": [
+        "Model building creates abstract representations of real-world systems or phenomena to understand, analyse, and predict behaviour. It begins by clearly defining the problem—objectives, scope, and constraints—and gathering relevant context.",
+        "Conceptualization draws on literature to form a theoretical framework, hypotheses, and key variables, then outlines relationships in a preliminary model. Data are collected from primary and secondary sources and cleaned for quality.",
+        "Specification turns the conceptual model into equations or algorithms with explicit assumptions. Parameters are estimated and calibrated, then validated against real-world data. After implementation and possible optimisation, results are interpreted, the process documented for reproducibility, and findings reported clearly."
+      ],
+      "sourceQuote": "It involves creating abstract representations of real-world systems or phenomena to understand, analyze, and predict their behavior.",
+      "related": [
+        "1.4.1",
+        "1.4.3",
+        "1.4.4"
+      ]
+    },
+    "1.4.3": {
+      "id": "1.4.3",
+      "title": "Data Consideration and Testing",
+      "module": 1,
+      "pages": [
+        28
+      ],
+      "section": "1.4.3",
+      "quick": "Data consideration requires understanding huge data volumes and judging nature/scope/object of enquiry, time, and required precision before testing.",
+      "keyIdeas": [
+        "Massive digital data growth (enterprises ~40–60% per year) makes storage alone useless unless used for research purposes.",
+        "Organisations explore data lakes and big-data analysis tools to manage and leverage data.",
+        "Proper understanding of data is key when volume makes storage and management hard.",
+        "Nature, scope and object of enquiry: most important factor when choosing how to consider data—check sources and utilisation.",
+        "Time factor: collect timely and leave enough time for consideration and testing against deadlines.",
+        "Precision required: considered data must match the wavelength of the research programme."
+      ],
+      "detail": [
+        "In a digitalised world, data volume grows rapidly—large enterprises may see production increase by 40 to 60% per year. Simply storing data is not beneficial unless it serves specific research purposes, which drives interest in data lakes and big-data tools.",
+        "Data consideration starts with proper understanding: when data arrive in huge formats they are hard to understand, store, and manage. Looking closely at the research questions makes answers easier to find.",
+        "Key factors are the nature, scope and object of enquiry (most important for choosing how to consider available data and its sources); the time factor (timely collection plus enough time to consider and test); and the precision required so considered data align with the research programme."
+      ],
+      "sourceQuote": "Nature, scope and object of enquiry: This constitutes the most important factor affecting the choice of a particular consideration of data.",
+      "related": [
+        "1.4.2",
+        "1.2.5"
+      ]
+    },
+    "1.4.4": {
+      "id": "1.4.4",
+      "title": "Heuristic and Simulation Modelling",
+      "module": 1,
+      "pages": [
+        28,
+        29
+      ],
+      "section": "1.4.4",
+      "quick": "Heuristic modelling (Moustakas) is a qualitative discovery process in six phases; simulation models replicate real-system logic with entities, activities, and statistical timing.",
+      "keyIdeas": [
+        "Heuristic model (Clark Moustakas): from Greek Heuriskein (discover, find); six phases—initial engagement, immersion, incubation, illumination, explication, creative synthesis.",
+        "Chaiken’s heuristic-systematic model (HSM): persuasive messages processed heuristically (quick rules) or systematically (careful deliberation); people often prefer heuristics; similar to ELM.",
+        "Simulation models use statistical descriptions to replicate workings and logic of a real system (e.g., line averaging 1000 units/hour but also breakdowns/maintenance).",
+        "Simulation includes entities (machines, materials, people) and activities (processing, transporting) plus logic governing each activity.",
+        "Activity duration often sampled from a statistical distribution once prerequisites are met."
+      ],
+      "detail": [
+        "Among qualitative models, the heuristic research model developed by Clark Moustakas takes its name from Greek Heuriskein (discover, find). Its six phases are initial engagement, immersion, incubation, illumination, explication, and creative synthesis.",
+        "Separately, Shelly Chaiken’s heuristic-systematic model of information processing explains how people receive persuasive messages—via simplifying heuristics or careful systematic processing—sharing ideas with the elaboration likelihood model (ELM).",
+        "Simulation research modelling replicates a real system’s workings and logic using statistical descriptions of activities. Models include entities and activities plus governing logic; completion times are often drawn from statistical distributions, capturing variability such as breakdowns that averages alone miss."
+      ],
+      "sourceQuote": "The name Heuristic was derived from the Greek work ‘Heuriskein’ (which means discover, find).",
+      "related": [
+        "1.4.1",
+        "1.4.2"
+      ],
+      "compare": "Heuristic (Moustakas) = qualitative discovery phases; simulation = statistical replication of system entities, activities, and logic.",
+      "example": "A production line averaging 1000 units/hour still needs simulation of breakdowns and maintenance whose delays may amplify or be absorbed downstream."
+    },
+    "2.1.1": {
+      "id": "2.1.1",
+      "title": "Introduction to Data Collection",
+      "module": 2,
+      "pages": [
+        33
+      ],
+      "section": "2.1.1",
+      "quick": "Primary data is information gathered through original or first-hand research; secondary data is information already gathered by someone else.",
+      "keyIdeas": [
+        "Primary examples: surveys and focus group discussions.",
+        "Secondary examples: internet research, newspaper articles, and company reports.",
+        "Whether primary or secondary data is collected depends on the study’s goal.",
+        "Primary collection is usually more expensive and time-consuming than secondary, but serves a specific purpose and helps eliminate biases."
+      ],
+      "detail": [
+        "Section 2.1.1 contrasts first-hand (primary) versus already-collected (secondary) information.",
+        "A firm entering India’s women’s apparel market can use secondary sources (industry reports, newspaper articles) to estimate market size, but must use primary research to learn consumer preferences for a new fabric or style."
+      ],
+      "sourceQuote": "Information gathered through original or first-hand research is referred to as primary data.",
+      "example": "Market size for women’s apparel in India → secondary reports; preferences for a new fabric/style → primary research.",
+      "related": [
+        "2.1.2",
+        "2.1.3",
+        "2.2.1"
+      ]
+    },
+    "2.1.2": {
+      "id": "2.1.2",
+      "title": "Data Collection Methods",
+      "module": 2,
+      "pages": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "section": "2.1.2",
+      "quick": "Primary data is first-hand information gathered for a specific goal; secondary data has already been gathered and evaluated by someone other than the user.",
+      "keyIdeas": [
+        "Primary methods include observation, interviews (personal/telephonic), questionnaires, and schedules.",
+        "Observation types: structured/unstructured; participant/non-participant/disguised; controlled/uncontrolled.",
+        "Secondary sources are published (government, journals, research institutes) or unpublished (agency records, academic work).",
+        "Before using secondary data, check reliability, appropriateness/suitability, and adequacy (Bowley: do not accept at face value).",
+        "Primary collection also splits into quantitative (time series, smoothing, barometric) and qualitative (surveys, polls, interviews, Delphi, focus groups, questionnaires) methods."
+      ],
+      "detail": [
+        "Primary data is culled from unprocessed first-hand sources such as surveys, experiments, and experimental results; it is described as more trustworthy, genuine, and impartial when carefully gathered at source for a specific goal.",
+        "Observation becomes a scientific tool when methodical, goal-directed, and subject to checks and controls. Benefits include eliminating subjective bias and capturing natural behaviour; drawbacks include cost, limited information, and unforeseen interference.",
+        "Interview methods present oral-verbal stimuli and record oral-verbal answers: personal (direct investigation, indirect oral examination), structured/unstructured, focused, clinical, and non-directive; telephonic interviews call respondents and ask questions by phone.",
+        "In the questionnaire approach respondents complete forms independently; a pilot study can surface problems before the main survey. Schedules differ because enumerators fill them in; good enumerators are skilled, trustworthy, and patient.",
+        "Published secondary sources include international bodies (IMF, IBRD, UNO), central/state government publications (e.g. RBI Bulletin, Census of India), semi-official bodies, research institutes (ISI, ICAR), commercial/financial reports, committees, and journals/newspapers. Unpublished sources include agency records and university research.",
+        "Precautions: suitability (match scope/nature—e.g. wholesale vs retail prices), adequacy (geography/time fit), and reliability (consistent methods/replicable results)."
+      ],
+      "sourceQuote": "Secondary data should not be accepted at their face value,",
+      "compare": "Questionnaire: respondents complete the form themselves. Schedule: enumerators designated for the purpose fill out the schedules and clarify study goals.",
+      "example": "Suitability check: retail-price trends cannot use data meant only for wholesale prices; adequacy check: UP-only data is useless for all-India retail trends.",
+      "related": [
+        "2.1.1",
+        "2.1.3",
+        "2.2.1",
+        "2.2.2"
+      ]
+    },
+    "2.1.3": {
+      "id": "2.1.3",
+      "title": "Tabulating and Validating Data",
+      "module": 2,
+      "pages": [
+        40,
+        41,
+        42
+      ],
+      "section": "2.1.3",
+      "quick": "Tabulation arranges structured numerical data into rows and columns; data validation verifies whether a data item’s value comes from an acceptable set of values.",
+      "keyIdeas": [
+        "Tabulation objectives include orderly arrangement, bringing out essential features, simplification, conserving space, ease of comparison, summation, error detection, and facilitating statistical computation.",
+        "UNECE (2013): validation checks whether a value belongs to the given set of acceptable values; it is a form of data cleansing.",
+        "Validation reasons include cost-effectiveness, removing duplicates, business improvement via better information, and a cleaned standard dataset.",
+        "Validity types covered: construct (convergent/discriminant), internal, external (population/ecological), criterion (concurrent/predictive), content, face, and statistical conclusion validity."
+      ],
+      "detail": [
+        "Tabulation’s complexity depends on the kind of classification; it supports further statistical analysis and interpretation by bringing relevant data together.",
+        "Internal validity concerns establishing causal relationships and ruling out alternatives (threats: confounding, selection bias, measurement errors). External validity concerns generalisation to other settings, populations, or times.",
+        "Criterion validity evaluates how well one measure predicts an outcome based on another measure. Face validity is often considered the weakest form but can matter for stakeholder acceptance.",
+        "Statistical conclusion validity concerns whether conclusions about relationships among variables are correct and reliable (appropriate tests and met assumptions).",
+        "When altering primary data, keep it comprehensive, precise, consistent, and constant; editing forms are required for those qualities."
+      ],
+      "sourceQuote": "data validation is an activity aimed at verifying whether the value of a data item comes from the given (finite or infinite) set of acceptable values.",
+      "example": "An email query can automatically verify address validity; a phone-number query can use country code to check whether the number is valid.",
+      "related": [
+        "2.1.1",
+        "2.1.2",
+        "2.3.6"
+      ]
+    },
+    "2.2.1": {
+      "id": "2.2.1",
+      "title": "Steps in Constructing a Questionnaire",
+      "module": 2,
+      "pages": [
+        42,
+        43,
+        44
+      ],
+      "section": "2.2.1",
+      "quick": "Questionnaire design is a multi-step process aimed at collecting usable data with a survey that is easy to understand and complete, reducing dropout and inaccurate answers from confusion.",
+      "keyIdeas": [
+        "A questionnaire collects data through a series of questions or prompts; open-ended yield qualitative detail, closed-ended yield quantitative data.",
+        "A questionnaire is often mistaken for a survey: a survey is the entire data-collection process; a questionnaire is one tool within it.",
+        "Eight design steps: identify scope; keep it simple; ask only one question at a time; be flexible with options; choose open- vs closed-ended; know your audience; choose the right tool; save personal questions for last.",
+        "Avoid double-barrelled questions that address multiple issues at once."
+      ],
+      "detail": [
+        "Identify the Scope of Your Research: clearly define purpose and topics—this guides the whole design.",
+        "Keep It Simple and Know Your Audience: clear language without jargon, tailored to respondents’ comprehension and experience.",
+        "Be Flexible with Your Options: include an “other” option when predefined answers may not fit.",
+        "Choose Between Open-Ended and Closed-Ended based on whether you need detailed responses or specific, easily analysable data.",
+        "Choose the Right Tool (e.g. a reliable survey platform with templates) and place sensitive/demographic questions last so respondents are more comfortable completing the survey."
+      ],
+      "sourceQuote": "Avoid double-barrelled questions that address multiple issues at once. Each question should focus on a single topic to ensure clarity and accurate responses.",
+      "compare": "Questionnaire vs survey: many people use the terms interchangeably, but a survey refers to the entire process of data collection, which may include a questionnaire as one of its tools.",
+      "related": [
+        "2.1.2",
+        "2.2.2",
+        "2.2.3"
+      ]
+    },
+    "2.2.2": {
+      "id": "2.2.2",
+      "title": "Types of Questions",
+      "module": 2,
+      "pages": [
+        44
+      ],
+      "section": "2.2.2",
+      "quick": "Common questionnaire question types include open-ended, dichotomous, multiple-choice, scaling (rank order, Likert, semantic differential, Stapel), and pictorial questions.",
+      "keyIdeas": [
+        "Open-ended: answer in own words; qualitative, detailed, nuanced.",
+        "Dichotomous: two choices such as yes/no; binary validation.",
+        "Multiple-choice: single- or multi-select from a list (stem, correct answers, incorrect answers, close alternatives, distractors).",
+        "Scaling questions use nominal, ordinal, interval, or ratio scales to quantify intensity/frequency.",
+        "Pictorial questions use images as choices to boost engagement and reduce overthinking."
+      ],
+      "detail": [
+        "Scaling subtypes: Rank Order (order items); Likert (attitudes/opinions on a scale, e.g. 1–5); Semantic Differential (bipolar adjectives); Stapel (rate items on a single adjective).",
+        "Using varied question types can enhance engagement and yield more comprehensive data."
+      ],
+      "sourceQuote": "Utilising various question types in a questionnaire can enhance respondent engagement and yield more comprehensive data.",
+      "related": [
+        "2.2.1",
+        "2.2.3",
+        "2.1.2"
+      ]
+    },
+    "2.2.3": {
+      "id": "2.2.3",
+      "title": "Format of Questionnaire",
+      "module": 2,
+      "pages": [
+        44,
+        45
+      ],
+      "section": "2.2.3",
+      "quick": "Questionnaire format covers size, appearance, clarity, sequence, communicability, and span so the instrument stays compact, clear, and engaging.",
+      "keyIdeas": [
+        "Size: more compact than a schedule; suitable dimensions; ideally not more than two or three pages depending on the research.",
+        "Appearance: high-quality paper/printing and an attractive organised layout.",
+        "Clarity: short, clear questions; concise precise language without ambiguity.",
+        "Sequence: logical order by importance; smooth progression.",
+        "Communicability: keep respondents interested and motivated to finish.",
+        "Span: brief questions and overall length that minimise dropout."
+      ],
+      "detail": [
+        "Format rules support the earlier fundamentals of a good questionnaire (brief/uncomplicated, logical order, avoid jargon, control questions, room for answers, brief instructions, good physical appearance)."
+      ],
+      "sourceQuote": "Ideally, it should not exceed two or three pages, depending on the nature of the research.",
+      "compare": "The questionnaire should be smaller than a schedule in size.",
+      "related": [
+        "2.2.1",
+        "2.2.2",
+        "2.1.2"
+      ]
+    },
+    "2.3.1": {
+      "id": "2.3.1",
+      "title": "Sampling Plan",
+      "module": 2,
+      "pages": [
+        45,
+        46
+      ],
+      "section": "2.3.1",
+      "quick": "A sampling plan is the framework research projects use to select a representative sample, set sample size, and decide whom/what to question.",
+      "keyIdeas": [
+        "A sample is a group of people, objects, or items selected for measurement from a larger population and should be representative to support generalisation.",
+        "Definitions cited: Bryman & Bell — “Segment of population that is selected for investigation”; Cooper & Schindler — “Some of the elements of population.”",
+        "Three plan decisions: choose the population; determine the sample size; decide the sampling procedure.",
+        "In general, “the larger the sample size, the more is the reliability”; probability sampling is commonly used so every object has an equal chance of being picked."
+      ],
+      "detail": [
+        "Purpose of sampling: apply inferential statistics to a subset to learn about and extrapolate to the whole population—because studying entire populations is rarely practical or cost-effective.",
+        "Reasons to sample include large populations, inaccessibility (e.g. prisoners, severe mental illness, disaster survivors), destructiveness of observation (e.g. testing all fuses would destroy them), and sometimes greater accuracy from a carefully selected sample than a poorly identified census."
+      ],
+      "sourceQuote": "The phrase “sampling plan” describes the framework that research projects rely on to carry out their investigations.",
+      "example": "Destructiveness: a fuse must be destroyed to determine whether it is defective—testing every fuse would destroy the entire stock.",
+      "related": [
+        "2.3.2",
+        "2.3.3",
+        "2.3.4"
+      ]
+    },
+    "2.3.2": {
+      "id": "2.3.2",
+      "title": "Sampling Frame",
+      "module": 2,
+      "pages": [
+        46,
+        47
+      ],
+      "section": "2.3.2",
+      "quick": "A sampling frame is a list or database from which a sample can be drawn—in market research, a database of potential respondents who can be invited to a project.",
+      "keyIdeas": [
+        "The sampling process steps listed: classify the people; ascertain the sample interval; choose sampling strategy; pick a number for the sample; complete the sampling procedure.",
+        "Earlier module steps also stress defining the population and choosing a sampling frame (list/database of population members) before selecting method and size."
+      ],
+      "detail": [
+        "Choosing the sampling frame is a core early step after defining the population: create a list or database of population members from which units are selected."
+      ],
+      "sourceQuote": "A sampling frame is a list or database from which a sample can be used.",
+      "related": [
+        "2.3.1",
+        "2.3.3",
+        "2.3.4"
+      ]
+    },
+    "2.3.3": {
+      "id": "2.3.3",
+      "title": "Sample Selection Methods",
+      "module": 2,
+      "pages": [
+        47,
+        48,
+        49
+      ],
+      "section": "2.3.3",
+      "quick": "Sample selection methods are broadly probability sampling (known chance of selection) and non-probability sampling (used for convenience/simplicity but without the same bias-reduction advantages).",
+      "keyIdeas": [
+        "Probability methods: simple random, systematic, stratified, and cluster sampling.",
+        "Simple random: each element has equitable probability of selection; eliminates bias but may chance-select unrepresentative categories.",
+        "Systematic: randomise first item then take every nth thereafter; researcher sets the interval.",
+        "Stratified: random selection within pre-established groups relevant to the research; division into strata can raise bias risk.",
+        "Cluster: randomly select groupings (e.g. postal codes, academic years); may study whole cluster or two-stage select within cluster.",
+        "Non-probability: convenience, quota, purposive/judgement, snowball/referral—convenient but introduce considerable bias risks."
+      ],
+      "detail": [
+        "Convenience sampling selects accessible willing participants (e.g. students on campus)—useful preliminarily but biased.",
+        "Quota sampling seeks proportional subgroup representation (like stratified aims) but selection/volunteer bias can skew results.",
+        "Purposive/judgement sampling selects based on researcher expertise/objectives—fast variety of replies but unlikely to represent the whole population.",
+        "Snowball/referral: participants recruit acquaintances—useful when the target group is hard to reach, but excludes isolates and favours networked interest groups."
+      ],
+      "sourceQuote": "The sample selection methods can be broadly classified into:",
+      "example": "Stratified travel-pattern study: distinguish those with car access from those who rely on public transportation.",
+      "compare": "Probability methods give known (often equal) selection chances and better bias control; non-probability methods trade that for convenience or purposive reach.",
+      "related": [
+        "2.3.4",
+        "2.3.5",
+        "2.3.1"
+      ]
+    },
+    "2.3.4": {
+      "id": "2.3.4",
+      "title": "Probability Sampling Techniques",
+      "module": 2,
+      "pages": [
+        49,
+        50,
+        51
+      ],
+      "section": "2.3.4",
+      "quick": "Probability sampling techniques include simple random, systematic, stratified, cluster, and multistage sampling, each giving population members a known chance of selection.",
+      "keyIdeas": [
+        "Simple random: known and equal probability of selection for each constituent; P = sample size / population size.",
+        "Systematic: use a predetermined skip interval on a sample frame; k = N/n.",
+        "Stratified: split population into distinct strata and draw random samples from each.",
+        "Cluster: divide into small subgroups and randomly select some groups for study.",
+        "Multistage sampling is listed among the probability methods."
+      ],
+      "detail": [
+        "AMITY example for simple random: population 591 students, sample 25 → probability of selection = 25/591 ≈ 0.042 or 4.2%.",
+        "Same population/sample for systematic: skip interval k = 591/25 ≈ 23.64 → 23; pick a random start between 1–23, then every 23rd remaining unit.",
+        "Stratified example uses programme subgroups (MBA, MMM, MPM, DBM, DIEM, MCA, MCM) within a 591-student population for a sample of 25.",
+        "Cluster example randomly selects whole programme groups (e.g. MCM = 30 and MMM = 42) rather than individuals across all groups."
+      ],
+      "sourceQuote": "There is a known and equal probability of selection for each constituent of the population in this probability sample.",
+      "example": "Population = 591 AMITY students, sample size = 25 → selection probability 25/591 = 4.2%; systematic skip interval ≈ 23.",
+      "related": [
+        "2.3.3",
+        "2.3.5",
+        "2.3.2"
+      ]
+    },
+    "2.3.5": {
+      "id": "2.3.5",
+      "title": "Non-Probability Sampling Techniques",
+      "module": 2,
+      "pages": [
+        52
+      ],
+      "section": "2.3.5",
+      "quick": "Non-probability sampling (also called deliberate, purposeful, or judgement sampling) selects elements by the researcher’s choice with no guarantee of equal chance of inclusion.",
+      "keyIdeas": [
+        "Convenience: any readily available individuals; cheapest and easiest; least reliable.",
+        "Purposive/judgmental: units purposely selected to criteria/objectives; suitable for constrained groups but not wider representation.",
+        "Quota: purposive sampling stratified by relevant characteristics to increase representativeness (illustrated with programme quotas summing to sample 25 of 591).",
+        "Snowball: subsequent participants referred by current sample elements—initial cases refer similar others, accumulating like a snowball."
+      ],
+      "detail": [
+        "There is no guarantee each element gets an equal chance to be chosen.",
+        "Quota illustration assigns counts by programme share (e.g. MBA 46% → 12 of 25) across MBA/MMM/MPM/DBM/DIEM/MCA/MCM totaling 591."
+      ],
+      "sourceQuote": "Also known as ‘deliberate,’ ‘purposeful,’ or ‘judgement’ sampling. The items have been chosen with care.",
+      "example": "Snowball: initial individuals are identified, then refer others similar to them, and so on.",
+      "compare": "Unlike probability techniques, non-probability methods do not guarantee equal selection chance and are generally less reliable for population inference.",
+      "related": [
+        "2.3.3",
+        "2.3.4",
+        "2.3.6"
+      ]
+    },
+    "2.3.6": {
+      "id": "2.3.6",
+      "title": "Sampling and Non-Sampling Errors",
+      "module": 2,
+      "pages": [
+        53
+      ],
+      "section": "2.3.6",
+      "quick": "Sampling error is discrepancy between sample and population due only to which observations were chosen; non-sampling errors arise from data-acquisition mistakes or incorrect sample observation selection and are more serious.",
+      "keyIdeas": [
+        "Expanding sample size diminishes sampling error.",
+        "Non-sample errors classify as non-response error and response error.",
+        "Non-response: selected units fail to provide a complete or partial answer.",
+        "Response/data error: consistent bias in collection, analysis, or interpretation.",
+        "Response-error sources: respondent error (lying, forgetting), interviewer errors, recording errors, poorly designed questionnaires, measurement errors."
+      ],
+      "detail": [
+        "Module introduction also flags sampling bias (systematic exclusion/overrepresentation), non-response skew, and sampling error as gaps between sample results and population characteristics."
+      ],
+      "sourceQuote": "Sampling error pertains to discrepancies between the sample and the population only due to the particular observations chosen for the sample.",
+      "compare": "Sampling error shrinks with larger samples; non-sampling errors are more serious and stem from acquisition/process problems rather than chance selection alone.",
+      "related": [
+        "2.3.1",
+        "2.3.3",
+        "2.1.3"
+      ]
+    },
+    "3.1.1": {
+      "id": "3.1.1",
+      "title": "Design of Experiment: Objectives and Strategies",
+      "module": 3,
+      "pages": [
+        57,
+        58,
+        59
+      ],
+      "section": "3.1.1",
+      "quick": "Experimental design aims to maximise knowledge in the least time by establishing a causal link between independent and dependent variables under control, randomisation, and careful factor planning.",
+      "keyIdeas": [
+        "Success means a change in the dependent variable is wholly due to a change in the independent variable.",
+        "Drivers of success: control group, experimental group, manipulable variable, and random allocation.",
+        "Strategy steps include defining the problem, listing factors, identifying major factors, quantifying effects, estimating effect size D vs measurement precision s, checking linearity and interactions, setting limits, and choosing a design matrix.",
+        "Type 1 error: claiming an effect that does not exist; Type 2 error: missing a genuine effect.",
+        "Rule of thumb for trials per level: n = 16 · s²/D², then compare means with a significance test."
+      ],
+      "detail": [
+        "Experimental research keeps one set of variables constant while measuring another, and is used when information is insufficient to draw conclusions without testing. The text stresses control vs experimental groups, researcher-controlled manipulable variables, and random allocation.",
+        "Experts design experiments by defining the problem and desired characteristics, listing all potential factors (illustrated with glass-bottle manufacture), identifying major factors without oversimplifying, quantifying effects numerically (e.g. experience levels 1–3), estimating anticipated impacts D relative to measurement accuracy s, assessing linearity, spotting variable interactions, setting feasible limits, and applying an appropriate design matrix.",
+        "Averages of several measurements are more reliable than few; more information up front reduces final design effort. The glass annealing example shows that a 1°C/min cooling-rate change may shift strength 5–20%, and interactions with cullet/alumina can reverse the direction of that effect."
+      ],
+      "sourceQuote": "The objective of experimental design is to get a maximum amount of knowledge in the least amount of time.",
+      "related": [
+        "3.1.4",
+        "3.1.5",
+        "3.3.2"
+      ],
+      "example": "To detect a 10°C annealing-point drop (D=10) with precision s=5°C, the text calculates 4 experiments per glass composition before comparing means."
+    },
+    "3.1.2": {
+      "id": "3.1.2",
+      "title": "Pre-Experimental Research Design",
+      "module": 3,
+      "pages": [
+        59
+      ],
+      "section": "3.1.2",
+      "quick": "Pre-experimental design is the most basic experimental study form: after positing cause and effect, one or more groups are monitored continuously, often to decide whether further inquiry is needed.",
+      "keyIdeas": [
+        "Most basic sort of experimental study design.",
+        "Used after establishing a cause–effect link to continuously monitor group(s).",
+        "Typically performed to decide if more inquiry is necessary.",
+        "Described as cost-effective."
+      ],
+      "detail": [
+        "Pre-experimental designs sit at the simple end of the experimental spectrum in the module. They monitor groups continuously after a cause–effect framing and are often a cheap screen for whether deeper study is warranted.",
+        "The extract’s example is a teacher using a new instructional method for their class—exposure without the full apparatus of true experiments."
+      ],
+      "sourceQuote": "The most basic sort of experimental study design",
+      "related": [
+        "3.1.3",
+        "3.1.4"
+      ],
+      "compare": "Unlike true experimental design, pre-experimental work is not presented as establishing a precise cause–effect link via statistical hypothesis tests and random assignment.",
+      "example": "A teacher using a new instructional method for their class."
+    },
+    "3.1.3": {
+      "id": "3.1.3",
+      "title": "Quasi-Experimental Research Design",
+      "module": 3,
+      "pages": [
+        60
+      ],
+      "section": "3.1.3",
+      "quick": "Quasi-experimental design resembles true experiments but lacks a control group and/or random assignment; it is used when random assignment is not relevant or unnecessary.",
+      "keyIdeas": [
+        "Resembles true experimental research but is not the same.",
+        "The control group is missing (as characterised in the extract).",
+        "Participants are not assigned randomly.",
+        "Employed when random assignment is not relevant or unnecessary."
+      ],
+      "detail": [
+        "Quasi-experiments look like experiments but omit key true-experiment features. The module highlights missing control groups and non-random assignment as defining gaps.",
+        "Example: two homogeneous cohorts in separate schools—one exposed to a new programme, the other serving as a comparison group without random allocation within a shared pool."
+      ],
+      "sourceQuote": "This method is employed when random assignment is either not relevant or unnecessary.",
+      "related": [
+        "3.1.2",
+        "3.1.4"
+      ],
+      "compare": "True experimental design can establish cause–effect and relies on statistical analysis; quasi-experimental designs are used when random assignment is not feasible.",
+      "example": "Two homogeneous cohorts at separate schools: one gets a new programme, the other acts as control without random assignment."
+    },
+    "3.1.4": {
+      "id": "3.1.4",
+      "title": "True Experimental Research Design",
+      "module": 3,
+      "pages": [
+        60
+      ],
+      "section": "3.1.4",
+      "quick": "True experimental design is the most precise experimental form: it uses statistical analysis to test hypotheses and is the only type said here to establish a cause–effect link within a group or few groups.",
+      "keyIdeas": [
+        "Most precise kind of experimental research design.",
+        "Relies on statistical analysis to validate or invalidate a hypothesis.",
+        "Only type capable of establishing a cause–effect link within a group or few groups (per the extract).",
+        "Commonly used in the physical sciences."
+      ],
+      "detail": [
+        "Among pre-, quasi-, and true experimental designs, the module positions true experiments as the precise, statistics-backed route to causal claims inside studied groups.",
+        "It contrasts with pre-experimental (basic monitoring) and quasi-experimental (no random assignment / missing control) designs earlier in §3.1."
+      ],
+      "sourceQuote": "The most precise kind of experimental research design",
+      "related": [
+        "3.1.2",
+        "3.1.3",
+        "3.1.1"
+      ]
+    },
+    "3.1.5": {
+      "id": "3.1.5",
+      "title": "Factorial Experimental Design",
+      "module": 3,
+      "pages": [
+        60,
+        61
+      ],
+      "section": "3.1.5",
+      "quick": "Factorial design examines several factors at once, estimating each factor’s main effect and their combined (interaction) effects.",
+      "keyIdeas": [
+        "Simultaneously examines several factors.",
+        "Measures individual-factor impact and combined effects of variables.",
+        "Department-store example: price levels × POP display locations yield 2×3 = 6 treatment combinations.",
+        "Random allocation of combinations to store groups supports reading main effects and interactions from sales outcomes."
+      ],
+      "detail": [
+        "A chain considering price cuts and point-of-purchase (POP) placement (entrance vs usual place, plus a third POP type in the combinatorial setup) creates six combinations (R1P1…R3P2). With 120 stores in groups of 20, combinations are assigned randomly and sales S1–S6 are compared.",
+        "The design answers whether discounted price beats standard price, whether entrance display beats customary location, and what the interaction of price and display does to sales."
+      ],
+      "sourceQuote": "Factorial design allows the researcher to simultaneously examine several factors.",
+      "related": [
+        "3.1.1",
+        "3.1.6"
+      ],
+      "example": "Price (usual vs lowered) × three POP placements → six combinations randomly assigned across store groups."
+    },
+    "3.1.6": {
+      "id": "3.1.6",
+      "title": "Designing Engineering Experiments",
+      "module": 3,
+      "pages": [
+        61,
+        62
+      ],
+      "section": "3.1.6",
+      "quick": "Engineering experiments use statistically designed tests—often sequential screening, refinement, then optimisation—to improve processes and products while analysing data impartially.",
+      "keyIdeas": [
+        "Concrete-curing example: compare techniques on compressive strength; two levels → two-sample methods/t-test; more levels need single-factor designs.",
+        "Structured experiments identify which process variables (temperature, pressure, rate) most affect performance.",
+        "Outcomes: enhanced procedures, reduced variation, shorter development, lower operating cost.",
+        "Typical sequence: screening → refine critical variables → optimise levels.",
+        "Activity cycle: conjecture → experiment → analysis → conclusion (often leading to a revised hypothesis)."
+      ],
+      "detail": [
+        "The civil-engineer curing study shows how specimen tests and OC curves guide sample size, with t-tests for two methods and broader single-factor designs for five curing techniques.",
+        "Statistically based designs improve manufacturing processes and new-product engineering (materials, design parameters, critical characteristics). Sequential experiments start with many controllable variables, then focus, then optimise.",
+        "Poorly designed trials waste resources; planned experiments plus statistical analysis support efficiency and scientific impartiality in conclusions."
+      ],
+      "sourceQuote": "Every experiment involves a sequence of activities like as:",
+      "related": [
+        "3.1.1",
+        "3.1.5",
+        "3.3.2"
+      ]
+    },
+    "3.1.7": {
+      "id": "3.1.7",
+      "title": "Causal Attributions",
+      "module": 3,
+      "pages": [
+        62,
+        63,
+        64,
+        65
+      ],
+      "section": "3.1.7",
+      "quick": "Causal attribution (causal contribution/inference) ascribes observed changes to a specific intervention; OECD-DAC impact evaluation requires identifying causes without claiming the programme is the sole cause.",
+      "keyIdeas": [
+        "OECD-DAC: ascription of a causal link between observed (or expected) changes and a specific intervention.",
+        "Need not be exclusive causation—other programmes or contextual ‘external factors’ may contribute.",
+        "Modes: sole attribution (necessary and sufficient—rarely realistic); joint attribution with other programmes/context; alternative/multiple causal paths.",
+        "Three approaches: estimate the counterfactual; check coherence of theory-of-change evidence while ruling out rivals; combine methods.",
+        "Synthesising multiple impact evaluations strengthens generalisability beyond a single study."
+      ],
+      "detail": [
+        "Impact evaluation must go beyond describing change to attributing how programmes/policies contributed. Joint attribution is the typical practical case: effects appear only with favourable conditions (e.g. funding transparency).",
+        "Alternative paths appear when other providers can achieve the same outcome (nutrition, waterborne-disease control, immunisation all targeting infant mortality). Counterfactual designs then need data on services non-participants use.",
+        "Key highlights: attribution examines causal connections; methods improve when grounded in a robust theory of causality; choice depends on assessment environment and subject."
+      ],
+      "sourceQuote": "Causal attribution, as defined by the OECD-DAC, refers to the process of determining the cause or causes of a certain event or outcome: “Ascription of a causal link between observed (or expected to be observed) changes and a specific intervention.”",
+      "related": [
+        "3.1.1",
+        "3.1.4"
+      ],
+      "compare": "Sole causal attribution treats the programme as necessary and sufficient; joint attribution and alternative paths allow other programmes or contexts to share or replace the causal role."
+    },
+    "3.1.8": {
+      "id": "3.1.8",
+      "title": "Statistical Control",
+      "module": 3,
+      "pages": [
+        65,
+        66,
+        67,
+        68
+      ],
+      "section": "3.1.8",
+      "quick": "Statistical control is exercised mainly through control charts that plot process data over time so decision-makers can act on common vs special cause signals.",
+      "keyIdeas": [
+        "Charts are useful only if decision-makers act on what they show.",
+        "Variable charts: X̄–R, median–R, X̄–S, individuals–moving range; attribute charts: p, np, c, u.",
+        "Prerequisites: management support, process understanding, critical characteristics (Pareto), defined measurement system, chart-type choice, sample size/frequency.",
+        "Attributes suit visual/impossible measurement, costly tests, many characteristics, or 100% inspection; variables when critical precision is needed (common n=5).",
+        "In control if only common causes; out of control if special causes present. Control limits are ±3σ for the sample statistic."
+      ],
+      "detail": [
+        "A control chart is a monitoring plot: vertical scale for the statistic, horizontal for time/sequence. Efficacy depends on correct use, not the chart alone.",
+        "Before charting: understand the process, pick characteristics that matter (Pareto), calibrate the measurement system, choose chart type for cost/risk, and set economically sensible subgroup sizes (attributes often n=30–hundreds).",
+        "Development steps include headers, sample logging, computed statistics, scales, plotting centre lines (solid) and control limits (dashed), then interpretation. Population-based limits for averages mislead—limits follow sampling distributions of averages."
+      ],
+      "sourceQuote": "Statistical control mostly occurs through the use of several control charts, which give essential information that acts as a foundation for taking appropriate actions.",
+      "related": [
+        "3.1.6",
+        "3.3.2"
+      ]
+    },
+    "3.2.1": {
+      "id": "3.2.1",
+      "title": "Collection of Data via Observation and Interview",
+      "module": 3,
+      "pages": [
+        68,
+        69
+      ],
+      "section": "3.2.1",
+      "quick": "Observation becomes scientific when it serves a research purpose, is systematically planned and recorded, and is checked for validity and reliability; interviewing gathers oral-verbal responses, usually face-to-face.",
+      "keyIdeas": [
+        "Participant observation: observer joins the group with defined units, standardised conditions, systematic recording, and selection of pertinent data.",
+        "Non-participant observation: no involvement in group activities; lacks the systematic traits of participant observation.",
+        "Interview types: structured, unstructured, clinical, non-directive, and focused.",
+        "Structured interviews use predetermined questions and standardised recording for consistency/comparability."
+      ],
+      "detail": [
+        "Data collection is framed as obtaining precise information from varied sources to assess outcomes, trends, and probabilities. Observation and interview are two primary primary-collection routes in this section.",
+        "Structured vs unstructured interviewing trades standardisation for conversational flexibility. Clinical interviews probe underlying motivations/life course; non-directive interviews minimise direct questioning; focused interviews confine talk to a given experience and its effects."
+      ],
+      "sourceQuote": "Observation becomes a scientific tool and method of data collection when it serves a formulated research purpose, is systematically planned and recorded, and is subjected to checks and controls for validity and reliability.",
+      "related": [
+        "3.2.2",
+        "3.2.3",
+        "3.3.1"
+      ],
+      "compare": "Participant observation embeds the observer in the group with systematic controls; non-participant observation stays outside and lacks those systematic characteristics."
+    },
+    "3.2.2": {
+      "id": "3.2.2",
+      "title": "Collection of Data through Cases",
+      "module": 3,
+      "pages": [
+        69,
+        70
+      ],
+      "section": "3.2.2",
+      "quick": "Case-study data collection follows a rigorous sequence: define questions, select cases, gather multi-source evidence, analyse, and present corroborated results.",
+      "keyIdeas": [
+        "Identify/define research questions and the research object (person, programme, event, entity).",
+        "Select single vs multiple, unique vs typical cases; plan collection, storage, analysis.",
+        "Collect from multiple sources; store systematically; seek converging patterns.",
+        "Analyse qualitative and quantitative data; address initial propositions; use graphics; involve multiple investigators.",
+        "Present with evidence, new insights/conflicts, and structure that lets readers evaluate findings."
+      ],
+      "detail": [
+        "The module insists case researchers use a rigorous approach for neutrality and clarity. Evidence should support converging lines of inquiry rather than a single anecdote.",
+        "Presentation must corroborate that all aspects of the problem were explored and highlight conflicting propositions as well as new insights."
+      ],
+      "sourceQuote": "A researcher doing case studies should use a rigorous approach to guarantee neutrality and clarity.",
+      "related": [
+        "3.2.1",
+        "3.2.3"
+      ]
+    },
+    "3.2.3": {
+      "id": "3.2.3",
+      "title": "Collection of Data through Questionnaires",
+      "module": 3,
+      "pages": [
+        70,
+        71
+      ],
+      "section": "3.2.3",
+      "quick": "Questionnaires are standardised survey items collected mainly by mailing (self-completion with return envelope) or by enumerator (schedule filled by a trained interviewer).",
+      "keyIdeas": [
+        "Mailing: questionnaire posted with blank answer space, self-addressed stamped envelope, confidentiality assurance.",
+        "Mailing suits large geographic fields and educated, cooperative respondents.",
+        "Enumerator method: trained visitor asks questions and records replies (a schedule).",
+        "Enumerators should be well-trained, tactful, hard-working, and unbiased; method suits adequate resources and illiterate respondents needing help."
+      ],
+      "detail": [
+        "Questionnaires are fundamental survey instruments of standardised items. The mailing method is common among research workers and agencies when coverage is wide and literacy/cooperation exist.",
+        "The enumerator/schedule method trades cost for assistance clarifying questions and accurate recording—typical of government and research institutions with trained staff."
+      ],
+      "sourceQuote": "There are two primary methods for collecting data through questionnaires:",
+      "related": [
+        "3.2.4",
+        "3.2.1"
+      ],
+      "compare": "Mailing relies on self-completion by educated respondents over a large field; the enumerator method uses trained staff and suits illiterate respondents when resources allow."
+    },
+    "3.2.4": {
+      "id": "3.2.4",
+      "title": "Guidelines for Preparing Questionnaire",
+      "module": 3,
+      "pages": [
+        71,
+        72
+      ],
+      "section": "3.2.4",
+      "quick": "Questionnaire preparation follows aims → target respondents → clear questions → question types → sequence/layout → pilot testing.",
+      "keyIdeas": [
+        "Define research aims and questionnaire goal; reuse or adapt validated instruments when possible.",
+        "Define target groups; choose longitudinal vs cross-sectional designs.",
+        "Write clear, audience-appropriate, simple-language items.",
+        "Choose open (explorative) vs closed/Likert (quantitative) types thoughtfully.",
+        "Order questions logically, allow skips, keep layout navigable; run a pilot and analyse pilot data."
+      ],
+      "detail": [
+        "Guidelines stress starting from aims and checking for existing validated tools (especially in psychology) before inventing items.",
+        "Targeting includes deciding whether to track change over time or compare groups once. Piloting checks readability, phrasing, arrangement, and whether analytic procedures will work on the resulting data."
+      ],
+      "sourceQuote": "Identify Your Research Aims and the Goal of Your Questionnaire",
+      "related": [
+        "3.2.3",
+        "3.2.5",
+        "3.3.1"
+      ]
+    },
+    "3.2.5": {
+      "id": "3.2.5",
+      "title": "Data Editing",
+      "module": 3,
+      "pages": [
+        72,
+        73
+      ],
+      "section": "3.2.5",
+      "quick": "Data editing checks and corrects errors, inconsistencies, and omissions so findings rest on accurate, high-quality, credible data.",
+      "keyIdeas": [
+        "Techniques: visual inspection, computer verification, double data entry.",
+        "Visual inspection catches context errors but is slow and human-error prone.",
+        "Computer verification is fast/accurate on volume but needs programming and may miss contextual mistakes.",
+        "Double entry compares two independent entries—highly accurate but labour-intensive/costly.",
+        "Importance: accuracy, quality (complete/consistent), and research credibility."
+      ],
+      "detail": [
+        "Editing is framed as essential to validity: correcting errors so data reflect research variables, enhancing completeness/consistency, and building stakeholder trust.",
+        "Choosing a technique balances cost, scale, and the need for human contextual judgement versus automation."
+      ],
+      "sourceQuote": "Data editing is a critical step in the research process that involves checking and correcting errors, inconsistencies, and omissions in collected data.",
+      "related": [
+        "3.2.6",
+        "3.2.8"
+      ]
+    },
+    "3.2.6": {
+      "id": "3.2.6",
+      "title": "Data Coding Rules",
+      "module": 3,
+      "pages": [
+        73,
+        74
+      ],
+      "section": "3.2.6",
+      "quick": "Data coding transforms raw data into a structured format so researchers can organise, analyse, and spot patterns, themes, and relationships.",
+      "keyIdeas": [
+        "Supports data reduction, organisation, pattern recognition, interpretation/analysis, and comparative analysis.",
+        "Qualitative example: theme codes such as product quality, service, pricing, delivery.",
+        "Survey example: Likert codes (strongly agree=5 … strongly disagree=1).",
+        "Also illustrated for content analysis, medical diagnostic groups, and historical themes/periods."
+      ],
+      "detail": [
+        "Coding condenses large volumes into manageable categories and supplies the foundation for statistical tests and cross-case comparison.",
+        "Examples span qualitative themes, numeric survey scales, media stance coding, clinical groupings, and historical document themes—showing coding as a general structuring step, not only a qualitative craft."
+      ],
+      "sourceQuote": "Data coding is a critical step in the research process, involving the transformation of raw data into a structured format.",
+      "related": [
+        "3.2.5",
+        "3.2.7"
+      ],
+      "example": "Likert responses coded 5=strongly agree through 1=strongly disagree for quantitative analysis."
+    },
+    "3.2.7": {
+      "id": "3.2.7",
+      "title": "Don’t Know Responses",
+      "module": 3,
+      "pages": [
+        74
+      ],
+      "section": "3.2.7",
+      "quick": "“Don’t know” options let uncertain respondents abstain but may become avoidance routes that hurt reliability; use them sparingly and consider “other” or follow-ups instead.",
+      "keyIdeas": [
+        "Intent: allow abstention when uncertain.",
+        "Risk: respondents choose DK to avoid engaging, compromising reliability.",
+        "Mitigations: remove DK, or add follow-ups for richer data.",
+        "“Other” helps respondents elaborate (useful for product/service feedback).",
+        "DK may suit sensitive topics; for brands/products ensure familiarity before opinion items."
+      ],
+      "detail": [
+        "The section balances response options for survey quality: DK can help on sensitive topics but can distort brand/product ratings if respondents lack experience.",
+        "Offering “other” is presented as empowering elaboration and surfacing negative opinions that closed lists might hide."
+      ],
+      "sourceQuote": "The intention behind incorporating “don’t know” options in surveys is to provide respondents with an opportunity to abstain from questions they’re uncertain about.",
+      "related": [
+        "3.2.4",
+        "3.2.8"
+      ]
+    },
+    "3.2.8": {
+      "id": "3.2.8",
+      "title": "Missing Data",
+      "module": 3,
+      "pages": [
+        75
+      ],
+      "section": "3.2.8",
+      "quick": "Missing data are classified as MCAR, MAR, or MNAR; MNAR biases are non-ignorable, so prevention and secure storage are emphasised.",
+      "keyIdeas": [
+        "MCAR: missingness random, unrelated to other factors (e.g. random survey dropouts).",
+        "MAR: systematic but explained by observed variables (e.g. age-related privacy non-response).",
+        "MNAR: missingness depends on the unobserved values themselves (e.g. low-income respondents omit spending).",
+        "MCAR/MAR may be ignorable; MNAR can distort conclusions.",
+        "Strategies: user-friendly forms, validation, incentives, limit follow-ups/volume; secure multi-backup storage."
+      ],
+      "detail": [
+        "Missingness threatens representativeness and generalisability. Distinguishing random vs value-dependent mechanisms decides whether bias is ignorable.",
+        "The extract’s practical focus is preventing missingness and protecting stored data rather than detailing imputation algorithms."
+      ],
+      "sourceQuote": "While MCAR and MAR data may be considered ignorable, MNAR data introduce non-ignorable biases that can potentially distort conclusions.",
+      "related": [
+        "3.2.5",
+        "3.2.7"
+      ],
+      "compare": "MCAR/MAR can be treated as ignorable under the text’s framing; MNAR is non-ignorable because missingness depends on the missing values themselves."
+    },
+    "3.3.1": {
+      "id": "3.3.1",
+      "title": "Validity and Reliability",
+      "module": 3,
+      "pages": [
+        76,
+        77,
+        78
+      ],
+      "section": "3.3.1",
+      "quick": "Validity is how accurately a technique measures what it should; reliability is stability/consistency—and reliability alone does not guarantee validity.",
+      "keyIdeas": [
+        "High validity: results align with real traits/fluctuations; unreliable methods are probably not valid (thermometer analogy).",
+        "Construct, content, and criterion validity illustrated; discriminant vs convergent validity as construct subtypes.",
+        "Internal reliability/consistency vs external reliability (generalisability beyond the immediate use).",
+        "Cronbach’s α: ≥0.9 excellent; 0.7–<0.9 good; 0.6–<0.7 acceptable; 0.5–<0.6 poor; <0.5 unacceptable.",
+        "Also: test–retest, parallel forms, Spearman-Brown (split-half), Cohen’s kappa (inter-rater); high-stakes preferred >0.85, low-stakes >0.70."
+      ],
+      "detail": [
+        "Validity types in the extract: construct (ties to theory; self-esteem correlating with social skills/optimism), content (covers all aspects—Bengali test missing listening lacks content validity), criterion (exit poll predicting election). Discriminant validity expects low correlations with unrelated constructs; convergent expects high correlations with similar measures.",
+        "Reliability is repeatability (thermometer; math test). Internal consistency asks whether the test measures the intended construct; external reliability asks whether findings generalise (tutoring claim across subjects; depression test across ages/SES).",
+        "Coefficient reliability is the proportion of observed-score variance attributable to true scores; Cronbach’s alpha is the most widely used internal-consistency coefficient."
+      ],
+      "sourceQuote": "Validity pertains to the degree of accuracy with which a technique assesses the desired measurement.",
+      "related": [
+        "3.2.4",
+        "3.3.2",
+        "3.3.3"
+      ],
+      "compare": "A measure can be reliable yet invalid if it consistently misses the real construct; without reliability, validity is unlikely.",
+      "example": "If a thermometer gives different readings under controlled constant temperature, it is unreliable and its measurements are not valid."
+    },
+    "3.3.2": {
+      "id": "3.3.2",
+      "title": "Replication, Randomisation and Blocking",
+      "module": 3,
+      "pages": [
+        78,
+        79,
+        80
+      ],
+      "section": "3.3.2",
+      "quick": "Replication judges whether differences exceed chance; randomisation balances unmeasured confounders; blocking groups homogeneous units to cut noise and clarify treatment contrasts.",
+      "keyIdeas": [
+        "Without replication you cannot tell chance from real differences (one plant height vs many).",
+        "Randomisation assigns units non-deterministically to equalise confounders (e.g. chamber temperature gradient, compost, watering).",
+        "Blocks are homogeneous groups that reduce within-block variability and strengthen condition contrasts.",
+        "Measuring all controls one day and all treatments another confounds day with treatment—include common conditions to estimate block/batch effects.",
+        "Cage example: shared treatments estimate cage effect so unmatched treatments can be adjusted (E − F − cage effect)."
+      ],
+      "detail": [
+        "Replication makes differences meaningful relative to within-group fluctuation. Randomisation addresses residual variables after blocks are set (age, sex, genetics in the mouse framing).",
+        "Blocking and batch-effect correction keep day/cage structure from masquerading as treatment effects—central to credible experimental design in the module."
+      ],
+      "sourceQuote": "Without replication, it is impossible to judge whether there is an actual difference when comparing situations",
+      "related": [
+        "3.1.1",
+        "3.1.6",
+        "3.3.3"
+      ],
+      "compare": "Replication estimates variability; randomisation balances unknown confounders across conditions; blocking deliberately controls known sources of homogeneity."
+    },
+    "3.3.3": {
+      "id": "3.3.3",
+      "title": "Orthogonality and False Positives",
+      "module": 3,
+      "pages": [
+        80,
+        81,
+        82
+      ],
+      "section": "3.3.3",
+      "quick": "Orthogonality means predictors are uncorrelated (balanced ANOVA cells); a false positive is a positive test result when the true state is negative.",
+      "keyIdeas": [
+        "Orthogonal model: independent variables uncorrelated; correlation ⇒ non-orthogonal.",
+        "Orthogonal ANOVA: categorical factors with equal cell counts (balanced); near-balance may be treated as effectively orthogonal.",
+        "Orthogonal models have a single estimation/testing path; non-orthogonal models need careful interpretation.",
+        "Matrix view: vectors orthogonal if sum of element-wise products is zero.",
+        "False positive (“false alarm”); related false negative; medical/software examples; false-positive paradox when base rates are low."
+      ],
+      "detail": [
+        "The extract links orthogonality to classical ANOVA balance and contrasts it with general linear models that include continuous covariates. Mild imbalance (10,10,10,9) is technically non-orthogonal but practically minor.",
+        "False positives are illustrated with COVID, cancer, prenatal, and antivirus examples; false negatives with pregnancy tests. Design guidelines later stress planning/conducting/analysis loops and interdisciplinary teams, but the leaf’s core definitions are orthogonality and false positives."
+      ],
+      "sourceQuote": "Orthogonality means “uncorrelated.” That means in an orthogonal model; all the independent variables are uncorrelated.",
+      "related": [
+        "3.3.1",
+        "3.3.2",
+        "3.1.5"
+      ],
+      "example": "False positive: COVID-19 test positive though the patient is not infected."
+    },
+    "4.1.1": {
+      "id": "4.1.1",
+      "title": "Introduction to Hypothesis",
+      "module": 4,
+      "section": "4.1.1",
+      "pages": [
+        87,
+        88,
+        89
+      ],
+      "quick": "A hypothesis is a tentative, testable statement about a research problem that may or may not be true and must be verified empirically.",
+      "keyIdeas": [
+        "“Hypo” = subject to verification; “thesis” = statement of a problem’s solution.",
+        "Unlike a theory (tested, well-substantiated explanation), a hypothesis is provisional.",
+        "Types include simple, complex, empirical/working, null, alternative, logical, and statistical.",
+        "Simple: relation between two variables (cause → effect); complex: more than two variables.",
+        "Mutual-fund illustration: H0 / H1 / H2 phrased so decisions (launch or not) follow which claim is supported."
+      ],
+      "detail": [
+        "Hypothesis testing compares mutually exclusive statements about a population using sample data; a statistically significant finding means strong evidence for one of the hypotheses.",
+        "Formulation draws on hypothesis types. A simple hypothesis links one independent and one dependent variable (e.g., smoking leads to cancer). A complex hypothesis links several causes and effects. An empirical/working hypothesis starts as an assumption and becomes testable. Logical hypotheses are rationally validated (J.S. Mill’s principles). Statistical hypotheses can be verified statistically whether or not they seem logical."
+      ],
+      "sourceQuote": "Thus, “hypothesis” is “ a tentative statement, which is subject to verification and states the solution of a problem”.",
+      "related": [
+        "4.1.2",
+        "4.1.9"
+      ],
+      "compare": "A theory is a tested, well-substantiated explanation; a hypothesis is tentative and still requires empirical verification.",
+      "example": "Mutual fund launch: H1 (≥20% invest) → launch; H2 (<20% invest) → do not launch."
+    },
+    "4.1.2": {
+      "id": "4.1.2",
+      "title": "Developing Hypothesis: Null and Alternate",
+      "module": 4,
+      "section": "4.1.2",
+      "pages": [
+        89,
+        90
+      ],
+      "quick": "The null hypothesis (H0) states no relationship between variables; the alternative (H1) is the competing claim chosen after modifying the prior statement.",
+      "keyIdeas": [
+        "Null (H0 / h0): contrary to the positive empirical claim — no relationship between dependent and independent variables.",
+        "Alternative (H1 / h1): the feasible, effective competing hypothesis after refinement.",
+        "Test statistic: estimator from sample data used for the decision.",
+        "Rejection region (RR): values of the test statistic that reject H0 in favour of H1.",
+        "Significance level (often 5% or 1%): chance of rejecting H0 when it is actually true."
+      ],
+      "detail": [
+        "If the calculated test statistic falls in the rejection region, reject H0 and accept H1; if it does not, accept H0 (the non-rejection / acceptance region).",
+        "The significance level is the threshold probability for choosing between null and alternative. At 5%, the material notes a long-run risk of incorrect judgement about 5% of the time when the hypothesis is accepted at that level."
+      ],
+      "sourceQuote": "It is contrary to the positive statement of the empirical hypothesis, which has no relationship between dependent and independent variables.",
+      "related": [
+        "4.1.1",
+        "4.1.3",
+        "4.1.8",
+        "4.1.9"
+      ],
+      "compare": "H0 = no relationship / status quo claim; H1 = the refined competing claim you hope the data support."
+    },
+    "4.1.3": {
+      "id": "4.1.3",
+      "title": "Type I and Type II Error",
+      "module": 4,
+      "section": "4.1.3",
+      "pages": [
+        90,
+        91
+      ],
+      "quick": "Type I error wrongly rejects a true H0 (wrongly accepts H1); Type II wrongly accepts a false H0 (wrongly rejects H1).",
+      "keyIdeas": [
+        "Type I: H0 true but rejected; H1 wrongly accepted.",
+        "Type II: H0 false but accepted; H1 wrongly rejected.",
+        "Correct decisions: accept H0 when H0 true; accept H1 when H1 true — no error.",
+        "Children’s-channel ad example: wrong H0 rejection → skip needed ads; wrong H1 rejection → pay for unnecessary ads.",
+        "“State of nature” = the authentic situation; mistakes can arise when linking states to actions or when study findings misrepresent nature."
+      ],
+      "detail": [
+        "Hypothesis pairs are designed so they cannot both be true and false at once; action 1 follows if the first hypothesis is true, action 2 if the second is true.",
+        "Decision tables map true state vs conclusion: Type I when H0 is true but you conclude H1; Type II when H1 is true but you conclude H0."
+      ],
+      "sourceQuote": "H0 wrongly rejected and H1 wrongly accepted",
+      "related": [
+        "4.1.2",
+        "4.1.7",
+        "4.1.8"
+      ],
+      "example": "H0: adults ≥20% of children’s TV audience (advertise); H1: adults <20% (don’t advertise)."
+    },
+    "4.1.4": {
+      "id": "4.1.4",
+      "title": "One-Tailed and Two-Tailed Test",
+      "module": 4,
+      "section": "4.1.4",
+      "pages": [
+        91,
+        92
+      ],
+      "quick": "A one-tailed test allows the alternative to go only higher or only lower than H0; a two-tailed test allows departure in either direction (≠).",
+      "keyIdeas": [
+        "One-tailed: H0: μ = μ0; H1: μ < μ0 or μ > μ0 (not both at once).",
+        "Two-tailed: H0: μ = μ0; H1: μ ≠ μ0 — care about both higher and lower.",
+        "Drug example: only “more effective” matters → one-tailed setup.",
+        "Supplier strength vs target: higher or lower both matter → two-tailed.",
+        "Compare p-value to α; sign of the test statistic shows which tail."
+      ],
+      "detail": [
+        "In the new-medication illustration, failing to reject H0 or rejecting in the wrong direction both stop further production/study, so a one-tailed test focuses on greater effectiveness.",
+        "For a two-sided 1-sample t-test of mean strength against a target, a negative t-value in the left critical region means the mean is smaller than the target."
+      ],
+      "sourceQuote": "In a one-tailed test, the alternative hypothesis allows for the parameter being tested to be either bigger or less than the parameter under the null hypothesis, but not both simultaneously.",
+      "related": [
+        "4.1.8",
+        "4.1.11",
+        "4.2.3"
+      ],
+      "compare": "One-tailed = directional alternative; two-tailed = non-directional (≠) alternative."
+    },
+    "4.1.5": {
+      "id": "4.1.5",
+      "title": "Degree of Freedom",
+      "module": 4,
+      "section": "4.1.5",
+      "pages": [
+        92,
+        93
+      ],
+      "quick": "Degrees of freedom are how many values in a calculation are free to vary; often df = N − 1 (or observations minus parameters).",
+      "keyIdeas": [
+        "Needed for validity of chi-square, t, and F tests.",
+        "General idea: df = (number of observations) − (number of parameters).",
+        "Common sample formula: Degree of Freedom = N − 1.",
+        "Example: values 15, 30, 25, 10 → mean 20 → df = 4 − 1 = 3 can vary while mean stays 20."
+      ],
+      "detail": [
+        "Because df identifies how many values in the final calculation may vary, they contribute to outcome validity. Calculations often depend on sample size and parameters being estimated.",
+        "In the vaccine heart-rate illustration, df enters the significance calculation when comparing vaccinated vs not vaccinated groups."
+      ],
+      "sourceQuote": "Degrees of freedom equal the number of values in a data set minus 1 in a statistical formula like : Degree of Freedom = N-1",
+      "related": [
+        "4.2.1",
+        "4.2.5",
+        "4.2.8"
+      ]
+    },
+    "4.1.6": {
+      "id": "4.1.6",
+      "title": "Confidence Intervals",
+      "module": 4,
+      "section": "4.1.6",
+      "pages": [
+        93,
+        94
+      ],
+      "quick": "A confidence interval is the estimate ± its variation — the range expected to contain the estimate if the study is redone at a stated confidence level.",
+      "keyIdeas": [
+        "Confidence in statistics is another way to describe probability.",
+        "95% CI: expect the estimate between the bounds in 95 of 100 similar retests.",
+        "Relation: Confidence level = 1 − α (e.g., α = 0.05 → 95%).",
+        "Used for proportions, means, differences of means/proportions, and variation among groups.",
+        "Same point estimate can have a wider CI when data are more volatile."
+      ],
+      "detail": [
+        "Point estimates alone give no sense of surrounding range; CIs convey the variance around the estimate.",
+        "India vs America TV-hours survey: both groups average 35 hours/week, but greater disparity among Indian respondents yields a broader CI than the American estimate."
+      ],
+      "sourceQuote": "A confidence interval is the mean of our estimate plus and minus the variation in that estimate.",
+      "related": [
+        "4.1.7",
+        "4.2.1"
+      ],
+      "example": "Both groups mean 35 TV hours/week; more volatile Indian responses → wider CI."
+    },
+    "4.1.7": {
+      "id": "4.1.7",
+      "title": "Level of Significance: The Confidence Coefficient",
+      "module": 4,
+      "section": "4.1.7",
+      "pages": [
+        94,
+        95
+      ],
+      "quick": "The confidence coefficient (confidence level) shades the central portion of the sampling distribution (e.g., 95%) that defines the confidence interval around the sample mean.",
+      "keyIdeas": [
+        "Graphically: centre the interval on the sample mean and shade the central 95% of the distribution.",
+        "That shaded range of sample means is the 95% confidence interval.",
+        "Fuel-price illustration: population mean said to fall between 267 and 394 at 95% confidence.",
+        "Ties back to α via confidence level = 1 − α from the prior section."
+      ],
+      "detail": [
+        "Section 4.1.7 focuses on interpreting the confidence coefficient visually: the sampling distribution covered by 95% of sample means in the shaded range is the 95% CI for the data.",
+        "For the fuel-price example, the material states the population mean for fuel prices falls between 267 and 394 with a 95% confidence interval."
+      ],
+      "sourceQuote": "The sampling distribution is covered by 95% of the sample means in the shaded range [267 394]. For our sample data, this range represents the 95% confidence interval.",
+      "related": [
+        "4.1.6",
+        "4.1.2",
+        "4.1.3"
+      ]
+    },
+    "4.1.8": {
+      "id": "4.1.8",
+      "title": "Rejection and Non-rejection Regions",
+      "module": 4,
+      "section": "4.1.8",
+      "pages": [
+        95,
+        96
+      ],
+      "quick": "The rejection (critical) region is all test-statistic values that reject H0; a critical value separates it from the non-rejection region.",
+      "keyIdeas": [
+        "α = probability the test statistic falls in the critical region when H0 is true.",
+        "Left-tailed: H1 uses < ; right-tailed: H1 uses > ; two-tailed: H1 uses ≠ with α/2 in each tail.",
+        "Decision: z/t in rejection region → reject H0; otherwise fail to reject H0.",
+        "Failing to reject ≠ proving H0 true — only insufficient evidence to reject.",
+        "Type I probability = α; Type II probability typically denoted β."
+      ],
+      "detail": [
+        "Calculate the standardised test statistic (z or t). If it falls in the rejection region, reject H0; if not, fail to reject H0.",
+        "The same section also introduces Bayesian probability as degree of certainty (0–1), prior vs posterior probabilities, and Bayes’ Box updates — complementary framing of belief revision after data."
+      ],
+      "sourceQuote": "The critical region, also known as the rejection region, encompasses all values of the test statistic that lead to the rejection of the null hypothesis.",
+      "related": [
+        "4.1.2",
+        "4.1.3",
+        "4.1.4",
+        "4.1.9"
+      ],
+      "compare": "Reject H0 only if the statistic is in the critical region; otherwise fail to reject (do not claim H0 proven)."
+    },
+    "4.1.9": {
+      "id": "4.1.9",
+      "title": "Hypothesis Testing Procedure",
+      "module": 4,
+      "section": "4.1.9",
+      "pages": [
+        100,
+        101
+      ],
+      "quick": "Hypothesis testing is a stepwise process: formulate H0/Ha, sample, choose a method, compute the statistic and p-value, compare to α, then conclude.",
+      "keyIdeas": [
+        "Formulate null (no relationship) and alternative (predicted relationship).",
+        "Collect representative sample data.",
+        "Choose an appropriate testing method for the data and question.",
+        "Calculate a test statistic (e.g., z-score, t-statistic).",
+        "p-value: probability of results as extreme as observed if H0 is true.",
+        "Low p (< α) → reject H0; high p (≥ α) → fail to reject H0."
+      ],
+      "detail": [
+        "Example pair: H0 — no average height difference between men and women; Ha — men are taller on average.",
+        "A low p-value suggests the observed difference is unlikely by chance alone (supports Ha); a high p-value suggests random variation (supports H0). Draw the conclusion in the research-question context."
+      ],
+      "sourceQuote": "The p-value quantifies the probability of observing results as extreme as those obtained, assuming the null hypothesis is true.",
+      "related": [
+        "4.1.2",
+        "4.1.8",
+        "4.1.11"
+      ]
+    },
+    "4.1.10": {
+      "id": "4.1.10",
+      "title": "Types of Tests",
+      "module": 4,
+      "section": "4.1.10",
+      "pages": [
+        101,
+        102
+      ],
+      "quick": "Statistical tests for hypothesis-based inference fall into parametric (distributional assumptions) and non-parametric (fewer distribution assumptions) families.",
+      "keyIdeas": [
+        "Parametric: assume normality / homogeneity of variance, etc. — e.g., t-tests, ANOVA, linear regression.",
+        "Non-parametric: no distribution assumption required — e.g., Wilcoxon signed-rank, Mann-Whitney U, Kruskal-Wallis.",
+        "Also categorised by research focus: quantitative (numerical) vs qualitative/categorical analysis.",
+        "Qualitative/categorical tests uncover associations among categorical variables."
+      ],
+      "detail": [
+        "Parametric tests rely on assumptions about the underlying data distribution to make accurate inferences; non-parametric tests are more robust when those assumptions are violated.",
+        "Choice also depends on whether the work is quantitative or qualitative; categorical statistical tests matter for qualitative-style categorical data."
+      ],
+      "sourceQuote": "These tests are broadly classified into two categories: parametric and non-parametric.",
+      "related": [
+        "4.1.11",
+        "4.2.1"
+      ],
+      "compare": "Parametric needs distributional assumptions; non-parametric does not require them."
+    },
+    "4.1.11": {
+      "id": "4.1.11",
+      "title": "How to Select a Test",
+      "module": 4,
+      "section": "4.1.11",
+      "pages": [
+        102
+      ],
+      "quick": "Selecting a test follows seven steps: question → null → α → one- vs two-tailed → number of variables → data type → study design (paired vs unpaired).",
+      "keyIdeas": [
+        "Define the research question that guides collection and analysis.",
+        "Formulate a null of no statistical significance.",
+        "Set the significance level in the protocol.",
+        "Choose one-tailed (clear direction) or two-tailed (no anticipated direction).",
+        "Match tests to single-variable vs multivariable problems.",
+        "Assess continuous / categorical / binary data and normality vs skew for continuous data.",
+        "Account for paired (dependent) vs unpaired (independent) designs."
+      ],
+      "detail": [
+        "One-tailed tests suit clear directional evidence; two-tailed when no specific direction is anticipated.",
+        "Paired designs compare dependent samples; unpaired designs compare independent samples — this distinction drives many parametric choices later in 4.2."
+      ],
+      "sourceQuote": "One-tailed tests are suitable when evidence points clearly in one direction, while two-tailed tests are appropriate when no specific direction is anticipated.",
+      "related": [
+        "4.1.4",
+        "4.1.9",
+        "4.1.10",
+        "4.2.1"
+      ]
+    },
+    "4.2.1": {
+      "id": "4.2.1",
+      "title": "Important Parametric Tests",
+      "module": 4,
+      "section": "4.2.1",
+      "pages": [
+        102,
+        103,
+        104
+      ],
+      "quick": "Key parametric tests assuming normality include the t-test (small n, unknown σ), Z-test (large n or known σ), and F-test (comparing variances / ANOVA).",
+      "keyIdeas": [
+        "Parametric tests assume fixed population parameters (mean, SD) and typically normal populations (CLT may justify approximate normality).",
+        "t-test (Student/Gossett): means of groups; n < 30; unknown variance; df = n − 1; one-sample, independent two-sample, paired.",
+        "Z-test: sample vs population mean when n > 30 or variance known; also large-sample two-mean comparisons.",
+        "F-test: compare variances of two samples; also central to ANOVA for ≥3 group means."
+      ],
+      "detail": [
+        "Uses listed for parametric work include CIs for a mean (known or unknown σ), for variance, and for the difference of two means with unknown SD (t).",
+        "Examples in the text: paired t for BP before/after medication; Z for comparing men’s and women’s salaries; F for bolt-diameter variability across machines."
+      ],
+      "sourceQuote": "Parametric tests are statistical tests that assume the underlying data follows a normal distribution.",
+      "related": [
+        "4.1.10",
+        "4.2.2",
+        "4.2.3",
+        "4.2.6"
+      ],
+      "compare": "t for small samples / unknown σ; Z for large samples / known σ; F for variances (and ANOVA)."
+    },
+    "4.2.2": {
+      "id": "4.2.2",
+      "title": "Single Population Mean Using Z-statistic",
+      "module": 4,
+      "section": "4.2.2",
+      "pages": [
+        104,
+        105
+      ],
+      "quick": "A Z-test checks whether a sample mean differs from a known population mean when σ is known — especially useful for large samples (n > 30).",
+      "keyIdeas": [
+        "Also used when the test-statistic distribution can be approximated as normal.",
+        "Applications: sample mean vs population mean; two sample means with known variances and large n (≥ 30).",
+        "One-sample Z: sample mean vs population mean.",
+        "Two-sample Z: compare means of two different samples (uses group means, population SDs, and n)."
+      ],
+      "detail": [
+        "The section frames Z as the large-sample / known-σ route for mean hypotheses, contrasting later with the t-route when σ is unknown and n is small.",
+        "Two-sample notation references x̄1, x̄2, σ1, σ2, and n as inputs to the standardised comparison."
+      ],
+      "sourceQuote": "A Z-test is a statistical method used to determine whether the mean of a sample is significantly different from a known population mean when the population standard deviation is known.",
+      "related": [
+        "4.2.1",
+        "4.2.3"
+      ],
+      "compare": "Prefer Z when σ known and/or n large; prefer t when σ unknown and n small."
+    },
+    "4.2.3": {
+      "id": "4.2.3",
+      "title": "Single Population Mean Using T-statistic",
+      "module": 4,
+      "section": "4.2.3",
+      "pages": [
+        105,
+        106
+      ],
+      "quick": "The t-test uses Student’s t-distribution for mean differences when n is small (< 30) and the population standard deviation is unknown.",
+      "keyIdeas": [
+        "Assumptions: normal population; random independent samples; small n; unknown σ.",
+        "One-sample t: sample mean vs known population mean.",
+        "Independent two-sample t: means of two independent samples.",
+        "Paired t: related samples (before/after).",
+        "Statistic uses sample mean, sample SD (s), n, and μ."
+      ],
+      "detail": [
+        "Parametric t-testing is the small-sample counterpart to Z when σ must be estimated from the sample.",
+        "Two-sample form uses each group’s sample mean and sample SD rather than known population σ."
+      ],
+      "sourceQuote": "It is primarily used to determine if there is a significant difference between the means of two groups, especially when the sample size is small (i.e., less than 30) and the population standard deviation is unknown.",
+      "related": [
+        "4.2.1",
+        "4.2.2",
+        "4.1.5"
+      ]
+    },
+    "4.2.4": {
+      "id": "4.2.4",
+      "title": "Hypothesis Testing for Population Proportions",
+      "module": 4,
+      "section": "4.2.4",
+      "pages": [
+        106,
+        107
+      ],
+      "quick": "Proportion tests ask whether a sample proportion differs from a hypothesised population proportion — suited to categorical data.",
+      "keyIdeas": [
+        "H0: population proportion equals a specified value; Ha: differs (one- or two-tailed).",
+        "Common α choices: 0.05, 0.01, 0.10.",
+        "Large samples: Z-score test statistic from the proportion formula.",
+        "Two-tailed α = 0.05 → critical values ±1.96 on the standard normal.",
+        "Reject H0 if Z is in the rejection region; otherwise fail to reject; then conclude about Ha."
+      ],
+      "detail": [
+        "Steps mirror general hypothesis testing: state hypotheses, set α, compute Z, apply the critical-value decision rule, and conclude whether evidence supports the alternative.",
+        "Focus remains conceptual: categorical proportion claims with large-sample normal (Z) critical regions."
+      ],
+      "sourceQuote": "Hypothesis testing for population proportions involves determining whether a sample proportion significantly differs from a known or hypothesised population proportion.",
+      "related": [
+        "4.1.9",
+        "4.2.2"
+      ]
+    },
+    "4.2.5": {
+      "id": "4.2.5",
+      "title": "Variance vs Hypothesised Population Variance",
+      "module": 4,
+      "section": "4.2.5",
+      "pages": [
+        107,
+        108
+      ],
+      "quick": "A chi-square test compares a sample variance to a hypothesised population variance for normally distributed populations.",
+      "keyIdeas": [
+        "Can be two-tailed (σ² = σ0² vs ≠), right-tailed (σ² > σ0²), or left-tailed (σ² < σ0²).",
+        "Chi-square distribution has df = n − 1; starts at zero and is asymmetric.",
+        "As df grow, the shape approaches normality.",
+        "Two-tailed α = 0.10 with 10 df: critical values ≈ 3.94 and 18.307 (α/2 = 0.05 each tail).",
+        "Reject H0 if the statistic is below the lower or above the upper critical value."
+      ],
+      "detail": [
+        "Because variance cannot be negative, the chi-square curve is asymmetrical from zero upward.",
+        "Table-reading illustration: split α for two tails, look up right-tail 0.05 and 0.95 columns for the given df, then apply the dual critical-value rule."
+      ],
+      "sourceQuote": "The chi-square test is a statistical method used to determine whether there is a significant difference between the observed variance of a sample and a hypothesised population variance.",
+      "related": [
+        "4.1.5",
+        "4.2.6"
+      ]
+    },
+    "4.2.6": {
+      "id": "4.2.6",
+      "title": "Equality of Variances of Two Normal Populations",
+      "module": 4,
+      "section": "4.2.6",
+      "pages": [
+        108,
+        109,
+        110
+      ],
+      "quick": "The F-test (Snedecor & Cochran) compares whether two normal populations have equal variances, using the ratio of the larger sample variance to the smaller.",
+      "keyIdeas": [
+        "H0 usually: variances equal; Ha: not equal (one- or two-tailed as needed).",
+        "Draw samples, compute variances and sizes; F = larger s² / smaller s².",
+        "df for numerator and denominator = each sample size − 1.",
+        "Reject H0 if calculated F exceeds the critical value.",
+        "Conditions: random samples, independent observations, approximately normal populations."
+      ],
+      "detail": [
+        "Related material also covers testing a population correlation coefficient ρ via sample r (H0: ρ = 0; Ha: ρ ≠ 0) with a t-statistic on n − 2 df — significant r means evidence of a linear relationship.",
+        "Conceptual takeaway: F for variance equality between two normals; correlation significance is a separate t-based check that ρ ≠ 0."
+      ],
+      "sourceQuote": "The F-test, developed by Snedecor and Cochran (1983), is used to determine if the variances of two populations are equal.",
+      "related": [
+        "4.2.1",
+        "4.2.5",
+        "4.2.7"
+      ],
+      "compare": "F-test here compares two variances; ANOVA uses F to compare several means via mean squares."
+    },
+    "4.2.7": {
+      "id": "4.2.7",
+      "title": "ANOVA for Fixed Effect Model",
+      "module": 4,
+      "section": "4.2.7",
+      "pages": [
+        110,
+        111,
+        112
+      ],
+      "quick": "Fixed-effect ANOVA models a response as treatment mean (or overall mean + fixed treatment effect) plus error, to compare mean responses across fixed treatments.",
+      "keyIdeas": [
+        "Response = f(factor) + error; natural variation always remains even under similar settings.",
+        "Means model: yij = μi + εij — compare average response across treatments (e.g., fuel types’ mpg).",
+        "Effects model: yij = μ + τi + εij — overall mean plus ith treatment effect.",
+        "εij assumed identical, independent, normally distributed.",
+        "Error sources: experimental (treatment / stochastic EU / selection) and observational (measurement / sampling)."
+      ],
+      "detail": [
+        "The fuel-economy research question asks whether average mpg differs by fuel type; the means model generalises sample treatment means to the population and is linear in μ.",
+        "Isolating additive effects from a base response yields the effects form with τi. Earlier “variance analysis” business examples (material/labour/overhead) illustrate deviation-from-plan thinking, but the fixed-effect ANOVA core is the means/effects models above."
+      ],
+      "sourceQuote": "The model is referred to as the means model since it is based on the mean treatment effect.",
+      "related": [
+        "4.2.8",
+        "4.2.9",
+        "4.2.10"
+      ],
+      "example": "Fuel types as treatments; response = mpg; ask if mean mpg differs across fuels."
+    },
+    "4.2.8": {
+      "id": "4.2.8",
+      "title": "Total, Treatment & Error Sum of Squares",
+      "module": 4,
+      "section": "4.2.8",
+      "pages": [
+        112,
+        113
+      ],
+      "quick": "ANOVA partitions variability into SSE (error), SSTR (treatment), and SST (total), then forms MSE/MSTR for the F test statistic.",
+      "keyIdeas": [
+        "After SSE, compute SSTR and SST; then MSE and MSTR for the test statistic.",
+        "SSTR measures how much treatment means differ (e.g., battery-type lifetimes).",
+        "Low SSTR → treatment averages are similar.",
+        "SSTR steps: for each treatment, (column mean − grand mean)² × n_column.",
+        "SST = SSTR + SSE."
+      ],
+      "detail": [
+        "Battery example: three types × four batteries; grand mean 2.1; column means 2.3, 1.85, 2.15 — SSTR from squared deviations times 4 per column; SST is SSTR + SSE.",
+        "Conceptual role: treatment SS captures between-group structure; error SS captures within-group noise; their mean squares feed the ANOVA F."
+      ],
+      "sourceQuote": "The total sum of squares (SST) equals the sum of the SSTR and the SSE.",
+      "related": [
+        "4.2.7",
+        "4.2.10"
+      ]
+    },
+    "4.2.9": {
+      "id": "4.2.9",
+      "title": "ANOVA for Random Effect Model",
+      "module": 4,
+      "section": "4.2.9",
+      "pages": [
+        113,
+        114,
+        115,
+        116
+      ],
+      "quick": "Random-effect / two-factor (randomised block) ANOVA adds a blocking factor so units are grouped; treatments of interest are compared within more homogeneous blocks.",
+      "keyIdeas": [
+        "Two-way factorial expands one-factor work with a second factor often used as blocks.",
+        "Compiler example: better to run the same programmes on each compiler (blocks) than assign different programmes to each.",
+        "Assumptions (one obs per cell): approximate normality per cell; common variance σ²; no interaction (effect of one factor consistent across levels of the other).",
+        "Interaction example: sugar × stirring on tea sweetness — stirring matters only with sugar.",
+        "Two-factor table: SSR (rows), SSC (columns), SSE with df (r−1)(c−1), F = MSR/MSE and MSC/MSE."
+      ],
+      "detail": [
+        "Design (2) — four copies of five programmes, one per compiler — avoids confounding programme difficulty with compiler speed and yields a randomised block layout.",
+        "When interaction cannot be estimated (single observation per cell), the material assumes no interaction; sugar/stirring shows what interaction means conceptually."
+      ],
+      "sourceQuote": "Therefore, it is sometimes referred to as a blocking factor as it categorises topics or units into similar groupings known as blocks. The design is referred to as a randomised block design.",
+      "related": [
+        "4.2.7",
+        "4.2.10"
+      ],
+      "compare": "Fixed effects: specific treatment levels of interest; random/block structures control nuisance variation across units."
+    },
+    "4.2.10": {
+      "id": "4.2.10",
+      "title": "Single Factor Experiment",
+      "module": 4,
+      "section": "4.2.10",
+      "pages": [
+        116,
+        117,
+        118
+      ],
+      "quick": "A single-factor experiment varies levels of one independent factor to study its effect on a response; CRD randomly assigns treatments to homogeneous units.",
+      "keyIdeas": [
+        "Popular designs: CRD, randomised block, Latin square, balanced incomplete block.",
+        "CRD: no grouping; allocate v treatments randomly; flexible unequal replications; all unit variability → error.",
+        "CRD suited to homogeneous material, labs, small numbers of treatments; often inefficient outdoors.",
+        "Model: yij = μ + τi + εij; H0: all τi = 0; SSTreatments (a−1 df) vs SSE (N−a df).",
+        "Lambs/diets illustration: fail to reject equal diet effects when F is small / p large."
+      ],
+      "detail": [
+        "CRD layout: divide into n units, fix replications, randomly assign treatments without local control beyond choosing homogeneous units.",
+        "SSTreatments measures differences among treatment means; SSE is within-treatment random error with E(MSE) = σ². The diet example ends with F0 = 0.77 and fail to reject H0."
+      ],
+      "sourceQuote": "Frequently we wish to investigate the effect of a factor (independent variable) on a response (dependent variable). Then we carried out an experiment where the levels of the factor are varied. Such an experiment is known as a single-factor experiment.",
+      "related": [
+        "4.2.7",
+        "4.2.8",
+        "4.2.9"
+      ],
+      "example": "Four treatments on 20 units with unequal replications (3, 5, 6, 6) under CRD."
+    },
+    "4.2.11": {
+      "id": "4.2.11",
+      "title": "Model Adequacy Checking",
+      "module": 4,
+      "section": "4.2.11",
+      "pages": [
+        126,
+        127,
+        128
+      ],
+      "quick": "Model adequacy checking verifies regression assumptions (linearity, zero-mean errors, constant variance, independence, normality) mainly via residual diagnostics.",
+      "keyIdeas": [
+        "Assumptions: roughly linear study–explanatory link; E(error)=0; constant variance; uncorrelated errors; normal errors.",
+        "Minor violations may be tolerable; major ones can make the model unstable across samples.",
+        "One predictor: scatter plot of y vs X for linearity.",
+        "Multiple predictors: scatter-plot matrix (off-diagonal plots; optional correlations).",
+        "Residual ei = yi − ŷi; residuals should reveal assumption failures; OLS residuals have mean zero."
+      ],
+      "detail": [
+        "Assumptions are about the population while we observe a sample, so diagnostics on residuals (graphical) are the practical bridge.",
+        "Residuals quantify how far the fit misses the data and act as realised errors; examining them exposes model shortcomings."
+      ],
+      "sourceQuote": "The residual is outlined because of the distinction between the discovered and fitted worth of study variable.",
+      "related": [
+        "4.2.7",
+        "4.2.10"
+      ]
+    },
+    "5.1.1": {
+      "id": "5.1.1",
+      "title": "Meaning of Research Report",
+      "module": 5,
+      "section": "5.1.1",
+      "pages": [
+        131
+      ],
+      "quick": "A research report is a formal, structured document that records an investigation and reaches impartial conclusions; workplaces treat reports as legal papers.",
+      "keyIdeas": [
+        "Three defining traits: predefined structure, independent sections, unbiased conclusions.",
+        "Structure headers (introduction, discussion, conclusion) guide the reader.",
+        "Sections can be read selectively without requiring a top-to-bottom read."
+      ],
+      "detail": [
+        "The module opens by defining a report as a formal document used across sciences, social sciences, engineering, and business — essentially documenting the process of pursuing a defined assignment.",
+        "At a basic level, report writing is characterised by a predefined structure, independently written sections, and unbiased (impartial, objective) conclusions.",
+        "Independent sections matter because readers often jump to the parts they need rather than reading the whole report linearly."
+      ],
+      "sourceQuote": "There are three fundamental characteristics that define report writing at a basic level:",
+      "compare": "Unlike informal notes or opinion pieces, a research report is expected to be structured, sectionally independent, and objective.",
+      "related": [
+        "5.1.2",
+        "5.1.4"
+      ]
+    },
+    "5.1.2": {
+      "id": "5.1.2",
+      "title": "Structure of Scientific Report",
+      "module": 5,
+      "section": "5.1.2",
+      "pages": [
+        131,
+        132
+      ],
+      "quick": "A scientific report has preliminaries (title, TOC, etc.), contents (introduction; analysis/results), and reference materials (references, appendices, glossary, index).",
+      "keyIdeas": [
+        "Preliminaries: title page, preface/acknowledgements, graphs/illustrations/tables/charts, table of contents.",
+        "Introduction covers aims, problem characterisation, hypotheses, concepts, literature, scope/assumptions/limitations, sampling, and methods.",
+        "Analysis presents factual results, quantitative analysis, summary and suggested actions; reference block holds refs, appendices, glossary, index."
+      ],
+      "detail": [
+        "Preliminaries frame the document before the main narrative: title page, preface or foreword and acknowledgements, visuals lists, and table of contents.",
+        "The introduction is where aims, problem definition, hypotheses, key concepts, literature review, survey logistics (time/location/resources), scope/assumptions/limitations, sampling organisation, and data-collection approaches belong.",
+        "Results analysis covers type/volume/dimensions of findings, quantitative analysis, and a summary with suggested actions. Reference materials close with references, appendices (surveys, tables), glossary, and index."
+      ],
+      "sourceQuote": "Analysis and presentation of results:",
+      "related": [
+        "5.1.3",
+        "5.1.5"
+      ]
+    },
+    "5.1.3": {
+      "id": "5.1.3",
+      "title": "Components of a Scientific Report",
+      "module": 5,
+      "section": "5.1.3",
+      "pages": [
+        132,
+        133
+      ],
+      "quick": "A technical scientific report emphasises methods and sample design for peer academics: nature of work, methodology, data analysis, findings, bibliography, technical appendices.",
+      "keyIdeas": [
+        "Written mainly for other academics; techniques and sample design must be well elucidated.",
+        "Main search/contents often limited to two or three pages; findings may span several chapters with tables/figures.",
+        "Bibliography lists secondary sources; technical appendices hold surveys, derivations, detailed methods."
+      ],
+      "detail": [
+        "Technical reports differ in emphasis: colleagues care most about techniques used, and the extent of the search is tied to those strategies.",
+        "Core components include a short main-contents overview; nature of the research (objectives, operational problem, working hypothesis, analysis type, data required); research methodology with constraints (e.g. sample size/selection); data analysis covering sources, qualities, limits, and collection procedures for surveys; findings presentation with corroborating tables/figures; bibliography; and technical appendices."
+      ],
+      "sourceQuote": "A technical report is primarily intended for other academics and, as such, may be structured in a fundamentally different manner.",
+      "compare": "Technical reports stress methods and sample design; non-technical audiences (e.g. finance heads) often want outcomes, not process (see Types of Reports).",
+      "related": [
+        "5.1.2",
+        "5.1.4"
+      ]
+    },
+    "5.1.4": {
+      "id": "5.1.4",
+      "title": "Types of Reports",
+      "module": 5,
+      "section": "5.1.4",
+      "pages": [
+        133,
+        134
+      ],
+      "quick": "Reports are oral or written; written forms vary by time interval and by type (short/long, formal/informal, technical/non-technical, government).",
+      "keyIdeas": [
+        "Oral reports demand live interaction, careful planning of what/how/how much to say, and Q&A readiness.",
+        "Written reports: short (narrow issue, ~5 pages e.g. monthly sales) vs long (technical + non-technical fusion).",
+        "Technical reports detail sources, methods, sample, tools, analysis, appendix, conclusions; non-technical focus on managerial implications."
+      ],
+      "detail": [
+        "Oral presentation structure: opening (project nature, origins, objectives), findings/conclusions backed by evidence, suggestions tied to conclusions, then Q&A; visuals and tabular stats help. Prefer notes-driven extempore over memorisation or dull manuscript reading.",
+        "Written categories by interval: daily, weekly, monthly, quarterly, yearly. By type: short, long, formal, informal, government.",
+        "Examples: formal — marketing head’s quarterly test-marketing report to VP; informal — shift log book; government — rural employment strategy in a five-year plan."
+      ],
+      "sourceQuote": "There are two types of reports (1) Oral report (2) Written report",
+      "example": "A monthly sales report spanning about five pages for a product in a specified area is a short written report.",
+      "related": [
+        "5.2.1",
+        "5.1.5"
+      ]
+    },
+    "5.1.5": {
+      "id": "5.1.5",
+      "title": "Steps in Report Writing",
+      "module": 5,
+      "section": "5.1.5",
+      "pages": [
+        134,
+        135,
+        136
+      ],
+      "quick": "After choosing the report type, structure it as: title page, contents, executive summary, body, conclusions/recommendations, bibliography, appendix.",
+      "keyIdeas": [
+        "Executive summary (1–2 pages): objectives, brief methodology, important findings, key results, conclusion — often all top executives read.",
+        "Body: introduction, methodology/approach, limitations/constraints, analysis and interpretation.",
+        "Appendix holds non-essential but supporting materials (questionnaires, cuttings, diagrams, interviewer instructions)."
+      ],
+      "detail": [
+        "Title page states subject and preparing individual/organisation. Table of contents lists divisions with chapter titles and page numbers (declaration through appendix).",
+        "The body introduction describes the decision issue and research purpose with organisational background; approach covers primary vs secondary data, instruments, sample size/plan, analysis method, exploratory vs conclusive design; constraints include time, geography, technique, response accuracy.",
+        "Conclusions answer what outcomes were drawn; recommendations answer what you advise based on the study. Bibliography lists secondary sources with title, journal, volume, pages, edition."
+      ],
+      "sourceQuote": "Once the type of report has been determined, the subsequent stage is to prepare the report.",
+      "related": [
+        "5.1.2",
+        "5.1.6"
+      ]
+    },
+    "5.1.6": {
+      "id": "5.1.6",
+      "title": "Format and Writing Style",
+      "module": 5,
+      "section": "5.1.6",
+      "pages": [
+        136,
+        137
+      ],
+      "quick": "Physical layout creates first impression and navigability; style must simplify, justify with data, quantify, and inform rather than impress.",
+      "keyIdeas": [
+        "Layout: strong title page/TOC, uniform margins/spacing, consistent heading fonts (e.g. 16–18 chapter, 14 section, 12 subsection), quality print, numbered figures/tables, precise citations.",
+        "Readers are short on time, busy, and often unfamiliar with research jargon.",
+        "Prefer short sentences, active voice, logical presentation; avoid exaggeration and vague passives."
+      ],
+      "detail": [
+        "A well-formed physical layout creates a favourable first impression, shows organisational structure, and lets readers choose which section to read first.",
+        "Style rules from the extract: simplify to essentials; justify every statement with facts/data; quantify (say 50% or one in three, not 'large'/'small'); be precise; inform not impress; use short sentences and spare adjectives; avoid passive voice that creates vagueness; stay logical and systematic."
+      ],
+      "sourceQuote": "Justify. Make no statement that is not based on facts and data.",
+      "related": [
+        "5.1.5",
+        "5.1.7"
+      ]
+    },
+    "5.1.7": {
+      "id": "5.1.7",
+      "title": "Illustrations and Tables",
+      "module": 5,
+      "section": "5.1.7",
+      "pages": [
+        137,
+        138,
+        139
+      ],
+      "quick": "Tables/figures need consistent titles/captions, legible text (≥2 mm), sequential numbering, and consistent placement; copyrighted material needs replacement notices.",
+      "keyIdeas": [
+        "Number sequentially through the thesis or as chapter.item (Table 1.1); never mix styles (Table 1 with Figure 1.3).",
+        "Placement options: after first mention, end of chapter, or before bibliography — pick one and stay consistent.",
+        "After reduction, lettering must remain readable; long reports use separate Lists of Figures/Tables."
+      ],
+      "detail": [
+        "Designate items as Table/Figure (etc.) with title/caption included in the relevant list; replicate headings on continued multi-page tables and break at sensible subheading boundaries.",
+        "If a caption cannot fit on the same page as the visual, put it on a separate page. If visuals are grouped at the end, TOC must point to that location.",
+        "For excluded copyrighted visuals: assert removal due to copyright, describe the material (with link if available), and give the full original reference."
+      ],
+      "sourceQuote": "Regardless of the chosen technique, the numbering style must be consistent for all numbered items.",
+      "related": [
+        "5.1.6",
+        "5.1.8"
+      ]
+    },
+    "5.1.8": {
+      "id": "5.1.8",
+      "title": "Citing and Referencing Sources",
+      "module": 5,
+      "section": "5.1.8",
+      "pages": [
+        139,
+        140
+      ],
+      "quick": "Numerical footnotes map to a consecutive reference list; bibliography entries follow Harvard-like formatting; use Op. cit., Loc. cit., and Ibid. for repeats.",
+      "keyIdeas": [
+        "List only publications actually referenced; title the section 'References' rather than 'Bibliography' when that is the case.",
+        "Op. cit. = work previously cited (author, date, page as needed); Loc. cit. = same page previously cited; Ibid. = same work as immediately before.",
+        "Abbreviations avoid full duplication when the same source is cited repeatedly."
+      ],
+      "detail": [
+        "Footnote numbers in text (e.g. after 'Recent studies suggest that…') correspond directly to the reference list ordered as cited.",
+        "Individual citation formatting inside the bibliography mirrors the Harvard method described in the extract."
+      ],
+      "sourceQuote": "The section should be titled ‘References’ instead of ‘Bibliography’, as indicated below.",
+      "compare": "Footnotes (5.1.9) identify quoted materials and add supplementary notes; the reference list records the cited works.",
+      "related": [
+        "5.1.9",
+        "5.3.4"
+      ]
+    },
+    "5.1.9": {
+      "id": "5.1.9",
+      "title": "Footnotes",
+      "module": 5,
+      "section": "5.1.9",
+      "pages": [
+        140
+      ],
+      "quick": "Footnotes identify quoted materials and add supplementary value (cross-refs, authorities, acknowledgements, elucidation); they are not a display of scholarship.",
+      "keyIdeas": [
+        "Two purposes: correct identification of quoted materials; supplementary value to the main body.",
+        "Enable cross-references, citation of authorities/sources, acknowledgement, and explanation of a point of view.",
+        "Recent trend is to avoid footnotes; they are neither an end nor a means of displaying scholarship."
+      ],
+      "detail": [
+        "Researchers insert footnotes at appropriate places. A numbered cue such as after 'Recent research indicates that…' points to the references.",
+        "The extract cautions against treating footnotes as proof of scholarly display."
+      ],
+      "sourceQuote": "The footnotes provide supplementary value to the main part(body) of the text.",
+      "related": [
+        "5.1.8"
+      ]
+    },
+    "5.2.1": {
+      "id": "5.2.1",
+      "title": "Oral Presentation",
+      "module": 5,
+      "section": "5.2.1",
+      "pages": [
+        140,
+        141
+      ],
+      "quick": "Oral presentation is harder than written reporting because of live audience interaction; plan content, delivery, volume, visuals, and Q&A.",
+      "keyIdeas": [
+        "Opening states project nature, how it arose, and what was attempted; conclusions backed by findings; recommendations supported by conclusions.",
+        "Prefer expanding from concise notes (extempore) over memorisation or monotonous manuscript reading.",
+        "Use simple language, strict time management, charts/graphs, circulated vital figures, audience knowledge, and purpose (decision vs information)."
+      ],
+      "detail": [
+        "Any delay can leave a negative impression and undermine presenter confidence. Communication decisions — what/how/how much to say — and facing audience questions require substantial preparation.",
+        "Method of presentation: use visuals when needed; tabular form helps statistical information. Logical sequencing is required."
+      ],
+      "sourceQuote": "It’s more difficult to prepare as compared to the written report.",
+      "related": [
+        "5.1.4",
+        "5.2.2",
+        "5.2.3"
+      ]
+    },
+    "5.2.2": {
+      "id": "5.2.2",
+      "title": "Making Presentation",
+      "module": 5,
+      "section": "5.2.2",
+      "pages": [
+        141,
+        142,
+        143
+      ],
+      "quick": "Golden rule: human attention is limited — one idea per slide, clear intro and last-slide conclusions, rehearse aloud (≥5 times for important talks), never go overtime.",
+      "keyIdeas": [
+        "Organisation: strategic (non-technical) introduction; mention companion paper for details; periodic outline slides; sequential unifying thread; less is better.",
+        "Mechanics: PowerPoint preferred (avoid LaTeX except formulas); humour only if natural; listen carefully to questions asked.",
+        "Text: short titles, little text, no small fonts, few formulas/code; Illustrations: prefer pictures, restrained animation, strong vs pastel colour roles."
+      ],
+      "detail": [
+        "Do not put slides after the conclusion slide — that weakens impact. Do not expect the audience to remember colour-coding across slides; restate if needed.",
+        "Give a high-level overview before details so listeners can relate details to the big picture and save attention for later important parts.",
+        "Spell-check: a spelling mistake is an 'attention magnet'. Don't explain the completely obvious; don't treat the audience as impaired."
+      ],
+      "sourceQuote": "Human attention is extremely limited. Don’t cram an excessive amount of information, either in each slide, or within the whole talk.",
+      "related": [
+        "5.2.1",
+        "5.2.3"
+      ]
+    },
+    "5.2.3": {
+      "id": "5.2.3",
+      "title": "Use of Visual Aids",
+      "module": 5,
+      "section": "5.2.3",
+      "pages": [
+        143,
+        144,
+        145,
+        146
+      ],
+      "quick": "Visual aids (graphs, photos, video, slides, whiteboard, handouts, flip chart, posters) summarise, clarify, emphasise, engage — one key point per aid; ensure the talk still works without them.",
+      "keyIdeas": [
+        "Purposes: summarise/reduce spoken words, clarify with examples, emphasise, make memorable, enhance credibility, engage, ease understanding.",
+        "During delivery: visible to all, don't read from the aid, explain immediately when shown, hide when unused.",
+        "PowerPoint tips include ≥24pt font, simple background, purposeful animation only, avoid red/green text, one key point per slide."
+      ],
+      "detail": [
+        "Preparation: support the spoken message, avoid clutter, keep style consistent, use graphs/charts for data, moderate use for essential points only.",
+        "Handouts: partially completed sheets force listening; giving full handouts too early causes reading instead of listening. Whiteboards suit process diagrams and persistent key definitions. Flip charts suit small audiences/brainstorming. Posters are portable but can be costly if complex. Videos: relevant, as short as needed, announce duration."
+      ],
+      "sourceQuote": "One message per visual aid, for example, on a slide there should only be one key point.",
+      "related": [
+        "5.2.1",
+        "5.2.2"
+      ]
+    },
+    "5.2.4": {
+      "id": "5.2.4",
+      "title": "Importance of Effective Communication",
+      "module": 5,
+      "section": "5.2.4",
+      "pages": [
+        146,
+        147
+      ],
+      "quick": "Effective communication (attentive listening, empathy, open-mindedness, helpful feedback, confident nonverbal cues) builds trust, prevents/resolves conflict, clarifies direction, and boosts engagement and productivity.",
+      "keyIdeas": [
+        "Benefits listed: building trust; preventing/resolving problems; providing clarity and direction; better relationships; increases engagement; improves productivity; promotes team building.",
+        "Cited engagement study note: only 15% of adult employees engaged with employers — communication can raise engagement/satisfaction.",
+        "Clarity includes constructive correction and clear roles to eliminate confusion."
+      ],
+      "detail": [
+        "Leaders who communicate well see better productivity and improved relationships at work and in personal life.",
+        "Conflict resolution depends on remaining calm, ensuring all parties are heard, and finding an ideal solution for everyone involved.",
+        "When roles and expectations are clear, people focus on work rather than workplace issues; conflicts resolve faster and distractions shrink."
+      ],
+      "sourceQuote": "Effective communication involves knowing how to listen attentively. It’s the ability to offer empathy, open-mindedness, and helpful feedback.",
+      "related": [
+        "5.2.1",
+        "5.2.5"
+      ]
+    },
+    "5.2.5": {
+      "id": "5.2.5",
+      "title": "Convention and Strategies of Authentication",
+      "module": 5,
+      "section": "5.2.5",
+      "pages": [
+        147,
+        148
+      ],
+      "quick": "Authenticate reports by interpreting tables (not dumping all cell numbers), using qualitative quotes with scientific value, and avoiding careless/outdated/unsupported content.",
+      "keyIdeas": [
+        "Pitfall: endless description without interpretation — tables need conclusions.",
+        "Qualitative quotes illustrate findings and let readers draw conclusions (avoid biased selection).",
+        "Avoid: inaccurate/conflicting data; outdated/irrelevant data; unseparated facts vs opinions; unsupported conclusions; careless proofreading; appearance over content."
+      ],
+      "detail": [
+        "Coding open opinions as mere counts without interpretation is called a serious maltreatment of data that needs correction — qualitative material can illustrate reasons and attitudes.",
+        "Authentication here means making the report trustworthy: interpret evidence, separate fact from opinion, and support proposals."
+      ],
+      "sourceQuote": "Tables need conclusions, not detailed presentation of all numbers or percentages within the cells which readers can see for themselves.",
+      "related": [
+        "5.1.6",
+        "5.2.4"
+      ]
+    },
+    "5.3.1": {
+      "id": "5.3.1",
+      "title": "Preparing Research Papers for Journals",
+      "module": 5,
+      "section": "5.3.1",
+      "pages": [
+        148,
+        149,
+        150,
+        151
+      ],
+      "quick": "Journal preparation is a multi-step pipeline from authorship planning and early writing through peer review, proofs, and celebration of publication as completing the experiment.",
+      "keyIdeas": [
+        "Three peer-reviewed formats: full-length (IMRaD), short/brief (~≤3500 words, ≤2 tables/figures), rapid communications for 'hot' findings.",
+        "Do not compromise on peer review when selecting a journal; consider language, focus, indexing, availability, reputation/IF, format, figures, time-to-print, charges.",
+        "Build figures/tables before writing; revise in order: major alterations → polish style → format; answer every reviewer comment on resubmission."
+      ],
+      "detail": [
+        "Start writing before experiments finish — writing evokes new ideas for controls/experiments. Publish when findings form a complete, significant contribution.",
+        "Stock Introduction/Methods/Results/Discussion folders; outline as a roadmap; assign co-author sections but edit to one voice.",
+        "Robert Day: a spectacular experiment is not complete until results are published."
+      ],
+      "sourceQuote": "The goal of scientific research is publication…. A particular experiment, no matter how spectacular the results, is not complete until the results are published.",
+      "related": [
+        "5.3.2",
+        "5.3.3"
+      ]
+    },
+    "5.3.2": {
+      "id": "5.3.2",
+      "title": "Design of Paper Using Template",
+      "module": 5,
+      "section": "5.3.2",
+      "pages": [
+        151,
+        152
+      ],
+      "quick": "Use a hierarchical outline template: Introduction (background + thesis), sequenced main points with sub-points and supported examples, critical-thinking section, then conclusion affirming the thesis.",
+      "keyIdeas": [
+        "No fixed letter/number count — structure follows how many points the paper length requires.",
+        "Never start a sentence with an unintroduced quotation.",
+        "Critical thinking section: reactions to sources, insights, synthesise threads; conclusion affirms the thesis is proven."
+      ],
+      "detail": [
+        "First main point expands via sub-points, each with corresponding examples/details (insight or critic paraphrase/quote) plus supporting comments; continue alternating numerals and letters for further main points.",
+        "The template keeps the argument operationally organised rather than free-form."
+      ],
+      "sourceQuote": "Notice that no correct number of letters or numbers exists; the sole determining factor is the number of points we need to create for the specified length of our paper.",
+      "related": [
+        "5.3.1"
+      ]
+    },
+    "5.3.3": {
+      "id": "5.3.3",
+      "title": "Calculation of Impact Factor of a Journal",
+      "module": 5,
+      "section": "5.3.3",
+      "pages": [
+        152,
+        153
+      ],
+      "quick": "Journal impact factor (IF) for a year = citations in that year to items published in the prior two years, divided by the count of citable items in those two years.",
+      "keyIdeas": [
+        "IF measures how often the average article in a journal is cited in a given year — used to rank importance within a category.",
+        "Example form: 2010 IF = A/B where A = 2010 cites to 2008–2009 articles; B = citable items published 2008–2009.",
+        "Rule of thumb in extract: IF ≥10 excellent, ~3 good, average <1 — compare journals within the same category."
+      ],
+      "detail": [
+        "Calculation is based on a two-year period: divide times articles were cited by the number of citable articles.",
+        "Cross-category IF comparisons are less meaningful than within-field comparisons."
+      ],
+      "sourceQuote": "A/B = 2010 impact factor",
+      "example": "If indexed journals cite 2008–2009 articles 500 times in 2010 and there were 100 citable items in 2008–2009, IF ≈ 5.0.",
+      "related": [
+        "5.3.1",
+        "5.3.4"
+      ]
+    },
+    "5.3.4": {
+      "id": "5.3.4",
+      "title": "Citation Index",
+      "module": 5,
+      "section": "5.3.4",
+      "pages": [
+        153,
+        154
+      ],
+      "quick": "A citation index is a bibliographic database of citations between publications, showing which later documents cite earlier ones; citation count is how often an article is cited.",
+      "keyIdeas": [
+        "Major services: ISI/Thomson Reuters Web of Science (SCI, SSCI, A&HCI, etc.) and Elsevier Scopus.",
+        "Other databases: CiteSeer, RePEc, Google Scholar, EBSCOhost, Compendex.",
+        "Indian Citation Index (ICI) covers ~1000 Indian scholarly journals across disciplines and produces ISCI, ISSHCI, IJCR, ISTA, DOIJ."
+      ],
+      "detail": [
+        "A scientifically written article lists references serially; each reference is a citation. Citation indexes let users establish later→earlier citation links.",
+        "Scopus is described as among the largest abstract/citation databases of peer-reviewed literature with tools to track citations."
+      ],
+      "sourceQuote": "A citation index could be a kind of bibliographic database, an index of citations between publications, allowing the user to simply establish which later documents cite which earlier documents",
+      "related": [
+        "5.3.3",
+        "5.1.8"
+      ]
+    },
+    "5.3.5": {
+      "id": "5.3.5",
+      "title": "ISBN and ISSN",
+      "module": 5,
+      "section": "5.3.5",
+      "pages": [
+        154,
+        155
+      ],
+      "quick": "ISBN identifies individual books/volumes (now 13-digit; mandatory where applicable); ISSN identifies serials/series (8-digit; optional) and stays the same across issues of a series.",
+      "keyIdeas": [
+        "ISBN = International Standard Book Number; ISSN = International Standard Serial Number.",
+        "ISBN identifies publisher context for a monograph; ISSN does not identify the publisher the same way.",
+        "ISSN drafted 1971; assigned by National Centres, coordinated by ISSN International Centre in Paris."
+      ],
+      "detail": [
+        "History: Gordon Foster's nine-digit code → ISO ten-digit → after 2007, 13-digit ISBN. Different formats (hardback, PDF, EPUB) get different ISBNs.",
+        "When a series changes, another ISSN is allotted; all volumes of one series share the same ISSN."
+      ],
+      "sourceQuote": "“ISBN” stands for “International Standard Book Number” whereas “ISSN” is “International Standard Serial Number.”",
+      "compare": "ISBN differs per volume/issue; ISSN is identical across volumes of one series.",
+      "example": "ISSN 0027-9633 (online); ISBN 978-951-45-9693-3 (hardback).",
+      "related": [
+        "5.3.1"
+      ]
+    },
+    "5.4.1": {
+      "id": "5.4.1",
+      "title": "Identifying and Defining Problem",
+      "module": 5,
+      "section": "5.4.1",
+      "pages": [
+        159,
+        160
+      ],
+      "quick": "Selecting and properly defining the research problem is the first step; a research problem is a situation needing description, explanation, or prediction of a solution.",
+      "keyIdeas": [
+        "Like a doctor, examine all symptoms before diagnosing the problem correctly.",
+        "Components: a person/group with difficulty; objectives; alternative means; doubt about relative efficiency of alternatives; an environment of the difficulty.",
+        "Problem selection often hard not from scarcity of topics but from finding socially relevant work without duplicating earlier studies; may identify a knowledge gap."
+      ],
+      "detail": [
+        "Identifying a research problem refers to difficulty in a theoretical or practical situation seeking a solution — the focus or reason for the research.",
+        "Defining the problem drives the scientific process and underpins method and experimental design."
+      ],
+      "sourceQuote": "Research problem: A situation or circumstances that require a solution to be described, explained or predicted.",
+      "related": [
+        "5.4.2",
+        "5.4.3"
+      ]
+    },
+    "5.4.2": {
+      "id": "5.4.2",
+      "title": "Research Problem Aspects and Considerations",
+      "module": 5,
+      "section": "5.4.2",
+      "pages": [
+        160,
+        161
+      ],
+      "quick": "Define a problem by stating it within clear study bounds: statement, nature/origin, literature survey, deduction from theory, then rephrase into an operational working proposition.",
+      "keyIdeas": [
+        "Aspects: (i) statement of the problem (ii) understanding nature/origin (iii) surveying available literature (iv) deduction from theory (v) rephrasing into a working proposition.",
+        "Broad general questions are usually unsuitable for testing until narrowed operationally.",
+        "Considerations: identify concepts/terms in the topic; review related literature (incl. multidisciplinary databases); use additional sources to strengthen arguments."
+      ],
+      "detail": [
+        "Literature survey reveals available vs required materials, theory gaps, inconsistent theories, or findings that break theoretical expectations — enabling new strides from existing premises.",
+        "Related studies flag likely difficulties and analytical shortcomings and may suggest new approaches. Do not define the problem hurriedly.",
+        "A research guide can help consider problems carefully."
+      ],
+      "sourceQuote": "Defining a research problem properly and clearly is a crucial part of a research study and must in no case be accomplished hurriedly.",
+      "related": [
+        "5.4.1",
+        "5.4.3"
+      ]
+    },
+    "5.4.3": {
+      "id": "5.4.3",
+      "title": "Research Plan",
+      "module": 5,
+      "section": "5.4.3",
+      "pages": [
+        158,
+        159,
+        162,
+        163
+      ],
+      "quick": "A research plan is the blueprint for resolving the defined problem: design, collect, interpret, and report — alongside proposal planning (objectives, scope, feasibility, work plan, budget, risk, stakeholders, metrics).",
+      "keyIdeas": [
+        "Locate/define issues with purpose, background, needed information, and decision use.",
+        "Design steps include secondary data, qualitative analysis, quantitative methods, data definition, measurement/scaling, questionnaire, sampling, analysis strategy.",
+        "Collect via interviews, observation, questionnaires, focus groups, documents; interpret by ordering findings then drafting conclusions; report via formal paper, article, PowerPoint, A/V, spreadsheet — plus oral presentation with tables/figures/graphs."
+      ],
+      "detail": [
+        "Proposal planning also covers defining objectives, identifying scope (prevent creep), feasibility (technical/financial/operational), work plan/milestones/roles, budgeting, risk management, stakeholder engagement, evaluation metrics, documentation, and review/revision.",
+        "Field collection examples: in-home/mall/CAPI, telephone/CATI, traditional mail and mail panels."
+      ],
+      "sourceQuote": "A research plan or approach is a blueprint or framework for carrying out a marketing research project.",
+      "related": [
+        "5.4.1",
+        "5.4.2",
+        "5.1.5"
+      ]
+    }
+  }
+}

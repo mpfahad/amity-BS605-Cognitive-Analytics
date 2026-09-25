@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CSIT745 Explorer — Research Methodology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="app.css" />
+<script>window.AMITY_SUBJECT = "csit745";</script>
+<script src="../../../shared/config.js"></script>
+<script src="../../../shared/progress.js"></script>
+<script src="../../../shared/sync-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <nav class="site-nav" aria-label="V2">
+    <a href="../index.html" class="home">Home</a>
+    <a href="index.html" class="here">Explorer</a>
+    <a href="practice.html">Practice</a>
+  </nav>
+  <p style="margin:0 0 0.75rem;font-size:0.88rem"><a href="../index.html">← CSIT745 home</a> · <a href="../../index.html">All subjects</a></p>
+
+  <header>
+    <div class="kicker">CSIT745 · v2 Explorer</div>
+    <h1>Subject Explorer</h1>
+    <p class="lede">Browse the Research Methodology map. Depth modes reveal more detail — all grounded in the study PDF.</p>
+  </header>
+
+  <div id="amity-sync-root" style="margin-top:0.75rem"></div>
+
+  <div class="explorer">
+    <aside class="panel tree-pane">
+      <h2>Knowledge tree</h2>
+      <div id="treeRoot" class="tree"><p class="empty-hint">Loading…</p></div>
+    </aside>
+    <main class="panel panel-pane" id="conceptPanel">
+      <p class="empty-hint">Select a topic on the left to begin.</p>
+    </main>
+  </div>
+</div>
+<script>
+const DEPTHS = ["quick", "understand", "deep"];
+let TREE = null;
+let CONCEPTS = null;
+let flatIds = [];
+let currentId = null;
+let depth = "understand";
+let visited = {};
+
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  })[c]);
+}
+
+function collectLeaves(nodes, out) {
+  (nodes || []).forEach((n) => {
+    if (n.conceptId) out.push(n.conceptId);
+    if (n.children) collectLeaves(n.children, out);
+  });
+}
+
+function renderTreeNode(node, depthLevel) {
+  if (node.conceptId && !node.children?.length) {
+    return `<button type="button" class="leaf" data-id="${esc(node.conceptId)}">${esc(node.title)}</button>`;
+  }
+  const kids = (node.children || []).map((c) => renderTreeNode(c, depthLevel + 1)).join("");
+  if (node.conceptId) {
+    return `<details open>
+      <summary>${esc(node.title)}</summary>
+      <button type="button" class="leaf" data-id="${esc(node.conceptId)}">Overview · ${esc(node.title)}</button>
+      ${kids}
+    </details>`;
+  }
+  return `<details open>
+    <summary>${esc(node.title)}</summary>
+    ${kids}
+  </details>`;
+}
+
+function paintTree() {
+  const root = document.getElementById("treeRoot");
+  if (!TREE?.modules?.length) {
+    root.innerHTML = `<p class="empty-hint">No topics yet.</p>`;
+    return;
+  }
+  root.innerHTML = TREE.modules.map((m) => {
+    const body = (m.children || []).map((c) => renderTreeNode(c, 0)).join("");
+    return `<div class="mod-label">${esc(m.title)}</div>${body}`;
+  }).join("");
+  root.querySelectorAll(".leaf").forEach((btn) => {
+    btn.addEventListener("click", () => selectConcept(btn.dataset.id));
+  });
+}
+
+function relatedLinks(ids) {
+  return (ids || []).map((id) => {
+    const c = CONCEPTS[id];
+    if (!c) return "";
+    return `<a href="#${esc(id)}" data-rel="${esc(id)}">${esc(c.title)}</a>`;
+  }).join("");
+}
+
+function renderPanel(id) {
+  const el = document.getElementById("conceptPanel");
+  const c = CONCEPTS[id];
+  if (!c) {
+    el.innerHTML = `<p class="empty-hint">Topic not found.</p>`;
+    return;
+  }
+  const idx = flatIds.indexOf(id);
+  const prev = idx > 0 ? flatIds[idx - 1] : null;
+  const next = idx >= 0 && idx < flatIds.length - 1 ? flatIds[idx + 1] : null;
+  const pages = (c.pages || []).join(", ");
+  const showUnderstand = depth !== "quick";
+  const showDeep = depth === "deep";
+
+  el.innerHTML = `
+    <div class="kicker">Module ${esc(c.module)} · ${esc(c.id)}</div>
+    <h2 class="title">${esc(c.title)}</h2>
+    <p class="source-line">Source: PDF page${(c.pages||[]).length===1?"":"s"} <code>${esc(pages || "—")}</code>${c.section ? ` · § ${esc(c.section)}` : ""}</p>
+    <div class="depth-row" role="tablist" aria-label="Depth">
+      ${DEPTHS.map((d) => `<button type="button" class="chip ${d===depth?"active":""}" data-depth="${d}">${d === "quick" ? "Quick" : d === "understand" ? "Understand" : "Deep dive"}</button>`).join("")}
+    </div>
+    <p class="quick-def">${esc(c.quick)}</p>
+    ${showUnderstand && (c.keyIdeas||[]).length ? `<ul class="key-ideas">${c.keyIdeas.map((k)=>`<li>${esc(k)}</li>`).join("")}</ul>` : ""}
+    ${showDeep && c.detail ? `<div class="detail-block">${(Array.isArray(c.detail)?c.detail:[c.detail]).map((p)=>`<p>${esc(p)}</p>`).join("")}</div>` : ""}
+    ${showDeep && c.sourceQuote ? `<blockquote class="quote">“${esc(c.sourceQuote)}”</blockquote>` : ""}
+    ${showDeep && c.compare ? `<div class="compare-box"><h3>Compare</h3><p>${esc(c.compare)}</p></div>` : ""}
+    ${showDeep && c.example ? `<div class="example-box"><h3>Example</h3><p>${esc(c.example)}</p></div>` : ""}
+    ${showUnderstand && (c.related||[]).length ? `<div class="related"><h3>Related</h3>${relatedLinks(c.related)}</div>` : ""}
+    <div class="nav-concepts">
+      <button type="button" class="btn ghost" id="btnPrev" ${prev?"":"disabled"}>← Previous</button>
+      <a class="btn" href="practice.html">Practice MCQs</a>
+      <button type="button" class="btn ghost" id="btnNext" ${next?"":"disabled"}>Next →</button>
+    </div>
+  `;
+  el.querySelectorAll("[data-depth]").forEach((b) => b.addEventListener("click", () => {
+    depth = b.dataset.depth;
+    renderPanel(id);
+    persist();
+  }));
+  el.querySelectorAll("[data-rel]").forEach((a) => a.addEventListener("click", (e) => {
+    e.preventDefault();
+    selectConcept(a.dataset.rel);
+  }));
+  document.getElementById("btnPrev")?.addEventListener("click", () => prev && selectConcept(prev));
+  document.getElementById("btnNext")?.addEventListener("click", () => next && selectConcept(next));
+  document.querySelectorAll(".tree .leaf").forEach((b) => b.classList.toggle("active", b.dataset.id === id));
+}
+
+function persist() {
+  const P = window.AmityProgress || window.BS605Progress;
+  if (!P?.saveSection) return;
+  P.saveSection("v2Explorer", { visited, lastId: currentId, depth }, "csit745");
+}
+
+function selectConcept(id) {
+  if (!CONCEPTS[id]) return;
+  currentId = id;
+  visited[id] = (visited[id] || 0) + 1;
+  location.hash = id;
+  renderPanel(id);
+  persist();
+}
+
+async function loadData() {
+  const [tree, concepts] = await Promise.all([
+    fetch("data/knowledge_tree.json").then((r) => r.json()),
+    fetch("data/concepts.json").then((r) => r.json()),
+  ]);
+  TREE = tree;
+  CONCEPTS = concepts.concepts || concepts;
+  flatIds = [];
+  (TREE.modules || []).forEach((m) => collectLeaves(m.children || [], flatIds));
+  // also include overview conceptIds on parents
+  function walk(n) {
+    if (n.conceptId && !flatIds.includes(n.conceptId)) flatIds.push(n.conceptId);
+    (n.children || []).forEach(walk);
+  }
+  (TREE.modules || []).forEach((m) => (m.children || []).forEach(walk));
+  paintTree();
+  const hash = decodeURIComponent((location.hash || "").replace(/^#/, ""));
+  if (hash && CONCEPTS[hash]) selectConcept(hash);
+  else if (currentId && CONCEPTS[currentId]) selectConcept(currentId);
+}
+
+function bootSync() {
+  const P = window.AmityProgress || window.BS605Progress;
+  const UI = window.AmitySyncUI || window.BS605SyncUI;
+  function apply(sub) {
+    const ex = (sub && sub.v2Explorer) || {};
+    visited = ex.visited || {};
+    if (ex.depth && DEPTHS.includes(ex.depth)) depth = ex.depth;
+    if (ex.lastId) currentId = ex.lastId;
+  }
+  if (UI) {
+    UI.mount(document.getElementById("amity-sync-root"), {
+      subjectLabel: "CSIT745",
+      onLoaded: apply,
+      onReady: (sub) => {
+        const local = P?.readLocalCache?.();
+        apply(sub || P?.getSubjectPayload?.(local?.payload, "csit745") || null);
+      }
+    });
+  }
+}
+
+bootSync();
+loadData().catch((err) => {
+  document.getElementById("treeRoot").innerHTML = `<p class="empty-hint">Failed to load data: ${esc(err.message)}</p>`;
+});
+window.addEventListener("hashchange", () => {
+  const hash = decodeURIComponent((location.hash || "").replace(/^#/, ""));
+  if (hash && CONCEPTS?.[hash] && hash !== currentId) selectConcept(hash);
+});
+</script>
+</body>
+</html>

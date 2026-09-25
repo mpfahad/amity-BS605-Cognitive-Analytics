@@ -1,0 +1,3873 @@
+{
+  "questions": [
+    {
+      "id": "m1-1.1.1-q1",
+      "conceptId": "1.1.1",
+      "module": 1,
+      "stem": "According to Redman & Mory, research is best described as which of the following?",
+      "options": [
+        "A systematized effort to gain new knowledge",
+        "Any informal curiosity about everyday events",
+        "Only laboratory experimentation with animals",
+        "Writing opinions without collecting data"
+      ],
+      "correct": 0,
+      "explanation": "Redman & Mory define research as a “Systematized effort to gain new knowledge,” used in a technical academic sense.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.1.1-q2",
+      "conceptId": "1.1.1",
+      "module": 1,
+      "stem": "How do specific objectives relate to general objectives in a research study?",
+      "options": [
+        "Specific objectives are broader than general objectives",
+        "General objectives are divided into smaller, logically interconnected specific goals",
+        "Specific and general objectives are unrelated",
+        "Only specific objectives may mention the study’s goal"
+      ],
+      "correct": 1,
+      "explanation": "The material states specific objectives outline the primary aim and are general objectives divided into smaller, logically interconnected goals; general objectives provide the basis for specific goals.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.1.1-q3",
+      "conceptId": "1.1.1",
+      "module": 1,
+      "stem": "Slesinger & Stephenson (Encyclopaedia of Social Sciences) define research as the manipulation of things, concepts or symbols for what purpose?",
+      "options": [
+        "Entertaining readers with anecdotes",
+        "Generalizing to extend, correct or verify knowledge for theory or practice of an art",
+        "Avoiding any link between theory and practice",
+        "Replacing all prior knowledge without verification"
+      ],
+      "correct": 1,
+      "explanation": "Their definition: manipulation “for the purpose of generalizing to extend, correct or verify knowledge, whether that knowledge aids in the construction of theory or in the practice of an art.”",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.1.2-q1",
+      "conceptId": "1.1.2",
+      "module": 1,
+      "stem": "Which characteristic emphasises that earlier study results should be verifiable in new locations, environments, people, or times?",
+      "options": [
+        "The study should be condensed",
+        "The findings should be repeatable",
+        "Formats helpful only to administrators",
+        "Spending as much money as possible"
+      ],
+      "correct": 1,
+      "explanation": "The module states findings should be repeatable: results from earlier studies have to be verifiable in new locations, environments, with fresh people, or at a different time.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.1.2-q2",
+      "conceptId": "1.1.2",
+      "module": 1,
+      "stem": "“The investigation should be methodical” means primarily that research should:",
+      "options": [
+        "Follow a structured procedure when conducting research",
+        "Avoid any planned steps",
+        "Rely only on intuition without procedure",
+        "Exclude multidisciplinary approaches"
+      ],
+      "correct": 0,
+      "explanation": "Methodical investigation “emphasises the importance of following a structured procedure when conducting research.”",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.1.2-q3",
+      "conceptId": "1.1.2",
+      "module": 1,
+      "stem": "Action-oriented research, as described in the characteristics list, should aim to:",
+      "options": [
+        "Keep findings unpublished",
+        "Find a solution that allows findings to be implemented",
+        "Avoid stakeholder participation",
+        "Ignore timeframes and budgets"
+      ],
+      "correct": 1,
+      "explanation": "Action-oriented research “should aim to find a solution that will allow its findings to be implemented.”",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.1.3-q1",
+      "conceptId": "1.1.3",
+      "module": 1,
+      "stem": "What are research methods, according to the module?",
+      "options": [
+        "Only the final published report of a study",
+        "The various procedures, schemes, steps, and algorithms used in research",
+        "A philosophy unrelated to collecting data",
+        "Exclusive reliance on unverified reasoning"
+      ],
+      "correct": 1,
+      "explanation": "Research methods are “the various procedures, schemes, steps, and algorithms used in research” during a study.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.1.3-q2",
+      "conceptId": "1.1.3",
+      "module": 1,
+      "stem": "Research methodology is described as:",
+      "options": [
+        "A single statistical formula",
+        "A systematic approach to solving a problem; the science of how research should be conducted",
+        "Only laboratory glassware selection",
+        "Identical in meaning to research methods"
+      ],
+      "correct": 1,
+      "explanation": "Methodology is “a systematic approach to solving a problem” and “a science that studies how research should be conducted,” providing a research work plan.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.1.3-q3",
+      "conceptId": "1.1.3",
+      "module": 1,
+      "stem": "Which statement about research methods is supported by the text?",
+      "options": [
+        "They accept explanations based solely on reasoning without facts",
+        "They are primarily planned, scientific, and value-agnostic",
+        "They never involve statistical approaches",
+        "They cannot be used to collect samples or data"
+      ],
+      "correct": 1,
+      "explanation": "Methods are “primarily planned, scientific, and value-agnostic,” and business/scientific methods demand explanations based on facts, measurements, and observations rather than solely reasoning.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.2.1-q1",
+      "conceptId": "1.2.1",
+      "module": 1,
+      "stem": "Which sequence matches the six research-process steps listed in the module?",
+      "options": [
+        "Report → Data collection → Problem definition → Analysis → Design → Approach",
+        "Problem Definition → Approach → Research Design → Field Work/Data Collection → Data Preparation and Analysis → Report Preparation and Presentation",
+        "Budget → Title → Interview → Hypothesis only",
+        "Literature review → Publication → Sampling only"
+      ],
+      "correct": 1,
+      "explanation": "The listed steps are: Problem Definition; Development of an Approach; Research Design Formulation; Field Work or Data Collection; Data Preparation and Analysis; Report Preparation and Presentation.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.2.1-q2",
+      "conceptId": "1.2.1",
+      "module": 1,
+      "stem": "A research criterion requires that conclusions should be drawn only when:",
+      "options": [
+        "They sound persuasive regardless of data",
+        "They are bolstered by study findings and facts offer a sufficient basis",
+        "The researcher’s personal preference supports them",
+        "No analysis of data has been attempted"
+      ],
+      "correct": 1,
+      "explanation": "“Only conclusions that are bolstered by the study findings and for which the facts offer a sufficient basis should be drawn.”",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.2.1-q3",
+      "conceptId": "1.2.1",
+      "module": 1,
+      "stem": "Why should marketing research be carried out impartially?",
+      "options": [
+        "So personal or political prejudices of researcher or management do not distort reliable information",
+        "Because philosophy never influences findings",
+        "Because time-scheduling is unnecessary",
+        "Because process description is optional"
+      ],
+      "correct": 0,
+      "explanation": "The study should be impartial and devoid of personal or political prejudices of the researcher or management, even though research philosophy always has some impact.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.2.2-q1",
+      "conceptId": "1.2.2",
+      "module": 1,
+      "stem": "A deductive approach, as defined in the module, begins by:",
+      "options": [
+        "Collecting observations with no theory in mind and never testing",
+        "Developing a hypothesis based on existing theory, then preparing a strategy to test it",
+        "Ignoring all prior theory",
+        "Only using open-ended interviews with 6–10 people"
+      ],
+      "correct": 1,
+      "explanation": "“Deductive approach starts with developing a hypothesis based on existing theory, and then prepares a research strategy for testing the hypothesis.”",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.2.2-q2",
+      "conceptId": "1.2.2",
+      "module": 1,
+      "stem": "Abductive reasoning is presented as a third alternative mainly because it:",
+      "options": [
+        "Rejects all logical inference",
+        "Addresses weaknesses of deductive (theory selection for hypotheses) and inductive (data alone may not build theory)",
+        "Requires abandoning pragmatism",
+        "Forbids explaining surprising facts"
+      ],
+      "correct": 1,
+      "explanation": "Abductive reasoning addresses deductive’s issue of selecting theory to test via hypotheses and inductive’s limit that no amount of empirical data will necessarily enable theory-building, via a pragmatist perspective.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.2.2-q3",
+      "conceptId": "1.2.2",
+      "module": 1,
+      "stem": "Which feature distinguishes the module’s description of qualitative research?",
+      "options": [
+        "Exclusive use of close-ended polls on very large populations",
+        "Non-statistical inquiry for in-depth understanding in natural settings, often with small samples (about 6–10) and open-ended questions",
+        "Mandatory random assignment of thousands of subjects",
+        "Focus only on numerical averages"
+      ],
+      "correct": 1,
+      "explanation": "Qualitative research is a non-statistical process for in-depth understanding in natural settings, usually with sample size between 6 and 10, using open-ended questions.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.2.3-q1",
+      "conceptId": "1.2.3",
+      "module": 1,
+      "stem": "A research proposal is designed primarily to:",
+      "options": [
+        "Replace the need for any methodology section",
+        "Persuade others the project is important and that the team can finish it given schedule and expertise",
+        "Avoid stating what, why, and how",
+        "Omit budget and team details always"
+      ],
+      "correct": 1,
+      "explanation": "“A research proposal is designed to persuade others that we have an important research project and that we are capable of finishing it given our work schedule and level of expertise.”",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.2.3-q2",
+      "conceptId": "1.2.3",
+      "module": 1,
+      "stem": "Which set lists components the module says a research proposal comprises?",
+      "options": [
+        "Title, Introduction, Literature review, Methodology, Plan, Budget, Research team",
+        "Only a title and a joke",
+        "Results and conclusions with no methods",
+        "Glossary and index only"
+      ],
+      "correct": 0,
+      "explanation": "Listed components: Title, Introduction, Literature review, Methodology, Plan (time frame/Gantt), Budget, Details of research team (signed CV).",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.2.3-q3",
+      "conceptId": "1.2.3",
+      "module": 1,
+      "stem": "Which of the following is listed as a common error in proposal writing?",
+      "options": [
+        "Goals that are overly general or excessively lofty",
+        "Including a literature review with citations",
+        "Providing justification for costly budget items",
+        "Defining roles for researchers"
+      ],
+      "correct": 0,
+      "explanation": "Common errors include: goals overly general or lofty; goals mismatched to title/problem; missing lit review; insufficient approach detail; over-ambitious schedule; unjustified excessive/insufficient budget.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.2.4-q1",
+      "conceptId": "1.2.4",
+      "module": 1,
+      "stem": "In the module’s meaning of review of literature, “review” means:",
+      "options": [
+        "Deleting all prior studies",
+        "Organising knowledge of the specific research area into a knowledge pool so the study adds to and enriches the field",
+        "Copying one article without context",
+        "Ignoring theoretical studies"
+      ],
+      "correct": 1,
+      "explanation": "“Review” means to organise knowledge of the specific research area to create a knowledge pool so the study adds on to and enriches the field.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.2.4-q2",
+      "conceptId": "1.2.4",
+      "module": 1,
+      "stem": "One importance of reviewing literature is that it can:",
+      "options": [
+        "Force unnecessary replication of solved problems",
+        "Guide researchers on whether adequate evidence already solves the problem, avoiding replication",
+        "Replace all need for methodology later",
+        "Prohibit formulating hypotheses"
+      ],
+      "correct": 1,
+      "explanation": "Review of literature “guides researchers on the availability of adequate evidence that solves the problem sufficiently without the need of further investigation — this initiative avoids the replication of Research.”",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.2.4-q3",
+      "conceptId": "1.2.4",
+      "module": 1,
+      "stem": "The three equally important stages of human understanding named in this section are:",
+      "options": [
+        "Preservation, transmission, and advancement",
+        "Budgeting, hiring, and advertising",
+        "Sampling, coding, and printing",
+        "Deduction only"
+      ],
+      "correct": 0,
+      "explanation": "The text lists preservation, transmission, and advancement as three equally important stages of human understanding.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.2.5-q1",
+      "conceptId": "1.2.5",
+      "module": 1,
+      "stem": "Population specification error occurs when:",
+      "options": [
+        "The researcher does not understand whom they should survey",
+        "Every respondent answers every item perfectly",
+        "Only measurement instruments are too precise",
+        "The report is too long"
+      ],
+      "correct": 0,
+      "explanation": "“Population specification errors occur when the researcher does not understand whom they should survey.”",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.2.5-q2",
+      "conceptId": "1.2.5",
+      "module": 1,
+      "stem": "The 1936 Roosevelt–Landon poll example in the module illustrates which error?",
+      "options": [
+        "Experimental error only",
+        "Sampling and sample frame error from car registrations and telephone directories skewed toward Republicans",
+        "Perfectly representative sampling",
+        "Surrogate information from cancer patients eating bread"
+      ],
+      "correct": 1,
+      "explanation": "The sample frame from car registrations and telephone directories failed to realize most owners were Republicans, wrongly predicting a Republican victory—sampling/sample frame error.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.2.5-q3",
+      "conceptId": "1.2.5",
+      "module": 1,
+      "stem": "Non-response errors are categorised in the text as:",
+      "options": [
+        "Type I and Type II only",
+        "Non-contact errors and refusal errors",
+        "Qualitative and quantitative errors",
+        "Pure and applied errors"
+      ],
+      "correct": 1,
+      "explanation": "Non-response errors: (a) non-contact (respondent cannot be reached) and (b) refusal (chooses not to respond to items). Primary issue is absence of data.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.3.1-q1",
+      "conceptId": "1.3.1",
+      "module": 1,
+      "stem": "The primary goal of pure/basic/fundamental research is to:",
+      "options": [
+        "Advance knowledge rather than solve a specific problem",
+        "Immediately fix a company’s hiring process only",
+        "Avoid collecting any data",
+        "Replace applied research in every business setting"
+      ],
+      "correct": 0,
+      "explanation": "“The goal of this type of research is to advance knowledge rather than to solve a specific problem.”",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.3.1-q2",
+      "conceptId": "1.3.1",
+      "module": 1,
+      "stem": "Applied research is characterised as aiming to:",
+      "options": [
+        "Solve a specific problem or offer novel solutions affecting a person, group, or society",
+        "Study only abstract philosophy with no practical link",
+        "Never test hypotheses experimentally",
+        "Ignore empirical methods"
+      ],
+      "correct": 0,
+      "explanation": "Applied research aims to solve a specific problem or offer novel solutions to issues affecting a person, group, or society; often called contractual research.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.3.1-q3",
+      "conceptId": "1.3.1",
+      "module": 1,
+      "stem": "Which is given as a business example of applied research?",
+      "options": [
+        "Applied research to improve the hiring process in a company",
+        "Only “How do humans retain memory?” with no application",
+        "Writing fiction unrelated to workplace issues",
+        "Avoiding workplace skill-gap studies"
+      ],
+      "correct": 0,
+      "explanation": "Business examples include improving hiring, workplace efficiency and policies, and addressing workplace skill gaps.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.3.2-q1",
+      "conceptId": "1.3.2",
+      "module": 1,
+      "stem": "In causal (explanatory) research designs, the most common primary data collection method named is:",
+      "options": [
+        "Experiments",
+        "Only poetry analysis",
+        "Random guessing",
+        "Avoiding any data collection"
+      ],
+      "correct": 0,
+      "explanation": "“In studies using a causal research design, the most common primary data collection method is experiments.”",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.3.2-q2",
+      "conceptId": "1.3.2",
+      "module": 1,
+      "stem": "A correlational study design is used to:",
+      "options": [
+        "Manipulate both variables aggressively",
+        "Find how two variables relate without manipulating either variable",
+        "Prove causation in every case",
+        "Replace all experimental work"
+      ],
+      "correct": 1,
+      "explanation": "“Without manipulating either variable, researchers use a correlational study design to find out how two variables relate to one another.”",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.3.2-q3",
+      "conceptId": "1.3.2",
+      "module": 1,
+      "stem": "Which three main approaches to correlational studies does the module list?",
+      "options": [
+        "Naturalistic observation, survey research, and archival research",
+        "Only double-blind clinical trials",
+        "Budgeting, Gantt charts, and CVs",
+        "Heuristic, simulation, and ELM only"
+      ],
+      "correct": 0,
+      "explanation": "“Naturalistic observation, survey research, and archive research are the three main approaches to correlational studies.”",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.3.3-q1",
+      "conceptId": "1.3.3",
+      "module": 1,
+      "stem": "A cross-sectional study is distinguished by:",
+      "options": [
+        "Comparing different population groups at a single point in time, like a photograph",
+        "Following the same subjects for many years only",
+        "Always proving definitive cause-and-effect",
+        "Requiring researchers to change subjects’ habits"
+      ],
+      "correct": 0,
+      "explanation": "Cross-sectional studies compare different population groups at a single point in time—“like taking a photograph.”",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.3.3-q2",
+      "conceptId": "1.3.3",
+      "module": 1,
+      "stem": "Compared with cross-sectional designs, longitudinal studies:",
+      "options": [
+        "Never observe the same subjects twice",
+        "Make multiple observations of the same subjects over a long period and can create event sequences",
+        "Are always shorter to complete",
+        "Tamper with the research environment by definition"
+      ],
+      "correct": 1,
+      "explanation": "Longitudinal studies involve multiple observations of the same subjects over a long period, can detect changes and create event sequences, and take longer than cross-sectional studies.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.3.3-q3",
+      "conceptId": "1.3.3",
+      "module": 1,
+      "stem": "Why may cross-sectional studies not provide conclusive cause-and-effect evidence?",
+      "options": [
+        "They always manipulate every variable",
+        "They provide a snapshot of a single moment and do not consider what occurs before or after",
+        "They never compare multiple variables",
+        "They require decades by definition"
+      ],
+      "correct": 1,
+      "explanation": "Such studies provide a snapshot of a single moment and do not consider what occurs before or after, so cause-and-effect cannot be settled conclusively.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.3.4-q1",
+      "conceptId": "1.3.4",
+      "module": 1,
+      "stem": "Experimental research is well-known for allowing:",
+      "options": [
+        "Manipulation of control variables and measurement of impact",
+        "No measurement of any impact",
+        "Only archival reading without design",
+        "Forbidding cause-and-effect questions"
+      ],
+      "correct": 0,
+      "explanation": "Experimental research manipulates one or more control variables and measures the impact of the manipulation; it is well-known for allowing manipulation of control variables.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.3.4-q2",
+      "conceptId": "1.3.4",
+      "module": 1,
+      "stem": "Quasi-experimental research (Cook & Campbell) differs from true experiments mainly because:",
+      "options": [
+        "The independent variable is never manipulated",
+        "Participants are not randomly assigned even though the IV is manipulated",
+        "No dependent variable is ever measured",
+        "It eliminates all confounding variables completely"
+      ],
+      "correct": 1,
+      "explanation": "In quasi-experimental research the IV is manipulated but participants are not randomly assigned, so confounding differences between conditions may remain.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.3.4-q3",
+      "conceptId": "1.3.4",
+      "module": 1,
+      "stem": "Non-experimental research is defined as research in which:",
+      "options": [
+        "No control or independent variable is manipulated; variables are measured as they occur naturally",
+        "Every variable must be randomly assigned",
+        "Only laboratory animals are studied",
+        "Causal proof is always guaranteed"
+      ],
+      "correct": 0,
+      "explanation": "“Non-experimental research is defined as research in which no control or independent variable is manipulated.” Researchers measure variables as they occur naturally.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.3.5-q1",
+      "conceptId": "1.3.5",
+      "module": 1,
+      "stem": "Descriptive research mainly aims to:",
+      "options": [
+        "Describe characteristics of a demographic group without asking why an event happens",
+        "Always explain underlying causes in depth",
+        "Ignore “what” questions entirely",
+        "Replace exploratory work in every beta test"
+      ],
+      "correct": 0,
+      "explanation": "“Without asking ‘why’ an event happens, descriptive research mainly aims to describe the characteristics of a demographic group.” It emphasises “what” over “why.”",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.3.5-q2",
+      "conceptId": "1.3.5",
+      "module": 1,
+      "stem": "Exploratory research is typically conducted to:",
+      "options": [
+        "Produce a definitive outcome in every case",
+        "Enhance comprehension of a little-studied issue and help develop a more targeted problem statement",
+        "Avoid understanding pre-existing phenomena",
+        "Forbid questions of what, how, and why"
+      ],
+      "correct": 1,
+      "explanation": "Exploratory research learns about topics not covered extensively; it seldom produces a definitive outcome but enhances comprehension and helps develop a more targeted issue statement.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.3.5-q3",
+      "conceptId": "1.3.5",
+      "module": 1,
+      "stem": "According to the product-research example, when is beta research not exploratory?",
+      "options": [
+        "When the added feature already exists elsewhere (e.g., Telegram status like WhatsApp)",
+        "When Snapchat filters first launched as a new feature",
+        "Whenever any survey is used",
+        "Only when experiments are banned"
+      ],
+      "correct": 0,
+      "explanation": "If Telegram adds a status feature already available on WhatsApp, beta research is not exploratory because sufficient information already exists; a truly new feature (Snapchat filters at launch) is exploratory.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.4.1-q1",
+      "conceptId": "1.4.1",
+      "module": 1,
+      "stem": "Research models are classified broadly into which two types?",
+      "options": [
+        "Qualitative Research Model and Quantitative Research Model",
+        "Only Gantt and Budget models",
+        "Type I and Type II models",
+        "Oral and informal report models"
+      ],
+      "correct": 0,
+      "explanation": "“Research Models are classified broadly into two types… Qualitative Research Model [and] Quantitative Research Model.”",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.4.1-q2",
+      "conceptId": "1.4.1",
+      "module": 1,
+      "stem": "A quantitative research model is about:",
+      "options": [
+        "Collecting and analysing numerical data to find patterns, make predictions, and generalise",
+        "Only non-numerical opinions with no numbers",
+        "Avoiding averages and causal tests",
+        "Excluding natural and social sciences"
+      ],
+      "correct": 0,
+      "explanation": "Quantitative models collect and analyse numerical data for patterns and averages, predictions, causal relationship tests, and generating results to wider populations.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.4.1-q3",
+      "conceptId": "1.4.1",
+      "module": 1,
+      "stem": "Which is listed as a use of research models?",
+      "options": [
+        "Help in identifying basic concepts and defining meanings with great precision",
+        "Eliminate the need for any research design",
+        "Replace all empirical data forever",
+        "Forbid simulating reality"
+      ],
+      "correct": 0,
+      "explanation": "Uses include: identifying basic concepts; defining meanings with great precision; approaching and simulating reality.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.4.2-q1",
+      "conceptId": "1.4.2",
+      "module": 1,
+      "stem": "In model building, conceptualization involves:",
+      "options": [
+        "Developing a theoretical framework from literature, formulating hypotheses, and identifying key variables",
+        "Skipping literature and jumping to publication only",
+        "Deleting all assumptions",
+        "Avoiding any preliminary model diagram"
+      ],
+      "correct": 0,
+      "explanation": "Conceptualization develops a theoretical framework based on existing literature and theories, helps formulate hypotheses and identify key variables, then creates a preliminary (often diagrammatic) model.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.4.2-q2",
+      "conceptId": "1.4.2",
+      "module": 1,
+      "stem": "Model validation is crucial to ensure the model is:",
+      "options": [
+        "Correctly implemented and free from logical or computational errors, with predictions compared to real-world data",
+        "Never compared to real-world data",
+        "Hidden from documentation",
+        "Estimated without any parameters"
+      ],
+      "correct": 0,
+      "explanation": "Validation ensures correct implementation without logical/computational errors; predictions are compared with real-world data (cross-validation, sensitivity, robustness).",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.4.2-q3",
+      "conceptId": "1.4.2",
+      "module": 1,
+      "stem": "What happens in the model specification stage?",
+      "options": [
+        "The conceptual model is translated into a mathematical or statistical form with techniques, equations/algorithms, and stated assumptions",
+        "Only the final public speech is written",
+        "Data collection is forbidden",
+        "Problem definition is postponed forever"
+      ],
+      "correct": 0,
+      "explanation": "In specification, the conceptual model is translated into mathematical or statistical form; modeling techniques and equations/algorithms are selected and assumptions clearly stated.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.4.3-q1",
+      "conceptId": "1.4.3",
+      "module": 1,
+      "stem": "According to the module, the most important factor affecting the choice of a particular consideration of data is:",
+      "options": [
+        "Nature, scope and object of enquiry",
+        "Font size of the final report",
+        "Colour of survey paper only",
+        "Whether a Gantt chart uses blue ink"
+      ],
+      "correct": 0,
+      "explanation": "“Nature, scope and object of enquiry: This constitutes the most important factor affecting the choice of a particular consideration of data.”",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.4.3-q2",
+      "conceptId": "1.4.3",
+      "module": 1,
+      "stem": "Why is simply storing massive enterprise data described as insufficient?",
+      "options": [
+        "Storage alone is not beneficial unless data are used for specific research purposes",
+        "Data never grow in volume",
+        "Data lakes are illegal",
+        "Precision is never required"
+      ],
+      "correct": 0,
+      "explanation": "“Simply storing this massive amount of data is not beneficial unless it is used for specific research purposes,” motivating tools like data lakes and big-data analysis.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.4.3-q3",
+      "conceptId": "1.4.3",
+      "module": 1,
+      "stem": "The “time factor” in data consideration means:",
+      "options": [
+        "Collection must be timely and enough time left for consideration and testing before deadlines",
+        "Time can be ignored if volume is large",
+        "Only historical data older than 100 years may be used",
+        "Testing must occur before any collection"
+      ],
+      "correct": 0,
+      "explanation": "Time matters because of deadlines: data collection needs to be timely and post-collection there must be enough time for consideration and testing.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.4.4-q1",
+      "conceptId": "1.4.4",
+      "module": 1,
+      "stem": "Clark Moustakas’s heuristic research model name derives from Greek ‘Heuriskein’, meaning:",
+      "options": [
+        "Discover, find",
+        "Budget, schedule",
+        "Refuse, reject",
+        "Measure only"
+      ],
+      "correct": 0,
+      "explanation": "“The name Heuristic was derived from the Greek work ‘Heuriskein’ (which means discover, find).”",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m1-1.4.4-q2",
+      "conceptId": "1.4.4",
+      "module": 1,
+      "stem": "Which set lists the six phases of the heuristic research model?",
+      "options": [
+        "Initial engagement, Immersion, Incubation, Illumination, Explication, Creative synthesis",
+        "Title, Budget, Gantt only",
+        "Sampling, Coding, ANOVA only",
+        "Type I, Type II, df only"
+      ],
+      "correct": 0,
+      "explanation": "Six phases: Initial engagement, Immersion, Incubation, Illumination, Explication, Creative synthesis.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m1-1.4.4-q3",
+      "conceptId": "1.4.4",
+      "module": 1,
+      "stem": "Simulation models attempt to replicate a real system by using:",
+      "options": [
+        "Statistical descriptions of activities, with entities, activities, and governing logic",
+        "Only a single fixed average with no variability ever",
+        "Poetry without entities or activities",
+        "Abandoning all statistical timing"
+      ],
+      "correct": 0,
+      "explanation": "Simulation models use statistical descriptions of activities to replicate workings and logic; they include entities (machines, materials, people) and activities (processing, transporting) plus logic; times often sampled from distributions.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m2-2.1.1-q1",
+      "conceptId": "2.1.1",
+      "module": 2,
+      "stem": "Which of the following is a primary source of data?",
+      "options": [
+        "Internet research",
+        "Company reports",
+        "Surveys",
+        "Newspaper articles"
+      ],
+      "correct": 2,
+      "explanation": "Surveys are listed as first-hand/primary data; internet research, company reports, and newspaper articles are secondary examples.",
+      "pages": [
+        33,
+        54
+      ]
+    },
+    {
+      "id": "m2-2.1.1-q2",
+      "conceptId": "2.1.1",
+      "module": 2,
+      "stem": "What is a key characteristic of primary data?",
+      "options": [
+        "It is always free to access",
+        "It is collected specifically for the current research purpose",
+        "It is usually less reliable than secondary data",
+        "It is always quantitative"
+      ],
+      "correct": 1,
+      "explanation": "Primary data is gathered with a specific goal for the current study; the material notes it is usually more expensive/time-consuming but purpose-specific.",
+      "pages": [
+        33,
+        54
+      ]
+    },
+    {
+      "id": "m2-2.1.1-q3",
+      "conceptId": "2.1.1",
+      "module": 2,
+      "stem": "A company wants market size for women’s apparel in India. According to the material, which approach fits?",
+      "options": [
+        "Only primary focus groups are acceptable",
+        "Secondary data such as industry reports and newspaper articles",
+        "Only schedules filled by enumerators",
+        "Only cluster sampling of retail stores"
+      ],
+      "correct": 1,
+      "explanation": "The text says market size can be estimated from secondary industry reports and newspaper articles, while new fabric/style preferences need primary research.",
+      "pages": [
+        33
+      ]
+    },
+    {
+      "id": "m2-2.1.2-q1",
+      "conceptId": "2.1.2",
+      "module": 2,
+      "stem": "How does the schedule method differ from the questionnaire method?",
+      "options": [
+        "Schedules are always mailed; questionnaires never are",
+        "Enumerators fill out schedules, whereas respondents complete questionnaires independently",
+        "Schedules use only open-ended items",
+        "Questionnaires must be completed face-to-face by an interviewer"
+      ],
+      "correct": 1,
+      "explanation": "The material states enumerators designated for the purpose fill out schedules—a key distinction from questionnaires completed by respondents.",
+      "pages": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "m2-2.1.2-q2",
+      "conceptId": "2.1.2",
+      "module": 2,
+      "stem": "According to Prof. Bowley (as cited), how should secondary data be treated?",
+      "options": [
+        "Always preferred over primary data",
+        "Accepted at face value if issued by government",
+        "Not accepted at face value without scrutiny",
+        "Used only when primary data is quantitative"
+      ],
+      "correct": 2,
+      "explanation": "Bowley is quoted: secondary data should not be accepted at their face value; reliability, suitability, and adequacy must be checked.",
+      "pages": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "m2-2.1.2-q3",
+      "conceptId": "2.1.2",
+      "module": 2,
+      "stem": "In participant observation, what does the observer do?",
+      "options": [
+        "Remains completely detached from the group",
+        "Becomes more or less a member of the group being observed",
+        "Only uses laboratory controls",
+        "Never records behaviour"
+      ],
+      "correct": 1,
+      "explanation": "Participant observation: the observer becomes more or less a member of the observed group; non-participant remains detached.",
+      "pages": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "m2-2.1.3-q1",
+      "conceptId": "2.1.3",
+      "module": 2,
+      "stem": "What is tabulation of data primarily described as?",
+      "options": [
+        "Deleting all incomplete cases from a survey",
+        "Arranging structured data into a tabular format of rows and columns",
+        "Interviewing experts until consensus is reached",
+        "Drawing every nth unit from a list"
+      ],
+      "correct": 1,
+      "explanation": "Tabulation is arranging structured numerical data in rows and columns to ease comparison and statistical analysis.",
+      "pages": [
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "id": "m2-2.1.3-q2",
+      "conceptId": "2.1.3",
+      "module": 2,
+      "stem": "As defined via UNECE 2013 in the material, data validation aims to verify that:",
+      "options": [
+        "Every respondent completed an interview",
+        "A data item’s value comes from the set of acceptable values",
+        "The sample equals the population",
+        "Only qualitative data were collected"
+      ],
+      "correct": 1,
+      "explanation": "Validation checks whether a data item’s value belongs to the given (finite or infinite) set of acceptable values.",
+      "pages": [
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "id": "m2-2.1.3-q3",
+      "conceptId": "2.1.3",
+      "module": 2,
+      "stem": "Which type of validity concerns whether study findings can be generalised to other settings, populations, or times?",
+      "options": [
+        "Internal validity",
+        "Construct validity",
+        "External validity",
+        "Face validity"
+      ],
+      "correct": 2,
+      "explanation": "External validity is the extent to which findings generalise to other settings, populations, or times (including population and ecological validity).",
+      "pages": [
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "id": "m2-2.2.1-q1",
+      "conceptId": "2.2.1",
+      "module": 2,
+      "stem": "Which step in constructing a questionnaire involves defining the purpose and topics?",
+      "options": [
+        "Keep It Simple",
+        "Identify the Scope of Your Research",
+        "Be Flexible with Your Options",
+        "Know Your Audience"
+      ],
+      "correct": 1,
+      "explanation": "Identify the Scope of Your Research means clearly defining purpose and topics to guide the whole design.",
+      "pages": [
+        43,
+        54
+      ]
+    },
+    {
+      "id": "m2-2.2.1-q2",
+      "conceptId": "2.2.1",
+      "module": 2,
+      "stem": "When designing a questionnaire, why is it important to avoid double-barrelled questions?",
+      "options": [
+        "They require complex language",
+        "They are too short",
+        "They address multiple issues at once",
+        "They only offer open-ended responses"
+      ],
+      "correct": 2,
+      "explanation": "Double-barrelled questions address multiple issues at once; each question should focus on a single topic.",
+      "pages": [
+        43,
+        54
+      ]
+    },
+    {
+      "id": "m2-2.2.1-q3",
+      "conceptId": "2.2.1",
+      "module": 2,
+      "stem": "Why should sensitive or demographic questions be placed at the end of a questionnaire?",
+      "options": [
+        "To ensure the survey is concise",
+        "To make respondents more comfortable completing the survey",
+        "To prioritize the most important questions",
+        "To allow for better statistical analysis"
+      ],
+      "correct": 1,
+      "explanation": "Saving personal questions for last increases completion likelihood because respondents are more comfortable by the end.",
+      "pages": [
+        44,
+        55
+      ]
+    },
+    {
+      "id": "m2-2.2.2-q1",
+      "conceptId": "2.2.2",
+      "module": 2,
+      "stem": "Which question type typically offers only two choices such as “yes” or “no”?",
+      "options": [
+        "Open-ended",
+        "Dichotomous",
+        "Likert scale",
+        "Pictorial"
+      ],
+      "correct": 1,
+      "explanation": "Dichotomous questions are close-ended with two choices (e.g. yes/no) for binary responses.",
+      "pages": [
+        44
+      ]
+    },
+    {
+      "id": "m2-2.2.2-q2",
+      "conceptId": "2.2.2",
+      "module": 2,
+      "stem": "Likert scale questions are classified in the material under which broader type?",
+      "options": [
+        "Open-ended only",
+        "Dichotomous only",
+        "Scaling questions",
+        "Pictorial questions"
+      ],
+      "correct": 2,
+      "explanation": "Scaling questions include Rank Order, Likert, Semantic Differential, and Stapel scales.",
+      "pages": [
+        44
+      ]
+    },
+    {
+      "id": "m2-2.2.2-q3",
+      "conceptId": "2.2.2",
+      "module": 2,
+      "stem": "What is distinctive about pictorial questions?",
+      "options": [
+        "They must be filled by enumerators",
+        "Answer choices are images instead of text",
+        "They always use bipolar adjectives",
+        "They forbid multiple selection"
+      ],
+      "correct": 1,
+      "explanation": "Pictorial questions are like multiple-choice but use images as answer choices to enhance engagement.",
+      "pages": [
+        44
+      ]
+    },
+    {
+      "id": "m2-2.2.3-q1",
+      "conceptId": "2.2.3",
+      "module": 2,
+      "stem": "Regarding size, how should a questionnaire ideally compare to a schedule?",
+      "options": [
+        "It should be larger than a schedule",
+        "It should be smaller/more compact than a schedule",
+        "Size rules are identical",
+        "It must always exceed ten pages"
+      ],
+      "correct": 1,
+      "explanation": "Under Size/Compactness, the questionnaire should be smaller than a schedule.",
+      "pages": [
+        44,
+        45
+      ]
+    },
+    {
+      "id": "m2-2.2.3-q2",
+      "conceptId": "2.2.3",
+      "module": 2,
+      "stem": "What page limit does the material suggest for a questionnaire, depending on the research?",
+      "options": [
+        "One page only in all cases",
+        "Ideally not more than two or three pages",
+        "At least ten pages for validity",
+        "No limit is mentioned"
+      ],
+      "correct": 1,
+      "explanation": "Page Limit: ideally it should not exceed two or three pages, depending on the nature of the research.",
+      "pages": [
+        44,
+        45
+      ]
+    },
+    {
+      "id": "m2-2.2.3-q3",
+      "conceptId": "2.2.3",
+      "module": 2,
+      "stem": "Which format principle addresses keeping respondents interested and motivated to finish?",
+      "options": [
+        "Span only",
+        "Communicability",
+        "Skip interval",
+        "Cluster selection"
+      ],
+      "correct": 1,
+      "explanation": "Communicability: design questions to keep respondents interested and motivated to complete the questionnaire.",
+      "pages": [
+        44,
+        45
+      ]
+    },
+    {
+      "id": "m2-2.3.1-q1",
+      "conceptId": "2.3.1",
+      "module": 2,
+      "stem": "Which decisions does the sampling plan encompass, in order emphasised by the material?",
+      "options": [
+        "Only statistical software choice",
+        "Choose population, determine sample size, decide sampling procedure",
+        "Only tabulation and validation",
+        "Only open- vs closed-ended wording"
+      ],
+      "correct": 1,
+      "explanation": "The plan covers choosing the population, determining sample size, and deciding the sampling procedure.",
+      "pages": [
+        45,
+        46
+      ]
+    },
+    {
+      "id": "m2-2.3.1-q2",
+      "conceptId": "2.3.1",
+      "module": 2,
+      "stem": "Why might quality-control testing of fuses require sampling rather than a full census?",
+      "options": [
+        "Fuses cannot be listed in a sampling frame",
+        "Observing the desired characteristic destroys the product for its intended use",
+        "Probability sampling is illegal for manufactured goods",
+        "Secondary data cannot describe products"
+      ],
+      "correct": 1,
+      "explanation": "Destructiveness of observation: a fuse must be destroyed to test quality—testing all would destroy all.",
+      "pages": [
+        45,
+        46
+      ]
+    },
+    {
+      "id": "m2-2.3.1-q3",
+      "conceptId": "2.3.1",
+      "module": 2,
+      "stem": "According to the material’s general rule about sample size and reliability:",
+      "options": [
+        "Smaller samples are always more reliable",
+        "Sample size is unrelated to reliability",
+        "The larger the sample size, the more is the reliability",
+        "Only quota samples are reliable"
+      ],
+      "correct": 2,
+      "explanation": "Researchers endeavour to cover a wide number of samples because generally “the larger the sample size, the more is the reliability.”",
+      "pages": [
+        45,
+        46
+      ]
+    },
+    {
+      "id": "m2-2.3.2-q1",
+      "conceptId": "2.3.2",
+      "module": 2,
+      "stem": "What is a sampling frame?",
+      "options": [
+        "The final published research report",
+        "A list or database from which a sample can be drawn",
+        "Only the non-response rate",
+        "A type of Likert scale"
+      ],
+      "correct": 1,
+      "explanation": "A sampling frame is a list or database from which a sample can be used / potential respondents invited.",
+      "pages": [
+        46,
+        47
+      ]
+    },
+    {
+      "id": "m2-2.3.2-q2",
+      "conceptId": "2.3.2",
+      "module": 2,
+      "stem": "Which of the following appears among the listed steps in the sampling process?",
+      "options": [
+        "Calculate impact factor of a journal",
+        "Ascertain the sample interval",
+        "Write footnotes only",
+        "Run ANOVA for random effects"
+      ],
+      "correct": 1,
+      "explanation": "Listed steps include classify the people, ascertain the sample interval, choose sampling strategy, pick sample number, and complete the procedure.",
+      "pages": [
+        46,
+        47
+      ]
+    },
+    {
+      "id": "m2-2.3.2-q3",
+      "conceptId": "2.3.2",
+      "module": 2,
+      "stem": "In market research terms, a sampling frame is described as:",
+      "options": [
+        "The final consensus forecast from Delphi experts",
+        "A database of potential respondents that can be drawn from to invite participation",
+        "Only unpublished biographies",
+        "The skip interval k alone"
+      ],
+      "correct": 1,
+      "explanation": "In market research terms, a sampling frame is a database of potential respondents that can be drawn from to invite to a given research project.",
+      "pages": [
+        46,
+        47
+      ]
+    },
+    {
+      "id": "m2-2.3.3-q1",
+      "conceptId": "2.3.3",
+      "module": 2,
+      "stem": "Simple random sampling is best described as ensuring:",
+      "options": [
+        "Only volunteers are included",
+        "Each element has an equitable probability of being chosen",
+        "Every nth unit after a fixed start with no random start",
+        "Researchers pick experts by judgement only"
+      ],
+      "correct": 1,
+      "explanation": "Simple random sampling gives each population element an equitable probability of selection (e.g. drawing names/numbers).",
+      "pages": [
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "m2-2.3.3-q2",
+      "conceptId": "2.3.3",
+      "module": 2,
+      "stem": "In systematic sampling, after randomly selecting the first item, what happens next?",
+      "options": [
+        "All remaining items are chosen by convenience",
+        "Subsequent items are picked using a predetermined interval (every nth)",
+        "Only strata leaders are interviewed",
+        "Respondents recruit their acquaintances"
+      ],
+      "correct": 1,
+      "explanation": "Systematic sampling randomly selects the first item, then applies a rule to choose every nth thereafter.",
+      "pages": [
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "m2-2.3.3-q3",
+      "conceptId": "2.3.3",
+      "module": 2,
+      "stem": "Snowball (referral) sampling is especially advantageous when:",
+      "options": [
+        "Every population member has a known equal selection probability",
+        "The researcher has limited knowledge of / access to the target group",
+        "Skip intervals must be calculated from N/n",
+        "Only laboratory observation is allowed"
+      ],
+      "correct": 1,
+      "explanation": "Snowball helps when the researcher knows little about the target group and lacks convenient means to reach them—while introducing network bias.",
+      "pages": [
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "m2-2.3.4-q1",
+      "conceptId": "2.3.4",
+      "module": 2,
+      "stem": "If population size is 591 and sample size is 25 under simple random sampling, selection probability is:",
+      "options": [
+        "591/25",
+        "25/591 (about 4.2%)",
+        "Always 50%",
+        "n − 1"
+      ],
+      "correct": 1,
+      "explanation": "Probability of selection = sample size / population size = 25/591 ≈ 0.042 or 4.2%.",
+      "pages": [
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "id": "m2-2.3.4-q2",
+      "conceptId": "2.3.4",
+      "module": 2,
+      "stem": "For systematic sampling with N = 591 and n = 25, the material’s skip interval k is approximately:",
+      "options": [
+        "5",
+        "23",
+        "591",
+        "25/591"
+      ],
+      "correct": 1,
+      "explanation": "Skip interval k = N/n = 591/25 ≈ 23.64, taken as 23; then random start 1–23 and every 23rd thereafter.",
+      "pages": [
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "id": "m2-2.3.4-q3",
+      "conceptId": "2.3.4",
+      "module": 2,
+      "stem": "Cluster sampling, as illustrated, selects:",
+      "options": [
+        "Only one demographic question at the end",
+        "Entire subgroups/groups randomly (e.g. programme groups) rather than individuals across all units",
+        "Only yes/no items",
+        "Secondary data exclusively"
+      ],
+      "correct": 1,
+      "explanation": "Cluster sampling divides the population into subgroups and randomly selects some groups (example: MCM and MMM selected from programme groups).",
+      "pages": [
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "id": "m2-2.3.5-q1",
+      "conceptId": "2.3.5",
+      "module": 2,
+      "stem": "Convenience sampling is characterised in the material as:",
+      "options": [
+        "Most expensive and most reliable",
+        "Cheapest and easiest to conduct, but least reliable",
+        "Guaranteeing equal selection probability",
+        "Identical to stratified random sampling"
+      ],
+      "correct": 1,
+      "explanation": "Convenience sampling uses readily available individuals: cheapest & easiest, least reliable.",
+      "pages": [
+        52
+      ]
+    },
+    {
+      "id": "m2-2.3.5-q2",
+      "conceptId": "2.3.5",
+      "module": 2,
+      "stem": "Quota sampling is described as a purposive approach that:",
+      "options": [
+        "Destroys every sampled unit",
+        "Uses relevant characteristics to stratify samples and increase representativeness",
+        "Requires skip interval k = N/n",
+        "Only uses pictorial questions"
+      ],
+      "correct": 1,
+      "explanation": "Quota sampling is purposive sampling where relevant characteristics stratify the sample to increase representativeness.",
+      "pages": [
+        52
+      ]
+    },
+    {
+      "id": "m2-2.3.5-q3",
+      "conceptId": "2.3.5",
+      "module": 2,
+      "stem": "Non-probability sampling is also known in the material as:",
+      "options": [
+        "Simple random sampling only",
+        "Deliberate, purposeful, or judgement sampling",
+        "Multistage cluster with equal probability",
+        "Time-series smoothing"
+      ],
+      "correct": 1,
+      "explanation": "Also known as ‘deliberate,’ ‘purposeful,’ or ‘judgement’ sampling—items chosen with care by the researcher.",
+      "pages": [
+        52
+      ]
+    },
+    {
+      "id": "m2-2.3.6-q1",
+      "conceptId": "2.3.6",
+      "module": 2,
+      "stem": "How can sampling error be diminished, according to the material?",
+      "options": [
+        "By using only snowball sampling",
+        "By expanding the sample size",
+        "By never using a sampling frame",
+        "By accepting secondary data at face value"
+      ],
+      "correct": 1,
+      "explanation": "Expanding the sample size will diminish sampling error (discrepancy due to which observations were chosen).",
+      "pages": [
+        53
+      ]
+    },
+    {
+      "id": "m2-2.3.6-q2",
+      "conceptId": "2.3.6",
+      "module": 2,
+      "stem": "Non-sampling errors are classified into:",
+      "options": [
+        "Only Type I and Type II errors",
+        "Non-response error and response error",
+        "Only construct and face validity",
+        "Open-ended and closed-ended error"
+      ],
+      "correct": 1,
+      "explanation": "Non-sample errors classify into non-response error and response error.",
+      "pages": [
+        53
+      ]
+    },
+    {
+      "id": "m2-2.3.6-q3",
+      "conceptId": "2.3.6",
+      "module": 2,
+      "stem": "Which is listed as a source of response error?",
+      "options": [
+        "Skip interval calculation only",
+        "Respondent error such as lying or forgetting",
+        "Choosing IMF publications",
+        "Using high-quality paper for questionnaires"
+      ],
+      "correct": 1,
+      "explanation": "Response errors arise from respondent error (lying, forgetting, etc.), interviewer/recording errors, poor questionnaires, and measurement errors.",
+      "pages": [
+        53
+      ]
+    },
+    {
+      "id": "m3-3.1.1-q1",
+      "conceptId": "3.1.1",
+      "module": 3,
+      "stem": "According to the module, experimental research is considered successful when:",
+      "options": [
+        "All variables are changed simultaneously",
+        "A change in the dependent variable is wholly due to a change in the independent variable",
+        "Only qualitative interviews are used",
+        "No control group is present"
+      ],
+      "correct": 1,
+      "explanation": "Success requires attributing dependent-variable change wholly to the independent variable.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.1.1-q2",
+      "conceptId": "3.1.1",
+      "module": 3,
+      "stem": "Which set lists factors the extract says drive experimental-research success?",
+      "options": [
+        "Literature review, meta-analysis, citation index",
+        "Control group, experimental group, manipulable variable, random allocation",
+        "Cronbach’s alpha, Cohen’s kappa, Spearman-Brown",
+        "Mailing method and enumerator method only"
+      ],
+      "correct": 1,
+      "explanation": "The text lists control/experimental groups, a manipulable variable, and random allocation.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.1.1-q3",
+      "conceptId": "3.1.1",
+      "module": 3,
+      "stem": "In the design strategies, a Type 1 error means:",
+      "options": [
+        "Failing to recognise a genuine effect",
+        "Mistakenly identifying an effect that does not exist",
+        "Using too large a sample",
+        "Ignoring measurement precision"
+      ],
+      "correct": 1,
+      "explanation": "Type 1 = false claim of an effect; Type 2 = missing a real effect.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.1.2-q1",
+      "conceptId": "3.1.2",
+      "module": 3,
+      "stem": "Pre-experimental research design is described as:",
+      "options": [
+        "The most precise experimental design",
+        "The most basic sort of experimental study design",
+        "Always requiring random assignment",
+        "Identical to factorial design"
+      ],
+      "correct": 1,
+      "explanation": "The extract calls it the most basic experimental study design.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.1.2-q2",
+      "conceptId": "3.1.2",
+      "module": 3,
+      "stem": "A typical reason given for using a pre-experimental design is to:",
+      "options": [
+        "Prove causality with full statistical control",
+        "Determine whether more inquiry is necessary for the group(s)",
+        "Replace all surveys",
+        "Estimate Cronbach’s alpha"
+      ],
+      "correct": 1,
+      "explanation": "It is typically performed to see if further inquiry is needed; also called cost-effective.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.1.3-q1",
+      "conceptId": "3.1.3",
+      "module": 3,
+      "stem": "Which statement matches the module’s characterisation of quasi-experimental design?",
+      "options": [
+        "It always includes random assignment of participants",
+        "It is identical to true experimental design",
+        "Participants are not assigned randomly; it is used when random assignment is not relevant or unnecessary",
+        "It never uses any comparison group"
+      ],
+      "correct": 2,
+      "explanation": "Quasi-experiments lack random assignment (and the extract notes a missing control group) and are used when randomisation is not relevant/unnecessary.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.1.3-q2",
+      "conceptId": "3.1.3",
+      "module": 3,
+      "stem": "Which example illustrates a quasi-experimental setup in the extract?",
+      "options": [
+        "Randomly assigning students within one school to treatment/control",
+        "Two homogeneous cohorts in separate schools, one exposed to a new programme",
+        "A mailed questionnaire only",
+        "An X̄–R control chart"
+      ],
+      "correct": 1,
+      "explanation": "Separate-school cohorts with one programme exposure exemplify quasi-experimental comparison without random assignment.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.1.3-q3",
+      "conceptId": "3.1.3",
+      "module": 3,
+      "stem": "Check-your-understanding in the module: which design is typically used when random assignment is not feasible?",
+      "options": [
+        "True experimental",
+        "Pre-experimental only",
+        "Quasi-experimental",
+        "Factorial only"
+      ],
+      "correct": 2,
+      "explanation": "Answer key: quasi-experimental when random assignment is not feasible.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.1.4-q1",
+      "conceptId": "3.1.4",
+      "module": 3,
+      "stem": "True experimental research design is described as:",
+      "options": [
+        "Unable to test hypotheses statistically",
+        "The most precise kind of experimental research design",
+        "Lacking any cause–effect ambition",
+        "Limited to questionnaire mailing"
+      ],
+      "correct": 1,
+      "explanation": "It is called the most precise experimental design and relies on statistical analysis.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.1.4-q2",
+      "conceptId": "3.1.4",
+      "module": 3,
+      "stem": "Per the extract, which design alone can establish a cause–effect link within a group or few groups?",
+      "options": [
+        "Pre-experimental",
+        "Quasi-experimental",
+        "True experimental",
+        "Purely observational"
+      ],
+      "correct": 2,
+      "explanation": "True experimental design is stated as the only type capable of establishing that cause–effect link.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.1.5-q1",
+      "conceptId": "3.1.5",
+      "module": 3,
+      "stem": "Factorial experimental design primarily allows the researcher to:",
+      "options": [
+        "Study only one factor at a time",
+        "Simultaneously examine several factors and their combined effects",
+        "Avoid measuring sales outcomes",
+        "Eliminate the need for any randomisation"
+      ],
+      "correct": 1,
+      "explanation": "Factorial design examines several factors at once, including interactions.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.1.5-q2",
+      "conceptId": "3.1.5",
+      "module": 3,
+      "stem": "In the department-store example with 2 price levels and 3 POP types, how many treatment combinations are listed?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "6"
+      ],
+      "correct": 3,
+      "explanation": "2 × 3 = 6 combinations (R1P1 … R3P2).",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.1.5-q3",
+      "conceptId": "3.1.5",
+      "module": 3,
+      "stem": "Besides main effects of price and display, the factorial store trial is said to provide insight into:",
+      "options": [
+        "Cronbach’s alpha only",
+        "The interaction impact of the two factors",
+        "ISBN registration",
+        "MCAR missingness only"
+      ],
+      "correct": 1,
+      "explanation": "The research addresses interaction of price and POP placement as well as main effects.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.1.6-q1",
+      "conceptId": "3.1.6",
+      "module": 3,
+      "stem": "The engineering experiment activity sequence listed is:",
+      "options": [
+        "Coding → editing → mailing → pilot",
+        "Conjecture → experiment → analysis → conclusion",
+        "Blocking → orthogonality → false positive",
+        "Observation → interview → case only"
+      ],
+      "correct": 1,
+      "explanation": "Conjecture, experiment, analysis, conclusion form the listed cycle.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.1.6-q2",
+      "conceptId": "3.1.6",
+      "module": 3,
+      "stem": "A typical sequential use of designed experiments in engineering is:",
+      "options": [
+        "Optimise first, then never screen",
+        "Screen many variables, refine critical ones, then optimise levels",
+        "Skip analysis after data collection",
+        "Use only attribute control charts"
+      ],
+      "correct": 1,
+      "explanation": "Screening → refinement on critical variables → optimisation of levels.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.1.6-q3",
+      "conceptId": "3.1.6",
+      "module": 3,
+      "stem": "If a civil engineer compares only two curing methods on compressive strength, the extract suggests analysis via:",
+      "options": [
+        "Only Cronbach’s alpha",
+        "Statistical hypothesis methods for two samples / t-test",
+        "Snowball sampling only",
+        "Sole causal attribution by OECD definition alone"
+      ],
+      "correct": 1,
+      "explanation": "Two curing procedures can use two-sample hypothesis methods and a t-test.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.1.7-q1",
+      "conceptId": "3.1.7",
+      "module": 3,
+      "stem": "OECD-DAC causal attribution is defined as:",
+      "options": [
+        "Ignoring all external factors by rule",
+        "Ascription of a causal link between observed (or expected) changes and a specific intervention",
+        "Computing only Cronbach’s alpha",
+        "Plotting an X̄–R chart"
+      ],
+      "correct": 1,
+      "explanation": "Attribution is ascribing a causal link between changes and an intervention.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.1.7-q2",
+      "conceptId": "3.1.7",
+      "module": 3,
+      "stem": "“Joint causal attribution” means:",
+      "options": [
+        "The programme alone is always necessary and sufficient",
+        "Impacts arise in concert with other programmes/policies or contextual conditions",
+        "No theory of change is allowed",
+        "Only false positives are studied"
+      ],
+      "correct": 1,
+      "explanation": "Joint attribution covers programme effects together with other programmes or context.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.1.7-q3",
+      "conceptId": "3.1.7",
+      "module": 3,
+      "stem": "Which is NOT listed among the three primary approaches for determining cause of an effect?",
+      "options": [
+        "Estimating the counterfactual",
+        "Examining coherence of theory-based cause–effect evidence while excluding rivals",
+        "Using a combination of those strategies",
+        "Relying solely on Cronbach’s alpha thresholds"
+      ],
+      "correct": 3,
+      "explanation": "The three approaches are counterfactual estimation, theory/coherence checking, and combining them—not alpha cutoffs.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.1.8-q1",
+      "conceptId": "3.1.8",
+      "module": 3,
+      "stem": "Statistical control in this module mostly occurs through:",
+      "options": [
+        "Only mailing questionnaires",
+        "Control charts that inform appropriate actions",
+        "Sole causal attribution statements",
+        "Removing all “don’t know” options"
+      ],
+      "correct": 1,
+      "explanation": "Statistical control is tied to control charts as a basis for action.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.1.8-q2",
+      "conceptId": "3.1.8",
+      "module": 3,
+      "stem": "Which pair correctly matches chart families in the extract?",
+      "options": [
+        "Variables: p, np, c, u; Attributes: X̄–R only",
+        "Variables: X̄–R, X̄–S, etc.; Attributes: p, np, c, u",
+        "Both families use only individuals–moving range",
+        "Attribute charts never use sample size > 20"
+      ],
+      "correct": 1,
+      "explanation": "Variable charts include X̄–R/S and related; attribute charts are p, np, c, u.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.1.8-q3",
+      "conceptId": "3.1.8",
+      "module": 3,
+      "stem": "If only common-cause variability is present, the process is said to be:",
+      "options": [
+        "Out of control",
+        "In control",
+        "Non-orthogonal",
+        "MNAR"
+      ],
+      "correct": 1,
+      "explanation": "Common causes only ⇒ in control; special causes ⇒ out of control.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.2.1-q1",
+      "conceptId": "3.2.1",
+      "module": 3,
+      "stem": "Observation becomes a scientific data-collection tool when it:",
+      "options": [
+        "Is informal and unrecorded",
+        "Serves a formulated purpose, is systematically planned/recorded, and checked for validity and reliability",
+        "Always uses mailed questionnaires",
+        "Avoids any standardised conditions"
+      ],
+      "correct": 1,
+      "explanation": "Purpose, systematic planning/recording, and validity/reliability checks define scientific observation.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.2.1-q2",
+      "conceptId": "3.2.1",
+      "module": 3,
+      "stem": "A structured interview is characterised by:",
+      "options": [
+        "No predetermined questions",
+        "Predetermined questions and highly standardised response recording",
+        "Only clinical life-history probing",
+        "Observer participation in the group"
+      ],
+      "correct": 1,
+      "explanation": "Structured interviews use predetermined questions and standardised recording for consistency.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.2.1-q3",
+      "conceptId": "3.2.1",
+      "module": 3,
+      "stem": "Non-participant observation differs from participant observation in that the observer:",
+      "options": [
+        "Always uses predetermined interview schedules",
+        "Does not become involved in group activities and lacks participant observation’s systematic characteristics",
+        "Must join the group as a full member",
+        "Only codes Likert items"
+      ],
+      "correct": 1,
+      "explanation": "Non-participant observation stays outside group activities and lacks those systematic traits.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.2.2-q1",
+      "conceptId": "3.2.2",
+      "module": 3,
+      "stem": "Which is the first step listed for rigorous case-study work?",
+      "options": [
+        "Presentation of results only",
+        "Identify and define the research questions",
+        "Compute control limits",
+        "Choose Cronbach’s alpha cutoffs"
+      ],
+      "correct": 1,
+      "explanation": "Case studies begin by identifying/defining research questions and focus.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.2.2-q2",
+      "conceptId": "3.2.2",
+      "module": 3,
+      "stem": "When presenting case-study results, the extract emphasises:",
+      "options": [
+        "Hiding conflicting propositions",
+        "Corroborating findings with evidence and enabling reader evaluation",
+        "Using only one investigator’s private notes",
+        "Skipping storage of evidence"
+      ],
+      "correct": 1,
+      "explanation": "Results should be corroborated, show new insights/conflicts, and let readers evaluate evidence.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.2.3-q1",
+      "conceptId": "3.2.3",
+      "module": 3,
+      "stem": "The mailing method of questionnaire collection typically includes:",
+      "options": [
+        "A trained enumerator filling a schedule in person only",
+        "A posted questionnaire, answer space, self-addressed stamped envelope, and confidentiality assurance",
+        "Only participant observation",
+        "X̄–R charting of each reply"
+      ],
+      "correct": 1,
+      "explanation": "Mailing uses self-completion with return envelope and confidentiality assurance.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.2.3-q2",
+      "conceptId": "3.2.3",
+      "module": 3,
+      "stem": "The enumerator method is especially suitable when:",
+      "options": [
+        "Respondents are educated and the field is huge with no staff",
+        "Adequate finance/trained enumerators exist and respondents may be illiterate",
+        "Only email attachments are allowed",
+        "Randomisation of plants in a growth chamber is required"
+      ],
+      "correct": 1,
+      "explanation": "Enumerator/schedule method suits resourced studies and illiterate respondents needing help.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.2.3-q3",
+      "conceptId": "3.2.3",
+      "module": 3,
+      "stem": "A questionnaire filled out by the enumerator is known as a:",
+      "options": [
+        "Control chart",
+        "Schedule",
+        "Block",
+        "False positive"
+      ],
+      "correct": 1,
+      "explanation": "The extract calls the enumerator-completed instrument a schedule.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.2.4-q1",
+      "conceptId": "3.2.4",
+      "module": 3,
+      "stem": "Which guideline comes first in preparing a questionnaire?",
+      "options": [
+        "Run a pilot before defining aims",
+        "Identify research aims and the questionnaire’s goal",
+        "Compute ANOVA orthogonality",
+        "Plot attribute control charts"
+      ],
+      "correct": 1,
+      "explanation": "Start by identifying aims/goals (and checking for existing validated tools).",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.2.4-q2",
+      "conceptId": "3.2.4",
+      "module": 3,
+      "stem": "A pilot of the questionnaire is used to:",
+      "options": [
+        "Skip readability checks",
+        "Find issues in understanding/phrasing/layout and see if analytic procedures work",
+        "Replace all open questions with DK options",
+        "Prove sole causal attribution"
+      ],
+      "correct": 1,
+      "explanation": "Pilots check readability, phrasing, arrangement, feedback, and analytic usability.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.2.4-q3",
+      "conceptId": "3.2.4",
+      "module": 3,
+      "stem": "Choosing longitudinal vs cross-sectional design appears under which guideline step?",
+      "options": [
+        "Define your target respondents",
+        "Orthogonality testing",
+        "Statistical control charting",
+        "MNAR classification only"
+      ],
+      "correct": 0,
+      "explanation": "Target-respondent guidance includes longitudinal vs cross-sectional choices.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.2.5-q1",
+      "conceptId": "3.2.5",
+      "module": 3,
+      "stem": "Data editing primarily involves:",
+      "options": [
+        "Inventing missing theoretical frameworks",
+        "Checking and correcting errors, inconsistencies, and omissions",
+        "Randomising mice to cages",
+        "Computing false-positive paradoxes only"
+      ],
+      "correct": 1,
+      "explanation": "Editing checks/corrects errors, inconsistencies, and omissions.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.2.5-q2",
+      "conceptId": "3.2.5",
+      "module": 3,
+      "stem": "Double data entry improves accuracy by:",
+      "options": [
+        "Entering data once and trusting it",
+        "Having two people enter data and comparing the sets for discrepancies",
+        "Deleting half the sample",
+        "Using only visual inspection forever"
+      ],
+      "correct": 1,
+      "explanation": "Two independent entries are compared to find discrepancies.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.2.5-q3",
+      "conceptId": "3.2.5",
+      "module": 3,
+      "stem": "A listed disadvantage of visual inspection is that it is:",
+      "options": [
+        "Always faster than computers on huge datasets",
+        "Time-consuming and prone to human error on large datasets",
+        "Impossible to use at all",
+        "Identical to Cronbach’s alpha"
+      ],
+      "correct": 1,
+      "explanation": "Visual inspection is slow and human-error prone for large data.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.2.6-q1",
+      "conceptId": "3.2.6",
+      "module": 3,
+      "stem": "Data coding is described as:",
+      "options": [
+        "Deleting all qualitative comments",
+        "Transforming raw data into a structured format for organisation and analysis",
+        "Plotting only c-charts",
+        "Estimating counterfactuals for impact evaluation"
+      ],
+      "correct": 1,
+      "explanation": "Coding structures raw data for organisation, analysis, and pattern finding.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.2.6-q2",
+      "conceptId": "3.2.6",
+      "module": 3,
+      "stem": "In the survey Likert example, “strongly agree” is coded as:",
+      "options": [
+        "1",
+        "3",
+        "5",
+        "0"
+      ],
+      "correct": 2,
+      "explanation": "Strongly agree = 5 down to strongly disagree = 1.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.2.6-q3",
+      "conceptId": "3.2.6",
+      "module": 3,
+      "stem": "Which is listed as a benefit of coding?",
+      "options": [
+        "Preventing all missing data automatically",
+        "Data reduction and pattern recognition",
+        "Guaranteeing orthogonality",
+        "Replacing replication"
+      ],
+      "correct": 1,
+      "explanation": "Coding supports reduction, organisation, pattern recognition, analysis, and comparison.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.2.7-q1",
+      "conceptId": "3.2.7",
+      "module": 3,
+      "stem": "A risk of offering “don’t know” options is that respondents may:",
+      "options": [
+        "Always give richer explanations",
+        "Use them to avoid engaging, compromising response reliability",
+        "Increase Cronbach’s alpha automatically",
+        "Create orthogonal ANOVA cells"
+      ],
+      "correct": 1,
+      "explanation": "DK can become an avoidance route that harms reliability.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.2.7-q2",
+      "conceptId": "3.2.7",
+      "module": 3,
+      "stem": "Providing an “other” option is said to help because it:",
+      "options": [
+        "Forces binary yes/no answers only",
+        "Lets respondents furnish additional information or explain perspectives",
+        "Removes the need for pilot testing",
+        "Defines MCAR missingness"
+      ],
+      "correct": 1,
+      "explanation": "“Other” empowers elaboration beyond closed lists.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.2.7-q3",
+      "conceptId": "3.2.7",
+      "module": 3,
+      "stem": "For brand/product surveys, before soliciting opinions the extract says to ensure:",
+      "options": [
+        "Respondents lack any familiarity",
+        "Respondents possess adequate familiarity with the subject",
+        "Only MNAR mechanisms apply",
+        "Control charts replace questionnaires"
+      ],
+      "correct": 1,
+      "explanation": "Ensure familiarity so respondents are not rating unknown items.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.2.8-q1",
+      "conceptId": "3.2.8",
+      "module": 3,
+      "stem": "Missing Completely at Random (MCAR) means missingness is:",
+      "options": [
+        "Caused by the missing values themselves",
+        "Random across variables and unrelated to other factors",
+        "Always non-ignorable",
+        "Identical to a false positive"
+      ],
+      "correct": 1,
+      "explanation": "MCAR: random, unrelated to other factors (e.g. random dropouts).",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.2.8-q2",
+      "conceptId": "3.2.8",
+      "module": 3,
+      "stem": "Which missing-data type introduces non-ignorable biases in the extract’s framing?",
+      "options": [
+        "MCAR only",
+        "MAR only",
+        "MNAR",
+        "None of them"
+      ],
+      "correct": 2,
+      "explanation": "MNAR is non-ignorable; MCAR/MAR may be considered ignorable.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.2.8-q3",
+      "conceptId": "3.2.8",
+      "module": 3,
+      "stem": "An example given for MNAR is:",
+      "options": [
+        "Random survey dropouts unrelated to anything",
+        "Lower-income respondents intentionally omitting holiday spending amounts",
+        "Age-related privacy non-response explained by observed age",
+        "Balanced ANOVA cells"
+      ],
+      "correct": 1,
+      "explanation": "MNAR: missingness tied to the values themselves (low income → omit spending).",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.3.1-q1",
+      "conceptId": "3.3.1",
+      "module": 3,
+      "stem": "Validity pertains to:",
+      "options": [
+        "Only the speed of data entry",
+        "The degree of accuracy with which a technique assesses the desired measurement",
+        "Whether vectors multiply to zero",
+        "Sample size on attribute charts only"
+      ],
+      "correct": 1,
+      "explanation": "Validity = accuracy of measuring what is intended.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.3.1-q2",
+      "conceptId": "3.3.1",
+      "module": 3,
+      "stem": "If Cronbach’s alpha is 0.75, the extract’s interpretation band is:",
+      "options": [
+        "Excellent (α ≥ 0.9)",
+        "Good (0.7 ≤ α < 0.9)",
+        "Poor (0.5 ≤ α < 0.6)",
+        "Unacceptable (α < 0.5)"
+      ],
+      "correct": 1,
+      "explanation": "0.7 ≤ α < 0.9 is labelled Good.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.3.1-q3",
+      "conceptId": "3.3.1",
+      "module": 3,
+      "stem": "A Bengali language test with reading, writing, and speaking but no listening is said to lack:",
+      "options": [
+        "Criterion validity only",
+        "Content validity for overall ability",
+        "Orthogonality",
+        "MCAR status"
+      ],
+      "correct": 1,
+      "explanation": "Experts say listening is essential, so omitting it harms content validity.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.3.2-q1",
+      "conceptId": "3.3.2",
+      "module": 3,
+      "stem": "Without replication, the extract argues it is impossible to:",
+      "options": [
+        "Mail questionnaires",
+        "Judge whether an observed difference is real or due to chance",
+        "Define validity",
+        "Code Likert items"
+      ],
+      "correct": 1,
+      "explanation": "Replication is needed to separate chance from real differences.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.3.2-q2",
+      "conceptId": "3.3.2",
+      "module": 3,
+      "stem": "Randomisation mitigates confounding by:",
+      "options": [
+        "Fixing every variable to one value forever",
+        "Equalising unaccounted influences across experimental units via non-deterministic assignment",
+        "Removing the need for blocks",
+        "Guaranteeing Cronbach’s α > 0.9"
+      ],
+      "correct": 1,
+      "explanation": "Random assignment balances confounders across conditions.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m3-3.3.2-q3",
+      "conceptId": "3.3.2",
+      "module": 3,
+      "stem": "Blocks are described as:",
+      "options": [
+        "Heterogeneous groups that maximise noise",
+        "Homogeneous groups of units that reduce variability and clarify condition differences",
+        "Only mailing envelopes",
+        "False-positive medical tests"
+      ],
+      "correct": 1,
+      "explanation": "Blocks are homogeneous groups used to reduce variability between units.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.3.3-q1",
+      "conceptId": "3.3.3",
+      "module": 3,
+      "stem": "In this module, orthogonality means:",
+      "options": [
+        "All dependent variables are binary",
+        "Independent variables are uncorrelated",
+        "Missing data are MNAR",
+        "Only interviews are used"
+      ],
+      "correct": 1,
+      "explanation": "Orthogonality = uncorrelated independents in the model.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.3.3-q2",
+      "conceptId": "3.3.3",
+      "module": 3,
+      "stem": "A false positive occurs when:",
+      "options": [
+        "A test is negative though the condition is present",
+        "A test yields a positive result instead of the expected negative",
+        "ANOVA cells are perfectly balanced",
+        "Replication is increased"
+      ],
+      "correct": 1,
+      "explanation": "False positive = positive result when truth is negative (false alarm).",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m3-3.3.3-q3",
+      "conceptId": "3.3.3",
+      "module": 3,
+      "stem": "An orthogonal ANOVA (as described) typically has:",
+      "options": [
+        "Unequal empty cells by design always",
+        "Categorical independents with equal observations per cell (balanced data)",
+        "Only continuous covariates",
+        "No statistical tests"
+      ],
+      "correct": 1,
+      "explanation": "Orthogonal ANOVA is tied to balanced cells with equal counts.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.1.1-q1",
+      "conceptId": "4.1.1",
+      "module": 4,
+      "stem": "In the study material, what is a hypothesis?",
+      "options": [
+        "A proven fact that needs no testing",
+        "A tentative statement subject to verification that states a solution to a problem",
+        "A complete, well-substantiated explanation of proven factors",
+        "Any assumption that cannot be checked empirically"
+      ],
+      "correct": 1,
+      "explanation": "The extract defines hypothesis via hypo + thesis as a tentative, verifiable statement of a problem’s solution.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.1.1-q2",
+      "conceptId": "4.1.1",
+      "module": 4,
+      "stem": "How does the material distinguish a hypothesis from a theory?",
+      "options": [
+        "They are identical once written down",
+        "A hypothesis is tested and complete; a theory is still tentative",
+        "A theory is a tested, well-substantiated explanation; a hypothesis is tentative and testable",
+        "A theory only applies to mutual-fund research"
+      ],
+      "correct": 2,
+      "explanation": "Theory = tested, well-substantiated explanation; hypothesis = tentative relationship still needing verification.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.1.2-q1",
+      "conceptId": "4.1.2",
+      "module": 4,
+      "stem": "What does the null hypothesis (H0) assert in the extract?",
+      "options": [
+        "A strong positive relationship between variables",
+        "No relationship between dependent and independent variables",
+        "That the alternative must always be true",
+        "That sampling is unnecessary"
+      ],
+      "correct": 1,
+      "explanation": "Null is contrary to the positive empirical claim and states no relationship between the variables.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.1.2-q2",
+      "conceptId": "4.1.2",
+      "module": 4,
+      "stem": "When does the material say you reject H0 in favour of H1?",
+      "options": [
+        "Whenever the sample size exceeds 30",
+        "When the test statistic falls inside the rejection region (RR)",
+        "When the significance level is set to 50%",
+        "Only if H0 and H1 are both true"
+      ],
+      "correct": 1,
+      "explanation": "If the calculated test statistic falls in RR, reject H0 and accept H1.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.1.2-q3",
+      "conceptId": "4.1.2",
+      "module": 4,
+      "stem": "What is the significance level (e.g., 5%) described as?",
+      "options": [
+        "The probability of a Type II error only",
+        "The chance of rejecting the null hypothesis when it is actually true",
+        "The minimum required sample size",
+        "The population mean under H1"
+      ],
+      "correct": 1,
+      "explanation": "At 5%, it is the chance of rejecting H0 when H0 is actually true.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.1.3-q1",
+      "conceptId": "4.1.3",
+      "module": 4,
+      "stem": "Which description matches a Type I error?",
+      "options": [
+        "H0 wrongly accepted; H1 wrongly rejected",
+        "H0 wrongly rejected; H1 wrongly accepted",
+        "Both hypotheses accepted simultaneously",
+        "Failing to collect any sample data"
+      ],
+      "correct": 1,
+      "explanation": "Type I = H0 wrongly rejected and H1 wrongly accepted.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.1.3-q2",
+      "conceptId": "4.1.3",
+      "module": 4,
+      "stem": "Which description matches a Type II error?",
+      "options": [
+        "H0 wrongly rejected; H1 wrongly accepted",
+        "Correctly accepting H1 when H1 is true",
+        "H0 wrongly accepted; H1 wrongly rejected",
+        "Setting α = 0"
+      ],
+      "correct": 2,
+      "explanation": "Type II = H0 wrongly accepted and H1 wrongly rejected.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.1.3-q3",
+      "conceptId": "4.1.3",
+      "module": 4,
+      "stem": "In the children’s-channel advertising illustration, unnecessary advertising costs arise from which mistake?",
+      "options": [
+        "Correctly accepting H0 when adults are ≥20% of viewers",
+        "Type II error — H1 wrongly rejected / H0 wrongly accepted",
+        "Type I error — skipping ads when H0 was true",
+        "Using a two-tailed test instead of one-tailed"
+      ],
+      "correct": 1,
+      "explanation": "Table: Type II → unnecessary costs incurred due to advertisements.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.1.4-q1",
+      "conceptId": "4.1.4",
+      "module": 4,
+      "stem": "For a one-tailed test, how is the alternative hypothesis framed?",
+      "options": [
+        "H1: μ ≠ μ0 only",
+        "H1: μ < μ0 or μ > μ0, but not both directions at once",
+        "H1 must include both greater and less simultaneously",
+        "H1 is identical to H0"
+      ],
+      "correct": 1,
+      "explanation": "One-tailed H1 is directional: either < or >, not both.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.1.4-q2",
+      "conceptId": "4.1.4",
+      "module": 4,
+      "stem": "When does the material prefer a two-tailed test?",
+      "options": [
+        "Only when sample size is below 5",
+        "When it matters whether the mean is higher or lower than the target",
+        "Only for Bayesian analyses",
+        "Whenever σ is known"
+      ],
+      "correct": 1,
+      "explanation": "Supplier strength vs target uses two-tailed because higher or lower both matter.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.1.5-q1",
+      "conceptId": "4.1.5",
+      "module": 4,
+      "stem": "What formula for degrees of freedom does the extract give for a simple data set?",
+      "options": [
+        "df = N + 1",
+        "df = N − 1",
+        "df = N²",
+        "df = α × N"
+      ],
+      "correct": 1,
+      "explanation": "Degree of Freedom = N − 1.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.1.5-q2",
+      "conceptId": "4.1.5",
+      "module": 4,
+      "stem": "Why are degrees of freedom important according to the text?",
+      "options": [
+        "They replace the need for any sample",
+        "They help ensure statistical validity of chi-square, t, and F tests",
+        "They set the marketing budget",
+        "They define Type II error only"
+      ],
+      "correct": 1,
+      "explanation": "df are crucial for validity of chi-square, t-tests, and F-tests.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.1.6-q1",
+      "conceptId": "4.1.6",
+      "module": 4,
+      "stem": "What is a confidence interval in the extract’s wording?",
+      "options": [
+        "Only the single point estimate with no range",
+        "The estimate plus and minus the variation in that estimate — a range at a stated confidence",
+        "The probability of a Type I error alone",
+        "A synonym for the null hypothesis"
+      ],
+      "correct": 1,
+      "explanation": "CI = mean of estimate ± variation; range expected under a confidence level.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.1.6-q2",
+      "conceptId": "4.1.6",
+      "module": 4,
+      "stem": "If α = 0.05, what confidence level does the material give?",
+      "options": [
+        "5%",
+        "50%",
+        "95%",
+        "0.05%"
+      ],
+      "correct": 2,
+      "explanation": "Confidence level = 1 − α = 0.95 or 95%.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.1.7-q1",
+      "conceptId": "4.1.7",
+      "module": 4,
+      "stem": "In the fuel-price illustration, what does the shaded 95% range of sample means represent?",
+      "options": [
+        "The rejection region for a Type II error only",
+        "The 95% confidence interval for the sample data",
+        "The population size N",
+        "The alternative hypothesis wording"
+      ],
+      "correct": 1,
+      "explanation": "Shaded range [267, 394] is described as the 95% confidence interval.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.1.7-q2",
+      "conceptId": "4.1.7",
+      "module": 4,
+      "stem": "Where is the sample mean placed in the confidence-interval graph described?",
+      "options": [
+        "Always at zero",
+        "At the centre of the confidence interval graph",
+        "Outside both tails by definition",
+        "Only in the left rejection region"
+      ],
+      "correct": 1,
+      "explanation": "The sample mean is the centre of the confidence interval graph.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.1.8-q1",
+      "conceptId": "4.1.8",
+      "module": 4,
+      "stem": "What is the critical (rejection) region?",
+      "options": [
+        "All values that force acceptance of H0 as proven true",
+        "All values of the test statistic that lead to rejection of H0",
+        "The set of all possible sample sizes",
+        "Only the Bayesian prior column"
+      ],
+      "correct": 1,
+      "explanation": "Rejection region = values of the test statistic that reject H0.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.1.8-q2",
+      "conceptId": "4.1.8",
+      "module": 4,
+      "stem": "If the standardised test statistic does not fall in the rejection region, what should you do?",
+      "options": [
+        "Prove H0 is absolutely true",
+        "Fail to reject H0 (insufficient evidence to reject)",
+        "Automatically accept H1",
+        "Switch to a non-parametric test only"
+      ],
+      "correct": 1,
+      "explanation": "Fail to reject H0; that does not imply accepting it as true.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.1.9-q1",
+      "conceptId": "4.1.9",
+      "module": 4,
+      "stem": "What does the p-value quantify in the procedure section?",
+      "options": [
+        "The population mean under H1",
+        "The probability of results as extreme as observed, assuming H0 is true",
+        "The required marketing spend",
+        "The number of treatments in ANOVA"
+      ],
+      "correct": 1,
+      "explanation": "p-value = probability of observed (or more extreme) results under H0.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.1.9-q2",
+      "conceptId": "4.1.9",
+      "module": 4,
+      "stem": "If p-value < α, what decision follows?",
+      "options": [
+        "Fail to reject H0",
+        "Reject the null hypothesis",
+        "Increase α until p exceeds it",
+        "Declare the sample invalid"
+      ],
+      "correct": 1,
+      "explanation": "Low p (< α): reject H0; high p (≥ α): fail to reject.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.1.10-q1",
+      "conceptId": "4.1.10",
+      "module": 4,
+      "stem": "Which pair correctly matches the extract’s classification?",
+      "options": [
+        "Parametric tests never assume normality; non-parametric always do",
+        "Parametric tests rely on distributional assumptions (e.g., t, ANOVA); non-parametric do not require them (e.g., Mann-Whitney)",
+        "Both types require known population σ",
+        "Non-parametric tests include only linear regression"
+      ],
+      "correct": 1,
+      "explanation": "Parametric vs non-parametric split is exactly that assumption contrast.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.1.10-q2",
+      "conceptId": "4.1.10",
+      "module": 4,
+      "stem": "Which are listed as parametric examples?",
+      "options": [
+        "Wilcoxon, Mann-Whitney, Kruskal-Wallis",
+        "t-tests, ANOVA, and linear regression",
+        "Only chi-square goodness-of-fit",
+        "Only Bayesian Boxes"
+      ],
+      "correct": 1,
+      "explanation": "Parametric examples: t-tests, ANOVA, linear regression.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.1.11-q1",
+      "conceptId": "4.1.11",
+      "module": 4,
+      "stem": "Which is one of the seven essential steps for selecting a test?",
+      "options": [
+        "Always ignore data type",
+        "Assess whether data are continuous, categorical, or binary (and normality if continuous)",
+        "Skip formulating a null hypothesis",
+        "Use only two-tailed tests forever"
+      ],
+      "correct": 1,
+      "explanation": "Step: assess data type / normality vs skew for continuous data.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.1.11-q2",
+      "conceptId": "4.1.11",
+      "module": 4,
+      "stem": "When are one-tailed tests described as suitable?",
+      "options": [
+        "When no direction is anticipated",
+        "When evidence points clearly in one direction",
+        "Only for qualitative interviews",
+        "Only when N < 5"
+      ],
+      "correct": 1,
+      "explanation": "One-tailed when evidence points clearly in one direction; two-tailed otherwise.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.2.1-q1",
+      "conceptId": "4.2.1",
+      "module": 4,
+      "stem": "When does the material prefer a t-test over a Z-test for means?",
+      "options": [
+        "Large n (>30) with known population variance",
+        "Small samples (<30) with unknown population variance",
+        "Only when comparing three or more variances",
+        "Never — t and Z are identical"
+      ],
+      "correct": 1,
+      "explanation": "t-test for small n and unknown variance; Z for large n or known variance.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.2.1-q2",
+      "conceptId": "4.2.1",
+      "module": 4,
+      "stem": "What is the F-test used for in the “important parametric tests” section?",
+      "options": [
+        "Only paired before/after means",
+        "Comparing variances of two samples (and in ANOVA for ≥3 group means)",
+        "Estimating ISBN numbers",
+        "Replacing the null hypothesis"
+      ],
+      "correct": 1,
+      "explanation": "F compares variances; also integral to ANOVA for three or more means.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.2.2-q1",
+      "conceptId": "4.2.2",
+      "module": 4,
+      "stem": "A Z-test for a single mean is especially useful when:",
+      "options": [
+        "n is small and σ is unknown",
+        "Population standard deviation is known and/or n > 30",
+        "Data are ranks only",
+        "You must avoid any normal approximation"
+      ],
+      "correct": 1,
+      "explanation": "Z when σ known; particularly useful for large samples n > 30.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.2.2-q2",
+      "conceptId": "4.2.2",
+      "module": 4,
+      "stem": "Which application is listed for the Z-test?",
+      "options": [
+        "Only testing equality of three variances",
+        "Comparing a sample mean to a population mean",
+        "Computing degrees of freedom as N+1",
+        "Replacing residual plots"
+      ],
+      "correct": 1,
+      "explanation": "Application: comparing sample mean to population mean (and large-sample two means).",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.2.3-q1",
+      "conceptId": "4.2.3",
+      "module": 4,
+      "stem": "Which is an assumption of the t-test in the extract?",
+      "options": [
+        "Population standard deviation is known",
+        "Sample size is typically large (>1000)",
+        "Population is normally distributed; samples random and independent; σ unknown; n small",
+        "Data must be purely categorical proportions"
+      ],
+      "correct": 2,
+      "explanation": "Assumptions: normal population, random independent samples, small n, unknown σ.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.2.3-q2",
+      "conceptId": "4.2.3",
+      "module": 4,
+      "stem": "A paired t-test is described as comparing:",
+      "options": [
+        "Variances of two machines only",
+        "Means of two related samples (e.g., before and after)",
+        "Three or more independent group means without error",
+        "Only Bayesian posteriors"
+      ],
+      "correct": 1,
+      "explanation": "Paired t: related samples, often before/after.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.2.4-q1",
+      "conceptId": "4.2.4",
+      "module": 4,
+      "stem": "Hypothesis tests for population proportions are particularly useful for:",
+      "options": [
+        "Only continuous normally distributed heights",
+        "Categorical data comparing a sample proportion to a hypothesised value",
+        "Latin square designs exclusively",
+        "Estimating residual means only"
+      ],
+      "correct": 1,
+      "explanation": "Proportion tests suit categorical data vs a hypothesised population proportion.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.2.4-q2",
+      "conceptId": "4.2.4",
+      "module": 4,
+      "stem": "For a two-tailed proportion test with α = 0.05, which critical values are cited?",
+      "options": [
+        "±0.05",
+        "±1.96",
+        "±3.94 and 18.307",
+        "0 and 1 only"
+      ],
+      "correct": 1,
+      "explanation": "Standard normal critical values ±1.96 for two-tailed α = 0.05.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.2.5-q1",
+      "conceptId": "4.2.5",
+      "module": 4,
+      "stem": "Which distribution is used to compare a sample variance to a hypothesised population variance?",
+      "options": [
+        "Standard normal only",
+        "Chi-square with n − 1 degrees of freedom",
+        "Binomial with p = 0.5",
+        "Uniform(0,1)"
+      ],
+      "correct": 1,
+      "explanation": "Chi-square variance test uses df = n − 1.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.2.5-q2",
+      "conceptId": "4.2.5",
+      "module": 4,
+      "stem": "Why is the chi-square variance distribution described as asymmetrical from zero?",
+      "options": [
+        "Because means can be negative",
+        "Because variance cannot be negative",
+        "Because α is always 0.5",
+        "Because F ratios are undefined"
+      ],
+      "correct": 1,
+      "explanation": "Variance cannot be negative → chi-square starts at zero and is asymmetrical.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.2.6-q1",
+      "conceptId": "4.2.6",
+      "module": 4,
+      "stem": "In the F test for equality of two variances, the test statistic is:",
+      "options": [
+        "The difference of the two sample means",
+        "The ratio of the larger sample variance to the smaller sample variance",
+        "Always equal to α",
+        "The sum of all residuals"
+      ],
+      "correct": 1,
+      "explanation": "F = larger sample variance / smaller sample variance.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.2.6-q2",
+      "conceptId": "4.2.6",
+      "module": 4,
+      "stem": "Which condition is required for a valid F test of two variances?",
+      "options": [
+        "Populations need not be near normal",
+        "Observations may be dependent within samples",
+        "Samples drawn randomly; observations independent; populations approximately normal",
+        "Sample sizes must both exceed 1000"
+      ],
+      "correct": 2,
+      "explanation": "Random samples, independence, approximate normality.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.2.7-q1",
+      "conceptId": "4.2.7",
+      "module": 4,
+      "stem": "In the means model for fixed-effect ANOVA, what does yij = μi + εij express?",
+      "options": [
+        "Only measurement error with no treatment means",
+        "Response as the ith treatment mean plus error",
+        "That all treatment means are forced equal to zero",
+        "A non-parametric rank sum"
+      ],
+      "correct": 1,
+      "explanation": "Means model: yij = μi + εij based on mean treatment effect.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.2.7-q2",
+      "conceptId": "4.2.7",
+      "module": 4,
+      "stem": "How does the effects model write the response?",
+      "options": [
+        "yij = μ + τi + εij (overall mean + treatment effect + error)",
+        "yij = εij only",
+        "yij = μi²",
+        "yij = α always"
+      ],
+      "correct": 0,
+      "explanation": "Effects model: yij = μ + τi + εij.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.2.7-q3",
+      "conceptId": "4.2.7",
+      "module": 4,
+      "stem": "In the fuel-economy illustration, what research question does the means model address?",
+      "options": [
+        "Whether compilers differ on blocked programmes",
+        "Whether average mpg differs across fuel types (treatments)",
+        "Whether a single proportion equals 0.5",
+        "Whether residuals have infinite variance"
+      ],
+      "correct": 1,
+      "explanation": "Ask if there is disparity among fuel types in average mpg.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.2.8-q1",
+      "conceptId": "4.2.8",
+      "module": 4,
+      "stem": "What does SST equal in the extract?",
+      "options": [
+        "Only SSE",
+        "SSTR + SSE",
+        "MSE × MSTR",
+        "α × β"
+      ],
+      "correct": 1,
+      "explanation": "Total sum of squares SST = SSTR + SSE.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.2.8-q2",
+      "conceptId": "4.2.8",
+      "module": 4,
+      "stem": "What does a low SSTR indicate in the battery-lifetime discussion?",
+      "options": [
+        "Treatment averages differ dramatically",
+        "Average lifespans of the battery types are comparable",
+        "SSE must be zero",
+        "The design must be Latin square"
+      ],
+      "correct": 1,
+      "explanation": "Low SSTR → average lifespans of various battery types are comparable.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.2.9-q1",
+      "conceptId": "4.2.9",
+      "module": 4,
+      "stem": "Why is design (2) preferred in the compiler evaluation example?",
+      "options": [
+        "It confounds programmes with compilers on purpose",
+        "Each programme runs on every compiler, so programme differences do not bias compiler comparisons (randomised blocks)",
+        "It uses twenty unrelated programmes with no replication",
+        "It forbids any blocking factor"
+      ],
+      "correct": 1,
+      "explanation": "Same programmes on each compiler → blocking; compiler is factor of interest.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.2.9-q2",
+      "conceptId": "4.2.9",
+      "module": 4,
+      "stem": "What does “no interaction” mean among the two-way ANOVA assumptions?",
+      "options": [
+        "Effects of one factor depend strongly on the level of the other",
+        "The impact of one factor is consistent across levels of the other",
+        "Variances must differ in every cell",
+        "Only Type I errors are allowed"
+      ],
+      "correct": 1,
+      "explanation": "Assumption 3: impact of one factor consistent across levels of the other (no interaction).",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.2.10-q1",
+      "conceptId": "4.2.10",
+      "module": 4,
+      "stem": "What characterises a completely randomised design (CRD)?",
+      "options": [
+        "Mandatory blocking into homogeneous groups before assignment",
+        "Treatments allocated randomly to experimental units without grouping for homogeneity",
+        "Only Latin squares are allowed",
+        "No randomisation is used"
+      ],
+      "correct": 1,
+      "explanation": "CRD randomly allocates treatments without grouping units for more homogeneity.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m4-4.2.10-q2",
+      "conceptId": "4.2.10",
+      "module": 4,
+      "stem": "In the single-factor effects model, what is H0?",
+      "options": [
+        "All treatment effects τi equal zero",
+        "All residuals infinite",
+        "σ² < 0",
+        "Only two treatments may exist"
+      ],
+      "correct": 0,
+      "explanation": "H0: α1 = … = αv = 0 (all treatment effects zero).",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.2.11-q1",
+      "conceptId": "4.2.11",
+      "module": 4,
+      "stem": "Which is listed as an assumption checked in model adequacy?",
+      "options": [
+        "Errors must have infinite mean",
+        "Mistakes follow a normal distribution; mean zero; constant variance; uncorrelated; roughly linear mean structure",
+        "Predictors must be ordinal ranks only",
+        "Sample size must equal α"
+      ],
+      "correct": 1,
+      "explanation": "Five listed assumptions include linearity, zero-mean errors, constant variance, independence, normality.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "m4-4.2.11-q2",
+      "conceptId": "4.2.11",
+      "module": 4,
+      "stem": "How is a residual defined in the extract?",
+      "options": [
+        "The population mean μ",
+        "The difference between the observed and fitted value of the study variable",
+        "The critical value ±1.96 only",
+        "The prior probability in a Bayes Box"
+      ],
+      "correct": 1,
+      "explanation": "ei = yi − ŷi — observed minus fitted.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "m5-5.1.1-a",
+      "module": 5,
+      "conceptId": "5.1.1",
+      "stem": "Which is one of the three fundamental characteristics of report writing?",
+      "options": [
+        "Personal opinion throughout",
+        "Predefined structure",
+        "Mandatory memorisation of findings",
+        "Subjective conclusions only"
+      ],
+      "correct": 1,
+      "explanation": "The extract lists predefined structure, independent sections, and unbiased conclusions."
+    },
+    {
+      "id": "m5-5.1.1-b",
+      "module": 5,
+      "conceptId": "5.1.1",
+      "stem": "Why are report sections written independently?",
+      "options": [
+        "To hide methodology from readers",
+        "So readers can selectively read sections of interest",
+        "Because conclusions must be subjective",
+        "To avoid using a title page"
+      ],
+      "correct": 1,
+      "explanation": "Independent sections let readers jump to parts they need rather than reading top to bottom."
+    },
+    {
+      "id": "m5-5.1.1-c",
+      "module": 5,
+      "conceptId": "5.1.1",
+      "stem": "How does the module characterise workplace reports?",
+      "options": [
+        "As informal emails",
+        "As legal papers in all workplaces",
+        "As optional marketing flyers",
+        "As unedited brainstorm notes"
+      ],
+      "correct": 1,
+      "explanation": "The text states reports are regarded as legal papers in all workplaces."
+    },
+    {
+      "id": "m5-5.1.2-a",
+      "module": 5,
+      "conceptId": "5.1.2",
+      "stem": "Which item belongs in the preliminaries of a scientific report?",
+      "options": [
+        "Glossary definitions only",
+        "Title page",
+        "Full data analysis narrative",
+        "Bibliography entries"
+      ],
+      "correct": 1,
+      "explanation": "Preliminaries include title page, preface/acknowledgements, visuals, and TOC."
+    },
+    {
+      "id": "m5-5.1.2-b",
+      "module": 5,
+      "conceptId": "5.1.2",
+      "stem": "Where do research aims and hypotheses appear in the scientific report structure?",
+      "options": [
+        "Glossary",
+        "Introduction",
+        "Index only",
+        "Technical appendices only"
+      ],
+      "correct": 1,
+      "explanation": "Introduction covers aims, problem characterisation, hypotheses, and key concepts."
+    },
+    {
+      "id": "m5-5.1.2-c",
+      "module": 5,
+      "conceptId": "5.1.2",
+      "stem": "Which belongs under reference materials?",
+      "options": [
+        "Hypothesis formulation",
+        "Sample selection methods narrative",
+        "Appendices, glossary, and index",
+        "Scope and assumptions only"
+      ],
+      "correct": 2,
+      "explanation": "Reference materials include references, appendices, glossary, and index."
+    },
+    {
+      "id": "m5-5.1.3-a",
+      "module": 5,
+      "conceptId": "5.1.3",
+      "stem": "Who is the primary audience for a technical scientific report?",
+      "options": [
+        "General newspaper readers",
+        "Other academics in the field",
+        "Only accountants",
+        "Only school students"
+      ],
+      "correct": 1,
+      "explanation": "A technical report is primarily intended for other academics."
+    },
+    {
+      "id": "m5-5.1.3-b",
+      "module": 5,
+      "conceptId": "5.1.3",
+      "stem": "What do same-field colleagues mostly focus on in a technical report?",
+      "options": [
+        "Cover design colours",
+        "Techniques/methods employed",
+        "Only the acknowledgements",
+        "Marketing slogans"
+      ],
+      "correct": 1,
+      "explanation": "Colleagues are mostly focused on the techniques employed."
+    },
+    {
+      "id": "m5-5.1.3-c",
+      "module": 5,
+      "conceptId": "5.1.3",
+      "stem": "What do technical appendices typically encompass?",
+      "options": [
+        "Only the title page",
+        "Surveys, mathematical derivations, and detailed analytic methods",
+        "Executive summary only",
+        "Oral presentation jokes"
+      ],
+      "correct": 1,
+      "explanation": "Technical appendices hold surveys, derivations, and detailed analytic methodologies."
+    },
+    {
+      "id": "m5-5.1.4-a",
+      "module": 5,
+      "conceptId": "5.1.4",
+      "stem": "Which report type requires direct audience interaction and careful live communication?",
+      "options": [
+        "Written short report",
+        "Oral report",
+        "Bibliography",
+        "Glossary"
+      ],
+      "correct": 1,
+      "explanation": "Oral reports involve direct interaction; delays can harm impression and confidence."
+    },
+    {
+      "id": "m5-5.1.4-b",
+      "module": 5,
+      "conceptId": "5.1.4",
+      "stem": "A monthly sales report of about five pages for a limited investigation is best classed as a:",
+      "options": [
+        "Government five-year plan",
+        "Short report",
+        "Rapid journal communication",
+        "Citation index"
+      ],
+      "correct": 1,
+      "explanation": "Short reports suit clearly identified issues with restricted extent; monthly sales ~five pages is the example."
+    },
+    {
+      "id": "m5-5.1.4-c",
+      "module": 5,
+      "conceptId": "5.1.4",
+      "stem": "A non-technical report is typically aimed at readers who:",
+      "options": [
+        "Need full sample design detail",
+        "Lack technical qualifications and may care mainly about outcomes like profit/sales",
+        "Only want mathematical derivations",
+        "Must memorise the manuscript"
+      ],
+      "correct": 1,
+      "explanation": "Example: finance head focused on financial ramifications, not the process."
+    },
+    {
+      "id": "m5-5.1.5-a",
+      "module": 5,
+      "conceptId": "5.1.5",
+      "stem": "What should an executive summary mainly help top executives do?",
+      "options": [
+        "Replace the bibliography",
+        "Facilitate decision-making with a 1–2 page precise overview",
+        "List every raw questionnaire",
+        "Hide limitations"
+      ],
+      "correct": 1,
+      "explanation": "Executive summary emphasises key elements for busy executives and should aid decision-making."
+    },
+    {
+      "id": "m5-5.1.5-b",
+      "module": 5,
+      "conceptId": "5.1.5",
+      "stem": "Which sequence matches the report structure after the report type is chosen?",
+      "options": [
+        "Appendix → Title → Body only",
+        "Title page → Contents → Executive summary → Body → Conclusions → Bibliography → Appendix",
+        "Only footnotes",
+        "ISSN then ISBN"
+      ],
+      "correct": 1,
+      "explanation": "The extract lists those seven structural steps in order."
+    },
+    {
+      "id": "m5-5.1.5-c",
+      "module": 5,
+      "conceptId": "5.1.5",
+      "stem": "What belongs in the appendix?",
+      "options": [
+        "Only the thesis statement",
+        "Non-essential supporting items such as questionnaires, charts, and interviewer instructions",
+        "The entire executive summary",
+        "Impact factor formula only"
+      ],
+      "correct": 1,
+      "explanation": "Appendix provides non-essential but related materials including data-collection forms."
+    },
+    {
+      "id": "m5-5.1.6-a",
+      "module": 5,
+      "conceptId": "5.1.6",
+      "stem": "Which writing rule does the extract emphasise for report style?",
+      "options": [
+        "Impress with exaggeration",
+        "Justify every statement with facts and data",
+        "Always use passive voice",
+        "Prefer vague words like 'large' over numbers"
+      ],
+      "correct": 1,
+      "explanation": "Rules include justify with facts/data; quantify when possible; inform not impress."
+    },
+    {
+      "id": "m5-5.1.6-b",
+      "module": 5,
+      "conceptId": "5.1.6",
+      "stem": "Why avoid passive voice when possible?",
+      "options": [
+        "It shortens the TOC",
+        "It can create vagueness and dull reading",
+        "It is required by ISBN rules",
+        "It increases impact factor"
+      ],
+      "correct": 1,
+      "explanation": "Example: 'patients were interviewed' leaves who interviewed them unclear."
+    },
+    {
+      "id": "m5-5.1.6-c",
+      "module": 5,
+      "conceptId": "5.1.6",
+      "stem": "What should physical layout help readers do promptly?",
+      "options": [
+        "Memorise every table",
+        "Decide which section to read first",
+        "Skip peer review",
+        "Avoid numbering figures"
+      ],
+      "correct": 1,
+      "explanation": "Layout motivates readers by clarifying organisation so they can choose sections first."
+    },
+    {
+      "id": "m5-5.1.7-a",
+      "module": 5,
+      "conceptId": "5.1.7",
+      "stem": "Which numbering practice is correct?",
+      "options": [
+        "Mix Table 1 with Figure 1.3 in the same thesis",
+        "Use one consistent scheme for all numbered items",
+        "Never number figures",
+        "Number only copyrighted images"
+      ],
+      "correct": 1,
+      "explanation": "Use sequential or chapter.item consistently — never mix styles."
+    },
+    {
+      "id": "m5-5.1.7-b",
+      "module": 5,
+      "conceptId": "5.1.7",
+      "stem": "Minimum height recommended for text in tables/figures for legibility?",
+      "options": [
+        "0.5 mm",
+        "2 mm",
+        "20 mm",
+        "No minimum"
+      ],
+      "correct": 1,
+      "explanation": "Text in tables and figures should have a minimum height of 2 mm."
+    },
+    {
+      "id": "m5-5.1.7-c",
+      "module": 5,
+      "conceptId": "5.1.7",
+      "stem": "If a copyrighted figure is excluded, what should appear in its place?",
+      "options": [
+        "Blank silence with no note",
+        "A copyright-limitation assertion, description/link if available, and full original reference",
+        "Only the author's joke",
+        "An uncited screenshot"
+      ],
+      "correct": 1,
+      "explanation": "The extract requires assertion, description/link, and complete reference."
+    },
+    {
+      "id": "m5-5.1.8-a",
+      "module": 5,
+      "conceptId": "5.1.8",
+      "stem": "What does 'Ibid.' mean in bibliographic abbreviations?",
+      "options": [
+        "A new unrelated source",
+        "The same work given immediately before",
+        "Only online sources",
+        "An ISBN code"
+      ],
+      "correct": 1,
+      "explanation": "Ibid. (ibidem) means the same work referenced immediately before."
+    },
+    {
+      "id": "m5-5.1.8-b",
+      "module": 5,
+      "conceptId": "5.1.8",
+      "stem": "When only cited works are listed, how should the section be titled?",
+      "options": [
+        "Bibliography (always)",
+        "References",
+        "Appendix",
+        "Glossary"
+      ],
+      "correct": 1,
+      "explanation": "If only referenced publications are included, title it 'References' instead of 'Bibliography'."
+    },
+    {
+      "id": "m5-5.1.8-c",
+      "module": 5,
+      "conceptId": "5.1.8",
+      "stem": "Loc. cit. refers to:",
+      "options": [
+        "A brand-new book never cited",
+        "The same page of a work previously referenced",
+        "Impact factor calculation",
+        "A flip-chart tip"
+      ],
+      "correct": 1,
+      "explanation": "Loc. cit. means in the place cited — same page of a previously referenced work."
+    },
+    {
+      "id": "m5-5.1.9-a",
+      "module": 5,
+      "conceptId": "5.1.9",
+      "stem": "One primary purpose of footnotes is to:",
+      "options": [
+        "Replace the need for any references",
+        "Correctly identify materials used in quotations",
+        "Increase ISSN length",
+        "Hide unsupported conclusions"
+      ],
+      "correct": 1,
+      "explanation": "Footnotes identify quoted materials and add supplementary value to the body."
+    },
+    {
+      "id": "m5-5.1.9-b",
+      "module": 5,
+      "conceptId": "5.1.9",
+      "stem": "What does the extract say about using footnotes to display scholarship?",
+      "options": [
+        "They are the best way to prove scholarship",
+        "They are neither an end nor a means of displaying scholarship",
+        "They are legally mandatory everywhere",
+        "They replace peer review"
+      ],
+      "correct": 1,
+      "explanation": "Recent trend is to avoid footnotes; they are not for displaying scholarship."
+    },
+    {
+      "id": "m5-5.1.9-c",
+      "module": 5,
+      "conceptId": "5.1.9",
+      "stem": "Besides identifying quotations, footnotes can provide:",
+      "options": [
+        "Only colour psychology survey results",
+        "Cross-references, authorities, acknowledgements, and elucidation",
+        "ISBN assignment in Paris",
+        "ANOVA tables only"
+      ],
+      "correct": 1,
+      "explanation": "They support cross-references, citation of authorities/sources, acknowledgement, and explanation."
+    },
+    {
+      "id": "m5-5.2.1-a",
+      "module": 5,
+      "conceptId": "5.2.1",
+      "stem": "Why is oral presentation often harder than a written report?",
+      "options": [
+        "No planning is allowed",
+        "The presenter interacts directly with the audience and must handle questions live",
+        "Oral talks forbid visuals",
+        "Oral talks never need conclusions"
+      ],
+      "correct": 1,
+      "explanation": "Direct interaction, timing pressure, and Q&A make oral reports more demanding."
+    },
+    {
+      "id": "m5-5.2.1-b",
+      "module": 5,
+      "conceptId": "5.2.1",
+      "stem": "Which delivery approach is recommended?",
+      "options": [
+        "Rely entirely on memorisation",
+        "Expand from concise notes in a logical extempore style",
+        "Read the full manuscript in a monotone",
+        "Skip the opening statement"
+      ],
+      "correct": 1,
+      "explanation": "Memorisation risks slips; manuscript reading is dull; notes-based extempore is best."
+    },
+    {
+      "id": "m5-5.2.1-c",
+      "module": 5,
+      "conceptId": "5.2.1",
+      "stem": "Every recommendation in an oral presentation should be:",
+      "options": [
+        "Unsupported speculation",
+        "Supported by a conclusion",
+        "Hidden from the audience",
+        "Longer than the findings"
+      ],
+      "correct": 1,
+      "explanation": "Every recommendation should have the support of a conclusion."
+    },
+    {
+      "id": "m5-5.2.2-a",
+      "module": 5,
+      "conceptId": "5.2.2",
+      "stem": "According to the golden rule for presentations:",
+      "options": [
+        "Cram maximum detail on every slide",
+        "Human attention is limited — avoid cramming excess information",
+        "Always end with extra slides after conclusions",
+        "Never rehearse"
+      ],
+      "correct": 1,
+      "explanation": "Don't cram excessive information in each slide or the whole talk."
+    },
+    {
+      "id": "m5-5.2.2-b",
+      "module": 5,
+      "conceptId": "5.2.2",
+      "stem": "Where should the conclusion slide be placed?",
+      "options": [
+        "First slide only",
+        "As the last slide — nothing after it",
+        "After a long appendix of formulas",
+        "Hidden in handouts only"
+      ],
+      "correct": 1,
+      "explanation": "Putting other slides after conclusions weakens their impact."
+    },
+    {
+      "id": "m5-5.2.2-c",
+      "module": 5,
+      "conceptId": "5.2.2",
+      "stem": "For an important talk, the extract suggests a minimum of how many rehearsals?",
+      "options": [
+        "One silent skim",
+        "Five rehearsals (preferably aloud)",
+        "Fifty memorised run-throughs",
+        "Zero — improvisation only"
+      ],
+      "correct": 1,
+      "explanation": "Five rehearsals is a minimum; rehearsal aloud is most helpful."
+    },
+    {
+      "id": "m5-5.2.3-a",
+      "module": 5,
+      "conceptId": "5.2.3",
+      "stem": "How many key points should each slide/visual aid carry?",
+      "options": [
+        "As many as possible",
+        "One key point",
+        "Exactly ten",
+        "None — text only"
+      ],
+      "correct": 1,
+      "explanation": "One message per visual aid; one key point per slide."
+    },
+    {
+      "id": "m5-5.2.3-b",
+      "module": 5,
+      "conceptId": "5.2.3",
+      "stem": "Recommended minimum PowerPoint font size in the tips?",
+      "options": [
+        "8pt",
+        "12pt",
+        "24pt",
+        "6pt"
+      ],
+      "correct": 2,
+      "explanation": "Use a large font size — a minimum of 24pt."
+    },
+    {
+      "id": "m5-5.2.3-c",
+      "module": 5,
+      "conceptId": "5.2.3",
+      "stem": "When a visual aid is shown, the presenter should:",
+      "options": [
+        "Ignore it and keep reading notes",
+        "Immediately explain it because attention shifts to it",
+        "Leave it unexplained",
+        "Use only red and green text"
+      ],
+      "correct": 1,
+      "explanation": "Audience attention is drawn to the aid, so explain it at once; avoid red/green text."
+    },
+    {
+      "id": "m5-5.2.4-a",
+      "module": 5,
+      "conceptId": "5.2.4",
+      "stem": "Which is listed as a benefit of effective communication?",
+      "options": [
+        "Guaranteed higher impact factor",
+        "Building trust",
+        "Eliminating the need for reports",
+        "Avoiding all stakeholder contact"
+      ],
+      "correct": 1,
+      "explanation": "Benefits include building trust, resolving problems, clarity, relationships, engagement, productivity, team building."
+    },
+    {
+      "id": "m5-5.2.4-b",
+      "module": 5,
+      "conceptId": "5.2.4",
+      "stem": "Effective communication especially involves:",
+      "options": [
+        "Ignoring other viewpoints",
+        "Listening attentively and offering empathy and helpful feedback",
+        "Speaking only in research jargon",
+        "Never giving direction"
+      ],
+      "correct": 1,
+      "explanation": "Attentive listening, empathy, open-mindedness, and helpful feedback are central."
+    },
+    {
+      "id": "m5-5.2.4-c",
+      "module": 5,
+      "conceptId": "5.2.4",
+      "stem": "The engagement statistic cited in the extract is that only about what share of adult employees are engaged with their employers?",
+      "options": [
+        "85%",
+        "50%",
+        "15%",
+        "0%"
+      ],
+      "correct": 2,
+      "explanation": "According to the cited study note, only 15% of adult employees are engaged."
+    },
+    {
+      "id": "m5-5.2.5-a",
+      "module": 5,
+      "conceptId": "5.2.5",
+      "stem": "What should accompany tables in a trustworthy report?",
+      "options": [
+        "Every cell percentage restated in prose",
+        "Conclusions/interpretation, not just raw cell dumps",
+        "No numbers at all",
+        "Only decorative borders"
+      ],
+      "correct": 1,
+      "explanation": "Tables need conclusions; readers can see the numbers themselves."
+    },
+    {
+      "id": "m5-5.2.5-b",
+      "module": 5,
+      "conceptId": "5.2.5",
+      "stem": "Using informant quotes as illustrations can have scientific value because they:",
+      "options": [
+        "Replace all quantitative analysis",
+        "Allow readers to draw their own conclusions from established knowledge (if not biased)",
+        "Remove the need for proofreading",
+        "Are dated automatically"
+      ],
+      "correct": 1,
+      "explanation": "Quotes make reports lively and let readers draw conclusions if representation is unbiased."
+    },
+    {
+      "id": "m5-5.2.5-c",
+      "module": 5,
+      "conceptId": "5.2.5",
+      "stem": "Which pitfall must be avoided when preparing a report?",
+      "options": [
+        "Separating facts from opinions",
+        "Unsupported conclusions and proposals",
+        "Interpreting qualitative data",
+        "Proofreading carefully"
+      ],
+      "correct": 1,
+      "explanation": "Avoid unsupported conclusions, careless data, outdated material, and appearance over content."
+    },
+    {
+      "id": "m5-5.3.1-a",
+      "module": 5,
+      "conceptId": "5.3.1",
+      "stem": "Which journal feature should you not compromise on for research articles?",
+      "options": [
+        "Colour plate fees",
+        "Peer review for publication",
+        "Page charges",
+        "Fancy animations"
+      ],
+      "correct": 1,
+      "explanation": "Manuscripts must be peer reviewed to be considered research articles."
+    },
+    {
+      "id": "m5-5.3.1-b",
+      "module": 5,
+      "conceptId": "5.3.1",
+      "stem": "When should you ideally start writing the paper?",
+      "options": [
+        "Only after dismantling all lab equipment",
+        "Before experiments are complete",
+        "After proofs arrive",
+        "Never — only present orally"
+      ],
+      "correct": 1,
+      "explanation": "Start writing while experiments continue; writing evokes new ideas and needed controls."
+    },
+    {
+      "id": "m5-5.3.1-c",
+      "module": 5,
+      "conceptId": "5.3.1",
+      "stem": "Typical length guidance for short/brief communications in the extract?",
+      "options": [
+        "Unlimited chapters",
+        "Typically 3500 words or less with up to 2 tables/figures",
+        "Exactly one sentence",
+        "Only ISBN metadata"
+      ],
+      "correct": 1,
+      "explanation": "Short communications are typically ≤3500 words and up to 2 tables and figures."
+    },
+    {
+      "id": "m5-5.3.2-a",
+      "module": 5,
+      "conceptId": "5.3.2",
+      "stem": "What determines how many outline letters/numbers a paper template uses?",
+      "options": [
+        "A fixed universal count",
+        "The number of points needed for the paper’s length",
+        "The journal’s impact factor only",
+        "ISSN digit rules"
+      ],
+      "correct": 1,
+      "explanation": "No correct fixed count — structure follows points required for the length."
+    },
+    {
+      "id": "m5-5.3.2-b",
+      "module": 5,
+      "conceptId": "5.3.2",
+      "stem": "How should quotations be introduced?",
+      "options": [
+        "Start a sentence with an unintroduced quote",
+        "Never start a sentence with a quote that hasn’t been introduced",
+        "Only use quotes in footnotes",
+        "Quotes replace the thesis"
+      ],
+      "correct": 1,
+      "explanation": "Never start a sentence with a quote that hasn’t been introduced."
+    },
+    {
+      "id": "m5-5.3.2-c",
+      "module": 5,
+      "conceptId": "5.3.2",
+      "stem": "The conclusion of the template should:",
+      "options": [
+        "Introduce a new untested thesis",
+        "Affirm that the thesis has been proven",
+        "List only ISBNs",
+        "Omit critical thinking"
+      ],
+      "correct": 1,
+      "explanation": "Conclusion: affirm that the thesis has been proven."
+    },
+    {
+      "id": "m5-5.3.3-a",
+      "module": 5,
+      "conceptId": "5.3.3",
+      "stem": "Impact factor calculation is based on what citation window?",
+      "options": [
+        "One week",
+        "A two-year period of citable items",
+        "Fifty years only",
+        "The day of submission"
+      ],
+      "correct": 1,
+      "explanation": "IF uses a 2-year period: cites in year Y to items from Y-1 and Y-2, divided by citable items."
+    },
+    {
+      "id": "m5-5.3.3-b",
+      "module": 5,
+      "conceptId": "5.3.3",
+      "stem": "For 2010 IF, A represents:",
+      "options": [
+        "Page charges",
+        "Times 2008–2009 articles were cited by indexed journals during 2010",
+        "Number of oral presentations",
+        "ISSN check digits"
+      ],
+      "correct": 1,
+      "explanation": "A = citations in 2010 to articles published in 2008 and 2009."
+    },
+    {
+      "id": "m5-5.3.3-c",
+      "module": 5,
+      "conceptId": "5.3.3",
+      "stem": "Per the extract’s rule of thumb, an IF of 10 or higher is considered:",
+      "options": [
+        "Poor",
+        "Average (<1)",
+        "Excellent",
+        "Invalid"
+      ],
+      "correct": 2,
+      "explanation": "IF of 10+ is excellent; ~3 good; average score less than 1 — compare within category."
+    },
+    {
+      "id": "m5-5.3.4-a",
+      "module": 5,
+      "conceptId": "5.3.4",
+      "stem": "A citation index primarily lets users:",
+      "options": [
+        "Print only posters",
+        "See which later documents cite earlier documents",
+        "Assign ISBNs",
+        "Skip literature review"
+      ],
+      "correct": 1,
+      "explanation": "It indexes citations between publications for later→earlier links."
+    },
+    {
+      "id": "m5-5.3.4-b",
+      "module": 5,
+      "conceptId": "5.3.4",
+      "stem": "Web of Science is associated in the extract with:",
+      "options": [
+        "Only flip charts",
+        "ISI / Thomson Reuters citation indexes (SCI, SSCI, A&HCI, etc.)",
+        "Paris ISSN centre only",
+        "Shift log books"
+      ],
+      "correct": 1,
+      "explanation": "ISI (now Thomson Reuters) publishes citation indexes accessed online as Web of Science."
+    },
+    {
+      "id": "m5-5.3.4-c",
+      "module": 5,
+      "conceptId": "5.3.4",
+      "stem": "Indian Citation Index (ICI) is described as covering about how many Indian scholarly journals?",
+      "options": [
+        "10",
+        "100",
+        "1000",
+        "1 million"
+      ],
+      "correct": 2,
+      "explanation": "ICI covers about 1000 Indian scholarly journals across disciplines."
+    },
+    {
+      "id": "m5-5.3.5-a",
+      "module": 5,
+      "conceptId": "5.3.5",
+      "stem": "ISBN is primarily assigned to:",
+      "options": [
+        "Serials/series only",
+        "Individual monographs/books (volumes)",
+        "Only conference jokes",
+        "Oral Q&A sessions"
+      ],
+      "correct": 1,
+      "explanation": "ISBN is for monographs/books; ISSN for series of monographs/books."
+    },
+    {
+      "id": "m5-5.3.5-b",
+      "module": 5,
+      "conceptId": "5.3.5",
+      "stem": "After 2007, the standard ISBN length is:",
+      "options": [
+        "8 digits",
+        "9 digits",
+        "13 digits",
+        "2 digits"
+      ],
+      "correct": 2,
+      "explanation": "After 2007, ISBN incorporated a 13-digit standard code."
+    },
+    {
+      "id": "m5-5.3.5-c",
+      "module": 5,
+      "conceptId": "5.3.5",
+      "stem": "Which statement about ISSN is correct?",
+      "options": [
+        "It must differ for every volume of a series",
+        "It is identical across volumes/issues of a single series and is optional",
+        "It always identifies the publisher like ISBN",
+        "It replaced peer review in 1971"
+      ],
+      "correct": 1,
+      "explanation": "ISSN is the same across a series, optional for publishers, 8-digit, coordinated from Paris."
+    },
+    {
+      "id": "m5-5.4.1-a",
+      "module": 5,
+      "conceptId": "5.4.1",
+      "stem": "In the research process, the first and foremost step is:",
+      "options": [
+        "Printing colour plates",
+        "Selecting and properly defining a research problem",
+        "Celebrating publication",
+        "Assigning ISSN codes"
+      ],
+      "correct": 1,
+      "explanation": "Selecting and properly defining the research problem comes first."
+    },
+    {
+      "id": "m5-5.4.1-b",
+      "module": 5,
+      "conceptId": "5.4.1",
+      "stem": "A research problem is defined as:",
+      "options": [
+        "Any favourite hobby",
+        "A situation/circumstances requiring a solution to be described, explained, or predicted",
+        "Only a statistical formula",
+        "A PowerPoint animation"
+      ],
+      "correct": 1,
+      "explanation": "The extract defines research problem in those terms."
+    },
+    {
+      "id": "m5-5.4.1-c",
+      "module": 5,
+      "conceptId": "5.4.1",
+      "stem": "Which is a required component of a research problem setup?",
+      "options": [
+        "No objectives at all",
+        "Alternative means for obtaining the objectives, with doubt about relative efficiency",
+        "Guaranteed single solution with no alternatives",
+        "No environmental context"
+      ],
+      "correct": 1,
+      "explanation": "Components include person/group with difficulty, objectives, alternatives, doubt about efficiency, and environment."
+    },
+    {
+      "id": "m5-5.4.2-a",
+      "module": 5,
+      "conceptId": "5.4.2",
+      "stem": "Defining a research problem mainly involves:",
+      "options": [
+        "Leaving boundaries undefined",
+        "Laying down bounds within which the problem will be studied with a predetermined objective",
+        "Skipping literature",
+        "Rushing the statement"
+      ],
+      "correct": 1,
+      "explanation": "Definition states the problem along with bounds of study."
+    },
+    {
+      "id": "m5-5.4.2-b",
+      "module": 5,
+      "conceptId": "5.4.2",
+      "stem": "Which is one of the five aspects listed for defining a problem?",
+      "options": [
+        "Ignoring theory",
+        "Surveying the available literature",
+        "Deleting all related studies",
+        "Avoiding rephrasing"
+      ],
+      "correct": 1,
+      "explanation": "Aspects include statement, nature, literature survey, deduction from theory, rephrasing."
+    },
+    {
+      "id": "m5-5.4.2-c",
+      "module": 5,
+      "conceptId": "5.4.2",
+      "stem": "Rephrasing the research problem into a working proposition makes it:",
+      "options": [
+        "Broader and ambiguous",
+        "Operationally viable and helpful for developing the research",
+        "Unfit for testing",
+        "Independent of literature"
+      ],
+      "correct": 1,
+      "explanation": "Rephrasing puts the problem in specific, operationally viable terms."
+    },
+    {
+      "id": "m5-5.4.3-a",
+      "module": 5,
+      "conceptId": "5.4.3",
+      "stem": "A research plan/approach is described as:",
+      "options": [
+        "A random set of unconnected slides",
+        "A blueprint/framework for carrying out the research project",
+        "Only an ISSN application",
+        "A memorised speech"
+      ],
+      "correct": 1,
+      "explanation": "It is a blueprint to test hypotheses, answer questions, and inform decisions."
+    },
+    {
+      "id": "m5-5.4.3-b",
+      "module": 5,
+      "conceptId": "5.4.3",
+      "stem": "Which is a step in the research design list?",
+      "options": [
+        "Skip sampling entirely",
+        "Designing a questionnaire and defining sampling/sample size",
+        "Publish without data",
+        "Avoid secondary data analysis"
+      ],
+      "correct": 1,
+      "explanation": "Design steps include secondary data, qualitative/quantitative methods, measurement, questionnaire, sampling, analysis strategy."
+    },
+    {
+      "id": "m5-5.4.3-c",
+      "module": 5,
+      "conceptId": "5.4.3",
+      "stem": "The final reporting step should present findings so decision-makers can:",
+      "options": [
+        "Never use them",
+        "Understand and use them quickly — often with tables/figures/graphs and an oral presentation",
+        "Only hear unsupported opinions",
+        "Ignore metrics and risk"
+      ],
+      "correct": 1,
+      "explanation": "Report findings in an understandable format for decision-making; oral presentation with visuals improves clarity."
+    }
+  ]
+}

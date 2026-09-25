@@ -1,0 +1,1423 @@
+--- page 8 ---
+Research Methodology
+1
+Notes
+Amity University Online
+Module - I: Introduction
+Learning Objectives
+At the end of this module, you will be able to:
+●
+●
+Assess Research
+●
+●
+Infer Research Process
+●
+●
+Mention Types of Research Design
+●
+●
+Explain Research Modelling
+Introduction
+Authors and management experts have defined research in various ways. 
+Typically, research is said to commence with a question or a problem. It is described 
+as the creation of new concepts, methodologies, and understandings through the 
+development of new knowledge or the innovative application of existing knowledge. 
+This process often involves synthesizing and analysing previous studies to produce 
+new and groundbreaking results.
+1.1 Research
+Through research, we can identify solutions to problems by employing systematic 
+and scientific methods. This may involve experimentation or innovation, with “risk” 
+highlighting the inherent dangers of discovery. 
+1.1.1 Definition and Objectives of Research
+What is research?
+Investigation might lead to analysis, and tests could be conducted to verify 
+hypotheses. This work is distinct and unprecedented, offering new insights as a 
+result. It could introduce a novel method or new data source, leading to significant 
+breakthroughs or incremental improvements in current practices. Research is essential 
+for progress, as it is fundamentally tied to “research and development.”
+Slesinger & Stephenson, Encyclopaedia of Social Sciences:
+“the manipulation of things, concepts or symbols for the purpose of generalizing to 
+extend, correct or verify knowledge, whether that knowledge aids in the construction of 
+theory or in the practice of an art”.
+●
+●
+Redman & Mory: “Systematized effort to gain new knowledge”. It is an academic 
+activity and should be used in a technical sense.
+●
+●
+Clifford Woody: Research comprises “defining and redefining problems, 
+formulating hypotheses or suggested solutions; collecting, organizing and 
+evaluating data; making deductions and reaching conclusions; and finally, carefully 
+testing the conclusions to determine whether they fit the formulated hypotheses”.
+Research Objectives
+General Objectives
+General objectives, also known as secondary objectives, provide a detailed view 
+(c) Amity University Online
+
+
+--- page 9 ---
+2
+Research Methodology
+Notes
+Amity University Online
+of a study’s goal. In other words, by the end of your studies, you will have a general 
+idea of what you want to accomplish. For instance, your overarching objective can 
+be to look at the organisation’s usage of renewable energy sources and sustainable 
+practices in order to determine how much the organisation contributes to environmental 
+sustainability.
+Specific Objectives
+Specific objectives outline the primary aim of a study. Typically, general objectives 
+provide the basis for establishing specific goals. Essentially, specific objectives are 
+general objectives that have been divided into smaller, logically interconnected goals. 
+They assist you in defining the who, what, why, when, and how of your project. It’s 
+much easier to develop and carry out a research plan once you’ve identified the main 
+goal.
+Take, for example, a study of an organisation’s contribution to environmental 
+sustainability. The specific goals will be as follows:
+●
+●
+Determine how the organisation has changed its practises and adopted new 
+solutions throughout its history.
+●
+●
+To determine the impact of new practices, technology, and strategies on overall 
+effectiveness.
+1.1.2: Characteristics of Research
+● 
+The research should concentrate on the most pressing issues.
+● 
+The investigation should be methodical. It emphasises the importance of following a 
+structured procedure when conducting research.
+● 
+The research should follow a logical pattern. The scientific researcher cannot make 
+much progress in any investigation without manipulating ideas logically.
+● 
+The study should be condensed. This means that a researcher’s findings should 
+be made available to other researchers so that they don’t have to repeat the same 
+research.
+● 
+The findings should be repeatable. This states that results from earlier studies have 
+to be verifiable in new locations, environments, with fresh people, or at a different 
+time.
+● 
+The research ought to be successful. The fact that a single research topic may spark 
+the creation of several others is one of its most significant features.
+● 
+Action-oriented research is required. In other words, it should aim to find a solution 
+that will allow its findings to be implemented.
+● 
+The research should take an integrated multidisciplinary approach, which means it 
+will require research approaches from multiple disciplines.
+● 
+At all stages of the study, all parties involved (from policymakers to community 
+members) should be invited to participate.
+● 
+The research has to have an easy-to-understand design and be conducted within a 
+specific timeframe.
+● 
+As little money as feasible should be spent on the research.
+● 
+Formats that are most helpful to administrators, decision-makers, company managers, 
+or community members should be used to deliver the study findings. 
+(c) Amity University Online
+
+
+--- page 10 ---
+Research Methodology
+3
+Notes
+Amity University Online
+1.1.3 Differences b/w Research Methods and Research Methodology
+Although the names sound similar, both Research methods and Research 
+methodology are different, as explained below:
+Research Methods
+The various procedures, schemes, steps, and algorithms used in research are 
+known as research methods. The term “research methods” refers to all of the methods 
+used by a researcher during a research study. They’re primarily planned, scientific, and 
+value-agnostic. Observations, theoretical procedures, experimental studies, numerical 
+schemes, statistical approaches, and so on are all examples of these. We can use 
+research methods to collect samples, data, and come up with a solution to a problem. 
+Business and scientific research methods, in particular, demand explanations based on 
+collected facts, measurements, and observations, rather than solely on reasoning. They 
+only accept explanations that can be verified through experiments.
+Research Methodology
+A systematic approach to solving a problem is known as research methodology. It 
+is a science that studies how research should be conducted. Research methodology 
+is essentially the procedures by which researchers go about their work of describing, 
+explaining, and predicting phenomena. It can also be defined as the study of methods 
+for gaining knowledge. Its goal is to provide a research work plan.
+1.2 Research Process
+In the early decades human inquiry was primarily based on the examination of 
+one’s own conscious thoughts and feelings that means the observation of any one and 
+understanding through logical discussion to seek the truth. This process served as a 
+well-established conceptual framework for comprehending the world and was accepted 
+for a century. An essential component of the investigation process was the knowledge 
+seeker. With time, this part was changed. The Scientific method introduced several 
+major components in research procedures like Objectivity. 
+1.2.1 Research Criteria and Research Process
+Research Criteria:
+● 
+The goal of the study should be made very clear, and common principles should be 
+applied.
+● 
+There should be enough description of the research process. in such a way as 
+to preserve the integrity of the work previously completed while enabling another 
+researcher to carry out the research for future development.
+● 
+To get unbiased outcomes, the procedural design of the research should be carefully 
+prepared.
+● 
+Any shortcomings in the technique design should be fully disclosed by the researcher, 
+along with an assessment of how they could affect the results.
+● 
+The analytic techniques employed should be suitable, and the data should be 
+sufficiently analysed to demonstrate its relevance. Verification of the data’s legitimacy 
+and dependability is necessary.
+(c) Amity University Online
+
+
+--- page 11 ---
+4
+Research Methodology
+Notes
+Amity University Online
+● 
+Only conclusions that are bolstered by the study findings and for which the facts 
+offer a sufficient basis should be drawn.
+● 
+If the researcher is experienced, has a good research reputation, and is a person of 
+integrity, greater trust in the research is warranted.
+Research Process:
+Planning must be done methodically at every step of the marketing research 
+process. The methods at each step are systematic, meticulously recorded, and, to the 
+greatest degree possible, time-scheduled. In order to examine theories or preconceived 
+beliefs, marketing research employs the scientific method, which involves gathering and 
+analysing data.
+For reliable information that accurately reflects the scenario, marketing research 
+should be carried out impartially. The study should be impartial and devoid of 
+the personal or political prejudices of the researcher or management, even if the 
+researcher’s research philosophy will always have an impact on the findings.
+For instance, we could discover that the project’s scope is insufficient, that our 
+topic is too wide and has to be limited, that there aren’t enough information resources 
+accessible, or that the material we gather contradicts our thesis.
+There are nine main steps of the research process that are followed at the time of 
+designing a research project. They are as follows.
+Step 1: Problem Definition
+Step 2: Development of an Approach to the Problem
+Step 3: Research Design Formulation
+Step 4: Field Work or Data Collection
+Step 5: Data Preparation and Analysis
+Step 6: Report Preparation and Presentation
+1.2.2: Approaches of Research: Deductive, Inductive, Quantitative 
+and Qualitative
+Deductive: Deductive approach starts with developing a hypothesis based on 
+existing theory, and then prepares a research strategy for testing the hypothesis. To 
+reason deductively is to go from the specific to the general. In many circumstances, 
+a theory or case study that suggests a causal relationship or correlation may be 
+accurate. The term “deductive approach” refers to a method of formulating hypotheses 
+or drawing conclusions from theoretical ideas. The deductive method is concerned with 
+drawing conclusions from statements or premises. By “testing against observations,” 
+deductive reasoning begins with a pattern, whereas induction methodology “begins with 
+observations and seeks to find a pattern within them.”
+Benefits of Deductive:
+● 
+Probability to clarify the relationships between variables and concepts.
+● 
+Probability to measure concepts in a quantitative manner.
+● 
+Probability to generalize research findings to a certain extent.
+(c) Amity University Online
+
+
+--- page 12 ---
+Research Methodology
+5
+Notes
+Amity University Online
+This approach mainly follows the given stages, like
+1.	
+Deducing hypothesis from theory
+2.	
+Formulating hypothesis in operational terms and proposing relationships between 
+two specific variables
+3.	
+Testing hypothesis with the help of relevant methods like some quantitative methods 
+such as regression and correlation analysis, mean, mode and median etc.
+4. 
+Examining the result and decide whether it is confirming or rejecting and it is 
+important to compare research findings with the literature review findings
+5. 
+Modifying theory in instances when hypothesis is not confirmed.
+Inductive: Inductive approach or inductive reasoning, starts with observations and 
+theories are proposed which are related to the conclusion of the investigation due to 
+the findings. It entails looking for patterns in observations and creating theories—or 
+explanations—for those patterns by formulating a number of conjectures. In inductive 
+studies, at the beginning of the research neither theories nor hypotheses would apply 
+and the researcher is free to alter the direction for the study after the research process 
+had commenced.
+Using an inductive method to formulate research questions and objectives 
+does not entail ignoring theories. By finding patterns and linkages in the data set, 
+this method aids in the generation of interpretations from which a theory may be 
+developed. This approach is mainly based on learning from experience. Previous 
+patterns, resemblances and regularities are observed in order to reach conclusions or 
+to generate theory.
+ 
+Abductive Reasoning or Abductive Approach
+Abductive reasoning is set to address weaknesses associated with deductive and 
+inductive approaches. Specifically for deductive reasoning ‘ how to select theory to be 
+tested via formulating hypotheses’ and for Inductive reasoning “no amount of empirical 
+data will necessarily enable theory-building”. It acts as a third alternative, overcoming 
+these weaknesses via adopting a pragmatist perspective.
+The figure below illustrates the main differences between abductive, deductive and 
+inductive reasoning:
+(c) Amity University Online
+
+
+--- page 13 ---
+6
+Research Methodology
+Notes
+Amity University Online
+It is clear that abductive reasoning is similar to deductive and inductive approaches 
+in a way that it is applied to make logical inferences and construct theories.
+Abductive approaches begin with “surprising facts’’ or “puzzles,” and the goal of 
+the research process is to figure out how to explain them. A researcher may come into 
+“surprising facts’ ‘ or “puzzles’ ‘ when they come across an empirical phenomenon that 
+the current theories are unable to explain. In that approach, researchers search for the 
+‘best explanation among many alternatives to choose. Researchers can combine both, 
+numerical and cognitive reasoning for explaining ‘surprising facts’ or ‘puzzles’.
+Qualitative research: It is a non-statistical process of inquiry. It helps with in-depth 
+understanding of problems or issues in their natural settings. It is highly based on the 
+researchers’ background and the sample-probing questions they employed. Usually, 
+there are restrictions on the sample size in between a minimum of 6 and a maximum of 
+10 people. Open-ended questions are asked( to gather as much information as possible 
+from the sample )in a manner that encourages answers that lead to another question or 
+a group of questions. The below methods are used for qualitative research:
+1. One-to-one interview
+2.	 Focus groups
+3.	 Ethnographic research
+4.	 Content/Text analysis
+5.	 Case study research
+Quantitative research: A systematic approach to gathering data and interpreting 
+it to make inferences is known as quantitative research. This approach gathers 
+and analyses data using a statistical and computational procedure. The main focus 
+of quantitative data is numbers. A greater population is involved because more 
+individuals will contribute more data which helps to obtain more accurate results. This 
+research uses close-ended questions because the researchers are typically looking 
+to gather statistical data. It involves use of data collection tools likes online surveys, 
+questionnaires, and polls. There are several ways to distribute questionnaires or 
+surveys. Surveyors can reach a larger number of respondents or smaller focus groups 
+with the use of online surveys for a variety of research purposes. 
+Advocacy/participatory Approach to Research
+Researchers occasionally use an advocacy or participation strategy that ignores 
+the needs or circumstances of members of vulnerable or marginalised groups. It is 
+(c) Amity University Online
+
+
+--- page 14 ---
+Research Methodology
+7
+Notes
+Amity University Online
+frequently referred to as emancipatory when a researcher seeks to improve the lives of 
+the research subjects. It’s hardly an impartial position. Researchers want their work to 
+either directly or indirectly lead to reform, and in order to prevent further marginalisation 
+of the group they are studying, they engage them in the research process from the 
+beginning to the end.
+The researchers might not take the impartial stance that is often necessary 
+in scientific study. This might entail living with the research participants (the co-
+researchers) or engaging in casual interactions. The results of the research can be 
+communicated in a more intimate manner, frequently in the exact words of the study 
+subjects.
+1.2.3 Research Proposal and Aspects
+A research proposal is designed to persuade others that we have an important 
+research project and that we are capable of finishing it given our work schedule and 
+level of expertise. Essentially, a research proposal needs to in compass all the essential 
+elements of the research procedure and provide adequate details for the readers to 
+evaluate the suggested investigation. 
+We need to answer the following questions about our study field and methodology: 
+what we want to do, why we want to do it, and how we are going to do it. 
+Why is good preparation needed? 
+Good preparation of a research proposal is necessary such as: 
+This is important for grant of application in a competitive environment. Funding is 
+very competitive. 
+It assists the researcher to formulate the project, to plan, to perform and to monitor 
+the same. 
+A research proposal is comprised of:
+
+
+Title 
+
+
+Introduction 
+
+
+Literature review 
+
+
+Methodology 
+
+
+Plan - time frame and schedule of activities (Gantt chart) 
+
+
+Budget 
+
+
+Details of research team (signed CV)
+Title 
+A study proposal’s name has to be clear and descriptive. Make it as entertaining as 
+it is educational. A strong title not only draws the reader in, but also makes the proposal 
+seem appealing to them.
+Introduction 
+Through the introduction researchers have to produce the required skeletal 
+structure for the issues in research. One of the major challenges in drafting proposals is 
+figuring out how to structure the research topic.
+(c) Amity University Online
+
+
+--- page 15 ---
+8
+Research Methodology
+Notes
+Amity University Online
+A broad overview of the issue area, with an emphasis on a particular research 
+question, usually opens an introduction. The rationale or reason for the suggested study 
+comes next. The following topics are often covered in the introduction:
+● 
+Describe the research challenge, sometimes known as the study’s goal. 
+● 
+Describe the study’s aims. Both broad and particular objectives should be specified. 
+● 
+Give a detailed explanation of the proposed study’s justification and why it is 
+worthwhile. 
+● 
+Give a brief explanation of the main concerns and minor difficulties that the project 
+will identify. 
+● 
+Determine the study’s main independent and dependent variables. 
+● 
+Describe the study’s hypothesis. 
+● 
+To ensure that the research has a clear focus, take attention while defining the 
+boundaries or restrictions of the planned study.
+Goals of the study 
+
+
+It ought to be made explicit 
+
+
+Be succinct and straightforward. 
+
+
+It ought to be quantifiable and doable.
+Literature Review 
+The literature review’s goal is to give readers enough background knowledge.
+The review should be succinct, highlight pertinent related research that has been 
+done or is being done (citations should be given), and demonstrate that the review 
+committee is aware of the numerous ongoing studies. 
+The literature review fulfils a number of crucial purposes:
+
+
+Acknowledges the contributions of those who have prepared the way for the 
+planned research. 
+
+
+Give evidence that you understand the research problem. 
+
+
+Exhibits familiarity with the research question’s theoretical and methodological 
+underpinnings. 
+
+
+Proves that you can analyse and assess pertinent literary works. 
+
+
+Shows that you can pull information from several sources and put it all 
+together. 
+
+
+Offers novel theoretical understanding or creates a brand-new model to serve 
+as the basis for our research. 
+
+
+Ensures that our reader understands how our planned research would cover a 
+big gap in the literature or solve a key theoretical difficulty. 
+Methodology 
+Our strategy for solving the research question. It will outline the steps we need to 
+take to finish the project and serve as our work plan. 
+The sections describing the methods are provided below.
+● 
+How was the study conducted? Was it a survey or an experiment in a controlled 
+environment? Do we go with a descriptive, cross-sectional, or case-control design? 
+(c) Amity University Online
+
+
+--- page 16 ---
+Research Methodology
+9
+Notes
+Amity University Online
+● 
+Choosing the site for the study 
+● 
+The people who will take part in our research are called subjects or participants. 
+What type of process or methodology do we employ for sampling? We need to settle 
+on the criteria for what counts as inclusion and what does not. 
+● 
+We need to determine the sort of study we are undertaking in order to calculate 
+the sample size. Calculating the sample size may be done using one of numerous 
+formulae. 
+● 
+Research tools—What kinds of surveys and evaluation tools do you employ? What 
+makes them your top pick? How credible and legitimate are they? 
+● 
+How will you go about gathering data for your study? Just what are the steps? When 
+will it be finished? 
+● 
+Plans for data processing and coding, software to be used (e.g., Statistical Package 
+for the Social Sciences / SPSS, EPI-INFO, etc.), statistical techniques to be 
+chosen, confidence levels, significance levels, etc. are all part of data analysis and 
+interpretation. It is also helpful to include hypothetical tables describing the data that 
+needs to be examined. 
+● 
+For ethics reasons, we need to get approval from the Ethical Committee at both our 
+workplace and the location where we intend to do the research. It all depends on the 
+kind of research we want to undertake and the location where we are employed.
+Plan 
+The proposed research should be planned out in detail, including the time range 
+and activity schedule. 
+Make sure you factor in time for:
+
+
+acquiring the necessary supplies and equipment for the study 
+
+
+carrying out the study 
+
+
+analysing the data 
+
+
+composing the project report
+In order to effectively monitor the project, the activity schedule is crucial. Major 
+actions and their associated deadlines should be detailed. Using a Gantt chart is the 
+most efficient method for creating the schedule of activities.
+Budget 
+It is critical to ask for a sufficient funding for the research you intend to carry out:
+●
+●
+Provide a total and yearly breakdown of the budget needed 
+●
+●
+Give appropriate estimates of costs depending on the different areas, e.g.: travel 
+and transportation, consumables, salaries, services, rentals, equipment, utilities, 
+repairs, etc. 
+●
+●
+Provide adequate justification, especially for costly items 
+Research Team
+● 
+Determine which areas of knowledge are necessary for your research. 
+● 
+Make sure to include the resumes of all the important researchers. 
+● 
+Collect written consent from all team members before proceeding. 
+(c) Amity University Online
+
+
+--- page 17 ---
+10
+Research Methodology
+Notes
+Amity University Online
+● 
+Define roles for all researchers and make sure they have sufficient knowledge.
+The common errors in proposal writing are as: 
+
+
+Goals are overly general or excessively lofty. 
+
+
+The goals do not correspond with the study’s title or problem description. 
+
+
+Missing references and literature review 
+
+
+Lack of sufficient details on approach 
+
+
+Too ambitious in terms of both time and schedule 
+
+
+There is no rationale for Excessive or insufficient budget requests
+1.2.4: Literature Survey and Review
+Introduction 
+We humans are the most intelligent creatures in the universe. Did you know that? 
+Our exceptional intelligence allows us to make use of information that has been passed 
+down through the generations. There are three equally important stages of human 
+understanding -
+●
+●
+namely preservation,
+●
+●
+transmission, 
+●
+●
+and advancement. 
+Research contributes to the expansion of human understanding, which in turn 
+allows for the creation and transmission of an up-to-date knowledge reservoir. 
+Continuously striving to add to the enormous reservoir of knowledge in every 
+conceivable sector, humans construct upon the documented and amassed information 
+of the past, allowing the human race to progress. As researchers, it is our responsibility 
+to check the literature to make sure that similar questions have been answered. We 
+must have a thorough understanding of all prior work, theory, and research that pertains 
+to the research topic. In order to guarantee such familiarity, we must do an exhaustive 
+evaluation of Research and theoretical literature. 
+Meaning of Review of Literature:
+The term “review” means “to organise the knowledge of the specific research 
+area to create a knowledge pool so that our study adds on to and enriches the field 
+of research.” The term “literature” stands for “the knowledge of a specific area of 
+investigation, related to a given discipline, which includes theoretical, research-oriented, 
+and practical studies.” In this way, reviewing the literature is like building a new 
+knowledge pool in a specific area or expanding an existing one; it adds to and improves 
+research domains.
+Importance of Review of Literature
+We have to learn why and how a successful review of literature would help us 
+about our Research. 
+●
+●
+Review of Literature provides researchers with theories, ideas, explanations or 
+hypotheses that may prove useful in the formulation of a new problem 
+●
+●
+Review of Literature guides researchers on the availability of adequate evidence 
+that solves the problem sufficiently without the need of further investigation - this 
+initiative avoids the replication of Research 
+(c) Amity University Online
+
+
+--- page 18 ---
+Research Methodology
+11
+Notes
+Amity University Online
+●
+●
+Review of Literature serves as prominent sources for hypothesis - researchers can 
+formulate research hypotheses based on available studies 
+●
+●
+Review of Literature suggests data sources, methodology, and statistical 
+techniques apt for the solution of the research problem 
+●
+●
+Review of Literature helps researchers locate comparative data and findings 
+useful in the correct interpretation of results .
+Sources of Literature 
+What documents would you consider the sources of literature?
+Sources
+Examples 
+Lists and indices of books, textbooks, and 
+handbooks
+Cumulative Book Index 
+●
+●
+Book Review Index 
+●
+●
+Books Review Digest 
+●
+●
+Subject Guide to Books 
+●
+●
+National Union Catalogue 
+Periodicals (publication issued in successive 
+volumes, at regular intervals)
+Yearbook 
+●
+●
+Documents 
+●
+●
+Almanacs 
+●
+●
+Cumulative Book Index 
+●
+●
+International abstracts 
+●
+●
+Journals 
+●
+●
+Newspapers
+●
+●
+Magazines 
+●
+●
+International Index to Periodicals 
+Encyclopaedias (reservoirs of concise and 
+convenient sources of information on various 
+subjects; these include biographies and 
+illustrations)
+The Encyclopaedia Britannica 
+●
+●
+World Book Encyclopaedia 
+●
+●
+The Encyclopaedia of Science Fiction 
+●
+●
+The Atlas of the Prehistoric World 
+●
+●
+Encyclopaedia 
+of 
+Cryptography 
+and 
+Security 
+●
+●
+Encyclopaedia of Public Health 
+●
+●
+Encyclopaedia of General Science 
+Apart from these, newspapers, dissertations, abstracts, theses, online libraries, etc. 
+serve as good sources of review of literature.
+Recommended Practices in Review of Literature:
+Next, we are going to study about a few recommended practices in literature 
+review. 
+a)	
+Get an overall view by referring to a generic source like a good textbook. This will 
+help us grasp the theoretical concepts like the meaning, nature, and importance of 
+the concept. We will also get a clear idea about the variables that we would use to 
+formulate the hypothesis of our research problem. 
+b) 
+On developing a clear insight about the research problem, we have to review the 
+empirical research related to our research problem. During this phase, our chief 
+concern would be to gather specific details of the field of investigation by using good 
+handbooks, recommended encyclopaedias, and good abstracts for this purpose. 
+(c) Amity University Online
+
+
+--- page 19 ---
+12
+Research Methodology
+Notes
+Amity University Online
+b)	
+Perform methodical and comprehensive Conducting research using study resources 
+obtained from both online and offline libraries. Commence gathering citations from 
+the educational index. Employ a meticulous level of accuracy while duplicating or 
+inputting such references. 
+d)	
+Maintain a methodical approach by consistently and thoroughly documenting 
+information on cards with precision. Document citations with comprehensive 
+bibliographic details. Document citations on the front side of these cards and make 
+annotations on the back sides.
+1.2.5: Errors in Research
+Various types of errors in Research are described below.
+1. 	 Population Specification
+Population specification errors occur when the researcher does not understand 
+whom they should survey. Because there are more than one people who may consume 
+the product, but only one who purchases it, or they may miss a segment looking to 
+purchase in the future.
+How to avoid this: In the beginning analysis of customers buying the items have to 
+be done. This is necessary as it will allow us to identify the appropriate customers and 
+ways to satisfy them.
+2. 	 Sampling and Sample Frame Errors
+When the wrong subpopulation is used to select a sample then survey 
+sampling and sample frame errors occur, or because of variation in the number or 
+representativeness( is a subset of a population that seeks to accurately reflect the 
+characteristics of the larger group) of the sample that responds, but the resulting 
+sample is not representative of the population concern.
+Basically some element of sampling error is unavoidable, but it can be predictable. 
+For instance, in the 1936 presidential election between Roosevelt and Landon, the 
+sample frame was from car registrations and telephone directories. The researchers 
+failed to realize that the majority of people that owned cars and telephones were 
+Republicans, and wrongly predicted a Republican victory.
+Example: Assume that we obtained a random sample of 5000 individuals from 
+the whole adult population of India in order to determine their preferences about 
+entertainment. Upon examination, it was determined that the composition of the group 
+consisted of 70% females. The entertainment tastes of females would have more 
+significance, making it difficult to accurately generalise to the overall adult population 
+in India. The homogeneity of a sample has an impact on the sampling error( the quality 
+of consisting of parts or people that are similar to each other) of the population being 
+studied and sampled from and by the size of the sample.
+How to avoid this: Since it cannot be avoided completely, then we should have 
+multiple people reviewing our sample to account for an accurate representation of 
+our target population. We can also increase the size of our sample so we get more 
+participants to survey.
+3. 	 Selection
+When a sample is selected using a non-probability method, selection error can 
+occur. This error arises when respondents choose to self-participate in a study and only 
+(c) Amity University Online
+
+
+--- page 20 ---
+Research Methodology
+13
+Notes
+Amity University Online
+those interested respond, potentially introducing inherent bias. Selection error can also 
+occur when respondents irrelevant to the study participate or when there’s a bias in the 
+way participants are grouped.
+Example: Interviewers conducting a small intercept study tend to select 
+respondents who are most accessible and agreeable, often choosing friends and 
+associates who share characteristics with the target population.
+To avoid this, extra efforts should be made to ensure broad participation. A typical 
+survey process includes pre-survey contact to request cooperation, actual surveying, 
+and post-survey follow-up. If there is no response, a second survey request is sent, and 
+interviews may be conducted using alternative modes such as telephone or in-person 
+interviews.
+4. 	 Non-responsive
+Non-response errors occur when there is a discrepancy between the original 
+sample and the selected sample. This discrepancy arises when potential respondents 
+are either not contacted or refuse to respond. The primary issue here is the absence 
+of data rather than inaccurate data. Non-response errors can be categorized into two 
+types:
+(a)  Non-contact errors: These occur when the respondent cannot be reached, possibly 
+because they are not at home.
+(b)  Refusal errors: These occur when the respondent chooses not to respond to specific 
+items or multiple items in the questionnaire. Topics such as monthly household 
+income, religion, sex, and politics are more likely to result in item refusal.
+Example: In the event of conducting telephone surveys, certain respondents 
+may be deemed inaccessible due to their absence from home during the first call or 
+subsequent call-backs. The remaining individuals have either relocated or are now 
+absent from their residences during the survey period. Respondents who are not at 
+home are usually younger and do not have young children. 
+Additionally, a larger percentage of these families have women who are employed 
+compared to households where someone is at home. Individuals who have relocated or 
+are now absent throughout the survey period exhibit a greater degree of geographical 
+mobility compared to the general population. The majority of surveys may predict 
+inaccuracies resulting from the lack of touch with respondents. Online surveys can 
+prevent this problem by distributing them over email, therefore excluding respondents 
+who are not at home.
+How can one prevent or steer clear of this situation? When gathering replies, 
+it is important to ensure that our initial respondents are actively engaged. If they do 
+not respond initially, we should employ follow-up surveys and alternative methods of 
+reaching out to them. Additionally, we may employ several channels, such as face-
+to-face interactions, web surveys, or SMS, to effectively communicate with our target 
+audience.
+5. 	 Measurement
+The measurement method can have its issues as well. These issues include the 
+difference between the data produced and the data required by the analyst. There are 
+multiple minute factors which can contribute to such issues.
+(c) Amity University Online
+
+
+--- page 21 ---
+14
+Research Methodology
+Notes
+Amity University Online
+To circumvent this, we should double-check all measures to make sure they 
+are accurate and make sure that our observers and measurement takers are 
+knowledgeable with the experiment’s parameters.
+Although it may not be possible to totally prevent all of these mistakes, being 
+aware of them will make things easier. Make sure you’re doing all possible to avoid 
+these typical pitfalls the next time we begin a study endeavour by using this blog as a 
+checklist.
+There are so many errors like 
+Surrogate Information Error:
+That kind of error arises from either the inability or the unwillingness of the 
+respondent to provide the needed information, in other words, information is obtained 
+from substitutes rather than original sample. It is also described as the fact that the data 
+the researcher is trying to collect does not match up with what is needed to address the 
+issue.
+Experimental Error: It can be defined as the non-correspondence of the “true 
+impact of” and the “impact at-tribute to” the independent variable
+For example
+A research looking into cancer causes might indicate that bread is the culprit as 
+it was consumed by all the patients studied. What followed was: By manipulating one 
+or more independent variables and keeping an exogenous variable under control, 
+researchers hope to quantify the effect of these variables on a dependent variable in an 
+experiment. 
+1.3: Types of Research Design
+Research design is a critical component of research methodology, serving 
+as the blueprint for the collection, measurement, and analysis of data. It outlines 
+the procedures and techniques that researchers follow to ensure their studies are 
+reliable, valid, and capable of addressing their research questions or hypotheses. 
+Understanding the different types of research designs is essential for choosing the 
+most appropriate approach for a given study. Following are various types of Research 
+Design.
+1.3.1 Pure and Applied
+Applied Research
+Applied research is a type of study that aims to solve a specific problem or offer 
+novel solutions to issues that affect a person, a group, or a society. Because it involves 
+the practical application of scientific methods to everyday problems, it is often referred 
+to as a scientific method of inquiry or contractual research.
+When conducting applied research, the researcher pays special attention to 
+identifying a problem, developing a research hypothesis, and then conducting an 
+experiment to test these hypotheses. In many cases, empirical methods are used in this 
+research approach to solve practical problems.
+Because of its direct approach to finding a solution to a problem, applied research 
+is sometimes considered a non-systematic inquiry. It’s a type of follow-up research that 
+(c) Amity University Online
+
+
+--- page 22 ---
+Research Methodology
+15
+Notes
+Amity University Online
+digs deeper into the findings of pure or basic research in order to validate them and use 
+them to develop innovative solutions.
+Applied Research Example in Business
+● 
+Applied research to improve the hiring process in a company.
+● 
+Applied research aimed at improving workplace efficiency and policies.
+● 
+Workplace skill gaps are being addressed through applied research.
+Applied Research Examples in Education
+● 
+An investigation into how to improve teacher-student engagement in the classroom.
+● 
+An investigation into how to improve a school’s student readiness.
+● 
+A research project aimed at piquing students’ interest in mathematics
+Pure/Fundamental Research or Basic Research
+Basic research is a method of investigation that seeks to clarify fundamental 
+aspects of a topic, phenomena, or natural law. The goal of this type of research is to 
+advance knowledge rather than to solve a specific problem.
+Pure research or fundamental research are other terms for basic research. 
+Between the late 19th and early 20th centuries, the concept of basic research arose as 
+a means of bridging the gaps in science’s societal utility.
+Basic research can be exploratory, descriptive, or explanatory in nature; however, 
+in many cases, it is explanatory. The primary goal of this research method is to collect 
+data in order to improve one’s understanding, which can then be used to propose 
+solutions to a problem.
+Basic Research Example in Education
+● 
+How do humans retain memory?
+How do different teaching methods affect students’ concentration in class?
+1.3.2: Causal and Correlational 
+Explanatory research, also known as causal research, is used to determine the 
+scope and nature of cause-and-effect relationships. Causal research can be used to 
+assess the effects of specific changes on existing norms, processes, and so on.
+Causal studies examine a situation or a problem in order to explain the patterns of 
+relationships between variables. In studies using a causal research design, the most 
+common primary data collection method is experiments.
+Examples of Causal Research (Explanatory Research)
+● 
+To determine the effects of foreign direct investment on Taiwanese economic growth.
+● 
+To investigate the impact of rebranding initiatives on customer loyalty.
+● 
+To determine the nature of the impact of work process re-engineering on employee 
+motivation levels.
+Did you know? Conceptual Research is related to certain abstract ideas or theories 
+that are often applied by philosophers to develop new concepts or to rework on the 
+existing ones.
+(c) Amity University Online
+
+
+--- page 23 ---
+16
+Research Methodology
+Notes
+Amity University Online
+Without manipulating either variable, researchers use a correlational study design 
+to find out how two variables relate to one another. Its stated goal is to determine if 
+either: A favourable relationship. When one variable changes, the other follows suit. 
+Naturalistic observation, survey research, and archive research are the three main 
+approaches to correlational studies. Types vary in function and provide different 
+advantages and disadvantages.
+1.3.3: Crosssectional and Longitudinal 
+Cross-sectional study
+The longitudinal and cross-sectional studies are both observational studies. This 
+means that researchers record data about their subjects without tampering with the 
+research environment. We would simply measure the cholesterol levels of daily walkers 
+and non-walkers, as well as any other.
+Characteristics of interest to us, in our study. We would not persuade non-walkers 
+to start walking or advise daily walkers to change their habits. In a nutshell, we’d try not 
+to get in the way.
+A cross-sectional study is distinguished by the ability to compare different 
+population groups at a single point in time. Consider it like taking a photograph. The 
+findings are based on whatever fits into the frame.
+To return to our previous example, we could compare cholesterol levels in daily 
+walkers in two age groups, over 40 and under 40, to cholesterol levels in non-walkers 
+in the same age groups. We might even create gender subgroups. We would not, 
+however, consider past or future cholesterol levels because they would be outside the 
+scope. We’d only examine cholesterol levels at a single point in time.
+A cross-sectional study design has the advantage of allowing researchers to 
+compare multiple variables at once. For instance, with minimal extrapolation, we may 
+examine the correlation between walking and cholesterol levels and demographic 
+variables such as age, gender, income, and education level.
+Cross-sectional studies, on the other hand, may not provide conclusive evidence 
+of cause-and-effect relationships. This is because such studies provide a snapshot of 
+a single moment in time and do not consider what occurs before or after the snapshot. 
+As a result, we can’t say for sure whether our daily walkers had low cholesterol levels 
+before starting their exercise routines or if the daily walking behaviour helped to lower 
+cholesterol levels that were previously high.
+Longitudinal Study
+A longitudinal study is observational, just like a cross-sectional one. As a result, 
+researchers do not interfere with their subjects once more. A longitudinal study, on the 
+other hand, involves researchers making multiple observations of the same subjects 
+over a long period of time, sometimes many years.
+A longitudinal study has the advantage of allowing researchers to detect changes 
+in the characteristics of the target population at both the group and individual level. The 
+important thing to remember is that longitudinal studies go beyond a single point in 
+time. As a result, they can create event sequences.
+To return to our example, we could examine the change in cholesterol levels 
+among women over 40 who have walked every day for the past 20 years. The 
+(c) Amity University Online
+
+
+--- page 24 ---
+Research Methodology
+17
+Notes
+Amity University Online
+longitudinal study design would take into account cholesterol levels at the start of 
+a walking programme and as the programme progressed. As a result of its scope, a 
+longitudinal study is more likely than a cross-sectional study to suggest cause-and-
+effect relationships.
+In general, the design should be driven by the research. However, the progression 
+of the research can sometimes aid in determining which design is best. Longitudinal 
+studies take longer to complete than cross-sectional studies.
+1.3.4: Experimental, Semi-experimental and Non-Experimental 
+Experimental
+Experimental research is a type of study that employs a scientific approach 
+to manipulate one or more control variables of the research subject(s) and then 
+measure the impact of the manipulation on the subject. It is well-known for allowing the 
+manipulation of control variables.
+Even though it can be difficult to execute, this research method is widely used in a 
+variety of physical and social science fields. They are far more common in information 
+systems research than in library and information management research within the 
+information field.
+When the goal of the research is to trace cause-and-effect relationships between 
+defined variables, experimental research is usually used. The type of experimental 
+research chosen, on the other hand, has a significant impact on the experiment’s 
+outcomes.
+Semi Experimental: The prefix quasi means “similar to.” As a result, quasi-
+experimental research is research that resembles experimental research but isn’t 
+actually experimental. Participants are not randomly assigned to conditions or orders 
+of conditions, despite the fact that the independent variable is manipulated (Cook & 
+Campbell, 1979). 1st The directionality problem is eliminated in quasi-experimental 
+research because the independent variable is manipulated before the dependent 
+variable is measured. However, because participants are not assigned at random, there 
+is a chance that other differences exist between conditions. Thus, quasi-experimental 
+research does not eliminate the problem of confounding variables.
+Example: Non-equivalent groups design just like we hypothesized a new after-
+school program which assured the students of higher grades. We split the class into two 
+equal halves; one half gets the new programme and the other half doesn’t.
+In field settings where random assignment is difficult or impossible, quasi-
+experiments are most likely to be conducted. They’re frequently used to assess the 
+efficacy of a treatment, such as psychotherapy or an educational intervention. There are 
+numerous types of quasi-experiments, but we will focus on a few of the most common 
+here.
+Non-Experimental: 
+Non-experimental research is defined as research in which no control or 
+independent variable is manipulated. Researchers in non-experimental research 
+measure variables as they occur naturally, without any further manipulation.
+When the researcher doesn’t have a specific research question about a causal 
+relationship between two variables and manipulating the independent variable is 
+impossible, this type of research is used. They’re also useful for:
+(c) Amity University Online
+
+
+--- page 25 ---
+18
+Research Methodology
+Notes
+Amity University Online
+● 
+It is impossible to assign subjects to conditions at random.
+● 
+The subject of the study is a causal relationship, but the independent variable cannot 
+be changed.
+● 
+The study is broad and exploratory in nature.
+● 
+The study focuses on a variable-to-variable non-causal relationship.
+● 
+Only a limited amount of information about the research topic is available.
+1.3.5 Descriptive and Exploratory 
+Descriptive Research
+Providing a detailed account of the researched population or phenomena is the 
+goal of descriptive research. This approach to study places greater emphasis on the 
+“what” than the “why” of a topic.
+Without asking “why” an event happens, descriptive research mainly aims to 
+describe the characteristics of a demographic group. To rephrase, it only “describes” the 
+research topic without addressing the question of “why” it occurs.
+For example, surveys related to frequency of shopping, food habits, product 
+preference, etc. are examples of descriptive research. Example: AA group of market 
+researchers aims at identifying the impulse buying trends among various households 
+pan India. The researchers would focus on collecting data related to “what is the 
+impulse buying pattern of Indian consumers” and the scope of their research would 
+be limited to that. The research does not explain the underlying reasons behind such 
+impulse buying practices or “why” such buying patterns exist. Here, the scope of the 
+research is just to report the existence of such buying trends and not why do people 
+resort to impulse buying. This is, hence, an ideal example of descriptive research.
+Exploratory Research
+The goal of exploratory research is to learn more about a topic that hasn’t been 
+covered extensively in the past. Although it seldom produces a definitive outcome, 
+exploratory research is typically conducted to enhance comprehension of the current 
+issue.
+For the purpose of developing a more targeted issue statement, researchers often 
+resort to exploratory studies in order to better understand pre-existing phenomena. 
+Using the study findings to explore connected issues to the research topic begins with a 
+broad notion.
+The process of exploratory research varies depending on the discovery of new 
+data or insight. The results of this research, also known as interpretative research or 
+grounded theory approach, provide answers to questions like what, how, and why.
+Exploratory Research Example on Product Research
+When developing a new product or service, companies conduct two types of 
+research. The first is carried out prior to the development of the product, while the 
+second is carried out after it has been developed.
+The exploratory research conducted after product development will be the focus 
+of our attention. It’s known as the beta testing stage of product development for tech 
+products.
+(c) Amity University Online
+
+
+--- page 26 ---
+Research Methodology
+19
+Notes
+Amity University Online
+For example, if a new feature is added to an existing app, product researchers will 
+want to see how well the feature is received by users. The research is not exploratory if 
+the feature added to the app is something that already exists.
+If Telegram adds a status feature to its app, for example, the app’s beta research 
+stage is not exploratory. This is because this feature is already available, and they can 
+easily obtain sufficient information from WhatsApp.
+When it comes to a new feature, such as Snapchat filters when they first launched, 
+the research is instructive. A focus group of beta testers is used to conduct exploratory 
+research in this case.
+1.4: Research Modelling
+Uses of Research Model
+The following are the uses of Research Model:
+●
+●
+Research models help in identifying basic concepts.
+●
+●
+Research model helps in defining meanings with great precision.
+●
+●
+Research models are a great way to approach and simulate reality.
+Importance of Research Model:
+The importance of using a research model is highlighted below:
+● 
+Model building is an integral part of the research design because models guide both 
+theory development and research design.
+● 
+Computers, biotech, and automation have given scientists a new level of respect 
+thanks to models, which have also elevated them in the public, private, and military 
+sectors.
+● 
+Additionally, social scientists rely heavily on models as they offer a structure for 
+examining crucial issues.
+1.4.1: Types of Models
+Research Models are classified broadly into two types as mentioned below:
+●
+●
+Qualitative Research Model
+●
+●
+Quantitative Research Model
+Qualitative Research Model
+It involves non-numerical data collection and analysis in order to understand 
+concepts, opinions and experiences. This helps to gather in-depth insights into a 
+problem or develop new ideas for research. Anthropology, sociology, education, health 
+sciences, history, and other fields in the social and humanities tend to make heavy use 
+of qualitative research methods. Qualitative research helps to visualize how people 
+can experience the world. While there are many approaches to qualitative research, 
+they are less desirable as they are flexible and focus on retaining rich meaning when 
+interpreting data.
+Quantitative Research Model
+It is about collecting and analysing numerical data. Used for locating and defining 
+patterns and averages, this research model can make predictions, test causal 
+(c) Amity University Online
+
+
+--- page 27 ---
+20
+Research Methodology
+Notes
+Amity University Online
+relationships, and help to generate results to wider populations. Quantitative research 
+finds a wide use in the natural and social sciences: biology, chemistry, psychology, 
+economics, sociology, marketing, etc.
+1.4.2: Model Building and Stages
+  Model building is a crucial aspect of research methodology, especially in fields 
+such as data science, engineering, and social sciences. It involves creating abstract 
+representations of real-world systems or phenomena to understand, analyze, and 
+predict their behavior. The process of model building in research follows several 
+essential stages to develop a reliable and valid model.
+Firstly, the problem must be defined clearly by identifying the objectives and 
+understanding the scope, objectives, and constraints of the study. This includes 
+gathering relevant data and information to understand the context and requirements of 
+the model.
+Next, conceptualization involves developing a theoretical framework based 
+on existing literature and theories related to the problem. This helps in formulating 
+hypotheses and identifying key variables. A preliminary model is then created to outline 
+the relationships between different variables and components, often represented 
+diagrammatically.
+The data collection stage involves identifying and gathering data from primary 
+and secondary sources such as surveys, experiments, observations, and databases. 
+Ensuring data quality is crucial, as the data must be accurate, reliable, and relevant to 
+the research problem, often requiring data cleaning and preprocessing.
+In the model specification stage, the conceptual model is translated into a 
+mathematical or statistical form. This involves selecting appropriate modeling 
+techniques and specifying equations or algorithms. Any assumptions made during this 
+stage must be clearly stated, as they can impact the model’s validity.
+Model estimation involves using statistical or computational methods to estimate 
+the parameters of the model, employing techniques such as regression analysis or 
+machine learning algorithms. The model parameters are then calibrated to improve 
+accuracy and fit to the observed data.
+Validation of the model is crucial to ensure it is correctly implemented and free from 
+logical or computational errors. The model’s predictions are compared with real-world 
+data to assess accuracy and reliability, which may involve cross-validation, sensitivity 
+analysis, and robustness checks.
+Once validated, the model is implemented to analyze the research problem, make 
+predictions, or provide insights. This stage involves using the model for decision-making 
+or further research. Optimization of the model is also necessary based on feedback and 
+results, potentially iterating through previous stages to enhance performance.
+Finally, the results are interpreted in the context of the research problem, 
+understanding the implications and limitations. The entire modeling process, including 
+the methodology, assumptions, data sources, and findings, is documented to ensure 
+transparency and reproducibility. The results are then reported clearly and concisely 
+through research papers, reports, or presentations, including visualizations and 
+explanations of the model’s implications.
+(c) Amity University Online
+
+
+--- page 28 ---
+Research Methodology
+21
+Notes
+Amity University Online
+This systematic process ensures the development of robust, reliable, and 
+applicable models to real-world scenarios, providing valuable insights and aiding 
+informed decision-making based on research findings.
+1.4.3: Data Consideration and Testing
+In today’s digitalized world, we generate a massive amount of data every minute. 
+The sheer volume of data produced makes it challenging to store, manage, utilize, and 
+analyse effectively. Even large business enterprises struggle to find ways to make this 
+vast amount of data useful. The rate at which data is being produced by large business 
+enterprises is growing rapidly, increasing by 40 to 60% per year. Simply storing 
+this massive amount of data is not beneficial unless it is used for specific research 
+purposes. This is why organisations are exploring options like data lakes and big data 
+analysis tools to help manage and leverage big data more effectively.
+There are a few steps in considering data:
+Proper understanding of Data: Understanding is the key to any solution. Data 
+when comes in huge format is not only difficult to understand but store and manage. 
+Thus data consideration is a huge task in itself. A close look needs to be given to the 
+research that is being done and hence its answers will be easy to find out on detailed 
+understanding. 
+● 
+Nature, scope and object of enquiry: This constitutes the most important factor 
+affecting the choice of a particular consideration of data. Data is to be considered 
+on its nature, scope and object of enquiry, when the data is available for research, 
+checking its sources and utilisation in the research it will be judged and considered. 
+● 
+Time Factor: Time is important as there can be huge data which is available but 
+there will certainly be a deadline for the research hence, firstly the data collection 
+needs to be done timely and post the collection there has to be enough time for the 
+consideration and testing. 
+● 
+Precision Required: it is another factor that the collection of data is ongoing and post 
+the collection. While considering the data the right precision is required so that it 
+follows the same wave length of the research program.
+1.4.4: Heuristic and Simulation Modelling
+Heuristic Research Model
+There are a wide range of qualitative research models available and one of the 
+lesser-known models is the Heuristic research model. This research model was 
+developed by Clark Moustakas (an American psychologist and researcher). The name 
+Heuristic was derived from the Greek work ‘Heuriskein’ (which means discover, find). 
+The research model has six phases
+
+
+Initial engagement
+
+
+Immersion
+
+
+Incubation
+
+
+Illumination
+
+
+Explication
+
+
+Creative synthesis
+(c) Amity University Online
+
+
+--- page 29 ---
+22
+Research Methodology
+Notes
+Amity University Online
+Shelly Chaiken developed the heuristic-systematic model of information processing 
+(HSM), which attempts to explain how people receive and process persuasive 
+messages. 1st Individuals can process messages in one of two ways, according to the 
+model: heuristically or systematically. Heuristic processing, on the other hand, entails 
+the use of simplifying decision rules or “heuristics” to quickly assess the message 
+content, whereas systematic processing entails the careful and deliberate processing of 
+a message. This model’s guiding belief is that people are more likely to use heuristics 
+instead of cognitive resources, which affects message intake and processing. The 
+elaboration likelihood model, or ELM, is very similar to the HSM. Many of the same 
+ideas and concepts are shared by both models, which were mostly created in the early 
+to mid-1980s.
+Simulation Research Modelling
+By using statistical descriptions of the activities involved, stimulation models 
+attempt to replicate the workings and logic of a real system. For example, a line 
+might produce 1000 units per hour on average. If we assume this is always the case, 
+we lose sight of what happens when there is a breakdown or a stoppage for routine 
+maintenance, for example. When we consider the effect on downstream units, the effect 
+of such a delay may be amplified (or absorbed).
+‘Entities’ (e.g. machines, materials, people, etc.) and ‘activities’ are two types of 
+entities in a simulation model (e.g. processing, transporting, etc.). It also includes an 
+explanation of the logic that governs each activity. A processing activity, for example, 
+can only begin when a certain quantity of working material, a person to operate the 
+machine, and an empty conveyor to transport the product are all available. Once an 
+activity has begun, the time it will take to complete it is calculated, which is frequently 
+done using a sample from a statistical distribution.
+Summary
+● 
+Authors and management experts have defined research in various ways.
+● 
+Typically, research is said to commence with a question or a problem.
+● 
+It is described as the creation of new concepts, methodologies, and understandings 
+through the development of new knowledge or the innovative application of existing 
+knowledge. 
+● 
+This process often involves synthesizing and analysing previous studies to produce 
+new and groundbreaking results.
+● 
+Through research, we can identify solutions to problems by employing systematic 
+and scientific methods. This may involve experimentation or innovation, with “risk” 
+highlighting the inherent dangers of discovery.
+● 
+Investigation might lead to analysis, and tests could be conducted to verify 
+hypotheses. This work is distinct and unprecedented, offering new insights as a 
+result.
+● 
+It could introduce a novel method or new data source, leading to significant 
+breakthroughs or incremental improvements in current practices. Research is 
+essential for progress, as it is fundamentally tied to “research and development.”
+Glossary
+● 
+General Objectives: General objectives, also known as secondary objectives, 
+provide a detailed view of a study’s goal.
+(c) Amity University Online
+
+
+--- page 30 ---
+Research Methodology
+23
+Notes
+Amity University Online
+● 
+Specific Objectives: Specific objectives outline the primary aim of a study. Typically, 
+general objectives provide the basis for establishing specific goals.
+● 
+Research Methods: The various procedures, schemes, steps, and algorithms used 
+in research are known as research methods.
+● 
+Research Methodology: A systematic approach to solving a problem is known as 
+research methodology.
+● 
+Deductive: Deductive approach starts with developing a hypothesis based on 
+existing theory, and then prepares a research strategy for testing the hypothesis.
+● 
+Inductive: Inductive approach or inductive reasoning, starts with observations and 
+theories are proposed which are related to the conclusion of the investigation due to 
+the findings.
+● 
+Abductive Reasoning or Abductive Approach: Abductive reasoning is set to address 
+weaknesses associated with deductive and inductive approaches.
+Check Your Understanding
+1. 	 What is the typical starting point of research?
+a) 	 A solution to a problem
+b) 	 A question or a problem
+c) 	 A hypothesis to be tested
+d) 	 A new methodology to be developed
+2.	
+What is a key characteristic of research that leads to breakthroughs or improvements 
+in current practices?
+a)	 It involves only analysing existing data
+b)	 It introduces novel methods or new data sources
+c)	 It relies solely on existing knowledge
+d)	 It avoids taking risks in the discovery process
+3. 
+What is the primary purpose of specific objectives in a research study?
+a)	 To outline the primary aim of the study
+b)	 To provide a detailed view of the study’s goal
+c)	 To develop a research plan
+d)	 To collect samples and data
+4. 	 What is a key characteristic of research methods?
+a)	 They are primarily based on reasoning
+b)	 They are not used to collect samples and data
+c)	 They are only used in business research
+d) They are planned, scientific, and value-agnostic
+5. 
+What is the relationship between general objectives and specific objectives?
+a)	 General objectives are divided into specific objectives
+b)	 Specific objectives are broader than general objectives
+c)	 General objectives provide the basis for establishing specific objectives
+d)	 General objectives are unrelated to specific objectives
+(c) Amity University Online
+
+
+--- page 31 ---
+24
+Research Methodology
+Notes
+Amity University Online
+Exercise
+1. 	 What is research typically said to commence with, and what is its ultimate goal?
+2.  What is the difference between general objectives and specific objectives in research, 
+and how do they relate to each other?
+3. 	 What are the key attributes that contribute to the credibility of a research study, and 
+how do these ensure the reliability and validity of the findings?
+4.  How has the research process evolved from early human inquiry to modern marketing 
+research, and what fundamental principles are integral to conducting impartial and 
+reliable research today?
+5. 	 What are the key stages involved in the deductive approach to research, and how do 
+these stages contribute to the development of hypotheses, testing, and refinement 
+of theories?
+Learning Activity
+1. 
+Suggest some ways to generalise research findings while maintaining the validity of 
+the deductive approach?
+2. 
+Are there any specific techniques or methods that can aid in the collection and 
+analysis of data for this research project?
+Check Your Understanding- Answers
+1.	 b)	
+2.	
+b)	
+3.	
+a)	
+4.	 d)
+5.	 c)
+Further Readings and Bibliography
+1. Slesinger, D.P., & Stephenson, H.W. (1930). Encyclopaedia of Social Sciences. 
+New York: Macmillan.
+2. Redman, E., & Mory, P. (1923). Systematized effort to gain new knowledge. 
+Journal of Educational Psychology, 
+3. Woody, C. (1917)
+4. Educational Research Bulletin, 16(3)
+5. Kothari, C.R. (2004). Research Methodology: Methods and Techniques (2nd 
+ed.). New Delhi: New Age International.
+6. Creswell, J.W. (2014). Research Design: Qualitative, Quantitative, and Mixed 
+Methods Approaches (4th ed.). Thousand Oaks, CA: Sage Publications.
+(c) Amity University Online

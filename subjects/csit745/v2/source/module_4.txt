@@ -1,0 +1,3123 @@
+--- page 87 ---
+80
+Research Methodology
+Notes
+Amity University Online
+Module - IV: Models and Hypothesis
+Learning Objectives
+At the end of this module, you will be able to:
+●
+●
+Discuss Hypothesis Testing
+●
+●
+Explain the concept of Parametric Test 
+Introduction
+Hypothesis testing is a systematic approach to evaluating claims or ideas about 
+a group or population. Also known as significance testing, it involves assessing a 
+hypothesis or claim about a parameter within a population using data collected from a 
+sample. This method helps determine the probability of selecting a sample statistic if 
+the hypothesis regarding the population parameter were true.
+4.1: Hypothesis Testing
+Essentially, hypothesis testing is a statistical technique used to make decisions 
+based on experimental data. It revolves around an assumption made about the 
+population parameter, which is then tested against observed sample data.
+During hypothesis testing, two mutually exclusive statements about a population 
+are compared to ascertain which statement is better supported by the sample 
+data. When a finding is deemed statistically significant, it indicates strong evidence 
+supporting one of the hypotheses tested.
+4.1.1 Introduction to Hypothesis
+What is a Hypothesis
+A hypothesis is a statement about the research problem and may or may not be 
+true. It is a tentative and testable relationship between at least two variables that require 
+research methodology for testing its authenticity. You are required to test the hypothesis 
+and ascertain the truth in the way of research. Theory and hypothesis are completely 
+different. Unlike a hypothesis, a theory is a tested, well-substantiated, complete 
+explanation for a set of proven factors. 
+The term “hypo” means “subject to verification”, and “thesis” means “statement 
+about the solution of a problem”. Thus, “hypothesis” is “ a tentative statement, which is 
+subject to verification and states the solution of a problem”. Hypothesis offers a solution 
+to the research problem that must be verified empirically
+Study the below illustration to grasp the concept better.
+Illustration: 
+A renowned asset management company is in the process of launching a new 
+Mutual Fund. The fund is aimed at catering to the wealth-building needs of the Indian 
+middle-class population. The company wants to conduct detailed market research on 
+the popular choices of investment options in India. It recruits a research team, which 
+comes up with the research problem: 
+“Is Mutual Fund a popular investment option in India?” 
+(c) Amity University Online
+
+
+--- page 88 ---
+Research Methodology
+81
+Notes
+Amity University Online
+The team constructs a trio of hypotheses, namely
+H0: The Indian middle-class population does not invest in Mutual Funds
+H1: At least 20% of the Indian middle-class population invests in Mutual Funds
+H2: Less than 20% of the Indian middle-class population invests in Mutual Funds
+Note that all three hypotheses have been phrased in a manner so that anyone is 
+correct. However, note all three cannot be correct or incorrect simultaneously. Also, 
+note that in order to make an effective decision, you need to select the first act if H1 
+is true and the second act if H2 is true. The decision of launching or not launching the 
+Mutual Fund depends on whether H1 or H2 is true. The hypothesis H0 suggests that 
+the Indian middle-class population is completely indifferent towards Mutual Funds
+Decisions taken based on the hypothesis selected
+If H1 Selected, then a decision is taken (Launching the Mutual Fund). 
+But If H2 selected, then a decision is (Not to launch the Mutual Fund ). 
+Thus, the asset management company chooses to launch the mutual fund if H1 
+is true, i.e. if it is established from the market research that at least 20% of the Indian 
+middle-class population invests in mutual funds. If established otherwise, i.e. if H2 is 
+true, the company decides not to launch the mutual fund.
+Formulation of Hypothesis 
+To discuss the process of formulating a hypothesis, we have to discuss a few 
+concepts, which are related to that. 
+Types of Hypothesis
+There are several types of hypothesis likes:
+●
+●
+Simple Hypothesis
+●
+●
+Complex Hypothesis
+●
+●
+Empirical Hypothesis
+●
+●
+Null Hypothesis
+●
+●
+Alternative Hypothesis
+●
+●
+Logical Hypothesis
+●
+●
+Statistical Hypothesis
+Simple Hypothesis
+In a simple hypothesis, there exists a relationship between two variables; one 
+is called an independent variable or cause, and the other is a dependent variable or 
+effect. For example
+1.	 Smoking leads to Cancer
+2.	 A high rate of unemployment leads to crimes.
+Complex Hypothesis
+In a complex hypothesis, there exists a relationship among more variables (more 
+than two dependent and independent). For example
+1.	 Smoking and other drugs lead to cancer, chest infections etc.
+(c) Amity University Online
+
+
+--- page 89 ---
+82
+Research Methodology
+Notes
+Amity University Online
+2.	 The high rate of unemployment, poverty, illiteracy leads to crimes like dacoit, 
+Robbery, Rape, prostitution & killing etc.
+Empirical / Working Hypothesis
+Working hypothesis is mainly applied to a particular field. At the time of formulation, 
+it is an assumption, but when it is ready for a test to become an empirical or working 
+hypothesis. 
+Logical Hypothesis
+Here, the hypothesis is rationally validated. J.S. Mill has proposed four principles of 
+this theory, including agreement, disagreement, difference, and residue.
+Statistical Hypothesis
+A hypothesis may be logical or illogical but can be verified statistically, called a 
+statistical hypothesis. 
+4.1.2 Developing Hypothesis : Null and Alternate
+Null Hypothesis
+It is contrary to the positive statement of the empirical hypothesis, which has no 
+relationship between dependent and independent variables. It is denoted by ‘h0”.
+Alternative Hypothesis
+Typically, several theories are considered, but one must be chosen that is both 
+feasible and highly effective. The hypothesis is subsequently introduced as a result 
+of modifications to the previously defined hypothesis. The term is represented by the 
+symbol “h1”.
+Testing Hypothesis and Significance Levels
+Testing Hypothesis
+The test statistic is a mathematical function or estimator that is calculated using 
+the sample data and serves as the basis for making statistical decisions. The rejection 
+region (RR) defines the range of values of the test statistic that lead to the rejection of 
+the null hypothesis in favour of the alternative hypothesis.
+●
+●
+If the calculated value of the test statistic for a certain sample falls into the 
+rejection region (RR), we will reject the null hypothesis (Ho) and accept the 
+alternative hypothesis (H1).
+●
+●
+If the value of the test statistic does not fall inside the rejection (critical) zone, we 
+will accept the null hypothesis (Ho). The acceptance region refers to the region 
+that is not part of the rejection region.
+Significance Level
+The significance level is the threshold probability used to make a decision between 
+the null and alternative hypotheses. The probability level is insufficiently low to justify 
+supporting the null hypothesis.
+The significance level is typically denoted as a percentage, such as 5% or 1%. 
+The level of significance, often set at 5%, represents the chance of rejecting the null 
+hypothesis when it is actually true.
+(c) Amity University Online
+
+
+--- page 90 ---
+Research Methodology
+83
+Notes
+Amity University Online
+When the hypothesis is accepted at the 5% significance level, there is a potential 
+danger that the statistician may make an incorrect judgement around 5% of the time in 
+the long run.
+4.1.3: Type I & Type II Error
+Errors in Selecting Hypotheses 
+It is crucial to execute each stage of research with utmost precision, as even a 
+small mistake in one phase might compromise the entire process and result in 
+erroneous conclusions. It is important to recognise that the selection of a hypothesis 
+has a significant risk of severe mistakes. The typical mistakes associated with selecting 
+a hypothesis include Type1 & Type 2, which are described below.
+Error
+Explanation
+Type I
+H0 wrongly rejected
+H1 wrongly accepted
+Type II
+H0 wrongly accepted
+H1 wrongly rejected
+Illustration: 
+A prestigious children’s channel undertakes market research to assess the demand 
+for advertising. The study team formulates the following hypotheses:
+H0: Adults make up a minimum of 20% of the viewership for children’s TV 
+programming.
+H1: Adults make up less than 20% of the viewership for children’s TV programming. 
+It should be noted that if the null hypothesis H0 is correct, the corporation should 
+engage in advertising. Conversely, if the alternative hypothesis H1 is valid, advertising 
+is unnecessary. 
+It is crucial to formulate a hypothesis with great precision. There is a significant 
+likelihood of mistakes occurring at every stage of creating a hypothesis. It is important 
+to understand that hypotheses are designed in such a way that they cannot be both true 
+and false at the same time. In order to prevent incorrect decisions, we must choose the 
+first action (first hypothesis) if it is true, and the subsequent action (second hypothesis) 
+if it is true.
+ Decision-making based on hypothesis testing carries the risk of mistakes at 
+each stage. In order to elucidate flaws in hypotheses, it is crucial for us to familiarise 
+ourselves with the concept of “state of nature,” which refers to the authentic situation in 
+the universe. The initial opportunity for mistake arises at the first stage of formulating a 
+hypothesis, which involves establishing the connection between the different states of 
+nature and the suggested course of action. A second opportunity for mistake may arise 
+if the study findings are incorrect in relation to the true condition of nature.
+The following table provides insight into the correlation between the various stages 
+of nature and the suggested course of action. This consists of two possible scenarios 
+and two different options for action.
+(c) Amity University Online
+
+
+--- page 91 ---
+84
+Research Methodology
+Notes
+Amity University Online
+True State 
+Conclusions
+H0 True
+H1 True
+H0
+True
+No error
+Type I error 
+H1
+True
+Type II error 
+No error 
+Based on the information provided in the table, it is clear that if the link between the 
+two states of nature and the two acts is valid, there is no mistake in concluding that H0 
+is true. Similarly, it would be accurate to deduce that H1 is true without any mistake. 
+What are the consequences of the team accepting an incorrect hypothesis? Is it 
+possible for the firm to make an incorrect decision? Allow me to elucidate by utilising 
+two potential scenarios that may occur.
+Hypothesis 
+chosen 
+Status of acceptance 
+Type of 
+error 
+Decision taken 
+H0
+H0 wrongly rejected and 
+H1 wrongly accepted 
+Type I
+No advertisements 
+H1
+H1 wrongly rejected and 
+H0 wrongly accepted 
+Type II
+Unnecessary 
+costs 
+incurred due to ad­
+vertisements 
+4.1.4: One-tailed and Two-tailed Test
+In a one-tailed test, the alternative hypothesis allows for the parameter being tested 
+to be either bigger or less than the parameter under the null hypothesis, but not both 
+simultaneously. The null and alternative hypotheses for a one-tailed test are formulated 
+as follows:
+Null Hypothesis
+H0 : μ = μ0
+Alternative Hypothesis
+H1 : μ < μ0 or μ > μ0
+ 
+Figure: Image depicting one-failed test
+https://prwatech.in/blog/wp-content/uploads/2019/07/onetailtest.png
+Think of a novel medicinal medication that they hope to demonstrate offers 
+advantages over an earlier iteration. They complete their assigned task and carry out 
+a flawless procedure. If the new medication is more successful than the previous one, 
+(c) Amity University Online
+
+
+--- page 92 ---
+Research Methodology
+85
+Notes
+Amity University Online
+that is the only thing that matters right now. The same penalties apply to failing to reject 
+the null hypothesis as they do to rejecting the null in the incorrect direction because if 
+you don’t reject it, the new drug’s production and study won’t proceed. In any case, the 
+new medication won’t be utilized, thus a one-tailed t-test will be set up to determine 
+whether the medication is more effective at reducing headaches in particular. 
+In a two-tailed test, the alternative hypothesis permits the values of the parameter 
+being researched to be either bigger or less than the values of the parameter under the 
+null hypothesis.
+The hypotheses for the two-tailed test are formulated as follows:
+Null Hypothesis
+H0 : μ = μ0
+Alternative Hypothesis
+H1: μ ≠ μ1
+ 
+Figure: Image depicting two-tail test
+Assume we compare the mean strength (4.1) of parts from a supplier to a target 
+value (5) using a two-sided 1-sample t-test. Because it matters whether the mean is 
+higher or lower than the desired value, we employ a two-tailed test.
+Just compare the p-value to chosen significance threshold to understand the 
+findings. You can determine which of the key zones the test statistic fell into if the 
+p-value is smaller than the significance level. Take a look at the approximate impact. 
+The test statistic fell in the key region in the left tail of the distribution, indicating the 
+mean is smaller than the target value, as seen by the output below, where the t-value is 
+negative.
+4.1.5 Degree of Freedom
+Definition
+In a statistical calculation, the degrees of freedom represent the values involved 
+in a calculation have the freedom to vary. Calculating the degrees of freedom is crucial 
+(c) Amity University Online
+
+
+--- page 93 ---
+86
+Research Methodology
+Notes
+Amity University Online
+for ensuring the statistical validity of chi-square tests, t-tests, and f-tests. These tests 
+are frequently employed to compare observed data with data that would be anticipated 
+based on a given hypothesis.
+For example, let’s suppose a vaccine trial is conducted on a group of patients, and 
+it is hypothesized that the patients receiving the vaccine would show increased heart 
+rates compared to those that did not receive the vaccine. The results of the test could 
+then be analysed to determine whether the difference in heart rates is considered 
+significant, and degrees of freedom are part of the calculations. Because degrees of 
+freedom calculations identify how many values in the final calculation are allowed to 
+vary, they can contribute to the validity of an outcome. Statistical calculations often rely 
+on the sample size, or number of observations, and the parameters to be estimated.
+Degrees of freedom =( The number of observations) –( The number of parameters). 
+The formula for Degrees of Freedom
+Degrees of freedom equal the number of values in a data set minus 1 in a 
+statistical formula like :
+Degree of Freedom = N-1
+Here N is the number of values in the data set (sample size). For example, we 
+assume
+If there is a data set of 4, that means N=4.
+Let the data set is With the values: 15, 30, 25, 10
+The mean value of the above data set is 20. 
+Mean 
+= Sum of the values / N
+  
+= (15+30+25+10)/4
+ 
+=(80)/4 
+	
+= 20
+Using the formula, the degrees of freedom would be calculated as Degree of 
+Freedom = N-1:
+In this example, Degree of Freedom = 4-1 = 3
+This implies that within this dataset, three integers possess the capacity to fluctuate 
+while ensuring that the average remains at 20.
+4.1.6 Confidence Intervals
+What exactly is a confidence interval?
+A confidence interval is the mean of our estimate plus and minus the variation 
+in that estimate. Exactly this is the range of values that we expect our estimate to fall 
+between if we redo our test within a certain level of confidence.
+Confidence, in statistics, is another way to describe probability. For example, if we 
+construct a confidence interval with a 95% confidence level, then we are confident that 
+95 out of 100 times, the estimate will fall between the upper and lower values specified 
+by the confidence interval.
+(c) Amity University Online
+
+
+--- page 94 ---
+Research Methodology
+87
+Notes
+Amity University Online
+In statistical test:
+Confidence level = 1 − a
+So if we use an alpha value of p < 0.05 for statistical significance, then our 
+confidence level would be 1 − 0.05 = 0.95, or 95%.
+We can use confidence intervals for many kinds of statistical estimates, likes:
+
+
+Proportions
+
+
+Population means
+
+
+Differences between population means or proportions
+
+
+Estimates of variation among groups
+All of these are single value estimates and do not provide any information 
+regarding the range of values around the estimate. Confidence intervals serve the 
+purpose of conveying the range of variance surrounding a certain point estimate.
+For instance: To assess the level of deviation from an estimated value, we 
+conducted a survey of 100 individuals from India and 100 individuals from America to 
+inquire about their television-viewing behaviours. The results revealed that both groups 
+have an average weekly television-watching duration of 35 hours.
+Nevertheless, the Indian respondents exhibited significant disparity in the number 
+of hours they watched, whereas the American participants all reported identical viewing 
+durations.
+Although the point estimate for both groups is the same (the average number of 
+hours viewed), the Indian estimate will have a broader confidence interval than the 
+American estimate due to more data volatility.
+4.1.7: Level of Significance: The Confidence Coefficient
+ 
+Figure: image depicting confidence interval
+https://i0.wp.com/statisticsbyjim.com/wp-content/uploads/2017/04/CI_95.png?w=576&ssl=1
+(c) Amity University Online
+
+
+--- page 95 ---
+88
+Research Methodology
+Notes
+Amity University Online
+On the other hand, we shade the center 95% of the distribution, and the sample 
+mean is the center of the confidence interval graph. 
+The sampling distribution is covered by 95% of the sample means in the shaded 
+range [267 394]. For our sample data, this range represents the 95% confidence 
+interval. The population mean for fuel prices falls between 267 to 394, with a 95% 
+confidence interval.
+4.1.8: Rejection and Non-rejection Regions
+The critical region, also known as the rejection region, encompasses all values of 
+the test statistic that lead to the rejection of the null hypothesis.
+A critical value is a threshold that distinguishes the rejection region from the non-
+rejection region. 
+The significance level (represented by α) denotes the probability of the test statistic 
+falling within the critical region when the null hypothesis is true.
+I)  
+For a left-tailed test, the alternative hypothesis (H1) includes the less-than symbol 
+(<), indicating that it’s a test focused on detecting values significantly lower than the 
+expected.
+II) 
+In a right-tailed test, the alternative hypothesis (H1) includes the greater-than symbol 
+(>), indicating a focus on values significantly higher than the expected.
+III) A two-tailed test, indicated by the not-equal-to symbol (≠) in the alternative hypothesis 
+(H1), involves both tails of the distribution and is used to detect deviations in either 
+direction from the expected value. In a two-tailed test, each tail has an area of α/2.
+The decision rule based on the rejection (critical) region is as follows:
+
+
+Calculate the standardised test statistic (z or t).
+
+
+If the standardised test statistic:
+
+
+Falls within the rejection region, rejecting H0.
+
+
+Does not fall within the rejection region, fail to reject H0.
+It’s essential to understand that failing to reject the null hypothesis doesn’t imply 
+acceptance of it as true; rather, it indicates insufficient evidence to reject it.
+A Type I error transpires when the null hypothesis is rejected despite being true. 
+Denoted by α, it represents the probability of this error occurring—specifically, the 
+likelihood of rejecting the null hypothesis when it’s actually true.
+On the other hand, a Type II error arises when the null hypothesis is not rejected 
+even though it’s false. This error is characterised by the probability of failing to reject the 
+null hypothesis when it’s actually false, typically denoted by β.
+Bayesian Statistics
+Bayesian statistics are a mathematical procedure that applies probabilities to 
+statistical problems. In the field of Bayesian statistics, probability is defined as a 
+measure of the degree of certainty regarding the truth of a statement or proposition.
+●
+●
+When the probability is 1, we can be certain that the assertion is true. 
+●
+●
+When the probability is 0, we may confidently conclude that the claim is untrue. 
+●
+●
+If the probability is 0.5, then our level of uncertainty is equivalent to that of a fair 
+coin toss. 
+(c) Amity University Online
+
+
+--- page 96 ---
+Research Methodology
+89
+Notes
+Amity University Online
+If the probability is 0.95, then we have a high level of confidence that the statement 
+is true, however we would not be overly shocked if we discovered that the statement 
+was untrue.
+The graphic above illustrates that probability may be employed to quantify levels of 
+confidence or the plausibility of a given proposition. 0 and 1 represent the two ends of 
+the spectrum and signify absolute confidence. Nevertheless, probabilities are not fixed 
+quantities. As we acquire additional knowledge, our probabilities have the potential to 
+alter.
+Bayesian statistics is sometimes mistakenly seen as a simple process of pondering 
+an issue and instinctively stating a probability that seems fitting. As an illustration, in a 
+scenario where we are participating in the game show “Who Wants to Be a Millionaire?” 
+and encounter a question for which we lack the solution, we may estimate that the 
+likelihood of option A being correct is 25%. However, if we utilize the “phone a friend” 
+option and our buddy unequivocally states, “It is undoubtedly A,” our level of certainty 
+for option A would significantly increase. It is unlikely that our likelihood would reach 
+100%.
+Now, we will examine a straightforward example to illustrate the fundamental 
+principles of Bayesian statistics. 
+●
+●
+The initial probability of the problem is referred to as prior probabilities.
+●
+●
+How precisely are these changed when we receive further information? The 
+revised probabilities are referred to as posterior probabilities. 
+●
+●
+In order to enhance clarity, we will employ a table known as a Bayes’ Box to 
+facilitate the straightforward calculation of posterior probabilities.
+Assume there are two balls in a bag, where:
+●
+●
+at least one of them is black, 
+●
+●
+but we’re not sure whether they’re both black 
+●
+●
+or whether one is black and one is white. 
+For the above, we consider two possibilities: either both are black in colour or one 
+is white, and another is black so that we can label our two competing hypotheses BB 
+and BW. So, at the beginning of the problem, we know that one and only one of the 
+following statements/hypothesis is true:
+BB: Both balls are black
+BW: One ball is black and the other is white.
+(c) Amity University Online
+
+
+--- page 97 ---
+90
+Research Methodology
+Notes
+Amity University Online
+Suppose an experiment is conducted to assist us in determining the veracity of 
+either of these two theories. The researcher inserts their hand into the bag, extracts a 
+single ball, and scrutinises its hue. The outcome of this experiment is
+D: The ball that was removed from the bag was black.
+The Bayes Box
+In a Bayesian analysis, we begin by selecting prior probabilities for our two 
+competing hypotheses, BB and BW. We also need to assign probability values 
+that reflect our level of confidence in the truth of each hypothesis. Given that we are 
+considering two hypotheses, there will therefore be two prior probabilities: one for the 
+hypothesis of both parents having the same genotype (BB) and one for the hypothesis 
+of the parents having different genotypes (BW). To simplify, we shall assume a lack of 
+accurate knowledge and so rely on the following initial probabilities:
+P (BB) = 0.5
+P (BW) = 0.5.
+The above two hypotheses are mutually exclusive (they can’t both be true) and 
+exhaustive (one of these is true, it can’t be some undefined third option). The selection 
+of 0.5 as the prior probability signifies our high level of uncertainty regarding the actual 
+hypothesis before conducting the experiment. Now introduce a Bayesian Box, which 
+displays a comprehensive list of all the possible hypotheses that may be true together 
+with their corresponding prior probability. There are other columns that have not been 
+addressed yet, and they are necessary to calculate the posterior probability in the last 
+column. The initial column of a Bayes’ Box comprises the roster of hypotheses under 
+consideration. 
+Hypotheses
+prior
+likelihood
+prior × likelihood
+posterior
+BB
+BW
+0.5
+0.5
+Totals:
+1
+	
+	
+There are just two in this scenario. To create a Bayes’ box for a new problem, just 
+consider the potential solutions to the problem and record them in the first column. The 
+second column displays the prior probability associated with each of the hypotheses. 
+Prior to doing the experiment, we established a 50% likelihood for BB being true and 
+a 50% likelihood for BW being true. This is why the column has values of 0.5. The 
+preceding column must always have a total sum of 1. It is important to note that the 
+prior probabilities just represent our initial level of uncertainty, prior to considering the 
+evidence. 
+Likelihood
+The third column is called likelihood by which we can calculate the posterior 
+probabilities. It is equivalent to probability. Within the field of statistics, likelihood refers 
+to a distinct type of probability. In order to complete the third column of the Bayes’ Box, 
+it is necessary to compute two distinct likelihoods, indicating that the likelihood varies 
+for each hypothesis. However, could you perhaps provide a more precise definition?
+Here is the Bayes’ Box with the likelihood column completed. 
+(c) Amity University Online
+
+
+--- page 98 ---
+Research Methodology
+91
+Notes
+Amity University Online
+Hypotheses
+prior
+likelihood
+h = prior × likelihood
+posterior
+BB
+BW
+0.5
+0.5
+1
+0.5
+Totals:
+1
+Initially, compute the probability value for the BB hypothesis. It is important to 
+note that the data being analysed pertains to the selection of a ball from the bag in a 
+random manner, and the ball chosen happened to be black. The probability of the BB 
+hypothesis is equivalent to the probability of obtaining a black ball if the BB hypothesis 
+is correct.
+Consider the scenario when BB is assumed to be true. Consequently, both balls 
+are black. What is the likelihood that the experiment would yield a black ball? The 
+answer is straightforward - it is 100%. We assigned the value of 1 to the Bayes Box as 
+the likelihood for the BB hypothesis.
+Now envision a scenario when BW is indeed true. That would imply that one ball 
+is black and the other ball is white. Assuming this hypothetical scenario and conducting 
+the experiment, what would be the likelihood of obtaining the black ball? Given that one 
+of the two balls is black, the probability of selecting the black ball is 50%. Thus, the 
+probability of the BW hypothesis is 0.5, which is why we assign a value of 0.5 to the 
+likelihood for BW in the Bayes’ Box.
+Hypotheses
+Possible Data
+Probability
+BB
+BlackBall
+WhiteBall
+1
+0
+BW
+Black Ball
+0.5
+White Ball
+0.5
+Generally, the likelihood refers to the probability of obtaining the observed data, 
+given that a specific hypothesis is correct. In this scenario, obtaining the likelihoods was 
+rather straightforward by means of direct inquiry. “If this hypothesis is true, what is the 
+probability of getting the black ball when we do the experiment?”. Occasionally, this task 
+may not be straightforward, and it might be advantageous to consider all conceivable 
+experimental results or data that could have been seen - despite the fact that ultimately, 
+we only need to choose the one that really happened.
+This table illustrates a technique for computing the probability values by taking 
+into account not only the observed data but also all possible data. In essence, the 
+significance lies solely in the likelihood of the observed data, which is emphasised by 
+being marked in the colour blue.
+The Mechanical Part
+The third column of the Bayes’ Box is obtained by multiplying the prior probabilities 
+and the likelihoods together. The outcome will be referred to as “prior times likelihood”, 
+with the occasional usage of the letter h to represent these values. This is the posterior 
+that has not been normalised. The total of the values does not equal 1, which is the 
+expected sum for posterior probabilities. However, the values are at least proportional 
+to the actual posterior probabilities.
+In order to calculate the posterior probabilities, we divide the values in the prior 
+likelihood column by their sum, resulting in numbers that add up to 1. These are the 
+(c) Amity University Online
+
+
+--- page 99 ---
+92
+Research Methodology
+Notes
+Amity University Online
+ultimate posterior probabilities, which were the intended objective from the beginning. 
+Below is the Bayes’ Box that has been finished.
+Hypotheses
+prior
+likelihood
+h = prior × likelihood
+posterior
+BB
+BW
+0.5
+0.5
+1
+0.5
+0.5
+0.25
+0.667
+0.333
+Totals:
+1
+0.75
+1
+It is evident that the posterior probability differs from the prior probabilities due 
+to the acquisition of more information. The experimental outcome has increased the 
+plausibility of BB to a certain extent. The likelihood has risen from 1/2 to 2/3.
+Interpretation
+The posterior probability of the hypotheses are directly proportional to the prior 
+probabilities and the likelihoods. A hypothesis with a high prior probability is more likely 
+to have a high posterior probability. To comprehend the implications for reasoning, it 
+is necessary to examine the definitions of the prior and the likelihood. Two factors can 
+contribute to the plausibility of a hypothesis:
+Assume that the initial probability is elevated. Prior to obtaining the data, the 
+hypothesis was already credible.
+Assuming that the theory accurately anticipated the data. Essentially, the facts 
+aligned with our expectations if the hypothesis had been accurate.
+Bayes Rule:
+Bayes’ rule is an equation from probability theory and conditional probabilities.
+For instance, the equation’s left-hand side represents P (A B), which denotes 
+the conditional probability of A given B. That is, it represents the likelihood of event A 
+occurring after considering the information provided by event B. Put simply, P (A B) is a 
+posterior probability, and Bayes’ rule provides a method for computing it based on other 
+probabilities. Bayes’ theorem holds valid for any given propositions A and B. 
+P(A\B)= P(B\A) P(A)
+P(B)
+In Bayesian, Statistics A has been replaced by H, and B has been replaced by D. 
+The purpose of these letters is to designate H as hypothesis and D as data. Bayes’ rule 
+may be understood as providing the likelihood of a hypothesis based on certain facts, in 
+other words, a posterior probability.
+P (H \D) = P(H) P (D\H)
+P(D)
+ 
+Bayesian statistics assigns specific names to the majority of the concepts in 
+Bayes’ rule. Some species even possess several designations, since various scientific 
+societies choose distinct language. Below is a compilation of the different terms along 
+with the corresponding names we will assign to them:
+The posterior probability, denoted as P(H\D), represents the likelihood of a 
+hypothesis H given the observed data D. It quantifies the level of certainty or confidence 
+in the truth of hypothesis H, based on the observed evidence D. The primary objective 
+of Bayesian statistics is to compute posterior probabilities.
+(c) Amity University Online
+
+
+--- page 100 ---
+Research Methodology
+93
+Notes
+Amity University Online
+The prior probability P (H) quantifies our initial level of confidence in the truth of 
+hypothesis H prior to observing the evidence D.
+The probability is denoted as P(D | H). Given the assumption that H is true, the 
+chance of observing data D is as follows.
+The marginal probability is denoted as P (D). This represents the likelihood of 
+observing data D, regardless of whether H is true or not. 
+Phone Example
+This example is derived from a question in David MacKay’s remarkable book 
+“Information Theory, Inference and Learning Algorithms” (accessible online as a 
+complimentary PDF download). Please feel free to examine it, but it is a voluminous 
+tome and only around 20% of its contents pertain to this particular course.
+You relocate to a new residence that is equipped with a telephone. You are unable 
+to recall the phone number, but you have a suspicion that it may be 555-3226 (some 
+individuals may identify this as the phone number associated with Homer Simpson’s 
+“Mr Plough” enterprise). In order to verify this theory, you conduct an experiment by 
+physically grabbing the telephone and inputting the numbers 555-3226 into the dial pad.
+If your assumption regarding the phone number’s accuracy is accurate, you will 
+undoubtedly get a busy signal when you are attempting to contact your own number. If 
+you make a mistake, the likelihood of hearing a busy signal is 1 in 100. Nevertheless, 
+all of those assertions have validity just under the assumption that the phone is 
+functioning, although there is a possibility that it is defective. When the phone is in a 
+state of disrepair, it will consistently emit a busy signal.
+During the experiment, the observed outcome, or data, confirms the presence of 
+a busy signal. The prompt instructed us to evaluate four hypotheses and determine 
+their posterior probability through calculation. It is important to understand that the four 
+possibilities are completely separate and cannot occur at the same time.
+Hypothesis
+Description
+Prior 
+Probability
+H1
+The phone is working, and 555-3226 is correct
+0.4
+H2
+The phone is working, and 555-3226 is incorrect
+0.4
+H3
+The phone is broken, and 555-3226 is correct
+0.1
+H4
+The phone is broken, and 555-3226 is incorrect
+0.1
+The table presented above contains four assumptions regarding the condition of 
+the phone and its associated phone number. The initial probability is also provided.
+Thorough. If you were to generate hypotheses independently, you may consider 
+the possibilities of “the phone is functioning properly” and “the phone number 555-3226 
+is accurate.” These two possibilities cannot be considered as mutually exclusive in a 
+Bayes’ Box. However, it is feasible to combine them using the logical operator “and” to 
+create the four mutually exclusive options in the table.(DIY)
+4.1.9 Hypothesis Testing Procedure
+Hypothesis testing follows a structured procedure to evaluate the validity of a 
+statement. Here’s a stepwise guide:
+(c) Amity University Online
+
+
+--- page 101 ---
+94
+Research Methodology
+Notes
+Amity University Online
+●
+●
+Formulate Hypotheses: Begin by stating the initial hypothesis, which is then 
+reformulated into a null hypothesis (H0) and an alternative hypothesis (Ha). The 
+null hypothesis assumes no relationship between variables, while the alternative 
+hypothesis predicts a specific relationship.
+Example:
+
+
+H0: On average, there is no difference in height between men and women.
+
+
+Ha: On average, men are taller than women.
+●
+●
+Collect Sample Data: Obtain data through sampling, ensuring it represents the 
+population under consideration.
+●
+●
+Choose Hypothesis Testing Method: Select an appropriate statistical method to 
+test the hypotheses based on the nature of the data and the research question.
+●
+●
+Calculate Test Statistic: Compute a test statistic (e.g., z-score, t-statistic) based on 
+the sample data and chosen method.
+●
+●
+Determine P-value: The p-value quantifies the probability of observing results as 
+extreme as those obtained, assuming the null hypothesis is true. It’s the probability 
+of obtaining the observed result, or more extreme results, under the assumption 
+that the null hypothesis is true.
+●
+●
+Interpret P-value: Compare the obtained p-value with a predetermined significance 
+level (α), commonly set at 0.05. If the p-value is less than α, there’s sufficient 
+evidence to reject the null hypothesis, indicating a significant result. Conversely, if 
+the p-value is greater than α, we fail to reject the null hypothesis due to insufficient 
+evidence.
+
+
+Low p-value (< α): Reject the null hypothesis.
+
+
+High p-value (≥ α): Fail to reject the null hypothesis.
+●
+●
+A low p-value suggests that the observed difference is unlikely to have occurred 
+by chance alone, supporting the alternative hypothesis. Conversely, a high p-value 
+indicates that the observed difference is likely due to random variation, supporting 
+the null hypothesis.
+●
+●
+Draw Conclusion: Based on the comparison between the p-value and the 
+significance level, make a decision regarding the null hypothesis. Interpret the 
+results in the context of the research question.
+4.1.10 Types of Tests
+Statistical tests serve as essential tools in data analysis, facilitating the examination 
+of relationships between variables through hypothesis testing. They allow for drawing 
+inferences about populations based on sample data. These tests are broadly classified 
+into two categories: parametric and non-parametric.
+●
+●
+Parametric Tests: Parametric tests rely on specific assumptions about the 
+underlying data distribution, such as normality and homogeneity of variance, to 
+make accurate inferences. Examples of parametric tests include t-tests, ANOVA, 
+and linear regression.
+●
+●
+Non-Parametric Tests: Non-parametric tests do not require any assumptions about 
+the data distribution, making them more robust in certain situations, especially 
+when data violates parametric assumptions. Examples of non-parametric tests 
+include the Wilcoxon signed-rank test, Mann-Whitney U test, and Kruskal-Wallis 
+test.
+(c) Amity University Online
+
+
+--- page 102 ---
+Research Methodology
+95
+Notes
+Amity University Online
+Categorisation by Research Focus: Quantitative and Qualitative Analysis
+Statistical tests can also be categorised based on their application in quantitative 
+or qualitative research. Quantitative research deals with numerical data, while 
+qualitative research focuses on non-numerical data. Statistical tests used in qualitative 
+research, particularly when analysing categorical data, play a crucial role in uncovering 
+relationships and associations between different qualitative or categorical variables.
+4.1.11 How to Select a Test
+Selecting the Right Test: 7 Essential Steps
+●
+●
+Define the Research Question: Begin by identifying the specific research question 
+you aim to answer. This question guides the entire process, from data collection to 
+analysis.
+●
+●
+Formulate Null Hypothesis: Develop a null hypothesis that states there is no 
+statistical significance in the expected observations. This serves as the baseline 
+for comparison in hypothesis testing.
+●
+●
+Determine Level of Significance: Specify the level of significance in your study 
+protocol, which dictates the threshold for statistical importance. This level 
+determines whether to accept or reject the null hypothesis.
+●
+●
+Choose Between One-Tailed and Two-Tailed Tests: Decide whether your study 
+warrants a one-tailed or two-tailed test. One-tailed tests are suitable when 
+evidence points clearly in one direction, while two-tailed tests are appropriate 
+when no specific direction is anticipated.
+●
+●
+Consider Number of Variables: Select statistical tests based on the number 
+of variables to be analysed. Different tests are designed for single-variable or 
+multivariable analyses.
+●
+●
+Assess Data Type: Identify whether your data is continuous, categorical, or binary. 
+For continuous data, determine if it’s normally distributed or skewed, as this 
+influences the choice of statistical test.
+●
+●
+Account for Study Design: Distinguish between paired and unpaired (independent) 
+study designs. Paired designs involve comparing dependent samples, while 
+unpaired designs compare independent samples.
+4.2 Parametric Test 
+Parametric tests are statistical tests that rely on assumptions about the parameters 
+of the population distribution from which the sample data is drawn. These tests are 
+based on a fixed set of parameters used to determine a probabilistic model, which can 
+also be applied in machine learning.
+Fixed Set of Parameters: Parametric tests operate under the assumption that 
+specific parameters (such as mean and standard deviation) define the population 
+distribution.
+Population Distribution: Typically, parametric tests assume that the population 
+follows a normal distribution. If the population distribution is unknown, the Central Limit 
+Theorem can often be used to approximate it as normal.
+(c) Amity University Online
+
+
+--- page 103 ---
+96
+Research Methodology
+Notes
+Amity University Online
+Key Parameters for Normal Distribution:
+
+
+Mean (μ)
+
+
+Standard Deviation (σ)
+Why Do We Need Parametric Tests?
+The classification of a test as parametric depends on the assumptions made about 
+the population. Parametric tests are useful for various purposes, including:
+●
+●
+Confidence Interval for Population Mean (Known Standard Deviation): Used to 
+estimate the population mean when the standard deviation is known.
+●
+●
+ Confidence Interval for Population Mean (Unknown Standard Deviation): Used 
+to estimate the population mean when the standard deviation is unknown, often 
+involving the t-distribution.
+●
+●
+Confidence Interval for Population Variance:Used to estimate the population 
+variance.
+●
+●
+Confidence Interval for the Difference of Two Means (Unknown Standard 
+Deviation):Used to estimate the difference between two population means when 
+the standard deviation is unknown, often using the t-distribution.
+4.2.1 Important Parametric Tests
+Parametric tests are statistical tests that assume the underlying data follows 
+a normal distribution. These tests are powerful tools in statistical analysis, relying on 
+certain assumptions about the population parameters from which the samples are 
+drawn.
+Key Parametric Tests
+1.  t-test
+ 
+The t-test is a statistical hypothesis test introduced by W.S. Gossett under the 
+pen name “Student.” It is commonly used to assess whether there is a significant 
+difference between the means of two groups, particularly when dealing with small 
+sample sizes (less than 30) and unknown population variance. The t-test statistic 
+follows a t-distribution with 
+n−1 degrees of freedom.
+Types of t-tests:
+
+
+One-sample t-test: Compares the mean of a single sample to a known 
+population mean.
+
+
+Independent two-sample t-test: Compares the means of two independent 
+samples.
+
+
+Paired t-test: Compares the means of two related samples, often used for 
+“before and after” scenarios.
+Example:
+To determine if there is a significant difference in blood pressure before and after 
+administering a new medication, a paired t-test is appropriate.
+2.  Z-test
+ 
+The Z-test is used for comparing the mean of a sample to a hypothesised population 
+(c) Amity University Online
+
+
+--- page 104 ---
+Research Methodology
+97
+Notes
+Amity University Online
+mean, especially when dealing with large sample sizes (greater than 30) or when 
+the population variance is known. It is also used to compare the means of two 
+independent samples in large samples.
+Example:
+To compare the average salaries of men and women in an organisation, a Z-test 
+can be utilised.
+3.  F-test
+ 
+The F-test is used to compare the variances of two independent samples. It helps 
+determine if there is more variability in one sample compared to another. The F-test 
+is also integral to ANOVA (Analysis of Variance), which compares the means of three 
+or more groups simultaneously.
+Example:
+To compare the variability of bolt diameters produced by two different machines, an 
+F-test can be applied.
+4.2.2 Hypothesis Testing of Means: Single Population Mean Using 
+Z-statistic
+A Z-test is a statistical method used to determine whether the mean of a sample 
+is significantly different from a known population mean when the population standard 
+deviation is known. It is particularly useful for large sample sizes (n > 30). The Z-test 
+can also be used to determine whether the distribution of test statistics can be 
+approximated by a normal distribution.
+Applications of Z-Test
+●
+●
+Comparing Sample Mean to Population Mean: Determines if the sample mean 
+significantly differs from the population mean.
+●
+●
+Comparing Two Sample Means: Assesses if two sample means are approximately 
+the same or different when their variances are known, and the sample sizes are 
+large (n >= 30).
+A Z-test can be:
+One Sample Z-test: To compare a sample mean with that of the population mean.
+ 
+Two Sample Z-test: To compare the means of two different samples.
+(c) Amity University Online
+
+
+--- page 105 ---
+98
+Research Methodology
+Notes
+Amity University Online
+ 
+where,
+
+
+x̄1 is the sample mean of 1st group
+
+
+x̄2 is the sample mean of 2nd group
+
+
+σ1 is the population-1 standard deviation
+
+
+σ2 is the population-2 standard deviation
+
+
+n is the sample size
+4.2.3 Hypothesis Testing of Means: Single Population Mean Using 
+T-statistic
+The t-test is a parametric test used in hypothesis testing based on Student’s 
+t-distribution. It is primarily used to determine if there is a significant difference between 
+the means of two groups, especially when the sample size is small (i.e., less than 30) 
+and the population standard deviation is unknown.
+Assumptions of the T-Test
+●
+●
+Normal Population Distribution: The population from which the sample is drawn is 
+normally distributed.
+●
+●
+Random and Independent Samples: The samples are randomly selected and 
+independent of each other.
+●
+●
+Small Sample Size: The sample size is small (typically less than 30).
+●
+●
+Unknown Population Standard Deviation: The population standard deviation is not 
+known.
+Types of T-Tests
+●
+●
+One-Sample T-Test: Compares the mean of a single sample to a known population 
+mean.
+●
+●
+Independent Two-Sample T-Test: Compares the means of two independent 
+samples.
+●
+●
+Paired T-Test: Compares the means of two related samples, often used for “before 
+and after” measurements.
+One Sample T-test: To compare a sample mean with that of the population mean.
+ 
+where,
+
+
+x̄ is the sample mean
+
+
+s is the sample standard deviation
+
+
+n is the sample size
+
+
+μ is the population mean
+Two-Sample T-test: To compare the means of two different samples.
+(c) Amity University Online
+
+
+--- page 106 ---
+Research Methodology
+99
+Notes
+Amity University Online
+ 
+where,
+
+
+x̄1 is the sample mean of the first group
+
+
+x̄2 is the sample mean of the second group
+
+
+S1 is the sample-1 standard deviation
+
+
+S2 is the sample-2 standard deviation
+
+
+n is the sample size
+4.2.4: Hypothesis Testing for Population Proportions
+Hypothesis testing for population proportions involves determining whether 
+a sample proportion significantly differs from a known or hypothesised population 
+proportion. This is particularly useful when dealing with categorical data.
+Steps in Hypothesis Testing for Population Proportions
+1. 
+State the Hypotheses:
+
+
+Null Hypothesis (H0H0): The population proportion is equal to a specified 
+value.
+
+
+Alternative Hypothesis (HaHa): The population proportion is different from 
+the specified value. This could be one-tailed or two-tailed depending on the 
+context of the research question.
+2. 
+Set the Significance Level (αα):
+
+
+Common choices for αα are 0.05, 0.01, or 0.10.
+3.	
+Calculate the Test Statistic:
+
+
+For large sample sizes, the test statistic is a Z-score calculated using the 
+formula:
+where:
+4. 
+Determine the Critical Value and Decision Rule:
+
+
+Using the standard normal distribution, determine the critical value(s) for the 
+given significance level. For a two-tailed test with α=0.05, the critical values 
+are ±1.96.
+5.	
+Make a Decision:
+(c) Amity University Online
+
+
+--- page 107 ---
+100
+Research Methodology
+Notes
+Amity University Online
+
+
+Compare the calculated Z-score to the critical value(s):
+
+
+If the Z-score falls in the rejection region, reject the null hypothesis.
+
+
+If the Z-score does not fall in the rejection region, fail to reject the null 
+hypothesis.
+6.	
+Conclusion: Based on the decision, conclude whether there is enough evidence to 
+support the alternative hypothesis.
+4.2.5: Hypothesis Testing for Comparing a Variance to Hypothesised 
+Population Variance
+The chi-square test is a statistical method used to determine whether there is a 
+significant difference between the observed variance of a sample and a hypothesised 
+population variance. This test is particularly applicable to normally distributed 
+populations. The hypotheses for this test can be structured in three ways:
+1. 
+Two-tailed test:
+
+
+H0:σ2=σ02
+
+
+Ha:σ2=σ02
+2. 
+Right-tailed test:
+
+
+H0:σ2≤σ02
+
+
+Ha:σ2>σ02
+3. 
+Left-tailed test:
+
+
+H0:σ2≥σ02
+
+
+Ha:σ2<σ02
+Chi-Square Distribution and Test Statistic 
+The chi-square test concerning variance uses the chi-square distribution 
+characterised by n−1n−1 degrees of freedom, where nn is the sample size. Since 
+variance cannot be negative, the chi-square distribution is asymmetrical and starts 
+from zero. As the degrees of freedom increase, the shape of the chi-square distribution 
+approaches that of the normal distribution.
+The test statistic for the chi-square test is calculated as follows:
+(c) Amity University Online
+
+
+--- page 108 ---
+Research Methodology
+101
+Notes
+Amity University Online
+where
+Reading a Chi-Square Table
+To illustrate how to read a chi-square table, consider a two-tailed test with a 10% 
+significance level (α=0.10α=0.10) and 10 degrees of freedom. Here are the steps:
+1. 
+Determine the Critical Values:
+
+
+For a two-tailed test, split the significance level into two tails, so each tail has 
+α/2=0.05.
+
+
+Locate the column in the chi-square table where the probability to the right is 
+0.05. For 10 degrees of freedom, this critical value is approximately 18.307.
+
+
+Locate the column where the probability to the right is 0.95 (which 
+corresponds to 5% to the left). For 10 degrees of freedom, this critical value is 
+approximately 3.94.
+2.	
+Decision Rule:
+
+
+Reject the null hypothesis (H0) if the calculated chi-square statistic is less 
+than 3.94 or greater than 18.307.
+4.2.6: Testing the Equality of Variances of Two Normal Populations
+The F-test, developed by Snedecor and Cochran (1983), is used to determine if 
+the variances of two populations are equal. This test can be conducted as either a two-
+tailed test or a one-tailed test, depending on the research question.
+The F Test for Equality of Variances between two groups is a statistical test used to 
+compare the variances of two samples to determine whether they are equal. It is based 
+on the assumption that the samples are drawn from normally distributed populations.
+Steps in the F Test for Equality of Two Variances:
+1.	
+Specify the null and alternative hypotheses. The null hypothesis is usually that the 
+variances of the two samples are equal, while the alternative hypothesis is that the 
+variances of the two samples are not equal.
+2.	
+Select two samples from the populations and calculate the sample variances and 
+sizes.
+3.	
+Calculate the test statistic, which is the ratio of the larger sample variance to the 
+smaller sample variance.
+4. 
+Determine the critical value of the test statistic based on the significance level 
+(alpha) of the test and the degrees of freedom for the numerator and denominator. 
+(c) Amity University Online
+
+
+--- page 109 ---
+102
+Research Methodology
+Notes
+Amity University Online
+The degrees of freedom for the numerator and denominator are calculated as the 
+sample sizes minus 1.
+5.	
+Compare the calculated test statistic to the critical value to determine whether to 
+reject or fail to reject the null hypothesis. If the calculated test statistic exceeds 
+the critical value, the null hypothesis is rejected, and the alternative hypothesis is 
+accepted.
+Conditions for the F Test for Equality of Two Variances:
+To conduct a valid F test for the equality of two variances, the following conditions 
+must be met:
+1.	
+The samples must be drawn randomly from the populations.
+2.	
+Each observation in each sample must be independent of the others.
+3.	
+The population distributions must approximate a normal distribution.
+Hypothesis Testing of Correlation Coefficients
+When given a sample of bivariate data (data which include two variables), it is 
+possible to calculate how linearly correlated the data are, using a correlation coefficient.
+The correlation coefficient, r, tells us about the strength and direction of the linear 
+relationship between X1 and X2.
+The sample data are used to compute r, the correlation coefficient for the sample. 
+If we had data for the entire population, we could find the population correlation 
+coefficient. But because we have only sample data, we cannot calculate the population 
+correlation coefficient. The sample correlation coefficient, r, is our estimate of the 
+unknown population correlation coefficient.
+●
+●
+ρ = population correlation coefficient (unknown)
+●
+●
+r = sample correlation coefficient (known; calculated from sample data)
+The hypothesis test lets us decide whether the value of the population correlation 
+coefficient ρ is “close to zero” or “significantly different from zero”. We decide this based 
+on the sample correlation coefficient r and the sample size n.
+If the test concludes that the correlation coefficient is significantly different from 
+zero, we say that the correlation coefficient is “significant.”
+●
+●
+Conclusion: There is sufficient evidence to conclude that there is a significant 
+linear relationship between X1 and X2 because the correlation coefficient is 
+significantly different from zero.
+●
+●
+What the conclusion means: There is a significant linear relationship X1 and X2. If 
+the test concludes that the correlation coefficient is not significantly different from 
+zero (it is close to zero), we say that correlation coefficient is “not significant”.
+Performing the Hypothesis Test
+●
+●
+Null Hypothesis: H0: ρ = 0
+●
+●
+Alternate Hypothesis: Ha: ρ ≠ 0
+Hypotheses Mean in Words
+●
+●
+Null Hypothesis H0: The population correlation coefficient IS NOT significantly 
+different from zero. There IS NOT a significant linear relationship (correlation) 
+between X1 and X2 in the population.
+(c) Amity University Online
+
+
+--- page 110 ---
+Research Methodology
+103
+Notes
+Amity University Online
+●
+●
+Alternate Hypothesis Ha: The population correlation coefficient is significantly 
+different from zero. There is a significant linear relationship (correlation) between 
+X1 and X2 in the population.
+Drawing a Conclusion
+There are two methods of making the decision concerning the hypothesis. The test 
+statistic to test this hypothesis is:
+ 
+Or
+Where the second formula is an equivalent form of the test statistic, n is the sample 
+size and the degrees of freedom are n-2. This is a t-statistic and operates in the same 
+way as other t tests. Calculate the t-value and compare that with the critical value from 
+the t-table at the appropriate degrees of freedom and the level of confidence you wish 
+to maintain. If the calculated value is in the tail then cannot accept the null hypothesis 
+that there is no linear relationship between these two independent random variables. If 
+the calculated t-value is NOT in the tail then cannot reject the null hypothesis that there 
+is no linear relationship between the two variables.
+4.2.7 ANOVA for Fixed Effect Model
+Analysis of Variance
+Introduction: 
+Definition: Variance analysis is that the study of deviations of actual behaviour 
+versus forecasted or planned behaviour. This primarily focuses on how the disparity 
+between actual and planned behaviours reflects the influence on company success. 
+Variance analysis may be divided into two distinct stages:
+1. 	 Computing and documenting individual discrepancies
+2. 	 Comprehending the cause behind each deviation
+We can use variance due to
+1. 	 Market conditions have changed, making it impractical to continue employing quality 
+budgeting procedures. For example, there is a shortage of raw materials, leading 
+suppliers to increase prices.
+2. 	 The budgeting rules followed may also be excessively utopian, for instance, the 
+output of a machine might be incorrectly anticipated.
+3. 	 The quality of service delivery may not meet expectations, for example, the initial 
+plan may have accounted for eight hours of work per day, but the real conditions on 
+the ground may only allow for six hours of work per day.
+4. 	 In certain instances, planning may lack a foundation, such as when the results of 
+creative endeavours cannot be accurately measured against a high standard.
+(c) Amity University Online
+
+
+--- page 111 ---
+104
+Research Methodology
+Notes
+Amity University Online
+Variances are also classified under the below-mentioned heads:
+1.  Material Variances: - These arise from the difference between actual costs of 
+materials utilized in production and standard costs of materials specified for the 
+product produced. This comes into play due to the difference in quantities consumed 
+and the quantity initially allocated for production. This can also happen due to the 
+difference in price paid and the price budgeted for materials used.
+2.  Labour variances:- This refers to the specific remuneration given to employees 
+in comparison to the prevailing wage for the defined output. An adverse variance 
+occurs when the actual labour expenses exceed the anticipated expenditures.
+3.  Overhead variances:- It may be described as the aggregate of indirect material, 
+labour, and expenditure costs. Overhead variances can occur when there is a 
+discrepancy between the planned standard overhead expenses and the actual 
+overhead costs incurred.
+ANOVA for Fixed Effect Model:
+The concepts presented in the following portion of this module, which include the 
+design and analysis of an actual experiment, may be easily comprehended with the 
+use of concise explanations and practical illustrations. Curious and interested readers 
+can consult the Oscar Kempthorne textbooks for more real sugar (Kempthorne 1952; 
+Hinkelmann and Kempthorne 2005; Hinkelmann and Kempthorne 2008)!
+While identical twins are selected as experimental units and subjected to similar 
+experimental settings, it is important to acknowledge that natural variances exist in 
+practically every aspect of the universe. Thus, the answer is determined by the factors or 
+explanatory variables, together with some experimental error, as shown in Equation 1.
+Response= f(factor)+ error
+Means Model
+The research issue in the fuel economy study is if there is a disparity between 
+fuel types in terms of the average miles per gallon (mpg). Hence, Equation 1 may be 
+expressed to evaluate the disparity in average response (measured in mpg) across 
+different treatments (fuel kinds, in this instance) as seen in Equation 2. The model is 
+referred to as the means model since it is based on the mean treatment effect. The 
+population means model is designed to generalise the results of a sample to the 
+entire population. Additionally, it is worth mentioning that the model is linear due to the 
+exponent of the mean term (μ) being one.
+yij = µi +εij
+µi= mean response due to itch treatment.
+The error term εij=is assumed to be identical, independent and normally distributed.
+Effects Model
+Let’s assume that the three fuel kinds are created by blending three distinct 
+chemicals that enhance fuel efficiency when combined with a standard base gasoline. 
+The pure fuel, devoid of any additives, will effectively power the vehicle and enable it 
+to go a certain distance. By isolating the impacts of the ingredients from the base fuel 
+efficiency, the model Equation 2 may be expressed as Equation 3.
+yij = µ +εij+ Ƭi
+(c) Amity University Online
+
+
+--- page 112 ---
+Research Methodology
+105
+Notes
+Amity University Online
+µ= mean response or overall mean
+Ƭi= ithtreatment effect
+The error term εij =is assumed to be identical, independent and normally distributed
+Error
+The error could occur from many different sources, including the following 
+Experimental Error
+●
+●
+Treatment error refers to the mistake that occurs when we are unable to reproduce 
+a treatment from one instance to another.
+●
+●
+Error - An error caused by stochastic fluctuations in the physical condition of an 
+EU selection. 
+●
+●
+Issue - The problem is caused by the random selection of EUs for the trial.
+Observational Error
+●
+●
+Measuring error refers to the inaccuracies that arise from the lack of precision in 
+our measuring or scoring methods.
+●
+●
+Sampling error refers to the mistake that arises from the random selection of 
+observational units (OUs) for a study or research.
+4.2.8 Total, Treatment & Error of Squares
+After determining the error sum of squares (SSE), we may proceed to determine 
+the treatment sum of squares (SSTR) and the total sum of squares (SST). When 
+calculating the sum of squares error (SSE), sum of squares treatment (SSTR), and total 
+sum of squares (SST), the next step is to determine the mean square error (MSE) and 
+mean square treatment (MSTR), which may be used to compute the test statistic.
+How to compute the sum of squares for treatment:
+Once the SSE has been determined, our subsequent task is to calculate the SSTR. 
+This is a quantification of the extent of variability in the average lifespans of different 
+battery types. Given a low SSTR (Systematic Storage Time Ratio), the average 
+lifespans of the various battery types are comparable.
+Firstly, it is necessary to compute the overall average for the sample, which is 
+referred to as the overall mean or grand mean.
+ For instance, let’s consider a scenario where a producer selects a random sample 
+consisting of four Electrical batteries, four Ready forever batteries, and four Voltages 
+now batteries, and subsequently evaluates the lifespans of these batteries. This table 
+provides a comprehensive overview of the outcomes, which are measured in units of 
+hundreds of hours.
+Battery Lifetimes (in Hundreds of Hours)
+Sample
+Electrical
+Ready forever
+Voltage now
+Battery 1
+2.4
+1.9
+2.0
+Battery 2
+1.7
+2.1
+2.3
+Battery 3
+3.2
+1.8
+2.1
+Battery 4
+1.9
+1.6
+2.2
+(c) Amity University Online
+
+
+--- page 113 ---
+106
+Research Methodology
+Notes
+Amity University Online
+To get the overall mean, we may add up the 12 sample values obtained from four 
+batteries of each of the three battery types listed in the table, and then divide the sum 
+by 12.
+ 
+we then compute the SSTR with the following steps for each column:
+1.	 Calculate the square of the difference between the mean of a column and the 
+mean of the entire dataset.
+2.	 Compute the product by multiplying the outcome with the total count of items in 
+the column.
+So in this example, SSTR equals
+ 
+The calculations are based on the following results:
+
+
+There are four observations in each column.
+
+
+The overall mean is 2.1.
+
+
+The column means are 2.3 for column 1, 1.85 for column 2 and 2.15 for 
+column 3.
+After you compute SSE and SSTR, the sum of these terms is calculated, giving the 
+SST.
+How to compute the total sum of squares
+The total sum of squares (SST) equals the sum of the SSTR and the SSE. So 
+using the battery example, we get
+ 
+4.2.8 Total, Treatment & Error of Squares
+4.2.9: ANOVA for Random Effect Model
+Two-way factorial analysis of variance (ANOVA)This is an expansion of the one-
+component scenario to incorporate a second element. The values of this second 
+element are often established based on the categorisation of participants or units 
+involved in the study. Therefore, it is sometimes referred to as a blocking factor as it 
+categorises topics or units into similar groupings known as blocks. The design is 
+referred to as a randomised block design.
+A computer maker business seeks to evaluate the performance of four compilers 
+developed by the company. The manufacturer can utilize a 50% proportion of 
+experimental designs.
+1. 	 Utilise 20 identical programmes and distribute 5 programmes randomly to each 
+compiler.
+2.  Utilise four duplicates of any five programmes, assigning one duplicate of each 
+programme to each compiler.
+(c) Amity University Online
+
+
+--- page 114 ---
+Research Methodology
+107
+Notes
+Amity University Online
+Solution
+In (1), the compilation timeframes and potential results may be influenced by any 
+variations among the 20 programmes, notwithstanding their similarities. Therefore, 
+in the worst-case situation, the 5 programmes assigned to the fastest compiler may 
+actually have the longest compilation times, making the compiler appear to be the 
+slowest. If utilised, the outcomes would necessitate a one-factor analysis of variance, 
+with the component being the compiler at four distinct levels.
+In (2), the findings should not be affected by any variations between the 
+programmes, as all 5 programmes are executed on each compiler. Using 5 
+programmes with distinct characteristics will be beneficial for making more 
+comprehensive comparisons of compilation times. This design consists of two factors: 
+the compiler, which has four levels, and the programme, which has five levels. The 
+primary element of interest is the compiler, but the opposing factor, the programme, 
+can be seen as a hindering factor due to its creation of five blocks, each having four 
+identical copies of the programme.
+Therefore, inquiry (2) is the most well-designed option.
+The table below displays the precise compilation times, measured in milliseconds, 
+for this two-factor (randomised block) architecture.
+1
+Compiler
+2
+3
+4
+Program
+A
+29.21
+28.25
+28.20
+28.62
+Program
+B
+26.18
+26.02
+26.22
+25.56
+Program
+C
+30.91
+30.18
+30.52
+30.09
+Program
+D
+25.14
+25.26
+25.20
+25.02
+Program
+E
+26.16
+25.14
+25.26
+25.46
+Assumptions and Interaction
+The three assumptions for a two-way analysis of variance with just one observed 
+measurement for each combination of values of the two components are as follows.
+●
+●
+The population at each combination of issue-level is typically dispersed in an 
+approximate manner.
+●
+●
+The traditional populations have a characteristic variation, σ2.
+●
+●
+The impact of one issue is consistent across all degrees of the other issue.
+Therefore, based on assumptions 1 and 2, when one component is at level i and 
+the other at level j, the population follows a distribution that is
+N(μij,σ2).
+Assumption 3 may be restated as the absence of any interaction between the two 
+components. Interaction occurs when the impact of one element is influenced by the 
+degree of another factor. For instance, let’s examine the impact of two variables: the 
+amount of sugar (with levels of none and 2 teaspoons) and the duration of stirring (with 
+levels of none and 1 minute), on the perceived sweetness of a cup of tea.
+(c) Amity University Online
+
+
+--- page 115 ---
+108
+Research Methodology
+Notes
+Amity University Online
+Agitating has no impact on the level of sweetness in the absence of sugar, but it 
+surely does have an impact when sugar is introduced. In a similar vein, the addition of 
+sugar has minimal impact on the level of sweetness until the tea is agitated.
+Therefore, it is believed that sugar and stirring have an interactive relationship.
+Assessing interaction requires taking many measurements at each combination 
+of component levels. Given the limitations of this book, it will always be assumed that 
+there is no interaction between the two components in such cases.
+Therefore, given that it is quite unlikely to discover a compiler that is specifically 
+well-suited for a particular programme, it is acceptable to assume that there is no 
+interaction between compilers and programmes.
+Can we consider the premise of no interaction to be valid for the data acquired in 
+Activities 3 and 4?
+Notation and Computational Formula
+As illustrated earlier, the data for a two-factor ANOVA can be displayed in a two-
+way table. It is thus convenient, in general, to label the factors as a row factor and a 
+column factor.
+Notation, similar to that for the one-factor case, is then as follows.
+Number of levels of row factor 
+=r
+Number of levels of column factor =c
+Total number of observations	
+=rc
+Observation in ( ij) thcelloftable	 =xij
+(ithlevel of row factor and	i=1,2,K,r
+jthlevel of columnfactor)	 j=1,2,K,c
+Sum of c observations in  ithrow	
+=TRi=åx
+Sum of r observations in jth column =TCj=åx
+Sum of all rcobservations	 =T =∑åxij=åTRi=åTCj
+The degrees of freedom for SST (Total Sum of Squares), SSR (Regression Sum 
+of Squares), and SSC (Column Sum of Squares) may be calculated when there are 20 
+observations in a table with 5 rows and 4 columns. What is the number of degrees of 
+freedom for the sum of squared errors (SSE)?
+Anova table and hypothesis tests
+For a two-factor analysis of variance, the structure is as follows.
+Source of variation
+Sum of 
+squares
+Degrees of 
+freedom
+Mean 
+square
+F ratio
+Between rows
+SSR
+r - 1
+MSR
+MSR MS
+E
+Between columns
+SSC
+c - 1
+MSC
+MSC MS
+E
+Error (residual)
+SSE
+(r - 1)(c - 1)
+MSE
+Total
+SST
+rc- 1
+(c) Amity University Online
+
+
+--- page 116 ---
+Research Methodology
+109
+Notes
+Amity University Online
+4.2.10: Single Factor Experiment
+Frequently we wish to investigate the effect of a factor (independent variable) on a 
+response (dependent variable). Then we carried out an experiment where the levels of 
+the factor are varied. Such an experiment is known as a single-factor experiment. There 
+Are various types of designs available to carry out such experiments. The most popular 
+ones are completely randomized design, randomized block design, Latin square design, 
+and balanced incomplete block design. 
+Completely randomized design (CRD):
+The CRD is the simplest design. Suppose there are v treatments to be compared. 
+All experimental units are considered the same, and no division or grouping among 
+them exist.
+●
+●
+In CRD, the v treatments are allocated randomly to the whole set of experimental 
+units, without
+●
+●
+making any effort to group the experimental units in any way for more 
+homogeneity. Design is entirely flexible in the sense that any number of treatments 
+or replications may be used.
+●
+●
+The numbers of replications for different treatments need not be equal and may 
+vary from treatment to
+●
+●
+treatment depends on the knowledge (if any) on the variability of the observations 
+on individual treatments as well as on the accuracy required for the estimate of 
+individual treatment effect. 
+Example: Suppose there are four treatments and 20 experimental units, then 
+●
+●
+the treatment one is replicated, say three times and is given to 3 experimental 
+units, 
+●
+●
+the treatment two is replicated, say five times and is given to 5 experimental units,
+●
+●
+treatment three is replicated, say six times and is given to 6 experimental units and 
+●
+●
+Finally, treatment four is replicated [20-(6+5+3)=] six times and is given to the 
+remaining six experimental units.
+
+
+All the variability among the experimental units goes into experimental error. 
+
+
+CRD is used when the experimental material is homogeneous.
+
+
+CRD is often inefficient.
+
+
+CRD is more useful when the experiments are conducted inside the lab.
+
+
+CRD is well suited for the small number of treatments and for the 
+homogeneous experimental material.
+The layout of CRD Following steps are needed to design a CARD:
+●
+●
+Divide the entire experimental material or area into a number of experimental 
+units, say n
+●
+●
+Fix the number of replications for different treatments in advance (forgiven total 
+number of available experimental units). 
+●
+●
+No local control measure is provided as such except that the error variance can be 
+reduced by choosing a homogeneous set of experimental un
+Procedure Let the v treatments are numbered from 1,2,...,v and I n be the number 
+of replications required for i the treatment such that 
+(c) Amity University Online
+
+
+--- page 117 ---
+110
+Research Methodology
+Notes
+Amity University Online
+v
+∑ni=n. 
+ n=i
+●
+●
+Select n1 units out of n units randomly and apply treatment 1 to these n1
+●
+●
+Select n2 units out of ( n- n1) units randomly and apply treatment 2 to these n2 units
+●
+●
+Continue with this procedure until all the treatments have been utilized.
+●
+●
+Generally, an equal number of treatments are allocated to all the experimental 
+units unless no practical limitation dictates or some treatments are more variable 
+or/and of more interest.
+Analysis There is only one factor that is affecting the outcome – treatment effect. 
+So the set-up of one-way analysis of variance is to be used. : 
+yij :Individual measurement of j the experimental units for i th treatment i = 1,2,...,v , j 
+= 1,2,..., n i .	
+	
+	
+	
+	
+v
+yij: Independently distributed following N (ai μ,σ2 ) withΣniai.     
+ n=i
+	
+µ: overall mean
+ 
+αi : i th treatment effect
+ 
+H0 :α1 =α2=……… =αv=0
+ 
+H1: All ‘ αi s are not equal.
+Data Layout for Single-Factor Experiments 
+Treatment observations totals averages 
+1.	 y11y12 · · · y 1 ny 1 y¯ 1.
+2.	 y21y22 · · · y 2 ny 2. y¯ 2
+	
+........................................................
+	
+........................................................
+A         y a 1ya 2 · · · yanya. y¯a.
+Analysis of Variance 
+●
+●
+Statistical Model (Factor Effects Model): yij = µ + τi + ǫij  i = 1, 2 . . . , a 
+j = 1, 2, . . . ,ni
+µ - grand mean;
+τi - ith treatment effect;
+iid
+ǫij∼ N(0, σ 2 ) – error;
+Constraint:=0 Conceptual Approach; SAS: τa = 0
+Estimates for parameters:
+ˆμ = y.
+ˆτi = (y/
+i. – y/.)
+(c) Amity University Online
+
+
+--- page 118 ---
+Research Methodology
+111
+Notes
+Amity University Online
+ˆǫij= yij – y/
+i.
+SSt = SStreatment+ SSe
+SSTreatments: sum of squares of differences between treatment averages and 
+grand average. 
+
+
+It is a measure of differences between treatment means.
+
+
+It has (a-1) DOF
+SSE: sum of squares of differences of observations within treatments from the 
+treatment average.
+
+
+It is due to random error.
+
+
+It has (N-a) DOF.
+
+
+E(MSE) =σ2
+Example
+Twelve lambs are randomly assigned to three different diets. The weight gain (in 
+two weeks) is recorded. Is there a difference between the diets?
+Diet 1       8 16 9
+Diet 2       9 16 21 11 18
+Diet 3      15 10 17 6
+
+
+N = 12, ∑∑yij = 156 and y/= 156/12 = 13.
+
+
+n1 = 3, y1. = 33, y/
+1. = 11; n2 = 5, y2. = 75, y/
+2. = 15; n3 = 4, y3. = 48 andy/
+3. = 12.
+ 
+ᴧτ1= y/
+1– y/ = 11 − 13 = −2; Similarly, ˆτ2 = 15 − 13 = 2 and
+
+
+ˆτ3 = 12 − 13 = −1.
+
+
+SST = ∑i∑j (yij– y/)2 = 246.
+
+
+SSTreatment = 3 * (−2)2 + 5 * (2)2 + 4 * (−1)2 = 36.
+
+
+SSE = 246 − 36 = 210; 
+MSE = ˆσ2 = 210/(12 − 3) = 23.33
+
+
+F0 = (36/2)/(210/9) = 0.77;
+ P-value > 0.25;
+Fail to reject H0 :τ1 = τ2 = τ3 = 0.
+(c) Amity University Online
+
+
+--- page 119 ---
+112
+Research Methodology
+Notes
+Amity University Online
+Estimation of Variance Components
+Abstract
+Estimating variance components is a commonly employed technique in the fields 
+of population genetics and animal breeding. Even seasoned population geneticists 
+may feel overwhelmed when faced with the extensive array of approaches available for 
+variance component estimate. This is primarily because there is no universally superior 
+strategy, making it challenging to determine which approach to use. Nevertheless, the 
+one-way layout has little practical significance. However, it may be effectively utilised 
+to elucidate the fundamental ideas, which are applicable to higher categories, to animal 
+scientists. The symbols utilised are the conventional biometric symbols as outlined in 
+Raschet et al. (1994). All the procedures provided by SPSS are highly recommended.
+Introduction
+We analyse techniques for estimating variance components in the simplest 
+scenario, the one-way ANOVA, and illustrate most of these methods using a specific 
+dataset. Assuming a vast universe of factor levels, we consider a sample of levels of a 
+random factor A. To avoid excessive abstraction, let us suppose that the levels may be 
+represented by sires. A random sample of daughters is taken from the i-th sire, and their 
+milk output yij is recorded. 
+The scheme of the 
+∑
+=
+=
+a
+i
+in
+N
+1
+observations are given in Table 1. 
+A case is considered balanced when an equal number of daughters has been 
+picked for each sire. Balance in higher nested categorisation refers to the equal 
+distribution of subclass numbers and the same number of layers of nested factors 
+inside each level of factors of a higher order in the hierarchy. Some of the procedures 
+discussed below only differ from others when dealing with imbalanced data, which 
+implies that in the one-way ANOVA, the number of daughters for each sire is not the 
+same. Consequently, we created a synthetic data set that was not evenly distributed.
+Formulae are not provided for all procedures, and just the idea is discussed. 
+The purpose of this article is to provide a fundamental grasp of various ways for 
+non-mathematicians who frequently utilise many techniques in their application of 
+specialised methods. The merits and drawbacks of the approaches are considered.
+Observations in a one-way layout of ANOVA – unbalanced case
+level A1
+level A2
+…
+level Aa
+y11
+y12
+.
+.
+.
+1
+1n
+y
+y21
+y22
+.
+.
+.
+2
+2n
+y
+…
+.
+.
+.
+…
+ya1
+ya2
+.
+.
+.
+a
+an
+y
+Following Rasch et al (1999) the model equation is given in (1) 
+(c) Amity University Online
+
+
+--- page 120 ---
+Research Methodology
+113
+Notes
+Amity University Online
+The aFehler! Textmarkenichtdefiniert.i are the main effects of the levels Ai. They are random 
+variables. The eFehler! Textmarkenichtdefiniert.ijare the errors and also random. The constant μis the 
+overall mean. Model (1) is completed by the assumptions (E() = expectation of=mean 
+of;:V() = variance of).
+E(aFehler! Textmarkenichtdefiniert.i)=0, V(aFehler! Textmarkenichtdefiniert.i) = σa
+2 , E(eij)=0, V(eFehler! 
+Textmarkenichtdefiniert.ij)=σ2 ; all components on the right hand side of (1) are independent (2)
+σa
+2 and σ2 are called variance components. The total number of observations is 
+always denoted by N , in the balanced case we have N = an . In the sequel we give the 
+formula for the balanced case, generalisation can be found in the references.
+Let us assume that all the random variables in (1) are normally distributed even if 
+this is not needed for all the methods.
+The normal distribution (Gauss-distribution) has the density (or likelihood) function
+We say that yisN(μ;σ2) – distributed. If we have a random sample yT= (
+)
+ny
+y ,...,
+1
+ 
+its density is equal to the product of the densities of its components.
+From (1), (2) and the normality assumption it follows that the ai and the eijare 
+independently from each other N(0;σa
+2) - and N(0;σ2) – distributed respectively. The 
+yijare not independent from each other N(µ; σ2+ σa
+2) – distributed. 
+The dependence exists between variables within the same factor level because
+(
+)
+(
+)
+(
+)
+( )
+2
+var
+,
+cov
+,
+cov
+,
+cov
+a
+i
+i
+i
+il
+i
+ij
+i
+il
+ij
+σ
+µ
+µ
+=
+=
+=
++
++
++
++
+=
+a
+a
+a
+e
+a
+e
+a
+y
+y
+, if 
+l
+j ≠
+. 
+A standardized measure of this dependence is the intra-class correlation coefficient
+2
+2
+2
+σ
+σ
+σ
+ρ
++
+=
+a
+a
+IC
+The Analysis of Variance (ANOVA) Table is that of Table 2
+Table 2: ANOVA Table of the one-way ANOVA model II in the balanced case
+Source of 
+variation
+SS
+df
+MS
+E(MS)
+Factor A
+(
+)
+∑∑
+=
+=
+⋅−
+=
+a
+i
+n
+j
+i
+A
+1
+1
+2
+y
+y
+S
+a-1
+1
+−
+a
+ 
+=
+ 
+A
+A
+S
+M
+S
+s2+nsa
+2
+a
+a
+n
+ 
++
+ 
+i
+2
+2
+1∑
+−
+σ
+Residual
+(
+)
+∑∑
+=
+=
+⋅
+−
+=
+a
+i
+n
+j
+i
+ij
+s
+1
+1
+2
+Re
+y
+y
+S
+a(n-1)
+(
+)1
+−
+n
+a
+ 
+=
+ 
+Res
+Res
+S
+M
+S
+s2
+Total
+(
+)
+∑∑
+=
+=
+−
+=
+a
+i
+n
+j
+ij
+T
+1
+1
+2
+y
+y
+S
+an-1
+	
+(c) Amity University Online
+
+
+--- page 121 ---
+114
+Research Methodology
+Notes
+Amity University Online
+∑
+=
+=
+in
+j
+ij
+i
+i
+y
+n
+y
+1
+.
+1
+ Some of the methods are developed for unbalanced data. We 
+assume therefore also a generalisation of (1) by a general linear model for one random 
+factor in (5).
+e
+â
+Y
++
++
+=
+U
+Xa
+	 	
+	
+	
+(5) 
+with random vectorsY and e of length N, design matrices X (Nxq) and U (Nxm), a 
+vector αof length q with fixed effects and a random vector β of length m. We complete 
+the model (5) by the following assumptions:
+rank(X) = q; rank(U) = m. e and β are independently normally distributed with 
+expectation vector zero and covariance matrix σ2IN and σa
+2Im respectively.
+Note: For more details seeSorensen,A. and Gianola, D. (2002).
+Properties of Estimators
+Estimation is a branch of statistics and signal processing that uses measured 
+and observed data to determine the values of parameters. Estimation is performed to 
+quantify and diagnose the accurate value of a function or a specific piece of information. 
+It is conducted by making observations on samples, which are representative subsets 
+of the target population or function. Various statistical measures are employed to carry 
+out the process of estimation.
+Two crucial aspects of estimators that are commonly utilised are the estimator itself 
+and the estimate it produces. In order to have a comprehensive understanding of the 
+idea of the estimator and estimate, we shall illustrate it using an example. Suppose 
+we have a set of samples, denoted as a1, a2, a3, and so on, which are taken from a 
+certain population with ‘x’ as its parameter. If T = T(a) is a statistic, then the expected 
+value of T(a) is equal to x. These equations demonstrate that a statistical estimation has 
+been performed, with the statistic T serving as the estimator and the parameter ‘x’ being 
+estimated.
+Estimation possesses several crucial attributes for the optimal estimator. These 
+attributes encompass characteristics such as impartiality, effectiveness, uniformity, and 
+adequacy.
+Unbiased estimators are those that yield findings with zero bias for all parameter 
+values during estimate. Unbiased estimators are characterised by having the 
+mathematical expectation or mean equal to the parameter of the target inquiry. In the 
+above example of estimating, T will be considered an unbiased estimator only if its 
+estimate is equal to ‘x’.
+Consistent estimators are estimators that provide estimates that are reliable and 
+accurate. As the number of random variables increases, the degree of concentration 
+around the estimate should also grow in order to ensure that the estimator of estimation 
+is a consistent estimator. A consistent estimator is one that provides an unbiased 
+estimate and has a variance of zero. These two requirements must be satisfied only 
+when the number of random variables approaches infinity.
+estimating involves many estimators that frequently exhibit consistent behaviour. 
+According to the principle of efficiency in estimating, these consistent estimators should 
+follow a normal distribution. This feature was considered in the theory of estimating 
+(c) Amity University Online
+
+
+--- page 122 ---
+Research Methodology
+115
+Notes
+Amity University Online
+due to instances where estimators produced consistent estimates but were not efficient 
+estimators.
+An adequate estimator is one that satisfies the requirement that the joint 
+conditional distribution function of the sample/observation depends solely on the values 
+of T1, T2, T3, T4, and so on, which are the values obtained from the supplied estimator 
+function ‘T’. Therefore, the resulting joint conditional estimation must be completely 
+independent of the parameter ‘x’. During the process of estimating, it is important for 
+a researcher to understand that the most optimal estimator is the minimum variance 
+unbiased estimator (MVUE). This implies that the estimator exhibits the lowest level of 
+variability in comparison to other estimators.
+Methods of Variance Component Estimation
+Before we discuss some of the existing methods of estimation let us make some 
+general considerations.
+Definition 1: An estimator ￼
+is a mapping y   on the parameter space of the 
+parameter θ of the distribution of this sample. The realization of an estimator is called 
+an estimate ￼
+. 
+Definition 2: An estimator ￼
+ is unbiased if E￼
+= θ . The difference E￼ 
+-  θ  = vn(θ ) is the bias of an estimator. The bias of an unbiased estimator is zero. The 
+expression is
+￼
+￼(MSE). The mean squared error of an unbiased estimator equals its 
+variance. In Figure 1 ￼￼
+Example 1The estimator 
+y
+y
+ì
+=
+= ∑
+=
+n
+n
+i
+i
+1
+ˆ
+  of the mean µ of the components of a 
+random sample yT = (
+)
+n
+y
+y ,...,
+1
+is unbiased.
+Definition 3An estimator 
+( )
+y
+è
+è
+ˆ
+ˆ =
+ of  θ  is called minimum variance unbiased 
+linear (MVUL) orminimum variance unbiased quadratic (MVUQ) estimator, if its variance 
+is minimum amongst all unbiased linear and quadratic estimators respectively. 
+Definition 4 : An estimator 
+( )
+y
+è
+è
+ˆ
+ˆ =
+ of  θ  is called minimum mean squared error 
+estimator (MMSE) , if its mean squared error MSE is minimum.
+The estimator 
+y
+y
+ì
+=
+= ∑
+=
+m
+n
+i
+i
+1
+ˆ
+  of the mean µ in example 1 is a minimum variance 
+unbiased linear estimator.
+Definition 5: Let f(y,θ) be the density function of θ , the parameter of the distribution 
+of a random variable y . This is a function of two variables, θ and y. If we call it density 
+function we consider it as a function of y for a fixed θ. But the same function f(y,θ) as a 
+function of θ for fixed y is called likelihood function. If we estimate θ so that it maximizes 
+the likelihood function in the parameter space of θ , we call the corresponding estimator 
+a Maximum- Likelihood Estimator (MLE). 
+(c) Amity University Online
+
+
+--- page 123 ---
+116
+Research Methodology
+Notes
+Amity University Online
+Definition 6 An estimator is called minimum norm quadratic unbiased invariant 
+estimator - MINQUE, if it is a quadratic form of Y in ( describe in 5), unbiased and 
+invariant against translation of the fixed effect 
+a
+X
+ and minimizing some matrix norm. 
+Note :For more details see Rao (1971), the first paper on MINQUE.
+remark. In previous topics we discussed the model equation of the random 
+variables y. Mathematical operations as minimizing (least squares) or maximizing 
+(likelihood) can be performed for the realisations only. The result of such an 
+optimisation is the estimate, a function of the y. If this is an explicit formula, we obtain 
+the estimator by replacing the y-s in that formula by the random variables y. 
+The various methods of variance component estimation are like as:
+Analysis of Variance Method (ANOVA-Method) 
+The oldest and simplest method of estimating the two variance components is 
+due to Fisher (1925). By using this method we can replace in the column E(MS) of the 
+ANOVA table the variance components any σ by its estimate s and put the resulting 
+expressions = to the observed MS and finally we solve the resulting equations
+s2+nsa
+2 = MSA
+s2=  MSres
+Solving these equations gives:
+s2=  MSres	 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+sa
+2 = n
+1
+(MSA – MSres)
+	
+	
+	
+	
+Properties of the estimators:
+Minimum variance unbiased quadratic estimator for any continuous distribution 
+with existing first two moments and Minimum variance quadratic estimator for normal 
+distributions.
+The probability of a negative estimator is given by
+(
+)
+(
+)
+(
+)
+
+
+
+
+
+
+
+
+
+
+
+
++
+<
+−
+−
+=
+<
+2
+2
+2
+1
+1
+1
+,1
+0
+σ
+σ a
+a
+n
+n
+a
+a
+P
+P
+F
+s
+Where 
+(
+)
+(
+)
+1
+,1
+−
+−
+n
+a
+a
+F
+ is a random variable with an F –distribution with a-1 and 
+a(n-1) d.f. Tables for these probabilities are given by Verdooren (1982).
+If we assume approximately a mean sample size of 26, then the above expression 
+gives.
+ 
+(
+)
+(
+)
+=
+
+
+
+
+
+
+
+
+
+
+
+
+=
+=
++
+=
+<
+=
+<
+1875
+,0
+3,5
+1
+6
+1
+26
+1
+1
+2497
+,
+9
+0
+2
+q
+P
+P
+a
+F
+s
+ 0.
+(c) Amity University Online
+
+
+--- page 124 ---
+Research Methodology
+117
+Notes
+Amity University Online
+For some other values of 
+2
+a
+σ
+ and 
+01
+2
+σ
+the corresponding probabilities can be 
+found in below table 
+Table for Probabilities of negative estimates for f1=99, f2=2497, n = 26 and several 
+values of 
+2
+a
+σ
+value of 
+2
+a
+σ
+/
+2
+σ
+h2
+q
+probability
+6
+0,4
+0,19
+,000000000
+20
+0,17
+0,43
+,000000233
+25
+0,14
+0,49
+,000005901
+30
+0,12
+0,54
+,000052454
+40
+0,09
+0,61
+,000790015
+In order to increase the likelihood of obtaining negative estimates, it is necessary 
+to have a higher environmental variance, such as 30, rather than 6. Alternatively, the 
+degrees of freedom should be reduced, indicating that negative estimates are expected 
+only when the sample size is insufficient.	
+	
+	
+Quasi-Maximum-Likelihood Method (QML)
+The maximum likelihood estimate is achieved by maximising the likelihood function 
+of the sample, while ensuring that the answer falls inside the parameter space. This 
+constraint is necessary to exclude the possibility of negative variance components. 
+Since we lack an estimator that aligns with the specification provided in the preceding 
+unit, we refer to the approach as the quasi-maximum-likelihood method. By substituting 
+the realisations of the random variables with the random variables themselves, we 
+obtain the quasi-maximum likelihood estimator for this minimum. The family of normal 
+distributions is a two-parametric exponential family having a set of full minimal adequate 
+statistics, as described in Rasch (1995).
+∑∑
+=
+=
+=
+a
+i
+n
+j
+ijy
+an
+y
+1
+1
+1
+.
+, 
+A
+res S
+S
+,
+,
+the likelihood function can be written as
+ 
+(
+)
+(
+)
+(
+) ( )
+(
+)
+(
+)2
+2
+2
+2
+1
+2
+2
+1
+1
+2
+1
+1
+2
+,...,
+2
+.
+2
+2
+2
+2
+2
+a
+a
+n
+a
+an
+y
+n
+an
+S
+n
+S
+ab
+a
+A
+a
+res
+e
+y
+y
+f
+σ
+σ
+σ
+π
+µ
+σ
+σ
+σ
+σ
+σ
++
+=
+−
+
+
+
+
+
+
+
+
+
+
+
+
+−
++
++
++
++
+−
+With respect to μ deriving the logarithm of this likelihood function and the two 
+variance components without side conditions to restrict the solutions to the parameter 
+space leads to the following estimators:
+.
+ˆ
+y
+=
+µ
+s2= MSres
+sα
+2 = n
+1
+ ( 
+a
+a
+1
+−
+ MSA – MSres)	
+	
+	
+	
+	
+	
+	
+(c) Amity University Online
+
+
+--- page 125 ---
+118
+Research Methodology
+Notes
+Amity University Online
+ 
+The estimate of the population mean, denoted as μ, is required to substitute the μ in 
+the equations derived only from the variance components.
+Maximum-Likelihood method (ML)
+Real maximum likelihood estimator (solutions restricted to the parameter space) 
+derived by Herbach (1959) . 
+S2  =min[MSres, 
+an
+A
+res
+S
+S
++
+]
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+−
+−
+=
+0;
+1
+max
+2
+res
+A
+a
+a
+a
+M
+S
+M
+S
+s
+Both estimators are biased.
+Restricted Maximum-Likelihood method (REML)
+In 1952, Anderson and Bancroft proposed the constrained maximum likelihood 
+(ML) technique. This technique employs a translation invariant limited likelihood 
+function that depends solely on the estimation of variance components, rather than 
+fixed effects such as μ. The limited likelihood function is defined as a function of the 
+adequate statistics for the variance components. The latter is obtained by taking the 
+derivative with regard to the variance components, while imposing the constraint that 
+the solutions must be non-negative. The solutions are:
+s2  =min[MSres, 
+1
+−
++
+an
+A
+res
+S
+S
+],
+[
+]
+{
+}
+0;
+max
+1
+2
+res
+A
+a
+n
+M
+S
+M
+S
+s
+−
+=
+	
+Modified Maximum-Likelihood method (MML)
+ML-estimators which have uniformly smaller mean squared error compared with 
+the ML estimators of Herbach , derived by Stein (1964) and Kotz et al. (1969) .
+They are given by:
+Federer´s Estimator: 
+Some of the truncated estimators above are inadmissible from a Bayesian point 
+of view. The admissibility of the following estimators, which are both non-truncated 
+and nonnegative, could not be shown. It is also not possible to establish that they are 
+uniformly better than any other estimator. The advantage of the estimators proposed 
+by Federer (1968) is that they and their distribution function can be expressed in an 
+analytical form.
+(c) Amity University Online
+
+
+--- page 126 ---
+Research Methodology
+119
+Notes
+Amity University Online
+For δFederer proposed to choose a value in the interval 
+
+
+
+
+
+
+∈
+res
+S
+1
+,0
+δ
+.
+In our numerical example we will useδ = 0 and δ= 
+res
+S
+1
+.
+4.2.11 Model Adequacy Checking
+The estimation of parameters and testing of hypotheses about the qualities of the 
+estimator are based on certain assumptions, such as: 
+1. 	 The relationship between the research variable and explanatory factors is primarily 
+linear, with a minimum value occurring around about.
+2. 	 The mistake has a mean value of zero. 
+3. 	 The mistake exhibits a consistent variance. 
+4. 	 The mistakes are not connected. 
+5. 	 The mistakes follow a normal distribution.
+The accuracy of such assumptions is necessary for the results to have 
+significance. If these assumptions are not upheld, the outcome may be inaccurate. 
+However, if these deviations are minor, the final result may remain unaffected. However, 
+if the deviations are significant, the model derived may become unstable, meaning that 
+a new sample may result in a completely different model with contradictory findings. It 
+is important to note that these assumptions are based on the population and we are 
+just working with a sample. Hence, the primary concern is to establish a selection of 
+the population based on a sample of information. Various diagnostic approaches for 
+assessing violations of regression assumptions involve analysing model residuals using 
+a variety of graphical techniques.
+Checking of the Linear Relationship between Study and Explanatory Variables
+1. Case of one explanatory variable When there is just one explanatory variable in 
+a model, it is simple to evaluate the presence of a linear connection between y and X by 
+using a scatter plot using readily available data. If the scatter plot exhibits a linear trend, 
+it signifies that there is a linear relationship between the variables y and X. Nonlinearity 
+in the pattern indicates a nonlinear connection between y and X. For example, the 
+following figure demonstrates a linear trend.
+(c) Amity University Online
+
+
+--- page 127 ---
+120
+Research Methodology
+Notes
+Amity University Online
+whereas the following graph suggests a nonlinear trend:
+Case of more than one explanatory variables : The scatter plot matrix is utilised 
+to examine the concept of linearity between the research variable and the explanatory 
+factors. A scatter plot matrix is a two-dimensional array of scatter plots, where each cell 
+includes a scatter diagram except for the diagonal. Every example demonstrated the 
+connection between a set of variables. The measure of association provides additional 
+information beyond the correlation coefficient by indicating the presence of linearity or 
+nonlinearity in the connection between variables, as well as offering insights into the 
+distribution of individual data points over the region. This is a scatter plot depicting (Y 
+versus X1), (Y versus X2), …, (Y versus X3).
+Another option to present the scatterplot is
+
+
+display the scatterplots within the upper triangular part of the plot matrix.
+
+
+Mention the corresponding correlation coefficients within the lower triangular 
+part of the matrix.
+Suppose there are only two explanatory variables and the model is y =X1β1 +X 2 β2 
++ε, the matrix looks as follows.
+(c) Amity University Online
+
+
+--- page 128 ---
+Research Methodology
+121
+Notes
+Amity University Online
+Residual Analysis
+The residual is outlined because of the distinction between the discovered and 
+fitted worth of study variable. The residual is outlined as
+ei=yi~yˆi=yi−yˆi,i=1,2,...,nith
+whereis an observation and yˆIis the corresponding fitted value
+Residuals can be viewed as the deviation between the data and the fit. It is also 
+a quantification of the extent to which the regression model fails to account for the 
+variability in the response variable. Residuals might be conceptualised as the actual 
+values of the mistakes in the model. If there are any deviations from the assumptions 
+regarding random errors, it is believed that they will be revealed by the residual. The 
+examination of residuals helps to identify model shortcomings.
+Assuming that the OLS estimates the regression coefficients in the model y =X 
+β+ε, we find that:
+●
+●
+Residuals have zero means
+E(ei)=E(yi−yˆi)
+=E(Xi β+εi−Xib)
+=Xi β+ 0 −Xi β
+= 0
+Summary
+● 
+A hypothesis is a statement about the research problem and may or may not be true. 
+● 
+It is a tentative and testable relationship between at least two variables that require 
+research methodology for testing its authenticity. You are required to test the 
+hypothesis and ascertain the truth in the way of research. 
+● 
+Theory and hypothesis are completely different. Unlike a hypothesis, a theory is a 
+tested, well-substantiated, complete explanation for a set of proven factors. 
+● 
+The term “hypo” means “subject to verification”, and “thesis” means “statement 
+about the solution of a problem”. Thus, “hypothesis” is “ a tentative statement, which 
+is subject to verification and states the solution of a problem”. 
+● 
+Hypothesis offers a solution to the research problem that must be verified empirically.
+● 
+The posterior probability of the hypotheses are directly proportional to the prior 
+probabilities and the likelihoods. 
+● 
+A hypothesis with a high prior probability is more likely to have a high posterior 
+probability. 
+● 
+To comprehend the implications for reasoning, it is necessary to examine the 
+definitions of the prior and the likelihood.
+● 
+After determining the error sum of squares (SSE), we may proceed to determine the 
+treatment sum of squares (SSTR) and the total sum of squares (SST). 
+● 
+When calculating the sum of squares error (SSE), sum of squares treatment (SSTR), 
+and total sum of squares (SST), the next step is to determine the mean square error 
+(MSE) and mean square treatment (MSTR), which may be used to compute the test 
+statistic.
+(c) Amity University Online
+
+
+--- page 129 ---
+122
+Research Methodology
+Notes
+Amity University Online
+Glossary
+● 
+Hypothesis: A hypothesis is a statement about the research problem and may or 
+may not be true. It is a tentative and testable relationship between at least two 
+variables that require research methodology for testing its authenticity. 
+● 
+Simple Hypothesis: In a simple hypothesis, there exists a relationship between 
+two variables; one is called an independent variable or cause, and the other is a 
+dependent variable or effect.
+● 
+Complex Hypothesis: In a complex hypothesis, there exists a relationship among 
+more variables (more than two dependent and independent).
+● 
+Empirical / Working Hypothesis: Working hypothesis is mainly applied to a particular 
+field. At the time of formulation, it is an assumption, but when it is ready for a test to 
+become an empirical or working hypothesis. 
+● 
+Logical Hypothesis: Here, the hypothesis is rationally validated. J.S. Mill has proposed 
+four principles of this theory, including agreement, disagreement, difference, and 
+residue.
+● 
+Statistical Hypothesis: A hypothesis may be logical or illogical but can be verified 
+statistically, called a statistical hypothesis.
+Check Your Understanding
+1. 	 What is a hypothesis?
+a)	 A proven fact
+b)	 A tentative statement subject to verification
+c)	 An assumption without any basis
+d) A well-substantiated explanation
+2. 	 Which type of hypothesis states that there is no relationship between the variables?
+a)	 Alternative hypothesis
+b)	 Simple hypothesis
+c) Null hypothesis
+d)	 Complex hypothesis
+3.  What does the significance level in hypothesis testing represent?
+a)	 The probability of making a Type II error
+b)	 The probability of making a Type I error
+c)	 The probability of rejecting the null hypothesis when it is true
+d)	 The probability of accepting the null hypothesis when it is true
+4. 	 What does the test statistic help determine in hypothesis testing?
+a)	 The significance level
+b) The p-value
+c)	 Whether to accept or reject the null hypothesis
+d)	 The type of error
+5. 	 Which error occurs when the null hypothesis is rejected, but it is actually true?
+a)	 Type I error
+b)	 Type II error
+c)	 Sampling error
+(c) Amity University Online
+
+
+--- page 130 ---
+Research Methodology
+123
+Notes
+Amity University Online
+d)	 Measurement error
+Exercise
+1. 
+Explain the concept of degrees of freedom in statistical calculations. How is it 
+calculated, and why is it important in statistical tests like chi-square, t-tests, and 
+f-tests?
+2. 
+Describe what a confidence interval is in statistics. How is it constructed, and what 
+does it represent?
+3. 
+Define Bayesian statistics. Explain the key components of Bayes’ theorem and how 
+it is used to update probabilities based on new evidence.
+4.	
+Differentiate between a hypothesis and a theory. Provide examples to illustrate each 
+concept.
+5. 
+Discuss the significance level in hypothesis testing. What role does it play in 
+accepting or rejecting the null hypothesis?
+Learning Activity
+1. 
+Explain the concept of a confidence interval. Provide an example of how confidence 
+intervals could be used in a real-world scenario.
+2.	
+Imagine you conducted a survey to measure customer satisfaction with a new 
+product. You collected data from a sample of 200 customers and calculated the 
+mean satisfaction score to be 4.2 on a scale of 1 to 5 (where 5 is very satisfied). 
+Explain how you would use a confidence interval to interpret the results.
+Check Your Understanding- Answers
+1.	 b)	
+2.	
+c)	
+3.	
+c)	
+4.	 c)
+5.	 a)
+Further Readings and Bibliography
+1. “Statistics for Business and Economics” by Paul Newbold, William L. Carlson, 
+and Betty Thorne
+2. “Hypothesis Testing: A Visual Introduction To Statistical Significance” by J.S. 
+Kung
+3.	 “Introduction to the Practice of Statistics” by David S. Moore, George P. 
+McCabe, and Bruce A. Craig
+4. “Statistical Methods for Psychology” by David C. Howell
+5.	 “An Introduction to Statistical Learning: with Applications in R” by Gareth 
+James, Daniela Witten, Trevor Hastie, and Robert Tibshirani
+6. Newbold, P., Carlson, W. L., & Thorne, B. (2020). Statistics for Business and 
+Economics. Pearson.
+7. Kung, J. S. (2017). Hypothesis Testing: A Visual Introduction To Statistical 
+Significance. J.S. Kung.
+8. Moore, D. S., McCabe, G. P., & Craig, B. A. (2018). Introduction to the Practice 
+of Statistics. W. H. Freeman.
+9. Howell, D. C. (2019). Statistical Methods for Psychology. Cengage Learning.
+10. James, G., Witten, D., Hastie, T., &Tibshirani, R. (2017). An Introduction to 
+Statistical Learning: with Applications in R. Springer.
+(c) Amity University Online

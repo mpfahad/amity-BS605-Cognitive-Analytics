@@ -1,0 +1,593 @@
+{
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module I: Introduction",
+      "module": 1,
+      "children": [
+        {
+          "id": "1.1",
+          "title": "1.1 Research",
+          "children": [
+            {
+              "id": "1.1.1",
+              "title": "1.1.1 Definition and Objectives of Research",
+              "conceptId": "1.1.1"
+            },
+            {
+              "id": "1.1.2",
+              "title": "1.1.2 Characteristics of Research",
+              "conceptId": "1.1.2"
+            },
+            {
+              "id": "1.1.3",
+              "title": "1.1.3 Research Methods vs Methodology",
+              "conceptId": "1.1.3"
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "title": "1.2 Research Process",
+          "children": [
+            {
+              "id": "1.2.1",
+              "title": "1.2.1 Research Criteria and Research Process",
+              "conceptId": "1.2.1"
+            },
+            {
+              "id": "1.2.2",
+              "title": "1.2.2 Approaches: Deductive, Inductive, Qualitative & Quantitative",
+              "conceptId": "1.2.2"
+            },
+            {
+              "id": "1.2.3",
+              "title": "1.2.3 Research Proposal and Aspects",
+              "conceptId": "1.2.3"
+            },
+            {
+              "id": "1.2.4",
+              "title": "1.2.4 Literature Survey and Review",
+              "conceptId": "1.2.4"
+            },
+            {
+              "id": "1.2.5",
+              "title": "1.2.5 Errors in Research",
+              "conceptId": "1.2.5"
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "title": "1.3 Types of Research Design",
+          "children": [
+            {
+              "id": "1.3.1",
+              "title": "1.3.1 Pure and Applied",
+              "conceptId": "1.3.1"
+            },
+            {
+              "id": "1.3.2",
+              "title": "1.3.2 Causal and Correlational",
+              "conceptId": "1.3.2"
+            },
+            {
+              "id": "1.3.3",
+              "title": "1.3.3 Cross-sectional and Longitudinal",
+              "conceptId": "1.3.3"
+            },
+            {
+              "id": "1.3.4",
+              "title": "1.3.4 Experimental, Semi-experimental and Non-Experimental",
+              "conceptId": "1.3.4"
+            },
+            {
+              "id": "1.3.5",
+              "title": "1.3.5 Descriptive and Exploratory",
+              "conceptId": "1.3.5"
+            }
+          ]
+        },
+        {
+          "id": "1.4",
+          "title": "1.4 Research Modelling",
+          "children": [
+            {
+              "id": "1.4.1",
+              "title": "1.4.1 Types of Models",
+              "conceptId": "1.4.1"
+            },
+            {
+              "id": "1.4.2",
+              "title": "1.4.2 Model Building and Stages",
+              "conceptId": "1.4.2"
+            },
+            {
+              "id": "1.4.3",
+              "title": "1.4.3 Data Consideration and Testing",
+              "conceptId": "1.4.3"
+            },
+            {
+              "id": "1.4.4",
+              "title": "1.4.4 Heuristic and Simulation Modelling",
+              "conceptId": "1.4.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module II: Sampling",
+      "children": [
+        {
+          "id": "2.1",
+          "title": "2.1 Data Collection",
+          "children": [
+            {
+              "id": "2.1.1",
+              "title": "2.1.1 Introduction to Data Collection",
+              "conceptId": "2.1.1"
+            },
+            {
+              "id": "2.1.2",
+              "title": "2.1.2 Data Collection Methods",
+              "conceptId": "2.1.2"
+            },
+            {
+              "id": "2.1.3",
+              "title": "2.1.3 Tabulating and Validating Data",
+              "conceptId": "2.1.3"
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "title": "2.2 Questionnaire Designing",
+          "children": [
+            {
+              "id": "2.2.1",
+              "title": "2.2.1 Steps in Constructing a Questionnaire",
+              "conceptId": "2.2.1"
+            },
+            {
+              "id": "2.2.2",
+              "title": "2.2.2 Types of Questions",
+              "conceptId": "2.2.2"
+            },
+            {
+              "id": "2.2.3",
+              "title": "2.2.3 Format of Questionnaire",
+              "conceptId": "2.2.3"
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "title": "2.3 Sampling",
+          "children": [
+            {
+              "id": "2.3.1",
+              "title": "2.3.1 Sampling Plan",
+              "conceptId": "2.3.1"
+            },
+            {
+              "id": "2.3.2",
+              "title": "2.3.2 Sampling Frame",
+              "conceptId": "2.3.2"
+            },
+            {
+              "id": "2.3.3",
+              "title": "2.3.3 Sample Selection Methods",
+              "conceptId": "2.3.3"
+            },
+            {
+              "id": "2.3.4",
+              "title": "2.3.4 Probability Sampling Techniques",
+              "conceptId": "2.3.4"
+            },
+            {
+              "id": "2.3.5",
+              "title": "2.3.5 Non-Probability Sampling Techniques",
+              "conceptId": "2.3.5"
+            },
+            {
+              "id": "2.3.6",
+              "title": "2.3.6 Sampling and Non-Sampling Errors",
+              "conceptId": "2.3.6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module III: Data Collection and Experiments",
+      "children": [
+        {
+          "id": "3.1",
+          "title": "3.1 Design of Experiments",
+          "children": [
+            {
+              "id": "3.1.1",
+              "title": "3.1.1 Objectives and Strategies",
+              "conceptId": "3.1.1"
+            },
+            {
+              "id": "3.1.2",
+              "title": "3.1.2 Pre-Experimental Design",
+              "conceptId": "3.1.2"
+            },
+            {
+              "id": "3.1.3",
+              "title": "3.1.3 Quasi-Experimental Design",
+              "conceptId": "3.1.3"
+            },
+            {
+              "id": "3.1.4",
+              "title": "3.1.4 True Experimental Design",
+              "conceptId": "3.1.4"
+            },
+            {
+              "id": "3.1.5",
+              "title": "3.1.5 Factorial Experimental Design",
+              "conceptId": "3.1.5"
+            },
+            {
+              "id": "3.1.6",
+              "title": "3.1.6 Designing Engineering Experiments",
+              "conceptId": "3.1.6"
+            },
+            {
+              "id": "3.1.7",
+              "title": "3.1.7 Causal Attributions",
+              "conceptId": "3.1.7"
+            },
+            {
+              "id": "3.1.8",
+              "title": "3.1.8 Statistical Control",
+              "conceptId": "3.1.8"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "title": "3.2 Data Collection",
+          "children": [
+            {
+              "id": "3.2.1",
+              "title": "3.2.1 Observation and Interview",
+              "conceptId": "3.2.1"
+            },
+            {
+              "id": "3.2.2",
+              "title": "3.2.2 Data through Cases",
+              "conceptId": "3.2.2"
+            },
+            {
+              "id": "3.2.3",
+              "title": "3.2.3 Data through Questionnaires",
+              "conceptId": "3.2.3"
+            },
+            {
+              "id": "3.2.4",
+              "title": "3.2.4 Questionnaire Guidelines",
+              "conceptId": "3.2.4"
+            },
+            {
+              "id": "3.2.5",
+              "title": "3.2.5 Data Editing",
+              "conceptId": "3.2.5"
+            },
+            {
+              "id": "3.2.6",
+              "title": "3.2.6 Data Coding Rules",
+              "conceptId": "3.2.6"
+            },
+            {
+              "id": "3.2.7",
+              "title": "3.2.7 Don’t Know Responses",
+              "conceptId": "3.2.7"
+            },
+            {
+              "id": "3.2.8",
+              "title": "3.2.8 Missing Data",
+              "conceptId": "3.2.8"
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "title": "3.3 Basic Principles",
+          "children": [
+            {
+              "id": "3.3.1",
+              "title": "3.3.1 Validity and Reliability",
+              "conceptId": "3.3.1"
+            },
+            {
+              "id": "3.3.2",
+              "title": "3.3.2 Replication, Randomisation, Blocking",
+              "conceptId": "3.3.2"
+            },
+            {
+              "id": "3.3.3",
+              "title": "3.3.3 Orthogonality and False Positives",
+              "conceptId": "3.3.3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module IV · Models and Hypothesis",
+      "children": [
+        {
+          "id": "4.1",
+          "title": "4.1 Hypothesis Testing",
+          "children": [
+            {
+              "id": "4.1.1",
+              "title": "4.1.1 Introduction to Hypothesis",
+              "conceptId": "4.1.1"
+            },
+            {
+              "id": "4.1.2",
+              "title": "4.1.2 Null and Alternate Hypothesis",
+              "conceptId": "4.1.2"
+            },
+            {
+              "id": "4.1.3",
+              "title": "4.1.3 Type I and Type II Error",
+              "conceptId": "4.1.3"
+            },
+            {
+              "id": "4.1.4",
+              "title": "4.1.4 One-Tailed and Two-Tailed Test",
+              "conceptId": "4.1.4"
+            },
+            {
+              "id": "4.1.5",
+              "title": "4.1.5 Degree of Freedom",
+              "conceptId": "4.1.5"
+            },
+            {
+              "id": "4.1.6",
+              "title": "4.1.6 Confidence Intervals",
+              "conceptId": "4.1.6"
+            },
+            {
+              "id": "4.1.7",
+              "title": "4.1.7 Level of Significance / Confidence Coefficient",
+              "conceptId": "4.1.7"
+            },
+            {
+              "id": "4.1.8",
+              "title": "4.1.8 Rejection and Non-rejection Regions",
+              "conceptId": "4.1.8"
+            },
+            {
+              "id": "4.1.9",
+              "title": "4.1.9 Hypothesis Testing Procedure",
+              "conceptId": "4.1.9"
+            },
+            {
+              "id": "4.1.10",
+              "title": "4.1.10 Types of Tests",
+              "conceptId": "4.1.10"
+            },
+            {
+              "id": "4.1.11",
+              "title": "4.1.11 How to Select a Test",
+              "conceptId": "4.1.11"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "title": "4.2 Parametric Test",
+          "children": [
+            {
+              "id": "4.2.1",
+              "title": "4.2.1 Important Parametric Tests",
+              "conceptId": "4.2.1"
+            },
+            {
+              "id": "4.2.2",
+              "title": "4.2.2 Single Mean Using Z-statistic",
+              "conceptId": "4.2.2"
+            },
+            {
+              "id": "4.2.3",
+              "title": "4.2.3 Single Mean Using T-statistic",
+              "conceptId": "4.2.3"
+            },
+            {
+              "id": "4.2.4",
+              "title": "4.2.4 Hypothesis Testing for Population Proportions",
+              "conceptId": "4.2.4"
+            },
+            {
+              "id": "4.2.5",
+              "title": "4.2.5 Variance vs Hypothesised Population Variance",
+              "conceptId": "4.2.5"
+            },
+            {
+              "id": "4.2.6",
+              "title": "4.2.6 Equality of Variances (Two Populations)",
+              "conceptId": "4.2.6"
+            },
+            {
+              "id": "4.2.7",
+              "title": "4.2.7 ANOVA for Fixed Effect Model",
+              "conceptId": "4.2.7"
+            },
+            {
+              "id": "4.2.8",
+              "title": "4.2.8 Total, Treatment & Error Sum of Squares",
+              "conceptId": "4.2.8"
+            },
+            {
+              "id": "4.2.9",
+              "title": "4.2.9 ANOVA for Random Effect Model",
+              "conceptId": "4.2.9"
+            },
+            {
+              "id": "4.2.10",
+              "title": "4.2.10 Single Factor Experiment",
+              "conceptId": "4.2.10"
+            },
+            {
+              "id": "4.2.11",
+              "title": "4.2.11 Model Adequacy Checking",
+              "conceptId": "4.2.11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "title": "Module V · Report Writing",
+      "children": [
+        {
+          "id": "5.1",
+          "title": "Research Report",
+          "children": [
+            {
+              "id": "5.1.1",
+              "title": "5.1.1 Meaning of Research Report",
+              "conceptId": "5.1.1"
+            },
+            {
+              "id": "5.1.2",
+              "title": "5.1.2 Structure of Scientific Report",
+              "conceptId": "5.1.2"
+            },
+            {
+              "id": "5.1.3",
+              "title": "5.1.3 Components of a Scientific Report",
+              "conceptId": "5.1.3"
+            },
+            {
+              "id": "5.1.4",
+              "title": "5.1.4 Types of Reports",
+              "conceptId": "5.1.4"
+            },
+            {
+              "id": "5.1.5",
+              "title": "5.1.5 Steps in Report Writing",
+              "conceptId": "5.1.5"
+            },
+            {
+              "id": "5.1.6",
+              "title": "5.1.6 Format and Writing Style",
+              "conceptId": "5.1.6"
+            },
+            {
+              "id": "5.1.7",
+              "title": "5.1.7 Illustrations and Tables",
+              "conceptId": "5.1.7"
+            },
+            {
+              "id": "5.1.8",
+              "title": "5.1.8 Citing and Referencing Sources",
+              "conceptId": "5.1.8"
+            },
+            {
+              "id": "5.1.9",
+              "title": "5.1.9 Footnotes",
+              "conceptId": "5.1.9"
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "title": "Presentation",
+          "children": [
+            {
+              "id": "5.2.1",
+              "title": "5.2.1 Oral Presentation",
+              "conceptId": "5.2.1"
+            },
+            {
+              "id": "5.2.2",
+              "title": "5.2.2 Making Presentation",
+              "conceptId": "5.2.2"
+            },
+            {
+              "id": "5.2.3",
+              "title": "5.2.3 Use of Visual Aids",
+              "conceptId": "5.2.3"
+            },
+            {
+              "id": "5.2.4",
+              "title": "5.2.4 Importance of Effective Communication",
+              "conceptId": "5.2.4"
+            },
+            {
+              "id": "5.2.5",
+              "title": "5.2.5 Convention and Strategies of Authentication",
+              "conceptId": "5.2.5"
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "title": "Research Paper",
+          "children": [
+            {
+              "id": "5.3.1",
+              "title": "5.3.1 Preparing Research Papers for Journals",
+              "conceptId": "5.3.1"
+            },
+            {
+              "id": "5.3.2",
+              "title": "5.3.2 Design of Paper Using Template",
+              "conceptId": "5.3.2"
+            },
+            {
+              "id": "5.3.3",
+              "title": "5.3.3 Calculation of Impact Factor of a Journal",
+              "conceptId": "5.3.3"
+            },
+            {
+              "id": "5.3.4",
+              "title": "5.3.4 Citation Index",
+              "conceptId": "5.3.4"
+            },
+            {
+              "id": "5.3.5",
+              "title": "5.3.5 ISBN and ISSN",
+              "conceptId": "5.3.5"
+            }
+          ]
+        },
+        {
+          "id": "5.4",
+          "title": "Project Proposal",
+          "children": [
+            {
+              "id": "5.4.1",
+              "title": "5.4.1 Identifying and Defining Problem",
+              "conceptId": "5.4.1"
+            },
+            {
+              "id": "5.4.2",
+              "title": "5.4.2 Research Problem Aspects and Considerations",
+              "conceptId": "5.4.2"
+            },
+            {
+              "id": "5.4.3",
+              "title": "5.4.3 Research Plan",
+              "conceptId": "5.4.3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "subject": "csit745",
+  "title": "Research Methodology"
+}

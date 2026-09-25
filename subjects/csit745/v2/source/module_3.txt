@@ -1,0 +1,1803 @@
+--- page 57 ---
+50
+Research Methodology
+Notes
+Amity University Online
+Module - III: Data Collection and Experiments
+Learning Objectives
+At the end of this module, you will be able to:
+●
+●
+Discuss Design of Experiments
+●
+●
+Explain Data Collection
+●
+●
+State Basic Principles
+Introduction
+Experimental research is carried out using a systematic manner, where one set 
+of variables is kept constant while the other set of variables is measured as the focus 
+of the experiment. A highly effective quantitative research technique, experimental 
+research is particularly useful when the researcher does not have enough information 
+to arrive at meaningful conclusions and have to carry out experiments to prove facts.
+3.1: Design of Experiments
+Experimental research, thus, helps a researcher make important decisions. It 
+is considered successful only when the researcher ensures that a change in the 
+dependent variable is wholly due to a change in the independent variable
+3.1.1: Design of Experiment: Objectives and Strategies
+The results of experimental research should help a researcher establish a 
+causal relationship between the dependent and independent variables in a given 
+phenomenon. Effects are observed, during an experiment, due to the underlying cause. 
+Experimental research is conducted when: 
+●
+●
+There exists a constant and consistent relationship between the cause and the 
+effect 
+●
+●
+Time is a crucial factor for establishing a relationship between cause and effect 
+●
+●
+The factors that drive the success of experimental research are: 
+
+
+A control group refers to a group of study participants who are similar to the 
+experimental group but are not subject to the experimental research criteria. 
+
+
+The experimental group refers to the subset of study participants who are 
+subject to the norms and protocols of experimental research. 
+●
+●
+Manipulable variable controlled by the researcher 
+●
+●
+Random allocation or distribution of individuals within a group
+Strategies
+The objective of experimental design is to get a maximum amount of knowledge in 
+the least amount of time. Experiments are mostly designed by experts who possess the 
+ability to: 
+a.  Define the problem and identify the specific set of desired characteristics.
+	
+For instance, there may be a need to manufacture glass bottles in a plant that 
+adheres to stringent regulatory regulations.
+(c) Amity University Online
+
+
+--- page 58 ---
+Research Methodology
+51
+Notes
+Amity University Online
+b. 	 Elucidate all potential factors that may affect such characteristics, including 
+manufacturing settings and the chemical makeup of the glass.
+ 
+The production of high-quality glass bottles can be affected by various factors, 
+including the chemical composition of the glass and its transition temperature, 
+the suppliers of raw materials, the type and quantity of cullet used, the process 
+parameters, the expertise, remuneration, and motivation of the production personnel, 
+the day of production within a week (such as a weekend or workday), and numerous 
+other influences.
+c. 	 Identify the major factors and fundamental reasons without oversimplifying or making 
+the situation unnecessarily complex.
+	
+A seasoned engineer may assess that the day of production, such as weekends, does 
+not have a substantial impact on the quality of glass bottles, despite the variations 
+in the working environment. Conversely, the engineer should acknowledge that the 
+annealing schedule of the glass bottle and the transition temperature are crucial 
+factors that must not be overlooked when considering quality. However, the transition 
+temperature cannot be considered a significant reason as it mostly relies on the 
+chemical makeup of the glass. Hence, the transition temperature, which serves as a 
+potential variable, may be substituted with the glass composition.
+d. 	 Quantify the effects in numerical variables.
+ 
+Many factors may be quantified using meaningful numerical values, although aspects 
+such as personnel experience should be simplified and classified into levels ranging 
+from 1 (indicating little experience) to 3 (indicating significant experience). Likewise, 
+the raw material provider might be classified.
+	
+Estimate the amount of anticipated impacts, D, of those factors on the desired 
+attributes, if feasible, based on comparable research, and specify the necessary 
+and accessible measurement accuracy for each technique employed.
+	
+It is crucial to estimate the size of the predicted effects in proportion to the 
+measurement precision. This is because if the variables are tweaked too 
+insignificantly, no observable impact will occur. For example, altering the pace at 
+which the glass bottles are cooled during the annealing process by 1 degree Celsius 
+per minute might lead to a significant variation in strength, ranging from 5% to 20%. 
+This difference can be easily measured.
+f. 	
+Determine if the anticipated impacts of the variables are linear, regardless of the 
+variables’ values.
+	
+A change in cooling rate of 1oC/min is anticipated to impact the strength of a glass 
+bottle by 5-20%. However, a change in cooling rate of 2oC/min is projected to have a 
+greater impact, affecting the strength by 20-50%. This suggests that the relationship 
+between cooling rate and bottle strength is likely non-linear.
+g.  Determine potential interdependencies between variables (variable interaction).
+	
+For instance, previous experience suggests that a change in cooling rate of 1oC/min 
+may have a significant impact on the strength of glass bottles, either increasing or 
+decreasing it by 5-20%, depending on modifications to the percentage of cullet used 
+for glass melting or the introduction of alumina in the form of hydroxide instead of 
+feldspar. The impact of cullet and alumina can be attributed to the glass composition 
+as the main factor.
+(c) Amity University Online
+
+
+--- page 59 ---
+52
+Research Methodology
+Notes
+Amity University Online
+h. 	 Establish feasible upper and lower limits for the variables, as well as for the desired 
+attributes. Additionally, set limitations for variable combinations if there are any 
+variable interactions.
+ 
+Variables are seldom possible to be updated in a totally arbitrary manner. During 
+the annealing process of glass bottles, it is crucial to ensure that the cooling rate 
+does not exceed the machine’s safe operating limitations. Additionally, the chemical 
+composition of the glass must adhere to financial and environmental constraints. 
+It may not be justifiable to examine the durability of glass bottles below a specific 
+threshold when even cautious handling results in breaking. 
+	
+If there is a variable interaction between the cooling rate of glass bottles and the 
+percentage of cullet used for glass melting (i.e., the glass composition), it is probable 
+that it is not necessary to investigate the entire range of all possible combinations of 
+cooling rate and glass composition. This is because it may lead to undesirably low 
+strength data or there may be technical or financial limitations.
+i. 	
+Apply the appropriate experimental design matrix types.
+	
+Collecting more information in advance reduces the amount of effort needed for the 
+final experimental design.
+	
+The average of several measurements is more dependable than a single or a few 
+measurements. Put simply, the mean error diminishes as the number of measurements 
+increases, as illustrated. Similarly, the most effective way to determine the impact of 
+a variable is by comparing the average values of different groups. When examining 
+experimental results, there are two potential types of errors: type 1 error, which 
+occurs when an effect is mistakenly identified even if it does not actually exist, 
+and type 2 error, which occurs when a genuine effect is not recognised. In order 
+to effectively protect against both sorts of mistakes, it is necessary to conduct n = 
+16 · s2/D2 trials at each variable level (i.e., variable value) and employ a statistical 
+significance test to compare the mean of the outcomes. 
+	
+To determine if a change in the glass composition reduces the annealing point by 
+10oC (D = 10) with a measurement precision of 5oC (s = 5), one would need to conduct 
+4 experiments for each of the two glass compositions. The mean of the results would 
+then be compared for statistical significance. When several factors need to be taken 
+into account, the number of experiments needed for a comprehensive inquiry might 
+grow very enormous. An appropriately designed experiment can greatly minimise 
+the amount of effort required.
+3.1.2: Pre-Experimental Research Design
+● 
+The most basic sort of experimental study design
+● 
+Following the establishment of a cause and effect link, one or more groups are 
+subjected to continuous monitoring.
+● 
+Typically performed to determine if more inquiry is necessary for the specific group(s) 
+under consideration
+● 
+Cost-effective 
+Ex: An example of this would be a teacher using a new instructional method for 
+their class.
+(c) Amity University Online
+
+
+--- page 60 ---
+Research Methodology
+53
+Notes
+Amity University Online
+3.1.3: Quasi-Experimental Research Design
+●
+●
+Resembles true experimental research but is not the same
+●
+●
+The control group is missing
+●
+●
+The participants of a group are not assigned in a random manner. 
+●
+●
+This method is employed when random assignment is either not relevant or 
+unnecessary.
+Ex: We choose two homogeneous cohorts of children who are enrolled in separate 
+educational institutions, with one cohort being exposed to the new programme while the 
+other cohort serves as a control group.
+3.1.4 True Experimental Research Design
+●
+●
+The most precise kind of experimental research design 
+●
+●
+It relies on statistical analysis to validate or invalidate a hypothesis. 
+●
+●
+It is the only type of experimental research design capable of establishing a cause-
+effect link within a group or a few groups.
+●
+●
+Commonly used in Physical Sciences
+3.1.5 Factorial Experimental Design
+Factorial design allows the researcher to simultaneously examine several factors. It 
+aids in determining the impact of individual factors and measuring the combined effect 
+of several variables.
+A departmental store seeks to analyse the effects of price decrease on a certain 
+product. In addition, there is also point-of-purchase (POP) promotion being used in the 
+stores.
+a) 	 near the entrance
+b) 	 at the usual place, at the same time.
+Let’s consider a scenario where there are two different pricing levels: the usual 
+price, denoted as P1, and the lowered price, denoted as P2. There are three sorts of 
+POP, specifically R1, R2, and R3. There are a total of 6 potential combinations, which 
+may be calculated by multiplying 3 by 2. The available combinations are R1P1, R1P2, 
+R2P1, R2P2, R3P1, and R3P2.The researcher is interested in determining which of 
+these combinations is most suitable. Assume that there are 120 departmental shops in 
+the chain, organised into groups of 20 stores each. Now, allocate the aforementioned 
+combination randomly to each of these 20 stores in the following manner:
+Combinations
+Sales
+R1P1 
+ S1
+R1P2 
+ S2
+R2P1
+ S3
+R2P2
+ S4
+R3P1
+ S5
+R3P2
+ S6
+(c) Amity University Online
+
+
+--- page 61 ---
+54
+Research Methodology
+Notes
+Amity University Online
+S1 to S6 reflect the sales generated by each variable. The collected data will 
+offer specific information on product sales based on two separate characteristics. The 
+following two inquiries will be addressed:
+1. 	 Does the discounted price yield greater effectiveness compared to the standard 
+price?
+2. 	 Does the exhibit at the entrance have a greater impact than the display in the 
+customary location?
+Additionally, the research will provide insights into the interaction impact of the two 
+factors.
+The results of the sales trial are as follows:
+1. 	 Decrease in price accompanied by a prominently placed display at the entry.
+2. 	 Price decrease indicated at the regular location.
+3. 	 There is no display and the standard price is applied.
+4. 	 Exhibit at the door with the standard fee in effect
+3.1.6: Designing Engineering Experiments
+Experiments are an inherent component of the decision-making process in 
+engineering. For instance, a civil engineer is examining the impact of various curing 
+techniques on the average compressive strength of concrete. The experiment involves 
+conducting tests on many concrete specimens using each recommended technique 
+of curing. The compressive strength of each specimen is then measured. The data 
+obtained from this experiment is utilised to ascertain the optimal curing process that 
+yields the highest average compressive strength.
+If there are just two curing procedures of interest, this experiment may be designed 
+and analysed using statistical hypothesis methods for two samples. The researcher is 
+focused on a certain variable, which is the procedures used for curing. There are only 
+two options for this variable. If the researcher wants to establish which curing process 
+yields the highest compressive strength, they may select the number of specimens to 
+test using the operating characteristic curves. The t-test can then be used to evaluate if 
+the means of the two methods vary. 
+Several single-factor studies need the consideration of more than two levels of the 
+factor.
+For instance, the civil engineer may choose to examine five distinct curing 
+techniques.
+Statistically based experimental design techniques are useful in the engineering 
+world for increasing the performance level of a manufacturing process and also used 
+to develop new processes. Many processes may be characterised by a number of 
+manageable factors, such as temperature, pressure, and input rate. Engineers can 
+utilize structured experiments to identify the specific subset of process variables that 
+has the most significant impact on process performance. The outcomes of such an 
+experiment might result in:
+●
+●
+Enhanced procedure.
+●
+●
+Minimised fluctuations in the process and adherence to specified nominal or goal 
+criteria
+●
+●
+Decreased design and development duration 
+(c) Amity University Online
+
+
+--- page 62 ---
+Research Methodology
+55
+Notes
+Amity University Online
+●
+●
+Lowered operational expenses
+These techniques are also valuable in engineering design endeavours for the 
+creation of new goods and enhancement of current ones. Statistically designed 
+experiments in engineering design have applicability in several areas:
+●
+●
+Assessment and analysis of fundamental design structures
+●
+●
+Assessment of various materials
+●
+●
+Selection of design parameters to ensure optimal performance of the product in 
+diverse field situations. 
+●
+●
+Identification of critical product design characteristics that significantly impact 
+product performance
+Utilising experimental design in the engineering design process can provide 
+products that are more manufacturable, possess superior field performance 
+and dependability compared to their rivals, and can be planned, developed, and 
+manufactured more efficiently. Sequentially, designed experiments are typically utilized.
+●
+●
+First, experiment with many controllable variables, a screening experiment 
+designed to determine which variables are most important.
+●
+●
+Subsequent experiments are applied on these critical variables to refine the 
+collected information and determine which adjustments are required to improve 
+the process.
+●
+●
+Finally, the experimenter optimized which levels of the critical variables result in 
+the best process performance.
+●
+●
+Every experiment involves a sequence of activities like as:
+1. 	 Conjecture refers to the initial hypothesis that serves as the basis for 
+conducting the experiment.
+2. 	 Experiment refers to the test used to examine the conjecture.
+3. 	 Analysis refers to the process of statistically examining the data obtained from 
+the experiment.
+4. 	 Conclusion refers to findings on the first hypothesis based on the experiment.
+Frequently, the experiment will result in an amended hypothesis, prompting a 
+further experiment, and so on. Statistical approaches are crucial for conducting effective 
+experiments. All trials are inherently designed experiments; nevertheless, regrettably, 
+certain experiments are inadequately designed, leading to inefficient utilisation of 
+important resources. Statistically planned experiments allow for efficiency and cost-
+effectiveness in the experimental procedure. Additionally, the application of statistical 
+methods in analysing the data ensures scientific impartiality when making conclusions.
+3.1.7: Causal Attributions
+An crucial component of an impact evaluation is not just to quantify or characterise 
+the changes that have happened, but also to ascertain the involvement of certain 
+interventions (such as programmes or policies) in causing these changes. That process 
+is named causal attribution, causal contribution or causal inference. In this article, we 
+explore several methods of examining causal attribution using research design, data 
+collecting, and analytic procedures. The definition of impact provided by the OECD-
+DAC states that an impact evaluation must determine the causal factors behind 
+(c) Amity University Online
+
+
+--- page 63 ---
+56
+Research Methodology
+Notes
+Amity University Online
+observed changes. It encompasses both positive and negative, main and secondary 
+long-term consequences that result from a development intervention, whether they are 
+planned or unexpected and whether they occur directly or indirectly.
+1.  Causal attribution, as defined by the OECD-DAC, refers to the process of 
+determining the cause or causes of a certain event or outcome: “Ascription of a 
+causal link between observed (or expected to be observed) changes and a specific 
+intervention.”
+2. 	 This criterion does not need that alterations are exclusively or entirely caused by the 
+programme or policy being examined.
+3. 	 Put simply, it acknowledges the possibility that other variables, such as additional 
+initiatives or policies in the relevant field or specific contextual elements (often known 
+as ‘external factors’), may have had a role. Evaluations provide more robust and 
+valuable results when they not only examine the connections between activities and 
+impacts, but also explore the connections across the causal chain encompassing 
+activities, outputs, intermediate outcomes, and impacts.
+Sole causal attribution: In this sense, the programme or policy is seen to be both 
+required and sufficient to generate the desired effects, regardless of external variables 
+or other actions.
+From a practical perspective, science programmes or policies alone are insufficient 
+to accomplish the desired outcomes. Therefore, different alternative methods are 
+employed to get the intended results. This model is said to be a seldom effective 
+framework for evaluating the effects of a cause on an outcome.
+Joint causal attribution refers to the situation when a programme or policy has 
+created impacts in concert with other programmes/policies or specific contextual 
+conditions. It may also encompass variables related to the implementation 
+environment, such as the capabilities and infrastructure of implementing partners or the 
+characteristics of the participants. For illustrative purposes, in relation to their degrees 
+of motivation and prior knowledge. The consequences will not be realised or will be 
+significantly diminished if these contributing elements are either lacking or unfavourable.
+This is a typical scenario in which a software can only function optimally when 
+favourable conditions are present and unfavourable conditions are eliminated. For 
+instance, if a project is determined to be effective only in a context where there is 
+openness and clarity regarding government funding allocations, it should only be put 
+into practice in settings where this transparency already exists or in combination with 
+endeavours to attain transparency. To discover these additional contributing elements, 
+it is crucial to construct a comprehensive theory of change that incorporates them, 
+drawing on prior research and current knowledge. Additionally, it is essential to collect 
+data specifically related to these aspects.
+(c) Amity University Online
+
+
+--- page 64 ---
+Research Methodology
+57
+Notes
+Amity University Online
+Alternative (or multiple) causal paths: Here, the plan or policy is only one of 
+numerous potential methods to accomplish the desired effects. A specific programme or 
+policy can generate the effects, but they can also arise from alternative actions and/or 
+external variables.
+This situation might occur when participants have the ability to utilise services from 
+a different supplier, or when many initiatives from different providers are designed to 
+achieve the same outcome. For instance, several projects may have the objective of 
+diminishing infant mortality. Some programmes focus on enhancing nutrition, some on 
+mitigating waterborne infections, and some on immunisation.
+When employing a counterfactual design, it is crucial to examine the services that 
+non-participants are utilising in order to make a comparison with the participants. When 
+a programme aims to achieve the same results as previous programmes, it is crucial 
+to identify intermediate outcomes in the theory of change and gather data on them. 
+There are three primary approaches for determining the cause of an effect in impact 
+evaluations:
+●
+●
+Estimating the counterfactual involves predicting what would have happened 
+if the intervention had not taken place, then comparing it to the actual observed 
+circumstance.
+●
+●
+Examining the coherence of data supporting the cause-and-effect links explicitly 
+stated in the theory, while excluding other possible explanations using a logical 
+and evidence-driven approach.
+●
+●
+Using a combination of these strategies can usually help to increase the strength 
+of the conclusions.
+Causal attribution should be routinely undertaken in all impact evaluations. 
+However, it is important to acknowledge the practical limitations of doing a single 
+review, particularly when there are time constraints that prevent repeated data 
+collecting and analysis. While a single impact evaluation can contribute to the existing 
+body of evidence, it is important to note that even if there is a reasonable level of 
+certainty that a programme or policy caused the observed effects, this does not imply 
+that the evaluation has thoroughly examined all aspects of the intervention or its 
+(c) Amity University Online
+
+
+--- page 65 ---
+58
+Research Methodology
+Notes
+Amity University Online
+applicability in different contexts or time periods. When many impact assessments are 
+combined, the synthesis of data offers more robust evidence than a single evaluation, 
+regarding the generalisability of the observed effects.
+Key highlights
+●
+●
+Causal attribution examines the causal connections between a programme or 
+intervention and the observed alterations.
+●
+●
+L attribution is a crucial component of effect evaluation.
+●
+●
+Various methodologies may be employed to analyse causal attribution, all of which 
+are enhanced by being grounded in a robust theory of causality.
+●
+●
+The most suitable approach for determining causal attribution relies on both the 
+assessment environment and the specific subject being assessed.
+3.1.8: Statistical Control
+Statistical control mostly occurs through the use of several control charts, which 
+give essential information that acts as a foundation for taking appropriate actions. 
+Control charts are only useful if the individuals in charge of decision-making take action 
+based on the information shown by the chart. Control charts are versatile instruments 
+that can be effectively utilised, misapplied, or completely disregarded. Their efficacy is 
+closely correlated with the comprehension and correct implementation by individuals. 
+The control chart is a visual depiction of the process of monitoring. Control charts are 
+essentially similar to the conceptual chart, with a vertical axis. A scale is developed to 
+align with the collected data. The horizontal axis represents the succession of data or 
+the interval of time. Once data is acquired, it may be graphed in relation to these two 
+axes.
+Control charts are divided into two broad categories based on the two types of data 
+they handle: variable data and attribute data.
+When a quality attribute is measured and recorded, such as a dimension 
+represented in thousandths of an inch, it is referred to as a variable. The variables are:
+Variables Charts 
+_
+X – R    Average and Range
+X~- R    Median and Range
+(c) Amity University Online
+
+
+--- page 66 ---
+Research Methodology
+59
+Notes
+Amity University Online
+_
+X - S   Average and Standard Deviation
+X – Rm   Individual and Moving Range
+Attributes Charts
+p Fraction Nonconforming
+np Number of nonconforming Units 
+c 
+Number of Nonconformities
+u Number of Nonconformities per unit
+Prerequisites for Utilising Control Charts
+Prior to using control chart techniques on any process or action, several 
+fundamental prerequisites must be met. Initially, individuals in authoritative roles must 
+comprehend and endorse endeavours to consistently enhance procedures and quality 
+by employing statistical techniques like control charts. In order for a corporation to truly 
+experience process improvement utilising control charts, it is necessary to meet the 
+following requirements once the initial goal has been accomplished.
+● 
+To ensure effective decision-making for chart selection, sample size, sampling 
+frequency, and characteristics to be monitored, it’s crucial to thoroughly understand 
+the process under study. This understanding helps identify actions that can reduce 
+variability.
+● 
+Identify which characteristics need monitoring. These are typically the ones critical 
+for the process or product’s optimal performance, those with stringent specifications, 
+those frequently found nonconforming, or those costly to repair. Pareto analysis is a 
+useful technique for selecting a primary characteristic to chart.
+● 
+It’s essential to define and comprehend the measurement system. The quality of 
+data on the chart directly depends on the measuring process or device. Establish 
+the necessary accuracy to select appropriate measuring equipment. Regular 
+reviews and calibrations are needed to ensure the accuracy and repeatability of the 
+measuring devices.
+● 
+Choose a chart type that best meets the purpose. This choice often depends on the 
+measurement costs and the potential loss if significant changes go undetected. The 
+type of information required may also influence the chart selection.
+● 
+Generally, attribute charts are suitable if:
+
+
+Visual inspection makes measurements impossible.
+
+
+Measuring equipment is too costly or testing time is excessive.
+
+
+There are many characteristics to evaluate in the part.
+
+
+100% inspection is planned.
+Utilise a Variables Chart When 
+● 
+Dealing with a critical or variable characteristic.
+● 
+Choose this type of chart when more precise control is needed than attribute charts 
+can provide.
+Also, determine the sample size and frequency, and in variables charts, the 
+common sample size is five. The subgroup of a sample must be chosen in a manner 
+(c) Amity University Online
+
+
+--- page 67 ---
+60
+Research Methodology
+Notes
+Amity University Online
+that minimises the potential for variance within the group. Nevertheless, as the 
+sample size increases, the distribution of subgroup averages tends to become more 
+normal, even if the population itself is not normally distributed. Economics significantly 
+influences the determination of sample sizes. 
+Attribute charts, in contrast, are designed to analyse data from far higher sample 
+sizes, ranging from 30 to several hundred or more. Given that the attribute data may be 
+accessible from reliable preceding reports or research, it implies that the effort and cost 
+have already been expended.
+Control Chart Selection
+In manufacturing plants, when some type of process trouble arises, control charts 
+may serve as useful tools for troubleshooting, benefiting both engineers and operators. 
+Control charts primarily give information in four key areas:
+● 
+Primary variability of the characteristic
+● 
+Consistency of performance
+● 
+The average level of the characteristic
+● 
+Type of variability present
+The subsequent instructions serve as a comprehensive flow chart selection guide 
+for several categories of fundamental control charts.
+● 
+Process control charts are tools that help us analyse data, mainly distinguishing 
+between variability as a result of common causes or special causes.
+● 
+If only common causes represent, then Processes are in control.
+● 
+If special causes are present, then Processes are out of control.
+● 
+There are two main types of control charts: Variables Control Charts and Attribute 
+Control Charts.
+● 
+Tables of constants have been developed to assist in using control charts, utilizing 
+the connection between the sample and the population.
+● 
+When the population is used to set control limits for an average and range chart, 
+misleading signals of the state of control are present because the control limits are 
+to be based on the sampling distribution of averages, not the population distribution 
+of individual values. This holds true for other variable charts as well.
+Steps for Developing and Plotting a Variables Control Chart
+● 
+Include heading information such as part name, part number, department, machine 
+number, plant identification, and operation being performed.
+● 
+Record sample information, including date and time of sample collection, initials of 
+the checker, and shift during which the samples were taken.
+● 
+Enter measured data into specified locations.
+● 
+Calculate statistical measures such as average, median, range, standard deviation, 
+or other relevant statistics.
+● 
+Establish scales for the graphs; scales should facilitate plotting. Typically, the range of 
+values for central tendency measures should either match the product specification 
+or be twice the difference in the highest and lowest subgroup statistics. 
+● 
+Plot the data.
+(c) Amity University Online
+
+
+--- page 68 ---
+Research Methodology
+61
+Notes
+Amity University Online
+● 
+Calculate and plot the central lines for both portions of the chart - central tendency 
+and variability. These should be drawn in as solid lines and labelled.
+● 
+Calculate and plot the control limits. These are calculated using the specific formulas 
+for the statistics being monitored. The Control limits should be drawn in as dashed 
+lines on the chart and labelled.
+● 
+Interpret the chart. 
+Control Limit Calculations:
+As noted in the “Introduction to Control Charts” section, the upper and lower control 
+limits represent the ±3σ limits for the sample statistic. Let’s examine the formulas 
+developed for X and R charts.
+SampleSize(n)
+Chart Type
+>20, notconstant
+p chart
+>20, constant
+np chart
+>1; <20, not constant
+u chart
+1
+c chart
+3.2 Data Collection
+Data collection is the act of obtaining and examining precise information from a 
+variety of sources in order to assess potential outcomes, trends, and probability, among 
+other research concerns. Data is information that has been digitally transformed, at 
+least according to the IT definition of data. Knowledge truly is power. Data is therefore 
+power. However, you must first collect the data in order to use it to inform a profitable 
+plan for your company or organization.
+3.2.1: Collection of Data via Observation and Interview
+Observation Method :Observation becomes a scientific tool and method of data 
+collection when it serves a formulated research purpose, is systematically planned and 
+recorded, and is subjected to checks and controls for validity and reliability.
+1. 
+Participant Observation: This involves the observer becoming a part of the group 
+being studied. It is characterised by:
+
+
+Careful definition of the units to be observed
+
+
+Standardised conditions of observation
+
+
+Systematic recording of observed information
+
+
+Selection of pertinent data for observation
+
+
+Importance of the respondent’s role
+(c) Amity University Online
+
+
+--- page 69 ---
+62
+Research Methodology
+Notes
+Amity University Online
+2. 
+Non-Participant Observation: This method occurs without the observer becoming 
+involved in the group activities and lacks the systematic characteristics of participant 
+observation.
+Interviewing Method
+The interviewing method involves presenting oral-verbal stimuli and receiving oral-
+verbal responses. It typically requires face-to-face contact between the interviewer and 
+the respondent.
+1.	
+Structured Interview: This type uses a set of predetermined questions and highly 
+standardised techniques of recording responses. It ensures consistency and 
+comparability of data.
+2.	
+Unstructured Interview: This type does not follow a system of predetermined 
+questions and standardized recording techniques. It is based on flexibility and the 
+needs of the conversation.
+3.	
+Clinical Interview: Focuses on understanding broad underlying feelings or motivations, 
+or the course of an individual’s life experience. It is often used in psychological and 
+therapeutic settings.
+4. 
+Non-Directive Interview: The interviewer encourages the respondent to talk about 
+the topic with minimal direct questioning. The interviewer’s role is to facilitate 
+conversation rather than direct it.
+5. 
+Focused Interview: Confining the respondent to discuss a given experience and its 
+effects. It aims to gather detailed insights about a specific event or experience from 
+the respondent’s perspective.
+3.2.2: Collection of Data through Cases
+A researcher doing case studies should use a rigorous approach to guarantee 
+neutrality and clarity.
+1. 
+Identify and Define the Research Questions
+
+
+Establish Focus: Begin by identifying the specific research object and the 
+problem or issue surrounding it.
+
+
+Determine Research Object: This could be a person, program, event, or entity.
+2.	
+Select the Cases
+
+
+Decide on Number of Cases: Choose whether to study a single case or 
+multiple cases.
+
+
+Type of Cases: Determine whether to select unique or typical cases.
+
+
+Design Phase: Plan how to collect, store, and analyse the data.
+3.	
+Collect the Data
+
+
+Gather Evidence: Collect data from multiple sources related to the problem 
+under study.
+
+
+Systematic Storage: Store the evidence in a comprehensive and organised 
+manner to facilitate easy referencing and sorting.
+
+
+Identify Patterns: Aim to uncover converging lines of inquiry and patterns.
+4.	
+Evaluate and Analyse the Data
+(c) Amity University Online
+
+
+--- page 70 ---
+Research Methodology
+63
+Notes
+Amity University Online
+
+
+Analyse Qualitative and Quantitative Data: Utilise varied methods to 
+categorise, tabulate, and cross-check data.
+
+
+Address Initial Propositions: Ensure the analysis addresses the initial 
+propositions or purpose of the study.
+
+
+Use Graphic Techniques: Employ arrays, matrices of categories, flow charts, 
+etc., to explore data from different perspectives.
+
+
+Involve Multiple Investigators: Utilise multiple investigators to develop a wide 
+variety of insights from the data.
+5. 	 Presentation of Results
+
+
+Corroborate Findings: Present results with sufficient evidence to show that all 
+aspects of the problem have been explored.
+
+
+Highlight New Insights and Conflicts: Clearly present any new insights gained 
+and conflicting propositions that have emerged.
+
+
+Enable Evaluation: Structure the results in a manner that allows the reader to 
+evaluate the findings based on the evidence presented.
+3.2.3: Collection of Data through Questionnaires
+Questionnaires are a fundamental instrument for gathering information in survey 
+research. They consist of standardised questions, often called items, designed to 
+collect individual data on specific topics. There are two primary methods for collecting 
+data through questionnaires:
+1. 	 Mailing Method
+	
+In the Mailing Method, the investigator prepares a questionnaire related to the research 
+topic and mails it to various individuals with a request to fill it out and return it. 
+This method typically includes:
+
+
+Blank Space for Answers: Respondents are provided with space to write their 
+answers.
+
+
+Self-addressed Stamped Envelope: For returning the completed questionnaire 
+by post.
+
+
+Confidentiality Assurance: Respondents are assured of the secrecy of the 
+information they provide.
+
+
+This method is commonly used by research workers and official and non-
+official agencies.
+Suitability of Mailing Method
+● 
+Large Field of Investigation: Suitable when the investigation covers a large area.
+● 
+Educated Respondents: Ideal for respondents who are educated and likely to 
+cooperate with the investigation.
+2. 	 Enumerator Method
+	
+The Enumerator Method involves a trained enumerator who personally visits the 
+respondents, asks questions, and notes down their replies.
+
+
+Provide Assistance: Help respondents understand the questions to avoid 
+ambiguous replies.
+(c) Amity University Online
+
+
+--- page 71 ---
+64
+Research Methodology
+Notes
+Amity University Online
+
+
+Fill the Schedule: Record responses themselves to ensure clarity and 
+accuracy.
+
+
+Characteristics of Enumerators: Should be well-trained, tactful, hard-working, 
+and unbiased to gather reliable information.
+
+
+This method is typically employed by semi-government organisations, 
+government bodies, research institutions, etc. The questionnaire filled out by 
+the enumerator is known as a Schedule.
+Suitability of Enumerator Method
+● 
+Availability of Resources: Suitable when adequate finance and trained enumerators 
+are available.
+● 
+Illiterate Respondents: Ideal when respondents are not literate and need assistance 
+in answering the questions.
+3.2.4: Guidelines for Preparing Questionnaire
+1. 	 Identify Your Research Aims and the Goal of Your Questionnaire
+
+
+Clearly define what information you want to gather and your main objective.
+
+
+Check if there are existing validated questionnaires you can use or draw 
+inspiration from, especially in psychological research.
+
+
+If existing questionnaires are not available, draw inspiration from related 
+research while paying close attention to the following steps.
+2. 
+Define Your Target Respondents
+
+
+Identify the specific groups you need to target for your questionnaire to 
+maximise the robustness of your study.
+
+
+Choose between a longitudinal design (repeated measures over time) and a 
+cross-sectional design (one-time measure across different groups).
+
+
+Analyse how responses change over time.
+
+
+Compare differences among groups at a single point in time.
+3.	
+Develop Questions
+
+
+Ensure questions are clear and free from misunderstandings or ambiguities.
+
+
+Tailor questions to the cognitive, attentional, and sensory competencies of 
+your target group (e.g., children, adults, elderly).
+
+
+Use simple language that can be easily understood by all participants.
+4.	
+Choose Your Question Type
+
+
+Use for explorative questionnaires to gain in-depth understanding of topics 
+(e.g., “What did you like about the webinar?”).
+
+
+Use for quantitative questionnaires with predefined answers (e.g., multiple 
+choice or Likert scale).
+
+
+Consider the benefits and drawbacks of each question type to design a 
+balanced questionnaire.
+5. 
+Design Question Sequence and Overall Layout
+
+
+Ensure a logical transition from one question to the next.
+
+
+Position follow-up questions correctly.
+(c) Amity University Online
+
+
+--- page 72 ---
+Research Methodology
+65
+Notes
+Amity University Online
+
+
+Allow participants to skip questions that do not apply to them, if necessary.
+
+
+Make sure the questionnaire is easy to navigate and visually appealing.
+6.	
+Run a Pilot
+
+
+Pilot the questionnaire with a sample from your target audience.
+
+
+Look for issues in readability, understanding, phrasing, and overall 
+arrangement.
+
+
+Get feedback from pilot participants to understand their experience.
+
+
+Analyse pilot data statistically to ensure the questionnaire produces the 
+desired insights and that analytic procedures can be applied effectively.
+3.2.5: Data Editing
+Data editing is a critical step in the research process that involves checking and 
+correcting errors, inconsistencies, and omissions in collected data. This process is 
+essential for ensuring the quality, accuracy, and reliability of research findings.
+Techniques for Editing Data
+1.  Visual Inspection
+
+
+Description: This is the primary technique used for editing data. Researchers 
+manually examine the data to identify and correct any errors, inconsistencies, 
+or omissions.
+
+
+Advantages: Allows for the detection of errors that may not be easily identified 
+by automated processes.
+
+
+Disadvantages: Time-consuming and prone to human error, especially with 
+large datasets.
+2.  Computer Verification
+
+
+Description: This technique involves using software or computer programs to 
+check the data for errors and inconsistencies.
+
+
+Advantages: Faster and more accurate than visual inspection. Can handle 
+large volumes of data efficiently.
+
+
+Disadvantages: Requires programming skills and may not catch errors that 
+require contextual understanding.
+3. 	 Double Data Entry
+
+
+Description: Involves entering the data twice by two different individuals to 
+ensure accuracy and consistency. The two sets of data are then compared to 
+identify and correct any discrepancies.
+
+
+Advantages: Highly effective in ensuring data accuracy and consistency.
+
+
+Disadvantages: Labor-intensive and can be costly due to the need for 
+additional personnel.
+Importance of Editing Data
+1.	
+Ensures Data Accuracy
+	
+Description: Editing data helps to ensure that the collected data is accurate. By 
+correcting errors and inconsistencies, researchers can ensure that the data 
+accurately reflects the research variables and parameters.
+(c) Amity University Online
+
+
+--- page 73 ---
+66
+Research Methodology
+Notes
+Amity University Online
+ 
+Impact: Accurate data is crucial for the validity of the research findings.
+2.	
+Enhances Data Quality
+	
+Description: Editing enhances the quality of the collected data by ensuring that it is 
+complete and consistent.
+ 
+Impact: High-quality data leads to more reliable and valid research findings, which 
+can be confidently used for analysis.
+3.	
+Increases Credibility of Research
+	
+Description: Editing data is essential for increasing the credibility of research by 
+ensuring that the findings are based on accurate and reliable data.
+	
+Impact: Credibility is important in research to gain the trust of the audience and 
+stakeholders. Well-edited data helps in building confidence in the research outcomes.
+3.2.6: Data Coding Rules
+Data coding is a critical step in the research process, involving the transformation 
+of raw data into a structured format. This enables researchers to efficiently organise, 
+analyse, and interpret data, facilitating the identification of patterns, themes, and 
+relationships within the dataset.
+Importance of Data Coding
+1.	
+Data Reduction: Coding helps condense and summarise large volumes of data, 
+making it manageable and analyzable. This reduction is crucial for handling extensive 
+datasets efficiently.
+2. 
+Data Organization :Coding provides a systematic way to categorise and group similar 
+pieces of information.It simplifies the management and analysis of data, making the 
+research process more streamlined.
+3.	
+Pattern Recognition :Coding enables researchers to identify patterns, trends, and 
+relationships within the data. These patterns might not be immediately apparent in 
+raw data, and coding helps uncover them.
+4.	
+Interpretation and Analysis :Coded data serves as the foundation for statistical 
+analysis and hypothesis testing. Researchers can run statistical tests on coded data 
+to draw meaningful conclusions.
+5.	
+Comparative Analysis : Consistent coding allows for the comparison and contrast 
+of information across different cases or groups. This aids in generating insights and 
+developing theories.
+Examples of Data Coding in Research
+● 
+Qualitative Research: A study on customer feedback about a new product.
+
+
+Coding Process: Customer comments are categorised into themes such as 
+“product quality,” “customer service,” “pricing,” and “delivery.”
+
+
+Outcome: Each comment is assigned one or more codes based on its 
+content, facilitating thematic analysis.
+● 
+Survey Research : A survey on job satisfaction.
+
+
+Coding Process: Responses on a Likert scale are coded numerically (e.g., 
+“strongly agree” = 5, “agree” = 4, “neutral” = 3, “disagree” = 2, “strongly 
+disagree” = 1).
+(c) Amity University Online
+
+
+--- page 74 ---
+Research Methodology
+67
+Notes
+Amity University Online
+
+
+Outcome: These numerical codes enable quantitative analysis of survey data.
+● 
+Content Analysis: Analysis of news articles about climate change.
+
+
+Coding Process: Articles are coded as “supportive of climate action,” “neutral,” 
+or “sceptical of climate change.”
+
+
+Outcome: This coding allows researchers to assess the prevalence of different 
+perspectives in the media.
+Medical Research: Categorising patient data.
+● 
+Coding Process: Patient data is categorised into diagnostic groups based on 
+symptoms, test results, or medical histories.
+● 
+Outcome: Researchers can analyse the effectiveness of different treatments for 
+specific conditions.
+Historical Research: Coding historical documents.
+● 
+Coding Process: Documents are coded based on themes, time periods, or key 
+events.
+● 
+Outcome: This enables historians to identify patterns and trends across historical 
+records and gain new insights into the past.
+3.2.7: Don’t Know” Responses
+The intention behind incorporating “don’t know” options in surveys is to provide 
+respondents with an opportunity to abstain from questions they’re uncertain about. 
+However, this approach may backfire as respondents might opt for these choices 
+to avoid engaging with the question or topic entirely. Consequently, the reliability of 
+survey responses could be compromised. To mitigate this issue, it’s crucial to explore 
+alternative strategies, such as removing the option entirely or introducing follow-up 
+questions to glean more insightful data.
+Benefits of Offering an “Other” Option
+Providing an “other” response alternative empowers respondents to furnish 
+additional information or elucidate their perspectives. This can be especially beneficial 
+in soliciting feedback on products or services, as it permits respondents to articulate 
+negative opinions or express concerns. For instance, individuals may refrain from 
+endorsing a product due to perceived deficiencies in quality or usability. Allowing them 
+to elaborate on their rationale enables organisations to glean valuable insights into 
+consumer perceptions and refine their offerings accordingly.
+Appropriate Use of “Don’t Know” Responses
+While “don’t know” responses may be suitable in surveys tackling sensitive topics, 
+their deployment necessitates discretion. In surveys centred on brands or products, it’s 
+imperative to ensure respondents possess adequate familiarity with the subject matter 
+before soliciting their opinions. Failure to do so may compel respondents to furnish 
+ratings for items they have no experience with, potentially distorting the data.
+Balancing Response Options for Optimal Survey Design:While “don’t know” 
+responses can fulfil a purpose in specific survey configurations, it’s imperative to 
+evaluate their impact on data quality and respondent engagement. Incorporating 
+alternative response avenues, such as the “other” option, holds the potential to yield 
+valuable insights and elevate the effectiveness of surveys.
+(c) Amity University Online
+
+
+--- page 75 ---
+68
+Research Methodology
+Notes
+Amity University Online
+3.2.8: Missing Data
+In the realm of data analysis, the presence of missing data poses significant 
+challenges, impacting the accuracy and reliability of research findings. Let’s explore the 
+various types of missing data and their implications, along with strategies to address 
+them effectively.
+Categories of Missing Data
+● 
+Missing Completely at Random (MCAR): In MCAR scenarios, missing data occur 
+randomly across variables, unrelated to any other factors. For example, incomplete 
+survey responses due to random dropouts exemplify MCAR data.
+● 
+Missing at Random (MAR): Despite its name, MAR data display a systematic pattern, 
+albeit explainable by observed variables. For instance, in a holiday spending survey, 
+missing values may be more common among certain age groups due to privacy 
+concerns rather than spending amounts themselves.
+● 
+Missing Not at Random (MNAR): MNAR data arise due to reasons inherent to the 
+values themselves. For instance, individuals with lower incomes may intentionally 
+omit reporting holiday spending amounts, thereby skewing the dataset.
+Implications of Missing Data
+● 
+The presence of missing data introduces biases that can compromise the 
+representativeness and generalizability of study findings. While MCAR and MAR 
+data may be considered ignorable, MNAR data introduce non-ignorable biases that 
+can potentially distort conclusions.
+Strategies to Handle Missing Data
+● 
+Preventive Measures: Minimise missing data by designing user-friendly data 
+collection forms, employing data validation techniques, and providing incentives 
+to participants. Additionally, limiting the number of follow-ups and the volume of 
+collected data can help mitigate risks associated with missing data.
+● 
+Secure Storage: Store collected data securely with multiple backups to mitigate the 
+risk of data loss and ensure data integrity.
+By comprehensively understanding the nuances of missing data and implementing 
+proactive strategies, researchers can effectively address missing data challenges, 
+thereby enhancing the reliability and robustness of their analyses
+3.3: Basic Principles
+Numerous studies have demonstrated the significance of assessing the validity 
+and reliability—also known as consistency and accuracy—of research instruments, 
+particularly questionnaires. However, few health and social science researchers in 
+developing nations routinely measure these factors. This has been connected to the 
+lack of awareness of these assessments. This review article thoroughly examines and 
+explains the reliability and validity of a research tool (specifically, a questionnaire). 
+It then goes on to cover numerous validity and reliability test types with succinct 
+examples, and at the end, it describes different approaches to test analysis that are 
+guided by scientific ideas. 
+(c) Amity University Online
+
+
+--- page 76 ---
+Research Methodology
+69
+Notes
+Amity University Online
+3.3.1: Validity and Reliability
+Validity pertains to the degree of accuracy with which a technique assesses the 
+desired measurement. High validity in research indicates that the results align with 
+actual traits, characteristics, and fluctuations in the physical or social environment. 
+High reliability indicates that measurement is valid, but if a method is not reliable, then 
+it’s probably not valid. For example, if the thermometer shows different temperatures 
+each time, even though you have carefully controlled conditions to ensure the sample’s 
+temperature stays the same, the thermometer is probably malfunctioning, and therefore 
+its measurements are not valid.
+If a symptom of questionnaire results in a reliable diagnosis when answered at 
+different times and with different doctors, this indicates that it has high validity as a 
+measurement of the medical condition
+However, reliability on its own is not enough to ensure validity. Even if a test is 
+reliable, it may not accurately reflect the real situation.
+Construct
+The attachment of a measure to 
+existing theory and knowledge 
+of the concept being measured.
+A self-esteem questionnaire could be assessed 
+by measuring other attributes known or 
+assumed to be related to the concept of 
+self-esteem, like social skills and optimism). 
+There hasa correlation between the scores for 
+self-esteem, and associated attributes would 
+indicate high construct validity.
+Content
+The measurement covers all 
+aspects of the concept being 
+measured.
+A test to measure a class of students’ level of 
+Bengali contains reading, writing and speaking 
+components, but no listening component. 
+Experts agree that listening comprehension is 
+an essential aspect of language ability, so the 
+test lacks content validity for measuring the 
+overall level of ability in Bengali. 
+Concept.
+A survey is conducted to measure the exit poll 
+of voters in a region. If the results accurately 
+predict the later outcome of an election in that 
+region, this indicates that the survey has high 
+criterion validity
+Discriminant Validity
+Discriminant validity, also known as divergent validity, is a type of construct validity 
+that tests whether concepts or measurements that are supposed to be unrelated are, in 
+fact, unrelated. This helps to ensure that the construct being measured is truly distinct 
+from other constructs.
+Key Points:
+● 
+Purpose: To confirm that constructs that are theoretically supposed to be unrelated 
+are indeed not correlated.
+● 
+Assessment: Often assessed using techniques such as factor analysis, where low 
+correlations between the measure of interest and measures of different constructs 
+are expected.
+(c) Amity University Online
+
+
+--- page 77 ---
+70
+Research Methodology
+Notes
+Amity University Online
+● 
+Example: If you are developing a test to measure job satisfaction, discriminant 
+validity would be established if the test shows low correlations with a test measuring 
+unrelated constructs such as physical health or political orientation.
+Methods to Test Discriminant Validity:
+● 
+Correlation Analysis: Ensuring low correlations between measures that should not 
+be related.
+● 
+Factor Analysis: Ensuring that items load onto their respective factors without cross-
+loading onto unrelated factors.
+Convergent Validity
+Convergent validity is another aspect of construct validity that tests whether 
+concepts or measurements that are supposed to be related are actually related. It 
+ensures that the construct is accurately being measured by demonstrating that it 
+correlates well with other measures of the same construct or similar constructs.
+Key Points:
+● 
+Purpose: To confirm that constructs that are theoretically supposed to be related are 
+indeed correlated.
+● 
+Assessment: Often assessed using techniques such as correlation coefficients or 
+factor analysis, where high correlations between the measure of interest and other 
+measures of the same or similar constructs are expected.
+● 
+Example: If you are developing a test to measure job satisfaction, convergent validity 
+would be established if the test shows high correlations with other established 
+measures of job satisfaction, such as employee engagement surveys or job 
+performance ratings.
+Reliability
+Reliability is a measure of the stability or consistency of every test. We can also 
+think of it as the ability for a test or research findings to be repeatable. For example, 
+a medical thermometer is a reliable tool that would measure the correct temperature 
+each time it is used. In the same way, a reliable math test will accurately measure 
+mathematical knowledge for every student who takes it, and reliable research findings 
+can be replicated over and over. There are basically two types of reliability: Internal and 
+External reliability.
+Internal reliability, or internal consistency, is a measure by which our test is actually 
+measuring what we want it to measure. 
+External reliability means that our test or measure can be generalized beyond what 
+we’re using it for. 
+For example, a claim that individual tutoring improves test scores should apply to 
+more than one subject (e.g. to English as well as math). A test for depression should be 
+able to detect depression in different age groups, for people in different socio-economic 
+statuses, or introverts.
+Coefficient Reliability
+A reliability coefficient is a measure of how well a test measures achievement. It is 
+(c) Amity University Online
+
+
+--- page 78 ---
+Research Methodology
+71
+Notes
+Amity University Online
+the proportion of variance in observed scores attributable to true scores (the theoretical 
+“real” score that a person would get if a perfect test existed).
+The several different coefficients are calculating through the several methods of 
+test; these are test-retest, parallel forms and alternate-form:
+● 
+Cronbach’s alpha — the most widely used internal-consistency coefficient.
+  Range: The value of Cronbach’s alpha ranges from 0 to 1.
+Interpretation:
+
+
+α ≥ 0.9: Excellent
+
+
+0.7 ≤ α < 0.9: Good
+
+
+0.6 ≤ α < 0.7: Acceptable
+
+
+0.5 ≤ α < 0.6: Poor
+
+
+α < 0.5: Unacceptable
+●
+●
+A simple correlation between two scores from the same person is one of the 
+simplest ways to estimate a reliability coefficient. If the scores are taken at 
+different times, then this is one way to estimate test-retest reliability; Different 
+forms of the test given on the same day can estimate parallel forms reliability.
+●
+●
+Pearson’s correlation can be used to estimate the theoretical reliability coefficient 
+between parallel tests.
+●
+●
+The Spearman-Brown formula is a measure of reliability for split-half tests.
+●
+●
+Cohen’s Kappa measures integrator reliability.
+The range of the reliability coefficient is from 0 to 1. Rule of thumb for preferred 
+levels of the coefficient:
+
+
+For high stakes tests (e.g. college admissions), > 0.85. Some authors suggest 
+this figure should be above .90.
+
+
+For low stakes tests (e.g. classroom assessment), > 0.70. Some authors 
+suggest this figure should be above 0.80
+3.3.2: Replication, Randomisation and Blocking
+Replication
+Without replication, it is impossible to judge whether there is an actual difference 
+when comparing situations, it is important to determine if any observed difference is a 
+result of chance or not.
+For instance, suppose we aim to compare the vertical dimensions of two plant 
+species by only doing a single measurement of plant height and noting a discrepancy 
+of 20 cm. However, if numerous plants of each variety are measured and consistently 
+show height variations of around 10 cm, it is less probable that the observed difference 
+is a result of random chance.
+ The difference is strong relative to the variability between the measurements.
+(c) Amity University Online
+
+
+--- page 79 ---
+72
+Research Methodology
+Notes
+Amity University Online
+ 
+A comparison between two groups
+Comparative analysis of two cohorts. The disparity is significant compared to the 
+fluctuation among the measurements within each category.
+Randomisation
+Once the blocks have been meticulously identified, it is important to note that 
+there may still be other variables that might impact the experimental objective, such 
+as variations in mouse age, sex, and genetic backgrounds. Attempt to achieve 
+equilibrium between these elements, and we can employ randomisation approaches. 
+Randomisation mitigates confounding effects, which refer to the distortion of the 
+relationship between an exposure and an outcome due to unaccounted factors that 
+influence the experimental units. It achieves this by equalising the influence of these 
+variables across the experimental units, therefore minimising their impact on the 
+experimental design. This necessitates the random assignment of the experimental 
+units to the experimental conditions. The assignment of units to conditions should be 
+non-deterministic.
+For instance, in an experiment that examines the impact of a genetic alteration on 
+potato development, several intricate variables other than the genetic change itself may 
+affect the growth: For instance, the growing chamber might have a minor temperature 
+gradient, with one end being warmer than the other. Additionally, the quality of the 
+compost may vary, and different watering systems may be employed. It will be 
+imperative to randomise the placement of the plants in this scenario.
+Blocking
+We want to do experiments within a homogeneous group of experimental units. 
+Those particular homogeneous groups called blocks try to reduce the variability 
+between the units and increase the meaning of differences between conditions.
+(c) Amity University Online
+
+
+--- page 80 ---
+Research Methodology
+73
+Notes
+Amity University Online
+For instance, it is advantageous to conduct measurements across various 
+experimental conditions simultaneously. If measurements are spread over an extended 
+period, it becomes necessary to estimate and mitigate day-to-day variability between 
+the measurements. When all control conditions are measured on one day and all 
+treatment conditions on another, it becomes impossible to separate the day effect from 
+the treatment effect, potentially rendering the data inconclusive. As a general guideline, 
+it is crucial to include some “common conditions” to assess potential block effects.
+Consider a scenario where we have six treatment conditions to apply to mice (the 
+experimental units), but each cage (block) can only accommodate five mice. In such 
+cases, not all treatments can be applied simultaneously within each cage/block. One 
+approach is to apply four identical treatments to each cage and alternate the fifth 
+condition each time. This allows estimation of the “cage effect” by calculating the mean 
+differences between the four identical treatments, as described by the formula. Initially, 
+conditions E and F are not directly comparable as they were measured on mice from 
+different cages. However, by replicating treatments, we can compute a “cage effect” that 
+represents the average difference between identical conditions measured in the two 
+cages. Subsequently, the difference between E and F can be computed as E - F - “cage 
+effect”.
+ Here’s an example demonstrating how to correct for batch effects:
+Let’s consider an experiment where all treatments except two have been applied 
+to mice housed in two different cages (batches). The batch or cage effect can be 
+calculated using the treatments that are administered to mice in both cages.
+3.3.3: Orthogonality and False Positives
+Orthogonality means “uncorrelated.” That means in an orthogonal model; all the 
+independent variables are uncorrelated. However, if there is a correlation between one 
+or more independent variables, the model is said to be non-orthogonal.
+ 
+(c) Amity University Online
+
+
+--- page 81 ---
+74
+Research Methodology
+Notes
+Amity University Online
+The design on the left is balanced because it has even levels.
+The term “orthogonal” mostly pertains to traditional ANOVA. An orthogonal ANOVA 
+is a statistical analysis that involves categorical independent variables. In this analysis, 
+each cell in a two-way table contains an equal number of observations, meaning that 
+the data is balanced. General linear models are not orthogonal because they always 
+involve at least one independent variable that is not categorical, but rather a continuous 
+variable.
+In the field of calculus-based statistics, one may encounter orthogonal functions, 
+which are defined as two functions with an inner product of zero. These functions are 
+particularly valuable for solving partial differential equations such as Schrodinger’s 
+equation and Maxwell’s equations.
+Running Tests with Orthogonality
+Orthogonality also impacts the execution of statistical tests. In orthogonal models, 
+there is a singular method for estimating model parameters and conducting statistical 
+tests. However, non-orthogonal models offer several approaches to do this, resulting in 
+potentially more intricate interpretations of the outcomes. Therefore, a higher correlation 
+among independent variables necessitates a careful interpretation of the results.
+Determining whether a model is orthogonal or non-orthogonal might be subjective 
+at times. For instance, consider a scenario where there are four cells in an ANOVA: 
+three of these cells consist of 10 individuals each, whereas the fourth cell consists of 
+nine subjects. This design is technically unbalanced, and as a result, it is also non-
+orthogonal. Nevertheless, the absence of a participant in one cell will have minimal 
+influence on the outcomes. Put simply, you can consider this semi-unbalanced design 
+to be orthogonal.
+Roots in Matrix Algebra
+The term “orthogonality” originates from the field of matrix algebra. Two vectors 
+are considered orthogonal if the total of the products of their corresponding elements is 
+equal to zero. For instance, the resultant of multiplying these two vectors is zero:
+2(4) + 3(-4) + 4(1) + 0(2) = 0.
+The identical matrix multiplication may be used for cells within a two-dimensional 
+table. Orthogonality is a characteristic of a model where the total of the effects of any 
+element is zero when considering the impacts of other factors in the table.
+False Positives
+A false positive occurs when a test yields a positive result instead of the expected 
+negative result. Occasionally, this situation is referred to as a “false alarm” or a “false 
+positive error.” Typically employed in the medical domain, it can also be applicable to 
+other domains like software testing. Here are a few instances of false positives: 
+● 
+The COVID-19 test shows a positive result, but the patient is not infected with 
+COVID-19.
+(c) Amity University Online
+
+
+--- page 82 ---
+Research Methodology
+75
+Notes
+Amity University Online
+● 
+A cancer screening test returns a positive result, but the patient does not have 
+cancer.
+● 
+A prenatal test indicates Down’s syndrome, but the patient does not have the 
+disorder.
+● 
+Virus software on our computer wrongly identifies a harmless program as malicious.
+False positives can be concerning, particularly in medical tests. Researchers are 
+constantly investigating the causes of false positives to improve test sensitivity.
+A related concept is a false negative, where a negative result is received when it 
+should have been positive. For instance, a pregnancy test may show negative even 
+though the patient is pregnant.
+The False Positive Paradox
+If a disease test is 99% accurate and we receive a positive result, what are the 
+chances that the patient actually has the disease?
+If we think it’s 99%, we might be surprised to find out we’re mistaken. When the 
+disease is very common, our chances might approach 99%. However, differences
+Guidelines for Designing Experiments
+The suggested rules prioritise both statistical and non-statistical factors that are 
+crucial for the outcome of experimental research. The rules are categorised into three 
+distinct phases: planning, conducting, and analysis. These phases are designed 
+to create a loop that allows management activities to be focused on continuously 
+improving the efficiency and effectiveness of the experimental investigation. The stages 
+are interconnected, and it may be essential to redefine what was previously specified at 
+any given time. 
+The consistent infusion of subject matter expertise has the potential to alter 
+the trajectory of an investigation, the conceptual framework being considered, the 
+variables being employed, the responses being assessed, and the anticipation of 
+potential enhancements (Box, 1996), illustrating the sequential and iterative nature 
+of experimental research, as highlighted by Box et al. (1978). Strategizing Peace 
+(1993) suggests that experimental investigations might fail not simply owing to a 
+lack of technical understanding or incorrect use of statistical tools, but also because 
+of inadequate preparation. In order to bridge this divide, it is crucial to focus on 
+the technical and organisational management aspects that impact the successful 
+implementation of experimental designs. This can be achieved by drawing from the 
+experiences of Hahn (1984) in planning experimental programmes and considering the 
+factors that either hinder or facilitate the process, as identified by Owen et al. (2003). 
+Organisational Management Aspects:
+Responsibility of the staff. The duty for creating an atmosphere that fosters 
+a culture of ongoing growth and change lies with senior management, who must 
+demonstrate the right attitudes and provide effective leadership. The effectiveness 
+of implementing statistical approaches in product and process development relies 
+heavily on the motivation and dedication of the staff. In order to ensure the long-
+term sustainability of improvement efforts, it is essential to carefully allocate material 
+and human resources based on cost-benefit analysis. Additionally, constant training 
+of human resources in statistical techniques is vital to enhance product and process 
+improvement. A well-designed training programme should assist workers in identifying 
+(c) Amity University Online
+
+
+--- page 83 ---
+76
+Research Methodology
+Notes
+Amity University Online
+novel methods to enhance the organisation and assume the responsibility for 
+implementing these changes (Adebanjo and Kehoe, 1999).
+Collaborative approach. Contemporary management approaches commonly 
+employ interdisciplinary teams to gather and evaluate certain topics. In the biomedical 
+and pharmaceutical business, interdisciplinary research teams usually collaborate 
+closely (Bisgaard, 2005). Even when statistical approaches are used, the complexity 
+of the process and product necessitates the formal establishment of interdisciplinary 
+teams to exchange experiences and specialised technical expertise in order to achieve 
+improvements. Statistical procedures, such as experimental design techniques, are 
+effective only when used in combination with scientific knowledge, rather than as 
+a replacement for it. The interdisciplinary team must consist of a formal supervisor 
+who is appointed by senior management and has clearly defined tasks and authority. 
+The supervisor should possess great communication skills, strong interpersonal 
+abilities, and a good understanding of group dynamics. The team requires one 
+individual with expertise in statistical approaches, as well as individuals from various 
+hierarchical levels and activities, depending on the specific problem to be examined. 
+Sharing experiences and individual expertise is essential to ensure a comprehensive 
+comprehension of the process and the product, enabling more effective methods for 
+designing experiments and achieving the research target.
+When conducting experiments, it is important for the experimenter to remember the 
+following key elements in order to effectively utilise statistical techniques:
+●
+●
+Apply your expertise in the issue area, utilising information specific to their 
+respective disciplines.
+●
+●
+Strive to maintain a design and analysis that is as uncomplicated as feasible.
+●
+●
+Distinguish between practical and statistical importance.
+●
+●
+Experiments often include a process of repetition and refinement.
+Summary
+● 
+Experimental research is carried out using a systematic manner, where one set of 
+variables is kept constant while the other set of variables is measured as the focus 
+of the experiment. 
+● 
+A highly effective quantitative research technique, experimental research is 
+(c) Amity University Online
+
+
+--- page 84 ---
+Research Methodology
+77
+Notes
+Amity University Online
+particularly useful when the researcher does not have enough information to arrive 
+at meaningful conclusions and have to carry out experiments to prove facts. 
+● 
+Experimental research, thus, helps a researcher make important decisions. 
+● 
+It is considered successful only when the researcher ensures that a change in the 
+dependent variable is wholly due to a change in the independent variable.
+● 
+Validity pertains to the degree of accuracy with which a technique assesses the 
+desired measurement. 
+● 
+High validity in research indicates that the results align with actual traits, 
+characteristics, and fluctuations in the physical or social environment. 
+● 
+High reliability indicates that measurement is valid, but if a method is not reliable, 
+then it’s probably not valid. 
+● 
+For example, if the thermometer shows different temperatures each time, even 
+though you have carefully controlled conditions to ensure the sample’s temperature 
+stays the same, the thermometer is probably malfunctioning, and therefore its 
+measurements are not valid.
+● 
+Data collection is the process of gathering information from various sources using 
+different research methods and consolidating it into a single database or repository. 
+This information is then used for further analysis to solve problems, track progress, 
+and make informed decisions by individuals, businesses, and organisations.
+● 
+The primary goal of data collection is to provide accurate and relevant information 
+that can aid in decision-making, problem-solving, and progress tracking.
+Glossary
+● 
+Factorial Experimental Design: Factorial design allows the researcher to 
+simultaneously examine several factors. It aids in determining the impact of individual 
+factors and measuring the combined effect of several variables.
+● 
+Causal Attributions: A crucial component of an impact evaluation is not just to 
+quantify or characterise the changes that have happened, but also to ascertain the 
+involvement of certain interventions (such as programmes or policies) in causing 
+these changes.
+● 
+Sole causal attribution: In this sense, the programme or policy is seen to be both 
+required and sufficient to generate the desired effects, regardless of external 
+variables or other actions.
+● 
+Alternative (or multiple) causal paths: Here, the plan or policy is only one of numerous 
+potential methods to accomplish the desired effects. A specific programme or policy 
+can generate the effects, but they can also arise from alternative actions and/or 
+external variables.
+● 
+Statistical Control: Statistical control mostly occurs through the use of several 
+control charts, which give essential information that acts as a foundation for taking 
+appropriate actions. 
+● 
+Validity: Validity pertains to the degree of accuracy with which a technique assesses 
+the desired measurement.
+● 
+Reliability: Reliability is a measure of the stability or consistency of every test. We 
+can also think of it as the ability for a test or research findings to be repeatable.
+(c) Amity University Online
+
+
+--- page 85 ---
+78
+Research Methodology
+Notes
+Amity University Online
+Check Your Understanding
+1. 	 What is a key characteristic of experimental research?
+a)	 Keeping all variables constant
+b)	 Measuring all variables simultaneously
+c)	 Keeping one set of variables constant while measuring the other
+d)	 Measuring variables randomly
+2. 
+Which of the following is NOT a factor that drives the success of experimental 
+research?
+a)	 A control group
+b)	 Random allocation of individuals
+c)	 Consistent manipulation of variables
+d)	 Lack of specific objectives
+3.	
+In experimental research, what is the primary role of a control group?
+a)	 To receive the experimental treatment
+b)	 To be similar to the experimental group but not subject to the experimental 
+criteria
+c)	 To manipulate the variables
+d)	 To ensure random allocation
+4.	
+Which type of experimental design is typically used when random assignment is not 
+feasible?
+a) Pre-experimental
+b)	 True experimental
+c) Quasi-experimental
+d)	 Controlled experimental
+5.	
+What does the “manipulable variable” refer to in an experimental design?
+a)	 The variable that remains unchanged throughout the experiment
+b)	 The variable that is measured by the researcher
+c)	 The variable controlled and changed by the researcher
+d)	 The variable that is irrelevant to the experiment
+Exercise
+1.	
+Explain the difference between the control group and the experimental group in an 
+experimental research study. Why is it important to have both groups?
+2. 
+Describe the role of random allocation in experimental research. How does it 
+contribute to the validity of the research findings?
+3.	
+List and explain three key factors that should be considered when designing an 
+experiment. Provide an example of how each factor can influence the outcome of 
+the experiment.
+4. 
+Discuss the significance of determining potential interdependencies between 
+variables (variable interaction) in an experimental design. How can ignoring these 
+interdependencies affect the results of an experiment?
+5. 
+Define pre-experimental research design and quasi-experimental research design. 
+(c) Amity University Online
+
+
+--- page 86 ---
+Research Methodology
+79
+Notes
+Amity University Online
+Provide an example of a scenario where each design might be appropriately used 
+and explain why.
+Learning Activity
+1.	
+Discuss with a peer or write down your thoughts on why experimental research is 
+considered a highly effective quantitative research technique.
+2. 
+Discuss or write about the advantages and disadvantages of using quasi-experimental 
+designs in educational settings compared to true experimental designs.
+Check Your Understanding - Answers
+1.	 c)	
+2.	
+d)	
+3.	
+b)	
+4.	 c)
+5.	 c)
+Further Readings and Bibliography
+1. “Experimental and Quasi-Experimental Designs for Generalized Causal 
+Inference” by William R. Shadish, Thomas D. Cook, and Donald T. Campbell 
+2.	 “Design and Analysis of Experiments” by Douglas C. Montgomery
+3.	 “Research Design: Qualitative, Quantitative, and Mixed Methods Approaches” 
+by John W. Creswell and J. David Creswell
+4.	 “Experimental Design: Procedures for the Behavioural Sciences” by Roger E. 
+Kirk 
+5. “Introduction to Experimental Design” by John Lawson - An introductory 
+textbook that covers experimental design principles and methods.
+6. Campbell, D. T., & Stanley, J. C. (1963). “Experimental and Quasi-
+Experimental Designs for Research.” Houghton Mifflin.
+7. Cook, T. D., & Campbell, D. T. (1979). “Quasi-Experimentation: Design & 
+Analysis Issues for Field Settings.” Rand McNally College Publishing Company.
+8. Kirk, R. E. (2013). “Experimental Design: Procedures for the Behavioural 
+Sciences.” Sage Publications.
+9. Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). “Experimental and 
+Quasi-Experimental Designs for Generalized Causal Inference.” Houghton 
+Mifflin.
+10. Trochim, W. M. K., & Donnelly, J. P. (2008). “Research Methods: The Essential 
+Knowledge Base.” Cengage Learning.
+(c) Amity University Online

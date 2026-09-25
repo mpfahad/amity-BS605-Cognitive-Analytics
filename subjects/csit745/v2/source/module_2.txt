@@ -1,0 +1,1464 @@
+--- page 32 ---
+Research Methodology
+25
+Notes
+Amity University Online
+Module - II: Sampling
+Learning Objectives
+At the end of this module, you will be able to:
+● 
+Analyse Data Collection
+● 
+Explain Questionnaire Designing
+● 
+Mention Sampling
+Introduction
+Sampling is a fundamental concept in research methodology that involves 
+selecting a subset of individuals, items, or data points from a larger population to make 
+inferences about that population. This process allows researchers to draw conclusions 
+without having to study the entire population, which is often impractical or impossible.
+Purpose of Sampling
+The main purpose of sampling is to gather data in a way that is manageable and 
+cost-effective while still allowing for accurate and reliable conclusions. By studying a 
+representative sample, researchers can make generalizations about the broader 
+population.
+Types of Sampling Methods
+1. 
+Probability Sampling: Every member of the population has a known, non-zero 
+chance of being selected. This method includes techniques such as:
+
+
+Simple Random Sampling: Every member has an equal chance of being 
+selected.
+
+
+Stratified Sampling: The population is divided into subgroups (strata) based on 
+specific characteristics, and samples are drawn from each stratum.
+
+
+Systematic Sampling: Selecting every nth member from a list of the 
+population.
+
+
+Cluster Sampling: Dividing the population into clusters and randomly selecting 
+entire clusters.
+2. 
+Non-Probability Sampling: Not every member has a known chance of being selected. 
+This method includes techniques such as:
+
+
+Convenience Sampling: Selecting individuals who are easily accessible.
+
+
+Judgmental or Purposive Sampling: Selecting individuals based on the 
+researcher’s judgment about who would be most beneficial to the study.
+
+
+Quota Sampling: Ensuring certain characteristics are represented in the 
+sample to the same proportion as in the population.
+
+
+Snowball Sampling: Existing study subjects recruit future subjects from among 
+their acquaintances.
+Importance of Sample Size
+The size of the sample is critical to the accuracy and reliability of the research 
+findings. A larger sample size generally leads to more accurate results, reducing sampling 
+(c) Amity University Online
+
+
+--- page 33 ---
+26
+Research Methodology
+Notes
+Amity University Online
+error and increasing the study’s statistical power. However, practical considerations such 
+as time, cost, and resource availability also influence the sample size.
+Steps in the Sampling Process
+1. 
+Define the Population: Clearly identify the group from which the sample will be 
+drawn.
+2.	
+Choose the Sampling Frame: Create a list or database of the population members.
+3. 
+Select the Sampling Method: Decide whether to use probability or non-probability 
+sampling.
+4.	
+Determine the Sample Size: Use statistical formulas and consider practical 
+constraints to decide how many individuals or items to include.
+5.	
+Collect the Sample: Implement the chosen method to gather the sample.
+6.	
+Analyze the Sample: Conduct the research and analyze the data from the sample to 
+draw conclusions about the population.
+Challenges in Sampling
+● 
+Sampling Bias: Occurs when certain members of the population are systematically 
+excluded or overrepresented.
+● 
+Non-response: When selected participants do not respond, potentially skewing the 
+results.
+● 
+Sampling Error: The difference between the sample results and the actual population 
+characteristics due to the sample not being perfectly representative.
+T2.1: Data Collection 
+Information gathered through original or first-hand research is referred to as 
+primary data. 
+2.1.1 Introduction to Data Collection
+Surveys and focus group discussions, for example. Secondary data, on the other 
+hand, is information that has already been gathered by someone else. For instance, 
+internet research, newspaper articles, and company reports. 
+Any study’s goal determines whether primary or secondary data will be 
+collected. For example, if a company wants to enter the women’s apparel market in 
+India and wants to know the size of the market, it can use secondary data such as 
+industry reports and newspaper articles, whereas if it wants to learn about consumer 
+preferences for a new type of fabric or style, it must conduct primary research. 
+Primary data collection is usually more expensive and time-consuming than 
+secondary data, but it serves a specific purpose and helps to eliminate biases.
+2.1.2 Data Collection Methods
+Primary & Secondary Data
+There are two types of data: 
+1. 	 Primary Data and 
+2. 	 Secondary Data 
+(c) Amity University Online
+
+
+--- page 34 ---
+Research Methodology
+27
+Notes
+Amity University Online
+Primary Data: Source data is what this word refers to. Referred to as “primary 
+data,” this information is culled from unprocessed, first-hand sources such as surveys, 
+experiments, and experimental results. Primary data refers to first-hand information that 
+has been meticulously gathered with a specific goal in mind. Meaningful data collection 
+occurred at the source level. More trustworthy, genuine, and impartial primary data has 
+not been released just yet.
+Secondary data: This means that the data has previously been gathered and 
+evaluated by someone other than the user; in other words, the data is not new. Public 
+and private databases, books, periodicals, newspapers, trade journals, and other 
+written works are common places to find secondary data.
+Collection of Primary Data
+Experiments, surveys, observations, and interviews with participants are all 
+examples of primary data collection methods used in descriptive and experimental 
+research. The following are a few ways to get primary data: 
+1. 
+Method of Observation Research in the field of behavioural science frequently makes 
+use of it. When conducted methodically with a predetermined goal in mind and given 
+to appropriate checks and controls, observation takes on the role of a scientific tool 
+and the researcher’s primary means of gathering data according to this approach.
+a. Structured (Descriptive) and Unstructured (Exploratory) Observation: When 
+an observation is characterized by a careful definition of the units to be 
+observed, the style of the observer, the conditions of the observation, and 
+the selection of pertinent data, it is called structured observation. In contrast, 
+when these characteristics are not predetermined or absent, it is referred to as 
+unstructured observation.
+b. Participant, Non-participant, and Disguised Observation: In participant 
+observation, the observer becomes more or less a member of the group being 
+observed. In non-participant observation, the observer remains detached 
+from the group under observation. Disguised observation occurs when the 
+observer’s presence is unknown to the people being observed.
+c. 
+Controlled 
+(Laboratory) 
+and 
+Uncontrolled 
+(Exploratory) 
+Observation: 
+Uncontrolled observation takes place in a natural setting, while controlled 
+observation occurs according to pre-arranged plans, often involving 
+experimental procedures.
+Benefits of Primary Data
+
+
+Subjective bias is eliminated. 
+
+
+Data is not affected by past behaviour or future intentions. 
+
+
+Natural behaviour of the group
+Drawbacks
+
+
+Expensive methodology. 
+
+
+Information provided is limited. 
+
+
+Unforeseen factors may interfere with the observational task
+Interview Methods:
+This method of data collection involves the presentation of oral verbal stimuli and 
+(c) Amity University Online
+
+
+--- page 35 ---
+28
+Research Methodology
+Notes
+Amity University Online
+the recording of responses in terms of oral-verbal answers. This can be accomplished 
+through various types of interviews, such as:
+●
+●
+Personal Interview: This requires an interviewer to ask questions in a face-to-face 
+interaction with the respondent. It can be further categorized into:
+●
+●
+Direct Personal Investigation: The interviewer collects information directly from the 
+subjects involved.
+●
+●
+Indirect Oral Examination: The interviewer cross-examines individuals who are 
+presumed to have knowledge about the issue.
+●
+●
+Structured Interviews: These interviews use predetermined questions and 
+standardized recording techniques.
+●
+●
+Unstructured Interviews: These interviews do not follow a predetermined set of 
+questions and are characterized by a flexible approach to questioning.
+●
+●
+Focused Interview: This type of interview aims to concentrate on the respondent’s 
+specific experiences and their impacts. The interviewer may ask questions in any 
+order or manner to explore the respondent’s reasons and motives.
+●
+●
+Clinical Interviews: These interviews delve into the underlying feelings, motives, 
+and life experiences of individuals, using these aspects to gather information as 
+directed by the interviewer.
+●
+●
+Non-Directive Interview: In this type, the interviewer’s role is to encourage the 
+respondent to discuss a given topic with minimal direction.
+Advantages
+
+
+More information and in depth can be obtained. 
+
+
+Samples can be controlled. 
+
+
+There is greater flexibility under this method 
+
+
+Personal information can as well be obtained. 
+An unstructured interview might help prevent misunderstandings. 
+Limitations 
+
+
+It is an expensive method. 
+
+
+More time consuming. 
+
+
+Possibility of imaginary info and less frank responses. 
+
+
+High skilled interviewer
+Telephonic Interview:
+In this method, the interviewer calls potential interviewees and asks them questions 
+or solicits their thoughts over the phone.
+2.	
+Questionnaire
+	
+In this approach, respondents are given a questionnaire to read, comprehend, and 
+respond to independently before sending it back. A form or series of forms with 
+multiple-choice questions printed or written in a certain sequence make up the test. 
+An expert-led “pilot study” can help identify potential problems with the survey’s 
+questions and methods before the actual survey takes place.
+Fundamental to a good questionnaire-
+(c) Amity University Online
+
+
+--- page 36 ---
+Research Methodology
+29
+Notes
+Amity University Online
+● 
+It needs to be brief and uncomplicated. 
+● 
+It is important to digest questions in a logical order.
+● 
+You should stay away from jargon and technical words. 
+● 
+It is essential to include control questions in order to assess the respondent’s 
+dependability. 
+● 
+Please ensure that there is sufficient room for responses. 
+● 
+The questionnaire has to be filled out according to the following brief instructions. 
+● 
+In order to grab the respondent’s attention, the physical appearances—the paper 
+quality, colour, etc.—must be good.
+Benefits 
+
+
+Independent of the interviewer’s prejudice. 
+
+
+There is sufficient time for respondents to provide responses. 
+
+
+Respondents are very accessible and easy to get in touch with. 
+
+
+More trustworthy results can be obtained with more samples. 
+Drawbacks
+
+
+Return rate of properly completed questionnaires is low. 
+
+
+After a query is sent, the ability to edit it is lost. 
+
+
+It cannot be changed after it has been sent. 
+
+
+The possibility of unclear responses not being provided. 
+
+
+Protracted and laborious procedure
+3.	
+Schedules
+ 
+The enumerations designated for the purpose fill out the schedules, which is a 
+distinction from the questionnaire technique of data collecting. Enumerations clarify 
+the goals of the study, which can assist respondents remember their responses and 
+eliminate confusion. A good enumerator is knowledgeable about the tasks at hand, 
+has the necessary skills, is trustworthy, and is patient. This data is useful for in-depth 
+investigations, but it’s pricey.
+Collection of secondary data
+There are a number of places where a researcher can find secondary data. 
+Publicly available data and unpublished data are both forms of secondary data.
+Publicly available data can be found in:
+
+
+Publications of the government. 
+
+
+Technical and trade journals.
+
+
+Reports of various businesses, banks etc. 
+
+
+Public records. 
+
+
+Statistical or historical
+Memoirs, journals, unpublished biographies, and other works may include 
+information that has not been published. It is important to verify that secondary data 
+meets certain criteria before utilising it:
+(c) Amity University Online
+
+
+--- page 37 ---
+30
+Research Methodology
+Notes
+Amity University Online
+1. 	 Data reliability—Who took the data? Where did you hear this? Which approach? Is 
+it now? Could there be prejudice? What about precision? 
+2. 	 Data appropriateness — After studying the original inquiry’s scope and character, 
+thoroughly examine the data to ensure it is suitable. 
+3.  Adequacy-  If the data are not accurate or pertain to a scope that is too limited or too 
+broad for the current investigation, we will say that they are insufficient.
+Types of Data Collection Methods
+There are various methods to collect the two sources of data (Primary and 
+Secondary) as mentioned and explained below:
+Primary data is gathered from first-hand experience and has never been used 
+before. The data gathered through primary data collection methods is highly accurate 
+and specific to the research’s purpose.
+Quantitative and qualitative data collection methods are the two types of primary 
+data collection methods.
+Quantitative Methods:
+Time Series Analysis
+A time series is a sequential order of values of a variable at equal time intervals, 
+also known as a trend. An organisation can forecast demand for its products and 
+services for the future using patterns.
+Smoothing Techniques
+Smoothing techniques can be used when the time series lacks significant trends. 
+They get rid of the random variation in historical demand. It aids in the identification 
+of patterns and demand levels in order to forecast future demand. The simple moving 
+average method and the weighted moving average method are the two most common 
+methods for smoothing demand forecasting techniques.
+Barometric Method
+Researchers use this method, also known as the leading indicators approach, to 
+predict future trends based on current events. When past events are used to forecast 
+future events, they are referred to as leading indicators.
+Qualitative Methods:
+Surveys
+Surveys are used to gather information about the target audience’s preferences, 
+opinions, choices, and feedback on their products and services. Most survey software 
+allows you to choose from a variety of question types.
+You can also save time and effort by using a pre-made survey template. By 
+changing the theme, logo, and other elements, online surveys can be tailored to fit 
+the brand of the company. They can be distributed via a variety of channels, including 
+email, website, offline app, QR code, social media, and so on. You can choose the 
+channel based on the type and source of your audience. Survey software can generate 
+various reports and run analytics algorithms to uncover hidden insights once the data 
+has been collected. A survey dashboard can show you statistics such as response rate, 
+completion rate, demographic filters, export and sharing options, and so on. Integrating 
+(c) Amity University Online
+
+
+--- page 38 ---
+Research Methodology
+31
+Notes
+Amity University Online
+survey builder with third-party apps can help you get the most out of your online data 
+collection efforts.
+Polls
+One single or multiple choice question is asked in a poll. You can use polls when 
+you need to get a quick pulse on the audience’s feelings. It is easier to get responses 
+from people because they are short in length.
+Online polls, like surveys, can be integrated into a variety of platforms. After 
+the respondents have responded to the question, they can see how their responses 
+compare to those of others.
+Interviews
+The interviewer asks the respondents questions either face-to-face or over the 
+phone in this method. In face-to-face interviews, the interviewer asks the interviewee 
+a series of questions in person and takes notes on the answers. If meeting the person 
+is not possible, the interviewer can conduct a telephonic interview. When there are 
+only a few respondents, this method of data collection is appropriate. If there are many 
+participants, repeating the same process is too time-consuming and tedious.
+Delphi Technique
+Market experts are given the estimates and assumptions of forecasts made 
+by other industry experts in this method. Based on the information provided by other 
+experts, experts may reconsider and revise their estimates and assumptions. The final 
+demand forecast is based on the consensus of all experts on demand forecasts.
+Focus Groups
+A focus group is a small group of people (around 8-10 members) who meet to 
+discuss the problem’s common areas. Each person expresses his or her viewpoint 
+on the subject at hand. The discussion among the group members is moderated by a 
+moderator. The group comes to an agreement at the end of the discussion.
+Questionnaire
+Questionnaires can be either open-ended or closed-ended and are often 
+printed out. Respondents are expected to provide responses that are grounded on 
+their understanding and expertise of the subject matter. The survey includes the 
+questionnaire, but the latter’s ultimate purpose might not always be a survey.
+Sources of Secondary data:
+Generally speaking, there are two types of secondary data sources:
+●
+●
+Published Sources
+●
+●
+Unpublished Sources
+Published Sources:
+Statistical statistics, including the following, are published by international, 
+governmental, and local agencies: 
+International Publications:
+We have international institutions and bodies like I.M.F, I.B.R.D, I.C.A.F.E and 
+U.N.O who occasionally publish occasional reports on statistical and economic matters. 
+(c) Amity University Online
+
+
+--- page 39 ---
+32
+Research Methodology
+Notes
+Amity University Online
+Official Publications of Central and State Governments:
+Various branches of the federal and state governments make periodical reports 
+available to the public. They gather all the supplementary data. The Reserve Bank of 
+India Bulletin, Indian Trade Journal, Statistical Abstracts of States, Census of India, and 
+Agricultural Statistics of India are some of the important publications in this category.
+Semi-Official Publications:
+Example: Municipal Corporations, District Boards, Panchayats, etc. that will publish 
+reports relating to different matters of public concern.
+Publications of Research Institutions:
+Indian Statistical Institute (I.S.I), Indian Council of Agricultural Research (I.C.A.R), 
+Indian Agricultural Statistics Research Institute (I.A.S.R.I), etc., publish the findings of 
+their research programs.
+Publications of various Commercial and Financial Institutions:
+Reports of various Committees and Commissions appointed by the Government:
+Such as the Raj Committee’s Report on Agricultural Taxation, Wanchoo 
+Committee’s Report on Taxation and Black Money, etc. are also important sources of 
+secondary data.
+Journals and Newspapers:
+Journals and Newspapers are the powerful sources from which data is obtained. 
+Current and important materials on statistics and socio-economic problems are 
+provided by journals and newspapers like Economic Times, Commerce, Capital, Indian 
+Finance, Monthly Statistics of trade etc.
+Unpublished Sources:
+Records kept by public and commercial agencies, the work of many academics at 
+colleges and universities, and so on are all examples of such sources of information.,
+Precautions to be taken in the use of Secondary Data:
+Since secondary data has already been collected, it is wise to review it to make 
+sure it is accurate.  When using this data, the investigator must use greater caution. 
+“Secondary data should not be accepted at their face value,” as Prof. Bowley correctly 
+says. A number of factors, including the information collectors’ inherent biases and 
+prejudices, an insufficient sample size, faulty definitions, inaccurate calculations, and 
+problems with replacement, can lead to inaccurate results. Even without error, such 
+data still can be unsuitable for enquiry purposes. E According to Prof. Simon Kuznets 
+(which is of importance), “the degree of reliability of secondary source is to be assessed 
+from the source, the compiler and his capacity to produce correct statistics and the 
+users also, for the most part, tend to accept a series particularly one issued by a 
+government agency at its face value without enquiring its reliability”.
+Thus we need to follow some of the given factors:
+The Suitability of Data:
+This is possible by judging the scope and nature of the present enquiry with the 
+original one. For example, if we are looking for trends in retail prices while the data 
+provided is meant for wholesale prices, then it is of no use.
+(c) Amity University Online
+
+
+--- page 40 ---
+Research Methodology
+33
+Notes
+Amity University Online
+Adequacy of Data:
+Once it is ensured that the data is suitable for investigation, it should be checked 
+for the purpose of present analysis. Geographical area for the original enquiry can be 
+studied in this respect along with the time for which we are getting the data. Using the 
+previous example, the data collected would be useless if our goal was to analyse the 
+retail pricing trend in India as a whole, rather than just the state of UP.
+Reliability of Data:
+This issue concerns whether research findings can be applied to a larger group 
+than those who participated in the study. To put it another way, would similar results 
+have been obtained if a different group of respondents or a different set of data points 
+had been used? Is the information obtained from these 40 people sufficient to conclude 
+how the entire sales force feels about company policies, for example, if 40 salespeople 
+out of a 2,000-person corporate sales force participate in a research study focusing 
+on company policy? Would the results be the same if the study was repeated with 40 
+different salespeople?
+The main goal of reliability is to ensure that the data collection method produces 
+consistent results. This can be measured in some types of research by having different 
+researchers use the same methods to see if the results can be replicated. If the results 
+are similar, the data collection method is most likely reliable. The scientific research 
+method includes ensuring that research can be replicated and produces similar results.
+The following should be kept in mind when altering primary data:
+
+
+It must be comprehensive in every way 
+
+
+It must be precise 
+
+
+It must be consistent 
+
+
+It must be constant throughout.
+The following forms of editing are necessary for data to have the aforementioned 
+qualities:
+2.1.3: Tabulating and Validating Data
+Meaning of Tabulation
+To make comparisons and statistical analyses easier, numerical data is often 
+tabulated in rows and columns. It aids in further statistical analysis and interpretation 
+and makes comparison easier by bringing relevant data together.
+Put simply, tabulation refers to the process of arranging structured data into 
+a tabular format. Its complexity, duality, or simplicity are all dependent on the kind of 
+classification.
+Tabulation of Data Collected
+The objectives of tabulation of collected data are as follows:
+●
+●
+Orderly arrangement of data in columns and rows
+●
+●
+To bring out essential features of the data collected
+●
+●
+To simplify the data collected
+●
+●
+Conserves space
+(c) Amity University Online
+
+
+--- page 41 ---
+34
+Research Methodology
+Notes
+Amity University Online
+●
+●
+Ease of comparison
+●
+●
+Summation of items
+●
+●
+Enables easy detection of errors and omissions
+●
+●
+Facilities Statistical Computation
+Definition of Data Validation:
+As defined by the United Nations Economic Commission of Europe (UNECE 2013), 
+data validation is an activity aimed at verifying whether the value of a data item comes 
+from the given (finite or infinite) set of acceptable values.
+Data validation means checking the accuracy and quality of source data before 
+using, importing or otherwise processing data. Different types of validation can be 
+performed depending on destination constraints or objectives.
+Data Validation is a form of Data Cleansing
+To illustrate the point, an email query may be set up to automatically verify the 
+validity of the provided email address. You may use the country code as the basis for a 
+phone number query to verify if the number is valid.
+Reasons for performing Data Validation:
+The following are the reasons for validating data:
+● 
+It is cost-effective because the collection of datasets saves the right amount of time 
+and money.
+● 
+Because it removes duplicates from the entire dataset, it is simple to use and 
+compatible with existing processes.
+● 
+With improved information collection, data validation can directly aid in business 
+improvement.
+● 
+It’s made up of a data-efficient structure that provides information from a standard 
+database as well as a cleaned dataset.
+Types of Validity
+There are several types of validity, each addressing different aspects of the 
+research process. Here are the main types of validity:
+1.  Construct Validity
+	
+Construct validity assesses whether a test or instrument truly measures the 
+theoretical construct it is intended to measure. It encompasses:
+
+
+Convergent Validity: The degree to which two measures of constructs that 
+theoretically should be related are in fact related.
+
+
+Discriminant Validity: The extent to which a measure does not associate too 
+strongly with measures from which it should differ.
+2.  Internal Validity
+	
+Internal validity refers to the extent to which a study can establish a causal relationship 
+between variables. High internal validity indicates that the study design effectively 
+rules out alternative explanations for the observed relationships.
+
+
+Threats to Internal Validity: Include confounding variables, selection bias, and 
+measurement errors.
+(c) Amity University Online
+
+
+--- page 42 ---
+Research Methodology
+35
+Notes
+Amity University Online
+3.  External Validity
+ 
+External validity is the extent to which the findings of a study can be generalized to 
+other settings, populations, or times.
+
+
+Population Validity: The degree to which the study results can be generalized 
+to a larger population.
+
+
+Ecological Validity: The extent to which the findings can be applied to real-
+world settings.
+4. 
+Criterion Validity
+	
+Criterion validity evaluates how well one measure predicts an outcome based on 
+another measure (the criterion).
+
+
+Concurrent Validity: The degree to which a test correlates with a measure that 
+has been previously validated.
+
+
+Predictive Validity: The extent to which a test predicts future performance on a 
+related measure.
+5. 
+Content Validity
+	
+Content validity examines whether a test represents all aspects of the given 
+construct. This type of validity is often assessed qualitatively by experts.
+
+
+Face Validity: A subset of content validity, referring to the degree to which a 
+test appears to measure what it claims to measure, based on subjective 
+judgment.
+6. 
+Face Validity
+ 
+Face validity is a superficial measure of whether a test appears to measure what it 
+is supposed to measure. It is often considered the weakest form of validity, but it can 
+be important for ensuring that stakeholders accept the measure.
+7.  Statistical Conclusion Validity
+	
+Statistical conclusion validity pertains to the extent to which conclusions about the 
+relationship among variables based on the data are correct and reliable. It deals 
+with issues like whether the statistical tests used are appropriate and whether the 
+assumptions of these tests are met.
+2.2 Questionnaire Designing
+A questionnaire is a research tool designed to collect data from respondents 
+through a series of questions or prompts.
+Key Features of a Questionnaire:
+1. 
+Variety of Question Types:
+
+
+Open-Ended Questions: These questions allow respondents to provide 
+detailed, qualitative responses.
+
+
+Closed-Ended Questions: These questions offer predefined answer choices, 
+enabling quantitative data collection.
+2. 	 Purpose:
+
+
+Quantitative Data: Collected through closed-ended questions, this data is 
+numerical and can be statistically analysed to draw conclusions.
+(c) Amity University Online
+
+
+--- page 43 ---
+36
+Research Methodology
+Notes
+Amity University Online
+
+
+Qualitative Data: Collected through open-ended questions, this data provides 
+in-depth, specific explanations and insights.
+3. 	 Common Misconception:
+
+
+A questionnaire is often mistaken for a survey. While both are used to 
+collect data, a survey refers to the entire process of data collection, which 
+may include a questionnaire as one of its tools. Many people use the terms 
+interchangeably, but they are not the same.
+2.2.1 Steps in Constructing a Questionnaire
+Designing a questionnaire involves multiple steps, each requiring meticulous 
+attention to detail to ensure the collection of usable data. Researchers aim to create 
+a survey that is easy to understand and complete, minimising the risk of respondents 
+dropping out or providing inaccurate answers due to confusion.
+Steps Involved in Questionnaire Design
+ 
+Image Source: https://medium.com/@markquepro/7-platinum-rules-to-design-a-questionnaire-
+3aadc839f604
+1. 
+Identify the Scope of Your Research: Clearly define the purpose and topics to be 
+covered in your questionnaire. Understanding the scope is crucial as it guides the 
+entire design process.
+2.	
+Keep It Simple: Use clear, straightforward language. Avoid complex words or 
+phrases to ensure respondents understand the questions accurately, preventing 
+skewed data.
+3. 
+Ask Only One Question at a Time: Avoid double-barrelled questions that address 
+multiple issues at once. Each question should focus on a single topic to ensure 
+clarity and accurate responses.
+4. 
+Be Flexible with Your Options: Provide a variety of answer choices, including an 
+“other” option, to accommodate respondents who may not find a suitable answer 
+among the predefined options.
+5. 
+Choose Between Open-Ended and Closed-Ended Questions: Decide on the type of 
+(c) Amity University Online
+
+
+--- page 44 ---
+Research Methodology
+37
+Notes
+Amity University Online
+questions based on the data you need. Open-ended questions are ideal for detailed 
+responses, while closed-ended questions are better for specific, easily analysable 
+data.
+6.	
+Know Your Audience: Tailor the questionnaire to your target audience’s language 
+and comprehension level. Avoid technical jargon and ensure the questions are 
+relevant to their experiences and background.
+7.	
+Choose the Right Tool: Utilise a reliable survey platform, such as Questioner, 
+which offers advanced features and a variety of templates. This can streamline the 
+questionnaire creation process and enhance the quality of data collected.
+8.	
+Save Personal Questions for Last: Place sensitive or demographic questions at the 
+end of the questionnaire. This approach increases the likelihood of completion, as 
+respondents are more comfortable by the end of the survey.
+2.2.2	 Types of Questions
+Utilising various question types in a questionnaire can enhance respondent 
+engagement and yield more comprehensive data. Below are some commonly used 
+types of questions:
+1. 
+Open-Ended Questions: Allow respondents to answer in their own words, providing 
+qualitative data without restrictions. Useful for collecting detailed, nuanced responses 
+and exploring respondents’ thoughts and feelings.
+2. 
+Dichotomous Questions: A close-ended question type that typically offers two choices, 
+such as “yes” or “no.” Effective for obtaining straightforward, binary responses and 
+validating specific information.
+3. 
+Multiple-Choice Questions: Present respondents with a list of options to select 
+from, either as single-select or multi-select. Consists of a question stem, correct 
+answer(s), incorrect answers, close alternatives, and distractors. Ideal for gauging 
+opinions, preferences, and gathering categorical data.
+4. 
+Scaling Questions: These questions leverage measurement scales (nominal, ordinal, 
+interval, ratio) to quantify responses. Useful for measuring intensity, frequency, and 
+other scalable attributes.
+Types:
+a. Rank Order Questions: Ask respondents to rank items in a specific order.
+b. Likert Scale Questions: Measure attitudes or opinions on a scale (e.g., 1 to 5).
+c.	
+Semantic Differential Scale Questions: Use bipolar adjectives to measure 
+respondents’ attitudes.
+d.	 Stapel Scale Questions: Rate items based on a single adjective.
+5. 
+Pictorial Questions: Similar to multiple-choice questions, but the answer choices are 
+images instead of text. Enhances engagement by allowing respondents to quickly 
+select answers without overthinking, leading to more accurate data.
+2.2.3 Format of Questionnaire
+Size
+● 
+Compactness: The questionnaire should be smaller than a schedule in size.
+● 
+Appropriate Dimensions: Ensure the length and breadth are suitable.
+(c) Amity University Online
+
+
+--- page 45 ---
+38
+Research Methodology
+Notes
+Amity University Online
+● 
+Page Limit: Ideally, it should not exceed two or three pages, depending on the nature 
+of the research.
+Appearance
+● 
+Quality: Use high-quality paper and printing for a professional look.
+● 
+Layout: Ensure an attractive and organised layout to enhance respondent 
+engagement.
+Clarity
+● 
+Simplicity: Questions should be short, clear, and easy to understand.
+● 
+Expression: Use concise and precise language to avoid ambiguity.
+Sequence
+● 
+Logical Order: Arrange questions based on their importance and logical flow.
+● 
+Preference: Prioritise questions to maintain a smooth progression.
+Communicability
+● 
+Engagement: Design questions to keep respondents interested and motivated to 
+complete the questionnaire.
+Span
+● 
+Conciseness: Keep questions as brief as possible without sacrificing clarity.
+● 
+Length: Ensure the overall questionnaire is not too long to maintain respondent 
+interest and minimise dropout rates.
+2.3: Sampling
+Introduction to Sampling
+“Segment of population that is selected for investigation.” 
+Bryman & Bell–
+	
+“Some of the elements of population” 
+Cooper & Schindler–
+A sample, in research terms, is a group of people, objects, or items selected for 
+measurement from a larger population. To ensure that the findings from the research 
+sample can be applied to the entire population, the sample should be representative of 
+the population.
+(c) Amity University Online
+
+
+--- page 46 ---
+Research Methodology
+39
+Notes
+Amity University Online
+What is the purpose of sampling?
+By using inferential statistics to a small subset (or “sample”) of a larger population, 
+we may learn about its features and extrapolate those findings to the whole.
+We obtain a sample of the population for a variety of reasons, including the fact 
+that it is rarely practical and almost never cost-effective.
+Many Populations are Quite Large.
+●
+●
+Inaccessibility of some populations – Access to some populations is so difficult 
+that only a sample can be used. Prisoners, people with severe mental illness, and 
+disaster survivors are just a few examples. And so on. The inaccessibility could be 
+due to a lack of funds, time, or simply access.
+●
+●
+Destructiveness of observation- Sometimes just observing a product’s desired 
+characteristic destroys it for its intended use. Quality control is a good example of 
+this. For example, a fuse must be destroyed to determine its quality and whether it 
+is defective. As a result, if you tested all of the fuses, they’d all blow up.
+●
+●
+Accuracy and sampling - A sample of the study population may be more accurate 
+than the entire population. A population that has been incorrectly identified can 
+provide less reliable data than a sample that has been carefully selected.
+2.3.1: Sampling Plan 
+Definition of Sampling Plan
+The phrase “sampling plan” describes the framework that research projects rely on 
+to carry out their investigations. Included are instructions for selecting a representative 
+sample from the population, the appropriate sample size, and the category to question.
+The research begins with the sampling plan, which encompasses the following 
+important decisions:
+i. 	
+Choose the population
+	
+The primary and initial step in developing a sample strategy is deciding which subset 
+of the target population will be polled.
+ii. 	
+Determine the Sample Size
+ 
+Decide how many items will be surveyed as part of the sample (the second option in 
+the sampling strategy). Since “the larger the sample size, the more is the reliability” 
+in general, researchers endeavour to cover a wide number of samples.
+iii.	
+Decide the Sampling Procedure
+	
+Choosing the sampling technique, or the approach that may be employed to ensure 
+that every object in the population has an equal chance of being picked, is the last 
+option that completes the sampling strategy. In most cases, researchers will employ 
+probability sampling to pick items that are good representations of the sample.
+2.3.2: Sampling Frame
+Definition of Sampling Frame
+A sampling frame is a list or database from which a sample can be used. In market 
+research terms, a sampling frame is a database of potential respondents that can be 
+drawn from, to invite to take part in a given research project.
+(c) Amity University Online
+
+
+--- page 47 ---
+40
+Research Methodology
+Notes
+Amity University Online
+Steps involved in Sampling Process
+The following are the series of steps that are involved in the sampling process:
+●
+●
+Classify the people
+●
+●
+Ascertain the sample interval
+●
+●
+Make your choice of sampling strategy
+●
+●
+Pick a number for the sample
+●
+●
+Complete the sampling procedure.
+2.3.3: Sample Selection Methods
+The sample selection methods can be broadly classified into:
+●
+●
+Probability Sampling
+●
+●
+Non-Probability Sampling
+Methods of sampling that use the use of probability to choose individuals or items 
+from a population.
+There are several probability sampling methods available for examination and 
+consideration. These are some of the most renowned choices.
+1. 	 Simple random sampling
+	
+Simple random sampling ensures that each element in the population has an 
+equitable probability of being chosen as a component of the sample. It is like 
+randomly selecting a name from a hat. Anonymizing the population by assigning a 
+unique number to each object or person and then randomly selecting numbers is a 
+method for conducting simple random sampling.
+ 
+Conducting simple random sampling is a straightforward and cost-effective method 
+that completely eliminates any potential bias in the sample process. Nevertheless, 
+it lacks researcher control and may result in the selection of unrepresentative 
+categories by chance.
+2.	
+Systematic sampling
+	
+Systematic sampling, often referred to as systematic clustering, involves randomly 
+selecting only the first item, while the subsequent items are picked in a predetermined 
+pattern. Subsequently, a rule is implemented to choose every nth item or person 
+thereafter.
+	
+Despite the presence of randomness, the researcher has the ability to set the interval 
+at which items are chosen, ensuring that the selections are not unintentionally 
+grouped together.
+3.  Stratified sampling
+ 
+Stratified sampling is a method that entails the random selection of individuals from 
+pre-established groups. Researchers find it advantageous to possess knowledge 
+about the target population, enabling them to strategically divide it (stratify) in a 
+manner that is logical and relevant to the research.
+ 
+For instance, when studying travel patterns within a population, it would be beneficial 
+to distinguish between those who possess or have access to a car and those who 
+rely on public transportation.
+(c) Amity University Online
+
+
+--- page 48 ---
+Research Methodology
+41
+Notes
+Amity University Online
+ 
+Stratified sampling offers advantages, but it also raises the issue of how to divide a 
+population into strata, increasing the potential for bias.
+4. 	 Cluster sampling
+	
+Cluster sampling involves randomly selecting groupings, rather than individual 
+units, from the target population. These groupings might potentially consist of pre-
+established entities, such as individuals residing in specific postal codes or students 
+affiliated with a particular academic year.
+	
+Cluster sampling can be conducted by either picking the entire cluster or, in the 
+case of two-stage cluster sampling, randomly selecting the cluster itself and then 
+randomly selecting inside the cluster.
+Non-probability Sampling Methods
+Non-probability sampling methods do not have the same advantages in eliminating 
+bias as probability sampling methods. However, there are situations where non-
+probability sampling methods are used for their convenience or simplicity. Below are 
+some examples of non-probability sampling methods and their respective mechanisms.
+1.  Convenience sampling refers to a non-probability sampling technique where 
+individuals are selected based on their easy accessibility and convenience.
+	
+Individuals or components within a sample are chosen based on their accessibility. If 
+you are doing a research survey at a university, a convenience sample may include 
+students or co-workers who are present on campus and have spare time, and are 
+willing to participate in your questionnaire.
+	
+This type of sample can be valuable, particularly when used as an initial or preliminary 
+measure, but it will inevitably introduce considerable bias.
+2. 	 Quota sampling is a method of selecting a sample that ensures representation of 
+different subgroups in proportion to their presence in the population.
+ 
+Similar to the probability-based stratified sampling method, this strategy seeks 
+to ensure representation throughout the target population by selecting survey 
+participants based on certain groups or criteria. For instance, your quota may 
+encompass a specific count of males and females, or individuals belonging to 
+particular age ranges or ethnicities.
+	
+During the selection process, bias might arise, such as volunteer bias, which may 
+lead to a sample that is skewed towards those having enough free time and a specific 
+interest in participating. It is possible that bias is inherent in the process of selecting 
+categories for quotas by researchers.
+3. 	 Purposive sampling is a method of selecting individuals or elements for a study 
+based on specific criteria or purpose.
+	
+Researchers deliberately select participants for the sample based on their expertise 
+and comprehension of the study subject or their objectives. Also referred to as 
+judgement sampling, this method is unlikely to yield a sample that accurately 
+represents the entire population. However, it is a rapid and relatively simple approach 
+to obtain a variety of outcomes or replies.
+4. 	 Snowball or referral sampling refers to a method of selecting participants for a study 
+where existing participants are asked to recommend or refer to other potential 
+participants.
+(c) Amity University Online
+
+
+--- page 49 ---
+42
+Research Methodology
+Notes
+Amity University Online
+This strategy involves recruiting individuals to participate in a sample and 
+requesting them to invite their acquaintances to join. These acquaintances are 
+then encouraged to invite their own friends and family members, creating a chain 
+of invitations. The involvement spreads throughout a network of interconnected 
+individuals, resembling the momentum of a snowball moving downhill.
+This approach might be advantageous when the researcher possesses limited 
+knowledge about the target group and lacks convenient means to contact or reach 
+them. Nevertheless, it will result in prejudice, such as the exclusion of isolated 
+individuals within a community or a tendency to favour specific age or interest groups 
+that engage in self-recruitment.
+2.3.4: Probability Sampling Techniques
+The various Probability sampling methods are given below:
+●
+●
+Simple random sampling
+●
+●
+Systematic Sampling
+●
+●
+Stratified Sampling
+●
+●
+Cluster Sampling
+●
+●
+Multistage Sampling
+Simple Random Sampling
+There is a known and equal probability of selection for each constituent of the 
+population in this probability sample.
+E.g. Population = Total students in AMITY (591)
+Sample size = 25 students
+	
+	
+	
+	
+Sample size
+Probability of selection = -----------------------
+	
+	
+	
+          Population size
+= 25/591
+= 0.042 or 4.2%	
+Systematic Sampling
+A systematic sample obtained by using a predetermined skip interval on a sample 
+frame.
+(c) Amity University Online
+
+
+--- page 50 ---
+Research Methodology
+43
+Notes
+Amity University Online
+Formula to calculate skip interval-
+Formula to calculate skip interval-
+	
+	
+	
+Population sample frame (N)
+Skip interval (k) = ------------------------------------------------
+ 
+ 
+ 
+ 
+Sample Size (n) 
+	
+	
+	
+	
+E.g. Population = Total students in AMITY (591)
+Sample size = 25 students
+	
+	
+	
+Population sample frame (N)
+Skip interval (k) = ------------------------------------------------
+ 
+ 
+ 
+ 
+Sample Size (n)
+= 591 / 25
+= 23.64 = 23
+Select any number randomly between 1 – 23, and then select the remaining 24 
+numbers with a gap of 23 numbers.
+k = 23
+Select any number randomly between 1 – 23, and then select the remaining 24 
+numbers with a gap of 23 numbers.
+ 
+Stratified Sampling
+Stratified sampling is a method of probability sampling where the population is split 
+into distinct subgroups or strata, and random samples are taken from each of these 
+subgroups.
+E.g. Population = Total students in JSPM (591)
+Sample size = 25 students
+Sub groups-
+MBA = 272		
+MMM = 42
+MPM = 59	 	
+DBM = 92
+DIEM = 37	 	
+MCA = 59
+MCM = 30
+(c) Amity University Online
+
+
+--- page 51 ---
+44
+Research Methodology
+Notes
+Amity University Online
+ 
+Cluster Sampling
+A probability sampling technique in which the population is divided into several 
+small sub groups and some groups selected randomly for study. 
+e.g. MBA 	 = 272	 	
+MMM 	 = 42
+	
+MPM 	 = 59	
+	
+DBM 	
+= 92
+	
+DIEM	
+= 37	
+	
+MCA 	
+= 59
+	
+MCM 	 = 30	
+MCM = 30 and MMM = 42 randomly selected from above groups.
+(c) Amity University Online
+
+
+--- page 52 ---
+Research Methodology
+45
+Notes
+Amity University Online
+2.3.5: Non - Probability Sampling Techniques
+Also known as ‘deliberate,’ ‘purposeful,’ or ‘judgement’ sampling. The items have 
+been chosen with care.
+The researcher’s choice of elements to include in the sample. There is no 
+guarantee that each element will be given an equal chance to be chosen as a sample.
+Convenience Sampling
+A non-probability sampling technique where researcher use any readily available 
+individuals as participants
+Most cheapest& easiest to conduct
+Least reliable
+Researcher is free to select anybody as sample
+Purposive or Judgmental Sampling
+A non-probability sample that conforms to certain criteria. The units or elements are 
+purposely selected.
+It is a way of selecting items for a study based on the specific objectives of the 
+research. Purposive sampling entails the examination of either the complete population 
+of a restricted group or a subset of a population. Similar to other non-probability 
+sampling techniques, purposive sampling does not yield a sample that accurately 
+represents a wider population. However, it can be very suitable for studying specific 
+and well-defined groups such as organisations, communities, or other constrained 
+populations.
+Quota Sampling
+A purposive sampling where relevant characteristics are used to stratify the 
+samples.
+This is useful to increase the representativeness of samples
+MBA = 272
+46%
+12
+MMM = 42
+7%
+2
+MPM = 59
+10%
+2
+DBM = 92
+16%
+4
+DIEM = 37
+6%
+2
+MCA  =  59
+10%
+2
+MCM = 30
+5%
+1
+Total = 591
+100%
+25
+Snowball Sampling
+A non- probability sampling in which subsequent participants are referred to by 
+current sample elements.
+Initial individuals are discovered/identified
+These initial individuals refer to others who are similar to them and so on. Like a 
+snowball gathers subjects as it rolls along.
+(c) Amity University Online
+
+
+--- page 53 ---
+46
+Research Methodology
+Notes
+Amity University Online
+2.3.6: Sampling and Non-Sampling Errors
+Definition of Sampling Error
+Sampling error pertains to discrepancies between the sample and the population 
+only due to the particular observations chosen for the sample.
+Expanding the sample size will diminish this particular form of mistake.
+Definition of Non-Sampling Error:
+Non-sampling errors are more serious, and they occur as a result of data 
+acquisition errors or incorrect sample observation selection.
+Non-Sample Errors
+Non-sample errors can be classified into:
+●
+●
+Non-response Error
+●
+●
+Response Error
+Non-Response Error
+A non-response error arises when the units chosen as part of the sampling process 
+fail to provide a complete or partial answer.
+Response Error
+A response or data error refers to any consistent bias that arises throughout the 
+process of data collection, analysis, or interpretation.
+Response errors occur due to the following factors:
+●
+●
+Respondent Error (example: lying, forgetting, etc.,)
+●
+●
+Interviewer Errors
+●
+●
+Recording Errors
+●
+●
+Poorly designed questionnaires.
+●
+●
+Measurement errors.
+Summary
+● 
+Information gathered through original or first-hand research is referred to as primary 
+data. Surveys and focus group discussions, for example.
+● 
+Secondary data, on the other hand, is information that has already been gathered 
+by someone else. For instance, internet research, newspaper articles, and company 
+reports.
+● 
+Any study’s goal determines whether primary or secondary data will be collected.
+● 
+For example, if a company wants to enter the women’s apparel market in India and 
+wants to know the size of the market, it can use secondary data such as industry 
+reports and newspaper articles, whereas if it wants to learn about consumer 
+preferences for a new type of fabric or style, it must conduct primary research.
+● 
+Designing a questionnaire involves multiple steps, each requiring meticulous 
+attention to detail to ensure the collection of usable data.
+(c) Amity University Online
+
+
+--- page 54 ---
+Research Methodology
+47
+Notes
+Amity University Online
+● 
+Researchers aim to create a survey that is easy to understand and complete, 
+minimising the risk of respondents dropping out or providing inaccurate answers 
+due to confusion.
+● 
+A sample, in research terms, is a group of people, objects, or items selected for 
+measurement from a larger population.
+● 
+To ensure that the findings from the research sample can be applied to the entire 
+population, the sample should be representative of the population.
+Glossary
+● 
+Primary Data: Source data is what this word refers to. Referred to as “primary data,” 
+this information is culled from unprocessed, first-hand sources such as surveys, 
+experiments, and experimental results.
+● 
+Secondary Data: This means that the data has previously been gathered and 
+evaluated by someone other than the user; in other words, the data is not new.
+● 
+Direct Personal Investigation: The interviewer collects information directly from the 
+subjects involved.
+● 
+Unstructured Interviews: These interviews do not follow a predetermined set of 
+questions and are characterised by a flexible approach to questioning.
+● 
+Structured Interviews: These interviews use predetermined questions and 
+standardised recording techniques.
+● 
+Focused Interview: This type of interview aims to concentrate on the respondent’s 
+specific experiences and their impacts. The interviewer may ask questions in any 
+order or manner to explore the respondent’s reasons and motives.
+● 
+Clinical Interviews: These interviews delve into the underlying feelings, motives, and 
+life experiences of individuals, using these aspects to gather information as directed 
+by the interviewer.
+Check Your Understanding
+1.	
+Which of the following is a primary source of data?
+a)	 Internet research
+b)	 Company reports
+c)	 Surveys
+d) Newspaper articles
+2.	
+What is a key characteristic of primary data?
+a)	 It is always free to access
+b)	 It is collected specifically for the current research purpose
+c)	 It is usually less reliable than secondary data
+d)	 It is always quantitative
+3.  Which step in constructing a questionnaire involves defining the purpose and topics?
+a)	 Keep It Simple
+b)	 Identify the Scope of Your Research
+(c) Amity University Online
+
+
+--- page 55 ---
+48
+Research Methodology
+Notes
+Amity University Online
+c) Be Flexible with Your Options
+d)	 Know Your Audience
+4. 
+When designing a questionnaire, why is it important to avoid double-barrelled 
+questions?
+a)	 They require complex language
+b)	 They are too short
+c)	 They address multiple issues at once
+d) They only offer open-ended responses
+5.	
+Why should sensitive or demographic questions be placed at the end of a 
+questionnaire?
+a.	 To ensure the survey is concise
+b.	 To make respondents more comfortable completing the survey
+c.	
+To prioritize the most important questions
+d.	 To allow for better statistical analysis
+Exercise
+1. 	 Differentiate between primary and secondary data with examples.
+2. 	 Explain why primary data collection might be preferred over secondary data in 
+certain research scenarios.
+3. 	 Why is it important to tailor a questionnaire to the target audience’s language and 
+comprehension level?
+4.  Describe the benefits of using a reliable survey platform, such as QuestionPro, when 
+designing a questionnaire.
+5. 	 List and describe three key steps in constructing a questionnaire.
+Learning Activity
+1. 	 Consider a research study aiming to understand consumer preferences for a new 
+type of smartphone.
+2. 	 Why might researchers choose to use a sample instead of studying an entire 
+population? Provide at least three reasons and explain each one briefly.
+Check Your Understanding- Answers
+1.	 c)	
+2.	
+b)	
+3.	
+b)	
+4.	 c)
+5.	 b)
+Further Readings and Bibliography
+1. Biemer, P. P., Lyberg, L. E., et al. (Eds.). (2016). Total Survey Error: Methods, 
+Costs, and Management. John Wiley & Sons.
+2. Brace, I. (2008). Questionnaire Design: How to Plan, Structure and Write 
+Survey Material for Effective Market Research. Kogan Page.
+3. Cochran, W. G. (1977). Sampling Techniques, 3rd Edition. John Wiley & Sons.
+4. Creswell, J. W. (2013). Research Design: Qualitative, Quantitative, and Mixed 
+Methods Approaches. SAGE Publications.
+(c) Amity University Online
+
+
+--- page 56 ---
+Research Methodology
+49
+Notes
+Amity University Online
+5. Rea, L. M., Parker, R. A. (2014). Designing and Conducting Survey Research: 
+A Comprehensive Guide. John Wiley & Sons.
+6. Alreck, P. L., Settle, R. B. (2004). The Survey Research Handbook. McGraw-
+Hill Education.
+7. Struhl, S. (2018). Practical Text Analytics: Interpreting Text and Unstructured 
+Data for Business Intelligence. Apress.
+8. Brick, J. M. (2016). Data Collection: Key Concepts and Methods. SAGE 
+Publications.
+(c) Amity University Online

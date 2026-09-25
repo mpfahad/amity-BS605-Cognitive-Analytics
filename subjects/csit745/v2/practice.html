@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CSIT745 Practice — Adaptive MCQ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="app.css" />
+<script>window.AMITY_SUBJECT = "csit745";</script>
+<script src="../../../shared/config.js"></script>
+<script src="../../../shared/progress.js"></script>
+<script src="../../../shared/sync-ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <nav class="site-nav" aria-label="V2">
+    <a href="../index.html" class="home">Home</a>
+    <a href="index.html">Explorer</a>
+    <a href="practice.html" class="here">Practice</a>
+  </nav>
+  <p style="margin:0 0 0.75rem;font-size:0.88rem"><a href="../index.html">← CSIT745 home</a></p>
+
+  <header class="practice-head">
+    <div>
+      <div class="kicker">CSIT745 · v2 Practice</div>
+      <h1>Adaptive MCQ</h1>
+      <p class="lede">20 questions per session from the <strong>whole subject</strong> (all modules mixed). Wrong answers are flagged for review.</p>
+    </div>
+    <button type="button" class="btn primary" id="btnStart">Start session</button>
+  </header>
+
+  <div id="amity-sync-root" style="margin-top:0.75rem"></div>
+
+  <p class="meta-row">
+    <span>Bank: <strong id="bankCount">—</strong> questions</span>
+    <span>Flagged: <strong id="flagCount">0</strong></span>
+    <span>Concepts touched: <strong id="masteryCount">0</strong></span>
+  </p>
+
+  <section class="panel q-card" id="sessionArea">
+    <p class="empty-hint">Press <strong>Start session</strong> for 20 mixed questions across Modules 1–5.</p>
+  </section>
+</div>
+<script>
+const SESSION_SIZE = 20;
+let BANK = [];
+let CONCEPTS = {};
+let state = {
+  flagged: {},       // qid -> true
+  mastery: {},       // conceptId -> { seen, correct, wrong }
+  lastWrongConcepts: [],
+  history: []        // recent question ids
+};
+
+let session = null; // { queue, index, answers, wrong }
+
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  })[c]);
+}
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function persist() {
+  const P = window.AmityProgress || window.BS605Progress;
+  if (!P?.saveSection) return;
+  P.saveSection("v2AdaptiveMcq", {
+    flagged: state.flagged,
+    mastery: state.mastery,
+    lastWrongConcepts: state.lastWrongConcepts,
+    history: state.history.slice(-200),
+  }, "csit745");
+  paintMeta();
+}
+
+function paintMeta() {
+  document.getElementById("bankCount").textContent = String(BANK.length);
+  document.getElementById("flagCount").textContent = String(Object.keys(state.flagged).filter((k) => state.flagged[k]).length);
+  document.getElementById("masteryCount").textContent = String(Object.keys(state.mastery).length);
+}
+
+/**
+ * Whole-subject adaptive pick (NOT module-filtered):
+ * 1) flagged questions still in bank
+ * 2) new angles on recently-wrong concepts
+ * 3) under-covered concepts / unseen questions
+ * 4) fill remaining with shuffled full bank
+ */
+function pickSessionQueue() {
+  const byId = Object.fromEntries(BANK.map((q) => [q.id, q]));
+  const picked = [];
+  const used = new Set();
+
+  function add(q) {
+    if (!q || used.has(q.id) || picked.length >= SESSION_SIZE) return;
+    used.add(q.id);
+    picked.push(q);
+  }
+
+  // 1. Flagged (whole subject)
+  shuffle(Object.keys(state.flagged).filter((id) => state.flagged[id] && byId[id]))
+    .forEach((id) => add(byId[id]));
+
+  // 2. Same-concept new angles from recent wrongs
+  const wrongConcepts = state.lastWrongConcepts.slice(0, 8);
+  wrongConcepts.forEach((cid) => {
+    shuffle(BANK.filter((q) => q.conceptId === cid && !used.has(q.id))).slice(0, 2).forEach(add);
+  });
+
+  // 3. Prefer concepts with low mastery / never seen
+  const scored = BANK.map((q) => {
+    const m = state.mastery[q.conceptId] || { seen: 0, correct: 0, wrong: 0 };
+    const histPenalty = state.history.includes(q.id) ? 3 : 0;
+    const coverage = m.seen;
+    const missRate = m.seen ? m.wrong / m.seen : 0.5;
+    return { q, score: missRate * 2 + (coverage === 0 ? 2 : 0) - histPenalty + Math.random() };
+  }).sort((a, b) => b.score - a.score);
+  scored.forEach(({ q }) => add(q));
+
+  // 4. Absolute fallback: full shuffle
+  shuffle(BANK).forEach(add);
+
+  return shuffle(picked).slice(0, SESSION_SIZE);
+}
+
+function startSession() {
+  if (!BANK.length) {
+    document.getElementById("sessionArea").innerHTML = `<p class="empty-hint">No questions in the bank yet.</p>`;
+    return;
+  }
+  session = {
+    queue: pickSessionQueue(),
+    index: 0,
+    answers: {},
+    wrong: [],
+  };
+  renderQuestion();
+}
+
+function recordAnswer(q, chosen) {
+  const ok = chosen === q.correct;
+  session.answers[q.id] = chosen;
+  const m = state.mastery[q.conceptId] || { seen: 0, correct: 0, wrong: 0 };
+  m.seen += 1;
+  if (ok) m.correct += 1;
+  else {
+    m.wrong += 1;
+    state.flagged[q.id] = true;
+    session.wrong.push(q.id);
+    state.lastWrongConcepts = [q.conceptId, ...state.lastWrongConcepts.filter((c) => c !== q.conceptId)].slice(0, 20);
+  }
+  state.mastery[q.conceptId] = m;
+  state.history = [...state.history.filter((id) => id !== q.id), q.id].slice(-200);
+  persist();
+  return ok;
+}
+
+function renderQuestion() {
+  const area = document.getElementById("sessionArea");
+  if (!session || !session.queue.length) {
+    area.innerHTML = `<p class="empty-hint">Could not build a session.</p>`;
+    return;
+  }
+  if (session.index >= session.queue.length) {
+    renderEnd();
+    return;
+  }
+  const q = session.queue[session.index];
+  const n = session.index + 1;
+  const total = session.queue.length;
+  const pct = Math.round(((n - 1) / total) * 100);
+  const concept = CONCEPTS[q.conceptId];
+  const answered = session.answers[q.id];
+  const locked = answered !== undefined;
+
+  area.innerHTML = `
+    <div class="meta-row">
+      <span>Question <strong>${n}</strong> / ${total}</span>
+      <span>Module <strong>${esc(q.module)}</strong> · ${esc(q.conceptId)}</span>
+    </div>
+    <div class="progress-bar"><i style="width:${pct}%"></i></div>
+    <p class="q-stem" style="margin-top:1rem">${esc(q.stem)}</p>
+    <div class="options" id="opts">
+      ${(q.options || []).map((opt, i) => {
+        let cls = "opt";
+        if (locked) {
+          if (i === q.correct) cls += " correct";
+          else if (i === answered) cls += " wrong";
+        }
+        return `<button type="button" class="${cls}" data-i="${i}" ${locked?"disabled":""}>${String.fromCharCode(65+i)}. ${esc(opt)}</button>`;
+      }).join("")}
+    </div>
+    <div id="fb"></div>
+    <div class="nav-concepts">
+      <a class="btn ghost" href="index.html#${esc(q.conceptId)}">Open in Explorer</a>
+      <button type="button" class="btn primary" id="btnNextQ" ${locked?"":"disabled"}>Next</button>
+    </div>
+  `;
+
+  if (locked) {
+    const ok = answered === q.correct;
+    document.getElementById("fb").innerHTML = `<div class="feedback ${ok?"":"bad"}"><strong>${ok?"Correct.":"Not quite."}</strong> ${esc(q.explanation || "")}${concept ? ` <a href="index.html#${esc(q.conceptId)}">Review ${esc(concept.title)}</a>` : ""}</div>`;
+  }
+
+  area.querySelectorAll(".opt").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      if (session.answers[q.id] !== undefined) return;
+      const chosen = Number(btn.dataset.i);
+      const ok = recordAnswer(q, chosen);
+      // re-render to show feedback
+      const answeredNow = true;
+      area.querySelectorAll(".opt").forEach((b) => {
+        b.disabled = true;
+        const i = Number(b.dataset.i);
+        if (i === q.correct) b.classList.add("correct");
+        else if (i === chosen && !ok) b.classList.add("wrong");
+      });
+      document.getElementById("fb").innerHTML = `<div class="feedback ${ok?"":"bad"}"><strong>${ok?"Correct.":"Not quite."}</strong> ${esc(q.explanation || "")}${!ok ? ` Flagged for review.` : ""} ${concept ? `<a href="index.html#${esc(q.conceptId)}">Review topic</a>` : ""}</div>`;
+      document.getElementById("btnNextQ").disabled = false;
+      document.querySelector(".progress-bar > i").style.width = Math.round((n / total) * 100) + "%";
+    });
+  });
+  document.getElementById("btnNextQ").addEventListener("click", () => {
+    session.index += 1;
+    renderQuestion();
+  });
+}
+
+function renderEnd() {
+  const area = document.getElementById("sessionArea");
+  const total = session.queue.length;
+  const correct = Object.entries(session.answers).filter(([id, chosen]) => {
+    const q = session.queue.find((x) => x.id === id);
+    return q && chosen === q.correct;
+  }).length;
+  const wrongIds = session.wrong;
+  area.innerHTML = `
+    <div class="session-end">
+      <h2>Session complete</h2>
+      <p class="lede">Score: <strong>${correct}</strong> / ${total} · Whole-subject mix (Modules 1–5).</p>
+      ${wrongIds.length ? `
+        <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--warn)">Needs review</h3>
+        <ul class="flag-list">
+          ${wrongIds.map((id) => {
+            const q = BANK.find((x) => x.id === id);
+            if (!q) return "";
+            const title = CONCEPTS[q.conceptId]?.title || q.conceptId;
+            return `<li><a href="index.html#${esc(q.conceptId)}">${esc(title)}</a> — ${esc(q.stem.slice(0, 90))}${q.stem.length>90?"…":""}</li>`;
+          }).join("")}
+        </ul>` : `<p>No flags this round — nice work.</p>`}
+      <div class="nav-concepts">
+        <button type="button" class="btn primary" id="btnAgain">Another 20 (reshuffled)</button>
+        <a class="btn ghost" href="index.html">Back to Explorer</a>
+      </div>
+    </div>
+  `;
+  document.getElementById("btnAgain").addEventListener("click", startSession);
+}
+
+async function loadData() {
+  const [bank, concepts] = await Promise.all([
+    fetch("data/mcq_bank.json").then((r) => r.json()),
+    fetch("data/concepts.json").then((r) => r.json()),
+  ]);
+  BANK = bank.questions || bank;
+  CONCEPTS = concepts.concepts || concepts;
+  paintMeta();
+}
+
+function bootSync() {
+  const P = window.AmityProgress || window.BS605Progress;
+  const UI = window.AmitySyncUI || window.BS605SyncUI;
+  function apply(sub) {
+    const m = (sub && sub.v2AdaptiveMcq) || {};
+    state.flagged = m.flagged || {};
+    state.mastery = m.mastery || {};
+    state.lastWrongConcepts = m.lastWrongConcepts || [];
+    state.history = m.history || [];
+    paintMeta();
+  }
+  if (UI) {
+    UI.mount(document.getElementById("amity-sync-root"), {
+      subjectLabel: "CSIT745",
+      onLoaded: apply,
+      onReady: (sub) => {
+        const local = P?.readLocalCache?.();
+        apply(sub || P?.getSubjectPayload?.(local?.payload, "csit745") || null);
+      }
+    });
+  }
+}
+
+document.getElementById("btnStart").addEventListener("click", startSession);
+bootSync();
+loadData().catch((err) => {
+  document.getElementById("sessionArea").innerHTML = `<p class="empty-hint">Failed to load bank: ${esc(err.message)}</p>`;
+});
+</script>
+</body>
+</html>

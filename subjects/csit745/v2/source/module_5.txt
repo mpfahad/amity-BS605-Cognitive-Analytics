@@ -1,0 +1,2174 @@
+--- page 131 ---
+124
+Research Methodology
+Notes
+Amity University Online
+Module - V: Report Writing 
+Learning Objectives
+At the end of this module, you will be able to:
+● 
+Discuss Research Report Writing
+● 
+Explain the concept of Presentation
+● 
+Infer Writing a Research Paper
+● 
+State Planning a Project Proposal
+Introduction
+A report is a very formal document that is composed for a variety of objectives, 
+including sciences, social sciences, engineering, and business disciplines. Essentially, 
+the process of looking for a certain assignment is documented in a report. 
+5.1 Research Report Writing
+It is important to recognise that reports are regarded as legal papers in all 
+workplaces.
+5.1.1 Meaning of Research Report
+There are three fundamental characteristics that define report writing at a basic 
+level:
+●
+●
+a predefined structure, 
+●
+●
+independent sections
+●
+●
+reaching unbiased conclusions.
+Predefined structure: In a broader context, these headers may serve as indicators 
+of different parts within a report, such as an introduction, discussion, and conclusion.
+Independent sections: Each section in a report is separately written, because if 
+the reader wants to selectively identify the report sections they are interested in, rather 
+than reading the whole report in one go from top to bottom.
+Unbiased conclusions: Another aspect of report writing is that it is a kind of writing 
+that is impartial and objective.
+5.1.2 Structure of Scientific Report
+The preliminaries 
+●
+●
+Title page. 
+●
+●
+Preface or foreword, acknowledgements. 
+●
+●
+Graphs or illustrations, tables, charts. 
+●
+●
+Table of contents. 
+Contents of the Report: 
+1. 	 Introduction 
+
+
+The research aims to achieve specific goals, provide a clear characterisation 
+of the issue, propose hypotheses, and define key concepts. 
+(c) Amity University Online
+
+
+--- page 132 ---
+Research Methodology
+125
+Notes
+Amity University Online
+
+
+Literature review and analysis of research. 
+
+
+Please provide the specific details on the time, location, and resources 
+required for the survey. 
+
+
+Scope refers to the extent or range of anything. Assumptions are beliefs or 
+ideas that are taken for granted without proof. Limitations are restrictions or 
+constraints that affect the boundaries or capabilities of something. 
+
+
+Methods of organisation and selection of samples. 
+
+
+Approaches, instruments, and methodologies employed for the acquisition of 
+knowledge.
+2.	
+Analysis and presentation of results: 
+
+
+Report containing factual information on the type, volume, and dimensions. 
+
+
+Quantitative analysis of knowledge. 
+
+
+Summary of the research results and suggested actions.
+3. 	 The reference materials: 
+
+
+References. 
+
+
+Appendices consist of surveys, statistics tables, and other related materials. 
+
+
+Glossary: A comprehensive list of terms and their definitions. 
+
+
+Index: An alphabetical list of terms with corresponding page numbers for easy 
+reference.
+5.1.3 Components of a Scientific Report
+A technical report is primarily intended for other academics and, as such, may be 
+structured in a fundamentally different manner. In this type of report, the researcher is 
+required to provide a comprehensive explanation of the technical components, including 
+both the sample techniques and the topic matter. Colleagues in the same field are 
+mostly focused on the techniques employed. The extent of the search is determined 
+by the strategies employed. The design of the sample for the conceptual and analytical 
+framework should be well elucidated. A technical report possesses the following 
+characteristics: 
+●
+●
+Main searching and contents: The primary search functionality and content will be 
+limited to two or three pages. 
+●
+●
+Nature of the research work: Which describes the general objectives of the study, 
+formulation of the problem in operational items, the working hypothesis, the type of 
+analysis, data required, etc.
+●
+●
+Research methodology: Provides an explanation of the different techniques 
+employed and their inherent constraints. For example, factors such as sample size 
+and sample selection. 
+●
+●
+Data analysis: The report should thoroughly examine the data, including their 
+sources, qualities, and limits. If secondary data are utilised, they must be 
+appropriate for the given situation. When conducting a survey, it is essential to 
+provide a comprehensive description of the data collection procedure. 
+●
+●
+Findings presentation: The researcher delivers the primary results of the study 
+together with corroborating evidence in the form of tables and figures. The primary 
+content of the report often spans many chapters.
+●
+●
+Bibliography: This contains the main sources of secondary data. 
+(c) Amity University Online
+
+
+--- page 133 ---
+126
+Research Methodology
+Notes
+Amity University Online
+●
+●
+Technical appendices: These encompass all technical aspects related to surveys, 
+mathematical derivations, detailed explanations of specific analytic methodologies, 
+and similar topics.
+5.1.4 Types of Reports
+There are two types of reports (1) Oral report (2) Written report
+1.  Oral Report When the researchers are asked to make an oral presentation then 
+they prepare this type of oral report. It is more difficult to prepare as compared to the 
+written report. Because here the reporter interacts directly with the audience. Any 
+delay during an oral presentation can leave a negative impression on the audience. 
+This may also lower the self-confidence of the presenter. Communication plays a big 
+role In an oral presentation. A lot of planning and thinking is required to decide ‘What 
+to say’, ‘How to say’, ‘How much to say’. The presenter should have to face a bunch of 
+questions from the audience. A lot of preparation is required; the broad classification 
+of an oral presentation is as follows. Nature of an Oral Presentation Opening: A 
+descriptive statement may be made on the basis of the nature of discussion that 
+will follow. The opening statement should provide a clear description of the project’s 
+attributes, its origins, and the objectives that were pursued.
+	
+Finding/Conclusion: Every conclusion may be articulated and supported by empirical 
+evidence. Suggestion: It is essential for every advice to be backed with a conclusion. 
+Following the lecture, there may be a question-and-answer session conducted by 
+the audience. Presentation procedure: If it is necessary to display visuals, they can 
+be utilised. The utilisation of tabular format for presenting statistical data is essential 
+in facilitating comprehension for the audience.
+(a)  A root question is a form of presentation. Is the content being recited from a 
+written document, memorised, or presented spontaneously without prior 
+preparation? It is not advisable to rely on memorisation, as there is a possibility 
+of making a mistake during a presentation.
+(b)  Secondly, it generates a speaker-centric approach. To effectively deliver an 
+impromptu speech, it is advisable to create concise notes on the essential 
+ideas, which may then be elaborated upon. It is important to adhere to logical 
+sequencing.
+Points to remember in oral presentation: 
+
+
+The language employed should be uncomplicated and comprehensible. 
+
+
+Time management should be followed strictly. 
+
+
+The utilisation of visual aids such as charts and graphs will augment the 
+comprehension of the audience.
+
+
+Vital material, such as numerical information, can be printed and distributed to 
+the audience. This allows them to enhance their understanding by referring to 
+it throughout the presentation. 
+
+
+In order to deliver a customised presentation, it is crucial for the presenter 
+to have a thorough understanding of the target audience beforehand. The 
+researcher should possess an understanding of the intended objective of the 
+report, such as whether it is intended for decision-making purposes or for the 
+dissemination of information.
+(c) Amity University Online
+
+
+--- page 134 ---
+Research Methodology
+127
+Notes
+Amity University Online
+The following are the different categories of written reports:
+A)  Reports can be classified based on the time-interval such as:
+1)	 Daily
+2)	 Weekly
+3)	 Monthly
+4)	 Quarterly
+5)	 Yearly
+B)	
+Type of reports:
+1)	 Short report
+2)	 Long report
+3)	 Formal report
+4)	 Informal report
+5)	 Government report
+ 
+A short report is composed when the issue is clearly identified and the extent of the 
+investigation is restricted. 
+ 
+As an illustration, consider the monthly sales report. It will span around five pages. 
+The report contains information on the progress accomplished in relation to a given 
+product in a specified geographical area.
+2. 
+The long report is a fusion of both a technical and non-technical report. It can depict 
+the findings of the investigation in a comprehensive manner.
+a)	 Technical report: This report shall encompass the data sources, study 
+methodology, sample design, tools utilised for data collection, information 
+analysis technique, appendix, conclusion, and comprehensive suggestions 
+based on particular results. When referring to any magazine, article, or 
+periodical, it is important to include references for the benefit of the reader.
+b)  Non-technical report: This report is intended for those who do not possess 
+technical qualifications.
+ 
+For example, the head of the financial department. He may be solely focused 
+on the financial ramifications, such as profit margins, sales volumes, and so 
+on. He lacks interest in the process.
+3. 
+Formal report: The marketing head has prepared a report to be sent to the Vice-
+President of marketing about the quarterly performance, specifically focusing on test 
+marketing.
+4. 	 Informal report: The supervisor’s report, published by completing the shift log book, 
+for the benefit of his colleagues.
+5.	
+Government report: These reports are often generated by either state governments 
+or the federal government to address specific issues. The programme for the rural 
+employment strategy has been announced as part of the five-year plan.
+5.1.5: Steps in Report Writing
+Once the type of report has been determined, the subsequent stage is to prepare 
+the report. The subsequent text outlines the structure of a research report:
+1. 	 Title Page
+(c) Amity University Online
+
+
+--- page 135 ---
+128
+Research Methodology
+Notes
+Amity University Online
+2. 	 Page Contents
+3. 	 Executive Summary
+4. 	 Body
+5. 	 Conclusions and Recommendations
+6. 	 Bibliography
+7. 	 Appendix
+1. 	 Title Page: The title page should clearly state the subject of the report. The report 
+should contain the name of the individual or organisation responsible for its 
+preparation.
+2. 	 Table of Contents: The table of contents provides a comprehensive overview of the 
+materials included in the report. The table of contents should clearly delineate the 
+distinct components or divisions of the report. It might potentially signify the titles of 
+the chapters combined with their corresponding page numbers.
+Chapter no. 
+ Title of the chapter 
+ Page no.
+1
+Declaration
+2
+Certificates
+3
+Acknowledgement
+4
+Executive summary
+5
+Introduction to the project
+6
+Research design and methodology
+Theoretical perspective of the study
+Company and industry profile
+Data analysis and interpretation
+Summary of findings, suggestions and conclusions
+Bibliography
+Appendix
+3. 	 Executive Summary: If the report is excessively lengthy and verbose, the intended 
+recipient of the report may not have the available time to thoroughly read and 
+comprehend it. Introducing an executive summary will aid in emphasising key 
+elements. This is a concise rendition of the whole report. The document should be 
+limited to one or two pages in length. Given that top-level executives exclusively 
+peruse the executive summary, it is imperative that it be both precise and eloquently 
+composed. An executive summary should facilitate the process of decision-making.
+An executive summary should have,
+
+
+Objectives
+
+
+Brief methodology
+
+
+Important findings
+
+
+Key results
+
+
+Conclusion
+4. 	 The Body: This section includes
+
+
+Introduction
+
+
+Methodology
+(c) Amity University Online
+
+
+--- page 136 ---
+Research Methodology
+129
+Notes
+Amity University Online
+
+
+Limitations
+
+
+Analysis and interpretations
+
+
+Introduction: Provide a concise and explicit description of the decision issue 
+and the research purpose. The background knowledge should be allocated to 
+the product and services offered by the organisation being examined.
+
+
+Approach: The process of data collection is detailed in this section. 
+
+
+For example, was original data gathered or was secondary data utilised? Was 
+a survey instrument employed? Could you please provide information on the 
+sample size, sampling plan, and method of analysis? Was the design process 
+characterised by exploration or a definitive conclusion?
+
+
+Constraints: Each report will inevitably be subject to some limitations, such as 
+temporal constraints, geographical limitations, the chosen technique, accuracy 
+of the replies, and so on.
+
+
+Data analysis and interpretation: The acquired data will be organised into 
+tables. If there are any statistical tools available, they will be used. Notes can 
+be utilised for the purpose of analysis and decision-making.
+5. 	 Conclusion and Recommendation:
+a) 	 What were the outcomes drawn from the study?
+b)	 Based on the study, what recommendation do you make?
+6. 	 Bibliography: When the report relies on secondary data, provide a bibliography 
+section to enumerate the publications or sources that you have referenced. The 
+bibliography should include the book’s title, the journal’s name for articles, the 
+volume number, page number, edition, and other relevant details.
+7.  Appendix: An appendix is a section of a report that is used to provide non-essential 
+content. The appendix contains duplicates of data collecting forms known as 
+questionnaires, as well as information on the company’s annual report, graphs/
+charts, images, CDs, and interviewers’ instructions. The following items are to be 
+included in this section.
+
+
+Data collection forms
+
+
+Project related paper cuttings
+
+
+Pictures and diagrams related to project
+
+
+Any other relevant things.
+5.1.6 Format and Writing Style
+A well-formed physical layout is most important, as it may help the report these 
+are:
+●
+●
+Create a favourable first impression.
+●
+●
+Motivate the readers by providing a clear overview of the organisational structure 
+of the information, 
+●
+●
+Enabling them to promptly decide which section to read first.
+Particular attention should be paid to make sure there is:
+●
+●
+An efficient design for the title page and a concise table of contents.
+●
+●
+Uniformity in margins and spacing.
+(c) Amity University Online
+
+
+--- page 137 ---
+130
+Research Methodology
+Notes
+Amity University Online
+●
+●
+Ensure uniformity in headings and subheadings by using specific font sizes and 
+styles. For instance, use font size 16 or 18 in bold for chapter headings, font size 
+14 in bold for main section headings, and type size 12 in bold for subsection 
+headings.
+●
+●
+High-quality printing and photocopying services. Thoroughly revise documents 
+by using spell check and engaging in critical reading to ensure clarity, with the 
+assistance of other team members.
+●
+●
+Allocate a distinct numerical identifier to each figure and table, ensuring that tables 
+have unambiguous names and columns and rows have clear headers.
+●
+●
+Precision and uniformity in citations and sources.
+Style of Report Writing
+Remember that the reader:
+● 
+Has short of time,
+● 
+Has many other urgent matters demanding his or her interest and attention,
+● 
+Is probably not knowledgeable concerning ‘research jargon’.
+Therefore, the rules are:
+● 
+Simplify. Keep to the essentials.
+● 
+Justify. Make no statement that is not based on facts and data.
+● 
+Quantify when you have the data to do so. Avoid large, small, instead, say 50%, one 
+in three.
+● 
+Be precise and specific in your phrasing of findings.
+● 
+Inform, not impress. Avoid exaggeration.
+● 
+Use short sentences. Use adverbs and adjectives sparingly. Notes
+● 
+Avoid the passive voice, if possible, as it creates vagueness (e.g., ‘patients were 
+interviewed leaves uncertainty as to who interviewed them) and repeated use makes 
+dull reading.
+● 
+Aim to be logical and systematic in your presentation.
+5.1.7 Illustrations and Tables
+Tables, figures, drawings, and similar things can be designated using the term 
+“Table”, “Figure”, or another suitable descriptor, and should include a title and/
+or caption. The title or caption should be incorporated into the List of Tables, List of 
+Figures, or any other relevant list.
+Consistency in the format of titles and captions for tables, figures, drawings, and 
+similar things is necessary for the entirety of the thesis.
+●
+●
+The text in tables and figures should have a minimum height of 2 mm to ensure 
+legibility. 
+●
+●
+Additionally, these elements, including tables, figures, and drawings, must be 
+accompanied by titles or captions and be appropriately numbered.
+●
+●
+The placement of headings or captions for tables, figures, or illustrations might be 
+either above or below them.
+(c) Amity University Online
+
+
+--- page 138 ---
+Research Methodology
+131
+Notes
+Amity University Online
+●
+●
+Headings must be replicated on the second and subsequent pages of tables that 
+are divided over two or more pages. 
+●
+●
+Tables should be divided at a suitable location, such as right before a completely 
+new subheading. 
+●
+●
+The formatting for titles and captions of tables, figures, illustrations, and similar 
+items must remain consistent throughout the thesis.
+Numbering
+Tables, figures, drawings, and other similar elements should be sequentially 
+numbered based on their order of presentation in the thesis.
+There are two approaches for assigning numbers to Tables, Figures, and other 
+items:
+●
+●
+sequentially throughout the thesis, e.g. 1, 2, 3…
+●
+●
+chapter number first, then numbered sequentially within each chapter, e.g.:
+Tables in Chapter 1: Table 1.1, 1.2, 1.3…
+Figures in Chapter 3: Figure 3.1, 3.2, 3.3…
+Regardless of the chosen technique, the numbering style must be consistent for all 
+numbered items. For instance, it should be either Table 1.1 and Figure 1.3, or Table 1 
+and Figure 3, but not Table 1 and Figure 1.3.
+Location
+There are three acceptable locations for tables and figures:
+●
+●
+within the chapter immediately following first relevancy them
+●
+●
+grouped at the bottom of the relevant chapter
+●
+●
+grouped at the bottom of the thesis before the bibliography
+Regardless of the strategy we use, we desire to maintain consistency.
+If tables and figures are consolidated at the end of the thesis, it is necessary to 
+provide an item in the table of contents that guides the reader to their specific place.
+If the caption for a figure, table, or any other visual representation cannot be 
+accommodated on the same page as the corresponding picture, it should be placed on 
+a separate page.
+Reproducing and Reducing
+Copying or lowering the size of figures such as charts, drawings, graphs, pictures, 
+maps, etc. may result in visuals that are difficult to read. Following the reduction, 
+it is imperative that all lettering is sufficiently large to comply with the font size 
+specifications, and must be easily legible and unambiguous.
+Copyrighted Material
+If we exclude copyrighted tables, figures, or illustrations from our thesis, we must 
+enter the corresponding replacement at the same location where the table, figure, or 
+image was originally located:
+●
+●
+An assertion that the material must be eliminated as a result of copyright 
+limitations.
+(c) Amity University Online
+
+
+--- page 139 ---
+132
+Research Methodology
+Notes
+Amity University Online
+●
+●
+The text provides a detailed account of the material and the corresponding 
+information it encompasses, along with a hyperlink to an online source, if 
+accessible.
+●
+●
+The complete reference to the original source of the material
+For longer reports that contain dozens of figures and tables , produce separate lists 
+of figures and tables. Place them along on a similar page if they work, as shown in the 
+illustration below. We can combine the two lists under the heading, “List of Figures and 
+Tables,” and establish the things as figures or tables as is done in the illustration below.
+ 
+Ref: https://openoregon.pressbooks.pub/technicalwriting/chapter/10-5-list-of-figures-and-tables
+5.1.8 Citing and Referencing Sources
+Footnotes in a research paper contain numerical references. For instance: ‘Recent 
+studies suggest that...’ This number corresponds directly to the references. 
+The following list presents the recorded articles in consecutive sequence as they 
+(c) Amity University Online
+
+
+--- page 140 ---
+Research Methodology
+133
+Notes
+Amity University Online
+are referenced in our study report. This feature will be advantageous since it allows us 
+to include comments, footnotes, and references. 
+● 
+The arrangement of individual citations inside the bibliography follows the same 
+format as the Harvard method. 
+● 
+If we find that we are referring to the same thing many times, we shall utilise common 
+bibliographic abbreviations to avoid duplicating the references in their entirety. 
+● 
+The publications mentioned exclusively include those that we have referenced in 
+our study. The section should be titled ‘References’ instead of ‘Bibliography’, as 
+indicated below.
+Abbreviation 
+Explanation
+Op. cit. (opereciato
+Meaning, in the work cited. This refers to a work previously referenced 
+and so you must give the author and date and if necessary the page 
+number, like: Robson (1993) op. cit. pp. 23-4.
+Loc. Cit. (loco ciato
+Meaning, in the place cited. This refers to the same page of a work 
+previously referenced. So you must give the author and date, like: 
+Robson (1993) loc. Cit.
+Ibid. (ibidem)
+Meaning, the same work given immediately before. This refers to the 
+work referenced immediately before and replaces all details of the 
+previous reference other than a page number if necessary.
+5.1.9: Footnotes
+Researchers must insert footnotes within the appropriate places. These fulfil two 
+purposes: 
+●
+●
+The correct identification of materials utilised in quotations in the report. 
+●
+●
+The footnotes provide supplementary value to the main part(body) of the text. 
+Based on the footnotes’ description, one can easily refer to the cross references, 
+citation of authorities and sources, acknowledgement and elucidation or 
+explanation of a degree of view. The recent trend is to avoid footnotes. Some 
+people feel that they enhance the display of the scholarship of the researchers. 
+But it’s neither an end nor a means of displaying scholarship. 
+When using footnotes, a variety of references are shown within the research report.
+For example: ‘Recent research indicates that…’ This number refers directly to the 
+references
+5.2 Presentation
+As reports are better understood when accompanied by a presentation, 
+presentations have grown in importance as a communication tool in businesses. 
+Readers can engage in a conversation with the report’s author(s) to learn about the 
+process of thought that went into writing it. Consequently, it is required of the manager 
+to be equally proficient in presenting as well as drafting reports. 
+5.2.1 Oral Presentation
+Oral Report
+When the researchers are asked to make an oral presentation then they prepare 
+this type of oral report. It’s more difficult to prepare as compared to the written report. 
+(c) Amity University Online
+
+
+--- page 141 ---
+134
+Research Methodology
+Notes
+Amity University Online
+Because here the presenter directly interacts with the audience. Any delay during an 
+oral presentation can leave a negative impression on the audience and also violates 
+the self-confidence of the presenter. Communication plays a big role In an oral 
+presentation. A lot of planning and thinking is required to decide ‘What to say’, ‘How to 
+say’, ‘How much to say’. Also, the presenter should have to face a bunch of questions 
+from the audience. A lot of preparation is required; the broad classification of an oral 
+presentation is as follows.
+Nature of an Oral Presentation
+Opening: A brief statement will be created on the character of dialog that may 
+follow. The opening statement ought to make the nature of the project, however it took 
+place and what was tried.
+Finding/Conclusion: Every conclusion is also declared to protect by findings.
+Recommendation: Every recommendation should have the support of conclusion. 
+At the bottom of the presentation, a question-answer session should follow from the 
+audience.
+Method of presentation: Visuals, if they have to be compelled to exhibit, can be 
+made use of. The use of tabular form for statistical information would help the audience.
+a)	
+What form of presentation could be a root question? Is it browsed from a manuscript 
+or memorized or delivered extempo. Memorisation is not recommended, since there 
+could be a slip during the presentation. 
+b) 
+Secondly, it produces a speaker-centric approach. Even reading from the manuscript 
+is not recommended, because it becomes monotonous, dull and lifeless. The best 
+procedure to present an ex-tempo, is to make main points notes, so that the same 
+can be expanded.
+Logical sequences should be followed.
+Points to remember in oral presentation:
+
+
+Language used must be simple and understandable.
+
+
+Time Management should be adhered to.
+
+
+Use of charts, graphs, etc., will enhance understanding by the audience.
+
+
+Vital data such as figures may be printed and circulated to the audience so 
+that their ability to comprehend increases, since they can refer to it when the 
+presentation is going on.
+
+
+The presenter should know his target audience well in advance to prepare 
+tailor-made presentations.
+
+
+The presenter should know the purpose of the report such as “Is it for making 
+a decision”, “Is it for the sake of information”, etc.
+5.2.2 Making Presentation
+Golden Rule
+Human attention is extremely limited. Don’t cram an excessive amount of 
+information, either in each slide, or within the whole talk. Avoid details: they will not be 
+remembered anyway.
+(c) Amity University Online
+
+
+--- page 142 ---
+Research Methodology
+135
+Notes
+Amity University Online
+Organisation
+● 
+Have a really clear introduction, to motivate what we are doing and to present the 
+matter we want to resolve. The introduction isn’t technical in nature, but strategic.
+● 
+If we have got a companion paper, mention it during the talk and recommend it for 
+more details. Don’t put all the main points within the talk. Present only the important 
+ones.
+● 
+Use only 1 idea per slide.
+● 
+Have a good conclusion slide: put there the most ideas, those we actually want 
+people to recollect. Use only 1 conclusions/slide.
+● 
+The conclusion slide should be the last one. Don’t put other slides after conclusions, 
+as this may weaken their impact.
+● 
+Having periodic “talk outline” slides (to show where we are within the talk) helps, 
+especially for extend talks. A minimum of one “talk outline” slide is extremely useful, 
+usually after the introduction.
+● 
+Don’t judge the audience to recollect any detail from one slide to another (like 
+color-coding, applications you measure, etc.). If we want to remember, re-state the 
+information a second time.
+● 
+Especially if we’ve got to present many various things then try to build a unifying 
+thread. The talk should be sequential in nature (i.e. no big conceptual leaps from one 
+slide to the next).
+● 
+Try to chop out the maximum amount as possible; less is healthier.
+● 
+Help the audience understand where we’re going. Often it’s best to allow them a 
+high-level overview first, and then plunge into the details; then, while paying attention 
+to the details they can relate to the high-level picture. This also helps them save 
+important brain power for later parts of the talk which may be more important.
+Mechanics
+● 
+Use a decent presentation-building tool, like MS PowerPoint. Avoid Latex, aside 
+from slides with formulas.
+● 
+Humour is extremely useful; prepare one or two couple of puns and jokes beforehand 
+. However, if we’re not familiar with jokes then better ways to avoid them altogether. 
+● 
+The more we rehearse the talk, the better it will be. A rehearsal is most helpful once 
+carried out loud. 5 rehearsals is a minimum for an important talk.
+● 
+The more people criticize our talk (during practice), the better it will be; pay attention 
+to criticism, not necessarily to all suggestions, but try to see what and why people 
+misunderstood your ideas.
+● 
+Everything hasn’t to be written down.
+● 
+Be enthusiastic.
+● 
+Present to explain, ask instant questions, act surprisingly, etc.
+● 
+Give individuals some time to think about the vital facts by slowing down, or by 
+putting on a mute for a moment.
+● 
+Do not go overtime under any circumstance.
+● 
+Listen to the queries terribly carefully; several speakers answer totally different 
+questions than the ones asked.
+(c) Amity University Online
+
+
+--- page 143 ---
+136
+Research Methodology
+Notes
+Amity University Online
+● 
+Don’t treat the audience as mentally-impaired: don’t explain the completely obvious 
+things.
+Text
+● 
+Slides ought to have short titles. An extended title shows one thing is wrong.
+● 
+Use uniform capitalisation rules.
+● 
+All the text on one slide ought to have the identical structure .
+● 
+Put little or no text on a slide. Don’t put more than one plan in one slide. If we have 
+lots of text, people will read it faster than we talk, and will not pay attention to what 
+we say.
+● 
+Don’t use small fonts.
+● 
+Use very few formulas (one per presentation). The identical goes for program code 
+(maximum one code fragment for one presentation).
+● 
+Do not place useless graphics on every slide: logos, grids, affiliations, etc.
+● 
+Spell-check. A spelling mistake is an attention magnet.
+Illustrations
+● 
+Use suggestive graphical illustrations to the maximum amount as attainable. Don’t 
+shun graphical metaphors. Prefer an image to text. 
+● 
+Do not put in the figures details which will not be mentioned explicitly. The figures 
+ought to be as schematic as attainable.
+● 
+Don’t “waste” info by victimising spare colour. Each different colour should signify 
+something different, and something important but don’t use too many different 
+colours. Have high-contrast colours.
+● 
+For some strange reason, rectangles with shadows appear to look far better than 
+without .
+● 
+Sometimes a matte pastel background looks far better than a white one.
+● 
+Exploit animation with restraint. Don’t use fancy animation effects unnecessarily.
+● 
+However, there are places where animation is much more effectible, e.g., to depict 
+the evolution of a complex system, or to introduce related ideas one by one.
+● 
+Use strong colours for important stuff, pastel colours for the unimportant.
+● 
+Employ information cleverly: e.g. make arrow widths showing flows proportional to 
+the flow capacity.
+● 
+Use thick lines in drawings (e.g. 1 1/2 points or more).
+5.2.3 Use of Visual Aids
+Visual aids can enhance our presentations - they can increase the audience’s 
+understanding about a topic, explain points, make an impact and create enthusiasm. It’s 
+become more useful to make data visual
+What are visual aids?
+Visual aids are peripherals of a visual manner, like as graphs, photographs, video 
+clips etc are rather than spoken information. Visual aids shall be selected depending on 
+their purpose, as an example:
+(c) Amity University Online
+
+
+--- page 144 ---
+Research Methodology
+137
+Notes
+Amity University Online
+Summarise Information
+Reduce the amount of spoken words, for example, show a graph of results rather 
+than reading them out.
+Clarify and Show Examples
+Create more of an impact, for example, if our presentation is on the health risks 
+of smoking, then show images of the effects of smoking on the body rather than 
+describing this. 
+● 
+Emphasise what you’re saying.
+● 
+Make a point memorable.
+● 
+Enhance credibility.
+● 
+Engage the audience and maintain their interest.
+● 
+Make something easier for the audience to understand
+● 
+Preparation and use of visual aids
+If we decide that we want to use it as a visual aid, then we must make sure that 
+the audience is able to easily understand the image (it must be clear). They should be 
+employed throughout our speech but try to only use visual aids for essential points as it 
+can be tiring for the audience to skip from one visual to another.
+Preparation
+Think about how a visual aid can support our message and what do you want the 
+audience to do?
+● 
+Ensure that our visual aid follows what we’re saying or this will confuse the audience.
+● 
+Avoid cluttering of the picture.
+● 
+Visual aids must be clear, concise and of a high quality.
+● 
+Keep the style consistent, such as, the same font, colours, positions etc
+● 
+Use graphs and charts to present data.
+● 
+The audience should not be trying to read and listen at the same time - use visual 
+aids to highlight points.
+One message per visual aid, for example, on a slide there should only be one key 
+point.
+● 
+Employ visual aids in moderation to emphasise and support main points.
+● 
+Ensure that the presentation still works without visual aids in case of technical 
+problems.
+During the Presentation
+● 
+Make sure that the visual aids should be seen by everyone in the audience.
+● 
+Avoid reading from the visual aid.
+● 
+As soon as the visual aid is shown the audience’s attention will be drawn to it so 
+must immediately explain it. 
+● 
+Make it clear to the audience why they are using it.
+● 
+When there is no need for visual aid, ensure that the audience can’t see it.
+(c) Amity University Online
+
+
+--- page 145 ---
+138
+Research Methodology
+Notes
+Amity University Online
+There are a variety of different types of visual aids like as:
+PowerPoint
+Microsoft PowerPoint is vastly employed for presentations because it’s too easy 
+to create. We can insert a range of visual items into the slides which will improve the 
+audience’s focus. Also, the audience can generally see slideshows better than other 
+visual aids.
+Tips:
+1. Have a clear and simple background.
+2.	 Avoid using too many different types of fonts or font sizes.
+3. Only use animations for a purpose, such as, to reveal the stages of a process, 
+otherwise this can be distracting and look amateurish.
+4. Use a large font size - a minimum of 24pt.
+5.	 Use bullet points to summarise key points.
+6.	 Consider providing handouts of diagrams because the audience will find the 
+diagrams easier to read.
+7.	 Avoid putting too much text on a slide.
+8.	 Avoid using red or green text as it’s difficult to read.
+9.	 There should only be one key point for each slide.
+Whiteboards
+Whiteboards are great for providing further explanations, such as, showing the 
+order of a process, creating diagrams or explaining complex words or phrases. They’re 
+often used to display headings and write down audience suggestions. Whiteboards are 
+also ideal for displaying vital data for the whole period of the presentation, such as, key 
+definitions, as a result the audience will simply look at the whiteboard for a reminder.
+Tips:
+
+
+Ensure that enough time has passed for the audience to take notes before 
+rubbing something off of the whiteboard.
+
+
+Write concisely to avoid facing away from the audience for too long.
+
+
+Handwriting must be large and legible.
+Handouts
+Handouts are papers that contain key information from the presentation or they 
+may provide further information that prevent us from overwhelming the audience as 
+there’ll be less data on the slides and so less data they have to put in while writing 
+down.
+Tips:
+
+
+If given at the beginning and middle of the presentation the audience may be 
+reading rather than listening.
+
+
+If given at the end of the presentation the audience may be trying to take 
+lots of notes which may reduce the amount of information they are actually 
+understanding.
+(c) Amity University Online
+
+
+--- page 146 ---
+Research Methodology
+139
+Notes
+Amity University Online
+To manage this, provide the audience with partially completed handouts so they will 
+have to listen to what we’re saying to be able to fill in the gaps. Providing the audience 
+with graphs and charts beforehand is also beneficial because the audience will find 
+them easier.
+Video Clips
+Using videos are a good way to engage the audience and increase their attention. 
+Use video to bring motion, pictures and audio into the presentation.
+Tips:
+
+
+Ensure that any videos used are relevant to the presentation’s content.
+
+
+Only show as much of the video as necessary.
+
+
+Never show a really long clip.
+
+
+Inform the audience how long the video will last.
+Flip Chart
+Flip charts offer a low cost and low tech solution to record and convey information. 
+They’re more beneficial for smaller audiences and they are favoured for brainstorming 
+sessions for gathering ideas easily. Flip charts are also widely used for summarising 
+information and, like with a whiteboard.
+Posters
+Poster boards can be created using a variety of visual devices, such as graphs and 
+images. They’re generally quite portable and we can make them as elaborate as we 
+want. However, they can be expensive to produce if the poster is quite complex.
+5.2.4: Importance of Effective Communication
+Good communication plays an essential role to get success in the workplace and in 
+personal life also. Leaders who know how to communicate effectively with those around 
+them and will see better productivity and improved relationships in every aspect of their 
+lives.
+Effective communication involves knowing how to listen attentively. It’s the ability 
+to offer empathy, open-mindedness, and helpful feedback. Also, a friendly demeanour, 
+confidence, and quality nonverbal communication will also help us, as a manager, 
+develop good relationships with the members of our team.
+Let’s explore some benefits of effective communication you will see in- and outside 
+your office when you take the time to nurture these skills.
+1.	
+Building trust
+ 
+Effective communication fosters trust with others. Our ability to listen attentively and 
+embrace different points of view helps others keep a trust that we are making optimal 
+decisions for everyone in the group. 
+2. 	 Preventing or resolving problems 
+ 
+The ability to communicate effectively plays a large role in resolving conflicts and 
+preventing potential ones from arising. The key is to remain calm, make sure all 
+parties are heard and find a solution that is ideal for everyone involved.
+(c) Amity University Online
+
+
+--- page 147 ---
+140
+Research Methodology
+Notes
+Amity University Online
+3. 	 Providing clarity and direction
+	
+With effective communication skills, we’re able to deliver clear expectations and 
+objectives for our team. This involves finding constructive ways to point out when 
+something isn’t working as well as providing helpful feedback to get people back on 
+track. They will understand their specific tasks and responsibilities, as well as those 
+of their teammates, which will help eliminate conflicts and confusion.
+4. 	 Creates better relationships
+	
+Good communication also improves relationships, both with employees and in our 
+personal life with friends and family members.. This, in turn, nurtures mutual respect.
+5. 	 Increases engagement
+ 
+With people feeling more confident in their work and in their understanding of what 
+they need to do, they become more engaged with their work as a whole. According 
+to a recent study exploring the psychology of employee engagement, only 15% 
+of adult employees are engaged with their employers. By prioritizing effective 
+communication, we can increase engagement, and thus boost satisfaction, among 
+our team members.
+6. 	 Improves productivity
+	
+When team members understand their roles, the roles of others and our expectations, 
+they can focus more on their work and less on workplace issues. With effective 
+communication, conflicts are resolved quickly, employees can better manage their 
+workload and distractions are minimized. These benefits contribute to greater 
+productivity .
+7. 	 Promotes team building
+	
+With improved communication, team members will be better able to rely on each 
+other. Build positive feelings and relationships between the team members, which 
+leads to improved morale and work experiences.
+	
+Good communication skills can play an important role in nurturing positive work 
+experiences for your entire team.
+5.2.5 Convention and Strategies of Authentication
+Endless description without interpretation is another pitfall. Tables need 
+conclusions, not detailed presentation of all numbers or percentages within the cells 
+which readers can see for themselves.
+Neglect of qualitative data is additionally quite common. Still, quotes of informants 
+as illustrations of our findings and conclusions make our report lively. They even 
+have scientific value in allowing the reader to draw his/her own conclusions from the 
+knowledge we established. (Assuming we aren’t biased in our representation!)
+Sometimes qualitative data (e.g., open opinion questions) are just coded and 
+counted like quantitative data, without interpretation, whereas they’ll be providing 
+interesting illustrations of reasons for the behaviour of informants or of their attitudes. 
+This can be a serious maltreatment of data that needs correction.
+The following must be avoided while preparing a report:
+
+
+ The inclusion of careless, inaccurate, or conflicting data.
+
+
+The inclusion of outdated or irrelevant data.
+(c) Amity University Online
+
+
+--- page 148 ---
+Research Methodology
+141
+Notes
+Amity University Online
+
+
+Facts and opinions that aren’t separated.
+
+
+Unsupported conclusions and proposals.
+
+
+Careless presentation and proofreading.
+
+
+An excessive amount of emphasis on appearance and not enough on content.
+5.3 Writing a Research Paper
+Writing a research paper is a fundamental component of academic and 
+professional research. It involves presenting original findings or insights on a specific 
+topic, grounded in systematic research and analysis. A well-written research paper 
+contributes to the body of knowledge in a particular field and communicates your 
+research findings clearly and effectively.
+5.3.1 Preparing Research Papers for Journals
+Here we described a series of steps to make a research paper for journals. Such 
+as
+1. 	 Determine the authors. When designing a search project, we recommend preparing 
+an initial list and order of authors. Such inventory authors should be supported by 
+established guidelines and should make explicit the estimated contribution of every 
+individual to the project. We recommend that every research group establish and 
+make known to its members the criteria for authorship on papers resulting from the 
+work to be conducted. A list of authors make sure that all individuals involved within 
+the project understand at the outset whether or not they will expect to be an author 
+and, if so, what their contribution is to be. 
+2. 	 Start writing before the experiments are complete. We have to Start writing while we 
+are still doing the experiments. Writing often evokes new ideas: we may realize that 
+there are additional experiments to run or additional controls that we need to add. 
+If we wait until completion in the lab, have dismantled the equipment, and possibly 
+moved on to another position, then we will not have the opportunity to test these 
+ideas.
+3.  Decide it is time to publish. It is time to publish when our findings represent a complete 
+chapter, one that will make a significant contribution to the scientific literature. 
+4.  Draft a title & abstract. Drafting a working title and an abstract helps define the 
+contents of the paper, identifying which experiments we’ll want to publish during this 
+paper, and which studies we will save for inclusion in another paper. 
+5.  (Re)examine the list of authors. When we are determined which experiments will 
+be included in this paper then we must select the authors and the order in which 
+they will appear. Re-evaluate it based on the contributions that were made to 
+those experiments and the additional contributions that will be made through the 
+preparation of the manuscript. If an inventory already exists, make adjustments to 
+make sure about the compliance with guidelines.
+6.  Determine the basic format. There are three basic formats for peer-reviewed 
+research articles:
+
+
+Full-length research articles: These articles contain a comprehensive 
+investigation of the subject matter and are viewed as the standard format. It 
+uses the format: Introduction, Methods, Results and Discussion. 
+(c) Amity University Online
+
+
+--- page 149 ---
+142
+Research Methodology
+Notes
+Amity University Online
+
+
+Short (or brief) communications: While not as comprehensive in scope as 
+full-length research articles, these papers also make a big contribution to the 
+literature. Their length is going to be set by the journal but is typically 3500 
+words or less and can contain up to 2 tables and figures.
+
+
+Rapid communications: These articles quickly disseminate particularly “hot” 
+findings, usually during a brief communication format. Articles that have 
+immediate implications for public health would be appropriate for such a 
+format, as it might be found during a highly competitive and quickly moving 
+field.
+7. 	 Select the journal. There are several factors to think about when choosing a journal. 
+It’s unlikely that one journal will have all the features we are looking for, so we may 
+have to compromise. However, there’s one essential feature we should always not 
+compromise on – manuscripts must be peer reviewed for publication if they’re to be 
+considered research articles.
+
+
+Language: If we are interested in communicating our results widely to the 
+international scientific community, then it is essential to publish in English. If, 
+on the other hand, we wish to communicate to a more localized community 
+then we can choose a journal that permits another language.
+
+
+Focus: What type of research does the journal publish? Is its focus broad or 
+narrow? Which disciplines are represented? What is the journal’s orientation – 
+for instance, is it clinical or basic, theoretical or applied?
+
+
+Indexing: Is the journal indexed in the major electronic databases .
+
+
+Availability: Is the journal broadly available? Is there an online version of the 
+journal? Are papers provided in PDF format?
+
+
+Reputation: Ask colleagues which journals they respect. Look at recent 
+articles and judge their importance. Check the members of the editorial board 
+and determine if they are leaders in their fields. Determine the journal’s impact 
+factor. How selective is the journal in accepting papers for publication? Try to 
+find out the acceptance rate of the journal.
+
+
+Format: Do we like the appearance of published articles – the format, 
+typeface, and style used in citing references? If relevant, does the journal 
+publish short and/or rapid communications?
+
+
+Figures: Do figures published within the journal have the resolution that 
+we simply need? Time to Print: Using the “date submitted” and a “date 
+accepted” that are published on the article, along with the date of the issue, 
+we can estimate the length of the review process also because the time from 
+acceptance to publication in print.
+
+
+Charges: Some journals bill the author for page charges, a price per final 
+printed page. Most journals have a separate charge for colour plates. This 
+may be as much as $1000 per colour plate. Many journals will waive page 
+charges if this presents a financial hardship for the author; colour plate 
+charges are less-readily waived and would at least require evidence that the 
+colour is important to the presentation of the information.
+8. 	 Stock the sections of your paper. As we think about your paper, store relevant 
+material in folders marked with Introduction, Methods, Results, and Discussion. This 
+may save time and avoid frustration once the writing begins. Stored items might 
+include figures, references, and ideas.
+(c) Amity University Online
+
+
+--- page 150 ---
+Research Methodology
+143
+Notes
+Amity University Online
+9.  Construct the tables, figures, and legends. Create figures and tables before the 
+writing begins! The entire paper should be organized around the data needed to 
+present. By preparing the tables and figures we will be certain of our results before 
+we worry too much about their interpretation. 
+ 
+Note: except under unusual circumstances, we may not include any data that we 
+have already published. 
+10.  Outline the paper. An outline is like a road map which define how we will get from 
+here to there, and helps ensure that we take the most direct and logical route. If they 
+have co-authors, then we may wish to get feedback from them before proceeding to 
+the actual writing phase. 
+11.  Write the first draft. Write the primary draft of the complete manuscript. If we 
+are writing with co-authors, then we may wish to assign different aspects of the 
+manuscript to different authors. This will save time, enable a lot of people to feel 
+that they are making substantive contributions to the writing method, and make sure 
+that the best use of expertise. However, it also can result in a mix of design. Thus, if 
+you take this approach, be certain that the final product is carefully edited to provide 
+a single voice. “Components of a Research Article” discusses what goes into each 
+section of the manuscript. 
+12. 	 Revise the manuscript. This step involves three major tasks, each to be carried out 
+in the order given:
+
+
+Make major alterations: Fill in gaps, correct flaws in logic, restructure the 
+document to present the material in the most logical order.
+
+
+Polish the style: Refine the text, then correct grammar and spelling.
+
+
+Format the document: Make manuscript attractive and easy to read. It is 
+important to do the tasks in the stated order. Otherwise, we may be spending 
+a lot of time revising material that we delete later.
+13. 	 Check the references. Make sure that the citations are correct and complete. Do one 
+last literature search to make certain that we’re up to date. 
+14.  Write the final title and abstract. Several changes are created throughout the editing 
+method. Make certain that our title and abstract match the final version.
+15. 	 Reread the journal’s Instructions to Authors. Review the main points of however the 
+manuscript is to be formatted and submitted. 
+16.  Prepare the final illustrations. Ensure that tables, figures, and figure legends are 
+complete, clear, self-contained, and in the format required by the journal. 
+17. 	 Get feedback on manuscript and then revise manuscript again. Getting feedback is 
+one of the most important things by which we can improve our article. First, be sure 
+our co-authors have had a chance to read and comment on the draft. Then, once it’s 
+prepared, provide the manuscript to some colleagues. After you get their comments 
+(on the science, logic, language, and/or style), revise our manuscript to address 
+their concerns. Do not submit manuscript until it is ready for publication. Once it is 
+accepted.
+18. 	 Submit the manuscript to the editor. Follow the Instructions to Authors to determine 
+what items we need to submit, how to submit them, and to whom we should send 
+them. Note that some journals permit (or even require) a “pre-review,”i.e.., a letter 
+indicating the content of the article so that the editors can determine whether they 
+will accept the manuscript for a full review. At this point we may wish to list possible 
+(c) Amity University Online
+
+
+--- page 151 ---
+144
+Research Methodology
+Notes
+Amity University Online
+reviewers (or individuals to be avoided). If required then contact the editor to make 
+sure that the manuscript was received. 
+19.  Deal with reviewers’ comments. Most manuscripts are not accepted on the first 
+submission and ask for submitting a revised manuscript. If we agree with it then 
+we need to respond to the reviewer’s comments. Answer every comment of the 
+reviewers, and highlight where the corresponding changes were made in the 
+manuscript if happened, indeed, made. We do not need to make all of the changes 
+that the reviewer recommended, but we do need to provide a convincing rationale 
+for any changes that we did not make. When we resubmit the manuscript, indicate 
+in our cover letter that this is a revised version. 
+20.  Check the proof. Once the manuscript is accepted and ready for print, the publisher 
+may send the corresponding author page proofs of the article. It should be 
+accompanied by a list of queries, such as missing information regarding a reference. 
+The proofs either be sent through e-mail or as hard copy. If there is a chance that 
+we will be away when the proofs arrive, have a plan for making certain that they are 
+received and we are notified. 
+20. Celebrate! Robert Day says in How to Write and Publish a Scientific Paper (1998), 
+“The goal of scientific research is publication…. A particular experiment, no matter 
+how spectacular the results, is not complete until the results are published.” Your 
+experiment – at least one phase of it – is now complete. 
+5.3.2 Design of Paper using Template
+Notice that no correct number of letters or numbers exists; the sole determining 
+factor is the number of points we need to create for the specified length of our paper.
+I.	
+Introduction
+A.	 Background information connecting the reader to the topic
+B. 	 Thesis statement 
+II. 	 First Main Point
+A. 	 First sub point
+1. 	 Corresponding example or detail—either our insight or a critic’s comment 
+paraphrased or directly quoted 
+Never start a sentence with a quote that we simply haven’t introduced. 
+a) 	
+First comment for support 
+b) 	
+Second comment for support 
+2.  Supporting example or detail (our discuss on supporting detail from a critic) 
+a) 	
+First comment
+b) 	
+Second comment 
+B. 	 Second sub point
+1.	 Supporting example or detail
+2.	 Supporting example or detail 
+C.  Third sub point (same as A, B above) 
+	
+At this time continue with D, E... if needed 
+III. 	 Second Main Point
+(c) Amity University Online
+
+
+--- page 152 ---
+Research Methodology
+145
+Notes
+Amity University Online
+A. First sub point—Comment on sub point (only one inquiry into this detail) 
+B. 	 Second sub point 
+1. 	 Supporting example—only one comment on this example: 
+2. 	 Supporting example 
+a) 	
+Comment 
+b) 	
+Comment 
+	
+Continue with the identical sequence alternating numerals and letters 
+IV. Critical Thinking Section
+A. 	 Incorporate reactions to the source 
+B. 	 Include insights about the research topic 
+C. 	 Synthesize critical thinking threads 
+V.  Conclusion
+Affirm that the thesis has been proven
+Example:
+5.3.3: Calculation of Impact Factor of a Journal
+The impact factor (IF) may be a calculation of the frequency with that the typical 
+article in a very journal has been cited in an explicit year. It’s employed to measure the 
+importance or rank of a journal by calculating the days its articles are cited.
+The way of the Impact Factor is Calculation?
+The calculation is predicted on a 2yr period and involves dividing the quantity of 
+times articles were cited by the quantity of articles that are citable.
+Calculation of 2010 IF of a journal:
+A = the quantity of times articles published in 2008 and 2009 were cited by indexed 
+journals throughout 2010.
+(c) Amity University Online
+
+
+--- page 153 ---
+146
+Research Methodology
+Notes
+Amity University Online
+B = the overall range of “citable items” published in 2008 and 2009.
+A/B = 2010 impact factor
+What is the vary of IF:
+The impact factor of ten or higher is taken into account as a wonderful score where 
+3 is flagged nearly as good and also the average score is less than 1. This is often 
+a rule of thumb. However, the wild card to concentrate to is that impact factor and 
+examination journals are most effective in the same category.
+Example: 
+5.3.4 Citation Index
+A citation is the text reference and acknowledgement of a documented information. 
+A scientifically written article comprises a reference section at the top where all the 
+references mentioned within the document are cited serially, and every reference may 
+be a citation. A citation count is the frequency of a writing article cited by other articles. 
+A citation index could be a kind of bibliographic database, an index of citations between 
+publications, allowing the user to simply establish which later documents cite which 
+earlier documents
+Major Citation Indexing Services 
+There are two major publishers of general-purpose academic citation indexes: 
+a.  Institute for Scientific Information (ISI): Citation indexing has long been dominated 
+by the ISI, which is now a part of Thomson Reuters. It publishes the citation indexes 
+in print and CD forms, which are generally accessed online under the name ‘Web 
+of Science’ (WOS). WOS provides access to 7 databases: Science Citation Index 
+(SCI), Social Sciences Citation Index (SSCI), Arts & Humanities Citation Index 
+(A&HCI), Index Chemicals, Current Chemical Reactions, Conference Proceedings 
+Citation Index: Science and Conference Proceedings Citation Index: Science and 
+Humanities. 
+b. 	 Elsevier Which publishes Scopus, is offered online only. Scopus is one among the 
+biggest abstract and citation databases of peer-reviewed literature and web sources 
+with smart tools to trace.
+There are also a variety of other readily available citation databases. Few of the 
+notable ones among these are: 
+●
+●
+CiteSeer is both a citation engine and a digital library. CiteSeer is predicted on 
+the SmealSearch engine and provides citation, citation graph analysis, related 
+document retrieval and other searching of scientific literature.
+●
+●
+Research Papers in Economics (RePec) provides databases in economics and 
+other discipline specific indexes.
+(c) Amity University Online
+
+
+--- page 154 ---
+Research Methodology
+147
+Notes
+Amity University Online
+●
+●
+Google Scholar (GS) provides citation and search of scholarly literature across 
+many disciplines and sources. Although limited to the recent articles, it’s a freely-
+accessible web program. Google Scholar is mostly praised for its speed.
+●
+●
+EBSCOhost is one of the world’s foremost, most used, premium, reference 
+database services. 
+●
+●
+Compendex 
+(Engineering 
+Index, 
+COMPuterizedENgineeringinDEX) 
+is 
+the 
+computerized version of the Engineering Index and is one of the foremost 
+comprehensive engineering literature databases.
+Indian Citation Index Indian Citation Index (ICI) database was developed with 
+specific motives to market knowledge contents, published in Indian journals and bridge 
+the gap between the content sources and content users via the World Wide Web. ICI 
+database covers about 1000 Indian scholarly journals, encompassing all disciplines of 
+information including the sciences, social sciences, arts, and humanities’
+ The ICI database also produces other useful by-products like Indian Science 
+Citation Index (ISCI), Indian Social Science and Humanities Citation Index (ISSHCI), 
+Indian Journals Citation Reports (IJCR), Indian Science and Technology Abstracts 
+(ISTA) and Directory of Indian Journals (DOIJ).
+5.3.5 ISBN & ISSN
+“ISBN” stands for “International Standard Book Number” whereas “ISSN” is 
+“International Standard Serial Number.” Both ISBN and ISSN are codes that are utilized 
+by publishers for numbering or serialising their publications.
+International Standard Book Number is assigned for monographs or books but the 
+International Standard Serial Number is given to a series of monographs or books.
+ISBN is assigned for one or separate book, and ISSN is assigned for a series of 
+books.
+ISBN identifies the particular volume or issue, the ISSN only identifies the series of 
+the amount or issue.
+ISSN is simply optional, which implies that the publisher isn’t legally sure to use it. 
+But The ISBN is obligatory if the book falls under the ISBN application.
+Unlike the ISBN, the ISSN are identical altogether in all the volumes or the 
+problems of a single series. But the ISBN is different for each volume and issue.
+The ISBN could be a 13-digit standard code. It absolutely was Gordon Foster 
+who created for the beginning a nine-digit ISBN code. Later the World Organisation for 
+Standardisation developed the ten-digit standard number code. After 2007, the ISBN 
+incorporated a 13-digit number standard code.
+The International Standard Serial Number is an eight-digit standard number. It’s 
+the amount given to a single set of the series, and once the series changes, another 
+ISSN code is allotted. It was in 1971 that the ISSN system was first drafted. The 
+ISSN standard number codes are assigned by the ISSN National Centres and are 
+coordinated by the ISSN International Centre that’s based in Paris.
+Summary:
+1. 
+“ISBN” is “International Standard Book Number” and “ISSN” is “International 
+Standard Serial Number.”
+(c) Amity University Online
+
+
+--- page 155 ---
+148
+Research Methodology
+Notes
+Amity University Online
+2. 
+One of the personal differences between the ISBN and ISSN is that the previous one 
+identifies the publisher whereas the latter one doesn’t identify the publisher.
+3. 
+International Standard Book Number is given for monographs or books whereas 
+International Standard Serial number is given to a series of monographs or books.
+4. 
+Inthe case of the ISSN, it’s only optional, which suggests that the publisher isn’t 
+legally bound to use it. But the ISBN is obligatory if the book falls under the ISBN 
+application.
+Below are the examples.
+Sample ISSN numbers of the publications ISSN 0027-9633 (online)
+ISSN 0027-9634 (print)
+ISBN 978-951-45-9693-3 (hardback) 
+ISBN 978-951-45-9694-0 (paperback)
+ISBN 978-951-45-9695-7 (PDF)
+ISBN 978-951-45-9696-4 (EPUB without DRM)
+ISBN 978-951-45-9999-5 (EPUB with ACS4 DRM)
+(c) Amity University Online
+
+
+--- page 156 ---
+Research Methodology
+149
+Notes
+Amity University Online
+Planning a Project Proposal
+Discuss with an example
+Colour Psychology Paper
+Research Question:
+How does colour affect one’s mood?
+Review of Literature: 
+Colours may just seem simple and unimportant, but they affect our daily lives more 
+than we may know. If someone is feeling angry, it could just be because they’re angry, 
+or it could be perhaps that they are surrounded by or looking at the colour red. That’s 
+right! People’s moods can change just because they are looking at different colours! 
+There are many theories on how just a simple colour can change one’s whole mood. 
+According to Johnson (2007), colour does affect mood by producing certain 
+chemicals and stimulating different feelings such as hunger. For example, blue 
+can make one feel calm because it releases calming chemicals, and red can make 
+one hungry because it is an appetite stimulant. Yellow can make one feel irritated, 
+and it is a fact that people lose their temper most in yellow rooms. However, pink is 
+tranquilizing and can make one feel weak. In conclusion, Johnson says that depending 
+on the colour, one’s body can do things (like producing chemicals) that cause a certain 
+emotional reaction (mad, sad, etc.). 
+Another idea, by Smith (2007), is that the effect colour produces is based on what 
+one’s body does in response. For example, yellow is mentally stimulating, and activates 
+memory, whereas red increases confidence. Also, brown can make a person feel 
+orderly and stable, while a dark blue can make one feel sad. Therefore, Smith says that 
+different colours do in fact change one’s mood and the consequences can be negative 
+or positive.
+A third writer, Wollard, (2000) seems to think that colour can affect one’s mood, but 
+the effect also can depend on one’s culture and what one’s personal reflection may be. 
+For example, someone from Japan may not associate red with anger, as people from 
+the U.S. tend to do. Also, a person who likes the colour brown may associate brown 
+with happiness. However, Wollard does think that colours can make everyone feel the 
+same, or close to the same, mood. According to Wollard, pink reduces aggression, 
+which is why the walls of the jail cells in the Seattle prison are pink! Also, brown can 
+make one feel comforted. Wollard feels that colours do affect one’s mood, but there are 
+other factors that can alter what one is supposed to feel. 
+Eric, John, and Parag’s (2007) main point about colour psychology is that colour 
+has both a physiological and psychological effect. For example, green makes people 
+feel relaxed because it relaxes their muscles and makes them breathe deeper and 
+more slowly. Furthermore, blue lowers blood pressure, which makes one feel calm. 
+Eric, John, and Parag conclude that colour affects one’s mood because of what it does 
+to the body.
+Yet another idea, by Airey (2006), is that colour is energy, and it can have a 
+physical, mental, spiritual, and/or emotional effect on people. He states that black can 
+make one feel sophisticated and secure, but it can also make one feel depressed. 
+(c) Amity University Online
+
+
+--- page 157 ---
+150
+Research Methodology
+Notes
+Amity University Online
+Also brown can make a person feel reliable and serious, while yellow lifts self-esteem. 
+Therefore, Airey concludes that different colours can have different kinds of effects on 
+people.
+Analysis: 
+There are three ideas about colour psychology in these sources, and they all say 
+that colour affects one’s mood. They differ based on what factors influence the effects of 
+colour, such as culture, opinion, and what goes on inside one’s body. One of the three 
+ideas is that colour affects mood based on one’s personal opinions. For example, if a 
+person dislikes the colour pink, he may associate pink with hate. Another idea states 
+that colour affects mood based on one’s culture. For example, someone from the U.S. 
+may think of the colour green when referring to envy, while people in Japan think of 
+yellow in connection with wanting what someone else has. However, the majority of the 
+sources consulted say that colour affects mood by influencing what goes on inside of 
+people. For example, seeing the colour blue releases calming chemicals, which in turn 
+makes one calm. Also, because yellow is the hardest colour for the eye to focus on, 
+people may become irritated when looking at yellow, and it is a proven fact that babies 
+cry most in yellow nurseries. These theories do not seem to have much in common.
+Methodology: 
+In order to test ideas about how colour affects one’s mood (colour psychology) this 
+researcher will test sixty middle school students (thirty girls and thirty boys) on how the 
+colours green, blue, black, yellow, red, pink, and brown make them feel. The students 
+will mark the feeling that each colour makes them feel, according to the choices shown 
+on the example survey below. 
+Example Survey 
+(The only thing that changes in each different survey is the colour being tested and 
+the gender of the student responding):
+Choose as many answers as fit your feeling for the colour. Does the colour make 
+you feel:
+Mad/Angry?
+Sad/Depressed/Cold?
+Secure/Safe?
+Irritated/Annoyed?
+Calm?
+Relaxed?
+Fun/Excited?
+Happy/Cheery?
+Tired/Sleepy/Drowsy?
+Bored?
+Losing Energy/Weak?
+Neutral/Balanced?
+Love/Affection?
+(c) Amity University Online
+
+
+--- page 158 ---
+Research Methodology
+151
+Notes
+Amity University Online
+Dislike/Hate?
+Survey Results:
+Most female middle school students associated these feelings with these colours.
+Black
+Green
+Yellow
+Pink
+Brown 
+Red
+Blue
+Sad/Cold/
+Depressing 
+(43%)
+Neutral/
+Balanced 27%) 
+Happy/
+Cheery 
+(53%)
+Happy/Cheery 
+(27%) and 
+Love/Affection 
+(27%)
+Bored 
+(40%)
+Mad/Angry 
+(30%) 
+and Love/
+Affection 
+(30%)
+Calm 
+(23%)
+So, the greatest number of female middle school students thought that black made 
+them feel sad, cold, and depressed; and green made most of them feel neutral and 
+balanced, and so on. The numbers in parentheses by the feelings show the percentage 
+of girls that felt that way. The reason most of these percentages are so low is that there 
+were many different responses, and for most feeling categories there were only one or 
+two girls who felt that way.
+Most male middle school students associated these feelings with these colours.
+Black
+Green
+Yellow
+Pink
+Brown 
+Red
+Blue
+Sad/Cold/
+Depressed 
+(37%)
+Secure/Safe 
+(27%) 
+Happy/Cheery 
+(17%)
+Love/
+Affection 
+(33%)
+Bored 
+(20%)
+Mad/Angry 
+(27%)
+Relaxed 
+(23%)
+So, the greatest number of male middle school students thought that black made 
+them feel sad, cold, and depressed; and green made most of them feel secure and 
+safe, and so on. The numbers in parentheses by the feeling show the percentage of 
+boys that felt that way. The reason these percentages are so low is that there were 
+many different responses, and for most feeling categories there were only one or two 
+boys who felt that way.
+5.4 Planning a Project Proposal
+Planning a project proposal is a crucial first step in the successful execution of any 
+project. It involves outlining the goals, scope, and methods of a proposed project to 
+secure approval, funding, or support from stakeholders. A well-crafted project proposal 
+provides a detailed plan that guides the project’s implementation and helps ensure its 
+objectives are met efficiently.
+Key Aspects of Project Proposal Planning:
+1. 
+Defining Objectives:
+
+
+Clearly articulate the project’s goals and objectives. Specify what the project 
+aims to achieve and how these goals align with broader organizational or 
+strategic objectives.
+2.	
+Identifying Scope:
+
+
+Outline the project scope, including the boundaries and limitations of the 
+project. This helps to manage expectations and prevent scope creep.
+3.	
+Conducting Feasibility Analysis:
+
+
+Assess the feasibility of the project in terms of technical, financial, and 
+(c) Amity University Online
+
+
+--- page 159 ---
+152
+Research Methodology
+Notes
+Amity University Online
+operational aspects. This includes evaluating the availability of resources, 
+expertise, and potential risks.
+4.	
+Developing a Work Plan:
+
+
+Create a detailed work plan that includes the project timeline, key milestones, 
+and deliverables. This plan should also define roles and responsibilities for 
+team members.
+5.	
+Budgeting and Resource Allocation:
+
+
+Prepare a comprehensive budget that covers all project expenses, including 
+personnel, materials, and overhead costs. Ensure that resources are allocated 
+efficiently to support project activities.
+6.	
+Risk Management:
+
+
+Identify potential risks and develop strategies to mitigate them. This includes 
+analyzing possible challenges and developing contingency plans.
+7.	
+Stakeholder Engagement:
+
+
+Identify key stakeholders and outline strategies for engaging them throughout 
+the project. Effective communication with stakeholders is essential for project 
+support and success.
+8.	
+Evaluation and Metrics:
+
+
+Define criteria for evaluating the project’s success. Establish metrics and 
+performance indicators to measure progress and assess outcomes.
+9.	
+Proposal Documentation:
+
+
+Prepare the project proposal document, ensuring it is well-organized and 
+includes all necessary sections, such as the executive summary, project 
+description, objectives, methodology, budget, and appendices.
+10.	 Review and Revision:
+
+
+Review the proposal thoroughly to ensure accuracy and completeness. 
+Revise as needed based on feedback from stakeholders or reviewers.
+5.4.1: Identifying and Defining Problem
+In the research process, the first and foremost step happens to be that of selecting 
+and properly defining a research problem. A researcher must find the problem and 
+formulate it so that it becomes susceptible to research. Like a medical doctor, a 
+researcher must examine all the symptoms (presented to him or observed by him) 
+concerning a problem before he can diagnose correctly. To define a problem correctly, a 
+researcher must know: what a problem is?
+Identifying a research problem, in general, refers to some difficulty in the context of 
+either a theoretical or practical situation and wants to obtain a solution for the same. 
+Hence, identifying a research issue or problem is a phenomenon as it might 
+be called in many forms of qualitative research, if the topic is to be addressed, 
+investigated, or studied, whether descriptive or experimentally. It is the focus or reason 
+for engaging in the research. It is typically a topic, phenomenon, or challenge that is 
+required to be addressed. 
+Defining issues or Problems
+Defining a research problem is the fuel that drives the scientific process and is the 
+foundation of any research method and experimental design. 
+(c) Amity University Online
+
+
+--- page 160 ---
+Research Methodology
+153
+Notes
+Amity University Online
+Research problem: A situation or circumstances that require a solution to be 
+described, explained or predicted. 
+The components of a research problem can be:
+● 
+There must be an individual or group which has some difficulty or a problem.
+● 
+There must be some objective(s) to be attained at. 
+● 
+There must be an alternative means for obtaining the objectives one wishes to attain. 
+● 
+There must remain some doubt in the mind of a researcher with regard to the selection 
+of alternatives. This means that research must answer the question concerning the 
+relative efficiency of the possible alternatives. 
+● 
+There must be some environment to which the difficulty pertains. 
+● 
+The research problem undertaken for study must be carefully selected. 
+● 
+If there is a knowledge gap in an area that needs to be investigated, the research 
+problem identifies this gap. 
+● 
+This difficulty in selecting a problem or the gap arises not due to the limited range 
+of reachable problems but the inability to locate the socially relevant topic without 
+duplicating earlier studies. 
+5.4.2 Research Problem aspects and considerations
+Problem Aspects
+Let us start with the question: What does one mean when he/she wants to define a 
+research problem? The answer may be that one wants to state the problem along with 
+the bounds within which it is to be studied. In other words, defining a problem involves 
+the task of laying down boundaries within which a researcher shall study the problem 
+with a predetermined objective in view.
+How to define a research problem is undoubtedly a herculean task. However, it is a 
+task that must be tackled intelligently to avoid the perplexity encountered in a research 
+operation. The usual approach is that the researcher should himself pose a question 
+(or in case someone else wants the researcher to carry on research, the concerned 
+individual, organisation or an authority should pose the question to the researcher) 
+and set-up techniques and procedures for throwing light on the question concerned for 
+formulating or defining the research problem. But such an approach generally does not 
+produce definitive results because the question phrased in such a fashion is usually in 
+broad general terms and as such may not be in a form suitable for testing. 
+Defining a research problem properly and clearly is a crucial part of a research 
+study and must in no case be accomplished hurriedly. However, in practice this is 
+frequently overlooked which causes a lot of problems later on. Hence, the research 
+problem should be defined in a systematic manner, giving due weightage to all related 
+points. There are a lot of aspects which need to be kept in mind before we deal with it. 
+The aspects are:
+(i) 
+Statement Of the problem: Problems should be stated in either practical or scientific 
+or some intellectual interest. It can be stated through a preliminary field survey or 
+observation. This helps in stating the problem clearly; it also helps in narrowing the 
+concern in a phrase the problem in operational terms. In case the problem is stated 
+in a broad and general way it will involve a lot of ambiguities which can be resolved 
+(c) Amity University Online
+
+
+--- page 161 ---
+154
+Research Methodology
+Notes
+Amity University Online
+by looking at the detailed observations and surveys available. Thus the feasibility of 
+a particular solution can be considered. 
+(ii) Understanding the nature of the problem: Another aspect to be kept in mind is to 
+understand the origin of the problem. The best way to understand is to find out the 
+source of occurrence or need for study. 
+(iii) Surveying the available literature: All available literature concerning the problem at 
+hand must necessarily be surveyed and examined before a definition of the research 
+problem is given. This means that the researcher must be well-conversant with 
+relevant theories in the field, reports and records as also all other relevant literature. 
+Sufficient time must be devoted to reviewing the problem. This is done to find out 
+what materials are available at the moment and what other materials are required. 
+“Knowing what data are available often serves to narrow the problem itself as well 
+as the technique that might be used. “This would also help a researcher to know if 
+there are certain gaps in the theories, or whether the existing theories applicable to 
+the problem under study are inconsistent with each other, or whether the findings 
+of the different studies do not follow a pattern consistent with the theoretical 
+expectations and so on. All this will enable a researcher to take new strides in the 
+field for furtherance of knowledge i.e., moving up starting from the existing premise. 
+Studies on related problems are useful for indicating the type of difficulties that may 
+be encountered in the present study as also the possible analytical shortcomings. At 
+times such studies may also suggest useful and even new lines of approach to the 
+present problem.
+(iv) Deduction from the theory: This is related to deductions made from the available 
+source. Once the irrelevant details of the problems are kept aside and the core of the 
+problem is identified then we can carry out a systematic investigation of the research 
+to assess the data. 
+(v) Rephrasing the research problem into a working proposition: Rephrasing is important 
+because the nature of the problem has been clearly understood, defined. Through 
+rephrasing, the researcher puts the research problem in as specific terms as possible 
+so that it may become operationally viable and may help in the development of the 
+research. 
+Considerations:
+The research problem undertaken for study must be carefully selected. The task is 
+a difficult one, although it may not appear to be so. Help may be taken from a research 
+guide in this connection. A research guide can thus help in considering a problem. 
+Considering a problem can be defined in three categories:
+1.	
+Identify concepts and terms that make up the topic statement: The research problem 
+can have many aspects which needs to be kept in mind but identifying the concept 
+and terms which comprises the topic makes it easier for the consideration and thus 
+the research. 
+2. 
+Review related literature to help refine how you will approach examining the topic 
+and finding a way to analyse it: it can be done by reading through background 
+information from other books and materials related to it. A preliminary review of the 
+research literature can be done using multidisciplinary databases. 
+3.	
+Additional sources: since the research work can be extensive it can be helped with 
+additional data which can broaden the knowledge and strengthen the initial thoughts 
+and arguments related to the research. 
+(c) Amity University Online
+
+
+--- page 162 ---
+Research Methodology
+155
+Notes
+Amity University Online
+5.4.3 Research Plan
+Planning a Project Proposal
+Locating and Defining Issues or Problems
+This step focuses on determining the nature and parameters of a situation or 
+question involving marketing strategy or implementation. The researcher should 
+consider the study’s purpose, relevant background information, what information 
+is needed, and how it will be used in decision-making when defining the issues or 
+problems.
+Designing the Research Project
+This step focuses on developing a research strategy or overall approach to 
+resolving the identified issue or problem. A research plan or approach is a blueprint 
+or framework for carrying out a marketing research project. Its purpose is to design 
+a study that will test the hypotheses of interest, determine possible answers to the 
+research questions, and provide the information required for decision making.
+The steps in the research design are as follows:
+
+
+Analysing secondary data
+
+
+Qualitative analysis
+
+
+Quantitative 
+data 
+collection 
+methods 
+(survey, 
+observation, 
+and 
+experimentation)
+
+
+Definition of the data required
+
+
+Procedures for measurement and scaling
+
+
+Designing a questionnaire
+
+
+Process of sampling and sample size
+
+
+Data analysis strategy
+Collecting Data
+This step was all about gathering the data you’ll need to solve the issue or problem 
+you’ve identified. A field force or staff collects data in the field (in-home, mall intercept, 
+or computer-assisted personal interviewing), over the phone (telephone or computer-
+assisted telephone interviewing), or through the mail (traditional mail and mail panel 
+surveys with recruited households).
+The following are some examples of data collection techniques:
+
+
+Interviews entail questioning people about their prior knowledge.
+
+
+Observations are the act of gathering information without asking questions.
+
+
+Questionnaires: Ask a group of people a series of questions.
+
+
+Interviewing and observing a group of people is what a focus group is.
+
+
+Old-fashioned research with documents and records
+Interpreting Research Data
+Interpreting research data: The goal of this step is to examine the data and come 
+up with a solution to the problem.
+Begin by putting your findings and the information you gathered in Step 3 into 
+order. After that, write a rough draught of your conclusion, recommendations, and 
+(c) Amity University Online
+
+
+--- page 163 ---
+156
+Research Methodology
+Notes
+Amity University Online
+findings. The rough drought will assist you in organising your thoughts. The last step is 
+to refine the draft into your final research conclusion. Before the final product is ready 
+for Step 5, you will most likely revise the draft as many times as necessary.
+ Report Research Findings
+The final step is to present the findings of the research to those who require 
+the information to make decisions. The results should be presented in an easily 
+understandable format so that they can be used in the decision-making process quickly. 
+In addition, to improve clarity and impact, an oral presentation to management should 
+be made using tables, figures, and graphs.
+Formats for Research Reporting:
+●
+●
+Formal Paper
+●
+●
+Published Article
+●
+●
+PowerPoint Presentation
+●
+●
+Audio or Video
+●
+●
+Spreadsheet
+Summary
+● 
+A report is a very formal document that is composed for a variety of objectives, 
+including sciences, social sciences, engineering, and business disciplines. 
+Essentially, the process of looking for a certain assignment is documented in a 
+report.
+● 
+It is important to recognise that reports are regarded as legal papers in all workplaces.
+● 
+When the researchers are asked to make an oral presentation then they prepare this 
+type of oral report.
+● 
+It’s more difficult to prepare as compared to the written report.
+● 
+Because here the presenter directly interacts with the audience.
+● 
+Any delay during an oral presentation can leave a negative impression on the 
+audience and also violates the self-confidence of the presenter.
+● 
+Communication plays a big role in an oral presentation. A lot of planning and thinking 
+is required to decide ‘What to say’, ‘How to say’, ‘How much to say’. Also, the 
+presenter should have to face a bunch of questions from the audience.
+● 
+The International Standard Serial Number is an eight-digit standard number.
+● 
+It’s the amount given to a single set of the series, and once the series changes, 
+another ISSN code is allotted.
+● 
+It was in 1971 that the ISSN system was first drafted. The ISSN standard number 
+codes are assigned by the ISSN National Centres and are coordinated by the ISSN 
+International Centre that’s based in Paris.
+Glossary
+● 
+Predefined structure: In a broader context, these headers may serve as indicators of 
+different parts within a report, such as an introduction, discussion, and conclusion.
+● 
+Independent sections: Each section in a report is separately written, because if the 
+reader wants to selectively identify the report sections they are interested in, rather 
+than reading the whole report in one go from top to bottom.
+(c) Amity University Online
+
+
+--- page 164 ---
+Research Methodology
+157
+Notes
+Amity University Online
+● 
+Unbiased conclusions: Another aspect of report writing is that it is a kind of writing 
+that is impartial and objective.
+● 
+Bibliography: This contains the main sources of secondary data.
+● 
+Technical appendices: These encompass all technical aspects related to surveys, 
+mathematical derivations, detailed explanations of specific analytic methodologies, 
+and similar topics.
+Check Your Understanding
+1. 	 What is one of the fundamental characteristics of report writing?
+a)	 Personal opinion
+b)	 Informal language
+c)	 Predefined structure
+d)	 Subjective conclusions
+2.  Which of the following is included in the preliminaries of a scientific report?
+a)	 Analysis and presentation of results
+b)	 Methods of organization
+c)	 Title page
+d)	 Bibliography
+3.  In the structure of a scientific report, where would you find the research aims and 
+hypotheses?
+a)	 Introduction
+b)	 Analysis and presentation of results
+c)	 Appendices
+d)	 Glossary
+4. 	 Which type of report is prepared for direct interaction with the audience and requires 
+a lot of preparation and communication skills?
+a)	 Written report
+b) Oral report
+c)	 Informal report
+d)	 Government report
+5. 	 Which sampling method ensures every item in the population has an equal chance 
+of being selected?
+a) Non-Probability Sampling
+b)	 Stratified Sampling
+c)	 Probability Sampling
+d)	 Convenience Sampling
+Exercise
+1. 
+Define a report and explain its significance in different disciplines.
+2.	
+What are the three fundamental characteristics of report writing? Explain each 
+briefly.
+3. 
+List and describe the components included in the preliminaries of a scientific report.
+(c) Amity University Online
+
+
+--- page 165 ---
+158
+Research Methodology
+Notes
+Amity University Online
+4. 
+What is the importance of the ‘Introduction’ section in a scientific report? List the key 
+elements it should cover.
+5. 
+Differentiate between a ‘technical report’ and a ‘non-technical report’. Provide 
+examples of when each might be used.
+Learning Activity
+1.	
+You are tasked with preparing an oral report on the impact of social media on 
+academic performance. Outline the key points you would include in your presentation 
+and explain how you would engage your audience using visual aids and addressing 
+potential questions.
+2. 
+You have been given a scientific report. Identify the components within the report 
+and provide a brief explanation of their purpose.
+Check Your Understanding- Answers
+1.	 c)	
+2.	
+c)	
+3.	
+a)	
+4.	 b)
+5.	 c)
+Further Readings and Bibliography
+1. “The Craft of Research” by Wayne C. Booth, Gregory G. Colomb, and Joseph 
+M. Williams
+2.	 “Scientific Writing and Communication: Papers, Proposals, and Presentations” 
+by Angelika H. Hofmann
+3. “Reporting Research in Psychology: How to Meet Journal Article Reporting 
+Standards” by Harris M. Cooper
+4. “Successful Scientific Writing: A Step-by-Step Guide for the Biological and 
+Medical Sciences” by Janice R. Matthews and Robert W. Matthews
+5.	 “Writing Empirical Research Reports: A Basic Guide for Students of the Social 
+and Behavioral Sciences” by Fred Pyrczak and Randall R. Bruce
+6. Booth, W. C., Colomb, G. G., & Williams, J. M. (2008). The Craft of Research. 
+University of Chicago Press.
+7. Hofmann, A. H. (2014). Scientific Writing and Communication: Papers, 
+Proposals, and Presentations. Oxford University Press.
+8. Cooper, H. M. (2016). Reporting Research in Psychology: How to Meet Journal 
+Article Reporting Standards. American Psychological Association.
+9. Matthews, J. R., & Matthews, R. W. (2014). Successful Scientific Writing: 
+A Step-by-Step Guide for the Biological and Medical Sciences. Cambridge 
+University Press.
+10. Pyrczak, F., & Bruce, R. R. (2011). Writing Empirical Research Reports: A 
+Basic Guide for Students of the Social and Behavioral Sciences. Routledge.
+(c) Amity University Online
