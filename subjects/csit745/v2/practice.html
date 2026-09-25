@@ -26,9 +26,12 @@
     <div>
       <div class="kicker">CSIT745 · v2 Practice</div>
       <h1>Adaptive MCQ</h1>
-      <p class="lede">20 questions per session from the <strong>whole subject</strong> (all modules mixed). Wrong answers are flagged for review.</p>
+      <p class="lede">20 questions per session from the <strong>whole subject</strong> (all modules mixed). An open session stays open if you leave for Explorer and come back.</p>
     </div>
-    <button type="button" class="btn primary" id="btnStart">Start session</button>
+    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;align-items:center">
+      <button type="button" class="btn primary" id="btnStart">Start session</button>
+      <button type="button" class="btn ghost" id="btnAbandon" hidden>Abandon session</button>
+    </div>
   </header>
 
   <div id="amity-sync-root" style="margin-top:0.75rem"></div>
@@ -45,6 +48,7 @@
 </div>
 <script>
 const SESSION_SIZE = 20;
+const SESSION_LS_KEY = "csit745_v2_active_mcq_session";
 let BANK = [];
 let CONCEPTS = {};
 let state = {
@@ -54,7 +58,8 @@ let state = {
   history: []        // recent question ids
 };
 
-let session = null; // { queue, index, answers, wrong }
+let session = null; // { queue, index, answers, wrong, startedAt }
+let syncHydrated = false;
 
 function esc(s) {
   return String(s ?? "").replace(/[&<>"']/g, (c) => ({
@@ -71,16 +76,93 @@ function shuffle(arr) {
   return a;
 }
 
-function persist() {
+function sessionSnapshot() {
+  if (!session || !session.queue?.length) return null;
+  if (session.index >= session.queue.length) return null; // finished — do not keep
+  return {
+    status: "active",
+    queueIds: session.queue.map((q) => q.id),
+    index: session.index,
+    answers: session.answers || {},
+    wrong: session.wrong || [],
+    startedAt: session.startedAt || new Date().toISOString(),
+  };
+}
+
+function writeSessionLocal(snap) {
+  try {
+    if (snap) localStorage.setItem(SESSION_LS_KEY, JSON.stringify(snap));
+    else localStorage.removeItem(SESSION_LS_KEY);
+  } catch (_) {}
+}
+
+function readSessionLocal() {
+  try {
+    const raw = localStorage.getItem(SESSION_LS_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch (_) {
+    return null;
+  }
+}
+
+function persist(clearActive) {
   const P = window.AmityProgress || window.BS605Progress;
-  if (!P?.saveSection) return;
+  const snap = clearActive ? null : sessionSnapshot();
+  writeSessionLocal(snap);
+  if (!P?.saveSection) {
+    paintMeta();
+    paintStartButton();
+    return;
+  }
   P.saveSection("v2AdaptiveMcq", {
     flagged: state.flagged,
     mastery: state.mastery,
     lastWrongConcepts: state.lastWrongConcepts,
     history: state.history.slice(-200),
+    activeSession: snap,
   }, "csit745");
   paintMeta();
+  paintStartButton();
+}
+
+function paintStartButton() {
+  const btn = document.getElementById("btnStart");
+  const abandon = document.getElementById("btnAbandon");
+  const active = session && session.queue?.length && session.index < session.queue.length;
+  if (active) {
+    btn.textContent = "Resume session";
+    abandon.hidden = false;
+  } else {
+    btn.textContent = "Start session";
+    abandon.hidden = true;
+  }
+}
+
+function rebuildSessionFromSnap(snap) {
+  if (!snap || snap.status !== "active" || !Array.isArray(snap.queueIds) || !snap.queueIds.length) return null;
+  if (!BANK.length) return null;
+  const byId = Object.fromEntries(BANK.map((q) => [q.id, q]));
+  const queue = snap.queueIds.map((id) => byId[id]).filter(Boolean);
+  if (!queue.length) return null;
+  const index = Math.min(Math.max(0, Number(snap.index) || 0), queue.length);
+  if (index >= queue.length) return null;
+  return {
+    queue,
+    index,
+    answers: snap.answers || {},
+    wrong: snap.wrong || [],
+    startedAt: snap.startedAt || new Date().toISOString(),
+  };
+}
+
+function tryResumeSession(preferredSnap) {
+  const snap = preferredSnap || readSessionLocal();
+  const rebuilt = rebuildSessionFromSnap(snap);
+  if (!rebuilt) return false;
+  session = rebuilt;
+  renderQuestion();
+  paintStartButton();
+  return true;
 }
 
 function paintMeta() {
@@ -133,18 +215,35 @@ function pickSessionQueue() {
   return shuffle(picked).slice(0, SESSION_SIZE);
 }
 
-function startSession() {
+function startSession(forceNew) {
   if (!BANK.length) {
     document.getElementById("sessionArea").innerHTML = `<p class="empty-hint">No questions in the bank yet.</p>`;
     return;
   }
+  // Resume in-progress session unless explicitly starting fresh
+  if (!forceNew && session && session.queue?.length && session.index < session.queue.length) {
+    renderQuestion();
+    return;
+  }
+  if (!forceNew && tryResumeSession()) return;
+
   session = {
     queue: pickSessionQueue(),
     index: 0,
     answers: {},
     wrong: [],
+    startedAt: new Date().toISOString(),
   };
+  persist();
   renderQuestion();
+}
+
+function abandonSession() {
+  session = null;
+  persist(true);
+  document.getElementById("sessionArea").innerHTML =
+    `<p class="empty-hint">Session cleared. Press <strong>Start session</strong> for a new mix of 20.</p>`;
+  paintStartButton();
 }
 
 function recordAnswer(q, chosen) {
@@ -232,6 +331,7 @@ function renderQuestion() {
   });
   document.getElementById("btnNextQ").addEventListener("click", () => {
     session.index += 1;
+    persist(); // keep place if user leaves mid-session
     renderQuestion();
   });
 }
@@ -244,6 +344,10 @@ function renderEnd() {
     return q && chosen === q.correct;
   }).length;
   const wrongIds = session.wrong;
+  // Session finished — clear continuity snapshot
+  persist(true);
+  session = { queue: session.queue, index: session.queue.length, answers: session.answers, wrong: session.wrong };
+  paintStartButton();
   area.innerHTML = `
     <div class="session-end">
       <h2>Session complete</h2>
@@ -264,7 +368,7 @@ function renderEnd() {
       </div>
     </div>
   `;
-  document.getElementById("btnAgain").addEventListener("click", startSession);
+  document.getElementById("btnAgain").addEventListener("click", () => startSession(true));
 }
 
 async function loadData() {
@@ -275,6 +379,10 @@ async function loadData() {
   BANK = bank.questions || bank;
   CONCEPTS = concepts.concepts || concepts;
   paintMeta();
+  // Prefer local in-progress session (fast path after Explorer hop)
+  if (!tryResumeSession()) {
+    paintStartButton();
+  }
 }
 
 function bootSync() {
@@ -287,6 +395,14 @@ function bootSync() {
     state.lastWrongConcepts = m.lastWrongConcepts || [];
     state.history = m.history || [];
     paintMeta();
+    // Restore cloud/local active session if we do not already have one on screen
+    const alreadyActive = session && session.queue?.length && session.index < session.queue.length;
+    if (!alreadyActive && BANK.length) {
+      tryResumeSession(m.activeSession || readSessionLocal());
+    } else {
+      paintStartButton();
+    }
+    syncHydrated = true;
   }
   if (UI) {
     UI.mount(document.getElementById("amity-sync-root"), {
@@ -297,10 +413,17 @@ function bootSync() {
         apply(sub || P?.getSubjectPayload?.(local?.payload, "csit745") || null);
       }
     });
+  } else {
+    const local = P?.readLocalCache?.();
+    apply(P?.getSubjectPayload?.(local?.payload, "csit745") || null);
   }
 }
 
-document.getElementById("btnStart").addEventListener("click", startSession);
+document.getElementById("btnStart").addEventListener("click", () => startSession(false));
+document.getElementById("btnAbandon").addEventListener("click", abandonSession);
+window.addEventListener("pagehide", () => {
+  if (session && session.queue?.length && session.index < session.queue.length) persist();
+});
 bootSync();
 loadData().catch((err) => {
   document.getElementById("sessionArea").innerHTML = `<p class="empty-hint">Failed to load bank: ${esc(err.message)}</p>`;
