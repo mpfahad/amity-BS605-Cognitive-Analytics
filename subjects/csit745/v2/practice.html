@@ -26,7 +26,7 @@
     <div>
       <div class="kicker">CSIT745 · v2 Practice</div>
       <h1>Adaptive MCQ</h1>
-      <p class="lede">20 questions per session from the <strong>whole subject</strong> (all modules mixed). An open session stays open if you leave for Explorer and come back.</p>
+      <p class="lede">20 questions per session from the <strong>whole subject</strong> (all modules mixed). New sessions avoid recent questions unless they are still flagged. Correct answers clear flags.</p>
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:0.5rem;align-items:center">
       <button type="button" class="btn primary" id="btnStart">Start session</button>
@@ -55,7 +55,10 @@ let state = {
   flagged: {},       // qid -> true
   mastery: {},       // conceptId -> { seen, correct, wrong }
   lastWrongConcepts: [],
-  history: []        // recent question ids
+  history: [],       // recent question ids
+  // Each entry = question ids from one finished session (newest last).
+  // New sessions exclude these unless the question is flagged.
+  recentSessionQueues: [],
 };
 
 let session = null; // { queue, index, answers, wrong, startedAt }
@@ -119,6 +122,7 @@ function persist(clearActive) {
     mastery: state.mastery,
     lastWrongConcepts: state.lastWrongConcepts,
     history: state.history.slice(-200),
+    recentSessionQueues: (state.recentSessionQueues || []).slice(-12),
     activeSession: snap,
   }, "csit745");
   paintMeta();
@@ -172,47 +176,78 @@ function paintMeta() {
 }
 
 /**
- * Whole-subject adaptive pick (NOT module-filtered):
- * 1) flagged questions still in bank
- * 2) new angles on recently-wrong concepts
- * 3) under-covered concepts / unseen questions
- * 4) fill remaining with shuffled full bank
+ * Whole-subject adaptive pick (NOT module-filtered).
+ * Hard rule: never reuse a question from recent finished sessions unless it is flagged.
+ * Soft preference: flagged first, then weak/new concepts among the eligible pool.
  */
 function pickSessionQueue() {
   const byId = Object.fromEntries(BANK.map((q) => [q.id, q]));
+  // Copy of finished-session id lists (oldest → newest). Drop oldest if pool too small.
+  const queues = (state.recentSessionQueues || []).map((q) => (q || []).slice());
+
+  function blockedSet() {
+    const blocked = new Set();
+    queues.forEach((arr) => (arr || []).forEach((id) => blocked.add(id)));
+    return blocked;
+  }
+
+  function eligiblePool() {
+    const blocked = blockedSet();
+    return BANK.filter((q) => state.flagged[q.id] || !blocked.has(q.id));
+  }
+
+  let pool = eligiblePool();
+  while (pool.length < SESSION_SIZE && queues.length) {
+    queues.shift(); // release oldest finished session back into rotation
+    pool = eligiblePool();
+  }
+
   const picked = [];
   const used = new Set();
 
   function add(q) {
     if (!q || used.has(q.id) || picked.length >= SESSION_SIZE) return;
+    if (!state.flagged[q.id] && blockedSet().has(q.id)) return;
     used.add(q.id);
     picked.push(q);
   }
 
-  // 1. Flagged (whole subject)
-  shuffle(Object.keys(state.flagged).filter((id) => state.flagged[id] && byId[id]))
-    .forEach((id) => add(byId[id]));
+  const poolIds = new Set(pool.map((q) => q.id));
 
-  // 2. Same-concept new angles from recent wrongs
-  const wrongConcepts = state.lastWrongConcepts.slice(0, 8);
-  wrongConcepts.forEach((cid) => {
-    shuffle(BANK.filter((q) => q.conceptId === cid && !used.has(q.id))).slice(0, 2).forEach(add);
+  // 1) Flagged first (allowed even if they were in a recent session)
+  shuffle(
+    Object.keys(state.flagged).filter((id) => state.flagged[id] && byId[id] && poolIds.has(id))
+  ).forEach((id) => add(byId[id]));
+
+  // 2) Same-concept new angles from recent wrongs — eligible only
+  state.lastWrongConcepts.slice(0, 8).forEach((cid) => {
+    shuffle(pool.filter((q) => q.conceptId === cid && !used.has(q.id))).slice(0, 2).forEach(add);
   });
 
-  // 3. Prefer concepts with low mastery / never seen
-  const scored = BANK.map((q) => {
-    const m = state.mastery[q.conceptId] || { seen: 0, correct: 0, wrong: 0 };
-    const histPenalty = state.history.includes(q.id) ? 3 : 0;
-    const coverage = m.seen;
-    const missRate = m.seen ? m.wrong / m.seen : 0.5;
-    return { q, score: missRate * 2 + (coverage === 0 ? 2 : 0) - histPenalty + Math.random() };
-  }).sort((a, b) => b.score - a.score);
-  scored.forEach(({ q }) => add(q));
+  // 3) Prefer under-covered / never-seen among eligible
+  pool
+    .map((q) => {
+      const m = state.mastery[q.conceptId] || { seen: 0, correct: 0, wrong: 0 };
+      const histPenalty = state.history.includes(q.id) ? 2 : 0;
+      const missRate = m.seen ? m.wrong / m.seen : 0.5;
+      return { q, score: missRate * 2 + (m.seen === 0 ? 2 : 0) - histPenalty + Math.random() };
+    })
+    .sort((a, b) => b.score - a.score)
+    .forEach(({ q }) => add(q));
 
-  // 4. Absolute fallback: full shuffle
-  shuffle(BANK).forEach(add);
+  // 4) Rest of eligible pool
+  shuffle(pool).forEach(add);
 
-  return shuffle(picked).slice(0, SESSION_SIZE);
+  // 5) Last resort if bank is tiny
+  if (picked.length < SESSION_SIZE) shuffle(BANK).forEach(add);
+
+  return shuffle(picked).slice(0, Math.min(SESSION_SIZE, picked.length));
+}
+
+function rememberFinishedSession(queue) {
+  const ids = (queue || []).map((q) => q.id).filter(Boolean);
+  if (!ids.length) return;
+  state.recentSessionQueues = [...(state.recentSessionQueues || []), ids].slice(-12);
 }
 
 function startSession(forceNew) {
@@ -251,17 +286,24 @@ function recordAnswer(q, chosen) {
   session.answers[q.id] = chosen;
   const m = state.mastery[q.conceptId] || { seen: 0, correct: 0, wrong: 0 };
   m.seen += 1;
-  if (ok) m.correct += 1;
-  else {
+  let unflagged = false;
+  if (ok) {
+    m.correct += 1;
+    // Rule: correct answer clears the flag
+    if (state.flagged[q.id]) {
+      delete state.flagged[q.id];
+      unflagged = true;
+    }
+  } else {
     m.wrong += 1;
     state.flagged[q.id] = true;
-    session.wrong.push(q.id);
+    if (!session.wrong.includes(q.id)) session.wrong.push(q.id);
     state.lastWrongConcepts = [q.conceptId, ...state.lastWrongConcepts.filter((c) => c !== q.conceptId)].slice(0, 20);
   }
   state.mastery[q.conceptId] = m;
   state.history = [...state.history.filter((id) => id !== q.id), q.id].slice(-200);
   persist();
-  return ok;
+  return { ok, unflagged };
 }
 
 function renderQuestion() {
@@ -315,16 +357,15 @@ function renderQuestion() {
     btn.addEventListener("click", () => {
       if (session.answers[q.id] !== undefined) return;
       const chosen = Number(btn.dataset.i);
-      const ok = recordAnswer(q, chosen);
-      // re-render to show feedback
-      const answeredNow = true;
+      const { ok, unflagged } = recordAnswer(q, chosen);
       area.querySelectorAll(".opt").forEach((b) => {
         b.disabled = true;
         const i = Number(b.dataset.i);
         if (i === q.correct) b.classList.add("correct");
         else if (i === chosen && !ok) b.classList.add("wrong");
       });
-      document.getElementById("fb").innerHTML = `<div class="feedback ${ok?"":"bad"}"><strong>${ok?"Correct.":"Not quite."}</strong> ${esc(q.explanation || "")}${!ok ? ` Flagged for review.` : ""} ${concept ? `<a href="index.html#${esc(q.conceptId)}">Review topic</a>` : ""}</div>`;
+      const flagNote = !ok ? " Flagged for review." : (unflagged ? " Flag cleared." : "");
+      document.getElementById("fb").innerHTML = `<div class="feedback ${ok?"":"bad"}"><strong>${ok?"Correct.":"Not quite."}</strong> ${esc(q.explanation || "")}${flagNote} ${concept ? `<a href="index.html#${esc(q.conceptId)}">Review topic</a>` : ""}</div>`;
       document.getElementById("btnNextQ").disabled = false;
       document.querySelector(".progress-bar > i").style.width = Math.round((n / total) * 100) + "%";
     });
@@ -344,14 +385,16 @@ function renderEnd() {
     return q && chosen === q.correct;
   }).length;
   const wrongIds = session.wrong;
-  // Session finished — clear continuity snapshot
+  // Remember this session's questions so the next mix avoids them (unless flagged)
+  rememberFinishedSession(session.queue);
+  // Session finished — clear continuity snapshot (keeps recentSessionQueues via persist)
   persist(true);
   session = { queue: session.queue, index: session.queue.length, answers: session.answers, wrong: session.wrong };
   paintStartButton();
   area.innerHTML = `
     <div class="session-end">
       <h2>Session complete</h2>
-      <p class="lede">Score: <strong>${correct}</strong> / ${total} · Whole-subject mix (Modules 1–5).</p>
+      <p class="lede">Score: <strong>${correct}</strong> / ${total} · Next session will use a fresh mix (repeats only if still flagged).</p>
       ${wrongIds.length ? `
         <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--warn)">Needs review</h3>
         <ul class="flag-list">
@@ -394,6 +437,7 @@ function bootSync() {
     state.mastery = m.mastery || {};
     state.lastWrongConcepts = m.lastWrongConcepts || [];
     state.history = m.history || [];
+    state.recentSessionQueues = Array.isArray(m.recentSessionQueues) ? m.recentSessionQueues : [];
     paintMeta();
     // Restore cloud/local active session if we do not already have one on screen
     const alreadyActive = session && session.queue?.length && session.index < session.queue.length;
