@@ -9,18 +9,18 @@
 
 | Section | Concept id | Pages cited | Quick def | Quote in extract | MCQs (3) | Verdict |
 |---------|------------|-------------|-----------|------------------|----------|---------|
-| 2.1.1 | m2-2.1.1 | 33 | Pass | Pass | 3 | **PASS** |
-| 2.1.2 | m2-2.1.2 | 33–40 | Pass | Pass (Bowley) | 3 | **PASS** |
-| 2.1.3 | m2-2.1.3 | 40–42 | Pass | Pass (UNECE) | 3 | **PASS** |
-| 2.2.1 | m2-2.2.1 | 42–44 | Pass | Pass (double-barrelled) | 3 | **PASS** |
-| 2.2.2 | m2-2.2.2 | 44 | Pass | Pass | 3 | **PASS** |
-| 2.2.3 | m2-2.2.3 | 44–45 | Pass | Pass (page limit) | 3 | **PASS** |
-| 2.3.1 | m2-2.3.1 | 45–46 | Pass | Pass (sampling plan) | 3 | **PASS** |
-| 2.3.2 | m2-2.3.2 | 46–47 | Pass | Pass | 3 | **PASS** |
-| 2.3.3 | m2-2.3.3 | 47–49 | Pass | Pass (classification line) | 3 | **PASS** |
-| 2.3.4 | m2-2.3.4 | 49–51 | Pass | Pass | 3 | **PASS** |
-| 2.3.5 | m2-2.3.5 | 52 | Pass | Pass | 3 | **PASS** |
-| 2.3.6 | m2-2.3.6 | 53 | Pass | Pass | 3 | **PASS** |
+| 2.1.1 | 2.1.1 | 33 | Pass | Pass | 3 | **PASS** |
+| 2.1.2 | 2.1.2 | 33–40 | Pass | Pass (Bowley) | 3 | **PASS** |
+| 2.1.3 | 2.1.3 | 40–42 | Pass | Pass (UNECE) | 3 | **PASS** |
+| 2.2.1 | 2.2.1 | 42–44 | Pass | Pass (double-barrelled) | 3 | **PASS** |
+| 2.2.2 | 2.2.2 | 44 | Pass | Pass | 3 | **PASS** |
+| 2.2.3 | 2.2.3 | 44–45 | Pass | Pass (page limit) | 3 | **PASS** |
+| 2.3.1 | 2.3.1 | 45–46 | Pass | Pass (sampling plan) | 3 | **PASS** |
+| 2.3.2 | 2.3.2 | 46–47 | Pass | Pass | 3 | **PASS** |
+| 2.3.3 | 2.3.3 | 47–49 | Pass | Pass (classification line) | 3 | **PASS** |
+| 2.3.4 | 2.3.4 | 49–51 | Pass | Pass | 3 | **PASS** |
+| 2.3.5 | 2.3.5 | 52 | Pass | Pass | 3 | **PASS** |
+| 2.3.6 | 2.3.6 | 53 | Pass | Pass | 3 | **PASS** |
 
 **Tree:** Module II → 2.1 Data Collection / 2.2 Questionnaire Designing / 2.3 Sampling → all leaves above.  
 **Merge:** Module I (and other modules present) preserved; M2 concepts/questions replaced idempotently via `merge_util.merge_module`.
@@ -82,4 +82,5 @@
 ## Counts (after final merge)
 - **Concepts (Module 2):** 12  
 - **Questions (Module 2):** 36  
-- **IDs:** concepts `m2-2.x.x`; questions `m2-2.x.x-qN`
+- **IDs:** concepts `2.x.x` (syllabus form); questions `m2-2.x.x-qN`
+
