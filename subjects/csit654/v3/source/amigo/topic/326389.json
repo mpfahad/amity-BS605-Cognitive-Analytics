@@ -1,0 +1,37 @@
+{
+  "cmid": "326389",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541816&cmid=326389",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "A digital signature is a mathematical technique which validates?",
+      "options": [
+        "a. authenticity",
+        "b. integrity",
+        "c. Non-repudiation",
+        "d. All of the above"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Signatures support authenticity, integrity, and non-repudiation."
+    },
+    {
+      "no": "2",
+      "stem": "_____________ is a process which verifies the identity of a user who wants to access the system.",
+      "options": [
+        "a. Authentication",
+        "b. Non-repudiation",
+        "c. Integrity",
+        "d. None of the above"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Authentication verifies a user’s claimed identity."
+    }
+  ]
+}

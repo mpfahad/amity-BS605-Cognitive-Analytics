@@ -1,0 +1,186 @@
+{
+  "pairs": [
+    {
+      "id": "passive-active",
+      "title": "Passive vs Active attack",
+      "module": 1,
+      "left": {
+        "title": "Passive",
+        "bullets": ["Observes or analyses", "Does not alter resources", "Hard to detect", "Example: traffic analysis"]
+      },
+      "right": {
+        "title": "Active",
+        "bullets": ["Modifies or disrupts", "Changes behaviour / availability", "Detection & recovery matter", "Example: replay, DoS"]
+      },
+      "related": ["1.1.1"]
+    },
+    {
+      "id": "service-mechanism",
+      "title": "Service vs Mechanism",
+      "module": 1,
+      "left": {
+        "title": "Security service",
+        "bullets": ["WHAT we want", "Goal / abstract need", "e.g. confidentiality", "Named in exam stems as a service"]
+      },
+      "right": {
+        "title": "Security mechanism",
+        "bullets": ["HOW we do it", "Concrete technique", "e.g. encryption", "Implements one or more services"]
+      },
+      "related": ["1.1.2"]
+    },
+    {
+      "id": "subst-trans",
+      "title": "Substitution vs Transposition",
+      "module": 1,
+      "left": {
+        "title": "Substitution",
+        "bullets": ["Replace symbols", "Identity of letters changes", "Caesar / Playfair / Vigenère", "Frequency often useful"]
+      },
+      "right": {
+        "title": "Transposition",
+        "bullets": ["Reorder positions", "Same letters, new order", "Rail fence / columnar", "Anagramming attacks"]
+      },
+      "related": ["1.1.4", "1.1.5"]
+    },
+    {
+      "id": "stream-block",
+      "title": "Stream vs Block cipher",
+      "module": 1,
+      "left": {
+        "title": "Stream",
+        "bullets": ["Continuous keystream", "Often XOR", "Low latency", "Keystream reuse is catastrophic"]
+      },
+      "right": {
+        "title": "Block",
+        "bullets": ["Fixed-size blocks", "Needs a mode of operation", "DES / AES family", "Padding when length ≠ block"]
+      },
+      "related": ["1.1.8", "2.1.1"]
+    },
+    {
+      "id": "confusion-diffusion",
+      "title": "Confusion vs Diffusion",
+      "module": 2,
+      "left": {
+        "title": "Confusion",
+        "bullets": ["Hide key–ciphertext link", "Nonlinear S-boxes", "Hard to infer key bits"]
+      },
+      "right": {
+        "title": "Diffusion",
+        "bullets": ["Spread plaintext influence", "Permutations / MixColumns", "Avalanche across the block"]
+      },
+      "related": ["2.1.2"]
+    },
+    {
+      "id": "feistel-spn",
+      "title": "Feistel vs SPN (AES)",
+      "module": 2,
+      "left": {
+        "title": "Feistel (DES)",
+        "bullets": ["Split halves", "F on one half, XOR other", "Decrypt = reverse keys"]
+      },
+      "right": {
+        "title": "SPN (AES)",
+        "bullets": ["SubBytes / ShiftRows / MixColumns", "Not Feistel", "Invert each layer for decrypt"]
+      },
+      "related": ["2.1.3", "2.2.1"]
+    },
+    {
+      "id": "ecb-cbc",
+      "title": "ECB vs CBC",
+      "module": 2,
+      "left": {
+        "title": "ECB",
+        "bullets": ["Independent blocks", "Identical PT → identical CT", "Patterns leak"]
+      },
+      "right": {
+        "title": "CBC",
+        "bullets": ["Chains with IV / prior CT", "Hides repeated blocks", "Needs a unique IV"]
+      },
+      "related": ["2.1.7"]
+    },
+    {
+      "id": "mac-hash",
+      "title": "MAC vs Hash",
+      "module": 3,
+      "left": {
+        "title": "MAC",
+        "bullets": ["Shared secret key", "Origin + integrity", "Recompute to verify"]
+      },
+      "right": {
+        "title": "Hash / digest",
+        "bullets": ["No shared secret alone", "Fingerprint of data", "Anyone can recompute"]
+      },
+      "related": ["3.1.4", "3.1.6"]
+    },
+    {
+      "id": "sig-enc",
+      "title": "Signature vs Encryption",
+      "module": 3,
+      "left": {
+        "title": "Digital signature",
+        "bullets": ["Sign with private key", "Verify with public key", "Integrity + non-repudiation"]
+      },
+      "right": {
+        "title": "Encryption",
+        "bullets": ["Confidentiality of content", "Decrypt with matching secret", "Not the same as signing"]
+      },
+      "related": ["3.2.1"]
+    },
+    {
+      "id": "pgp-smime",
+      "title": "PGP vs S/MIME",
+      "module": 4,
+      "left": {
+        "title": "PGP",
+        "bullets": ["Hybrid encryption", "Web of trust", "User-centric trust"]
+      },
+      "right": {
+        "title": "S/MIME",
+        "bullets": ["MIME + CMS", "Hierarchical CA / PKI", "Enterprise mail security"]
+      },
+      "related": ["4.1.3", "4.1.4"]
+    },
+    {
+      "id": "ah-esp",
+      "title": "AH vs ESP (IPsec)",
+      "module": 4,
+      "left": {
+        "title": "AH",
+        "bullets": ["Integrity / authentication", "No payload encryption by AH itself", "Protects selected headers"]
+      },
+      "right": {
+        "title": "ESP",
+        "bullets": ["Confidentiality (encrypt)", "Optional integrity", "Typical “secure tunnel” workhorse"]
+      },
+      "related": ["4.2.1"]
+    },
+    {
+      "id": "virus-worm",
+      "title": "Virus vs Worm",
+      "module": 5,
+      "left": {
+        "title": "Virus",
+        "bullets": ["Needs a host file/program", "Spreads when host runs/shares"]
+      },
+      "right": {
+        "title": "Worm",
+        "bullets": ["Self-propagates on the network", "Does not need classic host hitch"]
+      },
+      "related": ["5.1.3"]
+    },
+    {
+      "id": "sig-anomaly",
+      "title": "Signature vs Anomaly IDS",
+      "module": 5,
+      "left": {
+        "title": "Signature",
+        "bullets": ["Known attack patterns", "Low novelty detection", "Tune for false positives"]
+      },
+      "right": {
+        "title": "Anomaly",
+        "bullets": ["Deviation from normal", "Can catch unknowns", "May flag unusual legit use"]
+      },
+      "related": ["5.1.2"]
+    }
+  ]
+}

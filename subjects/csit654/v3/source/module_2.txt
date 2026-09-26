@@ -1,0 +1,1493 @@
+--- page 44 ---
+Network Security and Cryptography
+39
+Notes
+Amity University Online
+Module - II: Secret and Public Key Cryptography
+Learning Objectives 
+At the end of this module, you will be able to:
+●	
+Learn about the Secret key Cryptography
+●	
+Understand Shannon’s Theory of Confusion and Diffusion
+●	
+Discuss Modern Block Cipher Principles and its operations
+●	
+Infer about the strength of Data Encryption Standard (DES)
+●	
+Identify Advanced Encryption Standard (AES) of Public key Cryptography
+●	
+Discuss about Fermat’s Theorem, Euler’s Theorem and Chinese Remainder 
+Theorem
+●	
+Define security of RSA Algorithm
+Introduction
+ 
+Source: https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2022_10_
+RSA1-1.jpg
+In cryptographic systems supported by ICSF, such as DES or AES, secret 
+key cryptography is used, also known as symmetric cryptography. For successful 
+communication, both parties must use the same encryption algorithm, and the receiving 
+party must have access to the cryptographic key used by the transmitting party to 
+decrypt the data.
+Block cipher schemes are cryptographic algorithms used to encrypt data in fixed-
+size blocks. Popular block ciphers include the Data Encryption Standard (DES), which 
+is now considered insecure due to its small key size. Triple DES applies the DES 
+algorithm three times for increased security. The Advanced Encryption Standard (AES) 
+is a newer and more secure standard based on the Rijndael encryption algorithm. Other 
+block ciphers like IDEA, TwoFish, and SERPENT offer varying levels of security and 
+efficiency, with AES being the most widely adopted standard.
+Shannon's Theory of Confusion and Diffusion states that a secure code should have 
+properties of confusion, making the relationship between ciphertext and key complex, 
+(c) Amity University Online
+
+
+--- page 45 ---
+40
+Network Security and Cryptography
+Notes
+Amity University Online
+and diffusion, spreading changes in plaintext over the ciphertext. These properties help 
+prevent revealing the key or original message, enhancing encryption security.
+The Feistel Structure, developed by Don Coppersmith and Horst Feistel, forms 
+the foundation for the encryption and decryption algorithms of the Data Encryption 
+Standard (DES). This structure uses the same key algorithm for both encryption and 
+decryption.
+Asymmetric cryptography, also known as public-key cryptography, plays a crucial 
+role in modern data security and communication. It relies on two mathematically 
+related keys: a public key, which can be freely shared, and a private key, which must 
+be kept secret. These keys are used for encryption, decryption, digital signatures, 
+authentication, and key exchange, providing a secure framework for data protection and 
+secure communication over untrusted channels.
+2.1  Secret Key Cryptography
+Conventional algorithms supported by ICSF, such as the Data Encryption 
+Standard (DES) or the Advanced Encryption Standard (AES), are used in secret key 
+cryptography. Symmetric cryptography is another name for secret key cryptography. 
+This requirement must be met in order for two parties utilising a conventional algorithm 
+to have intelligent cryptographic communications:
+●
+●
+The same encryption algorithm must be used by both sides.
+●
+●
+For the receiving party to decrypt the data, the cryptographic key used by the 
+transmitting party to encrypt the data must be accessible.
+ 
+Source: https://miro.medium.com/v2/resize:fit:720/format:webp/0*gLfaS8bG3bhkVlWa.png
+2.1.1 Modern Block Ciphers: Block Ciphers Principles
+What is Block Cipher?
+A block cypher code takes a square of bits of plaintext and uses that square to 
+create a square of ciphertext bits that are mostly the same size. The provided plan sets 
+(c) Amity University Online
+
+
+--- page 46 ---
+Network Security and Cryptography
+41
+Notes
+Amity University Online
+a fixed square size. The decision of square size doesn't straightforwardly influence to 
+the strength of encryption conspire. The strength of code depends up on the key length.
+In this plan, the plain paired content is handled in squares (gatherings) of pieces 
+all at once; for example, a square of plaintext pieces is chosen, a progression of tasks 
+is performed on this square to produce a square of cipher text bits. A square can only 
+have a certain number of parts. For example, the block sizes of the plans DES and AES 
+are 64 and 128 respectively.
+Block Cipher Principles
+●
+●
+most symmetric square codes depend on a Feistel Code Structure required since 
+should have the option to decode ciphertext to recuperate messages productively 
+●
+●
+block figures resemble an incredibly enormous replacement 
+●
+●
+would require table of 264 passages for a 64-digit block 
+●
+●
+rather make from more modest structure blocks 
+●
+●
+utilizing thought of an item figure
+Stream Cipher 
+Here, the plaintext is prepared one tiny bit at a time. That is, the smallest amount 
+of plaintext is taken, and a series of operations are carried out on it to generate the 
+smallest amount of ciphertext. Actually, stream figures are block figures that have the 
+smallest possible square size.
+ 
+Figure - 1: Block cipher
+Block Cipher Schemes 
+There is an immense number of square codes conspires that are being used. 
+Large numbers of them are publicly known. Generally famous and noticeable square 
+codes are recorded underneath. 
+Digital Encryption Standard (DES) − The 1990s mainstream block code. The main 
+reason it is currently seen as a "broken" block figure is its small key size. 
+Triple DES − It is a variation conspire dependent on rehashed DES applications. 
+It is as yet a regarded block figures however wasteful contrasted with the new quicker 
+square codes accessible. 
+(c) Amity University Online
+
+
+--- page 47 ---
+42
+Network Security and Cryptography
+Notes
+Amity University Online
+Advanced Encryption Standard (AES) − Generally speaking, it is a new square 
+code that depends on the Rijndael encryption algorithm, which prevailed in the AES 
+plan conflict. 
+IDEA − It is an adequately solid square code with a square size of 64 and a vital 
+size of 128 pieces. Various applications use IDEA encryption, including early forms 
+of Pretty Good Privacy (PGP) convention. The utilization of IDEA plot has a confined 
+reception because of patent issues. 
+TwoFish − A variable-length key and a block size of 128 pieces are used in this 
+square code design. It belonged to an AES finalist. It is based on the Blowfish square 
+code from before, which had 64 pieces in a square.
+SERPENT − A square code that was also an AES rivalry finalist, with a square size 
+of 128 pieces and key lengths of 128, 192, or 256 pieces. Compared to other square 
+codes, it has a safer plan but is slower.
+2.1.2 Shannon’s Theory of Confusion and Diffusion
+CONFUSION and DIFFUSION region unit the properties for making a protected 
+code. Every Confusion and diffusion zone unit want to stop the mystery composing key 
+from its derivation or eventually for forestalling the main message. 
+ 
+Figure - 2: confusion and diffusion
+In cryptography, confusion and diffusion are two properties of the activity 
+of a protected code which were distinguished by Claude Shannon in his paper 
+Communication Theory of Secrecy Systems, distributed in 1949. 
+In Shannon's unique definitions, confusion alludes to making the connection 
+between the key and the ciphertext as intricate and included as could really be 
+expected; diffusion alludes to the property that the repetition in the measurements of 
+the plaintext is "dispersed" in the insights of the ciphertext. At the end of the day, the 
+non-consistency in the conveyance of the individual letters (and combines of adjoining 
+letters) in the plaintext ought to be rearranged into the non-consistency in the circulation 
+of a lot bigger constructions of the ciphertext, which is a lot harder to recognize. 
+Diffusion implies that the yield pieces ought to rely upon the info bits in a perplexing 
+manner. In a code with great diffusion, in the event that the slightest bit of the plaintext 
+is changed, at that point the ciphertext should change totally, in an eccentric or 
+(c) Amity University Online
+
+
+--- page 48 ---
+Network Security and Cryptography
+43
+Notes
+Amity University Online
+pseudorandom way. Specifically, for a haphazardly picked input, in the event that one 
+flips the I-th bit, at that point the likelihood that the j-th yield touch will change ought to 
+be one half, for any I and j — this is named the severe torrential slide measure. All the 
+more by and large, one may require that flipping a fixed arrangement of pieces should 
+change each yield bit with likelihood one half. 
+One point of confusion is to make it elusive the key regardless of whether one has 
+an enormous number of plaintext-ciphertext sets created with a similar key. Accordingly, 
+each piece of the ciphertext ought to rely upon the whole key, and in various ways on 
+various pieces of the key. Specifically, transforming the slightest bit of the key should 
+change the ciphertext totally. 
+The least difficult approach to accomplish both diffusion and confusion is a 
+replacement change organisation. In these frameworks, the plaintext and the key 
+frequently have a fundamentally the same as part in creating the yield, consequently it 
+is the very system that guarantees both diffusion and confusion
+What is Confusion?
+CONFUSION is utilized for making ignorant code text though diffusion is utilized 
+for expanding the repetition of the plain content over the first a piece of the code text to 
+make it dark. The stream figure exclusively relies upon CONFUSION, or something bad 
+might happen, DIFFUSION is utilized by each stream and square code.
+What is Diffusion?
+DIFFUSION implies that in the event that we change a character of the plaintext, at 
+that point a few characters of the cipher text should change, and comparably, on the off 
+chance that we change a character of the cipher text, at that point a few characters of 
+the plaintext ought to change. We saw that the Hill figure has this property. This implies 
+that recurrence insights of letters, [digraphs], and so forth in the plaintext are diffused 
+more than a few characters in the cipher text, which implies substantially more cipher 
+text is expected to do an important factual assault.
+Let's see the difference between confusion and diffusion,
+1.	
+Confusion is a cryptographic strategy which is utilized to make faint code texts. 
+While diffusion is utilized to make enigmatic plain messages. 
+2.	
+This procedure is conceivable through replacement algorithm. While it is conceivable 
+through transportation algorithm. 
+3.	
+In confusion, on the off chance that the slightest bit inside the mystery's changed, 
+most or all pieces inside the code text likewise will be modified.	
+While 
+in 
+diffusion, in the event that one picture inside the plain content is adjusted, numerous 
+or all picture inside the code text additionally will be altered. 
+4.	
+In confusion, ambiguity is expanded in resultant. While in diffusion, excess is 
+expanded in resultant. 
+5.	
+Both stream code and square code utilizes confusion. Only block figure utilizes 
+diffusion. 
+6.	
+The connection between the code text and the key is veiled by confusion. While The 
+connection between the code text and the plain content is covered by diffusion.
+Confusion Requirement
+Confusion: Each piece of the ciphertext block has profoundly nonlinear relations 
+with the plaintext block bits and the key pieces.
+(c) Amity University Online
+
+
+--- page 49 ---
+44
+Network Security and Cryptography
+Notes
+Amity University Online
+Figure plaintext to ciphertext
+Remarks: Nonlinear capacities are answerable for confusion.
+Example: take  that x, y and k all have 8 bits. If 
+then it has bad confusion, as they are linear relations
+Diffusion Requirement
+Diffusion: Each plaintext block spot or key piece influences numerous pieces of the 
+cipher text block
+  
+Figure plaintext to ciphertext
+Example: Suppose that x, y and k all have 8 bits. If
+(c) Amity University Online
+
+
+--- page 50 ---
+Network Security and Cryptography
+45
+Notes
+Amity University Online
+at that point it has awesome Diffusion, in light of the fact that each plaintext spot or 
+key piece influences half of the pieces in the yield  block y.
+Shannon’s Suggestion
+The encryption and decoding elements of a code ought to have both great 
+confusion and diffusion of the message block pieces and mystery key pieces.
+2.1.3 Fiestal Structure
+The Feistel Structure serves as the foundation for both the encryption and 
+unscrambling algorithms used by the DES (Data Encryption Standard), which is the 
+main subject of this discussion. This section and the next two subsections outline this 
+design: was carried out in the Lucifer figure by Don Coppersmith and Horst Feistel, the 
+IBM cryptographer. For encryption and decryption, a cryptographic system based on 
+Feistel structure uses the same key algorithm. 
+As Figure 2 illustrates, the Feistel structure consists of multiple rounds of plaintext 
+handling, where each round consists of a stage step and a replacement step. I 
+have labelled the left half of the information square as L and the right half as R. The 
+information square is divided into equal portions for each adjustment.
+ 
+Figure - 5: The Feistel Structure for symmetric key cryptography
+(c) Amity University Online
+
+
+--- page 51 ---
+46
+Network Security and Cryptography
+Notes
+Amity University Online
+The right side of the square, R, remains unchanged in every round. However, an 
+activity that depends on R and the encryption key is experienced by the left half, L. The 
+Feistel Function is the term used to describe the activity that is depicted on the left half 
+L. Trading the modified L and R is the change endeavour that is completed at the end 
+of each round. As a result, R from the current round would be the L for the next round. 
+Moreover, let R for the subsequent round be the present round's yield, L. Important 
+Feistel structure properties are shown in the next two subsections. You'll notice that our 
+choice of the Feistel Function has no bearing on these attributes. In addition to DES, 
+there are a few more square codes that are based on the Feistel structure today. The 
+most well-known of them are Blowfish, CAST-128, and KASUMI.
+Encryption Process 
+The encryption interaction makes use of the Feistel structure, which consists of 
+multiple rounds of plaintext preparation, with each round consisting of a "replacement" 
+step and a change step. 
+The information square for each adjustment is divided into equal pieces, which can 
+be interpreted as the left and right halves, respectively, as L and R. 
+ 
+Figure - 6: encryption process
+The right side of the square, R, remains unchanged in every round. Either way, 
+something happens to the left half, L, which depends on R and the encryption key. 
+Firstly, we use an encoding capacity 'f' that requires two inputs: the key K and R. The 
+yield f(R,K) is created by the capacity. The yield of the numerical capacity is then 
+XORed with L. 
+When a Feistel Cypher, like DES, is used in its true form, a round-subordinate key, 
+or sub key, is obtained from the encryption key throughout each cycle instead of using 
+the complete key. This suggests that a different key is used for each round, even if the 
+first key is used to identify all of these subkeys. 
+At the end of every round, the stage venture exchanges the modified L and the 
+original R. Thus, R from the current round would be the L for the next round. Moreover, 
+the yield L from the current round becomes R for the subsequent round. 
+A 'round' is structured by the replacement and stage procedures above. The 
+algorithm plan indicates the number of iterations. 
+'R' and 'L', the two sub squares, are joined in a particular order to frame the cypher 
+text block after the last round is completed. 
+(c) Amity University Online
+
+
+--- page 52 ---
+Network Security and Cryptography
+47
+Notes
+Amity University Online
+The most challenging aspect of designing a Feistel Cypher is determining the 
+round capacity 'f'. This capacity must possess a few key characteristics that are outside 
+the purview of our discussion in order to qualify as a robust plan. 
+Decryption Process
+The interaction of decoding in Feistel figure is practically comparative. Rather 
+than beginning with a square of plaintext, the cipher text block is taken care of into 
+the beginning of the Feistel design and afterward the cycle from that point is actually 
+equivalent to portrayed in the given delineation. 
+ 
+Figure - 7: encryption and decryption process
+The cycle is supposed to be practically comparable and not actually same. On 
+account of decoding, the solitary contrast is that the sub keys utilized in encryption are 
+utilized in the opposite request. 
+Important to note is the final exchange of 'L' and 'R' in the Feistel Cypher advance. 
+If these are not exchanged, then a method like this one could not be used to decipher 
+the next cypher text.
+Mathematical Explanation of Every Round in the Feistel Framework
+When the I th preparation round comes to an end, let LEi and REi represent the 
+yield half-blocks. 'E' stands for encryption.  In the Feistel structure, the connection 
+between the yield of the I th round and the yield of the past round, that is, the (I − 1)th 
+round, is given by
+LEi = REi−1 
+REi = LEi−1 ⊕ F(REi−1, Ki)
+where ⊕ means the bitwise EXCLUSIVE-OR activity. The activity that "scrambles" 
+REi−1 from the previous round with what appears to be the round key Ki in is 
+represented by image F. As will be explained later, the round key Ki is obtained from the 
+fundamental encryption key.
+Normally, F is referred to as the Feistel work, following Horst Feistel. 
+The result of the final processing round, assuming 16 rounds of processing (which 
+is common), is provided by
+LE16 = RE15
+RE16 = LE15 ⊕ F(RE15, K16)
+Decryption in Ciphers Based on the Feistel Structure
+(c) Amity University Online
+
+
+--- page 53 ---
+48
+Network Security and Cryptography
+Notes
+Amity University Online
+ 
+ 
+Figure - 8: Decryption in Ciphers Based on the Feistel Structure
+2.1.4 Data Encryption Standard (DES) 
+The National Institute of Standards and Technology (NIST) distributes the 
+symmetric-key square code known as the Data Encryption Standard (DES). 
+The National Institute of Standards and Technology (NIST) adopted the symmetric-
+key square code known as the DES (Data Encryption Standard) algorithm, which was 
+developed by an IBM team in the middle of the 1970s. Using 48-piece keys, the method 
+transforms the plain text into ciphertext from 64-digit squares. 
+ 
+Figure - 9: Data Encryption Standard (DES)
+(c) Amity University Online
+
+
+--- page 54 ---
+Network Security and Cryptography
+49
+Notes
+Amity University Online
+Because it's a symmetric-key technique, the information is encoded and 
+unscrambled using the same key. If it were an asymmetric algorithm, different keys 
+would be used for encryption and decryption. 
+The Feistel block figure, known as LUCIFER, was developed in 1971 by IBM 
+cryptography expert Horst Feistel and is the foundation of DES. DES makes use of 16 
+Feistel structure rounds, with a different key for every round. 
+In November 1976, DES became the official government encryption standard, and 
+it was subsequently reaffirmed as the standard in 1983, 1988, and 1999. The industry 
+standard for information encryption in data security for a very long time was DES. 
+The strength of DES came to an end in 2002 when the Advanced Encryption 
+Standard (AES) replaced the DES encryption algorithm as the accepted standard, 
+resulting from a public competition to find an alternative. In May 2005, the NIST formally 
+withdrew FIPS 46-3, the 1999 reaffirmation; nonetheless, Triple DES (3DES) is still in 
+place for sensitive federal data until 2030. 
+A symmetric key-block figure known as Triple DES applies the DES figure in three 
+different ways. Using the first key (k1), it jumbles, then uses the second key (k2) to 
+decode, and finally uses the third key (k3) to encode. Additionally, there is a two-key 
+version in which the keys k1 and k3 are comparable. 
+With the increased processing power of more recent PCs, the 56-digit key 
+lengths of the DES algorithm became too short, necessitating the replacement of the 
+algorithm by NIST. The size of the key determines the encryption strength, and DES 
+was ultimately defeated by the ongoing advancements in computing technology. It 
+eventually reached a stage where 56-bit was insufficient to handle the new encryption 
+challenges. 
+Note that since DES is not, at this point the NIST government standard, it doesn't 
+imply that it's not, at this point being used. Triple DES is as yet utilized today, however 
+it's viewed as a heritage encryption algorithm. Note that NIST intends to prohibit all 
+types of Triple-DES from 2024 forward. Taking everything into account, you might need 
+to acquaint yourself with AES also, taking into account that it has thumped DES off the 
+highest point of the information encryption store. 
+Now that we have a better understanding of what DES is, let's look into the steps of 
+the DES algorithm.
+A Feistel cypher is used in DES. 16 round Feistel structures are used in it. There 
+are 64 digits in the square. DES, on the other hand, has a successful key length of 56 
+pieces, despite the key being 64 digits long. This is because the encryption algorithm 
+does not use 8 of the 64 pieces of the key, which function as check bits. The DES 
+General Structure is shown in the accompanying diagram. 
+ 
+Figure - 10: des algorithm
+(c) Amity University Online
+
+
+--- page 55 ---
+50
+Network Security and Cryptography
+Notes
+Amity University Online
+Given that DES is founded upon the Feistel Cypher, DES may be specified with 
+just the following:
+
+
+Round function 
+
+
+Any extra processing- Initial and final permutation
+
+
+Key schedule
+DES Algorithm Steps 
+DES converts 64-digit plain text into a 64-cycle ciphertext, to put it simply. A 
+comparable key is also used when there's a perfect chance to decode the content—
+which brings us full circle to our discussion of unbalanced algorithms. 
+The algorithmic relationship divides into the corresponding advancements: 
+The cycle begins with an underlying stage (IP) work taking over the 64-bit plain 
+content square. 
+Subsequently, the plain content undergoes the underlying change (IP). 
+The permuted block is then divided into two halves, referred to as Left Plain Text 
+(LPT) and Right Plain Text (RPT), by the underlying change (IP). 
+There are sixteen cycles in the encryption cycle for each LPT and RPT. 
+Once the LPT and RPT have finally reunited, a Final Permutation (FP) is executed 
+on the newly linked square. 
+The perfect 64-digit ciphertext is produced as a result of this cycle.
+The encryption interaction step (stage 4, above) is additionally separated into five 
+phases: 
+
+
+Key change 
+
+
+Extension stage 
+
+
+S-Box stage 
+
+
+P-Box stage 
+
+
+XOR and trade 
+For unscrambling, we utilize a similar algorithm, and we invert the request for the 
+16 round keys. 
+Then, to more readily comprehend what is DES, let us gain proficiency with the 
+different methods of activity for DES. 
+Modes of Operation for DES 
+Experts in information encryption with DES have five different ways of working to 
+review. 
+Codebook Electronic (ECB). Every 64-bit block can be freely unscrambled and 
+scrambled. 
+Chaining Code Blocks (CBC). Every 64-bit block uses an Initialization Vector 
+(IV) Code Feedback (CFB) and is dependent on the previous one. By providing 
+(c) Amity University Online
+
+
+--- page 56 ---
+Network Security and Cryptography
+51
+Notes
+Amity University Online
+pseudorandom yield, the initial ciphertext serves as an input for the encryption method. 
+This yield is then XORed with the plaintext to create the subsequent ciphertext unit, 
+Yield Feedback (OFB). Though it seems similar to CFB, the yield from the previous 
+DES Counter (CTR) actually serves as the input for the encryption process. An encoded 
+counter is XORed with each textual piece. After that, the counter is raised for each 
+subsequent square. 
+Next, in order to better understand what DES is, let's look into how it is tested and 
+executed. 
+DES Implementation and Testing 
+You should pick a security supplier to actualize your information encryption 
+algorithm. There are numerous accessible suppliers to look over, yet choosing one is 
+the fundamental starting advance in execution. Your determination may rely upon the 
+language you are utilizing, for example, Java, Python, C, or MATLAB. 
+Once a provider has been selected, you can choose to create your own key using 
+a plaintext or byte exhibit, or you can have the Key Generator generate an arbitrary 
+mystery key. 
+To make sure the encryption is properly actualized, testing is also essential. By 
+using the repeat connection feature on GitHub, you can find a testing method that 
+works. 
+We should now look into the reasons to study DES as we have come a long way in 
+understanding what it is.
+DES Analysis
+The DES fulfils both the ideal properties of square code. These two properties 
+make figure solid. 
+Torrential slide impact − A little change in plaintext brings about the exceptionally 
+extraordinary change in the ciphertext. 
+Culmination − Each piece of ciphertext relies upon numerous pieces of plaintext. 
+During the most recent couple of years, cryptanalysis have discovered a few 
+shortcomings in DES when key chose are feeble keys. These keys will be maintained a 
+strategic distance from. 
+DES has end up being a very much planned square code. There have been no 
+huge cryptanalytic assaults on DES other than comprehensive key hunt.
+Initial and Final Permutation
+P-boxes, also known as straight Permutation boxes, are the last and fundamental 
+changes. They are the antithesis of one another. They don't matter in terms of DES 
+encryption. The last and underlying stages looked like this –
+(c) Amity University Online
+
+
+--- page 57 ---
+52
+Network Security and Cryptography
+Notes
+Amity University Online
+ 
+Figure - 11: Initial and Final Permutation
+2.1.5 Strength of DES
+The block cypher algorithm known as the Data Encryption Standard (DES) uses 
+symmetric keys. Feistel network is the foundation of the algorithm. The technique 
+encrypts data in 64-bit blocks using a 56-bit key.
+Concerns concerning the strength of the data encryption standard fall into two 
+primary groups. They are as follows:
+●
+●
+Concerns about the particular algorithm used.
+●
+●
+Concerns about the usage of key of size 56-bit.
+Using the features of the DES algorithm, the first algorithmic concern deals with 
+the potential for cryptanalysis. The length of the secret key that is being used is a 
+more serious risk. With a 56-bit key length, there are 2^{56} (or roughly 7.2 ×10^{16}) 
+potential keys. Therefore, it seems that a brute force attack is not feasible.
+Advantages of DES
+●
+●
+It seems hard to get the key even with the plaintext and ciphertext.
+●
+●
+About half of the bits in the ciphertext block change when one plaintext block bit is 
+changed.
+●
+●
+DES has been tried and tested. 
+●
+●
+The functions are a combination of many mathematical structures with no obvious 
+shortcut.
+A system that performs one DES encryption per microsecond might take over a 
+thousand years to crack the cypher text, assuming that one must search half of the key 
+space on average. However, it is too conservative to assume that one DES encryption 
+occurs every microsecond. When a DES encryption was cracked by the Electronic 
+Frontier Foundation (EFF) in July 1998, DES was finally shown to be unsafe. With the 
+(c) Amity University Online
+
+
+--- page 58 ---
+Network Security and Cryptography
+53
+Notes
+Amity University Online
+aid of a specialised "DES cracker" device, the encryption was cracked. The attack was 
+said to have taken less than three days.
+It is not possible to break the DES encryption by just trying every key. The attacker 
+needs to be able to distinguish the plain text from other data unless they are provided 
+with the plain text already. To support the brute-force method, some level of familiarity 
+with the target plain text and some methods for automatically separating plain text from 
+garble are needed. If the only way to break the DES encryption method is by brute 
+force attack, then employing longer keys will undoubtedly assist us in fending off such 
+attacks. If a 128-bit key is employed, then an algorithm is guaranteed to be impervious 
+to brute force attacks. Statistical attacks on the DES algorithm include differential and 
+linear cryptanalysis. Triple DES and AES (Advanced Encryption Standard) are two 
+significant substitutes for DES.
+Strength-The Strength of DES Lies on two Realities: 
+a. 	 The utilization of 56-cycle keys: 56-bit key is utilized in encryption, there are 256 
+potential keys. A beast power assault on such number of keys is unreasonable. 
+b. 	 The idea of algorithm: Cryptanalyst can perform cryptanalysis by abusing the attribute 
+of DES algorithm however nobody has prevailing with regards to discovering the 
+shortcoming. 
+Shortcoming Weakness has been found in the plan of the code: 
+a. 	 Two picked contribution to a S-box can make a similar yield. 
+b. 	 The reason for beginning and last change isn't clear.
+2.1.6 Idea of Differential Cryptanalysis
+Differential cryptanalysis tries to discover the contrast between related plaintexts 
+that are scrambled. The plaintexts may vary by a couple of pieces. It is normally 
+dispatched as a versatile picked plaintext assault; the assailant picks the plaintext to 
+be encoded (yet doesn't have the foggiest idea about the key) and afterward scrambles 
+related plaintexts. 
+ 
+Figure - 12: Differential Cryptanalysis
+(c) Amity University Online
+
+
+--- page 59 ---
+54
+Network Security and Cryptography
+Notes
+Amity University Online
+The cryptanalyst at that point utilizes measurable investigation to look for 
+indications of non-arbitrariness in the ciphertexts, focusing in on regions where the 
+plaintexts contrast. All of the related ciphertexts ought to have a 50/50 possibility of 
+flipping; the cryptanalyst looks for regions where this isn't correct. Any such hidden 
+request is a sign to recuperate the key.
+ 
+Figure - 13: differential cryptanalysis
+A differential assault on a square code is the place where we examine the change 
+between one plaintext esteem and another, and the change that it makes on the yield 
+figures. As a rule we change the slightest bit in the information, and notice the slightest 
+bit change on the info and notice the adjustment in the yield. A very much planned code 
+will make a normal of half of the pieces change. In the event that the outcome is non-
+irregular, it gives an aggressor a favourable position in breaking the square code. 
+The differential cryptanalysis technique was made during the 1990s and where it 
+was conceivable to change a solitary piece in plaintext (P and P') and afterward notice 
+the adjustment in the yield ciphertext (C and C'): 
+The distinction in encryption is then made with the expansion of the key, and where 
+parts of the key will be uncovered through the differential technique. 
+A S-enclose is frequently utilized a crypto strategy, and where it is conceivable to 
+finish somewhat each round and watch how it will be directed to the yield, and we would 
+then be able to find portions of the keys. As the differential cryptanalysis was being 
+characterized, IBM discovered that a typical encryption method — DES (Data Encryption 
+Standard) — was liberated from assaults for its S-boxes. It has since been demonstrated 
+that the NSA had really characterized an update to the first S-box detail for DES, to 
+improve its obstruction. It is imagined that the NSA was really attempting to support the 
+DES technique, all together that differential cryptanalysis would not demonstrate that it 
+to be defective. 
+While the differential cryptanalysis was distributed by Eli Biham and Adi Shamir 
+in the last part of the 1980s, it is believed that the NSA definitely thought about the 
+strategy before it was unveiled.
+2.1.7 Block Cipher Modes of Operations
+What is Block Cipher?
+Stream figures and square figures are the two main categories of codes. A stream 
+figure (discussed in a previous post) encodes the plaintext one little bit at a time. The 
+plaintext is divided into squares of a predetermined length in a square code, and the 
+pieces within each square are encoded collectively. 
+(c) Amity University Online
+
+
+--- page 60 ---
+Network Security and Cryptography
+55
+Notes
+Amity University Online
+ 
+Figure - 14: Block Cipher
+Notable Block Ciphers
+The block figure algorithm is one well-known encryption technique. The most well-
+known square codes are Twofish, Blowfish, AES, DES/3DES, and Blowfish. 
+IBM developed the Data Encryption Cypher (DES) algorithm in response to a 
+challenge from the US National Bureau of Standards, which was the predecessor to the 
+National Institute of Standards and Technology.
+Block Cipher Modes of Operation 
+The fact that block figures only allow you to encrypt messages of a size equal to 
+their square length is one of its main drawbacks. If, for example, you are encoding a 
+65-piece message with TEA (a 64-piece square), you need a way to describe how the 
+next square should be jumbled. The solution to this problem is known as block figure 
+methods of activity. 
+A few square code methods of activity exist with shifting focal points and 
+detriments. In this part, we'll give a short clarification of how every one of them work 
+and contact momentarily on weaknesses of a few. 
+Electronic Code Book (ECB) Mode 
+The simplest square code technique of activity is Electronic Code Book (ECB). 
+This mode randomly jumbles each plaintext square, as seen in the figure below. This 
+chart's "Square Cypher Encryption" might be any square code or our TEA figure from 
+above. The main obstacle to this method is that identifiable plaintexts encoded with the 
+same key result in distinguishable ciphertexts, allowing an aggressor to learn some 
+information about the jumbled message based on the ciphertext. 
+ 
+Figure - 15: Electronic Code Book (ECB)
+(c) Amity University Online
+
+
+--- page 61 ---
+56
+Network Security and Cryptography
+Notes
+Amity University Online
+Code Block Chaining (CBC) Mode 
+Before encryption, an identification vector (IV) is restricted-ored with the plaintext 
+in the code block binding (CBC) mode of operation. In the initial encryption phase, 
+this value is public and arbitrary. It is the previous round's ciphertext for resulting 
+adjustments. This is a potential solution to the problem with ECB mode, which is that 
+blocks of indistinguishable plaintext become blocks of indistinguishable ciphertext. 
+ 
+Figure - 16: code block binding (CBC)
+Code Feedback (CFB) Mode 
+Unlike the previous two modes, the code input (CFB) mode does not pass the 
+plaintext through the encryption process. Instead, to create the ciphertext of a square, 
+an input vector (IV) is jumbled, and the result is selectively combined with the plaintext. 
+This can be likened to encrypting the plaintext using a one-time cushion generated 
+by the IV's encryption. This IV is an arbitrary incentive for the main square and the 
+ciphertext of the previous square, just as CBC mode.
+ 
+Figure - 17: Code Feedback (CFB) Mode
+Yield Feedback (OFB) Mode 
+The yield criticism (OFB) method of activity is practically indistinguishable from 
+figure input mode. The lone contrast is the thing that is utilized as the introduction 
+vector for each round after the first. When using code input mode, the encryption yield 
+is selectively compared to the plaintext and used as the IV of the next square. The yield 
+of the encryption is used as the IV of the subsequent squares in yield criticism mode. 
+(c) Amity University Online
+
+
+--- page 62 ---
+Network Security and Cryptography
+57
+Notes
+Amity University Online
+Then, using CFB and OFB modes to encrypt the comparable plaintext with a similar 
+key, the equivalent ciphertext will be generated for the main block and different ones for 
+every subsequent block. 
+ 
+Figure - 18: Yield Feedback (OFB) Mode
+Counter (CTR) Mode 
+The counter (CTR) method of activity varies from the entirety of the others that 
+we have seen up until this point. Like ECB mode, each encryption activity is totally 
+independent, which is valuable for parallelization of encryption (since each square can 
+be encoded at the same time). Counter mode likewise utilizes a non-plaintext yield to 
+encryption (like the input modes), at the same time, rather than an introduction vector, 
+it utilizes a blend of a nonce and a counter. The nonce is an irregular number utilized 
+for all squares of an encryption activity and the counter is actually what it seems like: a 
+worth that begins at zero for block zero and additions to one for block one, etc. 
+ 
+Figure - 19: Counter (CTR) mode encryption
+This blend ensures that similar qualities won't go through the encryption algorithm 
+in a similar encryption meeting (where each square will have similar nonce yet 
+extraordinary counter qualities) or similar squares in various meetings (where each 
+square will have similar counter worth yet distinction nonces). The ciphertext is created 
+by selectively combining the plaintext with the output of the encryption activity, similar to 
+the activity's criticism methods (OFB and CFB).
+Galois Counter Mode 
+One special kind of counter mode is called Galois Counter Mode (GCM). There are 
+two main ways that it contrasts. The first is that it relies only on a counter instead than 
+on a nonce, as shown in the figure below. Secondly, it calculates a message validation 
+code (MAC) that provides a means of ensuring that a message was not changed while 
+in transit. The computation of the MAC is outside the extent of this conversation of 
+square codes, so just the encryption part of the GCM mode is appeared. 
+(c) Amity University Online
+
+
+--- page 63 ---
+58
+Network Security and Cryptography
+Notes
+Amity University Online
+ 
+Figure - 20: Galois Counter Mode
+Favourable Circumstances of Block Ciphers 
+One preferred position of square codes when contrasted with stream figures is 
+the simplicity of usage and less prohibitive necessities. Since stream figures basically 
+create a one-time cushion for encryption, they produced keystream should be arbitrary 
+Another preferred position of square codes is that some give respectability 
+insurance instruments (like the MAC in the GCM method of activity). This permits the 
+beneficiary to confirm that the message was not altered on the way. 
+Inconveniences of Block Ciphers 
+Compared to stream figures, square codes have a slower memory. It is often 
+necessary to cushion plaintexts to a variation of the square length since block figures 
+need those plaintexts be jumbled in squares of a specific size. This increases the 
+amount of memory needed by the code to store the ciphertext and cushioned plaintext. 
+Block Cypher Drawbacks Include: 
+●
+●
+Slower
+
+
+the requirement to wait for a block of data before encryption or decryption 
+begins
+●
+●
+worse error propagation
+
+
+errors impact entire blocks.
+One further reason to hinder figures is that most of the time, transmission errors 
+leave the rest of the ciphertext unrecoverable. A single piece of transmission error in 
+(c) Amity University Online
+
+
+--- page 64 ---
+Network Security and Cryptography
+59
+Notes
+Amity University Online
+a stream figure typically affects a single piece of unscrambled plaintext that may be 
+retrieved. A single piece error in transmission alters the decoding of its square and 
+every other square that depends on it for unscrambling in a square code that uses the 
+criticism method of activity.
+2.1.8 Triple DES
+Triple DES (3DES) is the common name for the Triple Data Encryption Algorithm 
+(TDEA or Triple DEA) symmetric-key square code used in cryptography. Each 
+information block is subjected to repeated applications of the Data Encryption Standard 
+(DES) figure algorithm.  The crucial size of the first DES code, which was 56 pieces, 
+was largely sufficient when that method was designed, but beast power attacks were 
+made possible by the availability of growing computing power. Without the need to 
+design an entirely new block figure algorithm, Triple DES provides a typically simple 
+method for increasing the critical size of DES to defend against such attacks.
+ 
+Figure - 22: Triple DES
+Algorithm
+ Triple DES utilizes a "key group" that involves three DES keys, K1, K2 and K3, 
+every one of 56 pieces (barring equality bits). The encryption algorithm is: 
+Code text = EK3(DK2(EK1(plaintext))) I.e., DES encode with K1, DES unscramble 
+with K2, at that point DES scramble with K3. 
+Unscrambling is the Opposite: 
+Plaintext = DK1(EK2(DK3(ciphertext))) I.e., unscramble with K3, encode with 
+K2, at that point decode with K1. Each triple encryption scrambles one square of 64 
+pieces of information. For each situation the center activity is the converse of the first 
+and last. This improves the strength of the algorithm when utilizing keying choice 2, and 
+furnishes in reverse compatibility with DES with keying choice 3.
+Keying Options 
+The standards define three keying options:
+(c) Amity University Online
+
+
+--- page 65 ---
+60
+Network Security and Cryptography
+Notes
+Amity University Online
+●
+●
+Keying option 1: All three keys are independent. 
+●
+●
+Keying option 2: K1 and K2 are independent, and K3 = K1.
+●
+●
+Keying option 3: K1 = K2 = K3 indicates that all three keys are the same.
+Keying choice 1 is the most grounded, with 3 × 56 = 168 autonomous key pieces. 
+Keying choice 2 gives less security, with 2 × 56 = 112 key pieces. This choice is more 
+grounded than basically DES encoding twice, for example with K1 and K2, since it 
+ensures against compromise assaults. Keying alternative 3 is identical to DES, with 
+just 56 key pieces. This choice furnishes in reverse similarity with DES, on the grounds 
+that the first and second DES activities counteract. It is not, at this point suggested by 
+the National Institute of Standards and Innovation (NIST),and isn't upheld by ISO/IEC 
+18033-3. The electronic instalment industry utilizes Triple DES and proceeds to create 
+and proclaim principles dependent on it
+2.2 Public Key Cryptography
+Now and again alluded to as topsy-turvy cryptography, public key cryptography 
+is a class of cryptographic conventions dependent on algorithms. This technique for 
+cryptography requires two separate keys, one that is private or mystery, and one that 
+is public. Public key cryptography utilizes a couple of keys to scramble and unscramble 
+information to secure it against unapproved access or use. Organisation clients get 
+a public and private key pair from certificate specialists. In the event that different 
+clients need to scramble information, they get the expected beneficiary's public key 
+from a public registry. This key is utilized to encode the message, and to send it to 
+the beneficiary. At the point when the message shows up, the beneficiary decodes it 
+utilizing a private key, to which nobody else approaches.
+ 
+Figure - 23: public key cryptography
+2.2.1 Advanced Encryption Standard (AES)
+Advanced Encryption Standard (AES) encryption and decryption
+The Advanced Encryption Standard (AES) is the more popular and widely used 
+(c) Amity University Online
+
+
+--- page 66 ---
+Network Security and Cryptography
+61
+Notes
+Amity University Online
+symmetric encryption algorithm available today. In any case, it can be worked out six 
+times faster than triple DES. Because to DES's abnormally small key size, a trade 
+was necessary. As computing power increased, it was thought to be vulnerable to a 
+comprehensive attack by key inquiry. Although Triple DES was designed to overcome 
+this drawback, it was found to be slow.
+The following are the salient features of AES:
+●	
+All details and setup intricacies are provided
+●	
+programming is implementable in C and Java; 
+●	
+symmetric key symmetric square code; 
+●	
+128-digit information, 128/192/256-bit keys; 
+●	
+more grounded and faster than Triple-DES;
+Operation of AES
+As opposed to a Feistel figure, AES is iterative. The "replacement change 
+organisation" determines this. It contains a progression of connected tasks, some of 
+which include supplanting contributions by explicit yields (replacements) and others 
+include rearranging pieces around (changes).
+Encryption Process
+Here, we restrict ourselves to depicting a standard AES encryption round. There 
+are four sub-measures in each round. Beneath, the first-round cycle is depicted. –
+ 
+ 
+Figure - 24; encryption process
+SubBytes: A Byte Substitution Method 
+Plan provides a fixed table (S-box) for the 16 information bytes to be substituted. 
+Four segments and four lines make up the final network. 
+Shiftrows
+The network is shifted to one side, affecting each of the four columns. Reinserted 
+on the appropriate side of the line are any pieces that 'tumble off'. Proceed with the 
+move in this manner: 
+First line isn't moved. 
+Second line is moved one (byte) position to one side. 
+Third column is moved two situations to one side. 
+Fourth column is moved three situations to one side. 
+(c) Amity University Online
+
+
+--- page 67 ---
+62
+Network Security and Cryptography
+Notes
+Amity University Online
+The outcome is another network comprising of similar 16 bytes yet moved as for 
+one another. 
+MixColumns 
+This changes each of the four bytes in a section using a remarkable numerical 
+capacity. This capacity replaces the first segment with four new bytes, taking as input 
+the four bytes of the first segment. Another new lattice with 16 new bytes is the result. It 
+should be noted that the previous round did not implement this trend.
+Addroundkey 
+The 16 bytes of the grid are currently considered as 128 pieces and are XORed 
+to the 128 pieces of the round key. On the off chance that this is the last round, at 
+that point the yield is the ciphertext. Something else, the subsequent 128 pieces are 
+deciphered as 16 bytes and we start another comparable round.
+Decryption Process
+The opposite request's encryption cycle and the process of decoding an AES 
+ciphertext are similar. Every round consists of four cycles that are led in the opposite 
+direction − 
+Add round key 
+Blend segments 
+Move lines 
+Byte replacement 
+Since sub-measures in each round are backward way, dissimilar to for a Feistel. 
+Despite their strong relationship, the encryption and unscrambling computations for the 
+cypher should be completed separately.
+2.2.2 Fermat’s and Euler’s Theorem
+Fermat's theorem and Euler's theorem are two ideas that are crucial to public-key 
+cryptography.
+Fermat’s Theorem
+The following is expressed using Fermat's theorem: If p is prime and a positive 
+integer that is not divisible by p, then
+ 
+Proof: To obtain the set X = {a mod p, 2a mod p,....., (p - 1)a mod p}, choose the 
+set of positive integers smaller than p: {1, 2,......., p - 1}. Then, multiply each element by 
+a, modulo p. X's elements are all greater than zero since p does not divide a. Moreover, 
+there are no two identical integers in X. Assume that ja == ka (mod p)), where 1 <= j < 
+k <= p - 1, to see this. We can remove a from both sides of the equation because an 
+is comparatively prime5 to p, which leads to j === k (mod p). Due to the fact that both 
+j and k are positive integers less than p, the last equality cannot exist. As a result, we 
+are aware that none of the (p - 1) elements of X are equal and that they are all positive 
+integers. We can infer that the set of integers {1, 2,...., p - 1}, in some order, makes up 
+the X. Taking the product mod p after multiplying the integers in both sets (p and X) 
+produces
+(c) Amity University Online
+
+
+--- page 68 ---
+Network Security and Cryptography
+63
+Notes
+Amity University Online
+ 
+Because the term ((p - 1)! is relatively prime to p, we can cancel it. This results in 
+the equation above, completing the proof.
+ 
+Fermat's theorem also has an alternate form that is helpful: Given a positive integer 
+a and a prime number p, then
+ 
+It should be noted that this form of the theorem does not require that a be relatively 
+prime to p, unlike the first variant.
+The Totient Function of Euler
+The number of positive integers less than n that are relatively prime to n is known 
+as Euler's totient function, or ϕ(n), and it is a crucial quantity in number theory that must 
+be introduced before we can discuss Euler's theorem. Conventionally, ϕ(1) = 1.
+With a prime number p, it ought to be obvious that
+ϕ(p) = p - 1
+Consider the following scenario: given two prime numbers, p and q, we have p!= q. 
+We may then demonstrate that, given n = pq,
+  
+The Theorem of Euler
+According to Euler's theorem, for each relatively prime a and n,
+(c) Amity University Online
+
+
+--- page 69 ---
+64
+Network Security and Cryptography
+Notes
+Amity University Online
+2.2.3 Chinese Remainder Theorem
+The Chinese mathematician Sun Zi, who originally articulated this idea in the third 
+century AD, is honoured by the name of this theorem. This mathematical tool aids in the 
+solution of systems of equations where the moduli of each equation vary. The leftover 
+you obtain when you divide an integer by another number is known mathematically as 
+a modulus. If you have two equations, x ≅ a (mod m) and x ≅ b (mod n), where m 
+and n are different moduli, then the Chinese Remainder Theorem applies. These can 
+be combined into the single equation x ≅ c (mod mn), where x is the system's unique 
+solution. If m and n are substantially prime, that is.
+How the Chinese Remainder Theorem Operates
+Assume we have the following congruence system:
+where y1, y2,..., yn are random integers and m1, m2,..., mn are co-prime (pairwise 
+relatively prime) integers. 
+Note: When X is divided by mi, Yi remains after X, as indicated by the equation X 
+≅ Yi(mod mi). The notation ≅ stands for "congruence modulo." It indicates that when 
+divided by the modulus (in this case, mi), the two values on either side of the symbol 
+are equal.
+According to the Chinese Remainder Theorem, there is only one solution to this 
+system of congruences, which is x modulo 'M' (the product of the moduli m1, m2,..., 
+mn). To identify this special remedy:
+Let's use an example to demonstrate the Chinese Remainder Theorem.
+Example 1
+Consider the following system of congruences:
+X ≅ 1 (mod 5)
+X ≅ 1 (mod 7)
+X ≅ 3 (mod 11)
+Here,
+y1 = 1, y2 = 1, y3 = 3,
+m1 = 5, m2 = 7, m3 = 11
+Given that the numbers 5, 7, and 11 are comparatively prime to each other. Thus, 
+X is located.  The special solution to this system of congruences can be found using 
+CRT. The actions to do in order to accomplish this are:
+●	
+First, we compute the product M.
+
+
+M = m1 * m2 * m3
+      		= 5 * 7 * 11
+     	 	= 385
+●	
+Next, we compute Mi
+
+
+M1 = M / m1
+      		= m2*m3 (here, M = m1*m2*m3 / m1)
+     	 	 = 7 * 11
+     	 	 = 77
+
+
+M2 = M / m2 
+(c) Amity University Online
+
+
+--- page 70 ---
+Network Security and Cryptography
+65
+Notes
+Amity University Online
+     	 	= m1*m3 (here, M = m1*m2*m3 / m2)
+     	 	= 5 * 11
+   	 	  = 55
+
+
+M3 = M / m3
+   	 	  = m1*m2 (here, M = m1*m2*m3/m3) 
+   	 	  = 5*7
+    	 	 = 35
+●	
+Find the modular inverses (Zi) of M1, M2, and M3 modulo 5, 7, and 11, respectively. 
+
+
+M1Z1 ≅ 1(mod m1)
+M1Z1(mod m1) = 1
+77*Z1(mod 5) = 1
+	
+Now think what value of Z1 should be multiplied by 77 such that when you divide 
+77*Z1 with 5, you get 1 as a remainder. 
+77 * 3(mod 5) = 1
+So, Z1 = 3
+
+
+M2Z2 ≅ 1(mod m2)
+M2Z2(mod m2) = 1
+55*Z2(mod 7) = 1
+	
+Now think what value of Z1 should be multiplied by 55 such that when you divide 
+55*Z2 with 7, you get 1 as the remainder. 
+55*6(mod 7) = 1
+So, Z2 = 6
+
+
+M3Z3 ≅ 1(mod m3)
+M3Z3(mod m3) = 1
+35*Z3(mod 11) = 1
+	
+Now think what value of Z3 should be multiplied by 35 such that when you divide 
+35*Z1 with 11, you get 1 as a remainder. 
+35*6(mod 11) = 1
+So, Z3 = 6
+●	
+Now we calculate X as: 
+X = (y1 * Z1 * M1 + y2 * Z2 * M2 + y3 * Z3 * M3) mod M
+ = (1 * 3 * 77 + 1 * 6 * 55 + 3 * 6 * 35) mod 385
+= (231 + 330 + 630) mod 385
+= (1191) mod 385
+= 36
+Therefore, X = 36.
+2.2.4 Principals of Public Key Crypto Systems
+Asymmetric cryptography, or public-key cryptography, is an essential part of 
+contemporary secure data security and communication. Its foundation is the application 
+(c) Amity University Online
+
+
+--- page 71 ---
+66
+Network Security and Cryptography
+Notes
+Amity University Online
+of two distinct but mathematically connected keys: a public key and a private key. The 
+underlying ideas of public-key cryptography are as follows:
+1.	
+Key Pairs: A public key and a private key are the two keys used in public-key 
+cryptography. Although there is a mathematical relationship between these keys, it 
+is not possible to calculate the private key from the public key.
+2.	
+Public Key: Anyone can share and obtain the public key without restriction. It is 
+applied to digital signature verification and data encryption. The system's security is 
+predicated on the idea that it is very hard to infer the private key from the public key.
+3.	
+Private Key: The private key is confidential and ought to never be disclosed. It can 
+be used to create digital signatures or to decrypt material that has been encrypted 
+using the matching public key.
+4.	
+Encryption: Only the matching private key can be used to decrypt data that has been 
+encrypted using the recipient's public key. This guarantees that the information can 
+only be accessed by the designated recipient.
+5.	
+Decryption: Data that has been encrypted using the matching public key can be 
+decrypted using the private key. This procedure only functions with the intended 
+private key due to mathematical relationships.
+6.	
+Digital Signatures: Digital signatures, which offer data integrity and authentication, 
+are produced using public-key cryptography. When a sender signs a message 
+with their private key, the recipient can use the sender's public key to confirm the 
+signature.
+7.	
+Authentication: User authentication is possible with public-key cryptography. By 
+signing a challenge with their private key, for instance, a user can authenticate 
+themselves, and the server can confirm this with the user's public key.
+8.	
+Key Exchange: Diffie-Hellman and other key exchange protocols, which enable two 
+parties to create a shared secret key over an untrusted communication channel 
+without exchanging private keys, use public-key cryptography.
+9.	
+Security: The difficulty of resolving mathematical puzzles, like factoring big numbers 
+or computing discrete logarithms, is what ensures the security of public-key 
+cryptography. Public-key cryptography is secure because, as of my most recent 
+knowledge update in September 2021, there are no effective solutions known to 
+solve these issues.
+2.2.5 RSA Algorithm
+The foundation of a cryptosystem, or a collection of cryptographic algorithms used 
+for specific security functions or administrations, is the RSA algorithm. This system 
+enables public key encryption and is typically used to obtain sensitive data, particularly 
+when it is being transferred over an unreliable network, like the internet. 
+The Massachusetts Institute of Technology's Ron Rivest, Adi Shamir, and Leonard 
+Adleman initially publicly presented RSA in 1977. Nevertheless, British mathematician 
+Clifford Cocks' 1973 creation of a public key method was suppressed by the United 
+Kingdom's GCHQ until 1997. 
+Topsy-turvy cryptography, also known as public key cryptography, uses two distinct 
+but numerically related keys: a public key and a private key. While the private key 
+should be kept confidential, the public key can be shared with anybody.  
+(c) Amity University Online
+
+
+--- page 72 ---
+Network Security and Cryptography
+67
+Notes
+Amity University Online
+Using RSA cryptography, a message can be jumbled by both the private keys and 
+by anyone in general. To decode a message, use the opposite key from the one that 
+was used to encode it. One reason RSA has become the most often used deviated 
+algorithm is because of this feature: It provides a method to ensure the privacy, integrity, 
+authenticity, and non-refusal of electronic communications and data archiving. 
+Many protocols, like SSL/TLS, OpenPGP, S/MIME, and secure shell, rely on RSA 
+for sophisticated mark capabilities and encryption. It is also used in programming 
+programmes. Programmes are an indisputable model since they have to establish a 
+secure connection over an unstable network, like the internet, or authorise an electronic 
+signature. One of the most frequently carried out actions in frameworks related to 
+organisations is probably the confirmation of an RSA signature.
+Why the RSA Algorithm is Utilized 
+The difficulty of calculating enormous whole numbers that are the product of two 
+enormous indivisible integers is where RSA derives its security. Duplicating these 
+two numbers is easy, but figuring out which of the first indivisible numbers from the 
+aggregate is considered impossible because to the amount of time required, even with 
+today's supercomputers. 
+The most perplexing aspect of RSA cryptography is the private key age algorithm, 
+which is generally understood by people. The Rabin-Miller primality test technique 
+yields two enormous indivisible numbers, p and q. P and q are increased to find a 
+modulus, n. Both the general public and private keys need this number to establish a 
+connection between them. The term "key length" refers to its length, which is typically 
+expressed in segments. The modulus n and the public type e, which is usually chosen 
+to 65537 since it is an indivisible but manageably large integer, make up the public key. 
+Given that everyone has access to the public key, the e figure doesn't have to be a 
+carefully selected indivisible integer. 
+The modulus n and the private type d, which are found by applying the Extended 
+Euclidean algorithm to find the multiplicative reverse with respect to the totient of n, 
+make up the private key. 
+For a more detailed explanation of how the RSA algorithm works, read on or watch 
+the video below.
+How does the RSA algorithm work? 
+By selecting the prime numbers p=11 and q=13, Alice generates her RSA keys. 
+We have n=p×q=143 as the modulus. The totient is n ϕ(n)=(p-1)x(q-1)) = 120. Using 
+the Extended Euclidean technique, she determines her RSA private key to be 103 and 
+chooses 7 for her RSA public key e. 
+Alice's RSA public key (n, e), which is (143, 7) in this case, is obtained by Sway in 
+order to send her a jumbled message, M. The ciphertext C is encoded with the following 
+code, which is his plaintext message of just the number 9. 
+Me mod n = 97 mod 143 = 48 = C 
+At that moment, Alice receives Bob's message and uses her RSA private key (d, n) 
+to decode it as follows: 
+Disc mod n = 48103 mod 143 = 9 = M . 
+Alice would need to create a hash of her message to Bob, encrypt it with her 
+RSA private key, then append the way in to the message in order to use RSA keys to 
+(c) Amity University Online
+
+
+--- page 73 ---
+68
+Network Security and Cryptography
+Notes
+Amity University Online
+carefully sign a communication. When Bounce uses Alice's public key to unscramble 
+the hash of the incentive, it will be possible to verify that the message was delivered 
+by Alice and was not altered. The message is actually what Alice wrote, which is 
+uprightness, and if this value coincides with the hash of the initial message, then only 
+Alice could have sent it. This proves that she did not repudiate it. 
+Before delivering her message to Bob, Alice might have, of course, encrypted it 
+using Bob's RSA public key, categorization. The public key of the authentication's owner 
+is also contained in an electronic testament, together with information identifying them. 
+Testaments are supported by the declaratory authority that issues them, and they can 
+facilitate the process of obtaining public keys and verifying ownership.
+2.2.6 Security of RSA Algorithm
+RSA security depends on the computational trouble of considering enormous 
+numbers. As processing power increments and more proficient calculating algorithms 
+are found, the capacity to factor bigger and bigger numbers likewise increments. 
+Encryption strength is straightforwardly attached to key size, and multiplying key 
+length can convey an outstanding expansion in strength, despite the fact that it hinders 
+execution. RSA keys are ordinarily 1024-or 2048-bits in length, however specialists 
+accept that 1024-cycle keys are not, at this point completely secure against all assaults. 
+This is the reason the public authority and a few businesses are moving to a base key 
+length of 2048-bits. 
+Longer keys will still be needed, barring an unexpected breakthrough in quantum 
+processing, but elliptic Curve cryptography (ECC) is becoming more and more popular 
+among security experts as a substitute for RSA in the implementation of public key 
+cryptography. It can produce cryptographic keys that are more rapid, efficient, and 
+modest. 
+   
+Figure 25 rsa algorithm
+Since ECC can provide same security with less registering force and battery 
+consumption than RSA, it makes more sense for flexible applications than RSA. Current 
+programming and equipment are equipped for ECC, and its prevalence is likely to 
+grow. Finally, a team of scientists led by Adi Shamir, one of the co-designers of RSA, 
+successfully created a 4096-piece RSA key using acoustic cryptanalysis; nonetheless, 
+no encryption system is impervious to attack.
+RSA's Security 
+They are explained in the sections that follow. 
+1. 	 Text-based attacks: 
+(c) Amity University Online
+
+
+--- page 74 ---
+Network Security and Cryptography
+69
+Notes
+Amity University Online
+	
+It is divided into three smaller groups:
+(i) 	 Attack using a short message: 
+	
+Here, we acknowledge that the aggressor is familiar with a small portion of the 
+plain text and use that knowledge to try and decipher the figure text. Therefore, 
+to prevent this, cushion the plain content before sending. 
+(ii) 	 Cycling attack:
+	
+In this aggressor will believe that plain content is changed over into figure text 
+utilizing stage and he will apply appropriate for transformation. Be that as it 
+may, aggressor doesn't right plain content. Subsequently will continue to do it.
+(iii)	 Unconcealed Message attack: 	
+	
+Now and again happened that plain content is same as code text after 
+encryption . So it should be checked it can't be assaulted.
+2.	
+Choosen cipher attack:
+	
+In this assailant can discover plain content dependent on code text utilizing Extended 
+Eculedian Algorithm.
+3.	
+Factorisation attack:
+	
+In the event that aggressor will ready to realize P and Q utilizing N, at that point he 
+could discover estimation of private key. This can be bombed when N contains atleast 
+300 longer digits in decimal terms, assailant won't ready to discover. Subsequently 
+it falls flat.
+4.	
+Attacks on Encryption key:
+	
+This could happen if we select a smaller value of E in RSA; therefore, take E = 
+2^16+1 (at the very least) to prevent this.
+5.	
+Attacks on Decryption key:
+(i) 	 Revealed decryption exponent attack:
+	
+On the off chance that aggressor some way or another speculation 
+unscrambling key D, not just the code text created by encryption the plain 
+content with comparing encryption key is in harm's way, yet even future 
+messages are likewise in harm's way. Thus, it is informed to take new qualities 
+with respect to two indivisible numbers (i.e; P and Q), N and E.
+(ii) 	 Low decryption exponent attack:
+	
+This could happen if we select a smaller value of D in RSA; therefore, take D = 
+2^16+1 (at the very least) to avoid this.
+Summary
+●	
+In cryptographic systems supported by ICSF, secret key cryptography, also known 
+as symmetric cryptography, is utilized, as seen in algorithms like DES or AES. 
+Successful communication requires both parties to employ the same encryption 
+algorithm, and the receiving party must possess the cryptographic key used by the 
+transmitting party to decrypt the data.
+●	
+The Data Encryption Standard (DES) is a symmetric-key block cipher algorithm 
+adopted by the National Institute of Standards and Technology (NIST) in the 1970s. 
+Developed by an IBM team, it uses 48-bit keys to transform 64-bit blocks of plaintext 
+into ciphertext.
+(c) Amity University Online
+
+
+--- page 75 ---
+70
+Network Security and Cryptography
+Notes
+Amity University Online
+●	
+Differential cryptanalysis is a method to analyze encrypted data by observing the 
+differences in related plaintexts. It is often used as an adaptive chosen plaintext 
+attack, where the attacker selects plaintexts and observes the corresponding 
+ciphertexts to deduce information about the encryption key.
+●	
+Galois Counter Mode (GCM) is a special type of counter mode used in block ciphers. 
+It differs from other modes in that it relies only on a counter, not a nonce, and it 
+calculates a message authentication code (MAC) to ensure message integrity.
+●	
+Triple DES (3DES) is a symmetric-key block cipher algorithm that applies the Data 
+Encryption Standard (DES) algorithm three times to each data block, increasing the 
+key size and enhancing security against brute-force attacks. It was developed as a 
+response to the increasing computing power that made the original DES vulnerable.
+●	
+Public key cryptography, also known as asymmetric cryptography, uses two 
+separate keys (public and private) to encrypt and decrypt data. The public key is 
+used for encryption, and the private key is used for decryption, ensuring secure 
+communication over insecure channels.
+●	
+The Chinese mathematician Sun Zi, who originally articulated this idea in the third 
+century AD, is honoured by the name of this theorem. This mathematical tool aids 
+in the solution of systems of equations where the moduli of each equation vary. 
+The leftover you obtain when you divide an integer by another number is known 
+mathematically as a modulus.
+Glossary
+●	
+Block Cipher: A symmetric cipher that operates on fixed-size blocks of data.
+●	
+Stream cipher: It encrypts data bit by bit, processing the smallest unit of plaintext to 
+generate ciphertext. It is often implemented as a block cipher with the smallest block 
+size, making it suitable for real-time encryption with low latency.
+●	
+Confusion: In cryptography, it refers to creating ciphertext that is unintelligible 
+without knowledge of the encryption key. It ensures that the relationship between 
+the plaintext and ciphertext is complex, enhancing security.
+●	
+Diffusion: It means that changing a character in the plaintext should cause several 
+characters in the ciphertext to change, and vice versa. This spreads the influence 
+of each plaintext character over multiple ciphertext characters, making statistical 
+attacks more difficult.
+●	
+National Institute of Standards and Technology (NIST): A U.S. government agency 
+responsible for developing and promoting measurement, standards, and technology.
+●	
+Data Encryption Standard (DES): A symmetric-key block cipher algorithm adopted 
+by NIST in the 1970s, using 48-bit keys to transform plaintext into ciphertext.
+●	
+Triple DES (3DES): A symmetric-key block cipher algorithm that applies the Data 
+Encryption Standard (DES) algorithm three times to each data block for increased 
+security.
+●	
+Public Key Cryptography: A class of cryptographic protocols that uses two separate 
+keys (public and private) for encryption and decryption.
+Check Your Understanding
+1.	
+Which type of cryptography is supported by conventional algorithms such as DES 
+and AES in ICSF?
+(c) Amity University Online
+
+
+--- page 76 ---
+Network Security and Cryptography
+71
+Notes
+Amity University Online
+a)	 Asymmetric cryptography	
+b)	
+Symmetric cryptography
+c)	 Public key cryptography	
+d)	
+Hybrid cryptography
+2.	
+Which of the following block ciphers is considered insecure due to its small key size?
+a)	 Triple DES	
+b)	
+AES	
+c)	
+IDEA	
+d)	 DES
+3.	
+Which cryptographic structure serves as the foundation for both encryption and 
+decryption algorithms in the Data Encryption Standard (DES)?
+a)	 RSA	
+	
+	
+b)	
+Diffusion
+c)	 Feistel Structure	 	
+	
+d)	
+Stream Cipher
+4.	
+Which mode of operation for block ciphers involves randomly shuffling each plaintext 
+block independently?
+a)	 Cipher Block Chaining (CBC) mode  	b)	
+Electronic Code Book (ECB) mode  
+c)	 Cipher Feedback (CFB) mode  	
+d)	
+Output Feedback (OFB) mode  
+5.	
+Which component of public-key cryptography ensures that data encrypted with a 
+recipient's public key can only be decrypted by the corresponding private key?
+a)	 Private Key  	
+b)	
+Public Key  	 c)	
+Key Pairs  	
+d)	 Encryption  
+Exercise
+1.	
+Describe how differential cryptanalysis works and how it is typically conducted as an 
+attack on a cryptographic system.
+2.	
+Explain the main differences between Galois Counter Mode (GCM) and other block 
+cipher modes of operation, such as Cipher Block Chaining (CBC) or Counter (CTR) 
+mode. How does GCM ensure message integrity, and why is this important in secure 
+communication?
+3.	
+Describe the encryption process of the Advanced Encryption Standard (AES) for a 
+single round. Include the sub-steps involved in SubBytes, ShiftRows, MixColumns, 
+and AddRoundKey operations.
+4.	
+Describe Fermat's theorem and its significance in public-key cryptography. Explain 
+Euler's theorem and its relationship to the totient function, highlighting its importance 
+in number theory and cryptography.
+5.	
+Describe the role of key exchange protocols, such as Diffie-Hellman, in public-key 
+cryptography, and explain how they enable two parties to establish a shared secret 
+key over an untrusted communication channel without exchanging private keys.
+Learning Activities
+1.	
+Explain the concept of an initialization vector (IV) in block cipher modes of operation, 
+using Cipher Block Chaining (CBC) mode as an example. How does the IV contribute 
+to the security of CBC mode compared to Electronic Code Book (ECB) mode?
+2.	
+Explain the key differences between symmetric-key cryptography and public key 
+cryptography. How does the use of public and private keys in public key cryptography 
+enhance security compared to symmetric-key cryptography?
+Check Your Understanding (Answers)
+1.	 b)	
+2.	
+d)	
+3.	
+c)	
+4.	 b)
+5.	 a)
+(c) Amity University Online

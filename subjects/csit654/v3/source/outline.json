@@ -1,0 +1,829 @@
+{
+  "pdf": "Network Security and Cryptography  FINAL.pdf",
+  "page_count": 189,
+  "outline": [],
+  "heading_guesses": [
+    {
+      "page": 4,
+      "title": "Module - I: Introduction to Network Security"
+    },
+    {
+      "page": 4,
+      "title": "1.1 \t Network Security"
+    },
+    {
+      "page": 4,
+      "title": "1.1.1\t Introduction to Security Attacks"
+    },
+    {
+      "page": 4,
+      "title": "1.1.2\t Services and Mechanism"
+    },
+    {
+      "page": 4,
+      "title": "1.1.3\t Classical Encryption Techniques"
+    },
+    {
+      "page": 4,
+      "title": "1.1.4\t Substitution Ciphers"
+    },
+    {
+      "page": 4,
+      "title": "1.1.5\t Transposition Ciphers"
+    },
+    {
+      "page": 4,
+      "title": "1.1.6\t Cryptanalysis"
+    },
+    {
+      "page": 4,
+      "title": "1.1.7\t Steganography"
+    },
+    {
+      "page": 4,
+      "title": "1.1.8\t Stream and Block Ciphers"
+    },
+    {
+      "page": 4,
+      "title": "1.1.9\t Overview of Hardware Security"
+    },
+    {
+      "page": 4,
+      "title": "Module - II: Secret and Public Key Cryptography"
+    },
+    {
+      "page": 4,
+      "title": "2.1 \t Secret Key Cryptography"
+    },
+    {
+      "page": 4,
+      "title": "2.1.1\t Modern Block Ciphers: Block Ciphers Principles"
+    },
+    {
+      "page": 4,
+      "title": "2.1.2\t Shannon’s Theory of Confusion and Diffusion"
+    },
+    {
+      "page": 4,
+      "title": "2.1.3\t Fiestal Structure"
+    },
+    {
+      "page": 4,
+      "title": "2.1.4\t Data Encryption Standard (DES)"
+    },
+    {
+      "page": 4,
+      "title": "2.1.5\t Strength of DES"
+    },
+    {
+      "page": 4,
+      "title": "2.1.6\t Idea of Differential Cryptanalysis"
+    },
+    {
+      "page": 4,
+      "title": "2.1.7\t Block Cipher Modes of Operations"
+    },
+    {
+      "page": 4,
+      "title": "2.1.8\t Triple DES"
+    },
+    {
+      "page": 4,
+      "title": "2.2 \t Public Key Cryptography"
+    },
+    {
+      "page": 4,
+      "title": "2.2.1\t Advanced Encryption Standard (AES)"
+    },
+    {
+      "page": 4,
+      "title": "2.2.2\t Fermat’s and Euler’s Theorem"
+    },
+    {
+      "page": 4,
+      "title": "2.2.3\t Chinese Remainder Theorem"
+    },
+    {
+      "page": 4,
+      "title": "2.2.4\t Principals of Public Key Crypto Systems"
+    },
+    {
+      "page": 4,
+      "title": "2.2.5\t RSA Algorithm"
+    },
+    {
+      "page": 4,
+      "title": "2.2.6\t Security of RSA Algorithm"
+    },
+    {
+      "page": 4,
+      "title": "Module - III: Authentication Standards and Key Management"
+    },
+    {
+      "page": 4,
+      "title": "3.1 \t Message Authentication Codes"
+    },
+    {
+      "page": 4,
+      "title": "3.1.1\t Introduction of Message Authentication Codes"
+    },
+    {
+      "page": 4,
+      "title": "3.1.2\t Authentication Functions"
+    },
+    {
+      "page": 4,
+      "title": "3.1.3\t Authentication Requirements"
+    },
+    {
+      "page": 4,
+      "title": "3.1.4\t Message Authentication Code (MAC)"
+    },
+    {
+      "page": 4,
+      "title": "3.1.5\t Secure Hash Algorithm (SHA)"
+    },
+    {
+      "page": 5,
+      "title": "3.1.6\t Message Digest"
+    },
+    {
+      "page": 5,
+      "title": "3.2 \t Digital Signatures"
+    },
+    {
+      "page": 5,
+      "title": "3.2.1\t Overview of Digital Signatures"
+    },
+    {
+      "page": 5,
+      "title": "3.2.2\t Digital Signature Standards (DSS)"
+    },
+    {
+      "page": 5,
+      "title": "3.2.3\t Proof of Digital Signature Algorithm"
+    },
+    {
+      "page": 5,
+      "title": "Module - IV: Web Security"
+    },
+    {
+      "page": 5,
+      "title": "4.1 \t Introduction to Web Security"
+    },
+    {
+      "page": 5,
+      "title": "4.1.1\t Authentication Applications: Kerberos"
+    },
+    {
+      "page": 5,
+      "title": "4.1.2\t Overview of Access Control List (ACL)"
+    },
+    {
+      "page": 5,
+      "title": "4.1.3\t Electronic Mail Security: Pretty Good Privacy (PGP)"
+    },
+    {
+      "page": 5,
+      "title": "4.1.4\t S/MIME"
+    },
+    {
+      "page": 5,
+      "title": "4.2 \t IP Security"
+    },
+    {
+      "page": 5,
+      "title": "4.2.1\t IP Security Architecture Components"
+    },
+    {
+      "page": 5,
+      "title": "4.2.2\t Secure Socket Layer"
+    },
+    {
+      "page": 5,
+      "title": "4.2.3\t Secure electronic transaction (SET)"
+    },
+    {
+      "page": 5,
+      "title": "Module - V: Computational Learning Theor"
+    },
+    {
+      "page": 5,
+      "title": "5.1 \t System Security"
+    },
+    {
+      "page": 5,
+      "title": "5.1.1\t Introductory Idea of Intrusion"
+    },
+    {
+      "page": 5,
+      "title": "5.1.2\t Intrusion Detection Techniques"
+    },
+    {
+      "page": 5,
+      "title": "5.1.3\t Viruses and Worms"
+    },
+    {
+      "page": 5,
+      "title": "5.1.4\t Firewall Overview and Design Principles"
+    },
+    {
+      "page": 5,
+      "title": "5.1.5\t Global Standards IT Acts and Cyber Laws"
+    },
+    {
+      "page": 5,
+      "title": "5.1.6\t Virtual Private Network"
+    },
+    {
+      "page": 5,
+      "title": "5.1.7\t Recent Network Attacks and Security Measures"
+    },
+    {
+      "page": 5,
+      "title": "5.1.8\t Blockchain Technology"
+    },
+    {
+      "page": 5,
+      "title": "5.1.9\t Internet Privacy and Piracy Prevention"
+    },
+    {
+      "page": 5,
+      "title": "5.2  Cyber Forensic and Its Applications"
+    },
+    {
+      "page": 5,
+      "title": "5.2.1\t Overview of Cyber Forensic"
+    },
+    {
+      "page": 5,
+      "title": "5.2.2\t Cyber Forensic Processes"
+    },
+    {
+      "page": 5,
+      "title": "5.2.3\t Cyber Forensic Applications"
+    },
+    {
+      "page": 5,
+      "title": "5.2.4\t Cyber Forensic Tools"
+    },
+    {
+      "page": 5,
+      "title": "5.2.5\t Digital Evidence"
+    },
+    {
+      "page": 5,
+      "title": "5.2.6\t Investigating Windows and Unix Systems"
+    },
+    {
+      "page": 5,
+      "title": "5.2.7\t E-mail Tracing"
+    },
+    {
+      "page": 6,
+      "title": "Module -1: Introduction to Network Security"
+    },
+    {
+      "page": 7,
+      "title": "1.1 Network security"
+    },
+    {
+      "page": 7,
+      "title": "1.1.1 Introduction to Security Attacks"
+    },
+    {
+      "page": 13,
+      "title": "1.1.2 Services and Mechanism"
+    },
+    {
+      "page": 13,
+      "title": "1. \t Message confidentiality"
+    },
+    {
+      "page": 14,
+      "title": "4. \t Message non-reproduction"
+    },
+    {
+      "page": 14,
+      "title": "5. \t Entity Authentication"
+    },
+    {
+      "page": 15,
+      "title": "1.  \t Encipherment:"
+    },
+    {
+      "page": 16,
+      "title": "2.  \t Access Control: This component is utilized to stop unattended admittance to"
+    },
+    {
+      "page": 16,
+      "title": "3. \t Notarization: This security instrument includes utilization of confided in outsider"
+    },
+    {
+      "page": 16,
+      "title": "1.1.3 Classical Encryption Techniques"
+    },
+    {
+      "page": 24,
+      "title": "1.1.4 Substitution Ciphers"
+    },
+    {
+      "page": 28,
+      "title": "1.1.5 Transposition ciphers"
+    },
+    {
+      "page": 30,
+      "title": "1.1.6 Cryptanalysis"
+    },
+    {
+      "page": 33,
+      "title": "1.1.7 Steganography"
+    },
+    {
+      "page": 35,
+      "title": "1. \t The Least Important Information"
+    },
+    {
+      "page": 35,
+      "title": "2. \t Palette Based Technique"
+    },
+    {
+      "page": 35,
+      "title": "3. \t Secure Cover Selection"
+    },
+    {
+      "page": 36,
+      "title": "1.1.8 Stream and Block ciphers"
+    },
+    {
+      "page": 37,
+      "title": "1. \t High dissemination: data from one plaintext image is diffused into a few"
+    },
+    {
+      "page": 37,
+      "title": "2. \t Resistance to altering: hard to embed images without recognition."
+    },
+    {
+      "page": 37,
+      "title": "1. \t Gradualness of encryption: a whole square should be collected prior to"
+    },
+    {
+      "page": 37,
+      "title": "2. \t Mistake propagation: A blunder in one image may ruin the whole square."
+    },
+    {
+      "page": 38,
+      "title": "1.1.9 A Brief Overview of Hardware Security"
+    },
+    {
+      "page": 42,
+      "title": "1. \t Which of the following best describes the difference between passive and active"
+    },
+    {
+      "page": 43,
+      "title": "1. \t Describe how the Notarization security mechanism works in ensuring secure"
+    },
+    {
+      "page": 43,
+      "title": "2. \t Describe the role of digital signatures in ensuring the security of electronic"
+    },
+    {
+      "page": 43,
+      "title": "3. \t Using the Caesar cipher with a shift of 5, encrypt the following plaintext: \"hello world\""
+    },
+    {
+      "page": 43,
+      "title": "4. \t Explain the process of encrypting a message using a row transposition cipher. Use"
+    },
+    {
+      "page": 43,
+      "title": "1. \t How do security mechanisms such as encryption, access control, and digital"
+    },
+    {
+      "page": 43,
+      "title": "2. \t How does hardware security differ from cybersecurity and cryptography, and what"
+    },
+    {
+      "page": 44,
+      "title": "Module - II: Secret and Public Key Cryptography"
+    },
+    {
+      "page": 45,
+      "title": "2.1  Secret Key Cryptography"
+    },
+    {
+      "page": 45,
+      "title": "2.1.1 Modern Block Ciphers: Block Ciphers Principles"
+    },
+    {
+      "page": 47,
+      "title": "2.1.2 Shannon’s Theory of Confusion and Diffusion"
+    },
+    {
+      "page": 50,
+      "title": "2.1.3 Fiestal Structure"
+    },
+    {
+      "page": 53,
+      "title": "2.1.4 Data Encryption Standard (DES)"
+    },
+    {
+      "page": 57,
+      "title": "2.1.5 Strength of DES"
+    },
+    {
+      "page": 58,
+      "title": "2.1.6 Idea of Differential Cryptanalysis"
+    },
+    {
+      "page": 59,
+      "title": "2.1.7 Block Cipher Modes of Operations"
+    },
+    {
+      "page": 64,
+      "title": "2.1.8 Triple DES"
+    },
+    {
+      "page": 65,
+      "title": "2.2 Public Key Cryptography"
+    },
+    {
+      "page": 65,
+      "title": "2.2.1 Advanced Encryption Standard (AES)"
+    },
+    {
+      "page": 67,
+      "title": "2.2.2 Fermat’s and Euler’s Theorem"
+    },
+    {
+      "page": 69,
+      "title": "2.2.3 Chinese Remainder Theorem"
+    },
+    {
+      "page": 70,
+      "title": "2.2.4 Principals of Public Key Crypto Systems"
+    },
+    {
+      "page": 71,
+      "title": "2.2.5 RSA Algorithm"
+    },
+    {
+      "page": 73,
+      "title": "2.2.6 Security of RSA Algorithm"
+    },
+    {
+      "page": 73,
+      "title": "1. \t Text-based attacks:"
+    },
+    {
+      "page": 77,
+      "title": "Module - III: Authentication Standards and Key"
+    },
+    {
+      "page": 78,
+      "title": "3.1.1 Introduction of Message Authentication Codes"
+    },
+    {
+      "page": 80,
+      "title": "3.1.2 Authentication Functions"
+    },
+    {
+      "page": 81,
+      "title": "3.1.3 Authentication Requirements"
+    },
+    {
+      "page": 81,
+      "title": "3.1.4 Message Authentication Codes (MAC)"
+    },
+    {
+      "page": 82,
+      "title": "1. \t Creation of a Shared Secret"
+    },
+    {
+      "page": 83,
+      "title": "1. \t MAC without encryption — This model can offer confidentiality as the communication"
+    },
+    {
+      "page": 84,
+      "title": "2. \t Internal Error Code – For secrecy, the sender encrypts the content in this MAC"
+    },
+    {
+      "page": 84,
+      "title": "3. \t External Error Code –In instances where there is a message alteration, we decrypt"
+    },
+    {
+      "page": 84,
+      "title": "4. \t c = E(M, k')M' = MAC(c, k)"
+    },
+    {
+      "page": 84,
+      "title": "5. \t Problems in MAC –Reverse engineering will get us to the plain text, or even the key."
+    },
+    {
+      "page": 85,
+      "title": "3.1.5 Secure Hash Algorithm (SHA)"
+    },
+    {
+      "page": 88,
+      "title": "3.1.6 Message Digest"
+    },
+    {
+      "page": 89,
+      "title": "3.2 Digital Signatures"
+    },
+    {
+      "page": 89,
+      "title": "3.2.1 Overview of Digital Signatures"
+    },
+    {
+      "page": 91,
+      "title": "3.2.2 Digital Signature Standards (DSS)"
+    },
+    {
+      "page": 92,
+      "title": "3.2.3 Proof of Digital Signature Algorithm"
+    },
+    {
+      "page": 94,
+      "title": "1. \t Which of the following functions can be used to create an authenticator for a message"
+    },
+    {
+      "page": 96,
+      "title": "Module - IV: Web Security"
+    },
+    {
+      "page": 96,
+      "title": "4.1 Introduction to Web Security"
+    },
+    {
+      "page": 100,
+      "title": "4.1.1\t Authentication Applications: Kerberos"
+    },
+    {
+      "page": 101,
+      "title": "1.\t The chairman can cripple the record of any client by acting in a solitary area"
+    },
+    {
+      "page": 101,
+      "title": "2.\t When a client changes its secret word, it is changed for all administrations"
+    },
+    {
+      "page": 101,
+      "title": "3.\t There is no excess of verification data which some way or another must be"
+    },
+    {
+      "page": 101,
+      "title": "1. \t Realm: The term realm demonstrates a validation authoritative space. It will probably"
+    },
+    {
+      "page": 101,
+      "title": "2. \t Principal: A chief is a name used to allude to the sections in the verification worker"
+    },
+    {
+      "page": 102,
+      "title": "3. \t Ticket: A ticket is anything that a client gives to an application worker to demonstrate"
+    },
+    {
+      "page": 103,
+      "title": "4. \t Encryption: As you can see, messages (tickets and authenticators) going between"
+    },
+    {
+      "page": 103,
+      "title": "5. \t Encryption type: The only type of encryption that Kerberos 4 actually implements is"
+    },
+    {
+      "page": 103,
+      "title": "6. \t Encryption key: As said over, one of the points of the Kerberos convention is to keep"
+    },
+    {
+      "page": 104,
+      "title": "7. \t Salt: In Kerberos 5, not at all like adaptation 4, the idea of the secret word salt has"
+    },
+    {
+      "page": 106,
+      "title": "9. \t Authentication Server Request (AS_REQ)"
+    },
+    {
+      "page": 107,
+      "title": "10.\t Ticket Granting Server Request (TGS_REQ)"
+    },
+    {
+      "page": 108,
+      "title": "10.1\tTicket Granting Server Replay (TGS_REP)"
+    },
+    {
+      "page": 108,
+      "title": "11.  \tApplication Request (AP_REQ)"
+    },
+    {
+      "page": 109,
+      "title": "12.  Pre-Authentication"
+    },
+    {
+      "page": 110,
+      "title": "13.\t Tickets in additional detail"
+    },
+    {
+      "page": 110,
+      "title": "13.1 Initial tickets"
+    },
+    {
+      "page": 110,
+      "title": "13.2\tRenewable tickets"
+    },
+    {
+      "page": 111,
+      "title": "13.3 Forwardable tickets"
+    },
+    {
+      "page": 112,
+      "title": "14. \t Cross Authentication"
+    },
+    {
+      "page": 112,
+      "title": "14.1 Direct trust relationships"
+    },
+    {
+      "page": 113,
+      "title": "14.2 Transitive trust relationships"
+    },
+    {
+      "page": 113,
+      "title": "14.3 Hierarchical trust relationships"
+    },
+    {
+      "page": 113,
+      "title": "4.1.2 Overview of Access Control List (ACL)"
+    },
+    {
+      "page": 116,
+      "title": "1. \t Standard ACL"
+    },
+    {
+      "page": 116,
+      "title": "2. \t Expanded ACL"
+    },
+    {
+      "page": 118,
+      "title": "4.1.3 Electronic Mail Security: Pretty Good Privacy (PGP)"
+    },
+    {
+      "page": 123,
+      "title": "4.1.4 S/MIME"
+    },
+    {
+      "page": 123,
+      "title": "1. \t The sender and recipient must both have S/MIME enabled."
+    },
+    {
+      "page": 123,
+      "title": "2. \t A strong S/MIME authentication is required. An email address-related public key and"
+    },
+    {
+      "page": 124,
+      "title": "1. \t When the sender taps on Send, the first decoded message is caught."
+    },
+    {
+      "page": 124,
+      "title": "2. \t The beneficiary's public key is utilized to encode the first message. Toward the finish"
+    },
+    {
+      "page": 124,
+      "title": "3. \t The encryption message replaces the first message."
+    },
+    {
+      "page": 124,
+      "title": "4. \t The email is shipped off the beneficiary."
+    },
+    {
+      "page": 124,
+      "title": "1.\t The beneficiary gets the email."
+    },
+    {
+      "page": 124,
+      "title": "2.\t The encoded message is recovered."
+    },
+    {
+      "page": 125,
+      "title": "3.\t The beneficiary's private key is utilized to unscramble the scrambled message."
+    },
+    {
+      "page": 125,
+      "title": "4.\t The first message is gotten and shown to the beneficiary."
+    },
+    {
+      "page": 125,
+      "title": "1.\t The first message is captured when the sender presses the Send button."
+    },
+    {
+      "page": 125,
+      "title": "2.\t The hash of the message is established."
+    },
+    {
+      "page": 125,
+      "title": "3.\t The hash value is jumbled using the sender's secret key."
+    },
+    {
+      "page": 125,
+      "title": "4.\t The email now includes the jumbled hash value."
+    },
+    {
+      "page": 125,
+      "title": "5.\t The recipient receives the email."
+    },
+    {
+      "page": 126,
+      "title": "4.2 IP Security"
+    },
+    {
+      "page": 129,
+      "title": "4.2.1 IP Security Architecture Components"
+    },
+    {
+      "page": 130,
+      "title": "1. \t Architecture"
+    },
+    {
+      "page": 130,
+      "title": "2. \t ESP Protocol"
+    },
+    {
+      "page": 131,
+      "title": "3. \t Encryption algorithm - The encryption computation is a document that illustrates"
+    },
+    {
+      "page": 131,
+      "title": "4. \t AH Protocol: Integrity management and authentication are provided by the AH"
+    },
+    {
+      "page": 131,
+      "title": "5. \t Algorithm for Authentication: The series of documents describing the authentication"
+    },
+    {
+      "page": 131,
+      "title": "6. \t Domain of Interpretation, or DOI: This is an identifier that works with both the AH and"
+    },
+    {
+      "page": 131,
+      "title": "7. \t Key Management: The document that details the key exchange process between"
+    },
+    {
+      "page": 132,
+      "title": "1. \t Next Header:"
+    },
+    {
+      "page": 132,
+      "title": "3. \t Reserved:"
+    },
+    {
+      "page": 132,
+      "title": "4. \t Security Parameter Index (SPI):"
+    },
+    {
+      "page": 133,
+      "title": "5. \t Sequence Number:"
+    },
+    {
+      "page": 133,
+      "title": "6. \t Authentication Data (Integrity Check Value):"
+    },
+    {
+      "page": 133,
+      "title": "4.2.2 Secure Socket Layer"
+    },
+    {
+      "page": 136,
+      "title": "1. \t SSL/TLS version."
+    },
+    {
+      "page": 136,
+      "title": "2. \t The code suites and pressure approach that must be applied."
+    },
+    {
+      "page": 137,
+      "title": "4.2.3 Secure Electronic Transaction (SET)"
+    }
+  ],
+  "module_ranges": {
+    "1": [
+      7,
+      43
+    ],
+    "2": [
+      44,
+      76
+    ],
+    "3": [
+      77,
+      95
+    ],
+    "4": [
+      96,
+      155
+    ],
+    "5": [
+      156,
+      189
+    ]
+  }
+}

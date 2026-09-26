@@ -1,0 +1,182 @@
+{
+  "modules": {
+    "1": {
+      "story": "First learn what threatens information, then how we protect it, then how classical cryptography is built and attacked — ending at modern cipher families and hardware roots of trust.",
+      "branches": [
+        {
+          "id": "threats",
+          "label": "Threats",
+          "hint": "What can go wrong",
+          "nodes": [{ "id": "1.1.1", "label": "Attacks", "sub": "Passive · Active · CIA" }]
+        },
+        {
+          "id": "protection",
+          "label": "Protection",
+          "hint": "What we want vs how we do it",
+          "nodes": [{ "id": "1.1.2", "label": "Services & mechanisms", "sub": "Goals → techniques" }]
+        },
+        {
+          "id": "crypto",
+          "label": "Classical cryptography",
+          "hint": "How secrets were built historically",
+          "nodes": [
+            { "id": "1.1.3", "label": "Classical techniques", "sub": "Families & vocabulary" },
+            { "id": "1.1.4", "label": "Substitution", "sub": "Caesar · Playfair · Vigenère" },
+            { "id": "1.1.5", "label": "Transposition", "sub": "Rail fence · columnar" }
+          ]
+        },
+        {
+          "id": "analysis",
+          "label": "Analysis & hiding",
+          "hint": "Breaking and concealing",
+          "nodes": [
+            { "id": "1.1.6", "label": "Cryptanalysis", "sub": "Attack models" },
+            { "id": "1.1.7", "label": "Steganography", "sub": "Hide presence" }
+          ]
+        },
+        {
+          "id": "modern",
+          "label": "Modern direction",
+          "hint": "Toward Module 2",
+          "nodes": [
+            { "id": "1.1.8", "label": "Stream & block", "sub": "Cipher families" },
+            { "id": "1.1.9", "label": "Hardware security", "sub": "Roots of trust" }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "story": "Symmetric block-cipher craft (structure, DES lineage, modes) then the maths and design of public-key systems culminating in RSA.",
+      "branches": [
+        {
+          "id": "block",
+          "label": "Secret-key block ciphers",
+          "hint": "How modern symmetric crypto is built",
+          "nodes": [
+            { "id": "2.1.1", "label": "Block principles", "sub": "Rounds · product ciphers" },
+            { "id": "2.1.2", "label": "Confusion & diffusion", "sub": "Shannon" },
+            { "id": "2.1.3", "label": "Feistel", "sub": "Same structure decrypts" },
+            { "id": "2.1.4", "label": "DES", "sub": "64-bit Feistel" },
+            { "id": "2.1.5", "label": "DES strength", "sub": "56-bit limit" },
+            { "id": "2.1.6", "label": "Differential cryptanalysis", "sub": "Difference trails" },
+            { "id": "2.1.7", "label": "Modes", "sub": "ECB · CBC · …" },
+            { "id": "2.1.8", "label": "Triple DES", "sub": "Legacy bridge" }
+          ]
+        },
+        {
+          "id": "pubkey",
+          "label": "Public-key cryptography",
+          "hint": "Asymmetric tools",
+          "nodes": [
+            { "id": "2.2.1", "label": "AES", "sub": "SPN standard" },
+            { "id": "2.2.2", "label": "Fermat & Euler", "sub": "Number theory" },
+            { "id": "2.2.3", "label": "Chinese Remainder", "sub": "CRT" },
+            { "id": "2.2.4", "label": "Public-key principles", "sub": "Key pairs" },
+            { "id": "2.2.5", "label": "RSA", "sub": "Encrypt / sign maths" },
+            { "id": "2.2.6", "label": "RSA security", "sub": "Factoring · padding" }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "story": "Prove origin and integrity of messages — from MAC requirements through hash tools to digital signatures.",
+      "branches": [
+        {
+          "id": "mac",
+          "label": "Message authentication",
+          "hint": "Integrity + origin with shared secrets",
+          "nodes": [
+            { "id": "3.1.1", "label": "Intro to MAC", "sub": "Auth ≠ encryption" },
+            { "id": "3.1.2", "label": "Auth functions", "sub": "Families of techniques" },
+            { "id": "3.1.3", "label": "Requirements", "sub": "What must hold" },
+            { "id": "3.1.4", "label": "MAC", "sub": "Keyed tag" },
+            { "id": "3.1.5", "label": "SHA", "sub": "Hash family" },
+            { "id": "3.1.6", "label": "Message digest", "sub": "Fingerprint" }
+          ]
+        },
+        {
+          "id": "sig",
+          "label": "Digital signatures",
+          "hint": "Asymmetric integrity + non-repudiation",
+          "nodes": [
+            { "id": "3.2.1", "label": "Signatures overview", "sub": "Sign / verify" },
+            { "id": "3.2.2", "label": "DSS", "sub": "Standards" },
+            { "id": "3.2.3", "label": "DSA proof ideas", "sub": "Discrete log" }
+          ]
+        }
+      ]
+    },
+    "4": {
+      "story": "Apply crypto to real systems: authenticate users and mail, then protect packets and web sessions.",
+      "branches": [
+        {
+          "id": "apps",
+          "label": "Authentication & mail",
+          "hint": "Identity and messaging",
+          "nodes": [
+            { "id": "4.1.1", "label": "Kerberos", "sub": "Tickets · TGT" },
+            { "id": "4.1.2", "label": "ACL", "sub": "Who may do what" },
+            { "id": "4.1.3", "label": "PGP", "sub": "Hybrid · web of trust" },
+            { "id": "4.1.4", "label": "S/MIME", "sub": "PKI mail" }
+          ]
+        },
+        {
+          "id": "channel",
+          "label": "Channel security",
+          "hint": "Packets and sessions",
+          "nodes": [
+            { "id": "4.2.1", "label": "IPsec", "sub": "AH · ESP" },
+            { "id": "4.2.2", "label": "SSL / TLS", "sub": "Session crypto" },
+            { "id": "4.2.3", "label": "SET", "sub": "Payment roles" }
+          ]
+        }
+      ]
+    },
+    "5": {
+      "story": "Defend hosts and networks, then collect and analyse digital evidence when incidents happen.",
+      "branches": [
+        {
+          "id": "defend",
+          "label": "System defence",
+          "hint": "Detect and contain",
+          "nodes": [
+            { "id": "5.1.1", "label": "Intrusion", "sub": "Intruder classes" },
+            { "id": "5.1.2", "label": "IDS", "sub": "Signature · anomaly" },
+            { "id": "5.1.3", "label": "Viruses & worms", "sub": "Malware contrast" },
+            { "id": "5.1.4", "label": "Firewalls", "sub": "Filter · state" },
+            { "id": "5.1.5", "label": "Cyber law", "sub": "IT Acts" },
+            { "id": "5.1.6", "label": "VPN", "sub": "Tunnels" },
+            { "id": "5.1.7", "label": "Recent attacks", "sub": "Phishing · DDoS" },
+            { "id": "5.1.8", "label": "Blockchain", "sub": "Hash chains" },
+            { "id": "5.1.9", "label": "Privacy & piracy", "sub": "Controls" }
+          ]
+        },
+        {
+          "id": "forensics",
+          "label": "Cyber forensics",
+          "hint": "Evidence after the fact",
+          "nodes": [
+            { "id": "5.2.1", "label": "Forensics overview", "sub": "Discipline" },
+            { "id": "5.2.2", "label": "Processes", "sub": "Collect · preserve" },
+            { "id": "5.2.3", "label": "Applications", "sub": "Use cases" },
+            { "id": "5.2.4", "label": "Tools", "sub": "Imaging · hash" },
+            { "id": "5.2.5", "label": "Digital evidence", "sub": "Custody" },
+            { "id": "5.2.6", "label": "Windows & Unix", "sub": "Artefacts" },
+            { "id": "5.2.7", "label": "E-mail tracing", "sub": "Headers" }
+          ]
+        }
+      ]
+    }
+  },
+  "youAreHere": {
+    "1.1.1": ["Network security", "Threats", "Attacks"],
+    "1.1.2": ["Network security", "Protection", "Services & mechanisms"],
+    "1.1.3": ["Network security", "Classical cryptography", "Techniques"],
+    "1.1.4": ["Network security", "Classical cryptography", "Substitution"],
+    "1.1.5": ["Network security", "Classical cryptography", "Transposition"],
+    "1.1.6": ["Network security", "Analysis", "Cryptanalysis"],
+    "1.1.7": ["Network security", "Analysis", "Steganography"],
+    "1.1.8": ["Network security", "Modern direction", "Stream & block"],
+    "1.1.9": ["Network security", "Modern direction", "Hardware security"]
+  }
+}

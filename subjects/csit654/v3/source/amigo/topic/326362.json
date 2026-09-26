@@ -1,0 +1,37 @@
+{
+  "cmid": "326362",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541725&cmid=326362",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "How many keys used in Public Key Cryptography",
+      "options": [
+        "a. 1",
+        "b. 2",
+        "c. 3",
+        "d. 4"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Public-key cryptography uses two keys (public and private)."
+    },
+    {
+      "no": "2",
+      "stem": "In public key cryptosystem _____ keys are used for encryption and decryption.",
+      "options": [
+        "a. Same",
+        "b. Different",
+        "c. Encryption Keys",
+        "d. None of the mentioned"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Encryption and decryption use different keys in public-key systems."
+    }
+  ]
+}

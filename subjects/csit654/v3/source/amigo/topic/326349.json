@@ -1,0 +1,37 @@
+{
+  "cmid": "326349",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541684&cmid=326349",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "A differential cryptanalysis attack is a method of abusing pairs of plaintext and corresponding",
+      "options": [
+        "a. Plaintext",
+        "b. Ciphertext",
+        "c. Size of Encryption Key",
+        "d. None of These"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Differential cryptanalysis studies plaintext pairs and corresponding ciphertexts."
+    },
+    {
+      "no": "2",
+      "stem": "Differential Cryptanalysis is applicable to",
+      "options": [
+        "a. Block ciphe",
+        "b. Stream cipher",
+        "c. Cryptographic hash function",
+        "d. All of the above"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Differential techniques apply across block ciphers, streams, and hash constructions."
+    }
+  ]
+}

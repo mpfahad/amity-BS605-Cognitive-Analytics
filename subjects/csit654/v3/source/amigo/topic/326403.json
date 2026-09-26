@@ -1,0 +1,37 @@
+{
+  "cmid": "326403",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541841&cmid=326403",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Internet Protocol Security (IPSec) is a protocol suite for securing ____________________ communications by authenticating and encrypting each IP packet of a communication session.",
+      "options": [
+        "a. TCS",
+        "b. UDP",
+        "c. IP",
+        "d. None of These"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "IPsec secures IP-layer communications."
+    },
+    {
+      "no": "2",
+      "stem": "IPSec can be used in protecting data flows between",
+      "options": [
+        "a. Host-to-Host",
+        "b. Network-to-Network",
+        "c. Network-to-Host",
+        "d. All of the Above"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "IPsec can protect host–host, network–network, and mixed paths."
+    }
+  ]
+}

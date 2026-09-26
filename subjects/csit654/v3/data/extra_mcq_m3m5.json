@@ -1,0 +1,1092 @@
+{
+  "questions": [
+    {
+      "id": "hand-3.1.1-q1",
+      "module": 3,
+      "conceptId": "3.1.1",
+      "source": "handcrafted",
+      "stem": "Alice and Bob share a secret key K. Alice wants Bob to detect if an active attacker changes bits of her message in transit. Which mechanism is the most direct fit?",
+      "options": [
+        "A CRC-32 checksum appended with no key",
+        "A MAC tag computed under the shared secret K",
+        "Encrypting the message with Bob’s public key alone",
+        "Publishing an MD5 digest of the plaintext without protection"
+      ],
+      "correct": 1,
+      "explanation": "A MAC is a keyed cryptographic checksum: only parties with K can forge a valid tag, so Bob can detect impersonation or alteration. CRC/MD5 alone have no secret, and public-key encryption alone does not authenticate the sender.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.1.1-q2",
+      "module": 3,
+      "conceptId": "3.1.1",
+      "source": "handcrafted",
+      "stem": "Which statement best distinguishes a MAC from a digital signature for message authentication?",
+      "options": [
+        "A MAC uses a shared secret; a signature is created with a private key and verified with a public key",
+        "A MAC always provides non-repudiation to a third party; a signature never does",
+        "A MAC encrypts the full message for confidentiality; a signature never protects integrity",
+        "A MAC needs no key; a signature needs only a public hash"
+      ],
+      "correct": 0,
+      "explanation": "MACs are symmetric authenticators under a shared key. Digital signatures are asymmetric: sign with private key, verify with public key. Ordinary MACs do not give third-party non-repudiation.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.1.2-q1",
+      "module": 3,
+      "conceptId": "3.1.2",
+      "source": "handcrafted",
+      "stem": "Textbook authentication functions that produce an authenticator are commonly grouped into which three classes?",
+      "options": [
+        "Firewalling, tunnelling, and key escrow",
+        "Message encryption, MAC, and hash-function schemes",
+        "Kerberos tickets, ACLs, and certificates",
+        "Packet filtering, proxying, and stateful inspection"
+      ],
+      "correct": 1,
+      "explanation": "Classical network-security texts list three authentication-function classes: (1) message encryption (ciphertext as authenticator), (2) MAC (keyed fixed-length tag), and (3) hash functions (unkeyed digest used inside a protocol).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.1.2-q2",
+      "module": 3,
+      "conceptId": "3.1.2",
+      "source": "handcrafted",
+      "stem": "Why is an unkeyed cryptographic hash alone insufficient as a message authenticator against an active attacker?",
+      "options": [
+        "Hashes always expand the message to infinite length",
+        "Anyone who can alter the message can also recompute the public digest",
+        "Hash functions require a private signing key to produce any output",
+        "Hashes provide confidentiality, so integrity is never needed"
+      ],
+      "correct": 1,
+      "explanation": "A hash is a public function. After modifying M to M′, an attacker can compute H(M′) and replace the digest. A MAC (or signature) binds a secret so forging a valid authenticator is infeasible without the key.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.1.3-q1",
+      "module": 3,
+      "conceptId": "3.1.3",
+      "source": "handcrafted",
+      "stem": "Which requirement is a primary goal of message authentication with a MAC, rather than of encryption alone?",
+      "options": [
+        "Preventing disclosure of message contents to eavesdroppers",
+        "Detecting content modification of a message in transit",
+        "Hiding traffic volume patterns from passive observers",
+        "Compressing messages before transmission"
+      ],
+      "correct": 1,
+      "explanation": "Disclosure and traffic analysis are confidentiality/secrecy concerns. Message authentication targets threats such as content, sequence, and timing modification (and origin authenticity among parties sharing the key).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.1.3-q2",
+      "module": 3,
+      "conceptId": "3.1.3",
+      "source": "handcrafted",
+      "stem": "A bank wants to prove to a third party that a customer authorised a funds-transfer message and cannot later deny sending it. Why is an ordinary shared-key MAC usually insufficient?",
+      "options": [
+        "MACs cannot detect any bit flips in the message",
+        "Either party sharing K can produce a valid tag, so a third party cannot tell who forged it",
+        "MACs only work on encrypted ciphertext, never on plaintext",
+        "MAC tags are always longer than the original message"
+      ],
+      "correct": 1,
+      "explanation": "Both parties with K can generate tags, so MAC verification does not yield non-repudiation against a third party. Digital signatures (private-key signing) address source repudiation more directly.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.1.4-q1",
+      "module": 3,
+      "conceptId": "3.1.4",
+      "source": "handcrafted",
+      "stem": "How does Bob typically verify a MAC that Alice computed on message M under shared key K?",
+      "options": [
+        "Decrypt the tag with Alice’s public key and check a certificate chain",
+        "Recompute MAC_K(M) and compare the result with the received tag",
+        "Invert the hash to recover M and confirm it matches the plaintext",
+        "Ask a CA to re-sign the tag using X.509"
+      ],
+      "correct": 1,
+      "explanation": "MAC verification is recomputation: with the same K and M, Bob regenerates the tag and checks equality. Tags are not inverted like encryption, and public-key CA steps belong to signatures/PKI.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.1.4-q2",
+      "module": 3,
+      "conceptId": "3.1.4",
+      "source": "handcrafted",
+      "stem": "HMAC is best described as which of the following?",
+      "options": [
+        "A stream cipher that replaces AES for bulk encryption",
+        "A keyed-hash construction that mixes a secret key with a cryptographic hash (e.g., SHA)",
+        "An unkeyed CRC used only for accidental error detection on disks",
+        "A public-key encryption mode that wraps RSA around DES"
+      ],
+      "correct": 1,
+      "explanation": "HMAC is a hash-based MAC: a secret key is combined with a cryptographic hash function (ipad/opad style) to produce a forgery-resistant tag. It is not a bulk cipher and is not an unkeyed checksum.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.1.5-q1",
+      "module": 3,
+      "conceptId": "3.1.5",
+      "source": "handcrafted",
+      "stem": "SHA-1 produces a message digest of which length, and what is the modern security stance toward it for new signature systems?",
+      "options": [
+        "128-bit digest; still preferred over SHA-256 for new designs",
+        "160-bit digest; collision attacks make it unsuitable for new security uses",
+        "256-bit digest; it is identical to SHA-256",
+        "512-bit digest; it only existed before SHA-0"
+      ],
+      "correct": 1,
+      "explanation": "SHA-1 yields a 160-bit digest. Practical collision attacks mean it should not be used for new cryptographic integrity/signature designs; SHA-2/SHA-3 variants are preferred.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.1.5-q2",
+      "module": 3,
+      "conceptId": "3.1.5",
+      "source": "handcrafted",
+      "stem": "Which property is required of a cryptographic hash function used inside digital signatures?",
+      "options": [
+        "It must be efficiently invertible so the verifier can recover the full message from the digest",
+        "It must map arbitrary-length input to a fixed-length digest and be collision-resistant (and one-way)",
+        "It must use a shared session key known only to the two communicating parties",
+        "It must encrypt the digest under AES before any verification"
+      ],
+      "correct": 1,
+      "explanation": "Cryptographic hashes are one-way, fixed-length digests of arbitrary input, with preimage/second-preimage/collision resistance. They are not keyed (unlike MACs) and are not meant to be inverted.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.1.6-q1",
+      "module": 3,
+      "conceptId": "3.1.6",
+      "source": "handcrafted",
+      "stem": "MD5, as classically taught for message digests, produces an output of which size?",
+      "options": [
+        "64 bits",
+        "128 bits",
+        "160 bits",
+        "256 bits"
+      ],
+      "correct": 1,
+      "explanation": "MD5 produces a 128-bit message digest (often described as four 32-bit words). SHA-1 is 160-bit; SHA-256 is 256-bit.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.1.6-q2",
+      "module": 3,
+      "conceptId": "3.1.6",
+      "source": "handcrafted",
+      "stem": "An attacker intercepts a message M sent with an unprotected MD5 digest H(M). The attacker changes M to M′. What can the attacker do next to fool a naive integrity check that only compares digests?",
+      "options": [
+        "Nothing; MD5 cannot be computed without Alice’s private key",
+        "Recompute H(M′) and replace the digest so the check still passes",
+        "Only invert MD5 to recover Alice’s password hash",
+        "Convert the digest into a MAC without any secret key"
+      ],
+      "correct": 1,
+      "explanation": "An unkeyed digest sent alongside the message can be recomputed after tampering. Digests alone do not authenticate origin; protect the digest (MAC/sign/encrypt) or the channel.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.2.1-q1",
+      "module": 3,
+      "conceptId": "3.2.1",
+      "source": "handcrafted",
+      "stem": "In a standard digital-signature scheme, which key creates the signature and which key verifies it?",
+      "options": [
+        "Sender’s public key creates it; verifier’s private key checks it",
+        "Sender’s private key creates it; corresponding public key verifies it",
+        "A shared MAC key creates and verifies it symmetrically",
+        "A CA root key creates it; any AES session key verifies it"
+      ],
+      "correct": 1,
+      "explanation": "Signing uses the signer’s private key; verification uses the matching public key. That asymmetry (and public verifiability) is what distinguishes signatures from MACs.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.2.1-q2",
+      "module": 3,
+      "conceptId": "3.2.1",
+      "source": "handcrafted",
+      "stem": "Why do practical systems usually hash a large document and then sign the digest rather than signing the entire raw file?",
+      "options": [
+        "Hashes expand files so signatures become longer and slower",
+        "Hash-then-sign is efficient: hashes are fast and the digest is short compared with the document",
+        "Signing a digest removes the need for any private key",
+        "Only digests can be encrypted; full files cannot use public-key math"
+      ],
+      "correct": 1,
+      "explanation": "Signature algorithms are slow relative to hashing. Computing H(M) and signing the short digest binds the full document efficiently while still detecting alterations that change the hash.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.2.2-q1",
+      "module": 3,
+      "conceptId": "3.2.2",
+      "source": "handcrafted",
+      "stem": "The Digital Signature Standard (DSS) is best characterised as which of the following?",
+      "options": [
+        "A NIST FIPS that standardises digital signature algorithms (historically DSA with SHA) for authenticating electronic documents",
+        "A bulk file-encryption standard that replaces AES for confidentiality",
+        "An email MIME format identical to S/MIME envelopes",
+        "A ticket-based SSO protocol equivalent to Kerberos"
+      ],
+      "correct": 0,
+      "explanation": "DSS is a Federal Information Processing Standard defining approved digital signature methods (classically DSA with SHA). It standardises signatures, not general encryption or key exchange.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.2.2-q2",
+      "module": 3,
+      "conceptId": "3.2.2",
+      "source": "handcrafted",
+      "stem": "In the classic DSS/DSA approach at the sender, which inputs typically feed the signature function that produces (r, s)?",
+      "options": [
+        "Only the plaintext message bytes with no hash and no private key",
+        "The message hash, a per-signature random k, the sender’s private key, and global domain parameters",
+        "The recipient’s private key and an AES session key only",
+        "An X.509 CRL and a Kerberos TGT only"
+      ],
+      "correct": 1,
+      "explanation": "DSS/DSA signing takes the hash of the message, a unique random k, the signer’s private key, and global public parameters, and outputs signature components (r, s). Reusing or leaking k is catastrophic.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.2.3-q1",
+      "module": 3,
+      "conceptId": "3.2.3",
+      "source": "handcrafted",
+      "stem": "DSA’s security (as taught with DSS) fundamentally rests on the hardness of which problem in the chosen group?",
+      "options": [
+        "Factoring large composite moduli only (as in basic RSA)",
+        "The discrete logarithm problem",
+        "Solving linear Diophantine equations over the integers",
+        "Inverting CRC-32 checksums"
+      ],
+      "correct": 1,
+      "explanation": "DSA is based on modular exponentiation / discrete logarithms in a subgroup (with parameters p, q, g). RSA’s classic hardness story is factoring; DSA’s is discrete log.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.2.3-q2",
+      "module": 3,
+      "conceptId": "3.2.3",
+      "source": "handcrafted",
+      "stem": "If the same DSA per-message nonce k is reused for two different signed messages, what is the critical risk?",
+      "options": [
+        "Only the hash function becomes invertible",
+        "An attacker may recover the signer’s private key x from the two signatures",
+        "The public key y can no longer be published",
+        "Verification will always fail even for honest signatures"
+      ],
+      "correct": 1,
+      "explanation": "DSA correctness and security assume k is secret and unique per signature. Reuse (or leakage) of k lets an attacker solve for the private key x—an implementation failure, not a benign optimisation.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-4.1.1-q1",
+      "module": 4,
+      "conceptId": "4.1.1",
+      "source": "handcrafted",
+      "stem": "In classic Kerberos, after the client authenticates to the Authentication Server (AS), what does it typically receive next to obtain service tickets without re-entering the password?",
+      "options": [
+        "An X.509 client certificate signed by a public CA",
+        "A Ticket-Granting Ticket (TGT) for use with the Ticket-Granting Server (TGS)",
+        "A long-term service key for every application server in cleartext",
+        "An IPsec AH header for every subsequent IP packet"
+      ],
+      "correct": 1,
+      "explanation": "Kerberos flow: AS issues a TGT; the client presents the TGT to the TGS to get service tickets for application servers—supporting single sign-on without retyping the password.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-4.1.1-q2",
+      "module": 4,
+      "conceptId": "4.1.1",
+      "source": "handcrafted",
+      "stem": "Which Kerberos design goal is correctly stated?",
+      "options": [
+        "The user’s password should be sent in cleartext on every application request",
+        "The user’s password should never traverse the network in cleartext; authentication is centralised at the KDC",
+        "Application servers must each store every user’s password hash locally for SSO",
+        "Kerberos replaces the need for any shared secrets by using only public-key certificates"
+      ],
+      "correct": 1,
+      "explanation": "Kerberos aims keep passwords off the wire, avoid storing them in clear on clients, centralise auth data on the KDC, and support SSO and mutual authentication. Classic teaching Kerberos is ticket-based symmetric crypto, not a full PKI replacement.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-4.1.2-q1",
+      "module": 4,
+      "conceptId": "4.1.2",
+      "source": "handcrafted",
+      "stem": "An Access Control List (ACL) on a file is best described as which view of the access matrix?",
+      "options": [
+        "A subject-centric list of all objects a process may touch (a capability list)",
+        "An object-centric list of subjects and the rights each has on that object",
+        "A network ticket proving SSO authentication to a KDC",
+        "A hash of the file used only for integrity, with no permissions"
+      ],
+      "correct": 1,
+      "explanation": "ACLs are object-centric: attached to a resource, listing who may do what. Capability lists are the dual subject-centric view. Authentication identifies the subject; the ACL authorises actions.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-4.1.2-q2",
+      "module": 4,
+      "conceptId": "4.1.2",
+      "source": "handcrafted",
+      "stem": "A process carries an unforgeable token naming the object and permitted operations. That model is primarily called a:",
+      "options": [
+        "Capability",
+        "Packet-filter rule",
+        "Message digest",
+        "Kerberos realm"
+      ],
+      "correct": 0,
+      "explanation": "Capabilities are unforgeable tokens held by subjects that authorise operations on named objects—the contrast often drawn against ACLs in access-control teaching.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-4.1.3-q1",
+      "module": 4,
+      "conceptId": "4.1.3",
+      "source": "handcrafted",
+      "stem": "In PGP’s typical hybrid encryption of an email, which statement is correct?",
+      "options": [
+        "RSA (or similar) encrypts the entire multi-megabyte body byte-by-byte; no symmetric cipher is used",
+        "A random symmetric session key encrypts the message; that session key is encrypted under the recipient’s public key",
+        "Only a shared Kerberos service ticket encrypts the body",
+        "PGP never signs messages; it only compresses them"
+      ],
+      "correct": 1,
+      "explanation": "PGP uses hybrid crypto: fast symmetric bulk encryption of the message, with the session key wrapped under the recipient’s public key. Signatures (hash then private-key sign) provide authenticity separately.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-4.1.3-q2",
+      "module": 4,
+      "conceptId": "4.1.3",
+      "source": "handcrafted",
+      "stem": "PGP’s classic trust model is often contrasted with S/MIME because PGP commonly relies on:",
+      "options": [
+        "A single mandatory government CA for every key",
+        "A decentralised web of trust where users sign others’ keys",
+        "IPsec AH tunnel mode between mail servers only",
+        "MAC addresses burned into network interface cards"
+      ],
+      "correct": 1,
+      "explanation": "PGP popularised a web-of-trust model (users certify keys) versus S/MIME’s typical X.509 CA hierarchy—an exam favourite contrast.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-4.1.4-q1",
+      "module": 4,
+      "conceptId": "4.1.4",
+      "source": "handcrafted",
+      "stem": "S/MIME primarily secures email by combining MIME with cryptography based on which trust infrastructure?",
+      "options": [
+        "Kerberos realms and TGTs only",
+        "X.509 certificates issued in a CA/PKI hierarchy",
+        "Unkeyed MD5 digests with no certificates",
+        "Bluetooth pairing PINs"
+      ],
+      "correct": 1,
+      "explanation": "S/MIME (Secure/MIME) uses PKI/X.509 certificates familiar to enterprises for signed and/or enveloped (encrypted) mail—unlike PGP’s web of trust emphasis.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-4.1.4-q2",
+      "module": 4,
+      "conceptId": "4.1.4",
+      "source": "handcrafted",
+      "stem": "How does S/MIME differ from SSL/TLS in typical deployment intent?",
+      "options": [
+        "S/MIME is end-to-end mail content security; SSL/TLS protects a transport session (e.g., browser–server)",
+        "S/MIME only authenticates IP packets at the network layer like AH",
+        "SSL/TLS encrypts MIME parts at rest on disk; S/MIME never uses certificates",
+        "They are identical protocols with different names"
+      ],
+      "correct": 0,
+      "explanation": "S/MIME protects email as MIME entities end-to-end between mail clients (given keys/certs). SSL/TLS secures a hop/session such as HTTPS to a server—not a substitute for end-to-end mail crypto.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-4.2.1-q1",
+      "module": 4,
+      "conceptId": "4.2.1",
+      "source": "handcrafted",
+      "stem": "In IPsec, which statement correctly contrasts AH and ESP?",
+      "options": [
+        "AH encrypts the payload for confidentiality; ESP provides only unkeyed checksums",
+        "AH provides integrity/authentication without encrypting the payload; ESP can provide confidentiality (and optionally integrity)",
+        "Both AH and ESP operate only at the application layer like PGP",
+        "ESP never uses a Security Parameter Index (SPI)"
+      ],
+      "correct": 1,
+      "explanation": "Authentication Header (AH) gives integrity and origin authentication without confidentiality. Encapsulating Security Payload (ESP) focuses on confidentiality of the payload and may also authenticate.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-4.2.1-q2",
+      "module": 4,
+      "conceptId": "4.2.1",
+      "source": "handcrafted",
+      "stem": "IPsec tunnel mode is commonly chosen for site-to-site VPNs because it:",
+      "options": [
+        "Protects only a TCP port number and leaves IP headers and payloads untouched",
+        "Encapsulates the original IP packet inside a new outer IP packet between gateways",
+        "Replaces DNS with Kerberos tickets",
+        "Stores user passwords in the Security Policy Database in cleartext"
+      ],
+      "correct": 1,
+      "explanation": "Tunnel mode encapsulates entire original IP packets (typical gateway-to-gateway VPN). Transport mode protects upper-layer payload between hosts. SAs/SPD define what is protected and with which parameters.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-4.2.2-q1",
+      "module": 4,
+      "conceptId": "4.2.2",
+      "source": "handcrafted",
+      "stem": "During an SSL/TLS handshake for a typical HTTPS site, what is the primary purpose of the server certificate?",
+      "options": [
+        "To compress HTML before the record protocol runs",
+        "To bind the server’s identity (name) to a public key so the client can authenticate the server and derive shared session secrets safely",
+        "To replace the need for any symmetric cipher in the record layer",
+        "To list every firewall ACL on the path"
+      ],
+      "correct": 1,
+      "explanation": "The handshake negotiates parameters, authenticates the server via X.509 (usually), and establishes session keys. The record protocol then protects application data with those keys.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-4.2.2-q2",
+      "module": 4,
+      "conceptId": "4.2.2",
+      "source": "handcrafted",
+      "stem": "Compared with IPsec, SSL/TLS as commonly deployed for web browsing primarily operates at which layer of protection?",
+      "options": [
+        "Network-layer protection of arbitrary IP packets between gateways",
+        "Transport-layer (or just above) protection of a session between endpoints such as browser and web server",
+        "Physical-layer cable shielding only",
+        "Disk-sector encryption inside the OS kernel only"
+      ],
+      "correct": 1,
+      "explanation": "SSL/TLS protects a transport session (HTTPS). IPsec sits at the IP layer and can secure traffic more transparently to applications, including VPN tunnels.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-4.2.3-q1",
+      "module": 4,
+      "conceptId": "4.2.3",
+      "source": "handcrafted",
+      "stem": "SET (Secure Electronic Transaction) uses a dual signature primarily so that:",
+      "options": [
+        "The merchant sees full card details while the bank sees the full shopping cart",
+        "The merchant can verify the order linkage without needing the customer’s full payment credentials, and the bank can process payment without full order details",
+        "SSL is no longer required for any web traffic worldwide",
+        "Kerberos tickets replace all payment certificates"
+      ],
+      "correct": 1,
+      "explanation": "SET’s dual signature links order information (for the merchant) and payment information (for the bank) without cross-revealing both views—supporting privacy split among cardholder, merchant, and payment gateway.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-4.2.3-q2",
+      "module": 4,
+      "conceptId": "4.2.3",
+      "source": "handcrafted",
+      "stem": "Which parties typically hold certificates in the SET PKI model taught in network-security courses?",
+      "options": [
+        "Only the customer’s ISP DNS resolver",
+        "Cardholder, merchant, and payment gateway (bank-side) entities",
+        "Only anonymous Tor relays",
+        "Only the packet-filter firewall on the LAN"
+      ],
+      "correct": 1,
+      "explanation": "SET authenticates participants in a payment PKI: cardholder, merchant, and payment gateway/issuer-acquirer side certificates are the classic triad—not merely “SSL on a shop website.”",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.1-q1",
+      "module": 5,
+      "conceptId": "5.1.1",
+      "source": "handcrafted",
+      "stem": "In classic intrusion taxonomy, a legitimate insider who misuses privileges beyond authorised limits is called a:",
+      "options": [
+        "Masquerader",
+        "Misfeasor",
+        "Clandestine user who only sniffs cables outside the building",
+        "Packet filter"
+      ],
+      "correct": 1,
+      "explanation": "Misfeasors are insiders who abuse authorised access. Masqueraders are typically outsiders posing as legitimate users. Clandestine users seize supervisory control to evade auditing.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.1-q2",
+      "module": 5,
+      "conceptId": "5.1.1",
+      "source": "handcrafted",
+      "stem": "Which sequence best matches the early phases of a system intrusion as described in the SLM (before final data theft)?",
+      "options": [
+        "Presentation → documentation → imaging only",
+        "Inspection/reconnaissance → initial exploitation → digging deeper / privilege escalation → locating key assets",
+        "Only installing a firewall rule, with no reconnaissance",
+        "Signing a document digest with DSS before any access"
+      ],
+      "correct": 1,
+      "explanation": "The module’s intrusion phases move from inspection (recon) through initial exploitation, deeper system access/privilege escalation, finding key pieces, then collect/exploit. Prevention/detection/recovery are complementary controls.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.1.2-q1",
+      "module": 5,
+      "conceptId": "5.1.2",
+      "source": "handcrafted",
+      "stem": "A sensor watches traffic on a network segment and compares flows against known attack signatures. This is primarily a:",
+      "options": [
+        "Host-based IDS (HIDS) watching only local file hashes",
+        "Network-based IDS (NIDS)",
+        "Write blocker for disk imaging",
+        "S/MIME certificate validator"
+      ],
+      "correct": 1,
+      "explanation": "NIDS sits at a network vantage point and inspects traffic across devices/subnets. HIDS runs on a host and watches that host’s logs, files, and local activity.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.2-q2",
+      "module": 5,
+      "conceptId": "5.1.2",
+      "source": "handcrafted",
+      "stem": "An IDS flags a user who suddenly downloads 50 GB at 03:00 despite never doing so before. That detection style is best labelled:",
+      "options": [
+        "Signature-based detection of a known CVE byte pattern only",
+        "Anomaly-based detection against a behavioural baseline",
+        "Capability-based access control",
+        "Dual-signature SET verification"
+      ],
+      "correct": 1,
+      "explanation": "Anomaly detection flags deviations from normal behaviour and can catch novel attacks, typically with more false positives. Signature detection matches known patterns and may miss unknowns.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.1.3-q1",
+      "module": 5,
+      "conceptId": "5.1.3",
+      "source": "handcrafted",
+      "stem": "Which distinction between a virus and a worm is most accurate?",
+      "options": [
+        "A virus is standalone and never needs a host file; a worm must attach to a document",
+        "A virus typically attaches to a host program/file and spreads when that host runs; a worm self-replicates across networks, often without a host file",
+        "Worms cannot use the network; viruses only use IPsec tunnels",
+        "Trojans are identical to worms by definition"
+      ],
+      "correct": 1,
+      "explanation": "Viruses piggyback on host programs/files and need execution of the host. Worms are standalone malware that propagate copies across systems/networks, often without attaching to a file.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.3-q2",
+      "module": 5,
+      "conceptId": "5.1.3",
+      "source": "handcrafted",
+      "stem": "A boot-sector virus is characterised by which behaviour?",
+      "options": [
+        "It only exists in browser cookies and never affects startup",
+        "It can take control during system boot, often spreading via infected removable media",
+        "It is a worm that requires no storage medium at all",
+        "It encrypts payment cards using SET dual signatures"
+      ],
+      "correct": 1,
+      "explanation": "Boot-sector viruses infect boot code and can gain control at startup; infected USB media are a classic spread vector. They are still viruses (host/boot-code attachment), not a definition of worms.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.1.4-q1",
+      "module": 5,
+      "conceptId": "5.1.4",
+      "source": "handcrafted",
+      "stem": "A packet-filtering firewall primarily makes allow/deny decisions based on:",
+      "options": [
+        "Full application-layer content of every HTTPS payload by default",
+        "Header fields such as IP addresses, ports, and protocol",
+        "Whether the user’s handwriting matches a wet-ink signature",
+        "Blockchain consensus difficulty only"
+      ],
+      "correct": 1,
+      "explanation": "Packet filters enforce policy using network/transport header attributes. Application proxies can enforce deeper application policy; stateful inspection tracks connection state beyond isolated packets.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.4-q2",
+      "module": 5,
+      "conceptId": "5.1.4",
+      "source": "handcrafted",
+      "stem": "In firewall design, placing public-facing servers in a DMZ (screened subnet) mainly aims to:",
+      "options": [
+        "Make those servers fully trusted as internal LAN hosts with no hardening",
+        "Separate semi-trusted external-facing services from the internal network behind additional filtering",
+        "Disable all logging so attackers leave no trail",
+        "Replace the need for authentication on internal systems"
+      ],
+      "correct": 1,
+      "explanation": "A DMZ/screened subnet holds externally reachable services in a buffer zone—more exposed than the internal LAN, so still hardened, with firewalls limiting blast radius.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.1.5-q1",
+      "module": 5,
+      "conceptId": "5.1.5",
+      "source": "handcrafted",
+      "stem": "In the Indian syllabus context for this module, the primary legislation framework addressing cyber offences and electronic records is commonly referred to as the:",
+      "options": [
+        "Digital Signature Standard (DSS) alone",
+        "Information Technology Act (IT Act) family (2000 and amendments)",
+        "Kerberos Realm Naming RFC",
+        "SHA-3 sponge construction paper"
+      ],
+      "correct": 1,
+      "explanation": "The IT Act (and amendments) provides the legal framework for cyber offences, electronic records, and related intermediary/compliance issues. Technical standards like DSS/SHA are not substitutes for that statute.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.5-q2",
+      "module": 5,
+      "conceptId": "5.1.5",
+      "source": "handcrafted",
+      "stem": "Why do cyber-law cases still depend heavily on technical logging and forensics even when a statute defines the offence?",
+      "options": [
+        "Laws forbid any use of firewalls",
+        "Attribution, jurisdiction, and proving authenticity of electronic evidence remain difficult without reliable digital trails",
+        "Statutes automatically decrypt all disks without warrants",
+        "MAC tags are inadmissible by definition"
+      ],
+      "correct": 1,
+      "explanation": "Law defines offences and penalties; investigation still needs admissible electronic evidence, authentic logs, and forensic process because attribution and jurisdiction are hard in practice.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.1.6-q1",
+      "module": 5,
+      "conceptId": "5.1.6",
+      "source": "handcrafted",
+      "stem": "A VPN best matches which description?",
+      "options": [
+        "A private connectivity overlay over a public network using tunnelling and cryptography",
+        "An anonymity-only overlay identical to Tor in goals and design",
+        "A packet filter that never encrypts or encapsulates traffic",
+        "A message digest algorithm like MD5"
+      ],
+      "correct": 0,
+      "explanation": "VPNs create private tunnels across public networks with encapsulation and crypto (often IPsec or SSL VPN). They are not the same as anonymity networks, and they do not remove the need to harden endpoints.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.6-q2",
+      "module": 5,
+      "conceptId": "5.1.6",
+      "source": "handcrafted",
+      "stem": "Which pair correctly contrasts common VPN topologies?",
+      "options": [
+        "Remote-access: user-to-gateway; site-to-site: gateway-to-gateway linking networks",
+        "Remote-access: only AH without keys; site-to-site: only cleartext GRE",
+        "Both topologies forbid encryption by definition",
+        "Site-to-site VPNs can only use S/MIME certificates"
+      ],
+      "correct": 0,
+      "explanation": "Remote-access (road-warrior) VPNs connect a user to a gateway; site-to-site links two networks via gateways. Technology choices often include IPsec or SSL VPN.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.1.7-q1",
+      "module": 5,
+      "conceptId": "5.1.7",
+      "source": "handcrafted",
+      "stem": "A website becomes unreachable because thousands of compromised hosts flood it with traffic. This attack is best classified as:",
+      "options": [
+        "A passive traffic-analysis only attack with no availability impact",
+        "A distributed denial-of-service (DDoS) attack targeting availability",
+        "A dual-signature SET purchase",
+        "A collision attack on SHA-256 digests"
+      ],
+      "correct": 1,
+      "explanation": "DDoS uses many sources to overwhelm resources and deny legitimate service—primarily an availability attack. Mitigations include filtering, capacity/CDN, and operational response—not a single antivirus signature.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.7-q2",
+      "module": 5,
+      "conceptId": "5.1.7",
+      "source": "handcrafted",
+      "stem": "Which defensive emphasis is especially critical against ransomware beyond ordinary endpoint AV?",
+      "options": [
+        "Disabling all offline backups so restore is impossible",
+        "Resilient/offline or immutable backups plus least privilege, patching, and incident response",
+        "Relying solely on MD5 of the ransomware binary",
+        "Publishing the organisation’s private TLS keys"
+      ],
+      "correct": 1,
+      "explanation": "Ransomware impacts availability/integrity of data; recoverable backups (and hardening/MFA/segmentation) are central. AV alone is insufficient against evolving threats and phishing-driven entry.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.1.8-q1",
+      "module": 5,
+      "conceptId": "5.1.8",
+      "source": "handcrafted",
+      "stem": "A blockchain ledger’s blocks are typically linked so that tampering with an old transaction is hard because:",
+      "options": [
+        "Each block stores only plaintext passwords with no hashes",
+        "Each block includes a hash linking to the previous block, and altering history requires redoing costly consensus work",
+        "Blocks are encrypted with a single shared MAC key known to all readers",
+        "Blockchain always guarantees confidentiality of every field by default"
+      ],
+      "correct": 1,
+      "explanation": "Hash chaining detects historical tampering; consensus (PoW/PoS/etc.) makes rewriting the agreed chain expensive. Confidentiality and key custody are not automatic properties of “using a blockchain.”",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.8-q2",
+      "module": 5,
+      "conceptId": "5.1.8",
+      "source": "handcrafted",
+      "stem": "Which statement about blockchain is a common exam trap that is false?",
+      "options": [
+        "Permissioned ledgers can restrict who may validate",
+        "Blockchain is identical to Bitcoin and always encrypts all stored data for privacy",
+        "Smart contracts are programmable logic on some platforms",
+        "Lost private keys can mean permanent loss of control over assets"
+      ],
+      "correct": 1,
+      "explanation": "Blockchain ≠ Bitcoin-only, and ledgers do not automatically encrypt all data for confidentiality. Integrity/transparency and consensus are the usual strengths; privacy needs extra design.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.1.9-q1",
+      "module": 5,
+      "conceptId": "5.1.9",
+      "source": "handcrafted",
+      "stem": "Internet privacy controls primarily aim to:",
+      "options": [
+        "Maximise behavioural profiling cookies without consent",
+        "Limit collection, use, and disclosure of personal data (PII) online",
+        "Guarantee that DRM never applies to any media file",
+        "Replace hashing with cleartext password storage"
+      ],
+      "correct": 1,
+      "explanation": "Privacy is about control over personal data. Piracy prevention (DRM, legal takedowns, watermarking) targets unauthorised copying of copyrighted works—related policy space, different goal.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.9-q2",
+      "module": 5,
+      "conceptId": "5.1.9",
+      "source": "handcrafted",
+      "stem": "A studio wants to reduce illegal redistribution of a film file. Which measure set is most aligned with piracy prevention (rather than general web privacy alone)?",
+      "options": [
+        "DRM/access controls, watermarking, and legal enforcement against unauthorised distribution",
+        "Only deleting server access logs that could identify abusers",
+        "Disabling HTTPS so traffic is easier to inspect by everyone",
+        "Publishing users’ PII to deter copying"
+      ],
+      "correct": 0,
+      "explanation": "Anti-piracy uses technical DRM/watermarking plus legal remedies. Privacy minimisation and HTTPS address personal-data risks; they are not the same as stopping copyright infringement.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.2.1-q1",
+      "module": 5,
+      "conceptId": "5.2.1",
+      "source": "handcrafted",
+      "stem": "Cyber forensics is best defined as:",
+      "options": [
+        "Only deleting malware as quickly as possible with no evidence trail",
+        "The disciplined collection, preservation, analysis, and presentation of digital evidence",
+        "Configuring a packet filter without logging",
+        "Generating DSA signatures for software updates only"
+      ],
+      "correct": 1,
+      "explanation": "Forensics reconstructs events for investigation/court while protecting evidential integrity (imaging, hashing, chain of custody). It is process-heavy and distinct from mere containment.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.2.1-q2",
+      "module": 5,
+      "conceptId": "5.2.1",
+      "source": "handcrafted",
+      "stem": "Why is chain of custody important in cyber forensics?",
+      "options": [
+        "It documents handling history so evidence integrity and authenticity can be defended in court",
+        "It replaces the need to hash disk images",
+        "It allows investigators to freely edit the original suspect disk",
+        "It is only used for paper evidence, never digital media"
+      ],
+      "correct": 0,
+      "explanation": "Chain of custody records who handled evidence when and how. Together with imaging and cryptographic hashing, it supports claims that digital evidence was not tampered with.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.2.2-q1",
+      "module": 5,
+      "conceptId": "5.2.2",
+      "source": "handcrafted",
+      "stem": "According to the module’s cyber-forensic process steps, which order is correct?",
+      "options": [
+        "Presentation → analysis → identification (skip preservation)",
+        "Identification → preservation → analysis → documentation → presentation",
+        "Analysis on the live original disk → then decide whether to image",
+        "Presentation first to the press → then collect evidence"
+      ],
+      "correct": 1,
+      "explanation": "The SLM lists identification, preservation, analysis, documentation, and presentation. Preserve/isolate before analysis; document continuously; present findings last.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.2.2-q2",
+      "module": 5,
+      "conceptId": "5.2.2",
+      "source": "handcrafted",
+      "stem": "On a live system, why does order of volatility matter during acquisition?",
+      "options": [
+        "RAM and network state can disappear; capture more volatile evidence before relying only on disk",
+        "Disk contents always vanish before RAM",
+        "Hashes are unnecessary if volatility is considered",
+        "Write blockers are forbidden on volatile data"
+      ],
+      "correct": 0,
+      "explanation": "Volatile evidence (RAM, network connections) is lost on power-down or overwrite. Sound process captures higher-volatility data first, then stable media—with write-blocking and hashing for disks.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.2.3-q1",
+      "module": 5,
+      "conceptId": "5.2.3",
+      "source": "handcrafted",
+      "stem": "Which scenario is a typical corporate application of cyber forensics (not only police criminal cases)?",
+      "options": [
+        "Investigating whether an employee stole IP or violated acceptable-use policy using company systems",
+        "Replacing ACLs with message digests on every file share",
+        "Disabling all logging to improve privacy scores",
+        "Using SET dual signatures to boot Windows"
+      ],
+      "correct": 0,
+      "explanation": "Forensics applies to criminal, civil, and corporate contexts: IP theft, policy abuse, fraud, incident scoping, etc. Enterprises run internal investigations with preservation duties if litigation is possible.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.2.3-q2",
+      "module": 5,
+      "conceptId": "5.2.3",
+      "source": "handcrafted",
+      "stem": "After a breach, forensics supports incident response mainly by:",
+      "options": [
+        "Guaranteeing the attacker’s identity from the From: email header alone",
+        "Helping scope what happened, attribute activity from artefacts, and guide recovery decisions",
+        "Automatically patching every host without analysis",
+        "Converting the case into a blockchain smart contract"
+      ],
+      "correct": 1,
+      "explanation": "Applications include criminal/civil cases and IR support: determine timeline, affected systems, and evidence for recovery and possible prosecution—using sound process across endpoints, servers, mobile, and cloud logs.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.2.4-q1",
+      "module": 5,
+      "conceptId": "5.2.4",
+      "source": "handcrafted",
+      "stem": "A hardware or software write blocker is used during disk acquisition primarily to:",
+      "options": [
+        "Speed up AES encryption of the evidence",
+        "Prevent accidental writes that would alter the original evidence media",
+        "Delete slack space to save storage",
+        "Convert NTFS to ext4 in place"
+      ],
+      "correct": 1,
+      "explanation": "Write blockers stop modifications while imaging. Investigators hash images (MD5/SHA) and analyse working copies with validated tools (imaging utilities, Autopsy/EnCase-class suites, memory tools as needed).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.2.4-q2",
+      "module": 5,
+      "conceptId": "5.2.4",
+      "source": "handcrafted",
+      "stem": "Which practice undermines a defensible forensic examination?",
+      "options": [
+        "Hashing the image before and after acquisition and recording the algorithm",
+        "Installing analysis software onto the suspect disk and browsing it read/write",
+        "Using a validated imaging tool to create a bit-for-bit copy",
+        "Documenting tool versions used in the report"
+      ],
+      "correct": 1,
+      "explanation": "Never analyse by altering the original. Image with write-blocking, verify hashes, and work from forensic copies with documented, validated tools.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.2.5-q1",
+      "module": 5,
+      "conceptId": "5.2.5",
+      "source": "handcrafted",
+      "stem": "Matching cryptographic hashes of a forensic image before and after transfer primarily demonstrates:",
+      "options": [
+        "That the image’s integrity was preserved (no silent alteration)",
+        "That the suspect is guilty beyond any other evidence",
+        "That metadata timestamps cannot be wrong",
+        "That the original disk may now be freely edited"
+      ],
+      "correct": 0,
+      "explanation": "Hash verification supports integrity of digital evidence copies. Guilt still needs analysis and legal process; metadata can be misleading and must be corroborated.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.2.5-q2",
+      "module": 5,
+      "conceptId": "5.2.5",
+      "source": "handcrafted",
+      "stem": "Which statement about digital evidence is correct?",
+      "options": [
+        "Only currently visible files count; deleted/slack data never matters",
+        "Evidence may include active files, logs, metadata, and latent remnants; analyse working copies while preserving originals",
+        "Screenshots alone always replace raw disk images in court",
+        "Timestamps never need timezone or clock-skew interpretation"
+      ],
+      "correct": 1,
+      "explanation": "Digital evidence is any digital information of probative value—including latent artefacts. Best practice: preserve originals, analyse copies, interpret metadata carefully, and maintain custody.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.2.6-q1",
+      "module": 5,
+      "conceptId": "5.2.6",
+      "source": "handcrafted",
+      "stem": "On a Windows system, which artefact set is especially useful when investigating persistence and configuration changes?",
+      "options": [
+        "Only /var/log/auth.log and bash history",
+        "Event logs, Registry hives, Prefetch, and LNK artefacts (among others)",
+        "Only Received: email headers",
+        "Only Bitcoin blockchain headers"
+      ],
+      "correct": 1,
+      "explanation": "Windows investigations lean on Event Logs, Registry, Prefetch, LNK, USN journal, profiles, etc. Unix/Linux counterparts include syslog/journald, auth logs, shell history, cron, and package logs.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.2.6-q2",
+      "module": 5,
+      "conceptId": "5.2.6",
+      "source": "handcrafted",
+      "stem": "An analyst hunting SSH brute-force attempts on a Linux server should start with which kind of artefact?",
+      "options": [
+        "Windows Prefetch for notepad.exe",
+        "Authentication/system logs such as auth.log or journald entries for sshd",
+        "NTFS USN journal exclusively",
+        "SET merchant certificates"
+      ],
+      "correct": 1,
+      "explanation": "Unix/Linux auth and service logs record failed/successful logins and sshd activity. Applying only Windows artefact paths to a Linux image is a common mistake.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.2.7-q1",
+      "module": 5,
+      "conceptId": "5.2.7",
+      "source": "handcrafted",
+      "stem": "When tracing an email’s path, investigators primarily examine which header fields added by mail servers?",
+      "options": [
+        "Only the visible From: display name, treated as cryptographic proof of origin",
+        "Received: headers (typically interpreted from bottom toward top for the path), plus Message-ID and related metadata",
+        "Only DKIM signatures with no server logs ever",
+        "Only the Subject: line length"
+      ],
+      "correct": 1,
+      "explanation": "Email tracing follows Received chains and related IDs/logs. The From: address is easily spoofed; server-added Received lines (and MTA logs) are more trustworthy—with caveats.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.2.7-q2",
+      "module": 5,
+      "conceptId": "5.2.7",
+      "source": "handcrafted",
+      "stem": "Why is trusting only the visible From: address a forensic trap in email tracing?",
+      "options": [
+        "From: is always signed by DSS at the IP layer",
+        "From: can be forged; path reconstruction should emphasise Received: chains and corroborating server logs",
+        "Received: headers are illegal to store",
+        "Message-ID values are never useful for correlation"
+      ],
+      "correct": 1,
+      "explanation": "Spoofing can fake From:. Tracing builds a path hypothesis from Received hops, Message-ID correlation, and MTA/spam-gateway logs—not from the friendly From: string alone.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    }
+  ]
+}

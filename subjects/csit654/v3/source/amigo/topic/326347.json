@@ -1,0 +1,37 @@
+{
+  "cmid": "326347",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541666&cmid=326347",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "The strength of DES depends on",
+      "options": [
+        "a. Plaintext",
+        "b. Ciphertext",
+        "c. Size of Encryption Key",
+        "d. None of These"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "DES strength depends on the encryption key size/space."
+    },
+    {
+      "no": "2",
+      "stem": "The DES algorithm has a key length of",
+      "options": [
+        "a. 128 Bits",
+        "b. 32 Bits",
+        "c. 64 Bits",
+        "d. 16 Bits"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "DES uses a 64-bit key block (56 effective + parity)."
+    }
+  ]
+}

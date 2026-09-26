@@ -1,0 +1,37 @@
+{
+  "cmid": "326420",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541885&cmid=326420",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "The Information Technology Act 2000 (also known as ITA-2000, or the IT Act) is an Act of the Indian Parliament notified on",
+      "options": [
+        "a. October 17, 2000",
+        "b. October 17, 2008",
+        "c. October 07, 2000",
+        "d. October 07, 2008"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "IT Act 2000 came into force on 17 October 2000."
+    },
+    {
+      "no": "2",
+      "stem": "Information Technology Act 2000 addressed the following issues",
+      "options": [
+        "a. Legal Recognition of Electronic Documents",
+        "b. Legal Recognition of Digital Signatures",
+        "c. Offenses and Contraventions",
+        "d. All of the Above"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "IT Act covers e-documents, digital signatures, and offences."
+    }
+  ]
+}

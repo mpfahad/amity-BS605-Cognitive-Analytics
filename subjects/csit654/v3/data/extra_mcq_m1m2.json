@@ -1,0 +1,786 @@
+{
+  "questions": [
+    {
+      "id": "hand-1.1.1-q1",
+      "module": 1,
+      "conceptId": "1.1.1",
+      "source": "handcrafted",
+      "stem": "An attacker records packet timings between two hosts but never changes any packet. This is best classified as:",
+      "options": [
+        "An active modification attack",
+        "A passive traffic-analysis attack",
+        "A fabrication attack",
+        "An interruption (DoS) attack"
+      ],
+      "correct": 1,
+      "explanation": "Observing traffic without altering resources is passive; traffic analysis is the classic case.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.1-q2",
+      "module": 1,
+      "conceptId": "1.1.1",
+      "source": "handcrafted",
+      "stem": "Which attack primarily threatens availability by destroying or blocking access to an asset?",
+      "options": [
+        "Interception",
+        "Modification",
+        "Interruption",
+        "Fabrication"
+      ],
+      "correct": 2,
+      "explanation": "Interruption is the availability-oriented attack (DoS flavour).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.2-q1",
+      "module": 1,
+      "conceptId": "1.1.2",
+      "source": "handcrafted",
+      "stem": "In security terminology, confidentiality, authentication, and non-repudiation are examples of:",
+      "options": [
+        "Security mechanisms",
+        "Security services",
+        "Cryptanalytic models",
+        "Key schedules"
+      ],
+      "correct": 1,
+      "explanation": "Services are the abstract goals; mechanisms are the concrete techniques that achieve them.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.2-q2",
+      "module": 1,
+      "conceptId": "1.1.2",
+      "source": "handcrafted",
+      "stem": "Encryption used to keep message contents secret is best described as a:",
+      "options": [
+        "Security service named AES",
+        "Security mechanism supporting confidentiality",
+        "Form of steganography",
+        "Non-repudiation service by itself"
+      ],
+      "correct": 1,
+      "explanation": "Encryption is a mechanism; the service it mainly supports is confidentiality.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-1.1.3-q1",
+      "module": 1,
+      "conceptId": "1.1.3",
+      "source": "handcrafted",
+      "stem": "Classical encryption techniques are built mainly from which two families of operations?",
+      "options": [
+        "Hashing and MACs",
+        "Substitution and transposition",
+        "Public-key and hybrid wrapping",
+        "Tunneling and filtering"
+      ],
+      "correct": 1,
+      "explanation": "Classical ciphers rearrange (transpose) and/or replace (substitute) symbols under a key.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.3-q2",
+      "module": 1,
+      "conceptId": "1.1.3",
+      "source": "handcrafted",
+      "stem": "Kerckhoffs’ modern design assumption treats which item as public knowledge?",
+      "options": [
+        "The encryption key",
+        "The algorithm / cipher design",
+        "The plaintext language",
+        "The IV only"
+      ],
+      "correct": 1,
+      "explanation": "Assume the adversary knows the algorithm; secrecy lives in the key.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-1.1.4-q1",
+      "module": 1,
+      "conceptId": "1.1.4",
+      "source": "handcrafted",
+      "stem": "A cipher that uses one fixed substitution alphabet for the entire message is:",
+      "options": [
+        "Polyalphabetic",
+        "Monoalphabetic",
+        "A transposition cipher",
+        "A Feistel network"
+      ],
+      "correct": 1,
+      "explanation": "Monoalphabetic = one mapping for all positions; polyalphabetic varies the alphabet.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.4-q2",
+      "module": 1,
+      "conceptId": "1.1.4",
+      "source": "handcrafted",
+      "stem": "Why is the Caesar cipher especially weak against brute force?",
+      "options": [
+        "It uses 128-bit blocks",
+        "Its nontrivial key space is only 25 letter shifts",
+        "It requires an IV",
+        "It is a stream cipher"
+      ],
+      "correct": 1,
+      "explanation": "Only 25 nontrivial shifts of the alphabet — exhaustive search is trivial.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.5-q1",
+      "module": 1,
+      "conceptId": "1.1.5",
+      "source": "handcrafted",
+      "stem": "A scheme that keeps the same letters but changes only their order is a:",
+      "options": [
+        "Substitution cipher",
+        "Transposition cipher",
+        "One-time pad",
+        "Message digest"
+      ],
+      "correct": 1,
+      "explanation": "Transposition permutes positions; symbol identities stay the same.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.5-q2",
+      "module": 1,
+      "conceptId": "1.1.5",
+      "source": "handcrafted",
+      "stem": "In columnar transposition, a keyword is typically used to:",
+      "options": [
+        "Substitute each letter with another",
+        "Order the columns when reading out ciphertext",
+        "Generate an RSA modulus",
+        "Pad the final block"
+      ],
+      "correct": 1,
+      "explanation": "The keyword (or its alphabetical order) selects the column read order.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-1.1.6-q1",
+      "module": 1,
+      "conceptId": "1.1.6",
+      "source": "handcrafted",
+      "stem": "An adversary who already has several matching plaintext–ciphertext pairs is using which attack model?",
+      "options": [
+        "Ciphertext-only",
+        "Known-plaintext",
+        "Traffic analysis only",
+        "Steganalysis"
+      ],
+      "correct": 1,
+      "explanation": "Known-plaintext assumes the attacker has pairs; ciphertext-only has none.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.6-q2",
+      "module": 1,
+      "conceptId": "1.1.6",
+      "source": "handcrafted",
+      "stem": "Trying every key until decryption yields readable text is called:",
+      "options": [
+        "Frequency analysis",
+        "Differential cryptanalysis",
+        "Brute-force (exhaustive) search",
+        "Chosen-ciphertext forgery"
+      ],
+      "correct": 2,
+      "explanation": "Brute force enumerates the key space.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.7-q1",
+      "module": 1,
+      "conceptId": "1.1.7",
+      "source": "handcrafted",
+      "stem": "Steganography primarily aims to hide:",
+      "options": [
+        "The mathematical structure of AES",
+        "The existence of a secret message in cover media",
+        "Only the MAC tag length",
+        "DNS query names"
+      ],
+      "correct": 1,
+      "explanation": "Stego hides presence; cryptography hides meaning.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.7-q2",
+      "module": 1,
+      "conceptId": "1.1.7",
+      "source": "handcrafted",
+      "stem": "Altering least-significant bits of image pixels to embed a secret is an example of:",
+      "options": [
+        "Rail-fence transposition",
+        "LSB steganographic embedding",
+        "CBC mode chaining",
+        "Kerberos ticket granting"
+      ],
+      "correct": 1,
+      "explanation": "LSB embedding is a common image steganography method.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.8-q1",
+      "module": 1,
+      "conceptId": "1.1.8",
+      "source": "handcrafted",
+      "stem": "Encrypting a continuous bit stream by XOR with a running keystream describes a:",
+      "options": [
+        "Block cipher in ECB only",
+        "Stream cipher",
+        "Digital signature",
+        "Hash function"
+      ],
+      "correct": 1,
+      "explanation": "Stream ciphers typically combine plaintext with a keystream (often XOR).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.8-q2",
+      "module": 1,
+      "conceptId": "1.1.8",
+      "source": "handcrafted",
+      "stem": "Reusing the same stream-cipher keystream for two different messages is dangerous because:",
+      "options": [
+        "Blocks become 256 bits",
+        "XOR of the two ciphertexts can leak plaintext relationship",
+        "RSA moduli collide",
+        "IVs become public"
+      ],
+      "correct": 1,
+      "explanation": "C1⊕C2 = P1⊕P2 when the same keystream is reused — catastrophic.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-1.1.9-q1",
+      "module": 1,
+      "conceptId": "1.1.9",
+      "source": "handcrafted",
+      "stem": "Recovering a key by measuring power consumption of a chip during AES is an example of:",
+      "options": [
+        "Ciphertext-only frequency analysis",
+        "A side-channel attack",
+        "A chosen-plaintext algebraic attack only",
+        "Steganography"
+      ],
+      "correct": 1,
+      "explanation": "Side channels exploit physical leakage (power, timing, EM), not only the cipher maths.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-1.1.9-q2",
+      "module": 1,
+      "conceptId": "1.1.9",
+      "source": "handcrafted",
+      "stem": "A TPM or secure element is best described as:",
+      "options": [
+        "A software-only password manager",
+        "Dedicated hardware that isolates keys and crypto operations",
+        "An email compression format",
+        "A transposition cipher"
+      ],
+      "correct": 1,
+      "explanation": "Hardware roots of trust store keys and perform crypto in isolation.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.1-q1",
+      "module": 2,
+      "conceptId": "2.1.1",
+      "source": "handcrafted",
+      "stem": "A product cipher in Shannon’s sense typically combines:",
+      "options": [
+        "Only hashing rounds",
+        "Substitutions and permutations across rounds",
+        "Only public-key wrapping",
+        "DNS and DHCP"
+      ],
+      "correct": 1,
+      "explanation": "Product ciphers compose substitution (confusion) and permutation (diffusion).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.1-q2",
+      "module": 2,
+      "conceptId": "2.1.1",
+      "source": "handcrafted",
+      "stem": "The key schedule of a block cipher is responsible for:",
+      "options": [
+        "Padding the plaintext",
+        "Deriving round keys from the master key",
+        "Choosing the IV randomly each year",
+        "Compressing ciphertext"
+      ],
+      "correct": 1,
+      "explanation": "Key schedule expands/derives per-round keys from the master key.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.2-q1",
+      "module": 2,
+      "conceptId": "2.1.2",
+      "source": "handcrafted",
+      "stem": "Shannon’s confusion primarily aims to:",
+      "options": [
+        "Spread one plaintext bit across many ciphertext bits",
+        "Hide the relationship between key and ciphertext",
+        "Remove the need for an IV",
+        "Guarantee non-repudiation"
+      ],
+      "correct": 1,
+      "explanation": "Confusion obscures key–ciphertext dependence (often via S-boxes).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.2-q2",
+      "module": 2,
+      "conceptId": "2.1.2",
+      "source": "handcrafted",
+      "stem": "Diffusion in a block cipher means:",
+      "options": [
+        "Using a public key for encryption",
+        "Spreading the influence of plaintext bits widely in the ciphertext",
+        "Hiding the algorithm",
+        "Replacing crypto with steganography"
+      ],
+      "correct": 1,
+      "explanation": "Diffusion spreads plaintext influence; confusion hides key linkage.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.3-q1",
+      "module": 2,
+      "conceptId": "2.1.3",
+      "source": "handcrafted",
+      "stem": "In a Feistel structure, decryption is performed by:",
+      "options": [
+        "Inverting every S-box algebraically",
+        "Running the same structure with round keys in reverse order",
+        "Using a different block size",
+        "Hashing the ciphertext"
+      ],
+      "correct": 1,
+      "explanation": "Feistel decryption = same round structure, reverse key order.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.1.3-q2",
+      "module": 2,
+      "conceptId": "2.1.3",
+      "source": "handcrafted",
+      "stem": "A Feistel round typically splits the block into halves and:",
+      "options": [
+        "Encrypts only the left half with RSA",
+        "Applies a round function to one half and XORs into the other, then swaps",
+        "Discards the right half",
+        "Requires an odd number of bits only"
+      ],
+      "correct": 1,
+      "explanation": "Classic Feistel: F(right, Ki) XORed into left, then swap.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.1.4-q1",
+      "module": 2,
+      "conceptId": "2.1.4",
+      "source": "handcrafted",
+      "stem": "DES encrypts data in blocks of:",
+      "options": [
+        "128 bits with a 256-bit key",
+        "64 bits using a 56-bit effective key",
+        "32 bits with no key schedule",
+        "256-bit blocks only"
+      ],
+      "correct": 1,
+      "explanation": "DES: 64-bit blocks, 56-bit effective key (64 with parity bits).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.4-q2",
+      "module": 2,
+      "conceptId": "2.1.4",
+      "source": "handcrafted",
+      "stem": "DES is structurally best described as:",
+      "options": [
+        "An SPN like AES",
+        "A Feistel cipher",
+        "A pure stream cipher",
+        "A hash-only construction"
+      ],
+      "correct": 1,
+      "explanation": "DES is the classic Feistel block cipher.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.5-q1",
+      "module": 2,
+      "conceptId": "2.1.5",
+      "source": "handcrafted",
+      "stem": "The main practical weakness that retired single-DES for bulk encryption is:",
+      "options": [
+        "Too many rounds for hardware",
+        "56-bit key space is searchable by modern brute force",
+        "It cannot use CBC mode",
+        "It has no S-boxes"
+      ],
+      "correct": 1,
+      "explanation": "56-bit keys are within reach of exhaustive search.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.5-q2",
+      "module": 2,
+      "conceptId": "2.1.5",
+      "source": "handcrafted",
+      "stem": "Complementarity and weak/semi-weak keys are discussed mainly under:",
+      "options": [
+        "Strength and structural properties of DES",
+        "RSA padding only",
+        "Kerberos realms",
+        "LSB steganography"
+      ],
+      "correct": 0,
+      "explanation": "DES strength topics include key size, weak keys, and related structural issues.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.1.6-q1",
+      "module": 2,
+      "conceptId": "2.1.6",
+      "source": "handcrafted",
+      "stem": "Differential cryptanalysis studies how:",
+      "options": [
+        "DNS caches poison",
+        "Input differences propagate to output differences through cipher rounds",
+        "Passwords are salted",
+        "Certificates expire"
+      ],
+      "correct": 1,
+      "explanation": "It tracks difference propagation to recover key material.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.1.6-q2",
+      "module": 2,
+      "conceptId": "2.1.6",
+      "source": "handcrafted",
+      "stem": "Differential cryptanalysis is primarily a concern for designers of:",
+      "options": [
+        "SMTP headers",
+        "Symmetric block ciphers and their S-boxes/rounds",
+        "HTML forms",
+        "RAID arrays"
+      ],
+      "correct": 1,
+      "explanation": "It targets iterative block-cipher structure (historically DES).",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.1.7-q1",
+      "module": 2,
+      "conceptId": "2.1.7",
+      "source": "handcrafted",
+      "stem": "Which mode encrypts each plaintext block independently under the same key?",
+      "options": [
+        "CBC",
+        "ECB",
+        "CFB",
+        "CTR only as a hash"
+      ],
+      "correct": 1,
+      "explanation": "ECB has no chaining — identical blocks → identical ciphertext.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.7-q2",
+      "module": 2,
+      "conceptId": "2.1.7",
+      "source": "handcrafted",
+      "stem": "CBC mode needs an IV mainly to:",
+      "options": [
+        "Replace the secret key",
+        "Randomise the first block so identical messages don’t start the same",
+        "Compress ciphertext",
+        "Create digital signatures"
+      ],
+      "correct": 1,
+      "explanation": "IV (and chaining) hide patterns across messages/blocks.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.1.8-q1",
+      "module": 2,
+      "conceptId": "2.1.8",
+      "source": "handcrafted",
+      "stem": "Triple DES (3DES) typically applies DES:",
+      "options": [
+        "Once with a 256-bit key",
+        "Three times (EDE) with two or three keys to stretch effective strength",
+        "As a hash only",
+        "Inside RSA modulus generation"
+      ],
+      "correct": 1,
+      "explanation": "EDE with 2 or 3 keys is the standard 3DES construction.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.8-q2",
+      "module": 2,
+      "conceptId": "2.1.8",
+      "source": "handcrafted",
+      "stem": "Compared with AES, 3DES is generally:",
+      "options": [
+        "Faster and preferred for new designs",
+        "Slower and retained mainly for legacy interoperability",
+        "A public-key algorithm",
+        "Immune to all attacks by definition"
+      ],
+      "correct": 1,
+      "explanation": "3DES is legacy; AES is the modern standard block cipher.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.2.1-q1",
+      "module": 2,
+      "conceptId": "2.2.1",
+      "source": "handcrafted",
+      "stem": "AES (Rijndael) is best classified as:",
+      "options": [
+        "A Feistel cipher like DES",
+        "A substitution–permutation (SPN) network",
+        "A stream-only XOR cipher",
+        "A signature standard"
+      ],
+      "correct": 1,
+      "explanation": "AES is an SPN (SubBytes, ShiftRows, MixColumns, AddRoundKey).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.2.1-q2",
+      "module": 2,
+      "conceptId": "2.2.1",
+      "source": "handcrafted",
+      "stem": "Which AES step provides the main byte-level nonlinear confusion?",
+      "options": [
+        "ShiftRows",
+        "SubBytes (S-box)",
+        "AddRoundKey alone",
+        "PKCS padding"
+      ],
+      "correct": 1,
+      "explanation": "SubBytes is the nonlinear S-box layer.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.2.2-q1",
+      "module": 2,
+      "conceptId": "2.2.2",
+      "source": "handcrafted",
+      "stem": "Fermat’s Little Theorem is useful in RSA-related number theory because it relates:",
+      "options": [
+        "a^(p-1) ≡ 1 (mod p) for prime p not dividing a",
+        "Only matrix inverses",
+        "DNS TTLs",
+        "Block cipher IVs"
+      ],
+      "correct": 0,
+      "explanation": "Fermat: a^(p-1) ≡ 1 mod p under the stated conditions.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.2.2-q2",
+      "module": 2,
+      "conceptId": "2.2.2",
+      "source": "handcrafted",
+      "stem": "Euler’s totient φ(n) counts:",
+      "options": [
+        "AES rounds",
+        "Integers in 1..n-1 that are coprime to n",
+        "DES S-box rows only",
+        "Kerberos ticket lifetimes"
+      ],
+      "correct": 1,
+      "explanation": "φ(n) is central to RSA exponents.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.2.3-q1",
+      "module": 2,
+      "conceptId": "2.2.3",
+      "source": "handcrafted",
+      "stem": "The Chinese Remainder Theorem helps when you have:",
+      "options": [
+        "A single congruence only",
+        "A system of congruences with pairwise coprime moduli",
+        "Only floating-point keys",
+        "Hash collisions"
+      ],
+      "correct": 1,
+      "explanation": "CRT combines residues modulo coprime moduli into a unique class mod product.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.2.3-q2",
+      "module": 2,
+      "conceptId": "2.2.3",
+      "source": "handcrafted",
+      "stem": "In RSA implementations, CRT is often used to:",
+      "options": [
+        "Replace the public key",
+        "Speed private-key operations using factors p and q",
+        "Generate AES S-boxes",
+        "Compress certificates"
+      ],
+      "correct": 1,
+      "explanation": "CRT speeds decryption/signing with p,q.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.2.4-q1",
+      "module": 2,
+      "conceptId": "2.2.4",
+      "source": "handcrafted",
+      "stem": "A defining feature of public-key cryptography is:",
+      "options": [
+        "One shared secret for both directions only",
+        "Separate public and private keys with hard inversion without the private key",
+        "No need for any algorithms",
+        "Only transposition"
+      ],
+      "correct": 1,
+      "explanation": "Asymmetric: public encrypt / verify; private decrypt / sign.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.2.4-q2",
+      "module": 2,
+      "conceptId": "2.2.4",
+      "source": "handcrafted",
+      "stem": "Public-key encryption is commonly used to:",
+      "options": [
+        "Encrypt multi-gigabyte files directly for speed",
+        "Exchange or wrap symmetric session keys",
+        "Replace hashing entirely",
+        "Hide packets inside images only"
+      ],
+      "correct": 1,
+      "explanation": "Hybrid crypto: public-key wraps a fast symmetric session key.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.2.5-q1",
+      "module": 2,
+      "conceptId": "2.2.5",
+      "source": "handcrafted",
+      "stem": "In RSA, the public key typically includes:",
+      "options": [
+        "Only the private exponent d",
+        "Modulus n and public exponent e",
+        "Only prime p",
+        "The AES round keys"
+      ],
+      "correct": 1,
+      "explanation": "Public key is (n,e); private includes d (and often p,q).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.2.5-q2",
+      "module": 2,
+      "conceptId": "2.2.5",
+      "source": "handcrafted",
+      "stem": "RSA encryption of message representative m is conceptually:",
+      "options": [
+        "c = m XOR e",
+        "c = m^e mod n",
+        "c = m + n",
+        "c = SHA(m)"
+      ],
+      "correct": 1,
+      "explanation": "Textbook RSA: c ≡ m^e (mod n).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.2.6-q1",
+      "module": 2,
+      "conceptId": "2.2.6",
+      "source": "handcrafted",
+      "stem": "RSA security fundamentally relies on the difficulty of:",
+      "options": [
+        "Sorting arrays",
+        "Factoring the modulus n (or equivalent RSA problems)",
+        "Drawing rail fences",
+        "Counting TCP ports"
+      ],
+      "correct": 1,
+      "explanation": "Factoring n (or related hard problems) underpins RSA.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.2.6-q2",
+      "module": 2,
+      "conceptId": "2.2.6",
+      "source": "handcrafted",
+      "stem": "Using RSA without proper padding on short/guessable messages is risky because:",
+      "options": [
+        "AES becomes Feistel",
+        "Algebraic and guessing attacks become practical",
+        "CRT stops working forever",
+        "IVs collide with DES"
+      ],
+      "correct": 1,
+      "explanation": "Padding (e.g. OAEP) is required for real RSA security.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    }
+  ]
+}

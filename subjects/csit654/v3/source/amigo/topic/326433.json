@@ -1,0 +1,38 @@
+{
+  "cmid": "326433",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541915&cmid=326433",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "The general phases of the forensic process are",
+      "options": [
+        "a. Identification of potential evidence",
+        "b. The acquisition of that evidence",
+        "c. Analysis of the evidence",
+        "d. Production of a report",
+        "e. All of the Above"
+      ],
+      "correct": 4,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Forensic process: identify, acquire, analyze, report."
+    },
+    {
+      "no": "2",
+      "stem": "Which one is very important step of Crime Scene Investigation?",
+      "options": [
+        "a. Identify Scene Dimensions. Locate the focal point of the scene.Establish Security. Tape around the perimeter.",
+        "b. Create a Plan & Communicate. Determine the type of crime that occurred.",
+        "c. Conduct the Survey. Identify potential evidence.",
+        "d. Record and Preserve Evidence."
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Establishing/identifying the scene dimensions is a critical first CSI step."
+    }
+  ]
+}

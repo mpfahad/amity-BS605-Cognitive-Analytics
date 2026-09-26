@@ -1,0 +1,37 @@
+{
+  "cmid": "326330",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541551&cmid=326330",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "In which Steganography Encryption Technique, we use Lime Water to hide data:",
+      "options": [
+        "a. Pin Puncture.",
+        "b. Character Marking.",
+        "c. Invisible Ink.",
+        "d. None of these."
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Invisible ink (e.g., lime water) is a classical steganography technique."
+    },
+    {
+      "no": "2",
+      "stem": "_____________ is another data hiding technique which can be used in conjunction with cryptography for the extra-secure method of protecting data.",
+      "options": [
+        "a. Cryptography",
+        "b. Steganography",
+        "c. Tomography",
+        "d. Chorography"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Steganography hides existence of data and can complement cryptography."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "cmid": "326328",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541546&cmid=326328",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "A method of trying each possible combination to break the encryption algorithm:",
+      "options": [
+        "a. Brute Force Attack.",
+        "b. Cryptanalysis.",
+        "c. Side Channel Attack.",
+        "d. None of these."
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Trying every key/combination is a brute-force attack."
+    },
+    {
+      "no": "2",
+      "stem": "Cryptanalysis is used",
+      "options": [
+        "a. to find some insecurity in a cryptographic scheme",
+        "b. to increase the speed",
+        "c. to encrypt the data",
+        "d. none of the mentioned"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Cryptanalysis seeks weaknesses in cryptographic schemes."
+    }
+  ]
+}

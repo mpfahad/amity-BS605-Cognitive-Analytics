@@ -1,0 +1,37 @@
+{
+  "cmid": "326400",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541836&cmid=326400",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "S/MIME stands for",
+      "options": [
+        "a. Secure Multi-Purpose Internet Mail Extensions",
+        "b. Secure Multi-Purpose Internet Mail Encryption",
+        "c. Secure Multi-Point Internet Mail Extensions",
+        "d. None of These"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "S/MIME = Secure/Multipurpose Internet Mail Extensions."
+    },
+    {
+      "no": "2",
+      "stem": "An extension of MIME that supports secure mail is",
+      "options": [
+        "a. E/MIME",
+        "b. S/MIME",
+        "c. T/MIME",
+        "d. None of These"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "S/MIME extends MIME for secure mail."
+    }
+  ]
+}

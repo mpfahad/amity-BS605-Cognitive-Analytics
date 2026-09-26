@@ -1,0 +1,116 @@
+{
+  "total": 220,
+  "keyed": 110,
+  "unkeyed": [],
+  "byModule": {
+    "1": 36,
+    "2": 56,
+    "3": 36,
+    "4": 28,
+    "5": 64
+  },
+  "bySource": {
+    "topic": 110,
+    "handcrafted": 110
+  },
+  "byAnswerSource": {
+    "amigo_review": 4,
+    "slm": 106
+  },
+  "scrapeLog": {
+    "ok": [
+      "326318",
+      "326320",
+      "326322",
+      "326324",
+      "326326",
+      "326328",
+      "326330",
+      "326332",
+      "326334",
+      "326339",
+      "326341",
+      "326343",
+      "326345",
+      "326347",
+      "326349",
+      "326351",
+      "326353",
+      "326356",
+      "326358",
+      "326360",
+      "326362",
+      "326364",
+      "326366",
+      "326371",
+      "326373",
+      "326375",
+      "326377",
+      "326379",
+      "326381",
+      "326384",
+      "326386",
+      "326389",
+      "326394",
+      "326396",
+      "326398",
+      "326400",
+      "326403",
+      "326405",
+      "326407",
+      "326412",
+      "326414",
+      "326416",
+      "326418",
+      "326420",
+      "326422",
+      "326424",
+      "326426",
+      "326428",
+      "326431",
+      "326433",
+      "326436",
+      "326438",
+      "326440",
+      "326442",
+      "326444"
+    ],
+    "missing_file": [],
+    "empty": [
+      {
+        "cmid": "357372",
+        "status": "blocked",
+        "note": "No Attempt/Continue/Re-attempt button; finished attempts show Review not permitted. Stems not scraped."
+      },
+      {
+        "cmid": "357373",
+        "status": "blocked",
+        "note": "No Attempt/Continue/Re-attempt button; finished attempts show Review not permitted. Stems not scraped."
+      },
+      {
+        "cmid": "357374",
+        "status": "blocked",
+        "note": "No Attempt/Continue/Re-attempt button; finished attempts show Review not permitted. Stems not scraped."
+      },
+      {
+        "cmid": "357375",
+        "status": "blocked",
+        "note": "No Attempt/Continue/Re-attempt button; finished attempts show Review not permitted. Stems not scraped."
+      },
+      {
+        "cmid": "357376",
+        "status": "blocked",
+        "note": "No Attempt/Continue/Re-attempt button; finished attempts show Review not permitted. Stems not scraped."
+      },
+      {
+        "cmid": "357377",
+        "status": "blocked",
+        "note": "No Attempt/Continue/Re-attempt button; finished attempts show Review not permitted. Stems not scraped."
+      }
+    ],
+    "unkeyed": []
+  },
+  "handcraftedAdded": 110,
+  "conceptsBelow4": [],
+  "note": "Amigo topic rows preserved; handcrafted extras tagged source=handcrafted"
+}

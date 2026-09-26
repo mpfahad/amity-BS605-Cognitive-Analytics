@@ -1,0 +1,35 @@
+{
+  "cmid": "326366",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541741&cmid=326366",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Which possible attack in RSA Algorithm involves to keeptrying all possible keys or guesses",
+      "options": [
+        "a. Brute Force Attack",
+        "b. Side Channel Attack",
+        "c. Cryptanalysis",
+        "d. None of These"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Exhaustive key search against RSA is a brute-force style attack."
+    },
+    {
+      "no": "2",
+      "stem": "The RSA algorithm can transfer data as efficiently as DES",
+      "options": [
+        "a. True",
+        "b. False"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "False: RSA is much slower/bulk-inefficient compared with DES/AES for bulk data."
+    }
+  ]
+}

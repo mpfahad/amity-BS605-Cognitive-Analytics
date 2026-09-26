@@ -1,0 +1,37 @@
+{
+  "cmid": "326343",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541653&cmid=326343",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "The working principle and design of Feistel Structure used in cryptographic algorithm for creating the",
+      "options": [
+        "a. Complexity",
+        "b. Increase in Size of Cipher",
+        "c. None of the above",
+        "d. All of the above"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Feistel structure is designed to build cryptographic complexity via rounds."
+    },
+    {
+      "no": "2",
+      "stem": "The DES (Data Encryption Standard) cipher follows the fiestal structure. Which of the following properties are not shown by the fiestal structure?",
+      "options": [
+        "a. The input text is divided into two parts: one being left half and another one being right half.",
+        "b. Swapping of the left and right halves are performed after each round.",
+        "c. The plain text is converted into a matrix form first",
+        "d. None of the above"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Feistel does not require converting plaintext into a matrix first."
+    }
+  ]
+}

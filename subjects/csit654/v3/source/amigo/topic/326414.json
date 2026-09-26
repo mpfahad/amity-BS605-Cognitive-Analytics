@@ -1,0 +1,37 @@
+{
+  "cmid": "326414",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541860&cmid=326414",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "An Intrusion Detection System (IDS) is a device or software application that monitors network or system activities for",
+      "options": [
+        "a. Non-Malicious Purpose",
+        "b. Malicious Purpose",
+        "c. Normal Purpose",
+        "d. None of These"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "IDS monitors for malicious activity."
+    },
+    {
+      "no": "2",
+      "stem": "Intrusion detection and prevention systems (IDPS) is a combination of<",
+      "options": [
+        "a. Intrusion Detection System (IDS)",
+        "b. Intrusion Prevention System (IPS)",
+        "c. Both",
+        "d. None of These"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "IDPS combines detection and prevention capabilities."
+    }
+  ]
+}

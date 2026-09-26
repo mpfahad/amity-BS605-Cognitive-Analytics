@@ -12,8 +12,7 @@
         "path": "Network Security and Cryptography (CSIT654) → Module 1",
         "body": "Study map for Module 1 of Network Security and Cryptography (CSIT654). Click a topic for Overview and Deep notes, then practise MCQs.",
         "points": [
-          "Built from the SLM outline + PDF definitions where available",
-          "Orange LMR badges mark hand-picked exam priorities from study materials"
+          "Built from the SLM outline + PDF definitions where available"
         ]
       },
       "levels": [
@@ -26,7 +25,7 @@
               "sub": "Network security",
               "kind": "a",
               "topicId": "1.1.1",
-              "lmr": true
+              "lmr": false
             },
             {
               "id": "1.1.2",
@@ -34,7 +33,7 @@
               "sub": "Network security",
               "kind": "b",
               "topicId": "1.1.2",
-              "lmr": true
+              "lmr": false
             },
             {
               "id": "1.1.3",
@@ -42,7 +41,7 @@
               "sub": "Network security",
               "kind": "c",
               "topicId": "1.1.3",
-              "lmr": true
+              "lmr": false
             }
           ]
         },
@@ -118,8 +117,7 @@
         "path": "Network Security and Cryptography (CSIT654) → Module 2",
         "body": "Study map for Module 2 of Network Security and Cryptography (CSIT654). Click a topic for Overview and Deep notes, then practise MCQs.",
         "points": [
-          "Built from the SLM outline + PDF definitions where available",
-          "Orange LMR badges mark hand-picked exam priorities from study materials"
+          "Built from the SLM outline + PDF definitions where available"
         ]
       },
       "levels": [
@@ -132,7 +130,7 @@
               "sub": "Secret Key Cryptography",
               "kind": "a",
               "topicId": "2.1.1",
-              "lmr": true
+              "lmr": false
             },
             {
               "id": "2.1.2",
@@ -140,7 +138,7 @@
               "sub": "Secret Key Cryptography",
               "kind": "b",
               "topicId": "2.1.2",
-              "lmr": true
+              "lmr": false
             },
             {
               "id": "2.1.3",
@@ -148,7 +146,7 @@
               "sub": "Secret Key Cryptography",
               "kind": "c",
               "topicId": "2.1.3",
-              "lmr": true
+              "lmr": false
             },
             {
               "id": "2.1.4",
@@ -264,8 +262,7 @@
         "path": "Network Security and Cryptography (CSIT654) → Module 3",
         "body": "Study map for Module 3 of Network Security and Cryptography (CSIT654). Click a topic for Overview and Deep notes, then practise MCQs.",
         "points": [
-          "Built from the SLM outline + PDF definitions where available",
-          "Orange LMR badges mark hand-picked exam priorities from study materials"
+          "Built from the SLM outline + PDF definitions where available"
         ]
       },
       "levels": [
@@ -278,7 +275,7 @@
               "sub": "Message Authentication Codes",
               "kind": "a",
               "topicId": "3.1.1",
-              "lmr": true
+              "lmr": false
             },
             {
               "id": "3.1.2",
@@ -286,7 +283,7 @@
               "sub": "Message Authentication Codes",
               "kind": "b",
               "topicId": "3.1.2",
-              "lmr": true
+              "lmr": false
             },
             {
               "id": "3.1.3",
@@ -294,7 +291,7 @@
               "sub": "Message Authentication Codes",
               "kind": "c",
               "topicId": "3.1.3",
-              "lmr": true
+              "lmr": false
             }
           ]
         },
@@ -370,8 +367,7 @@
         "path": "Network Security and Cryptography (CSIT654) → Module 4",
         "body": "Study map for Module 4 of Network Security and Cryptography (CSIT654). Click a topic for Overview and Deep notes, then practise MCQs.",
         "points": [
-          "Built from the SLM outline + PDF definitions where available",
-          "Orange LMR badges mark hand-picked exam priorities from study materials"
+          "Built from the SLM outline + PDF definitions where available"
         ]
       },
       "levels": [
@@ -384,7 +380,7 @@
               "sub": "Introduction to Web Security",
               "kind": "a",
               "topicId": "4.1.1",
-              "lmr": true
+              "lmr": false
             },
             {
               "id": "4.1.2",
@@ -392,7 +388,7 @@
               "sub": "Introduction to Web Security",
               "kind": "b",
               "topicId": "4.1.2",
-              "lmr": true
+              "lmr": false
             },
             {
               "id": "4.1.3",
@@ -400,7 +396,7 @@
               "sub": "Introduction to Web Security",
               "kind": "c",
               "topicId": "4.1.3",
-              "lmr": true
+              "lmr": false
             }
           ]
         },
@@ -460,8 +456,7 @@
         "path": "Network Security and Cryptography (CSIT654) → Module 5",
         "body": "Study map for Module 5 of Network Security and Cryptography (CSIT654). Click a topic for Overview and Deep notes, then practise MCQs.",
         "points": [
-          "Built from the SLM outline + PDF definitions where available",
-          "Orange LMR badges mark hand-picked exam priorities from study materials"
+          "Built from the SLM outline + PDF definitions where available"
         ]
       },
       "levels": [
@@ -474,7 +469,7 @@
               "sub": "System Security",
               "kind": "a",
               "topicId": "5.1.1",
-              "lmr": true
+              "lmr": false
             },
             {
               "id": "5.1.2",
@@ -482,7 +477,7 @@
               "sub": "System Security",
               "kind": "b",
               "topicId": "5.1.2",
-              "lmr": true
+              "lmr": false
             },
             {
               "id": "5.1.3",
@@ -490,7 +485,7 @@
               "sub": "System Security",
               "kind": "c",
               "topicId": "5.1.3",
-              "lmr": true
+              "lmr": false
             },
             {
               "id": "5.1.4",

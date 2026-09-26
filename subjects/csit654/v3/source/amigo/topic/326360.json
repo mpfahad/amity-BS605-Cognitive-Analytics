@@ -1,0 +1,37 @@
+{
+  "cmid": "326360",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541721&cmid=326360",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Chinese Remainder Theorem depends on",
+      "options": [
+        "a. Even Number",
+        "b. ODD Number",
+        "c. Complex Number",
+        "d. Prime Number"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "CRT is applied with pairwise coprime / prime-power moduli in crypto settings."
+    },
+    {
+      "no": "2",
+      "stem": "The number of elements in S is denoted by:",
+      "options": [
+        "a. #S",
+        "b. S#",
+        "c. *S",
+        "d. S*"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Cardinality of set S is commonly denoted #S."
+    }
+  ]
+}

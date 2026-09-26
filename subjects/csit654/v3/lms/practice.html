@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Practice — CSIT654</title>
+  <link rel="stylesheet" href="app.css" />
+  <script>window.AMITY_SUBJECT = "csit654_v3";</script>
+  <script src="../../../../shared/config.js"></script>
+  <script src="../../../../shared/progress.js"></script>
+  <script src="../../../../shared/sync-ui.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <div class="brand-mark">NS</div>
+      <div>
+        <div>Practice</div>
+        <div class="brand-sub">CSIT654 · Amigo + handcrafted bank</div>
+      </div>
+    </div>
+    <div class="top-actions">
+      <a class="btn btn-soft" href="index.html">Course home</a>
+    </div>
+  </div>
+
+  <main class="content practice-page">
+    <!-- MODE PICKER -->
+    <section id="modeHome" class="mode-home">
+      <h1>Practice bank</h1>
+      <p class="subtle">220 questions. Pick how you want to practise.</p>
+
+      <div class="mode-pick">
+        <button type="button" class="mode-card featured" id="pickSession" data-mode="session">
+          <span class="mode-num">01</span>
+          <h2>Session · 20 questions</h2>
+          <p>Primary practice mode. Correct → solved. Wrong → flagged into a later session.</p>
+        </button>
+        <button type="button" class="mode-card" id="pickBrowse" data-mode="browse">
+          <span class="mode-num">02</span>
+          <h2>Browse all questions</h2>
+          <p>Scan the bank, filter by module, jump into lessons. Useful — not the main loop.</p>
+        </button>
+      </div>
+
+      <div class="practice-progress-card" id="homeStats">
+        <h2 class="section-title" style="margin-top:0">Your practice progress</h2>
+        <div class="pp-grid">
+          <div>
+            <span>Solved</span>
+            <strong id="hsSolvedLabel">0 / 220</strong>
+            <div class="progress-track"><div class="progress-fill" id="hsSolvedBar" style="width:0%"></div></div>
+          </div>
+          <div>
+            <span>Need another look</span>
+            <strong id="hsFlagged">0</strong>
+          </div>
+          <div>
+            <span>Bank</span>
+            <strong id="hsBank">—</strong>
+          </div>
+        </div>
+        <p style="margin:1rem 0 0">
+          <button type="button" class="btn" id="homeStartSession">Start 20-question session</button>
+        </p>
+      </div>
+
+      <div id="amity-sync-root" style="margin-top:1.25rem"></div>
+    </section>
+
+    <!-- BROWSE -->
+    <section id="modeBrowse" class="practice-view" hidden>
+      <div class="practice-toolbar">
+        <button type="button" class="btn btn-ghost" data-back>← Modes</button>
+        <h1 class="toolbar-title">All questions</h1>
+        <div class="chip-row" id="browseFilters"></div>
+      </div>
+      <div class="topic-select" id="browseTopicWrap">
+        <label class="subtle" for="browseTopic">Topic filter</label>
+        <select id="browseTopic"></select>
+      </div>
+      <p class="subtle" id="browseMeta"></p>
+      <div id="browseList"></div>
+    </section>
+
+    <!-- SESSION -->
+    <section id="modeSession" class="practice-view" hidden>
+      <div class="practice-toolbar">
+        <button type="button" class="btn btn-ghost" data-back>← Modes</button>
+        <h1 class="toolbar-title">Session</h1>
+        <div class="toolbar-actions">
+          <button type="button" class="btn" id="btnStart">Start session</button>
+          <button type="button" class="btn btn-ghost" id="btnAbandon" hidden>Abandon</button>
+        </div>
+      </div>
+      <div class="chip-row" id="sessionFilters"></div>
+      <div class="topic-select" id="sessionTopicWrap">
+        <label class="subtle" for="sessionTopic">Limit session to topic (optional)</label>
+        <select id="sessionTopic"></select>
+      </div>
+      <p class="meta-row" id="sessionMeta">
+        <span>Bank <strong id="smBank">—</strong></span>
+        <span>Solved <strong id="smSolved">0</strong></span>
+        <span>Flagged <strong id="smFlagged">0</strong></span>
+        <span>Scope <strong id="smScope">All</strong></span>
+      </p>
+      <div class="block session-card" id="sessionArea">
+        <p class="subtle" style="margin:0">Press <strong>Start session</strong> for 20 mixed questions. Flagged items are prioritised.</p>
+      </div>
+    </section>
+  </main>
+
+<script>
+(async function () {
+  const A = window.CSIT654V3;
+  const SESSION_SIZE = 20;
+  const SECTION = "v3PracticeMcq";
+  const LS_SESSION = "csit654_v3_active_mcq_session";
+  const LS_FLAGS = "csit654_v3_mcq_flags_backup";
+
+  const { curriculum, concepts, questions: BANK } = await A.loadBundles();
+  let browseMid = 0;
+  let browseTopic = "";
+  let sessionMid = 0;
+  let sessionTopic = "";
+
+  const state = {
+    flaggedIds: new Set(),
+    solvedIds: new Set(),
+    mastery: {},
+    lastWrongConcepts: [],
+    history: [],
+    recentSessionQueues: [],
+  };
+  let session = null;
+
+  function esc(s) { return A.esc(s); }
+  function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+  function conceptLink(cid, label) {
+    const c = concepts[cid];
+    const title = label || (c && c.title) || cid;
+    return `<a class="concept-link" href="concept.html?id=${encodeURIComponent(cid)}&mode=learn">Review this concept · ${esc(title)}</a>`;
+  }
+
+  function topicsForModule(mid) {
+    const mod = A.moduleById(curriculum, mid);
+    return (mod && mod.topics) || [];
+  }
+
+  function fillTopicSelect(sel, mid, selected) {
+    const topics = mid ? topicsForModule(mid) : curriculum.modules.flatMap((m) => m.topics || []);
+    const opts = [`<option value="">All topics${mid ? " in module" : ""}</option>`].concat(
+      topics.map((t) =>
+        `<option value="${esc(t.id)}"${t.id === selected ? " selected" : ""}>${esc(t.id)} · ${esc(t.title)}</option>`
+      )
+    );
+    sel.innerHTML = opts.join("");
+  }
+
+  function filterBank(mid, topicId) {
+    return BANK.filter((q) => {
+      if (mid && Number(q.module) !== Number(mid)) return false;
+      if (topicId && q.conceptId !== topicId) return false;
+      return true;
+    });
+  }
+
+  function scopeLabel(mid, topicId) {
+    if (topicId) {
+      const c = concepts[topicId];
+      return (c && c.title) || topicId;
+    }
+    if (mid) return `Module ${mid}`;
+    return "All";
+  }
+
+  function paintScope() {
+    const el = document.getElementById("smScope");
+    if (el) el.textContent = scopeLabel(sessionMid, sessionTopic);
+  }
+
+  /* —— persist (v2 pattern, refined) —— */
+  function flagsSnapshot() {
+    return {
+      savedAt: new Date().toISOString(),
+      flaggedIds: [...state.flaggedIds],
+      solvedIds: [...state.solvedIds],
+      recentSessionQueues: (state.recentSessionQueues || []).map((q) => [...new Set(q || [])]),
+      history: (state.history || []).slice(-200),
+      lastWrongConcepts: (state.lastWrongConcepts || []).slice(0, 20),
+    };
+  }
+  function writeFlagsBackup() {
+    const snap = flagsSnapshot();
+    try { localStorage.setItem(LS_FLAGS, JSON.stringify(snap)); } catch (_) {}
+    return snap;
+  }
+  function readFlagsBackup() {
+    try { return JSON.parse(localStorage.getItem(LS_FLAGS) || "null"); } catch (_) { return null; }
+  }
+  function sessionSnapshot() {
+    if (!session || !session.queue?.length || session.index >= session.queue.length) return null;
+    return {
+      status: "active",
+      queueIds: session.queue.map((q) => q.id),
+      index: session.index,
+      answers: session.answers || {},
+      wrong: session.wrong || [],
+      startedAt: session.startedAt || new Date().toISOString(),
+    };
+  }
+  function writeSessionLocal(snap) {
+    try {
+      if (snap) localStorage.setItem(LS_SESSION, JSON.stringify(snap));
+      else localStorage.removeItem(LS_SESSION);
+    } catch (_) {}
+  }
+  function readSessionLocal() {
+    try { return JSON.parse(localStorage.getItem(LS_SESSION) || "null"); } catch (_) { return null; }
+  }
+  function ingest(m) {
+    m = m || {};
+    const flagged = new Set();
+    const solved = new Set();
+    if (m.flagged && typeof m.flagged === "object" && !Array.isArray(m.flagged)) {
+      Object.keys(m.flagged).forEach((id) => { if (m.flagged[id]) flagged.add(String(id)); });
+    }
+    (m.flaggedIds || []).forEach((id) => flagged.add(String(id)));
+    (m.solvedIds || []).forEach((id) => solved.add(String(id)));
+    const bak = readFlagsBackup();
+    if (bak) {
+      (bak.flaggedIds || []).forEach((id) => flagged.add(String(id)));
+      (bak.solvedIds || []).forEach((id) => solved.add(String(id)));
+    }
+    solved.forEach((id) => flagged.delete(id));
+    state.flaggedIds = flagged;
+    state.solvedIds = solved;
+    state.mastery = m.mastery || {};
+    state.lastWrongConcepts = m.lastWrongConcepts || (bak && bak.lastWrongConcepts) || [];
+    state.history = m.history || (bak && bak.history) || [];
+    state.recentSessionQueues = Array.isArray(m.recentSessionQueues)
+      ? m.recentSessionQueues
+      : (bak && bak.recentSessionQueues) || [];
+  }
+  function persist(clearActive) {
+    const snap = clearActive ? null : sessionSnapshot();
+    writeSessionLocal(snap);
+    writeFlagsBackup();
+    const P = A.P();
+    if (P?.saveSection) {
+      P.saveSection(SECTION, {
+        flagged: null,
+        flaggedIds: [...state.flaggedIds],
+        solvedIds: [...state.solvedIds],
+        mastery: state.mastery,
+        lastWrongConcepts: state.lastWrongConcepts,
+        history: state.history.slice(-200),
+        recentSessionQueues: (state.recentSessionQueues || []).slice(-12),
+        activeSession: snap,
+      }, A.SUBJECT);
+    }
+    paintStats();
+    paintStartBtn();
+  }
+
+  function paintStats() {
+    const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = String(v); };
+    const solved = state.solvedIds.size;
+    const flagged = state.flaggedIds.size;
+    const total = BANK.length || 1;
+    set("hsBank", BANK.length);
+    set("hsFlagged", flagged);
+    set("hsSolvedLabel", `${solved} / ${BANK.length}`);
+    const bar = document.getElementById("hsSolvedBar");
+    if (bar) bar.style.width = Math.round((solved / total) * 100) + "%";
+    set("smBank", BANK.length);
+    set("smSolved", solved);
+    set("smFlagged", flagged);
+  }
+
+  /* —— mode switch —— */
+  function showMode(mode) {
+    document.getElementById("modeHome").hidden = mode !== "home";
+    document.getElementById("modeBrowse").hidden = mode !== "browse";
+    document.getElementById("modeSession").hidden = mode !== "session";
+    if (mode === "browse") paintBrowse();
+    if (mode === "session") {
+      paintSessionFilters();
+      paintStats();
+      if (!tryResume()) {
+        document.getElementById("sessionArea").innerHTML =
+          `<p class="subtle" style="margin:0">Press <strong>Start session</strong> for 20 mixed questions. Flagged items are prioritised.</p>`;
+      }
+      paintStartBtn();
+    }
+  }
+  document.getElementById("pickBrowse").addEventListener("click", () => showMode("browse"));
+  document.getElementById("pickSession").addEventListener("click", () => showMode("session"));
+  document.getElementById("homeStartSession")?.addEventListener("click", () => {
+    showMode("session");
+    startSession(true);
+  });
+  document.querySelectorAll("[data-back]").forEach((b) => b.addEventListener("click", () => showMode("home")));
+
+  /* —— browse all —— */
+  function paintBrowse() {
+    fillTopicSelect(document.getElementById("browseTopic"), browseMid, browseTopic);
+    const pool = filterBank(browseMid, browseTopic);
+    document.getElementById("browseMeta").textContent =
+      `${pool.length} questions` +
+      (browseMid ? ` · Module ${browseMid}` : " · all modules") +
+      (browseTopic ? ` · ${browseTopic}` : "");
+    document.getElementById("browseFilters").innerHTML =
+      `<button type="button" class="chip-btn${browseMid===0?" active":""}" data-m="0">All</button>` +
+      curriculum.modules.map((m) =>
+        `<button type="button" class="chip-btn${browseMid===m.id?" active":""}" data-m="${m.id}">M${m.id}</button>`
+      ).join("");
+    document.getElementById("browseList").innerHTML = pool.map((q, qi) => {
+      const solved = state.solvedIds.has(q.id);
+      const flagged = state.flaggedIds.has(q.id);
+      const badge = solved ? `<span class="pill ok">Solved</span>` : flagged ? `<span class="pill warn">Flagged</span>` : "";
+      const opts = (q.options || []).map((opt, oi) =>
+        `<button type="button" class="opt" data-qid="${esc(q.id)}" data-oi="${oi}">${String.fromCharCode(65+oi)}. ${esc(opt)}</button>`
+      ).join("");
+      return `<article class="q-card block" data-qid="${esc(q.id)}" data-correct="${q.correct}">
+        <div class="q-card-head">
+          <span class="subtle">M${q.module} · ${esc(q.conceptId)} · ${esc(q.source || "")}</span>
+          ${badge}
+        </div>
+        <p class="q-stem"><strong>${qi + 1}.</strong> ${esc(q.stem)}</p>
+        <div class="opts">${opts}</div>
+        <p class="explain" hidden></p>
+        <div class="q-footer">${conceptLink(q.conceptId)}</div>
+      </article>`;
+    }).join("");
+  }
+  function paintSessionFilters() {
+    fillTopicSelect(document.getElementById("sessionTopic"), sessionMid, sessionTopic);
+    document.getElementById("sessionFilters").innerHTML =
+      `<button type="button" class="chip-btn${sessionMid===0?" active":""}" data-sm="0">All modules</button>` +
+      curriculum.modules.map((m) =>
+        `<button type="button" class="chip-btn${sessionMid===m.id?" active":""}" data-sm="${m.id}">M${m.id}</button>`
+      ).join("");
+    paintScope();
+  }
+  document.getElementById("browseFilters").addEventListener("click", (ev) => {
+    const b = ev.target.closest("[data-m]");
+    if (!b) return;
+    browseMid = Number(b.dataset.m);
+    browseTopic = "";
+    paintBrowse();
+  });
+  document.getElementById("browseTopic").addEventListener("change", (ev) => {
+    browseTopic = ev.target.value || "";
+    paintBrowse();
+  });
+  document.getElementById("sessionFilters").addEventListener("click", (ev) => {
+    const b = ev.target.closest("[data-sm]");
+    if (!b) return;
+    sessionMid = Number(b.dataset.sm);
+    sessionTopic = "";
+    paintSessionFilters();
+  });
+  document.getElementById("sessionTopic").addEventListener("change", (ev) => {
+    sessionTopic = ev.target.value || "";
+    paintScope();
+  });
+  document.getElementById("browseList").addEventListener("click", (ev) => {
+    const btn = ev.target.closest(".opt");
+    if (!btn) return;
+    const card = btn.closest(".q-card");
+    const q = BANK.find((x) => x.id === btn.dataset.qid);
+    if (!q || card.dataset.locked === "1") return;
+    const chosen = Number(btn.dataset.oi);
+    const ok = chosen === q.correct;
+    card.dataset.locked = "1";
+    card.querySelectorAll(".opt").forEach((b) => {
+      b.disabled = true;
+      const oi = Number(b.dataset.oi);
+      if (oi === q.correct) b.classList.add("correct");
+      else if (oi === chosen) b.classList.add("wrong");
+    });
+    const ex = card.querySelector(".explain");
+    ex.hidden = false;
+    if (ok) {
+      state.solvedIds.add(q.id);
+      state.flaggedIds.delete(q.id);
+      ex.innerHTML = `<strong>Correct.</strong> ${esc(q.explanation || "")}`;
+    } else {
+      state.flaggedIds.add(q.id);
+      state.solvedIds.delete(q.id);
+      ex.innerHTML =
+        `<strong>Not quite.</strong> <em>Flagged for next session.</em>` +
+        A.wrongAnswerHtml(q, concepts);
+    }
+    const m = state.mastery[q.conceptId] || { seen: 0, correct: 0, wrong: 0 };
+    m.seen += 1;
+    if (ok) m.correct += 1; else m.wrong += 1;
+    state.mastery[q.conceptId] = m;
+    persist(true);
+    const head = card.querySelector(".q-card-head");
+    if (head) {
+      const badge = ok
+        ? `<span class="pill ok">Solved</span>`
+        : `<span class="pill warn">Flagged</span>`;
+      const subtle = head.querySelector(".subtle");
+      head.innerHTML = (subtle ? subtle.outerHTML : "") + badge;
+    }
+  });
+
+  /* —— session queue (v2-refined) —— */
+  function pickSessionQueue() {
+    const byId = Object.fromEntries(BANK.map((q) => [q.id, q]));
+    const queues = (state.recentSessionQueues || []).map((q) => (q || []).slice());
+    function blocked() {
+      const s = new Set();
+      queues.forEach((arr) => (arr || []).forEach((id) => s.add(String(id))));
+      return s;
+    }
+    function isEligible(q) {
+      if (sessionMid && Number(q.module) !== Number(sessionMid)) return false;
+      if (sessionTopic && q.conceptId !== sessionTopic) return false;
+      if (state.flaggedIds.has(q.id)) return true;
+      if (state.solvedIds.has(q.id)) return false;
+      if (blocked().has(q.id)) return false;
+      return true;
+    }
+    let pool = BANK.filter(isEligible);
+    while (pool.length < SESSION_SIZE && queues.length) {
+      queues.shift();
+      pool = BANK.filter(isEligible);
+    }
+    const picked = [];
+    const used = new Set();
+    function add(q) {
+      if (!q || used.has(q.id) || picked.length >= SESSION_SIZE) return;
+      if (!isEligible(q)) return;
+      used.add(q.id);
+      picked.push(q);
+    }
+    shuffle([...state.flaggedIds].map((id) => byId[id]).filter(Boolean)).forEach(add);
+    state.lastWrongConcepts.slice(0, 8).forEach((cid) => {
+      shuffle(pool.filter((q) => q.conceptId === cid && !used.has(q.id))).slice(0, 2).forEach(add);
+    });
+    pool
+      .map((q) => {
+        const m = state.mastery[q.conceptId] || { seen: 0, correct: 0, wrong: 0 };
+        const miss = m.seen ? m.wrong / m.seen : 0.5;
+        return { q, score: miss * 2 + (m.seen === 0 ? 2 : 0) + Math.random() };
+      })
+      .sort((a, b) => b.score - a.score)
+      .forEach(({ q }) => add(q));
+    shuffle(pool).forEach(add);
+    return shuffle(picked).slice(0, Math.min(SESSION_SIZE, picked.length));
+  }
+
+  function paintStartBtn() {
+    const btn = document.getElementById("btnStart");
+    const abandon = document.getElementById("btnAbandon");
+    const active = session && session.queue?.length && session.index < session.queue.length;
+    btn.textContent = active ? "Resume session" : "Start session";
+    abandon.hidden = !active;
+  }
+
+  function rebuildFromSnap(snap) {
+    if (!snap || snap.status !== "active" || !snap.queueIds?.length) return null;
+    const byId = Object.fromEntries(BANK.map((q) => [q.id, q]));
+    const queue = snap.queueIds.map((id) => byId[id]).filter(Boolean);
+    if (!queue.length) return null;
+    const index = Math.min(Math.max(0, Number(snap.index) || 0), queue.length);
+    if (index >= queue.length) return null;
+    return { queue, index, answers: snap.answers || {}, wrong: snap.wrong || [], startedAt: snap.startedAt };
+  }
+  function tryResume() {
+    const rebuilt = rebuildFromSnap(readSessionLocal());
+    if (!rebuilt) return false;
+    session = rebuilt;
+    renderQuestion();
+    return true;
+  }
+
+  function recordAnswer(q, chosen) {
+    const ok = chosen === q.correct;
+    session.answers[q.id] = chosen;
+    const m = state.mastery[q.conceptId] || { seen: 0, correct: 0, wrong: 0 };
+    m.seen += 1;
+    let unflagged = false;
+    if (ok) {
+      m.correct += 1;
+      state.solvedIds.add(q.id);
+      if (state.flaggedIds.has(q.id)) { state.flaggedIds.delete(q.id); unflagged = true; }
+    } else {
+      m.wrong += 1;
+      state.flaggedIds.add(q.id);
+      state.solvedIds.delete(q.id);
+      if (!session.wrong.includes(q.id)) session.wrong.push(q.id);
+      state.lastWrongConcepts = [q.conceptId, ...state.lastWrongConcepts.filter((c) => c !== q.conceptId)].slice(0, 20);
+    }
+    state.mastery[q.conceptId] = m;
+    state.history = [...state.history.filter((id) => id !== q.id), q.id].slice(-200);
+    persist();
+    return { ok, unflagged };
+  }
+
+  function renderQuestion() {
+    const area = document.getElementById("sessionArea");
+    if (!session?.queue?.length) {
+      area.innerHTML = `<p class="subtle">Could not build a session.</p>`;
+      return;
+    }
+    if (session.index >= session.queue.length) {
+      renderEnd();
+      return;
+    }
+    const q = session.queue[session.index];
+    const n = session.index + 1;
+    const total = session.queue.length;
+    const pct = Math.round(((n - 1) / total) * 100);
+    const answered = session.answers[q.id];
+    const locked = answered !== undefined;
+    const wasFlagged = state.flaggedIds.has(q.id);
+
+    area.innerHTML = `
+      <div class="meta-row">
+        <span>Question <strong>${n}</strong> / ${total}</span>
+        <span>Module <strong>${esc(q.module)}</strong> · ${esc(q.conceptId)}</span>
+        ${wasFlagged && !locked ? `<span class="pill warn">Flagged</span>` : ""}
+      </div>
+      <div class="sess-progress"><i style="width:${pct}%"></i></div>
+      <p class="q-stem">${esc(q.stem)}</p>
+      <div class="opts" id="sessOpts">
+        ${(q.options || []).map((opt, i) => {
+          let cls = "opt";
+          if (locked) {
+            if (i === q.correct) cls += " correct";
+            else if (i === answered) cls += " wrong";
+          }
+          return `<button type="button" class="${cls}" data-i="${i}" ${locked ? "disabled" : ""}>${String.fromCharCode(65+i)}. ${esc(opt)}</button>`;
+        }).join("")}
+      </div>
+      <div id="sessFb"></div>
+      <div class="q-footer session-footer">
+        ${conceptLink(q.conceptId)}
+        <button type="button" class="btn" id="btnNextQ" ${locked ? "" : "disabled"}>Next</button>
+      </div>`;
+
+    if (locked) {
+      const ok = answered === q.correct;
+      const fb = document.getElementById("sessFb");
+      if (ok) {
+        fb.innerHTML = `<div class="feedback ok"><strong>Correct.</strong> ${esc(q.explanation || "")}</div>`;
+      } else {
+        fb.innerHTML =
+          `<div class="feedback bad"><strong>Not quite.</strong></div>` +
+          A.wrongAnswerHtml(q, concepts);
+      }
+    }
+
+    area.querySelectorAll("#sessOpts .opt").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        if (session.answers[q.id] !== undefined) return;
+        const chosen = Number(btn.dataset.i);
+        const { ok, unflagged } = recordAnswer(q, chosen);
+        area.querySelectorAll("#sessOpts .opt").forEach((b) => {
+          b.disabled = true;
+          const i = Number(b.dataset.i);
+          if (i === q.correct) b.classList.add("correct");
+          else if (i === chosen && !ok) b.classList.add("wrong");
+        });
+        const note = !ok
+          ? " Flagged — will appear in a later session."
+          : (unflagged ? " Flag cleared · marked solved." : " Marked solved — won’t repeat.");
+        const fb = document.getElementById("sessFb");
+        if (ok) {
+          fb.innerHTML =
+            `<div class="feedback ok"><strong>Correct.</strong> ${esc(q.explanation || "")}${note}</div>`;
+        } else {
+          fb.innerHTML =
+            `<div class="feedback bad"><strong>Not quite.</strong>${note}</div>` +
+            A.wrongAnswerHtml(q, concepts);
+        }
+        document.getElementById("btnNextQ").disabled = false;
+        area.querySelector(".sess-progress > i").style.width = Math.round((n / total) * 100) + "%";
+      });
+    });
+    document.getElementById("btnNextQ").addEventListener("click", () => {
+      session.index += 1;
+      persist();
+      renderQuestion();
+    });
+  }
+
+  function renderEnd() {
+    const total = session.queue.length;
+    const correct = Object.entries(session.answers).filter(([id, chosen]) => {
+      const q = session.queue.find((x) => x.id === id);
+      return q && chosen === q.correct;
+    }).length;
+    const ids = session.queue.map((q) => q.id);
+    state.recentSessionQueues = [...(state.recentSessionQueues || []), ids].slice(-12);
+    session = null;
+    persist(true);
+    document.getElementById("sessionArea").innerHTML = `
+      <h3 style="margin:0 0 0.5rem">Session complete</h3>
+      <p class="subtle">${correct} / ${total} correct · Flagged items will be prioritised next time.</p>
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:1rem">
+        <button type="button" class="btn" id="btnAgain">New session</button>
+        <button type="button" class="btn btn-ghost" data-back2>Back to modes</button>
+      </div>`;
+    document.getElementById("btnAgain").addEventListener("click", () => startSession(true));
+    document.querySelector("[data-back2]").addEventListener("click", () => showMode("home"));
+    paintStartBtn();
+  }
+
+  function startSession(forceNew) {
+    if (!BANK.length) return;
+    if (!forceNew && session && session.queue?.length && session.index < session.queue.length) {
+      renderQuestion();
+      return;
+    }
+    if (!forceNew && tryResume()) return;
+    const queue = pickSessionQueue();
+    if (!queue.length) {
+      document.getElementById("sessionArea").innerHTML =
+        `<p class="subtle">No eligible questions left (all solved, none flagged). Clear progress to reset.</p>`;
+      return;
+    }
+    session = { queue, index: 0, answers: {}, wrong: [], startedAt: new Date().toISOString() };
+    persist();
+    renderQuestion();
+  }
+
+  document.getElementById("btnStart").addEventListener("click", () => startSession(false));
+  document.getElementById("btnAbandon").addEventListener("click", () => {
+    session = null;
+    persist(true);
+    document.getElementById("sessionArea").innerHTML =
+      `<p class="subtle" style="margin:0">Session cleared. Press <strong>Start session</strong> for a new mix.</p>`;
+    paintStartBtn();
+  });
+
+  /* —— boot —— */
+  const prog = A.readProgress();
+  ingest(prog[SECTION] || {});
+  const P = A.P();
+  if (P?.loadProgress) {
+    P.loadProgress().then((payload) => {
+      const sub = P.getSubjectPayload?.(payload, A.SUBJECT) || {};
+      ingest(sub[SECTION] || {});
+      paintStats();
+    }).catch(() => {});
+  }
+  paintStats();
+
+  const Sync = window.AmitySyncUI || window.BS605SyncUI;
+  if (Sync?.mount) {
+    Sync.mount(document.getElementById("amity-sync-root"), { subjectLabel: "CSIT654 LMS v3" });
+  }
+
+  // deep-link ?mode=session|browse&module=&topic=
+  const m = A.qs("mode");
+  const qm = A.qs("module");
+  const qt = A.qs("topic") || A.qs("concept");
+  if (qm) {
+    const mid = Number(qm);
+    if (m === "browse") browseMid = mid;
+    else sessionMid = mid;
+  }
+  if (qt) {
+    if (m === "browse") browseTopic = qt;
+    else sessionTopic = qt;
+  }
+  if (m === "session" || m === "browse") showMode(m);
+  else paintSessionFilters();
+})();
+</script>
+</body>
+</html>

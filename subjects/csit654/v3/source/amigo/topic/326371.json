@@ -1,0 +1,37 @@
+{
+  "cmid": "326371",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541785&cmid=326371",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "The process of verifying the integrity and authenticity of transmitted messages is called",
+      "options": [
+        "a. Message Authentication",
+        "b. Message Integrity",
+        "c. Message Confidentiality",
+        "d. None of These"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Message authentication verifies integrity and authenticity of messages."
+    },
+    {
+      "no": "2",
+      "stem": "Which security service should ensure that the sender of the message is same individual as in indicated by the identity in the message.",
+      "options": [
+        "a. Authentication",
+        "b. Integrity",
+        "c. Confidentiality",
+        "d. None of These"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Authentication binds the claimed sender identity to the message."
+    }
+  ]
+}

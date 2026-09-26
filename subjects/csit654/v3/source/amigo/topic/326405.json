@@ -1,0 +1,37 @@
+{
+  "cmid": "326405",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541845&cmid=326405",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "SSL is designed to make use of TCP as a communication layer to provide a reliable ________ secure and authenticated connection between two points over a network",
+      "options": [
+        "a. Point-to-Point",
+        "b. End-to-End",
+        "c. Broadcast",
+        "d. None of These"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "SSL/TLS provides end-to-end security over TCP."
+    },
+    {
+      "no": "2",
+      "stem": "The SSL protocol was originally developed by",
+      "options": [
+        "a. Netscape",
+        "b. Google",
+        "c. Microsoft",
+        "d. None of These"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "SSL was originally developed by Netscape."
+    }
+  ]
+}

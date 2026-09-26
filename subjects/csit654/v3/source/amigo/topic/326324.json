@@ -1,0 +1,37 @@
+{
+  "cmid": "326324",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541532&cmid=326324",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Which encryption method is not conventional encryption method:",
+      "options": [
+        "a. Ceaser Cipher Encryption Technique.",
+        "b. Monoalphabetic Encryption Technique.",
+        "c. Transposition Encryption Technique.",
+        "d. Drill Cipher Encryption Technique"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Drill cipher is not a standard classical/conventional technique in the SLM set."
+    },
+    {
+      "no": "2",
+      "stem": "Which of the following ciphers are created by shuffling the letters of a word?",
+      "options": [
+        "a. substitution cipher",
+        "b. transposition cipher",
+        "c. vigenere cipher",
+        "d. hill cipher"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Transposition ciphers rearrange (shuffle) letter positions."
+    }
+  ]
+}

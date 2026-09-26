@@ -1,0 +1,37 @@
+{
+  "cmid": "326373",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541789&cmid=326373",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Which public function that maps a message of any length into a fixed length hash value which serves as its authenticator.",
+      "options": [
+        "a. Virtual Function",
+        "b. Friend Function",
+        "c. Authentication Function",
+        "d. None of These"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Hash/authentication functions map arbitrary messages to fixed-length authenticators."
+    },
+    {
+      "no": "2",
+      "stem": "he sender generates the message M and the hash value ‘h’ is calculated by subjecting M to hash function as",
+      "options": [
+        "a. h=M(H)",
+        "b. h=H",
+        "c. H=h(M)",
+        "d. None of These"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Correct relation is h=H(M); none of the listed formulas match cleanly."
+    }
+  ]
+}

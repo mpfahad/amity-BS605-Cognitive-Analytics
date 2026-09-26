@@ -1,0 +1,37 @@
+{
+  "cmid": "326326",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541539&cmid=326326",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Which one is not a type of Transposition Encryption Techniques:",
+      "options": [
+        "a. Hill Cipher.",
+        "b. 2-Rail Cipher Encryption Technique.",
+        "c. 3-Rail Cipher Encryption Technique.",
+        "d. Ceaser Cipher Encryption Technique."
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Hill cipher is a substitution (polygraphic) cipher, not a transposition rail technique."
+    },
+    {
+      "no": "2",
+      "stem": "Which of the following is not a type of transposition cipher?",
+      "options": [
+        "a. Rail fence cipher",
+        "b. Columnar transposition cipher",
+        "c. One time pad cipher",
+        "d. Route cipher"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "One-time pad is a substitution stream scheme, not a transposition cipher."
+    }
+  ]
+}

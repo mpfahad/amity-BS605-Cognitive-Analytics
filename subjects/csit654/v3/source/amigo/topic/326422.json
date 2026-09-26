@@ -1,0 +1,37 @@
+{
+  "cmid": "326422",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541890&cmid=326422",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "VPN prevents ______________ people from eavesdropping on the traffic and allows the user to conduct work remotely.",
+      "options": [
+        "a. Authorized",
+        "b. Unauthorized",
+        "c. Normal",
+        "d. None of These"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "VPNs protect against unauthorized eavesdropping."
+    },
+    {
+      "no": "2",
+      "stem": "Which VPN technology allows senders to encapsulate their data in IP packets that hide the underlying routing and switching infrastructure of the Internet from both senders and receivers.",
+      "options": [
+        "a. Tumbering",
+        "b. Tunneling",
+        "c. Pipelining",
+        "d. Hardening"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "VPN tunneling encapsulates packets (e.g., in IP)."
+    }
+  ]
+}

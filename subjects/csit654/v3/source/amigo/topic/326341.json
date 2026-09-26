@@ -1,0 +1,35 @@
+{
+  "cmid": "326341",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541641&cmid=326341",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "In Shannon's original definitions, confusion refers to making the relationship between the ciphertext and the",
+      "options": [
+        "a. Ciphertext",
+        "b. Plaintext",
+        "c. Symmetric Key",
+        "d. Asymmetric Key"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Shannon confusion obscures the ciphertext–key relationship."
+    },
+    {
+      "no": "2",
+      "stem": "Confusion hides the relationship between the ciphertext and the plaintext.",
+      "options": [
+        "a. True",
+        "b. False"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "False: ciphertext–plaintext hiding is diffusion; confusion targets the key relationship."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "cmid": "326386",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541813&cmid=326386",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "DSS stands for",
+      "options": [
+        "a. Digital signature standard",
+        "b. Digital signature suite",
+        "c. Digital standard suite",
+        "d. None of these"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "DSS = Digital Signature Standard."
+    },
+    {
+      "no": "2",
+      "stem": "The algorithm used behind the digital signature standard is known as the",
+      "options": [
+        "a. Data structure algorithm",
+        "b. Digital signature algorithm",
+        "c. Digital standard algorithm",
+        "d. None of these"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "DSS is realized by the Digital Signature Algorithm (DSA)."
+    }
+  ]
+}

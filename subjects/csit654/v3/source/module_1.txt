@@ -1,0 +1,1541 @@
+--- page 7 ---
+2
+Network Security and Cryptography
+Notes
+Amity University Online
+The substitution of a cipher text symbol for a plaintext symbol is used in all the 
+strategies studied so far. By doing some kind of permutation on the plaintext letters, a 
+very different type of mapping is accomplished. This approach is referred to as a cipher 
+for transposition.
+Hardware security has become a fascinating issue really with a consistently 
+growing number of analysts from related examination spaces joining this district. 
+Regardless, the enthusiasm for hardware security is reliably blended in with online 
+confirmation and cryptography, particularly cryptographic gear.
+To protect against these threats, organisations use various security measures 
+such as firewalls, antivirus software, intrusion detection systems (IDS), encryption, 
+and secure authentication mechanisms. Ongoing monitoring and updates to security 
+policies are also crucial to mitigate risks effectively.
+1.1 Network security 
+What is Network Security?
+A wide-ranging topic with a multi-layered approach. The data link layer, network 
+layer and device layer can be discussed. The concerns involved are: interference 
+and encryption of packets, IP packets and routing tables with their version upgrade, 
+and host-level vulnerabilities that have arisen in the data link layer, network layer and 
+framework, respectively.
+ 
+Figure - 1: Network Security
+1.1.1 Introduction to Security Attacks
+Basic Requirements of Network Security
+The primary goal of the organisation is to divide data between its clients arranged 
+locally or distantly. Accordingly, it is conceivable that undesired client can hack the 
+arrange and can end up being unsafe for the strength of the organisation or client. 
+There are not many essential focuses which should be trailed by network director to 
+give the organisation a sufficient security other than network-explicit security as in the 
+event of online business, and so on These are given beneath: 
+(c) Amity University Online
+
+
+--- page 8 ---
+Network Security and Cryptography
+3
+Notes
+Amity University Online
+Figure 2: Network security
+1.	
+Data sharing is the purpose of networks. The organisation should be clearly set up 
+to differentiate between shareable and non-shareable data in this way. 
+2.	
+The company should also specify who may receive access to the shareable data. 
+3.	
+As framework security increases, so will the costs associated with maintaining it; 
+therefore, a compromise between security and expenses should be established in 
+accordance with the requirements of the organisation security framework strategy. 
+This will typically depend on the fair and square level of security that the organisation 
+is expected to apply, the majority of security requirements, and the convincing 
+implementation of the chosen level of protection.
+4.	
+Division of the duties concerning the organisation security should be obviously. 
+characterized among clients and framework director. 
+5.	
+The prerequisites for security should be nitty gritty inside an organisation security 
+strategy of the association that shows the important information and their related 
+expense to the business. Subsequent to characterizing the point-by-point network 
+security strategy and recognizing the obvious duties in the association, the framework 
+director ought to be made then liable for guaranteeing that the security strategy 
+is successfully applied to the organisation climate, including the current systems 
+administration foundation,
+Types of Attack
+ 
+Figure - 2: Network security attacks
+(c) Amity University Online
+
+
+--- page 9 ---
+4
+Network Security and Cryptography
+Notes
+Amity University Online
+Attacks are known as passive and active in two respects. A passive attack is an 
+attempt to learn or use system data without altering any system resources, while an 
+active attack is an attempt to change system resources or influence their entire process.
+ 
+Figure - 3: Types of attacks
+Passive Attacks:
+Snooping on or monitoring transmissions is the concept of a passive attack. The 
+adversary's goal is to obtain the data that is being transmitted. The two types of inactive 
+attacks are:
+Arrival of message substance are: A phone discussion and email message and a 
+moved record may contain touchy or secret data. We might want to keep the rival from 
+learning the substance of these sort of transmissions. 
+ 
+Figure - 4: Passive Attack
+Traffic analysis: On the off chance that we had encryption assurance set up; a rival 
+may in any case have the option to notice the example of the message. The rival could 
+decide the area and character of correspondence has and could notice the recurrence 
+and length of messages being traded. This data may be helpful in speculating the idea 
+of correspondence that was occurring. 
+Latent attacks are hard to identify on the grounds that they don't include any 
+modification of information. Notwithstanding, it is doable to forestall the accomplishment 
+of these attacks. 
+Passive attacks grouped into two categories:
+ 
+Figure -5: types of Passive attacks
+(c) Amity University Online
+
+
+--- page 10 ---
+Network Security and Cryptography
+5
+Notes
+Amity University Online
+Active Attacks:
+Any manipulation of the data source or the formation of a false stream is involved 
+in these attacks. Such attacks can be grouped into four categories:
+ 
+Figure - 6: Active attack
+Masquerade
+An entity is claiming to be another entity. Replay-includes passive capturing and 
+subsequent transfer of a data device to create an unauthorized result.
+ 
+Figure - 7: Masquerade
+Modification of messages – Any parts of the message are altered or the messages 
+are postponed or registered to create an unauthorized result.
+ 
+Figure - 8: Modification of Messages
+(c) Amity University Online
+
+
+--- page 11 ---
+6
+Network Security and Cryptography
+Notes
+Amity University Online
+Denial of service – Prevents or prevents the regular usage of contact services 
+or their administration. The interruption of an entire network, either by disabling the 
+network or overloading it with messages so as to impair efficiency, is another form of 
+service denial.
+It is very impossible to fully stop active attacks, and to do so will often entail 
+physical security of all contact services and roads. Instead, the aim is to locate them 
+and rebound from any interference or disruptions induced by them.
+ 
+Figure - 9: Distributed Denial of Service Attack
+Active attacks are classified into three categories:
+Figure - 10: Type of Active attacks
+There are also another three types of security attacks. they are
+Interruption 
+An asset is lost or becomes inaccessible or unusable by the system. This is an 
+assault on usability, such as removing a piece of hardware, breaking a contact cable, or 
+disabling a file management system.
+(c) Amity University Online
+
+
+--- page 12 ---
+Network Security and Cryptography
+7
+Notes
+Amity University Online
+ 
+Figure -11: Interruption
+Interception 
+An illegitimate group receives an asset's entry. This is a secrecy assault. A 
+individual, a program or a device may be an unwanted entity. For example, wiretapping 
+to collect network data, unlawful copying of files.
+Eavesdropper or forger
+Modification 
+Not only does an unwanted party obtain access to an asset, but tampers with it. It's 
+an assault on honesty. e.g. altering the values of the data file, modifying the program, 
+modifying the contents of messages sent over the network.
+Eavesdropper or forger
+Fabrication
+An unwanted entity introduces forged items into the scheme. It's an assault on 
+honesty. For e.g., injecting a bogus message into a network or attaching a record to a 
+file. Sender Receiver Eavesdropper or Forger Cryptographic Attack
+Eavesdropper or forger
+(c) Amity University Online
+
+
+--- page 13 ---
+8
+Network Security and Cryptography
+Notes
+Amity University Online
+1.1.2 Services and Mechanism
+What is network security services?
+The following services relevant to a message and entity can be obtained through 
+network security.
+ 
+Security
+Services
+Message
+Entity
+Security services
+Confidentiality
+Integrity
+Authentication
+Non-repudiation
+Authentication
+ 
+Figure - 12: Type of Security services
+1. 	 Message confidentiality
+	
+It implies that the substance of a message when sent across an organisation should 
+stay secret, for example just the planned recipient and nobody else ought to have 
+the option to peruse the message. 
+
+
+The clients; accordingly, need to scramble the message they send with the 
+goal that a snoop on the organisation won't have the option to peruse the 
+substance of the message.
+ 
+Figure - 13: Message confidentiality
+2.	
+Message Integrity
+
+
+It implies the information should arrive at the objective with no defilement for 
+example precisely when it was transmitted. 
+(c) Amity University Online
+
+
+--- page 14 ---
+Network Security and Cryptography
+9
+Notes
+Amity University Online
+
+
+No progressions should occur during transmission, either accidentally or 
+intentionally. 
+
+
+Trustworthiness of a message is guaranteed by connecting a checksum to the 
+message. 
+
+
+The calculation for producing the checksum guarantees that an interloper 
+can't modify the checksum or the message.
+Figure - 14: Message Integrity
+3.	
+Message Authentication
+
+
+In message validation the collector should be certain about the sender's 
+personality for example the collector needs to ensure that the genuine sender 
+is equivalent to professed to be. 
+
+
+There are various strategies to check the validity of the sender:
+1.	
+The two gatherings share a typical mystery code word. A gathering is 
+needed to show the mystery code word to the next for validation. 
+2.	
+Validation should be possible by sending advanced mark. 
+3.	
+A believed outsider checks the realness. One such path is to utilize 
+advanced authentications given by a perceived affirmation authority.
+4. 	 Message non-reproduction
+
+
+Non-repudiation suggests that it is not necessary for a sender to refuse to 
+deliver a letter that he has already received. 
+
+
+The burden of evidence rests on the recipient. 
+
+
+Being non-reproduction requires more than just having the letter in one's 
+possession; the recipient must also demonstrate that the message's quality is 
+the same as what the sender got. 
+
+
+Non-repudiation is accomplished by processes of verification and honesty.
+5. 	 Entity Authentication
+
+
+When authenticating an object (or defining a user), the entity or user is 
+checked before accessing device services.
+(c) Amity University Online
+
+
+--- page 15 ---
+10
+Network Security and Cryptography
+Notes
+Amity University Online
+Security Mechanisms 
+ 
+Figure -15: security mechanisms
+Network security is the area of PC innovation that oversees ensuring the 
+foundational security of the PC network. Because of this, the organisation is very 
+essential for data sharing, regardless of the level of the equipment—such as a printer 
+or scanner—or the programming. This means that a security tool can also be referred 
+to as a collection of cycles that control recovery from security breaches. To recover 
+from these specific attacks at various convention layers, specialised instruments are 
+designed. 
+Quite possibly the most explicit security components being used is cryptographic 
+procedures. Encryption or encryption-like changes of data are the most widely 
+recognized methods for giving security. A portion of the instruments are
+ 
+Figure - 16: Types of security mechanism
+Types of Security Mechanism are:
+1.  	 Encipherment:
+	
+This security system manages stowing away and covering of information which 
+encourages information to get secret. It is accomplished by applying numerical counts 
+or calculations which recreate data into not coherent structure. It is accomplished 
+by two renowned strategies named Cryptography and Encipherment. Level of 
+information encryption is subject to the calculation utilized for encipherment.
+ 
+Figure - 17: Encipherment
+(c) Amity University Online
+
+
+--- page 16 ---
+Network Security and Cryptography
+11
+Notes
+Amity University Online
+2.  	 Access Control: This component is utilized to stop unattended admittance to 
+information which you are sending. It tends to be accomplished by different 
+methods, for example, applying passwords, utilizing firewall, or just by adding PIN to 
+information.
+3. 	 Notarization: This security instrument includes utilization of confided in outsider 
+in correspondence. It acts as a mediator between the sender and the recipient to 
+lessen the likelihood of any disputes. This middleman records requests sent by the 
+sender to the collector in case they are later rejected.
+4.	
+Data Integrity: This security component is utilized by adding an incentive to 
+information to which is made by information itself. It is like sending parcel of data 
+known to both sending and accepting gatherings and checked when information is 
+gotten. At the point when this parcel or information which is annexed is checked and 
+is the equivalent while sending and accepting information uprightness is kept up.
+5.	
+Authentication exchange: This security tool allows personality to be communicated 
+through letters. This is done at the TCP/IP layer by using a two-way handshaking 
+tool to ensure that information is sent or not.
+6.	
+Bit stuffing: This security instrument is utilized to add some additional pieces into 
+information which is being sent. It encourages information to be checked at the less 
+than desirable end and is accomplished by Even equality or Odd Equality.
+7.	
+Digital Signature: In order to implement this security measure, digital data that is 
+invisible to the human sight is included. It is a type of electronic signature that the 
+sender adds and the recipient electronically verifies. This approach not only protects 
+non-confidential data but also notifies the sender of their identity.
+ 
+Figure -18: Digital Signature
+1.1.3 Classical Encryption Techniques
+Definitions of Terms 
+●	
+Plaintext: It denotes the original message.
+●	
+Ciphertext: It denotes a message that is coded. 
+●	
+Enciphering or encryption: The procedure that transforms plaintext into ciphertext
+(c) Amity University Online
+
+
+--- page 17 ---
+12
+Network Security and Cryptography
+Notes
+Amity University Online
+●	
+Deciphering or decryption:  The process of getting the plaintext back from the 
+ciphertext.
+The various encryption schemes used comprise the field of research known as 
+cryptography. A cryptographic structure (cryptosystem) or a cipher is regarded as such 
+a scheme. Techniques used without any awareness of the enciphering information 
+to decode a message fall into the cryptanalysis region. What the layperson terms 
+"breaking the code" is cryptanalysis. The cryptography and cryptanalysis fields
+Symmetric Cipher Model
+A symmetric encryption plot has five fixings (as demonstrated in the accompanying 
+figure): 
+ 
+Figure - 19: symmetric cipher model
+Plaintext: This is the first distinct message or piece of information that is considered 
+when making the computation. 
+Encryption calculation: The plaintext undergoes several replacements and 
+modifications during the encryption computation. 
+Secret key: Another factor in the encryption computation is the secret key. The key 
+has value independent of both the computation and the plaintext. The calculation will 
+deliver an alternate yield contingent upon the particular key being utilized at that point. 
+The specific replacements and changes performed by the calculation rely upon the key. 
+ 
+Figure - 20: symmetric key
+(c) Amity University Online
+
+
+--- page 18 ---
+Network Security and Cryptography
+13
+Notes
+Amity University Online
+Ciphertext: This is the convoluted message that was produced as a yield. 
+It is dependent on both the mystery key and the plaintext. Two different keys for a 
+given message will yield two different ciphertexts. 
+Decoding calculation: This is essentially the encryption computation done in 
+reverse. It produces the first plaintext by using the mystery key and the ciphertext.
+ 
+Figure - 21: symmetric cipher model
+Encryption Requirements
+There are two prerequisites for secure utilization of ordinary encryption: 
+The encryption calculation should be solid. 
+At least, an adversary who knows the calculation and approaches at least one 
+ciphertexts would be not able to translate the ciphertext or sort out the key. 
+In a more grounded structure, the adversary ought to be not able to unscramble 
+ciphertexts or find the key regardless of whether the individual in question has various 
+ciphertexts along with the plaintext for each ciphertext. 
+Sender and collector probably acquired duplicates of the mystery key in a safe 
+design and should keep the key secure. In the event that somebody can find the key 
+and knows the calculation, all correspondence utilizing this key is comprehensible.
+Why not keep the encryption algorithm secret? 
+We presume that, based on the ciphertext plus knowledge of the encryption/
+decryption algorithm, it is impossible to decrypt a document. This means that we 
+don't have to keep the algorithm hidden; only the main secret needs to be kept. This 
+symmetric encryption feature makes data encryption algorithms easily usable and 
+embedded into a range of items for low-cost chip implementations. The primary security 
+challenge is ensuring the privacy of the key with the use of symmetric encryption.
+Model of symmetric cryptosystem?
+The following diagram defines the basic elements of a symmetric encryption 
+scheme:
+(c) Amity University Online
+
+
+--- page 19 ---
+14
+Network Security and Cryptography
+Notes
+Amity University Online
+ 
+Figure - 22: Model of symmetric cryptosystem
+●	
+A message is produced in plaintext by the sender, X=[X1,X2,...,XM] X=[X1,X2,...,XM].
+●	
+The form K=[K1,K2,...,KJ] for the key. The generated K=[K1,K2,...,KJ] is.
+
+
+When generating the key at the message source, it needs to be sent via a 
+specific secure channel to the destination as well.
+
+
+Alternatively, the key may be produced by a third party and transmitted 
+securely to the source and destination.
+●	
+The ciphertext Y=[Y1,Y2,...,YN]Y=[Y1,Y2,...,YN] The encryption algorithm is built 
+using the message X and the encryption key K as input.
+The encryption process is:
+Y=E(K,X)Y=E(K,X)
+This notation indicates that Y is created by the use of the E encryption algorithm 
+as a function of plain text X, with the particular function being determined by the K key 
+value. The expected receiver with the key is capable of reversing the transformation:
+X=D(K,Y)X=D(K,Y)
+An opponent can attempt to recover X or K or both, observing Y but not having 
+access to K or X. It is believed that the adversary is familiar with the encryption (E) and 
+decryption (D) algorithms. One of the following can be achieved by the competitor:
+●	
+Recover X by generating a plaintext estimate X^X^, If only this unique message 
+concerns the adversary.
+●	
+Recover K by generating an estimate K^K^, If the adversary is interested in being 
+able to decipher texts from the future.
+Brute – Force Attack
+ What is a FORCE-BRUTE Attack?
+An attacker attempts each and every key on a section of ciphertext until they have 
+a translation that makes sense when converted to plaintext. Typically, one needs to 
+attempt 50% of all potential keys in order to succeed.
+(c) Amity University Online
+
+
+--- page 20 ---
+Network Security and Cryptography
+15
+Notes
+Amity University Online
+Describe BRUTE – FORCE ATTACK
+BRUTE – FORCE ATTACK includes attempting each conceivable key until a 
+comprehensible interpretation of the ciphertext into plaintext is acquired. 
+ 
+Figure -23: Brute – Force Attack
+All things considered; half of all potential keys should be attempted to make 
+progress. A savage power assault is more than just going through every single 
+imaginable keys. Except if known plaintext is given, the investigator should have the 
+option to perceive plaintext as plaintext: 
+On the off chance that the message is downright content in English, at that point 
+the outcome jumps out effectively, albeit the undertaking of perceiving English would 
+need to be mechanized. 
+On the off chance that the instant message has been packed before encryption, at 
+that point acknowledgment is more troublesome. 
+On the off chance that the message is some more broad kind of information, for 
+example, a mathematical record, and this has been compacted, the issue turns out to 
+be considerably more hard to computerize. 
+Along these lines, to enhance the BRUTE – FORCE ATTACK approach, some 
+level of information about the normal plaintext is required, and a few methods for 
+consequently recognizing plaintext from jumble is likewise required.
+Rotor Cipher Machine
+ 
+Figure -24: Rotor Cipher Machine
+The rotor cipher machine in During World War II, both the Allied and the 
+Axis powers were widely used. In subsequent years, the application of electronic 
+components resulted in substantial improvements in processing speed, but there 
+were no significant changes in fundamental architecture. Since the beginnings of the 
+(c) Amity University Online
+
+
+--- page 21 ---
+16
+Network Security and Cryptography
+Notes
+Amity University Online
+1970s, Significant advances in microcircuitry and computer technology have been 
+applied by cryptologists to build new, highly sophisticated types of crypto devices 
+and cryptosystems, as demonstrated by the Fibonacci generator and the use of 
+microprocessors to implement the Data Encryption Standard (DES).
+Description
+Relatively basic is the core concept behind rotor machines. One might picture a 
+small computer with a set of keys used to enter code, equivalent to a typewriter. The 
+number of keys can vary, but there are usually 26 to 32 characters.
+ 
+Figure - 25: Enigma Rotor  Machine
+Usage
+Several designers spontaneously came up with the concept of using rotor 
+machines in cryptography. Currently, it is believed that the main rotor figure machine 
+was invented in 1915 by two Dutch marine officials, Theo A. van Hengel (1875–1939) 
+and R. P. C. Spengler (1875–1955). A little while later, Edward Hebern, Arvid Damm, 
+Hugo Koch, and Arthur Scherbius were the other four people that created their own 
+cryptography rotor machines (very much on their own). 
+Confounded polyalphabetic replacement figures were used to scramble 
+communications using electro-mechanical machines equipped with moveable rotors 
+that could deliver extended irregular keystreams.
+Figure - 26: Enigma Rotor Machine
+(c) Amity University Online
+
+
+--- page 22 ---
+Network Security and Cryptography
+17
+Notes
+Amity University Online
+Adding a Rotor
+With a simple replacement machine, it is possible to imagine installing an additional 
+internal rotor and wiring it from the inside out. Each time a key is pressed, the rotor 
+will pivot with a material. Thus, subsequent to squeezing a similar letter twice, it will be 
+encoded distinctively because of various interior wiring. 
+For instance, in the event that somebody squeezed KK in the console, the 
+machine would deliver CB (in light of the fact that the wiring changed after the principal 
+keystroke, because of the rotor development). 
+The inward wiring of the rotor ought to be left well enough alone, anyway we may 
+expect that over the long run the adversary will find its plan. It will make it easier for 
+them to crack the code, but overall security won't be compromised. 
+In order to decipher a ciphertext, the recipient would need a device with a 
+comparable rotor. The encryption became a more grounded polyalphabetic replacement 
+figure with the addition of the rotor.
+ 
+Figure -27: Hebern Rotor Machine
+Make It Challenging
+One could increase the number of rotors to increase security. The contribution of 
+the next rotor would be linked to the yield of the previous rotor. Furthermore, the third 
+rotor yield would be connected to the next one, and so on. A few factors determine how 
+strong the encryption is:
+●	
+the number of rotors in the machine. 
+●	
+the dimensions of each rotor. 
+●	
+the number of different types of rotors (with different inside wirings). 
+There would be a backup internal wiring in each rotor. All of the rotors' 
+replacements should be hidden from the enemy. The circles should rotate at different 
+rates to complicate cryptanalysis and ensure that the wiring within each rotor changes 
+with each frequency. 
+Furthermore, contingent upon the plan of the machine, some extra highlights might 
+be added to the machine, to guarantee that the delivered replacement is as arbitrary 
+as could reasonably be expected (for instance, an extra fixed replacement that doesn't 
+relies upon the rotors). 
+Some rotor machines (most prominently Mystery) were intended to be balanced. 
+That implies that encoding a similar message twice (with similar settings), would create 
+the first message.
+(c) Amity University Online
+
+
+--- page 23 ---
+18
+Network Security and Cryptography
+Notes
+Amity University Online
+ 
+Figure - 28: Lorenz Rotor Machine
+Rotor Machine
+The model just given recommends that numerous phases of encryption can 
+deliver a calculation that is fundamentally harder to cryptanalyze. This is as valid 
+for substitution figures all things considered of interpretation figures. Prior to the 
+presentation of DES, the main use of the standard of various phases of encryption was 
+a class of frameworks known as rotor machines.9 
+The essential rule of the rotor machine is outlined. The machine comprises of a 
+bunch of freely turning chambers through which electrical heartbeats can stream. Every 
+chamber has 26 information pins and 26 yield pins, with inside wiring that interfaces 
+each information pin to an exceptional yield pin. For straightforwardness, just three of 
+the interior associations in every chamber are appeared. 
+In the event that we partner each information and yield pin with a letter of the 
+letters in order, at that point a solitary chamber characterizes a monoalphabetic 
+replacement. For instance, an electric sign is applied to the first pin of the first 
+chamber and travels through the inward connection with the twenty-fifth yield pin if an 
+administrator presses down the key for the letter A.
+Think about a machine with a solitary chamber. After each info key is discouraged, 
+the chamber pivots one position, so the inward associations are moved as needs be. 
+Along these lines, an alternate monoalphabetic replacement figure is characterized. It 
+would have taken 26 plaintext letters for the chamber to revert to its original position. 
+The computation of poly-alphabetic replacement follows, taking 26. 
+A single chamber structure is insignificant and does not pose a challenging 
+crypto analytic problem. The rotor machine's force is derived from its use of several 
+chambers, where the yield pins in one chamber are connected to the information pins 
+in the subsequent chamber. There is a three-chamber framework in Figure 1.1.3. The 
+scenario depicted in the left half of the diagram is one in which the administrator's 
+contribution to the primary pin (plaintext letter a) travels through three chambers and 
+emerges at the yield of the next pin (ciphertext letter B). 
+(c) Amity University Online
+
+
+--- page 24 ---
+Network Security and Cryptography
+19
+Notes
+Amity University Online
+ 
+Figure -29: Three-rotor machine with writing represented by numbered contacts
+Every keystroke in a chamber with multiple chambers causes the chamber closest 
+to the administrator input to shift one pin position. The correct section displays the 
+configuration of the framework following a single keystroke. One pin position is turned 
+by the centre chamber for every complete rotation of the internal chamber. At finally, 
+the external chamber pivots one pin position for every complete revolution of the 
+centre chamber. This type of activity is comparable to what happens with an odometer. 
+As a result, before the framework rehashes, there are 26 * 26 * 26 = 17,576 unique 
+replacement letters in use. Fourth and fifth rotor expansion results in times of 456,976 
+and 11,881,376 letters, respectively. In an eloquent statement, David Kahn mentioned a 
+five-rotor machine.
+Any reasonable possibility of a direct arrangement based on letter recurrence is 
+frustrated by a duration so great. This overall configuration would need about 50 letters 
+for each code letter to be in order, meaning that each of the five rotors would have to go 
+through its total cycle more than once. The length of the numerous speeches delivered 
+on the Senate floor and at the Place of Agents during three progressive sessions of 
+Congress would have to be the ciphertext. It is unlikely that any cryptanalyst will ever 
+win such an award in their lifetime; even representatives, who are sometimes just as 
+talkative as public servants, rarely reach such levels of arrogance.
+1.1.4 Substitution Ciphers
+Information encryption conspire in which units of the plaintext (for the most part 
+single letters or matches of letters of common content) are supplanted with different 
+images or gatherings of images. 
+The ciphertext images don't need to be equivalent to the plaintext characters in a 
+replacement figure, as shown in Sir Arthur Conan Doyle's Experience of the DANCING 
+Men (1903), where Sherlock Holmes settles a monoalphabetic replacement figure in 
+which the ciphertext images are stick figures of a human in different dancelike presents. 
+(c) Amity University Online
+
+
+--- page 25 ---
+20
+Network Security and Cryptography
+Notes
+Amity University Online
+The least complex of all replacement figures are those where the code letters in 
+order is simply a repetitive move of the plaintext letter set. Of these, the most popular 
+is the Caesar figure, utilized by Julius Caesar, in which An is encoded as D, B as E, 
+etc. As numerous a student has found to his humiliation, repetitive move replacement 
+figures are not secure, nor is some other monoalphabetic replacement figure in which 
+a given plaintext image is constantly encoded into the equivalent ciphertext image. In 
+light of the excess of the English language, just around 25 images of ciphertext are 
+needed to allow the cryptanalysis of monoalphabetic replacement figures, which makes 
+them a famous hotspot for sporting cryptograms. The clarification for this shortcoming 
+is that the recurrence dispersions of images in the plaintext and in the ciphertext are 
+indistinguishable, just the images having been relabelled. Truth be told, any design 
+or example in the plaintext is saved flawless in the ciphertext, with the goal that the 
+cryptanalyst's errand is a simple one.
+Substitutuion Techniques
+A technique of substitution is one in which plaintext letters are replaced by other 
+letters or by numbers or symbols. Substitution means replacing plaintext bit patterns 
+with cipher text bit patterns if the plaintext is treated as a series of bits.
+1)	 Caesar cipher (or) shift cipher
+2)	 Playfair cipher
+3)	 Polyalphabetic ciphers
+4)	 Vigenere cipher
+1) 	 Caesar cipher (or) shift cipher
+	
+Julius Caesar had the earliest known use of a substitution cipher and the shortest. 
+The Caesar cipher requires substituting the letter standing 3 positions lower down 
+the alphabet for each letter in the alphabet.
+	
+Plain text, for example: pay more money Text in cypher: SDB PRUH PRQHB
+	
+Because the alphabet is looped around, the letter that comes after "z" is "a." Replace 
+each letter p in the plaintext with letter c in the ciphertext so that C =
+	
+E(p) mod 26 = (p+3)
+	
+The general Caesar algorithm is C = E (p) = (p+k) mod 26, where a shift might be 
+any number.
+	
+where the value of k falls between 1 and 25. All that is needed to decode is P = D(C) 
+= (C-k) mod 26.
+2)	
+Playfair cipher
+	
+Playfair is the most often used figure for differentiating letters. It converts plaintext 
+diagrams into figure text diagrams by treating them as individual units. The use of 
+a 5x5 letter framework constructed with a catchphrase is necessary for the Playfair 
+computation. Don't change the catchphrase "monarchy." The catchphrase's letters 
+(fewer copies) are filled in first, starting from the left and working your way towards 
+the right, then the remaining lattice is completed by adding the extra letters in a 
+sequential order.
+	
+"i" and "j" are regarded as one letter. Two letters are jumbled together in plaintext 
+according to the following principles: 
+(c) Amity University Online
+
+
+--- page 26 ---
+Network Security and Cryptography
+21
+Notes
+Amity University Online
+	
+Rehashing plaintext letters, such as "x," that belong in a similar pair are separated 
+with a filler letter. 
+	
+The letter to one side replaces each plaintext letter that falls in a similar line of the 
+grid, with the last letter in the column being the major component. 
+	
+Letters in plaintext that appear in a similar segment are replaced by the letter below, 
+with the last letter in the section coming after the top one. 
+	
+Furthermore, every single plaintext letter is replaced by the letter that appears in its 
+own line and the segment that the other plaintext letter is involved in.
+ 
+	
+To meet me in the school house is the plaintext. 
+	
+Dividing a pair of letters into two parts=> me et me at th es ch ox ol ho us ex 
+	
+Matching cipher text => CL KL CL RS PD IL HY AV MP HF XL IU
+Strength of Playfair cipher
+	
+The Playfair cipher is a significant advancement over simple mono alphabetic 
+cyphers.
+	
+There can be 26x26 = 676 diagrams because there are 26 letters. Thus, it is more 
+difficult to classify actual diagrams.
+Frequency analysis is much more difficult.
+3) 	 Polyalphabetic ciphers
+	
+The usage of multiple monoalphabetic substitutions as one progresses through 
+the plaintext message is another means of building on the basic monoalphabetic 
+technique. Polyalphabetic cipher is the common name for this approach. All the 
+strategies have the following properties in common.
+	
+A set of similar rules for monoalphabetic replacement are used 
+	
+For a particular transition, a key decides which unique rule is chosen.
+4) 	 Vigenere cipher
+	
+The layout of the associated monoalphabetic replacement rules in this scheme 
+consists of 26 caesar figures with motions ranging from 0 to 25. Every code has a 
+key letter assigned to it. For instance, 
+	
+The key worth "d" indicates a Caesar figure with a motion of 3 (because a=0, b=1, 
+c=2, etc.). The vigenere scene is a framework used to aid in the understanding of the 
+plan. 
+(c) Amity University Online
+
+
+--- page 27 ---
+22
+Network Security and Cryptography
+Notes
+Amity University Online
+	
+With the key letter for each code to one side, all 26 codes are arranged on a level 
+plane. A standard letter gets stuck at the top of the plaintext. The encryption cycle is 
+simple: The code text is located at the intersection of the line designated x and the 
+segment named y given a key letter (X) and a plaintext letter (Y); in this case, the 
+ciphertext is V.
+	
+A key that is the same length as the message is required to encrypt it. Typically, a 
+recurring keyword serves as the key. 
+e.g.,   key    = d e c e p t i v e d e c e p t i  v e d e c e p t i v e
+PT     = w e a r e d i s c o v e r e d s a v e y o u r s e l f
+CT    = ZICVTWQNGRZGVTWAVZHCQYGLMGJ
+ 
+Figure - 30: Vigenere cipher
+(c) Amity University Online
+
+
+--- page 28 ---
+Network Security and Cryptography
+23
+Notes
+Amity University Online
+It is similarly easy to decrypt. The main letter distinguishes the row once more. 
+The plaintext letter is at the top of a column, which is determined by the position of the 
+cypher text letter in that row.
+Strength of Vigenere cipher
+There are many cypher text letters for each plaintext message. 
+The frequency of information letters is hidden.
+One Time Pad Cipher
+It is a cryptosystem that is unbreakable. It represents the message as a sequence 
+of 0s and 1s. For example, by writing all numbers in binary or using ASCII, this can be 
+achieved. A random set of 0's and 1's of the same length as the message is the key. 
+It is discarded after a key is used, and never used again. It is possible to express 
+the system as follows:
+ 
+Thus, executing the bitwise XOR of the plaintext and the key produces the cipher 
+text. The same key is used for decryption. Because of the XOR properties, the same 
+bitwise operation is simply involved in decryption.
+ 
+Advantage
+For a single ciphertext attack, the encryption process is absolutely unbreakable.
+Disadvantage
+It takes a very long key that is costly to create and costly to send.
+It is unsafe to repeat it with a second message after a key is used; any knowledge 
+of the first message will have knowledge of the second.
+1.1.5 Transposition ciphers
+What is a Transposition Cipher
+The substitution of a cipher text symbol for a plaintext symbol is used in all the 
+strategies studied so far. By doing some kind of permutation on the plaintext letters, a 
+very different type of mapping is accomplished. This approach is referred to as a cipher 
+for transposition.
+Rail Fence
+The easiest of such ciphers is the rail fence, in which the plaintext is written down 
+as a diagonal sequence and then read out as a sequence of rows.
+(c) Amity University Online
+
+
+--- page 29 ---
+24
+Network Security and Cryptography
+Notes
+Amity University Online
+Plaintext = meet at the school house
+We write the message as follows to encrypt this message with a rail fence of depth 2,:     
+m  e  a         t        e        c  o    l         o        s
+e   t    t  h    s        H       o        h        u e
+The encrypted message is
+MEATECOLOSETTHSHOHUE
+Figure - 31: Rail fence
+Row Transposition Ciphers
+A more intricate plan would be to write the message in a square, row by row, and 
+read it off, column by column, while allowing the columns' order to be changed. Then 
+the order of columns becomes the algorithm's key.
+e.g., plaintext = meet at the school house
+ Row Transposition Ciphers
+Writing the message in a square, row by row, and reading the message off, column 
+by column, but permitting the order of the columns, is a more complicated scheme. 
+Then the order of columns becomes the algorithm's key.
+e.g., plaintext = meet at the school house
+ 
+CT = ESOTCUEEHMHLAHSTOETO
+As it has the same letter frequencies as the original plaintext, a pure transposition 
+cipher is easily identified. By undertaking more than one stage of transposition, the 
+transposition cipher can be made dramatically more stable. The effect is a more difficult 
+permutation that is not quickly rebuilt.
+(c) Amity University Online
+
+
+--- page 30 ---
+Network Security and Cryptography
+25
+Notes
+Amity University Online
+ 
+Figure - 32; Transposition Cipher
+1.1.6 Cryptanalysis
+Cryptanalysis is the study of ciphertext, ciphers and cryptosystems in order to 
+learn how they act and to discover and improve ways to destroy or weaken them. For 
+example, cryptanalysts try to decipher ciphertexts without being aware of the plaintext's 
+origin, the encryption key, or the encryption algorithm; Digital signatures, protected 
+hashing, and other cryptographic techniques are frequently the focus of cryptanalysts.
+ 
+Figure - 33: Cryptanalysis
+While the goal of cryptanalysis is to identify flaws in or, in any case, evade 
+cryptographic computations, cryptographers use the findings of cryptanalysts' 
+investigation to enhance, reinforce, or replace flawed computations. Cryptology, 
+the numerical study of codes, figures, and related computations, includes both 
+cryptanalysis, which focuses on deciphering jumbled data, and cryptography, which 
+creates and refines encryption figures and other computations. 
+Researchers may develop attack techniques that completely crack an encryption 
+computation, meaning that ciphertext that has been jumbled by that computation can 
+be gradually unlocked without revealing the encryption key. More often than not, crypto 
+analytic results reveal flaws in the design or application of the computation, which can 
+reduce the number of keys that need to be tried to decipher the target ciphertext. 
+(c) Amity University Online
+
+
+--- page 31 ---
+26
+Network Security and Cryptography
+Notes
+Amity University Online
+(In summary, a brute force attack against that code will only be successful 
+after attempting half of those unique keys). If a cryptanalysis of the code reveals 
+an attack that reduces the number of preliminary keys required to 240 (or just 
+1,099,511,627,776), the computation is essentially rendered ineffective, to the extent 
+that a brute force attack could be employed with commercial off-the-shelf systems.
+Cryptanalysis is rehearsed by a wide scope of associations, including governments 
+planning to interpret other countries' private correspondences; organisations 
+creating security items that utilize cryptanalysts to test their security highlights; and 
+programmers, wafers, free scientists and academicians who look for shortcomings 
+in cryptographic conventions and calculations. It is this steady fight between 
+cryptographers attempting to make sure about data and cryptanalysts attempting to 
+break cryptosystems that moves the whole collection of cryptology information forward.
+Various forms of Attacks
+Here's a quick detail of the various forms of attacks possible:
+In a ciphertext-only attack,
+Approaching at least one scrambled message, the attacker does not consider 
+the plaintext data, the encryption formula being used, or any details regarding the 
+cryptographic key being used. When an intelligence organisation intercepts coded 
+communications from an enemy, they often confront challenges similar to this one. 
+In a known plaintext attack
+The investigator's goal in this scenario is to locate the key that was used to 
+encode the communication and decode it. Here, the expert may approach any or all 
+of the plaintext of the ciphertext. An attacker can use the key to unscramble all of the 
+scrambled messages once it is located. One type of known plaintext attack called 
+"straight cryptanalysis" uses a straightforward estimate to show how a square code 
+Attacks using known plaintext depend on the attacker's ability to decipher and deduce 
+part or all of an encoded message, or even how the original plaintext was organised. 
+For example, if the aggressor is aware that a particular message is being sent to or 
+about a particular person, then the name of that person could be a reasonable known 
+plaintext. 
+In a selected plaintext attack
+The investigator either has access to the device used for encryption or is aware of 
+the encryption computation. The specialist can use the targeted computation to encrypt 
+the selected plaintext and extract information about the key. 
+A differential cryptanalysis It is a type of selected plaintext attack on square codes 
+that examines sets of plaintexts rather than individual plaintexts. This allows the expert 
+to determine how the targeted calculation behaves when it encounters different kinds of 
+data.
+Integral cryptanalysis attacks
+They are similar to differential cryptanalysis assaults, but instead of using sets of 
+plaintexts, they use sets of plaintexts where some parts of the plaintext are changed 
+while the rest is kept constant. This attack can be especially useful in blocking 
+personalities that rely on substitute stage organisations. 
+(c) Amity University Online
+
+
+--- page 32 ---
+Network Security and Cryptography
+27
+Notes
+Amity University Online
+A side-channel attack
+It depends on information obtained from the real framework that is being used 
+for encoding or decoding. Effective side-channel attacks make use of data that is not 
+the plaintext to be encoded or the ciphertext created by the encryption cycle; instead, 
+they may be identified by the amount of force consumed by the scrambling framework, 
+the amount of time it takes for a framework to respond to explicit questions, or the 
+electromagnetic radiation that the encoding framework transmits. 
+A dictionary attack
+Attack is a technique that is frequently applied to confidential critical documents 
+and exploits people's tendency to use passwords that are based on memorable terms 
+or easily guessed letter or number combinations. The way the word reference assault 
+operates is that it encrypts every word in a word reference, then it determines whether 
+the resulting hash matches a secret phrase that has been hidden in the SAM document 
+design or another secret phrase record. 
+Man-in-the-middle attacks        
+It happen when cryptanalysts discover approaches to embed themselves into 
+the correspondence channel between two gatherings who wish to trade their keys for 
+secure correspondence by means of hilter kilter or public key foundation The aggressor 
+at that point plays out a vital trade with each gathering, with the first gatherings 
+accepting they are trading keys with one another. The two gatherings at that point wind 
+up utilizing keys that are known to the assailant. 
+Various forms of cryptanalytic attacks include techniques to trick victims into 
+using a compromised cryptosystem, enticing people to reveal their encryption keys 
+or passwords, and developing diversion programmes that retrieve mystery keys from 
+victims' PCs and send them back to the cryptanalyst. 
+Timing assaults and differential force examination are other names for side-
+channel attacks. When cryptographer Paul Kocher disseminated the results of his 
+research into timing attacks and differential force examination attacks on Diffie-Hellman, 
+RSA, Advanced Mark Standard (DSS), and other cryptosystems, particularly against 
+executions on savvy cards, these attacks gained widespread attention in the latter half 
+of the 1990s.
+Tools for cryptanalysis
+Since cryptanalysis is primarily a numerical subject, most cryptanalysis equipment 
+is described in academic research articles. In any event, anyone interested in learning 
+how to perform cryptanalysis has access to a wide range of tools and resources. 
+Among them are a few of them: 
+The open-source CrypTool project creates online learning resources and e-learning 
+courses on cryptanalysis and cryptographic computations. 
+The National Security Agency was the original intended user of the area explicit 
+language known as "Cryptol," which denotes cryptographic computations. CrypTool 
+is available for public use and distributed under an open-source licence. Clients can 
+now effectively monitor the workings of computer programmes used to generate codes 
+or calculations thanks to CrypTool. Rather of working with entire cryptographic suites, 
+CrypTool can be used to manage cryptographic schedules. 
+(c) Amity University Online
+
+
+--- page 33 ---
+28
+Network Security and Cryptography
+Notes
+Amity University Online
+A programme called Crypto Bench can be used to perform cryptanalysis on 
+ciphertext generated using many standard computations. It can generate 14 different 
+forms of cryptographic hashes as well as two different types of checksums. It can also 
+encode, decode, sign, and verify using six different public key computations. Finally, it 
+can scramble or unscramble using 29 different symmetric encryption calculations. 
+The open-source cryptanalysis tool Ganzúa, which translates to "picklock" or 
+"skeleton key" in Spanish, is used for traditional polyalphabetic and monoalphabetic 
+figures. Ganzúa gives users the ability to describe nearly entirely subjective code and 
+plain letter sets while accounting for the legal cryptanalysis of cryptograms derived from 
+non-English material. Ganzúa is a Java application that works with Linux, Mac OS X, 
+and Windows.
+Requirements and responsibilities for cryptanalysts
+Creating computations, codes, and security frameworks to encrypt sensitive data 
+and information is one of a cryptanalyst's responsibilities. Another is to examine and 
+decode different types of hidden data in cryptographic security frameworks, such as 
+scrambled data, figure writings, and media communications conventions. 
+●	
+Government organisations just as private area organisations employ cryptanalysts 
+to guarantee their organisations are secure and touchy information sent through 
+their PC networks is encoded. 
+●	
+Different obligations that cryptanalysts might be answerable for include:
+●	
+Preventing essential data from being altered, deleted, or banned. 
+●	
+Evaluating, dissecting, and concentrating on flaws in cryptographic security 
+computations and frameworks. 
+●	
+Developing security frameworks in advance of vulnerabilities. 
+●	
+Developing factual and numerical models to analyse data and address security 
+concerns. 
+●	
+Examining computer models for accuracy and stability
+●	
+Examining, investigating and testing new cryptology speculations and applications. 
+●	
+Looking for shortcomings in correspondence lines. 
+●	
+Guaranteeing monetary information is scrambled and available just to approved 
+clients. 
+1.1.7 Steganography
+What is Steganography
+That is the art of concealing a message inside a real entity or another message. A 
+data file, document, picture, or video is hidden inside another file, message, image, or 
+video in a computing/electronic sense.
+Steganography is the method used in order to conceal confidential information 
+inside an ordinary, non-secret, file or message.
+(c) Amity University Online
+
+
+--- page 34 ---
+Network Security and Cryptography
+29
+Notes
+Amity University Online
+ 
+Figure - 34: Digital Steganography
+Who uses steganography?
+Steganography is used by malicious programmers to accomplish a variety of tasks, 
+such as hiding malicious payloads and content documents. LSB steganography is 
+a common technique used by malware engineers to cloak the code for their virus in 
+images of celebrities and well-known songs. Once the document is downloaded into the 
+victim's computer, the malware is then executed by another programme.
+"The word 'diversion' is used to describe a dangerous record concealed within 
+a harmless record. Large-scale attacks can also be classified as steganography, 
+according to Winkler of Trustwave. 
+"Steganography will be utilised by inventive programmers at whatever point there is 
+a need to sidestep securities." 
+All things considered; steganography is not exclusively used by cybercriminals; 
+other performers also employ it frequently. Spies use this tactic to communicate with 
+their war room without raising suspicions from their hosts.
+Skilled dissenters and common liberties advocate also utilise steganography to 
+transmit sensitive information.
+What is the utilization of Steganography? 
+There are numerous approaches to cover data utilizing Steganography. The most 
+often used method is inserting data into digital images. We all understand that a JPEG 
+image, which is a state of computerised images, has a few megabytes of information 
+stored in its pixels. This makes room for steganographic data to be implanted into 
+the advanced text. Utilising steganographic applications, a programmer modifies the 
+smallest portions of the data record and inserts a malicious code into the image. The 
+malware is activated when the targeted client downloads and opens the photo file 
+on their computer. Depending on how it was designed, the malware may now create 
+a window through which the attacker could control the victim's device or business. 
+Steganography's drawback is that the first image and the steganographic image have a 
+subtle contrast that makes it impossible for the unaided eye to distinguish between the 
+two. 
+(c) Amity University Online
+
+
+--- page 35 ---
+30
+Network Security and Cryptography
+Notes
+Amity University Online
+When is steganography used by malevolent hackers?
+Does Steganography get used at all? 
+Steganography is, in fact, still widely used by online criminals. Recent attacks 
+reveal that security analysts discovered another malware campaign that concealed 
+its spyware using WAV sound files. It is acknowledged that the attackers inserted the 
+harmful code into the WAV sound recording using steganography.
+ 
+Figure - 35: Steganography is a technique that allows one file to be hidden inside another. 
+Methods Applied to Steganography
+1. 	 The Least Important Information
+	
+Using this Steganography technique, the attacker picks out the least important 
+information in the transporter image and replaces it with a mysterious message 
+or, in this case, a malicious code. At the point when the objective downloads the 
+transporter document, they bring the malware into their PC which permits the 
+aggressor admittance to this gadget and the hack starts. Network safety experts 
+regularly use sandboxes to recognize these bad records. In any case, dark cap 
+programmers have created different strategies for bypassing sandboxes like rest 
+fixing. Rest fixed malware isn't handily recognized by the sandbox since it acts like 
+benevolent and purchases time while contemplating the circumstance relics of the 
+sandbox and executes when the sandbox is defenseless.
+2. 	 Palette Based Technique
+	
+This technique often utilizes digital images as carriers of malware. Here, the attackers 
+first encrypt the message and then conceal it in the cover image's extended palette. 
+Even if this strategy may hold a small number of data, because the malware is 
+encrypted and requires a ton of time to decode, it frustrates threat hunters.
+3. 	 Secure Cover Selection
+	
+This is an exceptionally intricate method where the digital hoodlums think about 
+the squares of the transporter picture to the squares of their particular malware. On 
+the off chance that a picture with similar squares as the malware is discovered, it 
+is picked as the possibility to convey the malware. The indistinguishable malware 
+blocks are then cautiously fitted into the transporter picture. The subsequent picture 
+is indistinguishable from the first and the most exceedingly awful part is that this 
+picture isn't hailed as a danger by location programming and applications. 
+	
+These are simply yet a couple of strategies by which dark cap programmers baffle 
+moral programmers utilizing Steganography. Steganography permits assailants to 
+work in secrecy mode while leading a genuine assault. The greater part of these 
+(c) Amity University Online
+
+
+--- page 36 ---
+Network Security and Cryptography
+31
+Notes
+Amity University Online
+assaults are zero-day abuses which give danger trackers restless evenings. Some 
+preventive measures against Steganography incorporate the organisation of security 
+patches, refreshing programming, and instructing end-clients. 
+Accepting moral hacking preparing from EC-Council will furnish you with the 
+information and expertise to figure out how the foes are breaking into networks and 
+unleashing destruction. Once expertly prepared, you will get the Certified Ethical 
+Hacker (CEH) affirmation. This will show associations that you are knowledgeable in 
+more than 340 assault innovations that are regularly utilized by dark cap programmers 
+and white cap programmers, the same.
+How to Detect Steganography
+The act of distinguishing steganography is called 'steganalysis'. There are a few 
+devices that can distinguish the presence of shrouded information, for example, 
+StegExpose and StegAlyze. A few experts utilize other general examination 
+apparatuses, for example, hex watchers to distinguish abnormalities in documents. 
+Discovering documents that have been altered through steganography keeps 
+on excess a test, in any case. For example, realizing where to begin searching for 
+concealed information in the large numbers of pictures being transferred via web-based 
+media consistently is for all intents and purposes inconceivable. 
+"The information resembles/seems as though commotion, so it is hard to recognize 
+from the current clamour. Or then again it is in next to no information," Ortiz says. 
+"What's more, there are so various concealing methods that you need numerous 
+recognition procedures to distinguish them – there is nobody size-fits-all" 
+Guardicore's Harpaz cautions: "Danger entertainers have a fair munitions stockpile 
+of steganography procedures they use as a component of their usual way of doing 
+things – it's anything but another pattern. As our examination shows, it stays in the wild 
+right up 'til today and isn't probably going to vanish."
+1.1.8 Stream and Block ciphers
+Block and Stream Cyphers
+The difference between stream and block cyphers in cryptographic symmetric 
+algorithms is important.
+One plaintext symbol is specifically changed into a ciphertext symbol by stream 
+cyphers. 
+Figure -36: Stream ciphers
+(c) Amity University Online
+
+
+--- page 37 ---
+32
+Network Security and Cryptography
+Notes
+Amity University Online
+Advantage:
+Speed of change: calculations are direct as expected and steady in space. 
+Low blunder propagation: a mistake in scrambling one image likely won't influence 
+resulting images. 
+Disadvantage: 
+Low dissemination: all data of a plaintext image is contained in a solitary ciphertext 
+image. 
+Vulnerability to additions/changes: a functioning interceptor who breaks the 
+calculation may embed false text that looks valid.
+block ciphers:  A set of plaintext symbols is encrypted by block ciphers as one 
+block. 
+An example of a stream cipher is a simple substitution; Columnar 
+A block cipher is a transposition. 
+Block ciphers are the bulk of current symmetric encryption algorithms. 
+Block sizes vary according to (64 bits for DES, 128 bits for AES, etc.).
+ 
+Figure - 37: block ciphers
+Advantage: 
+1. 	 High dissemination: data from one plaintext image is diffused into a few 
+ciphertext images. 
+2. 	 Resistance to altering: hard to embed images without recognition. 
+Disadvantage: 
+1. 	 Gradualness of encryption: a whole square should be collected prior to 
+encryption/unscrambling can start. 
+2. 	 Mistake propagation: A blunder in one image may ruin the whole square.
+(c) Amity University Online
+
+
+--- page 38 ---
+Network Security and Cryptography
+33
+Notes
+Amity University Online
+1.1.9 A Brief Overview of Hardware Security
+What is Hardware Security?
+Hardware security has become a fascinating issue really with a consistently 
+growing number of analysts from related examination spaces joining this district. 
+Regardless, the enthusiasm for hardware security is reliably blended in with 
+online confirmation and cryptography, particularly cryptographic gear. For a similar 
+explanation, the evaluation level of gear security has never been obviously depicted. To 
+help specialists who have really participated here better comprehend the difficulties and 
+tries inside the gear security region and to help both wise neighbour industry examines 
+countermeasures and answers for manage hardware security issues, we will present 
+the fundamental considerations of gear security comparatively as its relations to related 
+examination subjects in this review paper. Arising gear security subjects will in like way 
+be obviously portrayed through which the future model will be clarified, making this 
+examination paper a reasonable reference for the methodology with research attempts 
+around there.
+Introduction
+Hardware has long been seen to support the entire operating system as a 
+trustworthy group and is mostly viewed as an abstract layer running instructions from 
+the software layer. Hardware-related security analysis is also sometimes referred to 
+hardware cryptographic algorithm implementations where hardware is used to enhance 
+the accuracy and reliability of computation for cryptographic applications.
+Different Type of Hardware Security Tool  
+Hardware Trojan Detection
+Equipment security has become an intriguing issue as of late with an ever-
+increasing number of analysts from related exploration spaces joining this territory. 
+Nonetheless, the comprehension of equipment security is regularly blended in with 
+online protection and cryptography, particularly cryptographic equipment. For a 
+similar explanation, the examination extent of equipment security has never been 
+obviously characterized. To help scientists who have as of late participated here better 
+comprehend the difficulties and undertakings inside the equipment security area and 
+to help both scholarly community and industry explore countermeasures and answers 
+for take care of equipment security issues, we will present the vital ideas of equipment 
+security just as its relations to related exploration themes in this review paper. Arising 
+equipment security subjects will likewise be plainly portrayed through which the 
+future pattern will be expounded, making this study paper a decent reference for the 
+proceeding with research endeavours around there.
+Formal Veriﬁcation
+Security conventions or cryptographic conventions are little appropriated programs 
+that guarantee security properties in a threatening climate. Normal instances of 
+properties that should be guaranteed are mystery and verification. For example, when 
+we think about a home financial application, we need to guarantee that the data is 
+for sure shipped off our bank—this is a confirmation issue—and that the data stays 
+private—this is a mystery property. At times, we may likewise require more refined 
+properties. In our home-banking model, we may consider non-disavowal: it is beyond 
+the realm of imagination to expect to deny, or renounce later that some exchange has 
+(c) Amity University Online
+
+
+--- page 39 ---
+34
+Network Security and Cryptography
+Notes
+Amity University Online
+been done, i.e., there exists some information, regularly a computerized signature that 
+can be summoned as confirmation that a given exchange has been mentioned. Another 
+intriguing security property one can consider is obscurity. In this instructional exercise, 
+for straightforwardness, we will zero in on mystery.
+Security conventions depend on cryptographic natives, for example, symmetric 
+and unbalanced encryption, computerized marks, and single direction hash capacities. 
+We here expect an essential knowledge of these natives (without anyway requiring a 
+profound comprehension of the calculations which acknowledge them). The intrigued 
+per user can discover more insights regarding such calculations. History has illustrated 
+that security conventions are enormously blunder inclined, in any event, for short 
+conventions. The most well-known model is likely the Needham-Schroeder public-key 
+convention, a 3-line convention, for which Lowe discovered an assault 17 years after 
+its distribution. The fundamental paper of Dolev and Yao has started the utilization of 
+formal strategies to approve security conventions. The two primary thoughts of this 
+model are: 
+(I)	
+The foe has full oversight of the organisation, i.e., he can eliminate messages and 
+addition any message he can develop. 
+(II)	 cryptography is awesome, regularly it is difficult to fix encryption or take in anything 
+from the plaintext except if the foe realizes the unscrambling key. The information sent 
+in the convention and controlled by the gate crasher is formalized utilizing theoretical 
+variable based math. Following this methodology, there have been an enormous 
+assortment of formalisms to reason about the accuracy of safety conventions. In 
+this instructional exercise, we don't plan to survey these techniques, however we 
+explicitly centre around some new, completely mechanized strategies.
+Counterfeiting Prevention and IC Protection
+Other than equipment Trojans, the IC production network likewise experiences 
+security dangers at different points such as IP robbery, IC cloning, equipment indirect 
+accesses, and fake chips. Numerous methods have been proposed to dissuade 
+such assaults, Further, understanding the severity of fake chips in basic frameworks, 
+equipment security analysts began researching into this area, hoping to identify faked 
+or illicitly checked chips before their arrangement. Information examination and machine 
+learning strategies have been utilized to recuperate chip identiﬁcation. On-chip maturing 
+sensors are a popular answer for fake chip detachment . Another arising issue is IC 
+over production and IP robbery, which happens essentially due to absence of oversight 
+as well as immediate involvement in creation subsequent to ignoring the plan to the 
+foundry. Adequately, there are no plausible arrangements to determine if the foundry is 
+creating precisely what the buyer requested, or in the event that they have over-produced 
+the chips. To tackle this issue split assembling was proposed, which enabled IP sellers 
+to depend on abroad assembling administrations and not send the whole plan data. 
+This concept is as of late extended from advanced space to RF/simple circuits [88]. In 
+this technique, front-end of the line (FEOL) which requires cutting edge innovation is 
+manufactured abroad however the back-finish of the line (BEOL) is included homegrown 
+foundries with the end goal that the abroad foundries just learn fractional design data. In 
+any case, the adequacy of this strategy is as yet being talked about
+Physical-Unclonable Functions
+Symmetrical to these equipment security regions is the advancement of security 
+natives, which are investigated because of their high efﬁciency and minimal effort 
+(c) Amity University Online
+
+
+--- page 40 ---
+Network Security and Cryptography
+35
+Notes
+Amity University Online
+contrasted with programming solutions. The driving model is the truly unclonable 
+capacity (PUF) which use gadget mismatches caused by measure varieties to create 
+novel personalities, frequently Challenge-reaction sets, for each chip [109]. While there 
+are numerous standards toward assessing PUF plans, the principle measures which 
+are closely identified with equipment security applications are recorded below:
+●
+●
+Randomness. The arbitrariness is the estimation showing how arbitrary the 
+reactions are given any input patterns.
+●
+●
+Uniqueness. The uniqueness is another basic standard demonstrating how 
+powerful the PUF plan is under the diverse ecological conditions as well as noises.
+●
+●
+Enhanced security. The security property quantifies how tough the PUF plans are 
+under attack. Truth be told, different assault strategies, including AI and gadget 
+displaying, have been grew as of late to break PUF plans and anticipate PUF 
+reactions
+Emerging Devices in Hardware Security
+While existing equipment security strategies are generally in the territories of chip 
+producing, circuit design, and circuit testing, future patterns will cover a more extensive 
+territory to give equipment active roles in framework level insurance. Speciﬁcally, two 
+equipment security research territories will be presented to show equipment security 
+from a solitary layer to cross layers, arising semiconductors in equipment security 
+applications and equipment helped network safety arrangements, remembering arising 
+gadgets for hardware security applications and equipment helped online protection. 
+Specialists in arising gadgets are at present researching their applications in more 
+extensive security areas. Because of the accessibility of countless arising gadget 
+models, for example, grapheme transistors ,atomic switches, memristors, MOTT FET, 
+turn FET, nonmagnetic and all-turn rationale, turn wave devices, OST-RAM, magneto 
+resistive arbitrary access memory (MRAM), spintronic gadgets, and so on
+Hardware-Assisted Computer Security
+In addition to the circuit-level IC supply chain protection methods, hardware 
+platforms can also be involved in software-level protection schemes. Cybersecurity 
+researchers often rely on layered security protection methods and have developed 
+various methods to protect a higher abstract layer (e.g., guest OS) through security 
+enhancements at a lower abstract layer, (e.g., virtual machine monitor or hypervisor). 
+Through this chain, cybersecurity protection schemes have been pushed
+downward from guest OS to hypervisors. Following this trend, new methods are 
+under development through which the hardware infrastructure is modiﬁed to directly 
+support sophisticated security policies such that protection schemes operating at the 
+system-level will be more efﬁcient. In fact, security-enhanced hardware supporting 
+cybersecurity protections have become quite popular in both academic research and 
+industrial products recently
+Notwithstanding the circuit-level IC production network assurance techniques, 
+equipment stages can also be engaged with programming level insurance plans. 
+Network safety specialists frequently depend on layered security insurance strategies 
+and have created different techniques to ensure a higher theoretical layer (e.g., visitor 
+OS) through security upgrades at a lower unique layer, (e.g., virtual machine monitor 
+or hypervisor). Through this chain, network safety security plans have been pushed 
+downward from visitor OS to hypervisors. Following this pattern, new techniques 
+(c) Amity University Online
+
+
+--- page 41 ---
+36
+Network Security and Cryptography
+Notes
+Amity University Online
+are under development through which the equipment framework is modiﬁed to 
+straightforwardly uphold complex security policies such that assurance plans working 
+at the framework level will be more efﬁcient. In fact, security-upgraded equipment 
+supporting network safety insurances have gotten very famous in both academic 
+research and mechanical items as of late.
+Summary
+●	
+Network security is crucial for safeguarding computer systems and data from internet 
+threats. It involves implementing measures to secure network infrastructure and 
+data transmission, protecting against unauthorized access, misuse, modification, 
+and denial of service attacks.
+●	
+Attacks can be classified as either passive or active. The goal of a passive attack is 
+to try and use information from the system without affecting any system resources. 
+The goal of an active attack is to change system resources or interfere with their 
+entire functioning. 
+●	
+Various types of security mechanisms used to protect data and information in 
+network security are Encipherment, Access Control, Notarization, Data Integrity, 
+Authentication Exchange, Bit Stuffing and Digital Signature.
+●	
+Substitution techniques in cryptography involve replacing plaintext letters with other 
+letters, numbers, or symbols. These techniques include the Caesar cipher, Playfair 
+cipher, polyalphabetic ciphers, and the Vigenere cipher.
+●	
+Cryptanalysis is the study of ciphertext, ciphers, and cryptosystems to understand 
+their behaviour and discover weaknesses to improve or break them. Cryptanalysts 
+attempt to decrypt ciphertexts without knowing the plaintext, encryption key, or 
+algorithm. They focus on cryptographic techniques like digital signatures and 
+hashing.
+●	
+A programme called Crypto Bench can be used to perform cryptanalysis on ciphertext 
+generated using many standard computations.
+●	
+Steganography is the practice of concealing a message within another non-secret 
+file, message, image, or video. It involves hiding data files, documents, pictures, or 
+videos inside other files to prevent detection.
+●	
+Hardware security has become a compelling area of research, with increasing 
+numbers of researchers from related fields focusing on it. However, hardware security 
+is often intertwined with online security and cryptography, especially cryptographic 
+hardware.
+Glossary
+●	
+Plaintext: It denotes the original message.
+●	
+Ciphertext: It denotes a message that is coded. 
+●	
+Enciphering or encryption: The procedure that transforms plaintext into ciphertext
+●	
+Deciphering or decryption:  The process of getting the plaintext back from the 
+ciphertext.
+●	
+Encryption calculation: The plaintext undergoes several replacements and 
+modifications during the encryption computation. 
+●	
+Secret key: The key has value independent of both the computation and the plaintext. 
+The calculation will deliver an alternate yield contingent upon the particular key being 
+utilized at that point.
+(c) Amity University Online
+
+
+--- page 42 ---
+Network Security and Cryptography
+37
+Notes
+Amity University Online
+●	
+Decoding calculation: This is essentially the encryption computation done in reverse. 
+It produces the first plaintext by using the mystery key and the ciphertext.
+●	
+Substitution Techniques: A technique of substitution is one in which plaintext letters 
+are replaced by other letters or by numbers or symbols. Substitution means replacing 
+plaintext bit patterns with cipher text bit patterns if the plaintext is treated as a series 
+of bits.
+●	
+Cryptanalysis: It is to identify and exploit flaws in cryptographic systems, while 
+cryptographers use these findings to enhance security. Cryptology encompasses 
+both cryptanalysis and cryptography, with cryptographers creating encryption 
+algorithms and cryptanalysts deciphering them.
+●	
+Steganography: It is used to conceal confidential information within seemingly 
+innocuous files or messages, making it a valuable technique for secure communication 
+and data protection.
+●	
+Block ciphers:  A set of plaintext symbols is encrypted by block ciphers as one block. 
+Check Your Understanding
+1. 	 Which of the following best describes the difference between passive and active 
+attacks?
+a) 	 Passive attacks alter system resources, while active attacks attempt to learn or 
+use system data.
+b) 	 Passive attacks attempt to learn or use system data without altering any 
+system resources, while active attacks attempt to change system resources.
+c) 	 Passive attacks and active attacks both attempt to change system resources.
+d) 	 Passive attacks and active attacks both attempt to learn or use system data.
+2.	
+What is the primary goal of network security?
+a)	 To compromise the confidentiality, integrity, or availability of information.
+b)	 To increase the complexity of network infrastructure.
+c)	 To enhance the speed and efficiency of data transmission.
+d)	 To prevent unauthorized access, misuse, modification, or denial of service 
+attacks.
+3.	
+Which security mechanism involves the use of digital data that is invisible to the 
+human sight and is used as an electronic signature?
+a)	 Digital Signature 
+b)	 Access Control
+c)	 Notarization
+d)	 Encipherment
+4.	
+What is a characteristic of a brute-force attack?
+a)	 It involves decrypting ciphertext without attempting all possible keys.
+b)	 It requires knowing the plaintext before attempting decryption.
+c)	 It involves attempting every conceivable key until a readable translation of the 
+ciphertext into plaintext is obtained.
+d)	 It is more efficient than other types of attacks.
+(c) Amity University Online
+
+
+--- page 43 ---
+38
+Network Security and Cryptography
+Notes
+Amity University Online
+5.	
+What does the rail fence cipher primarily involve?
+a) 	 Substitution of ciphertext symbols for plaintext symbols
+b) 	 Permutation of plaintext letters
+c) 	 Reversal of plaintext letters
+d) 	 Rearrangement of plaintext letters in a diagonal sequence
+Exercise
+1. 	 Describe how the Notarization security mechanism works in ensuring secure 
+communication.
+2. 	 Describe the role of digital signatures in ensuring the security of electronic 
+communications and verifying the identity of the sender in network security.
+3. 	 Using the Caesar cipher with a shift of 5, encrypt the following plaintext: "hello world"
+4. 	 Explain the process of encrypting a message using a row transposition cipher. Use 
+the example "meet at the school house" to illustrate your explanation.
+5.	
+Describe the importance of hardware security in today's digital landscape, highlighting 
+its role in protecting sensitive information and ensuring the integrity of cryptographic 
+systems.
+Learning Activities
+1. 	 How do security mechanisms such as encryption, access control, and digital 
+signatures work together to protect data in network security? Provide examples to 
+illustrate your answer.
+2. 	 How does hardware security differ from cybersecurity and cryptography, and what 
+are the key challenges and emerging trends in the field of hardware security? Provide 
+examples to illustrate your points.
+Check Your Understanding (Answers)
+1.	 b)	
+2.	
+d)	
+3.	
+a)	
+4.	 c)	
+5.	 b)
+(c) Amity University Online

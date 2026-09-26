@@ -1,0 +1,37 @@
+{
+  "cmid": "326339",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541637&cmid=326339",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "The Strength of the Ciphertext depends upon",
+      "options": [
+        "a. Length of plain text",
+        "b. Length of the encryption key",
+        "c. None of the above",
+        "d. All of the above"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Cipher strength is driven primarily by key length (Kerckhoffs/SLM emphasis)."
+    },
+    {
+      "no": "2",
+      "stem": "Which of the following is a mode of operation for the Block ciphers in cryptography?",
+      "options": [
+        "a. Electronic Code Book (ECB)",
+        "b. Cipher Block Chaining (CBC)",
+        "c. Counter (CTR) mode",
+        "d. All of the above"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "ECB, CBC, and CTR are standard block-cipher modes of operation."
+    }
+  ]
+}

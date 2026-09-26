@@ -1,0 +1,35 @@
+{
+  "cmid": "326358",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541712&cmid=326358",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Fermat’s and Euler’s theorem depends on",
+      "options": [
+        "a. Even Number",
+        "b. ODD Number",
+        "c. Complex Number",
+        "d. Prime Number"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Fermat/Euler theorems are stated for (modular) prime-related arithmetic."
+    },
+    {
+      "no": "2",
+      "stem": "f(x, y) = x3 + xy2 + 901 satisfies the Euler’s theorem.",
+      "options": [
+        "a. True",
+        "b. False"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "The given polynomial claim is not a valid Euler-theorem identity as stated."
+    }
+  ]
+}

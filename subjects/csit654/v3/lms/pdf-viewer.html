@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SLM PDF — CSIT654</title>
+  <style>
+    :root { --navy:#0b172a; --line:#e2e8f0; --bg:#f8fafc; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Segoe UI", system-ui, sans-serif; background: var(--bg); color: #0f172a; }
+    .bar {
+      display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;
+      padding: 0.55rem 0.85rem; background: #fff; border-bottom: 1px solid var(--line);
+      position: sticky; top: 0; z-index: 5;
+    }
+    .bar strong { margin-right: auto; }
+    .bar button, .bar a {
+      font: inherit; border: 1px solid var(--line); background: #fff; border-radius: 999px;
+      padding: 0.35rem 0.75rem; cursor: pointer; color: inherit; text-decoration: none;
+    }
+    .bar button:hover, .bar a:hover { border-color: #93c5fd; }
+    #status { color: #64748b; font-size: 0.88rem; padding: 0.5rem 0.85rem; }
+    #viewer {
+      display: flex; flex-direction: column; align-items: center; gap: 0.75rem;
+      padding: 0.75rem; min-height: 70vh;
+    }
+    canvas { max-width: 100%; height: auto; box-shadow: 0 8px 24px rgba(15,23,42,0.12); background: #fff; }
+    .err { color: #b91c1c; padding: 1rem; }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+  <div class="bar">
+    <strong id="title">SLM PDF</strong>
+    <button type="button" id="prev">← Prev</button>
+    <span id="pageLabel">—</span>
+    <button type="button" id="next">Next →</button>
+    <a id="rawLink" href="#" target="_blank" rel="noopener">Download / raw PDF</a>
+    <a href="index.html">LMS home</a>
+  </div>
+  <div id="status">Loading PDF…</div>
+  <div id="viewer"></div>
+  <script>
+  (function () {
+    const params = new URLSearchParams(location.search);
+    const file = params.get("file") || "../source/slm.pdf";
+    let pageNum = Math.max(1, Number(params.get("page") || 1) || 1);
+    const status = document.getElementById("status");
+    const viewer = document.getElementById("viewer");
+    const pageLabel = document.getElementById("pageLabel");
+    const raw = document.getElementById("rawLink");
+    raw.href = file;
+
+    if (!window["pdfjsLib"]) {
+      status.innerHTML = '<p class="err">PDF.js failed to load (CDN blocked?). Try the raw PDF link, or serve with Range support.</p>';
+      return;
+    }
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+    let pdfDoc = null;
+
+    function paintLabel() {
+      pageLabel.textContent = pdfDoc
+        ? `Page ${pageNum} / ${pdfDoc.numPages}`
+        : `Page ${pageNum}`;
+    }
+
+    async function renderPage(num) {
+      const page = await pdfDoc.getPage(num);
+      const scale = Math.min(1.35, (window.innerWidth - 48) / page.getViewport({ scale: 1 }).width);
+      const viewport = page.getViewport({ scale: Math.max(0.8, scale) });
+      const canvas = document.createElement("canvas");
+      const ctx = canvas.getContext("2d");
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+      viewer.innerHTML = "";
+      viewer.appendChild(canvas);
+      await page.render({ canvasContext: ctx, viewport }).promise;
+      paintLabel();
+      status.textContent = "";
+      // keep URL shareable
+      const u = new URL(location.href);
+      u.searchParams.set("file", file);
+      u.searchParams.set("page", String(num));
+      history.replaceState(null, "", u);
+    }
+
+    document.getElementById("prev").addEventListener("click", () => {
+      if (!pdfDoc || pageNum <= 1) return;
+      pageNum -= 1;
+      renderPage(pageNum);
+    });
+    document.getElementById("next").addEventListener("click", () => {
+      if (!pdfDoc || pageNum >= pdfDoc.numPages) return;
+      pageNum += 1;
+      renderPage(pageNum);
+    });
+
+    pdfjsLib.getDocument(file).promise.then((doc) => {
+      pdfDoc = doc;
+      if (pageNum > doc.numPages) pageNum = doc.numPages;
+      document.getElementById("title").textContent = "SLM · Network Security & Cryptography";
+      return renderPage(pageNum);
+    }).catch((err) => {
+      status.innerHTML = `<p class="err">Could not open PDF: ${String(err.message || err)}. <a href="${file}">Try raw file</a></p>`;
+    });
+  })();
+  </script>
+</body>
+</html>

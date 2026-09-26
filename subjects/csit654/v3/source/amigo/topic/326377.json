@@ -1,0 +1,37 @@
+{
+  "cmid": "326377",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541798&cmid=326377",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Which one is called as cryptographic checksum added to the message which serves as its authenticator.",
+      "options": [
+        "a. Path Analysis",
+        "b. Traffic Analysis",
+        "c. Time Analysis",
+        "d. Message Authentication Code"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "A MAC is a cryptographic checksum authenticating a message."
+    },
+    {
+      "no": "2",
+      "stem": "What is calculated by subjecting M to a function C called as MAC function using the secret key K.",
+      "options": [
+        "a. Cryptographic Checksum",
+        "b. Digital Checksum",
+        "c. Message Checksum",
+        "d. None of These"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "MAC function C produces a cryptographic checksum on message M."
+    }
+  ]
+}

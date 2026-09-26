@@ -1,0 +1,37 @@
+{
+  "cmid": "326424",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541895&cmid=326424",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Which attack or sniffer is a computer program or computer hardware such as a packet capture appliance, that can intercept and log traffic that passes over a computer network or part of a network.",
+      "options": [
+        "a. Packet Analyzer",
+        "b. Buffer Overflow",
+        "c. Port Scanning",
+        "d. None of These"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "A packet analyzer/sniffer captures and inspects traffic."
+    },
+    {
+      "no": "2",
+      "stem": "Which attack occurs when the volume of data exceeds the storage capacity of the memory buffer.",
+      "options": [
+        "a. Packet Analyzer",
+        "b. Buffer Overflow",
+        "c. Port Scanning",
+        "d. None of These"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Buffer overflow occurs when data exceeds buffer capacity."
+    }
+  ]
+}

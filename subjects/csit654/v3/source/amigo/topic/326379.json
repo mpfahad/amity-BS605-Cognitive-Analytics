@@ -1,0 +1,38 @@
+{
+  "cmid": "326379",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541804&cmid=326379",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Which version of SHA belongs to Secure Hash Algorithm",
+      "options": [
+        "a. SHA-0",
+        "b. SHA-1",
+        "c. SHA-2",
+        "d. SHA-3",
+        "e. All of the Above"
+      ],
+      "correct": 4,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "SHA family includes SHA-0/1/2/3 variants covered in the material."
+    },
+    {
+      "no": "2",
+      "stem": "The secure hash algorithm takes as input a message with a maximum length less than 264 bits and produces a ________ bit message digest.",
+      "options": [
+        "a. 160",
+        "b. 128",
+        "c. 256",
+        "d. None of These"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "SHA-1 input limit is < 2^64 bits; listed sizes are digest lengths, not the max input."
+    }
+  ]
+}

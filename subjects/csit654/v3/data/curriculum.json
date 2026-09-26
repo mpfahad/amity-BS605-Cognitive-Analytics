@@ -1,0 +1,388 @@
+{
+  "subject": "csit654",
+  "code": "CSIT654",
+  "title": "Network Security & Cryptography",
+  "progressKey": "csit654_v3",
+  "modules": [
+    {
+      "id": 1,
+      "title": "Introduction to Network Security",
+      "short": "Network Security Foundations",
+      "blurb": "Threats, attacks, services, classical encryption, and hardware security.",
+      "color": "m1",
+      "topicCount": 9,
+      "topics": [
+        {
+          "id": "1.1.1",
+          "title": "Introduction to Security Attacks",
+          "group": "Network security",
+          "lmr": false
+        },
+        {
+          "id": "1.1.2",
+          "title": "Services and Mechanism",
+          "group": "Network security",
+          "lmr": false
+        },
+        {
+          "id": "1.1.3",
+          "title": "Classical Encryption Techniques",
+          "group": "Network security",
+          "lmr": false
+        },
+        {
+          "id": "1.1.4",
+          "title": "Substitution Ciphers",
+          "group": "Network security",
+          "lmr": false
+        },
+        {
+          "id": "1.1.5",
+          "title": "Transposition Ciphers",
+          "group": "Network security",
+          "lmr": false
+        },
+        {
+          "id": "1.1.6",
+          "title": "Cryptanalysis",
+          "group": "Network security",
+          "lmr": false
+        },
+        {
+          "id": "1.1.7",
+          "title": "Steganography",
+          "group": "Network security",
+          "lmr": false
+        },
+        {
+          "id": "1.1.8",
+          "title": "Stream and Block Ciphers",
+          "group": "Network security",
+          "lmr": false
+        },
+        {
+          "id": "1.1.9",
+          "title": "Overview of Hardware Security",
+          "group": "Network security",
+          "lmr": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Secret & Public Key Cryptography",
+      "short": "Cryptography",
+      "blurb": "Block ciphers, Feistel, DES, AES, number theory, and RSA.",
+      "color": "m2",
+      "topicCount": 14,
+      "topics": [
+        {
+          "id": "2.1.1",
+          "title": "Modern Block Ciphers: Principles",
+          "group": "Secret Key Cryptography",
+          "lmr": false
+        },
+        {
+          "id": "2.1.2",
+          "title": "Shannon’s Theory of Confusion and Diffusion",
+          "group": "Secret Key Cryptography",
+          "lmr": false
+        },
+        {
+          "id": "2.1.3",
+          "title": "Feistel Structure",
+          "group": "Secret Key Cryptography",
+          "lmr": false
+        },
+        {
+          "id": "2.1.4",
+          "title": "Data Encryption Standard (DES)",
+          "group": "Secret Key Cryptography",
+          "lmr": false
+        },
+        {
+          "id": "2.1.5",
+          "title": "Strength of DES",
+          "group": "Secret Key Cryptography",
+          "lmr": false
+        },
+        {
+          "id": "2.1.6",
+          "title": "Idea of Differential Cryptanalysis",
+          "group": "Secret Key Cryptography",
+          "lmr": false
+        },
+        {
+          "id": "2.1.7",
+          "title": "Block Cipher Modes of Operations",
+          "group": "Secret Key Cryptography",
+          "lmr": false
+        },
+        {
+          "id": "2.1.8",
+          "title": "Triple DES",
+          "group": "Secret Key Cryptography",
+          "lmr": false
+        },
+        {
+          "id": "2.2.1",
+          "title": "Advanced Encryption Standard (AES)",
+          "group": "Public Key Cryptography",
+          "lmr": false
+        },
+        {
+          "id": "2.2.2",
+          "title": "Fermat’s and Euler’s Theorem",
+          "group": "Public Key Cryptography",
+          "lmr": false
+        },
+        {
+          "id": "2.2.3",
+          "title": "Chinese Remainder Theorem",
+          "group": "Public Key Cryptography",
+          "lmr": false
+        },
+        {
+          "id": "2.2.4",
+          "title": "Principals of Public Key Crypto Systems",
+          "group": "Public Key Cryptography",
+          "lmr": false
+        },
+        {
+          "id": "2.2.5",
+          "title": "RSA Algorithm",
+          "group": "Public Key Cryptography",
+          "lmr": false
+        },
+        {
+          "id": "2.2.6",
+          "title": "Security of RSA Algorithm",
+          "group": "Public Key Cryptography",
+          "lmr": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Authentication Standards & Key Management",
+      "short": "Authentication & Integrity",
+      "blurb": "MAC, hashing, SHA, message digests, and digital signatures.",
+      "color": "m3",
+      "topicCount": 9,
+      "topics": [
+        {
+          "id": "3.1.1",
+          "title": "Introduction of Message Authentication Codes",
+          "group": "Message Authentication Codes",
+          "lmr": false
+        },
+        {
+          "id": "3.1.2",
+          "title": "Authentication Functions",
+          "group": "Message Authentication Codes",
+          "lmr": false
+        },
+        {
+          "id": "3.1.3",
+          "title": "Authentication Requirements",
+          "group": "Message Authentication Codes",
+          "lmr": false
+        },
+        {
+          "id": "3.1.4",
+          "title": "Message Authentication Code (MAC)",
+          "group": "Message Authentication Codes",
+          "lmr": false
+        },
+        {
+          "id": "3.1.5",
+          "title": "Secure Hash Algorithm (SHA)",
+          "group": "Message Authentication Codes",
+          "lmr": false
+        },
+        {
+          "id": "3.1.6",
+          "title": "Message Digest",
+          "group": "Message Authentication Codes",
+          "lmr": false
+        },
+        {
+          "id": "3.2.1",
+          "title": "Overview of Digital Signatures",
+          "group": "Digital Signatures",
+          "lmr": false
+        },
+        {
+          "id": "3.2.2",
+          "title": "Digital Signature Standards (DSS)",
+          "group": "Digital Signatures",
+          "lmr": false
+        },
+        {
+          "id": "3.2.3",
+          "title": "Proof of Digital Signature Algorithm",
+          "group": "Digital Signatures",
+          "lmr": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Web Security",
+      "short": "Web & Communication Security",
+      "blurb": "Kerberos, ACL, PGP, S/MIME, IPsec, SSL/TLS, SET.",
+      "color": "m4",
+      "topicCount": 7,
+      "topics": [
+        {
+          "id": "4.1.1",
+          "title": "Authentication Applications: Kerberos",
+          "group": "Introduction to Web Security",
+          "lmr": false
+        },
+        {
+          "id": "4.1.2",
+          "title": "Overview of Access Control List (ACL)",
+          "group": "Introduction to Web Security",
+          "lmr": false
+        },
+        {
+          "id": "4.1.3",
+          "title": "Electronic Mail Security: Pretty Good Privacy (PGP)",
+          "group": "Introduction to Web Security",
+          "lmr": false
+        },
+        {
+          "id": "4.1.4",
+          "title": "S/MIME",
+          "group": "Introduction to Web Security",
+          "lmr": false
+        },
+        {
+          "id": "4.2.1",
+          "title": "IP Security Architecture Components",
+          "group": "IP Security",
+          "lmr": false
+        },
+        {
+          "id": "4.2.2",
+          "title": "Secure Socket Layer",
+          "group": "IP Security",
+          "lmr": false
+        },
+        {
+          "id": "4.2.3",
+          "title": "Secure electronic transaction (SET)",
+          "group": "IP Security",
+          "lmr": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "System Security & Forensics",
+      "short": "System Security & Forensics",
+      "blurb": "IDS, malware, firewalls, VPN, blockchain, cyber forensics.",
+      "color": "m5",
+      "topicCount": 16,
+      "topics": [
+        {
+          "id": "5.1.1",
+          "title": "Introductory Idea of Intrusion",
+          "group": "System Security",
+          "lmr": false
+        },
+        {
+          "id": "5.1.2",
+          "title": "Intrusion Detection Techniques",
+          "group": "System Security",
+          "lmr": false
+        },
+        {
+          "id": "5.1.3",
+          "title": "Viruses and Worms",
+          "group": "System Security",
+          "lmr": false
+        },
+        {
+          "id": "5.1.4",
+          "title": "Firewall Overview and Design Principles",
+          "group": "System Security",
+          "lmr": false
+        },
+        {
+          "id": "5.1.5",
+          "title": "Global Standards IT Acts and Cyber Laws",
+          "group": "System Security",
+          "lmr": false
+        },
+        {
+          "id": "5.1.6",
+          "title": "Virtual Private Network",
+          "group": "System Security",
+          "lmr": false
+        },
+        {
+          "id": "5.1.7",
+          "title": "Recent Network Attacks and Security Measures",
+          "group": "System Security",
+          "lmr": false
+        },
+        {
+          "id": "5.1.8",
+          "title": "Blockchain Technology",
+          "group": "System Security",
+          "lmr": false
+        },
+        {
+          "id": "5.1.9",
+          "title": "Internet Privacy and Piracy Prevention",
+          "group": "System Security",
+          "lmr": false
+        },
+        {
+          "id": "5.2.1",
+          "title": "Overview of Cyber Forensic",
+          "group": "Cyber Forensic and Its Applications",
+          "lmr": false
+        },
+        {
+          "id": "5.2.2",
+          "title": "Cyber Forensic Processes",
+          "group": "Cyber Forensic and Its Applications",
+          "lmr": false
+        },
+        {
+          "id": "5.2.3",
+          "title": "Cyber Forensic Applications",
+          "group": "Cyber Forensic and Its Applications",
+          "lmr": false
+        },
+        {
+          "id": "5.2.4",
+          "title": "Cyber Forensic Tools",
+          "group": "Cyber Forensic and Its Applications",
+          "lmr": false
+        },
+        {
+          "id": "5.2.5",
+          "title": "Digital Evidence",
+          "group": "Cyber Forensic and Its Applications",
+          "lmr": false
+        },
+        {
+          "id": "5.2.6",
+          "title": "Investigating Windows and Unix Systems",
+          "group": "Cyber Forensic and Its Applications",
+          "lmr": false
+        },
+        {
+          "id": "5.2.7",
+          "title": "E-mail Tracing",
+          "group": "Cyber Forensic and Its Applications",
+          "lmr": false
+        }
+      ]
+    }
+  ]
+}

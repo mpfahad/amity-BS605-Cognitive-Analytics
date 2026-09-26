@@ -1,0 +1,39 @@
+{
+  "cmid": "326436",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541921&cmid=326436",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "The main goal of cyber forensics is to",
+      "options": [
+        "a. Identify the Data",
+        "b. Collect the Data",
+        "c. Preserve the Data",
+        "d. Analyze the Data",
+        "e. All of the above"
+      ],
+      "correct": 4,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Cyber forensics identifies, collects, preserves, and analyzes data."
+    },
+    {
+      "no": "2",
+      "stem": "Computer forensics can support our audit and investigation\nobjectives like as",
+      "options": [
+        "a. An Effective System of Internal Controls;",
+        "b. Reliability of Financial Reporting;",
+        "c. Compliance with federal and state laws;",
+        "d. Detection of Fraud, Waste, and Abuse.",
+        "e. All of the Above"
+      ],
+      "correct": 4,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Forensics supports controls, reporting, compliance, and fraud detection."
+    }
+  ]
+}

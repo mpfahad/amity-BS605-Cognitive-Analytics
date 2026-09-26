@@ -1,0 +1,12 @@
+{
+  "topicQuizzesScraped": 55,
+  "topicQuestions": 110,
+  "re50Status": "blocked_no_attempt_controls",
+  "re50Quizzes": ["357372", "357373", "357374", "357375", "357376", "357377"],
+  "bankPath": "subjects/csit654/v3/data/mcq_bank.json",
+  "notes": [
+    "All topic practice MCQs scraped from Amigo attempts.",
+    "Answers: Amigo review when available (quiz 1.1.1 finished); otherwise SLM-keyed.",
+    "Re 50 assessments inventoried but not scrapable (no Attempt button; review not permitted on finished attempts)."
+  ]
+}

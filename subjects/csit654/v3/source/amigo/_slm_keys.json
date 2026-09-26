@@ -1,0 +1,664 @@
+{
+  "questions": [
+    {
+      "id": "amigo-t-326318-1",
+      "correct": 1,
+      "explanation": "Amigo review: The correct answer is Active Attack.",
+      "answerSource": "amigo_review"
+    },
+    {
+      "id": "amigo-t-326318-2",
+      "correct": 0,
+      "explanation": "Amigo review: The correct answer is Dos Attack.",
+      "answerSource": "amigo_review"
+    },
+    {
+      "id": "amigo-t-326320-1",
+      "correct": 2,
+      "explanation": "Authorization decides user rights/privileges after authentication.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326320-2",
+      "correct": 1,
+      "explanation": "Digital signatures primarily support integrity (and authenticity/non-repudiation).",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326322-1",
+      "correct": 1,
+      "explanation": "Asymmetric crypto uses a public/private key pair.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326322-2",
+      "correct": 0,
+      "explanation": "Symmetric crypto uses the same shared secret to lock and unlock.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326324-1",
+      "correct": 3,
+      "explanation": "Drill cipher is not a standard classical/conventional technique in the SLM set.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326324-2",
+      "correct": 1,
+      "explanation": "Transposition ciphers rearrange (shuffle) letter positions.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326326-1",
+      "correct": 0,
+      "explanation": "Hill cipher is a substitution (polygraphic) cipher, not a transposition rail technique.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326326-2",
+      "correct": 2,
+      "explanation": "One-time pad is a substitution stream scheme, not a transposition cipher.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326328-1",
+      "correct": 0,
+      "explanation": "Trying every key/combination is a brute-force attack.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326328-2",
+      "correct": 0,
+      "explanation": "Cryptanalysis seeks weaknesses in cryptographic schemes.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326330-1",
+      "correct": 2,
+      "explanation": "Invisible ink (e.g., lime water) is a classical steganography technique.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326330-2",
+      "correct": 1,
+      "explanation": "Steganography hides existence of data and can complement cryptography.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326332-1",
+      "correct": 2,
+      "explanation": "Invisible ink / lime water steganography (same SLM point as 1.1.7).",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326332-2",
+      "correct": 2,
+      "explanation": "Block ciphers are characterized by avalanche effect and completeness vs stream ciphers.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326334-1",
+      "correct": 1,
+      "explanation": "Hardware compromise/piracy recovery is especially hard once devices are cloned/extracted.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326334-2",
+      "correct": 3,
+      "explanation": "Antivirus software detects and helps avoid viruses/malware.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326339-1",
+      "correct": 1,
+      "explanation": "Cipher strength is driven primarily by key length (Kerckhoffs/SLM emphasis).",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326339-2",
+      "correct": 3,
+      "explanation": "ECB, CBC, and CTR are standard block-cipher modes of operation.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326341-1",
+      "correct": 2,
+      "explanation": "Shannon confusion obscures the ciphertext–key relationship.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326341-2",
+      "correct": 1,
+      "explanation": "False: ciphertext–plaintext hiding is diffusion; confusion targets the key relationship.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326343-1",
+      "correct": 0,
+      "explanation": "Feistel structure is designed to build cryptographic complexity via rounds.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326343-2",
+      "correct": 2,
+      "explanation": "Feistel does not require converting plaintext into a matrix first.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326345-1",
+      "correct": 1,
+      "explanation": "DES performs 16 rounds of substitution/permutation operations.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326345-2",
+      "correct": 1,
+      "explanation": "The heart of DES is its round structure.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326347-1",
+      "correct": 2,
+      "explanation": "DES strength depends on the encryption key size/space.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326347-2",
+      "correct": 2,
+      "explanation": "DES uses a 64-bit key block (56 effective + parity).",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326349-1",
+      "correct": 1,
+      "explanation": "Differential cryptanalysis studies plaintext pairs and corresponding ciphertexts.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326349-2",
+      "correct": 3,
+      "explanation": "Differential techniques apply across block ciphers, streams, and hash constructions.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326351-1",
+      "correct": 3,
+      "explanation": "CTR mode encrypts a counter (then XOR with plaintext).",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326351-2",
+      "correct": 3,
+      "explanation": "ECB has no chaining; a bit error can corrupt an entire independent block (worst isolation/propagation trade-off in classic MCQs).",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326353-1",
+      "correct": 2,
+      "explanation": "Triple DES applies DES three times (EDE).",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326353-2",
+      "correct": 1,
+      "explanation": "Common 2-key Triple-DES (EDE2) uses two keys; SLM lists two-key form.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326356-1",
+      "correct": 2,
+      "explanation": "AES provides stronger modern security than DES/3DES.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326356-2",
+      "correct": 2,
+      "explanation": "AES-256 uses 14 rounds.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326358-1",
+      "correct": 3,
+      "explanation": "Fermat/Euler theorems are stated for (modular) prime-related arithmetic.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326358-2",
+      "correct": 1,
+      "explanation": "The given polynomial claim is not a valid Euler-theorem identity as stated.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326360-1",
+      "correct": 3,
+      "explanation": "CRT is applied with pairwise coprime / prime-power moduli in crypto settings.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326360-2",
+      "correct": 0,
+      "explanation": "Cardinality of set S is commonly denoted #S.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326362-1",
+      "correct": 1,
+      "explanation": "Public-key cryptography uses two keys (public and private).",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326362-2",
+      "correct": 1,
+      "explanation": "Encryption and decryption use different keys in public-key systems.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326364-1",
+      "correct": 3,
+      "explanation": "RSA is built on large prime numbers and modular exponentiation.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326364-2",
+      "correct": 3,
+      "explanation": "RSA encrypts with the public key and decrypts with the private key.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326366-1",
+      "correct": 0,
+      "explanation": "Exhaustive key search against RSA is a brute-force style attack.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326366-2",
+      "correct": 1,
+      "explanation": "False: RSA is much slower/bulk-inefficient compared with DES/AES for bulk data.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326371-1",
+      "correct": 0,
+      "explanation": "Message authentication verifies integrity and authenticity of messages.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326371-2",
+      "correct": 0,
+      "explanation": "Authentication binds the claimed sender identity to the message.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326373-1",
+      "correct": 2,
+      "explanation": "Hash/authentication functions map arbitrary messages to fixed-length authenticators.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326373-2",
+      "correct": 3,
+      "explanation": "Correct relation is h=H(M); none of the listed formulas match cleanly.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326375-1",
+      "correct": 1,
+      "explanation": "Observing communication patterns is traffic analysis.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326375-2",
+      "correct": 0,
+      "explanation": "Source repudiation is denial of having sent a message.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326377-1",
+      "correct": 3,
+      "explanation": "A MAC is a cryptographic checksum authenticating a message.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326377-2",
+      "correct": 0,
+      "explanation": "MAC function C produces a cryptographic checksum on message M.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326379-1",
+      "correct": 4,
+      "explanation": "SHA family includes SHA-0/1/2/3 variants covered in the material.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326379-2",
+      "correct": 3,
+      "explanation": "SHA-1 input limit is < 2^64 bits; listed sizes are digest lengths, not the max input.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326381-1",
+      "correct": 2,
+      "explanation": "A message digest is produced by a hash function.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326381-2",
+      "correct": 0,
+      "explanation": "MD5 uses 4 rounds of 16 steps each.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326384-1",
+      "correct": 1,
+      "explanation": "Digital signatures rely on asymmetric cryptography.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326384-2",
+      "correct": 2,
+      "explanation": "A digital signature is the electronic counterpart of a handwritten signature.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326386-1",
+      "correct": 0,
+      "explanation": "DSS = Digital Signature Standard.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326386-2",
+      "correct": 1,
+      "explanation": "DSS is realized by the Digital Signature Algorithm (DSA).",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326389-1",
+      "correct": 3,
+      "explanation": "Signatures support authenticity, integrity, and non-repudiation.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326389-2",
+      "correct": 0,
+      "explanation": "Authentication verifies a user’s claimed identity.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326394-1",
+      "correct": 0,
+      "explanation": "Kerberos is a network authentication protocol.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326394-2",
+      "correct": 1,
+      "explanation": "Kerberos was developed at MIT.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326396-1",
+      "correct": 2,
+      "explanation": "ACLs grant or deny access.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326396-2",
+      "correct": 3,
+      "explanation": "ACL entries commonly match address, port, and protocol fields.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326398-1",
+      "correct": 0,
+      "explanation": "PGP was created by Phil Zimmermann.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326398-2",
+      "correct": 2,
+      "explanation": "PGP is an e-mail (and file) encryption system.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326400-1",
+      "correct": 0,
+      "explanation": "S/MIME = Secure/Multipurpose Internet Mail Extensions.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326400-2",
+      "correct": 1,
+      "explanation": "S/MIME extends MIME for secure mail.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326403-1",
+      "correct": 2,
+      "explanation": "IPsec secures IP-layer communications.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326403-2",
+      "correct": 3,
+      "explanation": "IPsec can protect host–host, network–network, and mixed paths.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326405-1",
+      "correct": 1,
+      "explanation": "SSL/TLS provides end-to-end security over TCP.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326405-2",
+      "correct": 0,
+      "explanation": "SSL was originally developed by Netscape.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326407-1",
+      "correct": 3,
+      "explanation": "SET was jointly developed by Visa and Mastercard.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326407-2",
+      "correct": 1,
+      "explanation": "SET secured online card payment transactions.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326412-1",
+      "correct": 3,
+      "explanation": "Amigo review: All of the Above",
+      "answerSource": "amigo_review"
+    },
+    {
+      "id": "amigo-t-326412-2",
+      "correct": 1,
+      "explanation": "Amigo review: A typical behavior profiles or violations of security constraints.",
+      "answerSource": "amigo_review"
+    },
+    {
+      "id": "amigo-t-326414-1",
+      "correct": 1,
+      "explanation": "IDS monitors for malicious activity.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326414-2",
+      "correct": 2,
+      "explanation": "IDPS combines detection and prevention capabilities.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326416-1",
+      "correct": 2,
+      "explanation": "Malware damages software/data (not typically physical hardware).",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326416-2",
+      "correct": 1,
+      "explanation": "A virus inserts into and becomes part of another program.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326418-1",
+      "correct": 3,
+      "explanation": "Network firewalls operate across multiple layers with varied criteria.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326418-2",
+      "correct": 3,
+      "explanation": "Stateful multilayer inspection generally provides the strongest classic firewall model.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326420-1",
+      "correct": 0,
+      "explanation": "IT Act 2000 came into force on 17 October 2000.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326420-2",
+      "correct": 3,
+      "explanation": "IT Act covers e-documents, digital signatures, and offences.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326422-1",
+      "correct": 1,
+      "explanation": "VPNs protect against unauthorized eavesdropping.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326422-2",
+      "correct": 1,
+      "explanation": "VPN tunneling encapsulates packets (e.g., in IP).",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326424-1",
+      "correct": 0,
+      "explanation": "A packet analyzer/sniffer captures and inspects traffic.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326424-2",
+      "correct": 1,
+      "explanation": "Buffer overflow occurs when data exceeds buffer capacity.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326426-1",
+      "correct": 1,
+      "explanation": "Blockchain records information in linked blocks that resist alteration.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326426-2",
+      "correct": 3,
+      "explanation": "Each block references the previous block in the chain.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326428-1",
+      "correct": 1,
+      "explanation": "Piracy is unauthorized copying/use of copyrighted material.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326428-2",
+      "correct": 0,
+      "explanation": "Privacy is freedom from unwanted public scrutiny/disclosure.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326431-1",
+      "correct": 2,
+      "explanation": "Forensic acquisition uses both hardware and software tools.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326431-2",
+      "correct": 3,
+      "explanation": "EnCase/FTK/TSK are not China-origin tools; answer is none of these as ‘Chinese-made’.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326433-1",
+      "correct": 4,
+      "explanation": "Forensic process: identify, acquire, analyze, report.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326433-2",
+      "correct": 0,
+      "explanation": "Establishing/identifying the scene dimensions is a critical first CSI step.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326436-1",
+      "correct": 4,
+      "explanation": "Cyber forensics identifies, collects, preserves, and analyzes data.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326436-2",
+      "correct": 4,
+      "explanation": "Forensics supports controls, reporting, compliance, and fraud detection.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326438-1",
+      "correct": 2,
+      "explanation": "Both hardware and software forensic tools gather evidence.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326438-2",
+      "correct": 3,
+      "explanation": "Listed tools are not China-made; select none of these.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326440-1",
+      "correct": 4,
+      "explanation": "Digital forensics covers computers, phones, servers, and networks.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326440-2",
+      "correct": 1,
+      "explanation": "Digital evidence comes from electronic devices.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326442-1",
+      "correct": 2,
+      "explanation": "OS forensics retrieves artifacts from the operating system.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326442-2",
+      "correct": 0,
+      "explanation": "TCPView shows network connections/associations.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326444-1",
+      "correct": 3,
+      "explanation": "Email tracing helps investigate spoofing, phishing, and online frauds.",
+      "answerSource": "slm"
+    },
+    {
+      "id": "amigo-t-326444-2",
+      "correct": 2,
+      "explanation": "Email tracing/tracking monitors e-mail delivery.",
+      "answerSource": "slm"
+    }
+  ]
+}

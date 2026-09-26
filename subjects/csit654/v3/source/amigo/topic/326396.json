@@ -1,0 +1,37 @@
+{
+  "cmid": "326396",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541825&cmid=326396",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "An access control list (ACL) contains rules that grant or deny ________ to certain digital environments.",
+      "options": [
+        "a. Privilege",
+        "b. Security",
+        "c. Access",
+        "d. None of These"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "ACLs grant or deny access."
+    },
+    {
+      "no": "2",
+      "stem": "An ACL entry typically includes some portion of the",
+      "options": [
+        "a. Address",
+        "b. Port",
+        "c. Protocols",
+        "d. All of the Above"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "ACL entries commonly match address, port, and protocol fields."
+    }
+  ]
+}

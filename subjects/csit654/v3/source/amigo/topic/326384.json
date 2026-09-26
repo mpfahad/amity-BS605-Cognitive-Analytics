@@ -1,0 +1,37 @@
+{
+  "cmid": "326384",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541808&cmid=326384",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Which cryptographic algorithm employed by digital signatures",
+      "options": [
+        "a. Symmetric cryptography",
+        "b. Asymmetric cryptography",
+        "c. Visual cryptography",
+        "d. None of these"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Digital signatures rely on asymmetric cryptography."
+    },
+    {
+      "no": "2",
+      "stem": "Digital signature is equivalent of a handwritten",
+      "options": [
+        "a. Statement",
+        "b. Stamp paper",
+        "c. Signature",
+        "d. None of these"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "A digital signature is the electronic counterpart of a handwritten signature."
+    }
+  ]
+}

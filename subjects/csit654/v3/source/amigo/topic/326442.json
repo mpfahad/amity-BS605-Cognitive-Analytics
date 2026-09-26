@@ -1,0 +1,37 @@
+{
+  "cmid": "326442",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541933&cmid=326442",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Operating System Forensics is the process of retrieving useful information from the ____________ of the computer or mobile device.",
+      "options": [
+        "a. Hardware",
+        "b. Software",
+        "c. Operating System",
+        "d. None of These"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "OS forensics retrieves artifacts from the operating system."
+    },
+    {
+      "no": "2",
+      "stem": "Which cyber forensic tool displays network connections and network associated applications?",
+      "options": [
+        "a. Tcpview",
+        "b. Process Explorer",
+        "c. Rootkit Revealer",
+        "d. None of These"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "TCPView shows network connections/associations."
+    }
+  ]
+}

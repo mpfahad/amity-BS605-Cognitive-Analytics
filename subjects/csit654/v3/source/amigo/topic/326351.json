@@ -1,0 +1,37 @@
+{
+  "cmid": "326351",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541690&cmid=326351",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "CTR Block Cipher Mode depends on",
+      "options": [
+        "a. Plaintext",
+        "b. Ciphertext",
+        "c. Size of Encryption Key",
+        "d. Counter"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "CTR mode encrypts a counter (then XOR with plaintext)."
+    },
+    {
+      "no": "2",
+      "stem": "Which mode of operation has the worst “error propagation” among the following",
+      "options": [
+        "a. OFB",
+        "b. CFB",
+        "c. CBC",
+        "d. ECB"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "ECB has no chaining; a bit error can corrupt an entire independent block (worst isolation/propagation trade-off in classic MCQs)."
+    }
+  ]
+}

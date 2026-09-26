@@ -1,0 +1,37 @@
+{
+  "cmid": "326426",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541897&cmid=326426",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Which is a system of recording information in a way that makes it difficult or impossible to change, hack, or cheat the system?",
+      "options": [
+        "a. Block Series Technology",
+        "b. Blockchain Technology",
+        "c. Bitchain Technology",
+        "d. None of These"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Blockchain records information in linked blocks that resist alteration."
+    },
+    {
+      "no": "2",
+      "stem": "Each _____ refers to the previous block and together make the Blockchain.",
+      "options": [
+        "a. Bit",
+        "b. Byte",
+        "c. Stream",
+        "d. Block"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Each block references the previous block in the chain."
+    }
+  ]
+}

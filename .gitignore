@@ -5,3 +5,5 @@ Thumbs.db
 _extracted_*.txt
 _content_brief.md
 _chunk_*.txt
+scripts/csit654_v3/_*
+scripts/csit654_v3/__pycache__/

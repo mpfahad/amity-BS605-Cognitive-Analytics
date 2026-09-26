@@ -1,0 +1,37 @@
+{
+  "cmid": "326381",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541806&cmid=326381",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "A message digest is also a",
+      "options": [
+        "a. Virtual Function",
+        "b. Inline Function",
+        "c. Hash Function",
+        "d. None of These"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "A message digest is produced by a hash function."
+    },
+    {
+      "no": "2",
+      "stem": "How many rounds used by MD5 algorithm",
+      "options": [
+        "a. 4",
+        "b. 2",
+        "c. 3",
+        "d. None of these"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "MD5 uses 4 rounds of 16 steps each."
+    }
+  ]
+}

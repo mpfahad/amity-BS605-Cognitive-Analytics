@@ -80,7 +80,7 @@
       "Signature ≠ encryption: verify with public key, not decrypt for secrecy."
     ],
     "notes": [
-      "LMR: intro MACs, authentication functions, requirements.",
+      "intro MACs, authentication functions, requirements.",
       "Stem “shared secret tag” → MAC; “no shared secret digest” → hash."
     ],
     "lmr": false
@@ -110,7 +110,7 @@
       "IPsec ≠ SSL: different layer and deployment model."
     ],
     "notes": [
-      "LMR: Kerberos, ACL, PGP.",
+      "Kerberos, ACL, PGP.",
       "Don’t mix SET payment flow with generic SSL shopping sites."
     ],
     "lmr": false
@@ -140,7 +140,7 @@
       "Privacy prevention ≠ piracy prevention — different goals."
     ],
     "notes": [
-      "LMR: intrusion idea, IDS techniques, viruses/worms.",
+      "intrusion idea, IDS techniques, viruses/worms.",
       "Email tracing belongs under forensics (headers), not PGP crypto."
     ],
     "lmr": false
@@ -179,14 +179,14 @@
       "Masquerade and replay are active authenticity/integrity threats."
     ],
     "notes": [
-      "LMR: classify the stem as passive or active first.",
+      "classify the stem as passive or active first.",
       "Stem “only listening / sniffing” → passive; “altering packets” → active.",
       "DoS / crash service → interruption (availability), not interception.",
       "Fabrication ≠ modification: insert new fake object vs change existing one.",
       "Trap: calling traffic analysis “active” because it feels invasive — it is passive.",
       "One-line: attacks threaten CIA; mechanisms implement services that counter them."
     ],
-    "lmr": true
+    "lmr": false
   },
   "1.1.2": {
     "terms": [
@@ -222,14 +222,14 @@
       "One mechanism can support multiple services; one service may need several mechanisms."
     ],
     "notes": [
-      "LMR: “what vs how” — service vs mechanism is the classic stem.",
+      "“what vs how” — service vs mechanism is the classic stem.",
       "Stem asks for service name → confidentiality/authentication/… not “AES”.",
       "Stem asks for mechanism → cipher, hash, digital signature, firewall, etc.",
       "Authentication ≠ authorisation: identity proof vs permission to act.",
       "Non-repudiation usually needs signatures/trusted third party — not only a MAC.",
       "Trap: listing CIA alone when the question asks for ITU/X.800-style service list."
     ],
-    "lmr": true
+    "lmr": false
   },
   "1.1.3": {
     "terms": [
@@ -264,14 +264,14 @@
       "Security of classical ciphers collapses under frequency analysis and known plaintext."
     ],
     "notes": [
-      "LMR: define plaintext, ciphertext, key, and the two classical families.",
+      "define plaintext, ciphertext, key, and the two classical families.",
       "Trap: saying classical = only Caesar; Caesar is one substitution instance.",
       "Stem “rearrange letters” → transposition; “replace letters” → substitution.",
       "Don’t confuse cryptography (design) with cryptanalysis (attack/analysis).",
       "Kerckhoffs principle: assume adversary knows the algorithm.",
       "Exam one-liner: classical crypto = substitution + transposition under a shared key."
     ],
-    "lmr": true
+    "lmr": false
   },
   "1.1.4": {
     "terms": [
@@ -506,14 +506,14 @@
       "Modes of operation are separate from the block cipher primitive itself."
     ],
     "notes": [
-      "LMR: state block size, key, rounds, and why product ciphers.",
+      "state block size, key, rounds, and why product ciphers.",
       "Stem “fixed-size chunk encryption” → block cipher principles.",
       "Trap: calling AES a Feistel cipher — AES is SPN; DES is Feistel.",
       "Avalanche: one-bit plaintext/key change should flip ~half the ciphertext bits.",
       "Don’t confuse key length with number of rounds.",
       "Exam: principles precede named algorithms (DES/AES)."
     ],
-    "lmr": true
+    "lmr": false
   },
   "2.1.2": {
     "terms": [
@@ -544,14 +544,14 @@
       "AES: SubBytes (confusion) + ShiftRows/MixColumns (diffusion)."
     ],
     "notes": [
-      "LMR: define confusion vs diffusion in one line each.",
+      "define confusion vs diffusion in one line each.",
       "Stem “hide key–ciphertext relation” → confusion.",
       "Stem “spread influence of each plaintext bit” → diffusion.",
       "Trap: swapping the two definitions — common MCQ fail.",
       "S-box without diffusion still leaves structure; permutation without nonlinear S-boxes is weak.",
       "Link answer to a concrete layer (S-box vs MixColumns) when asked “how AES achieves…”."
     ],
-    "lmr": true
+    "lmr": false
   },
   "2.1.3": {
     "terms": [
@@ -582,14 +582,14 @@
       "Final swap (or not) is a DES detail — check the exact variant in the stem."
     ],
     "notes": [
-      "LMR: write the Li/Ri recurrence and say decryption = reverse keys.",
+      "write the Li/Ri recurrence and say decryption = reverse keys.",
       "Stem “same algorithm for encrypt/decrypt” → Feistel property.",
       "Trap: AES is not Feistel; don’t force Feistel equations on AES.",
       "Why F needn’t be invertible: XOR undoes the combination if F output is known from the other half.",
       "More rounds ≠ automatically secure if F is weak — design of F matters.",
       "Exam sketch: diagram L0 R0 → rounds → ciphertext halves."
     ],
-    "lmr": true
+    "lmr": false
   },
   "2.1.4": {
     "terms": [
@@ -988,14 +988,14 @@
       "Replay may still succeed unless freshness (nonces/timestamps) is added."
     ],
     "notes": [
-      "LMR: authentication ≠ encryption — say both explicitly in answers.",
+      "authentication ≠ encryption — say both explicitly in answers.",
       "Stem “shared secret tag on a message” → MAC introduction.",
       "Stem “anyone can verify with public key” → signature, not MAC.",
       "Trap: equating checksum/CRC with cryptographic MAC — CRC has no key.",
       "Active modification without detection is the motivating attack.",
       "One-liner: MAC provides integrity + origin authentication under shared key."
     ],
-    "lmr": true
+    "lmr": false
   },
   "3.1.2": {
     "terms": [
@@ -1022,14 +1022,14 @@
       "MAC binds secret key so only parties with K can forge tags (computationally)."
     ],
     "notes": [
-      "LMR: list the three authentication-function classes.",
+      "list the three authentication-function classes.",
       "Stem “no key, fixed-length digest” → hash function path.",
       "Stem “keyed tag” → MAC path.",
       "Trap: saying encrypted message automatically authenticates — malleable ciphers break this.",
       "HMAC = hash used inside a keyed MAC construction.",
       "Compare: MAC secret shared; signature private signing key."
     ],
-    "lmr": true
+    "lmr": false
   },
   "3.1.3": {
     "terms": [
@@ -1060,14 +1060,14 @@
       "Encryption requirements are separate — mix only when the stem asks for both."
     ],
     "notes": [
-      "LMR: integrity + authenticity are the core MAC requirements.",
+      "integrity + authenticity are the core MAC requirements.",
       "Stem “prove to a judge Alice sent it” → signature/non-repudiation, not MAC.",
       "Stem “detect altered bits in transit” → integrity requirement.",
       "Replay: same valid MAC can be resent — need nonce/timestamp countermeasures.",
       "Trap: listing confidentiality as a MAC requirement.",
       "Be ready to contrast MAC requirements vs digital signature requirements."
     ],
-    "lmr": true
+    "lmr": false
   },
   "3.1.4": {
     "terms": [
@@ -1291,14 +1291,14 @@
       "Provides mutual authentication options; does not by itself encrypt all application data."
     ],
     "notes": [
-      "LMR: AS → TGT → TGS → service ticket flow in order.",
+      "AS → TGT → TGS → service ticket flow in order.",
       "Stem “ticket-based campus login / KDC” → Kerberos.",
       "Trap: calling Kerberos a public-key PKI system — classic teaching version is symmetric.",
       "TGT ≠ service ticket: TGT talks to TGS; service ticket talks to the app server.",
       "Clock skew failures are a classic operational Kerberos symptom.",
       "Contrast with SSL: Kerberos is SSO/authn in a realm; SSL secures a transport session."
     ],
-    "lmr": true
+    "lmr": false
   },
   "4.1.2": {
     "terms": [
@@ -1329,14 +1329,14 @@
       "Authentication identifies subject; ACL authorises actions afterward."
     ],
     "notes": [
-      "LMR: define ACL as per-object subject→rights list.",
+      "define ACL as per-object subject→rights list.",
       "Stem “permissions on the file listing users” → ACL.",
       "Stem “token carried by process” → capability, not ACL.",
       "Trap: mixing authentication (Kerberos) with authorisation (ACL).",
       "Empty/default-deny vs default-allow policies change security posture.",
       "Exam contrast: access matrix row = capability list; column = ACL."
     ],
-    "lmr": true
+    "lmr": false
   },
   "4.1.3": {
     "terms": [
@@ -1367,14 +1367,14 @@
       "Compression often precedes encryption in the PGP message pipeline."
     ],
     "notes": [
-      "LMR: hybrid encryption + web of trust are the PGP headlines.",
+      "hybrid encryption + web of trust are the PGP headlines.",
       "Stem “friends sign keys / no central CA required” → PGP.",
       "Trap: saying PGP only uses RSA on the whole email body — bulk is symmetric.",
       "Private key decrypts the session key, not each byte directly.",
       "Revocation and key authenticity remain user-managed problems.",
       "Contrast with S/MIME: corporate PKI vs web of trust."
     ],
-    "lmr": true
+    "lmr": false
   },
   "4.1.4": {
     "terms": [
@@ -1533,14 +1533,14 @@
       "Insider misfeasor already has credentials — different detection profile than outsider."
     ],
     "notes": [
-      "LMR: define intrusion + name the three intruder classes.",
+      "define intrusion + name the three intruder classes.",
       "Stem “legitimate user exceeds authority” → misfeasor.",
       "Stem “outsider pretends to be legitimate” → masquerader.",
       "Trap: treating every malware incident as the definition of intrusion (overlap, not identity).",
       "Clandestine user seizes supervisory control to evade auditing.",
       "Link forward to IDS techniques (5.1.2) as the detection response."
     ],
-    "lmr": true
+    "lmr": false
   },
   "5.1.2": {
     "terms": [
@@ -1571,14 +1571,14 @@
       "Tuning thresholds trades false positives vs false negatives."
     ],
     "notes": [
-      "LMR: contrast signature vs anomaly; HIDS vs NIDS.",
+      "contrast signature vs anomaly; HIDS vs NIDS.",
       "Stem “known CVE exploit pattern in DB” → signature-based.",
       "Stem “user suddenly downloads 50GB at 3am” → anomaly-based.",
       "Trap: claiming anomaly detection has no false positives.",
       "NIDS may miss encrypted payload details; HIDS sees host outcomes.",
       "Exam: state where sensors sit and what data they consume."
     ],
-    "lmr": true
+    "lmr": false
   },
   "5.1.3": {
     "terms": [
@@ -1609,14 +1609,14 @@
       "Prevention: patching, least privilege, filtering, user awareness — plus AV/EDR detection."
     ],
     "notes": [
-      "LMR: virus vs worm one-line contrast is the highest-yield stem.",
+      "virus vs worm one-line contrast is the highest-yield stem.",
       "Stem “needs a program to attach to” → virus.",
       "Stem “self-propagates through network services” → worm.",
       "Trap: calling all malware “viruses”.",
       "Trojan ≠ worm: deception vs replication mechanism.",
       "Macro viruses live in documents — still viruses by attachment model."
     ],
-    "lmr": true
+    "lmr": false
   },
   "5.1.4": {
     "terms": [

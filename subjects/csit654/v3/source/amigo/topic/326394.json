@@ -1,0 +1,37 @@
+{
+  "cmid": "326394",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541822&cmid=326394",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Kerberos is a __________ authentication protocol.",
+      "options": [
+        "a. Network",
+        "b. Hardware",
+        "c. Software",
+        "d. None of These"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Kerberos is a network authentication protocol."
+    },
+    {
+      "no": "2",
+      "stem": "Which organization developed Kerberos as a solution to network security problems.",
+      "options": [
+        "a. IIT",
+        "b. MIT",
+        "c. University of California",
+        "d. None of These"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Kerberos was developed at MIT."
+    }
+  ]
+}

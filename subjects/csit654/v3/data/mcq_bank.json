@@ -1,0 +1,3963 @@
+{
+  "questions": [
+    {
+      "id": "amigo-t-326318-1",
+      "module": 1,
+      "conceptId": "1.1.1",
+      "source": "topic",
+      "cmid": "326318",
+      "quizTitle": "Quiz : 1.1.1 Introduction to Security Attacks",
+      "stem": "Which security Attacks are having malicious intension:",
+      "options": [
+        "Passive Attack.",
+        "Active Attack.",
+        "Simple Attack.",
+        "None of these."
+      ],
+      "correct": 1,
+      "explanation": "Amigo review: The correct answer is Active Attack.",
+      "answerSource": "amigo_review",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326318-2",
+      "module": 1,
+      "conceptId": "1.1.1",
+      "source": "topic",
+      "cmid": "326318",
+      "quizTitle": "Quiz : 1.1.1 Introduction to Security Attacks",
+      "stem": "Which one of the following can be considered as the class of computer threats?",
+      "options": [
+        "Dos Attack",
+        "Phishing",
+        "Soliciting",
+        "Both A and C"
+      ],
+      "correct": 0,
+      "explanation": "Amigo review: The correct answer is Dos Attack.",
+      "answerSource": "amigo_review",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326320-1",
+      "module": 1,
+      "conceptId": "1.1.2",
+      "source": "topic",
+      "cmid": "326320",
+      "quizTitle": "Quiz : 1.1.2 Services and Mechanism",
+      "stem": "A concern of authentication that deals with user rights.",
+      "options": [
+        "General access",
+        "Functional authentication",
+        "Functional authorization",
+        "Auto verification"
+      ],
+      "correct": 2,
+      "explanation": "Authorization decides user rights/privileges after authentication.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326320-2",
+      "module": 1,
+      "conceptId": "1.1.2",
+      "source": "topic",
+      "cmid": "326320",
+      "quizTitle": "Quiz : 1.1.2 Services and Mechanism",
+      "stem": "Digital Signature is a service mechanism of",
+      "options": [
+        "Data Confidentiality",
+        "Data Integrity",
+        "Authentication",
+        "None of these"
+      ],
+      "correct": 1,
+      "explanation": "Digital signatures primarily support integrity (and authenticity/non-repudiation).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326322-1",
+      "module": 1,
+      "conceptId": "1.1.3",
+      "source": "topic",
+      "cmid": "326322",
+      "quizTitle": "Quiz : 1.1.3 Classical encryption techniques",
+      "stem": "Which type of cryptography is using the concept of two keys as public key and private key:",
+      "options": [
+        "Symmetric Key Cryptography.",
+        "Asymmetric Key Cryptography.",
+        "Cryptography.",
+        "None of these."
+      ],
+      "correct": 1,
+      "explanation": "Asymmetric crypto uses a public/private key pair.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326322-2",
+      "module": 1,
+      "conceptId": "1.1.3",
+      "source": "topic",
+      "cmid": "326322",
+      "quizTitle": "Quiz : 1.1.3 Classical encryption techniques",
+      "stem": "In symmetric-key cryptography, the key locks and unlocks the box is",
+      "options": [
+        "Same",
+        "Shared",
+        "Private",
+        "Public"
+      ],
+      "correct": 0,
+      "explanation": "Symmetric crypto uses the same shared secret to lock and unlock.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326324-1",
+      "module": 1,
+      "conceptId": "1.1.4",
+      "source": "topic",
+      "cmid": "326324",
+      "quizTitle": "Quiz : 1.1.4 Substitution Ciphers",
+      "stem": "Which encryption method is not conventional encryption method:",
+      "options": [
+        "Ceaser Cipher Encryption Technique.",
+        "Monoalphabetic Encryption Technique.",
+        "Transposition Encryption Technique.",
+        "Drill Cipher Encryption Technique"
+      ],
+      "correct": 3,
+      "explanation": "Drill cipher is not a standard classical/conventional technique in the SLM set.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326324-2",
+      "module": 1,
+      "conceptId": "1.1.4",
+      "source": "topic",
+      "cmid": "326324",
+      "quizTitle": "Quiz : 1.1.4 Substitution Ciphers",
+      "stem": "Which of the following ciphers are created by shuffling the letters of a word?",
+      "options": [
+        "substitution cipher",
+        "transposition cipher",
+        "vigenere cipher",
+        "hill cipher"
+      ],
+      "correct": 1,
+      "explanation": "Transposition ciphers rearrange (shuffle) letter positions.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326326-1",
+      "module": 1,
+      "conceptId": "1.1.5",
+      "source": "topic",
+      "cmid": "326326",
+      "quizTitle": "Quiz : 1.1.5 Transposition ciphers",
+      "stem": "Which one is not a type of Transposition Encryption Techniques:",
+      "options": [
+        "Hill Cipher.",
+        "2-Rail Cipher Encryption Technique.",
+        "3-Rail Cipher Encryption Technique.",
+        "Ceaser Cipher Encryption Technique."
+      ],
+      "correct": 0,
+      "explanation": "Hill cipher is a substitution (polygraphic) cipher, not a transposition rail technique.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326326-2",
+      "module": 1,
+      "conceptId": "1.1.5",
+      "source": "topic",
+      "cmid": "326326",
+      "quizTitle": "Quiz : 1.1.5 Transposition ciphers",
+      "stem": "Which of the following is not a type of transposition cipher?",
+      "options": [
+        "Rail fence cipher",
+        "Columnar transposition cipher",
+        "One time pad cipher",
+        "Route cipher"
+      ],
+      "correct": 2,
+      "explanation": "One-time pad is a substitution stream scheme, not a transposition cipher.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326328-1",
+      "module": 1,
+      "conceptId": "1.1.6",
+      "source": "topic",
+      "cmid": "326328",
+      "quizTitle": "Quiz : 1.1.6 Cryptanalysis",
+      "stem": "A method of trying each possible combination to break the encryption algorithm:",
+      "options": [
+        "Brute Force Attack.",
+        "Cryptanalysis.",
+        "Side Channel Attack.",
+        "None of these."
+      ],
+      "correct": 0,
+      "explanation": "Trying every key/combination is a brute-force attack.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326328-2",
+      "module": 1,
+      "conceptId": "1.1.6",
+      "source": "topic",
+      "cmid": "326328",
+      "quizTitle": "Quiz : 1.1.6 Cryptanalysis",
+      "stem": "Cryptanalysis is used",
+      "options": [
+        "to find some insecurity in a cryptographic scheme",
+        "to increase the speed",
+        "to encrypt the data",
+        "none of the mentioned"
+      ],
+      "correct": 0,
+      "explanation": "Cryptanalysis seeks weaknesses in cryptographic schemes.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326330-1",
+      "module": 1,
+      "conceptId": "1.1.7",
+      "source": "topic",
+      "cmid": "326330",
+      "quizTitle": "Quiz : 1.1.7 Steganography",
+      "stem": "In which Steganography Encryption Technique, we use Lime Water to hide data:",
+      "options": [
+        "Pin Puncture.",
+        "Character Marking.",
+        "Invisible Ink.",
+        "None of these."
+      ],
+      "correct": 2,
+      "explanation": "Invisible ink (e.g., lime water) is a classical steganography technique.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326330-2",
+      "module": 1,
+      "conceptId": "1.1.7",
+      "source": "topic",
+      "cmid": "326330",
+      "quizTitle": "Quiz : 1.1.7 Steganography",
+      "stem": "_____________ is another data hiding technique which can be used in conjunction with cryptography for the extra-secure method of protecting data.",
+      "options": [
+        "Cryptography",
+        "Steganography",
+        "Tomography",
+        "Chorography"
+      ],
+      "correct": 1,
+      "explanation": "Steganography hides existence of data and can complement cryptography.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326332-1",
+      "module": 1,
+      "conceptId": "1.1.8",
+      "source": "topic",
+      "cmid": "326332",
+      "quizTitle": "Quiz : 1.1.8 Stream and Block ciphers",
+      "stem": "In which Steganography Encryption Technique, we use Lime Water to hide data:",
+      "options": [
+        "Pin Puncture.",
+        "Character Marking.",
+        "Invisible Ink.",
+        "None of these."
+      ],
+      "correct": 2,
+      "explanation": "Invisible ink / lime water steganography (same SLM point as 1.1.7).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326332-2",
+      "module": 1,
+      "conceptId": "1.1.8",
+      "source": "topic",
+      "cmid": "326332",
+      "quizTitle": "Quiz : 1.1.8 Stream and Block ciphers",
+      "stem": "Which of the following properties are the characteristic properties of a block cipher technique which differs from stream cipher?",
+      "options": [
+        "Avalanche effect",
+        "Completeness",
+        "Both a. and b.",
+        "None of the above"
+      ],
+      "correct": 2,
+      "explanation": "Block ciphers are characterized by avalanche effect and completeness vs stream ciphers.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326334-1",
+      "module": 1,
+      "conceptId": "1.1.9",
+      "source": "topic",
+      "cmid": "326334",
+      "quizTitle": "Quiz : 1.1.9 A Overview of Hardware Security",
+      "stem": "In which security recovery from piracy is very hard:",
+      "options": [
+        "Software Security.",
+        "Hardware Security.",
+        "System Security.",
+        "None of these."
+      ],
+      "correct": 1,
+      "explanation": "Hardware compromise/piracy recovery is especially hard once devices are cloned/extracted.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326334-2",
+      "module": 1,
+      "conceptId": "1.1.9",
+      "source": "topic",
+      "cmid": "326334",
+      "quizTitle": "Quiz : 1.1.9 A Overview of Hardware Security",
+      "stem": "_______ is a type of software designed to help the user's computer detect viruses and avoid them.",
+      "options": [
+        "Malware",
+        "Adware",
+        "Both A and B",
+        "Antivirus"
+      ],
+      "correct": 3,
+      "explanation": "Antivirus software detects and helps avoid viruses/malware.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326339-1",
+      "module": 2,
+      "conceptId": "2.1.1",
+      "source": "topic",
+      "cmid": "326339",
+      "quizTitle": "Quiz : 2.1.1 Modern Block Ciphers: Block Ciphers Principles",
+      "stem": "The Strength of the Ciphertext depends upon",
+      "options": [
+        "Length of plain text",
+        "Length of the encryption key",
+        "None of the above",
+        "All of the above"
+      ],
+      "correct": 1,
+      "explanation": "Cipher strength is driven primarily by key length (Kerckhoffs/SLM emphasis).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326339-2",
+      "module": 2,
+      "conceptId": "2.1.1",
+      "source": "topic",
+      "cmid": "326339",
+      "quizTitle": "Quiz : 2.1.1 Modern Block Ciphers: Block Ciphers Principles",
+      "stem": "Which of the following is a mode of operation for the Block ciphers in cryptography?",
+      "options": [
+        "Electronic Code Book (ECB)",
+        "Cipher Block Chaining (CBC)",
+        "Counter (CTR) mode",
+        "All of the above"
+      ],
+      "correct": 3,
+      "explanation": "ECB, CBC, and CTR are standard block-cipher modes of operation.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326341-1",
+      "module": 2,
+      "conceptId": "2.1.2",
+      "source": "topic",
+      "cmid": "326341",
+      "quizTitle": "Quiz : 2.1.2 Shannon’s Theory of Confusion and Diffusion",
+      "stem": "In Shannon's original definitions, confusion refers to making the relationship between the ciphertext and the",
+      "options": [
+        "Ciphertext",
+        "Plaintext",
+        "Symmetric Key",
+        "Asymmetric Key"
+      ],
+      "correct": 2,
+      "explanation": "Shannon confusion obscures the ciphertext–key relationship.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326341-2",
+      "module": 2,
+      "conceptId": "2.1.2",
+      "source": "topic",
+      "cmid": "326341",
+      "quizTitle": "Quiz : 2.1.2 Shannon’s Theory of Confusion and Diffusion",
+      "stem": "Confusion hides the relationship between the ciphertext and the plaintext.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "False: ciphertext–plaintext hiding is diffusion; confusion targets the key relationship.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326343-1",
+      "module": 2,
+      "conceptId": "2.1.3",
+      "source": "topic",
+      "cmid": "326343",
+      "quizTitle": "Quiz : 2.1.3 Fiestal Structure",
+      "stem": "The working principle and design of Feistel Structure used in cryptographic algorithm for creating the",
+      "options": [
+        "Complexity",
+        "Increase in Size of Cipher",
+        "None of the above",
+        "All of the above"
+      ],
+      "correct": 0,
+      "explanation": "Feistel structure is designed to build cryptographic complexity via rounds.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326343-2",
+      "module": 2,
+      "conceptId": "2.1.3",
+      "source": "topic",
+      "cmid": "326343",
+      "quizTitle": "Quiz : 2.1.3 Fiestal Structure",
+      "stem": "The DES (Data Encryption Standard) cipher follows the fiestal structure. Which of the following properties are not shown by the fiestal structure?",
+      "options": [
+        "The input text is divided into two parts: one being left half and another one being right half.",
+        "Swapping of the left and right halves are performed after each round.",
+        "The plain text is converted into a matrix form first",
+        "None of the above"
+      ],
+      "correct": 2,
+      "explanation": "Feistel does not require converting plaintext into a matrix first.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326345-1",
+      "module": 2,
+      "conceptId": "2.1.4",
+      "source": "topic",
+      "cmid": "326345",
+      "quizTitle": "Quiz : 2.1.4 Data Encryption Standard (DES)",
+      "stem": "How many substitution operations performed in DES",
+      "options": [
+        "10",
+        "16",
+        "20",
+        "25"
+      ],
+      "correct": 1,
+      "explanation": "DES performs 16 rounds of substitution/permutation operations.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326345-2",
+      "module": 2,
+      "conceptId": "2.1.4",
+      "source": "topic",
+      "cmid": "326345",
+      "quizTitle": "Quiz : 2.1.4 Data Encryption Standard (DES)",
+      "stem": "The heart of DES Algorithm is",
+      "options": [
+        "Cipher",
+        "Rounds",
+        "Encryption",
+        "DES algorithm"
+      ],
+      "correct": 1,
+      "explanation": "The heart of DES is its round structure.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326347-1",
+      "module": 2,
+      "conceptId": "2.1.5",
+      "source": "topic",
+      "cmid": "326347",
+      "quizTitle": "Quiz : 2.1.5 Strength of DES",
+      "stem": "The strength of DES depends on",
+      "options": [
+        "Plaintext",
+        "Ciphertext",
+        "Size of Encryption Key",
+        "None of These"
+      ],
+      "correct": 2,
+      "explanation": "DES strength depends on the encryption key size/space.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326347-2",
+      "module": 2,
+      "conceptId": "2.1.5",
+      "source": "topic",
+      "cmid": "326347",
+      "quizTitle": "Quiz : 2.1.5 Strength of DES",
+      "stem": "The DES algorithm has a key length of",
+      "options": [
+        "128 Bits",
+        "32 Bits",
+        "64 Bits",
+        "16 Bits"
+      ],
+      "correct": 2,
+      "explanation": "DES uses a 64-bit key block (56 effective + parity).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326349-1",
+      "module": 2,
+      "conceptId": "2.1.6",
+      "source": "topic",
+      "cmid": "326349",
+      "quizTitle": "Quiz : 2.1.6 Idea of Differential Cryptanalysis",
+      "stem": "A differential cryptanalysis attack is a method of abusing pairs of plaintext and corresponding",
+      "options": [
+        "Plaintext",
+        "Ciphertext",
+        "Size of Encryption Key",
+        "None of These"
+      ],
+      "correct": 1,
+      "explanation": "Differential cryptanalysis studies plaintext pairs and corresponding ciphertexts.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326349-2",
+      "module": 2,
+      "conceptId": "2.1.6",
+      "source": "topic",
+      "cmid": "326349",
+      "quizTitle": "Quiz : 2.1.6 Idea of Differential Cryptanalysis",
+      "stem": "Differential Cryptanalysis is applicable to",
+      "options": [
+        "Block ciphe",
+        "Stream cipher",
+        "Cryptographic hash function",
+        "All of the above"
+      ],
+      "correct": 3,
+      "explanation": "Differential techniques apply across block ciphers, streams, and hash constructions.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326351-1",
+      "module": 2,
+      "conceptId": "2.1.7",
+      "source": "topic",
+      "cmid": "326351",
+      "quizTitle": "Quiz : 2.1.7 Block Cipher Modes of Operations",
+      "stem": "CTR Block Cipher Mode depends on",
+      "options": [
+        "Plaintext",
+        "Ciphertext",
+        "Size of Encryption Key",
+        "Counter"
+      ],
+      "correct": 3,
+      "explanation": "CTR mode encrypts a counter (then XOR with plaintext).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326351-2",
+      "module": 2,
+      "conceptId": "2.1.7",
+      "source": "topic",
+      "cmid": "326351",
+      "quizTitle": "Quiz : 2.1.7 Block Cipher Modes of Operations",
+      "stem": "Which mode of operation has the worst “error propagation” among the following",
+      "options": [
+        "OFB",
+        "CFB",
+        "CBC",
+        "ECB"
+      ],
+      "correct": 3,
+      "explanation": "ECB has no chaining; a bit error can corrupt an entire independent block (worst isolation/propagation trade-off in classic MCQs).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326353-1",
+      "module": 2,
+      "conceptId": "2.1.8",
+      "source": "topic",
+      "cmid": "326353",
+      "quizTitle": "Quiz : 2.1.8 Triple DES",
+      "stem": "How many DES operations performed in Triple DES",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 2,
+      "explanation": "Triple DES applies DES three times (EDE).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326353-2",
+      "module": 2,
+      "conceptId": "2.1.8",
+      "source": "topic",
+      "cmid": "326353",
+      "quizTitle": "Quiz : 2.1.8 Triple DES",
+      "stem": "Triple DES has ______________ keys.",
+      "options": [
+        "1",
+        "2",
+        "5",
+        "4"
+      ],
+      "correct": 1,
+      "explanation": "Common 2-key Triple-DES (EDE2) uses two keys; SLM lists two-key form.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326356-1",
+      "module": 2,
+      "conceptId": "2.2.1",
+      "source": "topic",
+      "cmid": "326356",
+      "quizTitle": "Quiz : 2.2.1 Advanced Encryption Standard (AES)",
+      "stem": "As per security strength, which one is best",
+      "options": [
+        "DES",
+        "Triple DES",
+        "AES",
+        "None of These"
+      ],
+      "correct": 2,
+      "explanation": "AES provides stronger modern security than DES/3DES.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326356-2",
+      "module": 2,
+      "conceptId": "2.2.1",
+      "source": "topic",
+      "cmid": "326356",
+      "quizTitle": "Quiz : 2.2.1 Advanced Encryption Standard (AES)",
+      "stem": "How many rounds does the AES-256 perform?",
+      "options": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct": 2,
+      "explanation": "AES-256 uses 14 rounds.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326358-1",
+      "module": 2,
+      "conceptId": "2.2.2",
+      "source": "topic",
+      "cmid": "326358",
+      "quizTitle": "Quiz : 2.2.2 Fermat’s and Euler’s Theorem",
+      "stem": "Fermat’s and Euler’s theorem depends on",
+      "options": [
+        "Even Number",
+        "ODD Number",
+        "Complex Number",
+        "Prime Number"
+      ],
+      "correct": 3,
+      "explanation": "Fermat/Euler theorems are stated for (modular) prime-related arithmetic.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326358-2",
+      "module": 2,
+      "conceptId": "2.2.2",
+      "source": "topic",
+      "cmid": "326358",
+      "quizTitle": "Quiz : 2.2.2 Fermat’s and Euler’s Theorem",
+      "stem": "f(x, y) = x3 + xy2 + 901 satisfies the Euler’s theorem.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "The given polynomial claim is not a valid Euler-theorem identity as stated.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326360-1",
+      "module": 2,
+      "conceptId": "2.2.3",
+      "source": "topic",
+      "cmid": "326360",
+      "quizTitle": "Quiz : 2.2.3 Chinese Remainder Theorem",
+      "stem": "Chinese Remainder Theorem depends on",
+      "options": [
+        "Even Number",
+        "ODD Number",
+        "Complex Number",
+        "Prime Number"
+      ],
+      "correct": 3,
+      "explanation": "CRT is applied with pairwise coprime / prime-power moduli in crypto settings.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326360-2",
+      "module": 2,
+      "conceptId": "2.2.3",
+      "source": "topic",
+      "cmid": "326360",
+      "quizTitle": "Quiz : 2.2.3 Chinese Remainder Theorem",
+      "stem": "The number of elements in S is denoted by:",
+      "options": [
+        "#S",
+        "S#",
+        "*S",
+        "S*"
+      ],
+      "correct": 0,
+      "explanation": "Cardinality of set S is commonly denoted #S.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326362-1",
+      "module": 2,
+      "conceptId": "2.2.4",
+      "source": "topic",
+      "cmid": "326362",
+      "quizTitle": "Quiz : 2.2.4 Principals of Public Key Crypto Systems",
+      "stem": "How many keys used in Public Key Cryptography",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 1,
+      "explanation": "Public-key cryptography uses two keys (public and private).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326362-2",
+      "module": 2,
+      "conceptId": "2.2.4",
+      "source": "topic",
+      "cmid": "326362",
+      "quizTitle": "Quiz : 2.2.4 Principals of Public Key Crypto Systems",
+      "stem": "In public key cryptosystem _____ keys are used for encryption and decryption.",
+      "options": [
+        "Same",
+        "Different",
+        "Encryption Keys",
+        "None of the mentioned"
+      ],
+      "correct": 1,
+      "explanation": "Encryption and decryption use different keys in public-key systems.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326364-1",
+      "module": 2,
+      "conceptId": "2.2.5",
+      "source": "topic",
+      "cmid": "326364",
+      "quizTitle": "Quiz : 2.2.5 RSA Algorithm",
+      "stem": "RSA Algorithm uses the concept of",
+      "options": [
+        "Even Number",
+        "Complex Number",
+        "Odd Number",
+        "Prime Number"
+      ],
+      "correct": 3,
+      "explanation": "RSA is built on large prime numbers and modular exponentiation.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326364-2",
+      "module": 2,
+      "conceptId": "2.2.5",
+      "source": "topic",
+      "cmid": "326364",
+      "quizTitle": "Quiz : 2.2.5 RSA Algorithm",
+      "stem": "In the RSA algorithm, which of the following statements is true?",
+      "options": [
+        "The same key is used for both encryption and decryption",
+        "The public key is kept secret, while the private key is shared openly.",
+        "The security of RSA relies on the ease of factoring large prime numbers.",
+        "The public key is used for encryption, and the private key is used for decryption"
+      ],
+      "correct": 3,
+      "explanation": "RSA encrypts with the public key and decrypts with the private key.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326366-1",
+      "module": 2,
+      "conceptId": "2.2.6",
+      "source": "topic",
+      "cmid": "326366",
+      "quizTitle": "Quiz : 2.2.6 Security of RSA Algorithm",
+      "stem": "Which possible attack in RSA Algorithm involves to keeptrying all possible keys or guesses",
+      "options": [
+        "Brute Force Attack",
+        "Side Channel Attack",
+        "Cryptanalysis",
+        "None of These"
+      ],
+      "correct": 0,
+      "explanation": "Exhaustive key search against RSA is a brute-force style attack.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326366-2",
+      "module": 2,
+      "conceptId": "2.2.6",
+      "source": "topic",
+      "cmid": "326366",
+      "quizTitle": "Quiz : 2.2.6 Security of RSA Algorithm",
+      "stem": "The RSA algorithm can transfer data as efficiently as DES",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "False: RSA is much slower/bulk-inefficient compared with DES/AES for bulk data.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326371-1",
+      "module": 3,
+      "conceptId": "3.1.1",
+      "source": "topic",
+      "cmid": "326371",
+      "quizTitle": "Quiz : 3.1.1 Introduction of Message Authentication Codes",
+      "stem": "The process of verifying the integrity and authenticity of transmitted messages is called",
+      "options": [
+        "Message Authentication",
+        "Message Integrity",
+        "Message Confidentiality",
+        "None of These"
+      ],
+      "correct": 0,
+      "explanation": "Message authentication verifies integrity and authenticity of messages.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326371-2",
+      "module": 3,
+      "conceptId": "3.1.1",
+      "source": "topic",
+      "cmid": "326371",
+      "quizTitle": "Quiz : 3.1.1 Introduction of Message Authentication Codes",
+      "stem": "Which security service should ensure that the sender of the message is same individual as in indicated by the identity in the message.",
+      "options": [
+        "Authentication",
+        "Integrity",
+        "Confidentiality",
+        "None of These"
+      ],
+      "correct": 0,
+      "explanation": "Authentication binds the claimed sender identity to the message.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326373-1",
+      "module": 3,
+      "conceptId": "3.1.2",
+      "source": "topic",
+      "cmid": "326373",
+      "quizTitle": "Quiz :3.1.2 Authentication Functions",
+      "stem": "Which public function that maps a message of any length into a fixed length hash value which serves as its authenticator.",
+      "options": [
+        "Virtual Function",
+        "Friend Function",
+        "Authentication Function",
+        "None of These"
+      ],
+      "correct": 2,
+      "explanation": "Hash/authentication functions map arbitrary messages to fixed-length authenticators.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326373-2",
+      "module": 3,
+      "conceptId": "3.1.2",
+      "source": "topic",
+      "cmid": "326373",
+      "quizTitle": "Quiz :3.1.2 Authentication Functions",
+      "stem": "he sender generates the message M and the hash value ‘h’ is calculated by subjecting M to hash function as",
+      "options": [
+        "h=M(H)",
+        "h=H",
+        "H=h(M)",
+        "None of These"
+      ],
+      "correct": 3,
+      "explanation": "Correct relation is h=H(M); none of the listed formulas match cleanly.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326375-1",
+      "module": 3,
+      "conceptId": "3.1.3",
+      "source": "topic",
+      "cmid": "326375",
+      "quizTitle": "Quiz : 3.1.3 Authentication Requirements",
+      "stem": "Discovery of the pattern of traffic between parties is known as",
+      "options": [
+        "Path analysis",
+        "Traffic analysis",
+        "Time analysis",
+        "None of these"
+      ],
+      "correct": 1,
+      "explanation": "Observing communication patterns is traffic analysis.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326375-2",
+      "module": 3,
+      "conceptId": "3.1.3",
+      "source": "topic",
+      "cmid": "326375",
+      "quizTitle": "Quiz : 3.1.3 Authentication Requirements",
+      "stem": "Denial of transmission of message by source is called",
+      "options": [
+        "Source repudiation",
+        "Destination repudiation",
+        "Timing modification",
+        "None of these"
+      ],
+      "correct": 0,
+      "explanation": "Source repudiation is denial of having sent a message.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326377-1",
+      "module": 3,
+      "conceptId": "3.1.4",
+      "source": "topic",
+      "cmid": "326377",
+      "quizTitle": "Quiz : Message Authentication Code (MAC)",
+      "stem": "Which one is called as cryptographic checksum added to the message which serves as its authenticator.",
+      "options": [
+        "Path Analysis",
+        "Traffic Analysis",
+        "Time Analysis",
+        "Message Authentication Code"
+      ],
+      "correct": 3,
+      "explanation": "A MAC is a cryptographic checksum authenticating a message.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326377-2",
+      "module": 3,
+      "conceptId": "3.1.4",
+      "source": "topic",
+      "cmid": "326377",
+      "quizTitle": "Quiz : Message Authentication Code (MAC)",
+      "stem": "What is calculated by subjecting M to a function C called as MAC function using the secret key K.",
+      "options": [
+        "Cryptographic Checksum",
+        "Digital Checksum",
+        "Message Checksum",
+        "None of These"
+      ],
+      "correct": 0,
+      "explanation": "MAC function C produces a cryptographic checksum on message M.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326379-1",
+      "module": 3,
+      "conceptId": "3.1.5",
+      "source": "topic",
+      "cmid": "326379",
+      "quizTitle": "Quiz 3.1.5 Secure Hash Algorithm (SHA)",
+      "stem": "Which version of SHA belongs to Secure Hash Algorithm",
+      "options": [
+        "SHA-0",
+        "SHA-1",
+        "SHA-2",
+        "SHA-3",
+        "e. All of the Above"
+      ],
+      "correct": 4,
+      "explanation": "SHA family includes SHA-0/1/2/3 variants covered in the material.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326379-2",
+      "module": 3,
+      "conceptId": "3.1.5",
+      "source": "topic",
+      "cmid": "326379",
+      "quizTitle": "Quiz 3.1.5 Secure Hash Algorithm (SHA)",
+      "stem": "The secure hash algorithm takes as input a message with a maximum length less than 264 bits and produces a ________ bit message digest.",
+      "options": [
+        "160",
+        "128",
+        "256",
+        "None of These"
+      ],
+      "correct": 3,
+      "explanation": "SHA-1 input limit is < 2^64 bits; listed sizes are digest lengths, not the max input.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326381-1",
+      "module": 3,
+      "conceptId": "3.1.6",
+      "source": "topic",
+      "cmid": "326381",
+      "quizTitle": "Quiz : 3.1.6 Message Digest",
+      "stem": "A message digest is also a",
+      "options": [
+        "Virtual Function",
+        "Inline Function",
+        "Hash Function",
+        "None of These"
+      ],
+      "correct": 2,
+      "explanation": "A message digest is produced by a hash function.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326381-2",
+      "module": 3,
+      "conceptId": "3.1.6",
+      "source": "topic",
+      "cmid": "326381",
+      "quizTitle": "Quiz : 3.1.6 Message Digest",
+      "stem": "How many rounds used by MD5 algorithm",
+      "options": [
+        "4",
+        "2",
+        "3",
+        "None of these"
+      ],
+      "correct": 0,
+      "explanation": "MD5 uses 4 rounds of 16 steps each.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326384-1",
+      "module": 3,
+      "conceptId": "3.2.1",
+      "source": "topic",
+      "cmid": "326384",
+      "quizTitle": "Quiz : 3.2.1 Overview of Digital Signatures",
+      "stem": "Which cryptographic algorithm employed by digital signatures",
+      "options": [
+        "Symmetric cryptography",
+        "Asymmetric cryptography",
+        "Visual cryptography",
+        "None of these"
+      ],
+      "correct": 1,
+      "explanation": "Digital signatures rely on asymmetric cryptography.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326384-2",
+      "module": 3,
+      "conceptId": "3.2.1",
+      "source": "topic",
+      "cmid": "326384",
+      "quizTitle": "Quiz : 3.2.1 Overview of Digital Signatures",
+      "stem": "Digital signature is equivalent of a handwritten",
+      "options": [
+        "Statement",
+        "Stamp paper",
+        "Signature",
+        "None of these"
+      ],
+      "correct": 2,
+      "explanation": "A digital signature is the electronic counterpart of a handwritten signature.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326386-1",
+      "module": 3,
+      "conceptId": "3.2.2",
+      "source": "topic",
+      "cmid": "326386",
+      "quizTitle": "Quiz : 3.2.2 Digital Signature Standards (DSS)",
+      "stem": "DSS stands for",
+      "options": [
+        "Digital signature standard",
+        "Digital signature suite",
+        "Digital standard suite",
+        "None of these"
+      ],
+      "correct": 0,
+      "explanation": "DSS = Digital Signature Standard.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326386-2",
+      "module": 3,
+      "conceptId": "3.2.2",
+      "source": "topic",
+      "cmid": "326386",
+      "quizTitle": "Quiz : 3.2.2 Digital Signature Standards (DSS)",
+      "stem": "The algorithm used behind the digital signature standard is known as the",
+      "options": [
+        "Data structure algorithm",
+        "Digital signature algorithm",
+        "Digital standard algorithm",
+        "None of these"
+      ],
+      "correct": 1,
+      "explanation": "DSS is realized by the Digital Signature Algorithm (DSA).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326389-1",
+      "module": 3,
+      "conceptId": "3.2.3",
+      "source": "topic",
+      "cmid": "326389",
+      "quizTitle": "Quiz : 3.2.3 Proof of Digital Signature Algorithm",
+      "stem": "A digital signature is a mathematical technique which validates?",
+      "options": [
+        "authenticity",
+        "integrity",
+        "Non-repudiation",
+        "All of the above"
+      ],
+      "correct": 3,
+      "explanation": "Signatures support authenticity, integrity, and non-repudiation.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326389-2",
+      "module": 3,
+      "conceptId": "3.2.3",
+      "source": "topic",
+      "cmid": "326389",
+      "quizTitle": "Quiz : 3.2.3 Proof of Digital Signature Algorithm",
+      "stem": "_____________ is a process which verifies the identity of a user who wants to access the system.",
+      "options": [
+        "Authentication",
+        "Non-repudiation",
+        "Integrity",
+        "None of the above"
+      ],
+      "correct": 0,
+      "explanation": "Authentication verifies a user’s claimed identity.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326394-1",
+      "module": 4,
+      "conceptId": "4.1.1",
+      "source": "topic",
+      "cmid": "326394",
+      "quizTitle": "Quiz : 4.1.1 Authentication Applications: Kerberos",
+      "stem": "Kerberos is a __________ authentication protocol.",
+      "options": [
+        "Network",
+        "Hardware",
+        "Software",
+        "None of These"
+      ],
+      "correct": 0,
+      "explanation": "Kerberos is a network authentication protocol.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326394-2",
+      "module": 4,
+      "conceptId": "4.1.1",
+      "source": "topic",
+      "cmid": "326394",
+      "quizTitle": "Quiz : 4.1.1 Authentication Applications: Kerberos",
+      "stem": "Which organization developed Kerberos as a solution to network security problems.",
+      "options": [
+        "IIT",
+        "MIT",
+        "University of California",
+        "None of These"
+      ],
+      "correct": 1,
+      "explanation": "Kerberos was developed at MIT.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326396-1",
+      "module": 4,
+      "conceptId": "4.1.2",
+      "source": "topic",
+      "cmid": "326396",
+      "quizTitle": "Quiz : 4.1.2 Overview of Access Control List (ACL)",
+      "stem": "An access control list (ACL) contains rules that grant or deny ________ to certain digital environments.",
+      "options": [
+        "Privilege",
+        "Security",
+        "Access",
+        "None of These"
+      ],
+      "correct": 2,
+      "explanation": "ACLs grant or deny access.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326396-2",
+      "module": 4,
+      "conceptId": "4.1.2",
+      "source": "topic",
+      "cmid": "326396",
+      "quizTitle": "Quiz : 4.1.2 Overview of Access Control List (ACL)",
+      "stem": "An ACL entry typically includes some portion of the",
+      "options": [
+        "Address",
+        "Port",
+        "Protocols",
+        "All of the Above"
+      ],
+      "correct": 3,
+      "explanation": "ACL entries commonly match address, port, and protocol fields.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326398-1",
+      "module": 4,
+      "conceptId": "4.1.3",
+      "source": "topic",
+      "cmid": "326398",
+      "quizTitle": "Quiz : 4.1.3 Electronic Mail Security: Pretty Good Privacy (PGP)",
+      "stem": "PGP was developed by",
+      "options": [
+        "Phil Zimmerman",
+        "Phil James",
+        "Phil Simon",
+        "None of These"
+      ],
+      "correct": 0,
+      "explanation": "PGP was created by Phil Zimmermann.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326398-2",
+      "module": 4,
+      "conceptId": "4.1.3",
+      "source": "topic",
+      "cmid": "326398",
+      "quizTitle": "Quiz : 4.1.3 Electronic Mail Security: Pretty Good Privacy (PGP)",
+      "stem": "Pretty Good Privacy (PGP) is a freeware ________ encryption system",
+      "options": [
+        "Data",
+        "Network",
+        "E-Mail",
+        "None of These"
+      ],
+      "correct": 2,
+      "explanation": "PGP is an e-mail (and file) encryption system.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326400-1",
+      "module": 4,
+      "conceptId": "4.1.4",
+      "source": "topic",
+      "cmid": "326400",
+      "quizTitle": "Quiz : 4.1.4 S/MIME",
+      "stem": "S/MIME stands for",
+      "options": [
+        "Secure Multi-Purpose Internet Mail Extensions",
+        "Secure Multi-Purpose Internet Mail Encryption",
+        "Secure Multi-Point Internet Mail Extensions",
+        "None of These"
+      ],
+      "correct": 0,
+      "explanation": "S/MIME = Secure/Multipurpose Internet Mail Extensions.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326400-2",
+      "module": 4,
+      "conceptId": "4.1.4",
+      "source": "topic",
+      "cmid": "326400",
+      "quizTitle": "Quiz : 4.1.4 S/MIME",
+      "stem": "An extension of MIME that supports secure mail is",
+      "options": [
+        "E/MIME",
+        "S/MIME",
+        "T/MIME",
+        "None of These"
+      ],
+      "correct": 1,
+      "explanation": "S/MIME extends MIME for secure mail.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326403-1",
+      "module": 4,
+      "conceptId": "4.2.1",
+      "source": "topic",
+      "cmid": "326403",
+      "quizTitle": "Quiz :4.2.1 IP Security Architecture Components",
+      "stem": "Internet Protocol Security (IPSec) is a protocol suite for securing ____________________ communications by authenticating and encrypting each IP packet of a communication session.",
+      "options": [
+        "TCS",
+        "UDP",
+        "IP",
+        "None of These"
+      ],
+      "correct": 2,
+      "explanation": "IPsec secures IP-layer communications.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326403-2",
+      "module": 4,
+      "conceptId": "4.2.1",
+      "source": "topic",
+      "cmid": "326403",
+      "quizTitle": "Quiz :4.2.1 IP Security Architecture Components",
+      "stem": "IPSec can be used in protecting data flows between",
+      "options": [
+        "Host-to-Host",
+        "Network-to-Network",
+        "Network-to-Host",
+        "All of the Above"
+      ],
+      "correct": 3,
+      "explanation": "IPsec can protect host–host, network–network, and mixed paths.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326405-1",
+      "module": 4,
+      "conceptId": "4.2.2",
+      "source": "topic",
+      "cmid": "326405",
+      "quizTitle": "Quiz : 4.2.2 Secure Socket Layer",
+      "stem": "SSL is designed to make use of TCP as a communication layer to provide a reliable ________ secure and authenticated connection between two points over a network",
+      "options": [
+        "Point-to-Point",
+        "End-to-End",
+        "Broadcast",
+        "None of These"
+      ],
+      "correct": 1,
+      "explanation": "SSL/TLS provides end-to-end security over TCP.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326405-2",
+      "module": 4,
+      "conceptId": "4.2.2",
+      "source": "topic",
+      "cmid": "326405",
+      "quizTitle": "Quiz : 4.2.2 Secure Socket Layer",
+      "stem": "The SSL protocol was originally developed by",
+      "options": [
+        "Netscape",
+        "Google",
+        "Microsoft",
+        "None of These"
+      ],
+      "correct": 0,
+      "explanation": "SSL was originally developed by Netscape.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326407-1",
+      "module": 4,
+      "conceptId": "4.2.3",
+      "source": "topic",
+      "cmid": "326407",
+      "quizTitle": "Quiz : 4.2.3 Secure Electronic Transaction (SET)",
+      "stem": "SET is jointly developed by",
+      "options": [
+        "Visa",
+        "Mastercard",
+        "IBM",
+        "Both a and b"
+      ],
+      "correct": 3,
+      "explanation": "SET was jointly developed by Visa and Mastercard.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326407-2",
+      "module": 4,
+      "conceptId": "4.2.3",
+      "source": "topic",
+      "cmid": "326407",
+      "quizTitle": "Quiz : 4.2.3 Secure Electronic Transaction (SET)",
+      "stem": "Secure Electronic Transaction (SET) was a standard protocol for securing _________ transactions over insecure networks, specifically, the Internet",
+      "options": [
+        "Offline",
+        "Online",
+        "Inline",
+        "None of These"
+      ],
+      "correct": 1,
+      "explanation": "SET secured online card payment transactions.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326412-1",
+      "module": 5,
+      "conceptId": "5.1.1",
+      "source": "topic",
+      "cmid": "326412",
+      "quizTitle": "Quiz :5.1.1 Introductory Idea of Intrusion",
+      "stem": "Intrusion attempts is the potential possibility of a deliberate unauthorized attempt to",
+      "options": [
+        "Access Information",
+        "Manipulate Information",
+        "Render a system unreliable or unusable.",
+        "All of the Above"
+      ],
+      "correct": 3,
+      "explanation": "Amigo review: All of the Above",
+      "answerSource": "amigo_review",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326412-2",
+      "module": 5,
+      "conceptId": "5.1.1",
+      "source": "topic",
+      "cmid": "326412",
+      "quizTitle": "Quiz :5.1.1 Introductory Idea of Intrusion",
+      "stem": "The intrusion like as Attempted break-ins can be detected by",
+      "options": [
+        "A normal behavior of user",
+        "A typical behavior profiles or violations of security constraints.",
+        "Monitoring",
+        "None of These"
+      ],
+      "correct": 1,
+      "explanation": "Amigo review: A typical behavior profiles or violations of security constraints.",
+      "answerSource": "amigo_review",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326414-1",
+      "module": 5,
+      "conceptId": "5.1.2",
+      "source": "topic",
+      "cmid": "326414",
+      "quizTitle": "Quiz 5.1.2 Intrusion Detection Techniques",
+      "stem": "An Intrusion Detection System (IDS) is a device or software application that monitors network or system activities for",
+      "options": [
+        "Non-Malicious Purpose",
+        "Malicious Purpose",
+        "Normal Purpose",
+        "None of These"
+      ],
+      "correct": 1,
+      "explanation": "IDS monitors for malicious activity.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326414-2",
+      "module": 5,
+      "conceptId": "5.1.2",
+      "source": "topic",
+      "cmid": "326414",
+      "quizTitle": "Quiz 5.1.2 Intrusion Detection Techniques",
+      "stem": "Intrusion detection and prevention systems (IDPS) is a combination of<",
+      "options": [
+        "Intrusion Detection System (IDS)",
+        "Intrusion Prevention System (IPS)",
+        "Both",
+        "None of These"
+      ],
+      "correct": 2,
+      "explanation": "IDPS combines detection and prevention capabilities.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326416-1",
+      "module": 5,
+      "conceptId": "5.1.3",
+      "source": "topic",
+      "cmid": "326416",
+      "quizTitle": "Quiz 5.1.3 Viruses and Worms",
+      "stem": "Malware cannot damage the physical hardware of systems and network equipment, but it can damage the",
+      "options": [
+        "Software",
+        "Data",
+        "Both",
+        "None of these"
+      ],
+      "correct": 2,
+      "explanation": "Malware damages software/data (not typically physical hardware).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326416-2",
+      "module": 5,
+      "conceptId": "5.1.3",
+      "source": "topic",
+      "cmid": "326416",
+      "quizTitle": "Quiz 5.1.3 Viruses and Worms",
+      "stem": "A malware that propagates by inserting a copy of itself into and becoming part of another program. It spreads from one computer to another, leaving infections as it travels.",
+      "options": [
+        "Worm",
+        "Virus",
+        "Both",
+        "None of These"
+      ],
+      "correct": 1,
+      "explanation": "A virus inserts into and becomes part of another program.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326418-1",
+      "module": 5,
+      "conceptId": "5.1.4",
+      "source": "topic",
+      "cmid": "326418",
+      "quizTitle": "Quiz : 5.1.4 Firewall Overview and Design Principles",
+      "stem": "Network Firewalls operate at _______ layers to use different criteria to restrict traffic",
+      "options": [
+        "Physical Layer",
+        "Data Link Layer",
+        "Network Layer",
+        "Multiple Layers"
+      ],
+      "correct": 3,
+      "explanation": "Network firewalls operate across multiple layers with varied criteria.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326418-2",
+      "module": 5,
+      "conceptId": "5.1.4",
+      "source": "topic",
+      "cmid": "326418",
+      "quizTitle": "Quiz : 5.1.4 Firewall Overview and Design Principles",
+      "stem": "Which type of Firewall provides best security among others?",
+      "options": [
+        "Packet filters",
+        "Circuit level gateways",
+        "Application level gateways",
+        "Stateful multilayer inspection firewalls"
+      ],
+      "correct": 3,
+      "explanation": "Stateful multilayer inspection generally provides the strongest classic firewall model.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326420-1",
+      "module": 5,
+      "conceptId": "5.1.5",
+      "source": "topic",
+      "cmid": "326420",
+      "quizTitle": "Quiz : 5.1.5 Global Standards IT Acts and Cyber Laws",
+      "stem": "The Information Technology Act 2000 (also known as ITA-2000, or the IT Act) is an Act of the Indian Parliament notified on",
+      "options": [
+        "October 17, 2000",
+        "October 17, 2008",
+        "October 07, 2000",
+        "October 07, 2008"
+      ],
+      "correct": 0,
+      "explanation": "IT Act 2000 came into force on 17 October 2000.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326420-2",
+      "module": 5,
+      "conceptId": "5.1.5",
+      "source": "topic",
+      "cmid": "326420",
+      "quizTitle": "Quiz : 5.1.5 Global Standards IT Acts and Cyber Laws",
+      "stem": "Information Technology Act 2000 addressed the following issues",
+      "options": [
+        "Legal Recognition of Electronic Documents",
+        "Legal Recognition of Digital Signatures",
+        "Offenses and Contraventions",
+        "All of the Above"
+      ],
+      "correct": 3,
+      "explanation": "IT Act covers e-documents, digital signatures, and offences.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326422-1",
+      "module": 5,
+      "conceptId": "5.1.6",
+      "source": "topic",
+      "cmid": "326422",
+      "quizTitle": "Quiz : 5.1.6 Virtual Personal Network",
+      "stem": "VPN prevents ______________ people from eavesdropping on the traffic and allows the user to conduct work remotely.",
+      "options": [
+        "Authorized",
+        "Unauthorized",
+        "Normal",
+        "None of These"
+      ],
+      "correct": 1,
+      "explanation": "VPNs protect against unauthorized eavesdropping.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326422-2",
+      "module": 5,
+      "conceptId": "5.1.6",
+      "source": "topic",
+      "cmid": "326422",
+      "quizTitle": "Quiz : 5.1.6 Virtual Personal Network",
+      "stem": "Which VPN technology allows senders to encapsulate their data in IP packets that hide the underlying routing and switching infrastructure of the Internet from both senders and receivers.",
+      "options": [
+        "Tumbering",
+        "Tunneling",
+        "Pipelining",
+        "Hardening"
+      ],
+      "correct": 1,
+      "explanation": "VPN tunneling encapsulates packets (e.g., in IP).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326424-1",
+      "module": 5,
+      "conceptId": "5.1.7",
+      "source": "topic",
+      "cmid": "326424",
+      "quizTitle": "Quiz : 5.1.7 Recent Network Attacks and Security Measures",
+      "stem": "Which attack or sniffer is a computer program or computer hardware such as a packet capture appliance, that can intercept and log traffic that passes over a computer network or part of a network.",
+      "options": [
+        "Packet Analyzer",
+        "Buffer Overflow",
+        "Port Scanning",
+        "None of These"
+      ],
+      "correct": 0,
+      "explanation": "A packet analyzer/sniffer captures and inspects traffic.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326424-2",
+      "module": 5,
+      "conceptId": "5.1.7",
+      "source": "topic",
+      "cmid": "326424",
+      "quizTitle": "Quiz : 5.1.7 Recent Network Attacks and Security Measures",
+      "stem": "Which attack occurs when the volume of data exceeds the storage capacity of the memory buffer.",
+      "options": [
+        "Packet Analyzer",
+        "Buffer Overflow",
+        "Port Scanning",
+        "None of These"
+      ],
+      "correct": 1,
+      "explanation": "Buffer overflow occurs when data exceeds buffer capacity.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326426-1",
+      "module": 5,
+      "conceptId": "5.1.8",
+      "source": "topic",
+      "cmid": "326426",
+      "quizTitle": "Quiz : 5.1.8 Blockchain Technology",
+      "stem": "Which is a system of recording information in a way that makes it difficult or impossible to change, hack, or cheat the system?",
+      "options": [
+        "Block Series Technology",
+        "Blockchain Technology",
+        "Bitchain Technology",
+        "None of These"
+      ],
+      "correct": 1,
+      "explanation": "Blockchain records information in linked blocks that resist alteration.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326426-2",
+      "module": 5,
+      "conceptId": "5.1.8",
+      "source": "topic",
+      "cmid": "326426",
+      "quizTitle": "Quiz : 5.1.8 Blockchain Technology",
+      "stem": "Each _____ refers to the previous block and together make the Blockchain.",
+      "options": [
+        "Bit",
+        "Byte",
+        "Stream",
+        "Block"
+      ],
+      "correct": 3,
+      "explanation": "Each block references the previous block in the chain.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326428-1",
+      "module": 5,
+      "conceptId": "5.1.9",
+      "source": "topic",
+      "cmid": "326428",
+      "quizTitle": "Quiz: 5.1.9 Internet Privacy and Piracy Prevention",
+      "stem": "Which one is the unauthorized taking, copying or use of copyrighted materials without permission?",
+      "options": [
+        "Privacy",
+        "Piracy",
+        "Secrecy",
+        "None of These"
+      ],
+      "correct": 1,
+      "explanation": "Piracy is unauthorized copying/use of copyrighted material.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326428-2",
+      "module": 5,
+      "conceptId": "5.1.9",
+      "source": "topic",
+      "cmid": "326428",
+      "quizTitle": "Quiz: 5.1.9 Internet Privacy and Piracy Prevention",
+      "stem": "Which one is the state of being free from public scrutiny or from having your secrets or personal information shared?",
+      "options": [
+        "Privacy",
+        "Piracy",
+        "Integrity",
+        "None of These"
+      ],
+      "correct": 0,
+      "explanation": "Privacy is freedom from unwanted public scrutiny/disclosure.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326431-1",
+      "module": 5,
+      "conceptId": "5.2.1",
+      "source": "topic",
+      "cmid": "326431",
+      "quizTitle": "Quiz : 5.2.1 Overview of Cyber Forensic",
+      "stem": "Which types of Cyber Forensic Tools are used for gather the relevant data from media storage device during the investigation of cybercrime?",
+      "options": [
+        "Hardware Cyber Forensic Tools",
+        "Software Cyber Forensic Tools",
+        "Both",
+        "None of These"
+      ],
+      "correct": 2,
+      "explanation": "Forensic acquisition uses both hardware and software tools.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326431-2",
+      "module": 5,
+      "conceptId": "5.2.1",
+      "source": "topic",
+      "cmid": "326431",
+      "quizTitle": "Quiz : 5.2.1 Overview of Cyber Forensic",
+      "stem": "Which forensic tool is not made in China?",
+      "options": [
+        "Encase",
+        "FTK",
+        "TSK",
+        "None of These"
+      ],
+      "correct": 3,
+      "explanation": "EnCase/FTK/TSK are not China-origin tools; answer is none of these as ‘Chinese-made’.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326433-1",
+      "module": 5,
+      "conceptId": "5.2.2",
+      "source": "topic",
+      "cmid": "326433",
+      "quizTitle": "Quiz : 5.2.2 Cyber Forensics Process",
+      "stem": "The general phases of the forensic process are",
+      "options": [
+        "Identification of potential evidence",
+        "The acquisition of that evidence",
+        "Analysis of the evidence",
+        "Production of a report",
+        "e. All of the Above"
+      ],
+      "correct": 4,
+      "explanation": "Forensic process: identify, acquire, analyze, report.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326433-2",
+      "module": 5,
+      "conceptId": "5.2.2",
+      "source": "topic",
+      "cmid": "326433",
+      "quizTitle": "Quiz : 5.2.2 Cyber Forensics Process",
+      "stem": "Which one is very important step of Crime Scene Investigation?",
+      "options": [
+        "Identify Scene Dimensions. Locate the focal point of the scene.Establish Security. Tape around the perimeter.",
+        "Create a Plan & Communicate. Determine the type of crime that occurred.",
+        "Conduct the Survey. Identify potential evidence.",
+        "Record and Preserve Evidence."
+      ],
+      "correct": 0,
+      "explanation": "Establishing/identifying the scene dimensions is a critical first CSI step.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326436-1",
+      "module": 5,
+      "conceptId": "5.2.3",
+      "source": "topic",
+      "cmid": "326436",
+      "quizTitle": "Quiz : 5.2.3 Cyber Forensic Application",
+      "stem": "The main goal of cyber forensics is to",
+      "options": [
+        "Identify the Data",
+        "Collect the Data",
+        "Preserve the Data",
+        "Analyze the Data",
+        "e. All of the above"
+      ],
+      "correct": 4,
+      "explanation": "Cyber forensics identifies, collects, preserves, and analyzes data.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326436-2",
+      "module": 5,
+      "conceptId": "5.2.3",
+      "source": "topic",
+      "cmid": "326436",
+      "quizTitle": "Quiz : 5.2.3 Cyber Forensic Application",
+      "stem": "Computer forensics can support our audit and investigation objectives like as",
+      "options": [
+        "An Effective System of Internal Controls;",
+        "Reliability of Financial Reporting;",
+        "Compliance with federal and state laws;",
+        "Detection of Fraud, Waste, and Abuse.",
+        "e. All of the Above"
+      ],
+      "correct": 4,
+      "explanation": "Forensics supports controls, reporting, compliance, and fraud detection.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326438-1",
+      "module": 5,
+      "conceptId": "5.2.4",
+      "source": "topic",
+      "cmid": "326438",
+      "quizTitle": "Quiz : 5.2.4 Cyber Forensic Tools",
+      "stem": "Which types of Cyber Forensic Tools are used for gather the relevant data from media storage device during the investigation of cybercrime?",
+      "options": [
+        "Hardware Cyber Forensic Tools",
+        "Software Cyber Forensic Tools",
+        "Both",
+        "None of These"
+      ],
+      "correct": 2,
+      "explanation": "Both hardware and software forensic tools gather evidence.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326438-2",
+      "module": 5,
+      "conceptId": "5.2.4",
+      "source": "topic",
+      "cmid": "326438",
+      "quizTitle": "Quiz : 5.2.4 Cyber Forensic Tools",
+      "stem": "Which forensic tool is not made in China?",
+      "options": [
+        "Encase",
+        "FTK",
+        "TSK;",
+        "None of These"
+      ],
+      "correct": 3,
+      "explanation": "Listed tools are not China-made; select none of these.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326440-1",
+      "module": 5,
+      "conceptId": "5.2.5",
+      "source": "topic",
+      "cmid": "326440",
+      "quizTitle": "Quiz 5.2.5 Digital Evidence",
+      "stem": "Digital Forensics is a science of finding evidence from digital media like a",
+      "options": [
+        "Computer",
+        "Mobile Phone",
+        "Server",
+        "Network",
+        "e. All of the Above"
+      ],
+      "correct": 4,
+      "explanation": "Digital forensics covers computers, phones, servers, and networks.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326440-2",
+      "module": 5,
+      "conceptId": "5.2.5",
+      "source": "topic",
+      "cmid": "326440",
+      "quizTitle": "Quiz 5.2.5 Digital Evidence",
+      "stem": "Digital evidence is defined as information and data of value to an investigation that is stored on, received or transmitted by an",
+      "options": [
+        "Mechanical Device",
+        "Electronic Device",
+        "Biological Device",
+        "None of These"
+      ],
+      "correct": 1,
+      "explanation": "Digital evidence comes from electronic devices.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326442-1",
+      "module": 5,
+      "conceptId": "5.2.6",
+      "source": "topic",
+      "cmid": "326442",
+      "quizTitle": "Quiz : 5.2.6 Investigating Windows and Unix Systems",
+      "stem": "Operating System Forensics is the process of retrieving useful information from the ____________ of the computer or mobile device.",
+      "options": [
+        "Hardware",
+        "Software",
+        "Operating System",
+        "None of These"
+      ],
+      "correct": 2,
+      "explanation": "OS forensics retrieves artifacts from the operating system.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326442-2",
+      "module": 5,
+      "conceptId": "5.2.6",
+      "source": "topic",
+      "cmid": "326442",
+      "quizTitle": "Quiz : 5.2.6 Investigating Windows and Unix Systems",
+      "stem": "Which cyber forensic tool displays network connections and network associated applications?",
+      "options": [
+        "Tcpview",
+        "Process Explorer",
+        "Rootkit Revealer",
+        "None of These"
+      ],
+      "correct": 0,
+      "explanation": "TCPView shows network connections/associations.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326444-1",
+      "module": 5,
+      "conceptId": "5.2.7",
+      "source": "topic",
+      "cmid": "326444",
+      "quizTitle": "Quiz 5.2.7 Email Tracing",
+      "stem": "E-Mail Tracing helps to identify the majority of email-related crimes like as",
+      "options": [
+        "Email spoofing",
+        "Phishing",
+        "Online Frauds & Scams",
+        "All of the Above"
+      ],
+      "correct": 3,
+      "explanation": "Email tracing helps investigate spoofing, phishing, and online frauds.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "amigo-t-326444-2",
+      "module": 5,
+      "conceptId": "5.2.7",
+      "source": "topic",
+      "cmid": "326444",
+      "quizTitle": "Quiz 5.2.7 Email Tracing",
+      "stem": "Email Tracing or Tracking is a method for monitoring the delivery of __________ to the intended recipient.",
+      "options": [
+        "Data",
+        "Software",
+        "E-Mail",
+        "None of These"
+      ],
+      "correct": 2,
+      "explanation": "Email tracing/tracking monitors e-mail delivery.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.1-q1",
+      "module": 1,
+      "conceptId": "1.1.1",
+      "source": "handcrafted",
+      "stem": "An attacker records packet timings between two hosts but never changes any packet. This is best classified as:",
+      "options": [
+        "An active modification attack",
+        "A passive traffic-analysis attack",
+        "A fabrication attack",
+        "An interruption (DoS) attack"
+      ],
+      "correct": 1,
+      "explanation": "Observing traffic without altering resources is passive; traffic analysis is the classic case.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.1-q2",
+      "module": 1,
+      "conceptId": "1.1.1",
+      "source": "handcrafted",
+      "stem": "Which attack primarily threatens availability by destroying or blocking access to an asset?",
+      "options": [
+        "Interception",
+        "Modification",
+        "Interruption",
+        "Fabrication"
+      ],
+      "correct": 2,
+      "explanation": "Interruption is the availability-oriented attack (DoS flavour).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.2-q1",
+      "module": 1,
+      "conceptId": "1.1.2",
+      "source": "handcrafted",
+      "stem": "In security terminology, confidentiality, authentication, and non-repudiation are examples of:",
+      "options": [
+        "Security mechanisms",
+        "Security services",
+        "Cryptanalytic models",
+        "Key schedules"
+      ],
+      "correct": 1,
+      "explanation": "Services are the abstract goals; mechanisms are the concrete techniques that achieve them.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.2-q2",
+      "module": 1,
+      "conceptId": "1.1.2",
+      "source": "handcrafted",
+      "stem": "Encryption used to keep message contents secret is best described as a:",
+      "options": [
+        "Security service named AES",
+        "Security mechanism supporting confidentiality",
+        "Form of steganography",
+        "Non-repudiation service by itself"
+      ],
+      "correct": 1,
+      "explanation": "Encryption is a mechanism; the service it mainly supports is confidentiality.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-1.1.3-q1",
+      "module": 1,
+      "conceptId": "1.1.3",
+      "source": "handcrafted",
+      "stem": "Classical encryption techniques are built mainly from which two families of operations?",
+      "options": [
+        "Hashing and MACs",
+        "Substitution and transposition",
+        "Public-key and hybrid wrapping",
+        "Tunneling and filtering"
+      ],
+      "correct": 1,
+      "explanation": "Classical ciphers rearrange (transpose) and/or replace (substitute) symbols under a key.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.3-q2",
+      "module": 1,
+      "conceptId": "1.1.3",
+      "source": "handcrafted",
+      "stem": "Kerckhoffs’ modern design assumption treats which item as public knowledge?",
+      "options": [
+        "The encryption key",
+        "The algorithm / cipher design",
+        "The plaintext language",
+        "The IV only"
+      ],
+      "correct": 1,
+      "explanation": "Assume the adversary knows the algorithm; secrecy lives in the key.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-1.1.4-q1",
+      "module": 1,
+      "conceptId": "1.1.4",
+      "source": "handcrafted",
+      "stem": "A cipher that uses one fixed substitution alphabet for the entire message is:",
+      "options": [
+        "Polyalphabetic",
+        "Monoalphabetic",
+        "A transposition cipher",
+        "A Feistel network"
+      ],
+      "correct": 1,
+      "explanation": "Monoalphabetic = one mapping for all positions; polyalphabetic varies the alphabet.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.4-q2",
+      "module": 1,
+      "conceptId": "1.1.4",
+      "source": "handcrafted",
+      "stem": "Why is the Caesar cipher especially weak against brute force?",
+      "options": [
+        "It uses 128-bit blocks",
+        "Its nontrivial key space is only 25 letter shifts",
+        "It requires an IV",
+        "It is a stream cipher"
+      ],
+      "correct": 1,
+      "explanation": "Only 25 nontrivial shifts of the alphabet — exhaustive search is trivial.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.5-q1",
+      "module": 1,
+      "conceptId": "1.1.5",
+      "source": "handcrafted",
+      "stem": "A scheme that keeps the same letters but changes only their order is a:",
+      "options": [
+        "Substitution cipher",
+        "Transposition cipher",
+        "One-time pad",
+        "Message digest"
+      ],
+      "correct": 1,
+      "explanation": "Transposition permutes positions; symbol identities stay the same.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.5-q2",
+      "module": 1,
+      "conceptId": "1.1.5",
+      "source": "handcrafted",
+      "stem": "In columnar transposition, a keyword is typically used to:",
+      "options": [
+        "Substitute each letter with another",
+        "Order the columns when reading out ciphertext",
+        "Generate an RSA modulus",
+        "Pad the final block"
+      ],
+      "correct": 1,
+      "explanation": "The keyword (or its alphabetical order) selects the column read order.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-1.1.6-q1",
+      "module": 1,
+      "conceptId": "1.1.6",
+      "source": "handcrafted",
+      "stem": "An adversary who already has several matching plaintext–ciphertext pairs is using which attack model?",
+      "options": [
+        "Ciphertext-only",
+        "Known-plaintext",
+        "Traffic analysis only",
+        "Steganalysis"
+      ],
+      "correct": 1,
+      "explanation": "Known-plaintext assumes the attacker has pairs; ciphertext-only has none.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.6-q2",
+      "module": 1,
+      "conceptId": "1.1.6",
+      "source": "handcrafted",
+      "stem": "Trying every key until decryption yields readable text is called:",
+      "options": [
+        "Frequency analysis",
+        "Differential cryptanalysis",
+        "Brute-force (exhaustive) search",
+        "Chosen-ciphertext forgery"
+      ],
+      "correct": 2,
+      "explanation": "Brute force enumerates the key space.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.7-q1",
+      "module": 1,
+      "conceptId": "1.1.7",
+      "source": "handcrafted",
+      "stem": "Steganography primarily aims to hide:",
+      "options": [
+        "The mathematical structure of AES",
+        "The existence of a secret message in cover media",
+        "Only the MAC tag length",
+        "DNS query names"
+      ],
+      "correct": 1,
+      "explanation": "Stego hides presence; cryptography hides meaning.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.7-q2",
+      "module": 1,
+      "conceptId": "1.1.7",
+      "source": "handcrafted",
+      "stem": "Altering least-significant bits of image pixels to embed a secret is an example of:",
+      "options": [
+        "Rail-fence transposition",
+        "LSB steganographic embedding",
+        "CBC mode chaining",
+        "Kerberos ticket granting"
+      ],
+      "correct": 1,
+      "explanation": "LSB embedding is a common image steganography method.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.8-q1",
+      "module": 1,
+      "conceptId": "1.1.8",
+      "source": "handcrafted",
+      "stem": "Encrypting a continuous bit stream by XOR with a running keystream describes a:",
+      "options": [
+        "Block cipher in ECB only",
+        "Stream cipher",
+        "Digital signature",
+        "Hash function"
+      ],
+      "correct": 1,
+      "explanation": "Stream ciphers typically combine plaintext with a keystream (often XOR).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-1.1.8-q2",
+      "module": 1,
+      "conceptId": "1.1.8",
+      "source": "handcrafted",
+      "stem": "Reusing the same stream-cipher keystream for two different messages is dangerous because:",
+      "options": [
+        "Blocks become 256 bits",
+        "XOR of the two ciphertexts can leak plaintext relationship",
+        "RSA moduli collide",
+        "IVs become public"
+      ],
+      "correct": 1,
+      "explanation": "C1⊕C2 = P1⊕P2 when the same keystream is reused — catastrophic.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-1.1.9-q1",
+      "module": 1,
+      "conceptId": "1.1.9",
+      "source": "handcrafted",
+      "stem": "Recovering a key by measuring power consumption of a chip during AES is an example of:",
+      "options": [
+        "Ciphertext-only frequency analysis",
+        "A side-channel attack",
+        "A chosen-plaintext algebraic attack only",
+        "Steganography"
+      ],
+      "correct": 1,
+      "explanation": "Side channels exploit physical leakage (power, timing, EM), not only the cipher maths.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-1.1.9-q2",
+      "module": 1,
+      "conceptId": "1.1.9",
+      "source": "handcrafted",
+      "stem": "A TPM or secure element is best described as:",
+      "options": [
+        "A software-only password manager",
+        "Dedicated hardware that isolates keys and crypto operations",
+        "An email compression format",
+        "A transposition cipher"
+      ],
+      "correct": 1,
+      "explanation": "Hardware roots of trust store keys and perform crypto in isolation.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.1-q1",
+      "module": 2,
+      "conceptId": "2.1.1",
+      "source": "handcrafted",
+      "stem": "A product cipher in Shannon’s sense typically combines:",
+      "options": [
+        "Only hashing rounds",
+        "Substitutions and permutations across rounds",
+        "Only public-key wrapping",
+        "DNS and DHCP"
+      ],
+      "correct": 1,
+      "explanation": "Product ciphers compose substitution (confusion) and permutation (diffusion).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.1-q2",
+      "module": 2,
+      "conceptId": "2.1.1",
+      "source": "handcrafted",
+      "stem": "The key schedule of a block cipher is responsible for:",
+      "options": [
+        "Padding the plaintext",
+        "Deriving round keys from the master key",
+        "Choosing the IV randomly each year",
+        "Compressing ciphertext"
+      ],
+      "correct": 1,
+      "explanation": "Key schedule expands/derives per-round keys from the master key.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.2-q1",
+      "module": 2,
+      "conceptId": "2.1.2",
+      "source": "handcrafted",
+      "stem": "Shannon’s confusion primarily aims to:",
+      "options": [
+        "Spread one plaintext bit across many ciphertext bits",
+        "Hide the relationship between key and ciphertext",
+        "Remove the need for an IV",
+        "Guarantee non-repudiation"
+      ],
+      "correct": 1,
+      "explanation": "Confusion obscures key–ciphertext dependence (often via S-boxes).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.2-q2",
+      "module": 2,
+      "conceptId": "2.1.2",
+      "source": "handcrafted",
+      "stem": "Diffusion in a block cipher means:",
+      "options": [
+        "Using a public key for encryption",
+        "Spreading the influence of plaintext bits widely in the ciphertext",
+        "Hiding the algorithm",
+        "Replacing crypto with steganography"
+      ],
+      "correct": 1,
+      "explanation": "Diffusion spreads plaintext influence; confusion hides key linkage.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.3-q1",
+      "module": 2,
+      "conceptId": "2.1.3",
+      "source": "handcrafted",
+      "stem": "In a Feistel structure, decryption is performed by:",
+      "options": [
+        "Inverting every S-box algebraically",
+        "Running the same structure with round keys in reverse order",
+        "Using a different block size",
+        "Hashing the ciphertext"
+      ],
+      "correct": 1,
+      "explanation": "Feistel decryption = same round structure, reverse key order.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.1.3-q2",
+      "module": 2,
+      "conceptId": "2.1.3",
+      "source": "handcrafted",
+      "stem": "A Feistel round typically splits the block into halves and:",
+      "options": [
+        "Encrypts only the left half with RSA",
+        "Applies a round function to one half and XORs into the other, then swaps",
+        "Discards the right half",
+        "Requires an odd number of bits only"
+      ],
+      "correct": 1,
+      "explanation": "Classic Feistel: F(right, Ki) XORed into left, then swap.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.1.4-q1",
+      "module": 2,
+      "conceptId": "2.1.4",
+      "source": "handcrafted",
+      "stem": "DES encrypts data in blocks of:",
+      "options": [
+        "128 bits with a 256-bit key",
+        "64 bits using a 56-bit effective key",
+        "32 bits with no key schedule",
+        "256-bit blocks only"
+      ],
+      "correct": 1,
+      "explanation": "DES: 64-bit blocks, 56-bit effective key (64 with parity bits).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.4-q2",
+      "module": 2,
+      "conceptId": "2.1.4",
+      "source": "handcrafted",
+      "stem": "DES is structurally best described as:",
+      "options": [
+        "An SPN like AES",
+        "A Feistel cipher",
+        "A pure stream cipher",
+        "A hash-only construction"
+      ],
+      "correct": 1,
+      "explanation": "DES is the classic Feistel block cipher.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.5-q1",
+      "module": 2,
+      "conceptId": "2.1.5",
+      "source": "handcrafted",
+      "stem": "The main practical weakness that retired single-DES for bulk encryption is:",
+      "options": [
+        "Too many rounds for hardware",
+        "56-bit key space is searchable by modern brute force",
+        "It cannot use CBC mode",
+        "It has no S-boxes"
+      ],
+      "correct": 1,
+      "explanation": "56-bit keys are within reach of exhaustive search.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.5-q2",
+      "module": 2,
+      "conceptId": "2.1.5",
+      "source": "handcrafted",
+      "stem": "Complementarity and weak/semi-weak keys are discussed mainly under:",
+      "options": [
+        "Strength and structural properties of DES",
+        "RSA padding only",
+        "Kerberos realms",
+        "LSB steganography"
+      ],
+      "correct": 0,
+      "explanation": "DES strength topics include key size, weak keys, and related structural issues.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.1.6-q1",
+      "module": 2,
+      "conceptId": "2.1.6",
+      "source": "handcrafted",
+      "stem": "Differential cryptanalysis studies how:",
+      "options": [
+        "DNS caches poison",
+        "Input differences propagate to output differences through cipher rounds",
+        "Passwords are salted",
+        "Certificates expire"
+      ],
+      "correct": 1,
+      "explanation": "It tracks difference propagation to recover key material.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.1.6-q2",
+      "module": 2,
+      "conceptId": "2.1.6",
+      "source": "handcrafted",
+      "stem": "Differential cryptanalysis is primarily a concern for designers of:",
+      "options": [
+        "SMTP headers",
+        "Symmetric block ciphers and their S-boxes/rounds",
+        "HTML forms",
+        "RAID arrays"
+      ],
+      "correct": 1,
+      "explanation": "It targets iterative block-cipher structure (historically DES).",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.1.7-q1",
+      "module": 2,
+      "conceptId": "2.1.7",
+      "source": "handcrafted",
+      "stem": "Which mode encrypts each plaintext block independently under the same key?",
+      "options": [
+        "CBC",
+        "ECB",
+        "CFB",
+        "CTR only as a hash"
+      ],
+      "correct": 1,
+      "explanation": "ECB has no chaining — identical blocks → identical ciphertext.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.7-q2",
+      "module": 2,
+      "conceptId": "2.1.7",
+      "source": "handcrafted",
+      "stem": "CBC mode needs an IV mainly to:",
+      "options": [
+        "Replace the secret key",
+        "Randomise the first block so identical messages don’t start the same",
+        "Compress ciphertext",
+        "Create digital signatures"
+      ],
+      "correct": 1,
+      "explanation": "IV (and chaining) hide patterns across messages/blocks.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.1.8-q1",
+      "module": 2,
+      "conceptId": "2.1.8",
+      "source": "handcrafted",
+      "stem": "Triple DES (3DES) typically applies DES:",
+      "options": [
+        "Once with a 256-bit key",
+        "Three times (EDE) with two or three keys to stretch effective strength",
+        "As a hash only",
+        "Inside RSA modulus generation"
+      ],
+      "correct": 1,
+      "explanation": "EDE with 2 or 3 keys is the standard 3DES construction.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.1.8-q2",
+      "module": 2,
+      "conceptId": "2.1.8",
+      "source": "handcrafted",
+      "stem": "Compared with AES, 3DES is generally:",
+      "options": [
+        "Faster and preferred for new designs",
+        "Slower and retained mainly for legacy interoperability",
+        "A public-key algorithm",
+        "Immune to all attacks by definition"
+      ],
+      "correct": 1,
+      "explanation": "3DES is legacy; AES is the modern standard block cipher.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.2.1-q1",
+      "module": 2,
+      "conceptId": "2.2.1",
+      "source": "handcrafted",
+      "stem": "AES (Rijndael) is best classified as:",
+      "options": [
+        "A Feistel cipher like DES",
+        "A substitution–permutation (SPN) network",
+        "A stream-only XOR cipher",
+        "A signature standard"
+      ],
+      "correct": 1,
+      "explanation": "AES is an SPN (SubBytes, ShiftRows, MixColumns, AddRoundKey).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.2.1-q2",
+      "module": 2,
+      "conceptId": "2.2.1",
+      "source": "handcrafted",
+      "stem": "Which AES step provides the main byte-level nonlinear confusion?",
+      "options": [
+        "ShiftRows",
+        "SubBytes (S-box)",
+        "AddRoundKey alone",
+        "PKCS padding"
+      ],
+      "correct": 1,
+      "explanation": "SubBytes is the nonlinear S-box layer.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.2.2-q1",
+      "module": 2,
+      "conceptId": "2.2.2",
+      "source": "handcrafted",
+      "stem": "Fermat’s Little Theorem is useful in RSA-related number theory because it relates:",
+      "options": [
+        "a^(p-1) ≡ 1 (mod p) for prime p not dividing a",
+        "Only matrix inverses",
+        "DNS TTLs",
+        "Block cipher IVs"
+      ],
+      "correct": 0,
+      "explanation": "Fermat: a^(p-1) ≡ 1 mod p under the stated conditions.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.2.2-q2",
+      "module": 2,
+      "conceptId": "2.2.2",
+      "source": "handcrafted",
+      "stem": "Euler’s totient φ(n) counts:",
+      "options": [
+        "AES rounds",
+        "Integers in 1..n-1 that are coprime to n",
+        "DES S-box rows only",
+        "Kerberos ticket lifetimes"
+      ],
+      "correct": 1,
+      "explanation": "φ(n) is central to RSA exponents.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.2.3-q1",
+      "module": 2,
+      "conceptId": "2.2.3",
+      "source": "handcrafted",
+      "stem": "The Chinese Remainder Theorem helps when you have:",
+      "options": [
+        "A single congruence only",
+        "A system of congruences with pairwise coprime moduli",
+        "Only floating-point keys",
+        "Hash collisions"
+      ],
+      "correct": 1,
+      "explanation": "CRT combines residues modulo coprime moduli into a unique class mod product.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.2.3-q2",
+      "module": 2,
+      "conceptId": "2.2.3",
+      "source": "handcrafted",
+      "stem": "In RSA implementations, CRT is often used to:",
+      "options": [
+        "Replace the public key",
+        "Speed private-key operations using factors p and q",
+        "Generate AES S-boxes",
+        "Compress certificates"
+      ],
+      "correct": 1,
+      "explanation": "CRT speeds decryption/signing with p,q.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.2.4-q1",
+      "module": 2,
+      "conceptId": "2.2.4",
+      "source": "handcrafted",
+      "stem": "A defining feature of public-key cryptography is:",
+      "options": [
+        "One shared secret for both directions only",
+        "Separate public and private keys with hard inversion without the private key",
+        "No need for any algorithms",
+        "Only transposition"
+      ],
+      "correct": 1,
+      "explanation": "Asymmetric: public encrypt / verify; private decrypt / sign.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.2.4-q2",
+      "module": 2,
+      "conceptId": "2.2.4",
+      "source": "handcrafted",
+      "stem": "Public-key encryption is commonly used to:",
+      "options": [
+        "Encrypt multi-gigabyte files directly for speed",
+        "Exchange or wrap symmetric session keys",
+        "Replace hashing entirely",
+        "Hide packets inside images only"
+      ],
+      "correct": 1,
+      "explanation": "Hybrid crypto: public-key wraps a fast symmetric session key.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-2.2.5-q1",
+      "module": 2,
+      "conceptId": "2.2.5",
+      "source": "handcrafted",
+      "stem": "In RSA, the public key typically includes:",
+      "options": [
+        "Only the private exponent d",
+        "Modulus n and public exponent e",
+        "Only prime p",
+        "The AES round keys"
+      ],
+      "correct": 1,
+      "explanation": "Public key is (n,e); private includes d (and often p,q).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.2.5-q2",
+      "module": 2,
+      "conceptId": "2.2.5",
+      "source": "handcrafted",
+      "stem": "RSA encryption of message representative m is conceptually:",
+      "options": [
+        "c = m XOR e",
+        "c = m^e mod n",
+        "c = m + n",
+        "c = SHA(m)"
+      ],
+      "correct": 1,
+      "explanation": "Textbook RSA: c ≡ m^e (mod n).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.2.6-q1",
+      "module": 2,
+      "conceptId": "2.2.6",
+      "source": "handcrafted",
+      "stem": "RSA security fundamentally relies on the difficulty of:",
+      "options": [
+        "Sorting arrays",
+        "Factoring the modulus n (or equivalent RSA problems)",
+        "Drawing rail fences",
+        "Counting TCP ports"
+      ],
+      "correct": 1,
+      "explanation": "Factoring n (or related hard problems) underpins RSA.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-2.2.6-q2",
+      "module": 2,
+      "conceptId": "2.2.6",
+      "source": "handcrafted",
+      "stem": "Using RSA without proper padding on short/guessable messages is risky because:",
+      "options": [
+        "AES becomes Feistel",
+        "Algebraic and guessing attacks become practical",
+        "CRT stops working forever",
+        "IVs collide with DES"
+      ],
+      "correct": 1,
+      "explanation": "Padding (e.g. OAEP) is required for real RSA security.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.1.1-q1",
+      "module": 3,
+      "conceptId": "3.1.1",
+      "source": "handcrafted",
+      "stem": "Alice and Bob share a secret key K. Alice wants Bob to detect if an active attacker changes bits of her message in transit. Which mechanism is the most direct fit?",
+      "options": [
+        "A CRC-32 checksum appended with no key",
+        "A MAC tag computed under the shared secret K",
+        "Encrypting the message with Bob’s public key alone",
+        "Publishing an MD5 digest of the plaintext without protection"
+      ],
+      "correct": 1,
+      "explanation": "A MAC is a keyed cryptographic checksum: only parties with K can forge a valid tag, so Bob can detect impersonation or alteration. CRC/MD5 alone have no secret, and public-key encryption alone does not authenticate the sender.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.1.1-q2",
+      "module": 3,
+      "conceptId": "3.1.1",
+      "source": "handcrafted",
+      "stem": "Which statement best distinguishes a MAC from a digital signature for message authentication?",
+      "options": [
+        "A MAC uses a shared secret; a signature is created with a private key and verified with a public key",
+        "A MAC always provides non-repudiation to a third party; a signature never does",
+        "A MAC encrypts the full message for confidentiality; a signature never protects integrity",
+        "A MAC needs no key; a signature needs only a public hash"
+      ],
+      "correct": 0,
+      "explanation": "MACs are symmetric authenticators under a shared key. Digital signatures are asymmetric: sign with private key, verify with public key. Ordinary MACs do not give third-party non-repudiation.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.1.2-q1",
+      "module": 3,
+      "conceptId": "3.1.2",
+      "source": "handcrafted",
+      "stem": "Textbook authentication functions that produce an authenticator are commonly grouped into which three classes?",
+      "options": [
+        "Firewalling, tunnelling, and key escrow",
+        "Message encryption, MAC, and hash-function schemes",
+        "Kerberos tickets, ACLs, and certificates",
+        "Packet filtering, proxying, and stateful inspection"
+      ],
+      "correct": 1,
+      "explanation": "Classical network-security texts list three authentication-function classes: (1) message encryption (ciphertext as authenticator), (2) MAC (keyed fixed-length tag), and (3) hash functions (unkeyed digest used inside a protocol).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.1.2-q2",
+      "module": 3,
+      "conceptId": "3.1.2",
+      "source": "handcrafted",
+      "stem": "Why is an unkeyed cryptographic hash alone insufficient as a message authenticator against an active attacker?",
+      "options": [
+        "Hashes always expand the message to infinite length",
+        "Anyone who can alter the message can also recompute the public digest",
+        "Hash functions require a private signing key to produce any output",
+        "Hashes provide confidentiality, so integrity is never needed"
+      ],
+      "correct": 1,
+      "explanation": "A hash is a public function. After modifying M to M′, an attacker can compute H(M′) and replace the digest. A MAC (or signature) binds a secret so forging a valid authenticator is infeasible without the key.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.1.3-q1",
+      "module": 3,
+      "conceptId": "3.1.3",
+      "source": "handcrafted",
+      "stem": "Which requirement is a primary goal of message authentication with a MAC, rather than of encryption alone?",
+      "options": [
+        "Preventing disclosure of message contents to eavesdroppers",
+        "Detecting content modification of a message in transit",
+        "Hiding traffic volume patterns from passive observers",
+        "Compressing messages before transmission"
+      ],
+      "correct": 1,
+      "explanation": "Disclosure and traffic analysis are confidentiality/secrecy concerns. Message authentication targets threats such as content, sequence, and timing modification (and origin authenticity among parties sharing the key).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.1.3-q2",
+      "module": 3,
+      "conceptId": "3.1.3",
+      "source": "handcrafted",
+      "stem": "A bank wants to prove to a third party that a customer authorised a funds-transfer message and cannot later deny sending it. Why is an ordinary shared-key MAC usually insufficient?",
+      "options": [
+        "MACs cannot detect any bit flips in the message",
+        "Either party sharing K can produce a valid tag, so a third party cannot tell who forged it",
+        "MACs only work on encrypted ciphertext, never on plaintext",
+        "MAC tags are always longer than the original message"
+      ],
+      "correct": 1,
+      "explanation": "Both parties with K can generate tags, so MAC verification does not yield non-repudiation against a third party. Digital signatures (private-key signing) address source repudiation more directly.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.1.4-q1",
+      "module": 3,
+      "conceptId": "3.1.4",
+      "source": "handcrafted",
+      "stem": "How does Bob typically verify a MAC that Alice computed on message M under shared key K?",
+      "options": [
+        "Decrypt the tag with Alice’s public key and check a certificate chain",
+        "Recompute MAC_K(M) and compare the result with the received tag",
+        "Invert the hash to recover M and confirm it matches the plaintext",
+        "Ask a CA to re-sign the tag using X.509"
+      ],
+      "correct": 1,
+      "explanation": "MAC verification is recomputation: with the same K and M, Bob regenerates the tag and checks equality. Tags are not inverted like encryption, and public-key CA steps belong to signatures/PKI.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.1.4-q2",
+      "module": 3,
+      "conceptId": "3.1.4",
+      "source": "handcrafted",
+      "stem": "HMAC is best described as which of the following?",
+      "options": [
+        "A stream cipher that replaces AES for bulk encryption",
+        "A keyed-hash construction that mixes a secret key with a cryptographic hash (e.g., SHA)",
+        "An unkeyed CRC used only for accidental error detection on disks",
+        "A public-key encryption mode that wraps RSA around DES"
+      ],
+      "correct": 1,
+      "explanation": "HMAC is a hash-based MAC: a secret key is combined with a cryptographic hash function (ipad/opad style) to produce a forgery-resistant tag. It is not a bulk cipher and is not an unkeyed checksum.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.1.5-q1",
+      "module": 3,
+      "conceptId": "3.1.5",
+      "source": "handcrafted",
+      "stem": "SHA-1 produces a message digest of which length, and what is the modern security stance toward it for new signature systems?",
+      "options": [
+        "128-bit digest; still preferred over SHA-256 for new designs",
+        "160-bit digest; collision attacks make it unsuitable for new security uses",
+        "256-bit digest; it is identical to SHA-256",
+        "512-bit digest; it only existed before SHA-0"
+      ],
+      "correct": 1,
+      "explanation": "SHA-1 yields a 160-bit digest. Practical collision attacks mean it should not be used for new cryptographic integrity/signature designs; SHA-2/SHA-3 variants are preferred.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.1.5-q2",
+      "module": 3,
+      "conceptId": "3.1.5",
+      "source": "handcrafted",
+      "stem": "Which property is required of a cryptographic hash function used inside digital signatures?",
+      "options": [
+        "It must be efficiently invertible so the verifier can recover the full message from the digest",
+        "It must map arbitrary-length input to a fixed-length digest and be collision-resistant (and one-way)",
+        "It must use a shared session key known only to the two communicating parties",
+        "It must encrypt the digest under AES before any verification"
+      ],
+      "correct": 1,
+      "explanation": "Cryptographic hashes are one-way, fixed-length digests of arbitrary input, with preimage/second-preimage/collision resistance. They are not keyed (unlike MACs) and are not meant to be inverted.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.1.6-q1",
+      "module": 3,
+      "conceptId": "3.1.6",
+      "source": "handcrafted",
+      "stem": "MD5, as classically taught for message digests, produces an output of which size?",
+      "options": [
+        "64 bits",
+        "128 bits",
+        "160 bits",
+        "256 bits"
+      ],
+      "correct": 1,
+      "explanation": "MD5 produces a 128-bit message digest (often described as four 32-bit words). SHA-1 is 160-bit; SHA-256 is 256-bit.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.1.6-q2",
+      "module": 3,
+      "conceptId": "3.1.6",
+      "source": "handcrafted",
+      "stem": "An attacker intercepts a message M sent with an unprotected MD5 digest H(M). The attacker changes M to M′. What can the attacker do next to fool a naive integrity check that only compares digests?",
+      "options": [
+        "Nothing; MD5 cannot be computed without Alice’s private key",
+        "Recompute H(M′) and replace the digest so the check still passes",
+        "Only invert MD5 to recover Alice’s password hash",
+        "Convert the digest into a MAC without any secret key"
+      ],
+      "correct": 1,
+      "explanation": "An unkeyed digest sent alongside the message can be recomputed after tampering. Digests alone do not authenticate origin; protect the digest (MAC/sign/encrypt) or the channel.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.2.1-q1",
+      "module": 3,
+      "conceptId": "3.2.1",
+      "source": "handcrafted",
+      "stem": "In a standard digital-signature scheme, which key creates the signature and which key verifies it?",
+      "options": [
+        "Sender’s public key creates it; verifier’s private key checks it",
+        "Sender’s private key creates it; corresponding public key verifies it",
+        "A shared MAC key creates and verifies it symmetrically",
+        "A CA root key creates it; any AES session key verifies it"
+      ],
+      "correct": 1,
+      "explanation": "Signing uses the signer’s private key; verification uses the matching public key. That asymmetry (and public verifiability) is what distinguishes signatures from MACs.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.2.1-q2",
+      "module": 3,
+      "conceptId": "3.2.1",
+      "source": "handcrafted",
+      "stem": "Why do practical systems usually hash a large document and then sign the digest rather than signing the entire raw file?",
+      "options": [
+        "Hashes expand files so signatures become longer and slower",
+        "Hash-then-sign is efficient: hashes are fast and the digest is short compared with the document",
+        "Signing a digest removes the need for any private key",
+        "Only digests can be encrypted; full files cannot use public-key math"
+      ],
+      "correct": 1,
+      "explanation": "Signature algorithms are slow relative to hashing. Computing H(M) and signing the short digest binds the full document efficiently while still detecting alterations that change the hash.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.2.2-q1",
+      "module": 3,
+      "conceptId": "3.2.2",
+      "source": "handcrafted",
+      "stem": "The Digital Signature Standard (DSS) is best characterised as which of the following?",
+      "options": [
+        "A NIST FIPS that standardises digital signature algorithms (historically DSA with SHA) for authenticating electronic documents",
+        "A bulk file-encryption standard that replaces AES for confidentiality",
+        "An email MIME format identical to S/MIME envelopes",
+        "A ticket-based SSO protocol equivalent to Kerberos"
+      ],
+      "correct": 0,
+      "explanation": "DSS is a Federal Information Processing Standard defining approved digital signature methods (classically DSA with SHA). It standardises signatures, not general encryption or key exchange.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-3.2.2-q2",
+      "module": 3,
+      "conceptId": "3.2.2",
+      "source": "handcrafted",
+      "stem": "In the classic DSS/DSA approach at the sender, which inputs typically feed the signature function that produces (r, s)?",
+      "options": [
+        "Only the plaintext message bytes with no hash and no private key",
+        "The message hash, a per-signature random k, the sender’s private key, and global domain parameters",
+        "The recipient’s private key and an AES session key only",
+        "An X.509 CRL and a Kerberos TGT only"
+      ],
+      "correct": 1,
+      "explanation": "DSS/DSA signing takes the hash of the message, a unique random k, the signer’s private key, and global public parameters, and outputs signature components (r, s). Reusing or leaking k is catastrophic.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.2.3-q1",
+      "module": 3,
+      "conceptId": "3.2.3",
+      "source": "handcrafted",
+      "stem": "DSA’s security (as taught with DSS) fundamentally rests on the hardness of which problem in the chosen group?",
+      "options": [
+        "Factoring large composite moduli only (as in basic RSA)",
+        "The discrete logarithm problem",
+        "Solving linear Diophantine equations over the integers",
+        "Inverting CRC-32 checksums"
+      ],
+      "correct": 1,
+      "explanation": "DSA is based on modular exponentiation / discrete logarithms in a subgroup (with parameters p, q, g). RSA’s classic hardness story is factoring; DSA’s is discrete log.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-3.2.3-q2",
+      "module": 3,
+      "conceptId": "3.2.3",
+      "source": "handcrafted",
+      "stem": "If the same DSA per-message nonce k is reused for two different signed messages, what is the critical risk?",
+      "options": [
+        "Only the hash function becomes invertible",
+        "An attacker may recover the signer’s private key x from the two signatures",
+        "The public key y can no longer be published",
+        "Verification will always fail even for honest signatures"
+      ],
+      "correct": 1,
+      "explanation": "DSA correctness and security assume k is secret and unique per signature. Reuse (or leakage) of k lets an attacker solve for the private key x—an implementation failure, not a benign optimisation.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-4.1.1-q1",
+      "module": 4,
+      "conceptId": "4.1.1",
+      "source": "handcrafted",
+      "stem": "In classic Kerberos, after the client authenticates to the Authentication Server (AS), what does it typically receive next to obtain service tickets without re-entering the password?",
+      "options": [
+        "An X.509 client certificate signed by a public CA",
+        "A Ticket-Granting Ticket (TGT) for use with the Ticket-Granting Server (TGS)",
+        "A long-term service key for every application server in cleartext",
+        "An IPsec AH header for every subsequent IP packet"
+      ],
+      "correct": 1,
+      "explanation": "Kerberos flow: AS issues a TGT; the client presents the TGT to the TGS to get service tickets for application servers—supporting single sign-on without retyping the password.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-4.1.1-q2",
+      "module": 4,
+      "conceptId": "4.1.1",
+      "source": "handcrafted",
+      "stem": "Which Kerberos design goal is correctly stated?",
+      "options": [
+        "The user’s password should be sent in cleartext on every application request",
+        "The user’s password should never traverse the network in cleartext; authentication is centralised at the KDC",
+        "Application servers must each store every user’s password hash locally for SSO",
+        "Kerberos replaces the need for any shared secrets by using only public-key certificates"
+      ],
+      "correct": 1,
+      "explanation": "Kerberos aims keep passwords off the wire, avoid storing them in clear on clients, centralise auth data on the KDC, and support SSO and mutual authentication. Classic teaching Kerberos is ticket-based symmetric crypto, not a full PKI replacement.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-4.1.2-q1",
+      "module": 4,
+      "conceptId": "4.1.2",
+      "source": "handcrafted",
+      "stem": "An Access Control List (ACL) on a file is best described as which view of the access matrix?",
+      "options": [
+        "A subject-centric list of all objects a process may touch (a capability list)",
+        "An object-centric list of subjects and the rights each has on that object",
+        "A network ticket proving SSO authentication to a KDC",
+        "A hash of the file used only for integrity, with no permissions"
+      ],
+      "correct": 1,
+      "explanation": "ACLs are object-centric: attached to a resource, listing who may do what. Capability lists are the dual subject-centric view. Authentication identifies the subject; the ACL authorises actions.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-4.1.2-q2",
+      "module": 4,
+      "conceptId": "4.1.2",
+      "source": "handcrafted",
+      "stem": "A process carries an unforgeable token naming the object and permitted operations. That model is primarily called a:",
+      "options": [
+        "Capability",
+        "Packet-filter rule",
+        "Message digest",
+        "Kerberos realm"
+      ],
+      "correct": 0,
+      "explanation": "Capabilities are unforgeable tokens held by subjects that authorise operations on named objects—the contrast often drawn against ACLs in access-control teaching.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-4.1.3-q1",
+      "module": 4,
+      "conceptId": "4.1.3",
+      "source": "handcrafted",
+      "stem": "In PGP’s typical hybrid encryption of an email, which statement is correct?",
+      "options": [
+        "RSA (or similar) encrypts the entire multi-megabyte body byte-by-byte; no symmetric cipher is used",
+        "A random symmetric session key encrypts the message; that session key is encrypted under the recipient’s public key",
+        "Only a shared Kerberos service ticket encrypts the body",
+        "PGP never signs messages; it only compresses them"
+      ],
+      "correct": 1,
+      "explanation": "PGP uses hybrid crypto: fast symmetric bulk encryption of the message, with the session key wrapped under the recipient’s public key. Signatures (hash then private-key sign) provide authenticity separately.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-4.1.3-q2",
+      "module": 4,
+      "conceptId": "4.1.3",
+      "source": "handcrafted",
+      "stem": "PGP’s classic trust model is often contrasted with S/MIME because PGP commonly relies on:",
+      "options": [
+        "A single mandatory government CA for every key",
+        "A decentralised web of trust where users sign others’ keys",
+        "IPsec AH tunnel mode between mail servers only",
+        "MAC addresses burned into network interface cards"
+      ],
+      "correct": 1,
+      "explanation": "PGP popularised a web-of-trust model (users certify keys) versus S/MIME’s typical X.509 CA hierarchy—an exam favourite contrast.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-4.1.4-q1",
+      "module": 4,
+      "conceptId": "4.1.4",
+      "source": "handcrafted",
+      "stem": "S/MIME primarily secures email by combining MIME with cryptography based on which trust infrastructure?",
+      "options": [
+        "Kerberos realms and TGTs only",
+        "X.509 certificates issued in a CA/PKI hierarchy",
+        "Unkeyed MD5 digests with no certificates",
+        "Bluetooth pairing PINs"
+      ],
+      "correct": 1,
+      "explanation": "S/MIME (Secure/MIME) uses PKI/X.509 certificates familiar to enterprises for signed and/or enveloped (encrypted) mail—unlike PGP’s web of trust emphasis.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-4.1.4-q2",
+      "module": 4,
+      "conceptId": "4.1.4",
+      "source": "handcrafted",
+      "stem": "How does S/MIME differ from SSL/TLS in typical deployment intent?",
+      "options": [
+        "S/MIME is end-to-end mail content security; SSL/TLS protects a transport session (e.g., browser–server)",
+        "S/MIME only authenticates IP packets at the network layer like AH",
+        "SSL/TLS encrypts MIME parts at rest on disk; S/MIME never uses certificates",
+        "They are identical protocols with different names"
+      ],
+      "correct": 0,
+      "explanation": "S/MIME protects email as MIME entities end-to-end between mail clients (given keys/certs). SSL/TLS secures a hop/session such as HTTPS to a server—not a substitute for end-to-end mail crypto.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-4.2.1-q1",
+      "module": 4,
+      "conceptId": "4.2.1",
+      "source": "handcrafted",
+      "stem": "In IPsec, which statement correctly contrasts AH and ESP?",
+      "options": [
+        "AH encrypts the payload for confidentiality; ESP provides only unkeyed checksums",
+        "AH provides integrity/authentication without encrypting the payload; ESP can provide confidentiality (and optionally integrity)",
+        "Both AH and ESP operate only at the application layer like PGP",
+        "ESP never uses a Security Parameter Index (SPI)"
+      ],
+      "correct": 1,
+      "explanation": "Authentication Header (AH) gives integrity and origin authentication without confidentiality. Encapsulating Security Payload (ESP) focuses on confidentiality of the payload and may also authenticate.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-4.2.1-q2",
+      "module": 4,
+      "conceptId": "4.2.1",
+      "source": "handcrafted",
+      "stem": "IPsec tunnel mode is commonly chosen for site-to-site VPNs because it:",
+      "options": [
+        "Protects only a TCP port number and leaves IP headers and payloads untouched",
+        "Encapsulates the original IP packet inside a new outer IP packet between gateways",
+        "Replaces DNS with Kerberos tickets",
+        "Stores user passwords in the Security Policy Database in cleartext"
+      ],
+      "correct": 1,
+      "explanation": "Tunnel mode encapsulates entire original IP packets (typical gateway-to-gateway VPN). Transport mode protects upper-layer payload between hosts. SAs/SPD define what is protected and with which parameters.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-4.2.2-q1",
+      "module": 4,
+      "conceptId": "4.2.2",
+      "source": "handcrafted",
+      "stem": "During an SSL/TLS handshake for a typical HTTPS site, what is the primary purpose of the server certificate?",
+      "options": [
+        "To compress HTML before the record protocol runs",
+        "To bind the server’s identity (name) to a public key so the client can authenticate the server and derive shared session secrets safely",
+        "To replace the need for any symmetric cipher in the record layer",
+        "To list every firewall ACL on the path"
+      ],
+      "correct": 1,
+      "explanation": "The handshake negotiates parameters, authenticates the server via X.509 (usually), and establishes session keys. The record protocol then protects application data with those keys.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-4.2.2-q2",
+      "module": 4,
+      "conceptId": "4.2.2",
+      "source": "handcrafted",
+      "stem": "Compared with IPsec, SSL/TLS as commonly deployed for web browsing primarily operates at which layer of protection?",
+      "options": [
+        "Network-layer protection of arbitrary IP packets between gateways",
+        "Transport-layer (or just above) protection of a session between endpoints such as browser and web server",
+        "Physical-layer cable shielding only",
+        "Disk-sector encryption inside the OS kernel only"
+      ],
+      "correct": 1,
+      "explanation": "SSL/TLS protects a transport session (HTTPS). IPsec sits at the IP layer and can secure traffic more transparently to applications, including VPN tunnels.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-4.2.3-q1",
+      "module": 4,
+      "conceptId": "4.2.3",
+      "source": "handcrafted",
+      "stem": "SET (Secure Electronic Transaction) uses a dual signature primarily so that:",
+      "options": [
+        "The merchant sees full card details while the bank sees the full shopping cart",
+        "The merchant can verify the order linkage without needing the customer’s full payment credentials, and the bank can process payment without full order details",
+        "SSL is no longer required for any web traffic worldwide",
+        "Kerberos tickets replace all payment certificates"
+      ],
+      "correct": 1,
+      "explanation": "SET’s dual signature links order information (for the merchant) and payment information (for the bank) without cross-revealing both views—supporting privacy split among cardholder, merchant, and payment gateway.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-4.2.3-q2",
+      "module": 4,
+      "conceptId": "4.2.3",
+      "source": "handcrafted",
+      "stem": "Which parties typically hold certificates in the SET PKI model taught in network-security courses?",
+      "options": [
+        "Only the customer’s ISP DNS resolver",
+        "Cardholder, merchant, and payment gateway (bank-side) entities",
+        "Only anonymous Tor relays",
+        "Only the packet-filter firewall on the LAN"
+      ],
+      "correct": 1,
+      "explanation": "SET authenticates participants in a payment PKI: cardholder, merchant, and payment gateway/issuer-acquirer side certificates are the classic triad—not merely “SSL on a shop website.”",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.1-q1",
+      "module": 5,
+      "conceptId": "5.1.1",
+      "source": "handcrafted",
+      "stem": "In classic intrusion taxonomy, a legitimate insider who misuses privileges beyond authorised limits is called a:",
+      "options": [
+        "Masquerader",
+        "Misfeasor",
+        "Clandestine user who only sniffs cables outside the building",
+        "Packet filter"
+      ],
+      "correct": 1,
+      "explanation": "Misfeasors are insiders who abuse authorised access. Masqueraders are typically outsiders posing as legitimate users. Clandestine users seize supervisory control to evade auditing.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.1-q2",
+      "module": 5,
+      "conceptId": "5.1.1",
+      "source": "handcrafted",
+      "stem": "Which sequence best matches the early phases of a system intrusion as described in the SLM (before final data theft)?",
+      "options": [
+        "Presentation → documentation → imaging only",
+        "Inspection/reconnaissance → initial exploitation → digging deeper / privilege escalation → locating key assets",
+        "Only installing a firewall rule, with no reconnaissance",
+        "Signing a document digest with DSS before any access"
+      ],
+      "correct": 1,
+      "explanation": "The module’s intrusion phases move from inspection (recon) through initial exploitation, deeper system access/privilege escalation, finding key pieces, then collect/exploit. Prevention/detection/recovery are complementary controls.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.1.2-q1",
+      "module": 5,
+      "conceptId": "5.1.2",
+      "source": "handcrafted",
+      "stem": "A sensor watches traffic on a network segment and compares flows against known attack signatures. This is primarily a:",
+      "options": [
+        "Host-based IDS (HIDS) watching only local file hashes",
+        "Network-based IDS (NIDS)",
+        "Write blocker for disk imaging",
+        "S/MIME certificate validator"
+      ],
+      "correct": 1,
+      "explanation": "NIDS sits at a network vantage point and inspects traffic across devices/subnets. HIDS runs on a host and watches that host’s logs, files, and local activity.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.2-q2",
+      "module": 5,
+      "conceptId": "5.1.2",
+      "source": "handcrafted",
+      "stem": "An IDS flags a user who suddenly downloads 50 GB at 03:00 despite never doing so before. That detection style is best labelled:",
+      "options": [
+        "Signature-based detection of a known CVE byte pattern only",
+        "Anomaly-based detection against a behavioural baseline",
+        "Capability-based access control",
+        "Dual-signature SET verification"
+      ],
+      "correct": 1,
+      "explanation": "Anomaly detection flags deviations from normal behaviour and can catch novel attacks, typically with more false positives. Signature detection matches known patterns and may miss unknowns.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.1.3-q1",
+      "module": 5,
+      "conceptId": "5.1.3",
+      "source": "handcrafted",
+      "stem": "Which distinction between a virus and a worm is most accurate?",
+      "options": [
+        "A virus is standalone and never needs a host file; a worm must attach to a document",
+        "A virus typically attaches to a host program/file and spreads when that host runs; a worm self-replicates across networks, often without a host file",
+        "Worms cannot use the network; viruses only use IPsec tunnels",
+        "Trojans are identical to worms by definition"
+      ],
+      "correct": 1,
+      "explanation": "Viruses piggyback on host programs/files and need execution of the host. Worms are standalone malware that propagate copies across systems/networks, often without attaching to a file.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.3-q2",
+      "module": 5,
+      "conceptId": "5.1.3",
+      "source": "handcrafted",
+      "stem": "A boot-sector virus is characterised by which behaviour?",
+      "options": [
+        "It only exists in browser cookies and never affects startup",
+        "It can take control during system boot, often spreading via infected removable media",
+        "It is a worm that requires no storage medium at all",
+        "It encrypts payment cards using SET dual signatures"
+      ],
+      "correct": 1,
+      "explanation": "Boot-sector viruses infect boot code and can gain control at startup; infected USB media are a classic spread vector. They are still viruses (host/boot-code attachment), not a definition of worms.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.1.4-q1",
+      "module": 5,
+      "conceptId": "5.1.4",
+      "source": "handcrafted",
+      "stem": "A packet-filtering firewall primarily makes allow/deny decisions based on:",
+      "options": [
+        "Full application-layer content of every HTTPS payload by default",
+        "Header fields such as IP addresses, ports, and protocol",
+        "Whether the user’s handwriting matches a wet-ink signature",
+        "Blockchain consensus difficulty only"
+      ],
+      "correct": 1,
+      "explanation": "Packet filters enforce policy using network/transport header attributes. Application proxies can enforce deeper application policy; stateful inspection tracks connection state beyond isolated packets.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.4-q2",
+      "module": 5,
+      "conceptId": "5.1.4",
+      "source": "handcrafted",
+      "stem": "In firewall design, placing public-facing servers in a DMZ (screened subnet) mainly aims to:",
+      "options": [
+        "Make those servers fully trusted as internal LAN hosts with no hardening",
+        "Separate semi-trusted external-facing services from the internal network behind additional filtering",
+        "Disable all logging so attackers leave no trail",
+        "Replace the need for authentication on internal systems"
+      ],
+      "correct": 1,
+      "explanation": "A DMZ/screened subnet holds externally reachable services in a buffer zone—more exposed than the internal LAN, so still hardened, with firewalls limiting blast radius.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.1.5-q1",
+      "module": 5,
+      "conceptId": "5.1.5",
+      "source": "handcrafted",
+      "stem": "In the Indian syllabus context for this module, the primary legislation framework addressing cyber offences and electronic records is commonly referred to as the:",
+      "options": [
+        "Digital Signature Standard (DSS) alone",
+        "Information Technology Act (IT Act) family (2000 and amendments)",
+        "Kerberos Realm Naming RFC",
+        "SHA-3 sponge construction paper"
+      ],
+      "correct": 1,
+      "explanation": "The IT Act (and amendments) provides the legal framework for cyber offences, electronic records, and related intermediary/compliance issues. Technical standards like DSS/SHA are not substitutes for that statute.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.5-q2",
+      "module": 5,
+      "conceptId": "5.1.5",
+      "source": "handcrafted",
+      "stem": "Why do cyber-law cases still depend heavily on technical logging and forensics even when a statute defines the offence?",
+      "options": [
+        "Laws forbid any use of firewalls",
+        "Attribution, jurisdiction, and proving authenticity of electronic evidence remain difficult without reliable digital trails",
+        "Statutes automatically decrypt all disks without warrants",
+        "MAC tags are inadmissible by definition"
+      ],
+      "correct": 1,
+      "explanation": "Law defines offences and penalties; investigation still needs admissible electronic evidence, authentic logs, and forensic process because attribution and jurisdiction are hard in practice.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.1.6-q1",
+      "module": 5,
+      "conceptId": "5.1.6",
+      "source": "handcrafted",
+      "stem": "A VPN best matches which description?",
+      "options": [
+        "A private connectivity overlay over a public network using tunnelling and cryptography",
+        "An anonymity-only overlay identical to Tor in goals and design",
+        "A packet filter that never encrypts or encapsulates traffic",
+        "A message digest algorithm like MD5"
+      ],
+      "correct": 0,
+      "explanation": "VPNs create private tunnels across public networks with encapsulation and crypto (often IPsec or SSL VPN). They are not the same as anonymity networks, and they do not remove the need to harden endpoints.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.6-q2",
+      "module": 5,
+      "conceptId": "5.1.6",
+      "source": "handcrafted",
+      "stem": "Which pair correctly contrasts common VPN topologies?",
+      "options": [
+        "Remote-access: user-to-gateway; site-to-site: gateway-to-gateway linking networks",
+        "Remote-access: only AH without keys; site-to-site: only cleartext GRE",
+        "Both topologies forbid encryption by definition",
+        "Site-to-site VPNs can only use S/MIME certificates"
+      ],
+      "correct": 0,
+      "explanation": "Remote-access (road-warrior) VPNs connect a user to a gateway; site-to-site links two networks via gateways. Technology choices often include IPsec or SSL VPN.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.1.7-q1",
+      "module": 5,
+      "conceptId": "5.1.7",
+      "source": "handcrafted",
+      "stem": "A website becomes unreachable because thousands of compromised hosts flood it with traffic. This attack is best classified as:",
+      "options": [
+        "A passive traffic-analysis only attack with no availability impact",
+        "A distributed denial-of-service (DDoS) attack targeting availability",
+        "A dual-signature SET purchase",
+        "A collision attack on SHA-256 digests"
+      ],
+      "correct": 1,
+      "explanation": "DDoS uses many sources to overwhelm resources and deny legitimate service—primarily an availability attack. Mitigations include filtering, capacity/CDN, and operational response—not a single antivirus signature.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.7-q2",
+      "module": 5,
+      "conceptId": "5.1.7",
+      "source": "handcrafted",
+      "stem": "Which defensive emphasis is especially critical against ransomware beyond ordinary endpoint AV?",
+      "options": [
+        "Disabling all offline backups so restore is impossible",
+        "Resilient/offline or immutable backups plus least privilege, patching, and incident response",
+        "Relying solely on MD5 of the ransomware binary",
+        "Publishing the organisation’s private TLS keys"
+      ],
+      "correct": 1,
+      "explanation": "Ransomware impacts availability/integrity of data; recoverable backups (and hardening/MFA/segmentation) are central. AV alone is insufficient against evolving threats and phishing-driven entry.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.1.8-q1",
+      "module": 5,
+      "conceptId": "5.1.8",
+      "source": "handcrafted",
+      "stem": "A blockchain ledger’s blocks are typically linked so that tampering with an old transaction is hard because:",
+      "options": [
+        "Each block stores only plaintext passwords with no hashes",
+        "Each block includes a hash linking to the previous block, and altering history requires redoing costly consensus work",
+        "Blocks are encrypted with a single shared MAC key known to all readers",
+        "Blockchain always guarantees confidentiality of every field by default"
+      ],
+      "correct": 1,
+      "explanation": "Hash chaining detects historical tampering; consensus (PoW/PoS/etc.) makes rewriting the agreed chain expensive. Confidentiality and key custody are not automatic properties of “using a blockchain.”",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.8-q2",
+      "module": 5,
+      "conceptId": "5.1.8",
+      "source": "handcrafted",
+      "stem": "Which statement about blockchain is a common exam trap that is false?",
+      "options": [
+        "Permissioned ledgers can restrict who may validate",
+        "Blockchain is identical to Bitcoin and always encrypts all stored data for privacy",
+        "Smart contracts are programmable logic on some platforms",
+        "Lost private keys can mean permanent loss of control over assets"
+      ],
+      "correct": 1,
+      "explanation": "Blockchain ≠ Bitcoin-only, and ledgers do not automatically encrypt all data for confidentiality. Integrity/transparency and consensus are the usual strengths; privacy needs extra design.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.1.9-q1",
+      "module": 5,
+      "conceptId": "5.1.9",
+      "source": "handcrafted",
+      "stem": "Internet privacy controls primarily aim to:",
+      "options": [
+        "Maximise behavioural profiling cookies without consent",
+        "Limit collection, use, and disclosure of personal data (PII) online",
+        "Guarantee that DRM never applies to any media file",
+        "Replace hashing with cleartext password storage"
+      ],
+      "correct": 1,
+      "explanation": "Privacy is about control over personal data. Piracy prevention (DRM, legal takedowns, watermarking) targets unauthorised copying of copyrighted works—related policy space, different goal.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.1.9-q2",
+      "module": 5,
+      "conceptId": "5.1.9",
+      "source": "handcrafted",
+      "stem": "A studio wants to reduce illegal redistribution of a film file. Which measure set is most aligned with piracy prevention (rather than general web privacy alone)?",
+      "options": [
+        "DRM/access controls, watermarking, and legal enforcement against unauthorised distribution",
+        "Only deleting server access logs that could identify abusers",
+        "Disabling HTTPS so traffic is easier to inspect by everyone",
+        "Publishing users’ PII to deter copying"
+      ],
+      "correct": 0,
+      "explanation": "Anti-piracy uses technical DRM/watermarking plus legal remedies. Privacy minimisation and HTTPS address personal-data risks; they are not the same as stopping copyright infringement.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.2.1-q1",
+      "module": 5,
+      "conceptId": "5.2.1",
+      "source": "handcrafted",
+      "stem": "Cyber forensics is best defined as:",
+      "options": [
+        "Only deleting malware as quickly as possible with no evidence trail",
+        "The disciplined collection, preservation, analysis, and presentation of digital evidence",
+        "Configuring a packet filter without logging",
+        "Generating DSA signatures for software updates only"
+      ],
+      "correct": 1,
+      "explanation": "Forensics reconstructs events for investigation/court while protecting evidential integrity (imaging, hashing, chain of custody). It is process-heavy and distinct from mere containment.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.2.1-q2",
+      "module": 5,
+      "conceptId": "5.2.1",
+      "source": "handcrafted",
+      "stem": "Why is chain of custody important in cyber forensics?",
+      "options": [
+        "It documents handling history so evidence integrity and authenticity can be defended in court",
+        "It replaces the need to hash disk images",
+        "It allows investigators to freely edit the original suspect disk",
+        "It is only used for paper evidence, never digital media"
+      ],
+      "correct": 0,
+      "explanation": "Chain of custody records who handled evidence when and how. Together with imaging and cryptographic hashing, it supports claims that digital evidence was not tampered with.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.2.2-q1",
+      "module": 5,
+      "conceptId": "5.2.2",
+      "source": "handcrafted",
+      "stem": "According to the module’s cyber-forensic process steps, which order is correct?",
+      "options": [
+        "Presentation → analysis → identification (skip preservation)",
+        "Identification → preservation → analysis → documentation → presentation",
+        "Analysis on the live original disk → then decide whether to image",
+        "Presentation first to the press → then collect evidence"
+      ],
+      "correct": 1,
+      "explanation": "The SLM lists identification, preservation, analysis, documentation, and presentation. Preserve/isolate before analysis; document continuously; present findings last.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.2.2-q2",
+      "module": 5,
+      "conceptId": "5.2.2",
+      "source": "handcrafted",
+      "stem": "On a live system, why does order of volatility matter during acquisition?",
+      "options": [
+        "RAM and network state can disappear; capture more volatile evidence before relying only on disk",
+        "Disk contents always vanish before RAM",
+        "Hashes are unnecessary if volatility is considered",
+        "Write blockers are forbidden on volatile data"
+      ],
+      "correct": 0,
+      "explanation": "Volatile evidence (RAM, network connections) is lost on power-down or overwrite. Sound process captures higher-volatility data first, then stable media—with write-blocking and hashing for disks.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.2.3-q1",
+      "module": 5,
+      "conceptId": "5.2.3",
+      "source": "handcrafted",
+      "stem": "Which scenario is a typical corporate application of cyber forensics (not only police criminal cases)?",
+      "options": [
+        "Investigating whether an employee stole IP or violated acceptable-use policy using company systems",
+        "Replacing ACLs with message digests on every file share",
+        "Disabling all logging to improve privacy scores",
+        "Using SET dual signatures to boot Windows"
+      ],
+      "correct": 0,
+      "explanation": "Forensics applies to criminal, civil, and corporate contexts: IP theft, policy abuse, fraud, incident scoping, etc. Enterprises run internal investigations with preservation duties if litigation is possible.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.2.3-q2",
+      "module": 5,
+      "conceptId": "5.2.3",
+      "source": "handcrafted",
+      "stem": "After a breach, forensics supports incident response mainly by:",
+      "options": [
+        "Guaranteeing the attacker’s identity from the From: email header alone",
+        "Helping scope what happened, attribute activity from artefacts, and guide recovery decisions",
+        "Automatically patching every host without analysis",
+        "Converting the case into a blockchain smart contract"
+      ],
+      "correct": 1,
+      "explanation": "Applications include criminal/civil cases and IR support: determine timeline, affected systems, and evidence for recovery and possible prosecution—using sound process across endpoints, servers, mobile, and cloud logs.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.2.4-q1",
+      "module": 5,
+      "conceptId": "5.2.4",
+      "source": "handcrafted",
+      "stem": "A hardware or software write blocker is used during disk acquisition primarily to:",
+      "options": [
+        "Speed up AES encryption of the evidence",
+        "Prevent accidental writes that would alter the original evidence media",
+        "Delete slack space to save storage",
+        "Convert NTFS to ext4 in place"
+      ],
+      "correct": 1,
+      "explanation": "Write blockers stop modifications while imaging. Investigators hash images (MD5/SHA) and analyse working copies with validated tools (imaging utilities, Autopsy/EnCase-class suites, memory tools as needed).",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.2.4-q2",
+      "module": 5,
+      "conceptId": "5.2.4",
+      "source": "handcrafted",
+      "stem": "Which practice undermines a defensible forensic examination?",
+      "options": [
+        "Hashing the image before and after acquisition and recording the algorithm",
+        "Installing analysis software onto the suspect disk and browsing it read/write",
+        "Using a validated imaging tool to create a bit-for-bit copy",
+        "Documenting tool versions used in the report"
+      ],
+      "correct": 1,
+      "explanation": "Never analyse by altering the original. Image with write-blocking, verify hashes, and work from forensic copies with documented, validated tools.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.2.5-q1",
+      "module": 5,
+      "conceptId": "5.2.5",
+      "source": "handcrafted",
+      "stem": "Matching cryptographic hashes of a forensic image before and after transfer primarily demonstrates:",
+      "options": [
+        "That the image’s integrity was preserved (no silent alteration)",
+        "That the suspect is guilty beyond any other evidence",
+        "That metadata timestamps cannot be wrong",
+        "That the original disk may now be freely edited"
+      ],
+      "correct": 0,
+      "explanation": "Hash verification supports integrity of digital evidence copies. Guilt still needs analysis and legal process; metadata can be misleading and must be corroborated.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.2.5-q2",
+      "module": 5,
+      "conceptId": "5.2.5",
+      "source": "handcrafted",
+      "stem": "Which statement about digital evidence is correct?",
+      "options": [
+        "Only currently visible files count; deleted/slack data never matters",
+        "Evidence may include active files, logs, metadata, and latent remnants; analyse working copies while preserving originals",
+        "Screenshots alone always replace raw disk images in court",
+        "Timestamps never need timezone or clock-skew interpretation"
+      ],
+      "correct": 1,
+      "explanation": "Digital evidence is any digital information of probative value—including latent artefacts. Best practice: preserve originals, analyse copies, interpret metadata carefully, and maintain custody.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.2.6-q1",
+      "module": 5,
+      "conceptId": "5.2.6",
+      "source": "handcrafted",
+      "stem": "On a Windows system, which artefact set is especially useful when investigating persistence and configuration changes?",
+      "options": [
+        "Only /var/log/auth.log and bash history",
+        "Event logs, Registry hives, Prefetch, and LNK artefacts (among others)",
+        "Only Received: email headers",
+        "Only Bitcoin blockchain headers"
+      ],
+      "correct": 1,
+      "explanation": "Windows investigations lean on Event Logs, Registry, Prefetch, LNK, USN journal, profiles, etc. Unix/Linux counterparts include syslog/journald, auth logs, shell history, cron, and package logs.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.2.6-q2",
+      "module": 5,
+      "conceptId": "5.2.6",
+      "source": "handcrafted",
+      "stem": "An analyst hunting SSH brute-force attempts on a Linux server should start with which kind of artefact?",
+      "options": [
+        "Windows Prefetch for notepad.exe",
+        "Authentication/system logs such as auth.log or journald entries for sshd",
+        "NTFS USN journal exclusively",
+        "SET merchant certificates"
+      ],
+      "correct": 1,
+      "explanation": "Unix/Linux auth and service logs record failed/successful logins and sshd activity. Applying only Windows artefact paths to a Linux image is a common mistake.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hand-5.2.7-q1",
+      "module": 5,
+      "conceptId": "5.2.7",
+      "source": "handcrafted",
+      "stem": "When tracing an email’s path, investigators primarily examine which header fields added by mail servers?",
+      "options": [
+        "Only the visible From: display name, treated as cryptographic proof of origin",
+        "Received: headers (typically interpreted from bottom toward top for the path), plus Message-ID and related metadata",
+        "Only DKIM signatures with no server logs ever",
+        "Only the Subject: line length"
+      ],
+      "correct": 1,
+      "explanation": "Email tracing follows Received chains and related IDs/logs. The From: address is easily spoofed; server-added Received lines (and MTA logs) are more trustworthy—with caveats.",
+      "answerSource": "slm",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hand-5.2.7-q2",
+      "module": 5,
+      "conceptId": "5.2.7",
+      "source": "handcrafted",
+      "stem": "Why is trusting only the visible From: address a forensic trap in email tracing?",
+      "options": [
+        "From: is always signed by DSS at the IP layer",
+        "From: can be forged; path reconstruction should emphasise Received: chains and corroborating server logs",
+        "Received: headers are illegal to store",
+        "Message-ID values are never useful for correlation"
+      ],
+      "correct": 1,
+      "explanation": "Spoofing can fake From:. Tracing builds a path hypothesis from Received hops, Message-ID correlation, and MTA/spam-gateway logs—not from the friendly From: string alone.",
+      "answerSource": "slm",
+      "difficulty": "medium"
+    }
+  ]
+}

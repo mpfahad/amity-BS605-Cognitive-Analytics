@@ -1,0 +1,917 @@
+--- page 77 ---
+72
+Network Security and Cryptography
+Notes
+Amity University Online
+Module - III: Authentication Standards and Key 
+Management
+Learning Objectives 
+At the end of this module, you will be able to
+●	
+Introduce Message Authentication Code (MAC) and its functions
+●	
+Define Authentication Requirements and Secure Hash Algorithm (SHA)
+●	
+Discuss about Digital Signatures and its standards
+●	
+Highlight the Proof of Digital Signature Algorithm
+Introduction
+A message authentication code (MAC) may be a cryptographic checksum on data 
+that uses a session key to detect both accidental and intentional modifications of the 
+information.
+Message authentication and digital signatures are often thought to consist of 
+two levels. At a deeper level, there might even be a silent function that produces an 
+authenticator, which is a value that can be used to authenticate a message. Then, by 
+utilising this lower layer function as a primitive in a higher layer authentication protocol, 
+the recipient can verify the message's validity.
+In the realm of network communication, safeguarding the integrity and 
+confidentiality of data is paramount. Various malicious activities, such as disclosure, 
+traffic analysis, masquerade, content modification, sequence modification, timing 
+modification, source repudiation, and destination repudiation, pose serious threats to 
+secure communication. To counter these threats, robust authentication measures are 
+essential.
+MACs can operate in different models, including without encryption (providing no 
+authentication), internal error code (providing both confidentiality and authentication), 
+and external error code (used to detect message alteration).
+The Digital Signature Standard (DSS) is a Federal Information Processing 
+Standard (FIPS) that defines algorithms for creating digital signatures using the 
+Secure Hash Algorithm (SHA) for authenticating electronic documents.3.1 Message 
+Authentication Codes
+A service that goes beyond message integrity is message authentication. In 
+message authentication, the recipient needs to confirm that the message was sent by 
+the intended recipient and that the sender is legitimate. Message Refusal to retract in 
+order to maintain message nonrepudiation, a sender must not be prepared to retract a 
+message that they have actually sent. 
+The onus of evidence is with the recipient. For example, the bank needs evidence 
+that the client really wanted the money transfer when they sent a message to transfer 
+funds from one account to another. Authentication of Entities Entity authentication, also 
+known as user identification, involves verifying the identity of the entity or user before 
+granting them access to system resources, such as files. For example, throughout the 
+(c) Amity University Online
+
+
+--- page 78 ---
+Network Security and Cryptography
+73
+Notes
+Amity University Online
+logging procedure, an authenticated student must be able to access her university 
+resources. This is to protect the university's and, by extension, the student's, interests.
+Understanding message integrity is necessary before moving on. Document 
+integrity is not guaranteed by encryption or decryption, although they do offer messages 
+and/or documents secrecy. Sometimes, though, honesty is more important than 
+concealment even. Alice could draft a will, for instance, specifying how her estate will be 
+divided after her passing. Encryption of the desire does not occur. Anybody can study 
+the desire after her death. It is necessary to maintain the will's integrity, though. Alice 
+is against any changes being made to the contents of the wish. Consider this scenario 
+once more: Alice writes Bob, her banker, to tell him to pay Eve for her consulting 
+services. 
+Eve already understands that she will be paid, therefore the message cannot be 
+kept from her. That being said, Eve in particular makes sure the message is protected 
+from manipulation. Record and Digital Fingerprint Using a finger print as identification is 
+one method of maintaining document integrity. Alice will affix her fingerprint at the very 
+bottom of the document if she needs to attest that its contents won't be altered illegally. 
+Because Eve is unable to fabricate Alice's fingerprint, she cannot alter the contents of 
+this document or produce a false document by any means. The fingerprints of Alice on 
+the paper and Alice on file are frequently compared to ensure that the document has 
+not been altered. It is not Alice's document if they are not identical or equal.
+3.1.1 Introduction of Message Authentication Codes
+A message authentication code (MAC) may be a cryptographic checksum on data 
+that uses a session key to detect both accidental and intentional modifications of the 
+information.
+A MAC requires two inputs: a message and a secret key known only to the 
+originator of the message and its intended recipient(s). this enables the recipient of the 
+message to verify the integrity of the message and authenticate that the message’s 
+sender has the shared secret key. If a sender does not know the key, the hash value 
+would then vary, which might tell the recipient that the message wasn't from the first 
+sender. 
+There are four sorts of MACs:  unconditionally secure, hash function-based, stream 
+cipher-based and block cipher-based within the past, the foremost common approach 
+to making a MAC was to use block ciphers like encoding Standard (DES), but hash-
+based MACs (HMACs) which use a secret key in conjunction with a cryptographic hash 
+function to supply a hash, became more widely used.
+Authentication detection and falsification detection are two critical processes in 
+which message authentication codes are involved. Where are these codes available for 
+us to use? Assume that User A sends User B the message "ABC." A uses the Shared-
+Key Cryptosystem to encrypt the message. Using a source key, A transfers the key 
+to B. Similar to the Public-Key Cryptosystem, key exchange is predicated on distinct 
+protocols. B extracts the message by using the key to decrypt the Cypher text.
+(c) Amity University Online
+
+
+--- page 79 ---
+74
+Network Security and Cryptography
+Notes
+Amity University Online
+ 
+ 
+All of this is not that simple. There's a drag there. If during the transmission, X, a 
+malevolent user, altered the cypher text. In that scenario, B is not aware that it has been 
+falsified. The wrong message will be received by B when it decrypts the communication. 
+B will believe incorrect information to be correct without realising it. You are doing 
+these operations on the erroneous data B, even though you will decrypt or encrypt the 
+information afterwards.  
+  
+Here, our goal is to identify any fabrication that B may have in his communication. 
+Here, A will generate the key that is needed to build the message authentication code 
+and forward it to B. A will use the key and cypher text to build a worth, and as a result, 
+the value is obtained. This worth Message Authentication Code generated by Cypher 
+text plus key. B is responsible for utilising the Message Authentication Code to verify if 
+the cypher text is forged or not. Now, B can determine with certainty whether or not the 
+cypher text is forged.
+(c) Amity University Online
+
+
+--- page 80 ---
+Network Security and Cryptography
+75
+Notes
+Amity University Online
+3.1.2 Authentication Functions
+Digital signatures and message authentication are commonly perceived as having 
+two levels at their core. A quiet function that generates an authenticator—a value that 
+can be used to authenticate a message—might even exist at a lower level. The receiver 
+can then confirm the legitimacy of a message by using this lower layer function as a 
+primitive in a higher layer authentication protocol. The following are the many types of 
+functions that can be utilised to create an authenticator: 
+Message Encryption: The message's authenticator is the ciphertext as a whole. 
+Message Authentication Code (MAC): the authenticator is a public function of the 
+message that generates a fixed-length value using a secret key. 
+Hash function: A public function called the hash function converts any length of 
+message into a fixed-length hash result, which serves as the authenticator. 
+Message Encryption: Message encryption can act as a kind of authentication on 
+its own. Compared to symmetric and public-key encryption methods, the analysis is 
+different.
+ 
+ 
+(c) Amity University Online
+
+
+--- page 81 ---
+76
+Network Security and Cryptography
+Notes
+Amity University Online
+Assume that the message is typically any random bit pattern. In this instance, there 
+is no need for the destination to automatically determine whether an incoming message 
+contains the cypher text of a valid message. Making the plaintext have a recognisable 
+structure that is impossible to duplicate without using the encryption function is one way 
+to solve the current issue. 
+For instance, we may pre-encrypt each message using a mistake-detecting 
+code, often known as a checksum or Frame Check Sequence (FCS). gets a plaintext 
+message ready. After that, M feeds this onto function F, which generates an FCS. After 
+the FCS is added to M, the block is encrypted as a whole. B decrypts the incoming 
+block at the destination and handles the outcome as a message with an FCS attached. 
+B uses a function F that is comparable in order to try and breed the FCS. The message 
+is regarded as legitimate if the computed FCS can match the arriving FCS. The function 
+F is applied to the plaintext in internal error control and the cypher text (encrypted 
+message) in external error control.
+3.1.3 Authentication Requirements
+When it comes to network communication, the following assaults are frequently 
+identified.
+Disclosure – It is the act of revealing the contents of a message to a person or 
+process that does not have the necessary cryptographic key. 
+Traffic Analysis – the invention of the pattern of traffic between parties. 
+Masquerade – insertion of messages into the network fraudulent source. 
+Content Modification – changes to the content of the message, including insertion-
+deletion, transposition, and modification. 
+Sequence Modification – any change made to a series of messages between 
+parties that are conversing; this can include adding, removing, and rearrangement.
+Timing Modification – delay or replay of messages. 
+Source Repudiation – denial of transmission of a message by source. 
+Destination Repudiation – denial of transmission of a message by destination.
+Message secrecy pertains to the steps used to influence the initial two attacks. 
+Message authentication refers to actions that have an impact on steps 3 through 6. 
+Digital signatures are used for item 7, and a combination of digital signatures and a 
+procedure to thwart this assault may be needed to handle item 8. 
+3.1.4 Message Authentication Codes (MAC)
+Our top goal is maintaining security in networking and data transfers. 
+Cryptography, the science and art of changing messages to make them secure 
+and resistant to attack, is the foundation of networking security. A number of security 
+features related to message exchange via networks can be obtained through 
+cryptography. Confidentiality, integrity, authenticity, and nonrepudiation are these 
+features.
+So let us understand how cryptography is implemented without delving into this 
+subject's mathematical foundations. As applied to a network, we then briefly discuss 
+(c) Amity University Online
+
+
+--- page 82 ---
+Network Security and Cryptography
+77
+Notes
+Amity University Online
+security aspects. Finally, in the upper three layers of the Internet model, we address 
+some basic protocols that incorporate security elements. 
+One potential symmetric key cryptography method for message authentication 
+is the MAC algorithm. A symmetric key is shared by the sender and the recipient to 
+construct the MAC process. 
+To provide message authentication, a MAC is essentially an encrypted checksum 
+generated on the underlying message that is sent with the transmission. 
+The following figure shows the procedure for utilising MAC for authentication:
+Let Us Now Plan To Understand The Entire Process Intimately
+1.	
+The sender enters the message and, consequently, the key K using a widely known 
+MAC technique, which generates a MAC value. 
+2.	
+The MAC function compresses an arbitrary long input into a durable and quick length 
+output, much like the hash function does. The primary distinction between MAC and 
+hash is that MAC employs a secret key for compression. 
+3.	
+The message is forwarded by the sender along with the MAC. Since our interest is 
+message origin authentication rather than message secrecy, we presume that the 
+message is being sent in clear text in this instance. The communication must be 
+encrypted if secrecy is necessary. 
+4.	
+After receiving the message and MAC, the recipient recalculates the MAC value by 
+feeding the MAC algorithm with the received message and the shared secret key K. 
+5.	
+The recipient now verifies that the recently computed MAC and the MAC it received 
+from the sender are equal. The recipient acknowledges receipt of the communication 
+and reassures themselves that it was sent by the intended sender if they match. 
+6.	
+The recipient is unable to identify if the message has been altered or whether the 
+origin has been fabricated if the computed MAC does not match the MAC given by 
+the sender. In summary, a recipient can confidently presume that the message is not 
+authentic.
+Limitations of MAC
+Due to the symmetric nature of its operation, MAC has the following two significant 
+constraints.
+1. 	 Creation of a Shared Secret
+
+
+With a shared key, it can facilitate message authentication between pre-
+selected, authorised users. 
+
+
+This requires the creation of a shared secret prior to MAC use. 
+2.	
+Inability to provide Non-Repudiation 
+
+
+Non-repudiation is the guarantee that the sender of a message cannot retract 
+any earlier communications, promises, or deeds.
+
+
+A non-repudiation service is not offered by the MAC approach. In the event 
+that a dispute arises regarding the origin of a communication, MACs are 
+unable to verify that the sender of the message actually transmitted it. 
+(c) Amity University Online
+
+
+--- page 83 ---
+78
+Network Security and Cryptography
+Notes
+Amity University Online
+
+
+Even if the MAC cannot be computed by a third party, the sender may 
+nevertheless dispute sending the message and assert that the recipient 
+forgeried it because it is impossible to determine which of the two parties 
+generated the MAC. 
+Both of these restrictions are frequently addressed by utilising the public key based 
+digital signatures covered in the section that follows.
+How Message Authentication Code Works
+Aside from outsiders, other issues that arise during message transfer between two 
+individuals include noise, which has the potential to modify the sender's initial message. 
+There is a neat technique called MAC that ensures the message is not changed.
+ 
+Message Authentication Code is what MAC stands for. In MAC, the sender and the 
+recipient share the same key, and the sender creates a large, problematic output known 
+as a message authentication code or cryptographic checksum, which is appended 
+to the first message. In order to verify the message's originality, the recipient further 
+generates the code and compares it with what they received. These are the parts:
+
+
+MAC Value
+
+
+MAC Algorithm
+
+
+Message
+
+
+Key 
+Message Authentication Codes (MAC) come in a variety of models, as listed below: 
+1. 	 MAC without encryption — This model can offer confidentiality as the communication 
+is visible to all parties, but it cannot give authentication.
+ 
+(c) Amity University Online
+
+
+--- page 84 ---
+Network Security and Cryptography
+79
+Notes
+Amity University Online
+2. 	 Internal Error Code – For secrecy, the sender encrypts the content in this MAC 
+model before delivering it over the network. As a result, this paradigm offers both 
+confidentiality and authentication. M' = MAC (M, k)
+3. 	 External Error Code –In instances where there is a message alteration, we decrypt 
+the message for waste and choose an external error code to solve the issue. Here, 
+we first apply the MAC to the encrypted message "c" and then compare it to the 
+MAC value that was received from the recipient. If the two values match, we then 
+decrypt "c"; if not, we just discard the received content. It saves time as a result.
+4. 	 c = E(M, k')M' = MAC(c, k)
+5. 	 Problems in MAC –Reverse engineering will get us to the plain text, or even the key. 
+We have now mapped input to output; to overcome this, we go on to "One way" hash 
+functions. Note: Symmetric key encryption is indicated by the letter "E".
+ What is Hashing?
+The process of mapping data of any size to a hard and quick length is known 
+as hashing. This is commonly referred to as a hash value (or, if you're feeling 
+sophisticated, a hash digest, hash code, or hash sums). Hashing can also be a one-
+way function, while encryption can also be a two-way function. Although everything 
+can be reverse-hashed theoretically, it is challenging due of the required processing 
+power. One-way hashing is used. Now, hashing is used to confirm that a file or 
+piece of data is real and hasn't been altered, while encryption is used to protect data 
+while it's being transmitted. Put differently, it's a check-sum. This is how it operates: 
+every hashing method produces results at a hard and quick length. For instance, the 
+technique known as SHA-256 produces a hash value of 256 bits, which is typically 
+expressed as a 64-character hexadecimal string (h/t Matthew Haslett). Each hash value 
+is unique. A collision occurs when two distinct files generate the same unique hash 
+value, rendering the technique completely pointless. To demonstrate the vulnerability 
+of the SHA-1 hashing method, Google produced a collision with it last year. SHA-1 
+was officially phased out in favour of SHA-2 at the beginning of 2016. Early in 2016, 
+SHA-1 was formally phased out in favour of SHA-2. However, Google needed to make 
+some progress, so over the course of two years, in collaboration with an Amsterdam 
+lab, it invested money, labour, and skill to turn what was essentially an abstraction into 
+a working product. Nevertheless, here's an illustration of hashing: imagine that you 
+want to digitally sign a little piece of software and offer it for download on your website. 
+(c) Amity University Online
+
+
+--- page 85 ---
+80
+Network Security and Cryptography
+Notes
+Amity University Online
+In order to proceed, you will first hash the script or executable you are signing, and 
+then you will hash that as well, once you have added your digital signature. After that, 
+everything is encrypted, which is why downloads are frequent. Upon downloading 
+the software, the client's browser decrypts the file and examines the two distinct 
+hash values. The file and, consequently, the signature will be hashed once more by 
+the browser using the same hash function and method. The browser can determine 
+that the file and signature are authentic and haven't been altered if it generates the 
+same hash value. The browser warns you if it isn't. In reality, that is how code signing 
+functions. Just keep in mind that no two files can produce the same hash value, so any 
+modification—even the smallest adjustment—will result in a unique value.
+Common Hashing Algorithms
+Alright, so now we understand hash functions and how hashing algorithms operate. 
+It's time to learn the names of some of the most widely used hash algorithms now. 
+Guidelines for hash functions are available from NIST and other Federal Information 
+Science Standards (FIPS).
+A few samples of common hashing algorithms include:
+●	
+Secure Hash Algorithm (SHA) — SHA-1, SHA-2 (a family within a family that includes 
+SHA-224, SHA-256, SHA-384, and SHA-512), and SHA-3 (SHA3-224, SHA3-256, 
+SHA3-384, and SHA3-512) are the hashes in this family. Since SHA-1 has been 
+abandoned, SHA-256 is currently the most often used hashing method.
+●	
+Message Digest (MD) — There are several different hash functions in this family 
+of hashes, such as MD2, MD4, MD5, and MD6. Although MD5 was once thought 
+to be the standard hashing technique, it is now regarded as flawed since it causes 
+collisions in the wild.
+●	
+Windows NTHash — This hash, which is also known as an NTLM or Unicode hash, 
+is typically used by Windows computers due to its increased security over the LM 
+hash. Though this specific algorithm is essential to Windows systems, NTHash still 
+contains flaws that should be taken into consideration. NTLM2 is still in use, even 
+though using NTLMv1 is generally discouraged these days.
+3.1.5 Secure Hash Algorithm (SHA)
+The four secure hash algorithms described in this standard are SHA-1, SHA-256, 
+SHA-384, and SHA512. The four methods are iterative, one-way hash functions that 
+process a message and provide a message digest, which is a condensed form. With 
+the use of these methods, it is possible to determine the integrity of a message because 
+any modifications are quite likely to result in a unique message digest. This feature is 
+useful for creating random numbers (bits) and for the creation and validation of digital 
+signatures and message authentication codes. Preprocessing and hash computation 
+are the two processes that are often covered in an algorithm description. A message 
+is preprocessed by padding it, parsing it into m-bit blocks, and establishing initialization 
+variables that will be used in the hash calculation. With the padded message, the hash 
+computation creates a message schedule. It then iteratively constructs a sequence 
+of hash values using the schedule, functions, constants, and word operations. 
+The message digest is calculated using the final hash value produced by the hash 
+computation. The primary distinction between the four algorithms is the quantity of 
+security bits offered for the data being hashed; this is frequently correlated with the 
+message digest length. There may also be other requirements that call for the use of 
+(c) Amity University Online
+
+
+--- page 86 ---
+Network Security and Cryptography
+81
+Notes
+Amity University Online
+a secure hash algorithm with a specific amount of bits of security when it is used in 
+conjunction with another method. For example, a digital signature scheme that provides 
+128 bits of security for a message could need to use a secure hash algorithm, such 
+as SHA-256, to provide an additional 128 bits of protection. The dimensions of the 
+knowledge words and blocks utilised in hashing vary throughout the four algorithms as 
+well.
+SHA History
+●	
+1993 NIST published the SHA-0 hash function as a government standard. 
+●	
+In 1995, SHA-1 was released as the replacement for SHA-0. 
+●	
+The SHA-2 variations SHA-256, SHA-384, and SHA-512 were released in 2002. 
+●	
+2004 SHA-224 published
+Hash Function 
+A function for hashing Given the hash value h (i.e., h = H(m)), H might even be a 
+modification that accepts a variable-size input m and produces a fixed-size text. Hash 
+functions that only have this attribute can be used for a variety of ordinary computing 
+tasks; however, when they are used in cryptography, they are typically selected to have 
+a few more qualities. The following are necessary conditions for a cryptographic hash 
+function: 
+●	
+The input is often of any length, 
+●	
+The output features a hard and fast length; H(x) is comparatively easy to compute 
+for any given x, 
+●	
+H(x) is one-way, 
+●	
+H(x) is collision-free. 
+An algorithm for hashing If H is hard to invert, it is said to be one-way; by "hard to 
+invert," we mean that for every given hash value h, it is computationally impossible to 
+find an input x such that H(x) = h. H is said to be a weakly collision-free hash function 
+if, given a message x, it is computationally impossible to find a message y such that 
+H(x) = H(y). A hash function that is highly collision-free For any two messages x and 
+y, such that H(x) = H(y), it is computationally impossible to find H. A message digest 
+can be thought of as a "digital fingerprint" of the bigger document, as the hash value 
+succinctly describes the longer message or document from which it was derived. MD2, 
+MD5, and SHA are a few examples of popular hash algorithms. The availability of 
+digital signatures is perhaps the primary function of a cryptographic hash function. It 
+is common practice to compute the digital signature of a document by utilising its hash 
+value, which is very small in comparison to the document itself, as hash functions are 
+typically faster than digital signature methods. Furthermore, a digest is often released 
+to the public without disclosing the contents of the source text. In digital time-stamping, 
+this is frequently crucial since one can use hash functions to time-stamp a document 
+without disclosing its contents to the time-stamping service. 
+So the hash function is a flexible one-way cryptographic algorithm which maps a 
+single output of a fixed bit length to an input of any size. The resulting output is the 
+resulting unique identifier we included above, which is known as a hash digest, hash 
+value, or hash code.
+What's the Use of a Hash Function?
+(c) Amity University Online
+
+
+--- page 87 ---
+82
+Network Security and Cryptography
+Notes
+Amity University Online
+One of a hash function's functions in cryptography is to take a plaintext input and, 
+in an unreversible manner, generate a hashed value output of a specific size. But from 
+a 10,000-foot viewpoint, they do better than that. You know, hash functions in the field 
+of cryptography prefer to sport a few hats. Solid hash functions in a nutshell:
+●	
+Ensure the quality of records,
+●	
+Safe against unauthorized shifts,
+●	
+Protect codes that are stored and,
+●	
+Operate to accommodate various purposes at various speeds.
+ Throughout public key cryptography, hash functions can be searched. You will find, 
+for instance, that hash functions are facilitated by the use of:
+●
+●
+Certificates from SSL/TLS (i.e., website security certificates),
+●
+●
+Certificates Signature Code,
+●
+●
+Certificates for Paper Signing, and
+●
+●
+Signing Certs by email.
+Message Padding 
+A message or file is supplied as input, and the SHA-1 is used to calculate 
+a message digest for it. It is best to treat the file or message as slightly string. The 
+number of bits in the message determines its length (an empty message has a length 
+of 0). For compactness, we will represent the message in hex if the number of bits in 
+the message might even be a multiple of 8. The goal of message padding is to make 
+a padded message's total length a multiple of 512. When calculating the message 
+digest, the SHA-1 processes blocks of 512 bits in a sequential manner. explains how 
+(c) Amity University Online
+
+
+--- page 88 ---
+Network Security and Cryptography
+83
+Notes
+Amity University Online
+this padding is to be applied in the following. In summary, a padded message of length 
+512 * n is obtained by appending a "1" followed by m "0"s and a 64-bit number to the 
+very best part of the message. The length of the first message, l, is a 64-bit integer. 
+The SHA-1 then processes the padded message as n 512-bit blocks. Assume that 
+a message has a length of l < 264. The message is padded on the right side in the 
+following manner prior to being entered into the SHA-1.
+a.	
+"1" is attached. For instance, this is padded to "010100001" if the original message 
+was "01010000". 
+b.	
+"0"s are attached. The message's initial length will determine how many "0"s there 
+are. The final 64 bits of the final 512-bit block are set aside for the initial message's 
+length (l).
+3.1.6 Message Digest
+In order to get a 128 bit message digest, the MD5 message digest algorithm is the 
+5th version of the Message Digest Algorithm. MD5 is very fast and takes 512 bit blocks 
+of plain text, which is further divided into 16 blocks, each 32 bits, and produces a 128 
+bit message digest that can be a group of 4 blocks, each 32 bits. Five steps are used 
+by MD5 to construct the message digest, i.e. padding, inserting length, splitting input 
+into 512 bit blocks, initializing process blocks and 4 rounds of chaining variables, using 
+various constants in each iteration.
+The message digest is computed using the last word padded message. Two 
+buffers, each with five 32-bit words, and a string of eighty 32-bit words are used in the 
+algorithm. The initial five-word buffer's words are marked A, B, C, D, and E.
+The words are numbered H0, H1, H2, H3, H4 within the second 5-word buffer. 
+The 80-word series of terms is named W0, W1,..., W79. Additionally, a one-word buffer 
+TEMP is used. The 16-word blocks M1, M2,..., Mn laid out in are processed in such how 
+on involve the message digest. 80 steps are included within the handling of every Mi. 
+{Hi} is initialized as follows before processing any block: in hex, 
+H0 = 67452301 
+H1 = EFCDAB89 
+H2 = 98BADCFE 
+H3 = 10325476 
+H4 = C3D2E1F0.
+After this M1, M2, ... , Mn are processed. To process Mi, we proceed as follows: 
+a. 	 Divide Mi into 16 words W0, W1... W15, where W0 is that the left-most word. 
+b. 	 For t = 16 to 79 let Wt = S1(Wt-3 XOR Wt-8 XOR Wt- 14 XOR Wt-16). 
+c. 	 allow us to take A = H0, B = H1, C = H2, D = H3, E = H4. 
+d. 	 For t = 0 to 79 do TEMP = S5 (A) + ft(B,C,D) + E + Wt + Kt; E = D; D = C; C = 
+S30(B); B = A; A = TEMP; 
+e. 	 Consider H0 = H0 + A, H1 = H1 + B, H2 = H2 + C, H3 = H3 + D, H4 = H4 + E. 
+After processing Mn, the message digest is that the 160-bit string represented 
+by the 5 words H0 H1 H2 H3 H4.
+(c) Amity University Online
+
+
+--- page 89 ---
+84
+Network Security and Cryptography
+Notes
+Amity University Online
+3.2 Digital Signatures
+Digital Signature Algorithm (DSA) is one among the Federal information science 
+Standard for creating digital signatures depends on the mathematical concept or we 
+will say the formulas of modular exponentiation and therefore the discrete logarithm 
+problem to cryptograph the signature digitally during this algorithm.
+3.2.1 Overview of Digital Signatures
+Digital signatures are the public-key primitives of message authentication in 
+cryptography. In fact, within the physical world, it's common to use handwritten 
+signatures on handwritten or typed messages at this point. Mainly, they're wont to bind 
+signatory to the message to secure the message.
+Therefore, a digital signature may be a technique that binds an individual or entity 
+to the digital data of the signature. Now, this may bind are often independently verified 
+by the receiver also as any third party to access that data.
+Here, Digital signature may be a cryptographic value that's calculated from the info 
+and a secret key known only by the signer or the person whose signature is that.
+Actually, in the world, the recipient of a message needs confirmation that it is from 
+the sender, and he shouldn't be prepared to hack the message's origin for improper use 
+or any other reason. Their requirement is extremely crucial in business applications or 
+the other things since the likelihood of a dispute over exchanged data is extremely high 
+to secure that data.
+Working Concept and Block Diagram of Digital Signature
+A traditional signature is incorporated into the document; it is a component of it. 
+The signature is affixed to the cheque when it is written; it is not a distinct document. 
+However, once we digitally sign a document, we send the signature along with the 
+document itself. The message and the signature are the two papers that the sender 
+transmits. After receiving both documents, the recipient confirms that the signature 
+really belongs to the purported sender. The message is retained if this is consistently 
+demonstrated; if not, it is dismissed. Verifying the signature is the second way that 
+the two types of documents differ from one another. The recipient of a conventional 
+signature matches the signature on the document with the signature on the digital 
+signature scheme, which uses public-key cryptography during this method, when she 
+receives the document.
+●	
+When using a digital signature, both the message and the signature are received by 
+the recipient. 
+●	
+The recipient must apply a verification technique to the combination of the message 
+and the signature in order to confirm the authenticity; a copy of the signature is not 
+kept anywhere.
+●	
+A signature and documents typically have a one-to-many link when using a standard 
+signature.
+One possible distinction between the two types of signatures could be their level of 
+duplicity.
+When using a traditional signature, it's common to distinguish between the original 
+document and its copy.
+(c) Amity University Online
+
+
+--- page 90 ---
+Network Security and Cryptography
+85
+Notes
+Amity University Online
+Phases
+It is possible to achieve a digital signature in two ways: 
+●	
+Signing the contract or 
+●	
+Signing a document digest.
+Process using signing the document
+Process using signing a document digests.
+ 
+Digital Signature verification and validation
+ 
+Above Figure depicts the digital signature verification and validation process 
+that are performed by a verifier (e.g., the intended recipient of the signed data and 
+(c) Amity University Online
+
+
+--- page 91 ---
+86
+Network Security and Cryptography
+Notes
+Amity University Online
+associated digital signature). Note that the figure depicts a successful verification and 
+validation process (i.e., no errors are detected).In order to verify a digital signature, the 
+verifier shall obtain the overall public key of the claimed signatory, (usually) supported 
+the claimed identity. If DSA or ECDSA has been used to generate the digital signature, 
+the verifier shall also obtain the domain parameters. It is possible to receive the domain 
+parameters and overall public key directly from the purported signature or through a 
+certificate issued by a trusted entity, such as a CA. Using an equivalent hash function 
+that was employed throughout the digital signature generation process, a message 
+digest must be constructed on the data whose signature needs to be confirmed (that 
+is, not on the received digital signature). The received digital signature is validated 
+in compliance with this Standard by using the relevant digital signature method, 
+the domain parameters (if applicable), the total public key, and the freshly computed 
+message digest. When a verification procedure fails, it is usually assumed that the data 
+is incorrect and that the digital signature cannot be verified for that data using the public 
+key that was provided, and hence the needed signature format. 
+●	
+The verifier must first have assurances regarding the signatory's claimed identity, 
+●	
+The validity of the domain parameters (for DSA and ECDSA), 
+●	
+The validity of the overall public key, and 
+●	
+The fact that the claimed signatory actually possessed the private key used 
+to generate the digital signature at the time the signature was generated before 
+accepting the verified digital signature as valid. SP 800-89 provides the verifier with 
+ways to request these assurances. Keep in mind that during initial setup, confirmation 
+of domain parameter correctness may be acquired. The digital signature and signed 
+data will be regarded as legitimate if the assurance and verification procedures are 
+completed successfully. Nonetheless, the digital signature ought to be regarded as 
+invalid in the event that an assurance or verification procedure fails. The course 
+of action for an invalid digital signature will be governed by the policies of the 
+organisation.
+3.2.2 Digital Signature Standards (DSS)
+The Digital Signature Standard (DSS) is a Federal Informatics Standard (FIPS) that 
+describes algorithms for creating digital signatures using Secure Hash Algorithm (SHA) 
+for electronic document authentication. We are just provided with the digital signature 
+function by DSS; no encryption or key exchange methods are available.
+ 
+(c) Amity University Online
+
+
+--- page 92 ---
+Network Security and Cryptography
+87
+Notes
+Amity University Online
+Hand of Sender:
+In the DSS Approach, a hash code is generated from the message, and the 
+signature function receives the following inputs.
+●
+●
+The hash coding.
+●
+●
+The 'k', the randomly generated number for that particular signature.
+●
+●
+PR (a), or the sender's private key.
+●
+●
+A global public key, or PU (g), which is a collection of standards for communication 
+concepts.
+These inputs to the function will come from the output signature, which has 
+two elements: "s" and "r." As a result, the recipient receives the original address 
+concatenated with the signature.
+Hand of the Receiver:
+Sender verification takes place at the receiver's end. There is a creation of the 
+message's hash code. The following inputs are used by a function of verification:
+
+
+The hash code generated by the recipient.
+
+
+'s 'and' r 'signature elements.
+
+
+The Sender's Public Key.
+
+
+Public Key Global.
+The verification function's performance is compared to the signature component 'r'. 
+If the sent signature is legitimate, all values will fit, since only the sender can produce a 
+valid signature with the aid of its private key.
+3.2.3 Proof of Digital Signature Algorithm
+You must be aware that using your signature technology in court may cause 
+delays. 
+Digital signatures' legality It takes two steps to prove a digital signature is legal: 
+first, the signature must be accepted as proof, and then it must be shown to be reliable.
+You will require expert testimony outlining the record production procedure and 
+confirming its accuracy in order to admit a signature as evidence.
+Once the signed document is accepted, it is necessary to demonstrate the 
+signature's reliability. The SIGNiX signing procedure has a number of components that 
+together provide a strong case for legitimacy in court.
+Every document signature procedure that is finished is accompanied by a digitally 
+signed audit log. The time, date, transaction ID, and user associated with each of the 
+ensuing actions are shown in the audit log:
+
+
+Transaction commencement
+
+
+User access to the system
+
+
+Acceptance of e-consent by the User
+
+
+Document(s) Presentation
+
+
+User authentication
+
+
+Signatures
+
+
+Initials
+(c) Amity University Online
+
+
+--- page 93 ---
+88
+Network Security and Cryptography
+Notes
+Amity University Online
+
+
+Acknowledgments
+
+
+Transaction completion
+Every signature is accompanied with a digital signature, which not only completes 
+the document but also offers tamper evidence of the content at the time of each 
+signature. Standards-based and saved inside the document rather than on SIGNiX's 
+servers, the signatures can be independently checked without contacting SIGNiX.
+Every digital signature is time-stamped, indicating the precise moment each 
+signature was executed.
+In order to provide long-term signature validity, each signature's digital certificate is 
+checked at the moment of signing and incorporated into the PDF document.
+In order to provide unambiguous confirmation of the user's identity and to closely 
+link the user to the transaction and signature, SIGNiX provides a variety of user 
+authentication choices.
+Summary
+●	
+Digital signatures and message authentication play vital roles in ensuring the 
+authenticity and integrity of messages in network communication. These mechanisms 
+often involve lower-level functions that generate authenticators, which are used to 
+authenticate messages.
+●	
+The critical need for robust authentication measures in network communication to 
+protect against threats such as disclosure, traffic analysis, masquerade, content 
+modification, sequence modification, timing modification, source repudiation, and 
+destination repudiation. These measures are essential for ensuring the integrity and 
+confidentiality of data in communication networks.
+●	
+Message Authentication Codes (MACs) are cryptographic techniques used to 
+ensure message integrity and authenticity during transmission between two parties. 
+In MAC, the sender and recipient share a secret key, and the sender generates a 
+message authentication code (MAC value) using a MAC algorithm. This code is 
+appended to the message and sent to the recipient.
+●	
+Hashing is a process of mapping data of any size to a fixed-length value, known 
+as a hash value or digest. It is a one-way function, unlike encryption, which can be 
+reversed. Hashing is used to confirm the authenticity and integrity of data, while 
+encryption is used to protect data during transmission.
+●	
+Common hashing algorithms include Secure Hash Algorithm (SHA) and Message 
+Digest (MD). Hashing ensures data integrity and authenticity by generating unique 
+hash values that can be used to verify data has not been altered.
+●	
+In the DSS approach, a hash code is generated from the message, and the signature 
+function requires inputs such as the hash code, a randomly generated number 'k' for 
+that signature, the sender's private key, and a global public key.
+Glossary
+●	
+Message Encryption: The message's authenticator is the ciphertext as a whole. 
+●	
+Message Authentication Code (MAC): the authenticator is a public function of the 
+message that generates a fixed-length value using a secret key. 
+●	
+Hash function: A public function called the hash function converts any length of 
+message into a fixed-length hash result, which serves as the authenticator. 
+(c) Amity University Online
+
+
+--- page 94 ---
+Network Security and Cryptography
+89
+Notes
+Amity University Online
+●	
+Message Encryption: Message encryption can act as a kind of authentication on its 
+own. Compared to symmetric and public-key encryption methods, the analysis is 
+different.
+●	
+One-Way Hash Function: A function used to convert input data into a fixed-size hash 
+value, which cannot be easily reversed to obtain the original input.
+●	
+Symmetric Key Encryption: Encryption method where the same key is used for both 
+encryption and decryption.
+●	
+Hashing: The process of mapping data of any size to a fixed-length value, known as 
+a hash value or digest.
+●	
+Secure Hash Algorithm (SHA): A family of cryptographic hash functions, including 
+SHA-1, SHA-2, and SHA-3, widely used for hashing purposes.
+Check Your Understanding
+1. 	 Which of the following functions can be used to create an authenticator for a message 
+in network communication?
+a) 	 Message Encryption  
+b) 	 Compression  
+c) 	 Sorting  
+d) 	 Searching  
+2.	
+Which of the following is a limitation of Message Authentication Codes (MAC)?
+a)	 They are computationally expensive.  
+b)	 They provide non-repudiation services.  
+c)	 They require a shared secret between all parties involved.  
+d)	 They use asymmetric encryption.  
+3.	
+Which type of Message Authentication Code (MAC) model offers both confidentiality 
+and authentication?
+a)	 MAC without encryption  
+b)	 Internal Error Code  
+c)	 External Error Code  
+d)	 Reverse Engineering  
+4.	
+Which of the following hashing algorithms is currently the most often used, especially 
+after the abandonment of SHA-1?
+a)	 Message Digest (MD5)  
+b)	 Secure Hash Algorithm (SHA-1)  
+c)	 Secure Hash Algorithm (SHA-256)  
+d)	 Windows NTHash  
+5.	
+Which algorithm is used by the Digital Signature Standard (DSS) for creating digital 
+signatures?
+a)	 Advanced Encryption Standard (AES)  
+b)	 Data Encryption Standard (DES)  
+c)	 Rivest-Shamir-Adleman (RSA)  
+d)	 Secure Hash Algorithm (SHA)  
+(c) Amity University Online
+
+
+--- page 95 ---
+90
+Network Security and Cryptography
+Notes
+Amity University Online
+Exercise
+1.	
+How does message encryption contribute to message authentication in network 
+communication? Provide a brief explanation.
+2.	
+What are the advantages of Message Authentication Codes (MACs) in providing 
+message authentication?
+3.	
+Describe how hashing ensures the integrity and authenticity of data, and distinguish 
+it from encryption in terms of its one-way nature and collision resistance.
+4.	
+How does the Digital Signature Standard (DSS) ensure the authenticity of electronic 
+documents? Write the key steps involved in the DSS approach.
+5.	
+How does the SIGNiX signing procedure ensure the legality and reliability of digital 
+signatures in court? 
+Learning Activities
+1.	
+How would you describe hashing in a simple and understandable way, emphasizing 
+its role in ensuring the integrity and authenticity of data? Provide examples or 
+analogies to illustrate your explanation.
+2.	
+Describe the process of verifying and validating a digital signature, including the key 
+components involved and the steps taken by the verifier to ensure the signature's 
+authenticity and integrity.
+Check Your Understanding (Answers)
+1.	 a)	
+2.	
+c)	
+3.	
+b)	
+4.	 c)
+5.	 d)
+(c) Amity University Online

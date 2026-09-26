@@ -1,17 +1,7 @@
-CSIT654 — LMR priorities (live-class teacher weightage + study materials)
+CSIT654 — LMR status
 
-1. 1.1.1 Introduction to Security Attacks — classify the stem as passive or active first.
-2. 1.1.2 Services and Mechanism — “what vs how” — service vs mechanism is the classic stem.
-3. 1.1.3 Classical Encryption Techniques — define plaintext, ciphertext, key, and the two classical families.
-4. 2.1.1 Modern Block Ciphers: Block Ciphers Princi — state block size, key, rounds, and why product ciphers.
-5. 2.1.2 Shannon’s Theory of Confusion and Diffusio — define confusion vs diffusion in one line each.
-6. 2.1.3 Fiestal Structure — write the Li/Ri recurrence and say decryption = reverse keys.
-7. 3.1.1 Introduction of Message Authentication Cod — authentication ≠ encryption — say both explicitly in answers.
-8. 3.1.2 Authentication Functions — list the three authentication-function classes.
-9. 3.1.3 Authentication Requirements — integrity + authenticity are the core MAC requirements.
-10. 4.1.1 Authentication Applications: Kerberos — AS → TGT → TGS → service ticket flow in order.
-11. 4.1.2 Overview of Access Control List (ACL) — define ACL as per-object subject→rights list.
-12. 4.1.3 Electronic Mail Security: Pretty Good Priv — hybrid encryption + web of trust are the PGP headlines.
-13. 5.1.1 Introductory Idea of Intrusion — define intrusion + name the three intruder classes.
-14. 5.1.2 Intrusion Detection Techniques — contrast signature vs anomaly; HIDS vs NIDS.
-15. 5.1.3 Viruses and Worms — virus vs worm one-line contrast is the highest-yield stem.
+No live-class teacher weightage is available for this subject yet.
+Per exam curation policy: do not invent LMR badges from outline order
+(e.g. first-three topics per module).
+
+LMR topic list: (empty — unmarked until a live class names exam priorities)

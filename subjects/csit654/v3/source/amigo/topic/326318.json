@@ -1,0 +1,37 @@
+{
+  "cmid": "326318",
+  "title": "Quiz : 1.1.1 Introduction to Security Attacks",
+  "status": "scraped",
+  "attemptUrl": "https://amigo.amityonline.com/mod/quiz/review.php?attempt=101540420&cmid=326318",
+  "score": "2.00/2.00",
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Which security Attacks are having malicious intension:",
+      "options": [
+        "a. Passive Attack.",
+        "b. Active Attack.",
+        "c. Simple Attack.",
+        "d. None of these."
+      ],
+      "correct": 1,
+      "correctOptionText": "The correct answer is: Active Attack.",
+      "answerSource": "amigo_review",
+      "explanation": "Amigo review: The correct answer is Active Attack."
+    },
+    {
+      "no": "2",
+      "stem": "Which one of the following can be considered as the class of computer threats?",
+      "options": [
+        "a. Dos Attack",
+        "b. Phishing",
+        "c. Soliciting",
+        "d. Both A and C"
+      ],
+      "correct": 0,
+      "correctOptionText": "The correct answer is: Dos Attack",
+      "answerSource": "amigo_review",
+      "explanation": "Amigo review: The correct answer is Dos Attack."
+    }
+  ]
+}

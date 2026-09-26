@@ -1,0 +1,37 @@
+{
+  "cmid": "326353",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541699&cmid=326353",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "How many DES operations performed in Triple DES",
+      "options": [
+        "a. 1",
+        "b. 2",
+        "c. 3",
+        "d. 4"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Triple DES applies DES three times (EDE)."
+    },
+    {
+      "no": "2",
+      "stem": "Triple DES has ______________ keys.",
+      "options": [
+        "a. 1",
+        "b. 2",
+        "c. 5",
+        "d. 4"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Common 2-key Triple-DES (EDE2) uses two keys; SLM lists two-key form."
+    }
+  ]
+}

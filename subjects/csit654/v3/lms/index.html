@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSIT654 — Network Security & Cryptography</title>
+  <link rel="stylesheet" href="app.css" />
+  <script>window.AMITY_SUBJECT = "csit654_v3";</script>
+  <script src="../../../../shared/config.js"></script>
+  <script src="../../../../shared/progress.js"></script>
+  <script src="../../../../shared/sync-ui.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <div class="brand-mark">NS</div>
+      <div>
+        <div>Network Security & Cryptography</div>
+        <div class="brand-sub">CSIT654 · LMS v3</div>
+      </div>
+    </div>
+    <nav class="top-nav" aria-label="Primary">
+      <a href="index.html" class="here">Course</a>
+      <a href="compare.html">Compare</a>
+      <a href="practice.html?mode=session">Practice</a>
+      <a href="practice.html?mode=browse">Bank</a>
+      <a id="pdfHomeLink" href="#" target="_blank" rel="noopener">SLM PDF</a>
+    </nav>
+    <div class="top-actions">
+      <button type="button" class="sync-pill" id="syncToggle" title="Progress sync">☁ Progress</button>
+    </div>
+  </div>
+
+  <div id="syncDrawer" class="sync-drawer" hidden>
+    <div id="amity-sync-root"></div>
+  </div>
+
+  <main class="content home-wide">
+    <section class="hero hero-wide">
+      <h1>Network Security & Cryptography</h1>
+      <p>Understand how information is attacked, protected, encrypted, authenticated, and investigated.</p>
+      <div class="progress-wrap progress-wide">
+        <div class="progress-label"><span>Overall progress</span><strong id="pctLabel">0%</strong></div>
+        <div class="progress-track"><div class="progress-fill" id="pctFill" style="width:0%"></div></div>
+      </div>
+      <a class="continue-card" id="continueCard" href="#">
+        <div>
+          <strong id="continueTitle">Continue learning</strong>
+          <span id="continueSub">Loading…</span>
+        </div>
+        <span class="btn btn-cyan" style="pointer-events:none">Continue →</span>
+      </a>
+    </section>
+
+    <h2 class="section-title">Your learning path</h2>
+    <p class="subtle">Five modules. See the whole subject in one glance.</p>
+    <div class="path-grid" id="moduleGrid"></div>
+
+    <h2 class="section-title">Quick access</h2>
+    <div class="quick-row">
+      <a class="quick-card" href="module.html?m=1"><strong>Learn</strong><span>Start Module 1 foundations</span></a>
+      <a class="quick-card" href="concept.html?id=1.1.1&mode=revise"><strong>Revise</strong><span>Flashcards &amp; exam cues</span></a>
+      <a class="quick-card" href="practice.html?mode=session"><strong>Practice</strong><span>20-question sessions</span></a>
+      <a class="quick-card" href="compare.html"><strong>Compare</strong><span>Exam contrasts side-by-side</span></a>
+    </div>
+  </main>
+
+  <script>
+  (async function () {
+    const A = window.CSIT654V3;
+    const { curriculum, pdfPages } = await A.loadBundles();
+    const pdf = document.getElementById("pdfHomeLink");
+    if (pdfPages) {
+      pdf.href = A.pdfHref(pdfPages);
+    } else {
+      pdf.hidden = true;
+    }
+
+    const stats = A.progressStats(curriculum);
+    document.getElementById("pctLabel").textContent = stats.pct + "%";
+    document.getElementById("pctFill").style.width = stats.pct + "%";
+
+    const cont = A.continueTarget(curriculum);
+    const card = document.getElementById("continueCard");
+    if (cont) {
+      document.getElementById("continueTitle").textContent = "Continue: " + cont.topic.title;
+      document.getElementById("continueSub").textContent =
+        "Module " + cont.module.id + " · " + cont.module.short;
+      card.href = "concept.html?id=" + encodeURIComponent(cont.topic.id);
+    }
+
+    document.getElementById("moduleGrid").innerHTML = curriculum.modules.map((m) => {
+      const color = "var(--" + m.color + ")";
+      return `<a class="path-card" href="module.html?m=${m.id}">
+        <div class="num" style="background:${color}">${String(m.id).padStart(2,"0")}</div>
+        <h3>${A.esc(m.short.toUpperCase())}</h3>
+        <p>${A.esc(m.blurb)}</p>
+      </a>`;
+    }).join("");
+
+    const drawer = document.getElementById("syncDrawer");
+    document.getElementById("syncToggle").addEventListener("click", () => {
+      drawer.hidden = !drawer.hidden;
+    });
+    const Sync = window.AmitySyncUI || window.BS605SyncUI;
+    if (Sync?.mount) {
+      Sync.mount(document.getElementById("amity-sync-root"), { subjectLabel: "CSIT654 LMS v3" });
+    }
+  })().catch((err) => {
+    document.getElementById("continueSub").textContent = String(err.message || err);
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "cmid": "326356",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541702&cmid=326356",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "As per security strength, which one is best",
+      "options": [
+        "a. DES",
+        "b. Triple DES",
+        "c. AES",
+        "d. None of These"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "AES provides stronger modern security than DES/3DES."
+    },
+    {
+      "no": "2",
+      "stem": "How many rounds does the AES-256 perform?",
+      "options": [
+        "a. 10",
+        "b. 12",
+        "c. 14",
+        "d. 16"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "AES-256 uses 14 rounds."
+    }
+  ]
+}

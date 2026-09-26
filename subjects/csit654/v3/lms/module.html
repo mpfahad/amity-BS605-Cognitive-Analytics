@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Module — CSIT654</title>
+  <link rel="stylesheet" href="app.css" />
+  <script>window.AMITY_SUBJECT = "csit654_v3";</script>
+  <script src="../../../../shared/config.js"></script>
+  <script src="../../../../shared/progress.js"></script>
+  <script src="../../../../shared/sync-ui.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <div class="topbar">
+        <div class="brand">
+          <div class="brand-mark">NS</div>
+          <div id="topTitle">Module</div>
+        </div>
+        <div class="top-actions">
+          <a class="btn btn-soft" href="index.html">Course home</a>
+        </div>
+      </div>
+      <main class="content">
+        <nav class="crumb" id="crumb"></nav>
+        <h1 id="modTitle"></h1>
+        <p class="subtle" id="modBlurb"></p>
+
+        <section class="block cmap-panel">
+          <h3>Concept map</h3>
+          <p class="subtle">How the ideas in this module connect — not just syllabus order.</p>
+          <div class="concept-map-real" id="conceptMap"></div>
+        </section>
+
+        <section class="block">
+          <h3>Study order</h3>
+          <p class="subtle">What to study next, in SLM sequence.</p>
+          <div class="topic-list" id="topicList"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script>
+  (async function () {
+    const A = window.CSIT654V3;
+    const mid = Number(A.qs("m") || "1");
+    const { curriculum, pdfPages, conceptMaps } = await A.loadBundles();
+    const mod = A.moduleById(curriculum, mid);
+    if (!mod) {
+      document.getElementById("modTitle").textContent = "Module not found";
+      return;
+    }
+    const modPage = pdfPages?.byModule?.[String(mid)];
+    const modPdf = A.pdfHref(pdfPages, modPage);
+    document.title = "Module " + mod.id + " — " + mod.short;
+    document.getElementById("topTitle").textContent = "Module " + mod.id;
+    document.getElementById("modTitle").textContent = "Module " + mod.id + ": " + mod.title;
+    document.getElementById("modBlurb").textContent = mod.blurb;
+    if (modPdf) {
+      document.querySelector(".top-actions").insertAdjacentHTML(
+        "afterbegin",
+        `<a class="btn btn-ghost" href="${A.esc(modPdf)}" target="_blank" rel="noopener">Source</a>`
+      );
+    }
+    document.getElementById("crumb").innerHTML =
+      `<a href="index.html">Network Security & Cryptography</a><span class="sep">›</span><strong>Module ${mod.id}</strong>`;
+
+    const prog = A.readProgress();
+    const map = conceptMaps?.modules?.[String(mid)];
+    document.getElementById("conceptMap").innerHTML = A.renderConceptMap(mod, map, prog, null);
+
+    document.getElementById("topicList").innerHTML = mod.topics.map((t, i) => {
+      const st = A.topicStatus(prog, t.id, null);
+      const label = st === "done" ? "Done" : st === "seen" ? "Started" : "Open";
+      return `<a class="topic-row" href="concept.html?id=${encodeURIComponent(t.id)}">
+        <span class="idx">${A.statusMark(st)}</span>
+        <span class="t-title"><span class="subtle">${i + 1}.</span> ${A.esc(t.title)}</span>
+        <span class="t-status">${label}</span>
+      </a>`;
+    }).join("");
+
+    document.getElementById("sidebar").innerHTML = A.renderSidebar(mod, prog, { conceptMaps });
+  })();
+  </script>
+</body>
+</html>

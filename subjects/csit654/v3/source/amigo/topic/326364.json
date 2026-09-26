@@ -1,0 +1,37 @@
+{
+  "cmid": "326364",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541732&cmid=326364",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "RSA Algorithm uses the concept of",
+      "options": [
+        "a. Even Number",
+        "b. Complex Number",
+        "c. Odd Number",
+        "d. Prime Number"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "RSA is built on large prime numbers and modular exponentiation."
+    },
+    {
+      "no": "2",
+      "stem": "In the RSA algorithm, which of the following statements is true?",
+      "options": [
+        "a. The same key is used for both encryption and decryption",
+        "b. The public key is kept secret, while the private key is shared openly.",
+        "c. The security of RSA relies on the ease of factoring large prime numbers.",
+        "d. The public key is used for encryption, and the private key is used for decryption"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "RSA encrypts with the public key and decrypts with the private key."
+    }
+  ]
+}

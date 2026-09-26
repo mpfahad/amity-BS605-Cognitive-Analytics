@@ -1,0 +1,37 @@
+{
+  "cmid": "326375",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541791&cmid=326375",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Discovery of the pattern of traffic between parties is known as",
+      "options": [
+        "a. Path analysis",
+        "b. Traffic analysis",
+        "c. Time analysis",
+        "d. None of these"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Observing communication patterns is traffic analysis."
+    },
+    {
+      "no": "2",
+      "stem": "Denial of transmission of message by source is called",
+      "options": [
+        "a. Source repudiation",
+        "b. Destination repudiation",
+        "c. Timing modification",
+        "d. None of these"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Source repudiation is denial of having sent a message."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "cmid": "326444",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541940&cmid=326444",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "E-Mail Tracing helps to identify the majority of email-related crimes like as",
+      "options": [
+        "a. Email spoofing",
+        "b. Phishing",
+        "c. Online Frauds & Scams",
+        "d. All of the Above"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Email tracing helps investigate spoofing, phishing, and online frauds."
+    },
+    {
+      "no": "2",
+      "stem": "Email Tracing or Tracking is a method for monitoring the delivery of __________ to the intended recipient.",
+      "options": [
+        "a. Data",
+        "b. Software",
+        "c. E-Mail",
+        "d. None of These"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Email tracing/tracking monitors e-mail delivery."
+    }
+  ]
+}

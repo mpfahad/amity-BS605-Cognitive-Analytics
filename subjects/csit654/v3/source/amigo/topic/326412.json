@@ -1,0 +1,37 @@
+{
+  "cmid": "326412",
+  "status": "scraped",
+  "from": "review",
+  "url": "https://amigo.amityonline.com/mod/quiz/review.php?attempt=101540458&cmid=326412",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Intrusion attempts is the potential possibility of a deliberate unauthorized attempt to",
+      "options": [
+        "a. Access Information",
+        "b. Manipulate Information",
+        "c. Render a system unreliable or unusable.",
+        "d. All of the Above"
+      ],
+      "correct": 3,
+      "correctOptionText": "The correct answer is: All of the Above",
+      "answerSource": "amigo_review",
+      "explanation": "Amigo review: All of the Above"
+    },
+    {
+      "no": "2",
+      "stem": "The intrusion like as Attempted break-ins can be detected by",
+      "options": [
+        "a. A normal behavior of user",
+        "b. A typical behavior profiles or violations of security constraints.",
+        "c. Monitoring",
+        "d. None of These"
+      ],
+      "correct": 1,
+      "correctOptionText": "The correct answer is: A typical behavior profiles or violations of security constraints.",
+      "answerSource": "amigo_review",
+      "explanation": "Amigo review: A typical behavior profiles or violations of security constraints."
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Concept — CSIT654</title>
+  <link rel="stylesheet" href="app.css" />
+  <script>window.AMITY_SUBJECT = "csit654_v3";</script>
+  <script src="../../../../shared/config.js"></script>
+  <script src="../../../../shared/progress.js"></script>
+  <script src="../../../../shared/sync-ui.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <div class="topbar">
+        <div class="brand">
+          <div class="brand-mark">NS</div>
+          <div id="brandTitle">Concept</div>
+        </div>
+        <div class="mode-tabs" id="modeTabs">
+          <button type="button" class="active" data-mode="learn">Learn</button>
+          <button type="button" data-mode="revise">Revise</button>
+          <button type="button" data-mode="practice">Practice</button>
+        </div>
+      </div>
+      <main class="content">
+        <nav class="crumb" id="crumb"></nav>
+        <div class="where-ami" id="whereAmI"></div>
+        <h1 id="title"></h1>
+        <p class="subtle" id="lede"></p>
+        <div class="chip-row" id="tags"></div>
+        <details class="source-details" id="sourceDetails" hidden>
+          <summary>Source</summary>
+          <p id="sourceBody"></p>
+        </details>
+
+        <section id="learn" class="mode-panel show"></section>
+        <section id="revise" class="mode-panel"></section>
+        <section id="practice" class="mode-panel"></section>
+
+        <div class="lesson-nav" id="lessonNav"></div>
+      </main>
+    </div>
+  </div>
+  <script>
+  (async function () {
+    const A = window.CSIT654V3;
+    const id = A.qs("id") || "1.1.1";
+    const startMode = A.qs("mode") || "learn";
+    const { curriculum, concepts, questions, pdfPages, conceptMaps } = await A.loadBundles();
+    const c = concepts[id];
+    if (!c) {
+      document.getElementById("title").textContent = "Concept not found: " + id;
+      return;
+    }
+    const mod = A.moduleById(curriculum, c.module);
+    A.markVisited(id);
+    const prog = A.readProgress();
+    const pdfPage = c.pdfPage || pdfPages?.byConcept?.[id];
+    const pdfOpen = A.pdfHref(pdfPages, pdfPage);
+
+    document.title = c.title + " — CSIT654";
+    document.getElementById("brandTitle").textContent = c.title;
+    document.getElementById("title").textContent = c.title;
+    document.getElementById("lede").textContent =
+      "Concept → how it works → example → compare → exam remember → practice.";
+    document.getElementById("crumb").innerHTML =
+      `<a href="index.html">Course</a><span class="sep">›</span>` +
+      `<a href="module.html?m=${c.module}">Module ${c.module}</a><span class="sep">›</span>` +
+      `<strong>${A.esc(c.title)}</strong>`;
+
+    const path = A.whereAmIPath(conceptMaps, id, c);
+    document.getElementById("whereAmI").innerHTML =
+      `<span class="where-label">You are here</span>` +
+      path.map((p, i) =>
+        `<span class="where-step${i === path.length - 1 ? " here" : ""}">${A.esc(p)}</span>` +
+        (i < path.length - 1 ? `<span class="where-sep">›</span>` : "")
+      ).join("");
+
+    document.getElementById("tags").innerHTML = (c.tags || [])
+      .map((t) => `<span class="chip">${A.esc(t)}</span>`).join("");
+
+    if (pdfOpen) {
+      const sd = document.getElementById("sourceDetails");
+      sd.hidden = false;
+      document.getElementById("sourceBody").innerHTML =
+        `<a href="${A.esc(pdfOpen)}" target="_blank" rel="noopener">Course material${pdfPage ? " · p." + pdfPage : ""}</a>`;
+    }
+
+    const L = c.learn || {};
+    const confusion = c.commonConfusion || L.commonConfusion;
+    const diagramHtml = c.diagram ? A.renderDiagram(c.diagram) : "";
+    let learnHtml = `
+      <article class="block"><h3>① Concept</h3>${A.renderMdish(L.concept)}</article>
+      <article class="block"><h3>② How it works</h3>${A.renderMdish(L.howItWorks)}
+        ${diagramHtml ? `<div style="margin-top:0.85rem">${diagramHtml}</div>` : ""}
+      </article>
+      <article class="block example"><h3>③ Worked example</h3>${A.renderMdish(L.example)}</article>`;
+    if (L.compare && L.compare.length) {
+      learnHtml += `<article class="block"><h3>④ Compare</h3><div class="compare-grid">` +
+        L.compare.map((side, i) => {
+          const cls = i === 0 ? "compare-side passive" : "compare-side active";
+          return `<div class="${cls}"><h4>${A.esc(side.title)}</h4><ul>${
+            (side.bullets || []).map((b) => `<li>${A.esc(b)}</li>`).join("")
+          }</ul></div>`;
+        }).join("") + `</div></article>`;
+    }
+    if (confusion) {
+      const title = confusion.title || "Common confusion";
+      const body = confusion.body || confusion.text || "";
+      learnHtml += `<article class="block confusion"><h3>⚠ ${A.esc(title)}</h3>${A.renderMdish(body)}</article>`;
+    }
+    learnHtml += `<article class="block remember"><h3>🧠 Remember for the exam</h3><ul>${
+      (L.remember || []).slice(0, 5).map((r) => `<li>${A.esc(r)}</li>`).join("")
+    }</ul></article>
+    <p><button type="button" class="btn" id="btnMarkDone">Mark understood</button></p>`;
+    document.getElementById("learn").innerHTML = learnHtml;
+    document.getElementById("btnMarkDone").addEventListener("click", () => {
+      A.markConceptDone(id);
+      document.getElementById("btnMarkDone").textContent = "Saved ✓";
+      if (mod) {
+        document.getElementById("sidebar").innerHTML =
+          A.renderSidebar(mod, A.readProgress(), { currentId: id, conceptMaps });
+      }
+    });
+
+    /* —— Revise: denser + real flashcards —— */
+    const R = c.revise || {};
+    const flash = R.flash || [];
+    document.getElementById("revise").innerHTML = `
+      <article class="block"><h3>⚡ 60-second summary</h3>${A.renderMdish(L.concept)}</article>
+      <article class="block remember"><h3>🧠 Remember</h3><ul>${
+        (L.remember || R.bullets || []).slice(0, 5).map((b) => `<li>${A.esc(b)}</li>`).join("")
+      }</ul></article>
+      ${L.compare && L.compare.length ? `<article class="block"><h3>⚖ Comparisons</h3><div class="compare-grid">` +
+        L.compare.map((side, i) => {
+          const cls = i === 0 ? "compare-side passive" : "compare-side active";
+          return `<div class="${cls}"><h4>${A.esc(side.title)}</h4><ul>${
+            (side.bullets || []).map((b) => `<li>${A.esc(b)}</li>`).join("")
+          }</ul></div>`;
+        }).join("") + `</div></article>` : ""}
+      ${confusion ? `<article class="block confusion"><h3>⚠ Common confusion</h3>${A.renderMdish(confusion.body || confusion.text || "")}</article>` : ""}
+      <article class="block">
+        <h3>🃏 Flashcards</h3>
+        <div class="flash-stage" id="flashStage"></div>
+      </article>
+      <p><a class="btn btn-soft" href="practice.html?mode=session">🎯 Practice session</a></p>`;
+
+    (function wireFlash() {
+      const stage = document.getElementById("flashStage");
+      if (!flash.length) {
+        stage.innerHTML = `<p class="subtle">No flashcards for this topic yet.</p>`;
+        return;
+      }
+      let i = 0;
+      let revealed = false;
+      function paint() {
+        const f = flash[i];
+        stage.innerHTML = `
+          <div class="flash-face">
+            <div class="subtle">Flashcard ${i + 1} / ${flash.length}</div>
+            <p class="flash-q">${A.esc(f.q)}</p>
+            <div class="flash-a" ${revealed ? "" : "hidden"}>${A.esc(f.a)}</div>
+            <div class="flash-actions">
+              ${revealed
+                ? `<button type="button" class="btn btn-ghost" data-act="again">Again</button>
+                   <button type="button" class="btn" data-act="next">Got it →</button>`
+                : `<button type="button" class="btn" data-act="reveal">Reveal answer</button>`}
+            </div>
+            <div class="flash-nav">
+              <button type="button" class="btn btn-ghost" data-act="prev" ${i === 0 ? "disabled" : ""}>← Previous</button>
+              <button type="button" class="btn btn-ghost" data-act="skip" ${i >= flash.length - 1 ? "disabled" : ""}>Next →</button>
+            </div>
+          </div>`;
+      }
+      stage.addEventListener("click", (ev) => {
+        const b = ev.target.closest("[data-act]");
+        if (!b) return;
+        const act = b.dataset.act;
+        if (act === "reveal") { revealed = true; paint(); }
+        if (act === "again") { revealed = false; paint(); }
+        if (act === "next" || act === "skip") {
+          if (i < flash.length - 1) { i += 1; revealed = false; paint(); }
+        }
+        if (act === "prev" && i > 0) { i -= 1; revealed = false; paint(); }
+      });
+      paint();
+    })();
+
+    /* —— Practice —— */
+    const qs = A.questionsForConcept(questions, id);
+    const practiceEl = document.getElementById("practice");
+    if (!qs.length) {
+      practiceEl.innerHTML = `<article class="block"><p>No questions for this concept. <a href="practice.html?mode=session">Open practice sessions</a>.</p></article>`;
+    } else {
+      practiceEl.innerHTML = `<article class="block"><h3>Quick practice</h3>
+        <p class="subtle">${qs.length} question(s) for this topic.</p>
+        <div id="qList"></div>
+        <p style="margin-top:1rem"><a class="btn btn-soft" href="practice.html?mode=session">Start 20-question session</a></p>
+      </article>`;
+      const list = document.getElementById("qList");
+      list.innerHTML = qs.map((q, qi) => {
+        const opts = (q.options || []).map((opt, oi) =>
+          `<button type="button" class="opt" data-qi="${qi}" data-oi="${oi}">${String.fromCharCode(65+oi)}. ${A.esc(opt)}</button>`
+        ).join("");
+        return `<div class="q" data-correct="${q.correct}">
+          <strong>${qi + 1}.</strong> ${A.esc(q.stem)}
+          <div class="opts">${opts}</div>
+          <p class="explain" hidden></p>
+        </div>`;
+      }).join("");
+      list.addEventListener("click", (ev) => {
+        const btn = ev.target.closest(".opt");
+        if (!btn) return;
+        const wrap = btn.closest(".q");
+        if (wrap.dataset.locked === "1") return;
+        wrap.dataset.locked = "1";
+        const correct = Number(wrap.dataset.correct);
+        const chosen = Number(btn.dataset.oi);
+        const ok = chosen === correct;
+        const q = qs[Number(btn.dataset.qi)];
+        wrap.querySelectorAll(".opt").forEach((b) => {
+          b.disabled = true;
+          const oi = Number(b.dataset.oi);
+          if (oi === correct) b.classList.add("correct");
+          else if (oi === chosen) b.classList.add("wrong");
+        });
+        const ex = wrap.querySelector(".explain");
+        ex.hidden = false;
+        if (ok) {
+          ex.innerHTML = "<strong>Correct.</strong> " + A.esc(q.explanation || "");
+        } else {
+          ex.innerHTML = "<strong>Not quite.</strong>" + A.wrongAnswerHtml(q, concepts);
+        }
+        A.savePracticeAnswer(q.id, chosen, ok);
+      });
+    }
+
+    function setMode(mode) {
+      document.querySelectorAll("#modeTabs button").forEach((b) =>
+        b.classList.toggle("active", b.dataset.mode === mode)
+      );
+      ["learn", "revise", "practice"].forEach((m) => {
+        document.getElementById(m).classList.toggle("show", m === mode);
+      });
+    }
+    document.getElementById("modeTabs").addEventListener("click", (ev) => {
+      const btn = ev.target.closest("[data-mode]");
+      if (btn) setMode(btn.dataset.mode);
+    });
+    if (["learn", "revise", "practice"].includes(startMode)) setMode(startMode);
+
+    const topics = mod?.topics || [];
+    const idx = topics.findIndex((t) => t.id === id);
+    const prev = idx > 0 ? topics[idx - 1] : null;
+    const next = idx >= 0 && idx < topics.length - 1 ? topics[idx + 1] : null;
+    document.getElementById("lessonNav").innerHTML = `
+      ${prev ? `<a class="btn btn-ghost" href="concept.html?id=${encodeURIComponent(prev.id)}">← ${A.esc(prev.title)}</a>` : "<span></span>"}
+      ${next ? `<a class="btn btn-soft" href="concept.html?id=${encodeURIComponent(next.id)}">${A.esc(next.title)} →</a>` : `<a class="btn" href="module.html?m=${c.module}">Back to module</a>`}
+    `;
+    if (mod) {
+      document.getElementById("sidebar").innerHTML =
+        A.renderSidebar(mod, prog, { currentId: id, conceptMaps });
+    }
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "cmid": "326320",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541522&cmid=326320",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "A concern of authentication that deals with user rights.",
+      "options": [
+        "a. General access",
+        "b. Functional authentication",
+        "c. Functional authorization",
+        "d. Auto verification"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Authorization decides user rights/privileges after authentication."
+    },
+    {
+      "no": "2",
+      "stem": "Digital Signature is a service mechanism of",
+      "options": [
+        "a. Data Confidentiality",
+        "b. Data Integrity",
+        "c. Authentication",
+        "d. None of these"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Digital signatures primarily support integrity (and authenticity/non-repudiation)."
+    }
+  ]
+}

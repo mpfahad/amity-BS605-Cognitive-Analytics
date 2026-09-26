@@ -1,0 +1,37 @@
+{
+  "cmid": "326322",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541528&cmid=326322",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Which type of cryptography is using the concept of two keys as public key and private key:",
+      "options": [
+        "a. Symmetric Key Cryptography.",
+        "b. Asymmetric Key Cryptography.",
+        "c. Cryptography.",
+        "d. None of these."
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Asymmetric crypto uses a public/private key pair."
+    },
+    {
+      "no": "2",
+      "stem": "In symmetric-key cryptography, the key locks and unlocks the box is",
+      "options": [
+        "a. Same",
+        "b. Shared",
+        "c. Private",
+        "d. Public"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Symmetric crypto uses the same shared secret to lock and unlock."
+    }
+  ]
+}

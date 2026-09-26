@@ -1,0 +1,37 @@
+{
+  "cmid": "326418",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541874&cmid=326418",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Network Firewalls operate at _______ layers to use different criteria to restrict traffic",
+      "options": [
+        "a. Physical Layer",
+        "b. Data Link Layer",
+        "c. Network Layer",
+        "d. Multiple Layers"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Network firewalls operate across multiple layers with varied criteria."
+    },
+    {
+      "no": "2",
+      "stem": "Which type of Firewall provides best security among others?",
+      "options": [
+        "a. Packet filters",
+        "b. Circuit level gateways",
+        "c. Application level gateways",
+        "d. Stateful multilayer inspection firewalls"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Stateful multilayer inspection generally provides the strongest classic firewall model."
+    }
+  ]
+}

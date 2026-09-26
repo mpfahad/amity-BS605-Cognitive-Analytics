@@ -1,0 +1,37 @@
+{
+  "cmid": "326431",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541904&cmid=326431",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Which types of Cyber Forensic Tools are used\nfor gather the relevant data from media storage device  during the\ninvestigation of cybercrime?",
+      "options": [
+        "a. Hardware Cyber Forensic Tools",
+        "b. Software Cyber Forensic Tools",
+        "c. Both",
+        "d. None of These"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Forensic acquisition uses both hardware and software tools."
+    },
+    {
+      "no": "2",
+      "stem": "Which forensic tool is not made in China?",
+      "options": [
+        "a. Encase",
+        "b. FTK",
+        "c. TSK",
+        "d. None of These"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "EnCase/FTK/TSK are not China-origin tools; answer is none of these as ‘Chinese-made’."
+    }
+  ]
+}

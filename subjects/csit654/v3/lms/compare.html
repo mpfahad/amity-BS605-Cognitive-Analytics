@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compare — CSIT654</title>
+  <link rel="stylesheet" href="app.css" />
+  <script>window.AMITY_SUBJECT = "csit654_v3";</script>
+  <script src="../../../../shared/config.js"></script>
+  <script src="../../../../shared/progress.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <div class="brand-mark">NS</div>
+      <div>
+        <div>Compare concepts</div>
+        <div class="brand-sub">Exam contrasts</div>
+      </div>
+    </div>
+    <nav class="top-nav" aria-label="Primary">
+      <a href="index.html">Course</a>
+      <a href="compare.html" class="here">Compare</a>
+      <a href="practice.html?mode=session">Practice</a>
+    </nav>
+  </div>
+  <main class="content home-wide">
+    <h1>Compare</h1>
+    <p class="subtle">Pick a classic exam contrast. Open related lessons when you need depth.</p>
+    <div class="chip-row" id="filters"></div>
+    <div class="compare-pick" id="pairList"></div>
+    <section class="block" id="pairView" hidden>
+      <h2 id="pairTitle"></h2>
+      <div class="compare-grid" id="pairGrid"></div>
+      <div class="q-footer" id="pairRelated"></div>
+    </section>
+  </main>
+  <script>
+  (async function () {
+    const A = window.CSIT654V3;
+    const { concepts } = await A.loadBundles();
+    const pairsWrap = await fetch("../data/compare_pairs.json").then((r) => r.json());
+    const pairs = pairsWrap.pairs || [];
+    let mid = 0;
+    let active = A.qs("id") || pairs[0]?.id;
+
+    function paintFilters() {
+      const mods = [...new Set(pairs.map((p) => p.module))].sort();
+      document.getElementById("filters").innerHTML =
+        `<button type="button" class="chip-btn${mid===0?" active":""}" data-m="0">All</button>` +
+        mods.map((m) => `<button type="button" class="chip-btn${mid===m?" active":""}" data-m="${m}">M${m}</button>`).join("");
+    }
+    function paintList() {
+      const list = pairs.filter((p) => !mid || p.module === mid);
+      document.getElementById("pairList").innerHTML = list.map((p) =>
+        `<button type="button" class="compare-pick-card${p.id===active?" active":""}" data-id="${A.esc(p.id)}">
+          <strong>${A.esc(p.title)}</strong>
+          <span>Module ${p.module}</span>
+        </button>`
+      ).join("");
+    }
+    function paintActive() {
+      const p = pairs.find((x) => x.id === active);
+      const view = document.getElementById("pairView");
+      if (!p) { view.hidden = true; return; }
+      view.hidden = false;
+      document.getElementById("pairTitle").textContent = p.title;
+      document.getElementById("pairGrid").innerHTML = [p.left, p.right].map((side, i) => {
+        const cls = i === 0 ? "compare-side passive" : "compare-side active";
+        return `<div class="${cls}"><h4>${A.esc(side.title)}</h4><ul>${
+          (side.bullets || []).map((b) => `<li>${A.esc(b)}</li>`).join("")
+        }</ul></div>`;
+      }).join("");
+      document.getElementById("pairRelated").innerHTML = (p.related || []).map((cid) => {
+        const c = concepts[cid];
+        return `<a class="concept-link" href="concept.html?id=${encodeURIComponent(cid)}">Review this concept · ${A.esc(c?.title || cid)}</a>`;
+      }).join("");
+      const u = new URL(location.href);
+      u.searchParams.set("id", active);
+      history.replaceState(null, "", u);
+    }
+
+    document.getElementById("filters").addEventListener("click", (ev) => {
+      const b = ev.target.closest("[data-m]");
+      if (!b) return;
+      mid = Number(b.dataset.m);
+      paintFilters();
+      paintList();
+    });
+    document.getElementById("pairList").addEventListener("click", (ev) => {
+      const b = ev.target.closest("[data-id]");
+      if (!b) return;
+      active = b.dataset.id;
+      paintList();
+      paintActive();
+    });
+
+    paintFilters();
+    paintList();
+    paintActive();
+  })();
+  </script>
+</body>
+</html>

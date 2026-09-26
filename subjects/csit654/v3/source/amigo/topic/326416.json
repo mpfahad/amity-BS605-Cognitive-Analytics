@@ -1,0 +1,37 @@
+{
+  "cmid": "326416",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541869&cmid=326416",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Malware cannot damage the\nphysical hardware of systems and network equipment, but it can damage the",
+      "options": [
+        "a. Software",
+        "b. Data",
+        "c. Both",
+        "d. None of these"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Malware damages software/data (not typically physical hardware)."
+    },
+    {
+      "no": "2",
+      "stem": "A malware that propagates by inserting a copy\nof itself into and becoming part of another program. It spreads from one\ncomputer to another, leaving infections as it travels.",
+      "options": [
+        "a. Worm",
+        "b. Virus",
+        "c. Both",
+        "d. None of These"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "A virus inserts into and becomes part of another program."
+    }
+  ]
+}

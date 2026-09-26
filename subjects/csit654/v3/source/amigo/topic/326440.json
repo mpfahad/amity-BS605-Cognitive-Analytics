@@ -1,0 +1,38 @@
+{
+  "cmid": "326440",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541932&cmid=326440",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Digital Forensics is a science of\nfinding evidence from digital media like a",
+      "options": [
+        "a. Computer",
+        "b. Mobile Phone",
+        "c. Server",
+        "d. Network",
+        "e. All of the Above"
+      ],
+      "correct": 4,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Digital forensics covers computers, phones, servers, and networks."
+    },
+    {
+      "no": "2",
+      "stem": "Digital evidence is defined as\ninformation and data of value to an investigation that is stored on, received\nor transmitted by an",
+      "options": [
+        "a. Mechanical Device",
+        "b. Electronic Device",
+        "c. Biological Device",
+        "d. None of These"
+      ],
+      "correct": 1,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Digital evidence comes from electronic devices."
+    }
+  ]
+}

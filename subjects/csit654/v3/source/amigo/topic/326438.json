@@ -1,0 +1,37 @@
+{
+  "cmid": "326438",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541927&cmid=326438",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "Which types of Cyber Forensic Tools are used for gather the relevant data from media storage device during the investigation of cybercrime?",
+      "options": [
+        "a. Hardware Cyber Forensic Tools",
+        "b. Software Cyber Forensic Tools",
+        "c. Both",
+        "d. None of These"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Both hardware and software forensic tools gather evidence."
+    },
+    {
+      "no": "2",
+      "stem": "Which forensic tool is not made in China?",
+      "options": [
+        "a. Encase",
+        "b. FTK",
+        "c. TSK;",
+        "d. None of These"
+      ],
+      "correct": 3,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "Listed tools are not China-made; select none of these."
+    }
+  ]
+}

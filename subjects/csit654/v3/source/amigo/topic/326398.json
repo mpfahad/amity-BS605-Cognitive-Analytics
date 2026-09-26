@@ -1,0 +1,37 @@
+{
+  "cmid": "326398",
+  "status": "scraped",
+  "from": "attempt",
+  "url": "https://amigo.amityonline.com/mod/quiz/attempt.php?attempt=101541831&cmid=326398",
+  "note": null,
+  "questions": [
+    {
+      "no": "1",
+      "stem": "PGP was developed by",
+      "options": [
+        "a. Phil Zimmerman",
+        "b. Phil James",
+        "c. Phil Simon",
+        "d. None of These"
+      ],
+      "correct": 0,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "PGP was created by Phil Zimmermann."
+    },
+    {
+      "no": "2",
+      "stem": "Pretty Good Privacy (PGP) is a freeware ________ encryption system",
+      "options": [
+        "a. Data",
+        "b. Network",
+        "c. E-Mail",
+        "d. None of These"
+      ],
+      "correct": 2,
+      "correctOptionText": null,
+      "answerSource": "slm",
+      "explanation": "PGP is an e-mail (and file) encryption system."
+    }
+  ]
+}
